@@ -1,0 +1,10 @@
+services:
+  mentor:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - mentor-data:/app/backend/data
+    restart: unless-stopped
+volumes:
+  mentor-data:

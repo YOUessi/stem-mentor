@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#174938" />
+  <title>STEM Mentor · 思维比答案更重要</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" aria-label="导航">
+    <a class="brand" href="/" aria-label="STEM Mentor 首页"><span class="brand-mark">∴</span><span><b>STEM Mentor</b><small>个人理科思维导师</small></span></a>
+    <div class="brand-sep"></div>
+    <div class="side-heading">学习空间</div>
+    <nav id="navigation">
+      <button data-view="workspace" class="nav-item active"><span class="nav-icon">◇</span> 学习工作台</button>
+      <button data-view="history" class="nav-item"><span class="nav-icon">◷</span> 我的解题经历 <span class="nav-count" id="historyCount">0</span></button>
+      <button data-view="review" class="nav-item"><span class="nav-icon">▤</span> 易漏考点回忆 <span class="nav-count" id="reviewCount">0</span></button>
+      <button data-view="methods" class="nav-item"><span class="nav-icon">⊞</span> 数学方法库</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="sidebar-note"><strong>教学核心</strong><span>先由你尝试，我们一起找到突破口。</span></div>
+      <span class="aside-version">SIMULATION · v0.3</span>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div class="crumb">学习空间 <span>/</span> <b id="pageCrumb">学习工作台</b></div>
+      <div class="top-actions"><span class="demo-tag"><span class="online-dot"></span> 离线规则模拟 · 无模型 API</span><div class="avatar" title="仅限合成演示学生">演</div></div>
+    </header>
+    <div class="content">
+      <section id="workspace" class="view active">
+        <div class="section-heading"><div><div class="eyebrow">LEARN TO THINK</div><h1>把解题思路，变成自己的能力。</h1><p>不急着拿到答案。先发现条件、理解目标，再找到自己的突破口。</p></div><div class="tiny-status" id="sessionStatus">准备开始</div></div>
+        <section class="mode-panel" aria-label="选择教学模式"><div class="mode-header"><strong>这次，你想怎样思考？</strong><span>模式可随时切换，草稿和对话不会丢失</span></div>
+          <div class="modes" id="modeTabs"><button data-mode="ANALYZE" class="mode"><span class="mode-glyph">◎</span><span><b>逻辑分析</b><small>先认识问题本质</small></span></button><button data-mode="GUIDE" class="mode selected"><span class="mode-glyph">↝</span><span><b>推理陪练</b><small>从卡点寻找突破口</small></span></button><button data-mode="INDEPENDENT" class="mode"><span class="mode-glyph">✎</span><span><b>自主挑战</b><small>先自己完整尝试</small></span></button></div>
+        </section>
+        <div class="workspace-grid">
+          <div class="left-column">
+            <section class="panel problem-panel"><div class="panel-header"><div><span class="overline">CURRENT PROBLEM</span><h2>当前题目</h2></div><span class="soft-chip" id="problemTopic">高中数学</span></div>
+              <div class="select-line"><label for="problemSelect">选择模拟题目</label><select id="problemSelect" aria-label="选择模拟题目"></select><button class="btn btn-light" id="startBtn" type="button">开始新题</button></div>
+              <div class="problem-body"><h3 id="problemTitle">读取题目中…</h3><p id="problemPrompt"></p></div>
+              <div class="problem-meta"><div><span>已知线索</span><ul id="knownList"></ul></div><div><span>学习目标</span><p id="goalText"></p></div></div>
+            </section>
+            <section class="panel scratch-panel"><div class="panel-header"><div><span class="overline">YOUR THINKING</span><h2>你的思考与草稿</h2></div><span class="draft-badge">独立表达优先</span></div>
+              <label class="sr-only" for="studentInput">输入你的思路</label><textarea id="studentInput" placeholder="先写下你观察到了什么、尝试了什么，或者卡在哪一步……&#10;例如：我从已知条件推出了一个式子，但不知道如何连接到目标。"></textarea>
+              <div class="input-footer"><span>保留原始尝试 · 默认不展示完整解答</span><button id="sendBtn" class="btn btn-primary" type="button">提交我的思考 <span aria-hidden="true">→</span></button></div>
+              <div class="tool-divider"></div><div class="tool-title">需要帮助时</div><div class="action-tools"><button data-tool="hint" class="action-tool">✦ <span>一点提示</span></button><button data-tool="stuck" class="action-tool">↗ <span>我卡住了</span></button><button data-tool="check" class="action-tool">✓ <span>检查思路</span></button><button data-tool="recall" class="action-tool">◷ <span>回忆旧题</span></button><button data-tool="reflection" class="action-tool">≋ <span>思路复盘</span></button></div>
+            </section>
+          </div>
+          <div class="right-column">
+            <section class="panel tutor-panel"><div class="panel-header tutor-head"><div class="mentor-heading"><div class="mentor-avatar">∴</div><div><h2>你的培优导师</h2><span>会根据你的思考选择下一步</span></div></div><span class="live-tag">模拟</span></div><div id="chat" class="chat-feed" role="log" aria-live="polite"><div class="empty-chat"><div class="empty-symbol">↝</div><b>从一个想法开始</b><p>这不是标准答案播放区。先告诉我你想到了什么。</p></div></div><div class="tutor-bottom"><button class="btn btn-light btn-wide" type="button" id="completeBtn">结束本题，记录解题经历</button><small>仅保存经历，不自动判定你已掌握。</small></div></section>
+            <section class="panel map-panel"><div class="panel-header"><div><span class="overline">THINKING PATH</span><h2>思维探索轨迹</h2></div><span class="mini-muted">不等于完整证明</span></div><div id="mindMap" class="mind-map"><div class="map-empty">随着你尝试、求助和调整思路，这里会记录思考路径。</div></div></section>
+          </div>
+        </div>
+      </section>
+      <section id="history" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">YOUR LEARNING EPISODES</div><h1>记住你如何找到突破口。</h1><p>只展示实际保存的练习经历，不虚构“你以前做过”的题。</p></div></div><div id="historyList" class="item-grid"></div></section>
+      <section id="review" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">SMALL DETAILS MATTER</div><h1>容易忽略的，恰恰要记牢。</h1><p>轻量回忆考试范围内的特殊情况，模拟间隔安排，不打断正在进行的解题。</p></div></div><div class="info-note">答题检查只使用简单的规则匹配；成功不代表真正理解。真实考查范围需依据所在地区和年份另行核实。</div><div id="reviewList" class="item-grid"></div></section>
+      <section id="methods" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">METHODS & TRANSFER</div><h1>认识方法，也认识方法的边界。</h1><p>方法卡重视触发条件、知识结构、失效情况与迁移线索。</p></div></div><div id="methodList" class="item-grid"></div></section>
+    </div>
+  </main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
