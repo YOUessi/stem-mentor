@@ -16,6 +16,13 @@
 - `cd backend && PYTHONPATH=. pytest -q` → **10 passed**。
 - `node --check apps/web/app.js` → 语法检查通过。
 
+## 浏览器交互验收
+- 使用 **Chromium 真正执行 HTML/CSS/JS**，通过 Playwright 暴露函数将页面 fetch 请求转交 FastAPI TestClient，实现前后端接口和 SQLite 一体化运行。
+- 已验证三种模式、学生草稿与导师回复、旧题回忆、跨页历史记录、微考点作答、方法列表及手机端无横向溢出。
+- 浏览器运行异常：**0**。
+- 环境策略禁止 Chromium 直接访问本地 HTTP 端口，因此这不是公网部署或网络访问验收。
+- 运行：`python tests/browser/test_ui.py`（另需 Playwright Python 包与 Chromium）。
+
 ## 限制
 - 任意学生推导未实现可靠证明；教学回复均明确标记 `math_verified=false`。
 - 自述完成只写 `SELF_REPORTED_NOT_VERIFIED`，不能代替独立掌握证据。

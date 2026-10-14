@@ -10,3 +10,5 @@ __pycache__/
 *.sqlite3-shm
 node_modules/
 .DS_Store
+
+artifacts/
