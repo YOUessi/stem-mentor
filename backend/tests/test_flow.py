@@ -149,3 +149,21 @@ def test_validation_and_completed_session_lock(client):
     assert client.post(f"/api/sessions/{sid}/complete",json={"reflection":"完成"}).status_code==200
     assert client.post(f"/api/sessions/{sid}/turns",json={"student_text":"继续"}).status_code==409
     assert client.patch(f"/api/sessions/{sid}/mode",json={"mode":"ANALYZE"}).status_code==409
+
+
+def test_review_suggestion_is_contextual_and_not_interruptive(client):
+    uid=student(client)
+    sid=start(client,uid,"geometric-sum")
+    assert client.get(f"/api/sessions/{sid}/review-suggestion").json()["suggestion"] is None
+    client.post(f"/api/sessions/{sid}/complete",json={"reflection":"检查 q=1 的特殊情况"})
+    suggestion=client.get(f"/api/sessions/{sid}/review-suggestion").json()
+    assert suggestion["suggestion"]["id"]=="geometric-q-one"
+    client.post(f"/api/students/{uid}/reviews/geometric-q-one/answer",json={"answer":"n*a1"})
+    assert client.get(f"/api/sessions/{sid}/review-suggestion").json()["suggestion"] is None
+
+
+def test_curated_knowledge_search_is_explicitly_non_vector(client):
+    result=client.post("/api/knowledge/search",json={"query":"切线","problem_id":"ellipse-tangent"}).json()
+    assert result["engine"]=="CURATED_TAG_AND_LITERAL_SEARCH"
+    assert any(m["id"]=="conic_tangent" for m in result["methods"])
+    assert client.post("/api/knowledge/search",json={"query":"切线","problem_id":"no-id"}).status_code==422

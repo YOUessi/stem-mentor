@@ -79,6 +79,7 @@ def run():
             page.once("dialog",lambda d:d.accept("这次我发现应该比较切点条件"))
             page.locator("#completeBtn").click()
             page.wait_for_function("document.querySelector('#sessionStatus').textContent.includes('已经记录')")
+            page.locator("#reviewSuggestion").wait_for(state="visible")
 
             page.locator("#problemSelect").select_option("hyperbola-tangent")
             page.locator("#startBtn").click()
@@ -99,6 +100,10 @@ def run():
             page.locator('[data-view="methods"]').click()
             page.locator("#methodList .item-card").first.wait_for()
             assert page.locator("#methodList .item-card").count()>=4
+            page.locator("#methodQuery").fill("切线")
+            page.locator("#methodSearchBtn").click()
+            page.wait_for_function("document.querySelectorAll('#methodList .item-card').length===1")
+            assert "二次曲线切线" in page.locator("#methodList").inner_text()
 
             mobile=page_with_backend(browser,client,{"width":390,"height":844},errors)
             mobile.locator("#toast").evaluate("(node) => { node.hidden=true; }")

@@ -1,7 +1,7 @@
 # 2026-10-15 模拟版开发与验证记录
 
 ## 范围
-按照需求 v0.2 构建无需任何大模型 API 的、题卡驱动的本地 Web 模拟系统。支持三模式、SQLite 持久化、结构关联的真实历史题回忆、微考点间隔复习、思维轨迹和限定数学恒等式检查。
+按照需求 v0.2 构建无需任何大模型 API 的、题卡驱动的本地 Web 模拟系统。支持三模式、SQLite 持久化、结构关联的真实历史题回忆、微考点间隔复习、题后情境化提醒、方法卡规则检索、思维轨迹和限定数学恒等式检查。
 
 ## 实现
 - `backend/app/catalog.py`: 六道人工编排示例题、四张方法卡、五个微考点。
@@ -13,12 +13,12 @@
 - `backend/tests/test_flow.py`: 模式/迁移/隔离/复习/边界/数学验证/持久化回归。
 
 ## 本地测试
-- `cd backend && PYTHONPATH=. pytest -q` → **10 passed**。
+- `cd backend && PYTHONPATH=. pytest -q` → **12 passed**。
 - `node --check apps/web/app.js` → 语法检查通过。
 
 ## 浏览器交互验收
 - 使用 **Chromium 真正执行 HTML/CSS/JS**，通过 Playwright 暴露函数将页面 fetch 请求转交 FastAPI TestClient，实现前后端接口和 SQLite 一体化运行。
-- 已验证三种模式、学生草稿与导师回复、旧题回忆、跨页历史记录、微考点作答、方法列表及手机端无横向溢出。
+- 已验证三种模式、学生草稿与导师回复、旧题回忆、跨页历史记录、微考点作答、方法列表及检索、题后关联考点提示、手机端无横向溢出。
 - 浏览器运行异常：**0**。
 - 环境策略禁止 Chromium 直接访问本地 HTTP 端口，因此这不是公网部署或网络访问验收。
 - 运行：`python tests/browser/test_ui.py`（另需 Playwright Python 包与 Chromium）。

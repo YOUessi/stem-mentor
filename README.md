@@ -1,38 +1,61 @@
-# STEM Mentor — 个性化理科思维培优系统
+# STEM Mentor — 个人化理科思维培优系统
 
-面向中高考理科培优的长期个人教学 Agent，核心目标是培养学生**脱离 AI 后的审题、策略选择、突破口发现与跨题迁移能力**。当前版本为**不使用任何模型 API 的规则模拟 Web App**，不等于通用 AI 教师。
+> **当前交付：可运行的离线模拟 Web App。尚未接入任何 LLM API，不具备任意题目的通用数学智能。**
 
-## 立即运行
+系统的目标不是让学生看完整答案，而是训练其独立审题、解题策略选择、正推与反推的切换、关键突破口发现及跨题迁移。学生自己的原始尝试被保存，模拟教师默认以最少必要提示回应。
 
-本机需要 Python 3.12+。
+## 本地启动
+
+要求 Python 3.12+：
 
 ```bash
 git clone https://github.com/YOUessi/stem-mentor.git
 cd stem-mentor
 python -m pip install -r backend/requirements.txt
 cd backend
-PYTHONPATH=. python -m pytest -q
+PYTHONPATH=. pytest -q
 uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
-打开 [http://127.0.0.1:8000](http://127.0.0.1:8000)。或在仓库根目录运行 `docker compose up --build` 后访问同一地址。**无需设置 API key。**
+打开 http://127.0.0.1:8000 ，即可进入浏览器学习工作台。无需注册外部 API，也无需配置密钥。
 
-## 已实现并具备自动测试的模拟能力
+也可在仓库根目录用 `docker compose up --build` 启动（Dockerfile 已提供，当前执行环境无 Docker，尚未实际验证容器构建）。
 
-- 响应式网页：题目/草稿/师生互动/思维探索轨迹、方法库、个人解题经历与易漏考点。
-- 三种共用同一会话的学习模式：逻辑分析（ANALYZE）、推理陪练（GUIDE）、自主挑战（INDEPENDENT）。
-- 六道可审计的数学题卡 + 四张方法卡 + 五个微考点；自定义题仅使用明确标识的保守通用启发。
-- SQLite 持久化学生模拟账号、学习会话/原始尝试、模式切换、历史经历与复习计划。
-- 新题回忆只针对**同一学生真实保存**、共享数学方法和深层结构的历史题；不会根据题目出现相同字词虚构旧题。
-- 自主模式无求助不提前泄露提示；非线性正推/逆推策略根据学生输入的显式信号切换。
-- 间隔回忆按有限关键词规则判断，**不能替代完整答案评价**；所存的完成记录只表示学生自述，非独立正确证据。
-- SymPy 在固定审核案例上检查恒等关系；对任意学生推导不声称已完成数学证明。
-- FastAPI 交互 API、Docker、GitHub Actions CI、10 个后端回归场景及 JS 语法校验。
+## 已实现的规则模拟功能
 
-## 设计与过程记录
+- 三种教学模式：逻辑分析、推理陪练、自主挑战；切换不丢会话、草稿与原始步骤。
+- 六道精心设计的数学情境题卡、四张方法卡、五个微考点；自定义题仅作保守通用启发。
+- 显式教学阶段：起步、正推、卡住、逆推、计算与发现桥梁；允许动态改变教学动作，不按完整解答顺序代做。
+- SQLite 持久化学习会话、学生自己的历史解题经历、复习状态；只在真正存在历史记录且结构和方法相似时才引导旧题回忆。
+- 手动微考点回忆、有限间隔调度，以及**题目结束后**的相关易漏考点推荐（不打断当前探索）。
+- 结构化方法卡的规则检索，标识为 `CURATED_TAG_AND_LITERAL_SEARCH`，不是语义向量 RAG。
+- 条目级的思维探索轨迹、个人解题经历页面、数学方法页面、响应式移动端布局。
+- SymPy 对有限、固定且经过人工审核的代数/几何示例进行验证；任意学生解题过程明确标记 `math_verified=false`。
+- 学生自述完成仅存为 `SELF_REPORTED_NOT_VERIFIED`，不能当成正确、理解或掌握的证据。
 
-[产品需求](docs/requirements/PRD.md) · [24 项功能验收](docs/requirements/FEATURE_SPEC.md) · [系统架构](docs/design/ARCHITECTURE.md) · [教学决策策略](docs/design/TUTOR_POLICY.md) · [数据模型](docs/design/DATA_MODEL.md) · [对话需求与设计决定](docs/decisions/CONVERSATION_DECISIONS.md) · [评测计划](docs/evaluation/TEST_PLAN.md) · [实施路线](docs/planning/ROADMAP.md) · [隐私与安全](docs/security/PRIVACY.md) · [2026-10-15 开发日志](docs/logs/2026-10-15-implementation.md)。
+## 测试
 
-## 当前局限
+```bash
+cd backend && PYTHONPATH=. pytest -q     # 12 个后端测试
+cd .. && node --check apps/web/app.js     # 前端语法
+```
 
-这只是**限定数学题卡 + 确定性规则**模拟：尚未接真实 LLM、完整数学 RAG、知识追踪模型、自动任意数学推理、用户认证、未成年人正式试用或真实学习效果评估。仓库为公开仓库，请勿提交任何真实学生数据、授权未明的教材或密钥。
+另有真实 Chromium DOM 的交互测试，使用 FastAPI TestClient 代理浏览器请求以适应受限执行环境：
+
+```bash
+pip install playwright
+# 本机另需 Chromium 浏览器；按需要设置 CHROMIUM_EXECUTABLE
+python tests/browser/test_ui.py
+```
+
+已验证桌面与手机端交互，脚本默认将图片放在 `artifacts/browser/`（被 Git 忽略）。
+
+## 文档
+
+- [产品需求 PRD](docs/requirements/PRD.md)、[功能规格及验收](docs/requirements/FEATURE_SPEC.md)、[架构](docs/design/ARCHITECTURE.md)、[数据模型](docs/design/DATA_MODEL.md)
+- [教学决策规范](docs/design/TUTOR_POLICY.md)、[需求讨论与设计记录](docs/decisions/CONVERSATION_DECISIONS.md)、[质量评测计划](docs/evaluation/TEST_PLAN.md)
+- [开发计划](docs/planning/ROADMAP.md)、[隐私和内容安全](docs/security/PRIVACY.md)、[2026-10-15 工程日志](docs/logs/2026-10-15-implementation.md)
+
+## 研发边界
+
+本版不是接入 LLM 的完整教育 Agent。尚未实现真正的数学语义 RAG/模型训练、任意题求解、手写 OCR、正式认证和未成年人数据治理，也没有真实学生教育效果实验。仓库为 **public**，请勿提交真实学生记录、API 密钥或授权未明的教材资料。

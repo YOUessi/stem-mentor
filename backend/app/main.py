@@ -48,6 +48,10 @@ class SessionComplete(BaseModel):
 class ReviewAnswer(BaseModel):
     answer:str=Field(min_length=1,max_length=1000)
 
+class KnowledgeQuery(BaseModel):
+    query:str=Field(min_length=1,max_length=200)
+    problem_id:str|None=None
+
 
 def get_student_or_404(student_id):
     student=storage.student_get(student_id)
@@ -148,3 +152,34 @@ def known_check(identity_id:str):
     if not result:
         raise HTTPException(404,"仅支持预先审核过的公式检验案例")
     return result
+
+
+@app.get("/api/sessions/{session_id}/review-suggestion")
+def session_review_suggestion(session_id:str):
+    session=get_session_or_404(session_id)
+    if not session["completed_at"]:
+        return {"suggestion":None,"why":"不打断正在进行的解题"}
+    point_id=session["problem"].get("micro_point_id")
+    for card in storage.reviews_list(session["student_id"],due_only=True):
+        if card["point_id"]==point_id:
+            return {"suggestion":card["card"],"why":"本题关联且已到复习时机，放在题后而不是中途打断"}
+    return {"suggestion":None,"why":"关联考点未到复习时间或当前无适配考点"}
+
+@app.post("/api/knowledge/search")
+def search_curated_knowledge(payload:KnowledgeQuery):
+    if payload.problem_id and payload.problem_id not in PROBLEMS:
+        raise HTTPException(422,"不存在的示例题")
+    query=payload.query.lower().strip()
+    current=PROBLEMS.get(payload.problem_id,{})
+    scored=[]
+    for method in METHODS:
+        searchable=" ".join(str(method[k]).lower() for k in ("id","name","description","trigger","boundary"))
+        terms=[term for term in query.replace("，"," ").replace(","," ").split(" ") if term]
+        lexical=any(term in searchable for term in terms)
+        # Strict curated tag link; no fake embedding/semantic inference.
+        linked=method["id"] in current.get("method_tags",[])
+        if lexical or linked:
+            scored.append((2 if linked else 1,method))
+    scored.sort(key=lambda pair:-pair[0])
+    return {"methods":[m for _,m in scored],"engine":"CURATED_TAG_AND_LITERAL_SEARCH",
+            "note":"这是确定性演示检索，不是向量 RAG；结果并不保证适合任意新题。"}

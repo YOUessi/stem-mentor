@@ -49,14 +49,14 @@
             </section>
           </div>
           <div class="right-column">
-            <section class="panel tutor-panel"><div class="panel-header tutor-head"><div class="mentor-heading"><div class="mentor-avatar">∴</div><div><h2>你的培优导师</h2><span>会根据你的思考选择下一步</span></div></div><span class="live-tag">模拟</span></div><div id="chat" class="chat-feed" role="log" aria-live="polite"><div class="empty-chat"><div class="empty-symbol">↝</div><b>从一个想法开始</b><p>这不是标准答案播放区。先告诉我你想到了什么。</p></div></div><div class="tutor-bottom"><button class="btn btn-light btn-wide" type="button" id="completeBtn">结束本题，记录解题经历</button><small>仅保存经历，不自动判定你已掌握。</small></div></section>
+            <section class="panel tutor-panel"><div class="panel-header tutor-head"><div class="mentor-heading"><div class="mentor-avatar">∴</div><div><h2>你的培优导师</h2><span>会根据你的思考选择下一步</span></div></div><span class="live-tag">模拟</span></div><div id="chat" class="chat-feed" role="log" aria-live="polite"><div class="empty-chat"><div class="empty-symbol">↝</div><b>从一个想法开始</b><p>这不是标准答案播放区。先告诉我你想到了什么。</p></div></div><div class="tutor-bottom"><div id="reviewSuggestion" class="review-suggestion" hidden><span id="suggestionText"></span><button type="button" class="btn btn-light" id="reviewSuggestionBtn">去回忆</button></div><button class="btn btn-light btn-wide" type="button" id="completeBtn">结束本题，记录解题经历</button><small>仅保存经历，不自动判定你已掌握。</small></div></section>
             <section class="panel map-panel"><div class="panel-header"><div><span class="overline">THINKING PATH</span><h2>思维探索轨迹</h2></div><span class="mini-muted">不等于完整证明</span></div><div id="mindMap" class="mind-map"><div class="map-empty">随着你尝试、求助和调整思路，这里会记录思考路径。</div></div></section>
           </div>
         </div>
       </section>
       <section id="history" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">YOUR LEARNING EPISODES</div><h1>记住你如何找到突破口。</h1><p>只展示实际保存的练习经历，不虚构“你以前做过”的题。</p></div></div><div id="historyList" class="item-grid"></div></section>
       <section id="review" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">SMALL DETAILS MATTER</div><h1>容易忽略的，恰恰要记牢。</h1><p>轻量回忆考试范围内的特殊情况，模拟间隔安排，不打断正在进行的解题。</p></div></div><div class="info-note">答题检查只使用简单的规则匹配；成功不代表真正理解。真实考查范围需依据所在地区和年份另行核实。</div><div id="reviewList" class="item-grid"></div></section>
-      <section id="methods" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">METHODS & TRANSFER</div><h1>认识方法，也认识方法的边界。</h1><p>方法卡重视触发条件、知识结构、失效情况与迁移线索。</p></div></div><div id="methodList" class="item-grid"></div></section>
+      <section id="methods" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">METHODS & TRANSFER</div><h1>认识方法，也认识方法的边界。</h1><p>方法卡重视触发条件、知识结构、失效情况与迁移线索。</p></div></div><div class="method-search"><input id="methodQuery" aria-label="搜索数学方法" placeholder="搜索方法名、触发条件或适用边界"/><button class="btn btn-primary" id="methodSearchBtn">检索方法</button></div><div id="methodList" class="item-grid"></div></section>
     </div>
   </main>
 </div>
