@@ -87,3 +87,25 @@ bash scripts/mac_start.sh
 打开 http://127.0.0.1:8000 即可进行离线规则模拟（不是通用 LLM Agent，不消耗模型 API）。目前含 26 条待教师审核的数学知识资料、15 道受控题卡与相应思路图、13 个微考点，以及四项教师侧、仅限固定示例的代数校验证书。
 
 **Mac 实测**：85 项后端测试通过；33/33 合成教学决策/基础检索测试通过；40/40 结构检索硬例通过。仅说明受控模拟场景通过，不证明真实学生的学习效果。详见 [Mac 迁移和验收日志](docs/logs/2026-10-15-mac-migration.md)。
+
+
+## v0.6 Study Studio 前端升级（2026-10-15）
+
+这一版仅改造学习工作台的视觉、布局和交互，不改变教学策略 API，也不接入模型：
+- 蓝紫/青绿轻量教学视觉、响应式深色侧边导航、数学学习路径概念图、思维轨迹。
+- 鼠标拖动或方向键调整左右分栏比例，保存到浏览器本地。
+- Command/Ctrl + K 快捷跳转各页面与三种学习模式。
+- 每个学习会话的学生未提交草稿可在刷新后恢复；点击导师空态的提示词可以直接进入草稿区。
+- 尊重系统减少动效设置，所有内容从本地加载、没有外部 UI CDN。
+- 原有 85 项后端测试和合成教学策略检查仍应通过；新增 Chrome 真浏览器适配与交互自动测试。
+
+本机快速检查：bash scripts/mac_check.sh
+
+实际浏览器交互（需要 Mac Google Chrome 和 Playwright）：
+
+    .venv/bin/python -m pip install playwright
+    bash scripts/mac_browser_check.sh
+
+[视觉与组件选型调研](docs/design/STUDY_STUDIO_V06.md) · [开发与测试日志](docs/logs/2026-10-15-ui-v06.md)。
+
+注意：参考过 shadcn/ui、Motion、React Bits 等组件库，但当前原生网页尚未集成它们。
