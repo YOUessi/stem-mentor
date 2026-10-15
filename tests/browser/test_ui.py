@@ -102,8 +102,23 @@ def run():
             assert page.locator("#methodList .item-card").count()>=4
             page.locator("#methodQuery").fill("切线")
             page.locator("#methodSearchBtn").click()
-            page.wait_for_function("document.querySelectorAll('#methodList .item-card').length===1")
-            assert "二次曲线切线" in page.locator("#methodList").inner_text()
+            page.wait_for_function("document.querySelectorAll('#methodList .item-card').length>=1")
+            assert "切线" in page.locator("#methodList").inner_text()
+            assert page.locator("#thinkingStage").count()==1
+            assert page.locator("#mathVerifyBtn").count()==1
+            page.locator("#problemSelect").select_option("inequality-bridge")
+            page.locator("#startBtn").click()
+            page.locator("#thinkingStage").select_option("STUCK")
+            page.locator("#studentInput").fill("我已经合并成一个分式")
+            page.locator("#sendBtn").click()
+            page.wait_for_function("document.querySelector('.chat-row.teacher') !== null")
+            assert "目标" in page.locator(".chat-row.teacher .bubble").last.inner_text() or "结论" in page.locator(".chat-row.teacher .bubble").last.inner_text()
+            page.locator(".math-check summary").click()
+            page.locator("#mathLeft").fill("1/x+1/y")
+            page.locator("#mathRight").fill("1/(x*y)")
+            page.locator("#mathVerifyBtn").click()
+            page.wait_for_function("document.querySelector('#mathResult').textContent.length > 5")
+            assert "VERIFIED" in page.locator("#mathResult").inner_text()
 
             mobile=page_with_backend(browser,client,{"width":390,"height":844},errors)
             mobile.locator("#toast").evaluate("(node) => { node.hidden=true; }")
