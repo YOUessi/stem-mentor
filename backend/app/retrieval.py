@@ -56,22 +56,52 @@ def _index():
     return db
 
 
+def _guard_violation(card: dict, query: str) -> str | None:
+    """Detect a few explicit counterexamples. No general natural-language understanding."""
+    q = query.lower().replace(' ', '').replace('非奇异点', '').replace('非零向量', '')
+    card_id = card['id']
+    guard = {
+      'method-conic-tangent': [('曲线外','给定点在曲线外，不能直接套用曲线上一点的切线公式'),
+                              ('不在曲线上','切点不在曲线上'),('奇异点','奇异点需要另外分析')],
+      'method-parabola-tangent': [('曲线外','给定点在曲线外'),
+                                  ('不在曲线上','给定点不在曲线上'),('p=0','抛物线参数退化')],
+      'method-apollonius': [('距离比为1','此时轨迹退化为垂直平分线'),
+                           ('比值为1','此时不能将轨迹称为圆'),
+                           ('比例等于1','此时不能将轨迹称为圆')],
+      'method-sine-area': [('不是夹角','缺少两边的夹角，不可直接使用对应的面积公式'),
+                          ('非夹角','角与两边不构成夹角')],
+      'method-interval-extrema': [('开区间','闭区间端点比较规则不能原样用于开区间')],
+      'method-vector-dot': [('零向量','零向量没有定义好的几何夹角')],
+      'method-log-base': [('底数为1','对数底数必须不等于 1'),('底数=1','对数底数必须不等于 1'),
+                          ('底数为负','实数对数底数必须大于零')],
+      'method-angle-bisector': [('外角平分线','内角平分线定理不可直接替代外角情况')],
+      'method-ssa-ambiguity': [('sss','三边已知并非 SSA 多解条件')],
+      'method-ssa-branch': [('sss','三边已知并非 SSA 多解条件')],
+      'method-cosine-rule': [('无法构成三角形','三边不满足三角形不等式')],
+    }
+    # Handle a small class of explicit negations; unknown language remains unchecked.
+    if '不是曲线外' in q or '不在曲线外' in q:
+        q=q.replace('不是曲线外','').replace('不在曲线外','')
+    for marker, why in guard.get(card_id, []):
+        if marker in q:
+            return why
+    return None
+
+
 def _applicability(card: dict, problem: dict | None, query: str) -> tuple[str, list[str]]:
-    if card['id'] == 'method-conic-tangent':
-        # '非奇异点' must NOT be mistaken for a negated condition.
-        clean = query.replace('非奇异点', '')
-        if any(t in clean for t in _NEGATIONS):
-            return 'CONTRAINDICATED', ['查询描述可能违反曲线上非奇异切点的条件']
+    blocked = _guard_violation(card, query)
+    if blocked:
+        return 'CONTRAINDICATED', [blocked, '该结论必须另查适用条件']
     if problem is None:
-        return 'CONDITION_UNCHECKED', ['未给定受控题卡，必须自行检查适用条件']
+        return 'CONDITION_UNCHECKED', ['没有经标注的题目结构，尚不能断言方法适用']
     known = set(problem.get('structure_tags', []))
     needed = set(card.get('requires', []))
     missing = sorted(needed - known)
     if missing:
-        return 'CONDITIONS_NOT_ESTABLISHED', [f'当前题卡未证明所需结构: {", ".join(missing)}']
+        return 'CONDITIONS_NOT_ESTABLISHED', ['缺少由题目材料支持的结构条件: '+', '.join(missing)]
     if not needed:
-        return 'GENERAL_STRATEGY', ['通用思考策略，不代表当前条件已经满足']
-    return 'CURATED_CONTEXT_MATCH', ['已匹配题卡预先标注的结构；数学使用条件仍需检查']
+        return 'GENERAL_STRATEGY', ['通用策略，不意味着具体数学结论已被证明']
+    return 'CURATED_CONTEXT_MATCH', ['只核对了题卡标注的结构，尚未验证学生具体推导']
 
 
 def retrieve(query: str, problem_id: str | None = None, limit: int = 8, show_excluded: bool = False):

@@ -24,11 +24,11 @@ uvicorn app.main:app --host 127.0.0.1 --port 8000
 ## 已实现的规则模拟功能
 
 - 三种教学模式：逻辑分析、推理陪练、自主挑战；切换不丢会话、草稿与原始步骤。
-- 六道精心设计的数学情境题卡、四张方法卡、五个微考点；自定义题仅作保守通用启发。
+- 十五道结构化数学情境题卡、二十六条项目自编方法/策略资料、十三个微知识点；自定义题仅作保守通用启发。
 - 显式教学阶段：起步、正推、卡住、逆推、计算与发现桥梁；允许动态改变教学动作，不按完整解答顺序代做。
 - SQLite 持久化学习会话、学生自己的历史解题经历、复习状态；只在真正存在历史记录且结构和方法相似时才引导旧题回忆。
 - 手动微考点回忆、有限间隔调度，以及**题目结束后**的相关易漏考点推荐（不打断当前探索）。
-- 结构化方法卡的规则检索，标识为 `CURATED_TAG_AND_LITERAL_SEARCH`，不是语义向量 RAG。
+- 方法库检索采用本地 FTS5/BM25 与人工标注的数学结构、适用条件过滤；不是在线语义推理。
 - 条目级的思维探索轨迹、个人解题经历页面、数学方法页面、响应式移动端布局。
 - SymPy 对有限、固定且经过人工审核的代数/几何示例进行验证；任意学生解题过程明确标记 `math_verified=false`。
 - 学生自述完成仅存为 `SELF_REPORTED_NOT_VERIFIED`，不能当成正确、理解或掌握的证据。
@@ -36,7 +36,7 @@ uvicorn app.main:app --host 127.0.0.1 --port 8000
 ## 测试
 
 ```bash
-cd backend && PYTHONPATH=. pytest -q     # 12 个后端测试
+cd backend && PYTHONPATH=. pytest -q     # v0.5 共 85 项后端回归测试
 cd .. && node --check apps/web/app.js     # 前端语法
 ```
 
@@ -71,3 +71,19 @@ python tests/browser/test_ui.py
 - [教学决策场景及结果](evaluations/results/2026-10-15-policy-and-retrieval.json)
 
 `cd backend && PYTHONPATH=. pytest -q && PYTHONPATH=. python evaluate_policy.py`。
+
+## v0.5：MacBook Air 开发环境（2026-10-15）
+
+项目唯一开发与测试设备为 **MacBook Air**，目录 `~/Documents/文件/stem-mentor`。Tang 上本项目工作目录与临时传输包已清理。
+
+```bash
+cd ~/Documents/文件/stem-mentor
+"$HOME/miniforge3/bin/python" -m venv --system-site-packages .venv
+.venv/bin/python -m pip install -r backend/requirements.txt
+bash scripts/mac_check.sh
+bash scripts/mac_start.sh
+```
+
+打开 http://127.0.0.1:8000 即可进行离线规则模拟（不是通用 LLM Agent，不消耗模型 API）。目前含 26 条待教师审核的数学知识资料、15 道受控题卡与相应思路图、13 个微考点，以及四项教师侧、仅限固定示例的代数校验证书。
+
+**Mac 实测**：85 项后端测试通过；33/33 合成教学决策/基础检索测试通过；40/40 结构检索硬例通过。仅说明受控模拟场景通过，不证明真实学生的学习效果。详见 [Mac 迁移和验收日志](docs/logs/2026-10-15-mac-migration.md)。

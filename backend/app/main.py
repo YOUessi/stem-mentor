@@ -10,9 +10,9 @@ from .math_tools import known_identity_check, verify_equivalence
 from . import storage
 from .tutor import tutor_reply
 from .reasoning import student_map
-from .retrieval import retrieve
+from .retrieval import retrieve, corpus
 
-app=FastAPI(title="STEM Mentor — 离线模拟",version="0.4.0")
+app=FastAPI(title="STEM Mentor — 离线模拟",version="0.5.0")
 ROOT=Path(__file__).resolve().parents[2]
 WEB=ROOT/"apps"/"web"
 app.mount("/assets",StaticFiles(directory=str(WEB)),name="assets")
@@ -86,7 +86,11 @@ def health():
 
 @app.get("/api/catalog")
 def catalog():
-    return {"problems":[public_problem(v) for v in PROBLEMS.values()],"methods":METHODS,
+    return {"problems":[public_problem(v) for v in PROBLEMS.values()],
+            "methods":[{'id':c['id'],'title':c['title'],'name':c['title'],
+                        'description':c['content'][:180],'boundary':c['boundary'],
+                        'hint':c['hint'],'source':c['source']}
+                       for c in corpus()],
             "modes":[{"value":m.value,"label":label} for m,label in [(Mode.ANALYZE,"逻辑分析"),(Mode.GUIDE,"推理陪练"),(Mode.INDEPENDENT,"自主挑战")]],
             "simulation":True}
 
@@ -192,3 +196,15 @@ def session_review_suggestion(session_id:str):
         if card['point_id']==point_id:
             return {'suggestion':card['card'],'why':'本题相关且已到复习时机，安排在题后'}
     return {'suggestion':None,'why':'当前没有到期的关联考点'}
+
+
+@app.get('/api/knowledge/quality')
+def knowledge_quality_report():
+    from .knowledge_quality import validate_knowledge
+    return validate_knowledge()
+
+
+@app.get('/api/math/proof-coverage')
+def limited_proof_coverage():
+    from .proof_obligations import coverage
+    return coverage()

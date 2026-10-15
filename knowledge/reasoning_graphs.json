@@ -572,5 +572,860 @@
       "CALCULATION": "思路若已确定，先自己完成常规运算；优先检查定义域、符号和退化条件。"
     },
     "checks": []
+  },
+  "triangle-sas": {
+    "problem_id": "triangle-sas",
+    "version": "2026-10-15.2",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "AB=5；AC=8；∠A 为夹角",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "根据条件选取面积模型",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可基于题目已知条件做正向探索",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "从目标寻找充分的中间条件，非已证关系",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "尝试连接正推关系与逆向子目标",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "方法使用前核对特殊条件与定义域",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "已知的两边和哪个角具有对应关系？",
+      "FORWARD": "你能从一边作底，另一边作高吗？",
+      "STUCK": "如果正推受阻，反问面积公式里缺少的是哪个量？",
+      "BACKWARD": "已从目标分析所需条件，如何和已知的关系建立连接？",
+      "BRIDGE": "你想到的连接真的成立吗？请先检验条件和方向。",
+      "CALCULATION": "剩余计算请先自己完成，核对定义域和特殊值。"
+    },
+    "checks": []
+  },
+  "triangle-ssa": {
+    "problem_id": "triangle-ssa",
+    "version": "2026-10-15.2",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "已知两边 a、b；已知 a 的对角 A；没有给出夹角",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "检查由 SSA 条件带来的多解性",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可基于题目已知条件做正向探索",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "从目标寻找充分的中间条件，非已证关系",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "尝试连接正推关系与逆向子目标",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "方法使用前核对特殊条件与定义域",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "已知的是 SAS、SSS 还是 SSA？",
+      "FORWARD": "先列出所需边角比例关系。",
+      "STUCK": "卡住时从目标反推：要判定解数，需要检查哪些角候选？",
+      "BACKWARD": "已从目标分析所需条件，如何和已知的关系建立连接？",
+      "BRIDGE": "你想到的连接真的成立吗？请先检验条件和方向。",
+      "CALCULATION": "剩余计算请先自己完成，核对定义域和特殊值。"
+    },
+    "checks": []
+  },
+  "triangle-sss": {
+    "problem_id": "triangle-sss",
+    "version": "2026-10-15.2",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "三边长度已知；无角度给出",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "检查三角形不等式并选择求角方法",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可基于题目已知条件做正向探索",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "从目标寻找充分的中间条件，非已证关系",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "尝试连接正推关系与逆向子目标",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "方法使用前核对特殊条件与定义域",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "这与 SSA 条件有什么根本不同？",
+      "FORWARD": "先检查三角形不等式。",
+      "STUCK": "要求一个角，应该把哪个角看成目标变量？",
+      "BACKWARD": "已从目标分析所需条件，如何和已知的关系建立连接？",
+      "BRIDGE": "你想到的连接真的成立吗？请先检验条件和方向。",
+      "CALCULATION": "剩余计算请先自己完成，核对定义域和特殊值。"
+    },
+    "checks": []
+  },
+  "parabola-tangent": {
+    "problem_id": "parabola-tangent",
+    "version": "2026-10-15.2",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "y²=4x；切点 (1,2) 在曲线上",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "利用曲线上一点和隐式导数分析切线",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可基于题目已知条件做正向探索",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "从目标寻找充分的中间条件，非已证关系",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "尝试连接正推关系与逆向子目标",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "方法使用前核对特殊条件与定义域",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "题目给了切点，它满足什么约束？",
+      "FORWARD": "先核对切点在曲线上。",
+      "STUCK": "从切线目标反推，需要知道这个点处的哪种局部信息？",
+      "BACKWARD": "已从目标分析所需条件，如何和已知的关系建立连接？",
+      "BRIDGE": "你想到的连接真的成立吗？请先检验条件和方向。",
+      "CALCULATION": "剩余计算请先自己完成，核对定义域和特殊值。"
+    },
+    "checks": []
+  },
+  "derivative-extrema": {
+    "problem_id": "derivative-extrema",
+    "version": "2026-10-15.2",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "f(x)=x³−3x；区间 [-2,2] 是闭区间",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "比较所有候选驻点与端点",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可基于题目已知条件做正向探索",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "从目标寻找充分的中间条件，非已证关系",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "尝试连接正推关系与逆向子目标",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "方法使用前核对特殊条件与定义域",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "最大最小值与局部极值有什么区别？",
+      "FORWARD": "先找可能的内部候选点。",
+      "STUCK": "从最值目标倒推，还缺少哪些点的函数值？",
+      "BACKWARD": "已从目标分析所需条件，如何和已知的关系建立连接？",
+      "BRIDGE": "你想到的连接真的成立吗？请先检验条件和方向。",
+      "CALCULATION": "剩余计算请先自己完成，核对定义域和特殊值。"
+    },
+    "checks": []
+  },
+  "log-domain": {
+    "problem_id": "log-domain",
+    "version": "2026-10-15.2",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "底数为 2；真数为 x−1",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "先限定定义域，再进行等价运算",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可基于题目已知条件做正向探索",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "从目标寻找充分的中间条件，非已证关系",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "尝试连接正推关系与逆向子目标",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "方法使用前核对特殊条件与定义域",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "为什么对数方程不能立即两边指数化？",
+      "FORWARD": "先确定使对数有定义的 x 范围。",
+      "STUCK": "逆向看：代回原方程需要满足哪些条件？",
+      "BACKWARD": "已从目标分析所需条件，如何和已知的关系建立连接？",
+      "BRIDGE": "你想到的连接真的成立吗？请先检验条件和方向。",
+      "CALCULATION": "剩余计算请先自己完成，核对定义域和特殊值。"
+    },
+    "checks": []
+  },
+  "arithmetic-sum": {
+    "problem_id": "arithmetic-sum",
+    "version": "2026-10-15.2",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "首项=2；公差=3；n 为正整数",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "从首末项配对建立求和思想",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可基于题目已知条件做正向探索",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "从目标寻找充分的中间条件，非已证关系",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "尝试连接正推关系与逆向子目标",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "方法使用前核对特殊条件与定义域",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "条件中的公差意味着什么？",
+      "FORWARD": "先列出第一项和最后一项。",
+      "STUCK": "从目标反推，你需要首末项的什么关系？",
+      "BACKWARD": "已从目标分析所需条件，如何和已知的关系建立连接？",
+      "BRIDGE": "你想到的连接真的成立吗？请先检验条件和方向。",
+      "CALCULATION": "剩余计算请先自己完成，核对定义域和特殊值。"
+    },
+    "checks": []
+  },
+  "median-length": {
+    "problem_id": "median-length",
+    "version": "2026-10-15.2",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "M 为 BC 中点；三边长可用于平方关系",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "从中点结构寻找平方关系",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可基于题目已知条件做正向探索",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "从目标寻找充分的中间条件，非已证关系",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "尝试连接正推关系与逆向子目标",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "方法使用前核对特殊条件与定义域",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "题目特意给了中点，意味着什么？",
+      "FORWARD": "试着设向量或投影得到中线关系。",
+      "STUCK": "从 AM 反推，哪两个已知边的平方可以连接它？",
+      "BACKWARD": "已从目标分析所需条件，如何和已知的关系建立连接？",
+      "BRIDGE": "你想到的连接真的成立吗？请先检验条件和方向。",
+      "CALCULATION": "剩余计算请先自己完成，核对定义域和特殊值。"
+    },
+    "checks": []
+  },
+  "vector-orthogonality": {
+    "problem_id": "vector-orthogonality",
+    "version": "2026-10-15.2",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "给出两个平面向量坐标",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "认识坐标数量积与几何垂直的关系",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可基于题目已知条件做正向探索",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "从目标寻找充分的中间条件，非已证关系",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "尝试连接正推关系与逆向子目标",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "方法使用前核对特殊条件与定义域",
+        "verification": "SCAFFOLD_UNVERIFIED",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "向量正交的几何含义是什么？",
+      "FORWARD": "先列出数量积。",
+      "STUCK": "从垂直目标反推，需要满足哪个标量条件？",
+      "BACKWARD": "已从目标分析所需条件，如何和已知的关系建立连接？",
+      "BRIDGE": "你想到的连接真的成立吗？请先检验条件和方向。",
+      "CALCULATION": "剩余计算请先自己完成，核对定义域和特殊值。"
+    },
+    "checks": []
   }
 }

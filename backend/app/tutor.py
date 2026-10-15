@@ -6,6 +6,7 @@ curated reasoning scaffold. The decision trace is persisted for regression.
 from .catalog import PROBLEMS
 from .diagnosis import diagnose
 from .reasoning import guide_for
+from .proof_obligations import teacher_certificate
 from .retrieval import retrieve_for_tutor
 from .storage import nearest_own_episode
 
@@ -26,6 +27,9 @@ def tutor_reply(session, student_text, help_requested=False, request_type='hint'
              'previous_action':previous_actions[-1] if previous_actions else None,
              'rule_id':None,'knowledge_candidate_count':len(knowledge_refs),
              'student_answer_math_status':'NOT_VERIFIED'}
+    certificate=teacher_certificate(problem.get('id')) if is_curated else None
+    trace['teacher_scaffold_status']='LIMITED_SYMBOLIC_CHECKED' if certificate and certificate['all_symbolic_checks_pass'] else 'ANNOTATED_NOT_FORMALLY_PROVEN'
+    trace['student_work_verified']=False
     base = {'thinking_stage':stage,'hint_level':0,'math_verified':False,
             'engine':'DETERMINISTIC_SIMULATION','scope':'CURATED_PROBLEM' if is_curated else 'GENERIC_FALLBACK',
             'reference_episode_id':None,'knowledge_refs':[]}
@@ -62,13 +66,25 @@ def tutor_reply(session, student_text, help_requested=False, request_type='hint'
                 return decision('RECALL_EPISODE',f'你以前做过《{past.get("title","相关练习")}》。先想想那时怎样找到关键突破口，并判断新题条件是否允许迁移。',1,ref['id'],'P31_CONTEXTUAL_REAL_MEMORY')
 
     if mode=='ANALYZE':
-        analysis_turns=sum(x['action'] in ('ASK_OBSERVATION','ASK_STRATEGY') for x in turns)
+        analysis_turns=sum(x['action'] in ('ASK_OBSERVATION','ASK_STRATEGY','ASK_METHOD_JUSTIFICATION') for x in turns)
         cues=problem['analysis']
+        if analysis_turns >= len(cues)+1:
+            return decision('OFFER_MODE_SWITCH','审题和方法选择已讨论多轮。你愿意切换到推理陪练，尝试自己推导，还是选择自主挑战？不需要重复回答相同问题。',0,rule='P60_ANALYSIS_FATIGUE')
+        if analysis_turns >= len(cues):
+            return decision('ASK_METHOD_JUSTIFICATION','你已经梳理了若干次条件和目标。现在请自己选择一个候选方法，说说它为什么适用，以及有哪些可能使它失效的情况。',1,rule='P59_ANALYSIS_TO_JUSTIFICATION')
         index=min(analysis_turns,len(cues)-1)
         return decision('ASK_OBSERVATION' if not analysis_turns else 'ASK_STRATEGY',cues[index],index+1,rule='P40_ANALYZE_BEFORE_METHOD')
 
     # Repeated stuck state causes strategy adaptation, not identical questioning forever.
     last_stuck=bool(turns and turns[-1]['stage']=='STUCK')
+    trailing_stuck = 0
+    for old_turn in reversed(turns):
+        if old_turn['stage']!='STUCK': break
+        trailing_stuck+=1
+    if stage=='STUCK' and trailing_stuck>=3:
+        return decision('OFFER_TEACHING_CHOICE','我们已经反复尝试同一路径。你希望先看一个更小的类似例子、补一个前置知识点，还是换一种解题策略？选择一种，我只展开你需要的部分。',0,rule='P58_ESCALATE_WITH_CONSENT')
+    if stage=='STUCK' and trailing_stuck>=2:
+        return decision('ASK_SPECIFIC_OBSTACLE','你已经连续卡在这里。请指出最早无法解释的一条变形，或明确是“缺条件、缺方法、还是计算障碍”，我们换针对性的帮助。',1,rule='P57_DIAGNOSE_REPEATED_BLOCK')
     if stage=='STUCK' and last_stuck:
         msg='你已连续两次提到卡点。先暂停当前计算，分别写下「已经得到的关系」和「最终目标要求的条件」；两边只差哪一种联系？'
         return decision('ASK_BRIDGE',msg,min(3,hint_count+1),rule='P50_REPEATED_STUCK_SWITCH')
@@ -105,5 +121,9 @@ def _human_reason(rule):
       'P54_ROUTINE_COMPUTATION':'常规计算尽量交给学生，检查条件边界',
       'P55_REFLECTION':'侧重方法动机而非整题标准答案',
       'P56_GRADED_START':'从少量提示开始，不自动给出全部解题路径',
+      'P57_DIAGNOSE_REPEATED_BLOCK':'连续多轮停滞，应诊断具体障碍而不是重复同一句提示',
+      'P58_ESCALATE_WITH_CONSENT':'长期停滞提供不同支持选项，未经选择不强制完整讲解',
+      'P59_ANALYSIS_TO_JUSTIFICATION':'审题提示已经足够，改让学生解释候选方法的适用理由',
+      'P60_ANALYSIS_FATIGUE':'连续相同分析已经饱和，允许学生改变活动而不是重复提问',
     }
     return reasons.get(rule,'受控离线教学策略')

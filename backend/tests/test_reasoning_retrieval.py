@@ -72,7 +72,7 @@ def test_unknown_context_does_not_claim_applicable():
 
 
 def test_reasoning_graphs_have_no_proved_backward_implication():
-    assert len(graphs())==6
+    assert len(graphs())>=6
     for graph in graphs().values():
         assert {n['role'] for n in graph['nodes']}>={'GIVEN','GOAL','FORWARD','BACKWARD','BRIDGE'}
         assert all(not e['verified'] for e in graph['edges'] if e['relation']=='BACKWARD_SEARCH_NOT_PROOF')

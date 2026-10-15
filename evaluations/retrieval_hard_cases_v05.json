@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ratio-circle",
+    "query": "阿波罗尼斯圆 定距离比",
+    "problem_id": "distance-ratio",
+    "target": "method-apollonius",
+    "expect": "hit"
+  },
+  {
+    "id": "circle-not-median",
+    "query": "阿波罗尼斯圆 定距离比",
+    "problem_id": "distance-ratio",
+    "target": "method-median-theorem",
+    "expect": "excluded"
+  },
+  {
+    "id": "median-not-circle",
+    "query": "阿波罗尼斯中线定理",
+    "problem_id": "median-length",
+    "target": "method-apollonius",
+    "expect": "excluded"
+  },
+  {
+    "id": "median-real",
+    "query": "阿波罗尼斯中线定理",
+    "problem_id": "median-length",
+    "target": "method-median-theorem",
+    "expect": "hit"
+  },
+  {
+    "id": "conic-tangent",
+    "query": "椭圆切线",
+    "problem_id": "ellipse-tangent",
+    "target": "method-conic-tangent",
+    "expect": "hit"
+  },
+  {
+    "id": "conic-focus-confound",
+    "query": "椭圆切线",
+    "problem_id": "ellipse-focus",
+    "target": "method-conic-tangent",
+    "expect": "excluded"
+  },
+  {
+    "id": "ellipse-distance-sum",
+    "query": "椭圆焦点距离和",
+    "problem_id": "ellipse-focus",
+    "target": "method-ellipse-focus",
+    "expect": "hit"
+  },
+  {
+    "id": "ssa-sine-rule",
+    "query": "正弦定理 SSA",
+    "problem_id": "triangle-ssa",
+    "target": "method-ssa-ambiguity",
+    "expect": "hit"
+  },
+  {
+    "id": "ssa-variant",
+    "query": "SSA 多解",
+    "problem_id": "triangle-ssa",
+    "target": "method-ssa-branch",
+    "expect": "hit"
+  },
+  {
+    "id": "ssa-not-sss",
+    "query": "SSA 多解",
+    "problem_id": "triangle-sss",
+    "target": "method-ssa-branch",
+    "expect": "excluded"
+  },
+  {
+    "id": "sss-cosine",
+    "query": "余弦定理 三边",
+    "problem_id": "triangle-sss",
+    "target": "method-cosine-rule",
+    "expect": "hit"
+  },
+  {
+    "id": "area-sas",
+    "query": "夹角 三角形面积",
+    "problem_id": "triangle-sas",
+    "target": "method-sine-area",
+    "expect": "hit"
+  },
+  {
+    "id": "area-not-ssa",
+    "query": "夹角 三角形面积",
+    "problem_id": "triangle-ssa",
+    "target": "method-sine-area",
+    "expect": "excluded"
+  },
+  {
+    "id": "parabola",
+    "query": "抛物线切线",
+    "problem_id": "parabola-tangent",
+    "target": "method-parabola-tangent",
+    "expect": "hit"
+  },
+  {
+    "id": "parabola-not-focus",
+    "query": "抛物线切线",
+    "problem_id": "ellipse-focus",
+    "target": "method-parabola-tangent",
+    "expect": "excluded"
+  },
+  {
+    "id": "monotonicity",
+    "query": "导数 符号 单调",
+    "problem_id": "derivative-extrema",
+    "target": "method-derivative-monotonicity",
+    "expect": "hit"
+  },
+  {
+    "id": "interval-extrema",
+    "query": "闭区间最值 导数",
+    "problem_id": "derivative-extrema",
+    "target": "method-interval-extrema",
+    "expect": "hit"
+  },
+  {
+    "id": "interval-not-log",
+    "query": "闭区间最值",
+    "problem_id": "log-domain",
+    "target": "method-interval-extrema",
+    "expect": "excluded"
+  },
+  {
+    "id": "log-domain",
+    "query": "对数真数 定义域",
+    "problem_id": "log-domain",
+    "target": "method-log-domain",
+    "expect": "hit"
+  },
+  {
+    "id": "log-base",
+    "query": "对数底数 合法条件",
+    "problem_id": "log-domain",
+    "target": "method-log-base",
+    "expect": "hit"
+  },
+  {
+    "id": "log-not-derivative",
+    "query": "对数真数",
+    "problem_id": "derivative-extrema",
+    "target": "method-log-domain",
+    "expect": "excluded"
+  },
+  {
+    "id": "arithmetic-sum",
+    "query": "等差数列前n项和",
+    "problem_id": "arithmetic-sum",
+    "target": "method-arithmetic-series",
+    "expect": "hit"
+  },
+  {
+    "id": "arithmetic-not-geometric",
+    "query": "等差数列前n项和",
+    "problem_id": "geometric-sum",
+    "target": "method-arithmetic-series",
+    "expect": "excluded"
+  },
+  {
+    "id": "geometric-sum",
+    "query": "等比公比1",
+    "problem_id": "geometric-sum",
+    "target": "method-geometric-sum",
+    "expect": "hit"
+  },
+  {
+    "id": "geometric-not-arithmetic",
+    "query": "等比数列求和",
+    "problem_id": "arithmetic-sum",
+    "target": "method-geometric-sum",
+    "expect": "excluded"
+  },
+  {
+    "id": "median-cards",
+    "query": "中线长 三角形",
+    "problem_id": "median-length",
+    "target": "method-median-theorem",
+    "expect": "hit"
+  },
+  {
+    "id": "vector-orthogonal",
+    "query": "向量垂直 数量积",
+    "problem_id": "vector-orthogonality",
+    "target": "method-vector-dot",
+    "expect": "hit"
+  },
+  {
+    "id": "backward-strategy",
+    "query": "逆向分解目标",
+    "problem_id": "inequality-bridge",
+    "target": "strategy-reverse-subgoal",
+    "expect": "hit"
+  },
+  {
+    "id": "counterexample-strategy",
+    "query": "反例 检验 适用边界",
+    "problem_id": "triangle-sss",
+    "target": "strategy-counterexample",
+    "expect": "hit"
+  },
+  {
+    "id": "bad-conic-point",
+    "query": "不在曲线上 椭圆切线",
+    "problem_id": "ellipse-tangent",
+    "target": "method-conic-tangent",
+    "expect": "contra"
+  },
+  {
+    "id": "valid-nonsingular",
+    "query": "非奇异点 椭圆切线",
+    "problem_id": "ellipse-tangent",
+    "target": "method-conic-tangent",
+    "expect": "hit"
+  },
+  {
+    "id": "double-negation",
+    "query": "不是曲线外点 椭圆切线",
+    "problem_id": "ellipse-tangent",
+    "target": "method-conic-tangent",
+    "expect": "hit"
+  },
+  {
+    "id": "bad-parabola-point",
+    "query": "曲线外 抛物线切线",
+    "problem_id": "parabola-tangent",
+    "target": "method-parabola-tangent",
+    "expect": "contra"
+  },
+  {
+    "id": "ratio-one-boundary",
+    "query": "距离比为1 阿波罗尼斯圆",
+    "problem_id": "distance-ratio",
+    "target": "method-apollonius",
+    "expect": "contra"
+  },
+  {
+    "id": "not-included-angle",
+    "query": "不是夹角 正弦面积公式",
+    "problem_id": "triangle-sas",
+    "target": "method-sine-area",
+    "expect": "contra"
+  },
+  {
+    "id": "open-interval",
+    "query": "开区间 闭区间最值",
+    "problem_id": "derivative-extrema",
+    "target": "method-interval-extrema",
+    "expect": "contra"
+  },
+  {
+    "id": "zero-vector",
+    "query": "零向量 90度 垂直",
+    "problem_id": "vector-orthogonality",
+    "target": "method-vector-dot",
+    "expect": "contra"
+  },
+  {
+    "id": "base-one",
+    "query": "底数为1 对数",
+    "problem_id": "log-domain",
+    "target": "method-log-base",
+    "expect": "contra"
+  },
+  {
+    "id": "sss-counterexample",
+    "query": "SSA SSS三边已知",
+    "problem_id": "triangle-ssa",
+    "target": "method-ssa-branch",
+    "expect": "contra"
+  },
+  {
+    "id": "median-vs-apollonius",
+    "query": "中线定理 阿波罗尼斯圆",
+    "problem_id": "median-length",
+    "target": "method-median-theorem",
+    "expect": "hit"
+  }
+]

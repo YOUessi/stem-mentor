@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-15T02:00:52.094628+00:00",
+  "generated_at": "2026-10-15T02:57:58.021531+00:00",
   "engine": "DETERMINISTIC_SIMULATION",
   "llm_api_calls": 0,
-  "cases": 19,
-  "passed": 19,
+  "cases": 33,
+  "passed": 33,
   "failed": 0,
   "action_match_rate": 1.0,
   "limitation": "Matches scripted expectations, not a claim of teaching effectiveness or arbitrary math competence.",
@@ -118,6 +118,118 @@
       "expected_action": "ASK_OBSERVATION",
       "actual_action": "ASK_OBSERVATION",
       "policy_rule": "P40_ANALYZE_BEFORE_METHOD",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "analyze-triangle-sas",
+      "pass": true,
+      "expected_action": "ASK_OBSERVATION",
+      "actual_action": "ASK_OBSERVATION",
+      "policy_rule": "P40_ANALYZE_BEFORE_METHOD",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "guide-ssa-stuck",
+      "pass": true,
+      "expected_action": "ASK_BACKWARD_GOAL",
+      "actual_action": "ASK_BACKWARD_GOAL",
+      "policy_rule": "P51_STUCK_TO_BACKWARD",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "independent-sss",
+      "pass": true,
+      "expected_action": "WAIT",
+      "actual_action": "WAIT",
+      "policy_rule": "P00_PROTECT_AUTONOMY",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "guide-log-calc",
+      "pass": true,
+      "expected_action": "CHECK_BOUNDARY",
+      "actual_action": "CHECK_BOUNDARY",
+      "policy_rule": "P54_ROUTINE_COMPUTATION",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "guide-extrema-bridge",
+      "pass": true,
+      "expected_action": "VERIFY_BRIDGE",
+      "actual_action": "VERIFY_BRIDGE",
+      "policy_rule": "P53_VALIDATE_BREAKTHROUGH",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "backward-arithmetic",
+      "pass": true,
+      "expected_action": "ASK_BRIDGE",
+      "actual_action": "ASK_BRIDGE",
+      "policy_rule": "P52_BACKWARD_TO_BRIDGE",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "reflection-median",
+      "pass": true,
+      "expected_action": "REFLECT",
+      "actual_action": "REFLECT",
+      "policy_rule": "P21_REFLECT_STRATEGY",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "check-vector",
+      "pass": true,
+      "expected_action": "CHECK_ATTEMPT",
+      "actual_action": "CHECK_ATTEMPT",
+      "policy_rule": "P20_DO_NOT_FAKE_GRADING",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "stuck-third",
+      "pass": true,
+      "expected_action": "ASK_SPECIFIC_OBSTACLE",
+      "actual_action": "ASK_SPECIFIC_OBSTACLE",
+      "policy_rule": "P57_DIAGNOSE_REPEATED_BLOCK",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "stuck-fourth",
+      "pass": true,
+      "expected_action": "OFFER_TEACHING_CHOICE",
+      "actual_action": "OFFER_TEACHING_CHOICE",
+      "policy_rule": "P58_ESCALATE_WITH_CONSENT",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "analysis-method-justification",
+      "pass": true,
+      "expected_action": "ASK_METHOD_JUSTIFICATION",
+      "actual_action": "ASK_METHOD_JUSTIFICATION",
+      "policy_rule": "P59_ANALYSIS_TO_JUSTIFICATION",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "analysis-fatigue",
+      "pass": true,
+      "expected_action": "OFFER_MODE_SWITCH",
+      "actual_action": "OFFER_MODE_SWITCH",
+      "policy_rule": "P60_ANALYSIS_FATIGUE",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "sss-not-ssa-history",
+      "pass": true,
+      "expected_action": "NO_MEMORY",
+      "actual_action": "NO_MEMORY",
+      "policy_rule": "P10_NO_VALID_EPISODE",
+      "knowledge_hidden_for_independent": true
+    },
+    {
+      "id": "ssa-history-self",
+      "pass": true,
+      "expected_action": "NO_MEMORY",
+      "actual_action": "NO_MEMORY",
+      "policy_rule": "P10_NO_VALID_EPISODE",
       "knowledge_hidden_for_independent": true
     },
     {
