@@ -16,7 +16,9 @@ if [[ ! -x "$CHROME" ]]; then
   exit 2
 fi
 PORT="$(printenv STEM_MENTOR_BROWSER_TEST_PORT || true)"
-if [[ -z "$PORT" ]]; then PORT=8876; fi
+if [[ -z "$PORT" ]]; then
+  PORT="$("$ROOT/.venv/bin/python" -c 'import socket;s=socket.socket();s.bind(("127.0.0.1",0));print(s.getsockname()[1]);s.close()')"
+fi
 if curl --noproxy '*' -fsS --max-time 2 "http://127.0.0.1:$PORT/health" >/dev/null 2>&1; then
   echo "Port $PORT is already occupied; choose another test port." >&2
   exit 3
@@ -50,5 +52,5 @@ if [[ "$ready" -ne 1 ]]; then
   echo "Browser test server failed; inspect artifacts/ui/browser-test-server.log" >&2
   exit 4
 fi
-STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_studio_v06.py
+STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_green_restore.py
 echo "Chrome browser suite passed; temporary synthetic database will be removed."

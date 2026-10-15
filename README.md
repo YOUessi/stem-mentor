@@ -89,9 +89,9 @@ bash scripts/mac_start.sh
 **Mac 实测**：85 项后端测试通过；33/33 合成教学决策/基础检索测试通过；40/40 结构检索硬例通过。仅说明受控模拟场景通过，不证明真实学生的学习效果。详见 [Mac 迁移和验收日志](docs/logs/2026-10-15-mac-migration.md)。
 
 
-## v0.6 Study Studio 前端升级（2026-10-15）
+## 历史记录：v0.6 Study Studio 前端升级（2026-10-15，已撤回）
 
-这一版仅改造学习工作台的视觉、布局和交互，不改变教学策略 API，也不接入模型：
+以下为已经撤回的 v0.6 设计历史，并非当前生效界面。当前界面为绿色 v0.5，详见文末恢复记录。原 v0.6 设计曾包括：
 - 蓝紫/青绿轻量教学视觉、响应式深色侧边导航、数学学习路径概念图、思维轨迹。
 - 鼠标拖动或方向键调整左右分栏比例，保存到浏览器本地。
 - Command/Ctrl + K 快捷跳转各页面与三种学习模式。
@@ -109,3 +109,12 @@ bash scripts/mac_start.sh
 [视觉与组件选型调研](docs/design/STUDY_STUDIO_V06.md) · [开发与测试日志](docs/logs/2026-10-15-ui-v06.md)。
 
 注意：参考过 shadcn/ui、Motion、React Bits 等组件库，但当前原生网页尚未集成它们。
+
+
+## 界面恢复（2026-10-15）
+
+根据使用反馈，恢复到 v0.6 改版**之前**的 v0.5 绿色护眼学习工作台（`apps/web/index.html`、`styles.css`、`app.js` 均以绿色版本提交 `d5cd3ce` 为基准）。保留最新的数学推理、教学策略、检索、历史学习和考试微考点功能。
+
+此前 v0.6 深色导航和蓝紫色界面**不再启用**；相关视觉研究和截图仅作为历史开发记录，未来不默认恢复。详细变更参见 [2026-10-15 绿色界面恢复日志](docs/logs/2026-10-15-green-ui-restore.md)。
+
+本地启动方式：`bash scripts/mac_start.sh`；自动化验收：`bash scripts/mac_check.sh && bash scripts/mac_browser_check.sh`。

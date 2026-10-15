@@ -69,7 +69,7 @@ def run():
             page.locator("#studentInput").fill("我自己再试着建坐标")
             page.locator("#sendBtn").click()
             page.wait_for_function("document.querySelectorAll('.chat-row.teacher').length===2")
-            assert "不会提前告诉" in page.locator(".chat-row.teacher .bubble").last.inner_text()
+            assert "不会提前" in page.locator(".chat-row.teacher .bubble").last.inner_text()
 
             page.locator("#problemSelect").select_option("ellipse-tangent")
             page.locator("#startBtn").click()
@@ -107,6 +107,9 @@ def run():
             assert page.locator("#thinkingStage").count()==1
             assert page.locator("#mathVerifyBtn").count()==1
             page.locator('[data-view="workspace"]').click()
+            # This check needs GUIDE; previous steps deliberately left the tutor in INDEPENDENT.
+            page.locator('[data-mode="GUIDE"]').click()
+            page.locator('button.selected[data-mode="GUIDE"]').wait_for()
             page.locator("#problemSelect").select_option("inequality-bridge")
             page.locator("#startBtn").click()
             page.locator("#thinkingStage").select_option("STUCK")
