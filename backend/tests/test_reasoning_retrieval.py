@@ -160,3 +160,12 @@ def test_graph_404_and_search_validation(client):
     assert client.get('/api/sessions/missing/reasoning-map').status_code==404
     assert client.post('/api/math/equivalence',json={'expr_left':'x','expr_right':'x','problem_id':'unknown'}).status_code==422
     assert client.post('/api/knowledge/search',json={'query':'a','top_k':999}).status_code==422
+
+
+def test_search_intent_does_not_get_overridden_by_open_problem():
+    # The current exercise is about a distance ratio; a search for tangents
+    # must not silently return an Apollonius circle due to context boost.
+    result = retrieve("切线", problem_id="distance-ratio")
+    assert all(hit["id"] != "method-apollonius" for hit in result["hits"])
+    assert all("切线" in (hit["title"] + hit["snippet"] + hit["boundary"])
+               for hit in result["hits"])
