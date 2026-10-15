@@ -6,11 +6,13 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, model_validator
 from .catalog import PROBLEMS, METHODS, MICRO_POINTS, public_problem
-from .math_tools import known_identity_check
+from .math_tools import known_identity_check, verify_equivalence
 from . import storage
 from .tutor import tutor_reply
+from .reasoning import student_map
+from .retrieval import retrieve
 
-app=FastAPI(title="STEM Mentor — 离线模拟",version="0.3.0")
+app=FastAPI(title="STEM Mentor — 离线模拟",version="0.4.0")
 ROOT=Path(__file__).resolve().parents[2]
 WEB=ROOT/"apps"/"web"
 app.mount("/assets",StaticFiles(directory=str(WEB)),name="assets")
@@ -41,6 +43,7 @@ class TurnCreate(BaseModel):
     student_text:str=Field(min_length=1,max_length=4000)
     help_requested:bool=False
     request_type:str=Field(default="hint",pattern="^(hint|recall|check|reflection)$")
+    self_report_stage:str|None=Field(default=None,pattern="^(START|FORWARD|STUCK|BACKWARD|BRIDGE|CALCULATION|REFLECTION)$")
 
 class SessionComplete(BaseModel):
     reflection:str=Field(default="",max_length=3000)
@@ -51,6 +54,13 @@ class ReviewAnswer(BaseModel):
 class KnowledgeQuery(BaseModel):
     query:str=Field(min_length=1,max_length=200)
     problem_id:str|None=None
+    include_excluded:bool=False
+    top_k:int=Field(default=8,ge=1,le=10)
+
+class AlgebraEquivalence(BaseModel):
+    expr_left:str=Field(min_length=1,max_length=180)
+    expr_right:str=Field(min_length=1,max_length=180)
+    problem_id:str
 
 
 def get_student_or_404(student_id):
@@ -115,7 +125,7 @@ def new_turn(session_id:str,payload:TurnCreate):
     session=get_session_or_404(session_id)
     if session["completed_at"]:
         raise HTTPException(409,"已结束的会话不能继续提问")
-    result=tutor_reply(session,payload.student_text,payload.help_requested,payload.request_type)
+    result=tutor_reply(session,payload.student_text,payload.help_requested,payload.request_type,payload.self_report_stage)
     storage.turn_record(session_id,payload.student_text,result,result["hint_level"]>0)
     return result
 
@@ -154,32 +164,31 @@ def known_check(identity_id:str):
     return result
 
 
-@app.get("/api/sessions/{session_id}/review-suggestion")
-def session_review_suggestion(session_id:str):
-    session=get_session_or_404(session_id)
-    if not session["completed_at"]:
-        return {"suggestion":None,"why":"不打断正在进行的解题"}
-    point_id=session["problem"].get("micro_point_id")
-    for card in storage.reviews_list(session["student_id"],due_only=True):
-        if card["point_id"]==point_id:
-            return {"suggestion":card["card"],"why":"本题关联且已到复习时机，放在题后而不是中途打断"}
-    return {"suggestion":None,"why":"关联考点未到复习时间或当前无适配考点"}
+@app.get("/api/sessions/{session_id}/reasoning-map")
+def reasoning_map(session_id:str):
+    return student_map(get_session_or_404(session_id))
+
+@app.post("/api/math/equivalence")
+def math_equivalence(payload:AlgebraEquivalence):
+    if payload.problem_id not in PROBLEMS:
+        raise HTTPException(422,"只能选择受控示例题作为条件上下文")
+    return verify_equivalence(payload.expr_left,payload.expr_right,payload.problem_id)
 
 @app.post("/api/knowledge/search")
 def search_curated_knowledge(payload:KnowledgeQuery):
-    if payload.problem_id and payload.problem_id not in PROBLEMS:
+    if payload.problem_id is not None and payload.problem_id not in PROBLEMS:
         raise HTTPException(422,"不存在的示例题")
-    query=payload.query.lower().strip()
-    current=PROBLEMS.get(payload.problem_id,{})
-    scored=[]
-    for method in METHODS:
-        searchable=" ".join(str(method[k]).lower() for k in ("id","name","description","trigger","boundary"))
-        terms=[term for term in query.replace("，"," ").replace(","," ").split(" ") if term]
-        lexical=any(term in searchable for term in terms)
-        # Strict curated tag link; no fake embedding/semantic inference.
-        linked=method["id"] in current.get("method_tags",[])
-        if lexical or linked:
-            scored.append((2 if linked else 1,method))
-    scored.sort(key=lambda pair:-pair[0])
-    return {"methods":[m for _,m in scored],"engine":"CURATED_TAG_AND_LITERAL_SEARCH",
-            "note":"这是确定性演示检索，不是向量 RAG；结果并不保证适合任意新题。"}
+    retrieved=retrieve(payload.query,payload.problem_id,payload.top_k,payload.include_excluded)
+    matched_ids={method_id for x in retrieved['hits'] for method_id in x['method_ids']}
+    return {**retrieved,'methods':[m for m in METHODS if m['id'] in matched_ids]}
+
+@app.get("/api/sessions/{session_id}/review-suggestion")
+def session_review_suggestion(session_id:str):
+    session=get_session_or_404(session_id)
+    if not session['completed_at']:
+        return {'suggestion':None,'why':'不打断正在进行的解题'}
+    point_id=session['problem'].get('micro_point_id')
+    for card in storage.reviews_list(session['student_id'],due_only=True):
+        if card['point_id']==point_id:
+            return {'suggestion':card['card'],'why':'本题相关且已到复习时机，安排在题后'}
+    return {'suggestion':None,'why':'当前没有到期的关联考点'}
