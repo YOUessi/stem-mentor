@@ -17,3 +17,4 @@ jobs:
         with:
           node-version: '22'
       - run: node --check apps/web/app.js
+      - run: cd backend && PYTHONPATH=. python evaluate_policy.py

@@ -1,0 +1,16 @@
+[
+  {"id":"analysis-entry","problem_id":"distance-ratio","mode":"ANALYZE","inputs":[{"text":"我来理解题目中的条件"}],"expect_action":"ASK_OBSERVATION","expect_rule":"P40_ANALYZE_BEFORE_METHOD"},
+  {"id":"analysis-progress","problem_id":"distance-ratio","mode":"ANALYZE","inputs":[{"text":"先看题目类型"},{"text":"条件有两个固定点"}],"expect_action":"ASK_STRATEGY","expect_rule":"P40_ANALYZE_BEFORE_METHOD"},
+  {"id":"guide-start","problem_id":"ellipse-tangent","mode":"GUIDE","inputs":[{"text":"试着从切点入手"}],"expect_action":"ASK_START","expect_rule":"P56_GRADED_START"},
+  {"id":"forward-stuck","problem_id":"inequality-bridge","mode":"GUIDE","inputs":[{"text":"合并了分式"},{"text":"我卡住了"}],"expect_action":"ASK_BACKWARD_GOAL","expect_rule":"P51_STUCK_TO_BACKWARD"},
+  {"id":"repeated-stuck","problem_id":"inequality-bridge","mode":"GUIDE","inputs":[{"text":"我卡住了"},{"text":"还是卡住了"}],"expect_action":"ASK_BRIDGE","expect_rule":"P50_REPEATED_STUCK_SWITCH"},
+  {"id":"backward-self-report","problem_id":"geometric-sum","mode":"GUIDE","inputs":[{"text":"从目标想一想","self_report_stage":"BACKWARD"}],"expect_action":"ASK_BRIDGE","expect_rule":"P52_BACKWARD_TO_BRIDGE"},
+  {"id":"verify-bridge","problem_id":"hyperbola-tangent","mode":"GUIDE","inputs":[{"text":"我构造了一条辅助线"}],"expect_action":"VERIFY_BRIDGE","expect_rule":"P53_VALIDATE_BREAKTHROUGH"},
+  {"id":"calculation-boundary","problem_id":"geometric-sum","mode":"GUIDE","inputs":[{"text":"准备化简"}],"expect_action":"CHECK_BOUNDARY","expect_rule":"P54_ROUTINE_COMPUTATION"},
+  {"id":"independent-wait","problem_id":"distance-ratio","mode":"INDEPENDENT","inputs":[{"text":"我卡住了，但是想继续自己思考"}],"expect_action":"WAIT","expect_rule":"P00_PROTECT_AUTONOMY"},
+  {"id":"independent-requested-hint","problem_id":"distance-ratio","mode":"INDEPENDENT","inputs":[{"text":"给我一点提示","help_requested":true}],"expect_action":"ASK_START","expect_rule":"P56_GRADED_START"},
+  {"id":"no-memory","problem_id":"hyperbola-tangent","mode":"GUIDE","inputs":[{"text":"回忆以前的题","help_requested":true,"request_type":"recall"}],"expect_action":"NO_MEMORY","expect_rule":"P10_NO_VALID_EPISODE"},
+  {"id":"true-personal-memory","problem_id":"hyperbola-tangent","mode":"GUIDE","setup_history":"ellipse-tangent","inputs":[{"text":"请帮我回忆旧题","help_requested":true,"request_type":"recall"}],"expect_action":"RECALL_EPISODE","expect_rule":"P11_RECALL_VERIFIED_EXISTENCE"},
+  {"id":"check-does-not-pretend","problem_id":"ellipse-tangent","mode":"GUIDE","inputs":[{"text":"我已推出一个复杂关系","request_type":"check","help_requested":true}],"expect_action":"CHECK_ATTEMPT","expect_rule":"P20_DO_NOT_FAKE_GRADING"},
+  {"id":"analysis-stuck-still-analyzes","problem_id":"distance-ratio","mode":"ANALYZE","inputs":[{"text":"我卡住了"}],"expect_action":"ASK_OBSERVATION","expect_rule":"P40_ANALYZE_BEFORE_METHOD"}
+]

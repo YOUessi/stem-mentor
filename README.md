@@ -59,3 +59,15 @@ python tests/browser/test_ui.py
 ## 研发边界
 
 本版不是接入 LLM 的完整教育 Agent。尚未实现真正的数学语义 RAG/模型训练、任意题求解、手写 OCR、正式认证和未成年人数据治理，也没有真实学生教育效果实验。仓库为 **public**，请勿提交真实学生记录、API 密钥或授权未明的教材资料。
+
+
+## v0.4 结构化教学引擎（2026-10-15）
+
+已新增题目正推/逆推/桥梁关系图、学生思考阶段自报、可审计的教学动作决策、本地 FTS5/BM25 + 数学结构门控检索（8 条项目自编待审核文档）、安全限制的 SymPy 代数等价检查。**仍是规则模拟，不使用模型 API；不是完整的通用数学 Agent。**
+
+- [推理与检索设计](docs/design/REASONING_ENGINE_V04.md)
+- [测试报告](docs/evaluation/SYNTHETIC_VALIDATION_20261015.md)
+- [开发与修复日志](docs/logs/2026-10-15-v04.md)
+- [教学决策场景及结果](evaluations/results/2026-10-15-policy-and-retrieval.json)
+
+`cd backend && PYTHONPATH=. pytest -q && PYTHONPATH=. python evaluate_policy.py`。

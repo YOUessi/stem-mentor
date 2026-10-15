@@ -162,8 +162,10 @@ def test_review_suggestion_is_contextual_and_not_interruptive(client):
     assert client.get(f"/api/sessions/{sid}/review-suggestion").json()["suggestion"] is None
 
 
-def test_curated_knowledge_search_is_explicitly_non_vector(client):
-    result=client.post("/api/knowledge/search",json={"query":"切线","problem_id":"ellipse-tangent"}).json()
-    assert result["engine"]=="CURATED_TAG_AND_LITERAL_SEARCH"
-    assert any(m["id"]=="conic_tangent" for m in result["methods"])
-    assert client.post("/api/knowledge/search",json={"query":"切线","problem_id":"no-id"}).status_code==422
+def test_curated_knowledge_search_is_real_local_index(client):
+    result=client.post('/api/knowledge/search',json={'query':'切线','problem_id':'ellipse-tangent'}).json()
+    assert result['engine']=='LOCAL_FTS5_BM25_AND_STRUCTURE_V1'
+    assert result['corpus_size']>=8
+    assert any(h['id']=='method-conic-tangent' for h in result['hits'])
+    assert any(m['id']=='conic_tangent' for m in result['methods'])
+    assert client.post('/api/knowledge/search',json={'query':'切线','problem_id':'no-id'}).status_code==422
