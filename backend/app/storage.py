@@ -35,6 +35,9 @@ def database():
             student_text TEXT NOT NULL, action TEXT NOT NULL, tutor_message TEXT NOT NULL,
             stage TEXT NOT NULL, hint_level INTEGER NOT NULL, reference_episode_id TEXT,
             created_at TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS turn_annotations(
+            turn_id TEXT PRIMARY KEY REFERENCES turns(id),
+            diagnosis_json TEXT NOT NULL, decision_trace_json TEXT NOT NULL, knowledge_refs_json TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS episodes(
             id TEXT PRIMARY KEY, student_id TEXT NOT NULL REFERENCES students(id),
             session_id TEXT NOT NULL UNIQUE REFERENCES sessions(id), problem_id TEXT,
@@ -84,8 +87,18 @@ def session_get(session_id):
         if not row:
             return None
         turns = db.execute("SELECT * FROM turns WHERE session_id=? ORDER BY rowid", (session_id,)).fetchall()
+        annotations = {r['turn_id']:dict(r) for r in db.execute(
+            "SELECT * FROM turn_annotations WHERE turn_id IN (SELECT id FROM turns WHERE session_id=?)",(session_id,))}
     record = dict(row)
-    record["turns"] = [dict(t) for t in turns]
+    record["turns"] = []
+    for t in turns:
+        row=dict(t)
+        annotation=annotations.get(row['id'])
+        if annotation:
+            row['diagnosis']=json.loads(annotation['diagnosis_json'])
+            row['decision_trace']=json.loads(annotation['decision_trace_json'])
+            row['knowledge_refs']=json.loads(annotation['knowledge_refs_json'])
+        record['turns'].append(row)
     record["problem"] = dict(PROBLEMS[record["problem_id"]]) if record["problem_id"] in PROBLEMS else {"id":None,"title":"自定义题目（未覆盖模板）","prompt":record["custom_problem"],"method_tags":[],"structure_tags":[]}
     return record
 
@@ -98,9 +111,16 @@ def session_mode(session_id, mode):
 
 def turn_record(session_id, student_text, response, increment_hint):
     with database() as db:
+        turn_id=str(uuid4())
         db.execute("INSERT INTO turns VALUES(?,?,?,?,?,?,?,?,?)",
-                   (str(uuid4()), session_id, student_text, response["next_action"],response["message"],
+                   (turn_id, session_id, student_text, response["next_action"],response["message"],
                     response["thinking_stage"],response["hint_level"],response.get("reference_episode_id"),timestamp()))
+        trace=response.get('decision_trace',{})
+        db.execute("INSERT INTO turn_annotations VALUES(?,?,?,?)",(
+            turn_id,
+            json.dumps(trace.get('stage_diagnosis',{}),ensure_ascii=False),
+            json.dumps(trace,ensure_ascii=False),
+            json.dumps(response.get('knowledge_refs',[]),ensure_ascii=False)))
         db.execute("UPDATE sessions SET stage=?, hint_count=hint_count+? WHERE id=?",
                    (response["thinking_stage"],int(increment_hint),session_id))
 
