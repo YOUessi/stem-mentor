@@ -19,4 +19,5 @@ jobs:
       - run: node --check apps/web/app.js
       - run: node --check apps/web/studio.js
       - run: cd backend && PYTHONPATH=. python evaluate_policy.py
-\n      - run: cd backend && PYTHONPATH=. python evaluate_v05.py\n
+
+      - run: cd backend && PYTHONPATH=. python evaluate_v05.py
