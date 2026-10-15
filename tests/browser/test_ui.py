@@ -119,7 +119,7 @@ def run():
             page.locator("#mathRight").fill("1/(x*y)")
             page.locator("#mathVerifyBtn").click()
             page.wait_for_function("document.querySelector('#mathResult').textContent.length > 5")
-            assert "VERIFIED" in page.locator("#mathResult").inner_text()
+            assert "EQUIVALENT_ON_DOMAIN" in page.locator("#mathResult").inner_text()
 
             mobile=page_with_backend(browser,client,{"width":390,"height":844},errors)
             mobile.locator("#toast").evaluate("(node) => { node.hidden=true; }")
