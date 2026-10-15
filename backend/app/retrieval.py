@@ -90,7 +90,9 @@ def retrieve(query: str, problem_id: str | None = None, limit: int = 8, show_exc
     results, excluded = [], []
     for i, card in enumerate(corpus()):
         linked = bool(problem and set(card.get('methods', [])) & set(problem.get('method_tags', [])))
-        if i not in ranks and not linked:
+        # A linked card is NOT a query match. Never return unrelated content
+        # solely because the currently open exercise uses that method.
+        if (terms and i not in ranks) or (not terms and not linked):
             continue
         applicability, reasons = _applicability(card, problem, query)
         matched = sorted(set(terms) & set(_terms(' '.join([card['title'],card['content'], ' '.join(card['aliases'])]))))
