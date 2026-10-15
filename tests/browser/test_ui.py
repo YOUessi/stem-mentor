@@ -106,6 +106,7 @@ def run():
             assert "切线" in page.locator("#methodList").inner_text()
             assert page.locator("#thinkingStage").count()==1
             assert page.locator("#mathVerifyBtn").count()==1
+            page.locator('[data-view="workspace"]').click()
             page.locator("#problemSelect").select_option("inequality-bridge")
             page.locator("#startBtn").click()
             page.locator("#thinkingStage").select_option("STUCK")
