@@ -1,0 +1,576 @@
+{
+  "inequality-bridge": {
+    "problem_id": "inequality-bridge",
+    "version": "2026-10-15.1",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "x,y>0 且 x+y=1",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "证明 1/x+1/y≥4",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "1/x+1/y=1/(xy)（由 x+y=1 且 xy≠0）",
+        "verification": "CURATED_STEP_UNCHECKED_FOR_STUDENT",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "若分母正，目标转为 xy≤1/4",
+        "verification": "HEURISTIC_SUBGOAL",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "利用定和控制乘积，例如检查 (x−y)²≥0",
+        "verification": "CURATED_STRATEGY",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "乘除不等式前必须确认 xy>0；等号条件 x=y=1/2",
+        "verification": "CURATED_CONDITION",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "先区分哪些是已知、什么是最终目标；不要马上套公式。",
+      "FORWARD": "你从题目条件已经得到了什么关系？它与目标还有什么距离？",
+      "STUCK": "如果暂时正推不动，先不往下算：为了达到最终目标，需要哪一个更小的中间结论？",
+      "BACKWARD": "把正推得到的关系与从目标反推的中间条件放在一起，哪一个转换能连接两边？",
+      "BRIDGE": "你想到的连接为什么有效？哪些条件保证它可以使用？请自己先验证。",
+      "CALCULATION": "思路若已确定，先自己完成常规运算；优先检查定义域、符号和退化条件。"
+    },
+    "checks": [
+      "inequality-sum-to-product"
+    ]
+  },
+  "distance-ratio": {
+    "problem_id": "distance-ratio",
+    "version": "2026-10-15.1",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "A、B 为不同定点，PA/PB=2",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "求 P 的轨迹",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "设 P(x,y) 并平方距离关系",
+        "verification": "CURATED_STEP_UNCHECKED_FOR_STUDENT",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "最终想得到可识别的轨迹方程",
+        "verification": "HEURISTIC_SUBGOAL",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "把平方距离关系整理到标准形式",
+        "verification": "CURATED_STRATEGY",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "k=1 时为垂直平分线；PB 不可为 0",
+        "verification": "CURATED_CONDITION",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "先区分哪些是已知、什么是最终目标；不要马上套公式。",
+      "FORWARD": "你从题目条件已经得到了什么关系？它与目标还有什么距离？",
+      "STUCK": "如果暂时正推不动，先不往下算：为了达到最终目标，需要哪一个更小的中间结论？",
+      "BACKWARD": "把正推得到的关系与从目标反推的中间条件放在一起，哪一个转换能连接两边？",
+      "BRIDGE": "你想到的连接为什么有效？哪些条件保证它可以使用？请自己先验证。",
+      "CALCULATION": "思路若已确定，先自己完成常规运算；优先检查定义域、符号和退化条件。"
+    },
+    "checks": []
+  },
+  "ellipse-tangent": {
+    "problem_id": "ellipse-tangent",
+    "version": "2026-10-15.1",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "P 位于非退化椭圆上",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "讨论 P 处切线求法",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "可以用隐式微分或一般直线与曲线联立",
+        "verification": "CURATED_STEP_UNCHECKED_FOR_STUDENT",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "切线应刻画该点处的局部变化关系",
+        "verification": "HEURISTIC_SUBGOAL",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "把已知切点融入一次关系，并与求导结果校验",
+        "verification": "CURATED_STRATEGY",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "P 必须在曲线上且为非奇异点",
+        "verification": "CURATED_CONDITION",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "先区分哪些是已知、什么是最终目标；不要马上套公式。",
+      "FORWARD": "你从题目条件已经得到了什么关系？它与目标还有什么距离？",
+      "STUCK": "如果暂时正推不动，先不往下算：为了达到最终目标，需要哪一个更小的中间结论？",
+      "BACKWARD": "把正推得到的关系与从目标反推的中间条件放在一起，哪一个转换能连接两边？",
+      "BRIDGE": "你想到的连接为什么有效？哪些条件保证它可以使用？请自己先验证。",
+      "CALCULATION": "思路若已确定，先自己完成常规运算；优先检查定义域、符号和退化条件。"
+    },
+    "checks": [
+      "ellipse-tangent-at-3-0"
+    ]
+  },
+  "hyperbola-tangent": {
+    "problem_id": "hyperbola-tangent",
+    "version": "2026-10-15.1",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "P 位于非退化双曲线上",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "讨论 P 处切线求法",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "检查隐式微分所给局部关系",
+        "verification": "CURATED_STEP_UNCHECKED_FOR_STUDENT",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "由切线的局部性质反推所需一次方程",
+        "verification": "HEURISTIC_SUBGOAL",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "比较椭圆与双曲线的二次式符号并验证迁移",
+        "verification": "CURATED_STRATEGY",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "不得将旧椭圆公式不检查符号直接套用",
+        "verification": "CURATED_CONDITION",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "先区分哪些是已知、什么是最终目标；不要马上套公式。",
+      "FORWARD": "你从题目条件已经得到了什么关系？它与目标还有什么距离？",
+      "STUCK": "如果暂时正推不动，先不往下算：为了达到最终目标，需要哪一个更小的中间结论？",
+      "BACKWARD": "把正推得到的关系与从目标反推的中间条件放在一起，哪一个转换能连接两边？",
+      "BRIDGE": "你想到的连接为什么有效？哪些条件保证它可以使用？请自己先验证。",
+      "CALCULATION": "思路若已确定，先自己完成常规运算；优先检查定义域、符号和退化条件。"
+    },
+    "checks": []
+  },
+  "ellipse-focus": {
+    "problem_id": "ellipse-focus",
+    "version": "2026-10-15.1",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "PA+PB=10，|AB|=6",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "判断轨迹及存在条件",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "三角不等式给出 PA+PB≥|AB|",
+        "verification": "CURATED_STEP_UNCHECKED_FOR_STUDENT",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "比较距离和常数与两个定点间距离",
+        "verification": "HEURISTIC_SUBGOAL",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "从定和条件判定是否存在及可能的轨迹类型",
+        "verification": "CURATED_STRATEGY",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "等号是退化线段，小于无解",
+        "verification": "CURATED_CONDITION",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "先区分哪些是已知、什么是最终目标；不要马上套公式。",
+      "FORWARD": "你从题目条件已经得到了什么关系？它与目标还有什么距离？",
+      "STUCK": "如果暂时正推不动，先不往下算：为了达到最终目标，需要哪一个更小的中间结论？",
+      "BACKWARD": "把正推得到的关系与从目标反推的中间条件放在一起，哪一个转换能连接两边？",
+      "BRIDGE": "你想到的连接为什么有效？哪些条件保证它可以使用？请自己先验证。",
+      "CALCULATION": "思路若已确定，先自己完成常规运算；优先检查定义域、符号和退化条件。"
+    },
+    "checks": []
+  },
+  "geometric-sum": {
+    "problem_id": "geometric-sum",
+    "version": "2026-10-15.1",
+    "nodes": [
+      {
+        "id": "given",
+        "role": "GIVEN",
+        "statement": "首项 a1、公比 q、项数 n",
+        "verification": "GIVEN_BY_PROBLEM",
+        "teacher_only": false
+      },
+      {
+        "id": "goal",
+        "role": "GOAL",
+        "statement": "求 Sn 且说明特例",
+        "verification": "TASK_TARGET",
+        "teacher_only": false
+      },
+      {
+        "id": "forward",
+        "role": "FORWARD",
+        "statement": "错位相减时会出现 1−q 的系数",
+        "verification": "CURATED_STEP_UNCHECKED_FOR_STUDENT",
+        "teacher_only": true
+      },
+      {
+        "id": "backward",
+        "role": "BACKWARD",
+        "statement": "需要先处理 q=1 是否允许除法",
+        "verification": "HEURISTIC_SUBGOAL",
+        "teacher_only": true
+      },
+      {
+        "id": "bridge",
+        "role": "BRIDGE",
+        "statement": "区分 q=1 与 q≠1 的路径",
+        "verification": "CURATED_STRATEGY",
+        "teacher_only": true
+      },
+      {
+        "id": "boundary",
+        "role": "BOUNDARY",
+        "statement": "不能除以 0；n 为正整数",
+        "verification": "CURATED_CONDITION",
+        "teacher_only": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "given",
+        "target": "forward",
+        "relation": "POSSIBLE_DERIVATION",
+        "verified": false
+      },
+      {
+        "source": "goal",
+        "target": "backward",
+        "relation": "BACKWARD_SEARCH_NOT_PROOF",
+        "verified": false
+      },
+      {
+        "source": "forward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "backward",
+        "target": "bridge",
+        "relation": "MAY_SUPPORT",
+        "verified": false
+      },
+      {
+        "source": "bridge",
+        "target": "goal",
+        "relation": "PROOF_OBLIGATION",
+        "verified": false
+      },
+      {
+        "source": "boundary",
+        "target": "bridge",
+        "relation": "CONSTRAINS_APPLICATION",
+        "verified": false
+      }
+    ],
+    "guidance": {
+      "START": "先区分哪些是已知、什么是最终目标；不要马上套公式。",
+      "FORWARD": "你从题目条件已经得到了什么关系？它与目标还有什么距离？",
+      "STUCK": "如果暂时正推不动，先不往下算：为了达到最终目标，需要哪一个更小的中间结论？",
+      "BACKWARD": "把正推得到的关系与从目标反推的中间条件放在一起，哪一个转换能连接两边？",
+      "BRIDGE": "你想到的连接为什么有效？哪些条件保证它可以使用？请自己先验证。",
+      "CALCULATION": "思路若已确定，先自己完成常规运算；优先检查定义域、符号和退化条件。"
+    },
+    "checks": []
+  }
+}
