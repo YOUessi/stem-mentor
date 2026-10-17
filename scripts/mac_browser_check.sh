@@ -53,4 +53,6 @@ if [[ "$ready" -ne 1 ]]; then
   exit 4
 fi
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_green_restore.py
+STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_learning_tools_v07.py
+STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_learning_tools_v07.py
 echo "Chrome browser suite passed; temporary synthetic database will be removed."

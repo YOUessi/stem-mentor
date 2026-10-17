@@ -11,8 +11,9 @@ from . import storage
 from .tutor import tutor_reply
 from .reasoning import student_map
 from .retrieval import retrieve, corpus
+from .study_visuals import visual_for, visuals
 
-app=FastAPI(title="STEM Mentor — 离线模拟",version="0.5.0")
+app=FastAPI(title="STEM Mentor — 离线模拟",version="0.7.0")
 ROOT=Path(__file__).resolve().parents[2]
 WEB=ROOT/"apps"/"web"
 app.mount("/assets",StaticFiles(directory=str(WEB)),name="assets")
@@ -172,6 +173,34 @@ def known_check(identity_id:str):
 def reasoning_map(session_id:str):
     return student_map(get_session_or_404(session_id))
 
+class ThinkingLinkCreate(BaseModel):
+    source: str=Field(pattern=r"^(given|goal|student-step-[1-9][0-9]*)$",max_length=36)
+    target: str=Field(pattern=r"^(given|goal|student-step-[1-9][0-9]*)$",max_length=36)
+    label: str=Field(default="",max_length=100)
+
+    @model_validator(mode="after")
+    def different_ends(self):
+        if self.source==self.target:
+            raise ValueError("关联必须连接两条不同的思路")
+        return self
+
+
+@app.post("/api/sessions/{session_id}/thinking-links",status_code=201)
+def create_thinking_link(session_id:str,payload:ThinkingLinkCreate):
+    session=get_session_or_404(session_id)
+    if session['completed_at']:
+        raise HTTPException(409,"已结束的会话不能新增思路关联")
+    available={n['id'] for n in student_map(session)['nodes']}
+    if payload.source not in available or payload.target not in available:
+        raise HTTPException(422,"关联只能使用当前学生当前会话里可见的题目条件、目标和实际尝试")
+    try:
+        link=storage.thinking_link_add(session_id,payload.source,payload.target,payload.label.strip())
+    except ValueError as e:
+        raise HTTPException(409,str(e)) from e
+    return {**link,'verified':False,'is_proof':False}
+
+
+
 @app.post("/api/math/equivalence")
 def math_equivalence(payload:AlgebraEquivalence):
     if payload.problem_id not in PROBLEMS:
@@ -185,6 +214,18 @@ def search_curated_knowledge(payload:KnowledgeQuery):
     retrieved=retrieve(payload.query,payload.problem_id,payload.top_k,payload.include_excluded)
     matched_ids={method_id for x in retrieved['hits'] for method_id in x['method_ids']}
     return {**retrieved,'methods':[m for m in METHODS if m['id'] in matched_ids]}
+
+@app.get("/api/study/visual/{problem_id}")
+def curated_study_visual(problem_id: str):
+    """Public givens only: no teacher-only reasoning scaffold or worked solutions."""
+    if problem_id not in PROBLEMS:
+        raise HTTPException(404, "题目不存在")
+    visual=visual_for(problem_id)
+    if visual is None:
+        raise HTTPException(404,"该题尚无数学可视资料")
+    return {"problem_id":problem_id, **visual, "teacher_solution_included":False,
+            "curated":True, "engine":"OFFLINE_MATH_VISUALIZATION"}
+
 
 @app.get("/api/sessions/{session_id}/review-suggestion")
 def session_review_suggestion(session_id:str):

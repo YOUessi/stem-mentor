@@ -23,6 +23,10 @@ def page_with_backend(browser,client,viewport,errors):
     page.on("pageerror",lambda err:errors.append(str(err)))
     html=(ROOT/"apps/web/index.html").read_text(encoding="utf8")
     html=html.replace('<link rel="stylesheet" href="/assets/styles.css" />','').replace('<script src="/assets/app.js" defer></script>','')
+    # This old regression harness injects app.js manually on about:blank;
+    # remove new external scripts and separately test them via live Chrome tests.
+    html=html.replace('<script src="/assets/vendor/mathjax/tex-svg.js" defer></script>','')
+    html=html.replace('<script src="/assets/study_tools.js" defer></script>','')
     page.set_content(html)
     page.evaluate("""() => {
         const store = new Map();

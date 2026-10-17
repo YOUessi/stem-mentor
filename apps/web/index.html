@@ -6,6 +6,8 @@
   <meta name="theme-color" content="#174938" />
   <title>STEM Mentor · 思维比答案更重要</title>
   <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="/assets/study_tools.css" />
+  <script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]]},svg:{fontCache:"local"},startup:{typeset:false}};</script>
 </head>
 <body>
 <div class="layout">
@@ -21,7 +23,7 @@
     </nav>
     <div class="sidebar-bottom">
       <div class="sidebar-note"><strong>教学核心</strong><span>先由你尝试，我们一起找到突破口。</span></div>
-      <span class="aside-version">SIMULATION · v0.5</span>
+      <span class="aside-version">SIMULATION · v0.7</span>
     </div>
   </aside>
   <main class="main">
@@ -39,18 +41,47 @@
           <div class="left-column">
             <section class="panel problem-panel"><div class="panel-header"><div><span class="overline">CURRENT PROBLEM</span><h2>当前题目</h2></div><span class="soft-chip" id="problemTopic">高中数学</span></div>
               <div class="select-line"><label for="problemSelect">选择模拟题目</label><select id="problemSelect" aria-label="选择模拟题目"></select><button class="btn btn-light" id="startBtn" type="button">开始新题</button></div>
-              <div class="problem-body"><h3 id="problemTitle">读取题目中…</h3><p id="problemPrompt"></p></div>
+              <div class="problem-body"><h3 id="problemTitle">读取题目中…</h3><p id="problemPrompt"></p></div><div id="problemFormula" class="problem-formula" hidden><span class="math-caption">题目中的已知表达式</span><div id="problemFormulaMath" class="math-content" aria-label="题目公式"></div></div>
               <div class="problem-meta"><div><span>已知线索</span><ul id="knownList"></ul></div><div><span>学习目标</span><p id="goalText"></p></div></div>
+            </section>
+            <section class="panel geometry-panel" id="geometryPanel" hidden aria-label="可交互几何探索">
+              <details id="geometryDetails">
+                <summary><span class="geometry-summary-symbol">◎</span><span>几何探索画板</span><small>拖动点观察数量关系 · 可选工具</small></summary>
+                <div class="geometry-content">
+                  <p class="geometry-explain" id="geometryIntro">先观察量之间的关系，不会直接显示结论。</p>
+                  <div class="geometry-plot">
+                    <svg id="geometrySvg" viewBox="0 0 620 280" aria-label="可拖动点的数学几何示意图" role="img"></svg>
+                  </div>
+                  <div class="geometry-readout" id="geometryReadout" role="status" aria-live="polite">拖动图中的 P 点，观察变化。</div>
+                  <div class="geometry-controls">
+                    <button class="btn btn-light" type="button" id="geometryFree">自由拖动</button>
+                    <button class="btn btn-light" type="button" id="geometryConstrain">沿题目条件探索（主动选择）</button>
+                    <button class="btn btn-light" type="button" id="geometryClear">清除观察路径</button>
+                  </div>
+                  <p class="geometry-disclaimer">画板仅帮助观察和猜想，轨迹不等于严格证明；不会修改你的答题成绩或掌握状态。</p>
+                </div>
+              </details>
             </section>
             <section class="panel scratch-panel"><div class="panel-header"><div><span class="overline">YOUR THINKING</span><h2>你的思考与草稿</h2></div><span class="draft-badge">独立表达优先</span></div>
               <label class="sr-only" for="studentInput">输入你的思路</label><textarea id="studentInput" placeholder="先写下你观察到了什么、尝试了什么，或者卡在哪一步……&#10;例如：我从已知条件推出了一个式子，但不知道如何连接到目标。"></textarea>
+              <details id="mathPreviewDetails" class="student-math-preview">
+                <summary>数学表达式预览（可选）</summary>
+                <p class="preview-explain">在草稿中用 \( 与 \) 包住公式，例如 \(\frac{x+y}{xy}\)，可在下方查看排版；不会自动验证正确性。</p>
+                <div class="math-toolbar">
+                  <button type="button" class="action-tool" data-math-snippet="\\frac{}{}">分数</button>
+                  <button type="button" class="action-tool" data-math-snippet="\\sqrt{}">根号</button>
+                  <button type="button" class="action-tool" data-math-snippet="^2">平方</button>
+                  <button type="button" class="action-tool" data-math-snippet="\\geq">不小于</button>
+                </div>
+                <div id="studentMathPreview" class="math-preview-output" aria-live="polite">输入公式后可在此查看预览（不等于已证明）。</div>
+              </details>
               <div class="stage-line"><label for="thinkingStage">我现在的思考阶段（可选）</label><select id="thinkingStage" aria-label="自主报告思考阶段"><option value="">由规则辅助识别</option><option value="FORWARD">从条件正向探索</option><option value="STUCK">推导卡住了</option><option value="BACKWARD">从目标逆向思考</option><option value="BRIDGE">发现可能的桥梁</option><option value="CALCULATION">进入常规计算</option></select></div><div class="input-footer"><span>保留原始尝试 · 默认不展示完整解答</span><button id="sendBtn" class="btn btn-primary" type="button">提交我的思考 <span aria-hidden="true">→</span></button></div>
               <details class="math-check"><summary>受限代数等价检查（不是完整证明）</summary><div class="math-check-form"><input id="mathLeft" placeholder="原表达式，例如 1/x+1/y" aria-label="原表达式"/><input id="mathRight" placeholder="变换后，例如 1/(x*y)" aria-label="目标表达式"/><button id="mathVerifyBtn" class="btn btn-light" type="button">检验是否恒等</button><p id="mathResult" role="status"></p></div></details><div class="tool-divider"></div><div class="tool-title">需要帮助时</div><div class="action-tools"><button data-tool="hint" class="action-tool">✦ <span>一点提示</span></button><button data-tool="stuck" class="action-tool">↗ <span>我卡住了</span></button><button data-tool="check" class="action-tool">✓ <span>检查思路</span></button><button data-tool="recall" class="action-tool">◷ <span>回忆旧题</span></button><button data-tool="reflection" class="action-tool">≋ <span>思路复盘</span></button></div>
             </section>
           </div>
           <div class="right-column">
             <section class="panel tutor-panel"><div class="panel-header tutor-head"><div class="mentor-heading"><div class="mentor-avatar">∴</div><div><h2>你的培优导师</h2><span>会根据你的思考选择下一步</span></div></div><span class="live-tag">模拟</span></div><div id="chat" class="chat-feed" role="log" aria-live="polite"><div class="empty-chat"><div class="empty-symbol">↝</div><b>从一个想法开始</b><p>这不是标准答案播放区。先告诉我你想到了什么。</p></div></div><div class="tutor-bottom"><div id="reviewSuggestion" class="review-suggestion" hidden><span id="suggestionText"></span><button type="button" class="btn btn-light" id="reviewSuggestionBtn">去回忆</button></div><button class="btn btn-light btn-wide" type="button" id="completeBtn">结束本题，记录解题经历</button><small>仅保存经历，不自动判定你已掌握。</small></div></section>
-            <section class="panel map-panel"><div class="panel-header"><div><span class="overline">THINKING PATH</span><h2>思维探索轨迹</h2></div><span class="mini-muted">不等于完整证明</span></div><div id="mindMap" class="mind-map"><div class="map-empty">随着你尝试、求助和调整思路，这里会记录思考路径。</div></div></section>
+            <section class="panel map-panel"><div class="panel-header"><div><span class="overline">THINKING PATH</span><h2>思维探索轨迹</h2></div><span class="mini-muted">不等于完整证明</span></div><div id="mindMap" class="mind-map"><div class="map-empty">随着你尝试、求助和调整思路，这里会记录思考路径。</div></div><div id="mindMapDetail" class="mind-map-detail" role="status" aria-live="polite" hidden></div></section>
           </div>
         </div>
       </section>
@@ -62,5 +93,7 @@
 </div>
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 <script src="/assets/app.js" defer></script>
+<script src="/assets/vendor/mathjax/tex-svg.js" defer></script>
+<script src="/assets/study_tools.js" defer></script>
 </body>
 </html>

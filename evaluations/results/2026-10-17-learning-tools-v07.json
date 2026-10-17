@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-17",
+  "project": "STEM Mentor",
+  "version": "v0.7",
+  "environment": "MacBook Air local; Python 3.13; Chrome, offline UI",
+  "llm_api_calls": 0,
+  "backend_tests": {
+    "passed": 94,
+    "failed": 0
+  },
+  "deterministic_policy_cases": {
+    "passed": 33,
+    "total": 33
+  },
+  "hard_negative_retrieval": {
+    "passed": 40,
+    "total": 40
+  },
+  "chrome_v07_interaction_scenarios": {
+    "passed": 9,
+    "total": 9,
+    "page_errors": 0,
+    "external_requests": 0
+  },
+  "green_baseline_browser": {
+    "passed": true,
+    "responsive_widths": [
+      390,
+      768,
+      1440
+    ]
+  },
+  "legacy_browser_flow": {
+    "passed": true,
+    "tested_features": [
+      "modes",
+      "turns",
+      "stages",
+      "memory",
+      "reviews",
+      "methods",
+      "mobile",
+      "math_equivalence"
+    ]
+  },
+  "visual_corpus": {
+    "known_formulas": 15,
+    "geometry_scenes": 3
+  },
+  "teacher_approved_materials": 0,
+  "limits": [
+    "Teacher-created and unreviewed example material; no formal textbook content source integration",
+    "No verification of free-form student mathematical proof",
+    "Diagram edges are student hypotheses, not implication proofs",
+    "No real student study, teaching-effect estimate or general math competence claim",
+    "No account authorization; synthetic demo data only",
+    "MathJax bundled locally as tex-svg.js and Apache-2.0 license, no CDN or separate font files"
+  ]
+}
