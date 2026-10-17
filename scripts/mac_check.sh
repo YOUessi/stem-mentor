@@ -14,4 +14,6 @@ echo "[3/4] Structured retrieval hard negatives"
 (cd backend && PYTHONPATH=. ../.venv/bin/python evaluate_v05.py)
 echo "[4/4] Frontend JavaScript syntax"
 node --check apps/web/app.js
+node --check apps/web/study_tools.js
+node --check apps/web/study_tools.js
 echo "Offline macOS simulation checks complete; no model API used."

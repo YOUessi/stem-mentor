@@ -6,6 +6,7 @@ Student-visible maps only contain givens, goals and student's own attempts.
 from functools import lru_cache
 import json
 from pathlib import Path
+from .storage import thinking_links_list
 
 GRAPH_PATH = Path(__file__).resolve().parents[2] / 'knowledge' / 'reasoning_graphs.json'
 STAGES = {'START', 'FORWARD', 'STUCK', 'BACKWARD', 'BRIDGE', 'CALCULATION', 'REFLECTION'}
@@ -61,5 +62,11 @@ def student_map(session):
         if prev:
             edges.append({'source':prev,'target':node_id,'relation':'NEXT_ATTEMPT_NOT_IMPLICATION','verified':False})
         prev = node_id
+    public_ids={n['id'] for n in nodes}
+    for link in thinking_links_list(session['id']):
+        if link['source'] in public_ids and link['target'] in public_ids:
+            edges.append({'source':link['source'],'target':link['target'],
+                'relation':'STUDENT_HYPOTHESIS_UNVERIFIED','verified':False,
+                'origin':'STUDENT','label':link['label'][:100]})
     return {'problem_id':problem.get('id'),'nodes':nodes,'edges':edges,'student_steps':len(session['turns']),
-            'contains_teacher_solution':False,'note':'思维历程图，不是已经完成的数学证明；学生的推导尚未自动验证。'}
+            'contains_teacher_solution':False,'note':'思维历程图：虚线是学习过程先后，绿色连线只是学生的待验证猜想，并非数学证明。'}

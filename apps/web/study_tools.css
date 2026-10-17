@@ -1,0 +1,94 @@
+
+/* Green Study Tools v0.7: incremental affordances, original v0.5 layout retained. */
+.problem-formula{margin-top:10px;background:#f7fbf7;border:1px solid #e1ece4;border-radius:10px;padding:11px 16px;color:#244d37}
+.math-caption{display:block;font-size:10px;color:#778b79;font-weight:700;letter-spacing:.4px;margin-bottom:7px}
+.math-content{min-height:30px;display:flex;align-items:center;color:#315742;font-size:1.05rem;overflow:auto}
+.math-content mjx-container{max-width:100%}
+.geometry-panel{padding:0;overflow:hidden}
+.geometry-panel summary{list-style:none;display:flex;align-items:center;gap:10px;cursor:pointer;color:#33684d;font-weight:700;font-size:13px;padding:17px 21px}
+.geometry-panel summary::-webkit-details-marker{display:none}
+.geometry-panel summary::after{content:"⌄";margin-left:auto;color:#83a18e;font-size:17px;transition:transform .2s ease}
+.geometry-panel details[open] summary::after{transform:rotate(180deg)}
+.geometry-summary-symbol{display:inline-flex;align-items:center;justify-content:center;background:#eaf5ee;border-radius:9px;width:30px;height:30px;color:#347657;font-size:21px}
+.geometry-panel summary small{font-size:10px;color:#91a39a;font-weight:400}
+.geometry-content{padding:0 19px 18px}
+.geometry-explain,.geometry-disclaimer{font-size:11px;line-height:1.65;color:#819184;margin:0 0 9px}
+.geometry-plot{border:1px solid #e0ece2;background:linear-gradient(180deg,#fff,#f9fcf9);border-radius:12px;overflow:hidden;touch-action:none}
+.geometry-plot svg{display:block;width:100%;height:auto;max-height:290px;min-height:174px;touch-action:none}
+.geometry-plot svg [data-drag-point]{cursor:grab;touch-action:none}
+.geometry-plot svg [data-drag-point]:active{cursor:grabbing}
+.geometry-plot svg .geogrid{stroke:#e9efe9;stroke-width:1}
+.geometry-plot svg .geoaxis{stroke:#c6d7c9;stroke-width:1.35}
+.geometry-plot svg .geofocus{fill:#50836a;stroke:#fff;stroke-width:2}
+.geometry-plot svg .geop{fill:#b46c36;stroke:#fff;stroke-width:3}
+.geometry-plot svg .geolink{stroke:#9ab6a1;stroke-width:1.5;stroke-dasharray:5 4}
+.geometry-plot svg .geocurve{fill:none;stroke:#81a896;stroke-width:2.2}
+.geometry-plot svg .geotrace{fill:none;stroke:#bb9158;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.geometry-plot svg .geolabel{font:12px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:#638371}
+.geometry-plot svg .geonote{font:11px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:#929f93}
+.geometry-readout{padding:10px 12px;border-radius:8px;background:#f3f8f3;color:#466b52;font-size:12px;margin:10px 0;line-height:1.7;font-variant-numeric:tabular-nums}
+.geometry-readout strong{color:#245d43;font-weight:750}
+.geometry-controls{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:9px}
+.geometry-controls .btn{font-size:10px;padding:9px 10px}
+.geometry-controls .btn.selected{border-color:#73a986;background:#e8f4eb;color:#226443}
+.geometry-disclaimer{font-size:10px;margin:4px 0 0}
+.student-math-preview{margin-top:12px;padding:12px 13px;background:#fcfdfb;border:1px solid #e3ece3;border-radius:10px}
+.student-math-preview summary{font-size:12px;color:#557d64;cursor:pointer;font-weight:650}
+.preview-explain{font-size:11px;line-height:1.8;color:#899789;margin:10px 0}
+.math-toolbar{display:flex;gap:8px;flex-wrap:wrap}
+.math-toolbar .action-tool{font-size:10px;padding:7px 10px}
+.math-preview-output{border-radius:8px;border:1px solid #e7eee8;background:#fff;padding:13px;min-height:47px;color:#4d7055;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}
+.math-preview-output mjx-container{max-width:100%;overflow:auto}
+.math-preview-warning{color:#9a724a;font-size:11px}
+.mind-graph-canvas{width:100%;overflow:auto;padding:6px;border-radius:10px;background:linear-gradient(180deg,#fdfefd,#f8fbf8);border:1px solid #e7eee9}
+.mind-graph-canvas svg{width:100%;height:auto;min-height:145px;display:block}
+.mind-graph-canvas .mind-link{stroke:#b9cbbd;stroke-dasharray:5 5;stroke-width:1.5;fill:none}
+.mind-graph-canvas .mind-vertex{cursor:pointer}
+.mind-graph-canvas .mind-vertex rect{stroke:#d8e6dc;fill:#fff;stroke-width:1.4}
+.mind-graph-canvas .mind-vertex.anchor rect{fill:#e9f4ec;stroke:#bbd8c2}
+.mind-graph-canvas .mind-vertex.pending rect{fill:#fff7e8;stroke:#e3ceb2}
+.mind-graph-canvas .mind-vertex.reverse rect{fill:#f0f7f5;stroke:#badbd0}
+.mind-graph-canvas .mind-vertex.active rect{stroke:#43885d;stroke-width:2.5}
+.mind-graph-canvas .mind-vertex text{fill:#496653;font:12px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+.mind-graph-canvas .mind-vertex .mind-title{font-weight:700;fill:#2f5840;font-size:12px}
+.mind-graph-canvas .mind-vertex .mind-subtitle{fill:#78907f;font-size:10px}
+.mind-graph-canvas .mind-vertex:focus-visible rect{stroke:#247345;stroke-width:2.5}
+.mind-timeline{display:grid;gap:8px;margin-top:12px}
+.mind-timeline .map-node{padding:10px 9px;border:1px solid #e7eee8;background:#fff;border-radius:9px;cursor:pointer}
+.mind-timeline .map-node:hover,.mind-timeline .map-node:focus-visible{background:#f1f8f2;border-color:#a9ccae;outline:none}
+.mind-timeline .map-node .map-bullet{height:20px;min-width:20px;width:auto;padding:0 4px;border-radius:7px;background:#dceee1;border:0;display:grid;place-items:center;margin-top:0;font-size:10px;font-weight:750;color:#3f7051}
+.mind-graph-legend{margin:10px 0;color:#8c9c90;font-size:10px;line-height:1.65}
+.mind-map-detail{border:1px solid #dceadc;border-radius:9px;background:#f3faf3;color:#476c50;padding:12px;font-size:12px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;margin-top:12px}
+.mind-map-detail .status-warning{font-size:10px;color:#967c49;display:block;margin-top:5px}
+.mind-map-detail[hidden]{display:none}
+@media(max-width:850px){
+ .geometry-panel summary{flex-wrap:wrap}
+ .geometry-panel summary small{flex:1 1 100%;padding-left:40px}
+ .geometry-content{padding:0 13px 14px}
+ .geometry-controls .btn{flex:1 1 120px}
+}
+@media(prefers-reduced-motion:reduce){
+ .geometry-panel summary::after{transition:none!important}
+ .mind-graph-canvas svg,.geometry-plot svg{animation:none!important}
+}
+
+/* Candidate links are a student's hypothesis, not a mathematical implication. */
+.mind-graph-canvas .mind-user-link{stroke:#4e9770;stroke-width:2;stroke-dasharray:7 4;fill:none}
+.thought-link-panel{display:grid;grid-template-columns:auto minmax(120px,1fr);align-items:center;gap:8px;margin-top:10px}
+.thought-link-panel input{min-width:0;width:100%;border:1px solid #deebe1;border-radius:8px;padding:9px 11px;color:#456f54;background:#fff;outline-color:#8abc95;font-size:11px}
+.thought-link-panel .btn{font-size:10px}
+.mind-timeline .map-node{display:flex;align-items:start;gap:9px;text-align:left;width:100%}
+.mind-timeline .map-node span:nth-child(2){flex:1;min-width:0}
+@media(max-width:530px){.thought-link-panel{grid-template-columns:1fr}}
+
+/* Accessible narrow-screen alternative to illegibly scaled SVG nodes. */
+.mind-mobile-anchors{display:none}
+.mind-mobile-anchor{border:1px solid #dce9df;border-radius:9px;background:#f7fbf7;text-align:left;padding:10px 11px;min-width:0;color:#487151;cursor:pointer}
+.mind-mobile-anchor b{display:block;font-size:12px;margin-bottom:5px}
+.mind-mobile-anchor span{font-size:10px;color:#839586;display:block;line-height:1.6;overflow-wrap:anywhere}
+.mind-mobile-anchor:hover{background:#eff7f0;border-color:#b9d6bf}
+@media(max-width:650px){
+  .mind-graph-canvas{display:none}
+  .mind-mobile-anchors{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}
+  .mind-timeline{margin-top:11px}
+}

@@ -51,6 +51,11 @@ def database():
             id TEXT PRIMARY KEY, student_id TEXT NOT NULL REFERENCES students(id),
             point_id TEXT NOT NULL, answer TEXT NOT NULL, correct INTEGER NOT NULL,
             created_at TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS thinking_links(
+            id TEXT PRIMARY KEY, session_id TEXT NOT NULL REFERENCES sessions(id),
+            source TEXT NOT NULL, target TEXT NOT NULL, label TEXT NOT NULL,
+            relation TEXT NOT NULL CHECK(relation='STUDENT_HYPOTHESIS_UNVERIFIED'),
+            created_at TEXT NOT NULL, UNIQUE(session_id,source,target));
     """)
     try:
         yield connection
@@ -199,3 +204,31 @@ def answer_review(student_id, point_id, answer):
                    (level,due,"RULE_MATCH" if correct else "RULE_NO_MATCH",student_id,point_id))
         db.execute("INSERT INTO review_events VALUES(?,?,?,?,?,?)",(str(uuid4()),student_id,point_id,answer,int(correct),timestamp()))
     return {"point_id":point_id,"rule_match":correct,"not_a_proof_of_mastery":True,"next_due_at":due,"box_level":level,"reference_answer":point["answer_hint"]}
+
+def thinking_links_list(session_id):
+    with database() as db:
+        rows=db.execute(
+            "SELECT * FROM thinking_links WHERE session_id=? ORDER BY rowid",
+            (session_id,)).fetchall()
+    return [dict(row) for row in rows]
+
+
+def thinking_link_add(session_id, source, target, label):
+    """Persist only a student's unverified idea, never a verified implication."""
+    with database() as db:
+        existing=db.execute(
+            "SELECT * FROM thinking_links WHERE session_id=? AND source=? AND target=?",
+            (session_id,source,target)).fetchone()
+        if existing:
+            return dict(existing)
+        n=db.execute(
+            "SELECT COUNT(*) FROM thinking_links WHERE session_id=?",
+            (session_id,)).fetchone()[0]
+        if n>=30:
+            raise ValueError("该会话的思路关联数量达到模拟上限")
+        link_id=str(uuid4())
+        db.execute("""INSERT INTO thinking_links
+            (id, session_id, source, target, label, relation, created_at)
+            VALUES(?,?,?,?,?,'STUDENT_HYPOTHESIS_UNVERIFIED',?)""",
+            (link_id,session_id,source,target,label,timestamp()))
+    return next(x for x in thinking_links_list(session_id) if x['id']==link_id)

@@ -1,0 +1,95 @@
+{
+  "distance-ratio": {
+    "latex": "\\frac{PA}{PB}=2",
+    "geometry": {
+      "kind": "two_foci",
+      "measure": "ratio",
+      "foci": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "target": 2,
+      "initial": [
+        3,
+        2.5
+      ]
+    }
+  },
+  "ellipse-tangent": {
+    "latex": "\\frac{x^2}{9}+\\frac{y^2}{4}=1",
+    "geometry": {
+      "kind": "conic",
+      "curve": "ellipse",
+      "a": 3,
+      "b": 2,
+      "initial": [
+        2,
+        1.491
+      ]
+    }
+  },
+  "hyperbola-tangent": {
+    "latex": "\\frac{x^2}{9}-\\frac{y^2}{4}=1"
+  },
+  "ellipse-focus": {
+    "latex": "PA+PB=10,\\quad A(-3,0),\\ B(3,0)",
+    "geometry": {
+      "kind": "two_foci",
+      "measure": "sum",
+      "foci": [
+        [
+          -3,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "target": 10,
+      "initial": [
+        1,
+        3
+      ]
+    }
+  },
+  "inequality-bridge": {
+    "latex": "x>0,\\ y>0,\\ x+y=1,\\quad \\frac1x+\\frac1y\\ge4"
+  },
+  "geometric-sum": {
+    "latex": "a_1,\\ q,\\ S_n"
+  },
+  "triangle-sas": {
+    "latex": "AB=5,\\ AC=8,\\ \\angle A=60^\\circ"
+  },
+  "triangle-ssa": {
+    "latex": "a=8,\\ b=10,\\ \\angle A=30^\\circ"
+  },
+  "triangle-sss": {
+    "latex": "a=5,\\ b=6,\\ c=7"
+  },
+  "parabola-tangent": {
+    "latex": "y^2=4x,\\quad P(1,2)"
+  },
+  "derivative-extrema": {
+    "latex": "f(x)=x^3-3x,\\quad x\\in[-2,2]"
+  },
+  "log-domain": {
+    "latex": "\\log_2(x-1)=1"
+  },
+  "arithmetic-sum": {
+    "latex": "a_1=2,\\ d=3,\\ n\\in\\mathbb{N}^{+}"
+  },
+  "median-length": {
+    "latex": "BM=CM"
+  },
+  "vector-orthogonality": {
+    "latex": "\\vec a=(1,2),\\quad \\vec b=(2,-1)"
+  }
+}
