@@ -7,6 +7,7 @@
   <title>STEM Mentor · 思维比答案更重要</title>
   <link rel="stylesheet" href="/assets/styles.css" />
   <link rel="stylesheet" href="/assets/study_tools.css" />
+  <link rel="stylesheet" href="/assets/math_lab.css" />
   <script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]]},svg:{fontCache:"local"},startup:{typeset:false}};</script>
 </head>
 <body>
@@ -20,6 +21,7 @@
       <button data-view="history" class="nav-item"><span class="nav-icon">◷</span> 我的解题经历 <span class="nav-count" id="historyCount">0</span></button>
       <button data-view="review" class="nav-item"><span class="nav-icon">▤</span> 易漏考点回忆 <span class="nav-count" id="reviewCount">0</span></button>
       <button data-view="methods" class="nav-item"><span class="nav-icon">⊞</span> 数学方法库</button>
+      <button data-view="lab" class="nav-item"><span class="nav-icon">◎</span> 高中数学实验室</button>
     </nav>
     <div class="sidebar-bottom">
       <div class="sidebar-note"><strong>教学核心</strong><span>先由你尝试，我们一起找到突破口。</span></div>
@@ -41,6 +43,7 @@
           <div class="left-column">
             <section class="panel problem-panel"><div class="panel-header"><div><span class="overline">CURRENT PROBLEM</span><h2>当前题目</h2></div><span class="soft-chip" id="problemTopic">高中数学</span></div>
               <div class="select-line"><label for="problemSelect">选择模拟题目</label><select id="problemSelect" aria-label="选择模拟题目"></select><button class="btn btn-light" id="startBtn" type="button">开始新题</button></div>
+              <button type="button" class="lab-bridge-button" id="openProblemLab">◎ 去数学实验室自主探索这个知识结构</button>
               <div class="problem-body"><h3 id="problemTitle">读取题目中…</h3><p id="problemPrompt"></p></div><div id="problemFormula" class="problem-formula" hidden><span class="math-caption">题目中的已知表达式</span><div id="problemFormulaMath" class="math-content" aria-label="题目公式"></div></div>
               <div class="problem-meta"><div><span>已知线索</span><ul id="knownList"></ul></div><div><span>学习目标</span><p id="goalText"></p></div></div>
             </section>
@@ -88,6 +91,52 @@
       <section id="history" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">YOUR LEARNING EPISODES</div><h1>记住你如何找到突破口。</h1><p>只展示实际保存的练习经历，不虚构“你以前做过”的题。</p></div></div><div id="historyList" class="item-grid"></div></section>
       <section id="review" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">SMALL DETAILS MATTER</div><h1>容易忽略的，恰恰要记牢。</h1><p>轻量回忆考试范围内的特殊情况，模拟间隔安排，不打断正在进行的解题。</p></div></div><div class="info-note">答题检查只使用简单的规则匹配；成功不代表真正理解。真实考查范围需依据所在地区和年份另行核实。</div><div id="reviewList" class="item-grid"></div></section>
       <section id="methods" class="view secondary-view"><div class="section-heading"><div><div class="eyebrow">METHODS & TRANSFER</div><h1>认识方法，也认识方法的边界。</h1><p>项目自编方法卡（尚待教师审核）；重视触发条件、数学结构、失效情况与迁移线索。</p></div></div><div class="method-search"><input id="methodQuery" aria-label="搜索数学方法" placeholder="搜索方法名、触发条件或适用边界"/><button class="btn btn-primary" id="methodSearchBtn">检索方法</button></div><label class="search-context"><input type="checkbox" id="methodContextToggle"/> 仅显示适合当前题目的方法（按已知条件筛选）</label><div id="methodList" class="item-grid"></div></section>
+      <section id="lab" class="view secondary-view lab-view">
+        <div class="section-heading lab-heading"><div>
+          <div class="eyebrow">MATH LEARNING LAB · HIGH SCHOOL</div>
+          <h1>把数学结构，看得见、转得动。</h1>
+          <p>从函数与平面坐标，到圆锥曲线、三角形、空间直角坐标系。先观察，再形成自己的猜想。</p>
+        </div><span class="soft-chip">绿色护眼 · 离线自主探索</span></div>
+        <div class="lab-summary" id="labSummary">正在加载高中数学课程对应表……</div>
+        <div class="lab-family-tabs" id="labFamilies" role="tablist" aria-label="选择数学实验类型"></div>
+        <div class="lab-studio-layout">
+          <section class="panel lab-stage" aria-label="动态数学图形">
+            <div class="panel-header lab-stage-header">
+              <div><span class="overline">COORDINATE WORKSPACE</span><h2 id="labTitle">选择一个实验</h2></div>
+              <button type="button" class="btn btn-light" id="labReset">重置实验</button>
+            </div>
+            <p id="labDescription" class="lab-description">通过参数、拖动和旋转观察数学对象。</p>
+            <div class="lab-plot-box" id="labPlotBox"><svg id="labPlot" role="img" aria-label="高中数学二维与三维动态坐标图" viewBox="0 0 760 460"></svg></div>
+            <div class="lab-graph-tools">
+              <span id="labCoordinateReadout" class="lab-coordinate" role="status">移动到画布观察坐标。</span>
+              <div class="lab-view-tools" id="lab2dControls"><label>平面缩放 <input type="range" min=".65" max="2.5" step=".05" value="1" id="lab2dZoom" aria-label="二维图形缩放"/></label></div>
+              <div class="lab-view-tools" id="lab3dControls" hidden><label>旋转水平角 <input type="range" min="-180" max="180" step="1" value="38" id="labYaw" aria-label="空间视角水平旋转"/></label><label>俯视角 <input type="range" min="12" max="78" value="36" step="1" id="labPitch" aria-label="空间坐标俯视角"/></label><label>空间缩放 <input type="range" min=".55" max="1.85" value="1" step=".05" id="lab3dZoom" aria-label="空间坐标缩放"/></label></div>
+            </div>
+            <div class="lab-metrics" id="labMetrics" role="status"></div>
+            <p class="lab-math-notice">几何画板只用于理解数学对象和观察变化；数值可能有舍入误差。图形不构成数学证明，也不会自动判断学生已掌握。</p>
+          </section>
+          <aside class="panel lab-controls" aria-label="数学实验控制">
+            <span class="overline">INTERACTIVE SCENE</span><h2>当前实验参数</h2>
+            <label class="lab-control-label" for="labPreset">选择知识场景</label>
+            <select id="labPreset" aria-label="选择数学实验场景"></select>
+            <div id="labFormula" class="lab-formula" aria-label="当前实验的数学公式"></div>
+            <div id="labParameterControls" class="lab-param-list"></div>
+            <div id="labSceneHint" class="lab-scene-hint">请调整一个参数，试着预测图形变化后再观察。</div>
+            <div class="lab-reflection"><strong>想一想</strong><p>如果只改变一个条件，哪部分性质不变？你能先作出猜想，再用图验证吗？</p></div>
+          </aside>
+        </div>
+        <section class="panel lab-curriculum">
+          <div class="panel-header"><div><span class="overline">CURRICULUM COVERAGE</span><h2>高中数学知识点与工具建设图谱</h2></div><span class="soft-chip">按课程主题组织 · 内容待教师复核</span></div>
+          <p class="lab-description">完整知识清单是建设规划，并不代表所有考点已经做成动画。切换筛选可查看当前支持和未来计划。</p>
+          <div class="lab-curriculum-filters">
+            <select id="labLevel" aria-label="选择高中课程范围"><option value="all">所有课程层次</option><option value="必修">必修课程</option><option value="选择性必修">选择性必修</option><option value="选修拓展">选修拓展</option></select>
+            <select id="labCoverage" aria-label="选择功能建设状态"><option value="all">全部建设状态</option><option value="INTERACTIVE_FOUNDATION">已有基础交互</option><option value="PLANNED">尚待开发</option></select>
+            <input id="labTopicSearch" type="search" placeholder="检索知识点、单元或数学工具…" aria-label="检索高中数学知识点"/>
+          </div>
+          <div id="labCurriculumList" class="lab-curriculum-list"></div>
+          <div class="lab-standard-note" id="labStandardNote">以教育部高中数学课程标准为参考，具体地区与年份的高考范围需另外核对。</div>
+        </section>
+      </section>
     </div>
   </main>
 </div>
@@ -95,5 +144,9 @@
 <script src="/assets/app.js" defer></script>
 <script src="/assets/vendor/mathjax/tex-svg.js" defer></script>
 <script src="/assets/study_tools.js" defer></script>
+<script src="/assets/lab/plot2d.js" defer></script>
+<script src="/assets/lab/triangle.js" defer></script>
+<script src="/assets/lab/scene3d.js" defer></script>
+<script src="/assets/lab/controller.js" defer></script>
 </body>
 </html>

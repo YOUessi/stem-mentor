@@ -1,0 +1,1930 @@
+{
+  "version": "2026-10-18.1",
+  "subject": "高中数学",
+  "curriculum_reference": "普通高中数学课程标准（2017年版2020年修订）",
+  "reference_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+  "scope_note": "产品工程覆盖清单，不是教育部官方逐条课标原文、也不是某省高考命题细目；需教师审核。",
+  "coverage": [
+    {
+      "id": "HS-MATH-001",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "集合与常用逻辑用语",
+      "concept": "集合及其表示",
+      "recommended_tool": "venn_logic",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-002",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "集合与常用逻辑用语",
+      "concept": "交集并集补集",
+      "recommended_tool": "venn_logic",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-003",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "集合与常用逻辑用语",
+      "concept": "充分条件与必要条件",
+      "recommended_tool": "venn_logic",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-004",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "集合与常用逻辑用语",
+      "concept": "全称量词与存在量词",
+      "recommended_tool": "venn_logic",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-005",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "集合与常用逻辑用语",
+      "concept": "命题真假与逻辑关系",
+      "recommended_tool": "venn_logic",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-006",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "不等式与代数",
+      "concept": "等式性质与不等式性质",
+      "recommended_tool": "number_line",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-007",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "不等式与代数",
+      "concept": "一元二次不等式",
+      "recommended_tool": "number_line",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-008",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "不等式与代数",
+      "concept": "含参数不等式",
+      "recommended_tool": "number_line",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-009",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "不等式与代数",
+      "concept": "基本不等式",
+      "recommended_tool": "number_line",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-010",
+      "level": "必修",
+      "theme": "预备知识",
+      "unit": "不等式与代数",
+      "concept": "不等式等价变换和定义域",
+      "recommended_tool": "number_line",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-011",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "函数基本概念与性质",
+      "concept": "函数映射和定义域",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-012",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "函数基本概念与性质",
+      "concept": "函数值域",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-013",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "函数基本概念与性质",
+      "concept": "单调性",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-014",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "函数基本概念与性质",
+      "concept": "奇偶性",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-015",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "函数基本概念与性质",
+      "concept": "周期性",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-016",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "函数基本概念与性质",
+      "concept": "零点与方程",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-017",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "函数基本概念与性质",
+      "concept": "分段函数",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-018",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "基本初等函数",
+      "concept": "一次函数",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-019",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "基本初等函数",
+      "concept": "二次函数",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-020",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "基本初等函数",
+      "concept": "幂函数",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-021",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "基本初等函数",
+      "concept": "指数函数",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-022",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "基本初等函数",
+      "concept": "对数函数",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-023",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "基本初等函数",
+      "concept": "绝对值函数",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-024",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "基本初等函数",
+      "concept": "函数变换与复合",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-025",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "三角函数",
+      "concept": "弧度制和单位圆",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-026",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "三角函数",
+      "concept": "正弦余弦函数图像",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-027",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "三角函数",
+      "concept": "正切函数",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-028",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "三角函数",
+      "concept": "诱导公式",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-029",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "三角函数",
+      "concept": "和差与倍角公式",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-030",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "三角函数",
+      "concept": "三角恒等变换",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-031",
+      "level": "必修",
+      "theme": "函数",
+      "unit": "三角函数",
+      "concept": "三角函数图像变换",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-032",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "平面向量与解三角形",
+      "concept": "平面向量的表示",
+      "recommended_tool": "triangle_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-033",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "平面向量与解三角形",
+      "concept": "向量加减与数乘",
+      "recommended_tool": "triangle_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-034",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "平面向量与解三角形",
+      "concept": "向量数量积",
+      "recommended_tool": "triangle_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-035",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "平面向量与解三角形",
+      "concept": "向量投影与夹角",
+      "recommended_tool": "triangle_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-036",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "平面向量与解三角形",
+      "concept": "正弦定理",
+      "recommended_tool": "triangle_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-037",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "平面向量与解三角形",
+      "concept": "余弦定理",
+      "recommended_tool": "triangle_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-038",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "平面向量与解三角形",
+      "concept": "SSA 二解与三角形存在性",
+      "recommended_tool": "triangle_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-039",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "平面向量与解三角形",
+      "concept": "三角形面积与几何关系",
+      "recommended_tool": "triangle_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-040",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "复数",
+      "concept": "复数与复平面",
+      "recommended_tool": "complex_plane",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-041",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "复数",
+      "concept": "复数模与辐角",
+      "recommended_tool": "complex_plane",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-042",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "复数",
+      "concept": "复数加减乘除及几何意义",
+      "recommended_tool": "complex_plane",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-043",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "立体几何初步",
+      "concept": "空间点线面位置关系",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-044",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "立体几何初步",
+      "concept": "平行与垂直的判定",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-045",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "立体几何初步",
+      "concept": "直线与平面距离",
+      "recommended_tool": "space_3d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-046",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "立体几何初步",
+      "concept": "棱柱棱锥与棱台",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-047",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "立体几何初步",
+      "concept": "圆柱圆锥球",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-048",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "立体几何初步",
+      "concept": "表面积与体积",
+      "recommended_tool": "space_3d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-049",
+      "level": "必修",
+      "theme": "几何与代数",
+      "unit": "立体几何初步",
+      "concept": "空间截面与展开图",
+      "recommended_tool": "space_3d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-050",
+      "level": "必修",
+      "theme": "概率与统计",
+      "unit": "概率基础",
+      "concept": "样本空间与随机事件",
+      "recommended_tool": "probability_tree",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-051",
+      "level": "必修",
+      "theme": "概率与统计",
+      "unit": "概率基础",
+      "concept": "互斥和对立事件",
+      "recommended_tool": "probability_tree",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-052",
+      "level": "必修",
+      "theme": "概率与统计",
+      "unit": "概率基础",
+      "concept": "古典概型",
+      "recommended_tool": "probability_tree",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-053",
+      "level": "必修",
+      "theme": "概率与统计",
+      "unit": "概率基础",
+      "concept": "概率加法与乘法基本关系",
+      "recommended_tool": "probability_tree",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-054",
+      "level": "必修",
+      "theme": "概率与统计",
+      "unit": "数据与统计",
+      "concept": "数据的收集与抽样",
+      "recommended_tool": "statistics_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-055",
+      "level": "必修",
+      "theme": "概率与统计",
+      "unit": "数据与统计",
+      "concept": "频数分布与直方图",
+      "recommended_tool": "statistics_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-056",
+      "level": "必修",
+      "theme": "概率与统计",
+      "unit": "数据与统计",
+      "concept": "均值中位数众数",
+      "recommended_tool": "statistics_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-057",
+      "level": "必修",
+      "theme": "概率与统计",
+      "unit": "数据与统计",
+      "concept": "方差标准差",
+      "recommended_tool": "statistics_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-058",
+      "level": "必修",
+      "theme": "概率与统计",
+      "unit": "数据与统计",
+      "concept": "百分位数与样本估计",
+      "recommended_tool": "statistics_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-059",
+      "level": "必修",
+      "theme": "数学建模与探究",
+      "unit": "综合应用",
+      "concept": "数学建模流程",
+      "recommended_tool": "modeling_workspace",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-060",
+      "level": "必修",
+      "theme": "数学建模与探究",
+      "unit": "综合应用",
+      "concept": "数据模型与检验",
+      "recommended_tool": "modeling_workspace",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-061",
+      "level": "必修",
+      "theme": "数学建模与探究",
+      "unit": "综合应用",
+      "concept": "问题提出与合作探究",
+      "recommended_tool": "modeling_workspace",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-062",
+      "level": "选择性必修",
+      "theme": "函数",
+      "unit": "数列与导数",
+      "concept": "数列概念与递推",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-063",
+      "level": "选择性必修",
+      "theme": "函数",
+      "unit": "数列与导数",
+      "concept": "等差数列",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-064",
+      "level": "选择性必修",
+      "theme": "函数",
+      "unit": "数列与导数",
+      "concept": "等比数列",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-065",
+      "level": "选择性必修",
+      "theme": "函数",
+      "unit": "数列与导数",
+      "concept": "数列求和与数列模型",
+      "recommended_tool": "function_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-066",
+      "level": "选择性必修",
+      "theme": "函数",
+      "unit": "数列与导数",
+      "concept": "导数的几何意义",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-067",
+      "level": "选择性必修",
+      "theme": "函数",
+      "unit": "数列与导数",
+      "concept": "导数与切线",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-068",
+      "level": "选择性必修",
+      "theme": "函数",
+      "unit": "数列与导数",
+      "concept": "导数判断单调性",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-069",
+      "level": "选择性必修",
+      "theme": "函数",
+      "unit": "数列与导数",
+      "concept": "极值与最值",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-070",
+      "level": "选择性必修",
+      "theme": "函数",
+      "unit": "数列与导数",
+      "concept": "函数零点和参数讨论",
+      "recommended_tool": "function_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-071",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "空间向量与立体几何",
+      "concept": "空间直角坐标系",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-072",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "空间向量与立体几何",
+      "concept": "空间向量与坐标运算",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-073",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "空间向量与立体几何",
+      "concept": "空间向量数量积",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-074",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "空间向量与立体几何",
+      "concept": "直线方向向量",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-075",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "空间向量与立体几何",
+      "concept": "平面法向量",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-076",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "空间向量与立体几何",
+      "concept": "直线平面夹角",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-077",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "空间向量与立体几何",
+      "concept": "二面角",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-078",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "空间向量与立体几何",
+      "concept": "空间距离计算",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-079",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "空间向量与立体几何",
+      "concept": "空间多面体与投影",
+      "recommended_tool": "space_3d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-080",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "倾斜角与直线斜率",
+      "recommended_tool": "conic_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-081",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "直线方程",
+      "recommended_tool": "conic_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-082",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "两直线的位置关系",
+      "recommended_tool": "conic_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-083",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "点到直线距离",
+      "recommended_tool": "conic_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-084",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "直线与圆的位置关系",
+      "recommended_tool": "conic_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-085",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "圆与圆的位置关系",
+      "recommended_tool": "conic_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-086",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "椭圆定义及几何性质",
+      "recommended_tool": "conic_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-087",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "双曲线定义及几何性质",
+      "recommended_tool": "conic_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-088",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "抛物线定义及几何性质",
+      "recommended_tool": "conic_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-089",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "圆锥曲线焦点与准线",
+      "recommended_tool": "conic_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "探索示意与数形关系，非完整教学验证",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-090",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "圆锥曲线与直线联立",
+      "recommended_tool": "conic_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-091",
+      "level": "选择性必修",
+      "theme": "几何与代数",
+      "unit": "平面解析几何",
+      "concept": "圆锥曲线的切线与法线",
+      "recommended_tool": "conic_2d",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-092",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "计数原理",
+      "concept": "分类加法计数原理",
+      "recommended_tool": "combinatorics",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-093",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "计数原理",
+      "concept": "分步乘法计数原理",
+      "recommended_tool": "combinatorics",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-094",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "计数原理",
+      "concept": "排列与组合",
+      "recommended_tool": "combinatorics",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-095",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "计数原理",
+      "concept": "二项式定理",
+      "recommended_tool": "combinatorics",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-096",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "概率分布与统计推断",
+      "concept": "条件概率与独立性",
+      "recommended_tool": "probability_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-097",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "概率分布与统计推断",
+      "concept": "全概率公式",
+      "recommended_tool": "probability_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-098",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "概率分布与统计推断",
+      "concept": "离散型随机变量",
+      "recommended_tool": "probability_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-099",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "概率分布与统计推断",
+      "concept": "二项分布",
+      "recommended_tool": "probability_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-100",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "概率分布与统计推断",
+      "concept": "超几何分布",
+      "recommended_tool": "probability_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-101",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "概率分布与统计推断",
+      "concept": "正态分布",
+      "recommended_tool": "probability_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-102",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "概率分布与统计推断",
+      "concept": "回归分析与相关性",
+      "recommended_tool": "probability_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-103",
+      "level": "选择性必修",
+      "theme": "概率与统计",
+      "unit": "概率分布与统计推断",
+      "concept": "独立性检验",
+      "recommended_tool": "probability_plot",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-104",
+      "level": "选择性必修",
+      "theme": "数学建模与探究",
+      "unit": "综合应用",
+      "concept": "数学探究活动",
+      "recommended_tool": "modeling_workspace",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-105",
+      "level": "选择性必修",
+      "theme": "数学建模与探究",
+      "unit": "综合应用",
+      "concept": "数据驱动的建模",
+      "recommended_tool": "modeling_workspace",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-106",
+      "level": "选择性必修",
+      "theme": "数学建模与探究",
+      "unit": "综合应用",
+      "concept": "对模型进行验证与评价",
+      "recommended_tool": "modeling_workspace",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-107",
+      "level": "选修拓展",
+      "theme": "数学拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "三角形五心与综合几何",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-108",
+      "level": "选修拓展",
+      "theme": "数学拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "圆锥曲线极线与换一半法则",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-109",
+      "level": "选修拓展",
+      "theme": "数学拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "参数方程与极坐标",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-110",
+      "level": "选修拓展",
+      "theme": "数学拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "更一般的二次曲面",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-111",
+      "level": "选修拓展",
+      "theme": "数学拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "数学归纳法",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-112",
+      "level": "选修拓展",
+      "theme": "数学拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "向量外积",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    },
+    {
+      "id": "HS-MATH-113",
+      "level": "选修拓展",
+      "theme": "数学拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "算法与数学证明",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "未实现专项交互",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+    }
+  ]
+}

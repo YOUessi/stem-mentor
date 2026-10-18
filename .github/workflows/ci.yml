@@ -18,7 +18,11 @@ jobs:
           node-version: '22'
       - run: node --check apps/web/app.js
       - run: node --check apps/web/study_tools.js
-      - run: node --check apps/web/study_tools.js
+      - run: |
+          node --check apps/web/lab/plot2d.js
+          node --check apps/web/lab/triangle.js
+          node --check apps/web/lab/scene3d.js
+          node --check apps/web/lab/controller.js
       - run: cd backend && PYTHONPATH=. python evaluate_policy.py
 
       - run: cd backend && PYTHONPATH=. python evaluate_v05.py

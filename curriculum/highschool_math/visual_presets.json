@@ -1,0 +1,997 @@
+{
+  "version": "2026-10-18.1",
+  "notice": "受控数学演示、非自动解答；部分高中知识仍规划中",
+  "presets": [
+    {
+      "id": "fn-linear",
+      "tool": "function_2d",
+      "title": "一次函数与斜率",
+      "equation": "y=mx+b",
+      "latex": "y=mx+b",
+      "params": [
+        {
+          "key": "m",
+          "label": "斜率 m",
+          "min": -3,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "b",
+          "label": "截距 b",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "线性参数",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-quadratic",
+      "tool": "function_2d",
+      "title": "二次函数及顶点",
+      "equation": "y=a(x-h)^2+k",
+      "latex": "y=a(x-h)^2+k",
+      "params": [
+        {
+          "key": "a",
+          "label": "开口 a",
+          "min": -2,
+          "max": 2,
+          "value": 0.7,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "顶点横坐标 h",
+          "min": -4,
+          "max": 4,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "顶点纵坐标 k",
+          "min": -4,
+          "max": 4,
+          "value": -1,
+          "step": 0.1
+        }
+      ],
+      "description": "顶点、对称轴与极值",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-cubic",
+      "tool": "function_2d",
+      "title": "三次函数与导数",
+      "equation": "y=a(x^3-3x)+k",
+      "latex": "y=a(x^3-3x)+k",
+      "params": [
+        {
+          "key": "a",
+          "label": "系数 a",
+          "min": -0.6,
+          "max": 0.6,
+          "value": 0.2,
+          "step": 0.05
+        },
+        {
+          "key": "k",
+          "label": "纵向平移 k",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "函数变化与驻点",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-exp",
+      "tool": "function_2d",
+      "title": "指数函数",
+      "equation": "y=a^x",
+      "latex": "y=a^x",
+      "params": [
+        {
+          "key": "a",
+          "label": "底数 a",
+          "min": 0.2,
+          "max": 4,
+          "value": 2,
+          "step": 0.1
+        }
+      ],
+      "description": "底数不能取 1，且必须为正",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-log",
+      "tool": "function_2d",
+      "title": "对数函数",
+      "equation": "y=log_a(x)",
+      "latex": "y=\\log_a x",
+      "params": [
+        {
+          "key": "a",
+          "label": "底数 a",
+          "min": 0.2,
+          "max": 4,
+          "value": 2,
+          "step": 0.1
+        }
+      ],
+      "description": "自变量必须大于零；底数不等于 1",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-sin",
+      "tool": "function_2d",
+      "title": "正弦曲线参数变换",
+      "equation": "y=A*sin(wx+φ)+k",
+      "latex": "y=A\\sin(\\omega x+\\varphi)+k",
+      "params": [
+        {
+          "key": "A",
+          "label": "振幅 A",
+          "min": 0.2,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "w",
+          "label": "角频率 ω",
+          "min": 0.2,
+          "max": 4,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "phi",
+          "label": "相位 φ",
+          "min": -3.14,
+          "max": 3.14,
+          "value": 0,
+          "step": 0.05
+        },
+        {
+          "key": "k",
+          "label": "平移 k",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "弧度制与振幅、周期、相位",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-cos",
+      "tool": "function_2d",
+      "title": "余弦函数",
+      "equation": "y=A*cos(wx+φ)",
+      "latex": "y=A\\cos(\\omega x+\\varphi)",
+      "params": [
+        {
+          "key": "A",
+          "label": "振幅 A",
+          "min": 0.2,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "w",
+          "label": "角频率 ω",
+          "min": 0.2,
+          "max": 4,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "phi",
+          "label": "相位 φ",
+          "min": -3.14,
+          "max": 3.14,
+          "value": 0,
+          "step": 0.05
+        }
+      ],
+      "description": "周期与相位",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-tan",
+      "tool": "function_2d",
+      "title": "正切函数与渐近线",
+      "equation": "y=tan(wx+φ)",
+      "latex": "y=\\tan(\\omega x+\\varphi)",
+      "params": [
+        {
+          "key": "w",
+          "label": "频率 ω",
+          "min": 0.2,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "phi",
+          "label": "相位 φ",
+          "min": -3.14,
+          "max": 3.14,
+          "value": 0,
+          "step": 0.05
+        }
+      ],
+      "description": "每条渐近线两侧必须分段绘制",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-abs",
+      "tool": "function_2d",
+      "title": "绝对值函数",
+      "equation": "y=a|x-h|+k",
+      "latex": "y=a|x-h|+k",
+      "params": [
+        {
+          "key": "a",
+          "label": "比例 a",
+          "min": -2,
+          "max": 2,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "折点横坐标 h",
+          "min": -4,
+          "max": 4,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "平移 k",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "折点与分段性质",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-inverse",
+      "tool": "function_2d",
+      "title": "反比例与渐近线",
+      "equation": "y=a/(x-h)+k",
+      "latex": "y=\\frac{a}{x-h}+k",
+      "params": [
+        {
+          "key": "a",
+          "label": "系数 a",
+          "min": -5,
+          "max": 5,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "竖直渐近线 x=h",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "水平渐近线 y=k",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "分母零点不可取",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-sqrt",
+      "tool": "function_2d",
+      "title": "根式函数与定义域",
+      "equation": "y=sqrt(x-h)+k",
+      "latex": "y=\\sqrt{x-h}+k",
+      "params": [
+        {
+          "key": "h",
+          "label": "定义域起点 h",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "平移 k",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "定义域限制 x>=h",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "fn-piecewise",
+      "tool": "function_2d",
+      "title": "分段函数连续性",
+      "equation": "y={mx+b(x<h);a(x-h)^2+k(x>=h)}",
+      "latex": "f(x)=\\begin{cases}mx+b,&x<h\\\\a(x-h)^2+k,&x\\ge h\\end{cases}",
+      "params": [
+        {
+          "key": "m",
+          "label": "左段斜率 m",
+          "min": -3,
+          "max": 3,
+          "value": 0.5,
+          "step": 0.1
+        },
+        {
+          "key": "b",
+          "label": "左段截距 b",
+          "min": -4,
+          "max": 4,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "a",
+          "label": "右段二次系数 a",
+          "min": -2,
+          "max": 2,
+          "value": 0.5,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "分段点 h",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "右段截距 k",
+          "min": -4,
+          "max": 4,
+          "value": 1,
+          "step": 0.1
+        }
+      ],
+      "description": "分段点连续性的必要条件",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "conic-line",
+      "tool": "conic_2d",
+      "title": "直线及斜率截距",
+      "equation": "y=mx+b",
+      "latex": "y=mx+b",
+      "params": [
+        {
+          "key": "m",
+          "label": "斜率 m",
+          "min": -4,
+          "max": 4,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "b",
+          "label": "截距 b",
+          "min": -5,
+          "max": 5,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "解析几何的直线位置关系",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "conic-circle",
+      "tool": "conic_2d",
+      "title": "圆的方程与半径",
+      "equation": "(x-h)^2+(y-k)^2=r^2",
+      "latex": "(x-h)^2+(y-k)^2=r^2",
+      "params": [
+        {
+          "key": "h",
+          "label": "圆心横坐标 h",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "圆心纵坐标 k",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "r",
+          "label": "半径 r",
+          "min": 0.5,
+          "max": 5,
+          "value": 3,
+          "step": 0.1
+        }
+      ],
+      "description": "圆心、半径、直径",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "conic-ellipse",
+      "tool": "conic_2d",
+      "title": "椭圆与焦点",
+      "equation": "(x-h)^2/a^2+(y-k)^2/b^2=1",
+      "latex": "\\frac{(x-h)^2}{a^2}+\\frac{(y-k)^2}{b^2}=1",
+      "params": [
+        {
+          "key": "a",
+          "label": "半长轴 a",
+          "min": 1,
+          "max": 6,
+          "value": 4,
+          "step": 0.1
+        },
+        {
+          "key": "b",
+          "label": "半短轴 b",
+          "min": 0.5,
+          "max": 5,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "平移 h",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "平移 k",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "要求 a>b，焦距 c²=a²-b²",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "conic-hyperbola",
+      "tool": "conic_2d",
+      "title": "双曲线与渐近线",
+      "equation": "(x-h)^2/a^2-(y-k)^2/b^2=1",
+      "latex": "\\frac{(x-h)^2}{a^2}-\\frac{(y-k)^2}{b^2}=1",
+      "params": [
+        {
+          "key": "a",
+          "label": "实半轴 a",
+          "min": 0.5,
+          "max": 5,
+          "value": 2.5,
+          "step": 0.1
+        },
+        {
+          "key": "b",
+          "label": "虚半轴 b",
+          "min": 0.5,
+          "max": 4,
+          "value": 1.5,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "平移 h",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "平移 k",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "渐近线斜率 ±b/a，焦距 c²=a²+b²",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "conic-parabola",
+      "tool": "conic_2d",
+      "title": "抛物线与准线",
+      "equation": "(y-k)^2=4p(x-h)",
+      "latex": "(y-k)^2=4p(x-h)",
+      "params": [
+        {
+          "key": "p",
+          "label": "焦距参数 p",
+          "min": 0.3,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "顶点横坐标 h",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "顶点纵坐标 k",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "焦点 (h+p,k)，准线 x=h-p",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "conic-intersection",
+      "tool": "conic_2d",
+      "title": "直线与圆的位置关系",
+      "equation": "circle+line",
+      "latex": "(x-h)^2+y^2=r^2,\\ y=mx+b",
+      "params": [
+        {
+          "key": "h",
+          "label": "圆心横坐标 h",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "r",
+          "label": "半径 r",
+          "min": 0.5,
+          "max": 5,
+          "value": 3,
+          "step": 0.1
+        },
+        {
+          "key": "m",
+          "label": "直线斜率 m",
+          "min": -3,
+          "max": 3,
+          "value": 0.5,
+          "step": 0.1
+        },
+        {
+          "key": "b",
+          "label": "截距 b",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        }
+      ],
+      "description": "通过观察交点情况区分相交、相切、相离",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "tri-free",
+      "tool": "triangle_2d",
+      "title": "三角形边角与面积",
+      "equation": "triangle-free",
+      "latex": "S=\\frac12 ab\\sin C",
+      "params": [],
+      "description": "自由拖动 A、B、C，观察边角与面积",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "tri-right",
+      "tool": "triangle_2d",
+      "title": "直角三角形与三角函数",
+      "equation": "triangle-right",
+      "latex": "a^2+b^2=c^2",
+      "params": [],
+      "description": "保留直角，观察斜边、锐角及三角比",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "tri-ssa",
+      "tool": "triangle_2d",
+      "title": "SSA 条件可能不唯一",
+      "equation": "triangle-ssa",
+      "latex": "\\frac{a}{\\sin A}=\\frac{b}{\\sin B}",
+      "params": [
+        {
+          "key": "a",
+          "label": "A 的对边 a",
+          "min": 2,
+          "max": 9,
+          "value": 6,
+          "step": 0.1
+        },
+        {
+          "key": "b",
+          "label": "B 的对边 b",
+          "min": 2,
+          "max": 10,
+          "value": 8,
+          "step": 0.1
+        },
+        {
+          "key": "A",
+          "label": "角 A（度）",
+          "min": 15,
+          "max": 145,
+          "value": 40,
+          "step": 1
+        }
+      ],
+      "description": "检查 0、1、2 种可能情形，不能只凭 sin B 定唯一角",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "3d-point",
+      "tool": "space_3d",
+      "title": "空间直角坐标系与点投影",
+      "equation": "point3d",
+      "latex": "P(x,y,z)",
+      "params": [
+        {
+          "key": "x",
+          "label": "x 坐标",
+          "min": -4,
+          "max": 4,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "y",
+          "label": "y 坐标",
+          "min": -4,
+          "max": 4,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "z",
+          "label": "z 坐标",
+          "min": -4,
+          "max": 5,
+          "value": 3,
+          "step": 0.1
+        }
+      ],
+      "description": "右手坐标系，XY 平面投影",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "3d-vectors",
+      "tool": "space_3d",
+      "title": "空间向量与夹角",
+      "equation": "vectors3d",
+      "latex": "\\vec a\\cdot\\vec b=|a||b|\\cos\\theta",
+      "params": [
+        {
+          "key": "ax",
+          "label": "a_x",
+          "min": -3,
+          "max": 3,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "ay",
+          "label": "a_y",
+          "min": -3,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "az",
+          "label": "a_z",
+          "min": -3,
+          "max": 3,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "bx",
+          "label": "b_x",
+          "min": -3,
+          "max": 3,
+          "value": -1,
+          "step": 0.1
+        },
+        {
+          "key": "by",
+          "label": "b_y",
+          "min": -3,
+          "max": 3,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "bz",
+          "label": "b_z",
+          "min": -3,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        }
+      ],
+      "description": "注意零向量不定义夹角",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "3d-plane",
+      "tool": "space_3d",
+      "title": "平面与法向量",
+      "equation": "plane3d",
+      "latex": "z=px+qy+r",
+      "params": [
+        {
+          "key": "p",
+          "label": "倾斜 p",
+          "min": -2,
+          "max": 2,
+          "value": 0.4,
+          "step": 0.1
+        },
+        {
+          "key": "q",
+          "label": "倾斜 q",
+          "min": -2,
+          "max": 2,
+          "value": -0.3,
+          "step": 0.1
+        },
+        {
+          "key": "r",
+          "label": "截距 r",
+          "min": -3,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        }
+      ],
+      "description": "可视法向量 (-p,-q,1) 与平面",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "3d-prism",
+      "tool": "space_3d",
+      "title": "棱柱：顶点、面与体积",
+      "equation": "prism3d",
+      "latex": "V=S_{底}\\cdot h",
+      "params": [
+        {
+          "key": "w",
+          "label": "底边长 w",
+          "min": 1,
+          "max": 5,
+          "value": 3,
+          "step": 0.1
+        },
+        {
+          "key": "d",
+          "label": "底边宽 d",
+          "min": 1,
+          "max": 5,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "高 h",
+          "min": 1,
+          "max": 6,
+          "value": 3,
+          "step": 0.1
+        }
+      ],
+      "description": "观察平行底面与立体空间位置关系",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "3d-pyramid",
+      "tool": "space_3d",
+      "title": "棱锥：顶点与体积",
+      "equation": "pyramid3d",
+      "latex": "V=\\frac13 S_{底}\\cdot h",
+      "params": [
+        {
+          "key": "w",
+          "label": "底边长 w",
+          "min": 1,
+          "max": 5,
+          "value": 3,
+          "step": 0.1
+        },
+        {
+          "key": "d",
+          "label": "底边宽 d",
+          "min": 1,
+          "max": 5,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "高 h",
+          "min": 1,
+          "max": 6,
+          "value": 4,
+          "step": 0.1
+        }
+      ],
+      "description": "高是顶点到底面距离，勿混侧棱",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "3d-sphere",
+      "tool": "space_3d",
+      "title": "球体与截面",
+      "equation": "sphere3d",
+      "latex": "x^2+y^2+z^2=R^2",
+      "params": [
+        {
+          "key": "r",
+          "label": "半径 r",
+          "min": 1,
+          "max": 4,
+          "value": 2.8,
+          "step": 0.1
+        }
+      ],
+      "description": "截面半径与球半径的关系",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "3d-cylinder",
+      "tool": "space_3d",
+      "title": "圆柱及轴向截面",
+      "equation": "cylinder3d",
+      "latex": "V=\\pi r^2h",
+      "params": [
+        {
+          "key": "r",
+          "label": "底圆半径 r",
+          "min": 0.5,
+          "max": 4,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "高度 h",
+          "min": 1,
+          "max": 6,
+          "value": 4,
+          "step": 0.1
+        }
+      ],
+      "description": "圆形底面与平行母线",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    },
+    {
+      "id": "3d-cone",
+      "tool": "space_3d",
+      "title": "圆锥及轴向截面",
+      "equation": "cone3d",
+      "latex": "V=\\frac13\\pi r^2h",
+      "params": [
+        {
+          "key": "r",
+          "label": "底圆半径 r",
+          "min": 0.5,
+          "max": 4,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "高度 h",
+          "min": 1,
+          "max": 6,
+          "value": 4,
+          "step": 0.1
+        }
+      ],
+      "description": "顶点到底面的高与母线",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true
+    }
+  ]
+}
