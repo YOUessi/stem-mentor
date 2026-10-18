@@ -205,8 +205,10 @@
    const yaw=view?.yaw??38,pitch=view?.pitch??36,zoom=view?.zoom??1;
    const P=makeProjection(yaw,pitch,zoom);
    axes(root,P);
-   drawSolid(root,P,preset,params);
-   const info=baseMetrics(preset,params);
+   let info;
+   if(window.MentorLabSections?.supports(preset.id)){
+     info=window.MentorLabSections.draw(root,P,preset,params,Boolean(scene?.assist)).info;
+   }else{drawSolid(root,P,preset,params);info=baseMetrics(preset,params);}
    if(scene){
      root.style.cursor="grab";
      root.onpointerdown=e=>{
@@ -229,5 +231,5 @@
    }
    return {info,kind:"space_3d",project:P.project,projection:P};
  }
- root.MentorLab3D={draw,makeProjection,baseMetrics};
+ root.MentorLab3D={draw,makeProjection,baseMetrics,drawing:{axes,line,shape,path,point,arrow,label,drawSolid}};
 })(window);

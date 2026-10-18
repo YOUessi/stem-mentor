@@ -36,7 +36,8 @@ SERVER_PID=""
 trap cleanup EXIT
 (
   cd backend
-  STEM_MENTOR_DB="$TMP_DB/demo.sqlite3" ../.venv/bin/python -m uvicorn app.main:app \
+  export STEM_MENTOR_DB="$TMP_DB/demo.sqlite3"
+  exec ../.venv/bin/python -m uvicorn app.main:app \
     --host 127.0.0.1 --port "$PORT" >"$ROOT/artifacts/ui/browser-test-server.log" 2>&1
 ) &
 SERVER_PID=$!
@@ -56,4 +57,7 @@ STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_gre
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_learning_tools_v07.py
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_math_lab_v08.py
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_math_lab_numerics_v08.py
+STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_math_lab_v09.py
+STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_math_lab_keyboard_v09.py
+STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_math_lab_v09_extremes.py
 echo "Chrome browser suite passed; temporary synthetic database will be removed."

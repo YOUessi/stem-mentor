@@ -101,3 +101,10 @@ T('240 deterministic cube sections stay coplanar inside bounds with finite area'
   for(const p of c.points){close(p[0]*n[0]+p[1]*n[1]+p[2]*n[2],d,2e-8);assert.ok(p[0]>=-1-1e-8&&p[0]<=1+1e-8);assert.ok(p[1]>=-1-1e-8&&p[1]<=1+1e-8);assert.ok(p[2]>=-1e-8&&p[2]<=2+1e-8)}
  }
 });
+T('cube triangular and pentagonal sections have independent analytic areas',()=>{
+ const b=M.boxGeometry(2,2,2);
+ const t=M.slicePolyhedron(b.vertices,b.edges,[1,1,1],-1);
+ assert.equal(t.points.length,3);close(t.area,Math.sqrt(3)/2);
+ const p=M.slicePolyhedron(b.vertices,b.edges,[1,1,2],1);
+ assert.equal(p.points.length,5);close(p.area,7*Math.sqrt(6)/4);
+});

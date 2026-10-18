@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-18.1",
+  "version": "2026-10-18.2",
   "subject": "高中数学",
   "curriculum_reference": "普通高中数学课程标准（2017年版2020年修订）",
   "reference_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -13,14 +13,16 @@
       "concept": "集合及其表示",
       "recommended_tool": "venn_logic",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-002",
@@ -30,14 +32,16 @@
       "concept": "交集并集补集",
       "recommended_tool": "venn_logic",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-003",
@@ -47,14 +51,16 @@
       "concept": "充分条件与必要条件",
       "recommended_tool": "venn_logic",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-004",
@@ -64,14 +70,16 @@
       "concept": "全称量词与存在量词",
       "recommended_tool": "venn_logic",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-005",
@@ -81,14 +89,16 @@
       "concept": "命题真假与逻辑关系",
       "recommended_tool": "venn_logic",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-006",
@@ -98,14 +108,16 @@
       "concept": "等式性质与不等式性质",
       "recommended_tool": "number_line",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-007",
@@ -115,14 +127,16 @@
       "concept": "一元二次不等式",
       "recommended_tool": "number_line",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-008",
@@ -132,14 +146,16 @@
       "concept": "含参数不等式",
       "recommended_tool": "number_line",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-009",
@@ -149,14 +165,16 @@
       "concept": "基本不等式",
       "recommended_tool": "number_line",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-010",
@@ -166,14 +184,16 @@
       "concept": "不等式等价变换和定义域",
       "recommended_tool": "number_line",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-011",
@@ -183,14 +203,20 @@
       "concept": "函数映射和定义域",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-log",
+        "fn-sqrt",
+        "fn-inverse"
+      ],
+      "capability_limits": "提供实数函数定义域观察；集合间映射箭头图尚未实现。"
     },
     {
       "id": "HS-MATH-012",
@@ -199,15 +225,20 @@
       "unit": "函数基本概念与性质",
       "concept": "函数值域",
       "recommended_tool": "function_2d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-quadratic",
+        "fn-sin"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-013",
@@ -217,14 +248,20 @@
       "concept": "单调性",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-exp",
+        "fn-log",
+        "derivative-cubic"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-014",
@@ -234,14 +271,20 @@
       "concept": "奇偶性",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-abs",
+        "fn-cos",
+        "fn-sin"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-015",
@@ -251,14 +294,20 @@
       "concept": "周期性",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "unit-circle",
+        "fn-sin",
+        "fn-cos"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-016",
@@ -268,14 +317,19 @@
       "concept": "零点与方程",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-quadratic",
+        "fn-cubic"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-017",
@@ -284,15 +338,19 @@
       "unit": "函数基本概念与性质",
       "concept": "分段函数",
       "recommended_tool": "function_2d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-piecewise"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-018",
@@ -302,14 +360,18 @@
       "concept": "一次函数",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-linear"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-019",
@@ -319,14 +381,18 @@
       "concept": "二次函数",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-quadratic"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-020",
@@ -336,14 +402,19 @@
       "concept": "幂函数",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-quadratic",
+        "fn-sqrt"
+      ],
+      "capability_limits": "只支持平方和平方根等固定子情形；任意幂指数未实现。"
     },
     {
       "id": "HS-MATH-021",
@@ -353,14 +424,18 @@
       "concept": "指数函数",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-exp"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-022",
@@ -370,14 +445,18 @@
       "concept": "对数函数",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-log"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-023",
@@ -387,14 +466,19 @@
       "concept": "绝对值函数",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-abs",
+        "derivative-abs"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-024",
@@ -404,14 +488,19 @@
       "concept": "函数变换与复合",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-quadratic",
+        "fn-sin"
+      ],
+      "capability_limits": "仅固定初等函数的参数变换；任意复合函数解析器未实现。"
     },
     {
       "id": "HS-MATH-025",
@@ -420,15 +509,19 @@
       "unit": "三角函数",
       "concept": "弧度制和单位圆",
       "recommended_tool": "function_2d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "unit-circle"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-026",
@@ -438,14 +531,20 @@
       "concept": "正弦余弦函数图像",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-sin",
+        "fn-cos",
+        "unit-circle"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-027",
@@ -455,14 +554,19 @@
       "concept": "正切函数",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-tan",
+        "unit-circle"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-028",
@@ -471,15 +575,19 @@
       "unit": "三角函数",
       "concept": "诱导公式",
       "recommended_tool": "function_2d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "unit-circle"
+      ],
+      "capability_limits": "通过终边、负角和多圈角观察符号变化；尚无专门证明与推导。"
     },
     {
       "id": "HS-MATH-029",
@@ -489,14 +597,16 @@
       "concept": "和差与倍角公式",
       "recommended_tool": "function_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-030",
@@ -506,14 +616,16 @@
       "concept": "三角恒等变换",
       "recommended_tool": "function_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-031",
@@ -523,14 +635,19 @@
       "concept": "三角函数图像变换",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-sin",
+        "fn-cos"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-032",
@@ -538,16 +655,20 @@
       "theme": "几何与代数",
       "unit": "平面向量与解三角形",
       "concept": "平面向量的表示",
-      "recommended_tool": "triangle_2d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "recommended_tool": "vector_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "vec2d-add"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-033",
@@ -555,16 +676,20 @@
       "theme": "几何与代数",
       "unit": "平面向量与解三角形",
       "concept": "向量加减与数乘",
-      "recommended_tool": "triangle_2d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "recommended_tool": "vector_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "vec2d-add"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-034",
@@ -572,16 +697,20 @@
       "theme": "几何与代数",
       "unit": "平面向量与解三角形",
       "concept": "向量数量积",
-      "recommended_tool": "triangle_2d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "recommended_tool": "vector_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "vec2d-projection"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-035",
@@ -589,16 +718,20 @@
       "theme": "几何与代数",
       "unit": "平面向量与解三角形",
       "concept": "向量投影与夹角",
-      "recommended_tool": "triangle_2d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "recommended_tool": "vector_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "vec2d-projection"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-036",
@@ -608,14 +741,19 @@
       "concept": "正弦定理",
       "recommended_tool": "triangle_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "tri-free",
+        "tri-ssa"
+      ],
+      "capability_limits": "提供边角读数与 SSA 存在性；不是定理证明。"
     },
     {
       "id": "HS-MATH-037",
@@ -625,14 +763,18 @@
       "concept": "余弦定理",
       "recommended_tool": "triangle_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "tri-free"
+      ],
+      "capability_limits": "边长角度可以数值核对；没有自动生成证明。"
     },
     {
       "id": "HS-MATH-038",
@@ -642,14 +784,18 @@
       "concept": "SSA 二解与三角形存在性",
       "recommended_tool": "triangle_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "tri-ssa"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-039",
@@ -659,14 +805,19 @@
       "concept": "三角形面积与几何关系",
       "recommended_tool": "triangle_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "tri-free",
+        "tri-right"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-040",
@@ -676,14 +827,16 @@
       "concept": "复数与复平面",
       "recommended_tool": "complex_plane",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-041",
@@ -693,14 +846,16 @@
       "concept": "复数模与辐角",
       "recommended_tool": "complex_plane",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-042",
@@ -710,14 +865,16 @@
       "concept": "复数加减乘除及几何意义",
       "recommended_tool": "complex_plane",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-043",
@@ -727,14 +884,20 @@
       "concept": "空间点线面位置关系",
       "recommended_tool": "space_3d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-point",
+        "3d-plane",
+        "3d-section-prism"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-044",
@@ -743,15 +906,17 @@
       "unit": "立体几何初步",
       "concept": "平行与垂直的判定",
       "recommended_tool": "space_3d",
-      "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "status": "PLANNED",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-045",
@@ -761,14 +926,16 @@
       "concept": "直线与平面距离",
       "recommended_tool": "space_3d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-046",
@@ -778,14 +945,19 @@
       "concept": "棱柱棱锥与棱台",
       "recommended_tool": "space_3d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-prism",
+        "3d-pyramid"
+      ],
+      "capability_limits": "已有长方体和四棱锥；棱台未实现。"
     },
     {
       "id": "HS-MATH-047",
@@ -795,14 +967,20 @@
       "concept": "圆柱圆锥球",
       "recommended_tool": "space_3d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-cylinder",
+        "3d-cone",
+        "3d-sphere"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-048",
@@ -811,15 +989,21 @@
       "unit": "立体几何初步",
       "concept": "表面积与体积",
       "recommended_tool": "space_3d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-prism",
+        "3d-pyramid",
+        "3d-sphere"
+      ],
+      "capability_limits": "当前显示部分实体体积与截面积；通用表面积计算未实现。"
     },
     {
       "id": "HS-MATH-049",
@@ -828,15 +1012,21 @@
       "unit": "立体几何初步",
       "concept": "空间截面与展开图",
       "recommended_tool": "space_3d",
-      "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-section-prism",
+        "3d-section-pyramid",
+        "3d-section-sphere"
+      ],
+      "capability_limits": "已实现凸多面体和球的平面截面；展开图未实现。"
     },
     {
       "id": "HS-MATH-050",
@@ -846,14 +1036,16 @@
       "concept": "样本空间与随机事件",
       "recommended_tool": "probability_tree",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-051",
@@ -863,14 +1055,16 @@
       "concept": "互斥和对立事件",
       "recommended_tool": "probability_tree",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-052",
@@ -880,14 +1074,16 @@
       "concept": "古典概型",
       "recommended_tool": "probability_tree",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-053",
@@ -897,14 +1093,16 @@
       "concept": "概率加法与乘法基本关系",
       "recommended_tool": "probability_tree",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-054",
@@ -914,14 +1112,16 @@
       "concept": "数据的收集与抽样",
       "recommended_tool": "statistics_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-055",
@@ -931,14 +1131,16 @@
       "concept": "频数分布与直方图",
       "recommended_tool": "statistics_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-056",
@@ -948,14 +1150,16 @@
       "concept": "均值中位数众数",
       "recommended_tool": "statistics_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-057",
@@ -965,14 +1169,16 @@
       "concept": "方差标准差",
       "recommended_tool": "statistics_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-058",
@@ -982,14 +1188,16 @@
       "concept": "百分位数与样本估计",
       "recommended_tool": "statistics_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-059",
@@ -999,14 +1207,16 @@
       "concept": "数学建模流程",
       "recommended_tool": "modeling_workspace",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-060",
@@ -1016,14 +1226,16 @@
       "concept": "数据模型与检验",
       "recommended_tool": "modeling_workspace",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-061",
@@ -1033,14 +1245,16 @@
       "concept": "问题提出与合作探究",
       "recommended_tool": "modeling_workspace",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-062",
@@ -1050,14 +1264,16 @@
       "concept": "数列概念与递推",
       "recommended_tool": "function_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-063",
@@ -1067,14 +1283,16 @@
       "concept": "等差数列",
       "recommended_tool": "function_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-064",
@@ -1084,14 +1302,16 @@
       "concept": "等比数列",
       "recommended_tool": "function_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-065",
@@ -1101,14 +1321,16 @@
       "concept": "数列求和与数列模型",
       "recommended_tool": "function_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-066",
@@ -1118,14 +1340,19 @@
       "concept": "导数的几何意义",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "derivative-quadratic",
+        "derivative-cubic"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-067",
@@ -1135,14 +1362,20 @@
       "concept": "导数与切线",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "derivative-quadratic",
+        "derivative-log",
+        "derivative-abs"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-068",
@@ -1152,14 +1385,18 @@
       "concept": "导数判断单调性",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "derivative-cubic"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-069",
@@ -1169,14 +1406,19 @@
       "concept": "极值与最值",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "derivative-cubic",
+        "fn-quadratic"
+      ],
+      "capability_limits": "固定函数驻点和曲线观察；闭区间端点比较及一般最值验证未实现。"
     },
     {
       "id": "HS-MATH-070",
@@ -1186,14 +1428,19 @@
       "concept": "函数零点和参数讨论",
       "recommended_tool": "function_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "fn-quadratic",
+        "fn-cubic"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-071",
@@ -1203,14 +1450,18 @@
       "concept": "空间直角坐标系",
       "recommended_tool": "space_3d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-point"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-072",
@@ -1220,14 +1471,18 @@
       "concept": "空间向量与坐标运算",
       "recommended_tool": "space_3d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-vectors"
+      ],
+      "capability_limits": "空间坐标、数量积和夹角；通用三维向量运算编辑尚未实现。"
     },
     {
       "id": "HS-MATH-073",
@@ -1237,14 +1492,18 @@
       "concept": "空间向量数量积",
       "recommended_tool": "space_3d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-vectors"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-074",
@@ -1254,14 +1513,18 @@
       "concept": "直线方向向量",
       "recommended_tool": "space_3d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-vectors"
+      ],
+      "capability_limits": "仅向量的方向表示；空间直线方程、点线距离未实现。"
     },
     {
       "id": "HS-MATH-075",
@@ -1271,14 +1534,19 @@
       "concept": "平面法向量",
       "recommended_tool": "space_3d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-plane",
+        "3d-section-prism"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-076",
@@ -1287,15 +1555,17 @@
       "unit": "空间向量与立体几何",
       "concept": "直线平面夹角",
       "recommended_tool": "space_3d",
-      "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "status": "PLANNED",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-077",
@@ -1304,15 +1574,17 @@
       "unit": "空间向量与立体几何",
       "concept": "二面角",
       "recommended_tool": "space_3d",
-      "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "status": "PLANNED",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-078",
@@ -1321,15 +1593,17 @@
       "unit": "空间向量与立体几何",
       "concept": "空间距离计算",
       "recommended_tool": "space_3d",
-      "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "status": "PLANNED",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-079",
@@ -1339,14 +1613,20 @@
       "concept": "空间多面体与投影",
       "recommended_tool": "space_3d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "3d-prism",
+        "3d-pyramid",
+        "3d-point"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-080",
@@ -1356,14 +1636,18 @@
       "concept": "倾斜角与直线斜率",
       "recommended_tool": "conic_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "conic-line"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-081",
@@ -1373,14 +1657,18 @@
       "concept": "直线方程",
       "recommended_tool": "conic_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "conic-line"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-082",
@@ -1390,14 +1678,16 @@
       "concept": "两直线的位置关系",
       "recommended_tool": "conic_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-083",
@@ -1407,14 +1697,16 @@
       "concept": "点到直线距离",
       "recommended_tool": "conic_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-084",
@@ -1424,14 +1716,18 @@
       "concept": "直线与圆的位置关系",
       "recommended_tool": "conic_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "conic-intersection"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-085",
@@ -1441,14 +1737,16 @@
       "concept": "圆与圆的位置关系",
       "recommended_tool": "conic_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-086",
@@ -1458,14 +1756,18 @@
       "concept": "椭圆定义及几何性质",
       "recommended_tool": "conic_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "conic-ellipse"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-087",
@@ -1475,14 +1777,18 @@
       "concept": "双曲线定义及几何性质",
       "recommended_tool": "conic_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "conic-hyperbola"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-088",
@@ -1492,14 +1798,18 @@
       "concept": "抛物线定义及几何性质",
       "recommended_tool": "conic_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "conic-parabola"
+      ],
+      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
     },
     {
       "id": "HS-MATH-089",
@@ -1509,14 +1819,20 @@
       "concept": "圆锥曲线焦点与准线",
       "recommended_tool": "conic_2d",
       "status": "INTERACTIVE_FOUNDATION",
-      "capability": "探索示意与数形关系，非完整教学验证",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [
+        "conic-ellipse",
+        "conic-hyperbola",
+        "conic-parabola"
+      ],
+      "capability_limits": "可显示椭圆和双曲线焦点、抛物线焦点和准线；其他准线尚未实现。"
     },
     {
       "id": "HS-MATH-090",
@@ -1526,14 +1842,16 @@
       "concept": "圆锥曲线与直线联立",
       "recommended_tool": "conic_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-091",
@@ -1543,14 +1861,16 @@
       "concept": "圆锥曲线的切线与法线",
       "recommended_tool": "conic_2d",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-092",
@@ -1560,14 +1880,16 @@
       "concept": "分类加法计数原理",
       "recommended_tool": "combinatorics",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-093",
@@ -1577,14 +1899,16 @@
       "concept": "分步乘法计数原理",
       "recommended_tool": "combinatorics",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-094",
@@ -1594,14 +1918,16 @@
       "concept": "排列与组合",
       "recommended_tool": "combinatorics",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-095",
@@ -1611,14 +1937,16 @@
       "concept": "二项式定理",
       "recommended_tool": "combinatorics",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-096",
@@ -1628,14 +1956,16 @@
       "concept": "条件概率与独立性",
       "recommended_tool": "probability_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-097",
@@ -1645,14 +1975,16 @@
       "concept": "全概率公式",
       "recommended_tool": "probability_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-098",
@@ -1662,14 +1994,16 @@
       "concept": "离散型随机变量",
       "recommended_tool": "probability_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-099",
@@ -1679,14 +2013,16 @@
       "concept": "二项分布",
       "recommended_tool": "probability_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-100",
@@ -1696,14 +2032,16 @@
       "concept": "超几何分布",
       "recommended_tool": "probability_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-101",
@@ -1713,14 +2051,16 @@
       "concept": "正态分布",
       "recommended_tool": "probability_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-102",
@@ -1730,14 +2070,16 @@
       "concept": "回归分析与相关性",
       "recommended_tool": "probability_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-103",
@@ -1747,14 +2089,16 @@
       "concept": "独立性检验",
       "recommended_tool": "probability_plot",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-104",
@@ -1764,14 +2108,16 @@
       "concept": "数学探究活动",
       "recommended_tool": "modeling_workspace",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-105",
@@ -1781,14 +2127,16 @@
       "concept": "数据驱动的建模",
       "recommended_tool": "modeling_workspace",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-106",
@@ -1798,14 +2146,16 @@
       "concept": "对模型进行验证与评价",
       "recommended_tool": "modeling_workspace",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-107",
@@ -1815,14 +2165,16 @@
       "concept": "三角形五心与综合几何",
       "recommended_tool": "enrichment",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-108",
@@ -1832,14 +2184,16 @@
       "concept": "圆锥曲线极线与换一半法则",
       "recommended_tool": "enrichment",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-109",
@@ -1849,14 +2203,16 @@
       "concept": "参数方程与极坐标",
       "recommended_tool": "enrichment",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-110",
@@ -1866,14 +2222,16 @@
       "concept": "更一般的二次曲面",
       "recommended_tool": "enrichment",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-111",
@@ -1883,14 +2241,16 @@
       "concept": "数学归纳法",
       "recommended_tool": "enrichment",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-112",
@@ -1900,14 +2260,16 @@
       "concept": "向量外积",
       "recommended_tool": "enrichment",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     },
     {
       "id": "HS-MATH-113",
@@ -1917,14 +2279,16 @@
       "concept": "算法与数学证明",
       "recommended_tool": "enrichment",
       "status": "PLANNED",
-      "capability": "未实现专项交互",
+      "capability": "尚无对应专项交互场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
         "mapping_type": "ENGINEERING_INTERPRETATION",
         "teacher_review": "PENDING"
       },
-      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。"
+      "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
+      "available_presets": [],
+      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
     }
   ]
 }

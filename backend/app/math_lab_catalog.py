@@ -6,7 +6,7 @@ from functools import lru_cache
 import json
 
 ROOT=Path(__file__).resolve().parents[2]/"curriculum"/"highschool_math"
-TOOL_IDS={"function_2d","conic_2d","triangle_2d","space_3d"}
+TOOL_IDS={"function_2d","conic_2d","triangle_2d","space_3d","vector_2d"}
 PLANNED_TOOLS={"venn_logic","number_line","complex_plane","probability_tree",
  "statistics_plot","modeling_workspace","combinatorics","probability_plot","enrichment"}
 
@@ -24,6 +24,15 @@ def lab_catalog():
         raise ValueError("Lab preset has an unsupported tool")
     if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
         raise ValueError("Unknown mapped curriculum tool")
+    scene_ids={p["id"] for p in presets}
+    for topic in topics:
+        evidence=topic.get("available_presets",[])
+        if not all(id in scene_ids for id in evidence):
+            raise ValueError("Coverage references an unknown scene")
+        if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+            raise ValueError("Unsupported coverage claim")
+        if not topic.get("capability_limits"):
+            raise ValueError("Missing capability limitation")
     for p in presets:
         keys=[v["key"] for v in p["params"]]
         if len(set(keys))!=len(keys):

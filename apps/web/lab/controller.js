@@ -5,6 +5,7 @@
   const TEAMS=[
     ["function_2d","函数与二维坐标","函数、图像与变化"],
     ["conic_2d","圆锥曲线","直线、圆、椭圆、双曲线、抛物线"],
+    ["vector_2d","平面向量","加减、数乘、投影与夹角"],
     ["triangle_2d","三角形与解三角形","三边、三角、SSA 多解"],
     ["space_3d","空间直角坐标系","空间向量、平面与立体几何"]
   ];
@@ -76,7 +77,10 @@
   function selectPreset(id){
     const preset=state.data?.presets?.find(p=>p.id===id);
     if(!preset)return;
-    state.family=preset.tool;state.preset=id;state.scene={};
+    state.family=preset.tool;state.preset=id;state.scene={assist:false};
+    const extra=preset.assist_default===false;
+    $("labAssistControl").hidden=!extra;$("labAssistToggle").checked=false;
+    $("labAssistLabel").textContent=preset.id.startsWith("derivative-")?"显示解析切线（先猜想，再核对）":preset.id.startsWith("3d-section-")?"显示切平面与法向量（可选）":"显示辅助图形（自主核对）";
     state.values=Object.fromEntries(preset.params.map(p=>[p.key,p.value]));
     state.view2d={zoom:1};state.view3d={yaw:38,pitch:36,zoom:1};
     $("labPreset").value=id;$("lab2dZoom").value="1";
@@ -84,7 +88,7 @@
     $("labTitle").textContent=preset.title;
     $("labDescription").textContent=preset.description;
     $("labSceneHint").textContent="这是一份可调的数学模型。请先预测参数变化的效果，再拖动、旋转或比较数值。";
-    $("lab2dControls").hidden=preset.tool==="space_3d";
+    $("lab2dControls").hidden=preset.tool==="space_3d"||preset.tool==="triangle_2d"||preset.id==="unit-circle";
     $("lab3dControls").hidden=preset.tool!=="space_3d";
     const params=$("labParameterControls");params.replaceChildren();
     if(!preset.params.length){
@@ -130,8 +134,33 @@
   function draw(){
     const preset=selectedPreset(),node=$("labPlot");if(!preset||!node)return;
     try{
+      // Explicitly clear prior scene handlers; SVG root is reused across families.
+      node.onpointerdown=node.onpointermove=node.onpointerup=node.onpointercancel=null;node.style.cursor="";
+      const scene=state.scene;
+      scene.onParams=patch=>{
+        // SVG children are replaced during drawing. Preserve a keyboard user's
+        // logical handle without stealing focus from sliders or pointer users.
+        const focusedHandle=node.contains(document.activeElement)?
+          document.activeElement.getAttribute("data-handle"):null;
+        for(const [key,value] of Object.entries(patch)){
+          const spec=preset.params.find(v=>v.key===key);if(!spec||!Number.isFinite(value))continue;
+          const bounded=Math.max(spec.min,Math.min(spec.max,value));
+          const rounded=Number((spec.min+Math.round((bounded-spec.min)/spec.step)*spec.step).toFixed(10));
+          state.values[key]=Math.max(spec.min,Math.min(spec.max,rounded));
+          const slider=$("labParam_"+key);if(slider){slider.value=String(state.values[key]);slider.closest(".lab-param").querySelector("output").textContent=fixed(state.values[key]);}
+        }
+        draw();
+        if(focusedHandle){
+          const replacement=Array.from(node.querySelectorAll("[data-handle]")).find(
+            element=>element.getAttribute("data-handle")===focusedHandle);
+          replacement?.focus({preventScroll:true});
+        }
+      };
       let result;
-      if(preset.tool==="triangle_2d"){
+      if(root.MentorLabExplorers?.supports(preset.id)){
+        result=root.MentorLabExplorers.draw(node,preset,state.values,state.view2d,scene);
+        $("labCoordinateReadout").textContent="先观察再开启辅助线；拖动点或参数滑块可同步探索。";
+      }else if(preset.tool==="triangle_2d"){
         const scene=state.scene;
         scene.onUpdate=metrics;
         result=root.MentorLabTriangle.draw(node,preset,state.values,scene);
@@ -191,14 +220,15 @@
       const body=make(item,"div","lab-topic-main","");
       make(body,"b","",topic.concept);
       make(body,"small","",topic.level+" / "+topic.theme+" / "+topic.unit);
+      make(body,"small","lab-capability-limit",topic.capability_limits);
       const ready=topic.status==="INTERACTIVE_FOUNDATION";
       const badge=make(item,"span",ready?"lab-topic-tag":"lab-topic-tag planned",
           ready?"已有基础交互":"后续规划");
       badge.title=topic.capability;
       if(ready&&TEAMS.some(x=>x[0]===topic.recommended_tool)){
-        const b=make(item,"button","lab-topic-button","查看同类画板");
+        const b=make(item,"button","lab-topic-button","打开对应实验");
         b.type="button";b.onclick=()=>{
-          selectFamily(topic.recommended_tool);
+          selectFamily(topic.recommended_tool,topic.available_presets?.[0]);
           $("labPlotBox").scrollIntoView({block:"center",behavior:"smooth"});
         };
       }
@@ -213,9 +243,9 @@
       "triangle-ssa":"tri-ssa",
       "triangle-sas":"tri-free",
       "triangle-sss":"tri-free",
-      "derivative-extrema":"fn-cubic",
+      "derivative-extrema":"derivative-cubic",
       "log-domain":"fn-log",
-      "vector-orthogonality":"3d-vectors"
+      "vector-orthogonality":"vec2d-projection"
     };
     const id=known[problemId];
     const preset=state.data.presets.find(p=>p.id===id);
@@ -231,6 +261,7 @@
   function init(){
     $("labPreset")?.addEventListener("change",e=>selectPreset(e.target.value));
     $("labReset")?.addEventListener("click",reset);
+    $("labAssistToggle")?.addEventListener("change",e=>{state.scene.assist=e.target.checked;draw()});
     for(const id of ["labLevel","labCoverage","labTopicSearch"]){
       $(id)?.addEventListener(id==="labTopicSearch"?"input":"change",renderCurriculum);
     }

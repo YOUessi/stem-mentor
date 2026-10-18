@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-18.1",
+  "version": "2026-10-18.2",
   "notice": "受控数学演示、非自动解答；部分高中知识仍规划中",
   "presets": [
     {
@@ -992,6 +992,394 @@
       "source": "PROJECT_AUTHORED",
       "expert_review": "PENDING",
       "simulation": true
+    },
+    {
+      "id": "vec2d-add",
+      "tool": "vector_2d",
+      "title": "平面向量：加减与数乘",
+      "equation": "vec2d-add",
+      "latex": "\\vec a+\\vec b,\\quad k\\vec a",
+      "params": [
+        {
+          "key": "ax",
+          "label": "a 的 x 坐标",
+          "min": -3.5,
+          "max": 3.5,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "ay",
+          "label": "a 的 y 坐标",
+          "min": -3.5,
+          "max": 3.5,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "bx",
+          "label": "b 的 x 坐标",
+          "min": -3.5,
+          "max": 3.5,
+          "value": -1,
+          "step": 0.1
+        },
+        {
+          "key": "by",
+          "label": "b 的 y 坐标",
+          "min": -3.5,
+          "max": 3.5,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "数乘系数 k",
+          "min": -2,
+          "max": 2,
+          "value": 1,
+          "step": 0.1
+        }
+      ],
+      "description": "拖动两个向量的端点；自主打开合向量和平行四边形，检验自己的猜想。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
+    },
+    {
+      "id": "vec2d-projection",
+      "tool": "vector_2d",
+      "title": "平面向量：数量积与投影",
+      "equation": "vec2d-projection",
+      "latex": "\\operatorname{proj}_{\\vec b}\\vec a=\\frac{\\vec a\\cdot\\vec b}{|\\vec b|^2}\\vec b",
+      "params": [
+        {
+          "key": "ax",
+          "label": "a 的 x 坐标",
+          "min": -3.5,
+          "max": 3.5,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "ay",
+          "label": "a 的 y 坐标",
+          "min": -3.5,
+          "max": 3.5,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "bx",
+          "label": "b 的 x 坐标",
+          "min": -3.5,
+          "max": 3.5,
+          "value": -1,
+          "step": 0.1
+        },
+        {
+          "key": "by",
+          "label": "b 的 y 坐标",
+          "min": -3.5,
+          "max": 3.5,
+          "value": 2,
+          "step": 0.1
+        }
+      ],
+      "description": "投影到非零向量；零向量夹角与投影方向未定义，不能盲套公式。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
+    },
+    {
+      "id": "unit-circle",
+      "tool": "function_2d",
+      "title": "单位圆：弧度、象限与三角函数",
+      "equation": "unit-circle",
+      "latex": "P(\\cos\\theta,\\sin\\theta),\\quad x^2+y^2=1",
+      "params": [
+        {
+          "key": "theta",
+          "label": "角度 θ（度，包含多圈与负角）",
+          "min": -720,
+          "max": 720,
+          "value": 35,
+          "step": 1
+        }
+      ],
+      "description": "拖动单位圆上 P 点，观察角度与弧度、正弦余弦联动；90/270 度的正切无定义。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
+    },
+    {
+      "id": "derivative-quadratic",
+      "tool": "function_2d",
+      "title": "动态导数：二次函数割线到切线",
+      "equation": "derivative-quadratic",
+      "latex": "f(x)=x^2",
+      "params": [
+        {
+          "key": "x",
+          "label": "基点 x",
+          "min": -2,
+          "max": 2,
+          "value": 0.7,
+          "step": 0.05
+        },
+        {
+          "key": "h",
+          "label": "增量 h（可正可负）",
+          "min": -1.5,
+          "max": 1.5,
+          "value": 0.8,
+          "step": 0.01
+        }
+      ],
+      "description": "逐渐缩小非零 h，比较差商与解析导数；h=0 时割线本身未定义。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
+    },
+    {
+      "id": "derivative-cubic",
+      "tool": "function_2d",
+      "title": "动态导数：三次函数与驻点",
+      "equation": "derivative-cubic",
+      "latex": "f(x)=x^3-3x",
+      "params": [
+        {
+          "key": "x",
+          "label": "基点 x",
+          "min": -2,
+          "max": 2,
+          "value": 0.5,
+          "step": 0.05
+        },
+        {
+          "key": "h",
+          "label": "增量 h",
+          "min": -1.5,
+          "max": 1.5,
+          "value": 0.5,
+          "step": 0.01
+        }
+      ],
+      "description": "割线斜率与解析切线斜率分别显示；驻点的导数为零不自动意味着最大值。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
+    },
+    {
+      "id": "derivative-log",
+      "tool": "function_2d",
+      "title": "动态导数：对数函数与定义域",
+      "equation": "derivative-log",
+      "latex": "f(x)=\\ln x,\\quad x>0",
+      "params": [
+        {
+          "key": "x",
+          "label": "基点 x（严格大于零）",
+          "min": 0.1,
+          "max": 3,
+          "value": 1,
+          "step": 0.05
+        },
+        {
+          "key": "h",
+          "label": "增量 h",
+          "min": -1.5,
+          "max": 1.5,
+          "value": 0.5,
+          "step": 0.01
+        }
+      ],
+      "description": "x+h 也必须为正，跨出定义域时不画错误割线。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
+    },
+    {
+      "id": "derivative-abs",
+      "tool": "function_2d",
+      "title": "动态导数：绝对值函数不可导点",
+      "equation": "derivative-abs",
+      "latex": "f(x)=|x|",
+      "params": [
+        {
+          "key": "x",
+          "label": "基点 x",
+          "min": -2,
+          "max": 2,
+          "value": 0,
+          "step": 0.05
+        },
+        {
+          "key": "h",
+          "label": "增量 h（检查左右）",
+          "min": -1.5,
+          "max": 1.5,
+          "value": 0.5,
+          "step": 0.01
+        }
+      ],
+      "description": "在 x=0 比较左右差商；折点不可导，不展示虚假的唯一切线。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
+    },
+    {
+      "id": "3d-section-prism",
+      "tool": "space_3d",
+      "title": "空间截面：平面切长方体",
+      "equation": "3d-section-prism",
+      "latex": "n_xx+n_yy+n_zz=t",
+      "params": [
+        {
+          "key": "nx",
+          "label": "平面法向量 n_x",
+          "min": -2,
+          "max": 2,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "ny",
+          "label": "平面法向量 n_y",
+          "min": -2,
+          "max": 2,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "nz",
+          "label": "平面法向量 n_z",
+          "min": -2,
+          "max": 2,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "t",
+          "label": "平面位置 t",
+          "min": -6,
+          "max": 12,
+          "value": 2,
+          "step": 0.1
+        }
+      ],
+      "description": "长方体 x,y∈[-2,2]、z∈[0,4]；逐边计算交点，可出现三至六边形、线段、点或无交。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
+    },
+    {
+      "id": "3d-section-pyramid",
+      "tool": "space_3d",
+      "title": "空间截面：平面切四棱锥",
+      "equation": "3d-section-pyramid",
+      "latex": "n_xx+n_yy+n_zz=t",
+      "params": [
+        {
+          "key": "nx",
+          "label": "平面法向量 n_x",
+          "min": -2,
+          "max": 2,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "ny",
+          "label": "平面法向量 n_y",
+          "min": -2,
+          "max": 2,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "nz",
+          "label": "平面法向量 n_z",
+          "min": -2,
+          "max": 2,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "t",
+          "label": "平面位置 t",
+          "min": -6,
+          "max": 12,
+          "value": 2,
+          "step": 0.1
+        }
+      ],
+      "description": "底面为 [-2,2]²、高4；改变平面倾角与高度观察实际截面，贴合底面、过顶点需单独判定。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
+    },
+    {
+      "id": "3d-section-sphere",
+      "tool": "space_3d",
+      "title": "空间截面：球与平面的交集",
+      "equation": "3d-section-sphere",
+      "latex": "x^2+y^2+z^2=R^2,\\quad \\vec n\\cdot\\vec x=t",
+      "params": [
+        {
+          "key": "r",
+          "label": "球半径 R",
+          "min": 0.5,
+          "max": 3,
+          "value": 2,
+          "step": 0.1
+        },
+        {
+          "key": "nx",
+          "label": "n_x",
+          "min": -2,
+          "max": 2,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "ny",
+          "label": "n_y",
+          "min": -2,
+          "max": 2,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "nz",
+          "label": "n_z",
+          "min": -2,
+          "max": 2,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "t",
+          "label": "平面位置 t",
+          "min": -6,
+          "max": 6,
+          "value": 1,
+          "step": 0.1
+        }
+      ],
+      "description": "交集可能为圆、相切点或空集；零法向量不是合法平面。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false
     }
   ]
 }

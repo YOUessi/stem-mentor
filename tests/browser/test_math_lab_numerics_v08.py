@@ -16,7 +16,7 @@ def main():
       page.on("pageerror",lambda e:errors.append(str(e)))
       assert page.goto(URL,wait_until="networkidle").ok
       page.locator('button[data-view="lab"]').click()
-      page.wait_for_function("() => document.querySelectorAll('#labPreset option').length===12")
+      page.wait_for_function("() => document.querySelectorAll('#labPreset option').length>=12")
       numbers=page.evaluate("""() => {
         const res={};
         const F=window.MentorLab2D.familyFunction;
