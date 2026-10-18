@@ -23,6 +23,10 @@ jobs:
           node --check apps/web/lab/triangle.js
           node --check apps/web/lab/scene3d.js
           node --check apps/web/lab/controller.js
+          node --check apps/web/lab/exploration_math.js
+          node --check apps/web/lab/explorers2d.js
+          node --check apps/web/lab/sections3d.js
+      - run: node --test tests/node/*.test.cjs
       - run: cd backend && PYTHONPATH=. python evaluate_policy.py
 
       - run: cd backend && PYTHONPATH=. python evaluate_v05.py

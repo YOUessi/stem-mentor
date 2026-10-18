@@ -127,3 +127,38 @@
 @media(prefers-reduced-motion:reduce){
  .lab-family-tab,.lab-bridge-button{transition:none!important}
 }
+
+/* v0.9 additions: same green base, explicit opt-in mathematical scaffolds. */
+.lab-assist-control{display:flex;gap:9px;align-items:center;padding:12px;border:1px solid #dcebdc;border-radius:10px;background:#f5faf2;margin:0 0 13px;color:#50765a;font-size:11px;line-height:1.65;cursor:pointer}
+.lab-assist-control[hidden]{display:none!important}
+.lab-assist-control input{accent-color:#327f4d;width:15px;height:15px;flex:none}
+.lab-capability-limit{font-size:9px!important;color:#879787!important;line-height:1.55;margin-top:7px!important}
+.lab-vector-a{stroke:#2d8854;stroke-width:3;fill:none}
+.lab-vector-b{stroke:#a28454;stroke-width:3;fill:none}
+.lab-arrow-tip{fill:#4b8255;stroke:none}
+.lab-vector-handle,.lab-unit-point{fill:#689a70;stroke:#fff;stroke-width:2;cursor:grab;touch-action:none}
+.lab-vector-handle:active,.lab-unit-point:active{cursor:grabbing}
+.lab-vector-handle:focus-visible,.lab-unit-point:focus-visible{stroke:#274d31;stroke-width:3;outline:none}
+.lab-explore-dashed{stroke:#a4bba6;stroke-width:1.7;stroke-dasharray:5 5;fill:none}
+.lab-resultant{stroke:#1f6b41;stroke-width:3.5;fill:none}
+.lab-scaled-vector{stroke:#87ad7d;stroke-width:2;stroke-dasharray:6 4;fill:none}
+.lab-projection{stroke:#bd965e;stroke-width:4;fill:none}
+.lab-unit-circle{fill:#f3faf3;stroke:#639f72;stroke-width:2.2}
+.lab-linked-sin{fill:none;stroke:#358452;stroke-width:2.6}
+.lab-linked-cos{fill:none;stroke:#a78e58;stroke-width:2.1;stroke-dasharray:6 3}
+.lab-linked-sin-dot{fill:#358452;stroke:#fff;stroke-width:1.3}
+.lab-linked-cos-dot{fill:#a78e58;stroke:#fff;stroke-width:1.3}
+.lab-cos-label{fill:#9a814d;font-size:13px;font-weight:650}
+.lab-unit-tangent{stroke:#b59f7b;stroke-width:1.6;stroke-dasharray:4 5}
+.lab-secant{stroke:#b68c51;stroke-width:2;stroke-dasharray:7 5;fill:none}
+.lab-tangent{stroke:#27633d;stroke-width:2.3;fill:none}
+.lab-section-polygon{fill:rgba(220,183,105,.31);stroke:#a07943;stroke-width:1.3}
+.lab-section-edge{fill:none;stroke:#a87937;stroke-width:3.3}
+.lab-section-point{fill:#b18141;stroke:#fff;stroke-width:1.4}
+.lab-cutting-plane{fill:rgba(172,202,157,.14);stroke:#adc7a4;stroke-width:1.1;stroke-dasharray:5 5}
+@media(min-width:1101px){.lab-family-tabs{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(min-width:731px) and (max-width:1100px){.lab-family-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* Auxiliary lines are not drag targets; handles remain reachable when ka=a. */
+#labPlot .lab-arrow-tip,#labPlot .lab-vector-a,#labPlot .lab-vector-b,
+#labPlot .lab-explore-dashed,#labPlot .lab-resultant,#labPlot .lab-scaled-vector,
+#labPlot .lab-projection,#labPlot .lab-axis-label{pointer-events:none}

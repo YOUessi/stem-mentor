@@ -25,7 +25,7 @@
     </nav>
     <div class="sidebar-bottom">
       <div class="sidebar-note"><strong>教学核心</strong><span>先由你尝试，我们一起找到突破口。</span></div>
-      <span class="aside-version">SIMULATION · v0.7</span>
+      <span class="aside-version">SIMULATION · v0.9</span>
     </div>
   </aside>
   <main class="main">
@@ -120,6 +120,7 @@
             <label class="lab-control-label" for="labPreset">选择知识场景</label>
             <select id="labPreset" aria-label="选择数学实验场景"></select>
             <div id="labFormula" class="lab-formula" aria-label="当前实验的数学公式"></div>
+            <label id="labAssistControl" class="lab-assist-control" hidden><input type="checkbox" id="labAssistToggle"/><span id="labAssistLabel">显示辅助图形（自主核对）</span></label>
             <div id="labParameterControls" class="lab-param-list"></div>
             <div id="labSceneHint" class="lab-scene-hint">请调整一个参数，试着预测图形变化后再观察。</div>
             <div class="lab-reflection"><strong>想一想</strong><p>如果只改变一个条件，哪部分性质不变？你能先作出猜想，再用图验证吗？</p></div>
@@ -144,9 +145,12 @@
 <script src="/assets/app.js" defer></script>
 <script src="/assets/vendor/mathjax/tex-svg.js" defer></script>
 <script src="/assets/study_tools.js" defer></script>
+<script src="/assets/lab/exploration_math.js" defer></script>
 <script src="/assets/lab/plot2d.js" defer></script>
 <script src="/assets/lab/triangle.js" defer></script>
 <script src="/assets/lab/scene3d.js" defer></script>
+<script src="/assets/lab/explorers2d.js" defer></script>
+<script src="/assets/lab/sections3d.js" defer></script>
 <script src="/assets/lab/controller.js" defer></script>
 </body>
 </html>

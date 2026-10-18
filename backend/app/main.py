@@ -14,7 +14,7 @@ from .retrieval import retrieve, corpus
 from .study_visuals import visual_for, visuals
 from .math_lab_catalog import lab_catalog
 
-app=FastAPI(title="STEM Mentor — 离线模拟",version="0.8.0")
+app=FastAPI(title="STEM Mentor — 离线模拟",version="0.9.0")
 ROOT=Path(__file__).resolve().parents[2]
 WEB=ROOT/"apps"/"web"
 app.mount("/assets",StaticFiles(directory=str(WEB)),name="assets")

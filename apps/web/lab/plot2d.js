@@ -232,5 +232,5 @@
       id:preset.id
     };
   }
-  root.MentorLab2D={draw,numericParams,familyFunction,conicInfo:statsForFunction,context};
+  root.MentorLab2D={draw,numericParams,familyFunction,conicInfo:statsForFunction,context,drawGrid,curve,samples,point,lineWorld};
 })(window);

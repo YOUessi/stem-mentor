@@ -1,0 +1,504 @@
+{
+  "generated_at": "2026-10-18T20:47:25.904266+00:00",
+  "engine": "LOCAL_FTS5_AND_CURATED_STRUCTURE_V05",
+  "model_api_calls": 0,
+  "cases": 40,
+  "passed": 40,
+  "failed": 0,
+  "top3_hits": 22,
+  "positive_cases": 22,
+  "negative_cases": 18,
+  "negative_cases_passed": 18,
+  "corpus_quality": {
+    "valid_contract": true,
+    "issues": [],
+    "corpus_documents": 26,
+    "curated_problems": 15,
+    "reasoning_graphs": 15,
+    "exam_micro_points": 13,
+    "subject_counts": {
+      "高中数学·平面解析几何": 1,
+      "高中数学·圆锥曲线": 3,
+      "高中数学·不等式": 2,
+      "高中数学·数列": 2,
+      "通用数学思维": 4,
+      "高中数学·解三角形": 5,
+      "高中数学·平面几何": 2,
+      "高中数学·解析几何": 1,
+      "高中数学·函数与导数": 2,
+      "高中数学·函数": 2,
+      "高中数学·数列与证明": 1,
+      "高中数学·平面向量": 1
+    },
+    "expert_review_status": {
+      "PENDING": 26
+    },
+    "teacher_approved_documents": 0,
+    "scope": "AUTOMATIC_SCHEMA_AND_SOURCE_CHECK_ONLY",
+    "note": "不等于教师审核通过或对任意数学题有自动理解能力"
+  },
+  "limitations": "本评测仅验证人工定义的精确题卡结构、索引匹配与明显反例，不衡量真实学生能力或开放题语义理解。",
+  "results": [
+    {
+      "id": "ratio-circle",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-apollonius",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-apollonius"
+      ]
+    },
+    {
+      "id": "circle-not-median",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-median-theorem",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": [
+        "method-apollonius"
+      ]
+    },
+    {
+      "id": "median-not-circle",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-apollonius",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": [
+        "method-median-theorem",
+        "method-cosine-rule",
+        "method-sine-rule"
+      ]
+    },
+    {
+      "id": "median-real",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-median-theorem",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-median-theorem",
+        "method-cosine-rule",
+        "method-sine-rule"
+      ]
+    },
+    {
+      "id": "conic-tangent",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-conic-tangent",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-conic-tangent"
+      ]
+    },
+    {
+      "id": "conic-focus-confound",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-conic-tangent",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": [
+        "method-ellipse-focus"
+      ]
+    },
+    {
+      "id": "ellipse-distance-sum",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-ellipse-focus",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-ellipse-focus"
+      ]
+    },
+    {
+      "id": "ssa-sine-rule",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-ssa-ambiguity",
+      "rank": 2,
+      "excluded_status": null,
+      "top3": [
+        "method-sine-rule",
+        "method-ssa-ambiguity",
+        "method-ssa-branch"
+      ]
+    },
+    {
+      "id": "ssa-variant",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-ssa-branch",
+      "rank": 3,
+      "excluded_status": null,
+      "top3": [
+        "method-sine-rule",
+        "method-ssa-ambiguity",
+        "method-ssa-branch"
+      ]
+    },
+    {
+      "id": "ssa-not-sss",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-ssa-branch",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": [
+        "method-sine-rule"
+      ]
+    },
+    {
+      "id": "sss-cosine",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-cosine-rule",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-cosine-rule",
+        "method-sine-rule",
+        "strategy-counterexample"
+      ]
+    },
+    {
+      "id": "area-sas",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-sine-area",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-sine-area",
+        "method-cosine-rule",
+        "method-sine-rule"
+      ]
+    },
+    {
+      "id": "area-not-ssa",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-sine-area",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": [
+        "method-sine-rule",
+        "method-ssa-ambiguity",
+        "method-ssa-branch"
+      ]
+    },
+    {
+      "id": "parabola",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-parabola-tangent",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-parabola-tangent",
+        "method-conic-tangent"
+      ]
+    },
+    {
+      "id": "parabola-not-focus",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-parabola-tangent",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": []
+    },
+    {
+      "id": "monotonicity",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-derivative-monotonicity",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-derivative-monotonicity",
+        "method-interval-extrema"
+      ]
+    },
+    {
+      "id": "interval-extrema",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-interval-extrema",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-interval-extrema",
+        "method-derivative-monotonicity"
+      ]
+    },
+    {
+      "id": "interval-not-log",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-interval-extrema",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": []
+    },
+    {
+      "id": "log-domain",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-log-domain",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-log-domain",
+        "method-log-base",
+        "strategy-conditions"
+      ]
+    },
+    {
+      "id": "log-base",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-log-base",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-log-base",
+        "method-log-domain",
+        "strategy-conditions"
+      ]
+    },
+    {
+      "id": "log-not-derivative",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-log-domain",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": [
+        "strategy-conditions"
+      ]
+    },
+    {
+      "id": "arithmetic-sum",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-arithmetic-series",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-arithmetic-series"
+      ]
+    },
+    {
+      "id": "arithmetic-not-geometric",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-arithmetic-series",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": [
+        "method-geometric-sum"
+      ]
+    },
+    {
+      "id": "geometric-sum",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-geometric-sum",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-geometric-sum"
+      ]
+    },
+    {
+      "id": "geometric-not-arithmetic",
+      "pass": true,
+      "expect": "excluded",
+      "target": "method-geometric-sum",
+      "rank": null,
+      "excluded_status": "CONDITIONS_NOT_ESTABLISHED",
+      "top3": [
+        "method-arithmetic-series"
+      ]
+    },
+    {
+      "id": "median-cards",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-median-theorem",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-median-theorem",
+        "method-cosine-rule",
+        "method-sine-rule"
+      ]
+    },
+    {
+      "id": "vector-orthogonal",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-vector-dot",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-vector-dot"
+      ]
+    },
+    {
+      "id": "backward-strategy",
+      "pass": true,
+      "expect": "hit",
+      "target": "strategy-reverse-subgoal",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "strategy-reverse-subgoal",
+        "method-fixed-sum-product",
+        "strategy-backward-bridge"
+      ]
+    },
+    {
+      "id": "counterexample-strategy",
+      "pass": true,
+      "expect": "hit",
+      "target": "strategy-counterexample",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "strategy-counterexample",
+        "method-cosine-rule",
+        "strategy-conditions"
+      ]
+    },
+    {
+      "id": "bad-conic-point",
+      "pass": true,
+      "expect": "contra",
+      "target": "method-conic-tangent",
+      "rank": null,
+      "excluded_status": "CONTRAINDICATED",
+      "top3": []
+    },
+    {
+      "id": "valid-nonsingular",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-conic-tangent",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-conic-tangent"
+      ]
+    },
+    {
+      "id": "double-negation",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-conic-tangent",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-conic-tangent"
+      ]
+    },
+    {
+      "id": "bad-parabola-point",
+      "pass": true,
+      "expect": "contra",
+      "target": "method-parabola-tangent",
+      "rank": null,
+      "excluded_status": "CONTRAINDICATED",
+      "top3": []
+    },
+    {
+      "id": "ratio-one-boundary",
+      "pass": true,
+      "expect": "contra",
+      "target": "method-apollonius",
+      "rank": null,
+      "excluded_status": "CONTRAINDICATED",
+      "top3": []
+    },
+    {
+      "id": "not-included-angle",
+      "pass": true,
+      "expect": "contra",
+      "target": "method-sine-area",
+      "rank": null,
+      "excluded_status": "CONTRAINDICATED",
+      "top3": [
+        "method-cosine-rule",
+        "method-sine-rule"
+      ]
+    },
+    {
+      "id": "open-interval",
+      "pass": true,
+      "expect": "contra",
+      "target": "method-interval-extrema",
+      "rank": null,
+      "excluded_status": "CONTRAINDICATED",
+      "top3": [
+        "method-derivative-monotonicity"
+      ]
+    },
+    {
+      "id": "zero-vector",
+      "pass": true,
+      "expect": "contra",
+      "target": "method-vector-dot",
+      "rank": null,
+      "excluded_status": "CONTRAINDICATED",
+      "top3": []
+    },
+    {
+      "id": "base-one",
+      "pass": true,
+      "expect": "contra",
+      "target": "method-log-base",
+      "rank": null,
+      "excluded_status": "CONTRAINDICATED",
+      "top3": [
+        "method-log-domain",
+        "strategy-conditions"
+      ]
+    },
+    {
+      "id": "sss-counterexample",
+      "pass": true,
+      "expect": "contra",
+      "target": "method-ssa-branch",
+      "rank": null,
+      "excluded_status": "CONTRAINDICATED",
+      "top3": [
+        "method-cosine-rule",
+        "method-sine-rule",
+        "strategy-backward-bridge"
+      ]
+    },
+    {
+      "id": "median-vs-apollonius",
+      "pass": true,
+      "expect": "hit",
+      "target": "method-median-theorem",
+      "rank": 1,
+      "excluded_status": null,
+      "top3": [
+        "method-median-theorem",
+        "method-cosine-rule",
+        "method-sine-rule"
+      ]
+    }
+  ]
+}

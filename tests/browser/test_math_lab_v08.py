@@ -11,6 +11,7 @@ ROOT=Path(__file__).resolve().parents[2]
 BASE=os.environ.get("STEM_MENTOR_URL","http://127.0.0.1:8000")
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 OUT=ROOT/"artifacts"/"ui";OUT.mkdir(parents=True,exist_ok=True)
+V08_IDS=['fn-linear', 'fn-quadratic', 'fn-cubic', 'fn-exp', 'fn-log', 'fn-sin', 'fn-cos', 'fn-tan', 'fn-abs', 'fn-inverse', 'fn-sqrt', 'fn-piecewise', 'conic-line', 'conic-circle', 'conic-ellipse', 'conic-hyperbola', 'conic-parabola', 'conic-intersection', 'tri-free', 'tri-right', 'tri-ssa', '3d-point', '3d-vectors', '3d-plane', '3d-prism', '3d-pyramid', '3d-sphere', '3d-cylinder', '3d-cone']
 
 def set_range(page,key,value):
     page.locator("#labParam_"+key).evaluate(
@@ -27,10 +28,10 @@ def main():
         page.on("request",lambda r:report["external"].append(r.url) if not r.url.startswith(BASE) else None)
         assert page.goto(BASE,wait_until="networkidle").ok
         page.locator('button[data-view="lab"]').click()
-        page.wait_for_function("() => document.querySelectorAll('#labPreset option').length===12")
+        page.wait_for_function("() => document.querySelectorAll('#labPreset option').length>=12")
         assert page.locator("#lab").is_visible()
         assert page.locator("#labSummary").inner_text().find("113")>=0
-        assert "29" in page.locator("#labSummary").inner_text()
+        assert "39" in page.locator("#labSummary").inner_text()
         assert "174938" in page.locator('meta[name="theme-color"]').get_attribute("content")
         report["interaction_checks"].append("Standalone green lab navigation and 113-topic catalog")
 
@@ -39,6 +40,7 @@ def main():
             page.locator('button[data-family="'+family+'"]').click()
             for option in page.locator("#labPreset option").all():
                 scene=option.get_attribute("value")
+                if scene not in V08_IDS: continue
                 page.locator("#labPreset").select_option(scene)
                 page.wait_for_function("() => document.querySelector('#labPlot .lab-axis, #labPlot .lab-3d-x, #labPlot .lab-triangle') !== null")
                 assert page.locator("#labTitle").inner_text()
@@ -149,7 +151,7 @@ def main():
             pg.on("pageerror",lambda e:report["errors"].append(str(e)))
             assert pg.goto(BASE,wait_until="networkidle").ok
             pg.locator('button[data-view="lab"]').click()
-            pg.wait_for_function("() => document.querySelectorAll('#labPreset option').length===12")
+            pg.wait_for_function("() => document.querySelectorAll('#labPreset option').length>=12")
             pg.locator('button[data-family="space_3d"]').click()
             pg.locator("#labPreset").select_option("3d-vectors")
             width=pg.evaluate("""() => ({
