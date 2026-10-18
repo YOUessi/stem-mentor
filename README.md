@@ -137,3 +137,24 @@ Mac 本地验证命令：bash scripts/mac_check.sh && bash scripts/mac_browser_c
 详细设计见 docs/design/LEARNING_EXPERIENCE_V07.md；研发日志见 docs/logs/2026-10-17-learning-tools.md。
 
 当前仍未启用 LLM API，知识和题目库规模为 15 道受控题与项目自编待审资料，非通用数学解题器。严禁向公开仓库上传真实学生个人数据。
+
+
+## v0.8：面向整个高中数学的动态实验平台（2026-10-18）
+
+严格保留第一版绿色护眼学习工作台；左侧导航新增“高中数学实验室”，也可从题目处自主进入。不使用模型 API、不调用 Tang。
+
+- 知识点规划：113 条自编工程知识条目（必修、选择性必修、选修拓展），记录关联的数学工具和开发状态；这不是 113 条都已完成。
+- 交互工具：函数与二维坐标（12 场景）、直线圆与圆锥曲线（6 场景）、三角形（3 场景）、XYZ 三维坐标与空间几何（8 场景）。
+- 功能：参数滑块、数值探针、焦点/准线/渐近线、可拖动三角形、SSA 多解情形、三维旋转/俯视角/缩放、空间点投影/向量/平面/棱柱/球柱锥。
+- API：GET /api/math-lab/catalog，数据分别存储在 curriculum/highschool_math/curriculum_map.json 与 visual_presets.json。
+- 规划与已支持状态明确区分；所有内容标记项目自编、教师未正式审核。课标来源由课程资料说明，而不是虚构官方逐条考纲。
+
+详见 docs/design/HIGH_SCHOOL_MATH_VISUAL_V08.md 及 docs/logs/2026-10-18-math-lab-v08.md。
+
+验收：
+
+    bash scripts/mac_check.sh
+    bash scripts/mac_browser_check.sh
+
+### 下一阶段
+依次补充平面向量、数轴/集合韦恩图、复平面、空间截面、数列/动态导数、概率统计与计数原理；最终需教师校验课程内容并开展真实学生无提示迁移评测。现在还不是通用数学证明器，也未接入真实学生数据。

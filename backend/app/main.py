@@ -12,8 +12,9 @@ from .tutor import tutor_reply
 from .reasoning import student_map
 from .retrieval import retrieve, corpus
 from .study_visuals import visual_for, visuals
+from .math_lab_catalog import lab_catalog
 
-app=FastAPI(title="STEM Mentor — 离线模拟",version="0.7.0")
+app=FastAPI(title="STEM Mentor — 离线模拟",version="0.8.0")
 ROOT=Path(__file__).resolve().parents[2]
 WEB=ROOT/"apps"/"web"
 app.mount("/assets",StaticFiles(directory=str(WEB)),name="assets")
@@ -214,6 +215,12 @@ def search_curated_knowledge(payload:KnowledgeQuery):
     retrieved=retrieve(payload.query,payload.problem_id,payload.top_k,payload.include_excluded)
     matched_ids={method_id for x in retrieved['hits'] for method_id in x['method_ids']}
     return {**retrieved,'methods':[m for m in METHODS if m['id'] in matched_ids]}
+
+@app.get("/api/math-lab/catalog")
+def highschool_math_lab_catalog():
+    """Read-only, expert-review-pending high-school mathematics tool mapping."""
+    return lab_catalog()
+
 
 @app.get("/api/study/visual/{problem_id}")
 def curated_study_visual(problem_id: str):

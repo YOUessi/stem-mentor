@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-18",
+  "version": "0.8.0",
+  "environment": "MacBook Air, Python 3.13, local Chrome, Node.js 22",
+  "model_api_calls": 0,
+  "curriculum_basis": "普通高中数学课程标准（2017年版2020年修订）",
+  "coverage_is_engineering_interpretation": true,
+  "knowledge_concepts": 113,
+  "basic_visual_mapping": 44,
+  "planned_concepts": 69,
+  "scene_presets": 29,
+  "tool_families": {
+    "function_2d": 12,
+    "conic_2d": 6,
+    "triangle_2d": 3,
+    "space_3d": 8
+  },
+  "tests": {
+    "backend_pytest": {
+      "passed": 103,
+      "failed": 0
+    },
+    "synthetic_tutor_policy": {
+      "passed": 33,
+      "total": 33
+    },
+    "curated_retrieval_hard_cases": {
+      "passed": 40,
+      "total": 40
+    },
+    "chrome_scene_renders": {
+      "passed": 29,
+      "total": 29
+    },
+    "chrome_interactive_checks": {
+      "passed": 8,
+      "total": 8
+    },
+    "chrome_responsive_widths_px": [
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "chrome_numerical_geometry": "PASS",
+    "chrome_legacy_tutoring": "PASS",
+    "browser_page_errors": 0,
+    "external_script_or_api_requests": 0
+  },
+  "fixed_regressions": [
+    "3D arrow tip used projection depth as an SVG vertex coordinate; converted to 2D only",
+    "Browser smoke used top-level SVG child count rather than actual rendered geometry",
+    "Browser script waited for visibility of hidden select OPTION; changed to count check",
+    "First-visit click-through to math lab now awaits loading before choosing associated scene",
+    "Duplicate legacy Node checks consolidated"
+  ],
+  "limitations": [
+    "Course mapping is author-created, not verbatim official examination syllabus",
+    "44 knowledge mappings have foundational visual tools, not complete end-to-end lessons",
+    "113 curated coverage items not equivalent to 113 implementations",
+    "No automatic natural-language mathematics proof or theorem verification",
+    "No authenticated minor student accounts or real student teaching effectiveness study"
+  ],
+  "screenshots": [
+    "docs/assets/highschool-v08-functions.jpg",
+    "docs/assets/highschool-v08-conics.jpg",
+    "docs/assets/highschool-v08-triangles.jpg",
+    "docs/assets/highschool-v08-space3d.jpg",
+    "docs/assets/highschool-v08-desktop.jpg",
+    "docs/assets/highschool-v08-mobile.jpg"
+  ]
+}
