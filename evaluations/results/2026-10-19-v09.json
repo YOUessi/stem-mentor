@@ -84,5 +84,23 @@
     "Assistance arrows intercepted vector handle pointer input",
     "Fixed-layout scenes exposed an ineffective zoom control"
   ],
-  "evidence_directory": "evaluations/results/2026-10-19-v09"
+  "evidence_directory": "evaluations/results/2026-10-19-v09",
+  "release": {
+    "pr": 6,
+    "pr_url": "https://github.com/YOUessi/stem-mentor/pull/6",
+    "merge_commit": "9adbbf079a58abc0953adca4f3b41be55ac4e7b8",
+    "pr_ci": {
+      "run_id": 39165588418,
+      "conclusion": "success"
+    },
+    "main_ci": {
+      "run_id": 39165656622,
+      "conclusion": "success"
+    },
+    "mac_live_version": "0.9.0",
+    "mac_live_url": "http://127.0.0.1:8000",
+    "student_database_preserved": true,
+    "temporary_review_server_cleaned": true,
+    "next_batch": "v0.10: complex plane, Venn diagrams, intervals and inequalities (planned)"
+  }
 }
