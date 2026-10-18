@@ -12,6 +12,7 @@
 - [本轮执行计划及验收标准](docs/planning/2026-10-18-v09-execution-plan.md)
 - [数学原理、交互边界与实现](docs/design/GUIDED_EXPLORERS_V09.md)
 - [按日期的实施与问题修复记录](docs/logs/2026-10-18-v09.md)
+- [本轮验收统计与原始日志](evaluations/results/2026-10-19-v09.json)
 
 并发验收：`bash scripts/check_v09.sh --with-browser`。Node、Python、Chrome 使用独立测试进程和日志；此机制不是多个独立 AI Agent，也不代表对话结束后自动无限运行。当前没有真实学生学习效果数据。
 
