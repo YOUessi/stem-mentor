@@ -28,7 +28,7 @@ def run():
         assert page.locator('meta[name="theme-color"]').get_attribute('content')=='#174938'
         catalog=page.request.get(BASE+'/api/math-lab/catalog').json()
         assert len(catalog['presets'])==49
-        report['checks'].append('green layout, 39-scene catalog and fifth vector family')
+        report['checks'].append('green layout, current 49-scene catalog retains all v0.9 vector explorations')
 
         select(page,'vector_2d','vec2d-add')
         assert page.locator('.lab-vector-handle').count()==2
