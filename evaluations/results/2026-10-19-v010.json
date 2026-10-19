@@ -94,5 +94,33 @@
         "log_sha256": "ef0a09ca48915f7e9491d1b31f277a67c3a106ede55e13bdc8a402b98ede277a"
       }
     ]
+  },
+  "release": {
+    "pr": 8,
+    "pr_url": "https://github.com/YOUessi/stem-mentor/pull/8",
+    "merge_commit": "599d165bd1c70be613bdd425fce29c8080fa9c7a",
+    "pr_ci": {
+      "id": 39201234357,
+      "conclusion": "success"
+    },
+    "main_ci": {
+      "id": 39201317278,
+      "conclusion": "success"
+    },
+    "live_mac": {
+      "version": "0.10.0",
+      "scenes": 49,
+      "families": 8,
+      "topics": 113,
+      "basic_supported": 59,
+      "planned": 54,
+      "llm_api_used": false,
+      "green_theme": true,
+      "served_module_bytes_match_main": true,
+      "student_database_preserved": true
+    },
+    "checkpoint_pr7": "closed as superseded, not merged",
+    "owned_temp_server_and_database_cleaned": true,
+    "next_batch": "v0.11 sequences, recurrence, partial sums and q=1 (not implemented yet)"
   }
 }
