@@ -61,12 +61,35 @@
    if(!finite(root))throw new RangeError('Root exceeds supported numeric range');
    return {kind:'LINEAR',roots:[root],intervals:left?interval(-Infinity,root,false,closed):interval(root,Infinity,closed,false),relation};
  }
+ // UI coefficients are decimal values, e.g. 1.8, 1.2, 0.2. Compute the
+ // discriminant sign from their shortest decimal strings, not cancellation of
+ // binary floating products. This distinguishes a true repeated decimal root
+ // from nearby positive/negative discriminants without an arbitrary epsilon.
+ function decimalParts(value){
+   const [mantissa,exponent='0']=String(value).toLowerCase().split('e');
+   const fraction=(mantissa.split('.')[1]||'').length;
+   return {n:BigInt(mantissa.replace('.','')),e:Number(exponent)-fraction};
+ }
+ function normalizedDiscriminant(a,b,c,scale){
+   const parts=[a,b,c].map(decimalParts),exponent=Math.min(...parts.map(p=>p.e));
+   const [A,B,C]=parts.map(p=>p.n*10n**BigInt(p.e-exponent));
+   const integer=B*B-4n*A*C;
+   if(integer===0n)return 0;
+   const sign=integer<0n?-1:1,digits=(integer<0n?-integer:integer).toString();
+   const scaled=decimalParts(scale),scaleDigits=scaled.n.toString();
+   const coefficient=Number(digits[0]+'.'+digits.slice(1,17));
+   const scaleCoefficient=Number(scaleDigits[0]+'.'+scaleDigits.slice(1,17));
+   const power=2*exponent+digits.length-1-2*(scaled.e+scaleDigits.length-1);
+   const value=sign*(coefficient/(scaleCoefficient*scaleCoefficient))*10**power;
+   if(!finite(value)||value===0)throw new RangeError('Discriminant exceeds supported numeric range');
+   return value;
+ }
  function solveQuadratic(a,b,c,relation){
    validate([a,b,c],relation);
    if(a===0)return solveLinear(b,c,relation);
    // Normalize the coefficients so their squared products remain finite.
    const scale=Math.max(Math.abs(a),Math.abs(b),Math.abs(c)),A=a/scale,B=b/scale,C=c/scale;
-   const discriminant=B*B-4*A*C,positive=a>0;
+   const discriminant=normalizedDiscriminant(a,b,c,scale),positive=a>0;
    const inner=relation==='lt'||relation==='le',closed=relation==='le'||relation==='ge';
    const wantsInside=inner===positive;
    if(discriminant<0)return {kind:'QUADRATIC',roots:[],discriminant,intervals:ops[relation](a)?R():[],relation};

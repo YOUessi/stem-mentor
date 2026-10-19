@@ -106,3 +106,19 @@ T('invalid relations and nonfinite coefficients are rejected',()=>{
  assert.throws(()=>M.solveQuadratic(1,0,1,'equal'));
  assert.throws(()=>M.solveAbs(0,NaN,'le'));
 });
+
+T('decimal slider coefficients preserve a true repeated root instead of inventing no roots',()=>{
+ for(const [a,b,c] of [[1.8,1.2,.2],[.9,.6,.1],[.1,.6,.9],[.2,1.2,1.8]]){
+   const r=M.solveQuadratic(a,b,c,'le');
+   assert.equal(r.discriminant,0,JSON.stringify({a,b,c,r}));
+   assert.equal(r.roots.length,1);
+   assert.equal(r.intervals.length,1);
+   assert.equal(r.intervals[0].lo,r.intervals[0].hi);
+   assert.ok(Math.abs(r.roots[0]+b/(2*a))<1e-12);
+   same(M.solveQuadratic(a,b,c,'lt').intervals,[]);
+ }
+});
+T('close nonzero decimal discriminants are not erased by an arbitrary epsilon',()=>{
+ assert.equal(M.solveQuadratic(1.8,1.2,.2000000001,'le').roots.length,0);
+ assert.equal(M.solveQuadratic(1.8,1.2,.1999999999,'le').roots.length,2);
+});
