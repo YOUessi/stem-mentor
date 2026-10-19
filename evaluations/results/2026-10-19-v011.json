@@ -47,5 +47,23 @@
     "sequence-chrome.json": "106313e6da4c07099102868bc7ca6474ef94f0c06a0040c7d38e5818755305ad"
   },
   "pr": 9,
-  "publication": "PENDING_GITHUB_CI_AND_MAIN"
+  "publication": "RELEASED",
+  "release": {
+    "pr": 9,
+    "url": "https://github.com/YOUessi/stem-mentor/pull/9",
+    "merge_commit": "b99cb83601d87d11fe6d91acff3d2e64dbb8dc4e",
+    "branch_ci": {
+      "id": 39222162529,
+      "conclusion": "success"
+    },
+    "main_ci": {
+      "id": 39222249313,
+      "conclusion": "success"
+    },
+    "mac_live_version": "0.11.0",
+    "mac_live_url": "http://127.0.0.1:8000",
+    "student_demo_database_preserved": true,
+    "green_theme_preserved": true,
+    "next_task": "v0.11b closed-interval extrema and endpoints, then v0.12 probability/statistics"
+  }
 }
