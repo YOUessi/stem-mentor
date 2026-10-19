@@ -59,5 +59,24 @@
     "mac-check.txt": "95bdc0ac367d37e8c511833ce7327e775389547cb62bc8ca15071579211cbd94",
     "probability-chrome.json": "a4f6a59399257d2dbbd16f78f8e45886bfcf316a7a33d82c1c15386ea5f0e075"
   },
-  "publication": "PENDING_GITHUB_CI_MAIN"
+  "publication": "RELEASED",
+  "release": {
+    "pr_number": 11,
+    "pr_url": "https://github.com/YOUessi/stem-mentor/pull/11",
+    "merge_commit": "908b0eca5673383ea0fcccee0fbf5771088d694a",
+    "feature_branch_ci": {
+      "id": 39232058005,
+      "conclusion": "success"
+    },
+    "main_ci": {
+      "id": 39232191786,
+      "conclusion": "success"
+    },
+    "mac_live_version": "0.12.0",
+    "mac_live_url": "http://127.0.0.1:8000",
+    "synthetic_student_database_preserved": true,
+    "synthetic_test_service_stopped": true,
+    "original_green_ui": true,
+    "next_batch": "v0.13 student-episode transfer and adaptive scaffolding (planned)"
+  }
 }
