@@ -68,7 +68,7 @@ def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
 def test_catalog_builders_reproduce_versioned_evidence_without_mutating_repo(tmp_path):
     import shutil,subprocess,sys
     source=ROOT/'curriculum'/'highschool_math'
-    for name in ['build_presets.py','build_curriculum.py','extend_v09.py','extend_v010.py','extend_v011.py','extend_v011b.py']:
+    for name in ['build_presets.py','build_curriculum.py','extend_v09.py','extend_v010.py','extend_v011.py','extend_v011b.py','extend_v012.py']:
         shutil.copy2(source/name,tmp_path/name)
     subprocess.run([sys.executable,str(tmp_path/'build_presets.py')],cwd=tmp_path,check=True,capture_output=True)
     subprocess.run([sys.executable,str(tmp_path/'build_curriculum.py')],cwd=tmp_path,check=True,capture_output=True)

@@ -2770,6 +2770,434 @@
         "除了满足 f′(x)=0 的点，还有哪些点必须比较？",
         "检查端点、区间内部驻点及不可导点；用反例验证只找驻点是否可靠。"
       ]
+    },
+    {
+      "id": "prob-choose",
+      "title": "计数原理：组合数",
+      "tool": "probability_2d",
+      "latex": "C_n^k=\\frac{n!}{k!(n-k)!}",
+      "equation": "prob-choose",
+      "description": "不考虑顺序，观察 k 与 n−k 的对称性。",
+      "params": [
+        {
+          "key": "n",
+          "label": "总数 n",
+          "min": 0,
+          "max": 30,
+          "value": 8,
+          "step": 1
+        },
+        {
+          "key": "k",
+          "label": "抽取 k",
+          "min": 0,
+          "max": 30,
+          "value": 3,
+          "step": 1
+        }
+      ],
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察参数与图像，预测计算或抽样的结果。",
+      "thinking_prompts": [
+        "先预测哪一组数值会改变，为什么？",
+        "看清每个概率与随机事件的定义，是否需要额外假设？",
+        "用特殊参数核对归一化、定义域与样本波动，再判断你的猜想是否可靠。"
+      ]
+    },
+    {
+      "id": "prob-permute",
+      "title": "计数原理：排列数",
+      "tool": "probability_2d",
+      "latex": "A_n^k=\\frac{n!}{(n-k)!}",
+      "equation": "prob-permute",
+      "description": "排列顺序会影响计数；先与组合数比较。",
+      "params": [
+        {
+          "key": "n",
+          "label": "总数 n",
+          "min": 0,
+          "max": 16,
+          "value": 7,
+          "step": 1
+        },
+        {
+          "key": "k",
+          "label": "抽取 k",
+          "min": 0,
+          "max": 16,
+          "value": 3,
+          "step": 1
+        }
+      ],
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察参数与图像，预测计算或抽样的结果。",
+      "thinking_prompts": [
+        "先预测哪一组数值会改变，为什么？",
+        "看清每个概率与随机事件的定义，是否需要额外假设？",
+        "用特殊参数核对归一化、定义域与样本波动，再判断你的猜想是否可靠。"
+      ]
+    },
+    {
+      "id": "prob-tree",
+      "title": "两阶段事件概率树",
+      "tool": "probability_2d",
+      "latex": "P(A\\cap B)=P(A)P(B\\mid A)",
+      "equation": "prob-tree",
+      "description": "区分条件概率与无条件概率，四个叶节点概率和应为1。",
+      "params": [
+        {
+          "key": "p",
+          "label": "P(A)",
+          "min": 0,
+          "max": 1,
+          "value": 0.6,
+          "step": 0.05
+        },
+        {
+          "key": "q1",
+          "label": "P(B|A)",
+          "min": 0,
+          "max": 1,
+          "value": 0.2,
+          "step": 0.05
+        },
+        {
+          "key": "q0",
+          "label": "P(B|非A)",
+          "min": 0,
+          "max": 1,
+          "value": 0.7,
+          "step": 0.05
+        }
+      ],
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察参数与图像，预测计算或抽样的结果。",
+      "thinking_prompts": [
+        "先预测哪一组数值会改变，为什么？",
+        "看清每个概率与随机事件的定义，是否需要额外假设？",
+        "用特殊参数核对归一化、定义域与样本波动，再判断你的猜想是否可靠。"
+      ]
+    },
+    {
+      "id": "prob-binomial",
+      "title": "二项分布：有放回独立重复",
+      "tool": "probability_2d",
+      "latex": "P(X=k)=\\binom nk p^k(1-p)^{n-k}",
+      "equation": "prob-binomial",
+      "description": "分布柱高是每个离散事件的理论概率，不能与模拟频率混淆。",
+      "params": [
+        {
+          "key": "n",
+          "label": "实验次数 n",
+          "min": 0,
+          "max": 25,
+          "value": 10,
+          "step": 1
+        },
+        {
+          "key": "p",
+          "label": "成功概率 p",
+          "min": 0,
+          "max": 1,
+          "value": 0.4,
+          "step": 0.05
+        },
+        {
+          "key": "k",
+          "label": "观察k",
+          "min": 0,
+          "max": 25,
+          "value": 3,
+          "step": 1
+        }
+      ],
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察参数与图像，预测计算或抽样的结果。",
+      "thinking_prompts": [
+        "先预测哪一组数值会改变，为什么？",
+        "看清每个概率与随机事件的定义，是否需要额外假设？",
+        "用特殊参数核对归一化、定义域与样本波动，再判断你的猜想是否可靠。"
+      ]
+    },
+    {
+      "id": "prob-hypergeo",
+      "title": "超几何：无放回抽样",
+      "tool": "probability_2d",
+      "latex": "P(X=k)=\\frac{\\binom Kk\\binom{N-K}{n-k}}{\\binom Nn}",
+      "equation": "prob-hypergeo",
+      "description": "不放回抽样时成功次数之间通常不独立。",
+      "params": [
+        {
+          "key": "N",
+          "label": "总体N",
+          "min": 2,
+          "max": 30,
+          "value": 20,
+          "step": 1
+        },
+        {
+          "key": "K",
+          "label": "成功个数K",
+          "min": 0,
+          "max": 30,
+          "value": 8,
+          "step": 1
+        },
+        {
+          "key": "n",
+          "label": "抽样n",
+          "min": 0,
+          "max": 30,
+          "value": 7,
+          "step": 1
+        },
+        {
+          "key": "k",
+          "label": "观察k",
+          "min": 0,
+          "max": 30,
+          "value": 3,
+          "step": 1
+        }
+      ],
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察参数与图像，预测计算或抽样的结果。",
+      "thinking_prompts": [
+        "先预测哪一组数值会改变，为什么？",
+        "看清每个概率与随机事件的定义，是否需要额外假设？",
+        "用特殊参数核对归一化、定义域与样本波动，再判断你的猜想是否可靠。"
+      ]
+    },
+    {
+      "id": "prob-normal",
+      "title": "正态分布：密度不是概率",
+      "tool": "probability_2d",
+      "latex": "f(x)=\\frac1{\\sigma\\sqrt{2\\pi}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}",
+      "equation": "prob-normal",
+      "description": "连续变量单点的密度值不是事件概率；区间概率来自面积。",
+      "params": [
+        {
+          "key": "mu",
+          "label": "均值μ",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.25
+        },
+        {
+          "key": "sigma",
+          "label": "标准差σ",
+          "min": 0.3,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "L",
+          "label": "观察范围左端L",
+          "min": -5,
+          "max": 5,
+          "value": -1,
+          "step": 0.2
+        },
+        {
+          "key": "R",
+          "label": "观察范围右端R",
+          "min": -5,
+          "max": 5,
+          "value": 1,
+          "step": 0.2
+        }
+      ],
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察参数与图像，预测计算或抽样的结果。",
+      "thinking_prompts": [
+        "先预测哪一组数值会改变，为什么？",
+        "看清每个概率与随机事件的定义，是否需要额外假设？",
+        "用特殊参数核对归一化、定义域与样本波动，再判断你的猜想是否可靠。"
+      ]
+    },
+    {
+      "id": "stats-bernoulli",
+      "title": "固定种子：实验频率与理论概率",
+      "tool": "statistics_2d",
+      "latex": "\\widehat p=\\frac{X}{n}",
+      "equation": "stats-bernoulli",
+      "description": "样本频率有波动，不能将模拟值直接标成理论概率。",
+      "params": [
+        {
+          "key": "p",
+          "label": "成功概率p",
+          "min": 0,
+          "max": 1,
+          "value": 0.35,
+          "step": 0.05
+        },
+        {
+          "key": "n",
+          "label": "模拟次数n",
+          "min": 10,
+          "max": 1000,
+          "value": 200,
+          "step": 10
+        },
+        {
+          "key": "seed",
+          "label": "固定随机种子",
+          "min": 1,
+          "max": 10000,
+          "value": 42,
+          "step": 1
+        }
+      ],
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察参数与图像，预测计算或抽样的结果。",
+      "thinking_prompts": [
+        "先预测哪一组数值会改变，为什么？",
+        "看清每个概率与随机事件的定义，是否需要额外假设？",
+        "用特殊参数核对归一化、定义域与样本波动，再判断你的猜想是否可靠。"
+      ]
+    },
+    {
+      "id": "stats-summary",
+      "title": "样本均值、中位数、众数与方差",
+      "tool": "statistics_2d",
+      "latex": "\\\\bar x=\\\\frac1n\\\\sum x_i,\\\\quad s^2=\\\\frac{\\\\sum(x_i-\\\\bar x)^2}{n-1}",
+      "equation": "stats-summary",
+      "description": "比较样本方差和总体方差的分母，注意无重复值时可能没有众数。",
+      "params": [
+        {
+          "key": "x1",
+          "label": "数据x₁",
+          "min": -5,
+          "max": 5,
+          "value": 1,
+          "step": 0.5
+        },
+        {
+          "key": "x2",
+          "label": "数据x₂",
+          "min": -5,
+          "max": 5,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "x3",
+          "label": "数据x₃",
+          "min": -5,
+          "max": 5,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "x4",
+          "label": "数据x₄",
+          "min": -5,
+          "max": 5,
+          "value": 3,
+          "step": 0.5
+        },
+        {
+          "key": "x5",
+          "label": "数据x₅",
+          "min": -5,
+          "max": 5,
+          "value": 5,
+          "step": 0.5
+        }
+      ],
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察参数与图像，预测计算或抽样的结果。",
+      "thinking_prompts": [
+        "先预测哪一组数值会改变，为什么？",
+        "看清每个概率与随机事件的定义，是否需要额外假设？",
+        "用特殊参数核对归一化、定义域与样本波动，再判断你的猜想是否可靠。"
+      ]
+    },
+    {
+      "id": "stats-regression",
+      "title": "散点图与一元线性回归",
+      "tool": "statistics_2d",
+      "latex": "\\hat y=\\hat\\beta_0+\\hat\\beta_1x",
+      "equation": "stats-regression",
+      "description": "相关系数与回归只描述当前合成样本，不表明因果关系。",
+      "params": [
+        {
+          "key": "slope",
+          "label": "模拟真实斜率",
+          "min": -3,
+          "max": 3,
+          "value": 1.5,
+          "step": 0.1
+        },
+        {
+          "key": "intercept",
+          "label": "模拟截距",
+          "min": -3,
+          "max": 3,
+          "value": 0.5,
+          "step": 0.1
+        },
+        {
+          "key": "noise",
+          "label": "噪声幅度",
+          "min": 0,
+          "max": 3,
+          "value": 0.7,
+          "step": 0.1
+        },
+        {
+          "key": "n",
+          "label": "样本量n",
+          "min": 3,
+          "max": 30,
+          "value": 14,
+          "step": 1
+        },
+        {
+          "key": "seed",
+          "label": "固定随机种子",
+          "min": 1,
+          "max": 10000,
+          "value": 42,
+          "step": 1
+        }
+      ],
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察参数与图像，预测计算或抽样的结果。",
+      "thinking_prompts": [
+        "先预测哪一组数值会改变，为什么？",
+        "看清每个概率与随机事件的定义，是否需要额外假设？",
+        "用特殊参数核对归一化、定义域与样本波动，再判断你的猜想是否可靠。"
+      ]
     }
   ]
 }

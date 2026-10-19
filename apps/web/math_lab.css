@@ -285,3 +285,31 @@
 .lab-extrema-guess{resize:vertical;width:100%;min-height:65px;border-radius:9px;border:1px solid #d3e8d6;
 padding:11px;background:#fff;color:#34573e;outline-color:#80b98b;font-size:12px;line-height:1.7}
 .lab-extrema-hint{background:#edf7ee;border-radius:8px;padding:9px;color:#4a7654}
+
+/* v0.12 probability and statistics; added to existing green/white interface. */
+.lab-prob-heading{fill:#477755;font-size:13px;font-weight:650}
+.lab-prob-grid{stroke:#e7efe6;stroke-width:1}
+.lab-prob-axis{stroke:#98b99e;stroke-width:1.8}
+.lab-prob-tick{fill:#728a77;font-size:11px;font-variant-numeric:tabular-nums}
+.lab-prob-bar{fill:#60a77b;stroke:#fff;stroke-width:1.5}
+.lab-prob-bar.selected{fill:#bc945b}
+.lab-prob-bar.negative{fill:#b48a54}
+.lab-prob-node{fill:#42895c;stroke:white;stroke-width:2}
+.lab-prob-branch{stroke:#96b59d;stroke-width:1.7}
+.lab-prob-label{fill:#4b775a;font-size:11px}
+.lab-prob-density{stroke:#328454;stroke-width:3;fill:none}
+.lab-prob-integrated-area{fill:rgba(104,173,117,.20);stroke:none}
+.lab-prob-theory-line{stroke:#b99055;stroke-width:2;stroke-dasharray:7 5}
+.lab-prob-frequency-line{stroke:#318b5e;stroke-width:2.7;fill:none}
+.lab-prob-scatter{fill:#67a884;stroke:white;stroke-width:2}
+.lab-prob-fit-line{stroke:#bd8753;stroke-width:2.8}
+.lab-prob-zero{stroke:#9bb9a2;stroke-width:1.4}
+.lab-prob-invalid{fill:#9b5e47;font-weight:680;font-size:14px}
+.lab-prob-prompt{background:#f7fcf7;border:1px solid #d9e9db;border-radius:11px;padding:14px}
+.lab-prob-prompt h3{font-size:13px;margin:0 0 8px;color:#40764f}
+.lab-prob-prompt p{font-size:11px;line-height:1.8;color:#53735b}
+.lab-prob-guess{display:block;width:100%;resize:vertical;min-height:65px;
+ border-radius:8px;border:1px solid #d2e4d6;padding:10px;background:white;
+ color:#3c6650;outline-color:#7bb48a;font-size:12px}
+.lab-prob-help{padding:8px 10px;border-radius:8px;background:#edf7ee}
+.lab-prob-prompt small{display:block;color:#869b8b;font-size:10px;line-height:1.7;margin-top:10px}

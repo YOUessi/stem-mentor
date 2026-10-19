@@ -5,6 +5,8 @@
   const TEAMS=[
     ["function_2d","函数与二维坐标","函数、图像与变化"],
     ["sequence_2d","数列与递推","离散项、部分和、特殊公比与迁移"],
+    ["probability_2d","计数与概率","排列组合、条件概率、离散/连续分布"],
+    ["statistics_2d","数据与统计","固定种子模拟、样本频率、回归"],
     ["conic_2d","圆锥曲线","直线、圆、椭圆、双曲线、抛物线"],
     ["vector_2d","平面向量","加减、数乘、投影与夹角"],
     ["triangle_2d","三角形与解三角形","三边、三角、SSA 多解"],
@@ -87,7 +89,8 @@
     $("labAlternativeView").classList.remove("lab-seq-table-wrapper");
     const extra=preset.assist_default===false;
     $("labAssistControl").hidden=!extra;$("labAssistToggle").checked=false;
-    $("labAssistLabel").textContent=preset.tool==="sequence_2d"?"显示后续项与部分和（自主核对）":["complex_plane","venn_logic","number_line"].includes(preset.tool)?"显示运算结果 / 解集（先猜想，再核对）":preset.id.startsWith("derivative-")?"显示解析切线（先猜想，再核对）":preset.id.startsWith("3d-section-")?"显示切平面与法向量（可选）":"显示辅助图形（自主核对）";
+    $("labAssistLabel").textContent=["probability_2d","statistics_2d"].includes(preset.tool)?
+      "显示概率与统计数值（先预测，再核对）":preset.tool==="sequence_2d"?"显示后续项与部分和（自主核对）":["complex_plane","venn_logic","number_line"].includes(preset.tool)?"显示运算结果 / 解集（先猜想，再核对）":preset.id.startsWith("derivative-")?"显示解析切线（先猜想，再核对）":preset.id.startsWith("3d-section-")?"显示切平面与法向量（可选）":"显示辅助图形（自主核对）";
     state.values=Object.fromEntries(preset.params.map(p=>[p.key,p.value]));
     state.view2d={zoom:1};state.view3d={yaw:38,pitch:36,zoom:1};
     $("labPreset").value=id;$("lab2dZoom").value="1";
@@ -95,7 +98,7 @@
     $("labTitle").textContent=preset.title;
     $("labDescription").textContent=preset.description;
     $("labSceneHint").textContent="这是一份可调的数学模型。请先预测参数变化的效果，再拖动、旋转或比较数值。";
-    $("lab2dControls").hidden=preset.tool==="space_3d"||preset.tool==="triangle_2d"||preset.tool==="sequence_2d"||preset.id==="unit-circle"||["venn_logic","number_line"].includes(preset.tool);
+    $("lab2dControls").hidden=preset.tool==="space_3d"||preset.tool==="triangle_2d"||preset.tool==="sequence_2d"||["probability_2d","statistics_2d"].includes(preset.tool)||preset.id==="unit-circle"||["venn_logic","number_line"].includes(preset.tool);
     $("lab3dControls").hidden=preset.tool!=="space_3d";
     const params=$("labParameterControls");params.replaceChildren();
     if(!preset.params.length){
@@ -182,7 +185,10 @@
         }
       };
       let result;
-      if(root.MentorLabExtrema?.supports(preset.id)){
+      if(root.MentorLabProbability?.supports(preset.id)){
+        result=root.MentorLabProbability.draw(node,preset,state.values,state.view2d,scene);
+        $("labCoordinateReadout").textContent=result.coordinateHint;
+      }else if(root.MentorLabExtrema?.supports(preset.id)){
         result=root.MentorLabExtrema.draw(node,preset,state.values,state.view2d,scene);
         $("labCoordinateReadout").textContent=result.coordinateHint;
       }else if(root.MentorLabSequences?.supports(preset.id)){
