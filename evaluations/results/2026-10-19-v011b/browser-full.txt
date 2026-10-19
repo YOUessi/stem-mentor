@@ -1,0 +1,15 @@
+Restored green UI passed Chrome: {'theme': 'green v0.5', 'screens': [{'width': 1440, 'height': 1000, 'background': 'rgb(247, 248, 245)'}, {'width': 768, 'height': 1024, 'background': 'rgb(247, 248, 245)'}, {'width': 390, 'height': 844, 'background': 'rgb(247, 248, 245)'}], 'interaction_checks': ['mode switch', 'student reasoning and feedback', 'method library', 'exam micro-knowledge', 'start another exercise'], 'page_errors': []}
+GREEN v0.7 Chrome test: 9 passed; page errors: 0 ; external requests: 0
+High-school lab: 29/29 scene renders, 8 interactive checks, widths=[390, 768, 1024, 1280], zero page errors and external requests.
+Mathlab numerical checks PASSED: domains, triangle identities, SSA branches, conic foci, 3D projection, drag rotation and polygon coordinates.
+v0.9 Browser PASS: 9 checks, widths [390, 768, 1280] errors=0 external=0
+VECTOR_KEYS {'before': 2.0, 'after': 2.2, 'focus': {'tag': 'circle', 'handle': 'a'}}
+v0.9 keyboard PASS: 2 continuous keyboard interactions; page errors=0
+v0.9 extremes PASS: 39 scenes, 20 parameter extreme sets, no nonfinite SVG and no fabricated learning records
+v0.10 Chrome PASS: 8 interaction groups; widths [390, 768, 1280] page errors=0, external requests=0
+v0.10 extremes PASS: 49 default scenes, 20 min/max combinations, 45 discrete choices, 12 exact boundaries; no external requests or learning writes
+v0.11 Chrome PASS 8 scenes; 7 interaction groups; mobile [390, 768, 1280] ; no external requests or learner writes.
+v0.11b Chrome PASS 5 scenes, 7 interactive groups, widths [390, 768, 1280] errors 0 external 0
+..                                                                       [100%]
+2 passed in 12.10s
+Chrome browser suite passed; temporary synthetic database will be removed.

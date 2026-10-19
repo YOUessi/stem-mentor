@@ -2494,6 +2494,282 @@
         "什么时候递推根本不存在唯一固定点？",
         "图上看起来靠近，是否就完成严格证明？"
       ]
+    },
+    {
+      "id": "extrema-quadratic",
+      "tool": "function_2d",
+      "title": "闭区间最值：二次函数",
+      "equation": "extrema-quadratic",
+      "latex": "f(x)=ax^2+bx+c,\\quad x\\in[L,R]",
+      "params": [
+        {
+          "key": "a",
+          "label": "二次系数 a",
+          "min": -2,
+          "max": 2,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "b",
+          "label": "一次系数 b",
+          "min": -4,
+          "max": 4,
+          "value": -2,
+          "step": 0.1
+        },
+        {
+          "key": "c",
+          "label": "常数 c",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "L",
+          "label": "闭区间左端点 L",
+          "min": -4,
+          "max": 4,
+          "value": -1,
+          "step": 0.1
+        },
+        {
+          "key": "R",
+          "label": "闭区间右端点 R",
+          "min": -3,
+          "max": 6,
+          "value": 3,
+          "step": 0.1
+        }
+      ],
+      "description": "区间内部驻点可能是最小值，但全局最大值常在某个端点。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+      "thinking_prompts": [
+        "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+        "除了满足 f′(x)=0 的点，还有哪些点必须比较？",
+        "检查端点、区间内部驻点及不可导点；用反例验证只找驻点是否可靠。"
+      ]
+    },
+    {
+      "id": "extrema-cubic",
+      "tool": "function_2d",
+      "title": "闭区间最值：三次函数",
+      "equation": "extrema-cubic",
+      "latex": "f(x)=a(x^3-3x)+k,\\quad x\\in[L,R]",
+      "params": [
+        {
+          "key": "a",
+          "label": "尺度 a",
+          "min": -1,
+          "max": 1,
+          "value": 0.5,
+          "step": 0.05
+        },
+        {
+          "key": "k",
+          "label": "偏移 k",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "L",
+          "label": "闭区间左端点 L",
+          "min": -4,
+          "max": 4,
+          "value": -2,
+          "step": 0.1
+        },
+        {
+          "key": "R",
+          "label": "闭区间右端点 R",
+          "min": -3,
+          "max": 6,
+          "value": 3,
+          "step": 0.1
+        }
+      ],
+      "description": "存在驻点仍须与端点比较；不能将局部极大误认为全局最大。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+      "thinking_prompts": [
+        "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+        "除了满足 f′(x)=0 的点，还有哪些点必须比较？",
+        "检查端点、区间内部驻点及不可导点；用反例验证只找驻点是否可靠。"
+      ]
+    },
+    {
+      "id": "extrema-absolute",
+      "tool": "function_2d",
+      "title": "闭区间最值：绝对值折点",
+      "equation": "extrema-absolute",
+      "latex": "f(x)=a|x-h|+k,\\quad x\\in[L,R]",
+      "params": [
+        {
+          "key": "a",
+          "label": "系数 a",
+          "min": -2,
+          "max": 2,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "h",
+          "label": "折点 h",
+          "min": -3,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "平移 k",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "L",
+          "label": "闭区间左端点 L",
+          "min": -4,
+          "max": 4,
+          "value": -2,
+          "step": 0.1
+        },
+        {
+          "key": "R",
+          "label": "闭区间右端点 R",
+          "min": -3,
+          "max": 6,
+          "value": 3,
+          "step": 0.1
+        }
+      ],
+      "description": "不可导的折点也可能取得最值，不能只找 f'(x)=0。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+      "thinking_prompts": [
+        "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+        "除了满足 f′(x)=0 的点，还有哪些点必须比较？",
+        "检查端点、区间内部驻点及不可导点；用反例验证只找驻点是否可靠。"
+      ]
+    },
+    {
+      "id": "extrema-sine",
+      "tool": "function_2d",
+      "title": "闭区间最值：三角函数",
+      "equation": "extrema-sine",
+      "latex": "f(x)=A\\sin(\\omega x+\\varphi)+k",
+      "params": [
+        {
+          "key": "A",
+          "label": "振幅 A",
+          "min": -3,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "w",
+          "label": "角频率 ω",
+          "min": -3,
+          "max": 3,
+          "value": 1,
+          "step": 0.1
+        },
+        {
+          "key": "phi",
+          "label": "相位 φ",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "k",
+          "label": "平移 k",
+          "min": -3,
+          "max": 3,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "L",
+          "label": "闭区间左端点 L",
+          "min": -4,
+          "max": 4,
+          "value": 0,
+          "step": 0.1
+        },
+        {
+          "key": "R",
+          "label": "闭区间右端点 R",
+          "min": -3,
+          "max": 6,
+          "value": 5,
+          "step": 0.1
+        }
+      ],
+      "description": "只考虑闭区间内部实际落入的临界点，比较相同最大值出现的多个位置。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+      "thinking_prompts": [
+        "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+        "除了满足 f′(x)=0 的点，还有哪些点必须比较？",
+        "检查端点、区间内部驻点及不可导点；用反例验证只找驻点是否可靠。"
+      ]
+    },
+    {
+      "id": "extrema-log",
+      "tool": "function_2d",
+      "title": "闭区间最值：对数函数与定义域",
+      "equation": "extrema-log",
+      "latex": "f(x)=\\ln x,\\quad 0<L\\le x\\le R",
+      "params": [
+        {
+          "key": "L",
+          "label": "左端点 L（应大于0）",
+          "min": 0.1,
+          "max": 5,
+          "value": 0.5,
+          "step": 0.1
+        },
+        {
+          "key": "R",
+          "label": "右端点 R",
+          "min": 0.2,
+          "max": 6,
+          "value": 4,
+          "step": 0.1
+        }
+      ],
+      "description": "整个闭区间必须落在 x>0，端点不符合定义域时不得输出假最值。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+      "thinking_prompts": [
+        "先圈出题目规定的闭区间，预测最值可能发生在哪里。",
+        "除了满足 f′(x)=0 的点，还有哪些点必须比较？",
+        "检查端点、区间内部驻点及不可导点；用反例验证只找驻点是否可靠。"
+      ]
     }
   ]
 }

@@ -38,3 +38,5 @@ jobs:
           node --check apps/web/lab/sequences_math.js
           node --check apps/web/lab/sequence_policy.js
           node --check apps/web/lab/sequences2d.js
+          node --check apps/web/lab/extrema_math.js
+          node --check apps/web/lab/extrema2d.js

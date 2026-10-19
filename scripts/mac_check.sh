@@ -21,6 +21,6 @@ done
 node --test tests/node/*.test.cjs
 echo "Offline macOS simulation checks complete; no model API used."
 
-for module in apps/web/lab/foundations_math.js apps/web/lab/interval_math.js apps/web/lab/foundations2d.js apps/web/lab/numberline.js apps/web/lab/sequences_math.js apps/web/lab/sequence_policy.js apps/web/lab/sequences2d.js; do
+for module in apps/web/lab/foundations_math.js apps/web/lab/interval_math.js apps/web/lab/foundations2d.js apps/web/lab/numberline.js apps/web/lab/sequences_math.js apps/web/lab/sequence_policy.js apps/web/lab/sequences2d.js apps/web/lab/extrema_math.js apps/web/lab/extrema2d.js; do
   node --check "$module"
 done
