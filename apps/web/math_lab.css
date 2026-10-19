@@ -229,3 +229,38 @@
 .lab-set-region-card strong{display:block;font-size:11px;color:#467353;line-height:1.6}
 .lab-set-region-card span{display:block;font-size:12px;color:#657d69;margin-top:4px;overflow-wrap:anywhere;line-height:1.7}
 @media(max-width:650px){.lab-alternative-view:not([hidden]){display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}}
+
+/* v0.11: discrete sequence exploration, in the original pale-green theme. */
+.lab-seq-heading{font-size:13px;font-weight:680;fill:#3c7651}
+.lab-seq-axis{stroke:#adc8b2;stroke-width:1.5}
+.lab-seq-axis-label{fill:#91a296;font-size:10px}
+.lab-seq-tick{fill:#7b9582;font-size:11px}
+.lab-seq-stem{fill:none;stroke-width:2;opacity:.65}
+.lab-seq-dot{cursor:pointer;outline:none;stroke:#fff;stroke-width:2.1}
+.lab-seq-dot:focus{stroke:#b58b48;stroke-width:4}
+.lab-seq-primary.lab-seq-stem{stroke:#4d9769}
+.lab-seq-primary.lab-seq-dot{fill:#328859}
+.lab-seq-secondary.lab-seq-stem{stroke:#bf9865}
+.lab-seq-secondary.lab-seq-dot{fill:#aa7d43}
+.lab-seq-message{font-size:12px;fill:#758d7b}
+.lab-seq-reflection{padding:15px 13px;border:1px solid #daebde;border-radius:11px;background:#f7fcf7}
+.lab-seq-reflection h3{font-size:13px;color:#377450;margin:0 0 9px}
+.lab-seq-reflection p{font-size:11px;line-height:1.8;color:#587861}
+.lab-seq-prediction{resize:vertical;min-height:72px;width:100%;background:#fff;border:1px solid #d0e1d4;
+ border-radius:9px;padding:10px 12px;font-size:12px;line-height:1.7;color:#3a5e43;outline-color:#6eaa7e}
+.lab-seq-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}
+.lab-seq-actions button{font-size:10px}
+.lab-seq-hint{border-radius:8px;padding:9px 11px;background:#eef6ee;color:#477654;font-size:11px}
+.lab-seq-reflection small{color:#879b8b;display:block;font-size:10px;line-height:1.7}
+.lab-alternative-view.lab-seq-table-wrapper:not([hidden]){display:block;overflow-x:auto;border:1px solid #e0ecdf;
+ background:#fbfdfa;border-radius:10px;margin:12px 0}
+.lab-seq-table{width:100%;border-collapse:collapse;font-size:11px;text-align:center;min-width:290px}
+.lab-seq-table thead th{padding:10px;background:#eaf6ec;color:#52765d}
+.lab-seq-table td,.lab-seq-table tbody th{padding:8px;border-top:1px solid #e5eee5;color:#4a6d54;
+ font-variant-numeric:tabular-nums}
+.lab-seq-table tbody tr:nth-child(even){background:#f4f9f4}
+@media(prefers-reduced-motion:reduce){.lab-seq-dot{transition:none!important}}
+
+.lab-seq-stage-label{display:grid;gap:6px;margin:11px 0;font-size:11px;color:#5b7b60}
+.lab-seq-stage{font-size:12px;background:#fff;color:#41674d;border:1px solid #d6e8d9;
+ border-radius:8px;padding:9px 10px;outline-color:#78af82}

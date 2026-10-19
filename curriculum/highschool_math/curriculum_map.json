@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-19.1",
+  "version": "2026-10-19.2",
   "subject": "高中数学",
   "curriculum_reference": "普通高中数学课程标准（2017年版2020年修订）",
   "reference_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1289,9 +1289,9 @@
       "theme": "函数",
       "unit": "数列与导数",
       "concept": "数列概念与递推",
-      "recommended_tool": "function_2d",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "sequence_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "已有具体受控数列实验场景（非完整教学）",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1299,8 +1299,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "seq-linear-recurrence",
+        "seq-two-term"
+      ],
+      "capability_limits": "仅有限项的一阶仿射和二阶和式递推；不能证明一般递推的无穷性质。"
     },
     {
       "id": "HS-MATH-063",
@@ -1308,9 +1311,9 @@
       "theme": "函数",
       "unit": "数列与导数",
       "concept": "等差数列",
-      "recommended_tool": "function_2d",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "sequence_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "已有具体受控数列实验场景（非完整教学）",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1318,8 +1321,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "seq-arithmetic",
+        "seq-growth"
+      ],
+      "capability_limits": "固定实数首项、公差的前 24 项；未实现一般形式的代数证明。"
     },
     {
       "id": "HS-MATH-064",
@@ -1327,9 +1333,9 @@
       "theme": "函数",
       "unit": "数列与导数",
       "concept": "等比数列",
-      "recommended_tool": "function_2d",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "sequence_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "已有具体受控数列实验场景（非完整教学）",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1337,8 +1343,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "seq-geometric",
+        "seq-geometric-edge"
+      ],
+      "capability_limits": "实数公比及有限项、q=1、0、−1 的特例；不自动证明无穷收敛。"
     },
     {
       "id": "HS-MATH-065",
@@ -1346,9 +1355,9 @@
       "theme": "函数",
       "unit": "数列与导数",
       "concept": "数列求和与数列模型",
-      "recommended_tool": "function_2d",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "sequence_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "已有具体受控数列实验场景（非完整教学）",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1356,8 +1365,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "seq-partial-sum",
+        "seq-growth"
+      ],
+      "capability_limits": "有限部分和与两类固定数列的增长比较；不支持任意求和式与通用应用建模。"
     },
     {
       "id": "HS-MATH-066",

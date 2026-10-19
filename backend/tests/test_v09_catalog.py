@@ -19,7 +19,7 @@ def test_v09_ten_new_scenes_preserve_previous_twenty_nine(client):
     data=client.get('/api/math-lab/catalog').json()
     ids={p['id'] for p in data['presets']}
     assert NEW_IDS<=ids, f'Missing planned v0.9 scenes: {NEW_IDS-ids}'
-    assert len(ids)==49
+    assert len(ids)>=49
     assert {'fn-linear','fn-piecewise','tri-ssa','conic-ellipse','3d-plane'}<=ids
     assert data['no_llm_api'] is True
     assert len(data['topics'])==113
@@ -68,7 +68,7 @@ def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
 def test_catalog_builders_reproduce_versioned_evidence_without_mutating_repo(tmp_path):
     import shutil,subprocess,sys
     source=ROOT/'curriculum'/'highschool_math'
-    for name in ['build_presets.py','build_curriculum.py','extend_v09.py','extend_v010.py']:
+    for name in ['build_presets.py','build_curriculum.py','extend_v09.py','extend_v010.py','extend_v011.py']:
         shutil.copy2(source/name,tmp_path/name)
     subprocess.run([sys.executable,str(tmp_path/'build_presets.py')],cwd=tmp_path,check=True,capture_output=True)
     subprocess.run([sys.executable,str(tmp_path/'build_curriculum.py')],cwd=tmp_path,check=True,capture_output=True)

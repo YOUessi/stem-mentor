@@ -13,11 +13,11 @@ def run():
         context=browser.new_context(viewport={'width':1440,'height':960},locale='zh-CN',reduced_motion='reduce')
         p=context.new_page();p.on('pageerror',lambda e:report['runtime_errors'].append(str(e)))
         p.goto(BASE,wait_until='networkidle');p.locator('[data-view="lab"]').click()
-        p.wait_for_function('document.querySelectorAll("#labFamilies button").length===8')
+        p.wait_for_function('document.querySelectorAll("#labFamilies button").length>=8')
         catalog=p.request.get(BASE+'/api/math-lab/catalog').json()
         for item in catalog['presets']:
             # Preserve this suite's exact v0.9 39 scenes and 20 extremes. v0.10 has its own complete suite.
-            if item['tool'] in {'complex_plane','venn_logic','number_line'}:continue
+            if item['tool'] in {'complex_plane','venn_logic','number_line','sequence_2d'}:continue
             p.locator('[data-family="'+item['tool']+'"]').click()
             p.locator('#labPreset').select_option(item['id'])
             assert p.locator('#labMetrics .lab-error').count()==0,item['id']

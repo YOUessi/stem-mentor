@@ -14,7 +14,7 @@ def page():
             pg=ctx.new_page();pg.set_default_timeout(7000)
             assert pg.goto(BASE,wait_until='networkidle').ok
             pg.locator('[data-view="lab"]').click()
-            pg.wait_for_function('document.querySelectorAll(".lab-family-tab").length===8')
+            pg.wait_for_function('document.querySelectorAll(".lab-family-tab").length>=8')
             yield pg
             ctx.close()
         finally:b.close()
