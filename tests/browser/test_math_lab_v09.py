@@ -24,11 +24,11 @@ def run():
         page.on('request',lambda r:report['external_requests'].append(r.url) if not r.url.startswith(BASE) else None)
         assert page.goto(BASE,wait_until='networkidle').ok
         page.locator('[data-view="lab"]').click()
-        page.wait_for_function('document.querySelectorAll("#labFamilies button").length===5')
+        page.wait_for_function('document.querySelectorAll("#labFamilies button").length===8')
         assert page.locator('meta[name="theme-color"]').get_attribute('content')=='#174938'
         catalog=page.request.get(BASE+'/api/math-lab/catalog').json()
-        assert len(catalog['presets'])==39
-        report['checks'].append('green layout, 39-scene catalog and fifth vector family')
+        assert len(catalog['presets'])==49
+        report['checks'].append('green layout, current 49-scene catalog retains all v0.9 vector explorations')
 
         select(page,'vector_2d','vec2d-add')
         assert page.locator('.lab-vector-handle').count()==2

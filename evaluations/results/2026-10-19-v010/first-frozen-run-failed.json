@@ -1,0 +1,30 @@
+{
+  "mechanism": "CONCURRENT_PROCESSES_NOT_SUBAGENTS",
+  "commit": "fc60c9a24da7c2f48ff0d9e57b010c20592333f0",
+  "started_at": "2026-10-19T04:35:37Z",
+  "finished_at": "2026-10-19T04:36:27.236512+00:00",
+  "passed": false,
+  "jobs": [
+    {
+      "name": "node",
+      "pid": 10832,
+      "exit_code": 0,
+      "log": "node.log",
+      "log_sha256": "6473163c50ac3eac7692496f4050c9e70c400807e08f5c94442502af1771693c"
+    },
+    {
+      "name": "pytest",
+      "pid": 10833,
+      "exit_code": 0,
+      "log": "pytest.log",
+      "log_sha256": "2e53a40218513315ed336425508dd9534ec4f119aed5e4c5fb6500d91f4c1822"
+    },
+    {
+      "name": "browser",
+      "pid": 10834,
+      "exit_code": 1,
+      "log": "browser.log",
+      "log_sha256": "3e37bd68d2797662354f38e889eefbea259fd93163b6daee28c5837d75c90576"
+    }
+  ]
+}

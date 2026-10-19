@@ -1,0 +1,322 @@
+TAP version 13
+# Subtest: required pure mathematics module exists
+ok 1 - required pure mathematics module exists
+  ---
+  duration_ms: 3.339875
+  type: 'test'
+  ...
+# Subtest: vector addition subtraction scale dot and length
+ok 2 - vector addition subtraction scale dot and length
+  ---
+  duration_ms: 0.483792
+  type: 'test'
+  ...
+# Subtest: orthogonal projection uses signed dot product and orthogonal residual
+ok 3 - orthogonal projection uses signed dot product and orthogonal residual
+  ---
+  duration_ms: 0.120167
+  type: 'test'
+  ...
+# Subtest: zero vectors do not acquire a direction or invented projection
+ok 4 - zero vectors do not acquire a direction or invented projection
+  ---
+  duration_ms: 0.138667
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 0
+ok 5 - unit circle canonical angle 0
+  ---
+  duration_ms: 0.160041
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 90
+ok 6 - unit circle canonical angle 90
+  ---
+  duration_ms: 0.091875
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 180
+ok 7 - unit circle canonical angle 180
+  ---
+  duration_ms: 0.226167
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 270
+ok 8 - unit circle canonical angle 270
+  ---
+  duration_ms: 0.144459
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 360
+ok 9 - unit circle canonical angle 360
+  ---
+  duration_ms: 0.832375
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle -90
+ok 10 - unit circle canonical angle -90
+  ---
+  duration_ms: 1.07775
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 450
+ok 11 - unit circle canonical angle 450
+  ---
+  duration_ms: 0.401958
+  type: 'test'
+  ...
+# Subtest: unit-circle multiple turns negative degrees and quadrant invariant
+ok 12 - unit-circle multiple turns negative degrees and quadrant invariant
+  ---
+  duration_ms: 2.054875
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for quadratic
+ok 13 - secant limiting derivative for quadratic
+  ---
+  duration_ms: 0.453125
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for cubic
+ok 14 - secant limiting derivative for cubic
+  ---
+  duration_ms: 0.075667
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for log
+ok 15 - secant limiting derivative for log
+  ---
+  duration_ms: 0.041208
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for abs
+ok 16 - secant limiting derivative for abs
+  ---
+  duration_ms: 0.038334
+  type: 'test'
+  ...
+# Subtest: quadratic secant is 2x+h even for small increments
+ok 17 - quadratic secant is 2x+h even for small increments
+  ---
+  duration_ms: 0.063833
+  type: 'test'
+  ...
+# Subtest: h=0 means absent secant, not zero division or fake tangent
+ok 18 - h=0 means absent secant, not zero division or fake tangent
+  ---
+  duration_ms: 0.053666
+  type: 'test'
+  ...
+# Subtest: absolute-value corner has no derivative but one-sided secants differ
+ok 19 - absolute-value corner has no derivative but one-sided secants differ
+  ---
+  duration_ms: 0.17225
+  type: 'test'
+  ...
+# Subtest: log domain excludes invalid point and invalid second secant endpoint
+ok 20 - log domain excludes invalid point and invalid second secant endpoint
+  ---
+  duration_ms: 0.142958
+  type: 'test'
+  ...
+# Subtest: box horizontal plane gives actual four-vertex area
+ok 21 - box horizontal plane gives actual four-vertex area
+  ---
+  duration_ms: 0.574833
+  type: 'test'
+  ...
+# Subtest: central diagonal cube section is a regular hexagon, not a fixed rectangle
+ok 22 - central diagonal cube section is a regular hexagon, not a fixed rectangle
+  ---
+  duration_ms: 0.392
+  type: 'test'
+  ...
+# Subtest: cube cut point edge face and empty are separate cases
+ok 23 - cube cut point edge face and empty are separate cases
+  ---
+  duration_ms: 0.971167
+  type: 'test'
+  ...
+# Subtest: plane scaling leaves intersection unchanged
+ok 24 - plane scaling leaves intersection unchanged
+  ---
+  duration_ms: 0.250917
+  type: 'test'
+  ...
+# Subtest: square pyramid section narrows toward apex
+ok 25 - square pyramid section narrows toward apex
+  ---
+  duration_ms: 0.203667
+  type: 'test'
+  ...
+# Subtest: sphere plane produces circle tangent point empty, and zero-normal invalid
+ok 26 - sphere plane produces circle tangent point empty, and zero-normal invalid
+  ---
+  duration_ms: 0.369083
+  type: 'test'
+  ...
+# Subtest: 240 deterministic cube sections stay coplanar inside bounds with finite area
+ok 27 - 240 deterministic cube sections stay coplanar inside bounds with finite area
+  ---
+  duration_ms: 12.097042
+  type: 'test'
+  ...
+# Subtest: cube triangular and pentagonal sections have independent analytic areas
+ok 28 - cube triangular and pentagonal sections have independent analytic areas
+  ---
+  duration_ms: 0.375125
+  type: 'test'
+  ...
+# Subtest: v0.10 complex and finite-set kernel exists
+ok 29 - v0.10 complex and finite-set kernel exists
+  ---
+  duration_ms: 1.429667
+  type: 'test'
+  ...
+# Subtest: complex point modulus conjugation and principal argument
+ok 30 - complex point modulus conjugation and principal argument
+  ---
+  duration_ms: 0.488417
+  type: 'test'
+  ...
+# Subtest: complex arithmetic uses actual real and imaginary products
+ok 31 - complex arithmetic uses actual real and imaginary products
+  ---
+  duration_ms: 0.525209
+  type: 'test'
+  ...
+# Subtest: nonzero small divisor is not mistaken for zero and division is inverse
+ok 32 - nonzero small divisor is not mistaken for zero and division is inverse
+  ---
+  duration_ms: 2.41925
+  type: 'test'
+  ...
+# Subtest: complex rotation supports negative and multi-turn angles and collapse to zero
+ok 33 - complex rotation supports negative and multi-turn angles and collapse to zero
+  ---
+  duration_ms: 0.194708
+  type: 'test'
+  ...
+# Subtest: finite sets are unique subsets of explicit U and do not mutate inputs
+ok 34 - finite sets are unique subsets of explicit U and do not mutate inputs
+  ---
+  duration_ms: 1.683417
+  type: 'test'
+  ...
+# Subtest: set operations and relative complements respect the selected universe
+ok 35 - set operations and relative complements respect the selected universe
+  ---
+  duration_ms: 0.998333
+  type: 'test'
+  ...
+# Subtest: all 256 pairs of subsets satisfy De Morgan and membership predicates
+ok 36 - all 256 pairs of subsets satisfy De Morgan and membership predicates
+  ---
+  duration_ms: 19.404083
+  type: 'test'
+  ...
+# Subtest: v0.10 interval and inequality kernel exists
+ok 37 - v0.10 interval and inequality kernel exists
+  ---
+  duration_ms: 1.285917
+  type: 'test'
+  ...
+# Subtest: interval empty, singleton, reversed and infinite endpoints are distinct
+ok 38 - interval empty, singleton, reversed and infinite endpoints are distinct
+  ---
+  duration_ms: 1.910167
+  type: 'test'
+  ...
+# Subtest: normalization merges a touching boundary only if at least one includes it
+ok 39 - normalization merges a touching boundary only if at least one includes it
+  ---
+  duration_ms: 1.384583
+  type: 'test'
+  ...
+# Subtest: intersection accounts for open and closed coincident endpoints
+ok 40 - intersection accounts for open and closed coincident endpoints
+  ---
+  duration_ms: 0.249291
+  type: 'test'
+  ...
+# Subtest: complement relative to R preserves singleton holes and unbounded tails
+ok 41 - complement relative to R preserves singleton holes and unbounded tails
+  ---
+  duration_ms: 0.286708
+  type: 'test'
+  ...
+# Subtest: difference does not silently close subtracted endpoints
+ok 42 - difference does not silently close subtracted endpoints
+  ---
+  duration_ms: 0.697833
+  type: 'test'
+  ...
+# Subtest: membership and notation distinguish finite endpoints, R and empty
+ok 43 - membership and notation distinguish finite endpoints, R and empty
+  ---
+  duration_ms: 0.612084
+  type: 'test'
+  ...
+# Subtest: interval algebra obeys membership for deterministic combinations and probes
+ok 44 - interval algebra obeys membership for deterministic combinations and probes
+  ---
+  duration_ms: 24.922583
+  type: 'test'
+  ...
+# Subtest: linear negative coefficient reverses inequality and zero coefficient is constant
+ok 45 - linear negative coefficient reverses inequality and zero coefficient is constant
+  ---
+  duration_ms: 0.692583
+  type: 'test'
+  ...
+# Subtest: quadratic two roots respects all four comparison signs
+ok 46 - quadratic two roots respects all four comparison signs
+  ---
+  duration_ms: 1.1775
+  type: 'test'
+  ...
+# Subtest: quadratic repeated root, no root and linear degeneration never invent intervals
+ok 47 - quadratic repeated root, no root and linear degeneration never invent intervals
+  ---
+  duration_ms: 0.283
+  type: 'test'
+  ...
+# Subtest: absolute inequality handles negative radius, zero radius, and outer rays
+ok 48 - absolute inequality handles negative radius, zero radius, and outer rays
+  ---
+  duration_ms: 0.150459
+  type: 'test'
+  ...
+# Subtest: 200 deterministic quadratic parameter sets agree with direct substitution away from roots
+ok 49 - 200 deterministic quadratic parameter sets agree with direct substitution away from roots
+  ---
+  duration_ms: 107.150541
+  type: 'test'
+  ...
+# Subtest: invalid relations and nonfinite coefficients are rejected
+ok 50 - invalid relations and nonfinite coefficients are rejected
+  ---
+  duration_ms: 0.330167
+  type: 'test'
+  ...
+# Subtest: decimal slider coefficients preserve a true repeated root instead of inventing no roots
+ok 51 - decimal slider coefficients preserve a true repeated root instead of inventing no roots
+  ---
+  duration_ms: 0.31775
+  type: 'test'
+  ...
+# Subtest: close nonzero decimal discriminants are not erased by an arbitrary epsilon
+ok 52 - close nonzero decimal discriminants are not erased by an arbitrary epsilon
+  ---
+  duration_ms: 0.101042
+  type: 'test'
+  ...
+1..52
+# tests 52
+# suites 0
+# pass 52
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 281.596291

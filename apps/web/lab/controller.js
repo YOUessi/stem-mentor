@@ -7,7 +7,10 @@
     ["conic_2d","圆锥曲线","直线、圆、椭圆、双曲线、抛物线"],
     ["vector_2d","平面向量","加减、数乘、投影与夹角"],
     ["triangle_2d","三角形与解三角形","三边、三角、SSA 多解"],
-    ["space_3d","空间直角坐标系","空间向量、平面与立体几何"]
+    ["space_3d","空间直角坐标系","空间向量、平面与立体几何"],
+    ["complex_plane","复平面","复数、运算与旋转"],
+    ["venn_logic","集合韦恩图","成员、交并差补与全集"],
+    ["number_line","数轴与不等式","开闭区间、集合与解集"]
   ];
   const state={loaded:false,loading:null,data:null,family:"function_2d",preset:null,
     values:{},scene:{},view2d:{zoom:1},view3d:{yaw:38,pitch:36,zoom:1},result:null};
@@ -78,9 +81,11 @@
     const preset=state.data?.presets?.find(p=>p.id===id);
     if(!preset)return;
     state.family=preset.tool;state.preset=id;state.scene={assist:false};
+    $("labExtraControls").replaceChildren();$("labExtraControls").hidden=true;
+    $("labAlternativeView").replaceChildren();$("labAlternativeView").hidden=true;
     const extra=preset.assist_default===false;
     $("labAssistControl").hidden=!extra;$("labAssistToggle").checked=false;
-    $("labAssistLabel").textContent=preset.id.startsWith("derivative-")?"显示解析切线（先猜想，再核对）":preset.id.startsWith("3d-section-")?"显示切平面与法向量（可选）":"显示辅助图形（自主核对）";
+    $("labAssistLabel").textContent=["complex_plane","venn_logic","number_line"].includes(preset.tool)?"显示运算结果 / 解集（先猜想，再核对）":preset.id.startsWith("derivative-")?"显示解析切线（先猜想，再核对）":preset.id.startsWith("3d-section-")?"显示切平面与法向量（可选）":"显示辅助图形（自主核对）";
     state.values=Object.fromEntries(preset.params.map(p=>[p.key,p.value]));
     state.view2d={zoom:1};state.view3d={yaw:38,pitch:36,zoom:1};
     $("labPreset").value=id;$("lab2dZoom").value="1";
@@ -88,7 +93,7 @@
     $("labTitle").textContent=preset.title;
     $("labDescription").textContent=preset.description;
     $("labSceneHint").textContent="这是一份可调的数学模型。请先预测参数变化的效果，再拖动、旋转或比较数值。";
-    $("lab2dControls").hidden=preset.tool==="space_3d"||preset.tool==="triangle_2d"||preset.id==="unit-circle";
+    $("lab2dControls").hidden=preset.tool==="space_3d"||preset.tool==="triangle_2d"||preset.id==="unit-circle"||["venn_logic","number_line"].includes(preset.tool);
     $("lab3dControls").hidden=preset.tool!=="space_3d";
     const params=$("labParameterControls");params.replaceChildren();
     if(!preset.params.length){
@@ -99,30 +104,40 @@
       const label=make(block,"label","lab-param-header","");
       label.setAttribute("for","labParam_"+p.key);
       make(label,"span","",p.label);
-      const val=make(label,"output","lab-param-value",fixed(p.value));
-      const input=make(block,"input","lab-param-range","");
-      input.type="range";input.id="labParam_"+p.key;
-      input.min=p.min;input.max=p.max;input.step=p.step;input.value=p.value;
-      input.setAttribute("aria-label",p.label);
-      const row=make(block,"div","lab-param-bounds","");
-      make(row,"span","",String(p.min));make(row,"span","",String(p.max));
-      input.oninput=()=>{
-        state.values[p.key]=Number(input.value);
-        val.textContent=fixed(state.values[p.key]);
-        draw();
-      };
+      const choiceLabel=value=>p.options?.find(o=>o.value===value)?.label??fixed(value);
+      const val=make(label,"output","lab-param-value",choiceLabel(p.value));
+      const input=make(block,p.options?"select":"input",p.options?"lab-param-choice":"lab-param-range","");
+      input.id="labParam_"+p.key;input.setAttribute("aria-label",p.label);
+      if(p.options){
+        for(const option of p.options){const item=make(input,"option","",option.label);item.value=String(option.value)}
+      }else{
+        input.type="range";input.min=p.min;input.max=p.max;input.step=p.step;
+        const row=make(block,"div","lab-param-bounds","");
+        make(row,"span","",String(p.min));make(row,"span","",String(p.max));
+      }
+      input.value=String(p.value);
+      input.addEventListener(p.options?"change":"input",()=>{
+        const value=Number(input.value);
+        if(!Number.isFinite(value)||p.options&&!p.options.some(o=>o.value===value))return;
+        state.values[p.key]=value;val.textContent=choiceLabel(value);draw();
+      });
     }
-    formula(preset.latex);
     draw();
   }
   async function formula(latex){
-    const box=$("labFormula");box.replaceChildren();
-    if(!latex)return;
-    box.textContent="\\("+latex+"\\)";
-    try{
+    if(state.formulaSource===latex)return;
+    state.formulaSource=latex;
+    const box=$("labFormula"),ticket=(state.formulaTicket||0)+1;
+    state.formulaTicket=ticket;box.dataset.latex=latex||"";box.setAttribute("aria-busy","true");
+    state.formulaQueue=(state.formulaQueue||Promise.resolve()).catch(()=>{}).then(async()=>{
+      if(ticket!==state.formulaTicket)return;
       if(root.MathJax?.typesetClear)root.MathJax.typesetClear([box]);
-      await root.MathJax?.typesetPromise?.([box]);
-    }catch(e){box.textContent=latex}
+      box.replaceChildren();box.textContent=latex?"\\("+latex+"\\)":"";
+      try{await root.MathJax?.typesetPromise?.([box])}
+      catch(e){if(ticket===state.formulaTicket)box.textContent=latex||""}
+      if(ticket===state.formulaTicket)box.setAttribute("aria-busy","false");
+    });
+    return state.formulaQueue;
   }
   function metrics(items){
     const box=$("labMetrics");box.replaceChildren();
@@ -137,6 +152,12 @@
       // Explicitly clear prior scene handlers; SVG root is reused across families.
       node.onpointerdown=node.onpointermove=node.onpointerup=node.onpointercancel=null;node.style.cursor="";
       const scene=state.scene;
+      scene.extraControls=$("labExtraControls");
+      scene.onSceneChange=()=>{
+        const id=scene.extraControls.contains(document.activeElement)?document.activeElement.id:null;
+        draw();
+        if(id)document.getElementById(id)?.focus({preventScroll:true});
+      };
       scene.onParams=patch=>{
         // SVG children are replaced during drawing. Preserve a keyboard user's
         // logical handle without stealing focus from sliders or pointer users.
@@ -144,10 +165,11 @@
           document.activeElement.getAttribute("data-handle"):null;
         for(const [key,value] of Object.entries(patch)){
           const spec=preset.params.find(v=>v.key===key);if(!spec||!Number.isFinite(value))continue;
+          if(spec.options&&!spec.options.some(o=>o.value===value))continue;
           const bounded=Math.max(spec.min,Math.min(spec.max,value));
           const rounded=Number((spec.min+Math.round((bounded-spec.min)/spec.step)*spec.step).toFixed(10));
           state.values[key]=Math.max(spec.min,Math.min(spec.max,rounded));
-          const slider=$("labParam_"+key);if(slider){slider.value=String(state.values[key]);slider.closest(".lab-param").querySelector("output").textContent=fixed(state.values[key]);}
+          const slider=$("labParam_"+key);if(slider){slider.value=String(state.values[key]);slider.closest(".lab-param").querySelector("output").textContent=spec.options?.find(o=>o.value===state.values[key])?.label??fixed(state.values[key]);}
         }
         draw();
         if(focusedHandle){
@@ -157,7 +179,13 @@
         }
       };
       let result;
-      if(root.MentorLabExplorers?.supports(preset.id)){
+      if(root.MentorFoundations2D?.supports(preset.id)){
+        result=root.MentorFoundations2D.draw(node,preset,state.values,state.view2d,scene);
+        $("labCoordinateReadout").textContent=result.coordinateHint||"先观察输入，再主动显示结果。";
+      }else if(root.MentorNumberLine?.supports(preset.id)){
+        result=root.MentorNumberLine.draw(node,preset,state.values,state.view2d,scene);
+        $("labCoordinateReadout").textContent=result.coordinateHint||"空心点不包含端点，实心点包含端点。";
+      }else if(root.MentorLabExplorers?.supports(preset.id)){
         result=root.MentorLabExplorers.draw(node,preset,state.values,state.view2d,scene);
         $("labCoordinateReadout").textContent="先观察再开启辅助线；拖动点或参数滑块可同步探索。";
       }else if(preset.tool==="triangle_2d"){
@@ -180,7 +208,7 @@
         result=root.MentorLab2D.draw(node,preset,state.values,state.view2d);
         $("labCoordinateReadout").textContent="移动鼠标查看二维坐标；改变参数观察函数或曲线形状。";
       }
-      state.result=result;metrics(result.info);
+      state.result=result;metrics(result.info);formula(result.latex||preset.latex);
     }catch(e){
       console.error("可视化重绘失败",e);
       displayError("当前场景暂不可用，请选择其他实验或重置参数。");
@@ -194,6 +222,7 @@
     const point=rootSvg.createSVGPoint();point.x=e.clientX;point.y=e.clientY;
     const local=point.matrixTransform(matrix.inverse()),world=result.toWorld(local.x,local.y);
     const x=world[0],y=world[1],v=result.evaluate?.(x);
+    if(result.pointerLabel){$("labCoordinateReadout").textContent=result.pointerLabel(x,y);return;}
     $("labCoordinateReadout").textContent=
      "坐标 (x,y) = ("+fixed(x)+", "+fixed(y)+")"+
      (Number.isFinite(v)?"；所选函数在 x 处的值 ≈ "+fixed(v):"");

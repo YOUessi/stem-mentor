@@ -25,7 +25,7 @@
     </nav>
     <div class="sidebar-bottom">
       <div class="sidebar-note"><strong>教学核心</strong><span>先由你尝试，我们一起找到突破口。</span></div>
-      <span class="aside-version">SIMULATION · v0.9</span>
+      <span class="aside-version">SIMULATION · v0.10</span>
     </div>
   </aside>
   <main class="main">
@@ -107,6 +107,7 @@
             </div>
             <p id="labDescription" class="lab-description">通过参数、拖动和旋转观察数学对象。</p>
             <div class="lab-plot-box" id="labPlotBox"><svg id="labPlot" role="img" aria-label="高中数学二维与三维动态坐标图" viewBox="0 0 760 460"></svg></div>
+            <div id="labAlternativeView" class="lab-alternative-view" hidden></div>
             <div class="lab-graph-tools">
               <span id="labCoordinateReadout" class="lab-coordinate" role="status">移动到画布观察坐标。</span>
               <div class="lab-view-tools" id="lab2dControls"><label>平面缩放 <input type="range" min=".65" max="2.5" step=".05" value="1" id="lab2dZoom" aria-label="二维图形缩放"/></label></div>
@@ -122,6 +123,7 @@
             <div id="labFormula" class="lab-formula" aria-label="当前实验的数学公式"></div>
             <label id="labAssistControl" class="lab-assist-control" hidden><input type="checkbox" id="labAssistToggle"/><span id="labAssistLabel">显示辅助图形（自主核对）</span></label>
             <div id="labParameterControls" class="lab-param-list"></div>
+            <div id="labExtraControls" class="lab-extra-controls" hidden></div>
             <div id="labSceneHint" class="lab-scene-hint">请调整一个参数，试着预测图形变化后再观察。</div>
             <div class="lab-reflection"><strong>想一想</strong><p>如果只改变一个条件，哪部分性质不变？你能先作出猜想，再用图验证吗？</p></div>
           </aside>
@@ -151,6 +153,10 @@
 <script src="/assets/lab/scene3d.js" defer></script>
 <script src="/assets/lab/explorers2d.js" defer></script>
 <script src="/assets/lab/sections3d.js" defer></script>
+<script src="/assets/lab/foundations_math.js" defer></script>
+<script src="/assets/lab/interval_math.js" defer></script>
+<script src="/assets/lab/foundations2d.js" defer></script>
+<script src="/assets/lab/numberline.js" defer></script>
 <script src="/assets/lab/controller.js" defer></script>
 </body>
 </html>

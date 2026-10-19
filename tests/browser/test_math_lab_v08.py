@@ -31,7 +31,7 @@ def main():
         page.wait_for_function("() => document.querySelectorAll('#labPreset option').length>=12")
         assert page.locator("#lab").is_visible()
         assert page.locator("#labSummary").inner_text().find("113")>=0
-        assert "39" in page.locator("#labSummary").inner_text()
+        assert "49" in page.locator("#labSummary").inner_text()
         assert "174938" in page.locator('meta[name="theme-color"]').get_attribute("content")
         report["interaction_checks"].append("Standalone green lab navigation and 113-topic catalog")
 

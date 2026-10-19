@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor/tests/browser/test_math_lab_v010.py", line 169, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor/tests/browser/test_math_lab_v010.py", line 39, in run
+    assert {'complex_plane','venn_logic','number_line'}<=set(families),families
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ['function_2d', 'conic_2d', 'vector_2d', 'triangle_2d', 'space_3d']

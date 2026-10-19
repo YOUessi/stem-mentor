@@ -1,0 +1,224 @@
+FFFFFFFFF                                                                [100%]
+=================================== FAILURES ===================================
+___________ test_v010_adds_ten_scenes_without_losing_the_original_39 ___________
+
+client = <starlette.testclient.TestClient object at 0x105350c20>
+
+    def test_v010_adds_ten_scenes_without_losing_the_original_39(client):
+        body=client.get('/api/math-lab/catalog').json()
+        ids={p['id'] for p in body['presets']}
+>       assert NEW_IDS<=ids,NEW_IDS-ids
+E       AssertionError: {'complex-operations', 'complex-point', 'complex-rotation', 'ineq-absolute', 'ineq-linear', 'ineq-quadratic', ...}
+E       assert {'complex-ope...adratic', ...} <= {'3d-cone', '...pyramid', ...}
+E         
+E         Extra items in the left set:
+E         'ineq-absolute'
+E         'complex-operations'
+E         'interval-operations'
+E         'ineq-linear'
+E         'ineq-quadratic'...
+E         
+E         ...Full output truncated (5 lines hidden), use '-vv' to show
+
+tests/test_v010_catalog.py:27: AssertionError
+_________ test_discrete_parameter_metadata_carries_mathematical_labels _________
+
+client = <starlette.testclient.TestClient object at 0x1053b4e10>
+
+    def test_discrete_parameter_metadata_carries_mathematical_labels(client):
+        presets={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+>       assert NEW_IDS<=presets.keys()
+E       AssertionError: assert {'complex-operations', 'complex-point', 'complex-rotation', 'ineq-absolute', 'ineq-linear', 'ineq-quadratic', ...} <= dict_keys(['fn-linear', 'fn-quadratic', 'fn-cubic', 'fn-exp', 'fn-log', 'fn-sin', 'fn-cos', 'fn-tan', 'fn-abs', 'fn-in...'derivative-cubic', 'derivative-log', 'derivative-abs', '3d-section-prism', '3d-section-pyramid', '3d-section-sphere'])
+E        +  where dict_keys(['fn-linear', 'fn-quadratic', 'fn-cubic', 'fn-exp', 'fn-log', 'fn-sin', 'fn-cos', 'fn-tan', 'fn-abs', 'fn-in...'derivative-cubic', 'derivative-log', 'derivative-abs', '3d-section-prism', '3d-section-pyramid', '3d-section-sphere']) = <built-in method keys of dict object at 0x105741100>()
+E        +    where <built-in method keys of dict object at 0x105741100> = {'3d-cone': {'description': '顶点到底面的高与母线', 'equation': 'cone3d', 'expert_review': 'PENDING', 'id': '3d-cone', ...}, '3d...oint': {'description': '右手坐标系，XY 平面投影', 'equation': 'point3d', 'expert_review': 'PENDING', 'id': '3d-point', ...}, ...}.keys
+
+tests/test_v010_catalog.py:37: AssertionError
+___________ test_catalog_rejects_invalid_choice_metadata[duplicate] ____________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-177/test_catalog_rejects_invalid_c0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1056fed50>
+invalid = 'duplicate'
+
+    @pytest.mark.parametrize('invalid',['duplicate','default_missing','outside_bounds','nonfinite','missing_label'])
+    def test_catalog_rejects_invalid_choice_metadata(tmp_path,monkeypatch,invalid):
+        # A production implementation that ignores options must fail this test.
+        original=catalog.ROOT
+        data=json.loads((original/'visual_presets.json').read_text('utf8'))
+        p=data['presets'][0]['params'][0]
+        good=p['value'];bad=p['max']+1
+        if invalid=='duplicate': options=[{'value':good,'label':'a'},{'value':good,'label':'b'}]
+        elif invalid=='default_missing': options=[{'value':p['min'],'label':'a'}];p['value']=p['max']
+        elif invalid=='outside_bounds': options=[{'value':good,'label':'a'},{'value':bad,'label':'b'}]
+        elif invalid=='nonfinite': options=[{'value':good,'label':'a'},{'value':float('nan'),'label':'b'}]
+        else: options=[{'value':good,'label':''}]
+        p['options']=options
+        (tmp_path/'visual_presets.json').write_text(json.dumps(data),'utf8')
+        shutil.copy2(original/'curriculum_map.json',tmp_path/'curriculum_map.json')
+        monkeypatch.setattr(catalog,'ROOT',tmp_path)
+        catalog.lab_catalog.cache_clear()
+        try:
+>           with pytest.raises(ValueError,match='(?i)(option|choice)'):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_v010_catalog.py:70: Failed
+________ test_catalog_rejects_invalid_choice_metadata[default_missing] _________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-177/test_catalog_rejects_invalid_c1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10568c270>
+invalid = 'default_missing'
+
+    @pytest.mark.parametrize('invalid',['duplicate','default_missing','outside_bounds','nonfinite','missing_label'])
+    def test_catalog_rejects_invalid_choice_metadata(tmp_path,monkeypatch,invalid):
+        # A production implementation that ignores options must fail this test.
+        original=catalog.ROOT
+        data=json.loads((original/'visual_presets.json').read_text('utf8'))
+        p=data['presets'][0]['params'][0]
+        good=p['value'];bad=p['max']+1
+        if invalid=='duplicate': options=[{'value':good,'label':'a'},{'value':good,'label':'b'}]
+        elif invalid=='default_missing': options=[{'value':p['min'],'label':'a'}];p['value']=p['max']
+        elif invalid=='outside_bounds': options=[{'value':good,'label':'a'},{'value':bad,'label':'b'}]
+        elif invalid=='nonfinite': options=[{'value':good,'label':'a'},{'value':float('nan'),'label':'b'}]
+        else: options=[{'value':good,'label':''}]
+        p['options']=options
+        (tmp_path/'visual_presets.json').write_text(json.dumps(data),'utf8')
+        shutil.copy2(original/'curriculum_map.json',tmp_path/'curriculum_map.json')
+        monkeypatch.setattr(catalog,'ROOT',tmp_path)
+        catalog.lab_catalog.cache_clear()
+        try:
+>           with pytest.raises(ValueError,match='(?i)(option|choice)'):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_v010_catalog.py:70: Failed
+_________ test_catalog_rejects_invalid_choice_metadata[outside_bounds] _________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-177/test_catalog_rejects_invalid_c2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10568caf0>
+invalid = 'outside_bounds'
+
+    @pytest.mark.parametrize('invalid',['duplicate','default_missing','outside_bounds','nonfinite','missing_label'])
+    def test_catalog_rejects_invalid_choice_metadata(tmp_path,monkeypatch,invalid):
+        # A production implementation that ignores options must fail this test.
+        original=catalog.ROOT
+        data=json.loads((original/'visual_presets.json').read_text('utf8'))
+        p=data['presets'][0]['params'][0]
+        good=p['value'];bad=p['max']+1
+        if invalid=='duplicate': options=[{'value':good,'label':'a'},{'value':good,'label':'b'}]
+        elif invalid=='default_missing': options=[{'value':p['min'],'label':'a'}];p['value']=p['max']
+        elif invalid=='outside_bounds': options=[{'value':good,'label':'a'},{'value':bad,'label':'b'}]
+        elif invalid=='nonfinite': options=[{'value':good,'label':'a'},{'value':float('nan'),'label':'b'}]
+        else: options=[{'value':good,'label':''}]
+        p['options']=options
+        (tmp_path/'visual_presets.json').write_text(json.dumps(data),'utf8')
+        shutil.copy2(original/'curriculum_map.json',tmp_path/'curriculum_map.json')
+        monkeypatch.setattr(catalog,'ROOT',tmp_path)
+        catalog.lab_catalog.cache_clear()
+        try:
+>           with pytest.raises(ValueError,match='(?i)(option|choice)'):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_v010_catalog.py:70: Failed
+___________ test_catalog_rejects_invalid_choice_metadata[nonfinite] ____________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-177/test_catalog_rejects_invalid_c3')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x105705650>
+invalid = 'nonfinite'
+
+    @pytest.mark.parametrize('invalid',['duplicate','default_missing','outside_bounds','nonfinite','missing_label'])
+    def test_catalog_rejects_invalid_choice_metadata(tmp_path,monkeypatch,invalid):
+        # A production implementation that ignores options must fail this test.
+        original=catalog.ROOT
+        data=json.loads((original/'visual_presets.json').read_text('utf8'))
+        p=data['presets'][0]['params'][0]
+        good=p['value'];bad=p['max']+1
+        if invalid=='duplicate': options=[{'value':good,'label':'a'},{'value':good,'label':'b'}]
+        elif invalid=='default_missing': options=[{'value':p['min'],'label':'a'}];p['value']=p['max']
+        elif invalid=='outside_bounds': options=[{'value':good,'label':'a'},{'value':bad,'label':'b'}]
+        elif invalid=='nonfinite': options=[{'value':good,'label':'a'},{'value':float('nan'),'label':'b'}]
+        else: options=[{'value':good,'label':''}]
+        p['options']=options
+        (tmp_path/'visual_presets.json').write_text(json.dumps(data),'utf8')
+        shutil.copy2(original/'curriculum_map.json',tmp_path/'curriculum_map.json')
+        monkeypatch.setattr(catalog,'ROOT',tmp_path)
+        catalog.lab_catalog.cache_clear()
+        try:
+>           with pytest.raises(ValueError,match='(?i)(option|choice)'):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_v010_catalog.py:70: Failed
+_________ test_catalog_rejects_invalid_choice_metadata[missing_label] __________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-177/test_catalog_rejects_invalid_c4')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x105706650>
+invalid = 'missing_label'
+
+    @pytest.mark.parametrize('invalid',['duplicate','default_missing','outside_bounds','nonfinite','missing_label'])
+    def test_catalog_rejects_invalid_choice_metadata(tmp_path,monkeypatch,invalid):
+        # A production implementation that ignores options must fail this test.
+        original=catalog.ROOT
+        data=json.loads((original/'visual_presets.json').read_text('utf8'))
+        p=data['presets'][0]['params'][0]
+        good=p['value'];bad=p['max']+1
+        if invalid=='duplicate': options=[{'value':good,'label':'a'},{'value':good,'label':'b'}]
+        elif invalid=='default_missing': options=[{'value':p['min'],'label':'a'}];p['value']=p['max']
+        elif invalid=='outside_bounds': options=[{'value':good,'label':'a'},{'value':bad,'label':'b'}]
+        elif invalid=='nonfinite': options=[{'value':good,'label':'a'},{'value':float('nan'),'label':'b'}]
+        else: options=[{'value':good,'label':''}]
+        p['options']=options
+        (tmp_path/'visual_presets.json').write_text(json.dumps(data),'utf8')
+        shutil.copy2(original/'curriculum_map.json',tmp_path/'curriculum_map.json')
+        monkeypatch.setattr(catalog,'ROOT',tmp_path)
+        catalog.lab_catalog.cache_clear()
+        try:
+>           with pytest.raises(ValueError,match='(?i)(option|choice)'):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_v010_catalog.py:70: Failed
+______________ test_v010_course_claims_bind_to_real_presets_only _______________
+
+client = <starlette.testclient.TestClient object at 0x1053b6850>
+
+    def test_v010_course_claims_bind_to_real_presets_only(client):
+        data=client.get('/api/math-lab/catalog').json()
+        topics={t['concept']:t for t in data['topics']}
+        for concept,scene in [('复数与复平面','complex-point'),('复数加减乘除及几何意义','complex-operations'),
+                              ('集合及其表示','sets-operations'),('交集并集补集','sets-complement'),
+                              ('一元二次不等式','ineq-quadratic')]:
+>           assert scene in topics[concept]['available_presets'],concept
+E           AssertionError: 复数与复平面
+E           assert 'complex-point' in []
+
+tests/test_v010_catalog.py:82: AssertionError
+__________ test_v010_builders_are_deterministic_and_keep_prior_models __________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-177/test_v010_builders_are_determi0')
+
+    def test_v010_builders_are_deterministic_and_keep_prior_models(tmp_path):
+        source=ROOT/'curriculum/highschool_math'
+>       assert (source/'extend_v010.py').exists()
+E       AssertionError: assert False
+E        +  where False = exists()
+E        +    where exists = (PosixPath('/Users/youtang/Documents/文件/stem-mentor/curriculum/highschool_math') / 'extend_v010.py').exists
+
+tests/test_v010_catalog.py:91: AssertionError
+=============================== warnings summary ===============================
+../../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_v010_catalog.py::test_v010_adds_ten_scenes_without_losing_the_original_39
+FAILED tests/test_v010_catalog.py::test_discrete_parameter_metadata_carries_mathematical_labels
+FAILED tests/test_v010_catalog.py::test_catalog_rejects_invalid_choice_metadata[duplicate]
+FAILED tests/test_v010_catalog.py::test_catalog_rejects_invalid_choice_metadata[default_missing]
+FAILED tests/test_v010_catalog.py::test_catalog_rejects_invalid_choice_metadata[outside_bounds]
+FAILED tests/test_v010_catalog.py::test_catalog_rejects_invalid_choice_metadata[nonfinite]
+FAILED tests/test_v010_catalog.py::test_catalog_rejects_invalid_choice_metadata[missing_label]
+FAILED tests/test_v010_catalog.py::test_v010_course_claims_bind_to_real_presets_only
+FAILED tests/test_v010_catalog.py::test_v010_builders_are_deterministic_and_keep_prior_models
+9 failed, 1 warning in 1.44s

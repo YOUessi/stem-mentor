@@ -1,0 +1,98 @@
+{
+  "date_local": "2026-10-19",
+  "version": "0.10.0",
+  "source_commit": "675128ae48cb6fc621b1677aace16fae1da7aff2",
+  "base_main": "711d48ae93ba10a6187c5c0fda3cda22332adac8",
+  "device": "MacBook Air",
+  "runtime_dependencies_added": false,
+  "llm_api_calls": 0,
+  "parallel_execution": "independent Node/Python/Chrome processes, NOT independent AI subagents",
+  "tests": {
+    "node_passed": 52,
+    "node_failed": 0,
+    "pytest_passed": 127,
+    "pytest_failed": 0,
+    "legacy_tutor_policy_passed": 33,
+    "legacy_retrieval_passed": 40,
+    "browser_default_scenes": 49,
+    "new_min_max_combinations": 20,
+    "discrete_option_checks": 45,
+    "exact_solution_boundary_checks": 12,
+    "new_interaction_groups": 8,
+    "screenshot_review_regressions": 2,
+    "new_viewport_widths": [
+      390,
+      768,
+      1280
+    ],
+    "old_viewport_widths": [
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "page_errors": 0,
+    "external_requests_observed": 0,
+    "learning_record_writes_during_exploration": 0,
+    "legacy_manual_tutor_browser_passed": true
+  },
+  "coverage": {
+    "engineering_curriculum_items": 113,
+    "scene_presets": 49,
+    "scene_families": 8,
+    "foundation_supported_items": 59,
+    "planned_items": 54,
+    "teacher_review": "PENDING"
+  },
+  "properties_inside_tests": {
+    "finite_set_pairs": 256,
+    "quadratic_parameter_sets": 200
+  },
+  "counts_note": "Property samples, scene checks and independent test cases are not added together.",
+  "fixed_issues": [
+    "Mobile Venn clipping from a minimum SVG width",
+    "Formula area retained an outdated operation / comparison symbol",
+    "Decimal repeated-root discriminant lost to binary floating cancellation",
+    "Old v0.8 browser summary expected 39 instead of 49; original 29-scene coverage retained"
+  ],
+  "math_numeric_semantics": "Shortest decimal coefficient strings determine discriminant sign by integer arithmetic; displayed roots remain approximate.",
+  "review_kind": "Same-executor code/screenshot inspection and automated verification; no independent teacher/agent review",
+  "green_theme_blob": "9df37efb6c12c9e3901e7d5cb64194324d23a119",
+  "limits": [
+    "Fixed real/complex/finite-set models, no arbitrary proof generation",
+    "No validated real-student learning outcome study",
+    "No formal authentication; synthetic demo only",
+    "Finite Venn universe and fixed interval algebra, not general predicate logic"
+  ],
+  "raw_evidence": "evaluations/results/2026-10-19-v010",
+  "parallel_run": {
+    "mechanism": "CONCURRENT_PROCESSES_NOT_SUBAGENTS",
+    "commit": "675128ae48cb6fc621b1677aace16fae1da7aff2",
+    "started_at": "2026-10-19T04:40:58Z",
+    "finished_at": "2026-10-19T04:45:03.291825+00:00",
+    "passed": true,
+    "jobs": [
+      {
+        "name": "node",
+        "pid": 11856,
+        "exit_code": 0,
+        "log": "node.log",
+        "log_sha256": "387c3426e4badf44f0d866e42e0d8711dae65919a459fa54e4203ef02aefa7d3"
+      },
+      {
+        "name": "pytest",
+        "pid": 11857,
+        "exit_code": 0,
+        "log": "pytest.log",
+        "log_sha256": "8905f157b07acecb586f528041ee3b29f5f53957c51861b90fffddb61ae148d4"
+      },
+      {
+        "name": "browser",
+        "pid": 11858,
+        "exit_code": 0,
+        "log": "browser.log",
+        "log_sha256": "ef0a09ca48915f7e9491d1b31f277a67c3a106ede55e13bdc8a402b98ede277a"
+      }
+    ]
+  }
+}

@@ -1,0 +1,423 @@
+{
+  "default_scenes": [
+    "fn-linear",
+    "fn-quadratic",
+    "fn-cubic",
+    "fn-exp",
+    "fn-log",
+    "fn-sin",
+    "fn-cos",
+    "fn-tan",
+    "fn-abs",
+    "fn-inverse",
+    "fn-sqrt",
+    "fn-piecewise",
+    "conic-line",
+    "conic-circle",
+    "conic-ellipse",
+    "conic-hyperbola",
+    "conic-parabola",
+    "conic-intersection",
+    "tri-free",
+    "tri-right",
+    "tri-ssa",
+    "3d-point",
+    "3d-vectors",
+    "3d-plane",
+    "3d-prism",
+    "3d-pyramid",
+    "3d-sphere",
+    "3d-cylinder",
+    "3d-cone",
+    "vec2d-add",
+    "vec2d-projection",
+    "unit-circle",
+    "derivative-quadratic",
+    "derivative-cubic",
+    "derivative-log",
+    "derivative-abs",
+    "3d-section-prism",
+    "3d-section-pyramid",
+    "3d-section-sphere",
+    "complex-point",
+    "complex-operations",
+    "complex-rotation",
+    "sets-operations",
+    "sets-complement",
+    "interval-single",
+    "interval-operations",
+    "ineq-linear",
+    "ineq-quadratic",
+    "ineq-absolute"
+  ],
+  "minmax": [
+    "complex-point:min",
+    "complex-point:max",
+    "complex-operations:min",
+    "complex-operations:max",
+    "complex-rotation:min",
+    "complex-rotation:max",
+    "sets-operations:min",
+    "sets-operations:max",
+    "sets-complement:min",
+    "sets-complement:max",
+    "interval-single:min",
+    "interval-single:max",
+    "interval-operations:min",
+    "interval-operations:max",
+    "ineq-linear:min",
+    "ineq-linear:max",
+    "ineq-quadratic:min",
+    "ineq-quadratic:max",
+    "ineq-absolute:min",
+    "ineq-absolute:max"
+  ],
+  "option_choices": [
+    [
+      "complex-operations",
+      "op",
+      0
+    ],
+    [
+      "complex-operations",
+      "op",
+      1
+    ],
+    [
+      "complex-operations",
+      "op",
+      2
+    ],
+    [
+      "complex-operations",
+      "op",
+      3
+    ],
+    [
+      "sets-operations",
+      "op",
+      0
+    ],
+    [
+      "sets-operations",
+      "op",
+      1
+    ],
+    [
+      "sets-operations",
+      "op",
+      2
+    ],
+    [
+      "sets-operations",
+      "op",
+      3
+    ],
+    [
+      "sets-complement",
+      "op",
+      4
+    ],
+    [
+      "sets-complement",
+      "op",
+      5
+    ],
+    [
+      "sets-complement",
+      "op",
+      6
+    ],
+    [
+      "interval-single",
+      "lc",
+      0
+    ],
+    [
+      "interval-single",
+      "lc",
+      1
+    ],
+    [
+      "interval-single",
+      "lc",
+      2
+    ],
+    [
+      "interval-single",
+      "rc",
+      0
+    ],
+    [
+      "interval-single",
+      "rc",
+      1
+    ],
+    [
+      "interval-single",
+      "rc",
+      2
+    ],
+    [
+      "interval-operations",
+      "alc",
+      0
+    ],
+    [
+      "interval-operations",
+      "alc",
+      1
+    ],
+    [
+      "interval-operations",
+      "alc",
+      2
+    ],
+    [
+      "interval-operations",
+      "arc",
+      0
+    ],
+    [
+      "interval-operations",
+      "arc",
+      1
+    ],
+    [
+      "interval-operations",
+      "arc",
+      2
+    ],
+    [
+      "interval-operations",
+      "blc",
+      0
+    ],
+    [
+      "interval-operations",
+      "blc",
+      1
+    ],
+    [
+      "interval-operations",
+      "blc",
+      2
+    ],
+    [
+      "interval-operations",
+      "brc",
+      0
+    ],
+    [
+      "interval-operations",
+      "brc",
+      1
+    ],
+    [
+      "interval-operations",
+      "brc",
+      2
+    ],
+    [
+      "interval-operations",
+      "op",
+      0
+    ],
+    [
+      "interval-operations",
+      "op",
+      1
+    ],
+    [
+      "interval-operations",
+      "op",
+      2
+    ],
+    [
+      "interval-operations",
+      "op",
+      3
+    ],
+    [
+      "ineq-linear",
+      "relation",
+      0
+    ],
+    [
+      "ineq-linear",
+      "relation",
+      1
+    ],
+    [
+      "ineq-linear",
+      "relation",
+      2
+    ],
+    [
+      "ineq-linear",
+      "relation",
+      3
+    ],
+    [
+      "ineq-quadratic",
+      "relation",
+      0
+    ],
+    [
+      "ineq-quadratic",
+      "relation",
+      1
+    ],
+    [
+      "ineq-quadratic",
+      "relation",
+      2
+    ],
+    [
+      "ineq-quadratic",
+      "relation",
+      3
+    ],
+    [
+      "ineq-absolute",
+      "relation",
+      0
+    ],
+    [
+      "ineq-absolute",
+      "relation",
+      1
+    ],
+    [
+      "ineq-absolute",
+      "relation",
+      2
+    ],
+    [
+      "ineq-absolute",
+      "relation",
+      3
+    ]
+  ],
+  "boundaries": [
+    {
+      "scene": "ineq-quadratic",
+      "params": {
+        "a": 1.8,
+        "b": 1.2,
+        "c": 0.2,
+        "relation": 1
+      },
+      "expected": "{-0.333333}"
+    },
+    {
+      "scene": "ineq-quadratic",
+      "params": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "relation": 1
+      },
+      "expected": "ℝ"
+    },
+    {
+      "scene": "ineq-quadratic",
+      "params": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "relation": 0
+      },
+      "expected": "∅"
+    },
+    {
+      "scene": "ineq-quadratic",
+      "params": {
+        "a": -1,
+        "b": 2,
+        "c": -1,
+        "relation": 3
+      },
+      "expected": "{1}"
+    },
+    {
+      "scene": "ineq-quadratic",
+      "params": {
+        "a": 1,
+        "b": 0,
+        "c": 1,
+        "relation": 1
+      },
+      "expected": "∅"
+    },
+    {
+      "scene": "ineq-quadratic",
+      "params": {
+        "a": 1,
+        "b": 0,
+        "c": 1,
+        "relation": 2
+      },
+      "expected": "ℝ"
+    },
+    {
+      "scene": "ineq-linear",
+      "params": {
+        "a": 0,
+        "b": -2,
+        "relation": 0
+      },
+      "expected": "ℝ"
+    },
+    {
+      "scene": "ineq-absolute",
+      "params": {
+        "h": 2,
+        "r": 0,
+        "relation": 1
+      },
+      "expected": "{2}"
+    },
+    {
+      "scene": "ineq-absolute",
+      "params": {
+        "h": 2,
+        "r": 0,
+        "relation": 3
+      },
+      "expected": "ℝ"
+    },
+    {
+      "scene": "ineq-absolute",
+      "params": {
+        "h": 2,
+        "r": 0,
+        "relation": 0
+      },
+      "expected": "∅"
+    },
+    {
+      "scene": "ineq-absolute",
+      "params": {
+        "h": 2,
+        "r": -1,
+        "relation": 1
+      },
+      "expected": "∅"
+    },
+    {
+      "scene": "interval-operations",
+      "params": {
+        "alo": 1,
+        "ahi": 1,
+        "alc": 1,
+        "arc": 1,
+        "op": 3
+      },
+      "expected": "(−∞, 1) ∪ (1, +∞)"
+    }
+  ],
+  "runtime_errors": [],
+  "writes": [],
+  "external": []
+}

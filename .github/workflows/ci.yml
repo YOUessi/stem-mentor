@@ -30,3 +30,8 @@ jobs:
       - run: cd backend && PYTHONPATH=. python evaluate_policy.py
 
       - run: cd backend && PYTHONPATH=. python evaluate_v05.py
+      - run: |
+          node --check apps/web/lab/foundations_math.js
+          node --check apps/web/lab/interval_math.js
+          node --check apps/web/lab/foundations2d.js
+          node --check apps/web/lab/numberline.js

@@ -20,3 +20,7 @@ for module in apps/web/lab/plot2d.js apps/web/lab/triangle.js apps/web/lab/scene
 done
 node --test tests/node/*.test.cjs
 echo "Offline macOS simulation checks complete; no model API used."
+
+for module in apps/web/lab/foundations_math.js apps/web/lab/interval_math.js apps/web/lab/foundations2d.js apps/web/lab/numberline.js; do
+  node --check "$module"
+done
