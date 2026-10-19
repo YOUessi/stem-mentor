@@ -37,8 +37,8 @@ def run():
             page.wait_for_function('() => document.querySelectorAll(".lab-family-tab").length>0')
             families=page.locator('.lab-family-tab').evaluate_all('(xs)=>xs.map(x=>x.dataset.family)')
             assert {'complex_plane','venn_logic','number_line'}<=set(families),families
-            assert len(families)==8
-            assert '49' in page.locator('#labSummary').inner_text()
+            assert len(families)>=8
+            assert str(page.request.get(URL+'/api/math-lab/catalog').json()['counts']['scene_presets']) in page.locator('#labSummary').inner_text()
             result['checks'].append('catalog exposes all 49 scenes and three new tool families')
 
             choose(page,'complex_plane','complex-point')
@@ -152,7 +152,7 @@ def run():
                 pg=ctx.new_page();pg.on('pageerror',lambda e:result['errors'].append(str(e)))
                 assert pg.goto(URL,wait_until='networkidle').ok
                 pg.locator('[data-view="lab"]').click()
-                pg.wait_for_function('() => document.querySelectorAll(".lab-family-tab").length===8')
+                pg.wait_for_function('() => document.querySelectorAll(".lab-family-tab").length>=8')
                 for family,id in [('complex_plane','complex-operations'),('venn_logic','sets-operations'),('number_line','ineq-quadratic')]:
                     choose(pg,family,id);visible_result(pg)
                     d=pg.evaluate('({width:innerWidth,scroll:document.documentElement.scrollWidth})')

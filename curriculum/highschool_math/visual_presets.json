@@ -2070,6 +2070,430 @@
       "expert_review": "PENDING",
       "simulation": true,
       "assist_default": false
+    },
+    {
+      "id": "seq-arithmetic",
+      "tool": "sequence_2d",
+      "title": "等差数列：差与通项猜想",
+      "equation": "seq-arithmetic",
+      "latex": "a_{n+1}=a_n+d",
+      "params": [
+        {
+          "key": "a1",
+          "label": "首项 a₁",
+          "min": -6,
+          "max": 6,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "d",
+          "label": "公差 d",
+          "min": -4,
+          "max": 4,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "n",
+          "label": "观察项数 n",
+          "min": 1,
+          "max": 24,
+          "value": 12,
+          "step": 1
+        }
+      ],
+      "description": "先观察相邻两项的差，再猜想第 n 项。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察前几项。你预测下一项、后续规律或部分和会怎样变化？",
+      "thinking_prompts": [
+        "观察相邻两项的差是否相同。",
+        "你能用第一项与重复的差表示第 n 项吗？",
+        "当公差为负或零时，你的猜想仍成立吗？"
+      ]
+    },
+    {
+      "id": "seq-geometric",
+      "tool": "sequence_2d",
+      "title": "等比数列：公比与交替",
+      "equation": "seq-geometric",
+      "latex": "a_{n+1}=q a_n",
+      "params": [
+        {
+          "key": "a1",
+          "label": "首项 a₁",
+          "min": -6,
+          "max": 6,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "q",
+          "label": "公比 q",
+          "min": -2,
+          "max": 2,
+          "value": 1.5,
+          "step": 0.05
+        },
+        {
+          "key": "n",
+          "label": "观察项数 n",
+          "min": 1,
+          "max": 24,
+          "value": 12,
+          "step": 1
+        }
+      ],
+      "description": "正负、公比 0、1 和接近 1 都需要单独核对。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察前几项。你预测下一项、后续规律或部分和会怎样变化？",
+      "thinking_prompts": [
+        "观察相邻项的乘法关系。",
+        "如果公比是负的，能预测符号吗？",
+        "q=1 和 q=0 时，哪些通常推导需要单独讨论？"
+      ]
+    },
+    {
+      "id": "seq-geometric-edge",
+      "tool": "sequence_2d",
+      "title": "等比数列：q=1、0、−1 边界",
+      "equation": "seq-geometric-edge",
+      "latex": "a_{n+1}=q a_n",
+      "params": [
+        {
+          "key": "a1",
+          "label": "首项 a₁",
+          "min": -6,
+          "max": 6,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "q",
+          "label": "典型公比",
+          "min": 0,
+          "max": 4,
+          "value": 0,
+          "step": 1,
+          "options": [
+            {
+              "value": 0,
+              "label": "q=1：恒定"
+            },
+            {
+              "value": 1,
+              "label": "q=0：之后为零"
+            },
+            {
+              "value": 2,
+              "label": "q=−1：交替"
+            },
+            {
+              "value": 3,
+              "label": "q=0.5：衰减"
+            },
+            {
+              "value": 4,
+              "label": "q=−1.5：交替放大"
+            }
+          ]
+        },
+        {
+          "key": "n",
+          "label": "观察项数 n",
+          "min": 1,
+          "max": 24,
+          "value": 12,
+          "step": 1
+        }
+      ],
+      "description": "选择边界公比。注意 q=1 的有限和不能使用含 1-q 分母的表达式。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察前几项。你预测下一项、后续规律或部分和会怎样变化？",
+      "thinking_prompts": [
+        "不必先背公式，观察每项究竟发生了什么。",
+        "把 n 项实际加起来，是否存在特殊情况？",
+        "为什么含 1−q 分母的通式不能在 q=1 直接代入？"
+      ]
+    },
+    {
+      "id": "seq-linear-recurrence",
+      "tool": "sequence_2d",
+      "title": "一阶递推：从当前项到下一项",
+      "equation": "seq-linear-recurrence",
+      "latex": "a_{n+1}=r a_n+c",
+      "params": [
+        {
+          "key": "a1",
+          "label": "首项 a₁",
+          "min": -6,
+          "max": 6,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "r",
+          "label": "乘数 r",
+          "min": -2,
+          "max": 2,
+          "value": 0.8,
+          "step": 0.1
+        },
+        {
+          "key": "c",
+          "label": "增量 c",
+          "min": -4,
+          "max": 4,
+          "value": 1,
+          "step": 0.25
+        },
+        {
+          "key": "n",
+          "label": "观察项数 n",
+          "min": 1,
+          "max": 24,
+          "value": 12,
+          "step": 1
+        }
+      ],
+      "description": "对比 r=1、r=0、0<r<1 等边界，观察初值与稳定点。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察前几项。你预测下一项、后续规律或部分和会怎样变化？",
+      "thinking_prompts": [
+        "观察 a_{n+1} 与 a_n 的对应关系。",
+        "有没有某个值代入后保持不变？",
+        "r=1 时，这个递推与哪种熟悉的数列相同？"
+      ]
+    },
+    {
+      "id": "seq-two-term",
+      "tool": "sequence_2d",
+      "title": "二阶递推：两项决定下一项",
+      "equation": "seq-two-term",
+      "latex": "a_{n+2}=a_{n+1}+a_n",
+      "params": [
+        {
+          "key": "a1",
+          "label": "第一项 a₁",
+          "min": -5,
+          "max": 5,
+          "value": 1,
+          "step": 1
+        },
+        {
+          "key": "a2",
+          "label": "第二项 a₂",
+          "min": -5,
+          "max": 5,
+          "value": 1,
+          "step": 1
+        },
+        {
+          "key": "n",
+          "label": "观察项数 n",
+          "min": 1,
+          "max": 24,
+          "value": 12,
+          "step": 1
+        }
+      ],
+      "description": "必须提供两个初值，不能凭一个初值唯一确定整列。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察前几项。你预测下一项、后续规律或部分和会怎样变化？",
+      "thinking_prompts": [
+        "下一项由前面的几项共同决定？",
+        "只给 a₁ 而不给 a₂，结果能唯一确定吗？",
+        "改变第二项，前几项怎样受到影响？"
+      ]
+    },
+    {
+      "id": "seq-partial-sum",
+      "tool": "sequence_2d",
+      "title": "数列的部分和：从项到 Sₙ",
+      "equation": "seq-partial-sum",
+      "latex": "S_n=\\sum_{k=1}^{n}a_k",
+      "params": [
+        {
+          "key": "kind",
+          "label": "数列类型",
+          "min": 0,
+          "max": 1,
+          "value": 0,
+          "step": 1,
+          "options": [
+            {
+              "value": 0,
+              "label": "等差"
+            },
+            {
+              "value": 1,
+              "label": "等比"
+            }
+          ]
+        },
+        {
+          "key": "a1",
+          "label": "首项 a₁",
+          "min": -6,
+          "max": 6,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "d",
+          "label": "公差 d",
+          "min": -4,
+          "max": 4,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "q",
+          "label": "公比 q",
+          "min": -2,
+          "max": 2,
+          "value": 1.5,
+          "step": 0.05
+        },
+        {
+          "key": "n",
+          "label": "观察项数 n",
+          "min": 1,
+          "max": 24,
+          "value": 12,
+          "step": 1
+        }
+      ],
+      "description": "前五项可见；先预测总和，主动打开部分和轨迹。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察前几项。你预测下一项、后续规律或部分和会怎样变化？",
+      "thinking_prompts": [
+        "每个 Sₙ 比上一个部分和多了哪项？",
+        "你能用相邻两个部分和还原 aₙ 吗？",
+        "当 q=1 或负公比时，观察到的和是否符合你的猜想？"
+      ]
+    },
+    {
+      "id": "seq-growth",
+      "tool": "sequence_2d",
+      "title": "有限项增长比较：等差与等比",
+      "equation": "seq-growth",
+      "latex": "a_n=a_1+(n-1)d,\\quad b_n=a_1q^{n-1}",
+      "params": [
+        {
+          "key": "a1",
+          "label": "首项 a₁",
+          "min": -6,
+          "max": 6,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "d",
+          "label": "公差 d",
+          "min": -4,
+          "max": 4,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "q",
+          "label": "公比 q",
+          "min": -2,
+          "max": 2,
+          "value": 1.5,
+          "step": 0.05
+        },
+        {
+          "key": "n",
+          "label": "观察项数 n",
+          "min": 1,
+          "max": 24,
+          "value": 12,
+          "step": 1
+        }
+      ],
+      "description": "只比较这 n 项及其绝对值，不从有限图像宣称无穷远的大小关系。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察前几项。你预测下一项、后续规律或部分和会怎样变化？",
+      "thinking_prompts": [
+        "先猜测哪一列在当前有限范围增长更快。",
+        "负公比时，比较有符号数值还是绝对值更合适？",
+        "有限项的观察能否直接证明任意 n 的结论？"
+      ]
+    },
+    {
+      "id": "seq-fixed-point",
+      "tool": "sequence_2d",
+      "title": "递推的平衡点：观察趋近",
+      "equation": "seq-fixed-point",
+      "latex": "a_{n+1}=r a_n+c",
+      "params": [
+        {
+          "key": "a1",
+          "label": "首项 a₁",
+          "min": -6,
+          "max": 6,
+          "value": 2,
+          "step": 0.5
+        },
+        {
+          "key": "r",
+          "label": "乘数 r",
+          "min": -1.5,
+          "max": 1.5,
+          "value": 0.5,
+          "step": 0.05
+        },
+        {
+          "key": "c",
+          "label": "常量 c",
+          "min": -3,
+          "max": 3,
+          "value": 2,
+          "step": 0.25
+        },
+        {
+          "key": "n",
+          "label": "观察项数 n",
+          "min": 1,
+          "max": 24,
+          "value": 12,
+          "step": 1
+        }
+      ],
+      "description": "观察与候选平衡点之间的距离；收敛性不靠有限画点证明。",
+      "source": "PROJECT_AUTHORED",
+      "expert_review": "PENDING",
+      "simulation": true,
+      "assist_default": false,
+      "prediction_prompt": "先观察前几项。你预测下一项、后续规律或部分和会怎样变化？",
+      "thinking_prompts": [
+        "如果下一项和当前项相等，该数需要满足什么条件？",
+        "什么时候递推根本不存在唯一固定点？",
+        "图上看起来靠近，是否就完成严格证明？"
+      ]
     }
   ]
 }

@@ -4,6 +4,7 @@ NOT a verbatim restatement of an official examination syllabus.
 import json
 from extend_v09 import apply_coverage
 from extend_v010 import apply_coverage as foundation_coverage
+from extend_v011 import apply_coverage as sequence_coverage
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
@@ -44,8 +45,9 @@ def make():
     presets=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))["presets"]
     rows=apply_coverage(rows,presets)
     rows=foundation_coverage(rows,presets)
+    rows=sequence_coverage(rows,presets)
     assert len({v["id"] for v in rows})==len(rows)
-    data={"version":"2026-10-19.1","subject":"高中数学",
+    data={"version":"2026-10-19.2","subject":"高中数学",
           "curriculum_reference":"普通高中数学课程标准（2017年版2020年修订）",
           "reference_url":SRC,
           "scope_note":"产品工程覆盖清单，不是教育部官方逐条课标原文、也不是某省高考命题细目；需教师审核。",

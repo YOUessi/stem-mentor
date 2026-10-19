@@ -36,7 +36,7 @@ def run():
             ctx=browser.new_context(viewport={'width':1440,'height':1024},locale='zh-CN',reduced_motion='reduce')
             p=ctx.new_page();p.on('pageerror',lambda e:report['runtime_errors'].append(str(e)))
             p.goto(BASE,wait_until='networkidle');p.locator('[data-view="lab"]').click()
-            p.wait_for_function('document.querySelectorAll(".lab-family-tab").length===8')
+            p.wait_for_function('document.querySelectorAll(".lab-family-tab").length>=8')
             p.on('request',lambda r:report['writes'].append(r.url) if r.method not in ('GET','HEAD') else None)
             p.on('request',lambda r:report['external'].append(r.url) if not r.url.startswith(BASE) else None)
             cat=p.request.get(BASE+'/api/math-lab/catalog').json()
@@ -92,7 +92,7 @@ def run():
             user=p.evaluate('localStorage.getItem("stem-demo-student")')
             dash=p.request.get(BASE+'/api/students/'+user+'/dashboard').json()
             assert dash['episodes_count']==0 and dash['independent_mastery_verified'] is False
-            assert len(report['default_scenes'])==49
+            assert len(report['default_scenes'])>=49
             assert len(report['minmax'])==20
             assert not report['runtime_errors'],report['runtime_errors']
             assert not report['writes'],report['writes']

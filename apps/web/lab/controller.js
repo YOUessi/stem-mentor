@@ -4,6 +4,7 @@
   const $=id=>document.getElementById(id);
   const TEAMS=[
     ["function_2d","函数与二维坐标","函数、图像与变化"],
+    ["sequence_2d","数列与递推","离散项、部分和、特殊公比与迁移"],
     ["conic_2d","圆锥曲线","直线、圆、椭圆、双曲线、抛物线"],
     ["vector_2d","平面向量","加减、数乘、投影与夹角"],
     ["triangle_2d","三角形与解三角形","三边、三角、SSA 多解"],
@@ -83,9 +84,10 @@
     state.family=preset.tool;state.preset=id;state.scene={assist:false};
     $("labExtraControls").replaceChildren();$("labExtraControls").hidden=true;
     $("labAlternativeView").replaceChildren();$("labAlternativeView").hidden=true;
+    $("labAlternativeView").classList.remove("lab-seq-table-wrapper");
     const extra=preset.assist_default===false;
     $("labAssistControl").hidden=!extra;$("labAssistToggle").checked=false;
-    $("labAssistLabel").textContent=["complex_plane","venn_logic","number_line"].includes(preset.tool)?"显示运算结果 / 解集（先猜想，再核对）":preset.id.startsWith("derivative-")?"显示解析切线（先猜想，再核对）":preset.id.startsWith("3d-section-")?"显示切平面与法向量（可选）":"显示辅助图形（自主核对）";
+    $("labAssistLabel").textContent=preset.tool==="sequence_2d"?"显示后续项与部分和（自主核对）":["complex_plane","venn_logic","number_line"].includes(preset.tool)?"显示运算结果 / 解集（先猜想，再核对）":preset.id.startsWith("derivative-")?"显示解析切线（先猜想，再核对）":preset.id.startsWith("3d-section-")?"显示切平面与法向量（可选）":"显示辅助图形（自主核对）";
     state.values=Object.fromEntries(preset.params.map(p=>[p.key,p.value]));
     state.view2d={zoom:1};state.view3d={yaw:38,pitch:36,zoom:1};
     $("labPreset").value=id;$("lab2dZoom").value="1";
@@ -93,7 +95,7 @@
     $("labTitle").textContent=preset.title;
     $("labDescription").textContent=preset.description;
     $("labSceneHint").textContent="这是一份可调的数学模型。请先预测参数变化的效果，再拖动、旋转或比较数值。";
-    $("lab2dControls").hidden=preset.tool==="space_3d"||preset.tool==="triangle_2d"||preset.id==="unit-circle"||["venn_logic","number_line"].includes(preset.tool);
+    $("lab2dControls").hidden=preset.tool==="space_3d"||preset.tool==="triangle_2d"||preset.tool==="sequence_2d"||preset.id==="unit-circle"||["venn_logic","number_line"].includes(preset.tool);
     $("lab3dControls").hidden=preset.tool!=="space_3d";
     const params=$("labParameterControls");params.replaceChildren();
     if(!preset.params.length){
@@ -153,6 +155,7 @@
       node.onpointerdown=node.onpointermove=node.onpointerup=node.onpointercancel=null;node.style.cursor="";
       const scene=state.scene;
       scene.extraControls=$("labExtraControls");
+      scene.alternativeView=$("labAlternativeView");
       scene.onSceneChange=()=>{
         const id=scene.extraControls.contains(document.activeElement)?document.activeElement.id:null;
         draw();
@@ -179,7 +182,10 @@
         }
       };
       let result;
-      if(root.MentorFoundations2D?.supports(preset.id)){
+      if(root.MentorLabSequences?.supports(preset.id)){
+        result=root.MentorLabSequences.draw(node,preset,state.values,state.view2d,scene);
+        $("labCoordinateReadout").textContent=result.coordinateHint;
+      }else if(root.MentorFoundations2D?.supports(preset.id)){
         result=root.MentorFoundations2D.draw(node,preset,state.values,state.view2d,scene);
         $("labCoordinateReadout").textContent=result.coordinateHint||"先观察输入，再主动显示结果。";
       }else if(root.MentorNumberLine?.supports(preset.id)){
@@ -274,7 +280,9 @@
       "triangle-sss":"tri-free",
       "derivative-extrema":"derivative-cubic",
       "log-domain":"fn-log",
-      "vector-orthogonality":"vec2d-projection"
+      "vector-orthogonality":"vec2d-projection",
+      "arithmetic-sum":"seq-arithmetic",
+      "geometric-sum":"seq-geometric"
     };
     const id=known[problemId];
     const preset=state.data.presets.find(p=>p.id===id);

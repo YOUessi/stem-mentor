@@ -2,6 +2,7 @@
 import json
 from extend_v09 import extra_presets
 from extend_v010 import extra_presets as foundation_presets
+from extend_v011 import extra_presets as sequence_presets
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 
@@ -47,6 +48,7 @@ def build():
              expert_review="PENDING",simulation=True))
   scenes.extend(extra_presets())
   scenes.extend(foundation_presets())
+  scenes.extend(sequence_presets())
   from collections import Counter
   assert len({p['id'] for p in scenes})==len(scenes)
   (ROOT/"visual_presets.json").write_text(json.dumps({

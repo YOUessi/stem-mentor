@@ -1,0 +1,29 @@
+{
+  "scene_defaults": [
+    "seq-arithmetic",
+    "seq-geometric",
+    "seq-geometric-edge",
+    "seq-linear-recurrence",
+    "seq-two-term",
+    "seq-partial-sum",
+    "seq-growth",
+    "seq-fixed-point"
+  ],
+  "checks": [
+    "all 8 sequence scenes render from indexed discrete terms",
+    "prediction survives replot; graduated prompts precede opt-in sum",
+    "q=1, q=0, and negative alternating ratio explicit",
+    "partial sums remain opt-in and choice control updates",
+    "two finite growth sequences, no claimed infinite proof",
+    "second-order recurrence requires two editable initial conditions",
+    "reported stuck state changes guidance instead of repeating hints"
+  ],
+  "mobile_widths": [
+    390,
+    768,
+    1280
+  ],
+  "page_errors": [],
+  "external": [],
+  "learning_writes": []
+}
