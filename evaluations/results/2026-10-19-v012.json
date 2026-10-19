@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-19",
+  "version": "0.12.0",
+  "validated_source_commit": "0a5eb39d901cae1a956fafe53b7f2429fb835f9a",
+  "mac_only": true,
+  "tang_used": false,
+  "llm_api_calls": 0,
+  "original_green_theme": true,
+  "synthetic_data_only": true,
+  "curriculum": {
+    "engineering_items": 113,
+    "basic_scene_mappings": 77,
+    "planned_items": 36,
+    "scene_presets": 71,
+    "scene_families": 11,
+    "expert_review": "PENDING"
+  },
+  "tests": {
+    "node_passed": 103,
+    "backend_passed": 137,
+    "synthetic_policy": 33,
+    "hard_retrieval_cases": 40,
+    "new_browser_scenes": 9,
+    "new_browser_checks": 9,
+    "responsive_widths": [
+      390,
+      768,
+      1280
+    ],
+    "browser_page_errors": 0,
+    "external_requests": 0,
+    "student_learning_record_writes": 0,
+    "legacy_browser_regression": "PASS"
+  },
+  "fixes": [
+    "Conditional probabilities with a zero-probability condition are undefined",
+    "Separate descriptive statistics from Bernoulli frequency",
+    "Historic count assertions preserved as subsets with new v0.12 exact contracts",
+    "Additional binomial, hypergeometric and normal numerical parameter grids"
+  ],
+  "known_limits": [
+    "No inference that Monte Carlo frequency equals exact probability",
+    "Density height is not an interval probability",
+    "Sample association does not prove causation",
+    "Fixed curated models, no arbitrary proof or teacher review",
+    "No production identities, real student data or learning-effect study"
+  ],
+  "screenshots": [
+    "docs/assets/v012-probability-binomial.jpg",
+    "docs/assets/v012-probability-tree.jpg",
+    "docs/assets/v012-stats-sample.jpg",
+    "docs/assets/v012-stats-regression.jpg",
+    "docs/assets/v012-probability-mobile.jpg"
+  ],
+  "sha256": {
+    "node.txt": "939702b7d1a7688201f448e848db42e987c2704bf12481618672f9d2f420dfef",
+    "pytest.txt": "1cd2020376f4cebb46458e999193ff4000616a2a719db03fd17ef4f3318cbe3c",
+    "browser.txt": "9fda70c69dbd2aa5aca90e7d584df4056823749cf2ca780bf1b3fed9cc09659a",
+    "mac-check.txt": "95bdc0ac367d37e8c511833ce7327e775389547cb62bc8ca15071579211cbd94",
+    "probability-chrome.json": "a4f6a59399257d2dbbd16f78f8e45886bfcf316a7a33d82c1c15386ea5f0e075"
+  },
+  "publication": "PENDING_GITHUB_CI_MAIN"
+}

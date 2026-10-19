@@ -1,0 +1,32 @@
+{
+  "scenes": [
+    "prob-choose",
+    "prob-permute",
+    "prob-tree",
+    "prob-binomial",
+    "prob-hypergeo",
+    "prob-normal",
+    "stats-bernoulli",
+    "stats-summary",
+    "stats-regression"
+  ],
+  "checks": [
+    "9 configured probability and statistics scenes with default hidden results",
+    "combination and permutation impossible outcomes are explicit",
+    "conditional event tree normalizes even when first-event probability vanishes",
+    "binomial endpoint p=0/1 and normalization",
+    "hypergeometric without replacement rejects impossible population",
+    "normal density distinguished from area; reversed interval invalid",
+    "seeded frequency is labeled as simulation, not exact probability",
+    "synthetic five-point summary uses correct variance denominators",
+    "zero-noise regression recovers synthetic slope but not causation"
+  ],
+  "responsive": [
+    390,
+    768,
+    1280
+  ],
+  "errors": [],
+  "external": [],
+  "writes": []
+}

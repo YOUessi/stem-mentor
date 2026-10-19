@@ -1,6 +1,6 @@
 # STEM Mentor — 个人化理科思维培优系统
 
-## v0.12 开发中：概率、计数与统计（2026-10-19）
+## v0.12 概率、计数与统计实验室（2026-10-19）
 
 v0.12 的独立 Mac 开发目录 ~/Documents/文件/stem-mentor-v012 中已有9个固定场景：
 排列/组合、两阶段概率树、二项/超几何分布、正态密度与区间概率、固定种子伯努利频率、
@@ -236,3 +236,8 @@ Mac 本地验证命令：bash scripts/mac_check.sh && bash scripts/mac_browser_c
 
 ### 下一阶段
 依次补充平面向量、数轴/集合韦恩图、复平面、空间截面、数列/动态导数、概率统计与计数原理；最终需教师校验课程内容并开展真实学生无提示迁移评测。现在还不是通用数学证明器，也未接入真实学生数据。
+
+[概率统计数学设计](docs/design/PROBABILITY_STATISTICS_V012.md) · [真实测试与原始日志](evaluations/results/2026-10-19-v012.json) ·
+[合成概率树截图](docs/assets/v012-probability-tree.jpg) · [统计样本截图](docs/assets/v012-stats-sample.jpg) · [手机端截图](docs/assets/v012-probability-mobile.jpg)。
+
+注：本次数据只为固定示例和合成观测，正式教学效果与内容教研尚未完成。
