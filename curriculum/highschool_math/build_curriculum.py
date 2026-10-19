@@ -6,6 +6,7 @@ from extend_v09 import apply_coverage
 from extend_v010 import apply_coverage as foundation_coverage
 from extend_v011 import apply_coverage as sequence_coverage
 from extend_v011b import apply_coverage as extrema_coverage
+from extend_v012 import apply_coverage as probability_coverage
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
@@ -48,8 +49,9 @@ def make():
     rows=foundation_coverage(rows,presets)
     rows=sequence_coverage(rows,presets)
     rows=extrema_coverage(rows,presets)
+    rows=probability_coverage(rows,presets)
     assert len({v["id"] for v in rows})==len(rows)
-    data={"version":"2026-10-19.2","subject":"高中数学",
+    data={"version":"2026-10-19.3","subject":"高中数学",
           "curriculum_reference":"普通高中数学课程标准（2017年版2020年修订）",
           "reference_url":SRC,
           "scope_note":"产品工程覆盖清单，不是教育部官方逐条课标原文、也不是某省高考命题细目；需教师审核。",

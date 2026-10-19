@@ -7,7 +7,7 @@ import json
 import math
 
 ROOT=Path(__file__).resolve().parents[2]/"curriculum"/"highschool_math"
-TOOL_IDS={"function_2d","conic_2d","triangle_2d","space_3d","vector_2d","complex_plane","venn_logic","number_line","sequence_2d"}
+TOOL_IDS={"function_2d","conic_2d","triangle_2d","space_3d","vector_2d","complex_plane","venn_logic","number_line","sequence_2d","probability_2d","statistics_2d"}
 PLANNED_TOOLS={"probability_tree",
  "statistics_plot","modeling_workspace","combinatorics","probability_plot","enrichment"}
 

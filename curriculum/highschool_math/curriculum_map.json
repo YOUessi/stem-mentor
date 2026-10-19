@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-19.2",
+  "version": "2026-10-19.3",
   "subject": "高中数学",
   "curriculum_reference": "普通高中数学课程标准（2017年版2020年修订）",
   "reference_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1061,9 +1061,9 @@
       "theme": "概率与统计",
       "unit": "概率基础",
       "concept": "样本空间与随机事件",
-      "recommended_tool": "probability_tree",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1071,8 +1071,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-tree"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-051",
@@ -1099,9 +1101,9 @@
       "theme": "概率与统计",
       "unit": "概率基础",
       "concept": "古典概型",
-      "recommended_tool": "probability_tree",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1109,8 +1111,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-choose"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-053",
@@ -1118,9 +1122,9 @@
       "theme": "概率与统计",
       "unit": "概率基础",
       "concept": "概率加法与乘法基本关系",
-      "recommended_tool": "probability_tree",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1128,8 +1132,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-tree"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-054",
@@ -1175,9 +1181,9 @@
       "theme": "概率与统计",
       "unit": "数据与统计",
       "concept": "均值中位数众数",
-      "recommended_tool": "statistics_plot",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "statistics_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1185,8 +1191,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "stats-summary"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-057",
@@ -1194,9 +1202,9 @@
       "theme": "概率与统计",
       "unit": "数据与统计",
       "concept": "方差标准差",
-      "recommended_tool": "statistics_plot",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "statistics_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1204,8 +1212,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "stats-summary"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-058",
@@ -1923,9 +1933,9 @@
       "theme": "概率与统计",
       "unit": "计数原理",
       "concept": "分类加法计数原理",
-      "recommended_tool": "combinatorics",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1933,8 +1943,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-choose"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-093",
@@ -1942,9 +1954,9 @@
       "theme": "概率与统计",
       "unit": "计数原理",
       "concept": "分步乘法计数原理",
-      "recommended_tool": "combinatorics",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1952,8 +1964,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-permute"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-094",
@@ -1961,9 +1975,9 @@
       "theme": "概率与统计",
       "unit": "计数原理",
       "concept": "排列与组合",
-      "recommended_tool": "combinatorics",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -1971,8 +1985,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-choose",
+        "prob-permute"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-095",
@@ -1999,9 +2016,9 @@
       "theme": "概率与统计",
       "unit": "概率分布与统计推断",
       "concept": "条件概率与独立性",
-      "recommended_tool": "probability_plot",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -2009,8 +2026,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-tree"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-097",
@@ -2037,9 +2056,9 @@
       "theme": "概率与统计",
       "unit": "概率分布与统计推断",
       "concept": "离散型随机变量",
-      "recommended_tool": "probability_plot",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -2047,8 +2066,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-binomial",
+        "prob-hypergeo"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-099",
@@ -2056,9 +2078,9 @@
       "theme": "概率与统计",
       "unit": "概率分布与统计推断",
       "concept": "二项分布",
-      "recommended_tool": "probability_plot",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -2066,8 +2088,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-binomial"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-100",
@@ -2075,9 +2099,9 @@
       "theme": "概率与统计",
       "unit": "概率分布与统计推断",
       "concept": "超几何分布",
-      "recommended_tool": "probability_plot",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -2085,8 +2109,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-hypergeo"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-101",
@@ -2094,9 +2120,9 @@
       "theme": "概率与统计",
       "unit": "概率分布与统计推断",
       "concept": "正态分布",
-      "recommended_tool": "probability_plot",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "probability_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -2104,8 +2130,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "prob-normal"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-102",
@@ -2113,9 +2141,9 @@
       "theme": "概率与统计",
       "unit": "概率分布与统计推断",
       "concept": "回归分析与相关性",
-      "recommended_tool": "probability_plot",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "recommended_tool": "statistics_2d",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "有限固定概率分布、统计与计数模型；非所有考试情境",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -2123,8 +2151,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "stats-regression"
+      ],
+      "capability_limits": "仅固定整数范围与合成数据；未实现一般统计推断、数学证明或真实样本采集。"
     },
     {
       "id": "HS-MATH-103",

@@ -29,7 +29,7 @@ def main():
    pg.on("request",lambda r:result["external"].append(r.url) if not r.url.startswith(URL) else None)
    assert pg.goto(URL,wait_until="networkidle").ok
    pg.locator('[data-view="lab"]').click()
-   pg.wait_for_function("() => document.querySelectorAll('#labFamilies button').length===9")
+   pg.wait_for_function("() => document.querySelectorAll('#labFamilies button').length>=9")
    pg.on("request",lambda r:result["writes"].append(r.url) if r.method not in ("GET","HEAD") else None)
    assert pg.locator('meta[name="theme-color"]').get_attribute("content")=="#174938"
    for sid in CASES:
@@ -89,7 +89,7 @@ def main():
       mobile.on("pageerror",lambda e:result["errors"].append(str(e)))
       assert mobile.goto(URL,wait_until="networkidle").ok
       mobile.locator('[data-view="lab"]').click()
-      mobile.wait_for_function("() => document.querySelectorAll('#labFamilies button').length===9")
+      mobile.wait_for_function("() => document.querySelectorAll('#labFamilies button').length>=9")
       choose(mobile,'extrema-quadratic')
       assert mobile.locator('.lab-extrema-curve').count()==1
       if w==390:
