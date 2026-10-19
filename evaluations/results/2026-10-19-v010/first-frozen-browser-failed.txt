@@ -1,0 +1,10 @@
+Restored green UI passed Chrome: {'theme': 'green v0.5', 'screens': [{'width': 1440, 'height': 1000, 'background': 'rgb(247, 248, 245)'}, {'width': 768, 'height': 1024, 'background': 'rgb(247, 248, 245)'}, {'width': 390, 'height': 844, 'background': 'rgb(247, 248, 245)'}], 'interaction_checks': ['mode switch', 'student reasoning and feedback', 'method library', 'exam micro-knowledge', 'start another exercise'], 'page_errors': []}
+GREEN v0.7 Chrome test: 9 passed; page errors: 0 ; external requests: 0
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor/tests/browser/test_math_lab_v08.py", line 174, in <module>
+    main()
+    ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor/tests/browser/test_math_lab_v08.py", line 34, in main
+    assert "39" in page.locator("#labSummary").inner_text()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

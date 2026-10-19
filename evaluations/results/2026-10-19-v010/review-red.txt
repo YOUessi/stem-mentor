@@ -1,0 +1,36 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+________ test_selected_operator_updates_visible_math_not_a_placeholder _________
+
+page = <Page url='http://127.0.0.1:18897/'>
+
+    def test_selected_operator_updates_visible_math_not_a_placeholder(page):
+        page.locator('[data-family="number_line"]').click()
+        page.locator('#labPreset').select_option('ineq-quadratic')
+        select(page,'relation',2)
+        latex=page.locator('#labFormula').get_attribute('data-latex')
+>       assert latex and '>' in latex and '\\square' not in latex,latex
+E       AssertionError: None
+E       assert (None)
+
+tests/browser/test_math_lab_review_v010.py:32: AssertionError
+_______ test_mobile_venn_shows_both_circles_and_readable_member_summary ________
+
+page = <Page url='http://127.0.0.1:18897/'>
+
+    def test_mobile_venn_shows_both_circles_and_readable_member_summary(page):
+        page.set_viewport_size({'width':390,'height':844})
+        page.locator('[data-family="venn_logic"]').click()
+        box=page.locator('#labPlotBox').bounding_box()
+        assert box
+        for circle in page.locator('.lab-venn-outline').all():
+            actual=circle.bounding_box()
+>           assert actual['x']>=box['x']-1 and actual['x']+actual['width']<=box['x']+box['width']+1, (actual,box)
+E           AssertionError: ({'height': 194.67584228515625, 'width': 194.67587280273438, 'x': 266.5017395019531, 'y': 954.7783813476562}, {'height': 328.828125, 'width': 318, 'x': 36, 'y': 886.28125})
+E           assert (266.5017395019531 >= (36 - 1) and (266.5017395019531 + 194.67587280273438) <= ((36 + 318) + 1))
+
+tests/browser/test_math_lab_review_v010.py:50: AssertionError
+=========================== short test summary info ============================
+FAILED tests/browser/test_math_lab_review_v010.py::test_selected_operator_updates_visible_math_not_a_placeholder
+FAILED tests/browser/test_math_lab_review_v010.py::test_mobile_venn_shows_both_circles_and_readable_member_summary
+2 failed in 13.21s

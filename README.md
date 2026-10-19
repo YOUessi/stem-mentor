@@ -11,7 +11,7 @@
 
 先形成猜想，再主动勾选显示结果；实验不写成绩或已掌握状态。复数/区间选择使用明确下拉框，不要求记住无意义的数字选项。
 
-[设计与数学边界](docs/design/FOUNDATION_EXPLORERS_V010.md) · [执行计划](docs/planning/2026-10-19-v010-execution-plan.md) · [日期日志](docs/logs/2026-10-19-v010.md)
+[设计与数学边界](docs/design/FOUNDATION_EXPLORERS_V010.md) · [执行计划](docs/planning/2026-10-19-v010-execution-plan.md) · [日期日志](docs/logs/2026-10-19-v010.md) · [测试结果与原始证据](evaluations/results/2026-10-19-v010.json)
 
 完整并发验收：`bash scripts/check_v010.sh --with-browser`。数学Node、Python回归和隔离Chrome为三个独立进程，不是独立AI子Agent。新旧场景同时回归，不将“计算内核完成”误报为“页面已发布”。
 

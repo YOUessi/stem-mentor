@@ -1,0 +1,128 @@
+TAP version 13
+# Subtest: v0.10 interval and inequality kernel exists
+ok 1 - v0.10 interval and inequality kernel exists
+  ---
+  duration_ms: 1.5765
+  type: 'test'
+  ...
+# Subtest: interval empty, singleton, reversed and infinite endpoints are distinct
+ok 2 - interval empty, singleton, reversed and infinite endpoints are distinct
+  ---
+  duration_ms: 2.239708
+  type: 'test'
+  ...
+# Subtest: normalization merges a touching boundary only if at least one includes it
+ok 3 - normalization merges a touching boundary only if at least one includes it
+  ---
+  duration_ms: 2.048417
+  type: 'test'
+  ...
+# Subtest: intersection accounts for open and closed coincident endpoints
+ok 4 - intersection accounts for open and closed coincident endpoints
+  ---
+  duration_ms: 0.377583
+  type: 'test'
+  ...
+# Subtest: complement relative to R preserves singleton holes and unbounded tails
+ok 5 - complement relative to R preserves singleton holes and unbounded tails
+  ---
+  duration_ms: 0.371292
+  type: 'test'
+  ...
+# Subtest: difference does not silently close subtracted endpoints
+ok 6 - difference does not silently close subtracted endpoints
+  ---
+  duration_ms: 0.855125
+  type: 'test'
+  ...
+# Subtest: membership and notation distinguish finite endpoints, R and empty
+ok 7 - membership and notation distinguish finite endpoints, R and empty
+  ---
+  duration_ms: 0.70575
+  type: 'test'
+  ...
+# Subtest: interval algebra obeys membership for deterministic combinations and probes
+ok 8 - interval algebra obeys membership for deterministic combinations and probes
+  ---
+  duration_ms: 33.184708
+  type: 'test'
+  ...
+# Subtest: linear negative coefficient reverses inequality and zero coefficient is constant
+ok 9 - linear negative coefficient reverses inequality and zero coefficient is constant
+  ---
+  duration_ms: 1.473375
+  type: 'test'
+  ...
+# Subtest: quadratic two roots respects all four comparison signs
+ok 10 - quadratic two roots respects all four comparison signs
+  ---
+  duration_ms: 1.9515
+  type: 'test'
+  ...
+# Subtest: quadratic repeated root, no root and linear degeneration never invent intervals
+ok 11 - quadratic repeated root, no root and linear degeneration never invent intervals
+  ---
+  duration_ms: 0.426166
+  type: 'test'
+  ...
+# Subtest: absolute inequality handles negative radius, zero radius, and outer rays
+ok 12 - absolute inequality handles negative radius, zero radius, and outer rays
+  ---
+  duration_ms: 0.411375
+  type: 'test'
+  ...
+# Subtest: 200 deterministic quadratic parameter sets agree with direct substitution away from roots
+ok 13 - 200 deterministic quadratic parameter sets agree with direct substitution away from roots
+  ---
+  duration_ms: 115.786792
+  type: 'test'
+  ...
+# Subtest: invalid relations and nonfinite coefficients are rejected
+ok 14 - invalid relations and nonfinite coefficients are rejected
+  ---
+  duration_ms: 0.208042
+  type: 'test'
+  ...
+# Subtest: decimal slider coefficients preserve a true repeated root instead of inventing no roots
+not ok 15 - decimal slider coefficients preserve a true repeated root instead of inventing no roots
+  ---
+  duration_ms: 1.217542
+  type: 'test'
+  location: '/Users/youtang/Documents/文件/stem-mentor/tests/node/interval_math.test.cjs:5:48'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"a":1.8,"b":1.2,"c":0.2,"r":{"kind":"QUADRATIC","roots":[],"discriminant":-5.551115123125783e-17,"intervals":[],"relation":"le"}}
+    + actual - expected
+    
+    + -5.551115123125783e-17
+    - 0
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0
+  actual: -5.551115123125783e-17
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (/Users/youtang/Documents/文件/stem-mentor/tests/node/interval_math.test.cjs:113:11)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: close nonzero decimal discriminants are not erased by an arbitrary epsilon
+ok 16 - close nonzero decimal discriminants are not erased by an arbitrary epsilon
+  ---
+  duration_ms: 0.138166
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 15
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 303.920708
