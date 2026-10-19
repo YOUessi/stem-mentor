@@ -264,3 +264,24 @@
 .lab-seq-stage-label{display:grid;gap:6px;margin:11px 0;font-size:11px;color:#5b7b60}
 .lab-seq-stage{font-size:12px;background:#fff;color:#41674d;border:1px solid #d6e8d9;
  border-radius:8px;padding:9px 10px;outline-color:#78af82}
+
+/* v0.11b fixed closed-interval extrema, respecting original green learning layout. */
+.lab-extrema-grid{stroke:#e2ede4;stroke-width:1}
+.lab-extrema-axis{stroke:#9abb9f;stroke-width:1.8}
+.lab-extrema-interval{fill:rgba(109,184,130,.085);stroke:none}
+.lab-extrema-curve{stroke:#2f8b59;stroke-width:3;fill:none;stroke-linejoin:round;stroke-linecap:round}
+.lab-extrema-endline{stroke:#97bca1;stroke-width:1.3;stroke-dasharray:5 5}
+.lab-extrema-endpoint{fill:#fff;stroke:#458e62;stroke-width:2.2}
+.lab-extrema-candidate{fill:#388859;stroke:white;stroke-width:2.2}
+.lab-extrema-cusp{fill:#b8884c;stroke:white;stroke-width:2.2}
+.lab-extrema-title{fill:#3c7250;font-size:14px;font-weight:700}
+.lab-extrema-tick{fill:#809786;font-size:10px;font-variant-numeric:tabular-nums}
+.lab-extrema-note{fill:#8ca08f;font-size:12px}
+.lab-extrema-error{fill:#a16c4e;font-weight:700;font-size:14px}
+.lab-extrema-panel{padding:14px;border:1px solid #d9eadf;border-radius:11px;background:#f7fcf7}
+.lab-extrema-panel h3{font-size:13px;color:#3e7450;margin:0 0 8px}
+.lab-extrema-panel p{font-size:11px;line-height:1.8;color:#587864;margin-bottom:10px}
+.lab-extrema-panel small{display:block;font-size:10px;line-height:1.6;color:#819784;margin-top:10px}
+.lab-extrema-guess{resize:vertical;width:100%;min-height:65px;border-radius:9px;border:1px solid #d3e8d6;
+padding:11px;background:#fff;color:#34573e;outline-color:#80b98b;font-size:12px;line-height:1.7}
+.lab-extrema-hint{background:#edf7ee;border-radius:8px;padding:9px;color:#4a7654}

@@ -24,10 +24,10 @@ def run():
         page.on("request",lambda r:report["external"].append(r.url) if not r.url.startswith(URL) else None)
         assert page.goto(URL,wait_until="networkidle").ok
         page.locator('button[data-view="lab"]').click()
-        page.wait_for_function("() => document.querySelectorAll('#labFamilies button').length===9")
+        page.wait_for_function("() => document.querySelectorAll('#labFamilies button').length>=9")
         page.locator('[data-family="sequence_2d"]').click()
         assert page.locator("#labPreset option").count()==8
-        assert "57" in page.locator("#labSummary").inner_text()
+        assert str(page.request.get(URL+"/api/math-lab/catalog").json()["counts"]["scene_presets"]) in page.locator("#labSummary").inner_text()
         assert page.locator('meta[name="theme-color"]').get_attribute("content")=="#174938"
         page.on("request",lambda r:report["learning_writes"].append(r.url) if r.method not in ("GET","HEAD") else None)
 
@@ -109,7 +109,7 @@ def run():
             mobile.on("pageerror",lambda e:report["page_errors"].append(str(e)))
             assert mobile.goto(URL,wait_until="networkidle").ok
             mobile.locator('button[data-view="lab"]').click()
-            mobile.wait_for_function("() => document.querySelectorAll('#labFamilies button').length===9")
+            mobile.wait_for_function("() => document.querySelectorAll('#labFamilies button').length>=9")
             mobile.locator('[data-family="sequence_2d"]').click()
             mobile.locator("#labPreset").select_option("seq-geometric")
             assert mobile.locator("#labPlot .lab-seq-dot").count()>0

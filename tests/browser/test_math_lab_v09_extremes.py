@@ -17,7 +17,7 @@ def run():
         catalog=p.request.get(BASE+'/api/math-lab/catalog').json()
         for item in catalog['presets']:
             # Preserve this suite's exact v0.9 39 scenes and 20 extremes. v0.10 has its own complete suite.
-            if item['tool'] in {'complex_plane','venn_logic','number_line','sequence_2d'}:continue
+            if item['tool'] in {'complex_plane','venn_logic','number_line','sequence_2d'} or item['id'].startswith('extrema-'):continue
             p.locator('[data-family="'+item['tool']+'"]').click()
             p.locator('#labPreset').select_option(item['id'])
             assert p.locator('#labMetrics .lab-error').count()==0,item['id']

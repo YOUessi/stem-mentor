@@ -1,0 +1,26 @@
+{
+  "scene_defaults": [
+    "extrema-quadratic",
+    "extrema-cubic",
+    "extrema-absolute",
+    "extrema-sine",
+    "extrema-log"
+  ],
+  "checks": [
+    "five opt-in closed-interval math scenes, candidate positions not pre-spoiled",
+    "vertex minimum and tied endpoint maxima after explicit opt-in",
+    "constant function and invalid closed-interval boundaries",
+    "absolute kink cannot be skipped by derivative-only technique",
+    "stationary candidates compared to interval endpoints",
+    "sine interior extrema candidates",
+    "positive-domain log and invalid reversed interval"
+  ],
+  "widths": [
+    390,
+    768,
+    1280
+  ],
+  "errors": [],
+  "external": [],
+  "writes": []
+}

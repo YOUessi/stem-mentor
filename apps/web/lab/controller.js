@@ -182,7 +182,10 @@
         }
       };
       let result;
-      if(root.MentorLabSequences?.supports(preset.id)){
+      if(root.MentorLabExtrema?.supports(preset.id)){
+        result=root.MentorLabExtrema.draw(node,preset,state.values,state.view2d,scene);
+        $("labCoordinateReadout").textContent=result.coordinateHint;
+      }else if(root.MentorLabSequences?.supports(preset.id)){
         result=root.MentorLabSequences.draw(node,preset,state.values,state.view2d,scene);
         $("labCoordinateReadout").textContent=result.coordinateHint;
       }else if(root.MentorFoundations2D?.supports(preset.id)){

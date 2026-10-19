@@ -18,7 +18,7 @@ def test_classic_green_theme_restored():
 def test_original_green_markup_is_active():
     html = (ROOT / "apps/web/index.html").read_text(encoding="utf8")
     assert 'content="#174938"' in html
-    assert "SIMULATION · v0.11" in html
+    assert "SIMULATION · v0.11b" in html
     assert '<span class="brand-mark">∴</span>' in html
     assert 'src="/assets/app.js" defer' in html
     assert 'src="/assets/studio.js"' not in html

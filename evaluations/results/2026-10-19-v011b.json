@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-19",
+  "version": "0.11.1",
+  "release": "PENDING_PR_CI_AND_MAC",
+  "device": "MacBook Air",
+  "source_branch": "feat/v011b-closed-extrema",
+  "llm_api_calls": 0,
+  "tang_used": false,
+  "math_models": [
+    "quadratic",
+    "cubic",
+    "absolute",
+    "sine",
+    "log"
+  ],
+  "math": {
+    "new_node_tests": 12,
+    "all_node_tests": 83,
+    "all_python_tests": 134,
+    "known_boundary_cases": [
+      "closed interval L<R",
+      "finite params only",
+      "ln x defined only for x>0",
+      "cusp not differentiable",
+      "constant functions",
+      "endpoint vs interior extrema",
+      "signed negative zero normalization"
+    ]
+  },
+  "browser": {
+    "new_scenes": 5,
+    "interactive_checks": 7,
+    "widths": [
+      390,
+      768,
+      1280
+    ],
+    "page_errors": 0,
+    "external_requests": 0,
+    "learning_record_writes": 0,
+    "old_chrome_suite": "PASS"
+  },
+  "coverage": {
+    "scenes": 62,
+    "families": 9,
+    "curriculum_items": 113,
+    "basic_interaction_mappings": 63,
+    "still_planned": 50,
+    "teacher_review": "PENDING"
+  },
+  "evidence": {
+    "directory": "evaluations/results/2026-10-19-v011b",
+    "sha256": {
+      "mac-check.txt": "dbb026a1cca727a7e55934af9cd944ac6de86bf4c87bc871b342d605ac7456d6",
+      "browser-full.txt": "9188d077d6d997cdeb711bc42a37cce3805f89c09bf050e787e31c3c834fc272",
+      "extrema-chrome.json": "0db277229646819dfdb4c4a7e7edbc6e6d5fe67a610333a3ca01cda0471c8d69"
+    }
+  },
+  "known_limits": [
+    "Fixed symbolic forms only; cannot prove extrema for arbitrary function",
+    "Numerical visualizations are not mathematical proofs",
+    "No student learning gain study, no model-based understanding"
+  ]
+}

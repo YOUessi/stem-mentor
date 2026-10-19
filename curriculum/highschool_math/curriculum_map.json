@@ -1433,9 +1433,10 @@
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
       "available_presets": [
-        "derivative-cubic"
+        "derivative-cubic",
+        "extrema-cubic"
       ],
-      "capability_limits": "仅数值观察和固定预设，不等于完整教学、数学证明或学生掌握验证。"
+      "capability_limits": "固定函数的驻点、端点候选与数值观察；不等于已经自动证明任意函数单调性。"
     },
     {
       "id": "HS-MATH-069",
@@ -1455,9 +1456,14 @@
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
       "available_presets": [
         "derivative-cubic",
-        "fn-quadratic"
+        "fn-quadratic",
+        "extrema-quadratic",
+        "extrema-cubic",
+        "extrema-absolute",
+        "extrema-sine",
+        "extrema-log"
       ],
-      "capability_limits": "固定函数驻点和曲线观察；闭区间端点比较及一般最值验证未实现。"
+      "capability_limits": "仅5类固定函数的闭区间候选点/端点比较，无法验证任意函数的全局最值定理。"
     },
     {
       "id": "HS-MATH-070",
