@@ -10,6 +10,8 @@
 - 项目累计 **57 个可视化场景、9 类工具、113 条课程工程知识**；其中63条链接到基本探索工具，50条待专项开发，所有材料仍待教师审核。
 - 仅 MacBook Air `~/Documents/文件/stem-mentor`，无 LLM API，不使用 Tang。
 
+[数列桌面实测截图](docs/assets/v011-sequence-arithmetic.jpg) · [数列递推截图](docs/assets/v011-sequence-recurrence.jpg) · [手机端截图](docs/assets/v011-sequence-mobile.jpg)。
+
 设计与边界：[v0.11 数列学习机制](docs/design/SEQUENCES_V011.md)；[执行与测试日志](docs/logs/2026-10-19-v011.md)；[实施计划](docs/planning/2026-10-19-v011-plan.md)。
 
 
