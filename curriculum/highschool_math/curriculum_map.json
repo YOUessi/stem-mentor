@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-18.2",
+  "version": "2026-10-19.1",
   "subject": "高中数学",
   "curriculum_reference": "普通高中数学课程标准（2017年版2020年修订）",
   "reference_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -12,8 +12,8 @@
       "unit": "集合与常用逻辑用语",
       "concept": "集合及其表示",
       "recommended_tool": "venn_logic",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -21,8 +21,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "sets-operations",
+        "interval-single"
+      ],
+      "capability_limits": "有限全集成员表及固定实区间；任意集合描述语言与无限集合逻辑未实现。"
     },
     {
       "id": "HS-MATH-002",
@@ -31,8 +34,8 @@
       "unit": "集合与常用逻辑用语",
       "concept": "交集并集补集",
       "recommended_tool": "venn_logic",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -40,8 +43,12 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "sets-complement",
+        "sets-operations",
+        "interval-operations"
+      ],
+      "capability_limits": "有限集合与实区间交并差补；通用谓词逻辑推理未实现。"
     },
     {
       "id": "HS-MATH-003",
@@ -107,8 +114,8 @@
       "unit": "不等式与代数",
       "concept": "等式性质与不等式性质",
       "recommended_tool": "number_line",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -116,8 +123,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "ineq-linear"
+      ],
+      "capability_limits": "只观察一次不等式系数符号与方向；一般等式变换证明未实现。"
     },
     {
       "id": "HS-MATH-007",
@@ -126,8 +135,8 @@
       "unit": "不等式与代数",
       "concept": "一元二次不等式",
       "recommended_tool": "number_line",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -135,8 +144,10 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "ineq-quadratic"
+      ],
+      "capability_limits": "固定二次多项式的数值解集与边界；没有任意表达式解析或证明。"
     },
     {
       "id": "HS-MATH-008",
@@ -145,8 +156,8 @@
       "unit": "不等式与代数",
       "concept": "含参数不等式",
       "recommended_tool": "number_line",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -154,8 +165,12 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "ineq-linear",
+        "ineq-quadratic",
+        "ineq-absolute"
+      ],
+      "capability_limits": "仅固定一次、二次、绝对值数值参数探索；通用符号参数分类与高阶不等式未实现。"
     },
     {
       "id": "HS-MATH-009",
@@ -183,8 +198,8 @@
       "unit": "不等式与代数",
       "concept": "不等式等价变换和定义域",
       "recommended_tool": "number_line",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -192,8 +207,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "ineq-linear",
+        "interval-single"
+      ],
+      "capability_limits": "数轴区间及负系数翻向；复杂分式/指数/对数不等式等价变换未实现。"
     },
     {
       "id": "HS-MATH-011",
@@ -826,8 +844,8 @@
       "unit": "复数",
       "concept": "复数与复平面",
       "recommended_tool": "complex_plane",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -835,8 +853,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "complex-point",
+        "complex-operations"
+      ],
+      "capability_limits": "仅有限坐标的复平面和基本运算；非任意复方程求解或证明。"
     },
     {
       "id": "HS-MATH-041",
@@ -845,8 +866,8 @@
       "unit": "复数",
       "concept": "复数模与辐角",
       "recommended_tool": "complex_plane",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -854,8 +875,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "complex-point",
+        "complex-rotation"
+      ],
+      "capability_limits": "提供主辐角与多圈旋转观察；零复数没有辐角，不等于复分析课程。"
     },
     {
       "id": "HS-MATH-042",
@@ -864,8 +888,8 @@
       "unit": "复数",
       "concept": "复数加减乘除及几何意义",
       "recommended_tool": "complex_plane",
-      "status": "PLANNED",
-      "capability": "尚无对应专项交互场景",
+      "status": "INTERACTIVE_FOUNDATION",
+      "capability": "可打开具体受控数学场景",
       "source": {
         "standard": "普通高中数学课程标准（2017年版2020年修订）",
         "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
@@ -873,8 +897,11 @@
         "teacher_review": "PENDING"
       },
       "notes": "按数学对象可视化和数学核心素养整理，考查范围请以地区/年份为准。",
-      "available_presets": [],
-      "capability_limits": "尚待开发；不将通用三维/二维画板冒充此知识点的专项支持。"
+      "available_presets": [
+        "complex-operations",
+        "complex-rotation"
+      ],
+      "capability_limits": "数值四则与旋转伸缩；不存在自动生成推导或学生掌握判定。"
     },
     {
       "id": "HS-MATH-043",

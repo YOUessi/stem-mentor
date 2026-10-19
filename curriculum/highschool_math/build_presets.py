@@ -1,6 +1,7 @@
 """High-school mathematics visual lab presets; no arbitrary user code evaluation."""
 import json
 from extend_v09 import extra_presets
+from extend_v010 import extra_presets as foundation_presets
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 
@@ -45,10 +46,11 @@ def build():
              params=params,description=description,source="PROJECT_AUTHORED",
              expert_review="PENDING",simulation=True))
   scenes.extend(extra_presets())
+  scenes.extend(foundation_presets())
   from collections import Counter
   assert len({p['id'] for p in scenes})==len(scenes)
   (ROOT/"visual_presets.json").write_text(json.dumps({
-     "version":"2026-10-18.2","notice":"受控数学演示、非自动解答；部分高中知识仍规划中",
+     "version":"2026-10-19.1","notice":"受控数学演示、非自动解答；部分高中知识仍规划中",
      "presets":scenes},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
   print("Interactive scene presets",len(scenes),Counter(p['tool'] for p in scenes))
 if __name__=="__main__":build()

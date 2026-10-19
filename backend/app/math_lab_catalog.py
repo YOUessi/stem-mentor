@@ -4,10 +4,11 @@ This is an engineering interpretation, not an official copy of a test blueprint.
 from pathlib import Path
 from functools import lru_cache
 import json
+import math
 
 ROOT=Path(__file__).resolve().parents[2]/"curriculum"/"highschool_math"
-TOOL_IDS={"function_2d","conic_2d","triangle_2d","space_3d","vector_2d"}
-PLANNED_TOOLS={"venn_logic","number_line","complex_plane","probability_tree",
+TOOL_IDS={"function_2d","conic_2d","triangle_2d","space_3d","vector_2d","complex_plane","venn_logic","number_line"}
+PLANNED_TOOLS={"probability_tree",
  "statistics_plot","modeling_workspace","combinatorics","probability_plot","enrichment"}
 
 @lru_cache(maxsize=1)
@@ -40,6 +41,22 @@ def lab_catalog():
         for v in p["params"]:
             if not (v["min"]<=v["value"]<=v["max"]) or v["step"]<=0:
                 raise ValueError("Illegal preset slider bounds")
+            if "options" in v:
+                options=v["options"]
+                if not isinstance(options,list) or not options:
+                    raise ValueError("Invalid choice options list")
+                values=[]
+                for option in options:
+                    if not isinstance(option,dict):
+                        raise ValueError("Invalid choice option shape")
+                    val=option.get("value")
+                    if isinstance(val,bool) or not isinstance(val,(int,float)) or not math.isfinite(val):
+                        raise ValueError("Choice option must have a finite numeric value")
+                    if not v["min"]<=val<=v["max"] or not isinstance(option.get("label"),str) or not option["label"].strip():
+                        raise ValueError("Choice option outside bounds or missing label")
+                    values.append(val)
+                if len(set(values))!=len(values) or v["value"] not in values:
+                    raise ValueError("Choice options must be unique and include the default")
     counts={
         "total_concepts":len(topics),
         "interactive_foundations":sum(t["status"]=="INTERACTIVE_FOUNDATION" for t in topics),
