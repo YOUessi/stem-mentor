@@ -12,7 +12,11 @@ def page():
         try:
             ctx=b.new_context(viewport={'width':1440,'height':1000},locale='zh-CN')
             pg=ctx.new_page();pg.set_default_timeout(7000)
-            assert pg.goto(BASE,wait_until='networkidle').ok
+            # Older browser test used a 7-second network-idle navigation wait; the
+            # complete multi-suite run can load MathJax and many local assets.
+            # DOMContentLoaded + explicit readiness checks validates the actual
+            # application without racing incidental local network idle.
+            assert pg.goto(BASE,wait_until='domcontentloaded',timeout=25000).ok
             pg.locator('[data-view="lab"]').click()
             pg.wait_for_function('document.querySelectorAll(".lab-family-tab").length>=8')
             yield pg

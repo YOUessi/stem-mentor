@@ -61,7 +61,7 @@ def test_ui_retains_original_green_theme_and_local_modules(tmp_path,monkeypatch)
     with TestClient(app) as client:
         html=client.get("/").text
         assert 'content="#174938"' in html
-        assert 'SIMULATION · v0.12' in html
+        assert 'SIMULATION · v0.13' in html
         assert 'id="studentInput"' in html
         for asset in ("sequences_math.js","sequences2d.js"):
             assert ("/assets/lab/"+asset) in html

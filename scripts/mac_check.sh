@@ -14,6 +14,7 @@ echo "[3/4] Structured retrieval hard negatives"
 (cd backend && PYTHONPATH=. ../.venv/bin/python evaluate_v05.py)
 echo "[4/4] Frontend JavaScript syntax"
 node --check apps/web/app.js
+node --check apps/web/transfer.js
 node --check apps/web/study_tools.js
 for module in apps/web/lab/plot2d.js apps/web/lab/triangle.js apps/web/lab/scene3d.js apps/web/lab/exploration_math.js apps/web/lab/explorers2d.js apps/web/lab/sections3d.js apps/web/lab/controller.js; do
   node --check "$module"

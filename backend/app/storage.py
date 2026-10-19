@@ -56,6 +56,20 @@ def database():
             source TEXT NOT NULL, target TEXT NOT NULL, label TEXT NOT NULL,
             relation TEXT NOT NULL CHECK(relation='STUDENT_HYPOTHESIS_UNVERIFIED'),
             created_at TEXT NOT NULL, UNIQUE(session_id,source,target));
+        CREATE TABLE IF NOT EXISTS transfer_attempts(
+            id TEXT PRIMARY KEY,
+            student_id TEXT NOT NULL REFERENCES students(id),
+            session_id TEXT NOT NULL REFERENCES sessions(id),
+            phase TEXT NOT NULL CHECK(phase IN ('BEFORE_RECALL','AFTER_RECALL')),
+            source_episode_id TEXT REFERENCES episodes(id),
+            attempt_text TEXT NOT NULL,
+            self_report_stage TEXT NOT NULL,
+            mode_at_submission TEXT NOT NULL,
+            hint_count_at_submission INTEGER NOT NULL,
+            turn_count_at_submission INTEGER NOT NULL,
+            evidence_status TEXT NOT NULL,
+            created_at TEXT NOT NULL,
+            UNIQUE(session_id,phase));
     """)
     try:
         yield connection
@@ -160,11 +174,16 @@ def episodes_list(student_id):
     return [dict(row) for row in rows]
 
 
-def nearest_own_episode(student_id, current_problem):
+def nearest_own_episode(student_id, current_problem, completed_before=None):
     methods=set(current_problem.get("method_tags",[]))
     structure=set(current_problem.get("structure_tags",[]))
     candidates=[]
     for ep in episodes_list(student_id):
+        # A candidate for a frozen transfer baseline must have been completed
+        # before the target session began; future episodes cannot retroactively
+        # count as prior knowledge. Generic voluntary recall stays unchanged.
+        if completed_before is not None and ep["created_at"] >= completed_before:
+            continue
         if ep["problem_id"]==current_problem.get("id"):
             continue
         common_methods=methods.intersection(json.loads(ep["method_tags"]))
