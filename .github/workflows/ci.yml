@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: '22'
       - run: node --check apps/web/app.js
+      - run: node --check apps/web/transfer.js
       - run: node --check apps/web/study_tools.js
       - run: |
           node --check apps/web/lab/plot2d.js

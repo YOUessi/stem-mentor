@@ -1,5 +1,6 @@
 """Full-stack offline simulation API; intentionally no LLM integration."""
 from enum import Enum
+from typing import Literal
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
@@ -13,8 +14,10 @@ from .reasoning import student_map
 from .retrieval import retrieve, corpus
 from .study_visuals import visual_for, visuals
 from .math_lab_catalog import lab_catalog
+from .transfer_cycle import (get_transfer_state,record_attempt,student_summary,
+    TransferConflict,TransferNotFound)
 
-app=FastAPI(title="STEM Mentor — 离线模拟",version="0.12.0")
+app=FastAPI(title="STEM Mentor — 离线模拟",version="0.13.0")
 ROOT=Path(__file__).resolve().parents[2]
 WEB=ROOT/"apps"/"web"
 app.mount("/assets",StaticFiles(directory=str(WEB)),name="assets")
@@ -46,6 +49,20 @@ class TurnCreate(BaseModel):
     help_requested:bool=False
     request_type:str=Field(default="hint",pattern="^(hint|recall|check|reflection)$")
     self_report_stage:str|None=Field(default=None,pattern="^(START|FORWARD|STUCK|BACKWARD|BRIDGE|CALCULATION|REFLECTION)$")
+
+class TransferAttemptCreate(BaseModel):
+    phase:Literal["BEFORE_RECALL","AFTER_RECALL"]
+    attempt_text:str=Field(min_length=10,max_length=2000)
+    source_episode_id:str|None=Field(default=None,max_length=64)
+    self_report_stage:str=Field(default="FORWARD",
+       pattern="^(START|FORWARD|STUCK|BACKWARD|BRIDGE|CALCULATION|REFLECTION)$")
+
+    @model_validator(mode="after")
+    def content_not_whitespace(self):
+        if len(self.attempt_text.strip())<10:
+            raise ValueError("请先写出至少十个字符的实际思考")
+        return self
+
 
 class SessionComplete(BaseModel):
     reflection:str=Field(default="",max_length=3000)
@@ -134,6 +151,29 @@ def new_turn(session_id:str,payload:TurnCreate):
     result=tutor_reply(session,payload.student_text,payload.help_requested,payload.request_type,payload.self_report_stage)
     storage.turn_record(session_id,payload.student_text,result,result["hint_level"]>0)
     return result
+
+@app.get("/api/sessions/{session_id}/transfer")
+def transfer_state(session_id:str):
+    return get_transfer_state(get_session_or_404(session_id))
+
+
+@app.post("/api/sessions/{session_id}/transfer/attempts",status_code=201)
+def submit_transfer_attempt(session_id:str,payload:TransferAttemptCreate):
+    session=get_session_or_404(session_id)
+    try:
+        return record_attempt(session,payload.phase,payload.attempt_text,
+                              payload.self_report_stage,payload.source_episode_id)
+    except TransferNotFound as error:
+        raise HTTPException(404,str(error)) from error
+    except TransferConflict as error:
+        raise HTTPException(409,str(error)) from error
+
+
+@app.get("/api/students/{student_id}/transfer-summary")
+def transfer_summary(student_id:str):
+    get_student_or_404(student_id)
+    return student_summary(student_id)
+
 
 @app.post("/api/sessions/{session_id}/complete")
 def complete(session_id:str,payload:SessionComplete):
