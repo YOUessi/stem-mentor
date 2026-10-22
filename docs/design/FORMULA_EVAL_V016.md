@@ -53,3 +53,13 @@ Mac 机密保存在 ~/.config/stem-mentor/v016-formula.env；Tang 保存在服�
 本轮只在 Mac 工作区修复了公式区域聚焦：使用 Apple Vision substring boundingBox，局部候选仅留 0.4% 的水平边距，识别页面会展示原始区域小图方便校对；没有明确数学符号的低置信度纯文本不会错误路由到公式模型。模型失败后同请求中的其它候选使用熔断降级，减少无效联网，并保留手工编辑与数学验证状态 false。页面状态接口单独展示配置和在线探测结果；默认只对本机 SSH 隧道的 loopback 健康端点发 GET，不向任意远程 URL 做探测，不发送图片。Tang 仅作独立模型推理，代码版本管理与所有实现均在 Mac。
 
 可复验：在 Mac 运行 bash scripts/build_vision_ocr.sh、cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q，浏览器运行 tests/browser/test_vision_mixed_v016.py，测试合成混排题的裁剪、人工修订与创建 iPad 学习会话。模型因离线未实际回复时，不得把公式 OCR 视作完成；系统应安全提示、人工接管。
+
+## Mac 端实测复验入口
+
+当 Tang 上的 GPU OCR 服务已启动且本机 SSH 隧道连通，在 Mac worktree 执行：
+
+    .venv/bin/python scripts/check_formula_e2e_v016.py --url http://127.0.0.1:18916
+
+脚本用两张完全合成的题干与公式混排图测试 Mac Apple Vision、substring 区域坐标、服务授权、Tang 公式 OCR、返回 JSON 字段及人工复核标志。失败时明确报错，不冒充成功。结果只写入 Mac 的 gitignored artifacts 目录，不上传私有图片或 token。
+
+实际观察：ASCII 幂符号可能被模型误识别为导数撇号；使用真正的印刷上标时，专用数学 OCR 能纠正普通 Apple Vision 漏掉的上标（这两个样例的详细结果见 RESULTS_20261023.md）。Tang 是可选推理后端，项目源码仍只在 Mac 开发。
