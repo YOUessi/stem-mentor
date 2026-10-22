@@ -10,6 +10,7 @@ from .catalog import PROBLEMS, METHODS, MICRO_POINTS, public_problem
 from .math_tools import known_identity_check, verify_equivalence
 from . import storage
 from .tutor import tutor_reply
+from .vision_api import router as vision_router
 from .reasoning import student_map
 from .retrieval import retrieve, corpus
 from .study_visuals import visual_for, visuals
@@ -17,10 +18,15 @@ from .math_lab_catalog import lab_catalog
 from .transfer_cycle import (get_transfer_state,record_attempt,student_summary,
     TransferConflict,TransferNotFound)
 
-app=FastAPI(title="STEM Mentor — 离线模拟",version="0.14.0")
+app=FastAPI(title="STEM Mentor — 离线模拟",version="0.15.0")
 ROOT=Path(__file__).resolve().parents[2]
 WEB=ROOT/"apps"/"web"
 app.mount("/assets",StaticFiles(directory=str(WEB)),name="assets")
+app.include_router(vision_router)
+
+@app.get("/vision")
+def vision_page():
+    return FileResponse(str(WEB/"vision"/"index.html"))
 
 class Mode(str,Enum):
     ANALYZE="ANALYZE"

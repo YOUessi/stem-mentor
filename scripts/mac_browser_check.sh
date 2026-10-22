@@ -10,6 +10,9 @@ if ! .venv/bin/python -c "import playwright" >/dev/null 2>&1; then
   echo "Playwright required: .venv/bin/python -m pip install playwright" >&2
   exit 2
 fi
+if [[ ! -x "$ROOT/backend/native/.build/vision_ocr" ]]; then
+  bash "$ROOT/scripts/build_vision_ocr.sh"
+fi
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 if [[ ! -x "$CHROME" ]]; then
   echo "Google Chrome is required for browser interaction tests." >&2
@@ -69,4 +72,5 @@ STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_tra
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_ipad_workspace_v014.py
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_ipad_touch_v014.py
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python -m pytest -q tests/browser/test_math_lab_review_v010.py
+STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_vision_v015.py
 echo "Chrome browser suite passed; temporary synthetic database will be removed."
