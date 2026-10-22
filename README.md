@@ -1,5 +1,14 @@
 # STEM Mentor — 个人化理科思维培优系统
 
+## v0.16：Tang 专用数学 OCR + 22 例冻结合成评测
+
+保留 v0.15 的 Mac Apple Vision、绿色界面和人工确认机制，在隔离 Tang GPU Python 环境中增加 PP-FormulaNet_plus-M 独立推理服务。Mac 与 Tang 经受限 SSH 本地转发连接，所有远端图片请求必须人工勾选同意。新增 /api/vision/status 状态接口，只有真实模型响应才标为公式识别成功；云 VLM 未配置时不声称已运行。
+
+冻结基准包含 22 张自编中高考风格公式图（18 个不同表达式、4 个扰动样本），**不是历年真实高考试卷或真人手写照片**。评测程序必须验明 manifest 与图片 SHA256，记录 exact match / CER / GPU 时延与失败数量。成绩只能用于合成样例，不能代表真实高考识别准确率。
+
+Mac 演示端口： http://127.0.0.1:18916/vision ，不替换已运行的 v0.15 服务。GPU 服务仅监听 Tang 的 127.0.0.1:18931。详见 [v0.16 安装、冻结基准与安全协议](docs/design/FORMULA_EVAL_V016.md)。 [真实 22 例合成 GPU 评测结论与局限](evaluations/formula_v016/RESULTS_20261023.md)。
+
+
 ## v0.15：拍照识题与混合 OCR（隔离实验分支）
 
 本分支基于 v0.14 iPad 绿色手写工作台增加 /vision 页面：从图片中提取题干、标记疑似公式与图形风险，经过用户显式授权才会调用可配置的专用公式服务或云 VLM；结果必须由用户人工核对后才能生成模拟学习会话。Mac Apple Vision 原生 OCR 已接入；**当前不是 iPad 原生端侧 OCR**，未配置 PaddleOCR GPU 服务与 VLM 凭证时不声称二者已运行。仍只用于合成学生演示，保留原绿色界面和手写笔迹。

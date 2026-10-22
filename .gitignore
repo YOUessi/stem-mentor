@@ -16,3 +16,11 @@ artifacts/
 
 # Local Apple Vision binary
 backend/native/.build/
+
+# Frozen synthetic formula benchmark: generated renders and local GPU outcomes
+/evaluations/formula_v016/generated/
+/evaluations/formula_v016/local_results.json
+/evaluations/formula_v016/in_progress.json
+# GPU workers / credential files
+.formula.env
+wheel-cache/

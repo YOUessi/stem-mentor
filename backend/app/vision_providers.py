@@ -37,10 +37,26 @@ def run_native_ocr(png_bytes: bytes) -> tuple[list[dict], str]:
             text = str(line.get("text", "")).strip()[:500]
             if not text:
                 continue
+            spans = []
+            for segment in line.get("spans", [])[:5]:
+                if not isinstance(segment, dict):
+                    continue
+                position = segment.get("bbox")
+                label = str(segment.get("text", "")).strip()[:500]
+                if not (isinstance(position, list) and len(position) == 4 and label):
+                    continue
+                try:
+                    normalized = [max(0.0, min(1.0, float(v))) for v in position]
+                except (ValueError, TypeError):
+                    continue
+                if normalized[2] <= 0 or normalized[3] <= 0:
+                    continue
+                spans.append({"text": label, "bbox": normalized})
             cleaned.append({
                 "text": text,
                 "confidence": max(0.0, min(1.0, float(line.get("confidence", 0.0)))),
                 "bbox": [max(0.0, min(1.0, float(v))) for v in box],
+                "spans": spans,
                 "source": "apple_vision",
             })
         return cleaned, "ready"
@@ -61,7 +77,9 @@ def call_formula_service(image_png: bytes, box: list[float]) -> tuple[dict | Non
         token = os.getenv("STEM_FORMULA_SERVICE_TOKEN", "")
         headers = {"X-Formula-Token": token} if token else {}
         response = httpx.post(endpoint, json=payload, headers=headers,
-                              timeout=22, follow_redirects=False)
+                              timeout=httpx.Timeout(connect=2.0, read=22.0,
+                                                    write=10.0, pool=2.0),
+                              follow_redirects=False)
         response.raise_for_status()
         obj = response.json()
         latex = obj.get("latex", "")
