@@ -42,7 +42,7 @@ def run():
         page.wait_for_selector('.transfer-panel button:text("冻结我的无提示尝试")',timeout=10000)
         assert "椭圆上一点" not in page.locator("#transferBody").inner_text()
         assert page.locator("#transferPanel").count()==0  # existing layout not replaced
-        assert "SIMULATION · v0.13" in page.content()
+        assert "SIMULATION · v0.14" in page.content()
         checks.append("hidden historical problem title before independent baseline")
         page.locator(".transfer-panel textarea").fill(
             "我先检查这个双曲线切点的合法条件，再考虑从局部变化反推切线结构。")

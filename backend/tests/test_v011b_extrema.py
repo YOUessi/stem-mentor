@@ -44,7 +44,7 @@ def test_extrema_has_explicit_curriculum_scope(client):
 def test_green_original_studio_and_assets(client):
  html=client.get("/").text
  assert 'content="#174938"' in html
- assert "SIMULATION · v0.13" in html
+ assert "SIMULATION · v0.14" in html
  assert "extrema_math.js" in html and "extrema2d.js" in html
  assert 'id="studentInput"' in html
  for name in ["extrema_math.js","extrema2d.js"]:

@@ -17,7 +17,7 @@ from .math_lab_catalog import lab_catalog
 from .transfer_cycle import (get_transfer_state,record_attempt,student_summary,
     TransferConflict,TransferNotFound)
 
-app=FastAPI(title="STEM Mentor — 离线模拟",version="0.13.0")
+app=FastAPI(title="STEM Mentor — 离线模拟",version="0.14.0")
 ROOT=Path(__file__).resolve().parents[2]
 WEB=ROOT/"apps"/"web"
 app.mount("/assets",StaticFiles(directory=str(WEB)),name="assets")
@@ -98,6 +98,13 @@ def get_session_or_404(sid):
 @app.get("/")
 def index():
     return FileResponse(str(WEB/"index.html"))
+
+
+@app.get("/ipad")
+@app.get("/ipad/study")
+def ipad_study_workspace():
+    """Opt-in iPad handwriting pilot; no auto-upload of vector ink."""
+    return FileResponse(str(WEB/"ipad"/"index.html"))
 
 @app.get("/health")
 def health():
