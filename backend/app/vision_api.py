@@ -1,11 +1,56 @@
 """HTTP interface to recognition draft and explicit human confirmation."""
+import os
+from urllib.parse import urlsplit, urlunsplit
+import httpx
+from pathlib import Path
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 from starlette.concurrency import run_in_threadpool
 from pydantic import BaseModel, Field, model_validator
 
 from .vision_pipeline import VisionInputError, analyze_image, MAX_FILE_BYTES
+from .vision_providers import NATIVE_BIN
 
 router = APIRouter()
+
+
+def formula_service_capabilities() -> dict:
+    """Probe only the local SSH-tunnel address; never contact an arbitrary host."""
+    endpoint = os.getenv("STEM_FORMULA_SERVICE_URL", "").strip()
+    if not endpoint:
+        return {"configured": False, "reachable": False, "model_loaded": None}
+    parsed = urlsplit(endpoint)
+    if parsed.scheme not in {"http", "https"} or parsed.hostname not in {
+        "127.0.0.1", "localhost", "::1"
+    }:
+        return {"configured": True, "reachable": None, "model_loaded": None}
+    url = urlunsplit((parsed.scheme, parsed.netloc, "/health", "", ""))
+    try:
+        response = httpx.get(url, timeout=1.2, follow_redirects=False)
+        if response.status_code != 200:
+            return {"configured": True, "reachable": False, "model_loaded": None}
+        data = response.json()
+        loaded = data.get("model_loaded")
+        return {"configured": True, "reachable": True,
+                "model_loaded": loaded if isinstance(loaded, bool) else None}
+    except (httpx.HTTPError, ValueError, KeyError, TypeError):
+        return {"configured": True, "reachable": False, "model_loaded": None}
+
+
+
+@router.get("/api/vision/status")
+def vision_status():
+    """Capabilities only; NEVER return secrets or configured endpoint URLs."""
+    executable = Path(os.getenv("STEM_VISION_OCR_BIN", str(NATIVE_BIN)))
+    return {
+        "engine": "HYBRID_VISION_V016",
+        "local_ocr": {"device": "mac_host", "ready": executable.is_file(),
+                      "ipad_native": False},
+        "formula_service": formula_service_capabilities(),
+        "vlm": {"configured": all(os.getenv(n) for n in
+              ("STEM_VLM_API_URL", "STEM_VLM_API_KEY", "STEM_VLM_MODEL"))},
+        "consent_required": {"formula_service": True, "cloud_vlm": True},
+    }
+
 
 
 @router.post("/api/vision/recognize")

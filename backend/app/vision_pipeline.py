@@ -53,12 +53,19 @@ def is_formula_candidate(text: str) -> bool:
     return bool(FORMULA_MARKS.search(text))
 
 
-def crop_region(png: bytes, bbox: list[float]) -> bytes:
+def crop_region(png: bytes, bbox: list[float], *, pad_x: float = 0.02,
+                pad_y: float = 0.02) -> bytes:
     """Crop one OCR region in pixel space with context margin."""
+    if len(bbox) != 4:
+        raise VisionInputError("OCR 区域坐标错误")
     with Image.open(io.BytesIO(png)) as im:
         w, h = im.size
         x, y, rw, rh = bbox
-        pad_x, pad_y = 0.02, 0.02
+        if not all(isinstance(v, (int, float)) and
+                   float("-inf") < v < float("inf") for v in bbox):
+            raise VisionInputError("OCR 区域坐标无效")
+        if rw <= 0 or rh <= 0 or x >= 1 or y >= 1 or x + rw <= 0 or y + rh <= 0:
+            raise VisionInputError("OCR 区域大小或坐标无效")
         left = int(max(0, (x - pad_x) * w))
         top = int(max(0, (y - pad_y) * h))
         right = int(min(w, (x + rw + pad_x) * w))
@@ -79,29 +86,46 @@ def analyze_image(raw: bytes, *, diagram_present: bool = False,
     if not isinstance(lines, list):
         lines, local_status = [], "failed"
     # A limited number of suspicious lines get dedicated formula OCR.
+    # OCR confidence is *not* a math-region classifier: low-confidence prose
+    # must not be transmitted as a hallucination-prone formula image.
     formula_candidates = [
         (i, line) for i, line in enumerate(lines[:200])
-        if is_formula_candidate(line.get("text", "")) or
-        (line.get("confidence", 1) < 0.5 and
-         bool(re.search(r"[0-9a-zA-Z]", line.get("text", ""))))
+        if is_formula_candidate(line.get("text", ""))
     ][:12]
     expressions: list[dict] = []
     formula_statuses = []
+    formula_available = True
+    focused_regions = 0
     for i, line in formula_candidates:
-        box = line.get("bbox", [0, 0, 1, 1])
+        usable = next((v for v in line.get("spans", [])
+                       if isinstance(v, dict) and is_formula_candidate(v.get("text", ""))),
+                      None)
+        if usable is not None:
+            focused_regions += 1
+        box = usable["bbox"] if usable else line.get("bbox", [0, 0, 1, 1])
+        raw_text = usable["text"] if usable else line.get("text", "")
         try:
-            cropped = crop_region(image_png, box)
+            cropped = crop_region(image_png, box,
+                                  pad_x=0.004 if usable else 0.02,
+                                  pad_y=0.012 if usable else 0.02)
         except (VisionInputError, ValueError, TypeError):
             formula_statuses.append("invalid_region")
             continue
-        expression, status = (providers.call_formula_service(cropped, box)
-                              if allow_formula_service else (None, "skipped_no_consent"))
+        if not allow_formula_service:
+            expression, status = None, "skipped_no_consent"
+        elif not formula_available:
+            expression, status = None, "skipped_service_unavailable"
+        else:
+            expression, status = providers.call_formula_service(cropped, box)
+            if status in {"failed", "not_configured"}:
+                formula_available = False
         formula_statuses.append(status)
         expressions.append({
             "id": f"expr-{i+1}",
             "latex": expression["latex"] if expression else "",
-            "raw_text": line.get("text", ""),
+            "raw_text": raw_text,
             "bbox": box,
+            "bbox_source": "apple_vision_substring" if usable else "apple_vision_line",
             "source": expression["source"] if expression else "awaiting_formula_ocr",
             "model": expression.get("model") if expression else None,
             "confidence": expression.get("confidence") if expression else None,
@@ -137,7 +161,7 @@ def analyze_image(raw: bytes, *, diagram_present: bool = False,
     if vlm_status == "ready":
         uncertain.append("visual_relations_are_observations_not_givens")
     return {
-        "pipeline": "HYBRID_VISION_V015",
+        "pipeline": "HYBRID_VISION_V016",
         "image": {"width": width, "height": height,
                   "stored_on_server": False, "metadata_retained": False},
         "stem": stem,
@@ -153,6 +177,7 @@ def analyze_image(raw: bytes, *, diagram_present: bool = False,
         "routing": {
             "local_ocr": local_status,
             "formula_candidates": len(formula_candidates),
+            "focused_formula_regions": focused_regions,
             "formula_consent": allow_formula_service,
             "formula_ocr": (dict(Counter(formula_statuses)) if formula_statuses
                             else {"not_needed": 1}),

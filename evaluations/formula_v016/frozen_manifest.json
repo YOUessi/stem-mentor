@@ -1,0 +1,164 @@
+{
+  "schema_version": "formula-frozen-v016-1",
+  "dataset_name": "STEM-Mentor-Formula-Synthetic-20261023",
+  "provenance": "self_authored_synthetic_exam_style_NOT_real_exam_photos",
+  "frozen_on": "2026-10-23",
+  "seed": 20261023,
+  "ground_truth_kind": "author_defined_latex_string_not_mathematical_truth",
+  "cases": [
+    {
+      "id": "F001",
+      "family": "quadratic",
+      "school_level": "middle",
+      "latex": "x^2+2x+1=(x+1)^2",
+      "render": "clean"
+    },
+    {
+      "id": "F002",
+      "family": "fraction",
+      "school_level": "middle",
+      "latex": "\\frac{2x+1}{x-3}",
+      "render": "clean"
+    },
+    {
+      "id": "F003",
+      "family": "radical",
+      "school_level": "middle",
+      "latex": "\\sqrt{x^2+1}",
+      "render": "clean"
+    },
+    {
+      "id": "F004",
+      "family": "quadratic_formula",
+      "school_level": "high",
+      "latex": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}",
+      "render": "clean"
+    },
+    {
+      "id": "F005",
+      "family": "trig_identity",
+      "school_level": "high",
+      "latex": "\\sin^2 x+\\cos^2 x=1",
+      "render": "clean"
+    },
+    {
+      "id": "F006",
+      "family": "logarithm",
+      "school_level": "high",
+      "latex": "\\log_{2}8=3",
+      "render": "clean"
+    },
+    {
+      "id": "F007",
+      "family": "derivative",
+      "school_level": "high",
+      "latex": "f'(x)=3x^2-2x+1",
+      "render": "clean"
+    },
+    {
+      "id": "F008",
+      "family": "integral",
+      "school_level": "high",
+      "latex": "\\int_0^1 x^2\\,dx=\\frac{1}{3}",
+      "render": "clean"
+    },
+    {
+      "id": "F009",
+      "family": "limit",
+      "school_level": "high",
+      "latex": "\\lim_{x\\to0}\\frac{\\sin x}{x}=1",
+      "render": "clean"
+    },
+    {
+      "id": "F010",
+      "family": "summation",
+      "school_level": "high",
+      "latex": "\\sum_{k=1}^{n}k=\\frac{n(n+1)}{2}",
+      "render": "clean"
+    },
+    {
+      "id": "F011",
+      "family": "combinatorics",
+      "school_level": "high",
+      "latex": "C_n^k=\\frac{n!}{k!(n-k)!}",
+      "render": "clean"
+    },
+    {
+      "id": "F012",
+      "family": "sets",
+      "school_level": "middle",
+      "latex": "x\\in(-\\infty,2]\\cup[3,\\infty)",
+      "render": "clean"
+    },
+    {
+      "id": "F013",
+      "family": "sequence",
+      "school_level": "high",
+      "latex": "a_n=a_1+(n-1)d",
+      "render": "clean"
+    },
+    {
+      "id": "F014",
+      "family": "exponents",
+      "school_level": "high",
+      "latex": "2^{-x}+\\sqrt{3x+1}",
+      "render": "clean"
+    },
+    {
+      "id": "F015",
+      "family": "nested_fraction",
+      "school_level": "high",
+      "latex": "\\frac{x^{n+1}-1}{x-1}",
+      "render": "clean"
+    },
+    {
+      "id": "F016",
+      "family": "vector",
+      "school_level": "high",
+      "latex": "\\vec{a}\\cdot\\vec{b}=|a||b|\\cos\\theta",
+      "render": "clean"
+    },
+    {
+      "id": "F017",
+      "family": "conics",
+      "school_level": "high",
+      "latex": "\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1",
+      "render": "clean"
+    },
+    {
+      "id": "F018",
+      "family": "probability",
+      "school_level": "high",
+      "latex": "P(A\\cap B)=P(A)P(B)",
+      "render": "clean"
+    },
+    {
+      "id": "F019",
+      "family": "quadratic",
+      "school_level": "middle",
+      "latex": "x^2+2x+1=(x+1)^2",
+      "render": "lowcontrast"
+    },
+    {
+      "id": "F020",
+      "family": "fraction",
+      "school_level": "middle",
+      "latex": "\\frac{2x+1}{x-3}",
+      "render": "blur"
+    },
+    {
+      "id": "F021",
+      "family": "trig_identity",
+      "school_level": "high",
+      "latex": "\\sin^2 x+\\cos^2 x=1",
+      "render": "rotate"
+    },
+    {
+      "id": "F022",
+      "family": "integral",
+      "school_level": "high",
+      "latex": "\\int_0^1 x^2\\,dx=\\frac{1}{3}",
+      "render": "lowcontrast"
+    }
+  ]
+}

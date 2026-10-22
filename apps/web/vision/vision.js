@@ -9,7 +9,8 @@
     ready: "已运行", not_installed: "未安装", not_configured: "未配置",
     skipped_no_consent: "未授权，不调用", skipped_not_needed: "当前无需调用",
     not_needed: "没有检测到公式候选", failed: "运行失败",
-    empty_result: "未识别出公式", invalid_region: "区域无效"
+    empty_result: "未识别出公式", invalid_region: "区域无效",
+    skipped_service_unavailable: "服务不可用，已停止后续请求"
   };
   function status(message, error) {
     $("status").textContent = message;
@@ -35,7 +36,35 @@
       preview.textContent = "LaTeX 渲染失败，请检查语法。";
     }
   }
-  function editor(value, hint) {
+  function makeFormulaCrop(bbox) {
+    if (!state.previewURL || !Array.isArray(bbox) || bbox.length !== 4) return null;
+    const canvas = document.createElement("canvas");
+    canvas.className = "formula-crop";
+    canvas.setAttribute("role", "img");
+    canvas.setAttribute("aria-label", "原图中对应的公式候选区域，仅在浏览器显示");
+    const url = state.previewURL;
+    const image = new Image();
+    image.onload = function () {
+      if (url !== state.previewURL) return;
+      const [x, y, w, h] = bbox.map(Number);
+      if (![x,y,w,h].every(Number.isFinite) || w <= 0 || h <= 0) return;
+      const iw = image.naturalWidth, ih = image.naturalHeight;
+      const left = Math.max(0, (x - 0.006) * iw);
+      const top = Math.max(0, (y - 0.015) * ih);
+      const right = Math.min(iw, (x + w + 0.006) * iw);
+      const bottom = Math.min(ih, (y + h + 0.015) * ih);
+      const sw = right - left, sh = bottom - top;
+      if (sw <= 0 || sh <= 0) return;
+      const scale = Math.min(1, 680 / sw);
+      canvas.width = Math.max(1, Math.round(sw * scale));
+      canvas.height = Math.max(1, Math.round(sh * scale));
+      canvas.getContext("2d").drawImage(image, left, top, sw, sh,
+                                        0, 0, canvas.width, canvas.height);
+    };
+    image.src = url;
+    return canvas;
+  }
+  function editor(value, hint, bbox) {
     const box = document.createElement("div");
     box.className = "formula-card";
     const label = document.createElement("small");
@@ -54,16 +83,18 @@
       invalidate();
       renderLatex(input, preview);
     });
-    box.append(label, input, preview);
+    const original = makeFormulaCrop(bbox);
+    if (original) box.append(label, original, input, preview);
+    else box.append(label, input, preview);
     renderLatex(input, preview);
     return box;
   }
-  function addExpression(value, hint) {
+  function addExpression(value, hint, bbox) {
     if ($("formulas").querySelectorAll("textarea").length >= 12) {
       status("最多添加 12 条公式，可将其余公式并入题干。", true); return;
     }
     if (!$("formulas").querySelector(".formula-card")) $("formulas").replaceChildren();
-    $("formulas").appendChild(editor(value, hint));
+    $("formulas").appendChild(editor(value, hint, bbox));
     invalidate();
   }
   function routeResult(data) {
@@ -72,7 +103,8 @@
     const info = data.routing || {};
     const rows = [
       "端侧/本地文字 OCR：" + (labels[info.local_ocr] || info.local_ocr || "未知"),
-      "疑似数学公式：" + String(info.formula_candidates || 0) + " 处",
+      "疑似数学公式：" + String(info.formula_candidates || 0) + " 处，其中 " +
+        String(info.focused_formula_regions || 0) + " 处已精确定位",
       "数学 OCR 路由：" + Object.entries(info.formula_ocr || {})
         .map(function (entry) { return (labels[entry[0]] || entry[0]) + " × " + entry[1]; }).join("，"),
       "视觉图形复核：" + (info.visual_review_recommended ? "建议检查" : "暂未要求"),
@@ -115,6 +147,20 @@
     }
     return data;
   }
+  jsonFetch("/api/vision/status").then(function (cap) {
+    const f = cap.formula_service;
+    const formulaStatus = !f.configured ? "未配置" :
+      f.reachable === false ? "已配置但当前离线（可人工校对）" :
+      f.reachable === null ? "已配置，连接状态未核实" :
+      f.model_loaded ? "GPU 模型在线（识别仍需授权）" :
+      "服务在线，首次请求将加载模型";
+    $("engineStatus").textContent =
+      "识别引擎：" + (cap.local_ocr.ready ? "Mac Apple Vision 已就绪" : "Mac OCR 未就绪") +
+      " · 数学 OCR：" + formulaStatus +
+      " · 云端 VLM：" + (cap.vlm.configured ? "已配置（调用需授权）" : "未配置");
+  }).catch(function () {
+    $("engineStatus").textContent = "识别服务状态暂不可读取，请使用人工确认。";
+  });
   $("questionImage").addEventListener("change", function () {
     if (state.previewURL) URL.revokeObjectURL(state.previewURL);
     const image = this.files && this.files[0];
@@ -149,7 +195,8 @@
       if ((draft.expressions || []).length) {
         for (const exp of draft.expressions) {
           addExpression(exp.latex || "", "OCR 候选：" + (exp.raw_text || "未识别") +
-            " · " + (exp.source === "formula_ocr" ? "专用模型候选，请校对" : "尚未获得专用 LaTeX"));
+            " · " + (exp.source === "formula_ocr" ? "专用模型候选，请校对" : "尚未获得专用 LaTeX"),
+            exp.bbox);
         }
       } else {
         const empty = document.createElement("p");
@@ -159,8 +206,11 @@
       }
       routeResult(draft);
       diagramResult(draft.diagram);
+      const failed = Object.keys(draft.routing?.formula_ocr || {}).some(
+        key => ["failed", "not_configured", "skipped_service_unavailable"].includes(key));
       status((draft.stem ? "文字识别已生成草稿。" : "未自动获得题干，请人工录入。") +
-        "请先检查文字、数字、上/下标及几何条件，再点击确认。");
+        (failed ? " 远端公式识别当前不可用，请查看原图区域并人工补充。" : "") +
+        " 请检查数字、上/下标及几何条件，再点击确认。");
     } catch (error) {
       status("识别未完成：" + error.message + "。仍可手动输入题目。", true);
     } finally {
