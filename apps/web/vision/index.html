@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#174938">
+<title>STEM Mentor · 拍照识题</title>
+<link rel="stylesheet" href="/assets/vision/vision.css">
+</head>
+<body>
+<div class="workspace">
+  <header class="topbar">
+    <a class="back" href="/ipad" aria-label="返回绿色学习空间">← 返回学习空间</a>
+    <span class="brand">∴ STEM Mentor</span>
+    <span class="beta">VISION LAB · v0.15</span>
+  </header>
+  <main class="container">
+    <div class="hero">
+      <div class="eyebrow">从看清题目开始</div>
+      <h1>拍下题目，保留你的思考。</h1>
+      <p>Mac 原生文字识别 → 需要时专用数学 OCR → 经许可后视觉模型理解图形。<br>
+         系统只生成可编辑草稿，不会自动给出答案或判定条件成立。</p>
+    </div>
+    <div class="layout">
+      <section class="panel" aria-labelledby="upload-title">
+        <div class="step">01 · 上传图片</div>
+        <h2 id="upload-title">选择你的题目照片</h2>
+        <form id="recognizeForm">
+          <label for="questionImage" class="dropzone" id="dropzone">
+            <span class="camera-icon" aria-hidden="true">▧</span>
+            <strong>点击拍照或选择图片</strong>
+            <small>PNG / JPG / WebP，最大 8 MB · 建议裁剪到一道题</small>
+          </label>
+          <input id="questionImage" name="file" type="file" accept="image/png,image/jpeg,image/webp" capture="environment" required>
+          <img id="photoPreview" class="preview" alt="待识别的题目图片预览" hidden>
+          <label class="checkrow"><input type="checkbox" id="hasDiagram">
+            图片包含几何图、坐标图或其他重要图表</label>
+          <label class="checkrow"><input type="checkbox" id="sendFormula">
+            同意将疑似公式区域发送至配置的专用 OCR 服务</label>
+          <label class="checkrow"><input type="checkbox" id="allowVlm">
+            同意必要时将题目图片发送至配置的云端 VLM</label>
+          <button class="primary" id="runRecognition" type="submit">识别题目 <span>↗</span></button>
+          <p class="privacy">目前仅供合成演示，不适合上传真实未成年人资料。图片在后端临时处理、不写入学生数据库；勾选远端服务时，图片或公式区域可能离开当前设备。</p>
+        </form>
+      </section>
+      <section class="panel review" aria-labelledby="review-title">
+        <div class="step">02 · 人工校对</div>
+        <h2 id="review-title">题目识别与纠错</h2>
+        <p id="status" class="status" role="status" aria-live="polite">选择照片后开始识别，或直接输入题目文本。</p>
+        <div class="field"><label for="questionStem">题干 · 可直接修改</label>
+          <textarea id="questionStem" rows="7" maxlength="3500" placeholder="识别结果将出现在这里。你也可以直接输入一整道题。"></textarea></div>
+        <div class="field"><div class="inline-head"><label>数学公式 LaTeX</label><button id="addFormula" type="button" class="small-button">＋ 添加公式</button></div>
+          <div id="formulas" class="formulas"><p class="hint">复杂公式将提示专用数学 OCR；未配置时留空，由你检查并补充。</p></div></div>
+        <div id="routeInfo" class="route-info" aria-label="实际识别路由和限制"></div>
+        <div id="diagramInfo" class="diagram-info" hidden></div>
+        <div class="actions"><button id="confirmQuestion" type="button" class="primary">我已核对题目</button>
+          <button id="createPaper" type="button" class="secondary" disabled>继续到手写学习纸 ↗</button></div>
+        <p class="privacy">人工确认仅表示文字由用户核对，不代表数学正确性或图形关系获得证明。未经确认，不会创建练习记录。</p>
+      </section>
+    </div>
+  </main>
+</div>
+<script>
+window.MathJax={svg:{fontCache:"global"},startup:{typeset:false}};
+</script>
+<script src="/assets/vendor/mathjax/tex-svg.js" defer></script>
+<script src="/assets/vision/vision.js" defer></script>
+</body>
+</html>

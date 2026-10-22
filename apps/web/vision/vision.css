@@ -1,0 +1,53 @@
+:root{--deep:#174938;--green:#286a4e;--paper:#fffefa;--line:#dfe9de;--muted:#708775}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",sans-serif;background:#f6f8f3;color:#284a35}
+button,input,textarea{font:inherit}
+button{cursor:pointer}button:disabled{opacity:.5;cursor:default}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #94bd94;outline-offset:3px}
+[hidden]{display:none!important}
+.workspace{min-height:100dvh}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#fff;border-bottom:1px solid var(--line);padding:15px clamp(18px,5vw,70px)}
+.topbar a{font-size:12px;color:var(--green);text-decoration:none;font-weight:650}
+.brand{color:var(--deep);font-weight:800;letter-spacing:-.3px}
+.beta{color:#73947b;font-size:10px;letter-spacing:1px}
+.container{max-width:1200px;margin:auto;padding:36px 26px 64px}
+.hero{padding:10px 0 28px}.eyebrow,.step{font-size:11px;color:#6c977b;font-weight:800;letter-spacing:1.8px}
+h1{font-size:clamp(26px,3vw,38px);margin:12px 0;color:#28543a;letter-spacing:-1px}
+.hero p{font-size:13px;color:var(--muted);line-height:1.85}
+.layout{display:grid;grid-template-columns:minmax(280px,.92fr) minmax(340px,1.08fr);gap:20px}
+.panel{border:1px solid var(--line);border-radius:18px;background:#fff;padding:28px;box-shadow:0 8px 30px #1c562309}
+.panel h2{font-size:21px;margin:12px 0 23px;color:#315b40}
+.dropzone{border:2px dashed #aac9b2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:195px;border-radius:13px;background:#f7fbf5;text-align:center;padding:18px;cursor:pointer}
+.dropzone:hover{background:#edf6ec}
+.camera-icon{font-size:40px;color:#598569}
+.dropzone strong{font-size:15px}.dropzone small{font-size:11px;color:#899f8d;line-height:1.6}
+#questionImage{display:block;width:100%;margin:14px 0 20px;font-size:11px;color:#647c6a}
+.preview{display:block;max-height:265px;width:100%;object-fit:contain;border-radius:12px;border:1px solid var(--line);margin:0 0 18px;background:#fafbf9}
+.checkrow{display:flex;align-items:flex-start;gap:11px;margin:12px 0;font-size:12px;line-height:1.6;color:#546f5a;cursor:pointer}
+.checkrow input{accent-color:var(--green);margin:3px 0}
+.primary,.secondary{border:0;border-radius:10px;min-height:45px;padding:11px 17px;font-size:12px;font-weight:750}
+.primary{background:#2c7951;color:#fff}.primary:hover:not(:disabled){background:#1e6140}
+#runRecognition{width:100%;margin:15px 0 0;display:flex;align-items:center;justify-content:space-between}
+.secondary{border:1px solid #bad6c0;color:var(--green);background:#f6fbf5}
+.privacy{color:#8da095;font-size:11px;line-height:1.9;margin:17px 0 0}
+.status{background:#eff7ef;border:1px solid #d6e9d5;border-radius:10px;padding:12px 13px;font-size:12px;line-height:1.7;color:#43694b;margin:0 0 20px}
+.status.error{background:#fff7ee;border-color:#e7c8a2;color:#8a5333}
+.field{margin:16px 0}
+.field label{color:#4b6b54;font-size:12px;font-weight:750;display:block;margin-bottom:9px}
+textarea,.formula-input{width:100%;border-radius:11px;border:1px solid #d5e5d7;background:#fdfefa;color:#294b34;padding:13px;font-size:13px;line-height:1.65;resize:vertical;min-height:80px}
+.inline-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}.inline-head label{margin:0}
+.small-button{color:#387a53;background:transparent;border:0;font-size:12px}
+.formula-card{background:#f8fbf6;border:1px solid var(--line);border-radius:11px;padding:12px;margin-bottom:10px}
+.formula-card small{display:block;color:#839988;margin-bottom:8px;line-height:1.5}
+.formula-input{min-height:50px;font-family:ui-monospace,Consolas,monospace}
+.hint{font-size:12px;color:#92a296;line-height:1.7}
+.route-info,.diagram-info{border-top:1px solid var(--line);padding:14px 0;color:#708b77;font-size:11px;line-height:1.8}
+.route-info:empty{display:none}
+.route-info strong,.diagram-info strong{color:#3f7050}
+.route-info p{margin:2px 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.actions button{flex:1;min-width:172px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.container{padding:21px 14px 44px}.panel{padding:20px}.hero{padding:4px 10px 20px}.beta{display:none}.topbar{padding:15px 18px}}
+
+.latex-preview{padding:11px 10px;min-height:40px;margin-top:8px;border-radius:9px;background:#fff;color:#2c5138;font-size:13px;overflow-x:auto}
+.latex-preview svg{max-width:none;height:auto;max-height:150px}
