@@ -261,3 +261,19 @@ Mac 本地验证命令：bash scripts/mac_check.sh && bash scripts/mac_browser_c
 [合成概率树截图](docs/assets/v012-probability-tree.jpg) · [统计样本截图](docs/assets/v012-stats-sample.jpg) · [手机端截图](docs/assets/v012-probability-mobile.jpg)。
 
 注：本次数据只为固定示例和合成观测，正式教学效果与内容教研尚未完成。
+
+## v0.14 iPad 手写学习工作台（可选 Web 原型）
+
+为 iPad 横/竖屏开发绿色书写原型：学习首页 `/ipad`、纸面练习 `/ipad/study`。**不替换旧版绿色 `/` 工作台。**
+
+- 纸面优先：钢笔、荧光笔、整笔擦除、套索移动、撤销/恢复、多页、手指平移及双指缩放。
+- 向量笔迹在浏览器 IndexedDB 按合成学生和学习会话保存，可刷新恢复、手动导出 JSON；不会自动上传服务端，也不当作已判对。
+- Agent 默认关闭；横屏为右侧分栏、竖屏为底部面板；仅学生主动发送文字才会触发已有离线规则式 Tutor。
+- 当前没有手写数学 OCR、数学步骤自动评分、正式账号鉴权、云同步或 Apple Pencil 真机压感/掌托误触验证。**严禁用此无认证版本记录真实未成年人资料。**
+- Mac-only 开发，无 LLM API、无 Tang；Web 原型需在真 iPad Safari 上独立评估延迟、触控和离线存储。
+
+Mac 合成数据预览：`http://127.0.0.1:18914/ipad`，正式服务 `http://127.0.0.1:8000` 在独立稳定 worktree，未经专门部署决定不替换。
+
+运行实测截图：[绿色学习首页](docs/assets/ipad-v014-home.jpg) · [手写纸面](docs/assets/ipad-v014-paper.jpg) · [助教分栏](docs/assets/ipad-v014-agent.jpg) · [竖屏抽屉](docs/assets/ipad-v014-portrait.jpg)。
+
+设计与验收：[手写架构与边界](docs/design/IPAD_STUDY_V014.md) · [执行日志](docs/logs/2026-10-22-ipad-study-v014.md) · [完整计划](docs/planning/2026-10-21-ipad-study-workspace.md)。

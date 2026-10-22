@@ -1,0 +1,693 @@
+[1/4] Backend regression tests
+........................................................................ [ 47%]
+........................................................................ [ 94%]
+.........                                                                [100%]
+=============================== warnings summary ===============================
+../../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  ~/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+153 passed, 1 warning in 6.10s
+[2/4] Simulated tutor policy
+Synthetic decisions+retrieval: 33/33 pass; report: ~/Documents/文件/stem-mentor-ipad-v014/evaluations/results/2026-10-15-policy-and-retrieval.json
+[3/4] Structured retrieval hard negatives
+Hard-negative retrieval: 40/40; top3=22/22; contract_valid=True
+[4/4] Frontend JavaScript syntax
+TAP version 13
+# Subtest: required pure mathematics module exists
+ok 1 - required pure mathematics module exists
+  ---
+  duration_ms: 12.143375
+  type: 'test'
+  ...
+# Subtest: vector addition subtraction scale dot and length
+ok 2 - vector addition subtraction scale dot and length
+  ---
+  duration_ms: 3.131958
+  type: 'test'
+  ...
+# Subtest: orthogonal projection uses signed dot product and orthogonal residual
+ok 3 - orthogonal projection uses signed dot product and orthogonal residual
+  ---
+  duration_ms: 0.387958
+  type: 'test'
+  ...
+# Subtest: zero vectors do not acquire a direction or invented projection
+ok 4 - zero vectors do not acquire a direction or invented projection
+  ---
+  duration_ms: 0.489167
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 0
+ok 5 - unit circle canonical angle 0
+  ---
+  duration_ms: 1.546292
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 90
+ok 6 - unit circle canonical angle 90
+  ---
+  duration_ms: 0.936875
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 180
+ok 7 - unit circle canonical angle 180
+  ---
+  duration_ms: 0.982708
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 270
+ok 8 - unit circle canonical angle 270
+  ---
+  duration_ms: 0.198
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 360
+ok 9 - unit circle canonical angle 360
+  ---
+  duration_ms: 1.507709
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle -90
+ok 10 - unit circle canonical angle -90
+  ---
+  duration_ms: 1.14825
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 450
+ok 11 - unit circle canonical angle 450
+  ---
+  duration_ms: 0.294291
+  type: 'test'
+  ...
+# Subtest: unit-circle multiple turns negative degrees and quadrant invariant
+ok 12 - unit-circle multiple turns negative degrees and quadrant invariant
+  ---
+  duration_ms: 9.203708
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for quadratic
+ok 13 - secant limiting derivative for quadratic
+  ---
+  duration_ms: 0.400542
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for cubic
+ok 14 - secant limiting derivative for cubic
+  ---
+  duration_ms: 0.062
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for log
+ok 15 - secant limiting derivative for log
+  ---
+  duration_ms: 0.838417
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for abs
+ok 16 - secant limiting derivative for abs
+  ---
+  duration_ms: 0.095334
+  type: 'test'
+  ...
+# Subtest: quadratic secant is 2x+h even for small increments
+ok 17 - quadratic secant is 2x+h even for small increments
+  ---
+  duration_ms: 0.088875
+  type: 'test'
+  ...
+# Subtest: h=0 means absent secant, not zero division or fake tangent
+ok 18 - h=0 means absent secant, not zero division or fake tangent
+  ---
+  duration_ms: 0.059959
+  type: 'test'
+  ...
+# Subtest: absolute-value corner has no derivative but one-sided secants differ
+ok 19 - absolute-value corner has no derivative but one-sided secants differ
+  ---
+  duration_ms: 0.343333
+  type: 'test'
+  ...
+# Subtest: log domain excludes invalid point and invalid second secant endpoint
+ok 20 - log domain excludes invalid point and invalid second secant endpoint
+  ---
+  duration_ms: 0.144625
+  type: 'test'
+  ...
+# Subtest: box horizontal plane gives actual four-vertex area
+ok 21 - box horizontal plane gives actual four-vertex area
+  ---
+  duration_ms: 1.994833
+  type: 'test'
+  ...
+# Subtest: central diagonal cube section is a regular hexagon, not a fixed rectangle
+ok 22 - central diagonal cube section is a regular hexagon, not a fixed rectangle
+  ---
+  duration_ms: 0.754167
+  type: 'test'
+  ...
+# Subtest: cube cut point edge face and empty are separate cases
+ok 23 - cube cut point edge face and empty are separate cases
+  ---
+  duration_ms: 5.977459
+  type: 'test'
+  ...
+# Subtest: plane scaling leaves intersection unchanged
+ok 24 - plane scaling leaves intersection unchanged
+  ---
+  duration_ms: 1.508625
+  type: 'test'
+  ...
+# Subtest: square pyramid section narrows toward apex
+ok 25 - square pyramid section narrows toward apex
+  ---
+  duration_ms: 0.806667
+  type: 'test'
+  ...
+# Subtest: sphere plane produces circle tangent point empty, and zero-normal invalid
+ok 26 - sphere plane produces circle tangent point empty, and zero-normal invalid
+  ---
+  duration_ms: 4.129042
+  type: 'test'
+  ...
+# Subtest: 240 deterministic cube sections stay coplanar inside bounds with finite area
+ok 27 - 240 deterministic cube sections stay coplanar inside bounds with finite area
+  ---
+  duration_ms: 72.523125
+  type: 'test'
+  ...
+# Subtest: cube triangular and pentagonal sections have independent analytic areas
+ok 28 - cube triangular and pentagonal sections have independent analytic areas
+  ---
+  duration_ms: 0.439
+  type: 'test'
+  ...
+# Subtest: quadratic convex minimum interior but maximum is endpoint
+ok 29 - quadratic convex minimum interior but maximum is endpoint
+  ---
+  duration_ms: 11.620708
+  type: 'test'
+  ...
+# Subtest: concave quadratic can maximize at internal stationary
+ok 30 - concave quadratic can maximize at internal stationary
+  ---
+  duration_ms: 5.007333
+  type: 'test'
+  ...
+# Subtest: constant function extrema attained at all points in interval
+ok 31 - constant function extrema attained at all points in interval
+  ---
+  duration_ms: 0.190625
+  type: 'test'
+  ...
+# Subtest: linear function does not invent stationary points
+ok 32 - linear function does not invent stationary points
+  ---
+  duration_ms: 0.480875
+  type: 'test'
+  ...
+# Subtest: cubic stationary local extrema can lose to endpoint globally
+ok 33 - cubic stationary local extrema can lose to endpoint globally
+  ---
+  duration_ms: 1.734083
+  type: 'test'
+  ...
+# Subtest: absolute cusp is candidate but not differentiable
+ok 34 - absolute cusp is candidate but not differentiable
+  ---
+  duration_ms: 1.226917
+  type: 'test'
+  ...
+# Subtest: sine critical points include translated finite interval
+ok 35 - sine critical points include translated finite interval
+  ---
+  duration_ms: 0.713917
+  type: 'test'
+  ...
+# Subtest: sin with negative amplitude and frequency still finds correct extremum
+ok 36 - sin with negative amplitude and frequency still finds correct extremum
+  ---
+  duration_ms: 0.609292
+  type: 'test'
+  ...
+# Subtest: log defined only on whole positive closed interval
+ok 37 - log defined only on whole positive closed interval
+  ---
+  duration_ms: 3.852791
+  type: 'test'
+  ...
+# Subtest: inverted or zero-length intervals are invalid, never silently swapped
+ok 38 - inverted or zero-length intervals are invalid, never silently swapped
+  ---
+  duration_ms: 1.052583
+  type: 'test'
+  ...
+# Subtest: finite sampling never beats exact candidate extrema
+ok 39 - finite sampling never beats exact candidate extrema
+  ---
+  duration_ms: 51.577083
+  type: 'test'
+  ...
+# Subtest: never infer global extrema from stationary points alone
+ok 40 - never infer global extrema from stationary points alone
+  ---
+  duration_ms: 1.300375
+  type: 'test'
+  ...
+# Subtest: v0.10 complex and finite-set kernel exists
+ok 41 - v0.10 complex and finite-set kernel exists
+  ---
+  duration_ms: 12.173916
+  type: 'test'
+  ...
+# Subtest: complex point modulus conjugation and principal argument
+ok 42 - complex point modulus conjugation and principal argument
+  ---
+  duration_ms: 0.705417
+  type: 'test'
+  ...
+# Subtest: complex arithmetic uses actual real and imaginary products
+ok 43 - complex arithmetic uses actual real and imaginary products
+  ---
+  duration_ms: 0.459417
+  type: 'test'
+  ...
+# Subtest: nonzero small divisor is not mistaken for zero and division is inverse
+ok 44 - nonzero small divisor is not mistaken for zero and division is inverse
+  ---
+  duration_ms: 21.701625
+  type: 'test'
+  ...
+# Subtest: complex rotation supports negative and multi-turn angles and collapse to zero
+ok 45 - complex rotation supports negative and multi-turn angles and collapse to zero
+  ---
+  duration_ms: 0.502833
+  type: 'test'
+  ...
+# Subtest: finite sets are unique subsets of explicit U and do not mutate inputs
+ok 46 - finite sets are unique subsets of explicit U and do not mutate inputs
+  ---
+  duration_ms: 11.117917
+  type: 'test'
+  ...
+# Subtest: set operations and relative complements respect the selected universe
+ok 47 - set operations and relative complements respect the selected universe
+  ---
+  duration_ms: 1.123958
+  type: 'test'
+  ...
+# Subtest: all 256 pairs of subsets satisfy De Morgan and membership predicates
+ok 48 - all 256 pairs of subsets satisfy De Morgan and membership predicates
+  ---
+  duration_ms: 64.743875
+  type: 'test'
+  ...
+# Subtest: v0.10 interval and inequality kernel exists
+ok 49 - v0.10 interval and inequality kernel exists
+  ---
+  duration_ms: 4.109667
+  type: 'test'
+  ...
+# Subtest: interval empty, singleton, reversed and infinite endpoints are distinct
+ok 50 - interval empty, singleton, reversed and infinite endpoints are distinct
+  ---
+  duration_ms: 5.820834
+  type: 'test'
+  ...
+# Subtest: normalization merges a touching boundary only if at least one includes it
+ok 51 - normalization merges a touching boundary only if at least one includes it
+  ---
+  duration_ms: 13.740666
+  type: 'test'
+  ...
+# Subtest: intersection accounts for open and closed coincident endpoints
+ok 52 - intersection accounts for open and closed coincident endpoints
+  ---
+  duration_ms: 0.343375
+  type: 'test'
+  ...
+# Subtest: complement relative to R preserves singleton holes and unbounded tails
+ok 53 - complement relative to R preserves singleton holes and unbounded tails
+  ---
+  duration_ms: 0.361541
+  type: 'test'
+  ...
+# Subtest: difference does not silently close subtracted endpoints
+ok 54 - difference does not silently close subtracted endpoints
+  ---
+  duration_ms: 0.72925
+  type: 'test'
+  ...
+# Subtest: membership and notation distinguish finite endpoints, R and empty
+ok 55 - membership and notation distinguish finite endpoints, R and empty
+  ---
+  duration_ms: 0.5585
+  type: 'test'
+  ...
+# Subtest: interval algebra obeys membership for deterministic combinations and probes
+ok 56 - interval algebra obeys membership for deterministic combinations and probes
+  ---
+  duration_ms: 52.173208
+  type: 'test'
+  ...
+# Subtest: linear negative coefficient reverses inequality and zero coefficient is constant
+ok 57 - linear negative coefficient reverses inequality and zero coefficient is constant
+  ---
+  duration_ms: 24.26875
+  type: 'test'
+  ...
+# Subtest: quadratic two roots respects all four comparison signs
+ok 58 - quadratic two roots respects all four comparison signs
+  ---
+  duration_ms: 11.880084
+  type: 'test'
+  ...
+# Subtest: quadratic repeated root, no root and linear degeneration never invent intervals
+ok 59 - quadratic repeated root, no root and linear degeneration never invent intervals
+  ---
+  duration_ms: 8.100292
+  type: 'test'
+  ...
+# Subtest: absolute inequality handles negative radius, zero radius, and outer rays
+ok 60 - absolute inequality handles negative radius, zero radius, and outer rays
+  ---
+  duration_ms: 2.290209
+  type: 'test'
+  ...
+# Subtest: 200 deterministic quadratic parameter sets agree with direct substitution away from roots
+ok 61 - 200 deterministic quadratic parameter sets agree with direct substitution away from roots
+  ---
+  duration_ms: 154.795417
+  type: 'test'
+  ...
+# Subtest: invalid relations and nonfinite coefficients are rejected
+ok 62 - invalid relations and nonfinite coefficients are rejected
+  ---
+  duration_ms: 0.407417
+  type: 'test'
+  ...
+# Subtest: decimal slider coefficients preserve a true repeated root instead of inventing no roots
+ok 63 - decimal slider coefficients preserve a true repeated root instead of inventing no roots
+  ---
+  duration_ms: 0.6935
+  type: 'test'
+  ...
+# Subtest: close nonzero decimal discriminants are not erased by an arbitrary epsilon
+ok 64 - close nonzero decimal discriminants are not erased by an arbitrary epsilon
+  ---
+  duration_ms: 0.588417
+  type: 'test'
+  ...
+# Subtest: new document starts with exactly one blank page and supports page separation
+ok 65 - new document starts with exactly one blank page and supports page separation
+  ---
+  duration_ms: 23.953333
+  type: 'test'
+  ...
+# Subtest: screen/world camera preserves point during anchored zoom
+ok 66 - screen/world camera preserves point during anchored zoom
+  ---
+  duration_ms: 0.688334
+  type: 'test'
+  ...
+# Subtest: pressure samples constrained and original pen coordinates preserved
+ok 67 - pressure samples constrained and original pen coordinates preserved
+  ---
+  duration_ms: 1.056833
+  type: 'test'
+  ...
+# Subtest: eraser removes intersected strokes but keeps other strokes
+ok 68 - eraser removes intersected strokes but keeps other strokes
+  ---
+  duration_ms: 7.400709
+  type: 'test'
+  ...
+# Subtest: lasso selects ink by geometry not by stroke number
+ok 69 - lasso selects ink by geometry not by stroke number
+  ---
+  duration_ms: 10.18075
+  type: 'test'
+  ...
+# Subtest: immutable undo/redo, redo discarded after new ink and no-op not committed
+ok 70 - immutable undo/redo, redo discarded after new ink and no-op not committed
+  ---
+  duration_ms: 1.330125
+  type: 'test'
+  ...
+# Subtest: validates schema and prevents cross-student/session document loading
+ok 71 - validates schema and prevents cross-student/session document loading
+  ---
+  duration_ms: 5.767667
+  type: 'test'
+  ...
+# Subtest: drawing is limited per session and cannot grow without bound
+ok 72 - drawing is limited per session and cannot grow without bound
+  ---
+  duration_ms: 0.976709
+  type: 'test'
+  ...
+# Subtest: combination and permutation obey cardinality and degenerate counts
+ok 73 - combination and permutation obey cardinality and degenerate counts
+  ---
+  duration_ms: 13.166791
+  type: 'test'
+  ...
+# Subtest: binomial n=0, p=0/1 and normalization
+ok 74 - binomial n=0, p=0/1 and normalization
+  ---
+  duration_ms: 14.70375
+  type: 'test'
+  ...
+# Subtest: binomial exact small mass and invalid probability
+ok 75 - binomial exact small mass and invalid probability
+  ---
+  duration_ms: 5.63025
+  type: 'test'
+  ...
+# Subtest: hypergeometric probability without replacement
+ok 76 - hypergeometric probability without replacement
+  ---
+  duration_ms: 3.734416
+  type: 'test'
+  ...
+# Subtest: hypergeometric rejects impossible population or sample
+ok 77 - hypergeometric rejects impossible population or sample
+  ---
+  duration_ms: 0.709625
+  type: 'test'
+  ...
+# Subtest: probability tree leaves add to one and encode conditional branches
+ok 78 - probability tree leaves add to one and encode conditional branches
+  ---
+  duration_ms: 4.65
+  type: 'test'
+  ...
+# Subtest: 2x2 joint probabilities and conditional-zero event
+ok 79 - 2x2 joint probabilities and conditional-zero event
+  ---
+  duration_ms: 3.224416
+  type: 'test'
+  ...
+# Subtest: normal pdf valid density not event probability
+ok 80 - normal pdf valid density not event probability
+  ---
+  duration_ms: 0.302625
+  type: 'test'
+  ...
+# Subtest: statistics mean, median and sample/population variance use proper denominators
+ok 81 - statistics mean, median and sample/population variance use proper denominators
+  ---
+  duration_ms: 2.330208
+  type: 'test'
+  ...
+# Subtest: stable mean/variance with large data offset
+ok 82 - stable mean/variance with large data offset
+  ---
+  duration_ms: 3.80525
+  type: 'test'
+  ...
+# Subtest: linear regression exact slope and singular cases
+ok 83 - linear regression exact slope and singular cases
+  ---
+  duration_ms: 0.830041
+  type: 'test'
+  ...
+# Subtest: seeded Bernoulli simulation deterministic and bounded frequency
+ok 84 - seeded Bernoulli simulation deterministic and bounded frequency
+  ---
+  duration_ms: 2.417416
+  type: 'test'
+  ...
+# Subtest: edge invalid sample and forbidden operations explicitly rejected
+ok 85 - edge invalid sample and forbidden operations explicitly rejected
+  ---
+  duration_ms: 2.5425
+  type: 'test'
+  ...
+# Subtest: running Bernoulli frequencies match the final simulation
+ok 86 - running Bernoulli frequencies match the final simulation
+  ---
+  duration_ms: 0.638167
+  type: 'test'
+  ...
+# Subtest: normal interval mass is approximate integration not density height
+ok 87 - normal interval mass is approximate integration not density height
+  ---
+  duration_ms: 6.692375
+  type: 'test'
+  ...
+# Subtest: sample statistics identifies tied modes and no repeated mode
+ok 88 - sample statistics identifies tied modes and no repeated mode
+  ---
+  duration_ms: 0.157541
+  type: 'test'
+  ...
+# Subtest: zero-probability conditioning events are undefined, not numeric branch probabilities
+ok 89 - zero-probability conditioning events are undefined, not numeric branch probabilities
+  ---
+  duration_ms: 0.118125
+  type: 'test'
+  ...
+# Subtest: binomial mass always normalizes on a seeded parameter grid
+ok 90 - binomial mass always normalizes on a seeded parameter grid
+  ---
+  duration_ms: 38.844708
+  type: 'test'
+  ...
+# Subtest: finite-population hypergeometric distributions normalize across valid supports
+ok 91 - finite-population hypergeometric distributions normalize across valid supports
+  ---
+  duration_ms: 2.427125
+  type: 'test'
+  ...
+# Subtest: normal probability tails integrate to about one and point intervals are zero
+ok 92 - normal probability tails integrate to about one and point intervals are zero
+  ---
+  duration_ms: 45.13625
+  type: 'test'
+  ...
+# Subtest: independent mode stays quiet without help request
+ok 93 - independent mode stays quiet without help request
+  ---
+  duration_ms: 42.488084
+  type: 'test'
+  ...
+# Subtest: logical analysis mode asks for structure instead of giving full method
+ok 94 - logical analysis mode asks for structure instead of giving full method
+  ---
+  duration_ms: 0.980291
+  type: 'test'
+  ...
+# Subtest: stuck guidance changes to goal-backward query
+ok 95 - stuck guidance changes to goal-backward query
+  ---
+  duration_ms: 0.148791
+  type: 'test'
+  ...
+# Subtest: repeated stuck request changes teaching strategy, no endless same question
+ok 96 - repeated stuck request changes teaching strategy, no endless same question
+  ---
+  duration_ms: 0.193125
+  type: 'test'
+  ...
+# Subtest: calculation stage checks known boundaries, not full solution
+ok 97 - calculation stage checks known boundaries, not full solution
+  ---
+  duration_ms: 0.187541
+  type: 'test'
+  ...
+# Subtest: reflection leads to independent near transfer check
+ok 98 - reflection leads to independent near transfer check
+  ---
+  duration_ms: 0.128792
+  type: 'test'
+  ...
+# Subtest: clamps hint levels and rejects invalid mode/stage safely
+ok 99 - clamps hint levels and rejects invalid mode/stage safely
+  ---
+  duration_ms: 0.138625
+  type: 'test'
+  ...
+# Subtest: arithmetic first term and n indexing
+ok 100 - arithmetic first term and n indexing
+  ---
+  duration_ms: 51.411625
+  type: 'test'
+  ...
+# Subtest: geometric q=1 exactly uses n*a1
+ok 101 - geometric q=1 exactly uses n*a1
+  ---
+  duration_ms: 0.326833
+  type: 'test'
+  ...
+# Subtest: geometric q=0 and q=-1
+ok 102 - geometric q=0 and q=-1
+  ---
+  duration_ms: 0.252792
+  type: 'test'
+  ...
+# Subtest: near-unity geometric uses stable finite recurrence (not 0/0 closed form)
+ok 103 - near-unity geometric uses stable finite recurrence (not 0/0 closed form)
+  ---
+  duration_ms: 1.661292
+  type: 'test'
+  ...
+# Subtest: negative ratio alternation and zero initial term
+ok 104 - negative ratio alternation and zero initial term
+  ---
+  duration_ms: 2.834042
+  type: 'test'
+  ...
+# Subtest: linear recurrence differs from arithmetic when r !=1
+ok 105 - linear recurrence differs from arithmetic when r !=1
+  ---
+  duration_ms: 0.739875
+  type: 'test'
+  ...
+# Subtest: two-term recurrence uses two initial conditions and correct partial sums
+ok 106 - two-term recurrence uses two initial conditions and correct partial sums
+  ---
+  duration_ms: 0.579542
+  type: 'test'
+  ...
+# Subtest: partial sums equal direct summation for 30 seeded samples
+ok 107 - partial sums equal direct summation for 30 seeded samples
+  ---
+  duration_ms: 1.030333
+  type: 'test'
+  ...
+# Subtest: comparison is finite, uses magnitude, and not an asymptotic proof
+ok 108 - comparison is finite, uses magnitude, and not an asymptotic proof
+  ---
+  duration_ms: 2.084791
+  type: 'test'
+  ...
+# Subtest: invalid n and nonfinite parameters rejected rather than NaN plotted
+ok 109 - invalid n and nonfinite parameters rejected rather than NaN plotted
+  ---
+  duration_ms: 16.350791
+  type: 'test'
+  ...
+# Subtest: numerical overflow is explicit without Infinity or fabricated zeros
+ok 110 - numerical overflow is explicit without Infinity or fabricated zeros
+  ---
+  duration_ms: 0.633083
+  type: 'test'
+  ...
+# Subtest: no inferred limit of infinite series from finite display
+ok 111 - no inferred limit of infinite series from finite display
+  ---
+  duration_ms: 0.297166
+  type: 'test'
+  ...
+1..111
+# tests 111
+# suites 0
+# pass 111
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 630.071375
+Offline macOS simulation checks complete; no model API used.

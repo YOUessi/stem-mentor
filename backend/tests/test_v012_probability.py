@@ -48,10 +48,10 @@ def test_green_ui_and_offline_browser_assets(client):
  html=client.get("/").text
  assert 'content="#174938"' in html
  assert 'id="studentInput"' in html
- assert 'SIMULATION · v0.13' in html
+ assert 'SIMULATION · v0.14' in html
  assert '/assets/lab/probability_math.js' in html
  assert '/assets/lab/probability2d.js' in html
  for path in ["/assets/lab/probability_math.js","/assets/lab/probability2d.js"]:
     assert client.get(path).status_code==200
- assert client.get("/openapi.json").json()["info"]["version"]=="0.13.0"
+ assert client.get("/openapi.json").json()["info"]["version"]=="0.14.0"
  assert client.get("/health").json()["llm_api_used"] is False

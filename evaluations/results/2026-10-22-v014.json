@@ -1,0 +1,56 @@
+{
+  "build": "v0.14.0 pre-release Mac worktree",
+  "date_local": "2026-10-22",
+  "stage": "MAC_VERIFIED_PENDING_GITHUB_PR_AND_CI",
+  "branch": "feat/v014-ipad-pencil-workspace",
+  "host": "MacBook Air only",
+  "no_tang": true,
+  "llm_api_called": false,
+  "green_theme": "#174938",
+  "test_result": {
+    "node_passed": 111,
+    "python_passed": 153,
+    "policy_scenarios": 33,
+    "retrieval_cases": 40,
+    "full_old_and_new_chrome_suite": "PASS",
+    "ipad_chrome_interactions": 9,
+    "synthetic_pen_pressure_and_pinch": "PASS_NOT_PHYSICAL_IPAD",
+    "responsive_viewports_px": [
+      1024,
+      834,
+      390
+    ],
+    "ipad_external_requests": 0,
+    "ipad_page_errors": 0,
+    "ipad_backend_ink_writes": 0,
+    "old_app_favicon_console_404_observed": true
+  },
+  "screenshots": [
+    "docs/assets/ipad-v014-home.jpg",
+    "docs/assets/ipad-v014-paper.jpg",
+    "docs/assets/ipad-v014-agent.jpg",
+    "docs/assets/ipad-v014-portrait.jpg",
+    "docs/assets/ipad-v014-mobile.jpg"
+  ],
+  "production_stable_version": "0.13.0",
+  "pilot_preview": "http://127.0.0.1:18914/ipad",
+  "privacy_limits": [
+    "synthetic local accounts only, not authenticated",
+    "Ink stays in browser IndexedDB, local quotas and deletion remain a risk",
+    "No Apple Pencil/iPad Safari real-hardware evaluation",
+    "No automatic handwriting math OCR, proof checking, or learned tutoring",
+    "Do not use real students/minors"
+  ],
+  "log_artifacts": [
+    {
+      "name": "mac-check.txt",
+      "sha256": "3011118ff4146df6814671af877f3f31226839b68ac3e9bae0e187673edc3ea0",
+      "size_bytes": 22117
+    },
+    {
+      "name": "chrome-all.txt",
+      "sha256": "66e45f75d8dce39a245330f3723145005e39133124fadcff322b69c46c7c0207",
+      "size_bytes": 2443
+    }
+  ]
+}

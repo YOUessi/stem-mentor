@@ -17,6 +17,10 @@ jobs:
         with:
           node-version: '22'
       - run: node --check apps/web/app.js
+      - run: |
+          node --check apps/web/ipad/ink_core.js
+          node --check apps/web/ipad/storage.js
+          node --check apps/web/ipad/app.js
       - run: node --check apps/web/transfer.js
       - run: node --check apps/web/study_tools.js
       - run: |

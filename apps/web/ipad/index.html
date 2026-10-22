@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+  <meta name="theme-color" content="#174938">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>STEM Mentor · 手写学习本</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23174938'/%3E%3Ccircle cx='19' cy='19' r='5' fill='%23fff'/%3E%3Ccircle cx='43' cy='19' r='5' fill='%23fff'/%3E%3Ccircle cx='31' cy='43' r='5' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/ipad/ipad.css">
+</head>
+<body>
+  <div class="ipad-home" id="ipadHome">
+    <aside class="home-rail" aria-label="学习导航">
+      <div class="brand"><span class="brand-symbol" aria-hidden="true">∴</span>
+        <div><strong>STEM Mentor</strong><small>你的数学学习本</small></div></div>
+      <nav class="rail-nav" aria-label="学习区域">
+        <a class="rail-nav-item active" href="/ipad">▦ <span>我的学习空间</span></a>
+        <a class="rail-nav-item" href="/#history">◷ <span>解题经历</span></a>
+        <a class="rail-nav-item" href="/#review">▤ <span>待复习知识</span></a>
+        <a class="rail-nav-item" href="/#lab">◎ <span>数学实验室</span></a>
+      </nav>
+      <div class="rail-bottom"><div class="rail-note">慢慢写，慢慢想。<br>比答案更重要的是你的思路。</div>
+        <small>仅限合成演示数据 · 离线版</small></div>
+    </aside>
+    <main class="home-main">
+      <header class="home-bar">
+        <span class="page-eyebrow">MY LEARNING SPACE</span>
+        <div class="home-bar-right"><span class="little-status"><i></i>本地学习演示</span><span class="small-avatar">演</span></div>
+      </header>
+      <div class="home-content">
+        <section class="home-hero">
+          <div class="hero-body">
+            <span class="eyebrow">A BETTER WAY TO LEARN</span>
+            <h1>今天，也从自己的想法开始。</h1>
+            <p>拿起笔，在纸上思考。需要时，再让助教陪你找到突破口。</p>
+            <button id="continueWriting" type="button" class="primary-action">✎　继续手写做题 <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="hero-graphic" aria-hidden="true">
+            <svg viewBox="0 0 250 170"><rect x="38" y="13" width="177" height="142" rx="13" fill="#fafdF8" stroke="#9dc0a6" stroke-width="2" transform="rotate(5 120 84)"/><g stroke="#d4e8d8" stroke-width="1.4"><path d="M58 58h145M58 79h145M58 100h145M58 121h145"/></g><g fill="none" stroke="#56866b" stroke-width="2.6" stroke-linecap="round"><path d="M70 50l12-8 9 11 11-13 14 6"/><path d="M73 73c18-18 27 12 47 0"/><path d="M76 93l12-8 9 9 16-13"/></g><path d="M183 130l38-43c3-4 8-4 11-1s3 8 0 11l-40 43-16 6z" fill="#88b195"/><path d="M178 145l-8 8 13-3z" fill="#c69667"/></svg>
+          </div>
+        </section>
+        <div class="home-section-head"><div><span class="eyebrow">MY NOTEBOOKS</span><h2>开始一份新的思考</h2></div></div>
+        <div class="start-card"><div><label for="homeProblem">选择练习题目</label><select id="homeProblem" aria-label="选择数学题目"></select></div>
+          <button type="button" id="startNewPaper" class="primary-action">打开空白学习纸 ↗</button></div>
+        <div class="home-section-head"><div><span class="eyebrow">LEARNING RECORD</span><h2>你的学习记录</h2></div><a href="/" class="small-link">原有完整学习空间　↗</a></div>
+        <div class="home-stat-grid">
+          <article class="home-stat"><span class="stat-icon">◷</span><b id="statHistory">—</b><strong>已记录的学习经历</strong><small>记住过程，不自动判对</small></article>
+          <article class="home-stat"><span class="stat-icon">◈</span><b id="statReview">—</b><strong>待回忆的微考点</strong><small>按已有模拟安排统计</small></article>
+          <article class="home-stat"><span class="stat-icon">▤</span><b id="statMistakes">待核实</b><strong>错题与卡点</strong><small>未审核前不能虚构错误</small></article>
+        </div>
+        <div class="home-section-head"><div><span class="eyebrow">RETURN TO LEARNING</span><h2>最近的解题经历</h2></div></div>
+        <div id="recentSessions" class="recent-list"><p class="quiet">正在读取合成学生的学习记录…</p></div>
+        <p class="home-disclaimer">这是本地合成学生演示系统，无正式账号验证，不适合输入真实未成年人资料。手写笔迹只保存在本设备浏览器，不会自动识别、评分或上传。</p>
+      </div>
+    </main>
+  </div>
+  <div id="ipadStudy" class="ipad-study" hidden>
+    <header class="study-topbar">
+      <div class="bar-left"><button id="studyBack" type="button" class="touch-button icon-text">‹ <span>学习首页</span></button>
+        <span class="bar-divider"></span><span class="notebook-icon" aria-hidden="true">✎</span></div>
+      <div class="study-heading"><strong id="notebookTitle">学习本</strong><small id="notebookTopic">先独立思考，再求助</small></div>
+      <div class="bar-right"><span id="saveStatus" class="save-status" role="status">准备画布…</span>
+        <button id="toggleProblem" class="touch-button compact" type="button">题目</button>
+        <button id="toggleAgent" class="agent-toggle" type="button" aria-controls="agentPanel" aria-expanded="false">✧ <span>助教</span></button></div>
+    </header>
+    <div class="study-shell">
+      <main class="paper-area" aria-label="全屏手写解题工作台">
+        <div class="paper-toolbar" aria-label="手写工具">
+          <button type="button" class="tool-button is-selected" data-tool="pen" title="钢笔" aria-label="钢笔">✎</button>
+          <button type="button" class="tool-button" data-tool="highlighter" title="荧光笔" aria-label="荧光笔">▰</button>
+          <button type="button" class="tool-button" data-tool="eraser" title="整笔擦除" aria-label="整笔擦除">▧</button>
+          <button type="button" class="tool-button" data-tool="lasso" title="套索选择与移动" aria-label="套索">◌</button>
+          <button type="button" class="tool-button" data-tool="pan" title="平移画布" aria-label="平移画布">✥</button>
+          <div class="toolbar-separator"></div>
+          <button type="button" class="tool-button" id="undoInk" title="撤销" aria-label="撤销" disabled>↶</button>
+          <button type="button" class="tool-button" id="redoInk" title="恢复" aria-label="恢复" disabled>↷</button>
+        </div>
+        <div id="paperViewport" class="paper-viewport" aria-label="可通过触控和笔交互的手写纸面">
+          <canvas id="inkCanvas" aria-label="手写学习纸画布；Apple Pencil/鼠标书写，手指平移和缩放"></canvas>
+          <div class="paper-problem" id="paperProblem"><div class="problem-overline">CURRENT PROBLEM · 模拟题</div>
+            <p id="paperProblemText">正在加载题目…</p></div>
+          <div id="paperEmpty" class="paper-empty" aria-hidden="true">拿起笔，写下你想到的第一步…</div>
+          <div id="paperScale" class="paper-scale">100%</div>
+          <div class="paper-floating-tools">
+            <div class="pen-colors" id="penColors" aria-label="画笔颜色">
+              <button type="button" data-color="#2b6544" class="pen-color selected" style="--ink:#2b6544" aria-label="深绿色"></button>
+              <button type="button" data-color="#27342b" class="pen-color" style="--ink:#27342b" aria-label="石墨黑"></button>
+              <button type="button" data-color="#be8051" class="pen-color" style="--ink:#be8051" aria-label="暖棕色"></button>
+            </div>
+            <label class="pen-size">笔宽 <input id="penWidth" aria-label="画笔宽度" type="range" min="1" max="9" step=".5" value="2.5"></label>
+            <label class="finger-mode"><input type="checkbox" id="fingerDraw">允许手指书写</label>
+          </div>
+        </div>
+        <div class="paper-footer"><div class="page-nav" id="pageNav" aria-label="学习纸页码"></div>
+          <div class="page-actions"><button id="addPaperPage" class="text-action" type="button">＋ 新增一页</button>
+            <button id="exportNotebook" class="text-action" type="button">导出笔迹 JSON</button></div></div>
+      </main>
+      <aside id="agentPanel" class="agent-panel" aria-label="按需出现的启发式助教" hidden>
+        <div class="agent-head"><div><span class="eyebrow">THINKING COMPANION</span><h2>你的思考助教</h2></div>
+          <button class="touch-button agent-close" id="closeAgent" type="button" aria-label="关闭助教">×</button></div>
+        <div class="agent-banner"><span class="agent-orb">∴</span><p>你先写，我不会打断。需要时告诉我卡在哪里，我们再一起找下一步。</p></div>
+        <div class="agent-controls"><label for="agentMode">教学模式</label>
+          <select id="agentMode" aria-label="当前教学模式">
+            <option value="INDEPENDENT">自主挑战</option>
+            <option value="GUIDE">推理陪练</option>
+            <option value="ANALYZE">逻辑分析</option>
+          </select>
+          <label for="agentStage">我正在…</label>
+          <select id="agentStage" aria-label="当前解题思考阶段">
+            <option value="FORWARD">从条件正向探索</option>
+            <option value="STUCK">这一步卡住了</option>
+            <option value="BACKWARD">从目标逆向思考</option>
+            <option value="BRIDGE">连接已有思路</option>
+            <option value="CALCULATION">正在检查计算</option>
+          </select>
+        </div>
+        <div id="selectionInfo" class="selection-info">可以先用套索选择纸上的某一步；我目前无法自动读取手写公式。</div>
+        <div id="agentDialogue" class="agent-dialogue" role="log" aria-live="polite">
+          <div class="dialogue-placeholder">没有主动求助时，助教保持安静。</div></div>
+        <div class="agent-input"><label for="agentQuestion" class="input-label">告诉我你的想法或卡点</label>
+          <textarea id="agentQuestion" rows="3" maxlength="3800" placeholder="例如：我由已知得到了一个式子，但不确定下一步该怎么连接目标。"></textarea>
+          <div class="agent-compose-actions"><button id="sendToAgent" type="button" class="agent-send">请求一点启发 ↗</button></div>
+          <p class="agent-notice">手写画面不会自动上传或识别。只有主动发送的文字会进入当前模拟会话；数学正确性不自动判断。</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div id="ipadToast" class="ipad-toast" role="status" hidden></div>
+  <script src="/assets/ipad/ink_core.js" defer></script>
+  <script src="/assets/ipad/storage.js" defer></script>
+  <script src="/assets/ipad/app.js" defer></script>
+</body>
+</html>
