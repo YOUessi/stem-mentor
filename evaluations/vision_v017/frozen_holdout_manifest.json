@@ -1,0 +1,375 @@
+{
+  "version": "v017_unseen_holdout_20261023",
+  "provenance": "self_authored_synthetic_holdout_not_real_exam",
+  "construction_note": "Previously unseen synthetic layouts; freeze before first evaluation. Do not tune detector on this and rebrand as independent validation.",
+  "cases": [
+    {
+      "id": "H001",
+      "class": "chinese_math_prose",
+      "parts": [
+        [
+          "已知函数",
+          false
+        ],
+        [
+          "f(x)=2x²-3x+1",
+          true
+        ],
+        [
+          "，求零点",
+          false
+        ]
+      ],
+      "font": "heiti",
+      "render": "clean"
+    },
+    {
+      "id": "H002",
+      "class": "chinese_two_conditions",
+      "parts": [
+        [
+          "设",
+          false
+        ],
+        [
+          "a+b=c",
+          true
+        ],
+        [
+          "，且",
+          false
+        ],
+        [
+          "2a-b=3",
+          true
+        ]
+      ],
+      "font": "heiti",
+      "render": "clean"
+    },
+    {
+      "id": "H003",
+      "class": "chinese_range",
+      "parts": [
+        [
+          "求",
+          false
+        ],
+        [
+          "x∈(-∞,2]∪[3,∞)",
+          true
+        ],
+        [
+          "的范围",
+          false
+        ]
+      ],
+      "font": "heiti",
+      "render": "clean"
+    },
+    {
+      "id": "H004",
+      "class": "chinese_inequalities",
+      "parts": [
+        [
+          "已知",
+          false
+        ],
+        [
+          "x≥0",
+          true
+        ],
+        [
+          "，",
+          false
+        ],
+        [
+          "y≤1",
+          true
+        ]
+      ],
+      "font": "heiti",
+      "render": "clean"
+    },
+    {
+      "id": "H005",
+      "class": "chinese_geometry",
+      "parts": [
+        [
+          "在三角形中",
+          false
+        ],
+        [
+          "AB⊥CD",
+          true
+        ],
+        [
+          "，求角",
+          false
+        ]
+      ],
+      "font": "heiti",
+      "render": "clean"
+    },
+    {
+      "id": "H006",
+      "class": "chinese_formula_plain",
+      "parts": [
+        [
+          "请先理解题目，再写出思路",
+          false
+        ]
+      ],
+      "font": "heiti",
+      "render": "clean"
+    },
+    {
+      "id": "H007",
+      "class": "chinese_power",
+      "parts": [
+        [
+          "将",
+          false
+        ],
+        [
+          "2^3+3^2=17",
+          true
+        ],
+        [
+          "作为例子",
+          false
+        ]
+      ],
+      "font": "heiti",
+      "render": "clean"
+    },
+    {
+      "id": "H008",
+      "class": "english_colon",
+      "parts": [
+        [
+          "Compute: ",
+          false
+        ],
+        [
+          "(2x+3)/(x-1)=4",
+          true
+        ]
+      ],
+      "font": "arial",
+      "render": "clean"
+    },
+    {
+      "id": "H009",
+      "class": "english_natural_prose",
+      "parts": [
+        [
+          "Find all solutions of ",
+          false
+        ],
+        [
+          "x^2-5x+6=0",
+          true
+        ]
+      ],
+      "font": "arial",
+      "render": "clean"
+    },
+    {
+      "id": "H010",
+      "class": "english_no_formula",
+      "parts": [
+        [
+          "Read the following paragraph carefully",
+          false
+        ]
+      ],
+      "font": "arial",
+      "render": "clean"
+    },
+    {
+      "id": "H011",
+      "class": "independent_fraction",
+      "parts": [
+        [
+          "(x+1)/(x-2)=3",
+          true
+        ]
+      ],
+      "font": "arial",
+      "render": "clean"
+    },
+    {
+      "id": "H012",
+      "class": "chinese_two_equations",
+      "parts": [
+        [
+          "方程",
+          false
+        ],
+        [
+          "x=1",
+          true
+        ],
+        [
+          "，",
+          false
+        ],
+        [
+          "y=2",
+          true
+        ],
+        [
+          "均成立",
+          false
+        ]
+      ],
+      "font": "songti",
+      "render": "clean"
+    },
+    {
+      "id": "H013",
+      "class": "songti_math",
+      "parts": [
+        [
+          "已知",
+          false
+        ],
+        [
+          "x²+y²=25",
+          true
+        ],
+        [
+          "，求长度",
+          false
+        ]
+      ],
+      "font": "songti",
+      "render": "clean"
+    },
+    {
+      "id": "H014",
+      "class": "songti_geometry",
+      "parts": [
+        [
+          "如果",
+          false
+        ],
+        [
+          "AB=CD",
+          true
+        ],
+        [
+          "，试说明",
+          false
+        ]
+      ],
+      "font": "songti",
+      "render": "clean"
+    },
+    {
+      "id": "H015",
+      "class": "songti_plain",
+      "parts": [
+        [
+          "这道题需要先观察条件再思考",
+          false
+        ]
+      ],
+      "font": "songti",
+      "render": "clean"
+    },
+    {
+      "id": "H016",
+      "class": "english_lowcontrast",
+      "parts": [
+        [
+          "Given ",
+          false
+        ],
+        [
+          "x^2+2x+1=0",
+          true
+        ]
+      ],
+      "font": "arial",
+      "render": "lowcontrast"
+    },
+    {
+      "id": "H017",
+      "class": "chinese_lowcontrast",
+      "parts": [
+        [
+          "已知",
+          false
+        ],
+        [
+          "x²=4",
+          true
+        ],
+        [
+          "，求解",
+          false
+        ]
+      ],
+      "font": "heiti",
+      "render": "lowcontrast"
+    },
+    {
+      "id": "H018",
+      "class": "chinese_blur",
+      "parts": [
+        [
+          "设",
+          false
+        ],
+        [
+          "y=2x+1",
+          true
+        ],
+        [
+          "，求表达式",
+          false
+        ]
+      ],
+      "font": "heiti",
+      "render": "blur"
+    },
+    {
+      "id": "H019",
+      "class": "latin_blur",
+      "parts": [
+        [
+          "Solve: ",
+          false
+        ],
+        [
+          "x²+1=0",
+          true
+        ]
+      ],
+      "font": "arial",
+      "render": "blur"
+    },
+    {
+      "id": "H020",
+      "class": "mathematical_symbols",
+      "parts": [
+        [
+          "若",
+          false
+        ],
+        [
+          "A∩B=∅",
+          true
+        ],
+        [
+          "，请说明",
+          false
+        ]
+      ],
+      "font": "heiti",
+      "render": "clean"
+    }
+  ]
+}

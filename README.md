@@ -1,5 +1,15 @@
 # STEM Mentor — 个人化理科思维培优系统
 
+
+## v0.17：Mac 原生多公式定位与数学 OCR 风险校对（隔离功能分支）
+
+延续 v0.16 的 **Mac 开发、Tang 仅作为可选 GPU 推理**：新增原生 Apple Vision 中英文混排公式字串 bbox 定位，同一行支持多个公式区域，保留来源图片裁剪供人工校对。提供识别风险警告（幂次/撇号、变量大小写、异常推理符号、LaTeX 花括号等）。无论是否报警，数学正确性一律未验证；必须由用户确认后才能创建练习记录。绿色 iPad 手写工作台与原有课程页面不被替换。
+
+Mac 真实 OCR 合成公式定位基准：开发集 11/11 个区域命中；**独立冻结合成集** 18/20 个区域命中（Precision 94.74%、Recall 90%；旧版 Recall 10%）。这并非真实试卷准确率。详见 [定位算法、测评协议和失败案例](docs/design/VISION_FORMULA_LAYOUT_V017.md)。
+
+独立 Mac 页面：http://127.0.0.1:18917/vision。运行：bash scripts/mac_vision_start_v017.sh。所有开发、测试和 Git 操作均在 Mac；Tang 只提供授权后的数学公式 GPU 推理，当前没有真正 iPad 原生 OCR、通用几何图 VLM 或真实学生自动评分。
+
+
 ## v0.16：Tang 专用数学 OCR + 22 例冻结合成评测
 
 保留 v0.15 的 Mac Apple Vision、绿色界面和人工确认机制，在隔离 Tang GPU Python 环境中增加 PP-FormulaNet_plus-M 独立推理服务。Mac 与 Tang 经受限 SSH 本地转发连接，所有远端图片请求必须人工勾选同意。新增 /api/vision/status 状态接口，只有真实模型响应才标为公式识别成功；云 VLM 未配置时不声称已运行。

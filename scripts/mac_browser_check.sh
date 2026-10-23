@@ -73,4 +73,5 @@ STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_ipa
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_ipad_touch_v014.py
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python -m pytest -q tests/browser/test_math_lab_review_v010.py
 STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_vision_v015.py
+STEM_MENTOR_URL="http://127.0.0.1:$PORT" .venv/bin/python tests/browser/test_vision_risk_v017.py
 echo "Chrome browser suite passed; temporary synthetic database will be removed."

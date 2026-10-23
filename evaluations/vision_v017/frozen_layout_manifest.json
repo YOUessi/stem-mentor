@@ -1,0 +1,194 @@
+{
+  "version": "v017_layout_synthetic",
+  "provenance": "self_authored_printed_math_lines_only",
+  "cases": [
+    {
+      "id": "L001",
+      "class": "chinese_equation",
+      "parts": [
+        [
+          "已知 ",
+          false
+        ],
+        [
+          "x²+2x+1=0",
+          true
+        ],
+        [
+          "，求解",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "L002",
+      "class": "chinese_two_equations",
+      "parts": [
+        [
+          "已知 ",
+          false
+        ],
+        [
+          "x²=1",
+          true
+        ],
+        [
+          "，",
+          false
+        ],
+        [
+          "y²=4",
+          true
+        ],
+        [
+          "，求解",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "L003",
+      "class": "chinese_geometry",
+      "parts": [
+        [
+          "如图，",
+          false
+        ],
+        [
+          "AB=AC",
+          true
+        ],
+        [
+          "，求证",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "L004",
+      "class": "chinese_no_formula",
+      "parts": [
+        [
+          "请阅读下列题目，不要直接回答",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "L005",
+      "class": "english_colon",
+      "parts": [
+        [
+          "Question: ",
+          false
+        ],
+        [
+          "x^2+2x+1=0",
+          true
+        ]
+      ]
+    },
+    {
+      "id": "L006",
+      "class": "english_prefixed",
+      "parts": [
+        [
+          "Given ",
+          false
+        ],
+        [
+          "x²+2x+1=0",
+          true
+        ]
+      ]
+    },
+    {
+      "id": "L007",
+      "class": "standalone_formula",
+      "parts": [
+        [
+          "f(x)=x²+1",
+          true
+        ]
+      ]
+    },
+    {
+      "id": "L008",
+      "class": "english_no_formula",
+      "parts": [
+        [
+          "Read this question carefully",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "L009",
+      "class": "chinese_fraction",
+      "parts": [
+        [
+          "计算 ",
+          false
+        ],
+        [
+          "(x+1)/(x-2)=3",
+          true
+        ],
+        [
+          "，写出答案",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "L010",
+      "class": "chinese_inequality",
+      "parts": [
+        [
+          "求解 ",
+          false
+        ],
+        [
+          "x≥2",
+          true
+        ],
+        [
+          "，并验证",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "L011",
+      "class": "two_formulas_ascii",
+      "parts": [
+        [
+          "方程 ",
+          false
+        ],
+        [
+          "x=1",
+          true
+        ],
+        [
+          "，",
+          false
+        ],
+        [
+          "y=2",
+          true
+        ]
+      ]
+    },
+    {
+      "id": "L012",
+      "class": "chinese_plain_sentence",
+      "parts": [
+        [
+          "请先思考，再说出方法",
+          false
+        ]
+      ]
+    }
+  ]
+}

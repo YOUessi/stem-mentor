@@ -9,6 +9,7 @@ from collections import Counter
 from PIL import Image, ImageOps, UnidentifiedImageError
 
 from . import vision_providers as providers
+from .formula_quality import formula_quality_report
 
 MAX_FILE_BYTES = 8 * 1024 * 1024
 MAX_PIXELS = 20_000_000
@@ -86,20 +87,33 @@ def analyze_image(raw: bytes, *, diagram_present: bool = False,
     if not isinstance(lines, list):
         lines, local_status = [], "failed"
     # A limited number of suspicious lines get dedicated formula OCR.
-    # OCR confidence is *not* a math-region classifier: low-confidence prose
-    # must not be transmitted as a hallucination-prone formula image.
-    formula_candidates = [
-        (i, line) for i, line in enumerate(lines[:200])
-        if is_formula_candidate(line.get("text", ""))
-    ][:12]
+    # Each OCR line can contain several distinct equations. Prefer Vision's
+    # grounded substring bbox, never an arbitrary text-to-pixel estimate.
+    # Fallback to the full OCR line only if no usable math spans were located.
+    formula_candidates: list[tuple[int, int | None, dict, dict | None]] = []
+    for i, line in enumerate(lines[:200]):
+        raw_spans = line.get("spans")
+        spans = [
+            span for span in (raw_spans if isinstance(raw_spans, list) else [])
+            if isinstance(span, dict)
+            and isinstance(span.get("text"), str)
+            and is_formula_candidate(span["text"])
+            and isinstance(span.get("bbox"), list)
+            and len(span["bbox"]) == 4
+        ]
+        if spans:
+            for j, span in enumerate(spans[:8]):
+                formula_candidates.append((i, j, line, span))
+        elif is_formula_candidate(line.get("text", "")):
+            formula_candidates.append((i, None, line, None))
+        if len(formula_candidates) >= 12:
+            break
+    formula_candidates = formula_candidates[:12]
     expressions: list[dict] = []
     formula_statuses = []
     formula_available = True
     focused_regions = 0
-    for i, line in formula_candidates:
-        usable = next((v for v in line.get("spans", [])
-                       if isinstance(v, dict) and is_formula_candidate(v.get("text", ""))),
-                      None)
+    for i, j, line, usable in formula_candidates:
         if usable is not None:
             focused_regions += 1
         box = usable["bbox"] if usable else line.get("bbox", [0, 0, 1, 1])
@@ -120,15 +134,17 @@ def analyze_image(raw: bytes, *, diagram_present: bool = False,
             if status in {"failed", "not_configured"}:
                 formula_available = False
         formula_statuses.append(status)
+        latex = expression["latex"] if expression else ""
         expressions.append({
-            "id": f"expr-{i+1}",
-            "latex": expression["latex"] if expression else "",
+            "id": f"expr-{i + 1}-{j + 1 if j is not None else 'line'}",
+            "latex": latex,
             "raw_text": raw_text,
             "bbox": box,
             "bbox_source": "apple_vision_substring" if usable else "apple_vision_line",
             "source": expression["source"] if expression else "awaiting_formula_ocr",
             "model": expression.get("model") if expression else None,
             "confidence": expression.get("confidence") if expression else None,
+            "quality": formula_quality_report(latex, raw_text),
             "needs_review": True,
             "verified": False,
         })
@@ -158,6 +174,8 @@ def analyze_image(raw: bytes, *, diagram_present: bool = False,
         uncertain.append("diagram_requires_manual_review")
     if low_confidence:
         uncertain.append("low_confidence_text")
+    if any(item["quality"]["state"] == "suspect" for item in expressions):
+        uncertain.append("formula_has_detected_anomalies")
     if vlm_status == "ready":
         uncertain.append("visual_relations_are_observations_not_givens")
     return {
@@ -178,6 +196,7 @@ def analyze_image(raw: bytes, *, diagram_present: bool = False,
             "local_ocr": local_status,
             "formula_candidates": len(formula_candidates),
             "focused_formula_regions": focused_regions,
+            "layout_detector": "native_substring_multiregion_v017",
             "formula_consent": allow_formula_service,
             "formula_ocr": (dict(Counter(formula_statuses)) if formula_statuses
                             else {"not_needed": 1}),
