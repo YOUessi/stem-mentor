@@ -64,7 +64,7 @@
     image.src = url;
     return canvas;
   }
-  function editor(value, hint, bbox) {
+  function editor(value, hint, bbox, quality) {
     const box = document.createElement("div");
     box.className = "formula-card";
     const label = document.createElement("small");
@@ -79,22 +79,42 @@
     const preview = document.createElement("div");
     preview.className = "latex-preview";
     preview.setAttribute("aria-label", "公式渲染预览");
+    const flags = Array.isArray(quality?.warnings) ? quality.warnings : [];
+    const review = document.createElement("div");
+    review.className = "formula-risk";
+    if (flags.length) {
+      const heading = document.createElement("strong");
+      heading.textContent = "初次识别需要重点核对：";
+      review.appendChild(heading);
+      const list = document.createElement("ul");
+      for (const warning of flags) {
+        const item = document.createElement("li");
+        item.textContent = String(warning.message || "请核对原图");
+        list.appendChild(item);
+      }
+      review.appendChild(list);
+    } else if (value.trim()) {
+      review.textContent = "未检出已知规则中的异常，但仍需逐字核对；不代表数学正确。";
+    } else {
+      review.textContent = "未获得模型识别结果，请参照原图手动补充。";
+    }
     input.addEventListener("input", function () {
       invalidate();
       renderLatex(input, preview);
+      if (flags.length) review.dataset.edited = "true";
     });
     const original = makeFormulaCrop(bbox);
-    if (original) box.append(label, original, input, preview);
-    else box.append(label, input, preview);
+    if (original) box.append(label, original, input, preview, review);
+    else box.append(label, input, preview, review);
     renderLatex(input, preview);
     return box;
   }
-  function addExpression(value, hint, bbox) {
+  function addExpression(value, hint, bbox, quality) {
     if ($("formulas").querySelectorAll("textarea").length >= 12) {
       status("最多添加 12 条公式，可将其余公式并入题干。", true); return;
     }
     if (!$("formulas").querySelector(".formula-card")) $("formulas").replaceChildren();
-    $("formulas").appendChild(editor(value, hint, bbox));
+    $("formulas").appendChild(editor(value, hint, bbox, quality));
     invalidate();
   }
   function routeResult(data) {
@@ -196,7 +216,7 @@
         for (const exp of draft.expressions) {
           addExpression(exp.latex || "", "OCR 候选：" + (exp.raw_text || "未识别") +
             " · " + (exp.source === "formula_ocr" ? "专用模型候选，请校对" : "尚未获得专用 LaTeX"),
-            exp.bbox);
+            exp.bbox, exp.quality);
         }
       } else {
         const empty = document.createElement("p");
@@ -206,10 +226,13 @@
       }
       routeResult(draft);
       diagramResult(draft.diagram);
+      const flagged = (draft.expressions || []).filter(
+        item => item.quality?.state === "suspect").length;
       const failed = Object.keys(draft.routing?.formula_ocr || {}).some(
         key => ["failed", "not_configured", "skipped_service_unavailable"].includes(key));
       status((draft.stem ? "文字识别已生成草稿。" : "未自动获得题干，请人工录入。") +
         (failed ? " 远端公式识别当前不可用，请查看原图区域并人工补充。" : "") +
+        (flagged ? " 检测到 " + flagged + " 处公式识别风险，需对照原图重点校对。" : "") +
         " 请检查数字、上/下标及几何条件，再点击确认。");
     } catch (error) {
       status("识别未完成：" + error.message + "。仍可手动输入题目。", true);
