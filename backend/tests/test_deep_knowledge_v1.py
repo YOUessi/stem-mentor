@@ -25,9 +25,9 @@ def test_course_matrix_count_and_levels_are_engineering_not_official():
     assert report["mapped_curriculum_ids"] + sum(r["without_deep_draft"] for r in report["by_level"].values()) == 113
 
 
-def test_28_non_authoritative_lessons_and_no_fake_approvals():
+def test_all_non_authoritative_lessons_and_no_fake_approvals():
     data = lessons()
-    assert len(data) == 28
+    assert len(data) >= 86  # 28 frozen baseline + 58 independently spot-checked batch04
     assert len({d.id for d in data}) == len(data)
     assert {d.review.status for d in data} == {"REVIEW_PENDING"}
     assert all(d.teacher_solution_visibility == "TEACHER_ONLY" for d in data)
@@ -36,9 +36,9 @@ def test_28_non_authoritative_lessons_and_no_fake_approvals():
     assert public_summary()["direct_student_teaching_enabled"] is False
 
 
-@pytest.mark.parametrize("i", range(28))
-def test_each_draft_is_validated_and_nontrivial(i):
-    item = lessons()[i]
+@pytest.mark.parametrize("knowledge_id", [d.id for d in lessons()])
+def test_each_draft_is_validated_and_nontrivial(knowledge_id):
+    item = next(d for d in lessons() if d.id == knowledge_id)
     copy_validated = DeepLesson.model_validate(item.model_dump(mode="json"))
     assert copy_validated.id == item.id
     if item.kind == "theorem":
@@ -83,7 +83,7 @@ def test_there_is_no_approval_and_electives_are_not_overstated():
     c = coverage_report()
     assert c["by_level"]["选修拓展"]["engineering_topics"] == 7
     assert c["by_level"]["选修拓展"]["teacher_approved"] == 0
-    assert c["by_level"]["选修拓展"]["with_deep_draft"] == 0
+    assert c["by_level"]["选修拓展"]["with_deep_draft"] == 7  # only legacy unassigned extension
     assert sum(v["teacher_approved"] for v in c["by_level"].values()) == 0
     official = json.loads((ROOT/"curriculum/highschool_math/official_scope_v1.json").read_text())
     assert {x["id"] for x in official["tracks"]} >= {
@@ -100,7 +100,7 @@ def test_public_coverage_endpoint_has_no_teacher_only_material():
         response = client.get("/api/knowledge/depth/coverage")
     assert response.status_code == 200
     obj = response.json()
-    assert obj["deep_lesson_documents"] == 28
+    assert obj["deep_lesson_documents"] == len(lessons())
     assert obj["direct_student_teaching_enabled"] is False
     assert not {"worked_examples","proof_steps","counterexamples","teacher_solution"}.intersection(obj)
     assert "S_n=" not in response.text
