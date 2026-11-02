@@ -41,7 +41,11 @@
 - 单独 K07 受限命题与负面安全测试：104 passed。
 - 56 道 teacher-only worked-example 例题检查 + 覆盖断言：57 passed。
 - K07 原始 48 命题审计：48/48 按预期完成，0 误配，14 份课程材料有关联子命题。
-- 全量 Python、Node、Mac Chrome 与 GitHub Actions 的最终结果以该 PR 的测试记录为准；不能凭本地测试预测远程 CI 成功。
+- Mac 全量 Python：**454 passed，1 Starlette/AnyIO DeprecationWarning**（其中本批 104 条数学证据及安全测试、57 条例题 oracle 测试）。
+- Mac 全量 Node：**111 passed，0 failed**。
+- Mac Chrome 全套绿色 UI、29/39/49 场景、触控与笔压模拟、数学实验室和迁移流程全部通过；末尾 2 passed，完整脚本 exit 0；无外部请求或真实学生写入。**不是物理 iPad/Apple Pencil 验收**。
+- 初次编写测试曾出现 x=1 分母零的测试本身断言错误、SymPy Boolean 非 Python 单例 True 的比较错误、复数乘积未展开的比较错误；修复测试后全量验证通过，未影响原始课程草案。
+- Mac git push 因 GitHub HTTPS 挂起已主动终止，改由 GitHub connector 原生 blob/tree/commit/ref 上传；远程树 SHA 与 Mac 提交的树 SHA 一致。GitHub Actions 独立状态仍以 PR 为准。
 
 ## 后续工作
 

@@ -33,7 +33,7 @@ def test_certificates_are_only_subclaims_and_keep_teacher_review_pending():
     report = evidence_audit()
     assert report["claims"] == 48
     assert report["linked_lesson_count"] >= 12
-    assert report["total_draft_lessons"] == 28
+    assert report["total_draft_lessons"] >= 28  # future knowledge batches can add lessons
     assert report["failures"] == []
     assert report["math_subclaims_checked"] == 48
     assert report["whole_theorems_verified"] == 0
