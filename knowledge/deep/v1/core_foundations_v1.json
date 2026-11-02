@@ -1,0 +1,1347 @@
+[
+  {
+    "id": "math.hs.sets.union-intersection",
+    "curriculum_ids": [
+      "HS-MATH-001",
+      "HS-MATH-002"
+    ],
+    "kind": "concept",
+    "title": "集合的交并与补集",
+    "version": "1.0.0",
+    "notation": [
+      "A∩B",
+      "A∪B",
+      "U\\A"
+    ],
+    "prerequisites": [
+      "集合元素、逻辑或与且"
+    ],
+    "definition": "给定全集 U 中的两个子集 A、B，交集 A∩B 为同时属于 A 与 B 的元素集合，并集 A∪B 为属于 A 或 B（可以同时属于两者）的元素集合；补集 U\\A 为 U 中不属于 A 的元素集合。",
+    "statement": null,
+    "assumptions": [
+      "必须先指定讨论的全集 U；元素判断采用明确的集合隶属关系。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "逐个元素考察是否同时满足 x∈A 和 x∈B，得到交集的判定规则。",
+      "逐个元素考察是否至少满足一个隶属条件，得到并集；补集还必须限定在给定全集内。"
+    ],
+    "boundaries": [
+      "没有给定全集时，补集的范围不唯一。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "A 与 B 的并集只包含只在一个集合中的元素",
+        "example": "A={1,2}, B={2,3}，元素 2 同时属于两者。",
+        "explanation": "正确的并集包含 2，即 A∪B={1,2,3}，并集不是异或。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "设 A={1,2,4}, B={2,3,4}，计算交并集。",
+        "steps": [
+          "逐一比较两集合中相同的元素，交集得到 2 和 4。",
+          "把全部元素去重合并，并集得到 1、2、3、4。"
+        ],
+        "answer": "A∩B={2,4}；A∪B={1,2,3,4}",
+        "check": "检查每个交集元素确实属于两者，所有并集元素至少属于其一。"
+      },
+      {
+        "question": "U={1,2,3,4,5}, A={2,4}，求 A 的补集。",
+        "steps": [
+          "先把全集 U 中的五个元素列出。",
+          "从 U 删除 A 中的 2 和 4，其余元素留下。"
+        ],
+        "answer": "U\\A={1,3,5}",
+        "check": "检查补集与 A 不交，且二者并起来恰好等于 U。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把并集错误理解为不重复的单侧元素",
+        "why_wrong": "去重是集合计数的要求，但重复出现的共同元素仍属于并集。",
+        "repair_question": "若元素同时属于 A 和 B，应该被并集删除吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先判断一个元素是否同时属于两个集合。",
+      "把“或”改写为至少满足一项的真值判断。",
+      "补集计算前需要先指定什么范围？"
+    ],
+    "transfer": {
+      "near": "换成区间 A=[0,2], B=(1,3]，判断交并集端点归属。",
+      "far": "用集合语言表达事件 A 或 B 发生，再与概率加法公式关联。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.logic.implication",
+    "curriculum_ids": [
+      "HS-MATH-003",
+      "HS-MATH-005"
+    ],
+    "kind": "concept",
+    "title": "充分条件与必要条件的方向",
+    "version": "1.0.0",
+    "notation": [
+      "P⇒Q",
+      "Q⇒P"
+    ],
+    "prerequisites": [
+      "命题真假、集合包含关系"
+    ],
+    "definition": "若命题 P 成立时命题 Q 必成立，则记 P⇒Q，此时 P 是 Q 的充分条件，Q 是 P 的必要条件；双向 P⇔Q 才称等价条件。",
+    "statement": null,
+    "assumptions": [
+      "涉及的命题必须有确定论域和真假条件。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "从 P⇒Q 可推得满足 P 的对象集合包含于满足 Q 的对象集合。",
+      "不能通过 P⇒Q 交换方向得到 Q⇒P，交换方向需要单独证明或找到反例。"
+    ],
+    "boundaries": [
+      "逆命题、否命题和逆否命题不能混为一谈；逆否命题与原命题逻辑等价。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "若 x=2 能推出 x²=4，就能由 x²=4 推出 x=2",
+        "example": "在实数域取 x=-2 时满足 x²=4，却不满足 x=2。",
+        "explanation": "P⇒Q 成立但 Q⇒P 不成立，故两个条件不等价。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "在实数域判断 x=3 与 x²=9 的充分必要性。",
+        "steps": [
+          "从 x=3 可推出 x²=9，前者对后者充分。",
+          "取 x=-3 可反证反方向，因此非必要条件。"
+        ],
+        "answer": "x=3 是 x²=9 的充分非必要条件",
+        "check": "反例 -3 使反向蕴含失败。"
+      },
+      {
+        "question": "在实数域判断 x>1 与 x>0 的条件关系。",
+        "steps": [
+          "若 x>1 一定有 x>0，正向成立。",
+          "取 x=1/2，则 x>0 但 x>1 不成立。"
+        ],
+        "answer": "x>1 是 x>0 的充分非必要条件",
+        "check": "核对反例符合讨论的实数论域。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把必要条件与充分条件的箭头方向记反",
+        "why_wrong": "P⇒Q 时 Q 是必然结论，而非任意 Q 都能反推 P。",
+        "repair_question": "把命题改写为“只要 P，就一定 Q”，哪个条件是充分的？"
+      }
+    ],
+    "hint_ladder": [
+      "明确命题 P 和 Q 的论域。",
+      "用 P⇒Q 把正向逻辑写出来。",
+      "尝试找一个使 Q 真、P 假的逆向反例。"
+    ],
+    "transfer": {
+      "near": "研究 a=b 与 a²=b² 的逻辑关系（实数域）。",
+      "far": "把定理适用条件转化为集合包含关系，检查某个方法的前提。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.logic.quantifier",
+    "curriculum_ids": [
+      "HS-MATH-004"
+    ],
+    "kind": "concept",
+    "title": "全称与存在量词及否定",
+    "version": "1.0.0",
+    "notation": [
+      "∀x∈D",
+      "∃x∈D"
+    ],
+    "prerequisites": [
+      "命题、论域"
+    ],
+    "definition": "全称命题 ∀x∈D:P(x) 表示论域 D 的每个元素都满足 P；存在命题 ∃x∈D:P(x) 表示至少有一个元素满足 P；二者逻辑否定需要交换量词并否定谓词。",
+    "statement": null,
+    "assumptions": [
+      "论域 D 必须明确；空论域全称与存在命题的真值按逻辑定义处理。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "要否定“每个人都满足 P”，只需找到一个不满足 P 的个体，因此是 ∃x∈D:¬P(x)。",
+      "要否定“至少有一个满足 P”，必须证明没有个体满足 P，因此是 ∀x∈D:¬P(x)。"
+    ],
+    "boundaries": [
+      "不能只否定谓词而保持量词不变。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "“所有实数平方均为正数”的否定是“所有实数平方都不为正数”",
+        "example": "实数 x=0 满足 x²=0，但 x=1 的平方为正。",
+        "explanation": "正确否定是“存在实数 x 使 x²≤0”，而非把所有元素一起反向断言。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "否定“所有实数 x 都满足 x²≥0”。",
+        "steps": [
+          "原命题为 ∀x∈R:x²≥0。",
+          "交换量词并把 ≥0 否定为 <0。"
+        ],
+        "answer": "存在实数 x 使 x²<0",
+        "check": "逻辑形式虽可写出，但该否定命题在实数域是假命题。"
+      },
+      {
+        "question": "否定“存在整数 n 使 n²=2”。",
+        "steps": [
+          "原命题为 ∃n∈Z:n²=2。",
+          "换成全称量词并否定等号。"
+        ],
+        "answer": "所有整数 n 都满足 n²≠2",
+        "check": "任何整数平方都不可能为 2，否定命题为真。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "认为否定全称命题必须举出全部反例",
+        "why_wrong": "仅一个违反性质的元素就能否定全称命题。",
+        "repair_question": "你能用 x=0 否定“所有实数 x 的平方都大于零”吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先找出命题的量词。",
+      "保持原论域不变，交换 ∀ 与 ∃。",
+      "最后否定谓词中的等号或不等号。"
+    ],
+    "transfer": {
+      "near": "尝试否定“存在正实数 x 使 x+1/x=1”。",
+      "far": "把算法的“对所有输入都安全”转成可寻找反例的命题。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.inequality.sign-multiplication",
+    "curriculum_ids": [
+      "HS-MATH-006",
+      "HS-MATH-010"
+    ],
+    "kind": "theorem",
+    "title": "不等式同乘与等价变换",
+    "version": "1.0.0",
+    "notation": [
+      "a<b",
+      "c>0",
+      "c<0"
+    ],
+    "prerequisites": [
+      "实数大小比较、乘法性质"
+    ],
+    "definition": null,
+    "statement": "在实数域，若 a<b，则对 c>0 有 ac<bc；对 c<0 有 ac>bc；若 c=0，则 ac=bc=0，不再为严格不等式。",
+    "assumptions": [
+      "a,b,c∈R 且 a<b；必须分清 c 的正、负和零。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由 a<b 得 b-a>0，对 c>0 乘积 c(b-a)>0。",
+        "reason": "正实数相乘仍为正，所以 bc-ac>0，即 ac<bc。"
+      },
+      {
+        "claim": "若 c<0，则 -c>0；将 b-a 乘以 -c 得 (-c)(b-a)>0。",
+        "reason": "整理得 ac-bc>0，因此 ac>bc。"
+      },
+      {
+        "claim": "当 c=0 时 ac=bc=0，严格大小关系消失。",
+        "reason": "乘零会丢失原始大小信息，因此不可当成等价变换。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "含参数乘除时，必须先讨论符号，除以未知量可能丢解或反向。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "不等式两边同乘任何数，方向都不变",
+        "example": "1<2，同时乘 -3 得 -3>-6。",
+        "explanation": "乘负数会反向；乘零会失去严格不等式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求解 -2x<6（x 为实数）。",
+        "steps": [
+          "两边同除以 -2，除数为负数需改变不等号。",
+          "将 6 除以 -2 得 -3。"
+        ],
+        "answer": "x>-3",
+        "check": "代入 x=0 得 0<6 真，代入 x=-4 得 8<6 假。"
+      },
+      {
+        "question": "已知 a<4，且 c=-2，比较 ac 与 -8。",
+        "steps": [
+          "因为 c 是负数，负数相乘会反向。",
+          "得到 -2a>-8。"
+        ],
+        "answer": "ac>-8",
+        "check": "取 a=3 得 -6>-8，方向正确。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "未判断分母符号就直接两边相除",
+        "why_wrong": "未知正负的量可能反向，未知是否为零也可能让除法无定义。",
+        "repair_question": "如果你把不等式两边除以 x，首先应当证明什么？"
+      }
+    ],
+    "hint_ladder": [
+      "把移项后的两数之差写出来。",
+      "判断要乘的量是正、负还是零。",
+      "若是参数，尝试分成 c>0、c<0、c=0 三类。"
+    ],
+    "transfer": {
+      "near": "求解参数 a 变化时 ax>1 的全分类。",
+      "far": "复核不等式推理中除以随机变量或几何长度的合法性。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.quadratic.sign",
+    "curriculum_ids": [
+      "HS-MATH-007"
+    ],
+    "kind": "theorem",
+    "title": "一元二次式与根的符号区间",
+    "version": "1.0.0",
+    "notation": [
+      "f(x)=ax²+bx+c",
+      "Δ=b²-4ac"
+    ],
+    "prerequisites": [
+      "实数、因式分解、二次方程"
+    ],
+    "definition": null,
+    "statement": "设 a≠0 且 Δ=b²-4ac>0，二次式 f(x)=a(x-r1)(x-r2)，其中 r1<r2 为两实根；在两根之外 f 与 a 同号，两根之间与 a 异号，根处 f=0。",
+    "assumptions": [
+      "a,b,c∈R，a≠0，Δ>0，r1<r2 为两个互异实根。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "因 f(r1)=f(r2)=0，二次式可表示为 a(x-r1)(x-r2)。",
+        "reason": "根与系数关系或多项式因式定理保证这一分解。"
+      },
+      {
+        "claim": "当 x<r1 或 x>r2，两个一次因子同号，乘积为正。",
+        "reason": "与非零首项系数 a 相乘后保留 a 的符号。"
+      },
+      {
+        "claim": "当 r1<x<r2，一因子为正一因子为负，乘积为负。",
+        "reason": "因此二次式符号与首项系数 a 相反，根处等于零。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 Δ=0 为重根、Δ<0 无实根，需要重新按顶点或平方项判定；a=0 不再是二次式。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "所有二次不等式都能在实数域分解为两个不同线性因子",
+        "example": "f(x)=x²+1，Δ=-4，不存在两个不同实根。",
+        "explanation": "该式对所有实数恒大于零，不能照搬两实根符号区间法。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "解 x²-5x+6<0。",
+        "steps": [
+          "分解 (x-2)(x-3)，两根 2<3 且首项系数为正。",
+          "开口向上，严格小于零对应两根之间。"
+        ],
+        "answer": "2<x<3",
+        "check": "取 2.5 得负值；端点取等号不满足严格不等式。"
+      },
+      {
+        "question": "解 -x²+4x-3≥0。",
+        "steps": [
+          "化为 -(x-1)(x-3)，首项系数为负。",
+          "两根之间二次式为正，包含根处等于零。"
+        ],
+        "answer": "1≤x≤3",
+        "check": "取 x=2 得 1，取 x=4 得 -3，核对边界。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不检查判别式就直接写两根之间的解",
+        "why_wrong": "一元二次式可能没有实根、只有重根或首项系数为负。",
+        "repair_question": "你已经证明存在两个不同实根了吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先确认最高次项系数不为零。",
+      "计算判别式并判断根的个数。",
+      "画符号表时根处是取等还是严格不等？"
+    ],
+    "transfer": {
+      "near": "研究 x²+2tx+t²-1>0 随 t 的变化。",
+      "far": "将二次函数零点符号表与物理抛物线轨迹限制条件结合。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.inequality.sign-multiplication"
+    ]
+  },
+  {
+    "id": "math.hs.inequality.amgm",
+    "curriculum_ids": [
+      "HS-MATH-009"
+    ],
+    "kind": "theorem",
+    "title": "两个非负实数的算术几何平均不等式",
+    "version": "1.0.0",
+    "notation": [
+      "a≥0",
+      "b≥0",
+      "(a+b)/2≥√(ab)"
+    ],
+    "prerequisites": [
+      "平方非负、非负平方根"
+    ],
+    "definition": null,
+    "statement": "对任意非负实数 a,b，算术平均数 (a+b)/2 ≥ √(ab)，且等号成立当且仅当 a=b。",
+    "assumptions": [
+      "a,b∈R；a≥0，b≥0；√(ab) 表示非负平方根。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "因 (√a-√b)²≥0，展开得 a+b-2√(ab)≥0。",
+        "reason": "平方非负只对实数平方根合法；非负条件保证根号有意义。"
+      },
+      {
+        "claim": "把两侧移项并除以正数 2，得到 (a+b)/2≥√(ab)。",
+        "reason": "2>0，除以 2 不改变不等号方向。"
+      },
+      {
+        "claim": "等号成立当且仅当 (√a-√b)²=0，即 √a=√b。",
+        "reason": "非负平方根函数单射，所以等价于 a=b。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不允许直接把非正数代入 √a；固定和求积时必须说明非负性。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "AM-GM 对任意两个实数可以直接应用",
+        "example": "取 a=-1,b=-1，√a 在实数域无意义。",
+        "explanation": "原不等式要求 a,b 非负，不能忽略根号定义域。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "a,b≥0 且 a+b=10，求 ab 的上界。",
+        "steps": [
+          "使用 (a+b)/2≥√(ab)，左侧等于 5。",
+          "平方得到 ab≤25，等号条件是 a=b=5。"
+        ],
+        "answer": "最大值 25",
+        "check": "取 a=b=5 满足非负与固定和，能达到上界。"
+      },
+      {
+        "question": "若 x>0，求 x+4/x 的最小值。",
+        "steps": [
+          "设 a=x，b=4/x，二者均为正，乘积为 4。",
+          "由 a+b≥2√(ab)=4，等号要求 x=4/x。"
+        ],
+        "answer": "最小值 4，在 x=2 处取到",
+        "check": "x=2 是正数，表达式为 2+2=4。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只用 AM-GM 算出界却不检查等号是否可取",
+        "why_wrong": "等号需要同时满足原约束和 a=b，有些题不可达到。",
+        "repair_question": "在你的约束里，两项能否真的相等？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查所有使用 AM-GM 的量是否非负。",
+      "将目标式分拆为哪些量相乘为常数？",
+      "最后检查等号条件与原约束是否兼容。"
+    ],
+    "transfer": {
+      "near": "固定非负总和为 2t 时，讨论乘积上界与等号。",
+      "far": "判断概率 p 与 1-p 的方差最大值及等号概率。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.inequality.sign-multiplication"
+    ]
+  },
+  {
+    "id": "math.hs.function.domain",
+    "curriculum_ids": [
+      "HS-MATH-011"
+    ],
+    "kind": "concept",
+    "title": "函数的定义域与对应关系",
+    "version": "1.0.0",
+    "notation": [
+      "f:D→R",
+      "y=f(x)"
+    ],
+    "prerequisites": [
+      "实数集合、平方根和分母"
+    ],
+    "definition": "实函数 f 的定义域 D 是允许作为自变量输入的全部实数集合；函数必须对每个 x∈D 给出唯一一个值 f(x)，不同 x 可以有相同函数值。",
+    "statement": null,
+    "assumptions": [
+      "题目在实数域讨论函数；各表达式约束需要同时成立。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "根式 √g(x) 在实数域要求 g(x)≥0；分母 h(x) 必须满足 h(x)≠0。",
+      "若复合函数有多个表达式限制，定义域是所有限制条件的交集；函数在定义域外不作取值。"
+    ],
+    "boundaries": [
+      "函数值不要求一一对应；图像观察不能替代定义域的代数求解。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "函数 y=1/(x-1) 的定义域是全部实数",
+        "example": "取 x=1，分母为零，数值未定义。",
+        "explanation": "正确定义域是 R 去掉 1，此处不能进行除零计算。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 f(x)=√(x-2) 的实数定义域。",
+        "steps": [
+          "根号内部需要满足 x-2≥0。",
+          "解得 x≥2，端点 x=2 可以取平方根 0。"
+        ],
+        "answer": "[2,+∞)",
+        "check": "在 x=2 值为 0，而 x=1 时根式不为实数。"
+      },
+      {
+        "question": "求 f(x)=√(x+1)/(x-3) 的定义域。",
+        "steps": [
+          "根式给出 x≥-1；分母要求 x≠3。",
+          "把这两个条件取交集。"
+        ],
+        "answer": "[-1,3)∪(3,+∞)",
+        "check": "端点 -1 合法，x=3 不合法。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "分别算完根式与分母条件后只取其中一个",
+        "why_wrong": "多个表达式限制必须同时成立，因此应当取交集。",
+        "repair_question": "x=3 在你的函数中是不是会让分母变成零？"
+      }
+    ],
+    "hint_ladder": [
+      "找出所有分母、偶次根式以及对数。",
+      "分别写出每一项要求的合法条件。",
+      "求交集，检查端点是否应包含。"
+    ],
+    "transfer": {
+      "near": "求 f(x)=ln(x-1)/√(4-x) 的定义域。",
+      "far": "检验在机器人运动模型中某公式的输入时间范围是否有意义。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.function.monotonicity",
+    "curriculum_ids": [
+      "HS-MATH-013"
+    ],
+    "kind": "concept",
+    "title": "函数严格单调性的量词定义",
+    "version": "1.0.0",
+    "notation": [
+      "x1<x2",
+      "f(x1)<f(x2)"
+    ],
+    "prerequisites": [
+      "函数定义域、实数序"
+    ],
+    "definition": "函数 f 在区间 I 上严格递增是指对任何 x1,x2∈I 且 x1<x2，都有 f(x1)<f(x2)；严格递减则必须有 f(x1)>f(x2)。",
+    "statement": null,
+    "assumptions": [
+      "I 是函数定义域内的一个区间；严格性须对任意两点成立。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "单靠一对点的函数值升高不能证明整个区间递增；定义含有对所有点对的要求。",
+      "证明平方函数在非负区间递增：若 0≤x1<x2，f(x2)-f(x1)=(x2-x1)(x2+x1)>0。"
+    ],
+    "boundaries": [
+      "函数在相邻区间分别递增，不自动意味着整个并集区间递增（特别是区间不连通时）。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只看到 f(1)<f(2) 就能证明 f 在 [1,2] 严格递增",
+        "example": "函数 f(x)=sin(2πx)+x 在 1 和 2 之间存在局部下降。",
+        "explanation": "两个端点的函数值不能替代任意点对比较。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "证明 f(x)=x² 在 [0,+∞) 上递增。",
+        "steps": [
+          "取 0≤u<v，计算 f(v)-f(u)=(v-u)(v+u)。",
+          "因 v-u>0 且 v+u>0，差为正。"
+        ],
+        "answer": "f 在 [0,+∞) 严格递增",
+        "check": "对任何合法 u<v 都有严格正差，满足量词定义。"
+      },
+      {
+        "question": "判断 f(x)=-3x+1 在 R 上的单调性。",
+        "steps": [
+          "取 u<v，函数差 f(v)-f(u)=-3(v-u)。",
+          "v-u>0，因此差为负。"
+        ],
+        "answer": "在 R 上严格递减",
+        "check": "差为负对任意两点成立。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把局部观察、导数在个别点为正当成全区间单调的证明",
+        "why_wrong": "单调性是区间上所有点对的性质，孤立抽样不足以证实。",
+        "repair_question": "你能对任意两个 x1<x2 推导同一方向的函数值关系吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确要求判断的区间。",
+      "取两个任意点并计算函数值之差。",
+      "差的正负性是否对整个区间都成立？"
+    ],
+    "transfer": {
+      "near": "判断 |x| 在 (-∞,0] 和 [0,+∞) 的单调性。",
+      "far": "使用严格单调定义分析模型输入输出中的非线性阈值区间。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ]
+  },
+  {
+    "id": "math.hs.function.quadratic-vertex",
+    "curriculum_ids": [
+      "HS-MATH-019"
+    ],
+    "kind": "theorem",
+    "title": "二次函数配方与顶点值",
+    "version": "1.0.0",
+    "notation": [
+      "f(x)=ax²+bx+c",
+      "a≠0"
+    ],
+    "prerequisites": [
+      "平方完全公式、实数"
+    ],
+    "definition": null,
+    "statement": "对 a,b,c∈R、a≠0，f(x)=a(x+b/(2a))²+(4ac-b²)/(4a)。若 a>0，该函数在 R 上的最小值为 (4ac-b²)/(4a)，在 x=-b/(2a) 取到；若 a<0 则该值为最大值。",
+    "assumptions": [
+      "自变量在全部实数上变化，a≠0；若限制为区间还需比较可行端点。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "提取首项系数：ax²+bx+c=a[x²+(b/a)x]+c。",
+        "reason": "a 不等于 0，故 b/a 有定义。"
+      },
+      {
+        "claim": "用 x²+(b/a)x=(x+b/(2a))²-b²/(4a²) 配方。",
+        "reason": "展开右侧平方后消去交叉项，得到完全平方恒等式。"
+      },
+      {
+        "claim": "整理得到 a(x+b/(2a))²+c-b²/(4a)。",
+        "reason": "合并常数项可写为 (4ac-b²)/(4a)。"
+      },
+      {
+        "claim": "平方项非负；a>0 时贡献非负，a<0 时贡献非正。",
+        "reason": "令平方项为 0 可取得全局最小或最大值。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若定义域是有限区间且顶点不在其中，全局最值需要考察端点。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "二次函数在任意闭区间上的最值一定出现在顶点",
+        "example": "f(x)=x² 在 [2,3] 上最小值为 4，而顶点 0 不属于区间。",
+        "explanation": "应先验证顶点是否属于定义域，否则选端点。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 f(x)=x²-6x+11 的最小值。",
+        "steps": [
+          "配方 f(x)=(x-3)²+2。",
+          "平方非负且 x=3 可取，得到下界。"
+        ],
+        "answer": "最小值 2，x=3 时取到",
+        "check": "代回原函数得到 9-18+11=2。"
+      },
+      {
+        "question": "求 g(x)=-2x²+8x-3 的最大值。",
+        "steps": [
+          "配方 g(x)=-2(x-2)²+5。",
+          "负平方项不大于 0，x=2 使其为 0。"
+        ],
+        "answer": "最大值 5，x=2 时取到",
+        "check": "代回 -8+16-3=5，满足上界。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把顶点最值用于未检查的受限定义域",
+        "why_wrong": "顶点可能不在问题允许的自变量范围。",
+        "repair_question": "请先确认 x=-b/(2a) 是否属于给定区间？"
+      }
+    ],
+    "hint_ladder": [
+      "确定二次项系数 a 的符号。",
+      "试把二次式写为完全平方加常数。",
+      "顶点是否允许取到，还是应该考虑边界？"
+    ],
+    "transfer": {
+      "near": "把函数限制到 [-1,1] 后重新寻找最值。",
+      "far": "研究固定周长下矩形面积最值的二次模型。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.exponent.product",
+    "curriculum_ids": [
+      "HS-MATH-021"
+    ],
+    "kind": "theorem",
+    "title": "实数指数的指数运算律",
+    "version": "1.0.0",
+    "notation": [
+      "a>0",
+      "a^x a^y=a^(x+y)"
+    ],
+    "prerequisites": [
+      "有理数指数幂、指数函数"
+    ],
+    "definition": null,
+    "statement": "当底数 a>0、指数 x,y∈R 时，a^x a^y=a^(x+y)，且 a^0=1；函数 x↦a^x 在 a>1 时严格递增，在 0<a<1 时严格递减。",
+    "assumptions": [
+      "a 为严格正实数；讨论单调性还需 a≠1。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对整数指数，运算法则由重复乘法和倒数定义建立。",
+        "reason": "当 a>0 时整数正负幂均有定义。"
+      },
+      {
+        "claim": "将规则扩展到有理指数可借助正实数的唯一正根与根式指数规则。",
+        "reason": "指数函数在实数指数处由连续延拓定义，运算法则随极限保持。"
+      },
+      {
+        "claim": "对 a>1 与 x2>x1，a^x2/a^x1=a^(x2-x1)>1。",
+        "reason": "指数函数的连续定义及正指数 a^t>1 保证单调性；0<a<1 时反向。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "底数为负时任意实数指数未必有实数值；a=1 时函数常数而非严格单调。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "负底数也能对任意实数指数使用指数律",
+        "example": "(-1)^(1/2) 在实数域没有定义。",
+        "explanation": "规则的实数指数形式必须要求底数严格为正。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "化简 2^3·2^5。",
+        "steps": [
+          "同底数相乘指数相加，得到 2^(3+5)。",
+          "算出 2^8=256。"
+        ],
+        "answer": "256",
+        "check": "分别算 8·32=256 作为独立检查。"
+      },
+      {
+        "question": "比较 (1/2)^2 与 (1/2)^3 的大小。",
+        "steps": [
+          "底数 1/2 在 (0,1) 内，指数函数严格递减。",
+          "因为 2<3，所以前者更大。"
+        ],
+        "answer": "1/4>1/8",
+        "check": "分别计算确为 0.25>0.125。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忽略指数函数的底数在 0 和 1 之间时单调方向相反",
+        "why_wrong": "0<a<1 的指数函数是严格递减，不是递增。",
+        "repair_question": "把 a=1/2，x=1 和 x=2 代入检查？"
+      }
+    ],
+    "hint_ladder": [
+      "确认底数是否大于 0，是否等于 1。",
+      "是乘法同底，还是幂的幂？",
+      "比较大小时先判断底数所在的区间。"
+    ],
+    "transfer": {
+      "near": "用参数 a>0 比较 a^2 与 a^3 的大小。",
+      "far": "用指数增长模型分析人口或电路衰减系数。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.logarithm.inverse",
+    "curriculum_ids": [
+      "HS-MATH-022"
+    ],
+    "kind": "theorem",
+    "title": "指数与对数的互逆关系",
+    "version": "1.0.0",
+    "notation": [
+      "a>0",
+      "a≠1",
+      "log_a x"
+    ],
+    "prerequisites": [
+      "指数函数、反函数定义"
+    ],
+    "definition": null,
+    "statement": "给定实数底数 a>0 且 a≠1，对任意 x>0，有 log_a(x)=y 当且仅当 a^y=x；相应 log_a(xy)=log_a x+log_a y 对 x,y>0 成立。",
+    "assumptions": [
+      "a>0 且 a≠1，x>0，y>0；对数仅对正真数定义。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "指数函数 a^t 严格单调且值域 (0,+∞)，因此存在唯一反函数 log_a。",
+        "reason": "底数 a≠1 才有单射；a=1 时所有输出均为 1。"
+      },
+      {
+        "claim": "令 u=log_a x、v=log_a y，则 a^u=x、a^v=y。",
+        "reason": "由对数定义得到指数形式。"
+      },
+      {
+        "claim": "指数律给出 xy=a^u a^v=a^(u+v)。",
+        "reason": "由反函数的唯一性，log_a(xy)=u+v。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "真数须严格大于零；不能把 log_a(x+y) 简写成 log_a x+log_a y。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "log_2(3+5)=log_2 3+log_2 5",
+        "example": "左边 log_2 8=3，右边 log_2 15 不等于 3。",
+        "explanation": "乘法公式不适用于加法真数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "解 log_2(x-1)=3。",
+        "steps": [
+          "先确定真数 x-1>0，即 x>1。",
+          "换成指数式 x-1=2³=8。"
+        ],
+        "answer": "x=9",
+        "check": "代入 log_2(8)=3 且满足定义域。"
+      },
+      {
+        "question": "化简 log_3 9+log_3 27。",
+        "steps": [
+          "同底数求和等于正真数乘积的对数。",
+          "log_3(243)=5。"
+        ],
+        "answer": "5",
+        "check": "也可分别算 2+3=5，交叉检查。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "对数真数为非正时仍照常换底或运算",
+        "why_wrong": "实数对数没有负或零真数，运算法则不允许超出定义域。",
+        "repair_question": "原式中每一个被取对数的量是否严格大于 0？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查底数的合法性。",
+      "逐一检查真数是否严格为正。",
+      "尝试将对数等式改写为指数等式后验证。"
+    ],
+    "transfer": {
+      "near": "解 log_a(x-2)=1，其中 a>0 且 a≠1。",
+      "far": "在指数增长的反问题中比较 x 与 log_a x 的定义域和量纲。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.exponent.product"
+    ]
+  },
+  {
+    "id": "math.hs.trig.pythagorean",
+    "curriculum_ids": [
+      "HS-MATH-025",
+      "HS-MATH-026"
+    ],
+    "kind": "theorem",
+    "title": "正弦余弦的基本恒等式",
+    "version": "1.0.0",
+    "notation": [
+      "sin²θ+cos²θ=1",
+      "θ∈R"
+    ],
+    "prerequisites": [
+      "单位圆、勾股定理"
+    ],
+    "definition": null,
+    "statement": "对任何实数角 θ，单位圆上对应点 (cos θ,sin θ) 满足 cos²θ+sin²θ=1；由此只有在 cos θ≠0 时才可合法变为 1+tan²θ=1/cos²θ。",
+    "assumptions": [
+      "θ∈R；正切 tan θ 的引入要求 cos θ≠0。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "单位圆的方程为 x²+y²=1。",
+        "reason": "以原点为圆心、半径为 1 的点满足该方程。"
+      },
+      {
+        "claim": "对应角 θ 的点坐标定义为 x=cos θ 与 y=sin θ。",
+        "reason": "单位圆定义把角与坐标对应起来。"
+      },
+      {
+        "claim": "代回圆方程得到 cos²θ+sin²θ=1。",
+        "reason": "替换为三角函数，得到对所有实角成立的恒等式。"
+      },
+      {
+        "claim": "若 cos θ≠0，同除以 cos²θ 得 1+tan²θ=1/cos²θ。",
+        "reason": "除法条件需先成立，否则推导无定义。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "只由 sin²θ 求 sin θ 有正负分支，不能直接取正根。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "对任何角 θ，1+tan²θ=sec²θ 都可直接代入计算",
+        "example": "取 θ=π/2，cos θ=0，tan θ 在实数域未定义。",
+        "explanation": "该派生式必须排除 cos θ=0 的角。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "若 sinθ=3/5 且 θ 为第一象限角，求 cosθ。",
+        "steps": [
+          "由 sin²θ+cos²θ=1 得 cos²θ=16/25。",
+          "第一象限 cosθ>0，因此取正根。"
+        ],
+        "answer": "cosθ=4/5",
+        "check": "平方和为 9/25+16/25=1。"
+      },
+      {
+        "question": "若 cosθ=-1/2 且 θ 在第二象限，求 sinθ。",
+        "steps": [
+          "由恒等式 sin²θ=1-1/4=3/4。",
+          "第二象限正弦为正，选 √3/2。"
+        ],
+        "answer": "sinθ=√3/2",
+        "check": "同时满足平方和与第二象限符号约束。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "由平方等式开根号时漏掉符号",
+        "why_wrong": "cos²θ=r 并不唯一推出 cosθ=√r，必须结合象限。",
+        "repair_question": "给定象限后，根号前应该选什么符号？"
+      }
+    ],
+    "hint_ladder": [
+      "将三角函数理解为单位圆上的坐标。",
+      "先写出横纵坐标平方和等于什么。",
+      "开方与除法前分别检查象限和分母。"
+    ],
+    "transfer": {
+      "near": "已知 tanθ=-3/4 且 θ 在第二象限，求正弦余弦。",
+      "far": "用单位圆关系说明二维向量的单位化与几何夹角。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.trig.sum-angle",
+    "curriculum_ids": [
+      "HS-MATH-029",
+      "HS-MATH-030"
+    ],
+    "kind": "theorem",
+    "title": "正弦与余弦的和角公式",
+    "version": "1.0.0",
+    "notation": [
+      "sin(α+β)",
+      "cos(α+β)"
+    ],
+    "prerequisites": [
+      "单位圆、旋转矩阵"
+    ],
+    "definition": null,
+    "statement": "对于任意实角 α,β，cos(α+β)=cosα cosβ−sinα sinβ，sin(α+β)=sinα cosβ+cosα sinβ。",
+    "assumptions": [
+      "α,β∈R；三角函数按单位圆定义。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "绕原点旋转角 α 的平面线性映射对应矩阵 [[cosα,-sinα],[sinα,cosα]]。",
+        "reason": "矩阵两列分别是单位基向量旋转后的坐标，可由保距和保向验证。"
+      },
+      {
+        "claim": "点 (cosβ,sinβ) 再旋转 α 后为角 α+β 的单位圆点。",
+        "reason": "角的叠加对应旋转的复合。"
+      },
+      {
+        "claim": "矩阵与列向量相乘得到坐标 (cosα cosβ−sinα sinβ, sinα cosβ+cosα sinβ)。",
+        "reason": "分别匹配角 α+β 的横坐标和纵坐标即得两式。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "直接把 sin(α+β) 当作 sinα+sinβ 是错误的；角度单位需一致。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "sin(α+β)=sinα+sinβ 对所有实角成立",
+        "example": "取 α=β=π/2，左侧 sinπ=0，右侧 1+1=2。",
+        "explanation": "正弦不是关于角度加法的线性函数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 sin(π/3+π/6)。",
+        "steps": [
+          "用和角公式展开为 sinπ/3 cosπ/6+cosπ/3 sinπ/6。",
+          "代入 √3/2、√3/2、1/2、1/2，和为 1。"
+        ],
+        "answer": "1",
+        "check": "π/3+π/6=π/2，直接 sinπ/2=1 检查。"
+      },
+      {
+        "question": "求 cos(π/4+π/4)。",
+        "steps": [
+          "套 cos(a+b)=cos a cos b−sin a sin b。",
+          "结果 1/2−1/2=0。"
+        ],
+        "answer": "0",
+        "check": "两角和为 π/2，余弦为 0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "加角公式把 cos 的负号写成正号",
+        "why_wrong": "旋转复合的横坐标有交叉项负号，不能随意替换。",
+        "repair_question": "代入 α=β=π/2，是否还会符合 cosπ=-1？"
+      }
+    ],
+    "hint_ladder": [
+      "把问题中的角表示成两个已知特殊角之和。",
+      "区分横坐标余弦公式和纵坐标正弦公式。",
+      "带一个特殊角数值交叉检验正负号。"
+    ],
+    "transfer": {
+      "near": "计算 sin(75°) 并与 cos(15°) 比较。",
+      "far": "由旋转矩阵乘法导出多角复合时的可验证坐标变换。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.pythagorean"
+    ]
+  },
+  {
+    "id": "math.hs.vector.dot-product",
+    "curriculum_ids": [
+      "HS-MATH-034",
+      "HS-MATH-035"
+    ],
+    "kind": "theorem",
+    "title": "向量数量积与垂直判别",
+    "version": "1.0.0",
+    "notation": [
+      "a·b",
+      "|a|",
+      "cosθ"
+    ],
+    "prerequisites": [
+      "平面直角坐标",
+      "单位圆与正余弦",
+      "正交旋转"
+    ],
+    "definition": null,
+    "statement": "对两个非零平面向量 a=(a1,a2)、b=(b1,b2)，a·b=a1b1+a2b2=|a||b|cosθ（θ 为二者夹角）；a·b=0 当且仅当两非零向量垂直。",
+    "assumptions": [
+      "a,b 为非零平面向量，使用夹角定义时两向量模长必须非零。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "以坐标定义 a·b=a1b1+a2b2；旋转 R 的矩阵满足 RᵀR=I，因此 (Ra)·(Rb)=a·b。",
+        "reason": "二维旋转矩阵 [[cosφ,-sinφ],[sinφ,cosφ]] 直接相乘并用 sin²φ+cos²φ=1 验证 RᵀR=I。"
+      },
+      {
+        "claim": "选择正交旋转把非零 a 放到水平正向，则 a=(|a|,0)，b=(|b|cosθ,|b|sinθ)。",
+        "reason": "正交旋转保长度及夹角，并且两向量非零，所以方向与夹角 θ 都有定义。"
+      },
+      {
+        "claim": "在该坐标系，a·b=|a||b|cosθ；由旋转不变性，原坐标系同样成立。",
+        "reason": "数量积依坐标分量相乘相加，同时正交旋转保数量积。"
+      },
+      {
+        "claim": "当 a,b 都非零时，a·b=0 等价于 cosθ=0，即 θ=90°。",
+        "reason": "|a||b| 严格为正可相除，θ 在 0 到 π 的唯一余弦零点是 π/2。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "零向量的几何夹角未定义；不能由 0·b=0 断言与 b 垂直。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "凡是数量积为零的两向量一定有 90° 夹角",
+        "example": "取 a=(0,0)，b=(1,0)，数量积为 0 但零向量夹角未定义。",
+        "explanation": "垂直判别中的非零条件不能省略。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 a=(1,2)、b=(-2,1) 的夹角。",
+        "steps": [
+          "算数量积 1·(-2)+2·1=0。",
+          "两者非零，因此由垂直判别得到夹角。"
+        ],
+        "answer": "90°",
+        "check": "两向量模长均为 √5，不会违反非零条件。"
+      },
+      {
+        "question": "求 a=(3,4) 在 x 轴方向的标量投影。",
+        "steps": [
+          "单位 x 轴向量 e=(1,0)，投影长度的有向值是 a·e。",
+          "代入得到 3·1+4·0=3。"
+        ],
+        "answer": "3",
+        "check": "向量沿水平轴分量为 3，与坐标一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把零向量数量积为零误当成垂直判定",
+        "why_wrong": "几何夹角只为两个非零向量定义。",
+        "repair_question": "你已经检查两个向量的模是否都大于零了吗？"
+      }
+    ],
+    "hint_ladder": [
+      "写出两个向量的坐标。",
+      "计算点积并核对每个模长。",
+      "若点积为零，是否满足非零前提？"
+    ],
+    "transfer": {
+      "near": "讨论 a=(t,1), b=(1,-t) 的垂直关系。",
+      "far": "研究曲面切平面的法向量与梯度点积中的非零约束。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.pythagorean"
+    ]
+  }
+]

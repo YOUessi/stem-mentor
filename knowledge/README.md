@@ -50,3 +50,9 @@ cd ~/Documents/文件/stem-mentor
 - `knowledge/lessons/geometric-series-finite-sum-DRAFT.md`（仅一份试写示例，待教师审核、未接入RAG）
 
 正式上线以前仍需要内容授权、教师审校和真实学生身份/隐私流程。**不要上传受版权限制的教材全文，也不要把合成学生数据当成真实教学成果。**
+
+## 2026-11-03 新增：KB Batch01 深度教研草案（未上线学生端）
+
+以上清单记录的是 **2026-10-20 的旧版 v0.13 基线**；新分支 `feat/kb-batch01-scope-schema-depth` 新增了 **28 篇带结构化证明/解释、例题、反例、错因、提示及迁移的原创知识草案**，关联旧工程地图中的 42/113 条目（其余 71 个仍无深度草案）。28 篇均为 `REVIEW_PENDING`，教师审核通过数为 0，不能将内容草案或检查脚本通过视作教材验证。新内容在 `knowledge/deep/v1`，设计与接入边界见 [深度知识库 README](deep/README.md)。
+
+`scripts/build_kb_coverage.py --summary` 统计按必修、选择性必修、选修拓展分组，但旧 `选修拓展` 7 条尚未分配到官方选修 A–E，也**不代表完整课标的正式知识原子枚举**；请以 `curriculum/highschool_math/official_scope_v1.json` 和 `docs/evaluation/KB_COVERAGE_BATCH01.json` 查看剩余缺口。公开 API `/api/knowledge/depth/coverage` 仅提供数量，不开放未审教研证明与完整答案。
