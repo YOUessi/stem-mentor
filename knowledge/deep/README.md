@@ -30,3 +30,21 @@ cd backend && PYTHONPATH=. /path/to/python -m pytest -q tests/test_deep_knowledg
 - `backend/app/deep_knowledge.py` 采用 Pydantic 强类型和跨文档 ID 依赖检验，禁止缺条件、伪审校、无许可证、匿名完整解法及自相矛盾的知识连接。
 - `backend/tests/test_deep_knowledge_v1.py` 包含来源/权限/先修 DAG/审核/课程覆盖和受控代数恒等、概率边界、几何例题的负面测试。数值与符号测试只覆盖列出的特定结论，尚不能形式化验证 28 篇所有自然语言证明。
 - 下一批优先补全尚缺的 71 条工程映射内容，逐课标细化新原子条目，并为选修 A–E 建立真实的课题映射；当有教师身份与审核证据时再逐篇审校和解锁。
+
+
+## 2026-11-03 Batch04 增量（叠加 K07 数学证据 PR）
+
+这是在上文 **Batch01 的 28 篇冻结草案**基础上扩容的独立 Draft 工作分支，不是覆盖或重写历史计数。新增五个 `v1/*batch04.json` 文件，共 **58 篇**完整字段的原创草案；当前共 **86 篇**（46 条 theorem、37 条 concept、3 条 method），每篇至少两道教师侧例题、一个反例/非例、错因、提示阶梯和近远迁移；所有 `review.status=REVIEW_PENDING`，**教师审核 0**。新草案涉及函数/三角/向量、概率统计/建模、空间几何/圆锥曲线、选修工程拓展。
+
+**映射数量不代表全课标完备。** 当前 86 份草案与原有 113 个工程知识点全部存在关联（必修 61/61，选择性必修 45/45，旧「选修拓展」7/7）；我们另行初步标记 **23 个已知内容子能力缺口**，包括复数运算、导数几何意义、线面距离、表面积、概率独立、三角图像等。其余 90 个仍是未经专家审校的关联，不是 90 个确定合格的主题。7 条工程拓展不代表选修 A–E 完成。全部 113 个官方原子映射尚未经过真实教研审校，不能说全高中数学课程已完成。
+
+可复现保守审计：
+
+    PYTHONPATH=backend .venv/bin/python scripts/audit_kb_semantic_coverage.py --check
+    PYTHONPATH=backend .venv/bin/python scripts/audit_kb_semantic_coverage.py --summary
+
+交付记录：`knowledge/deep/semantic_gaps_batch04.json` 列出 23 个具体缺口及建议新知识 ID；`docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH04.json` 是 113 行自动审计快照；`scripts/audit_kb_semantic_coverage.py` 是 CI 校验门禁。`backend/tests/test_deep_batch04_worked_examples.py` 使用 **116 条**独立数值/几何点验算核对 58 篇新草案各两例，**不等于 116 个完整定理的形式化证明**。`backend/tests/test_kb_semantic_coverage_batch04.py` 检查篡改负例、审校边界和官方课标口径。
+
+此前 K07 冻结证据清单依旧只覆盖 **48 条指定子命题、链接 14 篇旧草案**，不能自动解释为 86 篇已证明。当前学生自由文本推导验证 0，完整自然语言定理形式证明 0，学生端未审稿可用知识 0。
+
+下一批优先补齐 23 个已知子能力缺口、完整官方选修 A–E 课程映射与受控内容，并完善每条定理的逐项证明义务及人工教研审校流程。学生端 RAG/API 在有真实审批以前必须继续拒绝未审证据。

@@ -1,0 +1,575 @@
+[
+  {
+    "id": "math.hs.extension.triangle-centers",
+    "curriculum_ids": [
+      "HS-MATH-107"
+    ],
+    "kind": "concept",
+    "title": "三角形重心、内心、外心、垂心与旁心的定义",
+    "version": "1.0.0",
+    "notation": [
+      "G=(A+B+C)/3",
+      "重心G",
+      "外心O",
+      "内心I"
+    ],
+    "prerequisites": [
+      "三角形中线、角平分线、垂直平分线、垂线"
+    ],
+    "definition": "非退化三角形的重心是三条中线交点；外心是三边垂直平分线交点、到三顶点距离相等；内心是三条内角平分线交点、到三边距离相等；垂心是三条高所在直线交点；旁心是一个内角平分线与另两角外角平分线的交点，通常有三个旁心。",
+    "statement": null,
+    "assumptions": [
+      "三角形三个顶点不共线；讨论边和角的平分线及垂线时使用欧氏几何。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "重心坐标公式来自三条中线的重心分点比 2:1，而不能把外心和重心混为一谈。",
+      "外心在锐角三角形内部、直角三角形斜边中点、钝角三角形外部；垂心的位置也随三角形形状变化。"
+    ],
+    "boundaries": [
+      "等边三角形几个中心重合是特殊对称情形；普通不等边三角形中各中心不同。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "所有三角形的外心都在三角形内部",
+        "example": "直角三角形顶点(0,0),(6,0),(0,8) 的外心为斜边中点(3,4)，位于边界。",
+        "explanation": "钝角三角形甚至外心在三角形外部。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "A=(0,0),B=(6,0),C=(0,6)，求重心。",
+        "steps": [
+          "三个顶点坐标分别取算术平均。",
+          "G=((0+6+0)/3,(0+0+6)/3)。"
+        ],
+        "answer": "G=(2,2)",
+        "check": "G 位于每条中线上，符合重心分点性质。"
+      },
+      {
+        "question": "直角三角形 A=(0,0),B=(6,0),C=(0,8)，求外心。",
+        "steps": [
+          "直角三角形外接圆以斜边 BC 为直径。",
+          "外心为斜边中点((6+0)/2,(0+8)/2)。"
+        ],
+        "answer": "O=(3,4)，半径5",
+        "check": "到 A、B、C 距离均为5。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把中线交点和边垂直平分线交点认为相同",
+        "why_wrong": "重心与外心分别来自不同几何约束，只在特殊图形重合。",
+        "repair_question": "等腰但非等边三角形重心与外心必相同吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先找是哪几类线段的交点。",
+      "重心利用中线，外心利用到顶点等距。",
+      "直角与钝角是否改变中心位置？"
+    ],
+    "transfer": {
+      "near": "求三角形 A=(0,0),B=(4,0),C=(0,3) 的重心和外心。",
+      "far": "从多传感器三点等距定位理解外接圆圆心的应用。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.triangle.sine-law"
+    ]
+  },
+  {
+    "id": "math.hs.extension.circle-polar",
+    "curriculum_ids": [
+      "HS-MATH-108"
+    ],
+    "kind": "theorem",
+    "title": "圆的极线、切点弦与切线公式的条件",
+    "version": "1.0.0",
+    "notation": [
+      "P·T=R²",
+      "ux+vy=R²"
+    ],
+    "prerequisites": [
+      "圆、向量数量积、曲线切线、点圆关系"
+    ],
+    "definition": null,
+    "statement": "给定圆 x²+y²=R²（R>0），对于非零点 P=(u,v)，定义其仿射极线为 ux+vy=R²。若 P 在圆上，此线就是该点处的切线；若 |P|>R，从 P 引圆的两条实切线，其切点 T 都位于该极线上；若 0<|P|<R，则极线与原圆没有实交点。",
+    "assumptions": [
+      "R>0，P≠(0,0)；所谓切点弦仅在 P 为圆外点时有两实切点。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "圆上任意点 T=(x₀,y₀) 满足 |T|²=R²，圆在 T 的切线法向量为 T，故切线是 T·X=R²。",
+        "reason": "圆的梯度 ∇(x²+y²−R²)=2T 非零，切线与半径正交。"
+      },
+      {
+        "claim": "若从外点 P 引切线且切点为 T，则 P 在该切线上，代入得到 P·T=R²。",
+        "reason": "所有真实切点都满足以 P 为系数的同一线性方程，因此位于极线。"
+      },
+      {
+        "claim": "当 |P|>R，极线到圆心距离 R²/|P|<R，故与圆有两交点；当 0<|P|<R 则距离>R 无交点。",
+        "reason": "极线的非零法向量是 P，使用圆与直线距离判据即可判定交点数。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "P=(0,0) 时 0=R² 不构成有限仿射直线；不得把极线当作存在的实切点弦。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意圆内点都有两条从该点引出的实切线",
+        "example": "单位圆内点 P=(1/2,0) 的极线 x=2，与单位圆没有交点。",
+        "explanation": "圆内点到圆周引不出实切线，不能套用圆外切点弦解释。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "单位圆外点 P=(2,0)，求切点弦所在的极线。",
+        "steps": [
+          "R=1,u=2,v=0，极线为2x=1。",
+          "求得 x=1/2，代入圆得 y=±√3/2。"
+        ],
+        "answer": "x=1/2；两切点(1/2,±√3/2)",
+        "check": "两个点均在单位圆且满足 P·T=1。"
+      },
+      {
+        "question": "单位圆上 P=(1,0)，求在该点处的切线。",
+        "steps": [
+          "P 在单位圆上且非零。",
+          "极线 ux+vy=1 变成 x=1。"
+        ],
+        "answer": "x=1",
+        "check": "切线经过(1,0)，垂直半径方向(1,0)。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把圆内点的极线解释为真实切点连线",
+        "why_wrong": "圆内点不存在从该点引出的实切线，虽可形式定义仿射极线。",
+        "repair_question": "该极线是否真正与圆有两个交点？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查 P 与圆心的距离。",
+      "写出圆上任意 T 的切线点积式。",
+      "P 是否位于这条切线上？"
+    ],
+    "transfer": {
+      "near": "半径2的圆与外点 P=(5,0) 的两切点弦。",
+      "far": "用极线对偶性辅助视觉场景里的圆锥曲线切线检验。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.circle-intersections",
+      "math.hs.vector.dot-product"
+    ]
+  },
+  {
+    "id": "math.hs.extension.polar-parameter",
+    "curriculum_ids": [
+      "HS-MATH-109"
+    ],
+    "kind": "concept",
+    "title": "参数方程与极坐标的坐标变换和非唯一性",
+    "version": "1.0.0",
+    "notation": [
+      "x=r cosθ",
+      "y=r sinθ",
+      "(x(t),y(t))"
+    ],
+    "prerequisites": [
+      "单位圆、正弦余弦、平面坐标"
+    ],
+    "definition": "平面参数曲线以实参数 t 给出坐标 (x(t),y(t))；极坐标约定 r≥0，角 θ 以弧度表示，同一点满足 x=r cosθ,y=r sinθ。对非原点，r=√(x²+y²)>0，角 θ 按2π整数倍相差表示同一点；原点的 θ 不唯一。",
+    "statement": null,
+    "assumptions": [
+      "使用同一二维正交坐标系并规定极径非负；参数定义域由题目明确指定。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "由直角三角形投影或单位圆坐标得到直角坐标与极坐标的正弦余弦关系。",
+      "参数化可能多对一，例如单位圆的 θ 与 θ+2π 等价；当 r=0 时任何角都映为原点。"
+    ],
+    "boundaries": [
+      "直角坐标反求 θ 必须结合象限，不能只取 arctan(y/x)；x=0 时普通比值甚至无定义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "由 x,y 唯一决定实数极角 θ",
+        "example": "点(1,0) 可由 θ=0、2π、−2π 等无限多个角表示。",
+        "explanation": "若不限定角区间，极角不唯一。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "极坐标 (r,θ)=(2,π/6)，求直角坐标。",
+        "steps": [
+          "x=2cos(π/6)=√3。",
+          "y=2sin(π/6)=1。"
+        ],
+        "answer": "(√3,1)",
+        "check": "长度 √(3+1)=2，且第一象限角为π/6。"
+      },
+      {
+        "question": "直角坐标 P=(-1,√3)，取 θ∈[0,2π)，求极坐标。",
+        "steps": [
+          "r=√(1+3)=2。",
+          "横负纵正处第二象限，参考角为π/3。"
+        ],
+        "answer": "(2,2π/3)",
+        "check": "2cos(2π/3)=-1，2sin(2π/3)=√3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "仅凭反正切主值忽略实际所在象限",
+        "why_wrong": "tanθ 相同的角差π，象限还需由 x、y 的符号决定。",
+        "repair_question": "当 x<0 且 y>0，角应该落在哪一象限？"
+      }
+    ],
+    "hint_ladder": [
+      "先用平方和确定极径。",
+      "再根据坐标正负决定象限。",
+      "角度范围是否规定为 [0,2π)？"
+    ],
+    "transfer": {
+      "near": "将参数式 x=cos t,y=sin t (0≤t<2π) 识别成单位圆。",
+      "far": "用极坐标表达雷达量测角度与距离，并处理角度回绕。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.pythagorean"
+    ]
+  },
+  {
+    "id": "math.hs.extension.quadratic-surfaces",
+    "curriculum_ids": [
+      "HS-MATH-110"
+    ],
+    "kind": "concept",
+    "title": "三维二次曲面典型标准形与有界性",
+    "version": "1.0.0",
+    "notation": [
+      "x²/a²+y²/b²+z²/c²=1",
+      "x²+y²−z²=1"
+    ],
+    "prerequisites": [
+      "空间坐标、椭圆双曲线、截面与二次方程"
+    ],
+    "definition": "三维二次曲面是满足三变量二次多项式方程的点集。标准椭球 x²/a²+y²/b²+z²/c²=1（a,b,c>0）有界；单叶双曲面 x²/a²+y²/b²−z²/c²=1 无界；还包括椭圆抛物面、双曲抛物面和可能退化的二次方程。",
+    "statement": null,
+    "assumptions": [
+      "标准形中的尺度参数严格为正，坐标系为三维正交坐标系。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "把各变量分别平方并与系数比较，截面 z=常数 可转成二维椭圆、双曲线或空集进行识别。",
+      "椭球每项非负且总和等于1，因此 |x|≤a、|y|≤b、|z|≤c；带负号的双曲面不能据此推出同样有界。"
+    ],
+    "boundaries": [
+      "把二次方程统称椭球是错误的；零参数或退化系数可能得到圆锥、平面或空集。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何由二次多项式定义的曲面都是有界的",
+        "example": "双曲面 x²+y²−z²=1 令 z=t 时可取 x=√(1+t²),y=0，t 任意大。",
+        "explanation": "负号项允许坐标无界，不能用椭球界限。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "椭球 x²/4+y²/9+z²/16=1 与坐标轴的交点。",
+        "steps": [
+          "分别令另两坐标为0。",
+          "解得 x=±2、y=±3、z=±4。"
+        ],
+        "answer": "(±2,0,0),(0,±3,0),(0,0,±4)",
+        "check": "所有交点代入原椭球方程均得1。"
+      },
+      {
+        "question": "单叶双曲面 x²+y²−z²=1 的 z=2 截面。",
+        "steps": [
+          "代入 z=2 得 x²+y²−4=1。",
+          "整理得 x²+y²=5。"
+        ],
+        "answer": "半径√5的圆",
+        "check": "允许 z 任意实数，截面半径随 |z| 变化。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忽略平方项的正负就把曲面当椭球",
+        "why_wrong": "符号决定截面和有界性质。",
+        "repair_question": "是否每一项都是非负且和为1？"
+      }
+    ],
+    "hint_ladder": [
+      "先查看 x²、y²、z² 各项的符号。",
+      "固定一个坐标求二维截面。",
+      "是否能给每个坐标推出统一的上界？"
+    ],
+    "transfer": {
+      "near": "识别 x²+y²=z 的抛物面上 z=4 的截面。",
+      "far": "借助二次曲面拟合机器人环境中的结构化三维形状。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.coordinate-distance",
+      "math.hs.geometry.hyperbola-foci"
+    ]
+  },
+  {
+    "id": "math.hs.extension.cross-product",
+    "curriculum_ids": [
+      "HS-MATH-112"
+    ],
+    "kind": "theorem",
+    "title": "空间向量外积的坐标公式与垂直、面积性质",
+    "version": "1.0.0",
+    "notation": [
+      "u×v=(u₂v₃−u₃v₂,u₃v₁−u₁v₃,u₁v₂−u₂v₁)",
+      "|u×v|=|u||v|sinθ"
+    ],
+    "prerequisites": [
+      "空间向量坐标、数量积、三角函数"
+    ],
+    "definition": null,
+    "statement": "在右手正交三维坐标系中，对 u=(u₁,u₂,u₃),v=(v₁,v₂,v₃)，外积 u×v 的三个坐标为 (u₂v₃−u₃v₂,u₃v₁−u₁v₃,u₁v₂−u₂v₁)，满足 (u×v)·u=(u×v)·v=0 以及 |u×v|²=|u|²|v|²−(u·v)²。",
+    "assumptions": [
+      "向量位于同一个右手正交单位坐标系；当谈及非零夹角 θ 时 u、v 均需非零。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "按右手坐标基底的有向面积运算展开 u×v 各分量，得到所述三个二阶行列式差。",
+        "reason": "基本方向满足 e₁×e₂=e₃、e₂×e₃=e₁、e₃×e₁=e₂，交换顺序取负。"
+      },
+      {
+        "claim": "将外积的三个分量分别乘以 u₁、u₂、u₃ 并相加，成对项互相抵消，故 (u×v)·u=0；对 v 同理。",
+        "reason": "展开显示每个 uᵢuⱼvₖ 项出现一次正号和一次负号，因此严格抵消。"
+      },
+      {
+        "claim": "外积三个分量平方相加并整理得 |u|²|v|²−(u·v)²。",
+        "reason": "这是三维拉格朗日恒等式，可直接由坐标平方和展开校验，非零时结合点积角公式得面积大小。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "两向量平行时外积为零；零向量没有唯一方向；右手坐标系改变朝向会改变外积符号约定。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "外积 u×v=0 一定说明 u、v 垂直",
+        "example": "u=(1,0,0),v=(2,0,0)，外积为0，但二者平行而不垂直。",
+        "explanation": "外积为0 表示线性相关或有零向量。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 (1,0,0)×(0,1,0)。",
+        "steps": [
+          "代入三个分量公式，第一第二分量都为0。",
+          "第三分量为1×1−0×0=1。"
+        ],
+        "answer": "(0,0,1)",
+        "check": "与两向量都垂直且符合右手法则。"
+      },
+      {
+        "question": "计算 (1,2,3)×(2,4,6)。",
+        "steps": [
+          "第二向量是第一向量的2倍。",
+          "各二阶行列式差相等为0。"
+        ],
+        "answer": "(0,0,0)",
+        "check": "平行向量张成的平行四边形面积为0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "用零外积来判断两向量垂直",
+        "why_wrong": "外积模表示张成面积，平行向量面积为0。",
+        "repair_question": "若想判断垂直，应该核对哪个乘积等于0？"
+      }
+    ],
+    "hint_ladder": [
+      "先确认坐标系约定为右手系。",
+      "按分量计算三个二阶行列式差。",
+      "外积结果与原向量的点积是否为0？"
+    ],
+    "transfer": {
+      "near": "计算 u=(1,2,0),v=(0,0,3) 的外积和面积。",
+      "far": "用外积构造三维网格表面法向量和几何碰撞朝向。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.coordinate-distance"
+    ]
+  },
+  {
+    "id": "math.hs.extension.algorithm-invariant",
+    "curriculum_ids": [
+      "HS-MATH-113"
+    ],
+    "kind": "theorem",
+    "title": "欧几里得算法的最大公约数不变式与终止性",
+    "version": "1.0.0",
+    "notation": [
+      "gcd(a,b)=gcd(b,a mod b)",
+      "a=qb+r"
+    ],
+    "prerequisites": [
+      "整数除法算法、整除性、良序原理"
+    ],
+    "definition": null,
+    "statement": "对非负整数 a,b（不同时为0），当 b>0 时写 a=qb+r 且 0≤r<b，则 gcd(a,b)=gcd(b,r)。反复将 (a,b) 替换为 (b,r)，因第二分量严格递减为非负整数，最终在 b=0 时终止，并返回 gcd(a,0)=a。",
+    "assumptions": [
+      "a,b 为非负整数，不同时为0；每步除数 b>0，取合法欧几里得余数0≤r<b。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "整数 d 同时整除 a、b，当且仅当 d 同时整除 b 和 r=a−qb。",
+        "reason": "整除关系在整数线性组合下封闭，反向由 a=qb+r 恢复。"
+      },
+      {
+        "claim": "因此 (a,b) 与 (b,r) 的全部正公约数集合相同，最大公约数也相同。",
+        "reason": "每轮保持不变式 gcd(a,b)=gcd(b,r)，算法执行不会改变目标值。"
+      },
+      {
+        "claim": "每次新除数 r 满足 0≤r<b，所以严格下降的非负整数序列不可能无限进行。",
+        "reason": "非负整数良序原理保证下降过程有限步终止。"
+      },
+      {
+        "claim": "在 b=0 时，所有能整除 a 的正整数的最大值就是 a（a>0），返回 a 为原输入的 gcd。",
+        "reason": "终止状态的 gcd 可直接计算，并由不变式传回每一个先前状态。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "输入 (0,0) 的 gcd 通常不按这个正公约数定义唯一给定，算法应显式拒绝或采用注明的约定。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "欧几里得算法允许除数 b=0 时继续计算 a mod b",
+        "example": "当 b=0 时取余运算没有定义；应直接返回 a 而不是继续执行。",
+        "explanation": "终止条件是当前第二分量为0，不是继续做除法。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "用欧几里得算法求 gcd(48,18)。",
+        "steps": [
+          "48=2×18+12；18=1×12+6。",
+          "12=2×6+0，取最后非零余数6。"
+        ],
+        "answer": "gcd(48,18)=6",
+        "check": "6 能整除48、18，且算法不变式保留全部公约数。"
+      },
+      {
+        "question": "用欧几里得算法求 gcd(21,14)。",
+        "steps": [
+          "21=1×14+7。",
+          "14=2×7+0，返回7。"
+        ],
+        "answer": "gcd(21,14)=7",
+        "check": "7 是21、14 的最大共同正因数。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忽略除数为零仍强行求余",
+        "why_wrong": "取余要求除数非零，算法必须先进行终止判断。",
+        "repair_question": "余数何时变成0，应该返回哪个数？"
+      }
+    ],
+    "hint_ladder": [
+      "先写出合法带余除法等式。",
+      "两个整数的公约数集合是否在一步转换后保持不变？",
+      "第二个数如何确保算法最终终止？"
+    ],
+    "transfer": {
+      "near": "求 gcd(105,63) 并记录每轮余数。",
+      "far": "用循环不变式解释二分查找及程序终止性证明结构。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.proof.induction"
+    ]
+  }
+]

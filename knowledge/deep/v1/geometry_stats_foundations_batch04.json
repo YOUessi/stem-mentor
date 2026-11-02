@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "math.hs.triangle.ssa-two-solutions",
+    "curriculum_ids": [
+      "HS-MATH-038"
+    ],
+    "kind": "theorem",
+    "title": "SSA 条件下三角形存在性与两解筛选",
+    "version": "1.0.0",
+    "notation": [
+      "sin B=(b/a)sin A",
+      "A+B<π"
+    ],
+    "prerequisites": [
+      "正弦定理、反正弦双值、三角形内角和"
+    ],
+    "definition": null,
+    "statement": "给定非退化三角形候选中已知 A∈(0,π)、其对边 a>0、另一边 b>0，令 s=b sin A/a。若 s>1 则无解；若 0<s≤1，则候选角 B 为 arcsin s 与 π−arcsin s（s=1 时两者相同），仅保留满足 A+B<π 的候选，剩余角 C=π−A−B>0 才对应有效三角形。",
+    "assumptions": [
+      "已知的是角 A、对边 a 及另一边 b（非夹角），且 A 在 (0,π)。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "任意合法三角形的正弦定理给出 a/sinA=b/sinB，从而 sinB=b sinA/a=s。",
+        "reason": "由于 a>0 且 sinA>0，s 为正；内角 B∈(0,π) 则 sinB≤1。"
+      },
+      {
+        "claim": "若 s>1，正弦在内角范围不可能达到该值；若 0<s<1，B 有主角与补角两个候选。",
+        "reason": "正弦函数在 (0,π) 关于 π/2 对称，两个角可能具有相同正弦。"
+      },
+      {
+        "claim": "仅当候选满足 A+B<π，第三内角 C=π−A−B 才严格为正。",
+        "reason": "非退化三角形三个内角严格为正且总和等于 π。"
+      },
+      {
+        "claim": "对每个保留的 B，采用正弦定理可确定其余边长，满足正边长与内角和条件。",
+        "reason": "在指定一个边长及所有内角后，三角形由 ASA/AAS 条件唯一确定到全等。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "当 s=1 两候选相同；A 为钝角时大角对最大边，不能误判存在第二解。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "已知 SSA 一定只能得到一个三角形",
+        "example": "A=30°，a=1，b=1.5，此时 sinB=3/4，B≈48.59° 或 131.41° 都使 A+B<180°。",
+        "explanation": "正弦值对应两个补角，需要逐一筛选第三角。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "A=30°，a=1，b=3/2，有几个三角形？",
+        "steps": [
+          "计算 s=(3/2)(1/2)/1=3/4。",
+          "B 候选约48.59°、131.41°，与 A 相加均小于180°。"
+        ],
+        "answer": "有两个非全等的三角形",
+        "check": "第三角分别约101.41°与18.59°，均为正。"
+      },
+      {
+        "question": "A=30°，a=4，b=4，求可行 B。",
+        "steps": [
+          "sinB=(4/4)sin30°=1/2。",
+          "候选30°与150°；第二候选令第三角为0，不合法。"
+        ],
+        "answer": "仅 B=30°",
+        "check": "A+B=60° 且 C=120°>0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只取 arcsin 的主值",
+        "why_wrong": "数学内角可能取主值的补角，且第三角筛选决定是否有效。",
+        "repair_question": "B 的补角是否也使 A+B<180°？"
+      }
+    ],
+    "hint_ladder": [
+      "先确定 a 是否与已知 A 对边对应。",
+      "算 s 并与1比较。",
+      "把每个 B 候选分别代入 A+B<π。"
+    ],
+    "transfer": {
+      "near": "A=40°，a=5，b=7 时有几个有效三角形？",
+      "far": "把多解约束用于机器人三角定位时识别镜像几何构型。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.triangle.sine-law"
+    ]
+  },
+  {
+    "id": "math.hs.triangle.area-sine",
+    "curriculum_ids": [
+      "HS-MATH-039"
+    ],
+    "kind": "theorem",
+    "title": "两边及其夹角决定三角形面积",
+    "version": "1.0.0",
+    "notation": [
+      "S=ab sin C/2",
+      "S>0"
+    ],
+    "prerequisites": [
+      "三角形高、正弦、三角形面积"
+    ],
+    "definition": null,
+    "statement": "在非退化欧氏三角形中，若边 a、b>0 及其夹角 C∈(0,π) 已知，则面积 S=(1/2)ab sin C。只有与所选两边相邻的夹角才能直接用于这一个乘积形式。",
+    "assumptions": [
+      "a,b 必须来自同一顶点的两条边；C 是 a、b 的夹角，0<C<π。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "取边 a 为底，并从另一边 b 的末端向 a 所在直线作垂线，垂线长度 h=b sin C。",
+        "reason": "直角三角形中正弦定义给垂线长度；钝角时取到延长线，sinC 仍为正。"
+      },
+      {
+        "claim": "三角形面积是底乘高的一半，因此 S=(1/2)a·h。",
+        "reason": "底与对应高均是非负长度，非退化时高严格为正。"
+      },
+      {
+        "claim": "把 h=b sin C 代入，得到 S=(1/2)ab sin C，并与换底计算结果一致。",
+        "reason": "代入使用的是所给两边的真实夹角，不可任取第三角。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "夹角 C=0 或 π 时图形退化为共线段，面积为0，不满足非退化三角形条件。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要两条边和任意一个角就能用 ab sinθ/2",
+        "example": "三角形中给出 AB=3、AC=4 却用 B 角代入，B 一般不是 AB 与 AC 的夹角。",
+        "explanation": "必须选两边夹角 A，否则计算的高不正确。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "两边长 3、4，夹角 30°，求面积。",
+        "steps": [
+          "代入 S=(1/2)·3·4·sin30°。",
+          "sin30°=1/2。"
+        ],
+        "answer": "S=3",
+        "check": "底3高4sin30°=2，面积确为3。"
+      },
+      {
+        "question": "两边长 5、6，夹角 120°，求面积。",
+        "steps": [
+          "钝角下高为 6sin120°=3√3。",
+          "S=(1/2)·5·6·(√3/2)。"
+        ],
+        "answer": "S=15√3/2",
+        "check": "钝角正弦为正，面积不能是负数。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把非夹角代入公式的常见误解",
+        "why_wrong": "公式中的正弦用于投影出对应于所选底边的高。",
+        "repair_question": "两条给定边在何顶点相交？"
+      }
+    ],
+    "hint_ladder": [
+      "标出用作底和斜边的两条线段。",
+      "它们所夹的角是哪一个？",
+      "高与斜边长的正弦关系是什么？"
+    ],
+    "transfer": {
+      "near": "已知 a=8,b=5,夹角150°，求面积。",
+      "far": "从向量叉积面积公式理解空间中三角形面积的推广。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.triangle.sine-law"
+    ]
+  },
+  {
+    "id": "math.hs.probability.event-addition",
+    "curriculum_ids": [
+      "HS-MATH-051",
+      "HS-MATH-053"
+    ],
+    "kind": "theorem",
+    "title": "概率加法公式、互斥事件与对立事件",
+    "version": "1.0.0",
+    "notation": [
+      "P(A∪B)=P(A)+P(B)-P(A∩B)",
+      "P(Aᶜ)=1-P(A)"
+    ],
+    "prerequisites": [
+      "样本空间与事件、概率公理、集合交并"
+    ],
+    "definition": null,
+    "statement": "在同一概率空间上，任意事件 A,B 满足 P(A∪B)=P(A)+P(B)−P(A∩B)。若 A∩B=∅ 为互斥事件，公式简化为 P(A∪B)=P(A)+P(B)；事件 A 的对立事件 Aᶜ 满足 P(Aᶜ)=1−P(A)。",
+    "assumptions": [
+      "A 与 B 属于同一概率空间，概率满足可加性；Aᶜ 是相对于样本空间 Ω 的补集。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "将 A∪B 分割为互不相交的 A 和 B\\A 两部分。",
+        "reason": "两个集合不交，概率有限可加性给 P(A∪B)=P(A)+P(B\\A)。"
+      },
+      {
+        "claim": "将 B 分割为 B\\A 和 A∩B，得 P(B)=P(B\\A)+P(A∩B)。",
+        "reason": "两部分互斥且并集为 B，所以可使用同一可加公理。"
+      },
+      {
+        "claim": "代入消去 P(B\\A)，得到加法公式。",
+        "reason": "普通代数移项，不需要假设 A 与 B 独立。"
+      },
+      {
+        "claim": "因为 A∪Aᶜ=Ω 且 A∩Aᶜ=∅，有 P(A)+P(Aᶜ)=P(Ω)=1。",
+        "reason": "对立事件构成样本空间的两部分，故概率和为1。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "互斥不等于独立；当 P(A),P(B)>0 时互斥事件一般不独立。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "所有事件都可以把概率直接相加",
+        "example": "掷骰子 A={2,4,6}，B={4,5,6}，P(A)=1/2，P(B)=1/2，但交集有2个点，P(A∪B)=2/3。",
+        "explanation": "必须减去重复计算的交集概率。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "等可能掷骰子，A={2,4,6}，B={4,5,6}，求 P(A∪B)。",
+        "steps": [
+          "P(A)=3/6、P(B)=3/6、P(A∩B)=2/6。",
+          "按加法公式相加再扣掉交集。"
+        ],
+        "answer": "P(A∪B)=4/6=2/3",
+        "check": "事件并集为 {2,4,5,6}，确为4个结果。"
+      },
+      {
+        "question": "若事件 A 的概率为 0.35，求其对立事件概率。",
+        "steps": [
+          "A 与 Aᶜ 互斥且并成全集。",
+          "利用 P(Aᶜ)=1−P(A)。"
+        ],
+        "answer": "0.65",
+        "check": "0.35+0.65=1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "误把互斥与独立当同义词",
+        "why_wrong": "互斥指不能同时发生，独立指交集概率等于边缘概率的乘积。",
+        "repair_question": "两个正概率且互斥的事件能独立吗？"
+      }
+    ],
+    "hint_ladder": [
+      "画出事件的交集部分。",
+      "哪些概率被加了两次？",
+      "互斥情况中哪一项为零？"
+    ],
+    "transfer": {
+      "near": "计算两张抽奖券中奖事件有重叠时的并集概率。",
+      "far": "通过逻辑包含-排除处理两个传感器触发的联合报警风险。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.laplace"
+    ]
+  },
+  {
+    "id": "math.hs.statistics.sampling",
+    "curriculum_ids": [
+      "HS-MATH-054"
+    ],
+    "kind": "concept",
+    "title": "总体、样本、抽样偏差与简单随机抽样",
+    "version": "1.0.0",
+    "notation": [
+      "总体 N",
+      "样本 n",
+      "E[X̄]=μ"
+    ],
+    "prerequisites": [
+      "总体与样本、平均数、概率与随机性"
+    ],
+    "definition": "统计总体是研究目标所涉及的完整个体集合，样本是从总体中按抽样方案取得的部分个体；简单随机不放回抽样要求所有大小为 n 的样本子集具有相同被选中概率。抽样随机不能消除测量误差与非应答偏差。",
+    "statement": null,
+    "assumptions": [
+      "须事先界定总体、抽样框、变量、样本量和是否允许放回。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "明确调查结论所针对的目标总体，辨认抽样框是否覆盖它。",
+      "等概率不放回抽样强调每个 n 元子集等概率，但这不能保证某一次样本均值恰好等于总体均值。"
+    ],
+    "boundaries": [
+      "便利样本不是简单随机样本；抽样框漏掉群体会影响代表性。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要样本量大就不会产生选择偏差",
+        "example": "在校园门口调查全市老年人运动习惯，无论询问多少学生都无法补足老年人覆盖。",
+        "explanation": "样本量不能修复抽样框系统性遗漏。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "从编号1至10的十人中等概率抽3人，不放回，共有多少无序样本？",
+        "steps": [
+          "每个样本是不重复的三个编号集合。",
+          "组合数 C(10,3)=10·9·8/(3·2·1)。"
+        ],
+        "answer": "120 种等可能无序样本",
+        "check": "不考虑抽取顺序，每个三人集合只计一次。"
+      },
+      {
+        "question": "总体身高为[150,160,170,180]，抽取前两人作便利样本，样本均值与总体均值分别是多少？",
+        "steps": [
+          "便利样本[150,160] 平均为155。",
+          "总体四人平均为(150+160+170+180)/4=165。"
+        ],
+        "answer": "样本155；总体165",
+        "check": "差异反映此样本并非总体均值的必然值。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "以大样本替代合理抽样设计",
+        "why_wrong": "样本量影响随机误差，不自动消除系统偏差。",
+        "repair_question": "抽样框是否覆盖你要推断的人群？"
+      }
+    ],
+    "hint_ladder": [
+      "你究竟要研究哪些人或物？",
+      "哪些对象有机会被抽中？",
+      "抽样方式是否引入了系统性排除？"
+    ],
+    "transfer": {
+      "near": "为学校不同年级的睡眠调查设计分层随机抽样。",
+      "far": "解释机器学习训练数据中抽样偏差造成的分布外泛化失败。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.statistics.variance"
+    ]
+  },
+  {
+    "id": "math.hs.statistics.histogram",
+    "curriculum_ids": [
+      "HS-MATH-055"
+    ],
+    "kind": "concept",
+    "title": "频率直方图的组宽、面积与频率密度",
+    "version": "1.0.0",
+    "notation": [
+      "组频率=组频数/n",
+      "矩形高度=组频率/组宽"
+    ],
+    "prerequisites": [
+      "频数、频率、区间、面积"
+    ],
+    "definition": "对数值样本分组时，频数为落入每组的观测数量，频率=频数/样本量；在频率直方图中，以组距为横轴宽度，柱高定义为频率密度=该组频率/组距，使每个矩形面积恰为该组频率。",
+    "statement": null,
+    "assumptions": [
+      "组区间互不重叠并覆盖观测数据；必须说明端点归属；组宽严格为正。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先确定各组的实际组宽和人数，再计算总数 n 与每组频率。",
+      "高度是频率密度而非频数；尤其当组宽不等时，要通过柱面积而非柱高比较各组概率份额。"
+    ],
+    "boundaries": [
+      "不等组宽下柱高不能直接代表频率，且直方图与分类条形图不同。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "直方图最高的柱必然有最多的数据",
+        "example": "两组频率分别0.3、0.5，组宽分别1、5，柱高0.3与0.1，第一组更高但频率更低。",
+        "explanation": "频率用柱面积，高度是频率密度。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "100人中组 [0,2) 有30人，求直方图柱高。",
+        "steps": [
+          "组频率为30/100=0.3。",
+          "组宽为2，密度=0.3/2。"
+        ],
+        "answer": "柱高0.15",
+        "check": "矩形面积0.15×2=0.30，恰等于组频率。"
+      },
+      {
+        "question": "两组宽度1和4，频率0.2和0.8，比较频率密度。",
+        "steps": [
+          "第一组柱高0.2/1=0.2。",
+          "第二组柱高0.8/4=0.2。"
+        ],
+        "answer": "柱高相同，频率不同",
+        "check": "第二组宽度四倍，面积也为第一组四倍。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "直接读柱高为比例的常见误解",
+        "why_wrong": "只有各组组宽相同时柱高才能与频率成同一比例。",
+        "repair_question": "若组宽不同，如何通过面积恢复频率？"
+      }
+    ],
+    "hint_ladder": [
+      "先读每组的组宽。",
+      "确定柱高还是柱面积表示频率。",
+      "所有柱面积相加应等于多少？"
+    ],
+    "transfer": {
+      "near": "为组宽 1、2、3 的三组频率设计合法直方图。",
+      "far": "用概率密度与区间积分的关系理解连续统计分布。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.statistics.variance"
+    ]
+  },
+  {
+    "id": "math.hs.statistics.percentiles",
+    "curriculum_ids": [
+      "HS-MATH-058"
+    ],
+    "kind": "concept",
+    "title": "经验分位数、百分位与样本估计的约定",
+    "version": "1.0.0",
+    "notation": [
+      "Fₙ(t)=(1/n)∑1{xᵢ≤t}",
+      "Qₚ=inf{t:Fₙ(t)≥p}"
+    ],
+    "prerequisites": [
+      "有序数据、频数与累计频率、排序"
+    ],
+    "definition": "给定实数样本 x₁,…,xₙ，经验分布函数 Fₙ(t)=样本中不大于 t 的数目/n。采用左连续广义逆的约定，经验 p 分位数 Qₚ=inf{t:Fₙ(t)≥p}（0<p≤1），即按升序排列的第 ceil(np) 个数据值。不同统计软件可能采用插值分位数定义，必须注明口径。",
+    "statement": null,
+    "assumptions": [
+      "n≥1，样本可排序；当前使用经验分布阶梯型（最近秩）定义，不是插值算法。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先将样本升序排列，记录每个观测值累计占比。",
+      "寻找第一次满足累计占比至少为 p 的观测值；不同分位数约定的计算结果可能不同。"
+    ],
+    "boundaries": [
+      "p=0 的分位数需要单独约定；相同数据在多种分位数算法下可能得到不同数值。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何统计软件的样本 25% 分位数都一致",
+        "example": "数据[1,2,3,4] 采用最近秩约定得到 Q0.25=1，但某些线性插值方案可给出1.75。",
+        "explanation": "经验分位数定义有多种，必须提供计算约定。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "按最近秩法求样本[2,4,6,8,10]的 60% 分位数。",
+        "steps": [
+          "n=5，ceil(0.6n)=ceil3=3。",
+          "升序排列第3个观测值是6。"
+        ],
+        "answer": "Q₀.₆=6",
+        "check": "Fₙ(6)=3/5=0.6，低于6 的累计频率只有2/5。"
+      },
+      {
+        "question": "按最近秩法求样本[1,2,3,4]的 75% 分位数。",
+        "steps": [
+          "n=4，ceil(0.75×4)=3。",
+          "升序第3个观测值为3。"
+        ],
+        "answer": "Q₀.₇₅=3",
+        "check": "Fₙ(3)=3/4 且在3之前累计频率小于3/4。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不同分位数软件差异当作算错",
+        "why_wrong": "分位数插值方式各异，结果依赖具体算法。",
+        "repair_question": "本题是否说明使用最近秩还是线性插值？"
+      }
+    ],
+    "hint_ladder": [
+      "先把数据排序并写出 n。",
+      "根据给定定义算 ceil(np)。",
+      "题目是否规定插值约定？"
+    ],
+    "transfer": {
+      "near": "样本[1,1,2,7,9,10] 按最近秩法求中位数和 80% 分位数。",
+      "far": "解释模型性能报告中的 P95 延迟及其样本算法约定。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.statistics.variance"
+    ]
+  },
+  {
+    "id": "math.hs.sequence.recurrence",
+    "curriculum_ids": [
+      "HS-MATH-062"
+    ],
+    "kind": "concept",
+    "title": "数列的递推定义与初始条件不可缺失",
+    "version": "1.0.0",
+    "notation": [
+      "aₙ₊₁=F(n,aₙ)",
+      "a₁"
+    ],
+    "prerequisites": [
+      "函数、正整数索引、等差和等比数列"
+    ],
+    "definition": "数列是以正整数为索引的函数。递推定义通常给出一个或多个初始项以及下一项与先前项的关系；若缺少足够初始条件，同一递推式可以对应无穷多个数列。递推法并不保证通项公式容易写出。",
+    "statement": null,
+    "assumptions": [
+      "索引从正整数开始；递推的每个下一项必须在所需先前项已有定义时计算。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "一阶递推 aₙ₊₁=F(n,aₙ) 配合 a₁ 通常能逐项求出以后所有项。",
+      "二阶递推可能需要两个初始值；不能把每一项看成独立可自由选取而同时满足关系。"
+    ],
+    "boundaries": [
+      "分母递推可能在某一项出现零而中断；初值越界也可能使递推无意义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只给 aₙ₊₁=aₙ+3 就能唯一确定数列",
+        "example": "a₁=0 得0,3,6,…，a₁=5 得5,8,11,…，两者都满足递推。",
+        "explanation": "缺少首项时有一族不同解。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "a₁=2, aₙ₊₁=aₙ+3，求 a₄。",
+        "steps": [
+          "递推得到 a₂=5、a₃=8。",
+          "继续得 a₄=11。"
+        ],
+        "answer": "11",
+        "check": "等差通项 aₙ=2+3(n-1)，取 n=4 也为11。"
+      },
+      {
+        "question": "a₁=1,a₂=1,aₙ₊₂=aₙ₊₁+aₙ，求 a₅。",
+        "steps": [
+          "由两初值得 a₃=2、a₄=3。",
+          "继续 a₅=a₄+a₃。"
+        ],
+        "answer": "5",
+        "check": "二阶递推确实使用前面两项，未丢失初值。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "给二阶递推只设一个初值",
+        "why_wrong": "二阶关系不能独立确定第二项。",
+        "repair_question": "如果 a₂ 改为2，后续数列会怎样变化？"
+      }
+    ],
+    "hint_ladder": [
+      "递推需要回看几项？",
+      "已知初项数量够吗？",
+      "把前几项实际算出，再尝试猜通项。"
+    ],
+    "transfer": {
+      "near": "讨论 a₁=2，aₙ₊₁=2aₙ 的前五项和通项。",
+      "far": "把库存迭代和马尔可夫转移写为带初态的动态系统。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.sequence.arithmetic-sum"
+    ]
+  },
+  {
+    "id": "math.hs.geometry.line-equation",
+    "curriculum_ids": [
+      "HS-MATH-080",
+      "HS-MATH-081"
+    ],
+    "kind": "theorem",
+    "title": "平面直线方向向量和一般方程",
+    "version": "1.0.0",
+    "notation": [
+      "a(x-x₀)+b(y-y₀)=0",
+      "ax+by+c=0"
+    ],
+    "prerequisites": [
+      "点坐标、向量、线性方程"
+    ],
+    "definition": null,
+    "statement": "给定平面点 P₀=(x₀,y₀) 与非零法向量 n=(a,b)，通过 P₀ 且以 n 为法向量的唯一直线满足 a(x−x₀)+b(y−y₀)=0；展开为一般式 ax+by+c=0，其中 a²+b²>0，c=−ax₀−by₀。",
+    "assumptions": [
+      "固定正交平面坐标系，法向量 (a,b)≠(0,0)。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "直线上任意点 P=(x,y) 的位移向量 P₀P=(x−x₀,y−y₀) 沿直线方向。",
+        "reason": "位移与直线法向量应垂直，数量积 n·P₀P 为零。"
+      },
+      {
+        "claim": "把数量积展开，得到 a(x−x₀)+b(y−y₀)=0。",
+        "reason": "垂直向量的数量积为零，且 n 非零限定一维线性解集。"
+      },
+      {
+        "claim": "反过来任一点满足这个方程，其位移与 n 垂直，必落在过 P₀ 且法向量为 n 的直线上。",
+        "reason": "在二维空间中，与非零向量垂直的位移构成唯一的一维方向。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "当 a=b=0 时方程可能表示整个平面或空集，不能再称为直线；斜率式不能覆盖竖直直线。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何直线都可以写成 y=kx+b",
+        "example": "直线 x=2 是竖直线，斜率不存在，无法用有限实数 k 表示。",
+        "explanation": "一般式 ax+by+c=0 在法向量非零时覆盖竖直线。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求过(1,2)且法向量(2,-1)的直线方程。",
+        "steps": [
+          "代入 2(x-1)−(y-2)=0。",
+          "展开得到 2x-y=0。"
+        ],
+        "answer": "2x-y=0",
+        "check": "点(1,2)代入左边为0，法向量系数正确。"
+      },
+      {
+        "question": "求过(3,-1)的竖直直线方程。",
+        "steps": [
+          "竖直方向向量为(0,1)，可取法向量(1,0)。",
+          "代入 x-3=0。"
+        ],
+        "answer": "x=3",
+        "check": "无论 y 取何值 x 都固定等于3，包含指定点。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把所有直线都强行写为斜截式",
+        "why_wrong": "斜率不存在的竖直线必须用一般式或 x=常数 表达。",
+        "repair_question": "x=3 对应的法向量是多少？"
+      }
+    ],
+    "hint_ladder": [
+      "优先找经过的点和法向量。",
+      "位移向量与法向量的数量积应满足什么？",
+      "是否有竖直线导致斜率不存在？"
+    ],
+    "transfer": {
+      "near": "求过(2,0)和(2,5)的直线一般式。",
+      "far": "在图像边界拟合中用法向量形式表示任意方向的边缘。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.vector.free-coordinates"
+    ]
+  },
+  {
+    "id": "math.hs.geometry.line-relations",
+    "curriculum_ids": [
+      "HS-MATH-082"
+    ],
+    "kind": "theorem",
+    "title": "平面直线平行方向与垂直方向的向量判据",
+    "version": "1.0.0",
+    "notation": [
+      "a₁b₂−a₂b₁=0",
+      "a₁a₂+b₁b₂=0"
+    ],
+    "prerequisites": [
+      "平面直线一般方程、数量积、二维行列式"
+    ],
+    "definition": null,
+    "statement": "两条有效直线 Lᵢ:aᵢx+bᵢy+cᵢ=0（aᵢ²+bᵢ²>0）方向平行或重合当且仅当 a₁b₂−a₂b₁=0；它们方向垂直当且仅当 a₁a₂+b₁b₂=0。平行判据包含重合的特例，若要判两条不同的平行直线还需检查常数项。",
+    "assumptions": [
+      "两条直线的法向量均非零；平行方向关系与两直线是否重合分开讨论。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "每条直线的法向量为 nᵢ=(aᵢ,bᵢ)，方向向量可取 dᵢ=(-bᵢ,aᵢ)。",
+        "reason": "一般式的非零系数提供非零法向量，旋转90°可得方向向量。"
+      },
+      {
+        "claim": "两个方向向量线性相关当且仅当二维行列式为零，等价 a₁b₂−a₂b₁=0。",
+        "reason": "非零二维向量平行的充要条件是对应 2×2 行列式为零。"
+      },
+      {
+        "claim": "方向向量互相垂直当且仅当 d₁·d₂=b₁b₂+a₁a₂=0。",
+        "reason": "非零向量垂直当且仅当数量积为零，旋转不会改变夹角。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "重合直线也有平行方向；用 k₁k₂=-1 判断垂直必须两条斜率都存在。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "平行判据为零说明两条直线一定不同且没有交点",
+        "example": "L₁:x+y=1，L₂:2x+2y=2 方向平行但其实是同一条直线。",
+        "explanation": "方向判据不能替代常数项比例的重合检验。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "判断 x+y=1 与 x+y=2 的位置关系。",
+        "steps": [
+          "两个法向量均为(1,1)，方向相同。",
+          "常数项不同，方程组不能同时满足。"
+        ],
+        "answer": "两条不同的平行直线",
+        "check": "等式右边不同且同一左边，不存在公共点。"
+      },
+      {
+        "question": "判断 x+y=0 与 x-y=0 是否垂直。",
+        "steps": [
+          "法向量分别为(1,1),(1,-1)。",
+          "点积1−1=0。"
+        ],
+        "answer": "互相垂直",
+        "check": "对应方向向量(−1,1),(1,1)点积也为0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "用两条斜率乘积 -1 判断竖直线与水平线",
+        "why_wrong": "竖直线的斜率不存在，不能带入斜率乘积公式。",
+        "repair_question": "法向量点积是否仍然可用？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查两条直线的 (a,b) 是否非零。",
+      "用行列式判断方向平行，再检查是否重合。",
+      "用法向量点积判断直线是否垂直。"
+    ],
+    "transfer": {
+      "near": "区分 2x-y+1=0 与 4x-2y+2=0 是重合还是不同平行。",
+      "far": "利用摄像头检测的直线法向量判断墙体两条边是否近似正交。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.line-equation",
+      "math.hs.vector.dot-product"
+    ]
+  },
+  {
+    "id": "math.hs.geometry.point-line-distance",
+    "curriculum_ids": [
+      "HS-MATH-083"
+    ],
+    "kind": "theorem",
+    "title": "点到平面直线距离公式及法向量投影",
+    "version": "1.0.0",
+    "notation": [
+      "d=|ax₀+by₀+c|/√(a²+b²)"
+    ],
+    "prerequisites": [
+      "平面直线一般方程、向量投影、勾股定理"
+    ],
+    "definition": null,
+    "statement": "若有效直线 L:ax+by+c=0 满足 a²+b²>0，任意点 P₀=(x₀,y₀) 到 L 的欧氏距离为 d=|ax₀+by₀+c|/√(a²+b²)。这里距离是从点到直线上所有点的最短长度。",
+    "assumptions": [
+      "a,b,c,x₀,y₀ 都是实数，且直线法向量 n=(a,b) 非零。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "任选直线上一点 Q，令 n=(a,b)，则 n·(P₀−Q)=a(x₀−Qₓ)+b(y₀−Qᵧ)。",
+        "reason": "由于 Q 在直线上，有 aQₓ+bQᵧ+c=0，故该数量积等于 ax₀+by₀+c。"
+      },
+      {
+        "claim": "P₀−Q 在单位法向量 n/|n| 上的带符号投影是 (n·(P₀−Q))/|n|。",
+        "reason": "点到直线的垂直分量沿单位法向量定义，|n|>0 保证归一化合法。"
+      },
+      {
+        "claim": "所求最短距离等于垂直投影长度的绝对值，因此代入上一步得到给定公式。",
+        "reason": "向量分解为沿直线和垂直直线的正交分量，垂直长度最短。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 a=b=0，则给定式不代表合法直线；不应无条件把分母写成零。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "直线 ax+by+c=0 的点距分母是 a²+b²",
+        "example": "L:3x+4y=0，点(0,5) 的真实距离 |20|/5=4，不是 20/25=0.8。",
+        "explanation": "应除以法向量模 √(a²+b²)，不是模的平方。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "点 P=(0,5) 到直线 3x+4y=0 的距离。",
+        "steps": [
+          "分子 |3·0+4·5|=20。",
+          "分母 √(3²+4²)=5。"
+        ],
+        "answer": "4",
+        "check": "法向量长度为5，距离与投影一致。"
+      },
+      {
+        "question": "点 P=(1,2) 到直线 2x−y=0 的距离。",
+        "steps": [
+          "分子 |2·1−2|=0。",
+          "点已在线上，距离为零。"
+        ],
+        "answer": "0",
+        "check": "将点代入直线一般式确为0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把绝对值或开方漏掉的常见误解",
+        "why_wrong": "距离是非负量，必须使用绝对值和法向量模。",
+        "repair_question": "如果把直线方程乘以负数，距离应变化吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先把直线写成 ax+by+c=0。",
+      "检查 a²+b²>0。",
+      "代入点坐标，取分子绝对值后除以法向量模。"
+    ],
+    "transfer": {
+      "near": "点(3,-4)到直线 5x-12y+7=0 的距离。",
+      "far": "利用法向量投影计算分类边界的有符号距离和安全裕度。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.line-equation"
+    ]
+  },
+  {
+    "id": "math.hs.counting.permutation-combination",
+    "curriculum_ids": [
+      "HS-MATH-094"
+    ],
+    "kind": "theorem",
+    "title": "排列与组合计数及 0! 与边界条件",
+    "version": "1.0.0",
+    "notation": [
+      "A(n,k)=n!/(n-k)!",
+      "C(n,k)=n!/(k!(n-k)!)"
+    ],
+    "prerequisites": [
+      "乘法计数原理、阶乘、有限集合"
+    ],
+    "definition": null,
+    "statement": "从 n 个互不相同的对象中选出 k 个（整数 0≤k≤n），有序排列数 A(n,k)=n!/(n−k)!，不计顺序的组合数 C(n,k)=n!/[k!(n−k)!]；特别地 0!=1，C(n,0)=1。",
+    "assumptions": [
+      "n,k 是整数且 0≤k≤n；每个对象在一次选择中不重复使用。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "按顺序选出 k 个不同对象，第1个有 n 种、第2个有 n−1 种，直到第 k 个有 n−k+1 种。",
+        "reason": "分步乘法原理给出有序结果数 n(n−1)…(n−k+1)=n!/(n−k)!。"
+      },
+      {
+        "claim": "每个 k 元无序集合对应恰好 k! 种内部排列。",
+        "reason": "对象互异且位置有序，k! 种重排不会改变选中的集合本身。"
+      },
+      {
+        "claim": "把有序排列总数除以 k!，得到 C(n,k)=n!/[k!(n−k)!]。",
+        "reason": "有序结果被等大小 k! 的重排类划分，故商为无序组合数。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "有放回抽取、重复对象或 n<k 的计数模型不同，不能直接套此公式。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "从5个人选2人不考虑顺序有20种",
+        "example": "20 是 A(5,2)，每对人按照正反顺序重复计了2次。",
+        "explanation": "组合数 C(5,2)=20/2!=10。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "从5人中选2名不分顺序，共几种？",
+        "steps": [
+          "用组合数 C(5,2)=5!/(2!3!)。",
+          "约分得5×4/2。"
+        ],
+        "answer": "10",
+        "check": "所有无序两人组总计10组。"
+      },
+      {
+        "question": "从5名选手选冠亚军，几种结果？",
+        "steps": [
+          "冠亚军位置有顺序，先选冠军5种。",
+          "选亚军剩4种，乘法原理给5×4。"
+        ],
+        "answer": "20",
+        "check": "交换冠军与亚军会得到不同结果，必须使用排列数。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "选人和安排职位没有区分顺序",
+        "why_wrong": "排列计有序，组合不计内部排序。",
+        "repair_question": "交换这两个被选对象会改变实际结果吗？"
+      }
+    ],
+    "hint_ladder": [
+      "确定题目是否区分位置顺序。",
+      "逐个位置的可选对象数是多少？",
+      "如果不计顺序，每个集合重复了多少次？"
+    ],
+    "transfer": {
+      "near": "从6个不同元素中选3个并按顺序排列。",
+      "far": "解释机器学习特征子集选择和排列实验设计的计数区别。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.product-rule"
+    ]
+  },
+  {
+    "id": "math.hs.probability.discrete-variable",
+    "curriculum_ids": [
+      "HS-MATH-098"
+    ],
+    "kind": "concept",
+    "title": "离散随机变量分布列、期望与方差",
+    "version": "1.0.0",
+    "notation": [
+      "P(X=xᵢ)=pᵢ",
+      "E[X]=Σxᵢpᵢ",
+      "Var(X)=E[(X-E[X])²]"
+    ],
+    "prerequisites": [
+      "有限样本概率、加权平均数、方差"
+    ],
+    "definition": "离散随机变量 X 是取值为可数集合 {xᵢ} 的实值映射，其概率质量 pᵢ=P(X=xᵢ) 满足 pᵢ≥0、Σpᵢ=1。存在相应可加和时，期望 E[X]=Σxᵢpᵢ；二阶矩有限时方差 Var(X)=Σ(xᵢ−E[X])²pᵢ。",
+    "statement": null,
+    "assumptions": [
+      "给定取值和概率，所有 pᵢ 非负且总和为1；计算期望/方差时相应级数必须收敛。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先列出所有可能的取值及其概率，检查概率和是否等于1。",
+      "期望是概率加权平均，不必等于某个能够实际取到的值；方差表示离均差平方的平均。"
+    ],
+    "boundaries": [
+      "分布列遗漏取值或概率和≠1时不构成合法概率分布；无限取值时矩可能不存在。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "离散随机变量的期望必为它的可能取值",
+        "example": "公平硬币 X∈{0,1}，E[X]=1/2，但 X 从不取 1/2。",
+        "explanation": "期望是加权平均数，不一定是样本值。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平硬币 X=0 或1，各概率1/2，求期望。",
+        "steps": [
+          "E[X]=0×(1/2)+1×(1/2)。",
+          "求和等于1/2。"
+        ],
+        "answer": "E[X]=1/2",
+        "check": "0与1各占相同权重，均值位于中间。"
+      },
+      {
+        "question": "X∈{-1,1}，各概率1/2，求方差。",
+        "steps": [
+          "E[X]=0。",
+          "E[(X−0)²]=1×(1/2)+1×(1/2)。"
+        ],
+        "answer": "Var(X)=1",
+        "check": "零均值情况下二阶矩为1，方差非负。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "用概率总和小于1的表直接求期望",
+        "why_wrong": "概率质量遗漏部分结果时平均权重不完整。",
+        "repair_question": "所有可能结果的概率相加等于1吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先列出所有可能的取值。",
+      "逐个核对 pᵢ≥0 和 Σpᵢ=1。",
+      "期望能否落在两个可能取值之间？"
+    ],
+    "transfer": {
+      "near": "求 P(X=0)=1/4,P(X=2)=3/4 的期望与方差。",
+      "far": "将模型推理中的随机收益当作离散随机变量做风险度量。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.laplace"
+    ]
+  }
+]
