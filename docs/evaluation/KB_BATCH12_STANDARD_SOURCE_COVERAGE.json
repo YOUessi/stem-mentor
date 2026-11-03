@@ -1,0 +1,27 @@
+{
+  "status": "SOURCE_ANCHORED_EDITORIAL_SAMPLE_UNDER_REVIEW",
+  "sampled_objectives": 132,
+  "by_track": {
+    "COMPULSORY": 38,
+    "SELECTIVE_COMPULSORY": 32,
+    "ELECTIVE_A": 18,
+    "ELECTIVE_B": 15,
+    "ELECTIVE_C": 11,
+    "ELECTIVE_D": 10,
+    "ELECTIVE_E": 8
+  },
+  "source_page_anchored_candidates": 132,
+  "official_atomic_denominator": null,
+  "full_course_coverage_percent": null,
+  "deep_draft_lessons": 176,
+  "independent_teacher_approved": 0,
+  "student_deep_lesson_release_count": 0,
+  "verified_official_atom_links": 0,
+  "reference_standard": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+  "warnings": [
+    "These objectives are project-authored paraphrases anchored to printed standard pages, not all official curriculum atoms.",
+    "Some elective E topics are school-selected examples, not nationally uniform mandatory lessons.",
+    "Existing 113 engineering topics and 176 draft lesson files cannot certify full course coverage.",
+    "Neither page provenance nor math test oracles constitute a real independent teacher review."
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "legacy_engineering_topics": 113,
+  "per_track": {
+    "COMPULSORY": 61,
+    "SELECTIVE_COMPULSORY": 45,
+    "ELECTIVE_A": 0,
+    "ELECTIVE_B": 0,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "ELECTIVE_UNASSIGNED": 7
+  },
+  "engineering_topic_levels": {
+    "必修": 61,
+    "选择性必修": 45,
+    "选修拓展": 7
+  },
+  "unassigned_elective_atoms": [
+    "HS-MATH-107",
+    "HS-MATH-108",
+    "HS-MATH-109",
+    "HS-MATH-110",
+    "HS-MATH-111",
+    "HS-MATH-112",
+    "HS-MATH-113"
+  ],
+  "official_explicit_elective_tracks_with_atom_mapping": 0,
+  "official_elective_track_count": 5,
+  "unreviewed_legacy_atoms": 113,
+  "deep_knowledge": {
+    "scope": "PROJECT_ENGINEERING_MAP_NOT_OFFICIAL_ATOMIC_SYLLABUS",
+    "curriculum_topic_total": 113,
+    "deep_lesson_documents": 176,
+    "mapped_curriculum_ids": 113,
+    "review_statuses": {
+      "REVIEW_PENDING": 176
+    },
+    "kinds": {
+      "theorem": 96,
+      "concept": 66,
+      "method": 14
+    },
+    "by_level": {
+      "必修": {
+        "engineering_topics": 61,
+        "with_deep_draft": 61,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选择性必修": {
+        "engineering_topics": 45,
+        "with_deep_draft": 45,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选修拓展": {
+        "engineering_topics": 7,
+        "with_deep_draft": 7,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      }
+    },
+    "human_teacher_review_complete": false,
+    "student_math_proofs_verified": false,
+    "direct_student_teaching_enabled": false,
+    "notes": [
+      "Existing topic IDs are project granularity and must be audited against the official curriculum.",
+      "Schema validation cannot prove mathematical truth; a draft is never a teacher-reviewed fact.",
+      "Draft worked examples and proof steps remain TEACHER_ONLY until genuine review."
+    ]
+  }
+}
+{
+  "actual_status_counts": {
+    "DERIVATIVE_IDENTITY": 5,
+    "DOMAIN_NOT_ESTABLISHED": 5,
+    "IDENTITY_ON_DECLARED_DOMAIN": 28,
+    "VALID_COUNTEREXAMPLE": 10
+  },
+  "claims": 48,
+  "expected_status_counts": {
+    "DERIVATIVE_IDENTITY": 5,
+    "DOMAIN_NOT_ESTABLISHED": 5,
+    "IDENTITY_ON_DECLARED_DOMAIN": 28,
+    "VALID_COUNTEREXAMPLE": 10
+  },
+  "failures": [],
+  "linked_lesson_count": 14,
+  "math_subclaims_checked": 48,
+  "notes": [
+    "Each result applies to one explicitly authored rational or trig statement only.",
+    "Domain guards are declared assumptions, not premises independently established.",
+    "Finite witnesses disprove only the particular stated false universal claim.",
+    "No derived result may be marked as a reviewed proof of a course theorem."
+  ],
+  "review_state": "REVIEW_PENDING",
+  "scope": "LIMITED_AUTHORED_EXPRESSION_EVIDENCE_NOT_FULL_PROOF",
+  "student_free_text_steps_verified": 0,
+  "teacher_approved": 0,
+  "total_draft_lessons": 176,
+  "whole_theorems_verified": 0
+}
+PASS: 23 independently authored gap drafts match frozen JSON; 0 teacher-approved
+PASS: 39 candidates => 29 imported drafts, 10 held, 0 auto-overwrites
+Bridge current: 26 unreviewed legacy cards
+CHECKED curriculum/highschool_math/elective_track_crosswalk_batch07.json {'elective_tracks': 5, 'high_level_theme_slots': 18, 'atomic_subtopics_verified': 0, 'legacy_extension_topics_without_explicit_track': 7, 'teacher_approved_elective_lessons': 0, 'mapped_draft_links': 0}
+CHECKED docs/evaluation/KB_CONFLICT_RISK_BATCH07.json {'conflict_count': 10, 'unresolved_conflicts': 10, 'automatically_resolved': 0, 'conflicts_with_changed_math_risk_fields': 10}
+CHECKED docs/evaluation/KB_PROOF_OBLIGATIONS_BATCH07.json {'deep_draft_lessons': 176, 'theorems': 96, 'proof_step_obligations_not_formally_verified': 313, 'existing_supporting_oracles_linked': 48, 'theorems_with_whole_proof_certification': 0, 'teacher_approved': 0, 'student_solution_steps_verified': 0}
+{
+  "scope": "EXTERNAL_SIGNED_CONTENT_RELEASE_NOT_REAL_TEACHER_IDENTITY_VERIFICATION",
+  "draft_count": 176,
+  "review_pending_count": 176,
+  "externally_attested_count": 0,
+  "student_release_available": false,
+  "formal_math_proof_review_complete": false,
+  "real_teacher_identities_authenticated_by_this_software": false
+}
+PASS 8 original rigorous theorem draft records
+Batch09 authored lessons: 7, check=True
+Batch10 deterministic source matches 11 theorem lessons
+PASS Batch11 12 original teacher-pending lessons
+PASS 176 drafts, 0 approvals, 0 student/cloud requests
+PASS Batch11: 176 drafts, 0 teacher approvals or student model calls
+PASS source-anchored scope checklist 132
+PASS Batch12: sampled curriculum remains non-certified
+PASS: 176 draft lessons, 0 approved, 0 cloud calls, safe editor-only gate
+PASS: semantic coverage snapshot matches project drafts and 23 open, non-approved gaps

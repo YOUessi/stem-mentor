@@ -25,6 +25,8 @@ jobs:
       - run: python scripts/build_kb_batch11_lessons.py --check
       - run: python scripts/audit_kb_batch10_release.py --check
       - run: python scripts/audit_kb_batch11_release.py --check
+      - run: python scripts/build_kb_batch12_source_crosswalk.py --check
+      - run: python scripts/audit_kb_batch12_source_coverage.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
