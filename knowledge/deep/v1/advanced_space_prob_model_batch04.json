@@ -1,0 +1,1541 @@
+[
+  {
+    "id": "math.hs.probability.binomial-distribution",
+    "curriculum_ids": [
+      "HS-MATH-099"
+    ],
+    "kind": "theorem",
+    "title": "独立伯努利试验的二项分布概率质量",
+    "version": "1.0.0",
+    "notation": [
+      "X~Bin(n,p)",
+      "P(X=k)=C(n,k)p^k(1-p)^{n-k}"
+    ],
+    "prerequisites": [
+      "组合数、独立事件、离散随机变量"
+    ],
+    "definition": null,
+    "statement": "重复 n 次相互独立且每次成功概率同为 p 的伯努利试验，成功次数 X 服从二项分布 Bin(n,p)：对整数 k∈{0,…,n}，P(X=k)=C(n,k)p^k(1−p)^{n−k}，其中 n≥0 为整数且 p∈[0,1]。",
+    "assumptions": [
+      "各次成功与失败二选一、试验之间独立且成功概率恒为 p。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "固定一个恰好包含 k 次成功和 n−k 次失败的有序结果串，其概率是 p^k(1−p)^(n−k)。",
+        "reason": "独立性允许对各次结果概率连乘，同一成功概率使任何相同次数的串等概率。"
+      },
+      {
+        "claim": "从 n 个不同试验位置中选择 k 个作为成功位置，有 C(n,k) 种相异结果串。",
+        "reason": "只需选择哪些位置成功，失败位置自动确定，故是无序位置组合数。"
+      },
+      {
+        "claim": "这些有序结果串互斥，因此把各自概率相加得到所述二项分布质量公式。",
+        "reason": "互斥结果的概率可相加，边界 p=0 或 1 需按事件意义解释零概率项。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不放回抽样通常不独立；每次成功概率不同也不满足普通 Bin(n,p) 假设。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要每次结果只有成功失败，就必服从相同参数二项分布",
+        "example": "袋中红球2、蓝球1，连续不放回抽两次，第二次成功概率依赖第一次结果。",
+        "explanation": "缺失独立性和同分布前提，不能使用普通二项模型。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平硬币独立掷3次，恰好2次正面概率。",
+        "steps": [
+          "n=3,p=1/2,k=2，组合数 C(3,2)=3。",
+          "乘上(1/2)^2(1/2)^1。"
+        ],
+        "answer": "3/8",
+        "check": "三种相异正面位置，每种概率均为1/8。"
+      },
+      {
+        "question": "独立成功率1/3的试验进行4次，0次成功概率。",
+        "steps": [
+          "n=4,p=1/3,k=0。",
+          "概率为 C(4,0)·(2/3)^4。"
+        ],
+        "answer": "16/81",
+        "check": "四次均失败且独立，每次失败概率2/3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把无放回抽样套为独立同分布伯努利",
+        "why_wrong": "抽出对象会改变剩余组成，影响后续概率。",
+        "repair_question": "第二次成功概率是否仍与第一次结果无关？"
+      }
+    ],
+    "hint_ladder": [
+      "各次是否互相独立？成功率是否相同？",
+      "先固定一种成功位置排列的概率。",
+      "再数同样成功次数共有多少种位置排列。"
+    ],
+    "transfer": {
+      "near": "计算 n=5,p=0.2 时恰好1次成功的概率。",
+      "far": "区分重复有放回抽样的二项近似与严格超几何分布。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.permutation-combination",
+      "math.hs.probability.discrete-variable"
+    ]
+  },
+  {
+    "id": "math.hs.probability.hypergeometric",
+    "curriculum_ids": [
+      "HS-MATH-100"
+    ],
+    "kind": "theorem",
+    "title": "不放回抽样的超几何分布和合法取值",
+    "version": "1.0.0",
+    "notation": [
+      "P(X=k)=C(K,k)C(N-K,n-k)/C(N,n)"
+    ],
+    "prerequisites": [
+      "组合数、无放回抽样、有限等可能样本空间"
+    ],
+    "definition": null,
+    "statement": "有限总体有 N 个互不相同对象，其中 K 个标为成功；不放回等可能选取 n 个对象（0≤K,n≤N），令 X 为成功对象数。对 max(0,n−(N−K))≤k≤min(n,K)，P(X=k)=C(K,k)C(N−K,n−k)/C(N,n)，其余 k 概率为0。",
+    "assumptions": [
+      "总体固定且对象彼此可区分；每个 n 元样本子集等可能，无放回且参数为合法整数。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "总体 N 个对象选 n 个的无序组合总数为 C(N,n)。",
+        "reason": "每个大小为 n 的对象子集等可能，而分母仅依赖抽样方案。"
+      },
+      {
+        "claim": "恰有 k 个成功意味着从 K 个成功对象选 k 个，以及 N−K 个失败对象选 n−k 个。",
+        "reason": "两个子选择独立组合成一个特定类型的无序样本，计数为两个组合数的乘积。"
+      },
+      {
+        "claim": "有利样本数除以全部样本数得到超几何概率，边界由不能选超过库存数量而确定。",
+        "reason": "当 k 超出可行范围，任一组合数的选取数量不合法，事件为空。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若样本有放回或对象抽取概率不相同，则不应直接使用该超几何模型。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "不放回抽样与有放回抽样的成功次数概率完全一样",
+        "example": "袋中 1 红1蓝，连续不放回抽2个，恰好2红概率为0；有放回恰好2红概率为1/4。",
+        "explanation": "缺少放回条件时不能把超几何分布替换为二项分布。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "10件产品中4件次品，不放回抽3件，恰好2件次品概率。",
+        "steps": [
+          "有利组合数为 C(4,2)C(6,1)=6×6=36。",
+          "总样本数 C(10,3)=120。"
+        ],
+        "answer": "3/10",
+        "check": "36/120=0.3，且 k=2 在合法范围。"
+      },
+      {
+        "question": "5球中2红3蓝，不放回抽2球，0红概率。",
+        "steps": [
+          "选0红且2蓝有 C(2,0)C(3,2)=3 种。",
+          "总组合数 C(5,2)=10。"
+        ],
+        "answer": "3/10",
+        "check": "无红球即抽到2蓝，确为三种蓝球组合。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "用二项公式处理不放回抽样",
+        "why_wrong": "成功率会随抽出对象变化，独立同分布假设不存在。",
+        "repair_question": "抽走红球后下一次红球概率还是 K/N 吗？"
+      }
+    ],
+    "hint_ladder": [
+      "确认抽样是否放回。",
+      "先数全部大小为 n 的无序组合。",
+      "把恰好 k 个成功的选择拆成两个组合数。"
+    ],
+    "transfer": {
+      "near": "N=8,K=3,n=4 时恰好1次成功的概率。",
+      "far": "理解无放回质量控制抽检的检出概率与库存比例变化。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.permutation-combination",
+      "math.hs.probability.discrete-variable"
+    ]
+  },
+  {
+    "id": "math.hs.probability.normal-density",
+    "curriculum_ids": [
+      "HS-MATH-101"
+    ],
+    "kind": "concept",
+    "title": "正态分布密度、标准化与单点概率",
+    "version": "1.0.0",
+    "notation": [
+      "X~N(μ,σ²)",
+      "Z=(X-μ)/σ",
+      "P(X=a)=0"
+    ],
+    "prerequisites": [
+      "连续函数、密度、对称性、随机变量"
+    ],
+    "definition": "当 σ>0，正态随机变量 X~N(μ,σ²) 有密度 f(x)=[1/(σ√(2π))]exp(-(x−μ)²/(2σ²))，概率由区间下面积给出。标准化 Z=(X−μ)/σ 后 Z~N(0,1)。连续型分布任意单点概率为零，但密度值一般非零。",
+    "statement": null,
+    "assumptions": [
+      "μ 为实数，σ 为正实数；密度为非负且全实数积分为1。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "密度关于 μ 对称，因此正态分布质量一半位于 μ 左、一半位于右。",
+      "将变量通过平移 μ 和缩放 σ 标准化，必须使用 σ 而非 σ²；单个点的积分面积为0。"
+    ],
+    "boundaries": [
+      "不允许 σ=0 作为普通正态密度公式的输入；概率不能由单点的密度值直接代替。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "正态变量取均值处的概率等于其密度高度",
+        "example": "标准正态在 x=0 的密度约0.399，但 P(X=0)=0。",
+        "explanation": "概率是区间积分，不是单点的纵坐标高度。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "X~N(10,4)，将 x=12 标准化。",
+        "steps": [
+          "方差4对应标准差 σ=2。",
+          "z=(12−10)/2。"
+        ],
+        "answer": "z=1",
+        "check": "若使用方差4作分母会错误得到0.5。"
+      },
+      {
+        "question": "若 X~N(3,1)，求 P(X≤3)。",
+        "steps": [
+          "正态密度关于 μ=3 对称。",
+          "单点概率0，所以一半质量位于均值左侧。"
+        ],
+        "answer": "1/2",
+        "check": "P(X<3)=P(X≤3)，因单点质量为0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把方差当作标准差的常见误解",
+        "why_wrong": "公式分母中的 σ 是标准差而不是 σ²。",
+        "repair_question": "若方差等于9，标准化时应除以几？"
+      }
+    ],
+    "hint_ladder": [
+      "先写清 μ、σ² 与 σ。",
+      "概率对应区间还是单点？",
+      "利用分布围绕 μ 的对称性。"
+    ],
+    "transfer": {
+      "near": "X~N(0,9)，将 x=6 转换成标准正态分位。",
+      "far": "比较模型置信区间与只报告密度峰值的统计误用。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.discrete-variable"
+    ]
+  },
+  {
+    "id": "math.hs.statistics.correlation-regression",
+    "curriculum_ids": [
+      "HS-MATH-102"
+    ],
+    "kind": "concept",
+    "title": "线性回归、相关系数与非因果解释边界",
+    "version": "1.0.0",
+    "notation": [
+      "r=Cov(X,Y)/(σXσY)",
+      "ŷ=β₀+β₁x"
+    ],
+    "prerequisites": [
+      "样本均值、协方差、方差、散点图"
+    ],
+    "definition": "皮尔逊相关系数 r 定义为标准化协方差，要求两个变量的标准差严格非零，且 -1≤r≤1。简单线性回归以 ŷ=β₀+β₁x 预测 Y 的条件趋势，但高相关或拟合优度不构成 X 导致 Y 的因果证明。",
+    "statement": null,
+    "assumptions": [
+      "计算相关需双方有非零方差；线性回归预测应标注建模假设和观测范围。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "相关系数通过对协方差除以双方标准差，消除线性尺度的影响。",
+      "回归拟合的残差是 y−ŷ；外推至训练观测范围之外需要额外假设，不能仅由样本拟合推断。"
+    ],
+    "boundaries": [
+      "当某变量为常数时相关系数未定义；r=0 不排除非线性关系；相关≠因果。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "相关系数 r=1 表明一个变量造成另一个变量",
+        "example": "时间 t、气温变化与另一随时间变化的指标都可能与 t 近似线性相关，但时间共趋势并不确定因果方向。",
+        "explanation": "混杂变量、时间趋势与逆因果可使高度相关不代表因果。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "点(1,2),(2,4),(3,6)是否完全线性相关？",
+        "steps": [
+          "三点满足 y=2x，两个变量都有非零方差。",
+          "样本协方差为双方标准差乘积，正相关。"
+        ],
+        "answer": "r=1，最小二乘线为 y=2x",
+        "check": "每个残差均为0，但不证明变量间的因果机制。"
+      },
+      {
+        "question": "点(1,3),(2,3),(3,3)的皮尔逊 r 是否等于0？",
+        "steps": [
+          "y 的样本方差为0。",
+          "计算 r 时分母 σY=0。"
+        ],
+        "answer": "r 未定义，不是0",
+        "check": "除以零不合法，不能擅自报告零相关。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把相关系数作为因果证明",
+        "why_wrong": "相关性仅度量特定线性共变，不排除混杂因素。",
+        "repair_question": "是否存在第三个变量同时影响 X 和 Y？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查两个变量方差是否都非零。",
+      "观察散点是否沿同一直线分布。",
+      "统计相关性是否等同于因果作用？"
+    ],
+    "transfer": {
+      "near": "三点(1,3),(2,2),(3,1)求线性相关方向和回归线。",
+      "far": "解释 AI 特征重要性与干预因果效果为什么不是同一概念。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.statistics.variance"
+    ]
+  },
+  {
+    "id": "math.hs.statistics.chi-square",
+    "curriculum_ids": [
+      "HS-MATH-103"
+    ],
+    "kind": "concept",
+    "title": "列联表的 Pearson 卡方统计量与独立性检验条件",
+    "version": "1.0.0",
+    "notation": [
+      "Eᵢⱼ=nᵢ·n·ⱼ/n",
+      "χ²=Σ(O−E)²/E"
+    ],
+    "prerequisites": [
+      "分类变量、行列总频数、独立事件、概率分布"
+    ],
+    "definition": "在 r×c 列联表中，若假设行列分类独立，则各格期望计数 Eᵢⱼ=(第 i 行总数×第 j 列总数)/总数 n。当 Eᵢⱼ>0 时可计算 Pearson χ²=Σ (Oᵢⱼ−Eᵢⱼ)²/Eᵢⱼ；其显著性解释需满足适用的抽样和渐近近似条件。",
+    "statement": null,
+    "assumptions": [
+      "观察是适当抽样得到的非负整数计数，总样本量 n>0；期望计数必须正，近似卡方分布依赖额外条件。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "计算每行、每列总数和总体样本数，再按独立假设构建各格期望频数。",
+      "比较观测频数与期望频数的偏差并按期望规模标准化；χ² 越大表示偏离独立假设的程度越大。"
+    ],
+    "boundaries": [
+      "期望格数很小可能令渐近卡方近似失效；显著性并不证明因果，亦非独立性必然为假。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "χ²=0 表明两个变量必有因果关系",
+        "example": "一个完全均衡的 2×2 列联表 O=[10,10;10,10] 有 χ²=0。",
+        "explanation": "χ²=0 只表示当前观察值与独立模型期望一致。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "2×2 观察频数 [[20,10],[10,20]]，求 χ²。",
+        "steps": [
+          "行列总数均为30，总数60，独立期望四格都为15。",
+          "各格偏差为 ±5，单格贡献25/15，四格相加。"
+        ],
+        "answer": "χ²=20/3≈6.6667",
+        "check": "四格贡献均为5/3，总和为20/3。"
+      },
+      {
+        "question": "观察频数 [[10,10],[10,10]]，求 χ²。",
+        "steps": [
+          "四格期望数各为10。",
+          "观测值与期望一致，所有偏差为0。"
+        ],
+        "answer": "χ²=0",
+        "check": "仅说明该表与独立模型拟合完全一致，不等于因果证明。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不核对期望计数就套渐近显著性阈值",
+        "why_wrong": "小样本期望格数过低时参考分布近似可能不可靠。",
+        "repair_question": "每个期望频数 Eᵢⱼ 是否足够且严格大于0？"
+      }
+    ],
+    "hint_ladder": [
+      "先计算行合计、列合计和总样本量。",
+      "逐格算独立假设下的期望值。",
+      "χ² 的结论是相关性证据还是因果证明？"
+    ],
+    "transfer": {
+      "near": "把 [[12,8],[8,12]] 转换为期望表并计算 χ²。",
+      "far": "用于产品 A/B 分类结果检验时区分显著性、效应大小与因果识别。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.statistics.variance"
+    ]
+  },
+  {
+    "id": "math.hs.modeling.workflow",
+    "curriculum_ids": [
+      "HS-MATH-059",
+      "HS-MATH-060",
+      "HS-MATH-061"
+    ],
+    "kind": "concept",
+    "title": "数学建模的假设、变量、单位与边界检验",
+    "version": "1.0.0",
+    "notation": [
+      "模型 y=f(x;θ)",
+      "残差 eᵢ=yᵢ−ŷᵢ"
+    ],
+    "prerequisites": [
+      "函数、变量、单位一致性、统计数据"
+    ],
+    "definition": "数学建模把现实问题抽象为对象、变量、假设、参数与可检验关系；应从问题提出、数据取得、模型建立、参数估计、模型检验、解释与修正形成闭环。模型是有条件的描述，不因拟合有限样本就成为普遍自然定律。",
+    "statement": null,
+    "assumptions": [
+      "明确变量单位、观察范围、数据生成过程及模型假设；外推必须另有证据。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先确定现实问题与影响因素，区分需要预测的量、控制量及可能遗漏的混杂因素。",
+      "用与物理单位相符的数学关系建模，再借助未参与拟合的数据评估误差并提出模型失效条件。"
+    ],
+    "boundaries": [
+      "拟合误差小未必表示因果正确；模型在训练范围之外可能迅速失效。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "若线性模型拟合3个点，就一定能预测所有未来输入",
+        "example": "模型 y=2x+1 只在测量范围 x∈[1,2] 通过数据拟合，x=100 的预测没有额外验证。",
+        "explanation": "插值拟合成功不能自动证明远距离外推的可靠性。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "某车匀速行驶3小时走180千米，建立路程模型。",
+        "steps": [
+          "假设速度恒定，变量 t 用小时、s 用千米。",
+          "速度 v=180/3=60千米/时，模型 s=60t。"
+        ],
+        "answer": "s(t)=60t，限匀速假设成立时",
+        "check": "t=3 时 s=180 与已知数据一致，单位正确。"
+      },
+      {
+        "question": "观测 (t,y)=(1,3),(2,5)，假设线性拟合，求模型及 t=3 预测。",
+        "steps": [
+          "斜率为(5−3)/(2−1)=2。",
+          "截距为3−2×1=1，再代 t=3。"
+        ],
+        "answer": "ŷ=2t+1；ŷ(3)=7",
+        "check": "两观测点完全符合，但未验证第三点预测是否真实。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把参数拟合通过当成模型真实有效",
+        "why_wrong": "模型验证还需样本外数据、单位与适用边界检查。",
+        "repair_question": "有哪些未参与拟合的新观测能验证预测？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确预测什么、变量的单位是什么。",
+      "哪些现实假设被写成数学关系？",
+      "验证用的是训练数据还是独立样本？"
+    ],
+    "transfer": {
+      "near": "比较固定费用+单价的线性购票模型与分段折扣模型。",
+      "far": "为机器人电池耗电建立模型时区分受控室内条件与真实环境漂移。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.function.linear-slope"
+    ]
+  },
+  {
+    "id": "math.hs.modeling.validation",
+    "curriculum_ids": [
+      "HS-MATH-104",
+      "HS-MATH-105",
+      "HS-MATH-106"
+    ],
+    "kind": "concept",
+    "title": "数据驱动模型的独立验证、误差解释与再建模",
+    "version": "1.0.0",
+    "notation": [
+      "MAE=(1/n)∑|yᵢ−ŷᵢ|",
+      "RMSE=√((1/n)∑(yᵢ−ŷᵢ)²)"
+    ],
+    "prerequisites": [
+      "数学建模、误差、绝对值与平方根"
+    ],
+    "definition": "数据驱动建模应预先划分拟合与独立验证数据；对 n 个验证观测定义绝对误差平均 MAE 和均方根误差 RMSE，解释其量纲与对大误差的敏感性，并在误差结构不满足假设时重新修正模型。",
+    "statement": null,
+    "assumptions": [
+      "n 是正整数，所有真值 yᵢ 与预测 ŷᵢ 量纲一致；验证数据没有参与原模型参数拟合。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先写清训练与验证样本边界、是否存在时间信息泄漏，再选择能反映问题风险的损失指标。",
+      "MAE 是平均误差绝对值；RMSE 对离群大误差惩罚较重，但两者都不能自动证明预测的因果性。"
+    ],
+    "boundaries": [
+      "时间序列随机打散可能导致未来信息泄漏；总体指标低可能掩盖特定子群的严重误差。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "训练集上误差为0就证明模型能泛化",
+        "example": "在两点 (1,3),(2,5) 上的线性模型 y=2x+1 可完美拟合，但第三个真实点可能为 (3,100)。",
+        "explanation": "训练误差无法替代未见样本的独立验证。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "真实值[2,4]，预测[3,2]，求 MAE。",
+        "steps": [
+          "绝对误差分别为|2−3|=1、|4−2|=2。",
+          "平均为(1+2)/2。"
+        ],
+        "answer": "MAE=3/2",
+        "check": "误差单位与真实值的单位一致。"
+      },
+      {
+        "question": "同一组误差 [1,-2]，求 RMSE。",
+        "steps": [
+          "平方误差分别为1、4。",
+          "均方为5/2，取平方根。"
+        ],
+        "answer": "RMSE=√(5/2)",
+        "check": "RMSE≈1.581，大于 MAE=1.5。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把验证集用于不断调参又宣称最终独立测试",
+        "why_wrong": "反复调试会让模型间接适配该验证集。",
+        "repair_question": "有没有真正未参与选择的最后冻结测试集？"
+      }
+    ],
+    "hint_ladder": [
+      "是否先划分验证数据？",
+      "误差指标的单位是否正确？",
+      "特定子群或外推数据的误差会被总体平均掩盖吗？"
+    ],
+    "transfer": {
+      "near": "在不同两组残差上比较 MAE 与 RMSE 对大误差的反应。",
+      "far": "将数据漂移和生产线上真实指标反馈纳入迭代模型的验证流程。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.modeling.workflow"
+    ]
+  },
+  {
+    "id": "math.hs.space.coordinate-distance",
+    "curriculum_ids": [
+      "HS-MATH-071",
+      "HS-MATH-072",
+      "HS-MATH-073"
+    ],
+    "kind": "theorem",
+    "title": "空间向量坐标、数量积与两点距离",
+    "version": "1.0.0",
+    "notation": [
+      "|AB|=√((Δx)²+(Δy)²+(Δz)²)",
+      "u·v=u₁v₁+u₂v₂+u₃v₃"
+    ],
+    "prerequisites": [
+      "空间直角坐标系、勾股定理、向量数量积"
+    ],
+    "definition": null,
+    "statement": "在三维正交单位坐标系中，A=(x₁,y₁,z₁) 与 B=(x₂,y₂,z₂) 的位移向量为 AB⃗=(x₂−x₁,y₂−y₁,z₂−z₁)，两点距离为该向量模的三坐标平方和开方；空间向量数量积为对应坐标乘积之和。",
+    "assumptions": [
+      "坐标轴两两垂直且单位长度相同，向量采用同一基底。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "空间位移在三条正交坐标轴上的分量是 Δx、Δy、Δz。",
+        "reason": "向量坐标以终点减起点，三轴基底正交，任意位移可以逐轴分解。"
+      },
+      {
+        "claim": "先在水平面用勾股定理得投影长的平方 Δx²+Δy²，再和竖直分量组成直角三角形。",
+        "reason": "空间正交保证平方和可叠加，得到两点距离的根号表达式。"
+      },
+      {
+        "claim": "按数量积的双线性与正交基底 eᵢ·eⱼ=δᵢⱼ 展开 u·v，得到 u₁v₁+u₂v₂+u₃v₃。",
+        "reason": "三维向量在各正交基底分解，交叉基底数量积为零。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "坐标轴非正交或单位长度不同，需要使用度量矩阵，不能直接套平方和。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "空间两点距离只需要 x、y 两项",
+        "example": "A=(0,0,0),B=(0,0,5)，若漏 z 分量会错误得到0。",
+        "explanation": "垂直方向位移也是实际空间距离的一部分。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "A=(1,2,3),B=(4,6,15)，求 AB 的距离。",
+        "steps": [
+          "位移为(3,4,12)。",
+          "长度=√(9+16+144)=√169。"
+        ],
+        "answer": "13",
+        "check": "3-4-12 构成三维勾股平方和169。"
+      },
+      {
+        "question": "判断 u=(1,0,2),v=(2,3,-1) 是否垂直。",
+        "steps": [
+          "点积为1×2+0×3+2×(-1)。",
+          "计算得0，两向量都非零。"
+        ],
+        "answer": "互相垂直",
+        "check": "非零向量数量积为零等价夹角90°。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "在空间中沿用二维距离公式漏掉 z",
+        "why_wrong": "空间坐标比平面多一个正交分量。",
+        "repair_question": "若前两项都不变而高度差5，距离是否等于0？"
+      }
+    ],
+    "hint_ladder": [
+      "写出三个坐标方向的位移。",
+      "三维勾股要加几个平方项？",
+      "求夹角时向量是否为非零？"
+    ],
+    "transfer": {
+      "near": "A=(-2,1,0),B=(1,-3,4) 距离多少？",
+      "far": "用三维距离与数量积计算机器人的路径增量和姿态相似度。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.vector.dot-product"
+    ]
+  },
+  {
+    "id": "math.hs.space.line-plane-normal",
+    "curriculum_ids": [
+      "HS-MATH-074",
+      "HS-MATH-075"
+    ],
+    "kind": "theorem",
+    "title": "空间直线参数式与平面法向量方程",
+    "version": "1.0.0",
+    "notation": [
+      "X=P+t u",
+      "n·(X−Q)=0"
+    ],
+    "prerequisites": [
+      "空间向量坐标、非零向量、数量积"
+    ],
+    "definition": null,
+    "statement": "在三维空间，过点 P 且沿非零向量 u 的直线可写 X=P+t u（t∈R）；过点 Q 且法向量 n≠0 的平面可写 n·(X−Q)=0。二式分别刻画一维与二维的仿射集合。",
+    "assumptions": [
+      "向量 u、n 都非零，P、Q 与 X 使用同一正交三维坐标系。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "直线上任意点 X 与 P 的位移同向或反向于 u，故存在实数 t 使 X−P=t u。",
+        "reason": "非零方向向量张成经过原点的一维子空间，平移 P 得到直线。"
+      },
+      {
+        "claim": "反过来任何 P+t u 均沿同一直线方向位移，因此位于指定直线上。",
+        "reason": "仿射参数式包含所有正负方向位移，没有遗漏。"
+      },
+      {
+        "claim": "平面上任意点 X 的位移 X−Q 与法向量 n 垂直，数量积为0；反之零数量积给出过 Q 的二维正交补。",
+        "reason": "非零法向量在三维空间的正交补维数为2，唯一给出对应平面。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "u=0 的参数式只得到一个点；n=0 的方程会得到整个空间而非平面。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "可以用零向量作平面唯一法向量",
+        "example": "n=(0,0,0) 时 n·(X−Q)=0 对所有空间点都成立。",
+        "explanation": "没有非零法向量就不能限定一个平面。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "写出过 P=(1,0,2) 且方向 u=(0,1,1) 的直线。",
+        "steps": [
+          "代入参数方程 X=P+t u。",
+          "逐坐标展开为 (1,t,2+t)。"
+        ],
+        "answer": "X=(1,t,2+t), t∈R",
+        "check": "t=0 时经过 P，t=2 时为(1,2,4)。"
+      },
+      {
+        "question": "求过 Q=(0,0,3) 且法向量 n=(0,0,1) 的平面。",
+        "steps": [
+          "n·(X−Q)=z-3。",
+          "要求数量积等于零。"
+        ],
+        "answer": "z=3",
+        "check": "平面中任意 x、y 均允许，而 z 恒为3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "写平面方程时未核对法向量是否为零",
+        "why_wrong": "零向量对所有位移都垂直，不提供独立的平面方向。",
+        "repair_question": "n=0 时 n·(X−Q)=0 将限制哪个坐标？"
+      }
+    ],
+    "hint_ladder": [
+      "直线需要一个点和非零方向向量。",
+      "平面需要一个点和非零法向量。",
+      "方向向量/法向量的数量积条件是什么？"
+    ],
+    "transfer": {
+      "near": "过(2,-1,0)法向量(1,2,-1)的平面方程。",
+      "far": "把摄影测量中的三维点云拟合为法向量参数表示的平面。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.coordinate-distance"
+    ]
+  },
+  {
+    "id": "math.hs.space.angle-distance",
+    "curriculum_ids": [
+      "HS-MATH-076",
+      "HS-MATH-077",
+      "HS-MATH-078"
+    ],
+    "kind": "theorem",
+    "title": "空间点面距离、线面夹角及无向二面角计算",
+    "version": "1.0.0",
+    "notation": [
+      "d(P,Π)=|n·(P−Q)|/|n|",
+      "sinθ=|u·n|/(|u||n|)"
+    ],
+    "prerequisites": [
+      "空间直线平面法向量、正交投影、反三角函数"
+    ],
+    "definition": null,
+    "statement": "对平面 Π:n·(X−Q)=0，n≠0，点 P 到平面距离 d=|n·(P−Q)|/|n|；若直线方向 u≠0，其与平面的夹角 θ∈[0,π/2] 满足 sinθ=|u·n|/(|u||n|)。两平面的无向夹角可由法向量绝对点积求余弦；有向二面角需要额外确定边和正侧。",
+    "assumptions": [
+      "所用法向量与方向向量都非零，角为无向夹角而非未标明朝向的二面角。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "点 P−Q 在单位法向量 n/|n| 方向上的投影长度为 (P−Q)·n/|n|。",
+        "reason": "法向量垂直于平面，投影的绝对长度正是到平面的最短距离。"
+      },
+      {
+        "claim": "设直线与法向量间最小非负夹角为 φ，则 cosφ=|u·n|/(|u||n|)。",
+        "reason": "数量积角公式需 u,n 非零；绝对值统一取最小夹角，包括直角的边界情况。"
+      },
+      {
+        "claim": "直线与平面的线面夹角 θ 与法向量最小夹角 φ 互余，即 θ=π/2−φ。",
+        "reason": "几何上平面法向量与平面垂直，故 sinθ=cosφ。"
+      },
+      {
+        "claim": "两平面法向量间最小夹角由绝对点积给出；实际有向二面角还涉及侧向选择。",
+        "reason": "忽略符号后只保留无向锐角，无法确定补角或绕公共边的朝向。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "未给二面角的内外侧时，法向量绝对点积不能唯一确定有向或钝角二面角。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "线面夹角直接等于方向向量与法向量的夹角",
+        "example": "u=(0,0,1) 与平面 z=0 垂直，u 与法向量夹角为0，但线面夹角为90°。",
+        "explanation": "线面锐角与线法向夹角互余。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "点(1,2,5)到平面 z=1 的距离。",
+        "steps": [
+          "平面法向量为(0,0,1)，取 Q=(0,0,1)。",
+          "法向投影差是5−1=4。"
+        ],
+        "answer": "4",
+        "check": "垂足坐标(1,2,1)，两点实际距离为4。"
+      },
+      {
+        "question": "方向 u=(0,0,1) 的直线与平面 z=0 的锐角。",
+        "steps": [
+          "u 与法向量 n=(0,0,1) 重合，数量积模比为1。",
+          "sinθ=1，θ 在 [0,π/2]。"
+        ],
+        "answer": "θ=π/2",
+        "check": "竖直线与水平面确实垂直。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把二面角不加说明地取法向量夹角",
+        "why_wrong": "法向量可能反向，锐角只表示无向平面夹角。",
+        "repair_question": "题目是否指定两个面的内部侧和公共棱方向？"
+      }
+    ],
+    "hint_ladder": [
+      "先找出法向量和方向向量。",
+      "是否取了单位法向量做投影？",
+      "题目求锐角还是有向二面角？"
+    ],
+    "transfer": {
+      "near": "点(2,0,0)到平面 x=−1 的距离，以及 x 轴与该平面夹角。",
+      "far": "求机械臂末端法向量对工作平面的接触姿态误差。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.line-plane-normal"
+    ]
+  },
+  {
+    "id": "math.hs.geometry.circle-intersections",
+    "curriculum_ids": [
+      "HS-MATH-084",
+      "HS-MATH-085"
+    ],
+    "kind": "theorem",
+    "title": "直线与圆、两圆相交相切的距离判别",
+    "version": "1.0.0",
+    "notation": [
+      "d(C,L)≶r",
+      "|r₁−r₂|≶d(C₁,C₂)≶r₁+r₂"
+    ],
+    "prerequisites": [
+      "点到直线距离、圆与半径、两点距离"
+    ],
+    "definition": null,
+    "statement": "对半径 r>0 的圆，直线与圆交点数由圆心到直线距离 d 与 r 的大小决定：d<r 有2个、d=r 有1个相切、d>r 无交点。对两个半径 r₁,r₂>0、中心距 d，非同心重合情形中，|r₁−r₂|<d<r₁+r₂ 有2交点；等号 d=r₁+r₂ 或 d=|r₁−r₂|（d>0）为1切点。",
+    "assumptions": [
+      "两圆半径严格为正；两圆完全重合需单独排除，中心距与半径差均为零的情形不归为普通内切。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "把圆心到直线的垂线当作投影，垂足附近圆与线的交点相对垂足的距离平方为 r²−d²。",
+        "reason": "圆方程在垂线与切线方向正交的坐标系下可分解为两平方和。"
+      },
+      {
+        "claim": "若 r²−d² 大于、等于、小于0，就分别有两个、一个或零个实数交点。",
+        "reason": "圆半径和点线距离均非负，平方符号对应根数。"
+      },
+      {
+        "claim": "两圆公共点 P 必须使三边 C₁P=r₁、C₂P=r₂、C₁C₂=d 构成三角形或退化三角形。",
+        "reason": "三角形不等式及其等号给出外切/内切的界限。"
+      },
+      {
+        "claim": "严格三角形不等式时通常由对称性产生两个交点，等号时三个点共线只剩一个交点。",
+        "reason": "当中心和半径完全相同则公共点无穷多，因此与等号内切的普通情况不同。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "两圆同心同半径时有无穷多个公共点；同心不同半径则无交点，不能一概用普通切点计数。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "两圆中心距 d=0 且半径相等时只有一个内切点",
+        "example": "两个同心等半径圆完全重合，圆周上每一点都是公共点。",
+        "explanation": "内切判据 d=|r₁−r₂| 还需排除同心重合情形。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "圆 x²+y²=25 与直线 y=3 有几个交点？",
+        "steps": [
+          "圆心(0,0)，半径5，圆心到线 y=3 距离3。",
+          "3<5，说明直线割圆。"
+        ],
+        "answer": "两个交点",
+        "check": "代入 y=3 得 x²=16，所以 x=±4。"
+      },
+      {
+        "question": "中心(0,0)半径2的圆与中心(3,0)半径1的圆关系。",
+        "steps": [
+          "中心距为3。",
+          "半径和2+1=3，且两圆中心不同。"
+        ],
+        "answer": "外切，只有一个公共点",
+        "check": "切点为(2,0)，分别到两圆心的距离为2和1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把同心重合圆误判为单点内切",
+        "why_wrong": "普通圆相切通常要求中心不同并且公共点只有一个。",
+        "repair_question": "若两个方程完全一样，公共点共有多少个？"
+      }
+    ],
+    "hint_ladder": [
+      "先计算圆心和半径，再算中心距或点线距离。",
+      "与半径和、半径差分别比较。",
+      "是否需要检查圆完全重合这一退化情形？"
+    ],
+    "transfer": {
+      "near": "判断圆 x²+y²=9 与直线 x=3 是否相切。",
+      "far": "利用碰撞圆模型快速判断机器人运动轨迹和障碍物接触状态。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.point-line-distance"
+    ]
+  },
+  {
+    "id": "math.hs.geometry.parabola-focus",
+    "curriculum_ids": [
+      "HS-MATH-088",
+      "HS-MATH-089"
+    ],
+    "kind": "theorem",
+    "title": "抛物线焦点与准线定义推导标准方程",
+    "version": "1.0.0",
+    "notation": [
+      "y²=4px",
+      "F=(p,0)",
+      "准线 x=−p"
+    ],
+    "prerequisites": [
+      "点到定点及直线距离、平方等式、坐标系"
+    ],
+    "definition": null,
+    "statement": "给定 p>0，焦点 F=(p,0) 与准线 L:x=−p，所有到 F 的欧氏距离等于到 L 距离的点构成抛物线 y²=4px。反过来，任何满足 y²=4px 的实点都满足距离相等，顶点为原点且开口向右。",
+    "assumptions": [
+      "p>0，焦点与准线分离；直线 x=−p 的点距按绝对值计算。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对任意 P=(x,y)，焦点距离平方为 (x−p)²+y²，准线距离平方为 (x+p)²。",
+        "reason": "点到竖直线的距离是 |x+p|，平方后得到对应的无根号表达式。"
+      },
+      {
+        "claim": "两距离均非负，相等当且仅当平方相等，展开消去 x² 和 p² 得 y²=4px。",
+        "reason": "等式两侧非负保证平方变换可以反向使用，不产生虚假根。"
+      },
+      {
+        "claim": "反过来若 y²=4px，代回平方等式得到两距离平方相等，非负距离故原距离相等。",
+        "reason": "平方根取非负值，所以平方相等可恢复原始距离等式。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "p=0 时焦点落到准线上，标准非退化抛物线定义不适用；p<0 应改变标准式方向约定。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "标准式 y²=4px 对任意 p=0 仍表示同一个非退化抛物线",
+        "example": "p=0 时化为 y²=0，即直线 y=0 的重合代数分支。",
+        "explanation": "焦点与准线分离是非退化抛物线几何定义的前提。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "焦点(2,0)，准线 x=−2，求抛物线方程。",
+        "steps": [
+          "焦距参数 p=2。",
+          "代入标准式 y²=4px。"
+        ],
+        "answer": "y²=8x",
+        "check": "点(2,4)满足16=16，且点到焦点和准线距离均为4。"
+      },
+      {
+        "question": "抛物线 y²=2x，求焦点与准线。",
+        "steps": [
+          "4p=2，故 p=1/2。",
+          "焦点为(p,0)，准线 x=−p。"
+        ],
+        "answer": "F=(1/2,0)，准线 x=−1/2",
+        "check": "顶点(0,0)到焦点与准线距离均为1/2。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "混淆 y²=4px 与 x²=4py 的开口方向",
+        "why_wrong": "平方变量决定抛物线对称轴的方向。",
+        "repair_question": "标准式中哪一个坐标被平方？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确焦点与准线的相对位置。",
+      "写出两个非负距离的表达式。",
+      "平方并整理后是否需要验证逆向条件？"
+    ],
+    "transfer": {
+      "near": "推导焦点(−3,0)准线 x=3 对应的左开口抛物线方程。",
+      "far": "用等距轨迹描述反射器在几何光学中的理想形状。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.point-line-distance"
+    ]
+  },
+  {
+    "id": "math.hs.geometry.hyperbola-foci",
+    "curriculum_ids": [
+      "HS-MATH-087"
+    ],
+    "kind": "concept",
+    "title": "双曲线的焦点差定义、标准式与退化条件",
+    "version": "1.0.0",
+    "notation": [
+      "|PF₁−PF₂|=2a",
+      "x²/a²−y²/b²=1",
+      "c²=a²+b²"
+    ],
+    "prerequisites": [
+      "焦点距离、勾股定理、圆锥曲线"
+    ],
+    "definition": "两不同定点 F₁=(-c,0)、F₂=(c,0) 且 c>a>0 时，满足两焦点距离差的绝对值为2a的点形成非退化双曲线，其横轴标准式为 x²/a²−y²/b²=1，其中 b²=c²−a²>0。两分支对应距离差的不同符号。",
+    "statement": null,
+    "assumptions": [
+      "焦距参数 c>0，实轴参数 0<a<c；到焦点距离均为非负。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "焦点连线距离为2c，三角不等式保证任意点的两焦点距离差绝对值不超过2c。",
+      "选择 0<a<c 使距离差2a严格小于焦距2c，避免退化到焦点射线。"
+    ],
+    "boundaries": [
+      "如果 a=c，距离差等于焦距，轨迹退化为某些射线；若 a>c，则不可能达到该距离差。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "双曲线实半轴 a 与焦距 c 满足 c²=a²−b²",
+        "example": "令 a=3,b=4，实际 c²=9+16=25，焦点在 x=±5。",
+        "explanation": "双曲线的 c²=a²+b²，与椭圆的 c²=a²−b² 不同。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "双曲线 x²/9−y²/16=1，求焦点与实轴参数。",
+        "steps": [
+          "a=3，b=4，c²=a²+b²=25。",
+          "焦点为(-5,0),(5,0)。"
+        ],
+        "answer": "c=5，焦点(±5,0)",
+        "check": "点(3,0)到两焦点距离8和2，差的绝对值为6=2a。"
+      },
+      {
+        "question": "给定 a=2,c=√13，写横轴双曲线标准式。",
+        "steps": [
+          "b²=c²−a²=13−4=9。",
+          "标准式 x²/a²−y²/b²=1。"
+        ],
+        "answer": "x²/4−y²/9=1",
+        "check": "a<c 满足非退化约束且 b²>0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "沿用椭圆的焦距减法公式",
+        "why_wrong": "双曲线的焦点比顶点更远离中心。",
+        "repair_question": "双曲线 c 与 a 谁更大？"
+      }
+    ],
+    "hint_ladder": [
+      "检查距离差 2a 是否小于两焦点间距 2c。",
+      "判定横轴、焦点与实轴长度。",
+      "计算 b²=c²−a² 是否严格为正。"
+    ],
+    "transfer": {
+      "near": "比较横轴双曲线 x²/16−y²/9=1 的渐近线与焦点。",
+      "far": "用两个传感器接收时差的等值轨迹解释双曲线定位。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.ellipse-focus"
+    ]
+  },
+  {
+    "id": "math.hs.geometry.conic-line-elimination",
+    "curriculum_ids": [
+      "HS-MATH-090"
+    ],
+    "kind": "method",
+    "title": "直线与圆锥曲线联立的代数消元及根数解释",
+    "version": "1.0.0",
+    "notation": [
+      "Q(x)=0",
+      "Δ=B²−4AC"
+    ],
+    "prerequisites": [
+      "直线方程、二次方程判别式、圆锥曲线"
+    ],
+    "definition": null,
+    "statement": "研究直线与非退化二次曲线交点时，应先把合法的直线参数式代入二次曲线，再核对二次项系数与判别式；若得到非零二次系数的实二次方程，可依判别式判定实交点个数，但根数与几何切线性质的对应还需检查退化和所在曲线的非奇异条件。",
+    "assumptions": [
+      "直线须合法且参数化一一对应其不同点；二次曲线的定义域及非退化条件已知。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先写直线的有效参数式 X=P+t u（u≠0）或 y=kx+b（仅非竖直线）。",
+      "把参数式代入曲线原方程，收集 t 的二次、一次和常数项，并记下最高次项是否为零。",
+      "若二次项非零，使用实数判别式决定对应的参数解数；遇到重根也需要额外判断重合、奇异点或切线解释。",
+      "回代每一个实参数得到平面坐标，并核实原方程与额外定义域。"
+    ],
+    "boundaries": [
+      "消元后若二次项为0，不能继续使用二次方程判别式；退化曲线与无穷远方向可能使根数和几何切线直觉不一致。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "联立后的二次项为0仍可套二次判别式确定两个交点",
+        "example": "双曲线 x²−y²=1 与直线 y=x−1 联立后得到 2x−1=1，即一次方程。",
+        "explanation": "最高次系数为0时方程次数已经下降，判别式公式不适用。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "圆 x²+y²=4 与 y=2 联立，求交点数。",
+        "steps": [
+          "代入得 x²+4=4，即 x²=0。",
+          "唯一实根 x=0，回代得 y=2。"
+        ],
+        "answer": "唯一交点(0,2)，直线在此与圆相切",
+        "check": "圆心到直线距离2等于半径2，几何判据吻合。"
+      },
+      {
+        "question": "椭圆 x²/9+y²/4=1 与 y=0 联立。",
+        "steps": [
+          "代入得 x²/9=1。",
+          "解得 x=±3，回代 y=0。"
+        ],
+        "answer": "交点(3,0)与(-3,0)",
+        "check": "两个不同实根对应两个不同曲线点。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只看判别式而忘记回代",
+        "why_wrong": "消元可能伴随除零、根号平方或退化分支，需要用原始方程复核。",
+        "repair_question": "你是否将求出的参数全部回代到原方程？"
+      }
+    ],
+    "hint_ladder": [
+      "直线是竖直的吗？选择不会漏点的参数式。",
+      "联立后最高次项是否真的存在？",
+      "实根是否均满足所有原始条件？"
+    ],
+    "transfer": {
+      "near": "圆 x²+y²=1 与 y=x 联立求两交点。",
+      "far": "用代数求交与图形切线双重判据检查视觉识别结果。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.line-equation"
+    ]
+  },
+  {
+    "id": "math.hs.geometry.ellipse-tangent",
+    "curriculum_ids": [
+      "HS-MATH-091"
+    ],
+    "kind": "theorem",
+    "title": "椭圆在曲线上一点的切线方程与非奇异条件",
+    "version": "1.0.0",
+    "notation": [
+      "x₀x/a²+y₀y/b²=1",
+      "F(x,y)=x²/a²+y²/b²−1"
+    ],
+    "prerequisites": [
+      "隐函数梯度、圆锥曲线、正交法向量"
+    ],
+    "definition": null,
+    "statement": "设 a,b>0 且椭圆 E:x²/a²+y²/b²=1；若 P₀=(x₀,y₀) 确实位于 E 上，则 E 在 P₀ 处的切线为 x₀x/a²+y₀y/b²=1。前提包括在曲线上且该点非奇异，不能把任意外点代入当作切点。",
+    "assumptions": [
+      "a,b 严格为正且有限，x₀²/a²+y₀²/b²=1。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "记 F(x,y)=x²/a²+y²/b²−1，则梯度 ∇F(P₀)=(2x₀/a²,2y₀/b²)。",
+        "reason": "二元函数偏导计算合法，且 P₀ 在椭圆上不可能 x₀=y₀=0，故梯度非零。"
+      },
+      {
+        "claim": "非奇异隐式曲线在 P₀ 的切线由 ∇F(P₀)·((x,y)−P₀)=0 给出。",
+        "reason": "梯度是曲线切向位移的法向量，非零保证一条局部切线存在。"
+      },
+      {
+        "claim": "展开得到 x₀x/a²+y₀y/b²=x₀²/a²+y₀²/b²，再用 P₀∈E 把右边替换为1。",
+        "reason": "切点在曲线上的条件提供右边恰好为1，因而得到给定切线表达式。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "外点或原点不是椭圆上的合法切点；把公式用于切点不在曲线的情形不成立。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意点 P₀ 都能代入 x₀x/a²+y₀y/b²=1 得到椭圆切线",
+        "example": "取 P₀=(0,0)，该式变成 0=1，甚至不表示直线。",
+        "explanation": "P₀ 在椭圆上和非奇异是必须检验的前提。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "椭圆 x²/9+y²/4=1 在 P₀=(3,0) 处的切线。",
+        "steps": [
+          "先核验 3²/9+0²/4=1。",
+          "将 x₀=3,y₀=0 代入切线式，x/3=1。"
+        ],
+        "answer": "x=3",
+        "check": "与椭圆右端点处竖直切线一致。"
+      },
+      {
+        "question": "同一椭圆在 P₀=(0,2) 处的切线。",
+        "steps": [
+          "核验 0²/9+2²/4=1。",
+          "代入公式 y/2=1。"
+        ],
+        "answer": "y=2",
+        "check": "上顶点切线水平且经过(0,2)。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把所谓换一半公式用于椭圆外部给定点",
+        "why_wrong": "外点有时可以引出两条切线，但外点不是切点，不可直接用切点公式。",
+        "repair_question": "P₀ 是否满足原始椭圆方程？"
+      }
+    ],
+    "hint_ladder": [
+      "先核验切点是否真的位于曲线上。",
+      "计算梯度是否为非零向量。",
+      "在切线线性化后才用原曲线条件化简。"
+    ],
+    "transfer": {
+      "near": "椭圆 x²/16+y²/9=1 在点(0,3)求切线。",
+      "far": "理解优化中的约束曲线梯度作为法向量的作用。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.ellipse-focus"
+    ]
+  },
+  {
+    "id": "math.hs.proof.induction",
+    "curriculum_ids": [
+      "HS-MATH-111"
+    ],
+    "kind": "theorem",
+    "title": "数学归纳法原理：起点与归纳步骤",
+    "version": "1.0.0",
+    "notation": [
+      "P(1)",
+      "∀k≥1:P(k)⇒P(k+1)"
+    ],
+    "prerequisites": [
+      "正整数、逻辑蕴含、最小元原理"
+    ],
+    "definition": null,
+    "statement": "对正整数命题族 P(n)，如果 P(1) 成立，且对每个正整数 k，P(k) 成立必能推出 P(k+1) 成立，那么 P(n) 对所有正整数 n 成立。起始编号若为 n₀，必须相应改为证明 P(n₀) 和所有 k≥n₀ 的推理步骤。",
+    "assumptions": [
+      "正整数满足良序原理；归纳步骤确实对任意合法 k 成立而非只检查若干个值。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "假设所有条件成立但存在不满足 P(n) 的正整数，取最小反例 m。",
+        "reason": "正整数良序原理保证非空反例集合存在最小成员。"
+      },
+      {
+        "claim": "由于 P(1) 已证，m 不能等于1，因此 m>1 且 P(m−1) 必真。",
+        "reason": "最小反例以下没有假命题，m−1 仍是合法正整数。"
+      },
+      {
+        "claim": "归纳步骤对 k=m−1 适用，推出 P(m)，与 m 是反例矛盾。",
+        "reason": "从真前提 P(m−1) 可通过普遍归纳蕴含推出 P(m)，因此反例集合为空。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "只检查 n=1,2,3 不是归纳证明；归纳步骤不能依赖尚未证明的目标命题作为无条件前提。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "若 P(k)→P(k+1) 对所有 k 成立，便不需要验证起点",
+        "example": "P(n) 为“n>100”，此蕴含对每个 n≥1 都成立，但 P(1) 为假。",
+        "explanation": "归纳步骤只有传递作用，没有真起点就无法启动。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "证明 1+2+⋯+n=n(n+1)/2。",
+        "steps": [
+          "n=1 时两侧均为1。",
+          "假设前 k 项和 k(k+1)/2，则加 k+1 得 (k+1)(k+2)/2。"
+        ],
+        "answer": "对所有正整数 n 成立",
+        "check": "归纳起点与 k→k+1 均逐步核实。"
+      },
+      {
+        "question": "证明前 n 个正奇数之和为 n²。",
+        "steps": [
+          "n=1 时左边1右边1。",
+          "若前 k 个为 k²，再加(2k+1)得(k+1)²。"
+        ],
+        "answer": "1+3+⋯+(2n−1)=n²",
+        "check": "归纳中添加的下一项是2(k+1)−1=2k+1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只有归纳步骤而没有基础步骤",
+        "why_wrong": "蕴含 P(k)→P(k+1) 可以对全部假 P(k) 空真。",
+        "repair_question": "哪个具体 n 提供了归纳链的第一项？"
+      }
+    ],
+    "hint_ladder": [
+      "先确定起始整数编号 n₀。",
+      "明确归纳假设 P(k) 的内容。",
+      "P(k+1) 与 P(k) 的差值是什么？"
+    ],
+    "transfer": {
+      "near": "用归纳法证明 2+4+⋯+2n=n(n+1)。",
+      "far": "解释递归程序正确性证明中循环不变量的初始化和保持。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.logic.implication"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "scope": "UNAPPROVED_EDITOR_DRAFTS_NOT_RELEASED",
+  "deep_draft_count": 164,
+  "new_drafts": 7,
+  "theorem_drafts": 84,
+  "review_pending": 164,
+  "teacher_approved": 0,
+  "student_released_evidence": 0,
+  "student_public_llm_route": false,
+  "model_external_requests": 0,
+  "official_elective_atom_mapping_verified": 0,
+  "student_math_steps_verified": false,
+  "warnings": [
+    "Model questions are editor-only candidates and not correctness-certified.",
+    "Zero signed human teacher approvals; real student/cloud LLM integration remains disabled.",
+    "Seven complete structured drafts have NOT been independently mathematically certified."
+  ]
+}

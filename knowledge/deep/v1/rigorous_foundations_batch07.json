@@ -1,0 +1,815 @@
+[
+  {
+    "id": "math.hs.sets.de-morgan-laws",
+    "curriculum_ids": [
+      "HS-MATH-002"
+    ],
+    "kind": "theorem",
+    "title": "集合补集的德摩根律与全集条件",
+    "version": "1.0.0",
+    "notation": [
+      "U",
+      "A∪B",
+      "A∩B",
+      "U\\A"
+    ],
+    "prerequisites": [
+      "有限或任意集合的元素判定",
+      "集合交并补的定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.sets.union-intersection"
+    ],
+    "definition": null,
+    "statement": "在固定全集 U 下，对所有 A,B⊆U，U\\(A∪B)=(U\\A)∩(U\\B)，U\\(A∩B)=(U\\A)∪(U\\B)。",
+    "assumptions": [
+      "A 和 B 都是同一个全集 U 的子集；补集必须始终相对于 U 定义。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "令 x 为全集 U 的任意元素；x∉A∪B 当且仅当 x∉A 且 x∉B。",
+        "reason": "并集的元素判定是逻辑或，否定逻辑或得到同时不属于两个集合。"
+      },
+      {
+        "claim": "所以 x∈U\\(A∪B) 当且仅当 x∈(U\\A)∩(U\\B)。",
+        "reason": "由补集和交集的元素判定，建立双向蕴含且没有遗漏 U 之外的元素。"
+      },
+      {
+        "claim": "类似地 x∉A∩B 当且仅当 x∉A 或 x∉B，推出第二条集合恒等式。",
+        "reason": "否定逻辑且得到逻辑或，按集合外延相等准则完成证明。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "更换全集会改变补集，不能在等号两侧擅自使用不同的全集。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "把两集合并集的补集写成两个补集的并集",
+        "example": "U={1,2,3}, A={1}, B={2}，并集补集={3}，而补集并集={1,2,3}。",
+        "explanation": "并集的补集应该取补集的交集而不是并集。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "U={1,2,3,4}, A={1,2}, B={2,3}，求 U\\(A∪B)。",
+        "steps": [
+          "先算并集为 {1,2,3}。",
+          "在全集里删除并集的三个元素。"
+        ],
+        "answer": "{4}",
+        "check": "交叉核对 (U\\A)∩(U\\B)={3,4}∩{1,4}={4}。"
+      },
+      {
+        "question": "U={1,2,3,4}, A={1,2}, B={2,3}，求 U\\(A∩B)。",
+        "steps": [
+          "交集只有元素 2。",
+          "在全集删除元素 2。"
+        ],
+        "answer": "{1,3,4}",
+        "check": "核对 (U\\A)∪(U\\B)={3,4}∪{1,4}={1,3,4}。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "将逻辑或的否定误写成逻辑或",
+        "why_wrong": "一个元素同时不在 A、B 中才不属于并集。",
+        "repair_question": "任选元素 x，写出 x∈A∪B 的真值条件及其否定是什么？"
+      }
+    ],
+    "hint_ladder": [
+      "先任选一个元素，分析它何时不属于并集。",
+      "把“不属于并集”翻译成两个条件的逻辑关系。",
+      "分别用交集或并集的定义写回集合。"
+    ],
+    "transfer": {
+      "near": "将两集合换成实数闭区间，注意端点是否属于全集。",
+      "far": "利用事件的集合语言解释概率中的对立事件和交事件关系。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.function.strict-inverse-monotonic",
+    "curriculum_ids": [
+      "HS-MATH-013"
+    ],
+    "kind": "theorem",
+    "title": "严格单调函数反函数的存在与单调方向",
+    "version": "1.0.0",
+    "notation": [
+      "f:A→R",
+      "f^{-1}:f(A)→A"
+    ],
+    "prerequisites": [
+      "严格单调定义",
+      "单射与反函数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.monotonicity"
+    ],
+    "definition": null,
+    "statement": "设 A⊆R，f:A→R 严格递增或严格递减，则 f 在 A 上单射，存在定义在 f(A) 上的反函数；严格递增时其反函数严格递增，严格递减时严格递减。",
+    "assumptions": [
+      "A 至少含两个不同实数；函数在 A 上处处有定义；严格单调性比较任意 x1<x2∈A。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "若 x1≠x2，则其中一个小于另一个，严格单调保证 f(x1)≠f(x2)。",
+        "reason": "严格不等式排除不同自变量对应相同函数值，故 f 为单射。"
+      },
+      {
+        "claim": "对每个 y∈f(A)，按值域定义有至少一个 x∈A 使 f(x)=y，单射又保证这个 x 唯一。",
+        "reason": "存在性由 f(A) 的定义给出，唯一性由单射给出，反函数因此良定义。"
+      },
+      {
+        "claim": "取 y1<y2∈f(A) 和对应逆像 x1,x2。若 f 递增而 x1≥x2，则由严格增性得 y1≥y2 矛盾；递减情形同理得 x1>x2。",
+        "reason": "反证法结合原函数的严格序保持或反序保持，得到反函数同方向严格单调。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不保证 A 上连续；反函数定义域是 f(A)，不是任意实数。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意函数都可在全定义域建立一一对应反函数",
+        "example": "f(x)=x² 在全实数上 f(1)=f(-1)，无法给值 1 唯一选原像。",
+        "explanation": "非单射时需要额外限制原函数定义域才可定义单值反函数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f(x)=3x+2 在 R 上，求反函数并判单调性。",
+        "steps": [
+          "令 y=3x+2，唯一解为 x=(y-2)/3。",
+          "把输出变量改写为 x；系数为正说明严格递增。"
+        ],
+        "answer": "f^{-1}(x)=(x-2)/3，严格递增",
+        "check": "代回复合得到 (3((x-2)/3)+2)=x，值域为 R。"
+      },
+      {
+        "question": "f(x)=x² 限定 x≥0，求反函数。",
+        "steps": [
+          "先限定 x≥0 保证严格递增。",
+          "由 y=x² 与 x≥0，唯一求出 x=√y。"
+        ],
+        "answer": "f^{-1}(y)=√y，y≥0",
+        "check": "不允许取负平方根；检验 f(√y)=y 仅在 y≥0 有意义。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把求逆视为只做代数换元而不检查单射",
+        "why_wrong": "同一个输出可能对应两个不同输入，逆关系不一定是函数。",
+        "repair_question": "先检验不同自变量会不会取同一个函数值？"
+      }
+    ],
+    "hint_ladder": [
+      "先问函数有没有可能不同输入对应相同输出。",
+      "写清楚反函数的输入空间应该是哪一个集合。",
+      "比较原函数与反函数的两个输入点来证明顺序。"
+    ],
+    "transfer": {
+      "near": "把一次函数改成严格递减的负斜率函数，判断逆函数增减。",
+      "far": "对二次函数先限制定义域为单调区间，说明为什么必须约束支路。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.sequence.arithmetic-nth-term",
+    "curriculum_ids": [
+      "HS-MATH-062",
+      "HS-MATH-063"
+    ],
+    "kind": "theorem",
+    "title": "等差递推的通项公式和初始条件",
+    "version": "1.0.0",
+    "notation": [
+      "a_1",
+      "a_{n+1}=a_n+d",
+      "n∈N+"
+    ],
+    "prerequisites": [
+      "数列的正整数指标",
+      "常数差递推"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.sequence.recurrence"
+    ],
+    "definition": null,
+    "statement": "给定初值 a1∈R 和公差 d∈R，若对所有正整数 n 满足 a_{n+1}=a_n+d，则唯一的数列通项为 a_n=a1+(n-1)d。",
+    "assumptions": [
+      "必须有初值 a1 与固定公差 d；递推从 n=1 开始且每一步都满足。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "当 n=1 时，通项右侧为 a1+(1-1)d=a1，和给定初值相符。",
+        "reason": "数学归纳法先验证基例；没有初值无法确定具体数列。"
+      },
+      {
+        "claim": "假设第 n 项满足 a_n=a1+(n-1)d，利用递推得到 a_{n+1}=a1+nd。",
+        "reason": "在归纳假设成立时加上同一个公差 d，并整理指数。"
+      },
+      {
+        "claim": "由归纳法对任意正整数 n 成立；递推每一步由前一项唯一决定，因此与初值配合确定唯一数列。",
+        "reason": "归纳步覆盖所有正整数并给出存在与唯一的递推构造。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "公差可为零、可为负；如果 d 随 n 改变，此通项一般不成立。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只给固定公差就能唯一确定数列",
+        "example": "公差 d=2 时，1,3,5,... 与 4,6,8,... 均满足递推，但初值不同。",
+        "explanation": "没有 a1 时不能确定唯一通项。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "首项 3，公差 5，求第 6 项。",
+        "steps": [
+          "由递推通项代入 n=6。",
+          "计算 3+(6-1)·5。"
+        ],
+        "answer": "a6=28",
+        "check": "逐项列出 3,8,13,18,23,28 验算递推。"
+      },
+      {
+        "question": "a1=7，d=-2，计算 a4 和 a5。",
+        "steps": [
+          "由通项得到 a4=7+3(-2)。",
+          "继续得到 a5=7+4(-2)。"
+        ],
+        "answer": "a4=1，a5=-1",
+        "check": "检查两相邻结果满足 a5-a4=-2。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把 n 项与第 n+1 项索引错位",
+        "why_wrong": "通项系数应该是 n-1 而不是 n。",
+        "repair_question": "先用 n=1 代入你写出的公式，是否回到给定首项？"
+      }
+    ],
+    "hint_ladder": [
+      "从首项连续写三项，看总共加了多少次 d。",
+      "第 n 项与第 1 项相差多少次递推？",
+      "写归纳基例后再代入归纳假设完成证明。"
+    ],
+    "transfer": {
+      "near": "当公差为零或负数时，检查公式是否仍满足递推。",
+      "far": "将固定差递推推广到随 n 改变的增量，比较累加和与等差通项的适用边界。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.calculus.product-derivative",
+    "curriculum_ids": [
+      "HS-MATH-066",
+      "HS-MATH-067"
+    ],
+    "kind": "theorem",
+    "title": "两函数乘积的导数与可导性前提",
+    "version": "1.0.0",
+    "notation": [
+      "(fg)'",
+      "f'(x0)",
+      "g'(x0)"
+    ],
+    "prerequisites": [
+      "导数极限定义",
+      "可导蕴含连续"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.calculus.derivative-definition"
+    ],
+    "definition": null,
+    "statement": "若实函数 f、g 都在点 x0 的某邻域有定义且在 x0 可导，则 fg 在 x0 可导，且 (fg)'(x0)=f'(x0)g(x0)+f(x0)g'(x0)。",
+    "assumptions": [
+      "f 和 g 在 x0 各自可导；极限中的 h→0 必须使 x0+h 落在定义域内。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "将乘积差写成 f(x0+h)[g(x0+h)-g(x0)]+g(x0)[f(x0+h)-f(x0)]。",
+        "reason": "加减中间项 f(x0+h)g(x0)，纯代数变形不需要先除法。"
+      },
+      {
+        "claim": "对 h≠0 除以 h，得到 f(x0+h)·[g 的差商]+g(x0)·[f 的差商]。",
+        "reason": "按导数定义，两个差商分别趋于 g'(x0) 和 f'(x0)。"
+      },
+      {
+        "claim": "由于 f 在 x0 可导所以连续，f(x0+h)→f(x0)；按乘积极限与和极限得到目标公式。",
+        "reason": "可导推出连续且各极限有限，因此可用极限四则运算法则。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不能把乘积求导写成 f'g'；若某函数在点不可导，公式的条件不成立。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "乘积的导数等于两者导数的乘积",
+        "example": "取 f(x)=x²、g(x)=x，正确导数为 3x²，而 f'g'=2x。",
+        "explanation": "必须有两项乘积，不能直接相乘导数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f(x)=x²，g(x)=x³，求 (fg)'。",
+        "steps": [
+          "先写 f'=2x，g'=3x²。",
+          "代入乘积法则得 2x·x³+x²·3x²。"
+        ],
+        "answer": "5x⁴",
+        "check": "独立将 fg=x⁵ 直接求导，得到相同结果。"
+      },
+      {
+        "question": "f(x)=x+1，g(x)=2x-3，求在 x=2 的乘积导数。",
+        "steps": [
+          "f'=1、g'=2，先求 f(2)=3、g(2)=1。",
+          "由公式得 (fg)'(2)=1·1+3·2。"
+        ],
+        "answer": "7",
+        "check": "展开 (x+1)(2x-3)=2x²-x-3，求导 4x-1 在 2 为 7。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忽略分解差分中的额外项",
+        "why_wrong": "两个函数同时变化，差商要拆成两部分分别求极限。",
+        "repair_question": "能否加减一个中间项，使两个增量各出现一次？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查两个函数是否都在所求点可导。",
+      "在乘积差中添加并减去相同中间项。",
+      "差商拆开后，指出可导为什么允许取乘积极限。"
+    ],
+    "transfer": {
+      "near": "用乘积法则独立计算 (x²+1)(x-2) 的导数并与展开式对照。",
+      "far": "讨论 |x|·x 在零点可能可导，但 |x| 本身不可导，说明公式只给充分条件不能倒推必要条件。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.circle-chord-length",
+    "curriculum_ids": [
+      "HS-MATH-084",
+      "HS-MATH-085"
+    ],
+    "kind": "theorem",
+    "title": "圆与直线的距离判别和弦长公式",
+    "version": "1.0.0",
+    "notation": [
+      "r>0",
+      "d≥0",
+      "L=2√(r²-d²)"
+    ],
+    "prerequisites": [
+      "圆的半径定义",
+      "点到直线距离与直角三角形"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.line-circle"
+    ],
+    "definition": null,
+    "statement": "半径 r>0 的圆与距离圆心为 d 的直线：若 d<r 有两交点且弦长 L=2√(r²-d²)；若 d=r 相切且弦长退化为 0；若 d>r 无交点。",
+    "assumptions": [
+      "r>0；d 是圆心到直线的非负距离；弦长公式仅在 d≤r 下为实数。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "当直线穿过圆盘，取圆心 O 到直线的垂足 H；垂足将弦 AB 平分。",
+        "reason": "半径 OA=OB 且 OH 垂直 AB，等腰三角形的高平分底边。"
+      },
+      {
+        "claim": "直角三角形 OHA 满足 HA²=r²-d²，所以当 d≤r 时 HA=√(r²-d²)。",
+        "reason": "勾股定理及距离的非负性确定长度分支。"
+      },
+      {
+        "claim": "因此 L=AB=2HA；d=r 时两交点并为切点，d>r 时 r²-d²<0 不存在实交点。",
+        "reason": "依据弦的对称性与实数长度条件分三类讨论。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "半径 r=0 的点集不是通常定义下非退化圆；d>r 不得声称有实弦长。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "直线到圆心距离大于半径仍有两个交点",
+        "example": "半径 2 的圆与距圆心 3 的直线不相交，根号内 4-9<0。",
+        "explanation": "没有真实交点时不存在实数弦长。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "半径 5 的圆，圆心到直线距离 3，求弦长。",
+        "steps": [
+          "由勾股定理得到半弦长度 √(25-9)=4。",
+          "弦长为 2·4。"
+        ],
+        "answer": "8",
+        "check": "从半径为 5 的圆内作距中心 3 的水平线，交点横坐标±4，差为8。"
+      },
+      {
+        "question": "半径 3 的圆，圆心到直线距离 3 或 4 时交点个数？",
+        "steps": [
+          "距离等于半径 3 时，只有一个切点。",
+          "距离大于半径 4 时没有交点。"
+        ],
+        "answer": "d=3 时相切，d=4 时不相交",
+        "check": "分别核查 r²-d² 等于零与负数两种边界。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把半弦长误当成整条弦长",
+        "why_wrong": "勾股定理求出的是 AH，不是 AB。",
+        "repair_question": "垂足 H 为弦的什么位置？最终还需要乘几？"
+      }
+    ],
+    "hint_ladder": [
+      "先比较圆心到直线的距离与半径。",
+      "向直线作圆心垂线形成直角三角形。",
+      "求出的是半弦长还是整弦长？"
+    ],
+    "transfer": {
+      "near": "半径 13、弦长 24 时，反求圆心到弦所在直线的距离。",
+      "far": "把圆的弦长结论连接到解析几何的直线和圆方程联立判别式。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.statistics.variance-affine",
+    "curriculum_ids": [
+      "HS-MATH-057",
+      "HS-MATH-098"
+    ],
+    "kind": "theorem",
+    "title": "随机变量线性变换的期望与方差",
+    "version": "1.0.0",
+    "notation": [
+      "E(X)",
+      "Var(X)",
+      "Y=aX+b"
+    ],
+    "prerequisites": [
+      "随机变量期望与方差定义",
+      "平方非负性"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.statistics.variance"
+    ],
+    "definition": null,
+    "statement": "若随机变量 X 有有限二阶矩，a,b 为实数，Y=aX+b，则 E(Y)=aE(X)+b，Var(Y)=a²Var(X)。",
+    "assumptions": [
+      "E(X²) 有限；a,b 是常数而不是与 X 有关的随机变量；方差定义为 E[(X-E(X))²]。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由期望线性性 E(aX+b)=aE(X)+b。",
+        "reason": "常数乘法与加法在有限期望下可逐项分配。"
+      },
+      {
+        "claim": "将 Y-E(Y) 化为 aX+b-aE(X)-b=a(X-E(X))。",
+        "reason": "使用刚得到的期望表达式，常数 b 严格抵消。"
+      },
+      {
+        "claim": "平方并取期望得 Var(Y)=E[a²(X-E(X))²]=a²Var(X)。",
+        "reason": "a² 是非负常数，可以移出期望，得到无遗漏的尺度变换公式。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "当 a=0 时方差为0；平移 b 不改变方差；无有限二阶矩时本公式不得直接套有限方差结论。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "将所有数据加上常数会让方差增加同样常数",
+        "example": "数据 1,3 方差为 1，加 10 后 11,13 方差仍为 1。",
+        "explanation": "平移改变均值但不改变相对均值的离差。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "X 等概率取 1 和 3，令 Y=2X+5，求 E(Y)、Var(Y)。",
+        "steps": [
+          "E(X)=2、Var(X)=1。",
+          "E(Y)=2·2+5=9；Var(Y)=4·1=4。"
+        ],
+        "answer": "E(Y)=9，Var(Y)=4",
+        "check": "Y 等概率取7和11，均值9，方差 ((7-9)²+(11-9)²)/2=4。"
+      },
+      {
+        "question": "X 等概率取 0 和 4，Z=10-X，求方差。",
+        "steps": [
+          "X 均值2，方差 ((-2)²+2²)/2=4。",
+          "Z 斜率 a=-1，故方差乘 a²=1。"
+        ],
+        "answer": "Var(Z)=4",
+        "check": "Z 等概率取10与6，均值8、方差4，和公式一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "错把标准差放大因子直接当作方差因子",
+        "why_wrong": "方差缩放系数是 a²，标准差缩放系数才是 |a|。",
+        "repair_question": "写出 Y-E(Y) 与 X-E(X) 的代数关系是什么？"
+      }
+    ],
+    "hint_ladder": [
+      "先从期望定义计算变换后的均值。",
+      "求 Y-E(Y) 时常数 b 会发生什么变化？",
+      "平方并取期望后，a 应该带什么指数？"
+    ],
+    "transfer": {
+      "near": "把数据从米转换为厘米，说明方差与标准差分别如何缩放。",
+      "far": "分析平移不会改变样本方差，但随机噪声相加不能直接沿用常数平移公式。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.bayes-partition",
+    "curriculum_ids": [
+      "HS-MATH-096",
+      "HS-MATH-097"
+    ],
+    "kind": "theorem",
+    "title": "有限分割事件下的贝叶斯公式及归一化条件",
+    "version": "1.0.0",
+    "notation": [
+      "P(A_i|B)",
+      "P(B|A_i)",
+      "P(B)>0"
+    ],
+    "prerequisites": [
+      "条件概率定义",
+      "有限分割与全概率公式"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.total"
+    ],
+    "definition": null,
+    "statement": "设 A1,…,Am 为样本空间的有限两两互斥完备分割，且 P(Ai)>0；若 P(B)>0，则 P(Ai|B)=P(B|Ai)P(Ai)/Σ_j P(B|Aj)P(Aj)。",
+    "assumptions": [
+      "有限分割两两互斥、并为全集；每个 Ai 具有正概率；P(B)>0 保证除法有意义。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由条件概率定义 P(Ai|B)=P(Ai∩B)/P(B)，且 P(B|Ai)=P(B∩Ai)/P(Ai)。",
+        "reason": "P(B)>0、P(Ai)>0 使两条条件概率公式均有定义。"
+      },
+      {
+        "claim": "从第二式得到 P(Ai∩B)=P(B|Ai)P(Ai)。",
+        "reason": "同一交事件概率可用条件概率乘法公式表示。"
+      },
+      {
+        "claim": "因为 B 被两两互斥事件 Ai∩B 分割，所以 P(B)=Σ_j P(B|Aj)P(Aj)；代入第一式得结论。",
+        "reason": "有限可加性与分割的完备性证明分母是 P(B)>0。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 P(B)=0，P(Ai|B) 按通常定义未定义；遗漏任何分割类别会造成错误归一化。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "将 P(B|A) 直接当作 P(A|B)",
+        "example": "若疾病基率 1%，敏感度 90%，假阳性率 10%，阳性后的患病率小于 90%。",
+        "explanation": "基率与假阳性概率均影响逆向条件概率。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "A1=病，先验1/100，检出率9/10；A2=健康，假阳率1/10，求阳性后患病率。",
+        "steps": [
+          "分子=(9/10)(1/100)=9/1000。",
+          "分母为9/1000+(1/10)(99/100)=108/1000。"
+        ],
+        "answer": "P(A1|+)=1/12",
+        "check": "用 P(+)=108/1000 核对 9/108=1/12，概率在0到1之间。"
+      },
+      {
+        "question": "两种盒各先验1/2，红球概率分别 1/4 和3/4；观察红球后来自第二盒概率。",
+        "steps": [
+          "分子=(1/2)(3/4)=3/8。",
+          "分母=(1/2)(1/4)+(1/2)(3/4)=1/2。"
+        ],
+        "answer": "P(盒2|红)=3/4",
+        "check": "核对两盒后验分别 1/4、3/4，总和为1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不计算分母就把似然作为后验概率",
+        "why_wrong": "条件概率分母必须是所有类别的总证据概率。",
+        "repair_question": "事件 B 可以由哪些互斥类别产生？每类所占概率如何相加？"
+      }
+    ],
+    "hint_ladder": [
+      "先写全所有可能的互斥原因及其先验概率。",
+      "用乘法公式计算每个原因产生观测事件的联合概率。",
+      "把这些联合概率求和作为分母，再做归一化。"
+    ],
+    "transfer": {
+      "near": "改变疾病基率或假阳性率，重新计算阳性后的真实后验概率。",
+      "far": "把模型中的类别从两类扩展到多类，判断遗漏类别为何会导致后验和不为1。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.counting.two-set-inclusion-exclusion",
+    "curriculum_ids": [
+      "HS-MATH-092",
+      "HS-MATH-093"
+    ],
+    "kind": "theorem",
+    "title": "两个有限集合的容斥计数公式",
+    "version": "1.0.0",
+    "notation": [
+      "|A∪B|",
+      "|A∩B|"
+    ],
+    "prerequisites": [
+      "有限集合基数",
+      "交并集定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.sets.union-intersection"
+    ],
+    "definition": null,
+    "statement": "对任意两个有限集合 A、B，有 |A∪B|=|A|+|B|-|A∩B|；若不相交则退化为 |A∪B|=|A|+|B|。",
+    "assumptions": [
+      "A、B 都是有限集合；计数将同一元素只记录一次。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "把 A 分成互斥的 A\\B 和 A∩B 两部分，得到 |A|=|A\\B|+|A∩B|。",
+        "reason": "每个 A 中元素恰属于一部分，可用有限不交集合的基数可加性。"
+      },
+      {
+        "claim": "把并集分成互斥的 A 和 B\\A，得 |A∪B|=|A|+|B\\A|。",
+        "reason": "并集中属于 A 的元素不能再次在 B\\A 中计数。"
+      },
+      {
+        "claim": "由 |B\\A|=|B|-|A∩B|，代入并集式得到目标容斥公式。",
+        "reason": "B 同样可分解为 B\\A 和交集，两式结合扣除重复计数。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若集合无限，则普通整数基数减法式未必具有相同解释；仅在有限集合计数中使用。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "统计两个社团总人数时可直接把两社人数相加",
+        "example": "A社10人，B社8人，其中3人同时参加，总人数应15而不是18。",
+        "explanation": "重叠成员被重复计算，必须减去交集人数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "A有10人，B有8人，两社重合3人，至少参加一个社团多少人？",
+        "steps": [
+          "分别计数得到 10+8=18。",
+          "减去重合的3人一次。"
+        ],
+        "answer": "15 人",
+        "check": "检查仅A 7人、仅B 5人、两者3人，共15人。"
+      },
+      {
+        "question": "1到20中的偶数集合与3的倍数集合，求至少属于其中之一的数量。",
+        "steps": [
+          "偶数10个，3的倍数6个。",
+          "6的倍数3个，代入10+6-3。"
+        ],
+        "answer": "13 个",
+        "check": "将 1..20 的元素枚举，独立核实并集有13个整数。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把交集元素重复计算两次",
+        "why_wrong": "交集中的每个人在 |A|+|B| 中出现两次而在并集中只该出现一次。",
+        "repair_question": "哪些元素在两个计数里都出现？应扣掉多少次？"
+      }
+    ],
+    "hint_ladder": [
+      "先给两个集合分别计数。",
+      "哪些元素属于两集合交集、被重复算了几次？",
+      "从两个数目的和里扣除交集计数即可。"
+    ],
+    "transfer": {
+      "near": "应用于两个不相交班级人数，说明为何交集为零。",
+      "far": "利用事件概率加法公式解释容斥如何由有限计数推广到概率测度。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]
