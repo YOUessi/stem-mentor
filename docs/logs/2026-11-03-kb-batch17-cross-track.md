@@ -54,3 +54,11 @@
 4. **K08** 在真实教研身份、可信签名和撤销机制完善后，才可让 Approved-only RAG 与云端 Tutor 在实际授权学生情形下运行；未见题需要独立评测，模型回答不得自动认证。
 
 代码库和 PR 才是正式交付与下一次执行基准；未签审全部保持 `REVIEW_PENDING`，不得擅自合并。
+
+## GitHub Actions 首轮失败与严格修复（同一批次）
+
+Draft PR #43 第一次远端 GitHub Actions run `41615908595` 在第一个课程覆盖步骤 `python scripts/build_kb_coverage.py --summary` 失败（`ValueError: unknown legacy level/theme: HS-MATH-151`）。**Mac 原先的本地 CI 审计清单遗漏了这个真实工作流第一步**，因此本地审计通过并不能代替 GitHub Actions 的成功。
+
+修复在 `scripts/build_kb_coverage.py` 严格限定：仅当工程主题明确标识为“高中数学课标样本候选（未经教研认证）”，且 `mapping_type=ENGINEERING_INTERPRETATION`、`teacher_review=PENDING`、`status=PLANNED`、有 `editorial_objective_id` 时才以 `UNVERIFIED_EDITORIAL_CANDIDATE` 展示；**不将这个伪官方主题映射成任何真实课标主题**。任意其他未知必修/选择性必修主题、伪审核、无课程目标仍按 fail-closed 拒绝。
+
+新增 `backend/tests/test_kb_batch17_ci_scope_regression.py` 六项回归（11 个候选逐项 PENDING 验证、4 类伪造或缺字段负例、1 类未知主题负例），**6 passed**。本地逐字运行 GitHub 首步命令通过，Mac Python 全量 **11551 passed / 1 warning**（修复前为 11545），Node 111 passed；浏览器初次完整回归记录仍保留。第二次远端 CI 的最终结论应以 GitHub Workflow run 的 completion 状态为准，不能预先宣称成功。

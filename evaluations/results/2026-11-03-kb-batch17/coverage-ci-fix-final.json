@@ -1,0 +1,119 @@
+{
+  "legacy_engineering_topics": 161,
+  "per_track": {
+    "COMPULSORY": 64,
+    "SELECTIVE_COMPULSORY": 46,
+    "ELECTIVE_A": 0,
+    "ELECTIVE_B": 0,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "ELECTIVE_UNASSIGNED": 51
+  },
+  "engineering_topic_levels": {
+    "必修": 64,
+    "选择性必修": 46,
+    "选修拓展": 51
+  },
+  "unassigned_elective_atoms": [
+    "HS-MATH-107",
+    "HS-MATH-108",
+    "HS-MATH-109",
+    "HS-MATH-110",
+    "HS-MATH-111",
+    "HS-MATH-112",
+    "HS-MATH-113",
+    "HS-MATH-114",
+    "HS-MATH-115",
+    "HS-MATH-116",
+    "HS-MATH-117",
+    "HS-MATH-118",
+    "HS-MATH-119",
+    "HS-MATH-120",
+    "HS-MATH-121",
+    "HS-MATH-122",
+    "HS-MATH-123",
+    "HS-MATH-124",
+    "HS-MATH-125",
+    "HS-MATH-126",
+    "HS-MATH-127",
+    "HS-MATH-128",
+    "HS-MATH-129",
+    "HS-MATH-130",
+    "HS-MATH-131",
+    "HS-MATH-132",
+    "HS-MATH-133",
+    "HS-MATH-134",
+    "HS-MATH-135",
+    "HS-MATH-136",
+    "HS-MATH-137",
+    "HS-MATH-138",
+    "HS-MATH-139",
+    "HS-MATH-140",
+    "HS-MATH-141",
+    "HS-MATH-142",
+    "HS-MATH-143",
+    "HS-MATH-144",
+    "HS-MATH-145",
+    "HS-MATH-146",
+    "HS-MATH-147",
+    "HS-MATH-148",
+    "HS-MATH-149",
+    "HS-MATH-150",
+    "HS-MATH-155",
+    "HS-MATH-156",
+    "HS-MATH-157",
+    "HS-MATH-158",
+    "HS-MATH-159",
+    "HS-MATH-160",
+    "HS-MATH-161"
+  ],
+  "official_explicit_elective_tracks_with_atom_mapping": 0,
+  "official_elective_track_count": 5,
+  "unreviewed_legacy_atoms": 161,
+  "deep_knowledge": {
+    "scope": "PROJECT_ENGINEERING_MAP_NOT_OFFICIAL_ATOMIC_SYLLABUS",
+    "curriculum_topic_total": 161,
+    "deep_lesson_documents": 224,
+    "mapped_curriculum_ids": 161,
+    "review_statuses": {
+      "REVIEW_PENDING": 224
+    },
+    "kinds": {
+      "theorem": 136,
+      "concept": 70,
+      "method": 18
+    },
+    "by_level": {
+      "必修": {
+        "engineering_topics": 64,
+        "with_deep_draft": 64,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选择性必修": {
+        "engineering_topics": 46,
+        "with_deep_draft": 46,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选修拓展": {
+        "engineering_topics": 51,
+        "with_deep_draft": 51,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      }
+    },
+    "human_teacher_review_complete": false,
+    "student_math_proofs_verified": false,
+    "direct_student_teaching_enabled": false,
+    "notes": [
+      "Existing topic IDs are project granularity and must be audited against the official curriculum.",
+      "Schema validation cannot prove mathematical truth; a draft is never a teacher-reviewed fact.",
+      "Draft worked examples and proof steps remain TEACHER_ONLY until genuine review."
+    ]
+  }
+}

@@ -23,7 +23,20 @@ def build():
         tr = official["legacy_level_normalization"][topic["level"]]
         th = official["legacy_theme_normalization"].get(topic["theme"], topic["theme"])
         tracks = next((x for x in official["tracks"] if x["id"] == tr), None)
-        if tr != "ELECTIVE_UNASSIGNED" and (not tracks or th not in tracks["themes"]):
+        # Batch17 introduced project-authored editorial candidates in *all*
+        # legacy levels. Their deliberately unverified theme is NOT an official
+        # curriculum theme. Retain them as pending instead of silently making
+        # a fabricated official scope match (or crashing CI).
+        is_editorial_candidate = topic["theme"] == "高中数学课标样本候选（未经教研认证）"
+        if is_editorial_candidate:
+            source = topic.get("source") or {}
+            if (source.get("mapping_type") != "ENGINEERING_INTERPRETATION"
+                    or source.get("teacher_review") != "PENDING"
+                    or not topic.get("editorial_objective_id")
+                    or topic.get("status") != "PLANNED"):
+                raise ValueError(f"untrusted editorial curriculum candidate: {topic['id']}")
+            th = "UNVERIFIED_EDITORIAL_CANDIDATE"
+        elif tr != "ELECTIVE_UNASSIGNED" and (not tracks or th not in tracks["themes"]):
             raise ValueError(f"unknown legacy level/theme: {topic['id']}")
         rows.append({
             "curriculum_id": topic["id"],
@@ -31,6 +44,7 @@ def build():
             "engineering_unit": topic["unit"],
             "official_track_candidate": tr,
             "theme_high_level_match": th,
+            "editorial_theme_uncertified": is_editorial_candidate,
             "existing_tool_status": topic["status"],
             "deep_docs": mapped[topic["id"]],
             "teacher_review": topic.get("source",{}).get("teacher_review", "MISSING"),
