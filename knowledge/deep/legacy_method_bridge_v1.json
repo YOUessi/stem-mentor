@@ -1,0 +1,703 @@
+{
+  "version": "1.0.0",
+  "status": "UNREVIEWED_LEGACY_BRIDGE_ONLY",
+  "source_sha256": "1269bd1332854fbecc404e0e643e221ad6c4e7ef94bdba5e647d6e97673db2b2",
+  "source_id_count": 26,
+  "unconverted_ids": [
+    "method-angle-bisector",
+    "method-apollonius",
+    "method-arithmetic-series",
+    "method-cauchy",
+    "method-conic-tangent",
+    "method-cosine-rule",
+    "method-derivative-monotonicity",
+    "method-ellipse-focus",
+    "method-fixed-sum-product",
+    "method-geometric-sum",
+    "method-induction",
+    "method-interval-extrema",
+    "method-locus-midpoint",
+    "method-log-base",
+    "method-log-domain",
+    "method-median-theorem",
+    "method-parabola-tangent",
+    "method-sine-area",
+    "method-sine-rule",
+    "method-ssa-ambiguity",
+    "method-ssa-branch",
+    "method-vector-dot",
+    "strategy-backward-bridge",
+    "strategy-conditions",
+    "strategy-counterexample",
+    "strategy-reverse-subgoal"
+  ],
+  "kinds": {
+    "method": 22,
+    "strategy": 4
+  },
+  "entries": [
+    {
+      "legacy_id": "method-apollonius",
+      "kind": "method",
+      "title": "阿波罗尼斯圆：距离比不变量",
+      "source_version": "2026-10-15.1",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "two_fixed_points",
+        "constant_distance_ratio"
+      ],
+      "structures": [
+        "two_fixed_points",
+        "constant_distance_ratio",
+        "locus"
+      ],
+      "prerequisites": [
+        "两点间距离公式",
+        "圆的标准方程"
+      ],
+      "boundary": "k=1 对应垂直平分线而不是圆；定点必须不同；分母 PB 必须非零。",
+      "hint": "不要先套轨迹公式。先区分固定点与动点，并找出始终不变的距离关系。",
+      "source_reference": "STEM Mentor 自编方法笔记 v0.4",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-conic-tangent",
+      "kind": "method",
+      "title": "二次曲线切线：隐式求导与半代入",
+      "source_version": "2026-10-15.1",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "quadratic_curve",
+        "point_on_curve",
+        "tangent_at_point"
+      ],
+      "structures": [
+        "quadratic_curve",
+        "point_on_curve",
+        "tangent_at_point"
+      ],
+      "prerequisites": [
+        "导数的几何意义",
+        "隐函数关系",
+        "二次式"
+      ],
+      "boundary": "切点必须位于曲线上且为非奇异点；曲线外点或奇异点不得无条件套用。",
+      "hint": "题目给出了曲线上哪一个点？是否可以利用该点处的局部变化，而不先引入整条未知直线？",
+      "source_reference": "STEM Mentor 自编方法笔记 v0.4",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-ellipse-focus",
+      "kind": "method",
+      "title": "椭圆焦点定义和距离和",
+      "source_version": "2026-10-15.1",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "two_fixed_points",
+        "fixed_distance_sum"
+      ],
+      "structures": [
+        "two_fixed_points",
+        "fixed_distance_sum",
+        "locus"
+      ],
+      "prerequisites": [
+        "三角不等式",
+        "点到点距离"
+      ],
+      "boundary": "L 必须与 |AB| 比较，尤其等号与小于时不能断言为椭圆。",
+      "hint": "先比较两点间最短路与规定的距离总和，有没有由三角不等式决定的条件？",
+      "source_reference": "STEM Mentor 自编方法笔记 v0.4",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-fixed-sum-product",
+      "kind": "method",
+      "title": "定和条件下的乘积上界",
+      "source_version": "2026-10-15.1",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "positive_two_variables",
+        "fixed_sum"
+      ],
+      "structures": [
+        "positive_two_variables",
+        "fixed_sum",
+        "bound_reciprocal_sum"
+      ],
+      "prerequisites": [
+        "非负平方",
+        "等价变形的条件"
+      ],
+      "boundary": "求倒数需要 xy≠0；乘除不等式需要核实乘数正负；均值不等式要求相应非负条件。",
+      "hint": "如果合并分式后剩下 xy，反过来问：要得到目标下界，xy 应满足什么上界？",
+      "source_reference": "STEM Mentor 自编方法笔记 v0.4",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-geometric-sum",
+      "kind": "method",
+      "title": "等比数列求和的分母与特例",
+      "source_version": "2026-10-15.1",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "geometric_sequence",
+        "sum_n_terms"
+      ],
+      "structures": [
+        "geometric_sequence",
+        "sum_n_terms",
+        "special_case"
+      ],
+      "prerequisites": [
+        "数列求和",
+        "非零分母"
+      ],
+      "boundary": "q=1 不允许代入分母为 0 的公式；指数 n 应为正整数。",
+      "hint": "先检查你准备除以的量是否可能等于零，再决定使用哪种求和路径。",
+      "source_reference": "STEM Mentor 自编方法笔记 v0.4",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "strategy-backward-bridge",
+      "kind": "strategy",
+      "title": "正推停滞时从目标逆推",
+      "source_version": "2026-10-15.1",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [],
+      "structures": [
+        "goal_decomposition",
+        "stuck_forward"
+      ],
+      "prerequisites": [
+        "充分条件与必要条件"
+      ],
+      "boundary": "必须区分充分条件、必要条件和等价条件；不能将逆向构想当作已证事实。",
+      "hint": "把目前从条件得到的关系放左边，把为了达到目标需要的条件放右边，两端缺的是哪个连接？",
+      "source_reference": "STEM Mentor 自编方法笔记 v0.4",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "strategy-conditions",
+      "kind": "strategy",
+      "title": "运算前检验定义域和退化条件",
+      "source_version": "2026-10-15.1",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [],
+      "structures": [
+        "special_case"
+      ],
+      "prerequisites": [
+        "等价变换",
+        "集合与定义域"
+      ],
+      "boundary": "不是所有变形都可逆；不能忽略边界值。",
+      "hint": "这一步用了除法、平方、开方或对数吗？对应条件是否已经确认？",
+      "source_reference": "STEM Mentor 自编方法笔记 v0.4",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-ssa-ambiguity",
+      "kind": "method",
+      "title": "正弦定理解三角形：SSA 多解判断",
+      "source_version": "2026-10-15.1",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "triangle",
+        "ssa_case"
+      ],
+      "structures": [
+        "triangle",
+        "ssa_case",
+        "multiple_solutions"
+      ],
+      "prerequisites": [
+        "正弦定理",
+        "反三角函数"
+      ],
+      "boundary": "三角形内角总和为 180°，每一种反正弦候选均须满足其余角为正。",
+      "hint": "求出某个角的正弦值时，该角的大小是否一定被唯一确定？",
+      "source_reference": "STEM Mentor 自编方法笔记 v0.4",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-angle-bisector",
+      "kind": "method",
+      "title": "角平分线定理：内分线段比例",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "triangle",
+        "angle_bisector"
+      ],
+      "structures": [
+        "triangle",
+        "angle_bisector",
+        "side_ratio"
+      ],
+      "prerequisites": [
+        "相似三角形"
+      ],
+      "boundary": "只适用于明确的内角平分线与对应边；外角平分线需单独处理。",
+      "hint": "题目中的角等分条件，能不能转成某种线段比例？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-sine-area",
+      "kind": "method",
+      "title": "两边与夹角求三角形面积",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "triangle",
+        "sas_case"
+      ],
+      "structures": [
+        "triangle",
+        "sas_case",
+        "area_target"
+      ],
+      "prerequisites": [
+        "三角形面积",
+        "正弦函数"
+      ],
+      "boundary": "给定不是夹角时不得直接将其代入；角值对应关系需要核对。",
+      "hint": "你能利用其中一边与夹角写出高吗？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-sine-rule",
+      "kind": "method",
+      "title": "正弦定理：边角关系与隐含多解",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "triangle"
+      ],
+      "structures": [
+        "triangle",
+        "side_angle_pair"
+      ],
+      "prerequisites": [
+        "三角形内角和"
+      ],
+      "boundary": "分母正弦不得为零；SSA 的第二个候选角需检查内角和。",
+      "hint": "你掌握的是一组对边角关系，还是相邻边夹角关系？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-cosine-rule",
+      "kind": "method",
+      "title": "余弦定理：两边夹角或三边",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "triangle"
+      ],
+      "structures": [
+        "triangle",
+        "sss_case"
+      ],
+      "prerequisites": [
+        "向量数量积"
+      ],
+      "boundary": "必须检验三角形不等式；不要将 SSA 多解问题与 SSS 混淆。",
+      "hint": "现有条件是三条边，还是两边和一个夹角？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-median-theorem",
+      "kind": "method",
+      "title": "中线长与阿波罗尼斯中线定理",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "triangle",
+        "median"
+      ],
+      "structures": [
+        "triangle",
+        "median",
+        "side_lengths"
+      ],
+      "prerequisites": [
+        "勾股定理",
+        "向量法"
+      ],
+      "boundary": "此定理是中线长度关系，并非阿波罗尼斯圆的定距离比轨迹。",
+      "hint": "若出现中点及三边平方，能否用中线关系连接它们？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-locus-midpoint",
+      "kind": "method",
+      "title": "中点轨迹：仿射映射",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "midpoint",
+        "locus"
+      ],
+      "structures": [
+        "midpoint",
+        "locus",
+        "affine_relation"
+      ],
+      "prerequisites": [
+        "坐标变换"
+      ],
+      "boundary": "A 必须是定点；映射与坐标比例须一致。",
+      "hint": "能否从中点坐标反过来表示动点？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-parabola-tangent",
+      "kind": "method",
+      "title": "抛物线切线：隐式微分与条件",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "parabola",
+        "point_on_curve",
+        "tangent_at_point"
+      ],
+      "structures": [
+        "quadratic_curve",
+        "parabola",
+        "point_on_curve",
+        "tangent_at_point"
+      ],
+      "prerequisites": [
+        "隐式求导"
+      ],
+      "boundary": "非曲线上点、p=0 的退化情况不可直接套用。",
+      "hint": "曲线和切点已知时，能否从隐式导数得到局部线性关系？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-derivative-monotonicity",
+      "kind": "method",
+      "title": "用导数符号研究单调区间",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "function",
+        "derivative"
+      ],
+      "structures": [
+        "function",
+        "derivative",
+        "monotonicity"
+      ],
+      "prerequisites": [
+        "导数定义",
+        "不等式"
+      ],
+      "boundary": "区间端点与不可导点需单独考虑；不能仅凭某一点的导数符号判定整个区间。",
+      "hint": "你要研究的是函数值还是变化方向？导数符号能帮你回答什么？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-interval-extrema",
+      "kind": "method",
+      "title": "闭区间最值：驻点与端点都要检查",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "function",
+        "closed_interval",
+        "extrema"
+      ],
+      "structures": [
+        "function",
+        "closed_interval",
+        "extrema"
+      ],
+      "prerequisites": [
+        "单调性",
+        "端点"
+      ],
+      "boundary": "不可将局部驻点直接认作全局最值；闭区间连续性是必要背景。",
+      "hint": "最值是否一定出现在导数为零的地方？区间端点呢？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-log-domain",
+      "kind": "method",
+      "title": "对数真数与定义域",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "log_expression"
+      ],
+      "structures": [
+        "log_expression",
+        "log_argument_positive"
+      ],
+      "prerequisites": [
+        "实数范围内的对数"
+      ],
+      "boundary": "真数=0 或真数<0 时实数对数无定义；变形可能引入伪根。",
+      "hint": "对数表达式出现时，第一件该检查的限制是什么？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-log-base",
+      "kind": "method",
+      "title": "对数底数的合法条件",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "log_expression"
+      ],
+      "structures": [
+        "log_expression",
+        "log_base_condition"
+      ],
+      "prerequisites": [
+        "指数函数"
+      ],
+      "boundary": "底数在 0 与 1 之间时对数函数递减；a=1 不合法。",
+      "hint": "你检查了真数，那么底数有哪些不可忽略的限制？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-arithmetic-series",
+      "kind": "method",
+      "title": "等差数列求和与平均数思想",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "arithmetic_sequence",
+        "sum_n_terms"
+      ],
+      "structures": [
+        "arithmetic_sequence",
+        "sum_n_terms"
+      ],
+      "prerequisites": [
+        "等差数列通项"
+      ],
+      "boundary": "项数 n 是正整数；不能把等比求和的公比特例混用。",
+      "hint": "把数列正着与倒着相加，会不会出现同一个和？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-induction",
+      "kind": "method",
+      "title": "数学归纳法：起点与归纳步骤",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "integer_parameter",
+        "prove_all_n"
+      ],
+      "structures": [
+        "integer_parameter",
+        "prove_all_n"
+      ],
+      "prerequisites": [
+        "命题逻辑"
+      ],
+      "boundary": "只验证有限多个例子不是证明；归纳假设不可偷换对象。",
+      "hint": "你要证明的是某一个 n 还是所有正整数 n？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-cauchy",
+      "kind": "method",
+      "title": "柯西不等式与等号条件",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "vector_or_sum"
+      ],
+      "structures": [
+        "vector_or_sum",
+        "square_bound"
+      ],
+      "prerequisites": [
+        "平方非负"
+      ],
+      "boundary": "使用前核对项对应和等号条件；并非出现平方就一定最优。",
+      "hint": "目标中有没有平方和与乘积的结构？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-vector-dot",
+      "kind": "method",
+      "title": "向量数量积判断垂直",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "vectors",
+        "orthogonality"
+      ],
+      "structures": [
+        "vectors",
+        "orthogonality"
+      ],
+      "prerequisites": [
+        "向量坐标"
+      ],
+      "boundary": "零向量的方向角未定义，不能从零数量积盲推两非零向量夹角。",
+      "hint": "向量垂直对应哪种代数关系？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "strategy-reverse-subgoal",
+      "kind": "strategy",
+      "title": "逆向分解目标：构造中间命题",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [],
+      "structures": [
+        "target",
+        "subgoal"
+      ],
+      "prerequisites": [
+        "充分条件与必要条件"
+      ],
+      "boundary": "由结论推出的必要条件不等于能证明原结论；需辨别推理方向。",
+      "hint": "如果想要目标成立，你可以先完成哪个较小的结论？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "strategy-counterexample",
+      "kind": "strategy",
+      "title": "反例检验：区分猜想与定理",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [],
+      "structures": [
+        "conjecture",
+        "boundary_check"
+      ],
+      "prerequisites": [
+        "反证法"
+      ],
+      "boundary": "反例用于否定全称命题，不代替对正确命题的普遍证明。",
+      "hint": "有没有一种退化或边界情况，可以快速检验你的猜想？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "legacy_id": "method-ssa-branch",
+      "kind": "method",
+      "title": "SSA 不唯一：角的两个候选",
+      "source_version": "2026-10-15.2",
+      "source_path": "knowledge/corpus/methods.json",
+      "requires": [
+        "triangle",
+        "ssa_case"
+      ],
+      "structures": [
+        "triangle",
+        "ssa_case",
+        "multiple_solutions"
+      ],
+      "prerequisites": [
+        "正弦定理"
+      ],
+      "boundary": "不能把 SSA 误当 SSS；每个角候选都应检查其他角为正。",
+      "hint": "已求出的 sinB，是否总能唯一确定角 B？",
+      "source_reference": "STEM Mentor 自编数学教学材料 v0.5",
+      "content_coverage_status": "NEEDS_DEEP_AUTHORING",
+      "expert_review": "PENDING",
+      "candidate_deep_links": [],
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  ],
+  "notice": "A bridge is only a loss-aware pointer to old summaries. Each card still requires independent full authoring, case review, and verified pedagogy."
+}

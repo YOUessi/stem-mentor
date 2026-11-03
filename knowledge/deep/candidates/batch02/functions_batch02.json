@@ -1,0 +1,749 @@
+[
+  {
+    "id": "math.hs.function.parity",
+    "curriculum_ids": [
+      "HS-MATH-014"
+    ],
+    "kind": "concept",
+    "title": "函数奇偶性的对称定义与对称域",
+    "version": "1.0.0",
+    "notation": [
+      "f(-x)",
+      "f(x)"
+    ],
+    "prerequisites": [
+      "函数定义域",
+      "自变量关于零对称"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": "设实函数 f:D→ℝ，若 D 关于零对称且对每个 x∈D 均有 f(−x)=f(x)，则 f 为偶函数；若 f(−x)=−f(x)，则 f 为奇函数。非对称定义域不满足这两个定义。",
+    "statement": null,
+    "assumptions": [
+      "定义域 D 必须关于原点对称，即 x∈D 蕴含 −x∈D。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先验证定义域关于零对称，否则无法对每个定义域元素比较 f(x) 与 f(−x)。",
+      "偶函数图像关于纵轴对称，奇函数图像关于原点中心对称；两种对称都是定义在相同函数域上的陈述。"
+    ],
+    "boundaries": [
+      "零函数在对称定义域上同时是奇函数和偶函数；非零函数不能两者兼具。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只看代数表达式就可以判定函数为偶函数",
+        "example": "f(x)=x²，但 D=[0,2]，−1 不在 D 中。",
+        "explanation": "即使表达式关于 x 的代数形式对称，定义域不对称仍不能称为偶函数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f(x)=x³−x，D=ℝ，判断奇偶性。",
+        "steps": [
+          "计算 f(−x)=−x³+x。",
+          "整理为 −f(x)，且整个实数域对称。"
+        ],
+        "answer": "奇函数",
+        "check": "以 x=2、−2 复核函数值互为相反数。"
+      },
+      {
+        "question": "f(x)=x²，D=[−2,2]，判断奇偶性。",
+        "steps": [
+          "检查 −x∈D，定义域具有对称性。",
+          "f(−x)=(−x)²=x²=f(x)。"
+        ],
+        "answer": "偶函数",
+        "check": "f(2)=f(−2)=4，且一般 x 都满足定义。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只计算 f(−x) 而忽略定义域",
+        "why_wrong": "奇偶性定义要求成对的 x 与 −x 都属于定义域。",
+        "repair_question": "对 D=[0,1]，为何不能仅凭 x² 断定偶函数？"
+      }
+    ],
+    "hint_ladder": [
+      "先写出题目的真实定义域，它是否关于 0 对称？",
+      "比较 f(−x) 与 f(x) 或 −f(x)，不要只看函数外形。",
+      "若两种相等式都成立，请检查是否为零函数。"
+    ],
+    "transfer": {
+      "near": "对 f(x)=1/x 在 ℝ\\{0} 上判定奇偶性。",
+      "far": "考虑分段函数 f(x)=|x| 与 f(x)=x 在不同子区间拼接是否保持奇偶性。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.function.period",
+    "curriculum_ids": [
+      "HS-MATH-015"
+    ],
+    "kind": "concept",
+    "title": "周期函数与基本正周期的条件",
+    "version": "1.0.0",
+    "notation": [
+      "f(x+T)=f(x)",
+      "T>0"
+    ],
+    "prerequisites": [
+      "函数与定义域",
+      "周期平移"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": "设 f:D→ℝ。当存在 T>0，使定义域 D+T=D 且每个 x∈D 都有 f(x+T)=f(x) 时，称 T 是 f 的正周期。若所有正周期中存在最小者，称为基本正周期；一般周期函数不一定有最小正周期。",
+    "statement": null,
+    "assumptions": [
+      "存在正数 T，满足 D+T=D，且对一切 x∈D 有 f(x+T)=f(x)，平移前后定义域完全一致。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "对正周期的验证同时检查函数表达式和定义域平移闭合，不能只在若干采样点比较。",
+      "常值函数在 ℝ 上任意 T>0 都是周期，因此没有最小正周期；sin(ωx) 在 ω≠0 时的基本正周期为 2π/|ω|。"
+    ],
+    "boundaries": [
+      "周期函数可以没有基本正周期；定义域被截断时原有周期公式可能不成立。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "所有周期函数都有最小正周期",
+        "example": "f(x)=5，定义在 ℝ 上，每个正数都是周期。",
+        "explanation": "任意 T>0 还可取更小的 T/2，所以没有最小正周期。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f(x)=sin(3x)，定义域 ℝ，求基本正周期。",
+        "steps": [
+          "平移 2π/3 后相位增加 2π。",
+          "对正弦非退化角频率 3，基本正周期 2π/3。"
+        ],
+        "answer": "T=2π/3",
+        "check": "代入 sin(3(x+2π/3))=sin(3x+2π)=sin(3x)。"
+      },
+      {
+        "question": "f(x)=7 定义域 ℝ，是否有基本正周期？",
+        "steps": [
+          "每个 T>0 平移后函数值仍为 7。",
+          "对任意周期 T，T/2 也是正周期。"
+        ],
+        "answer": "有周期但无基本正周期",
+        "check": "不存在最小的正实数，故不能定义最小正周期。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把发现的一个周期当作基本正周期",
+        "why_wrong": "具有周期 T 不等于任何比 T 小的正周期都不成立。",
+        "repair_question": "为什么 sin x 的 4π 不能称为基本正周期？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查平移是否把定义域保持在自身。",
+      "计算函数自变量平移 T 后相位变化多少。",
+      "能否证明不存在更小的正周期，而不只是找到一个可行周期？"
+    ],
+    "transfer": {
+      "near": "求 cos(2x) 与 sin(2x) 的基本正周期。",
+      "far": "讨论常数函数、有限定义域函数是否存在基本正周期。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.function.zero-ivt",
+    "curriculum_ids": [
+      "HS-MATH-016"
+    ],
+    "kind": "theorem",
+    "title": "连续函数零点存在的充分条件",
+    "version": "1.0.0",
+    "notation": [
+      "f(a)f(b)<0",
+      "f(c)=0"
+    ],
+    "prerequisites": [
+      "闭区间连续性",
+      "实数完备性",
+      "零点定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": null,
+    "statement": "若实函数 f 在闭区间 [a,b] 连续，且 f(a)f(b)<0，那么存在 c∈(a,b) 使得 f(c)=0。这里证明的是至少存在一个零点，并不保证唯一零点。",
+    "assumptions": [
+      "a<b，f 在整个闭区间 [a,b] 连续。",
+      "端点函数值严格异号，即 f(a)f(b)<0。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "不妨设 f(a)<0<f(b)，取中点 m=(a+b)/2；若 f(m)=0 则完成证明，否则按 f(m) 的符号选 [a,m] 或 [m,b] 保留异号端点。",
+        "reason": "中点二分法每一步都保留闭区间内部的一对异号端点，并把区间长度减半。"
+      },
+      {
+        "claim": "重复构造闭区间 [a_n,b_n]，区间嵌套且 b_n−a_n=(b−a)/2^n→0；由实数完备性的闭区间套性质，有唯一公共点 c∈[a,b]。",
+        "reason": "长度趋于零使 a_n、b_n 同时收敛到 c；原始端点均非零且函数值异号，极限 c 在开区间内。"
+      },
+      {
+        "claim": "由于 f(a_n)≤0、f(b_n)≥0，且 f 在 c 连续，因此 f(a_n)→f(c)≤0 与 f(b_n)→f(c)≥0 同时成立，得到 f(c)=0。",
+        "reason": "这里使用了连续函数沿收敛数列保持极限的定义与实数的序关系。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "异号只是存在零点的充分条件，不是必要条件；端点同号也可能有零点。",
+      "若 f 不连续，则端点异号并不足以保证中间存在零点。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "端点异号就必定存在零点，不要求连续",
+        "example": "f(x)=−1 (x<0)，f(x)=1 (x≥0)，取区间 [−1,1]。",
+        "explanation": "两端异号但函数跳跃，区间内无任何函数零点。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "证明 x³−2=0 在 (1,2) 有实根。",
+        "steps": [
+          "f(x)=x³−2 是多项式，故在 [1,2] 连续。",
+          "f(1)=−1<0，f(2)=6>0，满足零点存在充分条件。"
+        ],
+        "answer": "(1,2) 至少有一个实根",
+        "check": "本结论不声称根个数与唯一性，还需独立论证。"
+      },
+      {
+        "question": "讨论 f(x)=x² 在 [−1,1] 上是否能用端点异号法。",
+        "steps": [
+          "f(−1)=f(1)=1，两端同号。",
+          "零点定理的充分条件没有满足，但 f(0)=0 可直接给出零点。"
+        ],
+        "answer": "存在零点，但不能靠端点异号定理推出",
+        "check": "f(0)=0 是构造出的直接证据。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "误把充分条件当成必要条件",
+        "why_wrong": "零点存在定理只保证异号加连续时存在零点，不排除端点同号时也存在零点。",
+        "repair_question": "f(x)=x² 在 [−1,1] 上说明了什么？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查闭区间上是否有连续性依据。",
+      "代入两端计算函数值，严格区分异号与同号。",
+      "如果不能应用此定理，能否通过因式分解或单调性寻找零点？"
+    ],
+    "transfer": {
+      "near": "考虑 f(x)=x³+x−1 在 [0,1] 的零点存在性。",
+      "far": "构造端点异号但不连续的函数，说明删去连续性假设为什么不行。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.function.piecewise",
+    "curriculum_ids": [
+      "HS-MATH-017"
+    ],
+    "kind": "concept",
+    "title": "分段函数的定义与分界点检查",
+    "version": "1.0.0",
+    "notation": [
+      "f(x)",
+      "x∈D_i"
+    ],
+    "prerequisites": [
+      "函数对应关系",
+      "区间归属",
+      "端点取值"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": "分段函数在不同自变量子集上采用不同对应法则，但整体仍是一个函数。每个定义域元素必须恰好有一个函数值；边界点的区间归属和单侧极限必须分别核对。",
+    "statement": null,
+    "assumptions": [
+      "多个分段定义的区间覆盖完整定义域。",
+      "各段间重叠部分应给出相同函数值，否则不是单值函数。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "读函数值时先根据 x 确认属于哪个分段的定义域，再代入对应表达式。",
+      "讨论连续性时先计算分界点左右的极限，再核对该点是否有定义以及定义值是否与极限相同。"
+    ],
+    "boundaries": [
+      "两个分段都包含同一端点且给出不同值，无法构成合法单值函数。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要左右两个公式分别连续，分段函数整体就连续",
+        "example": "f(x)=0 (x<0)，f(x)=1 (x≥0)。",
+        "explanation": "每段分别为常值且连续，但 x=0 左右极限不同，整体不连续。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f(x)=x² (x<1)，2x (x≥1)，求 f(0),f(1)。",
+        "steps": [
+          "x=0 属于第一段，代入平方公式得 0。",
+          "x=1 属于第二段，代入 2x 得 2。"
+        ],
+        "answer": "f(0)=0，f(1)=2",
+        "check": "分界点 x=1 必须按带等号的第二段取值。"
+      },
+      {
+        "question": "f(x)=x+1 (x≤0)，1−x (x>0)，判断 x=0 连续性。",
+        "steps": [
+          "左侧极限 lim x→0− 为 1，右侧极限 lim x→0+ 为 1。",
+          "定义值 f(0)=1，左右极限与函数值相同。"
+        ],
+        "answer": "在 x=0 连续",
+        "check": "分别检查极限相等且等于函数值。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "分界点默认沿用左侧表达式",
+        "why_wrong": "分段区间的开闭决定分界点实际取哪个值。",
+        "repair_question": "若 x=1 只属于后一个分段，应该代入哪一式？"
+      }
+    ],
+    "hint_ladder": [
+      "先画出每段适用的区间端点是实心还是空心。",
+      "取值问题先判断 x 落在哪段；连续性问题还要比较两侧。",
+      "检查是否有重叠矛盾或漏掉的自变量。"
+    ],
+    "transfer": {
+      "near": "求 f(x)=|x| 的分段表示并检查零点连续性。",
+      "far": "构造一条分段函数使左右极限相等而定义值不同，解释可去间断点。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.function.absolute",
+    "curriculum_ids": [
+      "HS-MATH-023"
+    ],
+    "kind": "concept",
+    "title": "绝对值函数与三角不等式",
+    "version": "1.0.0",
+    "notation": [
+      "|x|",
+      "|x+y|≤|x|+|y|"
+    ],
+    "prerequisites": [
+      "实数绝对值",
+      "非负性"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": "实数的绝对值定义为 |x|=x (x≥0)，|x|=−x (x<0)；即数轴上到 0 的距离。恒有 |x|≥0，且 |x+y|≤|x|+|y|，三角不等式在不等号方向上须谨慎。",
+    "statement": null,
+    "assumptions": [
+      "x 与 y 均为实数。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "由 −|x|≤x≤|x|，可得 −(|x|+|y|)≤x+y≤|x|+|y|。",
+      "结合绝对值定义，位于对称区间 [−M,M] 的数 z 满足 |z|≤M，所以得到 |x+y|≤|x|+|y|。"
+    ],
+    "boundaries": [
+      "|x+y|=|x|+|y| 并非恒等式；对实数 x,y 同号或其中一个为 0 时可取等号。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "绝对值可以直接逐项拆开，|x+y|=|x|+|y| 对所有实数成立",
+        "example": "x=2,y=−1，则 |x+y|=1，而 |x|+|y|=3。",
+        "explanation": "只有满足同号/零等号条件才能拆为等号，否则只保证不等式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "解不等式 |x−2|<3。",
+        "steps": [
+          "将距离不等式改写成 −3<x−2<3。",
+          "两端都加 2，得到 −1<x<5。"
+        ],
+        "answer": "x∈(−1,5)",
+        "check": "x=−1 或 x=5 给出绝对值恰为 3，端点不包含。"
+      },
+      {
+        "question": "比较 |−4+1| 与 |−4|+|1|。",
+        "steps": [
+          "左侧 |−3|=3。",
+          "右侧 4+1=5，符合三角不等式。"
+        ],
+        "answer": "3≤5，严格不等",
+        "check": "正负抵消导致绝对值和不等于和的绝对值。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "在任意符号情况下把绝对值分配到加法",
+        "why_wrong": "绝对值对乘法可相乘，对加法通常只有三角不等式。",
+        "repair_question": "试用 x=−1,y=1 验证错误等号。"
+      }
+    ],
+    "hint_ladder": [
+      "把绝对值理解为数轴上的距离。",
+      "解不等式时先判断内部表达式位于哪个对称区间。",
+      "等号成立需要哪些符号条件？"
+    ],
+    "transfer": {
+      "near": "解 |2x+1|≥5 并检查端点。",
+      "far": "将 |x−a|+|x−b| 的最小值解释为两定点距离，建立几何关系。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.function.composition-domain",
+    "curriculum_ids": [
+      "HS-MATH-024"
+    ],
+    "kind": "theorem",
+    "title": "复合函数的定义域与映射次序",
+    "version": "1.0.0",
+    "notation": [
+      "(f∘g)(x)=f(g(x))",
+      "D_{f∘g}"
+    ],
+    "prerequisites": [
+      "函数定义域",
+      "集合映射",
+      "函数值范围"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": null,
+    "statement": "给定函数 g:D_g→ℝ 与 f:D_f→ℝ，复合函数 f∘g 的定义域恰为 D={x∈D_g:g(x)∈D_f}，并在 D 上定义 (f∘g)(x)=f(g(x))；一般 f∘g 与 g∘f 的表达式及定义域都不同。",
+    "assumptions": [
+      "f 和 g 均为明确的实函数，f 的输入必须属于其定义域 D_f。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对任一 x，要能先计算 g(x)，必须有 x∈D_g。",
+        "reason": "这是内层函数 g 的定义域条件。"
+      },
+      {
+        "claim": "计算出的 g(x) 还必须允许代入外层函数 f，因此必须有 g(x)∈D_f。",
+        "reason": "外层函数只在自己的定义域上有定义。"
+      },
+      {
+        "claim": "两条条件同时成立即能唯一确定 f(g(x))；任一条不满足则复合式无定义，故定义域恰为所列集合。",
+        "reason": "利用函数的单值性和映射逐层计算的必要与充分条件。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "外层有对数时需要 g(x)>0 等真数条件；有平方根时需 g(x)≥0。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "求 f(g(x)) 定义域时只检查 g 的定义域即可",
+        "example": "f(t)=ln t，g(x)=x−1，虽然 g 在 ℝ 上有定义，但 ln(x−1) 要求 x>1。",
+        "explanation": "若忽略外层 f 的输入条件就会错误扩大复合函数定义域。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f(t)=√t，g(x)=x−3，求 f∘g 的定义域。",
+        "steps": [
+          "g 在 ℝ 上有定义，且要求 g(x)=x−3≥0。",
+          "解得 x≥3。"
+        ],
+        "answer": "D=[3,+∞)",
+        "check": "在 x=3 时 √0 合法；在 x=2 时外层输入为负。"
+      },
+      {
+        "question": "f(t)=1/t，g(x)=x²−4，求定义域。",
+        "steps": [
+          "g 在 ℝ 上有定义，外层需要 x²−4≠0。",
+          "排除 x=−2 和 x=2。"
+        ],
+        "answer": "D=ℝ\\{−2,2}",
+        "check": "两个被排除点会导致分母为零。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "交换外层和内层而不检查条件",
+        "why_wrong": "函数复合通常不可交换，且两种复合顺序对应不同定义域。",
+        "repair_question": "为什么 ln(x−1) 的定义域不是整个实数域？"
+      }
+    ],
+    "hint_ladder": [
+      "先把复合式写为内层 g(x) 再代入外层 f。",
+      "逐层列出输入合法性，不能只检查最内层。",
+      "将所有限制取交集并检查端点是否允许。"
+    ],
+    "transfer": {
+      "near": "求 f(t)=1/√t 与 g(x)=x²−1 的复合定义域。",
+      "far": "构造 f∘g 有定义但 g∘f 不存在的两个函数，说明复合不交换。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.trig.tangent-domain",
+    "curriculum_ids": [
+      "HS-MATH-027"
+    ],
+    "kind": "concept",
+    "title": "正切函数的定义域和基本周期",
+    "version": "1.0.0",
+    "notation": [
+      "tan x=sin x/cos x",
+      "x≠π/2+kπ"
+    ],
+    "prerequisites": [
+      "单位圆定义正弦余弦",
+      "分母非零"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.pythagorean"
+    ],
+    "definition": "正切函数定义为 tan x=sin x/cos x，因此其定义域为 ℝ\\{π/2+kπ:k∈ℤ}。在此定义域内 tan(x+π)=tan x，最小正周期为 π；在每个相邻渐近线间的开区间严格递增。",
+    "statement": null,
+    "assumptions": [
+      "角度统一采用弧度制；tan x 只在 cos x≠0 时定义。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先列出 cos x=0 的角 x=π/2+kπ，并从正切定义域中排除所有这些点。",
+      "由 sin(x+π)=−sin x、cos(x+π)=−cos x 得到 tan(x+π)=tan x；长度为 π 的合法区间内正切从 −∞ 增至 +∞。"
+    ],
+    "boundaries": [
+      "tan(π/2) 不存在，不可把渐近线当作函数上的点。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "正切在所有实数上都有定义",
+        "example": "取 x=π/2，cos x=0，sin x=1。",
+        "explanation": "分母为零，tan(π/2) 没有实数值。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 tan(π/4) 和 tan(5π/4)。",
+        "steps": [
+          "先计算 tan(π/4)=1。",
+          "由于正切以 π 为周期，5π/4=π/4+π。"
+        ],
+        "answer": "二者均为 1",
+        "check": "两点均非正切的未定义点。"
+      },
+      {
+        "question": "求 tan x=0 在 [0,2π] 的解。",
+        "steps": [
+          "根据正切分子 sin x=0 且 cos x≠0。",
+          "在给定区间得到 x=0、π、2π。"
+        ],
+        "answer": "{0,π,2π}",
+        "check": "三个点余弦均为 ±1，不会出现分母零。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把正切的基本周期误写为 2π",
+        "why_wrong": "2π 也是周期，但 π 更小且仍保持所有合法函数值。",
+        "repair_question": "tan(x+π) 与 tan(x) 的比值如何化简？"
+      }
+    ],
+    "hint_ladder": [
+      "从 tan x=sin x/cos x 出发检查分母。",
+      "周期判断先找一个合法的平移，再考虑是否最小。",
+      "渐近线附近只能讨论趋势，不能代入未定义点。"
+    ],
+    "transfer": {
+      "near": "求 tan(2x) 的定义域与基本周期。",
+      "far": "分析 tan x 图像为何由断开的递增分支构成，不能用一个连续全域函数取代。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.trig.wave-transformation",
+    "curriculum_ids": [
+      "HS-MATH-031"
+    ],
+    "kind": "concept",
+    "title": "正弦型函数的振幅、周期与相位平移",
+    "version": "1.0.0",
+    "notation": [
+      "y=A sin(ωx+φ)+b",
+      "T=2π/|ω|"
+    ],
+    "prerequisites": [
+      "正弦周期",
+      "函数平移与伸缩"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.period",
+      "math.hs.trig.pythagorean"
+    ],
+    "definition": "对 y=A sin(ωx+φ)+b，非退化 Aω≠0 时振幅为 |A|、最小正周期为 2π/|ω|、竖直中心线 y=b；水平相位位移可写为 −φ/ω。A=0 或 ω=0 时函数常值，没有最小正周期。",
+    "statement": null,
+    "assumptions": [
+      "参数 A,ω,φ,b 均为实数；讨论非退化正弦波的最小正周期时要求 Aω≠0。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先将 ωx+φ 化为 ω(x+φ/ω)，且先确认 ω 非零，以识别水平位移。",
+      "外部乘数 A 改变纵向振幅并可能翻折；常数 b 产生整体竖直平移，振幅仍为 |A|。"
+    ],
+    "boundaries": [
+      "若 A=0 或 ω=0，不能套用非退化波的基本周期公式；ω 为负时需要取绝对值。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意 y=A sin(ωx+φ)+b 都有基本周期 2π/|ω|",
+        "example": "取 A=0,ω=2,φ=0,b=3，函数恒为 3。",
+        "explanation": "常值函数有任意正周期，但不存在最小正周期。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "y=2sin(3x−π)+1，求振幅、周期与中心线。",
+        "steps": [
+          "|A|=2，ω=3 非零，所以 T=2π/3。",
+          "水平位移为 +π/3，中心线 y=1。"
+        ],
+        "answer": "振幅 2；周期 2π/3；中心线 y=1",
+        "check": "将 x 增加 2π/3，相位恰增加 2π。"
+      },
+      {
+        "question": "y=−sin(2x+π/2)，求基本周期。",
+        "steps": [
+          "绝对振幅为 1，不因负号改变。",
+          "ω=2，因此周期为 2π/2=π。"
+        ],
+        "answer": "T=π",
+        "check": "代入 x+π 后正弦相位增加 2π，函数值保持。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把 ω 的负号带入周期造成负周期",
+        "why_wrong": "正周期必须为正，长度只取决于角频率大小 |ω|。",
+        "repair_question": "若 ω=−4，最小正周期应为多少？"
+      }
+    ],
+    "hint_ladder": [
+      "先判断 A 与 ω 是否为零，避免套用失效公式。",
+      "把相位写成 ω(x−x0) 寻找水平平移量。",
+      "验证 x 增加一个候选周期后相位是否增加整周。"
+    ],
+    "transfer": {
+      "near": "求 y=3sin(−2x+π)+4 的振幅、周期和位移。",
+      "far": "解释为什么常数函数不具最小正周期，并讨论相同公式在退化参数下的失效。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]
