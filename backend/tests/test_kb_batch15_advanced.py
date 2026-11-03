@@ -24,7 +24,7 @@ def test_9_unique_authored_theorems_and_no_teacher_approval():
     assert len({x["id"] for x in BATCH})==9
     assert len({x["id"] for x in COURSE})==9
     assert {x["id"] for x in COURSE}=={x["curriculum_ids"][0] for x in BATCH}
-    assert len(lessons())==201 and len(curriculum())==138
+    assert len(lessons())==213 and len(curriculum())==150
     for r in BATCH:
         x=DeepLesson.model_validate(r)
         assert x.kind=="theorem" and x.review.status=="REVIEW_PENDING"
@@ -39,7 +39,7 @@ def test_8_new_objective_candidates_have_only_editorial_proposals():
         assert r["source"]["mapping_type"]=="ENGINEERING_INTERPRETATION"
         assert r["source"]["teacher_review"]=="PENDING"
     p=editorial_review_queue()
-    assert p["proposed_objectives"]==107 and p["proposed_edges"]==129
+    assert p["proposed_objectives"]==119 and p["proposed_edges"]==141
     assert p["official_atomic_denominator"] is None
     assert p["independent_teacher_approved_matches"]==0
     assert p["student_published_knowledge_count"]==0

@@ -40,7 +40,7 @@ def test_authored_content_schema_and_no_fake_approval():
     assert all(p["review"]["status"]=="REVIEW_PENDING" for p in r)
     assert all(p["teacher_solution_visibility"]=="TEACHER_ONLY" for p in r)
     assert all(len(p["proof_steps"])>=3 and len(p["worked_examples"])>=2 for p in r)
-    assert len(lessons())==201
+    assert len(lessons())==213
     assert subprocess.run(
        [sys.executable,str(ROOT/"scripts/build_kb_batch11_lessons.py"),"--check"],
        check=False,capture_output=True).returncode==0

@@ -1,9 +1,9 @@
 {
   "scope": "HUMAN_PROOF_OBLIGATION_QUEUE_NOT_MATHEMATICAL_CERTIFICATION",
   "summary": {
-    "deep_draft_lessons": 201,
-    "theorems": 121,
-    "proof_step_obligations_not_formally_verified": 391,
+    "deep_draft_lessons": 213,
+    "theorems": 133,
+    "proof_step_obligations_not_formally_verified": 439,
     "existing_supporting_oracles_linked": 48,
     "theorems_with_whole_proof_certification": 0,
     "teacher_approved": 0,
@@ -3325,6 +3325,558 @@
           "index": 3,
           "claim": "因 log L 严格凹，内点 k/n 为唯一极大值；若 k=0，则 L=(1-p)^n 在 [0,1] 最大于 p=0；若 k=n，则 L=p^n 最大于 p=1。",
           "reason": "端点必须单独讨论，不能把 0/0 的对数微分套用于边界。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.limit.sequence-continuity",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-139"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "数列项均在函数定义域D内；a∈D；量词是每一个满足x_n→a的数列（允许x_n=a）。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "若f在a连续，给定ε>0，取δ>0使 |x-a|<δ 且 x∈D 时 |f(x)-f(a)|<ε。",
+          "reason": "点处连续的ε-δ定义；不要求a为内点。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "任意x_n∈D、x_n→a，存在N使n≥N时 |x_n-a|<δ，因此 |f(x_n)-f(a)|<ε。",
+          "reason": "数列极限定义与上一步连续性定义依次使用。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "反过来若f在a不连续，则存在ε0>0，对每个n都可选 x_n∈D 满足 |x_n-a|<1/n 且 |f(x_n)-f(a)|≥ε0。",
+          "reason": "否定连续性中的量词，再对δ=1/n逐项选取反例。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "所得x_n→a但f(x_n)不趋于f(a)，与顺序条件矛盾。",
+          "reason": "反证法得充分性；这是对所有数列的性质而非某条特例。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.calculus.second-derivative-convexity",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-140"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "I是实数开区间；f在I二阶可导；使用中值定理时闭子区间上的连续性由可导性保证。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "f''≥0使一阶导函数f'在I非减。",
+          "reason": "任取u<v，用中值定理作用于f'，f'(v)-f'(u)=f''(c)(v-u)≥0；需f'连续于[u,v]且在内可导。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "任取x<z<y，分别对f在[x,z]和[z,y]使用中值定理得两段割线斜率等于f'(c1)、f'(c2)，其中c1<c2。",
+          "reason": "拉格朗日中值定理及区间的点序保证c1<c2。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由f'非减得到 (f(z)-f(x))/(z-x)≤(f(y)-f(z))/(y-z)，交叉乘正数得到 f(z)≤((y-z)/(y-x))f(x)+((z-x)/(y-x))f(y)。",
+          "reason": "斜率单调为凸性不等式；端点z=x,y直接取等号。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "若f''>0，则f'严格递增，对x<z<y的上述不等式严格，推出严格凸。",
+          "reason": "中值定理对f'在[u,v]给出f'(v)-f'(u)>0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.calculus.integral-area-ftc",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-141"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a<b；f连续保证黎曼可积；f≥0用于几何面积；F具备端点连续和内部导数为f。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "把区间划分为小段，在每段选择ξ_i，矩形面积和为Σ f(ξ_i)Δx_i。",
+          "reason": "f≥0使每个矩形有非负面积。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "f连续于紧区间故一致连续且黎曼可积；划分网格趋于0时任意采样黎曼和趋于相同积分值。",
+          "reason": "这里使用连续函数黎曼可积定理，不把有限近似误认为精确面积。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "对每段[a_{i-1},a_i]用中值定理得到F(a_i)-F(a_{i-1})=f(c_i)Δx_i。",
+          "reason": "F在各小段闭区间连续，内部可导，故MVT适用。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "求和望远镜消去中间F值，再令网格趋于0，得F(b)-F(a)=∫_a^b f(x)dx。",
+          "reason": "连续f保证取c_i的黎曼和收敛到积分。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.model.time-rescaling",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-142"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "t和u对应同一实际时刻；s>0为固定单位比例；指数模型P0>0用于人口/资产解释。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "新变量下写y_new(u)=y_old(su)，因为t=su表示同一物理时间。",
+          "reason": "这是一种坐标变量替换，不是假设另有观测对象。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "线性代入：a(su)+b=(as)u+b，原截距不变但斜率乘s。",
+          "reason": "函数复合后按乘法分配律整理。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "指数代入：P0exp(k(su))=P0exp((ks)u)，增长率参数乘s。",
+          "reason": "指数运算遵循k(su)=(ks)u。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "二次代入：a(su)²+b(su)+c=(as²)u²+(bs)u+c。",
+          "reason": "平方项需要s²，不能只乘s。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.model.compound-effective-rate",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-143"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "每周期利率在全过程保持不变，未额外存取款，计息周期数量mt是非负整数且与时间单位一致。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "设第k次计息后的金额A_k，按期复利定义A_{k+1}=A_k(1+i)，A_0=P。",
+          "reason": "每期利息基数包含上一期本金与已经资本化的利息。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对k作归纳：k=0时成立；若A_k=P(1+i)^k，则A_{k+1}=P(1+i)^{k+1}。",
+          "reason": "使用数学归纳法并检查1+i>0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "当期限t含mt个计息周期，代入k=mt得到总额公式。",
+          "reason": "指数是计息次数而不是年数本身。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "取t=1并计算(A-P)/P，得到EAR=(1+r/m)^m-1。",
+          "reason": "有效年利率定义为一年总增长比例。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.model.input-output-triangular",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-144"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A的每个系数是固定非负投入比例；两个部门按所设线性关系封闭；a,b严格小于1；给定最终需求非负。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "将x=Ax+d分量展开：x1=ax1+cx2+d1；x2=bx2+d2。",
+          "reason": "按矩阵乘法定义计算各行的线性组合。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "因1-b>0，第二式唯一给出x2=d2/(1-b)≥0。",
+          "reason": "非零分母保证可解；非负分子与正分母保证非负性。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "将x2代回第一式，因1-a>0，得x1=(d1+c x2)/(1-a)≥0。",
+          "reason": "先进行严格合法的回代，再由c、d1、x2非负和1-a为正推出x1非负。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "对应系数矩阵I-A为上三角，其行列式(1-a)(1-b)>0，故解唯一。",
+          "reason": "行列式不为0等价于方阵可逆。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.model.logistic-discrete-bounds",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-145"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "K为正容量常数，r为每期增长参数且限定在[0,1]；模型变量N代表连续数量的数学近似，不强行要求整数个体。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "置u=N_n/K∈[0,1]，则N_{n+1}/K = u+r u(1-u)，与u之差为r u(1-u)≥0。",
+          "reason": "因r≥0且0≤u≤1，递推保持非减。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "考察与1的差：1-[u+r u(1-u)]=(1-u)(1-ru)≥0。",
+          "reason": "0≤r≤1时两个因子非负。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "因此0≤N_n≤N_{n+1}≤K。由N0属于区间，归纳得所有Nn在[0,K]。",
+          "reason": "通过归纳：初值属于不变区间，上两步证明每次迭代仍在区间内。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "代入N=0或N=K时增量rN(1-N/K)=0，因此两者是固定点。",
+          "reason": "平衡点满足下一期等于当前期。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.geometry.euclidean-isometries",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-146"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "点x,y为平面欧氏坐标；Q^TQ=I；夹角余弦涉及的两个向量均非零。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对任意x,y，T(x)-T(y)=Q(x-y)，平移向量b抵消。",
+          "reason": "代入仿射变换定义并整理。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "平方范数为(Qv)^T(Qv)=v^TQ^TQv=v^Tv，故两点距离保持。",
+          "reason": "利用正交条件Q^TQ=I，平方根取非负。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "对非零向量u,v，(Qu)·(Qv)=u^TQ^TQv=u·v，且范数不变，因此夹角余弦不变。",
+          "reason": "余弦定义为点积除以两向量模长乘积。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "旋转矩阵Rθ与坐标轴反射矩阵diag(1,-1)均满足Q^TQ=I；平移取Q=I。",
+          "reason": "逐项验算2×2矩阵乘积；一般方向反射是正交坐标变换的共轭。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.sequence.fibonacci-golden-ratio",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-147"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "递推从两个正初值1开始，n为正整数，因此每个分母F_n>0。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "设特征根满足r²=r+1，得φ=(1+√5)/2、ψ=(1-√5)/2，两根互异。",
+          "reason": "二次方程求根，验证φ²=φ+1且ψ²=ψ+1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "数列G_n=(φ^n-ψ^n)/√5满足G1=G2=1，并满足相同的二阶递推，因此G_n=F_n。",
+          "reason": "检查前两项；由递推的解唯一性逐项归纳。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由于|ψ/φ|<1，F_{n+1}/F_n = φ·[1-(ψ/φ)^{n+1}]/[1-(ψ/φ)^n]。",
+          "reason": "提取φ^n，分母在n≥1不为0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "令n→∞，括号比趋于1，因此相邻项比趋于φ。",
+          "reason": "等比数列(ψ/φ)^n趋0，使用极限四则。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.music.equal-temperament",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-148"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "音高以固定频率比而非固定赫兹差定义；理想等分倍频八度；频率f0>0，n为整数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "相邻半音倍数固定q，则递推f_{n+1}=qf_n，归纳得到f_n=f0 q^n。",
+          "reason": "等比数列通项与正频率条件。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "规定十二个半音到达同类音的高八度，即f12=2f0，代入通项有q^{12}=2。",
+          "reason": "八度在理想声学模型中定义为频率翻倍。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "q>0且q^{12}=2，因此唯一的正解q=2^{1/12}。",
+          "reason": "严格要求q>0，正实数的十二次根唯一，排除负根等不合理倍数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "代入通项得f_n=f0·2^{n/12}，验证f_{n+12}=f_n·2。",
+          "reason": "指数法则2^{(n+12)/12}=2·2^{n/12}。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.algebra.square-rotations-group",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-149"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "旋转绕同一固定正方形中心进行，方向约定逆时针；讨论保向旋转，不把反射计入此四元素集合。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "旋转90°使正方形每个顶点映射到下一个顶点；连续旋转k次是r^k，四次返回原位，即r⁴=e。",
+          "reason": "正方形的顶点间圆心角为90°。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "正方形每个顶点都必须被保持正方形的旋转映到四个顶点之一；固定一个顶点，其目标顶点的方向与原方向只可能相差0°、90°、180°、270°，故不存在第五种旋转。上述四角度两两不同且复合相当于角度模360°相加。",
+          "reason": "旋转绕固定中心且保持距离与顶点结构；确定中心和一个非中心顶点的像即可唯一确定平面旋转的角度。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "恒等e满足e∘g=g，复合函数满足结合律；每个r^k的逆为r^{(-k mod4)}。",
+          "reason": "函数复合普遍满足结合律，并由r^4=e给出逆元。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "因此这四个变换形成群；r的1、2、3、4次幂覆盖群内每个元素，故是循环群。",
+          "reason": "按照群与循环群定义逐项验收。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.finance.annuity-present-value",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-150"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "期内折现比例固定且1+i>0，n为正整数；每笔现金流金额及发生时点已知；利率与期数单位一致。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "未来第k期期末的C在起点折现k次，每次除以(1+i)，故现值贡献C(1+i)^{-k}。",
+          "reason": "复利现值的定义；利率与期间一致。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "总现值满足有限可加性，故PV=CΣ_{k=1}^n q^k，其中q=(1+i)^{-1}>0。",
+          "reason": "已知确定现金流可按相同现值时刻求和。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "当i≠0时q≠1，等比求和为q(1-q^n)/(1-q)=[1-(1+i)^{-n}]/i。",
+          "reason": "代数整理并保证分母i非零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "当i=0，每笔折现因子均为1，故PV=nC；期初支付整体提前一期，乘(1+i)。",
+          "reason": "特殊参数不能对通式除以i，时点移动需重新折现。",
           "status": "NOT_FORMALLY_VERIFIED"
         }
       ],

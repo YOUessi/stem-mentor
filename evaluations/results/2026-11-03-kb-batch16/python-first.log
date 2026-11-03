@@ -1,0 +1,444 @@
+........................................................................ [  1%]
+........................................................................ [  2%]
+........................................................................ [  3%]
+........................................................................ [  4%]
+........................................................................ [  5%]
+........................................................................ [  6%]
+........................................................................ [  7%]
+........................................................................ [  9%]
+........................................................................ [ 10%]
+........................................................................ [ 11%]
+........................................................................ [ 12%]
+........................................................................ [ 13%]
+........................................................................ [ 14%]
+........................................................................ [ 15%]
+........................................................................ [ 17%]
+........................................................................ [ 18%]
+........................................................................ [ 19%]
+........................................................................ [ 20%]
+..................................................F..................... [ 21%]
+........................................................................ [ 22%]
+........................................................................ [ 23%]
+........................................................................ [ 24%]
+........................................................................ [ 26%]
+........................................................................ [ 27%]
+........................................................................ [ 28%]
+........................................................................ [ 29%]
+........................................................................ [ 30%]
+........................................................................ [ 31%]
+........................................................................ [ 32%]
+........................................................................ [ 34%]
+........................................................................ [ 35%]
+........................................................................ [ 36%]
+........................................................................ [ 37%]
+........................................................................ [ 38%]
+........................................................................ [ 39%]
+........................................................................ [ 40%]
+........................................................................ [ 41%]
+........................................................................ [ 43%]
+........................................................................ [ 44%]
+........................................................................ [ 45%]
+.........................F.............................................. [ 46%]
+........................................................................ [ 47%]
+........................................................................ [ 48%]
+..................................F..................................... [ 49%]
+........................................................................ [ 51%]
+........................................................................ [ 52%]
+.......................F................................................ [ 53%]
+........................................................................ [ 54%]
+........................................................................ [ 55%]
+........................................................................ [ 56%]
+........FF...............................F.............................. [ 57%]
+........................................................................ [ 59%]
+........................................................................ [ 60%]
+........................................................................ [ 61%]
+........................................................................ [ 62%]
+.............................................................F.......... [ 63%]
+................FF..F................................................... [ 64%]
+........................................................................ [ 65%]
+........................................................................ [ 66%]
+........................................................................ [ 68%]
+........................................................................ [ 69%]
+........................................................................ [ 70%]
+........................................................................ [ 71%]
+........................................................................ [ 72%]
+........................................................................ [ 73%]
+........................................................................ [ 74%]
+........................................................................ [ 76%]
+........................................................................ [ 77%]
+........................................................................ [ 78%]
+............................................................FFF......... [ 79%]
+........................................................................ [ 80%]
+........................................................................ [ 81%]
+........................................................................ [ 82%]
+........................................................................ [ 83%]
+........................................................................ [ 85%]
+........................................................................ [ 86%]
+........................................................................ [ 87%]
+........................................................................ [ 88%]
+........................................................................ [ 89%]
+........................................................................ [ 90%]
+........................................................................ [ 91%]
+........................................................................ [ 93%]
+........................................................................ [ 94%]
+........................................................................ [ 95%]
+........................................................................ [ 96%]
+........................F....................F......F................... [ 97%]
+.......................................................................F [ 98%]
+.......FF
+=================================== FAILURES ===================================
+______________ test_authored_content_schema_and_no_fake_approval _______________
+
+    def test_authored_content_schema_and_no_fake_approval():
+        from backend.app.deep_knowledge import lessons
+        r=_rows()
+        assert len(r)==12
+        assert {p["id"] for p in r}==NAMES
+        assert {p["kind"] for p in r}=={"theorem"}
+        assert all(p["review"]["status"]=="REVIEW_PENDING" for p in r)
+        assert all(p["teacher_solution_visibility"]=="TEACHER_ONLY" for p in r)
+        assert all(len(p["proof_steps"])>=3 and len(p["worked_examples"])>=2 for p in r)
+>       assert len(lessons())==201
+E       AssertionError: assert 213 == 201
+E        +  where 213 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E        +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = <functools._lru_cache_wrapper object at 0x10928fb60>()
+
+backend/tests/test_batch11_exact_math.py:43: AssertionError
+_______ test_course_matrix_count_and_levels_are_engineering_not_official _______
+
+    def test_course_matrix_count_and_levels_are_engineering_not_official():
+        topic_rows = curriculum()
+>       assert len(topic_rows) ==138
+E       AssertionError: assert 150 == 138
+E        +  where 150 = len(({'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...))
+
+backend/tests/test_deep_knowledge_v1.py:18: AssertionError
+__________ test_there_is_no_approval_and_electives_are_not_overstated __________
+
+    def test_there_is_no_approval_and_electives_are_not_overstated():
+        c = coverage_report()
+>       assert c["by_level"]["选修拓展"]["engineering_topics"] == 32
+E       assert 44 == 32
+
+backend/tests/test_deep_knowledge_v1.py:84: AssertionError
+_________ test_coverage_denominator_is_engineering_not_official_atoms __________
+
+    def test_coverage_denominator_is_engineering_not_official_atoms():
+        info = coverage_report()
+>       assert info["curriculum_topic_total"] ==138
+E       assert 150 == 138
+
+backend/tests/test_deep_retrieval_batch06.py:56: AssertionError
+______ test_reconciliation_build_reproducible_and_not_student_http_route _______
+
+    def test_reconciliation_build_reproducible_and_not_student_http_route():
+        result=subprocess.run([sys.executable,str(ROOT/"scripts/reconcile_kb_batch02.py"),"--check"],cwd=ROOT,capture_output=True,text=True)
+>       assert result.returncode==0, result.stderr+result.stdout
+E       AssertionError: Reconciliation drift: docs/evaluation/KB_BATCH02_RECONCILIATION.json
+E
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/Users/youtang/Documents/文件/stem-mentor/.venv/bin/python', '/Users/youtang/Documents/文件/stem-m..., '--check'], returncode=1, stdout='', stderr='Reconciliation drift: docs/evaluation/KB_BATCH02_RECONCILIATION.json\n').returncode
+
+backend/tests/test_kb_batch06_reconciliation.py:79: AssertionError
+__________________ test_reproducible_reports_and_full_schema ___________________
+
+    def test_reproducible_reports_and_full_schema():
+        result = subprocess.run([sys.executable, "scripts/build_kb_batch07_audit.py", "--check"],
+            cwd=ROOT, capture_output=True, text=True)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: Batch07 report drift: curriculum/highschool_math/elective_track_crosswalk_batch07.json
+E
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/Users/youtang/Documents/文件/stem-mentor/.venv/bin/python', 'scripts/build_kb_batch07_audit.py'...rncode=1, stdout='', stderr='Batch07 report drift: curriculum/highschool_math/elective_track_crosswalk_batch07.json\n').returncode
+
+backend/tests/test_kb_batch07_audits.py:28: AssertionError
+______ test_all_current_drafts_have_explicit_unverified_step_obligations _______
+
+    def test_all_current_drafts_have_explicit_unverified_step_obligations():
+        s = PROOFS["summary"]
+        from app.deep_knowledge import lessons
+        docs=lessons()
+>       assert s["deep_draft_lessons"] == len(docs)
+E       AssertionError: assert 201 == 213
+E        +  where 213 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+
+backend/tests/test_kb_batch07_audits.py:82: AssertionError
+______________ test_all_source_candidates_have_a_review_queue_row ______________
+
+    def test_all_source_candidates_have_a_review_queue_row():
+        data=editorial_review_queue()
+        assert len(data["items"])==len(source_inventory()["items"])==132
+>       assert data["total_deep_draft_lessons"]==len(lessons())==201
+E       AssertionError: assert 213 == 201
+E        +  where 213 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E        +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = lessons()
+
+backend/tests/test_kb_batch13_editorial_links.py:17: AssertionError
+_ test_elective_candidates_have_distinct_engineering_ids_and_real_objective_targets _
+
+    def test_elective_candidates_have_distinct_engineering_ids_and_real_objective_targets():
+        from app.standard_scope import source_inventory
+        official_candidates={x["id"]:x for x in source_inventory()["items"]}
+        assert len(BATCH)==len(COURSE_ROWS)==16
+        assert len(IDS)==16 and len({x["id"] for x in COURSE_ROWS})==16
+        assert set(x["curriculum_ids"][0] for x in BATCH)==set(x["id"] for x in COURSE_ROWS)
+        for x in COURSE_ROWS:
+            obj=official_candidates[x["editorial_objective_id"]]
+            assert obj["track"]==x["elective_track"]
+            assert x["level"]=="选修拓展"
+            assert x["source"]["teacher_review"]=="PENDING"
+>       assert len(curriculum())==138
+E       AssertionError: assert 150 == 138
+E        +  where 150 = len(({'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...))
+E        +    where ({'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...) = curriculum()
+
+backend/tests/test_kb_batch14_elective.py:37: AssertionError
+_____ test_source_schema_mathematical_proof_obligations_are_not_approvals ______
+
+    def test_source_schema_mathematical_proof_obligations_are_not_approvals():
+>       assert len(lessons())==201
+E       AssertionError: assert 213 == 201
+E        +  where 213 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E        +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = lessons()
+
+backend/tests/test_kb_batch14_elective.py:40: AssertionError
+________ test_16_editorial_proposals_still_do_not_certify_any_objective ________
+
+    def test_16_editorial_proposals_still_do_not_certify_any_objective():
+        d=editorial_review_queue()
+        assert len(d["items"])==132
+>       assert d["total_deep_draft_lessons"]==201
+E       assert 213 == 201
+
+backend/tests/test_kb_batch14_elective.py:61: AssertionError
+_________________ test_whole_proof_status_remains_uncertified __________________
+
+    def test_whole_proof_status_remains_uncertified():
+        r=coverage_report()
+>       assert r["kinds"]["theorem"]==121
+E       assert 133 == 121
+
+backend/tests/test_kb_batch14_elective.py:172: AssertionError
+___________ test_9_unique_authored_theorems_and_no_teacher_approval ____________
+
+    def test_9_unique_authored_theorems_and_no_teacher_approval():
+        assert len(BATCH)==len(COURSE)==9
+        assert len({x["id"] for x in BATCH})==9
+        assert len({x["id"] for x in COURSE})==9
+        assert {x["id"] for x in COURSE}=={x["curriculum_ids"][0] for x in BATCH}
+>       assert len(lessons())==201 and len(curriculum())==138
+E       AssertionError: assert (213 == 201)
+E        +  where 213 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E        +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = lessons()
+
+backend/tests/test_kb_batch15_advanced.py:27: AssertionError
+________ test_8_new_objective_candidates_have_only_editorial_proposals _________
+
+    def test_8_new_objective_candidates_have_only_editorial_proposals():
+        from app.standard_scope import source_inventory
+        inv={x["id"]:x for x in source_inventory()["items"]}
+        for r in COURSE:
+            assert inv[r["editorial_objective_id"]]["track"]==r["elective_track"]
+            assert r["source"]["mapping_type"]=="ENGINEERING_INTERPRETATION"
+            assert r["source"]["teacher_review"]=="PENDING"
+        p=editorial_review_queue()
+>       assert p["proposed_objectives"]==107 and p["proposed_edges"]==129
+E       assert (119 == 107)
+
+backend/tests/test_kb_batch15_advanced.py:42: AssertionError
+_____________ test_113_links_do_not_falsely_equal_full_curriculum ______________
+
+    def test_113_links_do_not_falsely_equal_full_curriculum():
+        matrix=build()
+        summary=matrix["summary"]
+>       assert summary["engineering_topic_denominator"]==138
+E       assert 150 == 138
+
+backend/tests/test_kb_semantic_coverage_batch04.py:17: AssertionError
+____________ test_coverage_snapshot_is_stable_and_remains_editorial ____________
+
+    def test_coverage_snapshot_is_stable_and_remains_editorial():
+        snapshot=json.loads((ROOT/"docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH07.json").read_text(encoding="utf-8"))
+        result=build()
+>       assert result==snapshot
+E       AssertionError: assert {'generated_f....}, ...], ...} == {'generated_f....}, ...], ...}
+E
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'summary': {'deep_draft_documents': 213, 'engineering_topic_denominator': 150, 'explicit_official_elective_tracks_completed': 0, 'fully_formally_proven_natural_language_lessons': 0, ...}} != {'summary': {'deep_draft_documents': 201, 'engineering_topic_denominator': 138, 'explicit_official_elective_tracks_completed': 0, 'fully_formally_proven_natural_language_lessons': 0, ...}}
+E         {'topics': [{'concept': '集合及其表示', 'curriculum_atom_officially_verified': False, 'deep_lesson_ids': ['math.hs.sets.unio...alse, 'deep_less...
+E
+E         ...Full output truncated (2 lines hidden), use '-vv' to show
+
+backend/tests/test_kb_semantic_coverage_batch04.py:70: AssertionError
+____ test_curriculum_mapping_is_complete_inventory_not_full_implementation _____
+
+client = <starlette.testclient.TestClient object at 0x10a297460>
+
+    def test_curriculum_mapping_is_complete_inventory_not_full_implementation(client):
+        doc=client.get("/api/math-lab/catalog")
+        assert doc.status_code==200
+        body=doc.json()
+        assert body["no_llm_api"] is True
+        assert body["expert_review"]=="PENDING"
+        assert "教育部" not in body["claim"]  # Claim is bounded to engineering tool status.
+>       assert len(body["topics"])==138
+E       AssertionError: assert 150 == 138
+E        +  where 150 = len([{'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...])
+
+backend/tests/test_math_lab_v08.py:24: AssertionError
+___________ test_v010_adds_ten_scenes_without_losing_the_original_39 ___________
+
+client = <starlette.testclient.TestClient object at 0x10a297ac0>
+
+    def test_v010_adds_ten_scenes_without_losing_the_original_39(client):
+        body=client.get('/api/math-lab/catalog').json()
+        ids={p['id'] for p in body['presets']}
+        assert NEW_IDS<=ids,NEW_IDS-ids
+        assert len(ids)>=49
+>       assert len(body['topics'])==138 and body['no_llm_api'] is True
+E       AssertionError: assert (150 == 138)
+E        +  where 150 = len([{'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...])
+
+backend/tests/test_v010_catalog.py:29: AssertionError
+__________ test_v010_builders_are_deterministic_and_keep_prior_models __________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-62/test_v010_builders_are_determi0')
+
+    def test_v010_builders_are_deterministic_and_keep_prior_models(tmp_path):
+        source=ROOT/'curriculum/highschool_math'
+        assert (source/'extend_v010.py').exists()
+        for file in source.glob('*.py'):shutil.copy2(file,tmp_path/file.name)
+        shutil.copy2(source/'elective_a_b_atomic_candidates_batch14.json',tmp_path/'elective_a_b_atomic_candidates_batch14.json')
+        shutil.copy2(source/'elective_a_b_atomic_candidates_batch15.json',tmp_path/'elective_a_b_atomic_candidates_batch15.json')
+        for file in ('build_presets.py','build_curriculum.py'):
+>           subprocess.run([sys.executable,str(tmp_path/file)],cwd=tmp_path,check=True,capture_output=True)
+
+backend/tests/test_v010_catalog.py:96:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = True, timeout = None, check = True
+popenargs = (['/Users/youtang/Documents/文件/stem-mentor/.venv/bin/python', '/private/tmp/pytest-of-youtang/pytest-62/test_v010_builders_are_determi0/build_curriculum.py'],)
+kwargs = {'cwd': PosixPath('/private/tmp/pytest-of-youtang/pytest-62/test_v010_builders_are_determi0'), 'stderr': -1, 'stdout': -1}
+process = <Popen: returncode: 1 args: ['/Users/youtang/Documents/文件/stem-mentor/.venv/...>
+stdout = b''
+stderr = b'Traceback (most recent call last):\n  File "/private/tmp/pytest-of-youtang/pytest-62/test_v010_builders_are_determi0...te/tmp/pytest-of-youtang/pytest-62/test_v010_builders_are_determi0/elective_b_c_d_e_atomic_candidates_batch16.json\'\n'
+retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['/Users/youtang/Documents/文件/stem-mentor/.venv/bin/python', '/private/tmp/pytest-of-youtang/pytest-62/test_v010_builders_are_determi0/build_curriculum.py']' returned non-zero exit status 1.
+
+../../../miniforge3/lib/python3.13/subprocess.py:577: CalledProcessError
+_______________ test_v011_presets_exact_and_previous_49_retained _______________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-62/test_v011_presets_exact_and_pr0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108500a60>
+
+    def test_v011_presets_exact_and_previous_49_retained(tmp_path,monkeypatch):
+        monkeypatch.setenv("STEM_MENTOR_DB",str(tmp_path/"synthetic.sqlite3"))
+        with TestClient(app) as client:
+            response=client.get("/api/math-lab/catalog")
+            assert response.status_code==200
+            body=response.json()
+            assert body["no_llm_api"] is True
+            assert body["expert_review"]=="PENDING"
+            presets={p["id"]:p for p in body["presets"]}
+            assert len(presets)>=57
+            assert NEW <= set(presets)
+            assert {"fn-linear","3d-plane","sets-operations","interval-single","unit-circle"}<=set(presets)
+            assert body["counts"]["scene_families"]["sequence_2d"]==8
+            assert len(body["counts"]["scene_families"])>=9
+            assert body["counts"]["interactive_foundations"]>=63
+>           assert body["counts"]["planned_concepts"]<=66
+E           assert 73 <= 66
+
+backend/tests/test_v011_sequences.py:26: AssertionError
+=========================== short test summary info ============================
+FAILED backend/tests/test_batch11_exact_math.py::test_authored_content_schema_and_no_fake_approval
+FAILED backend/tests/test_deep_knowledge_v1.py::test_course_matrix_count_and_levels_are_engineering_not_official
+FAILED backend/tests/test_deep_knowledge_v1.py::test_there_is_no_approval_and_electives_are_not_overstated
+FAILED backend/tests/test_deep_retrieval_batch06.py::test_coverage_denominator_is_engineering_not_official_atoms
+FAILED backend/tests/test_kb_batch06_reconciliation.py::test_reconciliation_build_reproducible_and_not_student_http_route
+FAILED backend/tests/test_kb_batch07_audits.py::test_reproducible_reports_and_full_schema
+FAILED backend/tests/test_kb_batch07_audits.py::test_all_current_drafts_have_explicit_unverified_step_obligations
+FAILED backend/tests/test_kb_batch13_editorial_links.py::test_all_source_candidates_have_a_review_queue_row
+FAILED backend/tests/test_kb_batch14_elective.py::test_elective_candidates_have_distinct_engineering_ids_and_real_objective_targets
+FAILED backend/tests/test_kb_batch14_elective.py::test_source_schema_mathematical_proof_obligations_are_not_approvals
+FAILED backend/tests/test_kb_batch14_elective.py::test_16_editorial_proposals_still_do_not_certify_any_objective
+FAILED backend/tests/test_kb_batch14_elective.py::test_whole_proof_status_remains_uncertified
+FAILED backend/tests/test_kb_batch15_advanced.py::test_9_unique_authored_theorems_and_no_teacher_approval
+FAILED backend/tests/test_kb_batch15_advanced.py::test_8_new_objective_candidates_have_only_editorial_proposals
+FAILED backend/tests/test_kb_semantic_coverage_batch04.py::test_113_links_do_not_falsely_equal_full_curriculum
+FAILED backend/tests/test_kb_semantic_coverage_batch04.py::test_coverage_snapshot_is_stable_and_remains_editorial
+FAILED backend/tests/test_math_lab_v08.py::test_curriculum_mapping_is_complete_inventory_not_full_implementation
+FAILED backend/tests/test_v010_catalog.py::test_v010_adds_ten_scenes_without_losing_the_original_39
+FAILED backend/tests/test_v010_catalog.py::test_v010_builders_are_deterministic_and_keep_prior_models
+FAILED backend/tests/test_v011_sequences.py::test_v011_presets_exact_and_previous_49_retained
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 20 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+20 failed, 6253 passed, 1 warning in 31.01s
