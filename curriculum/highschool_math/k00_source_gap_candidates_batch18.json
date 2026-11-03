@@ -1,0 +1,162 @@
+{
+  "scope": "SOURCE_PAGE_OMISSION_EDITORIAL_SUBSKILLS_NOT_OFFICIAL_ATOM_COUNT",
+  "standard_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "source_register": "docs/evaluation/KB_BATCH18_SOURCE_MARKERS.json",
+  "review_status": "REVIEW_PENDING",
+  "teacher_approved": 0,
+  "official_atomic_denominator": null,
+  "automatically_inserted_into_original_132": false,
+  "omitted_source_pages": [
+    {
+      "track": "ELECTIVE_A",
+      "printed_page": 56
+    },
+    {
+      "track": "ELECTIVE_A",
+      "printed_page": 57
+    },
+    {
+      "track": "SELECTIVE_COMPULSORY",
+      "printed_page": 40
+    }
+  ],
+  "summary": {
+    "new_gap_candidates": 10,
+    "by_track": {
+      "SELECTIVE_COMPULSORY": 1,
+      "ELECTIVE_A": 9
+    }
+  },
+  "items": [
+    {
+      "id": "KB18-GAP-001",
+      "track": "SELECTIVE_COMPULSORY",
+      "printed_page": 40,
+      "project_topic": "数学史专题",
+      "editorial_missing_objective": "收集微积分创立、发展中的重要思想和数学史材料，组织研究与报告成果",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    },
+    {
+      "id": "KB18-GAP-002",
+      "track": "ELECTIVE_A",
+      "printed_page": 56,
+      "project_topic": "连续随机变量与密度",
+      "editorial_missing_objective": "区分离散分布与连续分布，理解连续型分布函数与概率密度的适用条件",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    },
+    {
+      "id": "KB18-GAP-003",
+      "track": "ELECTIVE_A",
+      "printed_page": 56,
+      "project_topic": "重要连续分布",
+      "editorial_missing_objective": "研究均匀、正态、卡方和 t 分布的定义、参数及条件使用",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    },
+    {
+      "id": "KB18-GAP-004",
+      "track": "ELECTIVE_A",
+      "printed_page": 56,
+      "project_topic": "连续分布数字特征",
+      "editorial_missing_objective": "理解均值、方差等数字特征及相关分布参数与存在性条件",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    },
+    {
+      "id": "KB18-GAP-005",
+      "track": "ELECTIVE_A",
+      "printed_page": 56,
+      "project_topic": "二维离散随机向量",
+      "editorial_missing_objective": "研究联合分布、协方差、相关系数以及变量独立性的判定条件",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    },
+    {
+      "id": "KB18-GAP-006",
+      "track": "ELECTIVE_A",
+      "printed_page": 57,
+      "project_topic": "二维正态分布",
+      "editorial_missing_objective": "辨析二维正态随机向量的联合分布与协方差参数解释",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    },
+    {
+      "id": "KB18-GAP-007",
+      "track": "ELECTIVE_A",
+      "printed_page": 57,
+      "project_topic": "参数估计",
+      "editorial_missing_objective": "理解矩估计和极大似然估计的对象、假设与有限样本局限",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    },
+    {
+      "id": "KB18-GAP-008",
+      "track": "ELECTIVE_A",
+      "printed_page": 57,
+      "project_topic": "正态假设检验",
+      "editorial_missing_objective": "研究正态总体均值和方差检验、双总体均值比较及一类错误",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    },
+    {
+      "id": "KB18-GAP-009",
+      "track": "ELECTIVE_A",
+      "printed_page": 57,
+      "project_topic": "分布拟合优度检验",
+      "editorial_missing_objective": "区分拟合优度的原假设、统计量适用条件与结论限制",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    },
+    {
+      "id": "KB18-GAP-010",
+      "track": "ELECTIVE_A",
+      "printed_page": 57,
+      "project_topic": "二元线性回归模型",
+      "editorial_missing_objective": "区分简单回归与二元预测变量回归并核对参数可识别性",
+      "evidence_kind": "MANUALLY_LOCATED_COURSE_PAGE_EDITORIAL_SPLIT",
+      "source_review": "PRELIMINARY_NO_TEACHER_SIGNOFF",
+      "student_content_available": false,
+      "teacher_approved": false,
+      "verified_official_atom_id": null,
+      "status": "OPEN"
+    }
+  ]
+}
