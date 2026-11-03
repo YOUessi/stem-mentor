@@ -4,7 +4,7 @@
   "generated_from": "curriculum/highschool_math/curriculum_map.json + knowledge/deep/v1/*.json + semantic_gaps_batch04.json",
   "summary": {
     "engineering_topic_denominator": 113,
-    "deep_draft_documents": 153,
+    "deep_draft_documents": 164,
     "linked_project_topics": 113,
     "known_partial_topic_count": 23,
     "gap_draft_candidate_count": 23,
@@ -383,6 +383,7 @@
       "unit": "基本初等函数",
       "concept": "指数函数",
       "deep_lesson_ids": [
+        "math.hs.exponent.monotone",
         "math.hs.exponent.product"
       ],
       "teacher_approved_lesson_ids": [],
@@ -399,6 +400,7 @@
       "unit": "基本初等函数",
       "concept": "对数函数",
       "deep_lesson_ids": [
+        "math.hs.logarithm.product-law",
         "math.hs.logarithm.inverse"
       ],
       "teacher_approved_lesson_ids": [],
@@ -598,6 +600,7 @@
       "unit": "平面向量与解三角形",
       "concept": "向量数量积",
       "deep_lesson_ids": [
+        "math.hs.vector.parallelogram",
         "math.hs.vector.dot-product",
         "math.hs.vector.cauchy-schwarz"
       ],
@@ -1121,6 +1124,8 @@
       "unit": "数列与导数",
       "concept": "数列求和与数列模型",
       "deep_lesson_ids": [
+        "math.hs.sequence.square-sum",
+        "math.hs.sequence.cube-sum",
         "math.hs.sequence.arithmetic-sum",
         "math.hs.sequence.geometric-sum"
       ],
@@ -1262,6 +1267,7 @@
       "concept": "空间向量数量积",
       "deep_lesson_ids": [
         "math.hs.space.coordinate-distance",
+        "math.hs.vector.parallelogram",
         "math.hs.geometry.space-dot"
       ],
       "teacher_approved_lesson_ids": [],
@@ -1441,6 +1447,7 @@
       "concept": "直线与圆的位置关系",
       "deep_lesson_ids": [
         "math.hs.geometry.circle-intersections",
+        "math.hs.geometry.circle-complete-square",
         "math.hs.geometry.line-circle",
         "math.hs.geometry.circle-chord-length"
       ],
@@ -1475,6 +1482,7 @@
       "unit": "平面解析几何",
       "concept": "椭圆定义及几何性质",
       "deep_lesson_ids": [
+        "math.hs.geometry.ellipse-parameter",
         "math.hs.geometry.ellipse-focus"
       ],
       "teacher_approved_lesson_ids": [],
@@ -1607,6 +1615,7 @@
       "unit": "计数原理",
       "concept": "排列与组合",
       "deep_lesson_ids": [
+        "math.hs.counting.pascal-identity",
         "math.hs.counting.permutation-combination",
         "math.hs.counting.permutations-combinations"
       ],
@@ -1624,6 +1633,7 @@
       "unit": "计数原理",
       "concept": "二项式定理",
       "deep_lesson_ids": [
+        "math.hs.counting.pascal-identity",
         "math.hs.counting.binomial-sum",
         "math.hs.counting.binomial"
       ],
@@ -1641,6 +1651,7 @@
       "unit": "概率分布与统计推断",
       "concept": "条件概率与独立性",
       "deep_lesson_ids": [
+        "math.hs.probability.complement-independence",
         "math.hs.probability.conditioning",
         "math.hs.probability.bayes-partition",
         "math.hs.probability.independence"
@@ -1676,6 +1687,8 @@
       "unit": "概率分布与统计推断",
       "concept": "离散型随机变量",
       "deep_lesson_ids": [
+        "math.hs.probability.variance-covariance",
+        "math.hs.probability.bernoulli-variance",
         "math.hs.probability.expectation-linearity",
         "math.hs.probability.discrete-variable",
         "math.hs.probability.discrete-random-variable",
@@ -1695,7 +1708,8 @@
       "unit": "概率分布与统计推断",
       "concept": "二项分布",
       "deep_lesson_ids": [
-        "math.hs.probability.binomial-distribution"
+        "math.hs.probability.binomial-distribution",
+        "math.hs.probability.bernoulli-variance"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -1744,7 +1758,8 @@
       "unit": "概率分布与统计推断",
       "concept": "回归分析与相关性",
       "deep_lesson_ids": [
-        "math.hs.statistics.correlation-regression"
+        "math.hs.statistics.correlation-regression",
+        "math.hs.probability.variance-covariance"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",

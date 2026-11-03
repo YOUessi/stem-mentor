@@ -1,9 +1,9 @@
 {
   "scope": "HUMAN_PROOF_OBLIGATION_QUEUE_NOT_MATHEMATICAL_CERTIFICATION",
   "summary": {
-    "deep_draft_lessons": 153,
-    "theorems": 73,
-    "proof_step_obligations_not_formally_verified": 237,
+    "deep_draft_lessons": 164,
+    "theorems": 84,
+    "proof_step_obligations_not_formally_verified": 276,
     "existing_supporting_oracles_linked": 48,
     "theorems_with_whole_proof_certification": 0,
     "teacher_approved": 0,
@@ -516,6 +516,487 @@
           "index": 3,
           "claim": "归纳步骤对 k=m−1 适用，推出 P(m)，与 m 是反例矛盾。",
           "reason": "从真前提 P(m−1) 可通过普遍归纳蕴含推出 P(m)，因此反例集合为空。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.exponent.monotone",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-021"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "底数 a 为正且不等于 1；x、y 均为实数。",
+        "本证明使用严格为正的指数与 log 单调的基础性质，并未由有限数值采样推出全域结论。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对任意实数 h>0，若 a>1，则 a^h>1；若 0<a<1，则 0<a^h<1。",
+          "reason": "指数函数的实数指数构造与正底数单调延拓的基本性质，必须作为先修事实而非整数指数猜想。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 x<y，令 h=y-x>0；则 a^y=a^x a^h 且 a^x>0。",
+          "reason": "实数指数乘法律及正值性，避免对非正底数错误推广。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "当 a>1，因 a^h>1 有 a^y>a^x；当 0<a<1，有 a^y<a^x。",
+          "reason": "只对正值 a^x 乘不等式，保留正确方向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.logarithm.product-law",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-022"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "实对数底数 a>0 且不等于 1；两个真数分别严格大于 0。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "设 u=log_a x、v=log_a y，则 a^u=x、a^v=y。",
+          "reason": "根据对数作为严格正底数指数函数逆函数的定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由指数乘法则得到 a^(u+v)=a^u a^v=xy>0。",
+          "reason": "正值性和指数运算律给出两个对数真数均合法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "对两边取底为 a 的对数，得 log_a(xy)=u+v=log_a x+log_a y。",
+          "reason": "指数函数单射保证逆操作有效，等式中的对数均在定义域内。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sequence.square-sum",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-065"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n 属于正整数；求和上限是 n，且每一项平方的项号是 k。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "当 n=1，左侧为 1，右侧 1×2×3/6=1。",
+          "reason": "数学归纳法的初始命题真实成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "假设对 n=m≥1 成立：Σ_{k=1}^m k²=m(m+1)(2m+1)/6。",
+          "reason": "只把归纳假设用于 m，不将待证结论当作前提。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "Σ_{k=1}^{m+1} k²=m(m+1)(2m+1)/6+(m+1)²。",
+          "reason": "按有限和定义在末尾加上新项。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "因 m(m+1)(2m+1)+6(m+1)²=(m+1)(m+2)(2m+3)，代回得 (m+1)(m+2)(2m+3)/6。",
+          "reason": "提取 m+1 后通分展开，完成 m→m+1 归纳过渡。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sequence.cube-sum",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-065"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n≥1 且为整数，所有项以 k³ 求和到 n。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "n=1 时两边均为 1。",
+          "reason": "直接代入检验 n=1 时归纳起点的两侧相等。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "假定 Σ_{k=1}^m k³=[m(m+1)/2]² 对 m≥1 成立。",
+          "reason": "明确归纳假设仅关于已完成的前 m 项。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "前 m+1 项和=[m(m+1)/2]²+(m+1)³=(m+1)²[m²/4+(m+1)]。",
+          "reason": "按和的定义添加末项并提取 (m+1)²。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "因 m²+4m+4=(m+2)²，右侧为 [(m+1)(m+2)/2]²。",
+          "reason": "配方使 m+1 时的公式逐字出现，完成归纳。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.vector.parallelogram",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-034",
+        "HS-MATH-073"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "两个向量处于同一有限维实欧氏空间，范数由对应内积诱导。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "按定义展开 ‖u+v‖²=(u+v)·(u+v)=‖u‖²+2u·v+‖v‖²。",
+          "reason": "内积的对称性和双线性性给出两项交叉项。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "同理 ‖u-v‖²=‖u‖²-2u·v+‖v‖²。",
+          "reason": "将 v 替换为 -v，交叉项改变符号。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "两式相加，±2u·v 抵消，得到右边 2‖u‖²+2‖v‖²。",
+          "reason": "同类项合并，无需假设 u 与 v 垂直或非零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.variance-covariance",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-098",
+        "HS-MATH-102"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "样本空间有限，概率非负且总和为 1，X,Y 都有有限实值，协方差按同一概率分布计算。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "设 U=X-E[X]、V=Y-E[Y]，由期望线性性有 E[X+Y]=E[X]+E[Y]。",
+          "reason": "期望拆分不要求 X,Y 独立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "Var(X+Y)=E[(U+V)²]=E[U²]+2E[UV]+E[V²]。",
+          "reason": "实数平方恒等式与有限期望的线性性。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "按照 Var(X)=E[U²]、Var(Y)=E[V²] 和 Cov(X,Y)=E[UV] 的定义代回。",
+          "reason": "得到完整公式，未擅自删去协方差。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "若 X,Y 独立，则 E[XY]=E[X]E[Y]，协方差为零；反向在一般情形不成立。",
+          "reason": "独立性是协方差为零的充分条件而非必要条件。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 2,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.bernoulli-variance",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-098",
+        "HS-MATH-099"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "0≤p≤1 且概率归一，随机变量确实只取 0、1。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "E[X]=0(1-p)+1p=p。",
+          "reason": "直接应用有限离散随机变量的期望定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "因 X 取 0 或 1，逐点有 X²=X，因此 E[X²]=p。",
+          "reason": "二值指示函数的幂等性质，仅对 {0,1} 值成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "Var(X)=E[X²]-[EX]²=p-p²=p(1-p)。",
+          "reason": "使用方差恒等式并因式分解。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "当 p∈{0,1} 时 X 为常量，方差 0；当 p=1/2 方差最大为 1/4。",
+          "reason": "p(1-p)=1/4-(p-1/2)²。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.complement-independence",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-096"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A、B 在同一个概率空间中，且 P(A∩B)=P(A)P(B)；补集相对于同一个样本空间。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由于 B=(A∩B)⊔(Aᶜ∩B)，有 P(Aᶜ∩B)=P(B)-P(A∩B)。",
+          "reason": "互斥并集的概率加法公式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "利用原独立性，P(Aᶜ∩B)=P(B)-P(A)P(B)=(1-P(A))P(B)=P(Aᶜ)P(B)。",
+          "reason": "补事件概率与分配律，完成 Aᶜ 和 B 的独立性。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "将 A 与 B 对调同理可得 A 与 Bᶜ 独立。",
+          "reason": "原独立性定义对 A、B 对称。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "对已经独立的 Aᶜ 与 B 再对 B 取补集，得到 Aᶜ 与 Bᶜ 独立。",
+          "reason": "重复已证明的单侧补事件独立性，无需分母条件。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.circle-complete-square",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-084"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "二次项系数都是 1，xy 项系数 0，D、E、F 是实数；讨论实平面中的点集。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "将 x²+Dx 写成 (x+D/2)²-D²/4，将 y²+Ey 写成 (y+E/2)²-E²/4。",
+          "reason": "两个实数完全平方恒等式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "原方程等价于 (x+D/2)²+(y+E/2)²=(D²+E²)/4-F。",
+          "reason": "等式两侧同时移项，未改变实数解集。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "左侧为两个实数平方和，必非负；r²<0 无解，r²=0 两平方都为零，r²>0 为圆。",
+          "reason": "平方非负及欧氏距离定义，三类情形互斥且穷尽。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.ellipse-parameter",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-086"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b 是严格正实数，横纵轴均不退化；使用所有实数 t 的正弦余弦圆周参数化性质。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "若 x=a cos t、y=b sin t，则 x²/a²+y²/b²=cos²t+sin²t=1。",
+          "reason": "a,b 非零且三角恒等式成立，完成一个方向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 x²/a²+y²/b²=1，则向量 (x/a,y/b) 在单位圆上。",
+          "reason": "两坐标平方和为 1；正的 a,b 保证除法有意义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由单位圆上的每一点均可表示为 (cos t,sin t)，存在实数 t 使 x/a=cos t、y/b=sin t。",
+          "reason": "单位圆的满射参数化是先修事实，乘 a,b 即得反方向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.counting.pascal-identity",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-094",
+        "HS-MATH-095"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n≥2 为整数、1≤k≤n-1；等式中的组合数表示从 n 个不同元素中选出指定数量的子集。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "固定一个有 n 个不同元素的集合 U 及指定元素 u，全部 k 元子集分为包含 u 与不包含 u 两类。",
+          "reason": "这两个集合类互斥，且并集覆盖所有 k 元子集。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 k 元子集包含 u，其他 k-1 个元素从 U\\{u} 的 n-1 个元素中选，有 C(n-1,k-1) 种。",
+          "reason": "包含指定元素时形成一一对应的 k-1 子集。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若不包含 u，所有 k 个元素从剩余 n-1 个元素中选择，有 C(n-1,k) 种。",
+          "reason": "不包含指定元素时形成另一个一一对应。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "按互斥分类加法原理相加，得到 Pascal 递推。",
+          "reason": "同一对象不重计、不漏计。",
           "status": "NOT_FORMALLY_VERIFIED"
         }
       ],

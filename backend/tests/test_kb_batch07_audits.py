@@ -77,16 +77,16 @@ def test_conflict_retains_original_provenance_and_high_risk_differences(row):
 
 def test_all_current_drafts_have_explicit_unverified_step_obligations():
     s = PROOFS["summary"]
-    assert s == {
-        "deep_draft_lessons":153,
-        "theorems":73,
-        "proof_step_obligations_not_formally_verified":237,
-        "existing_supporting_oracles_linked":48,
-        "theorems_with_whole_proof_certification":0,
-        "teacher_approved":0,
-        "student_solution_steps_verified":0,
-    }
-    assert len(PROOFS["lessons"]) == 153
+    from app.deep_knowledge import lessons
+    docs=lessons()
+    assert s["deep_draft_lessons"] == len(docs)
+    assert s["theorems"] == sum(x.kind == "theorem" for x in docs)
+    assert s["proof_step_obligations_not_formally_verified"] == sum(len(x.proof_steps) for x in docs)
+    assert s["existing_supporting_oracles_linked"] >= 48
+    assert s["theorems_with_whole_proof_certification"] == 0
+    assert s["teacher_approved"] == 0
+    assert s["student_solution_steps_verified"] == 0
+    assert len(PROOFS["lessons"]) == len(docs)
     assert not any(x["formal_natural_language_proof_verified"] for x in PROOFS["lessons"])
 
 @pytest.mark.parametrize("row",PROOFS["lessons"], ids=lambda x:x["id"])

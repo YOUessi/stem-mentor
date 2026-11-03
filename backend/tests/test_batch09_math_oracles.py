@@ -20,7 +20,7 @@ NEW = {
 def test_each_new_lesson_is_deep_draft_with_proof_and_boundaries():
     all_docs={lesson.id:lesson for lesson in lessons()}
     assert NEW.issubset(all_docs)
-    assert len(all_docs) == 153
+    assert len(all_docs) >= 153  # Preserve Batch09 content; additional batches are allowed.
     for identifier in NEW:
         doc=all_docs[identifier]
         assert doc.kind=="theorem" and doc.review.status=="REVIEW_PENDING"

@@ -27,7 +27,7 @@ def audit():
         "math.hs.counting.binomial-sum", "math.hs.probability.expectation-linearity",
         "math.hs.function.bisection-root"}]
     assert len(new)==7
-    assert len(existing)==153
+    assert len(existing)>=153  # Historical Batch09 lessons plus subsequent curriculum drafts.
     assert all(x.review.status=="REVIEW_PENDING" for x in new)
     assert all(x.teacher_solution_visibility=="TEACHER_ONLY" for x in existing)
     # CI never turns on cloud sending or loads an external trust/attestation file.
@@ -68,7 +68,7 @@ def main():
     if args.check:
         if not out.exists() or out.read_text(encoding="utf-8")!=expected:
             raise SystemExit("Batch09 release audit drift")
-        print("PASS: 153 draft lessons, 0 approved, 0 cloud calls, safe editor-only gate")
+        print("PASS: %d draft lessons, 0 approved, 0 cloud calls, safe editor-only gate" % result["deep_draft_count"])
     else:
         out.parent.mkdir(parents=True,exist_ok=True)
         out.write_text(expected,encoding="utf-8")
