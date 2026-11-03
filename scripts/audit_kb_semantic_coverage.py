@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "backend"))
 from app.deep_knowledge import coverage_report, curriculum, lessons
 
 GAPS = ROOT / "knowledge/deep/semantic_gaps_batch04.json"
-DEFAULT_OUT = ROOT / "docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH05.json"
+DEFAULT_OUT = ROOT / "docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH06.json"
 
 
 def validate_gaps(raw, known_ids):

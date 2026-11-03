@@ -76,3 +76,26 @@ cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q。
 
 未完成硬门槛：逐条正式课标原子映射、正式教师签核、严格数学定理整体验证、
 学生权限隔离和已批准内容驱动的教学 Agent。未经审核的证明与教师例题不得开放。
+
+## 2026-11-03 Batch06：Batch02 安全消歧与编辑态检索
+
+这是 **Batch05 的独立堆叠 Draft PR**，不替代既有 109 篇知识草案。
+
+- Batch02 留存 39 篇候选，逐一对照当前 109 篇：29 篇有新 ID 并安全导入；10 篇与既有 ID 冲突，**保留两个原稿等待人类比较，绝不覆盖或自行合并**。源稿原样放在 `knowledge/deep/candidates/batch02/`，每个冲突的源哈希、现行哈希和不同字段记录在 `docs/evaluation/KB_BATCH02_RECONCILIATION.json`。
+- 当前仅有 **138 篇原创深度草案**，其中 theorem 58、concept 66、method 14；全部 `REVIEW_PENDING`、教师审核 0、完整自然语言证明正式认证 0、学生自由推导验证 0。
+- 原有 26 条方法卡创建 **只读无损桥** `knowledge/deep/legacy_method_bridge_v1.json`，保留各卡先决条件、应用边界和提示，明确 `NEEDS_DEEP_AUTHORING`，不将桥当成新增的 26 篇深度教材。
+- 新增本地**编辑态** FTS5 检索 `backend/app/deep_retrieval.py`，以多语言二元词、课程 ID、内容类型过滤候选，只返回知识 ID / 标题 / 审核状态 / 分数和“条件未建立”，不得当作数学可靠性证明。未提供显式本地编辑用途则拒绝访问。这里的 `scope="EDITOR_LOCAL"` 是防误用的本地编程约定，**不是权限认证**：不可暴露成外部 HTTP 接口。
+- `student_evidence_lookup` 保持 fail-closed：没有认证过的教师审核就只返回 `NO_APPROVED_EVIDENCE`。所有教师证明和题解仍是 TEACHER_ONLY，不进入学生的对话 Prompt，也不调用真实 LLM API。
+- 生成器 `scripts/reconcile_kb_batch02.py --check` 与 `scripts/build_kb_legacy_bridge.py --check` 被加入 CI；另增加教学草案结构、冲突哈希、隔离检索及有限数学独立核对测试。原先保守语义缺口的 23 项 **继续 OPEN**，不因又多了关联草案就标记合格。
+
+本批主要解决 **安全合并、内容来源完整性、审校冲突可追踪、编辑态检索**。它仍不能推出全课标的完整覆盖：既有 113 条仍是工程索引，正式选修 A–E 课程原子没有被逐项确认，不能以 138 篇数量论证课标完备；完整课标核对与合格审核必须继续执行。
+
+复现命令（Mac）：
+
+```bash
+PYTHONPATH=backend .venv/bin/python scripts/reconcile_kb_batch02.py --check
+PYTHONPATH=backend .venv/bin/python scripts/build_kb_legacy_bridge.py --check
+PYTHONPATH=backend .venv/bin/python scripts/audit_kb_semantic_coverage.py --check
+PYTHONPATH=backend .venv/bin/python scripts/build_kb_coverage.py --summary
+cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q
+```

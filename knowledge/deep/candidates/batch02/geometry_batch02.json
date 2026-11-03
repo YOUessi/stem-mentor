@@ -1,0 +1,1148 @@
+[
+  {
+    "id": "math.hs.vector.representation",
+    "curriculum_ids": [
+      "HS-MATH-032"
+    ],
+    "kind": "concept",
+    "title": "平面向量的有向线段与坐标表示",
+    "version": "1.0.0",
+    "notation": [
+      "a=(a₁,a₂)",
+      "|a|=√(a₁²+a₂²)"
+    ],
+    "prerequisites": [
+      "平面直角坐标系",
+      "有向线段"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "平面向量是具有大小和方向而与起点位置无关的量；在标准正交坐标系中 a=(a₁,a₂)，模为 |a|=√(a₁²+a₂²)。有向线段 AB 的坐标为 (x_B−x_A,y_B−y_A)。零向量长度为零、方向不确定。",
+    "statement": null,
+    "assumptions": [
+      "空间为有方向的欧氏平面，基底为单位正交坐标轴。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "有向线段只决定分量差，平移整个线段不改变向量坐标，因此起点改变不改变向量本身。",
+      "向量两坐标互相垂直，由勾股定理得到模平方 a₁²+a₂²。"
+    ],
+    "boundaries": [
+      "零向量没有唯一方向；相等向量要求相同坐标，不要求起点相同。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "起点不同的有向线段必定是不同向量",
+        "example": "AB 从 (0,0) 到 (1,2)，CD 从 (4,5) 到 (5,7)。",
+        "explanation": "两个坐标差同为 (1,2)，表示相等的自由向量。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "A=(1,−1),B=(4,3)，求 AB 的坐标与模。",
+        "steps": [
+          "坐标相减 (4−1,3−(−1))=(3,4)。",
+          "模为 √(3²+4²)=5。"
+        ],
+        "answer": "AB=(3,4)，|AB|=5",
+        "check": "水平竖直分量分别为 3 和 4，符合勾股关系。"
+      },
+      {
+        "question": "零向量 (0,0) 是否具有可计算夹角？",
+        "steps": [
+          "其模 √(0+0)=0，长度为零。",
+          "通常向量夹角定义要求参与的向量均非零。"
+        ],
+        "answer": "不能定义零向量与非零向量夹角",
+        "check": "数量积公式的分母 |a||b| 对零向量为零。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把向量与有向线段的绝对位置混为一谈",
+        "why_wrong": "自由向量在平移下保持相同分量和大小方向。",
+        "repair_question": "把一条线段平移后，其向量坐标为什么不变？"
+      }
+    ],
+    "hint_ladder": [
+      "先区分坐标点与连接两点的向量。",
+      "向量坐标用终点减起点，注意负号。",
+      "计算模时用正交分量的平方和。"
+    ],
+    "transfer": {
+      "near": "求从 (−2,3) 到 (1,−1) 的向量及其模。",
+      "far": "解释路径端点相同但经过不同曲线时位移向量为何相同。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.vector.linear-operations",
+    "curriculum_ids": [
+      "HS-MATH-033"
+    ],
+    "kind": "concept",
+    "title": "向量加减和实数倍的坐标法则",
+    "version": "1.0.0",
+    "notation": [
+      "a+b=(a₁+b₁,a₂+b₂)",
+      "λa=(λa₁,λa₂)"
+    ],
+    "prerequisites": [
+      "向量的坐标表示",
+      "平行四边形法则"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.vector.representation"
+    ],
+    "definition": "对平面向量 a=(a₁,a₂)、b=(b₁,b₂) 和实数 λ，定义加法 a+b=(a₁+b₁,a₂+b₂)，减法 a−b=(a₁−b₁,a₂−b₂)，数乘 λa=(λa₁,λa₂)。几何上加法对应首尾相接，数乘改变长度及可能反向。",
+    "statement": null,
+    "assumptions": [
+      "a,b 为平面向量，λ 为实数；采用相同正交基底。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "把向量看作沿两坐标方向的分量，首尾连接时各轴位移独立相加。",
+      "λ<0 时方向反向，λ=0 时得到零向量；分配律 λ(a+b)=λa+λb 可在两坐标分量分别验证。"
+    ],
+    "boundaries": [
+      "向量的加法不是模长加法：一般 |a+b|≠|a|+|b|。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "两个向量相加时其模长必定等于原来的模长之和",
+        "example": "a=(1,0), b=(−1,0)，a+b=(0,0)。",
+        "explanation": "|a+b|=0 而 |a|+|b|=2。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "a=(2,−1),b=(−3,4)，求 a+b。",
+        "steps": [
+          "对应分量相加：2+(−3)=−1。",
+          "第二分量 −1+4=3。"
+        ],
+        "answer": "a+b=(−1,3)",
+        "check": "用坐标分量核对结果而不是只加长度。"
+      },
+      {
+        "question": "a=(1,2),b=(3,−1)，求 2a−b。",
+        "steps": [
+          "先计算 2a=(2,4)。",
+          "再减去 b：(2−3,4−(−1))=(−1,5)。"
+        ],
+        "answer": "(−1,5)",
+        "check": "分配与坐标减法顺序均符合定义。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把向量模的和误写成向量和的模",
+        "why_wrong": "反向向量会相消，因此模一般不满足等式。",
+        "repair_question": "如果 b=−a，那么 |a+b| 应当是多少？"
+      }
+    ],
+    "hint_ladder": [
+      "所有向量先转到同一坐标基底。",
+      "加法与数乘对每个坐标独立进行。",
+      "模长需要最后对结果向量整体求平方根。"
+    ],
+    "transfer": {
+      "near": "计算 (2,3)−3(−1,1)。",
+      "far": "通过坐标解释三角形重心与顶点向量平均数的关系。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.triangle.ssa-ambiguity",
+    "curriculum_ids": [
+      "HS-MATH-038"
+    ],
+    "kind": "method",
+    "title": "SSA 非夹角边角数据的可行解与双解检查",
+    "version": "1.0.0",
+    "notation": [
+      "sin B=(b/a)sin A",
+      "A+B<π"
+    ],
+    "prerequisites": [
+      "正弦定理",
+      "三角形内角和"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.triangle.sine-law"
+    ],
+    "definition": null,
+    "statement": "在非退化三角形中，已知 A、其对边 a 和另一边 b 时，先列 sin B=(b/a)sin A；只要比值位于 [0,1]，必须检查反正弦主值 B₁ 与补角 B₂=π−B₁，并对每个候选验证 A+B<π，才能判定零解、一解或二解。",
+    "assumptions": [
+      "已知对边 a、角 A 和另一边 b，要求 a,b>0 且 0<A<π。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先根据正弦定理计算 s=(b/a)sin A，s>1 或 s≤0 均无法形成所需合法角。",
+      "若 0<s≤1，生成 (0,π) 内的所有角候选；s=1 时两个补角候选相同，不能重复计数。",
+      "逐一检验 A+B<π 以及其他给定条件，不能把反三角函数的主值默认成唯一解。"
+    ],
+    "boundaries": [
+      "SSA 双解只发生在部分参数范围；不能把两边夹角 SAS 与 SSA 混淆。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何 SSA 给定都唯一决定三角形",
+        "example": "A=30°,a=1,b=1.5，得到 sinB=0.75。",
+        "explanation": "B≈48.59° 或 B≈131.41°，两种都满足 A+B<180°，产生不同三角形。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "A=30°,a=1,b=1.5，判断解的个数。",
+        "steps": [
+          "s=(1.5/1)sin30°=0.75。",
+          "B₁≈48.59°, B₂≈131.41°，与 A 的和都小于 180°。"
+        ],
+        "answer": "存在两个非全等三角形",
+        "check": "第三角分别约为 101.41° 和 18.59°，均为正数。"
+      },
+      {
+        "question": "A=30°,a=4,b=4，判断解的个数。",
+        "steps": [
+          "s=(4/4)sin30°=0.5，有 30° 和 150° 两个形式候选。",
+          "A+B₂=180° 导致第三角为零，应当排除。"
+        ],
+        "answer": "唯一合法三角形，B=30°",
+        "check": "第三角为 120°，非退化条件成立。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把 arcsin 的主值当作唯一内角",
+        "why_wrong": "在 (0,π) 上正弦值通常有一对补角，仍要用三角形总角约束筛选。",
+        "repair_question": "B 的补角是否一定可行？还需检查什么？"
+      }
+    ],
+    "hint_ladder": [
+      "确认已知角是不是已知两边的夹角。",
+      "求出 sinB 后先列所有候选角，而不是直接判唯一。",
+      "逐个检查 A+B 是否严格小于 180°。"
+    ],
+    "transfer": {
+      "near": "A=40°,a=8,b=9，判断解的个数。",
+      "far": "将 SSA 的候选角筛选与 GPS 三边定位的圆交点数量作几何类比。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.triangle.area-sine",
+    "curriculum_ids": [
+      "HS-MATH-039"
+    ],
+    "kind": "theorem",
+    "title": "三角形两边及夹角的面积公式",
+    "version": "1.0.0",
+    "notation": [
+      "Δ=(1/2)ab sinC",
+      "0<C<π"
+    ],
+    "prerequisites": [
+      "三角形面积",
+      "正弦定义",
+      "直角投影"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.pythagorean"
+    ],
+    "definition": null,
+    "statement": "若三角形的两边长 a,b>0，二者夹角为 C∈(0,π)，则面积 Δ=ab sinC/2。若拿到的角不是这两边之间的夹角，不能直接代入同一对边长。",
+    "assumptions": [
+      "非退化欧氏三角形，a,b 为夹角 C 对应的两条边长，a,b>0 且 C∈(0,π)。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "固定边长 a 为底，向底边所在直线从对顶点作垂线，得到高的长度 h=b sin C。",
+        "reason": "当 C 为钝角时垂足可以落在底边延长线上，但高长 b sin C 仍为正。"
+      },
+      {
+        "claim": "平面三角形面积为 Δ=(1/2)×底×高，因而 Δ=(1/2)a(b sin C)。",
+        "reason": "面积公式以高为到直线的非负距离。"
+      },
+      {
+        "claim": "整理即 Δ=ab sinC/2，且 sinC>0 保证面积为正。",
+        "reason": "非退化内角落在 (0,π)，不会产生负面积。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若题目角不是两已知边的夹角，必须先找到对应夹角；退化 C=0 或 π 给出面积零而不再是非退化三角形。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "知道任意两边与某个角就能直接使用面积公式",
+        "example": "边长 a=3,b=4，给定的 A 是对边 a 的角而非它们的夹角 C。",
+        "explanation": "面积公式中的 sin 必须对应实际夹角，不能随意使用非夹角。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "两边长 3、4，夹角 30°，求面积。",
+        "steps": [
+          "使用 Δ=ab sinC/2。",
+          "代入 3×4×1/2×1/2 得 3。"
+        ],
+        "answer": "面积为 3",
+        "check": "高等于 4sin30°=2，底 3 高 2 面积为 3。"
+      },
+      {
+        "question": "两边长 5、6，夹角 150°，求面积。",
+        "steps": [
+          "钝角仍允许按所夹角计算，高为 6sin150°=3。",
+          "面积 =5×3/2=7.5。"
+        ],
+        "answer": "面积为 15/2",
+        "check": "sin150°=1/2，数值严格为正。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把对角与夹角不加区分地代入正弦面积公式",
+        "why_wrong": "每条公式有对应的几何对象，正弦因子必须是两条选定边的真实夹角。",
+        "repair_question": "你选的两条边共同连接的顶点是哪一个？"
+      }
+    ],
+    "hint_ladder": [
+      "先给两个已知边的共同顶点标出夹角。",
+      "从一个顶点作垂线，写出高与夹角的正弦关系。",
+      "面积是底乘高的一半，钝角时记得垂足在延长线上。"
+    ],
+    "transfer": {
+      "near": "两边 8、5，夹角 120° 时求面积。",
+      "far": "通过坐标行列式的绝对值说明同一面积的向量表示。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.space-incidence",
+    "curriculum_ids": [
+      "HS-MATH-043"
+    ],
+    "kind": "concept",
+    "title": "空间点、直线与平面的从属及唯一确定条件",
+    "version": "1.0.0",
+    "notation": [
+      "A∈ℓ",
+      "A∈α"
+    ],
+    "prerequisites": [
+      "欧氏三维空间",
+      "共线与共面"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "空间两不同点恰好确定一条直线；三不共线点恰好确定一个平面。点可以在直线上或平面内，直线可以包含于平面或与平面相交等；在图形投影上看似相交不保证三维空间内实际相交。",
+    "statement": null,
+    "assumptions": [
+      "采用普通三维欧氏空间；定理中的“不同”“不共线”是关键限定条件。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "判断直线时需要两个不同点，重合点不能确定唯一方向。",
+      "确定一个平面需要三个不共线点；若三点共线，则存在无穷多个经过该直线的平面。"
+    ],
+    "boundaries": [
+      "图像上两线交叉不一定空间相交；已知同一平面上的两不平行直线才保证相交。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意三点都能唯一确定平面",
+        "example": "A=(0,0,0),B=(1,0,0),C=(2,0,0) 共线。",
+        "explanation": "经过 x 轴的平面无穷多，不能由三共线点唯一确定。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "判断 A=(0,0,0)、B=(1,0,0)、C=(0,1,0) 是否确定平面。",
+        "steps": [
+          "AB 与 AC 不成比例，三点不共线。",
+          "可确定唯一的 z=0 平面。"
+        ],
+        "answer": "唯一平面 z=0",
+        "check": "三个给定点全部满足平面方程且不共线。"
+      },
+      {
+        "question": "两条空间直线在透视投影上交叉，是否必相交？",
+        "steps": [
+          "二维投影会丢失深度坐标。",
+          "不同 z 高度的直线投影可交叉而三维无公共点。"
+        ],
+        "answer": "不能据投影直接确定相交",
+        "check": "应由空间方程求实际公共点，或证明两条直线共面且交会。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把画面透视关系直接当作空间几何事实",
+        "why_wrong": "二维投影会压扁深度，出现视觉交点不等于存在三维公共点。",
+        "repair_question": "如何用空间参数方程直接检查是否有公共点？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查给出的点是否真正不同、是否共线。",
+      "讨论两线相交前先确认它们共面。",
+      "图形只用于辅助理解，数学结论必须用空间关系证明。"
+    ],
+    "transfer": {
+      "near": "判定过三点 (0,0,0),(0,1,0),(0,2,0) 是否有唯一平面。",
+      "far": "举出透视图交叉但实际异面的两条直线参数方程。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.line-plane-parallel",
+    "curriculum_ids": [
+      "HS-MATH-044"
+    ],
+    "kind": "theorem",
+    "title": "线面平行判定定理与不包含条件",
+    "version": "1.0.0",
+    "notation": [
+      "a∥b",
+      "b⊂α",
+      "a∥α"
+    ],
+    "prerequisites": [
+      "空间中直线与平面的从属",
+      "平行直线"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.space-incidence"
+    ],
+    "definition": null,
+    "statement": "在三维欧氏空间中，若直线 a 与平面 α 内的一条直线 b 平行，且 a 不包含于平面 α，则 a 与 α 没有公共点，即 a∥α。不可省略 a 不在 α 内这一关键条件。",
+    "assumptions": [
+      "直线 b 完全包含于平面 α；直线 a 不包含于平面 α。",
+      "a 与 b 是空间中两条不重合的平行直线。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "a、b 是两条不同平行直线，因此确定唯一平面 β，同时 a⊂β、b⊂β。",
+        "reason": "欧氏空间中两条不同的平行直线共面且确定一个平面。"
+      },
+      {
+        "claim": "若 a 与 α 有公共点 P，由 a⊂β，得 P∈α∩β；α 与 β 不同（因为 a⊄α），且都包含 b，因此交线为 b。",
+        "reason": "两不同平面的交集若包含整条 b，则唯一交线必须是 b。"
+      },
+      {
+        "claim": "从 P∈α∩β=b 得 P∈b，而 P∈a，所以 a 与 b 有交点，与 a∥b 矛盾，故 a∩α=∅。",
+        "reason": "反证法使用平行直线无公共点以及两平面交线的唯一性。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 a 已位于 α 内，即使 a∥b，也不能称 a 与 α 无公共点。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要空间直线平行于平面内某直线，它就一定平行于该平面",
+        "example": "平面 α:z=0 中 a 为 y=1,z=0 的直线，b 为 y=0,z=0 的 x 方向直线。",
+        "explanation": "a 与 b 平行，但 a 本身包含于 α，因而 a 并不是与 α 无公共点的直线。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "α:z=0，a:(t,1,2)，b:(t,0,0)，判断 a 与 α 的位置关系。",
+        "steps": [
+          "两直线方向均 (1,0,0)，互相平行。",
+          "a 的 z 坐标恒为 2 不在 α 中，满足排除包含条件。"
+        ],
+        "answer": "a∥α",
+        "check": "所有 a 上点 z=2，绝无 z=0 的交点。"
+      },
+      {
+        "question": "α:z=0，a:(t,1,0)，b:(t,0,0)，可否直接说 a∥α？",
+        "steps": [
+          "a 与 b 平行且 b 位于 α。",
+          "但 a 的 z 恒等于 0，a 已经包含在 α 中。"
+        ],
+        "answer": "不能应用线面平行判定；a⊂α",
+        "check": "a 与 α 有无穷多个公共点，故非线面平行（无交点意义）。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忽略直线 a 不包含在平面内的必要条件",
+        "why_wrong": "若 a 原本就在平面内，则和 b 平行并不能让 a 离开该平面。",
+        "repair_question": "你能找到 a 上一点不属于 α 吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先在平面 α 内找到确实与 a 平行的线 b。",
+      "再核对 a 是否整体就在 α 内。",
+      "若 a 与 α 有交点，尝试在由 a、b 决定的平面中反证。"
+    ],
+    "transfer": {
+      "near": "对 α:z=2 和 a:(t,0,0) 重做线面平行判断。",
+      "far": "分析“线面平行”与“线面平行或包含于平面”两种定义约定的差异。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.space-coordinate",
+    "curriculum_ids": [
+      "HS-MATH-071"
+    ],
+    "kind": "concept",
+    "title": "空间直角坐标系和两点间距离",
+    "version": "1.0.0",
+    "notation": [
+      "P=(x,y,z)",
+      "PQ=√(Δx²+Δy²+Δz²)"
+    ],
+    "prerequisites": [
+      "空间垂直坐标轴",
+      "平面两点距离公式"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "在三维正交坐标系中，点 P 对应有序实数组 (x,y,z)。两点 P、Q 的位移向量为 (x_Q−x_P,y_Q−y_P,z_Q−z_P)，两点距离为对应三个坐标差平方和的非负平方根。",
+    "statement": null,
+    "assumptions": [
+      "x、y、z 三条坐标轴两两垂直且采用统一长度单位。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "在坐标平面中先用勾股定理组合 x、y 两个垂直位移，得到水平距离平方 Δx²+Δy²。",
+      "再将水平位移与 z 方向正交位移组合，得到距离平方 Δx²+Δy²+Δz²。"
+    ],
+    "boundaries": [
+      "该坐标距离公式依赖轴正交且同单位；非正交坐标需使用度量矩阵。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "空间距离只需计算平面内两个坐标差",
+        "example": "P=(0,0,0),Q=(0,0,3)，两个平面坐标差都为零。",
+        "explanation": "实际距离为 3，必须包含 z 坐标差。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "P=(1,2,3),Q=(4,6,3)，求距离。",
+        "steps": [
+          "坐标差 (3,4,0)。",
+          "距离 √(9+16+0)=5。"
+        ],
+        "answer": "PQ=5",
+        "check": "在相同 z 高度的平面内退化为标准 3-4-5 三角形。"
+      },
+      {
+        "question": "P=(0,0,0),Q=(1,2,2)，求距离。",
+        "steps": [
+          "位移三分量分别为 1、2、2。",
+          "距离 √(1+4+4)=3。"
+        ],
+        "answer": "PQ=3",
+        "check": "平方和为 9，应取非负根。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忘记 z 坐标或把点的坐标直接当向量差",
+        "why_wrong": "计算两点距离需要终点减起点，每个坐标维度都不可漏掉。",
+        "repair_question": "若只改变 z，距离为什么仍可能非零？"
+      }
+    ],
+    "hint_ladder": [
+      "先写出三维坐标差 Δx、Δy、Δz。",
+      "分别平方再相加，避免先将坐标差求和。",
+      "最后取非负平方根并核对量纲。"
+    ],
+    "transfer": {
+      "near": "计算 (−1,0,2) 与 (2,4,2) 的距离。",
+      "far": "解释为什么三维正交距离公式在斜轴坐标中会失效。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.space-dot",
+    "curriculum_ids": [
+      "HS-MATH-072",
+      "HS-MATH-073"
+    ],
+    "kind": "theorem",
+    "title": "空间向量数量积和垂直判定",
+    "version": "1.0.0",
+    "notation": [
+      "a·b=a₁b₁+a₂b₂+a₃b₃",
+      "a·b=|a||b|cosθ"
+    ],
+    "prerequisites": [
+      "空间向量坐标",
+      "勾股定理",
+      "余弦定理"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.space-coordinate",
+      "math.hs.vector.dot-product"
+    ],
+    "definition": null,
+    "statement": "在正交坐标系中空间向量 a=(a₁,a₂,a₃)、b=(b₁,b₂,b₃) 的数量积为 a·b=a₁b₁+a₂b₂+a₃b₃；当 a,b 均非零时 a·b=|a||b|cosθ，且 a⊥b 当且仅当 a·b=0。零向量不具有确定夹角。",
+    "assumptions": [
+      "a,b 为三维欧氏空间的非零向量，θ 为二者夹角（0≤θ≤π）。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由三维正交坐标中的勾股定理展开 |a−b|²=Σ_i(a_i−b_i)²=|a|²+|b|²−2Σ_i a_ib_i。",
+        "reason": "逐坐标平方求和等价于沿三条相互垂直的基向量计算位移长度。"
+      },
+      {
+        "claim": "以向量 a、b 为边构成平面三角形，余弦定理同样给出 |a−b|²=|a|²+|b|²−2|a||b|cosθ。",
+        "reason": "两个非零向量张成一个至多二维平面，平面余弦定理适用。"
+      },
+      {
+        "claim": "比较两种 |a−b|² 展开并除以 2，即 Σ_i a_ib_i=|a||b|cosθ；因 |a||b|>0，数量积为零等价 cosθ=0。",
+        "reason": "除以非零模长合法；在 0≤θ≤π 内 cosθ=0 等价 θ=π/2。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不能把 a·b=0 推出零向量与任意向量“夹角90°”；定义夹角时要求模非零。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何数量积为零的两向量都能称夹角为直角",
+        "example": "a=(0,0,0),b=(1,2,3) 时 a·b=0。",
+        "explanation": "a 为零向量，其方向未定义，不能计算真实夹角。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "a=(1,2,−1),b=(2,−1,0)，判断垂直。",
+        "steps": [
+          "数量积 1×2+2×(−1)+(−1)×0=0。",
+          "两个向量模均大于零，可据条件判垂直。"
+        ],
+        "answer": "a⊥b",
+        "check": "直接求得两向量均非零，等价条件适用。"
+      },
+      {
+        "question": "a=(1,0,0),b=(1,1,0)，求夹角。",
+        "steps": [
+          "a·b=1，模分别为 1 和 √2。",
+          "cosθ=1/√2，夹角 θ=π/4。"
+        ],
+        "answer": "θ=45°",
+        "check": "cos45°=√2/2 与计算一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忘记非零向量前提导致夹角结论失效",
+        "why_wrong": "数量积在零向量上定义，但夹角定义需两个非零方向。",
+        "repair_question": "若 a=(0,0,0)，cosθ 的分母会发生什么？"
+      }
+    ],
+    "hint_ladder": [
+      "先在相同的正交坐标基底写出三分量。",
+      "数量积是对应坐标相乘后相加，不是模长直接相乘。",
+      "使用 cosθ 之前先确认 |a||b|≠0。"
+    ],
+    "transfer": {
+      "near": "计算 (1,−2,3) 与 (4,2,0) 是否垂直。",
+      "far": "将数量积条件用来推导点到平面的正交距离公式。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.line-slope",
+    "curriculum_ids": [
+      "HS-MATH-080"
+    ],
+    "kind": "concept",
+    "title": "直线斜率与垂直直线的例外",
+    "version": "1.0.0",
+    "notation": [
+      "k=(y₂−y₁)/(x₂−x₁)",
+      "tanθ=k"
+    ],
+    "prerequisites": [
+      "平面坐标",
+      "倾斜角与正切函数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.tangent-domain"
+    ],
+    "definition": "经过不同点 P₁=(x₁,y₁) 与 P₂=(x₂,y₂) 的非竖直直线，其斜率 k=(y₂−y₁)/(x₂−x₁)，要求 x₂≠x₁。竖直直线 x=c 的斜率不存在，不能记作无穷大实数。",
+    "statement": null,
+    "assumptions": [
+      "经过两个不同点的平面直线。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "当水平坐标有非零变化，直线每单位水平位移对应的有向竖直变化固定，得到斜率公式。",
+      "若 x₁=x₂ 而两点不同，直线所有点的横坐标相同，为竖直线；分母为零因而斜率未定义。"
+    ],
+    "boundaries": [
+      "两点重合不能确定唯一直线；竖直线存在，但没有有限实数斜率。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何一条直线都能写成 y=kx+b",
+        "example": "两点 (2,0),(2,5) 定义直线 x=2。",
+        "explanation": "它不表示 y 为 x 的单值函数，因此不能用有限 k 的斜截式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "直线通过 (1,2)、(3,6)，求斜率。",
+        "steps": [
+          "横坐标差 3−1=2。",
+          "纵坐标差 6−2=4，k=4/2=2。"
+        ],
+        "answer": "k=2",
+        "check": "两点不同且横坐标差非零，公式合法。"
+      },
+      {
+        "question": "通过 (2,1)、(2,5) 的直线斜率为多少？",
+        "steps": [
+          "横坐标差 2−2=0。",
+          "直线为 x=2，不能在零分母下计算实数斜率。"
+        ],
+        "answer": "斜率不存在",
+        "check": "即使方向角为 π/2，tanπ/2 也未定义。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把竖直线斜率当作无限大常数",
+        "why_wrong": "无穷不是这里的实数斜率，不能放进 y=kx+b 做普通代数运算。",
+        "repair_question": "为什么 y=kx+b 无法刻画所有 x=2 的点？"
+      }
+    ],
+    "hint_ladder": [
+      "检查两个点是否不同、横坐标差是否为零。",
+      "非零时用纵向变化除以横向变化。",
+      "零时先写出竖直线方程，不要进行除零运算。"
+    ],
+    "transfer": {
+      "near": "求过 (−1,3)、(2,−3) 的直线斜率。",
+      "far": "讨论竖直线与一般式 Ax+By+C=0 的关系。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.line-general",
+    "curriculum_ids": [
+      "HS-MATH-081"
+    ],
+    "kind": "theorem",
+    "title": "过定点且具有法向量的直线方程",
+    "version": "1.0.0",
+    "notation": [
+      "A(x−x₀)+B(y−y₀)=0",
+      "A²+B²>0"
+    ],
+    "prerequisites": [
+      "平面向量的数量积",
+      "直线法向量"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.vector.dot-product",
+      "math.hs.geometry.line-slope"
+    ],
+    "definition": null,
+    "statement": "对于非零法向量 n=(A,B)，过定点 P₀=(x₀,y₀) 且与 n 垂直的唯一直线，其上所有点 P=(x,y) 满足 A(x−x₀)+B(y−y₀)=0；展开成一般式 Ax+By+C=0，其中 A、B 不能同时为零。",
+    "assumptions": [
+      "法向量 n=(A,B) 非零，即 A²+B²>0。",
+      "直线经过 P₀=(x₀,y₀)。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "若 P 在直线上，则沿线位移向量 P−P₀=(x−x₀,y−y₀) 与法向量 n 垂直。",
+        "reason": "法向量定义为与直线方向正交的非零向量。"
+      },
+      {
+        "claim": "数量积零条件给出 n·(P−P₀)=A(x−x₀)+B(y−y₀)=0。",
+        "reason": "使用平面数量积的坐标计算公式及非零法向量条件。"
+      },
+      {
+        "claim": "反过来该线性方程的解集恰是所有与 n 正交、经过 P₀ 的点，故代表一条唯一直线。",
+        "reason": "在平面内非零法向量的正交补是一维方向空间。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 A=B=0，方程可能代表全平面或空集，不再代表一条直线。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何 Ax+By+C=0 都是直线方程",
+        "example": "取 A=B=0,C=0，方程变成 0=0。",
+        "explanation": "此时整张平面的所有点都是解，不是一条直线。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "过 (1,2) 且法向量 (2,−1)，求直线方程。",
+        "steps": [
+          "代入 2(x−1)−(y−2)=0。",
+          "展开得 2x−y=0。"
+        ],
+        "answer": "2x−y=0",
+        "check": "点 (1,2) 代入确有 2−2=0。"
+      },
+      {
+        "question": "过原点且垂直 x 轴的直线是什么？",
+        "steps": [
+          "可用法向量 n=(1,0)，且 P₀=(0,0)。",
+          "方程为 x=0。"
+        ],
+        "answer": "x=0",
+        "check": "它是竖直直线，但一般式允许斜率不存在的情况。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忘记一般式中 A、B 不能同时为零",
+        "why_wrong": "当两个法向坐标都为零时没有唯一的正交方向可供确定直线。",
+        "repair_question": "A=B=0 且 C≠0 时方程还有解吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先确定直线经过的定点和一个非零法向量。",
+      "把任意点与定点之差和法向量数量积设为零。",
+      "将点坐标回代并检查 A²+B²>0。"
+    ],
+    "transfer": {
+      "near": "写过 (−1,4) 法向量 (3,2) 的直线方程。",
+      "far": "用一般式解释竖直线与斜率不存在却仍是合法直线的关系。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.point-line-distance",
+    "curriculum_ids": [
+      "HS-MATH-083"
+    ],
+    "kind": "theorem",
+    "title": "平面点到直线距离的法向投影公式",
+    "version": "1.0.0",
+    "notation": [
+      "d=|Ax₀+By₀+C|/√(A²+B²)"
+    ],
+    "prerequisites": [
+      "直线一般式",
+      "向量正交投影",
+      "非零法向量"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.line-general"
+    ],
+    "definition": null,
+    "statement": "点 P=(x₀,y₀) 到直线 ℓ:Ax+By+C=0 的欧氏最短距离是 d=|Ax₀+By₀+C|/√(A²+B²)，其中 A²+B²>0。绝对值不可随意省略，分母必须是非零法向量长度。",
+    "assumptions": [
+      "直线 ℓ:Ax+By+C=0 且 A²+B²>0。",
+      "点 P=(x₀,y₀) 为平面任意点。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "取直线上一点 Q，故 A x_Q+B y_Q+C=0，同时定义法向量 n=(A,B) 且 |n|=√(A²+B²)>0。",
+        "reason": "一般式直线与非零法向量的定义保证这样的 Q 存在。"
+      },
+      {
+        "claim": "从 Q 到 P 的向量 v=P−Q，在单位法向量 n/|n| 上的有向投影为 v·n/|n|。",
+        "reason": "正交投影大小给出点到直线的垂直最短位移。"
+      },
+      {
+        "claim": "代入 Q 的直线方程得到 v·n=Ax₀+By₀−Ax_Q−By_Q=Ax₀+By₀+C，取绝对值即得距离公式。",
+        "reason": "距离是非负数，因此取法向投影的绝对值。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "如果 A=B=0，就不是合法直线；使用距离公式会除以零。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "点到直线距离可以不取绝对值",
+        "example": "点 P=(−1,0) 到直线 x=0，令 A=1,B=0,C=0。",
+        "explanation": "不取绝对值得 −1，距离不能为负，正确为 1。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "P=(3,4) 到直线 3x+4y−25=0 的距离。",
+        "steps": [
+          "分子 |9+16−25|=0。",
+          "分母 √(9+16)=5，距离为零。"
+        ],
+        "answer": "d=0",
+        "check": "点恰好在直线上，符合几何距离定义。"
+      },
+      {
+        "question": "P=(0,0) 到直线 3x+4y−10=0 的距离。",
+        "steps": [
+          "分子 |−10|=10。",
+          "分母 √(9+16)=5。"
+        ],
+        "answer": "d=2",
+        "check": "距离非负，且沿法向方向投影长度为 2。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把 Ax₀+By₀+C 的带符号值当成距离",
+        "why_wrong": "法向投影带方向符号，而欧氏距离必须是非负数。",
+        "repair_question": "点位于直线法向两侧，距离应当有正负吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先核实直线一般式的法向量不为零。",
+      "计算点代入直线左侧的绝对值。",
+      "再除以法向量长度 √(A²+B²)。"
+    ],
+    "transfer": {
+      "near": "求点 (1,−1) 到直线 x−y+1=0 的距离。",
+      "far": "将二维点线距离推广为三维点到平面的法向投影距离。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.line-circle",
+    "curriculum_ids": [
+      "HS-MATH-084"
+    ],
+    "kind": "theorem",
+    "title": "直线与圆的位置关系及切线条件",
+    "version": "1.0.0",
+    "notation": [
+      "d<r",
+      "d=r",
+      "d>r"
+    ],
+    "prerequisites": [
+      "点到直线距离",
+      "圆的定义",
+      "勾股定理"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.geometry.point-line-distance"
+    ],
+    "definition": null,
+    "statement": "圆心 O 到直线 ℓ 的距离为 d、圆半径为 r>0。若 d<r，直线和圆有两个交点；若 d=r，有唯一交点（切线）；若 d>r，没有交点。切线判别依赖的是圆心到直线的垂直距离而非任意点距离。",
+    "assumptions": [
+      "平面圆圆心 O、半径 r>0；ℓ 是合法直线，圆心到直线距离 d≥0。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "从 O 向直线 ℓ 作垂足 H，任取 ℓ 上点 P，则 △OHP 在 H 处直角，OP²=OH²+HP²=d²+HP²。",
+        "reason": "圆和直线的公共点满足 OP=r，垂线保证勾股定理适用。"
+      },
+      {
+        "claim": "代入 OP=r 得 HP²=r²−d²，当 d<r 时有两个不同实解 HP=±√(r²−d²)，对应 H 两侧交点。",
+        "reason": "直线的有向坐标可取垂足为原点，正负距离为两不同点。"
+      },
+      {
+        "claim": "当 d=r 时仅有 HP=0 一个交点 H；当 d>r 时右侧负数无实解，因此没有交点。",
+        "reason": "平方非负限制排除了负的实数平方。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "半径 r=0 时圆退化为点，不应与标准圆切线条件混同。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意经过圆内部的直线都与圆相切",
+        "example": "圆心 (0,0)、半径 2，直线 y=0 通过圆心。",
+        "explanation": "圆心到直线距离 d=0<r，实际上与圆交于 (−2,0),(2,0) 两点。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "圆 x²+y²=9 与 y=3 的位置关系。",
+        "steps": [
+          "圆半径 r=3，圆心到 y=3 的距离 d=3。",
+          "d=r，故只有一个交点 (0,3)。"
+        ],
+        "answer": "相切",
+        "check": "将 y=3 代入圆得到 x²=0 唯一交点。"
+      },
+      {
+        "question": "圆 x²+y²=4 与 x=3 的位置关系。",
+        "steps": [
+          "圆半径 r=2，圆心到 x=3 的距离 d=3。",
+          "d>r，故没有公共点。"
+        ],
+        "answer": "相离",
+        "check": "将 x=3 代入得到 y²=−5，无实数解。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只用目测判断直线是否切圆",
+        "why_wrong": "二维绘图误差可能将割线或相离线误识为切线，应计算精确距离。",
+        "repair_question": "你能证明圆心到直线的距离恰好等于半径吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先从圆的标准式读出圆心与正半径。",
+      "用点线距离公式求圆心到直线的 d。",
+      "比较 d 与 r 的严格大小，区分两个、一个或零个交点。"
+    ],
+    "transfer": {
+      "near": "讨论圆 (x−1)²+y²=4 和直线 x=−1 是否相切。",
+      "far": "通过联立方程的二次判别式重新推导切线与相切等价条件。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

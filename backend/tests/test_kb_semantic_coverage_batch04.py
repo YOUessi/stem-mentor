@@ -65,7 +65,7 @@ def test_gap_catalog_fails_closed_on_forgery(mutation):
 
 
 def test_coverage_snapshot_is_stable_and_remains_editorial():
-    snapshot=json.loads((ROOT/"docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH05.json").read_text(encoding="utf-8"))
+    snapshot=json.loads((ROOT/"docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH06.json").read_text(encoding="utf-8"))
     result=build()
     assert result==snapshot
     assert "CONSERVATIVE" in snapshot["scope"]
