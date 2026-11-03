@@ -133,7 +133,20 @@ MATCHES = {
     "ELECTIVE_E-003": ("math.hs.extension.algorithm-invariant",),
     "ELECTIVE_E-005": ("math.hs.modeling.workflow",),
     "ELECTIVE_E-007": ("math.hs.space.coordinate-distance",),
-    "ELECTIVE_E-008": ("math.hs.probability.discrete-variable",)
+    "ELECTIVE_E-008": ("math.hs.probability.discrete-variable",),
+    # Batch16, editorial matches, NOT certified syllabus coverage.
+    "ELECTIVE_B-001": ("math.hs.elective.limit.sequence-continuity",),
+    "ELECTIVE_B-002": ("math.hs.elective.calculus.second-derivative-convexity",),
+    "ELECTIVE_B-004": ("math.hs.elective.calculus.integral-area-ftc",),
+    "ELECTIVE_B-014": ("math.hs.elective.model.time-rescaling",),
+    "ELECTIVE_C-006": ("math.hs.elective.model.compound-effective-rate",),
+    "ELECTIVE_C-007": ("math.hs.elective.model.input-output-triangular",),
+    "ELECTIVE_C-008": ("math.hs.elective.model.logistic-discrete-bounds",),
+    "ELECTIVE_D-002": ("math.hs.elective.geometry.euclidean-isometries",),
+    "ELECTIVE_D-004": ("math.hs.elective.sequence.fibonacci-golden-ratio",),
+    "ELECTIVE_D-006": ("math.hs.elective.music.equal-temperament",),
+    "ELECTIVE_E-002": ("math.hs.elective.algebra.square-rotations-group",),
+    "ELECTIVE_E-004": ("math.hs.elective.finance.annuity-present-value",),
 }
 
 def digest(v: object) -> str:

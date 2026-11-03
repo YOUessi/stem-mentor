@@ -2,9 +2,9 @@
   "scope": "EDITORIAL_OBJECTIVE_LESSON_PROPOSALS_ONLY",
   "inventory_status": "EDITORIAL_MATCH_QUEUE_NOT_APPROVED",
   "total_source_objective_candidates": 132,
-  "total_deep_draft_lessons": 201,
-  "proposed_objectives": 107,
-  "proposed_edges": 129,
+  "total_deep_draft_lessons": 213,
+  "proposed_objectives": 119,
+  "proposed_edges": 141,
   "by_track": {
     "COMPULSORY": {
       "objective_candidates": 38,
@@ -29,30 +29,30 @@
     },
     "ELECTIVE_B": {
       "objective_candidates": 15,
-      "has_unreviewed_suggestion": 10,
-      "without_suggestion": 5,
-      "suggestion_edges": 12,
+      "has_unreviewed_suggestion": 14,
+      "without_suggestion": 1,
+      "suggestion_edges": 16,
       "independently_approved": 0
     },
     "ELECTIVE_C": {
       "objective_candidates": 11,
-      "has_unreviewed_suggestion": 3,
-      "without_suggestion": 8,
-      "suggestion_edges": 3,
+      "has_unreviewed_suggestion": 6,
+      "without_suggestion": 5,
+      "suggestion_edges": 6,
       "independently_approved": 0
     },
     "ELECTIVE_D": {
       "objective_candidates": 10,
-      "has_unreviewed_suggestion": 5,
-      "without_suggestion": 5,
-      "suggestion_edges": 5,
+      "has_unreviewed_suggestion": 8,
+      "without_suggestion": 2,
+      "suggestion_edges": 8,
       "independently_approved": 0
     },
     "ELECTIVE_E": {
       "objective_candidates": 8,
-      "has_unreviewed_suggestion": 5,
-      "without_suggestion": 3,
-      "suggestion_edges": 5,
+      "has_unreviewed_suggestion": 7,
+      "without_suggestion": 1,
+      "suggestion_edges": 7,
       "independently_approved": 0
     }
   },
@@ -60,7 +60,7 @@
   "official_atomic_denominator": null,
   "official_coverage_percent": null,
   "student_published_knowledge_count": 0,
-  "unmapped_candidates": 25,
+  "unmapped_candidates": 13,
   "full_standard_review_completed": false,
   "all_math_proofs_certified": false,
   "notes": [

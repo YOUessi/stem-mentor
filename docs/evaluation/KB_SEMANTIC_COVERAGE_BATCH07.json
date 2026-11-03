@@ -3,13 +3,13 @@
   "unverified_official_syllabus_coverage": true,
   "generated_from": "curriculum/highschool_math/curriculum_map.json + knowledge/deep/v1/*.json + semantic_gaps_batch04.json",
   "summary": {
-    "engineering_topic_denominator": 138,
-    "deep_draft_documents": 201,
-    "linked_project_topics": 138,
+    "engineering_topic_denominator": 150,
+    "deep_draft_documents": 213,
+    "linked_project_topics": 150,
     "known_partial_topic_count": 23,
     "gap_draft_candidate_count": 23,
     "gap_without_candidate_count": 0,
-    "other_linked_unreviewed_topic_count": 115,
+    "other_linked_unreviewed_topic_count": 127,
     "teacher_reviewed_complete": 0,
     "fully_formally_proven_natural_language_lessons": 0,
     "official_curriculum_atom_mapping_reviewed": 0,
@@ -33,8 +33,8 @@
         "teacher_reviewed_complete": 0
       },
       "选修拓展": {
-        "engineering_topics": 32,
-        "with_any_draft_link": 32,
+        "engineering_topics": 44,
+        "with_any_draft_link": 44,
         "known_partial_topics": 0,
         "gap_draft_candidates": 0,
         "gap_without_candidate": 0,
@@ -2363,6 +2363,198 @@
       "concept": "参数方程圆轨迹与速度非零条件",
       "deep_lesson_ids": [
         "math.hs.elective.model.parametric-circle"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-139",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "数列极限、函数极限与点连续性的顺序判别",
+      "deep_lesson_ids": [
+        "math.hs.elective.limit.sequence-continuity"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-140",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "二阶导数与凸性：充分条件、严格情形与反命题边界",
+      "deep_lesson_ids": [
+        "math.hs.elective.calculus.second-derivative-convexity"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-141",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "非负连续函数的定积分面积与原函数求值",
+      "deep_lesson_ids": [
+        "math.hs.elective.calculus.integral-area-ftc"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-142",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "时间尺度变更对线性、指数与二次模型参数的影响",
+      "deep_lesson_ids": [
+        "math.hs.elective.model.time-rescaling"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-143",
+      "level": "选修拓展",
+      "unit": "选修C课程深度内容",
+      "concept": "复利周期、名义利率与有效年利率",
+      "deep_lesson_ids": [
+        "math.hs.elective.model.compound-effective-rate"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-144",
+      "level": "选修拓展",
+      "unit": "选修C课程深度内容",
+      "concept": "两部门投入产出模型：三角技术矩阵的求解与非负性",
+      "deep_lesson_ids": [
+        "math.hs.elective.model.input-output-triangular"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-145",
+      "level": "选修拓展",
+      "unit": "选修C课程深度内容",
+      "concept": "离散人口逻辑斯蒂模型：区间不变性与增长假设",
+      "deep_lesson_ids": [
+        "math.hs.elective.model.logistic-discrete-bounds"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-146",
+      "level": "选修拓展",
+      "unit": "选修D课程深度内容",
+      "concept": "平面平移、旋转与镜像反射的距离不变量",
+      "deep_lesson_ids": [
+        "math.hs.elective.geometry.euclidean-isometries"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-147",
+      "level": "选修拓展",
+      "unit": "选修D课程深度内容",
+      "concept": "斐波那契相邻项比值与黄金比例的收敛条件",
+      "deep_lesson_ids": [
+        "math.hs.elective.sequence.fibonacci-golden-ratio"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-148",
+      "level": "选修拓展",
+      "unit": "选修D课程深度内容",
+      "concept": "十二平均律的频率等比模型与八度关系",
+      "deep_lesson_ids": [
+        "math.hs.elective.music.equal-temperament"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-149",
+      "level": "选修拓展",
+      "unit": "选修E课程深度内容",
+      "concept": "正方形四个保向旋转构成四阶循环群",
+      "deep_lesson_ids": [
+        "math.hs.elective.algebra.square-rotations-group"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-150",
+      "level": "选修拓展",
+      "unit": "选修E课程深度内容",
+      "concept": "等额期末现金流的现值、利率与收付时点",
+      "deep_lesson_ids": [
+        "math.hs.elective.finance.annuity-present-value"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",

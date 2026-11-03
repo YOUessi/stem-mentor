@@ -2889,6 +2889,258 @@
       "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
       "available_presets": [],
       "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
+    },
+    {
+      "id": "HS-MATH-139",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "数列极限、函数极限与点连续性的顺序判别",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-001",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-140",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "二阶导数与凸性：充分条件、严格情形与反命题边界",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-002",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-141",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "非负连续函数的定积分面积与原函数求值",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-004",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-142",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "时间尺度变更对线性、指数与二次模型参数的影响",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-014",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-143",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修C课程深度内容",
+      "concept": "复利周期、名义利率与有效年利率",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_C-006",
+      "elective_track": "ELECTIVE_C",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-144",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修C课程深度内容",
+      "concept": "两部门投入产出模型：三角技术矩阵的求解与非负性",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_C-007",
+      "elective_track": "ELECTIVE_C",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-145",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修C课程深度内容",
+      "concept": "离散人口逻辑斯蒂模型：区间不变性与增长假设",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_C-008",
+      "elective_track": "ELECTIVE_C",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-146",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修D课程深度内容",
+      "concept": "平面平移、旋转与镜像反射的距离不变量",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_D-002",
+      "elective_track": "ELECTIVE_D",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-147",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修D课程深度内容",
+      "concept": "斐波那契相邻项比值与黄金比例的收敛条件",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_D-004",
+      "elective_track": "ELECTIVE_D",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-148",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修D课程深度内容",
+      "concept": "十二平均律的频率等比模型与八度关系",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_D-006",
+      "elective_track": "ELECTIVE_D",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-149",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修E课程深度内容",
+      "concept": "正方形四个保向旋转构成四阶循环群",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_E-002",
+      "elective_track": "ELECTIVE_E",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
+    },
+    {
+      "id": "HS-MATH-150",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修E课程深度内容",
+      "concept": "等额期末现金流的现值、利率与收付时点",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_E-004",
+      "elective_track": "ELECTIVE_E",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "项目作者根据课程目标拆分的候选原子；未完成官方逐项核对和教研签名。",
+      "available_presets": [],
+      "capability_limits": "未提供独立认证的学生发布内容或交互场景。"
     }
   ]
 }

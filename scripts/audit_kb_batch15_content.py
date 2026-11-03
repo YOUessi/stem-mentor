@@ -12,6 +12,18 @@ OUT=ROOT/"docs/evaluation/KB_BATCH15_ADVANCED_DRAFT_AUDIT.json"
 def audit():
     own=json.loads(SRC.read_text(encoding="utf8")); docs=lessons()
     review=editorial_review_queue()
+    # Later batches must NOT rewrite the historical Batch15 snapshot. Reconfirm
+    # original authored bytes and immutable snapshot SHA, then use its archived
+    # metrics; current-state metrics belong to subsequent batch audits.
+    if len(docs)>201:
+        frozen=OUT.read_bytes()
+        assert hashlib.sha256(frozen).hexdigest()=="c428b13ba052df7f860b126cb6e3d2fc28a7ac73571bf7e2a0c89443205457cb"
+        assert hashlib.sha256(SRC.read_bytes()).hexdigest()=="f0532c1f781d1d308073bfe4d9014cc80433d65b71b3736639459224152f5a89"
+        assert len(own)==9 and len(curriculum())>=138
+        assert review["total_deep_draft_lessons"]==len(docs)
+        assert all(x["review"]["status"]=="REVIEW_PENDING"
+                   and x["teacher_solution_visibility"]=="TEACHER_ONLY" for x in own)
+        return json.loads(frozen)
     assert len(own)==9 and len(docs)==201 and len(curriculum())==138
     assert review["total_deep_draft_lessons"]==201
     assert student_evidence_lookup("线性回归求斜率")["status"]=="NO_APPROVED_EVIDENCE"
