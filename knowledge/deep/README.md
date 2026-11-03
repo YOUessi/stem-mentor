@@ -99,3 +99,17 @@ PYTHONPATH=backend .venv/bin/python scripts/audit_kb_semantic_coverage.py --chec
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_coverage.py --summary
 cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q
 ```
+
+## 2026-11-03 Batch07：新增 8 篇证明型教学草案、全量证明义务与选修边界
+
+在 Batch06 **138 篇**深度草案基础上，新增 \`rigorous_foundations_batch07.json\` 共 **8 篇**项目原创定理型草案（德摩根律、严格单调函数反函数、等差递推通项、乘积求导、圆与直线弦长、方差仿射变换、分割事件下的贝叶斯公式、两集合容斥）。当前 **146 篇**（theorem=66、concept=66、method=14），每条新草案含独立条件/三步证明草案/反例/2 道教师例题/误区/提示阶梯/近远迁移；保留未审核 \`REVIEW_PENDING / TEACHER_ONLY\`。
+
+本轮另外完成三项独立的机器可追溯盘点：
+- \`curriculum/highschool_math/elective_track_crosswalk_batch07.json\`：将现有高层 A–E 课程主题拆成 **18 个待核实主题槽位**；旧 **7** 个「选修拓展」不能冒充已映射的 A–E 原子课题。
+- \`docs/evaluation/KB_CONFLICT_RISK_BATCH07.json\`：保留 **10** 项 Batch02 重名草案两版的 SHA、条件/反例及专题数学审查问题；自动冲突裁决 **0**。
+- \`docs/evaluation/KB_PROOF_OBLIGATIONS_BATCH07.json\`：对 **146** 篇草案统计出 **214** 条尚未正式证明的定理推导步骤；旧 K07 的 **48** 条证据只证明特定子命题，教师审核 **0**。
+- \`docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH07.json\`：旧 113 条仅是工程目录、原先 23 个语义缺口仍 OPEN；本批不自动认证课程覆盖。
+- \`backend/app/deep_retrieval.py\`：修正先 FTS top100 再做条件筛选可能漏掉尾部相关文档；编辑态检索不能对学生开放，学生仍返回 \`NO_APPROVED_EVIDENCE\`。
+- \`scripts/build_kb_batch07_lessons.py --check\` 与 \`scripts/build_kb_batch07_audit.py --check\`：新增生成一致性检查，已接入 GitHub CI。
+
+注意：项目 8 篇新草案的 **16 道题**由独立精确数学 oracle 点验算，另对 10 类争议知识构建 **110 个参数化数学案例**。这不是通用自动证明，也不意味着 214 条证明步骤已经接受教研审核。开发、验收及后续 GitHub PR 参见 \`docs/logs/2026-11-03-kb-batch07-syllabus-proof-audit.md\`。

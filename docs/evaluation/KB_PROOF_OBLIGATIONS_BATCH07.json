@@ -1,0 +1,4375 @@
+{
+  "scope": "HUMAN_PROOF_OBLIGATION_QUEUE_NOT_MATHEMATICAL_CERTIFICATION",
+  "summary": {
+    "deep_draft_lessons": 146,
+    "theorems": 66,
+    "proof_step_obligations_not_formally_verified": 214,
+    "existing_supporting_oracles_linked": 48,
+    "theorems_with_whole_proof_certification": 0,
+    "teacher_approved": 0,
+    "student_solution_steps_verified": 0
+  },
+  "lessons": [
+    {
+      "id": "math.hs.probability.binomial-distribution",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-099"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "各次成功与失败二选一、试验之间独立且成功概率恒为 p。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "固定一个恰好包含 k 次成功和 n−k 次失败的有序结果串，其概率是 p^k(1−p)^(n−k)。",
+          "reason": "独立性允许对各次结果概率连乘，同一成功概率使任何相同次数的串等概率。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "从 n 个不同试验位置中选择 k 个作为成功位置，有 C(n,k) 种相异结果串。",
+          "reason": "只需选择哪些位置成功，失败位置自动确定，故是无序位置组合数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "这些有序结果串互斥，因此把各自概率相加得到所述二项分布质量公式。",
+          "reason": "互斥结果的概率可相加，边界 p=0 或 1 需按事件意义解释零概率项。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.probability.hypergeometric",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-100"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "总体固定且对象彼此可区分；每个 n 元样本子集等可能，无放回且参数为合法整数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "总体 N 个对象选 n 个的无序组合总数为 C(N,n)。",
+          "reason": "每个大小为 n 的对象子集等可能，而分母仅依赖抽样方案。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "恰有 k 个成功意味着从 K 个成功对象选 k 个，以及 N−K 个失败对象选 n−k 个。",
+          "reason": "两个子选择独立组合成一个特定类型的无序样本，计数为两个组合数的乘积。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "有利样本数除以全部样本数得到超几何概率，边界由不能选超过库存数量而确定。",
+          "reason": "当 k 超出可行范围，任一组合数的选取数量不合法，事件为空。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.probability.normal-density",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-101"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.correlation-regression",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-102"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.statistics.chi-square",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-103"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.modeling.workflow",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-059",
+        "HS-MATH-060",
+        "HS-MATH-061"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.modeling.validation",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-104",
+        "HS-MATH-105",
+        "HS-MATH-106"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.coordinate-distance",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-071",
+        "HS-MATH-072",
+        "HS-MATH-073"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "坐标轴两两垂直且单位长度相同，向量采用同一基底。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "空间位移在三条正交坐标轴上的分量是 Δx、Δy、Δz。",
+          "reason": "向量坐标以终点减起点，三轴基底正交，任意位移可以逐轴分解。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "先在水平面用勾股定理得投影长的平方 Δx²+Δy²，再和竖直分量组成直角三角形。",
+          "reason": "空间正交保证平方和可叠加，得到两点距离的根号表达式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "按数量积的双线性与正交基底 eᵢ·eⱼ=δᵢⱼ 展开 u·v，得到 u₁v₁+u₂v₂+u₃v₃。",
+          "reason": "三维向量在各正交基底分解，交叉基底数量积为零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.line-plane-normal",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-074",
+        "HS-MATH-075"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "向量 u、n 都非零，P、Q 与 X 使用同一正交三维坐标系。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "直线上任意点 X 与 P 的位移同向或反向于 u，故存在实数 t 使 X−P=t u。",
+          "reason": "非零方向向量张成经过原点的一维子空间，平移 P 得到直线。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "反过来任何 P+t u 均沿同一直线方向位移，因此位于指定直线上。",
+          "reason": "仿射参数式包含所有正负方向位移，没有遗漏。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "平面上任意点 X 的位移 X−Q 与法向量 n 垂直，数量积为0；反之零数量积给出过 Q 的二维正交补。",
+          "reason": "非零法向量在三维空间的正交补维数为2，唯一给出对应平面。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.angle-distance",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-076",
+        "HS-MATH-077",
+        "HS-MATH-078"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "所用法向量与方向向量都非零，角为无向夹角而非未标明朝向的二面角。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "点 P−Q 在单位法向量 n/|n| 方向上的投影长度为 (P−Q)·n/|n|。",
+          "reason": "法向量垂直于平面，投影的绝对长度正是到平面的最短距离。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "设直线与法向量间最小非负夹角为 φ，则 cosφ=|u·n|/(|u||n|)。",
+          "reason": "数量积角公式需 u,n 非零；绝对值统一取最小夹角，包括直角的边界情况。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "直线与平面的线面夹角 θ 与法向量最小夹角 φ 互余，即 θ=π/2−φ。",
+          "reason": "几何上平面法向量与平面垂直，故 sinθ=cosφ。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "两平面法向量间最小夹角由绝对点积给出；实际有向二面角还涉及侧向选择。",
+          "reason": "忽略符号后只保留无向锐角，无法确定补角或绕公共边的朝向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.circle-intersections",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-084",
+        "HS-MATH-085"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "两圆半径严格为正；两圆完全重合需单独排除，中心距与半径差均为零的情形不归为普通内切。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "把圆心到直线的垂线当作投影，垂足附近圆与线的交点相对垂足的距离平方为 r²−d²。",
+          "reason": "圆方程在垂线与切线方向正交的坐标系下可分解为两平方和。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 r²−d² 大于、等于、小于0，就分别有两个、一个或零个实数交点。",
+          "reason": "圆半径和点线距离均非负，平方符号对应根数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "两圆公共点 P 必须使三边 C₁P=r₁、C₂P=r₂、C₁C₂=d 构成三角形或退化三角形。",
+          "reason": "三角形不等式及其等号给出外切/内切的界限。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "严格三角形不等式时通常由对称性产生两个交点，等号时三个点共线只剩一个交点。",
+          "reason": "当中心和半径完全相同则公共点无穷多，因此与等号内切的普通情况不同。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.parabola-focus",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-088",
+        "HS-MATH-089"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "p>0，焦点与准线分离；直线 x=−p 的点距按绝对值计算。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对任意 P=(x,y)，焦点距离平方为 (x−p)²+y²，准线距离平方为 (x+p)²。",
+          "reason": "点到竖直线的距离是 |x+p|，平方后得到对应的无根号表达式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "两距离均非负，相等当且仅当平方相等，展开消去 x² 和 p² 得 y²=4px。",
+          "reason": "等式两侧非负保证平方变换可以反向使用，不产生虚假根。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "反过来若 y²=4px，代回平方等式得到两距离平方相等，非负距离故原距离相等。",
+          "reason": "平方根取非负值，所以平方相等可恢复原始距离等式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.hyperbola-foci",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-087"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.conic-line-elimination",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-090"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.ellipse-tangent",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-091"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b 严格为正且有限，x₀²/a²+y₀²/b²=1。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "记 F(x,y)=x²/a²+y²/b²−1，则梯度 ∇F(P₀)=(2x₀/a²,2y₀/b²)。",
+          "reason": "二元函数偏导计算合法，且 P₀ 在椭圆上不可能 x₀=y₀=0，故梯度非零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "非奇异隐式曲线在 P₀ 的切线由 ∇F(P₀)·((x,y)−P₀)=0 给出。",
+          "reason": "梯度是曲线切向位移的法向量，非零保证一条局部切线存在。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "展开得到 x₀x/a²+y₀y/b²=x₀²/a²+y₀²/b²，再用 P₀∈E 把右边替换为1。",
+          "reason": "切点在曲线上的条件提供右边恰好为1，因而得到给定切线表达式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.proof.induction",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-111"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "正整数满足良序原理；归纳步骤确实对任意合法 k 成立而非只检查若干个值。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "假设所有条件成立但存在不满足 P(n) 的正整数，取最小反例 m。",
+          "reason": "正整数良序原理保证非空反例集合存在最小成员。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由于 P(1) 已证，m 不能等于1，因此 m>1 且 P(m−1) 必真。",
+          "reason": "最小反例以下没有假命题，m−1 仍是合法正整数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "归纳步骤对 k=m−1 适用，推出 P(m)，与 m 是反例矛盾。",
+          "reason": "从真前提 P(m−1) 可通过普遍归纳蕴含推出 P(m)，因此反例集合为空。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sets.union-intersection",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-001",
+        "HS-MATH-002"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.logic.implication",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-003",
+        "HS-MATH-005"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.wrong-idempotence"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.logic.quantifier",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-004"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.inequality.sign-multiplication",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-006",
+        "HS-MATH-010"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b,c∈R 且 a<b；必须分清 c 的正、负和零。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由 a<b 得 b-a>0，对 c>0 乘积 c(b-a)>0。",
+          "reason": "正实数相乘仍为正，所以 bc-ac>0，即 ac<bc。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 c<0，则 -c>0；将 b-a 乘以 -c 得 (-c)(b-a)>0。",
+          "reason": "整理得 ac-bc>0，因此 ac>bc。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "当 c=0 时 ac=bc=0，严格大小关系消失。",
+          "reason": "乘零会丢失原始大小信息，因此不可当成等价变换。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.cancellation-parameter",
+        "ev.wrong-product-positive",
+        "ev.wrong-sign-multiply"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.quadratic.sign",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-007"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b,c∈R，a≠0，Δ>0，r1<r2 为两个互异实根。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "因 f(r1)=f(r2)=0，二次式可表示为 a(x-r1)(x-r2)。",
+          "reason": "根与系数关系或多项式因式定理保证这一分解。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "当 x<r1 或 x>r2，两个一次因子同号，乘积为正。",
+          "reason": "与非零首项系数 a 相乘后保留 a 的符号。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "当 r1<x<r2，一因子为正一因子为负，乘积为负。",
+          "reason": "因此二次式符号与首项系数 a 相反，根处等于零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.difference-squares",
+        "ev.quadratic-factor",
+        "ev.square-diff",
+        "ev.square-sum",
+        "ev.wrong-square-diff",
+        "ev.wrong-square-sum"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.inequality.amgm",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-009"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b∈R；a≥0，b≥0；√(ab) 表示非负平方根。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "因 (√a-√b)²≥0，展开得 a+b-2√(ab)≥0。",
+          "reason": "平方非负只对实数平方根合法；非负条件保证根号有意义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "把两侧移项并除以正数 2，得到 (a+b)/2≥√(ab)。",
+          "reason": "2>0，除以 2 不改变不等号方向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "等号成立当且仅当 (√a-√b)²=0，即 √a=√b。",
+          "reason": "非负平方根函数单射，所以等价于 a=b。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.nonnegative-square",
+        "ev.wrong-square-subadd"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.domain",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-011"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.difference-quotient",
+        "ev.missing-cancel-domain",
+        "ev.missing-x-divisor",
+        "ev.rational-cancel",
+        "ev.rational-cubic",
+        "ev.reciprocal-product",
+        "ev.unit-cancellation",
+        "ev.wrong-ratio-symmetry"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.monotonicity",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-013"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.wrong-square-monotonicity"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.quadratic-vertex",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-019"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "自变量在全部实数上变化，a≠0；若限制为区间还需比较可行端点。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "提取首项系数：ax²+bx+c=a[x²+(b/a)x]+c。",
+          "reason": "a 不等于 0，故 b/a 有定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "用 x²+(b/a)x=(x+b/(2a))²-b²/(4a²) 配方。",
+          "reason": "展开右侧平方后消去交叉项，得到完全平方恒等式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "整理得到 a(x+b/(2a))²+c-b²/(4a)。",
+          "reason": "合并常数项可写为 (4ac-b²)/(4a)。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "平方项非负；a>0 时贡献非负，a<0 时贡献非正。",
+          "reason": "令平方项为 0 可取得全局最小或最大值。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.missing-vertex-a",
+        "ev.quadratic-square",
+        "ev.vertex-parametric"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.exponent.product",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-021"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a 为严格正实数；讨论单调性还需 a≠1。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对整数指数，运算法则由重复乘法和倒数定义建立。",
+          "reason": "当 a>0 时整数正负幂均有定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "将规则扩展到有理指数可借助正实数的唯一正根与根式指数规则。",
+          "reason": "指数函数在实数指数处由连续延拓定义，运算法则随极限保持。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "对 a>1 与 x2>x1，a^x2/a^x1=a^(x2-x1)>1。",
+          "reason": "指数函数的连续定义及正指数 a^t>1 保证单调性；0<a<1 时反向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.logarithm.inverse",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-022"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a>0 且 a≠1，x>0，y>0；对数仅对正真数定义。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "指数函数 a^t 严格单调且值域 (0,+∞)，因此存在唯一反函数 log_a。",
+          "reason": "底数 a≠1 才有单射；a=1 时所有输出均为 1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "令 u=log_a x、v=log_a y，则 a^u=x、a^v=y。",
+          "reason": "由对数定义得到指数形式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "指数律给出 xy=a^u a^v=a^(u+v)。",
+          "reason": "由反函数的唯一性，log_a(xy)=u+v。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.trig.pythagorean",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-025",
+        "HS-MATH-026"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "θ∈R；正切 tan θ 的引入要求 cos θ≠0。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "单位圆的方程为 x²+y²=1。",
+          "reason": "以原点为圆心、半径为 1 的点满足该方程。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对应角 θ 的点坐标定义为 x=cos θ 与 y=sin θ。",
+          "reason": "单位圆定义把角与坐标对应起来。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "代回圆方程得到 cos²θ+sin²θ=1。",
+          "reason": "替换为三角函数，得到对所有实角成立的恒等式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "若 cos θ≠0，同除以 cos²θ 得 1+tan²θ=1/cos²θ。",
+          "reason": "除法条件需先成立，否则推导无定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.trig-pythagorean"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.trig.sum-angle",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-029",
+        "HS-MATH-030"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "α,β∈R；三角函数按单位圆定义。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "绕原点旋转角 α 的平面线性映射对应矩阵 [[cosα,-sinα],[sinα,cosα]]。",
+          "reason": "矩阵两列分别是单位基向量旋转后的坐标，可由保距和保向验证。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "点 (cosβ,sinβ) 再旋转 α 后为角 α+β 的单位圆点。",
+          "reason": "角的叠加对应旋转的复合。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "矩阵与列向量相乘得到坐标 (cosα cosβ−sinα sinβ, sinα cosβ+cosα sinβ)。",
+          "reason": "分别匹配角 α+β 的横坐标和纵坐标即得两式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.cosine-add",
+        "ev.cosine-sub",
+        "ev.sine-add",
+        "ev.sine-sub"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.vector.dot-product",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-034",
+        "HS-MATH-035"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b 为非零平面向量，使用夹角定义时两向量模长必须非零。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "以坐标定义 a·b=a1b1+a2b2；旋转 R 的矩阵满足 RᵀR=I，因此 (Ra)·(Rb)=a·b。",
+          "reason": "二维旋转矩阵 [[cosφ,-sinφ],[sinφ,cosφ]] 直接相乘并用 sin²φ+cos²φ=1 验证 RᵀR=I。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "选择正交旋转把非零 a 放到水平正向，则 a=(|a|,0)，b=(|b|cosθ,|b|sinθ)。",
+          "reason": "正交旋转保长度及夹角，并且两向量非零，所以方向与夹角 θ 都有定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "在该坐标系，a·b=|a||b|cosθ；由旋转不变性，原坐标系同样成立。",
+          "reason": "数量积依坐标分量相乘相加，同时正交旋转保数量积。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "当 a,b 都非零时，a·b=0 等价于 cosθ=0，即 θ=90°。",
+          "reason": "|a||b| 严格为正可相除，θ 在 0 到 π 的唯一余弦零点是 π/2。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.extension.triangle-centers",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-107"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.extension.circle-polar",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-108"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "R>0，P≠(0,0)；所谓切点弦仅在 P 为圆外点时有两实切点。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "圆上任意点 T=(x₀,y₀) 满足 |T|²=R²，圆在 T 的切线法向量为 T，故切线是 T·X=R²。",
+          "reason": "圆的梯度 ∇(x²+y²−R²)=2T 非零，切线与半径正交。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若从外点 P 引切线且切点为 T，则 P 在该切线上，代入得到 P·T=R²。",
+          "reason": "所有真实切点都满足以 P 为系数的同一线性方程，因此位于极线。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "当 |P|>R，极线到圆心距离 R²/|P|<R，故与圆有两交点；当 0<|P|<R 则距离>R 无交点。",
+          "reason": "极线的非零法向量是 P，使用圆与直线距离判据即可判定交点数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.extension.polar-parameter",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-109"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.extension.quadratic-surfaces",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-110"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.extension.cross-product",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-112"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "向量位于同一个右手正交单位坐标系；当谈及非零夹角 θ 时 u、v 均需非零。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "按右手坐标基底的有向面积运算展开 u×v 各分量，得到所述三个二阶行列式差。",
+          "reason": "基本方向满足 e₁×e₂=e₃、e₂×e₃=e₁、e₃×e₁=e₂，交换顺序取负。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "将外积的三个分量分别乘以 u₁、u₂、u₃ 并相加，成对项互相抵消，故 (u×v)·u=0；对 v 同理。",
+          "reason": "展开显示每个 uᵢuⱼvₖ 项出现一次正号和一次负号，因此严格抵消。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "外积三个分量平方相加并整理得 |u|²|v|²−(u·v)²。",
+          "reason": "这是三维拉格朗日恒等式，可直接由坐标平方和展开校验，非零时结合点积角公式得面积大小。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.extension.algorithm-invariant",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-113"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b 为非负整数，不同时为0；每步除数 b>0，取合法欧几里得余数0≤r<b。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "整数 d 同时整除 a、b，当且仅当 d 同时整除 b 和 r=a−qb。",
+          "reason": "整除关系在整数线性组合下封闭，反向由 a=qb+r 恢复。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "因此 (a,b) 与 (b,r) 的全部正公约数集合相同，最大公约数也相同。",
+          "reason": "每轮保持不变式 gcd(a,b)=gcd(b,r)，算法执行不会改变目标值。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "每次新除数 r 满足 0≤r<b，所以严格下降的非负整数序列不可能无限进行。",
+          "reason": "非负整数良序原理保证下降过程有限步终止。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "在 b=0 时，所有能整除 a 的正整数的最大值就是 a（a>0），返回 a 为原输入的 gcd。",
+          "reason": "终止状态的 gcd 可直接计算，并由不变式传回每一个先前状态。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.range",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-012"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.parity",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-014"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.function.periodicity",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-015"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.zero-ivt",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-016"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a<b 且端点属于定义域；f 在整个闭区间连续；f(a)与f(b)严格异号。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "先由 f(a)f(b)<0，适当交换函数正负标记，使两端值一正一负。",
+          "reason": "两端异号说明存在跨越零的目标值，且严格异号保证根不在两个端点。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "取区间中点，若恰有函数值为零即完成；否则保留端点函数值异号的一半区间。",
+          "reason": "连续函数在每次保留区间内仍连续，且可始终保证两端异号。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "反复二分得到一列套叠闭区间，长度趋向 0，由实数完备性存在唯一交点 c。",
+          "reason": "每层区间均为闭区间，且长度为初始长度除以 2 的幂。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "若 f(c)≠0，由 c 处连续性可知 c 附近函数值同号，与每层区间两端异号矛盾。",
+          "reason": "连续性允许通过局部 ε-δ 邻域保持远离 0 的函数值符号，故 f(c)=0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 2,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.function.piecewise",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-017"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.function.linear-slope",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-018"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b 为固定实数；选择任意 u<v 并确保两点属于函数定义域。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "取任意实数 u<v，写出 f(v)-f(u)=[av+b]-[au+b]=a(v-u)。",
+          "reason": "依靠一次函数定义展开，b 项抵消，v-u 严格为正。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "当 a>0，差值 a(v-u)>0；当 a<0，该差值 <0。",
+          "reason": "正数相乘为正，负数乘以正数为负，结合严格单调的量词定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "当 a=0，差值对所有 u,v 都为0，因此每个函数值等于 b。",
+          "reason": "对任意自变量有 f(x)=b，斜率为零时不满足严格增减定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.power-domain",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-020"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.abs-triangle",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-023"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "x,y 是实数；绝对值采用通常实数绝对值定义。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由绝对值定义，得到 -|x|≤x≤|x| 以及 -|y|≤y≤|y|。",
+          "reason": "绝对值本身是非负数，任意实数都处于其正负绝对值之间。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对应不等式相加，得到 -(|x|+|y|)≤x+y≤|x|+|y|。",
+          "reason": "实数不等式同向相加保持不等号方向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "因为 |x|+|y|≥0，上述双向界等价于 |x+y|≤|x|+|y|。",
+          "reason": "绝对值定义中 |z|≤c 对 c≥0 等价于 -c≤z≤c。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.composition-domain",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-024"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "f,g 的原始定义域已经明确，不能用后续代数化简自动扩大定义域。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "任取 x∈D_{f∘g}，求 g(x) 首先要求 x∈D_g。",
+          "reason": "按函数定义，内层表达式在定义域外不产生实数输出。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "外层函数 f 的输入必须属于 D_f，因此还需 g(x)∈D_f。",
+          "reason": "复合操作先输出 g(x)，再把该值送入 f。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "反过来，若 x∈D_g 且 g(x)∈D_f，则内层和外层两次求值均合法，得到 f(g(x))。",
+          "reason": "两项条件充分且必要，恰构成所称自然定义域。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.trig.tangent",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-027"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.trig.reduction",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-028"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "角采用实数弧度；所用正弦余弦在全实数域都有定义。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由和角公式 sin(π-x)=sinπcosx-cosπsinx。",
+          "reason": "sinπ=0，cosπ=-1，代入得 sin(π-x)=sinx。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由差角公式 cos(π-x)=cosπcosx+sinπsinx。",
+          "reason": "代入 cosπ=-1、sinπ=0，得到 cos(π-x)=-cosx。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "再取和角公式的特殊情况 x+(-x)=0，或利用单位圆关于 x 轴的对称。",
+          "reason": "单位圆有 cos(-x)=cosx 与 sin(-x)=-sinx，对全部实数成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.trig.phase-transform",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-031"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.vector.free-coordinates",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-032"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.vector.linear-operations",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-033"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "u,v 处于同一坐标系与单位基底中，λ 是实数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "将 u 和 v 看作两个连续位移，最终横、纵坐标增量分别是 u₁+v₁ 和 u₂+v₂。",
+          "reason": "平面坐标逐轴叠加位移就是首尾相接向量加法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "将 u+v 乘实数 λ 得 (λ(u₁+v₁),λ(u₂+v₂))。",
+          "reason": "数乘作用于两个坐标分量，负 λ 改变方向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "用实数分配律展开得到 (λu₁+λv₁,λu₂+λv₂)=λu+λv。",
+          "reason": "两个坐标分量分别相等即平面自由向量相等。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.function.period",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-015"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.absolute",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-023"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.trig.tangent-domain",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-027"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.trig.wave-transformation",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-031"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.vector.representation",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-032"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.triangle.ssa-ambiguity",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-038"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.space-incidence",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-043"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.line-plane-parallel",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-044"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "直线 b 完全包含于平面 α；直线 a 不包含于平面 α。",
+        "a 与 b 是空间中两条不重合的平行直线。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "a、b 是两条不同平行直线，因此确定唯一平面 β，同时 a⊂β、b⊂β。",
+          "reason": "欧氏空间中两条不同的平行直线共面且确定一个平面。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 a 与 α 有公共点 P，由 a⊂β，得 P∈α∩β；α 与 β 不同（因为 a⊄α），且都包含 b，因此交线为 b。",
+          "reason": "两不同平面的交集若包含整条 b，则唯一交线必须是 b。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "从 P∈α∩β=b 得 P∈b，而 P∈a，所以 a 与 b 有交点，与 a∥b 矛盾，故 a∩α=∅。",
+          "reason": "反证法使用平行直线无公共点以及两平面交线的唯一性。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.space-coordinate",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-071"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.space-dot",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-072",
+        "HS-MATH-073"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b 为三维欧氏空间的非零向量，θ 为二者夹角（0≤θ≤π）。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由三维正交坐标中的勾股定理展开 |a−b|²=Σ_i(a_i−b_i)²=|a|²+|b|²−2Σ_i a_ib_i。",
+          "reason": "逐坐标平方求和等价于沿三条相互垂直的基向量计算位移长度。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "以向量 a、b 为边构成平面三角形，余弦定理同样给出 |a−b|²=|a|²+|b|²−2|a||b|cosθ。",
+          "reason": "两个非零向量张成一个至多二维平面，平面余弦定理适用。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "比较两种 |a−b|² 展开并除以 2，即 Σ_i a_ib_i=|a||b|cosθ；因 |a||b|>0，数量积为零等价 cosθ=0。",
+          "reason": "除以非零模长合法；在 0≤θ≤π 内 cosθ=0 等价 θ=π/2。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.line-slope",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-080"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.line-general",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-081"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "法向量 n=(A,B) 非零，即 A²+B²>0。",
+        "直线经过 P₀=(x₀,y₀)。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "若 P 在直线上，则沿线位移向量 P−P₀=(x−x₀,y−y₀) 与法向量 n 垂直。",
+          "reason": "法向量定义为与直线方向正交的非零向量。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "数量积零条件给出 n·(P−P₀)=A(x−x₀)+B(y−y₀)=0。",
+          "reason": "使用平面数量积的坐标计算公式及非零法向量条件。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "反过来该线性方程的解集恰是所有与 n 正交、经过 P₀ 的点，故代表一条唯一直线。",
+          "reason": "在平面内非零法向量的正交补是一维方向空间。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.line-circle",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-084"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "平面圆圆心 O、半径 r>0；ℓ 是合法直线，圆心到直线距离 d≥0。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "从 O 向直线 ℓ 作垂足 H，任取 ℓ 上点 P，则 △OHP 在 H 处直角，OP²=OH²+HP²=d²+HP²。",
+          "reason": "圆和直线的公共点满足 OP=r，垂线保证勾股定理适用。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "代入 OP=r 得 HP²=r²−d²，当 d<r 时有两个不同实解 HP=±√(r²−d²)，对应 H 两侧交点。",
+          "reason": "直线的有向坐标可取垂足为原点，正负距离为两不同点。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "当 d=r 时仅有 HP=0 一个交点 H；当 d>r 时右侧负数无实解，因此没有交点。",
+          "reason": "平方非负限制排除了负的实数平方。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.triangle.sine-law",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-036"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "三点不共线，a,b,c>0；内角 A,B,C 均在 (0,π)，正弦均严格为正。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "从顶点 A 向边 BC 作高 h，三角形面积 Δ=(1/2)bc sin A。",
+          "reason": "两边及其夹角的面积公式适用于非退化三角形。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "同一面积亦为 Δ=(1/2)ca sin B=(1/2)ab sin C。",
+          "reason": "对三个不同顶点应用相同的高与面积公式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由于 a,b,c 均非零，等式两边同除以 abc/2，得到 sin A/a=sin B/b=sin C/c。",
+          "reason": "除以正数合法，倒数得到 a/sin A=b/sin B=c/sin C。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "任一边作为外接圆弦时有 a=2R sin A。",
+          "reason": "在三角形外接圆上取 BD 为经过 B 的直径，令 D 为直径另一端。直角三角形 BCD 中 sin∠BDC=BC/BD=a/(2R)；圆周角 ∠BDC 与 ∠BAC 同弦 BC，或相等或互补，正弦相同，故 sinA=a/(2R)。依次轮换其余两边。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.triangle.cosine-law",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-037"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b,c>0 且两边和严格大于第三边；夹角 A∈(0,π)。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "以 A 为公共起点，令向量 AB 长 c，AC 长 b。",
+          "reason": "两向量 AB、AC 的夹角严格定义为顶点 A 的内角。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "向量 BC=AC−AB，从而 |BC|²=|AC|²+|AB|²−2AB·AC。",
+          "reason": "向量数量积的展开与对称性成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "因 AB·AC=bc cos A，且 |BC|=a，得到 a²=b²+c²−2bc cos A。",
+          "reason": "将边长及夹角代入向量恒等式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "当 b,c>0，移项除以 2bc，得到 cos A 的表达式。",
+          "reason": "除数非零；三角形不等式保证角 A 可取在 (0,π)。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.complex.modulus",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-040",
+        "HS-MATH-041",
+        "HS-MATH-042"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.laplace",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-050",
+        "HS-MATH-052"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.variance",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-056",
+        "HS-MATH-057"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sequence.arithmetic-sum",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-063",
+        "HS-MATH-065"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n≥1 为整数；每一步递推公差 d 恒定。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "递推展开得到 a_k=a1+(k−1)d，因此 a1+a_n=a2+a_(n−1)。",
+          "reason": "两端项指标和恒为 n+1，项值之和恒定。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "写 S_n=a1+a2+…+a_n，再从后向前写一次 S_n=a_n+a_(n−1)+…+a1。",
+          "reason": "两次求和包括同一组 n 个项。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "逐项相加得到 2S_n=n(a1+a_n)。",
+          "reason": "每列相对位置的两项之和均为 a1+a_n。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "除以 2 得 S_n=n(a1+a_n)/2，代入 a_n=a1+(n−1)d 得另一形式。",
+          "reason": "2 非零且递推通项公式在 n≥1 成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.arithmetic-four",
+        "ev.arithmetic-six"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sequence.geometric-sum",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-064",
+        "HS-MATH-065"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n 为正整数，a1 与 q 是实数；使用分式前必须确认 q≠1。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由递推得 a_k=a1 q^(k−1)，因此 S_n=a1+a1q+…+a1 q^(n−1)。",
+          "reason": "项号从 1 到 n，第一项直接由 a1 定义以避免 0^0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "同乘 q，得到 qS_n=a1q+a1q²+…+a1q^n。",
+          "reason": "这是对有限个实数求和逐项相乘。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "两式相减，中间项抵消，得 (1−q)S_n=a1(1−q^n)。",
+          "reason": "相邻幂次对齐后是逐项相消。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "若 q≠1 可同除 1−q；若 q=1，数列每项均是 a1，直接相加 n 次。",
+          "reason": "分别处理分母非零与分母为零，两个分支覆盖所有实数 q。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.geometric-finite-four",
+        "ev.geometric-finite-six",
+        "ev.geometric-ratio-four",
+        "ev.geometric-ratio-six",
+        "ev.missing-sum-q-one"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.power-rule",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-066",
+        "HS-MATH-067"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "m 是非负整数，x 为实数；本条不讨论负指数的 x=0 奇点。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对 m≥1，按定义 f'(x)=lim(h→0)[(x+h)^m−x^m]/h。",
+          "reason": "导数定义中的 h≠0 后取极限。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由二项式展开，差为 m x^(m−1)h+C(m,2)x^(m−2)h²+…+h^m。",
+          "reason": "二项式公式对固定正整数 m 成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "把差式除以 h，得到 m x^(m−1)+若干带 h 正幂的项。",
+          "reason": "每一项均有至少一个因子 h 的高阶部分。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "令 h→0，所有带 h 的项趋于零，留下 m x^(m−1)。",
+          "reason": "有限个多项式项可以逐项取极限；常函数差商恒为零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.differentiate-cosine",
+        "ev.differentiate-cubic",
+        "ev.differentiate-fifth",
+        "ev.differentiate-polynomial",
+        "ev.differentiate-sine"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.derivative-monotonicity",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-068",
+        "HS-MATH-069"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a<b 为实数；f 在 [a,b] 连续、(a,b) 可导；导数符号在整段内成立。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "取任意 a≤u<v≤b，均值定理适用于 [u,v]，存在 ξ∈(u,v)。",
+          "reason": "f 在子区间连续且内部可导，满足均值定理条件。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "有 f(v)−f(u)=f'(ξ)(v−u)。",
+          "reason": "均值定理给出割线斜率等于某处导数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若 f' 在内点恒正，因 v−u>0，差必严格为正；恒负同理。",
+          "reason": "任意点对均成立，符合严格单调性的定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.counting.product-rule",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-092",
+        "HS-MATH-093"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "分类必须互斥且覆盖所有结果；乘法原理各步分支数应与已经选过的路径条件相符。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "分类情形下，把互不重叠的结果集合记为 A_i，则总集合为不交并。",
+          "reason": "有限集合的不交并元素个数等于各集合大小之和。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "分步情形下，每个结果唯一对应一个长度为 k 的选择序列。",
+          "reason": "没有重复记录和遗漏，是乘法计数的结构前提。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若第 i 步选项数对所有允许的此前路径恒为 n_i，则按树状分支每层数量成倍扩张。",
+          "reason": "逐层归纳，总结果数等于 n1×…×nk。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.counting.binomial",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-095"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n∈{0,1,2,...}，a,b∈R，0≤k≤n 为整数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "把 (a+b)^n 写成 n 个二项式因子的乘积。",
+          "reason": "指数为非负整数时有限次乘法定义明确；n=0 时乘积为 1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "每个展开项从每一个因子中选择 a 或 b；若恰选 k 个 b，则该项为 a^(n−k)b^k。",
+          "reason": "乘法分配律保证所有选择路径被完整展开。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "恰好选择 k 个位置放 b 的方式有 C(n,k) 种。",
+          "reason": "组合数计算从 n 个位置选 k 个，不计顺序。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "对所有 k=0,...,n 分类求和，得到二项式展开。",
+          "reason": "类别按选择 b 的个数互斥且覆盖所有路径。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.binomial-cube",
+        "ev.binomial-five",
+        "ev.binomial-four",
+        "ev.wrong-binomial-square"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.conditioning",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-096"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [
+        "ev.fraction-add",
+        "ev.missing-y-divisor",
+        "ev.wrong-reciprocal-sum"
+      ],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.total",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-097"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "B_i 两两互斥；并集为全部 Ω；每个 P(B_i)>0。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由 Ω=B1∪…∪Bk，事件 A 可写成不交并 (A∩B1)∪…∪(A∩Bk)。",
+          "reason": "交集对并集分配，且 B_i 两两互斥保证不重叠。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "概率可加性得到 P(A)=ΣP(A∩B_i)。",
+          "reason": "不交事件的有限并概率等于各自概率之和。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "按定义 P(A∩B_i)=P(A|B_i)P(B_i)。",
+          "reason": "每个条件事件概率严格大于 0，分母合法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "代回逐项等式即得 P(A)=ΣP(A|B_i)P(B_i)。",
+          "reason": "有限个事件的求和保持等式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.ellipse-focus",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-086"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.triangle.ssa-two-solutions",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-038"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "已知的是角 A、对边 a 及另一边 b（非夹角），且 A 在 (0,π)。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "任意合法三角形的正弦定理给出 a/sinA=b/sinB，从而 sinB=b sinA/a=s。",
+          "reason": "由于 a>0 且 sinA>0，s 为正；内角 B∈(0,π) 则 sinB≤1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 s>1，正弦在内角范围不可能达到该值；若 0<s<1，B 有主角与补角两个候选。",
+          "reason": "正弦函数在 (0,π) 关于 π/2 对称，两个角可能具有相同正弦。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "仅当候选满足 A+B<π，第三内角 C=π−A−B 才严格为正。",
+          "reason": "非退化三角形三个内角严格为正且总和等于 π。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "对每个保留的 B，采用正弦定理可确定其余边长，满足正边长与内角和条件。",
+          "reason": "在指定一个边长及所有内角后，三角形由 ASA/AAS 条件唯一确定到全等。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.triangle.area-sine",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-039"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b 必须来自同一顶点的两条边；C 是 a、b 的夹角，0<C<π。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "取边 a 为底，并从另一边 b 的末端向 a 所在直线作垂线，垂线长度 h=b sin C。",
+          "reason": "直角三角形中正弦定义给垂线长度；钝角时取到延长线，sinC 仍为正。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "三角形面积是底乘高的一半，因此 S=(1/2)a·h。",
+          "reason": "底与对应高均是非负长度，非退化时高严格为正。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "把 h=b sin C 代入，得到 S=(1/2)ab sin C，并与换底计算结果一致。",
+          "reason": "代入使用的是所给两边的真实夹角，不可任取第三角。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.probability.event-addition",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-051",
+        "HS-MATH-053"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A 与 B 属于同一概率空间，概率满足可加性；Aᶜ 是相对于样本空间 Ω 的补集。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "将 A∪B 分割为互不相交的 A 和 B\\A 两部分。",
+          "reason": "两个集合不交，概率有限可加性给 P(A∪B)=P(A)+P(B\\A)。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "将 B 分割为 B\\A 和 A∩B，得 P(B)=P(B\\A)+P(A∩B)。",
+          "reason": "两部分互斥且并集为 B，所以可使用同一可加公理。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "代入消去 P(B\\A)，得到加法公式。",
+          "reason": "普通代数移项，不需要假设 A 与 B 独立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "因为 A∪Aᶜ=Ω 且 A∩Aᶜ=∅，有 P(A)+P(Aᶜ)=P(Ω)=1。",
+          "reason": "对立事件构成样本空间的两部分，故概率和为1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.sampling",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-054"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.histogram",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-055"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.percentiles",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-058"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sequence.recurrence",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-062"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.line-equation",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-080",
+        "HS-MATH-081"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "固定正交平面坐标系，法向量 (a,b)≠(0,0)。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "直线上任意点 P=(x,y) 的位移向量 P₀P=(x−x₀,y−y₀) 沿直线方向。",
+          "reason": "位移与直线法向量应垂直，数量积 n·P₀P 为零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "把数量积展开，得到 a(x−x₀)+b(y−y₀)=0。",
+          "reason": "垂直向量的数量积为零，且 n 非零限定一维线性解集。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "反过来任一点满足这个方程，其位移与 n 垂直，必落在过 P₀ 且法向量为 n 的直线上。",
+          "reason": "在二维空间中，与非零向量垂直的位移构成唯一的一维方向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.line-relations",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-082"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "两条直线的法向量均非零；平行方向关系与两直线是否重合分开讨论。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "每条直线的法向量为 nᵢ=(aᵢ,bᵢ)，方向向量可取 dᵢ=(-bᵢ,aᵢ)。",
+          "reason": "一般式的非零系数提供非零法向量，旋转90°可得方向向量。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "两个方向向量线性相关当且仅当二维行列式为零，等价 a₁b₂−a₂b₁=0。",
+          "reason": "非零二维向量平行的充要条件是对应 2×2 行列式为零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "方向向量互相垂直当且仅当 d₁·d₂=b₁b₂+a₁a₂=0。",
+          "reason": "非零向量垂直当且仅当数量积为零，旋转不会改变夹角。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.point-line-distance",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-083"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b,c,x₀,y₀ 都是实数，且直线法向量 n=(a,b) 非零。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "任选直线上一点 Q，令 n=(a,b)，则 n·(P₀−Q)=a(x₀−Qₓ)+b(y₀−Qᵧ)。",
+          "reason": "由于 Q 在直线上，有 aQₓ+bQᵧ+c=0，故该数量积等于 ax₀+by₀+c。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "P₀−Q 在单位法向量 n/|n| 上的带符号投影是 (n·(P₀−Q))/|n|。",
+          "reason": "点到直线的垂直分量沿单位法向量定义，|n|>0 保证归一化合法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "所求最短距离等于垂直投影长度的绝对值，因此代入上一步得到给定公式。",
+          "reason": "向量分解为沿直线和垂直直线的正交分量，垂直长度最短。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": true
+    },
+    {
+      "id": "math.hs.counting.permutation-combination",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-094"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n,k 是整数且 0≤k≤n；每个对象在一次选择中不重复使用。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "按顺序选出 k 个不同对象，第1个有 n 种、第2个有 n−1 种，直到第 k 个有 n−k+1 种。",
+          "reason": "分步乘法原理给出有序结果数 n(n−1)…(n−k+1)=n!/(n−k)!。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "每个 k 元无序集合对应恰好 k! 种内部排列。",
+          "reason": "对象互异且位置有序，k! 种重排不会改变选中的集合本身。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "把有序排列总数除以 k!，得到 C(n,k)=n!/[k!(n−k)!]。",
+          "reason": "有序结果被等大小 k! 的重排类划分，故商为无序组合数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.discrete-variable",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-098"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.exclusive-complement",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-051"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.union-addition",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-053"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A、B 是同一个概率空间中的事件；概率函数可加。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "分解 A∪B 为互不相交的 A 与 B\\A，因概率可加有 P(A∪B)=P(A)+P(B\\A)。",
+          "reason": "两部分交集为空且并集恰为 A∪B。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "再把 B 分解为互不相交的 B\\A 与 A∩B，得到 P(B)=P(B\\A)+P(A∩B)。",
+          "reason": "同一事件 B 被不重叠部分完整分割。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "将 P(B\\A)=P(B)−P(A∩B) 代回得到所示加法公式。",
+          "reason": "代数移项合法，且每项都是定义良好的概率。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.simple-random-sampling",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-054"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.histogram-density",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-055"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.empirical-quantile",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-058"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.counting.permutations-combinations",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-094"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n 为非负整数，0≤k≤n，n 个对象两两可区分且一次抽取不放回。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "有序抽取第 1 步有 n 种，之后依次减少 1，前 k 步共有 n(n−1)⋯(n−k+1)=n!/(n−k)! 种。",
+          "reason": "使用无放回抽取的分步乘法计数原理。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "每个无序 k 元素集合内部可以按 k! 种顺序排列，且不同无序子集对应的有序序列不重合。",
+          "reason": "单个 k 元素集合内部没有重复对象，因此全排列数是 k!。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "所以 C(n,k)=A(n,k)/k!=n!/[k!(n−k)!]，并同时包含 k=0 时只有空集一种选法。",
+          "reason": "将所有有序排列等量分组成每组 k! 个即可得到组合数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.discrete-random-variable",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-098"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sequence.recurrence-initial",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-062"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.normal-distribution",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-101"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.independence-hypothesis",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-103"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.modeling.question-to-model",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-059"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.modeling.residual-validation",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-060"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.modeling.inquiry-claim",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-061"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.modeling.experimental-inquiry",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-104"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.modeling.data-driven",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-105"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.modeling.model-validation",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-106"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sets.de-morgan-laws",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-002"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A 和 B 都是同一个全集 U 的子集；补集必须始终相对于 U 定义。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "令 x 为全集 U 的任意元素；x∉A∪B 当且仅当 x∉A 且 x∉B。",
+          "reason": "并集的元素判定是逻辑或，否定逻辑或得到同时不属于两个集合。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "所以 x∈U\\(A∪B) 当且仅当 x∈(U\\A)∩(U\\B)。",
+          "reason": "由补集和交集的元素判定，建立双向蕴含且没有遗漏 U 之外的元素。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "类似地 x∉A∩B 当且仅当 x∉A 或 x∉B，推出第二条集合恒等式。",
+          "reason": "否定逻辑且得到逻辑或，按集合外延相等准则完成证明。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.strict-inverse-monotonic",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-013"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A 至少含两个不同实数；函数在 A 上处处有定义；严格单调性比较任意 x1<x2∈A。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "若 x1≠x2，则其中一个小于另一个，严格单调保证 f(x1)≠f(x2)。",
+          "reason": "严格不等式排除不同自变量对应相同函数值，故 f 为单射。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对每个 y∈f(A)，按值域定义有至少一个 x∈A 使 f(x)=y，单射又保证这个 x 唯一。",
+          "reason": "存在性由 f(A) 的定义给出，唯一性由单射给出，反函数因此良定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "取 y1<y2∈f(A) 和对应逆像 x1,x2。若 f 递增而 x1≥x2，则由严格增性得 y1≥y2 矛盾；递减情形同理得 x1>x2。",
+          "reason": "反证法结合原函数的严格序保持或反序保持，得到反函数同方向严格单调。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sequence.arithmetic-nth-term",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-062",
+        "HS-MATH-063"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "必须有初值 a1 与固定公差 d；递推从 n=1 开始且每一步都满足。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "当 n=1 时，通项右侧为 a1+(1-1)d=a1，和给定初值相符。",
+          "reason": "数学归纳法先验证基例；没有初值无法确定具体数列。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "假设第 n 项满足 a_n=a1+(n-1)d，利用递推得到 a_{n+1}=a1+nd。",
+          "reason": "在归纳假设成立时加上同一个公差 d，并整理指数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由归纳法对任意正整数 n 成立；递推每一步由前一项唯一决定，因此与初值配合确定唯一数列。",
+          "reason": "归纳步覆盖所有正整数并给出存在与唯一的递推构造。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.product-derivative",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-066",
+        "HS-MATH-067"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "f 和 g 在 x0 各自可导；极限中的 h→0 必须使 x0+h 落在定义域内。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "将乘积差写成 f(x0+h)[g(x0+h)-g(x0)]+g(x0)[f(x0+h)-f(x0)]。",
+          "reason": "加减中间项 f(x0+h)g(x0)，纯代数变形不需要先除法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对 h≠0 除以 h，得到 f(x0+h)·[g 的差商]+g(x0)·[f 的差商]。",
+          "reason": "按导数定义，两个差商分别趋于 g'(x0) 和 f'(x0)。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由于 f 在 x0 可导所以连续，f(x0+h)→f(x0)；按乘积极限与和极限得到目标公式。",
+          "reason": "可导推出连续且各极限有限，因此可用极限四则运算法则。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.circle-chord-length",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-084",
+        "HS-MATH-085"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "r>0；d 是圆心到直线的非负距离；弦长公式仅在 d≤r 下为实数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "当直线穿过圆盘，取圆心 O 到直线的垂足 H；垂足将弦 AB 平分。",
+          "reason": "半径 OA=OB 且 OH 垂直 AB，等腰三角形的高平分底边。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "直角三角形 OHA 满足 HA²=r²-d²，所以当 d≤r 时 HA=√(r²-d²)。",
+          "reason": "勾股定理及距离的非负性确定长度分支。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "因此 L=AB=2HA；d=r 时两交点并为切点，d>r 时 r²-d²<0 不存在实交点。",
+          "reason": "依据弦的对称性与实数长度条件分三类讨论。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.variance-affine",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-057",
+        "HS-MATH-098"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "E(X²) 有限；a,b 是常数而不是与 X 有关的随机变量；方差定义为 E[(X-E(X))²]。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由期望线性性 E(aX+b)=aE(X)+b。",
+          "reason": "常数乘法与加法在有限期望下可逐项分配。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "将 Y-E(Y) 化为 aX+b-aE(X)-b=a(X-E(X))。",
+          "reason": "使用刚得到的期望表达式，常数 b 严格抵消。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "平方并取期望得 Var(Y)=E[a²(X-E(X))²]=a²Var(X)。",
+          "reason": "a² 是非负常数，可以移出期望，得到无遗漏的尺度变换公式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.bayes-partition",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-096",
+        "HS-MATH-097"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "有限分割两两互斥、并为全集；每个 Ai 具有正概率；P(B)>0 保证除法有意义。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由条件概率定义 P(Ai|B)=P(Ai∩B)/P(B)，且 P(B|Ai)=P(B∩Ai)/P(Ai)。",
+          "reason": "P(B)>0、P(Ai)>0 使两条条件概率公式均有定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "从第二式得到 P(Ai∩B)=P(B|Ai)P(Ai)。",
+          "reason": "同一交事件概率可用条件概率乘法公式表示。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "因为 B 被两两互斥事件 Ai∩B 分割，所以 P(B)=Σ_j P(B|Aj)P(Aj)；代入第一式得结论。",
+          "reason": "有限可加性与分割的完备性证明分母是 P(B)>0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.counting.two-set-inclusion-exclusion",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-092",
+        "HS-MATH-093"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A、B 都是有限集合；计数将同一元素只记录一次。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "把 A 分成互斥的 A\\B 和 A∩B 两部分，得到 |A|=|A\\B|+|A∩B|。",
+          "reason": "每个 A 中元素恰属于一部分，可用有限不交集合的基数可加性。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "把并集分成互斥的 A 和 B\\A，得 |A∪B|=|A|+|B\\A|。",
+          "reason": "并集中属于 A 的元素不能再次在 B\\A 中计数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由 |B\\A|=|B|-|A∩B|，代入并集式得到目标容斥公式。",
+          "reason": "B 同样可分解为 B\\A 和交集，两式结合扣除重复计数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sets.representations",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-001"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.logic.truth-negation",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-005"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.inequality.transformation-obligations",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-010"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.trig.radians-unit-circle",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-025"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.trig.sine-cosine-graphs",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-026"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.trig.double-angle-reduction",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-030"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "x 是任意实数角，所有三角函数按弧度定义，使用和角公式。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "令两角都为 x，代入 sin(a+b)=sin a cos b+cos a sin b 得 sin2x=2sin x cos x。",
+          "reason": "和角公式对全部实数角成立，a=b=x 是合法特例。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "令两角都为 x，代入 cos(a+b)=cos a cos b−sin a sin b，得到 cos2x=cos²x−sin²x。",
+          "reason": "余弦和角公式按项相乘并相减，没有引入定义域限制。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "再使用 sin²x+cos²x=1，可得 cos2x=1−2sin²x=2cos²x−1，并移项得到降幂公式。",
+          "reason": "基本平方关系为恒等式，除数仅为常数 2，故每步全域合法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.vector.projection",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-035"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a、b 属于实数欧氏内积空间且 b≠0，内积满足正定性。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "设候选投影 p=tb，则残差 a−p 与 b 正交的条件为 (a−tb)·b=0。",
+          "reason": "正交投影定义为沿给定子空间取分量，使剩余向量与该子空间垂直。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "展开得到 a·b−t(b·b)=0；由于 b≠0，b·b=|b|²>0。",
+          "reason": "数量积双线性与正定性保证分母非零，可以合法求 t=(a·b)/(b·b)。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "因此 proj_b(a)=((a·b)/(b·b))b；其长度等于 |a·b|/|b|。",
+          "reason": "把求得的唯一 t 代回；投影长度等于 |t|·|b|，符号信息由有向投影另行保留。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.complex.algebraic-basics",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-040"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.complex.argument",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-041"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.complex.operations",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-042"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "所有系数为实数；除法需检验分母复数 w≠0，即 c²+d²>0。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "按分配律展开 (a+bi)(c+di)=ac+adi+bci+bd i²，结合 i²=−1 得乘积实虚部。",
+          "reason": "复数乘法遵守实系数分配律与 i²=−1 的定义关系。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "(a+bi)(a−bi)=a²−(bi)²=a²+b²，且它是非负实数。",
+          "reason": "使用平方差公式并把 i² 替换为 −1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若 w=c+di≠0，则 c²+d²>0，可用共轭 c−di 约去分母得到给定商式。",
+          "reason": "分子分母同乘非零的 w̅，不改变商；再展开乘积整理。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.parallel-perpendicular-criteria",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-044"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "法向量 n、方向向量 v 均非零，所有对象处于同一欧氏三维空间。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "沿直线 X=Q+t v 代入平面方程得 n·(Q−P)+t(n·v)=0。",
+          "reason": "平面点的定义直接给出所有直线点满足条件的代数判定。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 n·v=0，方程与 t 无关；常数不为0则没有交点，常数为0则全部直线点位于平面。",
+          "reason": "对线性方程按系数和常数是否为0分类，分别得到平行或包含。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若两个平面的非零法向量正交，则其夹角为直角，两个平面的二面角也为直角，故两平面垂直。",
+          "reason": "平面间角由法向量夹角的锐角代表确定，点积为0等价法向量夹角90°。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.line-plane-distance",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-045"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.surface-areas",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-048"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.sample-space-event",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-050"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.multiplication",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-053"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "条件概率 P(B|A) 的定义需要 P(A)>0，除概率为0的退化条件外不可直接约去 P(A)。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "按条件概率的定义，P(B|A)=P(A∩B)/P(A)，条件是 P(A)>0。",
+          "reason": "条件样本空间归一化以 P(A) 为分母，故必须明确非零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "将等式两侧同乘正数 P(A)，得到 P(A∩B)=P(A)P(B|A)。",
+          "reason": "前置条件 P(A)>0 已满足，合法地消去分母。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若已知 A、B 独立，则 P(A∩B)=P(A)P(B) 为定义；当 P(A)>0 时亦可得 P(B|A)=P(B)。",
+          "reason": "独立性是额外事件关系，不能从两个概率的数值未知时凭空推断。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.statistics.median-mode",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-056"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.modeling.collaborative-inquiry",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-061"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.derivative-definition",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-066"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.tangent-line",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-067"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "x₀ 是定义域内点，f'(x₀) 是有限实数，讨论通常单值函数图像。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由导数定义，差商 [f(x₀+h)−f(x₀)]/h 趋于有限实数 m。",
+          "reason": "可导的定义保证割线斜率收敛并给出非竖直切线的斜率。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "将差商误差记为 ε(h)→0，则 f(x₀+h)−f(x₀)=mh+h ε(h)=mh+o(h)。",
+          "reason": "极限定义等价于误差系数收敛到0的局部展开。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "过点 (x₀,f(x₀)) 且斜率 m 的直线满足 y−f(x₀)=m(x−x₀)。",
+          "reason": "直线点斜式与可导点的切线斜率定义结合。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.extrema",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-069"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.conic-focal-directrix",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-089"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.conic-tangent-normal",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-091"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.independence",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-096"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.inequality.parameter-cases",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-008"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.incidence",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-043"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.perpendicular-plane",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-044"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "l₁,l₂ 在同一平面且真实相交，l 的方向向量非零，垂直指向量数量积为零。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "令 u 为 l 的非零方向向量，v₁、v₂ 为平面内相交两线的非零方向向量。",
+          "reason": "相交且不同方向保证 v₁、v₂ 线性无关。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "根据前提有 u·v₁=0 和 u·v₂=0，任意平面内方向 w 可写为 αv₁+βv₂。",
+          "reason": "两条不平行的平面方向向量张成整个二维平面方向子空间。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由数量积分配律 u·w=α(u·v₁)+β(u·v₂)=0，故 u 与平面内任意方向垂直。",
+          "reason": "u 是平面的法向方向，所以其所属直线与平面垂直。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.point-line-distance",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-045"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "方向向量 u 非零，P、Q 为真实空间点且使用同一正交坐标系。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "将 w 沿 u 方向作正交投影 w∥=((w·u)/|u|²)u。",
+          "reason": "数量积给出投影系数，|u|²>0 允许相应除法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "余下的垂直分量 w⊥=w−w∥ 与 u 数量积为零。",
+          "reason": "展开 w⊥·u=w·u−(w·u)=0，因此该分量垂直整条直线方向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "对任意 t，P−(Q+t u)=w⊥+(w∥−t u)，两分量正交，距离平方至少为 |w⊥|²。",
+          "reason": "选择 t=(w·u)/|u|² 使沿线分量消失；展开平方得所述 d² 公式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.polyhedron-types",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-046"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.solids-revolution",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-047"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.solid-volumes",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-048"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "截面面积可作连续累加，依赖卡瓦列里原理或定积分作为体积依据；体积公式讨论非退化有界几何体。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对于柱体，每个与底面平行的截面面积是常量 B，因此高度范围内的体积累加为 ∫₀ʰ B dt=Bh。",
+          "reason": "体积可通过层状切片或卡瓦列里原理计算，截面恒等是关键前提。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对于以顶点为起点的锥体，相似截面线性比例 t/h，因此面积比例为 (t/h)²。",
+          "reason": "相似平面图形的面积按对应长度的平方缩放。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "切片积分得到 V=∫₀ʰ B(t/h)² dt=(B/h²)[t³/3]₀ʰ=Bh/3。",
+          "reason": "积分 t² 的原函数为 t³/3，高度 h>0 使分母合法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.cross-sections",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-049"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.parameter-zeros",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-070"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.polyhedron-projection",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-079"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    }
+  ],
+  "warnings": [
+    "Neither complete Pydantic content nor 48 supporting K07 identities proves every theorem.",
+    "Even the independent Batch07 exact arithmetic regressions support only explicitly tested examples.",
+    "Every lesson remains REVIEW_PENDING until independent signed real human review is available.",
+    "These records are editor-only: never send teacher proof text to student or cloud model."
+  ]
+}

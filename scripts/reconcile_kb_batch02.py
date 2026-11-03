@@ -43,7 +43,9 @@ def build():
 
     existing = {}
     for path in sorted(ACTIVE.glob("*.json")):
-        if path.name.endswith(RECONCILED_SUFFIX):
+        # This is a frozen Batch02->Batch06 reconciliation. New independent
+        # Batch07 lessons are not part of its source denominator.
+        if path.name.endswith(RECONCILED_SUFFIX) or path.name == "rigorous_foundations_batch07.json":
             continue
         for item in read_rows(path):
             key = item["id"]
