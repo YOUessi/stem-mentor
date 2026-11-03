@@ -300,6 +300,13 @@ def deep_knowledge_coverage():
     return public_summary()
 
 
+@app.get('/api/knowledge/standard-progress')
+def standard_curriculum_progress():
+    """Public source-scope counts only, not unreviewed editor/teacher content."""
+    from .standard_scope import public_progress
+    return public_progress()
+
+
 @app.get('/api/knowledge/quality')
 def knowledge_quality_report():
     from .knowledge_quality import validate_knowledge
