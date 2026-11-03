@@ -3,13 +3,13 @@
   "unverified_official_syllabus_coverage": true,
   "generated_from": "curriculum/highschool_math/curriculum_map.json + knowledge/deep/v1/*.json + semantic_gaps_batch04.json",
   "summary": {
-    "engineering_topic_denominator": 150,
-    "deep_draft_documents": 213,
-    "linked_project_topics": 150,
+    "engineering_topic_denominator": 161,
+    "deep_draft_documents": 224,
+    "linked_project_topics": 161,
     "known_partial_topic_count": 23,
     "gap_draft_candidate_count": 23,
     "gap_without_candidate_count": 0,
-    "other_linked_unreviewed_topic_count": 127,
+    "other_linked_unreviewed_topic_count": 138,
     "teacher_reviewed_complete": 0,
     "fully_formally_proven_natural_language_lessons": 0,
     "official_curriculum_atom_mapping_reviewed": 0,
@@ -17,24 +17,24 @@
     "student_draft_release_allowed": false,
     "per_level": {
       "必修": {
-        "engineering_topics": 61,
-        "with_any_draft_link": 61,
+        "engineering_topics": 64,
+        "with_any_draft_link": 64,
         "known_partial_topics": 17,
         "gap_draft_candidates": 17,
         "gap_without_candidate": 0,
         "teacher_reviewed_complete": 0
       },
       "选择性必修": {
-        "engineering_topics": 45,
-        "with_any_draft_link": 45,
+        "engineering_topics": 46,
+        "with_any_draft_link": 46,
         "known_partial_topics": 6,
         "gap_draft_candidates": 6,
         "gap_without_candidate": 0,
         "teacher_reviewed_complete": 0
       },
       "选修拓展": {
-        "engineering_topics": 44,
-        "with_any_draft_link": 44,
+        "engineering_topics": 51,
+        "with_any_draft_link": 51,
         "known_partial_topics": 0,
         "gap_draft_candidates": 0,
         "gap_without_candidate": 0,
@@ -2555,6 +2555,182 @@
       "concept": "等额期末现金流的现值、利率与收付时点",
       "deep_lesson_ids": [
         "math.hs.elective.finance.annuity-present-value"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-151",
+      "level": "必修",
+      "unit": "集合的基本关系",
+      "concept": "子集、真子集、集合相等与空集",
+      "deep_lesson_ids": [
+        "math.hs.sets.inclusion-empty-equality"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-152",
+      "level": "必修",
+      "unit": "函数概念",
+      "concept": "函数的三种表征与同一函数的判别",
+      "deep_lesson_ids": [
+        "math.hs.function.same-mapping-three-representations"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-153",
+      "level": "必修",
+      "unit": "指数函数",
+      "concept": "实指数幂的定义条件与底数边界",
+      "deep_lesson_ids": [
+        "math.hs.exponent.real-exponent-domain"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-154",
+      "level": "选择性必修",
+      "unit": "空间向量",
+      "concept": "三维空间向量基底的存在唯一性",
+      "deep_lesson_ids": [
+        "math.hs.space.basis-three-unique"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-155",
+      "level": "选修拓展",
+      "unit": "逻辑推理初步",
+      "concept": "经典命题逻辑的同一律、矛盾律与排中律",
+      "deep_lesson_ids": [
+        "math.hs.elective.logic.classical-laws"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-156",
+      "level": "选修拓展",
+      "unit": "逻辑推理初步",
+      "concept": "直接证明、逆否证明与反证法的适用条件",
+      "deep_lesson_ids": [
+        "math.hs.elective.logic.proof-strategies"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-157",
+      "level": "选修拓展",
+      "unit": "逻辑推理初步",
+      "concept": "公理系统的相容性与独立性：有限命题逻辑示例",
+      "deep_lesson_ids": [
+        "math.hs.elective.logic.axiom-consistency-independence"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-158",
+      "level": "选修拓展",
+      "unit": "社会数学模型",
+      "concept": "信度、预测相关与因果推断的数学边界",
+      "deep_lesson_ids": [
+        "math.hs.elective.model.scores-not-causes"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-159",
+      "level": "选修拓展",
+      "unit": "社会调查",
+      "concept": "抽样设计、缺失偏差与可核查调查报告",
+      "deep_lesson_ids": [
+        "math.hs.elective.statistics.survey-audit-report"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-160",
+      "level": "选修拓展",
+      "unit": "音乐中的数学",
+      "concept": "整数节拍循环的最小公倍数同步条件",
+      "deep_lesson_ids": [
+        "math.hs.elective.music.rhythm-cycle-lcm"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-161",
+      "level": "选修拓展",
+      "unit": "体育运动中的数学",
+      "concept": "单循环赛图模型与轮次下界、构造",
+      "deep_lesson_ids": [
+        "math.hs.elective.graph.round-robin-schedule"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",

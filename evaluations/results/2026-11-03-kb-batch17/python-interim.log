@@ -1,0 +1,1684 @@
+........................................................................ [ 11%]
+........................................................................ [ 23%]
+........................................................................ [ 34%]
+........................................................................ [ 46%]
+........................................................................ [ 58%]
+........................................................................ [ 69%]
+........................................................................ [ 81%]
+........................................................................ [ 93%]
+............................FF.FFFFFFFFFFFF                              [100%]
+=================================== FAILURES ===================================
+____________ test_v09_ten_new_scenes_preserve_previous_twenty_nine _____________
+
+client = <starlette.testclient.TestClient object at 0x105c870e0>
+
+    def test_v09_ten_new_scenes_preserve_previous_twenty_nine(client):
+>       data=client.get('/api/math-lab/catalog').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:19:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+_________ test_ready_coverage_links_real_scene_not_only_generic_family _________
+
+client = <starlette.testclient.TestClient object at 0x105c8bd90>
+
+    def test_ready_coverage_links_real_scene_not_only_generic_family(client):
+>       data=client.get('/api/math-lab/catalog').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:28:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+_ test_new_scene_has_clear_boundary_and_explicit_core_module[3d-section-prism] _
+
+scene = '3d-section-prism'
+client = <starlette.testclient.TestClient object at 0x1063c6060>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+_ test_new_scene_has_clear_boundary_and_explicit_core_module[3d-section-pyramid] _
+
+scene = '3d-section-pyramid'
+client = <starlette.testclient.TestClient object at 0x1063c6c40>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+_ test_new_scene_has_clear_boundary_and_explicit_core_module[3d-section-sphere] _
+
+scene = '3d-section-sphere'
+client = <starlette.testclient.TestClient object at 0x102549a30>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+__ test_new_scene_has_clear_boundary_and_explicit_core_module[derivative-abs] __
+
+scene = 'derivative-abs'
+client = <starlette.testclient.TestClient object at 0x106458050>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+_ test_new_scene_has_clear_boundary_and_explicit_core_module[derivative-cubic] _
+
+scene = 'derivative-cubic'
+client = <starlette.testclient.TestClient object at 0x1063dfbd0>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+__ test_new_scene_has_clear_boundary_and_explicit_core_module[derivative-log] __
+
+scene = 'derivative-log'
+client = <starlette.testclient.TestClient object at 0x1063df790>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+_ test_new_scene_has_clear_boundary_and_explicit_core_module[derivative-quadratic] _
+
+scene = 'derivative-quadratic'
+client = <starlette.testclient.TestClient object at 0x1063dd590>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+___ test_new_scene_has_clear_boundary_and_explicit_core_module[unit-circle] ____
+
+scene = 'unit-circle'
+client = <starlette.testclient.TestClient object at 0x1063dcc00>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+____ test_new_scene_has_clear_boundary_and_explicit_core_module[vec2d-add] _____
+
+scene = 'vec2d-add'
+client = <starlette.testclient.TestClient object at 0x1063dc050>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+_ test_new_scene_has_clear_boundary_and_explicit_core_module[vec2d-projection] _
+
+scene = 'vec2d-projection'
+client = <starlette.testclient.TestClient object at 0x105cb2ad0>
+
+    @pytest.mark.parametrize('scene',sorted(NEW_IDS))
+    def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
+>       scene_map={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:56:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+___ test_catalog_builders_reproduce_versioned_evidence_without_mutating_repo ___
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-79/test_catalog_builders_reproduc0')
+
+    def test_catalog_builders_reproduce_versioned_evidence_without_mutating_repo(tmp_path):
+        import shutil,subprocess,sys
+        source=ROOT/'curriculum'/'highschool_math'
+        for name in ['build_presets.py','build_curriculum.py','extend_v09.py','extend_v010.py','extend_v011.py','extend_v011b.py','extend_v012.py','extend_elective_batch14.py','elective_a_b_atomic_candidates_batch14.json','extend_elective_batch15.py','elective_a_b_atomic_candidates_batch15.json','extend_elective_batch16.py','elective_b_c_d_e_atomic_candidates_batch16.json','extend_cross_track_batch17.py','cross_track_atomic_candidates_batch17.json']:
+            shutil.copy2(source/name,tmp_path/name)
+        subprocess.run([sys.executable,str(tmp_path/'build_presets.py')],cwd=tmp_path,check=True,capture_output=True)
+        subprocess.run([sys.executable,str(tmp_path/'build_curriculum.py')],cwd=tmp_path,check=True,capture_output=True)
+        for name in ['visual_presets.json','curriculum_map.json']:
+>           assert (source/name).read_bytes()==(tmp_path/name).read_bytes(),name
+E           AssertionError: curriculum_map.json
+E           assert b'{\n  "versi...  }\n  ]\n}\n' == b'{\n  "versi...  }\n  ]\n}\n'
+E
+E             At index 144196 diff: b'c' != b'a'
+E             Use -v to get more diff
+
+backend/tests/test_v09_catalog.py:76: AssertionError
+_______ test_projection_only_exposes_parameters_that_change_its_geometry _______
+
+client = <starlette.testclient.TestClient object at 0x10645a030>
+
+    def test_projection_only_exposes_parameters_that_change_its_geometry(client):
+>       scenes={p['id']:p for p in client.get('/api/math-lab/catalog').json()['presets']}
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v09_catalog.py:80:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:482: in get
+    return super().get(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1113: in get
+    return self.request(
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:454: in request
+    return super().request(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:797: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:980: in send
+    response = self._send_handling_auth(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1008: in _send_handling_auth
+    response = self._send_handling_redirects(
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1043: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/httpx2/_client.py:1076: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:356: in handle_request
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:353: in handle_request
+    portal.call(self.app, scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:340: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../../../miniforge3/lib/python3.13/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/applications.py:1163: in __call__
+    await super().__call__(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/applications.py:90: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:660: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:2685: in app
+    await route.handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:1267: in handle
+    await super().handle(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:151: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../miniforge3/lib/python3.13/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:137: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:691: in app
+    raw_response = await run_endpoint_function(
+../../../miniforge3/lib/python3.13/site-packages/fastapi/routing.py:347: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/starlette/concurrency.py:34: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/to_thread.py:65: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:2706: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+../../../miniforge3/lib/python3.13/site-packages/anyio/_backends/_asyncio.py:1100: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+backend/app/main.py:269: in highschool_math_lab_catalog
+    return lab_catalog()
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    @lru_cache(maxsize=1)
+    def lab_catalog():
+        curriculum=json.loads((ROOT/"curriculum_map.json").read_text(encoding="utf8"))
+        scenes=json.loads((ROOT/"visual_presets.json").read_text(encoding="utf8"))
+        topics=curriculum["coverage"]
+        presets=scenes["presets"]
+        if len({topic["id"] for topic in topics})!=len(topics):
+            raise ValueError("Duplicated curriculum concept IDs")
+        if len({p["id"] for p in presets})!=len(presets):
+            raise ValueError("Duplicated lab preset IDs")
+        if any(p["tool"] not in TOOL_IDS for p in presets):
+            raise ValueError("Lab preset has an unsupported tool")
+        if any(t["recommended_tool"] not in TOOL_IDS|PLANNED_TOOLS for t in topics):
+            raise ValueError("Unknown mapped curriculum tool")
+        scene_ids={p["id"] for p in presets}
+        for topic in topics:
+            evidence=topic.get("available_presets",[])
+            if not all(id in scene_ids for id in evidence):
+                raise ValueError("Coverage references an unknown scene")
+            if (topic["status"]=="INTERACTIVE_FOUNDATION") != bool(evidence):
+                raise ValueError("Unsupported coverage claim")
+            if not topic.get("capability_limits"):
+>               raise ValueError("Missing capability limitation")
+E               ValueError: Missing capability limitation
+
+backend/app/math_lab_catalog.py:36: ValueError
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED backend/tests/test_v09_catalog.py::test_v09_ten_new_scenes_preserve_previous_twenty_nine
+FAILED backend/tests/test_v09_catalog.py::test_ready_coverage_links_real_scene_not_only_generic_family
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[3d-section-prism]
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[3d-section-pyramid]
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[3d-section-sphere]
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[derivative-abs]
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[derivative-cubic]
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[derivative-log]
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[derivative-quadratic]
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[unit-circle]
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[vec2d-add]
+FAILED backend/tests/test_v09_catalog.py::test_new_scene_has_clear_boundary_and_explicit_core_module[vec2d-projection]
+FAILED backend/tests/test_v09_catalog.py::test_catalog_builders_reproduce_versioned_evidence_without_mutating_repo
+FAILED backend/tests/test_v09_catalog.py::test_projection_only_exposes_parameters_that_change_its_geometry
+14 failed, 605 passed, 1 warning in 12.33s

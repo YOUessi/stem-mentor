@@ -1,9 +1,9 @@
 {
   "scope": "HUMAN_PROOF_OBLIGATION_QUEUE_NOT_MATHEMATICAL_CERTIFICATION",
   "summary": {
-    "deep_draft_lessons": 213,
-    "theorems": 133,
-    "proof_step_obligations_not_formally_verified": 439,
+    "deep_draft_lessons": 224,
+    "theorems": 136,
+    "proof_step_obligations_not_formally_verified": 451,
     "existing_supporting_oracles_linked": 48,
     "theorems_with_whole_proof_certification": 0,
     "teacher_approved": 0,
@@ -2014,6 +2014,296 @@
           "status": "NOT_FORMALLY_VERIFIED"
         }
       ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sets.inclusion-empty-equality",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-151"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A与B是集合，包含关系按照所有元素的归属定义；不需要集合是有限集。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对任意x，若x∈∅则x∈A这一蕴含为真，因为前件无法成立。",
+          "reason": "以元素量词定义子集，并利用蕴含的真值规则。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若A=B，则两集合具有完全相同的元素，因而双向包含成立。",
+          "reason": "集合相等的外延性定义与子集定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若A⊆B且B⊆A，则任意x都有x∈A与x∈B等价，所以A=B。",
+          "reason": "合取两个全称蕴含并使用集合外延公理。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "真子集需再要求不相等，因此∅⊊∅为假。",
+          "reason": "严格包含定义中的不等条件不可省略。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.same-mapping-three-representations",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-152"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.exponent.real-exponent-domain",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-153"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.space.basis-three-unique",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-154"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "u、v、w及z均为三维实向量；u、v、w线性无关。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "以u、v、w为列组成3×3实矩阵M；无关意味着M的齐次方程Mc=0仅有零解。",
+          "reason": "空间线性无关的定义要求只有全部系数为零时才可能得到零向量。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "三维方阵零空间平凡，故det M≠0并存在逆矩阵M^(-1)。",
+          "reason": "方阵可逆、行列式非零与零空间平凡的等价定理。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "取c=M^(-1)z，则Mc=z，于是存在一组表示系数。",
+          "reason": "逆矩阵与矩阵乘法的定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "若Mc=Md，则M(c−d)=0，无关性推出c=d，表示唯一。",
+          "reason": "线性无关意味着零系数是唯一零组合。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.logic.classical-laws",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-155"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.logic.proof-strategies",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-156"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.logic.axiom-consistency-independence",
+      "kind": "concept",
+      "curriculum_ids": [
+        "HS-MATH-157"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.model.scores-not-causes",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-158"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.statistics.survey-audit-report",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-159"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.music.rhythm-cycle-lcm",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-160"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "节拍周期须为统一物理时长格点的正整数倍，且起点对齐；不处理连续的非公度周期。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "再次同步的格点t必须同时满足m|t与n|t。",
+          "reason": "每个循环的重拍位置分别为m、n的整数倍。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "最早的正同步格点就是所有正公倍数中最小者lcm(m,n)。",
+          "reason": "按正整数公倍数集合的最小正元素定义最小公倍数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "记d=gcd(m,n)，写m=da、n=db且gcd(a,b)=1。",
+          "reason": "由最大公因数定义可消去公因子，剩余a与b必须互素。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "同时被m与n整除的最小正数为dab=mn/d。",
+          "reason": "互素a,b的公倍数最小须包含ab。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.graph.round-robin-schedule",
+      "kind": "method",
+      "curriculum_ids": [
+        "HS-MATH-161"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [],
+      "proof_step_obligations": [],
       "counterexample_count": 1,
       "worked_example_count": 2,
       "linked_existing_supporting_oracle_ids": [],

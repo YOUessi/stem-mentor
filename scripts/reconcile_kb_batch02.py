@@ -51,6 +51,7 @@ def build():
             "algebra_geometry_probability_batch10.json",
             "algebra_count_geometry_probability_batch11.json",
             "elective_a_b_core_batch14.json",
+            "cross_track_batch17.json",
         }:
             continue
         for item in read_rows(path):

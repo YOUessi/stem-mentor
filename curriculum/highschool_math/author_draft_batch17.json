@@ -1,0 +1,1062 @@
+[
+  {
+    "id": "math.hs.sets.inclusion-empty-equality",
+    "curriculum_ids": [
+      "HS-MATH-151"
+    ],
+    "kind": "theorem",
+    "title": "子集、真子集、集合相等与空集",
+    "version": "1.0.0",
+    "notation": [
+      "x∈A",
+      "A⊆B",
+      "A⊊B",
+      "∅"
+    ],
+    "prerequisites": [
+      "集合的元素关系",
+      "全称量词和逻辑否定"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对任意集合A、B，空集∅是A的子集；A=B当且仅当A⊆B且B⊆A。真子集A⊊B是A⊆B且A≠B，故∅不是真子集于∅。",
+    "assumptions": [
+      "A与B是集合，包含关系按照所有元素的归属定义；不需要集合是有限集。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对任意x，若x∈∅则x∈A这一蕴含为真，因为前件无法成立。",
+        "reason": "以元素量词定义子集，并利用蕴含的真值规则。"
+      },
+      {
+        "claim": "若A=B，则两集合具有完全相同的元素，因而双向包含成立。",
+        "reason": "集合相等的外延性定义与子集定义。"
+      },
+      {
+        "claim": "若A⊆B且B⊆A，则任意x都有x∈A与x∈B等价，所以A=B。",
+        "reason": "合取两个全称蕴含并使用集合外延公理。"
+      },
+      {
+        "claim": "真子集需再要求不相等，因此∅⊊∅为假。",
+        "reason": "严格包含定义中的不等条件不可省略。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "子集允许相等；真子集必须排除相等，不能把符号混用。",
+      "空集无元素并不意味着它不属于任何集合：∅∈{∅}为真而∅⊆{∅}也真，二者含义不同。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "空集不是任何非空集合的子集",
+        "example": "A={1}，令x∈∅⇒x∈A，对所有x都成立。",
+        "explanation": "子集是全称蕴含判断，不要求前集合存在元素。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "A={1,2}、B={2,1}，判断相等与真子集关系。",
+        "steps": [
+          "逐个检查A元素都在B、B元素都在A。",
+          "双向包含成立，且A与B无区别。"
+        ],
+        "answer": "A=B，A⊊B为假。",
+        "check": "两个集合都仅有元素1和2。"
+      },
+      {
+        "question": "对A=∅和B={0}判断A⊆B、A⊊B。",
+        "steps": [
+          "没有反例元素可推翻A⊆B。",
+          "B含有0而A不含，所以二者不相等。"
+        ],
+        "answer": "两关系均为真。",
+        "check": "以0作为B⊄A的证据，从而确认为严格包含。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "以为A⊆B意味着A必比B少一个元素",
+        "why_wrong": "子集关系允许A=B；真子集才要求排除相等。",
+        "repair_question": "A={1}、B={1}时哪个关系成立？"
+      }
+    ],
+    "hint_ladder": [
+      "先按任意元素的归属定义写出A⊆B。",
+      "逐一检查双向包含才能判断相等。",
+      "要判断真子集，还必须找到B中至少一个不属于A的元素。"
+    ],
+    "transfer": {
+      "near": "证明对任意A都有A∩∅=∅。",
+      "far": "比较{∅}、∅、{{∅}}三者的元素与包含关系。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.function.same-mapping-three-representations",
+    "curriculum_ids": [
+      "HS-MATH-152"
+    ],
+    "kind": "concept",
+    "title": "函数的三种表征与同一函数的判别",
+    "version": "1.0.0",
+    "notation": [
+      "f:D→Y",
+      "Graph(f)={(x,f(x)):x∈D}",
+      "Dom(f)"
+    ],
+    "prerequisites": [
+      "有序对",
+      "映射与函数定义域",
+      "集合相等"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "在固定陪域Y下，两个函数相同当且仅当定义域相同且对定义域中每个输入给出相同输出；图象、数表、解析式只是同一映射的不同表示，数表若只列有限点通常不足以唯一确定函数。",
+    "statement": null,
+    "assumptions": [
+      "讨论函数相等时固定一致的陪域约定；解析式计算必须遵守其自身定义域。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "列表是输入输出对的有限或完整枚举；不完整列表不能推断未列点的唯一取值。",
+      "图象是所有(x,f(x))的集合；对应解析式可改变形式但不能无故扩张定义域。",
+      "在同一固定陪域的语境下，定义域和各点对应值相同便确定同一映射。"
+    ],
+    "boundaries": [
+      "解析式化简可能引入原来无意义的输入点，不能改变原定义域。",
+      "有限采样数表即使与两种函数都相合，也不能保证两函数处处相等。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "解析式可以约去(x−1)，因此(x²−1)/(x−1)与x+1总是同一函数",
+        "example": "前者在x=1无定义，后者在实数域所有点有定义。",
+        "explanation": "化简等式只在原式定义域上成立。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "在实数值函数下，f(x)=(x²−1)/(x−1)、g(x)=x+1，判断f=g。",
+        "steps": [
+          "前者需x≠1；后者定义域为R。",
+          "尽管公共定义域上输出相同，但定义域不同。"
+        ],
+        "answer": "不是同一函数。",
+        "check": "x=1为区分输入，g(1)=2而f(1)无定义。"
+      },
+      {
+        "question": "两个函数的定义域都为{0,1,2}，图表分别给出0→1、1→2、2→3，判断。",
+        "steps": [
+          "逐点比较三个输入的输出。",
+          "同域且每点值相同，符合映射外延性判据。"
+        ],
+        "answer": "在相同陪域下为同一函数。",
+        "check": "完整有限域上三个输入全部核对完毕。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只要两个函数在几张图片或几个采样点一致就判为同一函数",
+        "why_wrong": "有限个点不是整个定义域，且还可能忽略解析式的极点。",
+        "repair_question": "f(x)=x与g(x)=x+x(x−1)在0、1相同吗，在2呢？"
+      }
+    ],
+    "hint_ladder": [
+      "先写清楚每种表示的输入集合。",
+      "检查同一个输入是否会给出不一致的输出。",
+      "找域外点或未采样点可构造反例。"
+    ],
+    "transfer": {
+      "near": "比较y=|x|与y=√(x²)在实数定义域是否相同。",
+      "far": "给定三点数表，构造两种不同的多项式都经过这些点。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.exponent.real-exponent-domain",
+    "curriculum_ids": [
+      "HS-MATH-153"
+    ],
+    "kind": "concept",
+    "title": "实指数幂的定义条件与底数边界",
+    "version": "1.0.0",
+    "notation": [
+      "a^x",
+      "a>0",
+      "x∈R",
+      "a^(p/q)"
+    ],
+    "prerequisites": [
+      "整数指数与有理数指数",
+      "极限直观",
+      "函数定义域"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "对a>0及实数x，实指数幂a^x可以通过有理指数幂在连续性意义下延拓；作为高中指数函数y=a^x通常额外要求a≠1，以排除恒等于1的常值函数。a=0或a<0时不能对全部实数x定义实值a^x。",
+    "statement": null,
+    "assumptions": [
+      "底数a取正实数；讨论a^(p/q)时q是正整数，分数按约定化简。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先在有理指数p/q上由正实数的唯一正q次方根定义a^(p/q)。",
+      "对固定正底数，有理指数幂具有一致的有序/连续延拓，定义实指数幂；此处为构造思路而非完整分析学存在定理证明。",
+      "a=1时所有实数次幂都为1，不能据此推出严格增减性质。"
+    ],
+    "boundaries": [
+      "负底数的负整数幂在部分点有意义，但不能构成全体实数定义域的实值指数函数。",
+      "a=0在x>0时可定义0^x，但0^0及负指数均有边界问题；a<0时平方根指数不可取实值。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意实数底数a都可定义实值函数a^x(x∈R)",
+        "example": "a=−1，x=1/2时要求实数平方根−1，无法成立。",
+        "explanation": "必须区分部分幂有值与对全部实数指数都有实值。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "判断a=4时4^(1/2)、4^(−1/2)的值。",
+        "steps": [
+          "正平方根√4=2，故4^(1/2)=2。",
+          "负指数取其倒数，4^(−1/2)=1/2。"
+        ],
+        "answer": "2和1/2。",
+        "check": "2²=4，(1/2)·2=1。"
+      },
+      {
+        "question": "对y=1^x(x∈R)判断是否严格递增。",
+        "steps": [
+          "所有x都有1^x=1。",
+          "取0<1，却有f(0)=f(1)。"
+        ],
+        "answer": "不是严格递增也不是严格递减。",
+        "check": "用两个不同输入的相同输出否定严格单调。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把a>0与a>0且a≠1两个条件混为同一用途",
+        "why_wrong": "实指数表达式可在a=1定义，但高中指数函数通常排除平凡的常数底数。",
+        "repair_question": "a=1时哪一条严格单调的性质失效？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查指数所需的底数与实值域。",
+      "在有理指数上复核根式及倒数规则。",
+      "检验a=1、a=0、a<0等退化边界。"
+    ],
+    "transfer": {
+      "near": "解释为什么y=2^x在全实数域有定义而y=(−2)^x没有。",
+      "far": "讨论a趋向1时a^x对应图象如何接近常数函数。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.space.basis-three-unique",
+    "curriculum_ids": [
+      "HS-MATH-154"
+    ],
+    "kind": "theorem",
+    "title": "三维空间向量基底的存在唯一性",
+    "version": "1.0.0",
+    "notation": [
+      "z=αu+βv+γw",
+      "det[u v w]≠0",
+      "R³"
+    ],
+    "prerequisites": [
+      "空间向量坐标",
+      "线性组合",
+      "三阶行列式与矩阵可逆"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "在三维实向量空间中，若u、v、w线性无关（等价于列矩阵[u v w]行列式非零），则每个向量z存在唯一三个实系数α、β、γ使z=αu+βv+γw。",
+    "assumptions": [
+      "u、v、w及z均为三维实向量；u、v、w线性无关。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "以u、v、w为列组成3×3实矩阵M；无关意味着M的齐次方程Mc=0仅有零解。",
+        "reason": "空间线性无关的定义要求只有全部系数为零时才可能得到零向量。"
+      },
+      {
+        "claim": "三维方阵零空间平凡，故det M≠0并存在逆矩阵M^(-1)。",
+        "reason": "方阵可逆、行列式非零与零空间平凡的等价定理。"
+      },
+      {
+        "claim": "取c=M^(-1)z，则Mc=z，于是存在一组表示系数。",
+        "reason": "逆矩阵与矩阵乘法的定义。"
+      },
+      {
+        "claim": "若Mc=Md，则M(c−d)=0，无关性推出c=d，表示唯一。",
+        "reason": "线性无关意味着零系数是唯一零组合。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若三向量共面或包含零向量，就可能不能表示全部R³向量，或表示不唯一。",
+      "不能把二维平面上的两条基向量直接当作整个三维空间的基。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意三个非零空间向量都能唯一表示所有空间向量",
+        "example": "u=(1,0,0)、v=(2,0,0)、w=(0,1,0)均非零，但不能表示(0,0,1)。",
+        "explanation": "非零不等于线性无关，det为0时断言失效。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "取标准基e1,e2,e3，表示z=(2,−1,3)。",
+        "steps": [
+          "令z=αe1+βe2+γe3并逐坐标比较。",
+          "解得α=2、β=−1、γ=3。"
+        ],
+        "answer": "z=2e1−e2+3e3。",
+        "check": "列基矩阵为单位阵，det=1。"
+      },
+      {
+        "question": "取u=(1,0,0)、v=(0,1,0)、w=(1,1,1)，表示(0,0,1)。",
+        "steps": [
+          "比较第三坐标得γ=1。",
+          "前两坐标各为零，得α=β=−1。"
+        ],
+        "answer": "(0,0,1)=−u−v+w。",
+        "check": "−(1,0,0)−(0,1,0)+(1,1,1)=(0,0,1)。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只检验每个基向量不为0就宣称三向量构成基",
+        "why_wrong": "必须检验三者整体线性无关，不能有非平凡线性组合为零。",
+        "repair_question": "(1,0,0),(0,1,0),(1,1,0)的行列式是多少？"
+      }
+    ],
+    "hint_ladder": [
+      "把向量组排成3×3列矩阵。",
+      "检查线性无关是否保证矩阵可逆。",
+      "逆矩阵负责存在性，零空间平凡负责唯一性。"
+    ],
+    "transfer": {
+      "near": "将向量表示唯一性应用到斜坐标系。",
+      "far": "分析三个共面向量能否表示空间中不共面的点。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.logic.classical-laws",
+    "curriculum_ids": [
+      "HS-MATH-155"
+    ],
+    "kind": "concept",
+    "title": "经典命题逻辑的同一律、矛盾律与排中律",
+    "version": "1.0.0",
+    "notation": [
+      "P",
+      "¬P",
+      "P∧¬P",
+      "P∨¬P",
+      "P↔P"
+    ],
+    "prerequisites": [
+      "命题与真值",
+      "否定、合取和析取",
+      "真值表"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "在经典二值命题逻辑中，同一命题P在同一解释下保持身份（P↔P为永真）；P∧¬P总为假（矛盾律）；P∨¬P总为真（排中律）。这些规律不允许把语境变化的两句话直接当作同一个P。",
+    "statement": null,
+    "assumptions": [
+      "限定经典二值命题逻辑，真值取真/假；P在同一语境下不偷换意义。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "取P真时，¬P为假，因此P∧¬P是假，P∨¬P是真。",
+      "取P假时，¬P为真，因此P∧¬P仍是假，P∨¬P仍是真。",
+      "同一命题始终与自身同真值，因此P↔P在两种真值赋值下都真。"
+    ],
+    "boundaries": [
+      "排中律是一条经典逻辑规律，不可不经额外说明套用于构造主义逻辑体系。",
+      "语境、时间、主体变动时表面相同的句子未必是同一命题。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "一件未知事实尚未决定真假，所以P∨¬P在经典逻辑中为假",
+        "example": "P的真假我们可能不知道，但二值语义下P真或¬P真至少一项成立。",
+        "explanation": "认识上的未知不是经典真值语义的第三真值。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "构造P为真时三条规律的真值。",
+        "steps": [
+          "P=真，¬P=假。",
+          "P↔P真；P∧¬P假；P∨¬P真。"
+        ],
+        "answer": "依次为真、假、真。",
+        "check": "对P=真和否定P=假代入每个运算真值表，结果逐项一致。"
+      },
+      {
+        "question": "取P为假，求P∨¬P与P∧¬P。",
+        "steps": [
+          "P=假，¬P=真。",
+          "析取至少一真而合取不全真。"
+        ],
+        "answer": "析取真，合取假。",
+        "check": "否定真值表直接核对。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把排中律理解为任意句子及其否定都各自成立",
+        "why_wrong": "析取为真只表示至少一项成立，绝非两项都真。",
+        "repair_question": "当P为真时¬P的真值是什么？"
+      }
+    ],
+    "hint_ladder": [
+      "先固定P的具体解释和同一时间背景。",
+      "写出P、¬P的两个可能真值组合。",
+      "分别计算合取、析取、双条件的真值。"
+    ],
+    "transfer": {
+      "near": "检验(P∧Q)∨¬(P∧Q)的真值。",
+      "far": "解释为什么含模糊语义或上下文变化的自然语言不能直接照搬二值真值表。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.logic.proof-strategies",
+    "curriculum_ids": [
+      "HS-MATH-156"
+    ],
+    "kind": "method",
+    "title": "直接证明、逆否证明与反证法的适用条件",
+    "version": "1.0.0",
+    "notation": [
+      "P⇒Q",
+      "¬Q⇒¬P",
+      "P∧¬Q"
+    ],
+    "prerequisites": [
+      "经典命题逻辑",
+      "条件命题和逆否命题",
+      "整数奇偶性"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "若要证明蕴含P⇒Q，直接证明从P推出Q；经典逻辑中可等价改证¬Q⇒¬P（逆否）；反证法则假设P∧¬Q并推出矛盾。只证明逆命题Q⇒P不能代替原命题。",
+    "assumptions": [
+      "形式变换限定经典逻辑；使用反证时必须清楚列出被否定的结论。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "直接证明必须在P前提下推演，不能无前提引用待证命题。",
+      "逆否命题与原蕴含具有相同真值表；证明¬Q⇒¬P即证明P⇒Q。",
+      "反证从P且¬Q推出逻辑不可能，因而拒绝存在使原蕴含为假的情形。",
+      "逆命题Q⇒P与原命题真值不必一致，不能替代。"
+    ],
+    "boundaries": [
+      "某些数学领域的构造性逻辑不允许无限制使用经典反证法；课内需先声明逻辑体系。",
+      "即使结论正确，未经条件核验直接平方、除未知数也不能算合法证明。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "要证明n为偶数⇒n²为偶数，只证明n²为偶数⇒n为偶数就够了",
+        "example": "n²为偶数⇒n为偶数即便真，也是逆命题而不是给定推理过程。",
+        "explanation": "证明策略必须与原蕴含保持同一方向或使用逻辑等价式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "用直接法证明偶整数n的平方也是偶数。",
+        "steps": [
+          "写n=2k(k∈Z)。",
+          "n²=4k²=2(2k²)为偶数。"
+        ],
+        "answer": "原蕴含成立。",
+        "check": "2k²是整数，满足偶数定义。"
+      },
+      {
+        "question": "用逆否法证明整数n²为奇数⇒n为奇数。",
+        "steps": [
+          "原命题逆否是n为偶数⇒n²为偶数。",
+          "写n=2k，则n²=2(2k²)，逆否成立。"
+        ],
+        "answer": "原命题成立。",
+        "check": "本例逆否与原命题在经典逻辑中等价。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "将原命题与逆命题混为一谈",
+        "why_wrong": "P⇒Q的逆命题是Q⇒P；与原命题等价的是¬Q⇒¬P。",
+        "repair_question": "写出命题x>2⇒x>1的逆命题，是否成立？"
+      }
+    ],
+    "hint_ladder": [
+      "先把自然语言命题写为P⇒Q。",
+      "区分逆、否、逆否三个方向。",
+      "决定是否能够从P直接推导，或从¬Q逆推到¬P。"
+    ],
+    "transfer": {
+      "near": "用逆否法证明n²是偶数则n是偶数。",
+      "far": "辨析证明函数连续一定有界时为什么不能漏掉闭区间紧致条件。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.logic.axiom-consistency-independence",
+    "curriculum_ids": [
+      "HS-MATH-157"
+    ],
+    "kind": "concept",
+    "title": "公理系统的相容性与独立性：有限命题逻辑示例",
+    "version": "1.0.0",
+    "notation": [
+      "Γ",
+      "Γ⊬⊥",
+      "Γ\\{A}⊬A",
+      "⊢"
+    ],
+    "prerequisites": [
+      "经典命题逻辑",
+      "真值赋值",
+      "逻辑后承关系"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "给定公理集Γ，相容性指Γ不推出矛盾（在经典命题逻辑的有限命题示例中等价于存在满足全部公理的真值赋值）；公理A相对Γ的其余公理独立，是指Γ\\{A}不能推出A。独立性不是断言A为假。",
+    "statement": null,
+    "assumptions": [
+      "例题限定经典命题逻辑及其可靠且完备的推演体系；广义公理系统不必都能用有限真值表判定相容性。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "对于Γ={P,Q}，赋值P=真、Q=真同时满足两项，故该有限命题集相容。",
+      "删去P后只剩{Q}，赋值Q=真、P=假可使Q真而P假，说明P不能从Q推出。",
+      "同理删去Q后只剩{P}，赋值P=真、Q=假证明Q不能由P推出；两公理在本例各自独立。"
+    ],
+    "boundaries": [
+      "某些公理系统无法通过遍历有限赋值判断是否相容；不可将本例简化为通用判定算法。",
+      "相容与独立是两种不同性质：公理可能相容但相互依赖。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "公理A独立于其余公理，就意味着A是假的",
+        "example": "Γ={P,Q}可取P=Q=真而仍各自独立。",
+        "explanation": "独立性只否认由其它公理推导A，不决定A在某个模型中的真值。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "判断命题公理集Γ={P,¬P}是否相容。",
+        "steps": [
+          "若P真，¬P假；若P假，P假。",
+          "不存在使两公理同时真的赋值。"
+        ],
+        "answer": "在经典命题逻辑中不相容。",
+        "check": "两种赋值均无法满足整个集合。"
+      },
+      {
+        "question": "判断Γ={P,Q}中P是否由Q推出。",
+        "steps": [
+          "取赋值Q真、P假。",
+          "该赋值满足Q但不满足P，因此Q不逻辑蕴含P。"
+        ],
+        "answer": "P相对Q独立。",
+        "check": "反模型(Q真且P假)直接证伪Q⊨P。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只要公理不是字面重复，就断言它独立",
+        "why_wrong": "不同写法的公理可能逻辑等价，如P与P∧P。",
+        "repair_question": "加入P∧P后，P还独立于它吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先区分可满足性与逻辑后承。",
+      "相容性尝试寻找同时满足全部前提的赋值。",
+      "独立性尝试构造满足其余公理而不满足目标公理的反模型。"
+    ],
+    "transfer": {
+      "near": "判断{P,P∨Q}是否相容、第二公理是否独立。",
+      "far": "比较欧氏几何平行公设独立性与有限真值表独立性证明的层级差异。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.model.scores-not-causes",
+    "curriculum_ids": [
+      "HS-MATH-158"
+    ],
+    "kind": "method",
+    "title": "信度、预测相关与因果推断的数学边界",
+    "version": "1.0.0",
+    "notation": [
+      "Corr(X,Y)",
+      "E[Y|X]",
+      "do(X=x)"
+    ],
+    "prerequisites": [
+      "均值和协方差",
+      "简单回归",
+      "混杂因素"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对重复测量的数值评分，先区分测量一致性、相关预测与因果影响；相关系数或低预测误差只能说明样本内统计关系，不能证明改变评分变量会引发结果变化。因果结论需额外的识别假设或实验设计。",
+    "assumptions": [
+      "变量的量表含义与样本来源明确；相关、预测与干预结论使用不同逻辑层次。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先说明测量一致性的来源：同对象重复记录的评分变化不能直接解释为真实能力变化。",
+      "样本相关系数按协方差/标准差计算，只量化变量共同变化的线性关联。",
+      "若存在共同原因Z影响X与Y，即便Corr(X,Y)接近1，也不能单凭此推出对X施加干预会改变Y。",
+      "要宣称因果效应，需随机化、自然实验或足够明确的混杂控制与可检验假设。"
+    ],
+    "boundaries": [
+      "相关系数未定义于样本方差为零的变量；不能强行用0代替。",
+      "高重测一致性不代表分数无偏，也不能说明其对某目标必然有效。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "X与Y相关系数为1，故人为提高X必然使Y增大",
+        "example": "令Z取0或1，X=Z、Y=Z，观察相关为1；若仅将X记分改为1但Z不变，Y并不改变。",
+        "explanation": "共同原因构造证明相关和因果是不同的推断。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "两人得分X=(1,2)、目标Y=(2,4)，能否仅据正相关说提高得分必提高目标？",
+        "steps": [
+          "这两组样本的中心化数值同向，相关系数为1。",
+          "没有随机化或识别假设，无法解释干预X时Y会如何变化。"
+        ],
+        "answer": "只能描述样本正线性相关，不能推出因果。",
+        "check": "可由X=Z、Y=2Z的共同原因模型重现这些观测。"
+      },
+      {
+        "question": "同一对象重复记录得分(8,8,8)，是否因此证明评分能预测下一年的结果？",
+        "steps": [
+          "同一次量表重复值相同，说明此例重测差为0。",
+          "没有提供未来结果或跨对象验证，预测能力无法判断。"
+        ],
+        "answer": "不能据此得出预测有效或因果有效。",
+        "check": "信息只有重测值，没有验证标签。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "预测模型拟合越准确，因果机制就越确定",
+        "why_wrong": "预测能利用混杂或泄漏信号，不能替代干预识别。",
+        "repair_question": "如果评分规则被人为改写而真实能力未变，预测规则仍可靠吗？"
+      }
+    ],
+    "hint_ladder": [
+      "明确要论证的是一致性、相关、预测还是因果。",
+      "先检查样本设计和隐含共同原因。",
+      "没有干预证据时把结论限定为观察关联。"
+    ],
+    "transfer": {
+      "near": "分析温度与冰激凌销量相关不能直接解释为销售致温度变化。",
+      "far": "设计一个简单随机化实验用于区分训练方案因果效应与自选参与者偏差。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.statistics.survey-audit-report",
+    "curriculum_ids": [
+      "HS-MATH-159"
+    ],
+    "kind": "method",
+    "title": "抽样设计、缺失偏差与可核查调查报告",
+    "version": "1.0.0",
+    "notation": [
+      "N总体",
+      "n有效样本",
+      "x̄=(Σxi)/n",
+      "响应率"
+    ],
+    "prerequisites": [
+      "抽样框和总体",
+      "均值与分布",
+      "数据缺失"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "社会调查的描述性统计报告须说明目标总体、抽样框、抽样方法、有效回应数、缺失机制、统计量定义、匿名化措施与推断限制；样本均值为有效观测值之和除以有效个数，若有非响应偏差则不能直接代表目标总体。",
+    "assumptions": [
+      "n>0才计算样本均值；不泄漏个人身份信息；代表性推断需要可辩护的抽样/响应假设。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先固定抽样总体与抽样框，排查框内未覆盖者及重复入选机会。",
+      "写明抽样方式和邀请人数，分别计有效响应及未响应的数量。",
+      "以有效样本计算描述统计，并单独说明非响应或自选参与可能造成的偏差。",
+      "最终报告只汇总匿名化统计量，不把小样本敏感原始记录作为示范或共享。"
+    ],
+    "boundaries": [
+      "便利抽样的平均值不能自动代表全体；响应者与未响应者可能系统性不同。",
+      "数据完全缺失时n=0，不能除以0或臆测均值。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "向100名学生发问卷，20人作答且均喜欢运动，故全校100%学生都喜欢运动",
+        "example": "其余80人没有答复，且学校总体可能远超100人。",
+        "explanation": "非响应与抽样框不足使总体结论无依据。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "抽样框200人，随机邀请40人，有效回答30人，得分总和210，写描述统计。",
+        "steps": [
+          "响应率30/40=75%。",
+          "有效样本均值210/30=7，注明10人未响应。"
+        ],
+        "answer": "样本均值7，响应率75%，不自动代表全体200人。",
+        "check": "30·7=210；10+30=40。"
+      },
+      {
+        "question": "邀请50人而仅5人有效回答且总和为15，计算均值及限制。",
+        "steps": [
+          "有效均值15/5=3。",
+          "响应率5/50=10%，特别警惕非响应偏差。"
+        ],
+        "answer": "有效样本均值3、响应率10%，不得称总体均值。",
+        "check": "5·3=15；未响应45人。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把样本均值直接写成总体真值",
+        "why_wrong": "调查设计、非响应和抽样框误差都可能使样本偏离总体。",
+        "repair_question": "如果成绩较低者更少回答，样本均值会向哪边偏？"
+      }
+    ],
+    "hint_ladder": [
+      "先列清总体、抽样框、邀请和响应数字。",
+      "有效样本数而非邀请人数是均值分母。",
+      "报告中明确哪些是描述事实、哪些仍是未经验证的总体推断。"
+    ],
+    "transfer": {
+      "near": "给一个等概率分层抽样设计及分层权重说明。",
+      "far": "评估自选线上问卷结论能否外推到没有网络的目标人群。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.music.rhythm-cycle-lcm",
+    "curriculum_ids": [
+      "HS-MATH-160"
+    ],
+    "kind": "theorem",
+    "title": "整数节拍循环的最小公倍数同步条件",
+    "version": "1.0.0",
+    "notation": [
+      "m,n∈Z_{>0}",
+      "gcd(m,n)",
+      "lcm(m,n)"
+    ],
+    "prerequisites": [
+      "整数倍数",
+      "最大公因数",
+      "离散周期"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "设两个节奏在同一时间格点上分别每m、n个正整数格点回到起始重拍，且同时从0格点开始。最早再次同时回到重拍的正格点为lcm(m,n)=mn/gcd(m,n)。",
+    "assumptions": [
+      "节拍周期须为统一物理时长格点的正整数倍，且起点对齐；不处理连续的非公度周期。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "再次同步的格点t必须同时满足m|t与n|t。",
+        "reason": "每个循环的重拍位置分别为m、n的整数倍。"
+      },
+      {
+        "claim": "最早的正同步格点就是所有正公倍数中最小者lcm(m,n)。",
+        "reason": "按正整数公倍数集合的最小正元素定义最小公倍数。"
+      },
+      {
+        "claim": "记d=gcd(m,n)，写m=da、n=db且gcd(a,b)=1。",
+        "reason": "由最大公因数定义可消去公因子，剩余a与b必须互素。"
+      },
+      {
+        "claim": "同时被m与n整除的最小正数为dab=mn/d。",
+        "reason": "互素a,b的公倍数最小须包含ab。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若两个节奏初相不同，不能直接从t=0同时重拍并套用同一公式。",
+      "若周期在统一格点上不是整数，须先选合法共同基本单位；不可任意将时间近似取整。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "周期分别为6和8拍的节奏最早在14拍重新对齐",
+        "example": "6的正倍数6、12、18、24；8的正倍数8、16、24。",
+        "explanation": "最早同步是24而非两周期相加14。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "周期为6与8个格点的两节奏从0同步，下一次同步时刻？",
+        "steps": [
+          "gcd(6,8)=2。",
+          "lcm(6,8)=6·8/2=24。"
+        ],
+        "answer": "第24格点。",
+        "check": "24/6=4、24/8=3，且小于24无同时倍数。"
+      },
+      {
+        "question": "周期为3和5格点时首次共同重拍在哪？",
+        "steps": [
+          "gcd(3,5)=1。",
+          "最小公倍数为3·5=15。"
+        ],
+        "answer": "第15格点。",
+        "check": "15是两个周期的正倍数，3、6、9、12都不是5的倍数。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把两个周期的乘积总当成最小公倍数",
+        "why_wrong": "当周期具有公共因子时，乘积重复计入了公共因子。",
+        "repair_question": "6和8有什么共同因子？"
+      }
+    ],
+    "hint_ladder": [
+      "找出重拍格点是哪些整数倍。",
+      "同时对齐等价于寻找正公倍数。",
+      "用最大公因数公式求最小公倍数。"
+    ],
+    "transfer": {
+      "near": "分析周期12与18个格点的两节奏何时再同步。",
+      "far": "三组节奏4、6、9共同同步时刻如何用逐步lcm计算？"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.graph.round-robin-schedule",
+    "curriculum_ids": [
+      "HS-MATH-161"
+    ],
+    "kind": "method",
+    "title": "单循环赛图模型与轮次下界、构造",
+    "version": "1.0.0",
+    "notation": [
+      "K_n",
+      "|E|=n(n−1)/2",
+      "轮次下界"
+    ],
+    "prerequisites": [
+      "完全图和边",
+      "组合计数",
+      "容量下界"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "把n个参赛者作为完全图K_n的顶点，每场比赛对应一条无向边；每人同轮最多打一场。n为偶数时每轮最多n/2场，单循环赛至少n−1轮，轮转法能达到；n为奇数时每轮最多(n−1)/2场，至少n轮，加入虚拟轮空顶点即可构造。",
+    "assumptions": [
+      "单循环每对队伍比赛一次；每个参赛者同轮最多出赛一次；不引入场馆或时段额外约束。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "边数为C(n,2)=n(n−1)/2，每场只对应一条边，不能漏赛或重赛。",
+      "偶数n每轮最多n/2条互不共享顶点的边，故至少n−1轮。",
+      "奇数n每轮最多(n−1)/2场，故至少n轮。",
+      "圆桌轮转固定一人、转动其余人；奇数时补一个虚拟轮空者，得到上述轮次数的可行构造。"
+    ],
+    "boundaries": [
+      "存在场馆限制、主客场顺序或队伍不可用日时，此最小轮次可能无法实现。",
+      "把每一条边当作可同时进行的比赛会导致同一人同轮出赛多场。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "四人单循环有6场，只要有6个场地就可以一轮打完",
+        "example": "同一人必须与3人比赛，规则限定同轮只能参加一场。",
+        "explanation": "场地数不是唯一约束，顶点同轮不能重复出现。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "给4队A,B,C,D排单循环三轮。",
+        "steps": [
+          "轮1：A-D、B-C；轮2：A-C、D-B。",
+          "轮3：A-B、C-D；每对只出现一次。"
+        ],
+        "answer": "3轮，每轮2场。",
+        "check": "共6条不同边=C(4,2)。"
+      },
+      {
+        "question": "5队单循环至少几轮，每轮至多几场？",
+        "steps": [
+          "完全图有C(5,2)=10场。",
+          "每轮至多floor(5/2)=2场，至少5轮，轮转法可达。"
+        ],
+        "answer": "至少5轮、每轮至多2场。",
+        "check": "5轮×2场=10场且每轮必有一队轮空。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只看比赛总场数除以场地数计算轮次",
+        "why_wrong": "遗漏同一参赛者不能同轮重复出赛的匹配约束。",
+        "repair_question": "一轮内比赛的两条边能否共享顶点？"
+      }
+    ],
+    "hint_ladder": [
+      "把队伍画为顶点，所有对阵画为边。",
+      "同一轮选择的边必须两两不共享端点。",
+      "结合最大匹配容量和圆桌轮换构造下界可达性。"
+    ],
+    "transfer": {
+      "near": "给6队排单循环至少几轮、每轮几场。",
+      "far": "加入两队不可同场馆比赛的限制后，分析为什么图的边染色下界未必能满足所有时段限制。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

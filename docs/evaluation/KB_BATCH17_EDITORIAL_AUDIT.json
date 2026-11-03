@@ -1,0 +1,39 @@
+{
+  "status": "BATCH17_11_AUTHOR_DRAFTS_NOT_TEACHER_CERTIFIED",
+  "authored_source_sha256": "d302f9c404985fa2fe27c91d61fe459ecc16f9e4a7d9261d9ac5be6b4c1917ad",
+  "editorial_engineering_map_sha256": "f73857b29fcb10eae6c887d1f6965f34aacb5afabd0351ecbe2905b489682b8b",
+  "rendered_lessons_sha256": "d302f9c404985fa2fe27c91d61fe459ecc16f9e4a7d9261d9ac5be6b4c1917ad",
+  "editorial_review_queue_sha256": "7fbab327dfa021148a2193dd866971a611057b34b480e05cb9f62820ca598062",
+  "new_deep_drafts": 11,
+  "new_by_kind": {
+    "concept": 4,
+    "method": 4,
+    "theorem": 3
+  },
+  "new_pending_theorem_steps": 12,
+  "new_teacher_only_worked_examples": 22,
+  "new_engineering_nodes": 11,
+  "deep_drafts_total": 224,
+  "engineering_nodes_total": 161,
+  "curriculum_objective_candidate_sample": 132,
+  "candidate_objectives_with_unreviewed_proposals": 132,
+  "candidate_proposed_links": 154,
+  "candidate_unmatched": 0,
+  "editorial_target_track_counts": {
+    "必修": 3,
+    "选修拓展": 7,
+    "选择性必修": 1
+  },
+  "official_atomic_denominator": null,
+  "official_coverage_percent": null,
+  "teacher_approved_lessons": 0,
+  "student_published_lessons": 0,
+  "whole_natural_language_proofs_certified": 0,
+  "proof_step_verification_scope": "BOUNDED_ORACLES_ONLY_NOT_PROOF_CERTIFICATION",
+  "warnings": [
+    "132/132 only means the project's incomplete editorial candidate sample has suggested links; official curricular coverage is unknown.",
+    "Two links reuse existing MVT/FTC draft explanations. A candidate overlap is not a signed review decision.",
+    "Independent finite/parameterized checks do not certify complete proof chains, pedagogy, copyright, or standard paragraph alignment.",
+    "All draft content is TEACHER_ONLY and REVIEW_PENDING; student approved-only retrieval remains fail-closed."
+  ]
+}

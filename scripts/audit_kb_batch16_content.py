@@ -55,6 +55,22 @@ def audit():
 
 def main():
     p=argparse.ArgumentParser();p.add_argument("--check",action="store_true");a=p.parse_args()
+    # Backward-compatible archived Batch16 contract:
+    # Later knowledge drafts must not rewrite the immutable Batch16 summary.
+    # Verify its frozen source hashes, and let Batch17+ own current totals.
+    if a.check and len(lessons())>213:
+        previous=json.loads(OUT.read_text(encoding="utf8"))
+        assert previous["deep_lessons_total"]==213 and previous["engineering_topics_total"]==150
+        assert previous["source_objective_candidates"]==132
+        assert previous["objectives_with_editorial_proposals"]==119
+        assert previous["editorial_proposal_edges"]==141
+        assert previous["teacher_approved_lessons"]==0
+        assert previous["authored_source_sha256"]==hashlib.sha256(SRC.read_bytes()).hexdigest()
+        assert previous["mapping_sha256"]==hashlib.sha256(MAPPING.read_bytes()).hexdigest()
+        assert len(json.loads(SRC.read_text(encoding="utf8")))==12
+        assert all(x.review.status=="REVIEW_PENDING" for x in lessons())
+        print("PASS frozen Batch16 source hashes and historical 213/150 snapshot; current totals belong to Batch17")
+        return
     report=json.dumps(audit(),ensure_ascii=False,indent=2)+"\n"
     if a.check:
         if not OUT.is_file() or OUT.read_text(encoding="utf8")!=report:
