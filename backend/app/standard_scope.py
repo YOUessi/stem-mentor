@@ -59,6 +59,8 @@ def source_inventory():
     return validate_source_inventory(json.loads(SOURCE.read_text(encoding="utf-8")))
 
 def public_progress():
+    from .official_clause_audit import page_progress
+    from .k00_gap_audit import gap_tickets
     inventory=source_inventory()
     return {
         "scope":"SOURCE_ANCHORED_EDITORIAL_SAMPLE_NOT_FULL_COURSE",
@@ -68,5 +70,7 @@ def public_progress():
         "teacher_approved":0,
         "student_knowledge_released":0,
         "complete_curriculum":False,
+        "official_source_page_evidence":page_progress(),
+        "unreviewed_source_gap_candidates":gap_tickets()["summary"],
         "notice":"来源页码核对样本，不是全国课标官方原子全集或经教师审核的课程完成比例。"
     }
