@@ -14,12 +14,12 @@ from audit_kb_semantic_coverage import GAPS, build, validate_gaps
 def test_113_links_do_not_falsely_equal_full_curriculum():
     matrix=build()
     summary=matrix["summary"]
-    assert summary["engineering_topic_denominator"]==129
+    assert summary["engineering_topic_denominator"]==138
     assert summary["deep_draft_documents"]>=86
-    assert summary["linked_project_topics"]==129
+    assert summary["linked_project_topics"]==138
     assert summary["known_partial_topic_count"]>=23
     assert summary["gap_draft_candidate_count"] + summary["gap_without_candidate_count"] == summary["known_partial_topic_count"]
-    assert summary["other_linked_unreviewed_topic_count"]+summary["known_partial_topic_count"]==129
+    assert summary["other_linked_unreviewed_topic_count"]+summary["known_partial_topic_count"]==138
     assert summary["official_curriculum_atom_mapping_reviewed"]==0
     assert summary["explicit_official_elective_tracks_completed"]==0
     assert summary["student_draft_release_allowed"] is False

@@ -2700,6 +2700,195 @@
       "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
       "available_presets": [],
       "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+    },
+    {
+      "id": "HS-MATH-130",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修A课程深度内容",
+      "concept": "基本三角极限 sin(x)/x（弧度制）的夹逼证明",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_A-006",
+      "elective_track": "ELECTIVE_A",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
+      "available_presets": [],
+      "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
+    },
+    {
+      "id": "HS-MATH-131",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修A课程深度内容",
+      "concept": "中值定理推出严格单调与指数型不等式",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_A-010",
+      "elective_track": "ELECTIVE_A",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
+      "available_presets": [],
+      "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
+    },
+    {
+      "id": "HS-MATH-132",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修A课程深度内容",
+      "concept": "矩阵乘法维度约束与三阶单位矩阵",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_A-015",
+      "elective_track": "ELECTIVE_A",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
+      "available_presets": [],
+      "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
+    },
+    {
+      "id": "HS-MATH-133",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "二元函数驻点与闭域边界极值的区别",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-006",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
+      "available_presets": [],
+      "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
+    },
+    {
+      "id": "HS-MATH-134",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "三维三向量行列式判定线性相关",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-007",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
+      "available_presets": [],
+      "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
+    },
+    {
+      "id": "HS-MATH-135",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "三元线性方程组的 Cramer 法则及零行列式边界",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-008",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
+      "available_presets": [],
+      "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
+    },
+    {
+      "id": "HS-MATH-136",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "零假设、单侧 p 值与一类错误的准确区分",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-012",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
+      "available_presets": [],
+      "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
+    },
+    {
+      "id": "HS-MATH-137",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "简单线性回归最小二乘斜率公式与可识别性",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-013",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
+      "available_presets": [],
+      "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
+    },
+    {
+      "id": "HS-MATH-138",
+      "level": "选修拓展",
+      "theme": "选修 A–E 独立学习目标候选",
+      "unit": "选修B课程深度内容",
+      "concept": "参数方程圆轨迹与速度非零条件",
+      "editorial_objective_id": "HS-STD2020-ELECTIVE_B-015",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "新增深度知识草案，不代表已开发交互场景",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "工程作者根据项目课程目标编制的候选原子；未完成逐条官方原文核对与独立教师审签。",
+      "available_presets": [],
+      "capability_limits": "没有正式认证的学生知识发布或专属交互场景。"
     }
   ]
 }

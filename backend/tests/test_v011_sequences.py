@@ -24,7 +24,7 @@ def test_v011_presets_exact_and_previous_49_retained(tmp_path,monkeypatch):
         assert len(body["counts"]["scene_families"])>=9
         assert body["counts"]["interactive_foundations"]>=63
         assert body["counts"]["planned_concepts"]<=66
-        assert len(body["topics"])==129
+        assert len(body["topics"])==138
         assert client.get("/health").json()["llm_api_used"] is False
 
 def test_new_scene_contracts_and_prompt_scaffolds():

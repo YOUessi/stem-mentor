@@ -17,7 +17,7 @@ def test_extrema_catalog_five_fixed_models_without_spoilers(client):
  all_ids={p["id"] for p in data["presets"]}
  assert len(all_ids)>=62
  assert IDS<=all_ids
- assert data["counts"]["total_concepts"]==129
+ assert data["counts"]["total_concepts"]==138
  assert data["counts"]["interactive_foundations"]>=63
  assert data["counts"]["planned_concepts"]<=66
  assert data["counts"]["scene_families"]["function_2d"]==22

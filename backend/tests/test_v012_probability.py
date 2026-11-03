@@ -15,9 +15,9 @@ def test_scene_catalog_exact_count_and_real_curriculum_evidence(client):
  cat=client.get("/api/math-lab/catalog").json()
  assert len(cat["presets"])==71
  assert len(cat["counts"]["scene_families"])==11
- assert len(cat["topics"])==129
+ assert len(cat["topics"])==138
  assert cat["counts"]["interactive_foundations"]==77
- assert cat["counts"]["planned_concepts"]==52
+ assert cat["counts"]["planned_concepts"]==61
  assert cat["counts"]["scene_families"]["probability_2d"]==6
  assert cat["counts"]["scene_families"]["statistics_2d"]==3
  assert cat["no_llm_api"] is True
