@@ -22,7 +22,7 @@ def test_v09_ten_new_scenes_preserve_previous_twenty_nine(client):
     assert len(ids)>=49
     assert {'fn-linear','fn-piecewise','tri-ssa','conic-ellipse','3d-plane'}<=ids
     assert data['no_llm_api'] is True
-    assert len(data['topics'])==150
+    assert len(data['topics'])==161
 
 def test_ready_coverage_links_real_scene_not_only_generic_family(client):
     data=client.get('/api/math-lab/catalog').json()
@@ -68,7 +68,7 @@ def test_new_scene_has_clear_boundary_and_explicit_core_module(scene,client):
 def test_catalog_builders_reproduce_versioned_evidence_without_mutating_repo(tmp_path):
     import shutil,subprocess,sys
     source=ROOT/'curriculum'/'highschool_math'
-    for name in ['build_presets.py','build_curriculum.py','extend_v09.py','extend_v010.py','extend_v011.py','extend_v011b.py','extend_v012.py','extend_elective_batch14.py','elective_a_b_atomic_candidates_batch14.json','extend_elective_batch15.py','elective_a_b_atomic_candidates_batch15.json','extend_elective_batch16.py','elective_b_c_d_e_atomic_candidates_batch16.json']:
+    for name in ['build_presets.py','build_curriculum.py','extend_v09.py','extend_v010.py','extend_v011.py','extend_v011b.py','extend_v012.py','extend_elective_batch14.py','elective_a_b_atomic_candidates_batch14.json','extend_elective_batch15.py','elective_a_b_atomic_candidates_batch15.json','extend_elective_batch16.py','elective_b_c_d_e_atomic_candidates_batch16.json','extend_cross_track_batch17.py','cross_track_atomic_candidates_batch17.json']:
         shutil.copy2(source/name,tmp_path/name)
     subprocess.run([sys.executable,str(tmp_path/'build_presets.py')],cwd=tmp_path,check=True,capture_output=True)
     subprocess.run([sys.executable,str(tmp_path/'build_curriculum.py')],cwd=tmp_path,check=True,capture_output=True)

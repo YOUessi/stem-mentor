@@ -134,6 +134,21 @@ MATCHES = {
     "ELECTIVE_E-005": ("math.hs.modeling.workflow",),
     "ELECTIVE_E-007": ("math.hs.space.coordinate-distance",),
     "ELECTIVE_E-008": ("math.hs.probability.discrete-variable",),
+    # Batch17: 11 new deep draft candidates plus two carefully bounded links
+    # to EXISTING proofs, since duplicate content is not evidence of quality.
+    "COMPULSORY-002": ("math.hs.sets.inclusion-empty-equality",),
+    "COMPULSORY-010": ("math.hs.function.same-mapping-three-representations",),
+    "COMPULSORY-016": ("math.hs.exponent.real-exponent-domain",),
+    "SELECTIVE_COMPULSORY-018": ("math.hs.space.basis-three-unique",),
+    "ELECTIVE_B-003": ("math.hs.elective.calculus.monotonicity-mvt",),
+    "ELECTIVE_C-002": ("math.hs.elective.logic.classical-laws",),
+    "ELECTIVE_C-004": ("math.hs.elective.logic.proof-strategies",),
+    "ELECTIVE_C-005": ("math.hs.elective.logic.axiom-consistency-independence",),
+    "ELECTIVE_C-009": ("math.hs.elective.model.scores-not-causes",),
+    "ELECTIVE_C-011": ("math.hs.elective.statistics.survey-audit-report",),
+    "ELECTIVE_D-007": ("math.hs.elective.music.rhythm-cycle-lcm",),
+    "ELECTIVE_D-010": ("math.hs.elective.graph.round-robin-schedule",),
+    "ELECTIVE_E-006": ("math.hs.elective.calculus.ftc-integral-derivative",),
     # Batch16, editorial matches, NOT certified syllabus coverage.
     "ELECTIVE_B-001": ("math.hs.elective.limit.sequence-continuity",),
     "ELECTIVE_B-002": ("math.hs.elective.calculus.second-derivative-convexity",),
