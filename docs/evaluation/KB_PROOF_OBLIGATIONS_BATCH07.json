@@ -1,9 +1,9 @@
 {
   "scope": "HUMAN_PROOF_OBLIGATION_QUEUE_NOT_MATHEMATICAL_CERTIFICATION",
   "summary": {
-    "deep_draft_lessons": 164,
-    "theorems": 84,
-    "proof_step_obligations_not_formally_verified": 276,
+    "deep_draft_lessons": 176,
+    "theorems": 96,
+    "proof_step_obligations_not_formally_verified": 313,
     "existing_supporting_oracles_linked": 48,
     "theorems_with_whole_proof_certification": 0,
     "teacher_approved": 0,
@@ -516,6 +516,503 @@
           "index": 3,
           "claim": "归纳步骤对 k=m−1 适用，推出 P(m)，与 m 是反例矛盾。",
           "reason": "从真前提 P(m−1) 可通过普遍归纳蕴含推出 P(m)，因此反例集合为空。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.logarithm.quotient-law",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-022"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a、x、y 均为实数；a>0、a≠1，x>0、y>0；不能仅凭 x/y>0 断言右侧有意义。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "设 u=log_a x、v=log_a y，则 a^u=x、a^v=y，且 y>0。",
+          "reason": "指数与实对数互逆，正真数条件让每一项都有定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由实数指数运算律 a^(u-v)=a^u/a^v=x/y>0。",
+          "reason": "a^v=y 不为 0，除法合法且指数运算律保留等式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "对两边取底为 a 的对数，可得 log_a(x/y)=u-v=log_a x-log_a y。",
+          "reason": "底数 a 合法、取对数是指数函数在正实数域上的逆映射。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.logarithm.change-base",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-022"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a、b、x 为正实数；两个底数均不等于 1。由 a≠1 可知 log_b a≠0，分母合法。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "令 t=log_a x，则 x=a^t；对这两个正数取合法底数 b 的对数。",
+          "reason": "指数函数与对数互逆，且 x>0 与 a>0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "得到 log_b x=t log_b a，此处使用已证明的实数对数幂法则。",
+          "reason": "对数幂法则在 a>0 及实数 t 时成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由于 a≠1，log_b a≠0，所以 t=log_b x/log_b a。",
+          "reason": "log_b a=0 当且仅当 a=1，故除法不引入非法步骤。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.quadratic.discriminant-roots",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-007",
+        "HS-MATH-019"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b,c 均为实数，且 a≠0；求实根时必须满足 Δ≥0。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "两侧乘以 4a（a≠0），将等式整理为 (2ax+b)²=b²-4ac=Δ。",
+          "reason": "由 4a(ax²+bx+c)=0 及配平方公式，反向变形也成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "左边是实数平方，若 Δ<0，则无实数 x 能满足；若 Δ=0，则 2ax+b=0。",
+          "reason": "平方的非负性与零平方只能对应零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若 Δ>0，则 2ax+b=±√Δ，两值不同；因 2a≠0，得 x=(-b±√Δ)/(2a)。",
+          "reason": "求平方根的两支，并保证除法合法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.quadratic.vieta-real",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-007",
+        "HS-MATH-019"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b,c 是实数，a≠0；x₁、x₂ 为原方程按重数计的两个实根，因而 Δ≥0。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由根的定义可按实数域分解 ax²+bx+c=a(x-x₁)(x-x₂)。",
+          "reason": "二次多项式恰有两根（含重根）的因式分解事实。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "展开得 a[x²-(x₁+x₂)x+x₁x₂]。",
+          "reason": "实数分配律与合并同类项，保留首项系数 a。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "比较 x 项与常数项系数：-a(x₁+x₂)=b、ax₁x₂=c；因 a≠0 得结论。",
+          "reason": "两个多项式在全实数上恒等时同次项系数相等。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sequence.telescoping",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-062",
+        "HS-MATH-065"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n 是正整数；b_1 至 b_(n+1) 均为有限实数；两组下标必须一一对应。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "写出左侧为 (b₂-b₁)+(b₃-b₂)+⋯+(bₙ₊₁-bₙ)。",
+          "reason": "按有限 Σ 的定义明确首项和末项。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "每个中间 b₂,...,bₙ 分别出现一次正号和一次负号，逐项相消。",
+          "reason": "有限个实数的交换律结合律；不涉及无穷项重排。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "只剩 -b₁ 与 +bₙ₊₁，所以总和=bₙ₊₁-b₁。",
+          "reason": "首尾下标检查；n=1 时直接变为 b₂-b₁。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.sequence.odd-square-sum",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-063",
+        "HS-MATH-065"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n≥1 且是整数；恰好有 n 项，各项从 1 开始公差为 2。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "n=1 时左边为 1，右边 1²=1，初始情形成立。",
+          "reason": "数学归纳法基础命题检查。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "假定前 n 个正奇数之和为 n²；第 n+1 个正奇数为 2(n+1)-1=2n+1。",
+          "reason": "使用通项公式确定确切新增项。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "新和=n²+(2n+1)=(n+1)²，归纳步骤成立。",
+          "reason": "完全平方恒等式，完成 n→n+1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.counting.ordered-arrangements",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-093",
+        "HS-MATH-094"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n 是非负整数，0≤k≤n，原始对象两两不同，每个对象最多选一次，顺序视为不同方案。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "排第 1 个位置有 n 种选法，第 2 个位置有 n-1 种，直到第 k 个位置有 n-k+1 种。",
+          "reason": "没有放回且对象不同，逐个位置的可用数正确递减。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由分类乘法原理相乘，得 n(n-1)…(n-k+1)。",
+          "reason": "不同位置选择形成完整且不重复的有序结果。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若 k≥1，乘积是 n!/(n-k)!；若 k=0，空排列唯一，与约定 n!/n!=1 一致。",
+          "reason": "阶乘乘积约消及 0!=1，且 n-k≥0 确保阶乘有定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.counting.combination-symmetry",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-094",
+        "HS-MATH-095"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n,k 均为整数、n≥0、0≤k≤n；组合计数对象是 n 元集合的不同子集。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "取含 n 个不同对象的全集 Ω，并选出任意 k 元子集 S。",
+          "reason": "将无序选取表示为满足 |S|=k 的集合，消除排列重复。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "映射 S↦Ω\\S 后得到含 n-k 个对象的补集。",
+          "reason": "有限集合的元素个数满足 |Ω\\S|=n-k。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "再取补集能唯一恢复原 S，因此映射是双射，两类子集数相同。",
+          "reason": "补集运算在同一全集下自反；单射、满射同时成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.vector.pythagorean-dot",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-034",
+        "HS-MATH-035",
+        "HS-MATH-073"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "向量共处于同一实欧氏内积空间；范数由数量积定义；不预设向量必须非零。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "先展开 ‖u+v‖²=(u+v)·(u+v)=‖u‖²+2(u·v)+‖v‖²。",
+          "reason": "内积对称及双线性；这里没有删掉交叉项。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 u·v=0，上式的交叉项为 0，直接得到平方范数可加。",
+          "reason": "相等方向的充分条件成立，包括某个向量为零的情况。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "反之若平方范数可加，从展开式两侧同时减去 ‖u‖²+‖v‖²，可得 2u·v=0，故 u·v=0。",
+          "reason": "实数等式移项与 2 非零，证明必要性而非只证明单向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.union-bound-two",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-053"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A,B 是同一概率空间上的可测事件，P 为非负概率测度。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "按加法公式 P(A∪B)=P(A)+P(B)-P(A∩B)。",
+          "reason": "将重计的交集减一次，公式对任意两个事件都成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由概率非负性 P(A∩B)≥0，可得 P(A∪B)≤P(A)+P(B)。",
+          "reason": "从等式减非负数得到上界。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "两边相等当且仅当被减去的 P(A∩B)=0。",
+          "reason": "通过充要条件的等价移项，不能把零概率直接替换为交集空。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.geometry.centroid-median",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-039",
+        "HS-MATH-032",
+        "HS-MATH-033"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "A、B、C 是三个位于同一实仿射平面且不共线的点；M=(B+C)/2；向量 a,b,c 取自同一原点。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "BC 的中点坐标向量 m=(b+c)/2，沿中线 AM 作点 g=a+(2/3)(m-a)。",
+          "reason": "线段内分参数 2/3，确保 G 在 AM 内部。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "化简 g=a+(2/3)((b+c)/2-a)=(a+b+c)/3。",
+          "reason": "只使用线性运算和分配律，没有几何图像比例猜测。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "对从 B 指向 AC 中点的中线，以及从 C 指向 AB 中点的中线，代入同一 g 均得到参数 2/3。",
+          "reason": "三者相同表达式，故三条中线通过同一 G，存在性及共点性同时成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "于是 AG=(2/3)AM、GM=(1/3)AM，且 AM>0，故 AG:GM=2:1。",
+          "reason": "A 与 M 不重合来自三角形非退化，比例合法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.indicator-linearity",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-053",
+        "HS-MATH-098"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "样本空间有限且概率归一；n 是非负整数；每个指示变量取值 0 或 1；全部事件在同一概率空间。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对任意事件 A，1_A 在 A 上取 1、A 外取 0，故 E[1_A]=1×P(A)+0×P(Aᶜ)=P(A)。",
+          "reason": "直接按有限概率分布的期望定义求值。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "发生事件的个数 N=Σ_{i=1}^n 1_{Aᵢ}，每个样本点上的等式逐点成立。",
+          "reason": "同一样本点可使多个事件同时发生，仍然准确按次数计数。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "由期望的有限线性性 E[N]=Σ E[1_{Aᵢ}]=Σ P(Aᵢ)，整个过程没有因式分解联合概率。",
+          "reason": "有限和与加权求和交换次序，不需要独立性。",
           "status": "NOT_FORMALLY_VERIFIED"
         }
       ],

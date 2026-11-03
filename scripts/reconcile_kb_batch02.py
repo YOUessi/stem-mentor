@@ -44,11 +44,12 @@ def build():
     existing = {}
     for path in sorted(ACTIVE.glob("*.json")):
         # This is a frozen Batch02->Batch06 reconciliation. New independent
-        # Batch07/Batch09/Batch10 lessons are not part of its source denominator.
+        # Batch07/Batch09/Batch10/Batch11 lessons are not part of its source denominator.
         if path.name.endswith(RECONCILED_SUFFIX) or path.name in {
             "rigorous_foundations_batch07.json",
             "differentiation_vector_count_probability_batch09.json",
             "algebra_geometry_probability_batch10.json",
+            "algebra_count_geometry_probability_batch11.json",
         }:
             continue
         for item in read_rows(path):

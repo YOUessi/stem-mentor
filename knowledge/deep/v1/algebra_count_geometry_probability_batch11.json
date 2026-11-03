@@ -1,0 +1,1227 @@
+[
+  {
+    "id": "math.hs.logarithm.quotient-law",
+    "curriculum_ids": [
+      "HS-MATH-022"
+    ],
+    "kind": "theorem",
+    "title": "对数商法则：两个真数必须分别为正",
+    "version": "1.0.0",
+    "notation": [
+      "log_a(x/y)=log_a(x)-log_a(y)",
+      "a>0",
+      "a≠1"
+    ],
+    "prerequisites": [
+      "对数是正底数指数函数的逆函数",
+      "实数对数乘法规则"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.logarithm.product-law",
+      "math.hs.logarithm.inverse"
+    ],
+    "definition": null,
+    "statement": "对 a>0 且 a≠1，以及 x>0、y>0，有 log_a(x/y)=log_a(x)-log_a(y)。等式两侧的实对数都有定义。",
+    "assumptions": [
+      "a、x、y 均为实数；a>0、a≠1，x>0、y>0；不能仅凭 x/y>0 断言右侧有意义。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "设 u=log_a x、v=log_a y，则 a^u=x、a^v=y，且 y>0。",
+        "reason": "指数与实对数互逆，正真数条件让每一项都有定义。"
+      },
+      {
+        "claim": "由实数指数运算律 a^(u-v)=a^u/a^v=x/y>0。",
+        "reason": "a^v=y 不为 0，除法合法且指数运算律保留等式。"
+      },
+      {
+        "claim": "对两边取底为 a 的对数，可得 log_a(x/y)=u-v=log_a x-log_a y。",
+        "reason": "底数 a 合法、取对数是指数函数在正实数域上的逆映射。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 x、y 都负，商可能为正，但两个独立的实对数无意义；若 y=0 则商无定义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要 x/y>0，log_a(x/y)=log_a x-log_a y 就可使用",
+        "example": "x=y=-1 时 log_2(x/y)=log_2 1=0，右侧 log_2(-1)-log_2(-1) 在实数中无定义。",
+        "explanation": "左右式定义域必须一致，绝不能在负真数上拆分实对数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 log_2 32-log_2 4。",
+        "steps": [
+          "检查底数 2 合法、两个真数均为正。",
+          "合并为 log_2(8)。"
+        ],
+        "answer": "3",
+        "check": "因为 2³=8，所以等式的计算结果为 3。"
+      },
+      {
+        "question": "解 log_3(x+2)-log_3(x)=1。",
+        "steps": [
+          "由定义域得 x>0。",
+          "合并为 log_3((x+2)/x)=1，解 x+2=3x。"
+        ],
+        "answer": "x=1",
+        "check": "将 x=1 代回：log_3 3-log_3 1=1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "合并对数后只检查商为正",
+        "why_wrong": "商为正不必然保证原来两个真数分别为正，易引入增根。",
+        "repair_question": "为什么 x=y=-1 时左式有意义而右式没有？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查两个真数分别大于 0。",
+      "再用合法除法把商转为指数差。",
+      "最后检查候选根是否属于原式定义域。"
+    ],
+    "transfer": {
+      "near": "计算 log_5 125-log_5 5。",
+      "far": "讨论 x=y=-1 时商法则前后两侧定义域有何不同。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.logarithm.change-base",
+    "curriculum_ids": [
+      "HS-MATH-022"
+    ],
+    "kind": "theorem",
+    "title": "换底公式及两个底数的合法性",
+    "version": "1.0.0",
+    "notation": [
+      "log_a x=ln x/ln a",
+      "a>0",
+      "a≠1"
+    ],
+    "prerequisites": [
+      "实数对数的定义",
+      "正底数指数函数单射"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.logarithm.inverse"
+    ],
+    "definition": null,
+    "statement": "若 a>0、a≠1、b>0、b≠1、x>0，则 log_a x=log_b x/log_b a；特别地可用 b=e 写成 ln x/ln a。",
+    "assumptions": [
+      "a、b、x 为正实数；两个底数均不等于 1。由 a≠1 可知 log_b a≠0，分母合法。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "令 t=log_a x，则 x=a^t；对这两个正数取合法底数 b 的对数。",
+        "reason": "指数函数与对数互逆，且 x>0 与 a>0。"
+      },
+      {
+        "claim": "得到 log_b x=t log_b a，此处使用已证明的实数对数幂法则。",
+        "reason": "对数幂法则在 a>0 及实数 t 时成立。"
+      },
+      {
+        "claim": "由于 a≠1，log_b a≠0，所以 t=log_b x/log_b a。",
+        "reason": "log_b a=0 当且仅当 a=1，故除法不引入非法步骤。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "a=1 时分母为零；x≤0 时实对数不存在；b=1 时不能用作换底底数。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何底数都可以用作换底底数",
+        "example": "把 b=1 代入时 log_1 x 无定义，无法构成换底公式。",
+        "explanation": "换底底数与原底数都必须大于零且不等于 1。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "用以 2 为底的对数计算 log_4 8。",
+        "steps": [
+          "按换底公式写 log_2 8/log_2 4。",
+          "计算 3/2。"
+        ],
+        "answer": "3/2",
+        "check": "4^(3/2)=8。"
+      },
+      {
+        "question": "计算 log_9 3。",
+        "steps": [
+          "选 b=3，得到 log_3 3/log_3 9。",
+          "计算 1/2。"
+        ],
+        "answer": "1/2",
+        "check": "9^(1/2)=3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "换底时把分子分母写反",
+        "why_wrong": "要用原底数 a 的对数作分母，才能对应 a^t=x。",
+        "repair_question": "如果 log_4 8=3/2，那么倒写成 2/3 会使哪一步验算失败？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查原底数、换底底数与真数。",
+      "令 t=log_a x，对 x=a^t 两边取 log_b。",
+      "检查 log_b a 不为 0 后再除。"
+    ],
+    "transfer": {
+      "near": "计算 log_8 4，并用换底法和直接乘方两种方式验算结果。",
+      "far": "检查 a=1 与 b=1 两种退化情况为什么不成立。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.quadratic.discriminant-roots",
+    "curriculum_ids": [
+      "HS-MATH-007",
+      "HS-MATH-019"
+    ],
+    "kind": "theorem",
+    "title": "实一元二次方程的判别式与求根公式",
+    "version": "1.0.0",
+    "notation": [
+      "ax²+bx+c=0",
+      "Δ=b²-4ac",
+      "x=(-b±√Δ)/(2a)"
+    ],
+    "prerequisites": [
+      "实数完全平方公式",
+      "非负实数平方根"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.quadratic-vertex"
+    ],
+    "definition": null,
+    "statement": "对实系数 a≠0 的方程 ax²+bx+c=0，设 Δ=b²-4ac；若 Δ>0 有两个不同实根，Δ=0 有一个二重实根，Δ<0 无实根；当 Δ≥0 时根为 (-b±√Δ)/(2a)。",
+    "assumptions": [
+      "a,b,c 均为实数，且 a≠0；求实根时必须满足 Δ≥0。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "两侧乘以 4a（a≠0），将等式整理为 (2ax+b)²=b²-4ac=Δ。",
+        "reason": "由 4a(ax²+bx+c)=0 及配平方公式，反向变形也成立。"
+      },
+      {
+        "claim": "左边是实数平方，若 Δ<0，则无实数 x 能满足；若 Δ=0，则 2ax+b=0。",
+        "reason": "平方的非负性与零平方只能对应零。"
+      },
+      {
+        "claim": "若 Δ>0，则 2ax+b=±√Δ，两值不同；因 2a≠0，得 x=(-b±√Δ)/(2a)。",
+        "reason": "求平方根的两支，并保证除法合法。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "a=0 时方程降为一次或常数条件，二次求根公式不能用；Δ<0 时不能写实根。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何 ax²+bx+c=0 都能直接套二次求根公式",
+        "example": "a=0、b=2、c=4 时原式为 2x+4=0，公式分母 2a=0 无定义。",
+        "explanation": "应先判断二次项系数是否非零，再讨论判别式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 x²-5x+6=0 的实根。",
+        "steps": [
+          "a=1,b=-5,c=6，Δ=25-24=1。",
+          "代入求根式得 (5±1)/2。"
+        ],
+        "answer": "x=2 或 x=3",
+        "check": "代回 x²-5x+6=(x-2)(x-3)。"
+      },
+      {
+        "question": "求 x²+2x+5=0 的实根个数。",
+        "steps": [
+          "a=1,b=2,c=5，Δ=4-20=-16。",
+          "Δ<0，因此不存在实根。"
+        ],
+        "answer": "0 个实根",
+        "check": "配方 (x+1)²+4=0，无实数解。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只看到平方根符号就机械计算",
+        "why_wrong": "需要先证明 Δ≥0，且分母 2a 不为 0。",
+        "repair_question": "Δ=-16 时实平方根存在吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先写 a、b、c 并检查 a≠0。",
+      "计算 Δ 并按正零负分类。",
+      "有实根时再取 ±√Δ 并代回验算。"
+    ],
+    "transfer": {
+      "near": "求 2x²+3x+1=0。",
+      "far": "当 a 从非零变为零，讨论方程根数为何会发生结构变化。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.quadratic.vieta-real",
+    "curriculum_ids": [
+      "HS-MATH-007",
+      "HS-MATH-019"
+    ],
+    "kind": "theorem",
+    "title": "实根存在时一元二次根与系数关系",
+    "version": "1.0.0",
+    "notation": [
+      "x₁+x₂=-b/a",
+      "x₁x₂=c/a",
+      "a≠0"
+    ],
+    "prerequisites": [
+      "实一元二次方程求根公式",
+      "多项式乘法分解"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.quadratic.discriminant-roots"
+    ],
+    "definition": null,
+    "statement": "若实系数 a≠0 的方程 ax²+bx+c=0 有两个实根 x₁、x₂（允许二重根计两次），则 x₁+x₂=-b/a，x₁x₂=c/a；在实根讨论中必须先有 Δ≥0。",
+    "assumptions": [
+      "a,b,c 是实数，a≠0；x₁、x₂ 为原方程按重数计的两个实根，因而 Δ≥0。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由根的定义可按实数域分解 ax²+bx+c=a(x-x₁)(x-x₂)。",
+        "reason": "二次多项式恰有两根（含重根）的因式分解事实。"
+      },
+      {
+        "claim": "展开得 a[x²-(x₁+x₂)x+x₁x₂]。",
+        "reason": "实数分配律与合并同类项，保留首项系数 a。"
+      },
+      {
+        "claim": "比较 x 项与常数项系数：-a(x₁+x₂)=b、ax₁x₂=c；因 a≠0 得结论。",
+        "reason": "两个多项式在全实数上恒等时同次项系数相等。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "Δ<0 时没有两个实根，不能声称其实数之和；a=0 时退化为线性方程。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "不管判别式正负，方程都有两个实根可直接用韦达",
+        "example": "x²+1=0 的 Δ=-4，两个实根并不存在，不能在实数范围称根的和为零。",
+        "explanation": "复数根另有对应推广，但需要先明确数域；本单元只研究实数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "若 x²-5x+6=0 有实根，求根和与积。",
+        "steps": [
+          "已知实根 2、3，或先验算 Δ=1≥0。",
+          "套用 -b/a 和 c/a。"
+        ],
+        "answer": "和 5，积 6",
+        "check": "2+3=5，2×3=6。"
+      },
+      {
+        "question": "求 2x²+4x+2=0 的实根和与积。",
+        "steps": [
+          "Δ=16-16=0，存在二重根。",
+          "和=-4/2=-2，积=2/2=1。"
+        ],
+        "answer": "和 -2，积 1",
+        "check": "方程等于 2(x+1)²=0，重根 -1 两次。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "使用韦达公式前漏查数域和二次条件",
+        "why_wrong": "对实根不存在的方程直接谈实根和会混淆数学对象。",
+        "repair_question": "x²+1=0 的两个实根分别是什么？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查 a≠0 和 Δ≥0。",
+      "把原式写成 a(x-x₁)(x-x₂)。",
+      "比较系数并将根按重数计算。"
+    ],
+    "transfer": {
+      "near": "求 x²-4x+4=0 的根和、积。",
+      "far": "比较在复数域与实数域讨论 Δ<0 的含义。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.sequence.telescoping",
+    "curriculum_ids": [
+      "HS-MATH-062",
+      "HS-MATH-065"
+    ],
+    "kind": "theorem",
+    "title": "有限差分求和的望远镜消去法",
+    "version": "1.0.0",
+    "notation": [
+      "Σₖ(bₖ₊₁-bₖ)=bₙ₊₁-b₁",
+      "n≥1"
+    ],
+    "prerequisites": [
+      "有限求和定义",
+      "序列下标操作"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.sequence.arithmetic-sum"
+    ],
+    "definition": null,
+    "statement": "对任何含 n+1 个实数项 b₁,...,bₙ₊₁ 的序列及正整数 n，有 Σ_{k=1}^n(b_{k+1}-b_k)=b_{n+1}-b_1；不要求该序列为等差数列。",
+    "assumptions": [
+      "n 是正整数；b_1 至 b_(n+1) 均为有限实数；两组下标必须一一对应。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "写出左侧为 (b₂-b₁)+(b₃-b₂)+⋯+(bₙ₊₁-bₙ)。",
+        "reason": "按有限 Σ 的定义明确首项和末项。"
+      },
+      {
+        "claim": "每个中间 b₂,...,bₙ 分别出现一次正号和一次负号，逐项相消。",
+        "reason": "有限个实数的交换律结合律；不涉及无穷项重排。"
+      },
+      {
+        "claim": "只剩 -b₁ 与 +bₙ₊₁，所以总和=bₙ₊₁-b₁。",
+        "reason": "首尾下标检查；n=1 时直接变为 b₂-b₁。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "无穷级数不能凭此有限式直接断言收敛；使用 b_k-b_(k+1) 时符号反转。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何无穷差分级数都因望远镜相消而收敛",
+        "example": "取 b_k=k，则前 n 项差分和 b_(n+1)-b₁=n，n→∞ 时发散。",
+        "explanation": "有限恒等式与极限收敛是两件事，不能忽略边界项。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 Σ_{k=1}^4[(k+1)²-k²]。",
+        "steps": [
+          "设 b_k=k²，首尾为 b₅-b₁。",
+          "计算 25-1。"
+        ],
+        "answer": "24",
+        "check": "直接求和 3+5+7+9=24。"
+      },
+      {
+        "question": "求 Σ_{k=1}^5[1/k-1/(k+1)]。",
+        "steps": [
+          "令 b_k=1/k，差为 b_k-b_(k+1)。",
+          "结果为 b₁-b₆。"
+        ],
+        "answer": "5/6",
+        "check": "1-1/6=5/6，注意逆向差分的符号。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不检查差分的顺序就机械写 b_(n+1)-b₁",
+        "why_wrong": "若差分是 b_k-b_(k+1)，答案的首尾顺序应当相反。",
+        "repair_question": "n=1 时公式究竟应保留哪个符号？"
+      }
+    ],
+    "hint_ladder": [
+      "先判断每项是后一项减前一项，还是相反。",
+      "展开前 3 项与末 2 项，标记被消去部分。",
+      "只保留两端并检查 n=1 边界。"
+    ],
+    "transfer": {
+      "near": "令 b_k=k³，计算前 3 项差分和。",
+      "far": "构造 b_k=k 使有限和恒成立但无穷极限发散。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.sequence.odd-square-sum",
+    "curriculum_ids": [
+      "HS-MATH-063",
+      "HS-MATH-065"
+    ],
+    "kind": "theorem",
+    "title": "前 n 个正奇数之和为 n 的平方",
+    "version": "1.0.0",
+    "notation": [
+      "1+3+⋯+(2n-1)=n²",
+      "n∈N⁺"
+    ],
+    "prerequisites": [
+      "等差数列的通项",
+      "数学归纳法"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.proof.induction",
+      "math.hs.sequence.arithmetic-sum"
+    ],
+    "definition": null,
+    "statement": "对于正整数 n，有 1+3+5+⋯+(2n-1)=n²；最后一项为第 n 个正奇数，不能误写为 2n+1。",
+    "assumptions": [
+      "n≥1 且是整数；恰好有 n 项，各项从 1 开始公差为 2。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "n=1 时左边为 1，右边 1²=1，初始情形成立。",
+        "reason": "数学归纳法基础命题检查。"
+      },
+      {
+        "claim": "假定前 n 个正奇数之和为 n²；第 n+1 个正奇数为 2(n+1)-1=2n+1。",
+        "reason": "使用通项公式确定确切新增项。"
+      },
+      {
+        "claim": "新和=n²+(2n+1)=(n+1)²，归纳步骤成立。",
+        "reason": "完全平方恒等式，完成 n→n+1。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若求前 n 个偶数之和或从 3 开始的 n 个奇数，不能套用同一 n²。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意 n 个连续奇数相加都等于 n²",
+        "example": "连续奇数 3、5 共 2 项，和 8 不等于 2²=4。",
+        "explanation": "首项必须为 1，并且项数严格等于 n。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 1+3+5+7+9。",
+        "steps": [
+          "一共五项正奇数。",
+          "直接使用 n²。"
+        ],
+        "answer": "25",
+        "check": "1+3+5+7+9=25。"
+      },
+      {
+        "question": "求 1+3+⋯+19。",
+        "steps": [
+          "解 2n-1=19 得 n=10。",
+          "代入 n²。"
+        ],
+        "answer": "100",
+        "check": "十项正奇数的和为 100。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把末项 19 误当作项数 19",
+        "why_wrong": "应先从末项 2n-1 解出实际项数 n。",
+        "repair_question": "为什么末项 19 只对应 10 项？"
+      }
+    ],
+    "hint_ladder": [
+      "列出 n、末项 2n-1 的关系。",
+      "尝试把第 n+1 项加到 n² 上。",
+      "检查 n=1 与 n=2 的结果。"
+    ],
+    "transfer": {
+      "near": "计算 1+3+⋯+31。",
+      "far": "比较从 3 开始的 n 个奇数与 n² 的差值规律。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.counting.ordered-arrangements",
+    "curriculum_ids": [
+      "HS-MATH-093",
+      "HS-MATH-094"
+    ],
+    "kind": "theorem",
+    "title": "有限对象不重复有序排列的乘法计数",
+    "version": "1.0.0",
+    "notation": [
+      "A(n,k)=n!/(n-k)!",
+      "0≤k≤n"
+    ],
+    "prerequisites": [
+      "分类乘法原理",
+      "阶乘的定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.product-rule"
+    ],
+    "definition": null,
+    "statement": "给定 n 个两两不同的对象，取出 k 个并按顺序排列，0≤k≤n 且 n,k 为整数，则合法方案数 A(n,k)=n(n-1)⋯(n-k+1)=n!/(n-k)!；空排列 k=0 计 1。",
+    "assumptions": [
+      "n 是非负整数，0≤k≤n，原始对象两两不同，每个对象最多选一次，顺序视为不同方案。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "排第 1 个位置有 n 种选法，第 2 个位置有 n-1 种，直到第 k 个位置有 n-k+1 种。",
+        "reason": "没有放回且对象不同，逐个位置的可用数正确递减。"
+      },
+      {
+        "claim": "由分类乘法原理相乘，得 n(n-1)…(n-k+1)。",
+        "reason": "不同位置选择形成完整且不重复的有序结果。"
+      },
+      {
+        "claim": "若 k≥1，乘积是 n!/(n-k)!；若 k=0，空排列唯一，与约定 n!/n!=1 一致。",
+        "reason": "阶乘乘积约消及 0!=1，且 n-k≥0 确保阶乘有定义。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "允许重复选取则改成 n^k；若只计无序集合则应除 k!；k>n 时无不重复有序安排。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "取 k 个对象排列的方案数总是 n^k",
+        "example": "n=3,k=2 时不重复有序排列只有 3×2=6 种，而 3²=9 计入了同一对象被使用两次。",
+        "explanation": "是否允许重复是套用乘法计数前必须明确的条件。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "5 名不同学生中选 2 人依次担任班长、副班长，有多少种？",
+        "steps": [
+          "职务有序、不能兼任。",
+          "方案数 A(5,2)=5×4。"
+        ],
+        "answer": "20",
+        "check": "任选第一职务 5 种，余下第二职务 4 种。"
+      },
+      {
+        "question": "4 种不同徽章选 3 枚排成一排，不重复，多少种？",
+        "steps": [
+          "每枚只选一次，顺序不同算不同。",
+          "计算 4×3×2。"
+        ],
+        "answer": "24",
+        "check": "等于 4!/(4-3)!=24。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "无序挑选题错用排列数",
+        "why_wrong": "必须区别有序岗位与无序小组，排列包含不同排序的额外计数。",
+        "repair_question": "选两名组员与安排班长、副班长有什么区别？"
+      }
+    ],
+    "hint_ladder": [
+      "判断对象是否不同、是否允许重复。",
+      "判断交换位置是否会形成新方案。",
+      "按位置逐项相乘，并检查 k=0、k=n。"
+    ],
+    "transfer": {
+      "near": "计算 A(6,0) 与 A(6,6)。",
+      "far": "若允许职位由同一人兼任，解释为何公式变为 n^k。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.counting.combination-symmetry",
+    "curriculum_ids": [
+      "HS-MATH-094",
+      "HS-MATH-095"
+    ],
+    "kind": "theorem",
+    "title": "组合数的补集对称性",
+    "version": "1.0.0",
+    "notation": [
+      "C(n,k)=C(n,n-k)",
+      "0≤k≤n"
+    ],
+    "prerequisites": [
+      "有限集合的补集",
+      "无序选取方案"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.permutation-combination",
+      "math.hs.counting.pascal-identity"
+    ],
+    "definition": null,
+    "statement": "对于非负整数 n 与 0≤k≤n，在 n 个不同对象中无序选取 k 个的方案数等于无序选取 n-k 个的方案数，因而 C(n,k)=C(n,n-k)。",
+    "assumptions": [
+      "n,k 均为整数、n≥0、0≤k≤n；组合计数对象是 n 元集合的不同子集。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "取含 n 个不同对象的全集 Ω，并选出任意 k 元子集 S。",
+        "reason": "将无序选取表示为满足 |S|=k 的集合，消除排列重复。"
+      },
+      {
+        "claim": "映射 S↦Ω\\S 后得到含 n-k 个对象的补集。",
+        "reason": "有限集合的元素个数满足 |Ω\\S|=n-k。"
+      },
+      {
+        "claim": "再取补集能唯一恢复原 S，因此映射是双射，两类子集数相同。",
+        "reason": "补集运算在同一全集下自反；单射、满射同时成立。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 k>n，则选 k 个对象不合法；若重复选取或对象有区分权重，不能直接使用子集补集论证。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "C(n,k) 与 C(n,n-k) 对称意味着 k 可以是任意整数",
+        "example": "n=3,k=4 时无法选出 4 元子集，C(3,4) 不能在标准定义域内按相同阶乘表达式计算。",
+        "explanation": "必须先限定 0≤k≤n；许多软件将越界组合数设零是扩展约定。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 C(7,5) 并用补集法解释。",
+        "steps": [
+          "选 5 个与选出被舍弃的 2 个一一对应。",
+          "计算 C(7,2)=7×6/2。"
+        ],
+        "answer": "21",
+        "check": "C(7,5)=7!/(5!2!)=21。"
+      },
+      {
+        "question": "计算 C(6,0) 与 C(6,6)。",
+        "steps": [
+          "选 0 个对应唯一空集，选 6 个对应全集。",
+          "两者都恰好一种。"
+        ],
+        "answer": "都为 1",
+        "check": "C(6,0)=C(6,6)=1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把顺序不同的同一组对象当成两个子集",
+        "why_wrong": "组合是无序集合，补集是集合间的双射而不是排列。",
+        "repair_question": "为什么 {甲,乙} 与 {乙,甲} 在组合计数中不是两项？"
+      }
+    ],
+    "hint_ladder": [
+      "先考虑被选集合 S，再考虑被舍弃集合。",
+      "写出补集的元素数 n-k。",
+      "两次取补集能恢复原集合，说明双射。"
+    ],
+    "transfer": {
+      "near": "计算 C(10,8)，并解释为何无需计算 10!。",
+      "far": "尝试说明当从对象集合换成允许重复的多重集合时这个证明在哪一步失效。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.vector.pythagorean-dot",
+    "curriculum_ids": [
+      "HS-MATH-034",
+      "HS-MATH-035",
+      "HS-MATH-073"
+    ],
+    "kind": "theorem",
+    "title": "向量平方范数的勾股关系与正交等价条件",
+    "version": "1.0.0",
+    "notation": [
+      "‖u+v‖²=‖u‖²+‖v‖²",
+      "u·v=0"
+    ],
+    "prerequisites": [
+      "欧氏向量数量积",
+      "内积双线性与对称性"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.vector.dot-product",
+      "math.hs.vector.parallelogram"
+    ],
+    "definition": null,
+    "statement": "在同一实欧氏内积空间中，对任意向量 u,v，有 ‖u+v‖²=‖u‖²+‖v‖² 当且仅当 u·v=0；其中零向量也满足数量积为零，但它没有通常意义下的夹角。",
+    "assumptions": [
+      "向量共处于同一实欧氏内积空间；范数由数量积定义；不预设向量必须非零。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "先展开 ‖u+v‖²=(u+v)·(u+v)=‖u‖²+2(u·v)+‖v‖²。",
+        "reason": "内积对称及双线性；这里没有删掉交叉项。"
+      },
+      {
+        "claim": "若 u·v=0，上式的交叉项为 0，直接得到平方范数可加。",
+        "reason": "相等方向的充分条件成立，包括某个向量为零的情况。"
+      },
+      {
+        "claim": "反之若平方范数可加，从展开式两侧同时减去 ‖u‖²+‖v‖²，可得 2u·v=0，故 u·v=0。",
+        "reason": "实数等式移项与 2 非零，证明必要性而非只证明单向。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "只有 u,v 都非零才可由 u·v=0 说两向量夹角为 90°；欧氏内积范数外的任意范数不能直接套用。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "平方范数可加必然说明两个向量都有 90° 夹角",
+        "example": "u=(0,0)、v=(1,2) 时平方范数仍可加，但零向量没有定义良好的方向或夹角。",
+        "explanation": "代数正交 u·v=0 与非零向量的几何垂直表述条件不同。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "u=(3,0),v=(0,4)，求 ‖u+v‖²。",
+        "steps": [
+          "u·v=0，因此可用平方范数可加。",
+          "算 ‖u‖²=9、‖v‖²=16。"
+        ],
+        "answer": "25",
+        "check": "u+v=(3,4)，直接平方和 9+16=25。"
+      },
+      {
+        "question": "u=(1,1),v=(1,-1)，求 ‖u+v‖²。",
+        "steps": [
+          "点积为 1-1=0。",
+          "各向量模平方都是 2。"
+        ],
+        "answer": "4",
+        "check": "u+v=(2,0)，模平方为 4。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "以为任何两向量都有 ‖u+v‖²=‖u‖²+‖v‖²",
+        "why_wrong": "一般情况还有 2u·v 交叉项，应验证其为零。",
+        "repair_question": "u=v=(1,0) 时左侧与右侧是多少？"
+      }
+    ],
+    "hint_ladder": [
+      "将模的平方改写为内积。",
+      "展开保留交叉项 2u·v。",
+      "分别证明 u·v=0 的充分性与必要性。"
+    ],
+    "transfer": {
+      "near": "核对 u=(0,0) 的边界情况。",
+      "far": "在一般 ℓ¹ 范数下寻找平方可加与向量内积不存在的反例。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.union-bound-two",
+    "curriculum_ids": [
+      "HS-MATH-053"
+    ],
+    "kind": "theorem",
+    "title": "两个事件的并集概率上界及等号条件",
+    "version": "1.0.0",
+    "notation": [
+      "P(A∪B)≤P(A)+P(B)",
+      "P(A∩B)=0"
+    ],
+    "prerequisites": [
+      "概率非负性",
+      "事件加法公式"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.event-addition"
+    ],
+    "definition": null,
+    "statement": "同一概率空间内任意事件 A,B 满足 P(A∪B)≤P(A)+P(B)，且等号成立当且仅当 P(A∩B)=0；这里的概率为零不等价于集合交集必为空。",
+    "assumptions": [
+      "A,B 是同一概率空间上的可测事件，P 为非负概率测度。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "按加法公式 P(A∪B)=P(A)+P(B)-P(A∩B)。",
+        "reason": "将重计的交集减一次，公式对任意两个事件都成立。"
+      },
+      {
+        "claim": "由概率非负性 P(A∩B)≥0，可得 P(A∪B)≤P(A)+P(B)。",
+        "reason": "从等式减非负数得到上界。"
+      },
+      {
+        "claim": "两边相等当且仅当被减去的 P(A∩B)=0。",
+        "reason": "通过充要条件的等价移项，不能把零概率直接替换为交集空。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "连续概率空间中非空零概率交集也可能出现；不要错误地将等号条件写成 A∩B=∅ 的必要条件。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "并集概率上界取等号一定要求 A 与 B 互斥",
+        "example": "在 [0,1] 的均匀分布上，A={1/2},B=[0,1/4]∪{1/2}，交集非空但 P(A∩B)=0，仍取等号。",
+        "explanation": "零测集可以非空，需区分 '互斥' 和 '几乎不相交'。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "若 P(A)=0.4、P(B)=0.5、P(A∩B)=0.1，求 P(A∪B)。",
+        "steps": [
+          "先用加法公式扣除重复交集。",
+          "计算 0.4+0.5-0.1。"
+        ],
+        "answer": "0.8",
+        "check": "0.8≤0.9，上界成立但不取等号。"
+      },
+      {
+        "question": "若 A,B 在四个等概率结果中分别为 {1} 和 {2}，求并概率。",
+        "steps": [
+          "两个事件没有交集。",
+          "P(A∪B)=1/4+1/4。"
+        ],
+        "answer": "1/2",
+        "check": "并集包含两种结果，共占 2/4。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把并事件直接做概率加法",
+        "why_wrong": "交集通常被重复计算，应减去交集概率。",
+        "repair_question": "A 与 B 的交集概率为 0.1 时，和与并的概率差多少？"
+      }
+    ],
+    "hint_ladder": [
+      "先写出并集的精确加法公式。",
+      "利用交集概率非负得上界。",
+      "检查等号是概率为零还是集合为空。"
+    ],
+    "transfer": {
+      "near": "P(A)=0.3、P(B)=0.8 时并集概率最多是多少？",
+      "far": "构造连续概率空间上 A∩B 非空但 P(A∩B)=0 的例子。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.centroid-median",
+    "curriculum_ids": [
+      "HS-MATH-039",
+      "HS-MATH-032",
+      "HS-MATH-033"
+    ],
+    "kind": "theorem",
+    "title": "三角形重心的向量表达与中线二比一",
+    "version": "1.0.0",
+    "notation": [
+      "G=(A+B+C)/3",
+      "AG:GM=2:1"
+    ],
+    "prerequisites": [
+      "三角形中线的定义",
+      "平面向量线性运算"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.vector.linear-operations",
+      "math.hs.vector.representation"
+    ],
+    "definition": null,
+    "statement": "在非退化欧氏三角形 ABC 中，若 M 为 BC 的中点，三条中线交于 G，则向量 g=(a+b+c)/3，G 位于 AM 内部，且 AG:GM=2:1；三中线共点可由同一坐标式推出。",
+    "assumptions": [
+      "A、B、C 是三个位于同一实仿射平面且不共线的点；M=(B+C)/2；向量 a,b,c 取自同一原点。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "BC 的中点坐标向量 m=(b+c)/2，沿中线 AM 作点 g=a+(2/3)(m-a)。",
+        "reason": "线段内分参数 2/3，确保 G 在 AM 内部。"
+      },
+      {
+        "claim": "化简 g=a+(2/3)((b+c)/2-a)=(a+b+c)/3。",
+        "reason": "只使用线性运算和分配律，没有几何图像比例猜测。"
+      },
+      {
+        "claim": "对从 B 指向 AC 中点的中线，以及从 C 指向 AB 中点的中线，代入同一 g 均得到参数 2/3。",
+        "reason": "三者相同表达式，故三条中线通过同一 G，存在性及共点性同时成立。"
+      },
+      {
+        "claim": "于是 AG=(2/3)AM、GM=(1/3)AM，且 AM>0，故 AG:GM=2:1。",
+        "reason": "A 与 M 不重合来自三角形非退化，比例合法。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 A、B、C 共线，所谓三角形退化，尽管代数平均仍有定义，但传统重心几何结论的表述需另行约定。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "重心到顶点的距离等于到对边中点的距离",
+        "example": "取 A=(0,0), B=(3,0), C=(0,3)，M=(3/2,3/2)，G=(1,1)，AG:GM=2:1 不是 1:1。",
+        "explanation": "中线三等分中，靠顶点的部分是两份，不是一份。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "A=(0,0),B=(6,0),C=(0,6)，求重心 G。",
+        "steps": [
+          "三个顶点向量相加除以 3。",
+          "坐标分别为 (0+6+0)/3 与 (0+0+6)/3。"
+        ],
+        "answer": "G=(2,2)",
+        "check": "BC 中点 (3,3)，AG/AM=2/3。"
+      },
+      {
+        "question": "A=(1,1),B=(4,1),C=(1,4)，求重心。",
+        "steps": [
+          "将对应三个 x 坐标相加除以 3；y 坐标同理。",
+          "得到 (2,2)。"
+        ],
+        "answer": "G=(2,2)",
+        "check": "BC 中点 (5/2,5/2)，从 A 到 G 的位移是中线的 2/3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "将三角形重心当作三边垂直平分线交点",
+        "why_wrong": "重心是中线交点，外心才是垂直平分线交点，一般三角形两者不同。",
+        "repair_question": "在非等边三角形中，中点 M 与重心 G 的位置一样吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先求一条边的中点向量。",
+      "沿对应中线取顶点出发的 2/3 位置。",
+      "用对称式确认三条中线共点。"
+    ],
+    "transfer": {
+      "near": "A=(0,0),B=(3,0),C=(0,3)，求 G。",
+      "far": "讨论退化共线三点为何不能直接套用非退化三角形的几何名称。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.indicator-linearity",
+    "curriculum_ids": [
+      "HS-MATH-053",
+      "HS-MATH-098"
+    ],
+    "kind": "theorem",
+    "title": "有限事件计数的期望线性与独立性无关",
+    "version": "1.0.0",
+    "notation": [
+      "N=Σᵢ 1_{Aᵢ}",
+      "E[N]=ΣᵢP(Aᵢ)"
+    ],
+    "prerequisites": [
+      "事件的指示函数",
+      "有限离散随机变量的期望定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.expectation-linearity",
+      "math.hs.probability.bernoulli-variance"
+    ],
+    "definition": null,
+    "statement": "在同一有限概率空间上，任意有限个事件 A₁,...,Aₙ 的发生个数 N=Σᵢ 1_{Aᵢ}，其期望满足 E[N]=ΣᵢP(Aᵢ)，无需事件之间相互独立。",
+    "assumptions": [
+      "样本空间有限且概率归一；n 是非负整数；每个指示变量取值 0 或 1；全部事件在同一概率空间。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对任意事件 A，1_A 在 A 上取 1、A 外取 0，故 E[1_A]=1×P(A)+0×P(Aᶜ)=P(A)。",
+        "reason": "直接按有限概率分布的期望定义求值。"
+      },
+      {
+        "claim": "发生事件的个数 N=Σ_{i=1}^n 1_{Aᵢ}，每个样本点上的等式逐点成立。",
+        "reason": "同一样本点可使多个事件同时发生，仍然准确按次数计数。"
+      },
+      {
+        "claim": "由期望的有限线性性 E[N]=Σ E[1_{Aᵢ}]=Σ P(Aᵢ)，整个过程没有因式分解联合概率。",
+        "reason": "有限和与加权求和交换次序，不需要独立性。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "N 计的是发生事件的数量而不是并集是否发生；即使事件高度相关，此期望等式仍成立；无限序列需要额外论证。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "当事件不独立时，事件发生个数的期望不能相加",
+        "example": "令 A₁=A₂ 为公平硬币正面事件，则 N=2×1_A，E[N]=1，而 P(A₁)+P(A₂)=1，仍相等。",
+        "explanation": "期望线性性不需要独立性，独立性影响的是高阶联合统计。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "独立掷硬币两次，A₁ 第一次为正面、A₂ 第二次为正面，期望正面次数。",
+        "steps": [
+          "分别计算 P(A₁)=P(A₂)=1/2。",
+          "期望为 1/2+1/2。"
+        ],
+        "answer": "1",
+        "check": "四种等可能结果计数为 2、1、1、0，平均为 1。"
+      },
+      {
+        "question": "公平掷一次硬币，A₁=A₂=正面，重复计两个事件，求发生个数的期望。",
+        "steps": [
+          "两个事件完全相关，但指示和为 2×1_A。",
+          "期望为 1/2+1/2。"
+        ],
+        "answer": "1",
+        "check": "正面时数量 2、反面时 0，平均值为 1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把至少发生一个事件的概率当成事件次数的期望",
+        "why_wrong": "P(并集) 只数是否发生一次，N 会对同时发生的事件逐个计数。",
+        "repair_question": "若 A₁=A₂，N 能取到 2 吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先写出每个事件的 0/1 指示变量。",
+      "用逐点和表示事件发生的个数。",
+      "逐个取期望并利用线性性，不检查独立性也可成立。"
+    ],
+    "transfer": {
+      "near": "三个完全相同、概率 1/3 的事件计数期望是多少？",
+      "far": "比较 P(A∪B) 与 E[1_A+1_B]，证明两者一般不同。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]
