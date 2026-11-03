@@ -1,0 +1,72 @@
+{
+  "scope": "EDITORIAL_OBJECTIVE_LESSON_PROPOSALS_ONLY",
+  "inventory_status": "EDITORIAL_MATCH_QUEUE_NOT_APPROVED",
+  "total_source_objective_candidates": 132,
+  "total_deep_draft_lessons": 176,
+  "proposed_objectives": 86,
+  "proposed_edges": 104,
+  "by_track": {
+    "COMPULSORY": {
+      "objective_candidates": 38,
+      "has_unreviewed_suggestion": 35,
+      "without_suggestion": 3,
+      "suggestion_edges": 48,
+      "independently_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "objective_candidates": 32,
+      "has_unreviewed_suggestion": 31,
+      "without_suggestion": 1,
+      "suggestion_edges": 36,
+      "independently_approved": 0
+    },
+    "ELECTIVE_A": {
+      "objective_candidates": 18,
+      "has_unreviewed_suggestion": 4,
+      "without_suggestion": 14,
+      "suggestion_edges": 4,
+      "independently_approved": 0
+    },
+    "ELECTIVE_B": {
+      "objective_candidates": 15,
+      "has_unreviewed_suggestion": 3,
+      "without_suggestion": 12,
+      "suggestion_edges": 3,
+      "independently_approved": 0
+    },
+    "ELECTIVE_C": {
+      "objective_candidates": 11,
+      "has_unreviewed_suggestion": 3,
+      "without_suggestion": 8,
+      "suggestion_edges": 3,
+      "independently_approved": 0
+    },
+    "ELECTIVE_D": {
+      "objective_candidates": 10,
+      "has_unreviewed_suggestion": 5,
+      "without_suggestion": 5,
+      "suggestion_edges": 5,
+      "independently_approved": 0
+    },
+    "ELECTIVE_E": {
+      "objective_candidates": 8,
+      "has_unreviewed_suggestion": 5,
+      "without_suggestion": 3,
+      "suggestion_edges": 5,
+      "independently_approved": 0
+    }
+  },
+  "independent_teacher_approved_matches": 0,
+  "official_atomic_denominator": null,
+  "official_coverage_percent": null,
+  "student_published_knowledge_count": 0,
+  "unmapped_candidates": 46,
+  "full_standard_review_completed": false,
+  "all_math_proofs_certified": false,
+  "notes": [
+    "Proposed links mean possible topic overlap, not content completeness.",
+    "A candidate with no suggestion is an open review queue item, not evidence it is outside the standard.",
+    "No official curriculum denominator or official coverage percentage is available.",
+    "Human teacher approval and student-release count remain zero."
+  ]
+}

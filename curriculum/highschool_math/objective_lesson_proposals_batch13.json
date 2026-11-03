@@ -1,0 +1,2838 @@
+{
+  "schema_version": "1.0.0",
+  "inventory_status": "EDITORIAL_MATCH_QUEUE_NOT_APPROVED",
+  "base_source_digest_sha256": "08a13a2ace447b89f630a9135fd3b656b57b5b5db0f16480b814a79a04a699dc",
+  "official_atomic_denominator": null,
+  "official_coverage_percent": null,
+  "independent_teacher_approved_matches": 0,
+  "student_published_knowledge_count": 0,
+  "total_source_objective_candidates": 132,
+  "total_deep_draft_lessons": 176,
+  "proposed_objectives": 86,
+  "proposed_edges": 104,
+  "by_track": {
+    "COMPULSORY": {
+      "objective_candidates": 38,
+      "has_unreviewed_suggestion": 35,
+      "without_suggestion": 3,
+      "suggestion_edges": 48,
+      "independently_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "objective_candidates": 32,
+      "has_unreviewed_suggestion": 31,
+      "without_suggestion": 1,
+      "suggestion_edges": 36,
+      "independently_approved": 0
+    },
+    "ELECTIVE_A": {
+      "objective_candidates": 18,
+      "has_unreviewed_suggestion": 4,
+      "without_suggestion": 14,
+      "suggestion_edges": 4,
+      "independently_approved": 0
+    },
+    "ELECTIVE_B": {
+      "objective_candidates": 15,
+      "has_unreviewed_suggestion": 3,
+      "without_suggestion": 12,
+      "suggestion_edges": 3,
+      "independently_approved": 0
+    },
+    "ELECTIVE_C": {
+      "objective_candidates": 11,
+      "has_unreviewed_suggestion": 3,
+      "without_suggestion": 8,
+      "suggestion_edges": 3,
+      "independently_approved": 0
+    },
+    "ELECTIVE_D": {
+      "objective_candidates": 10,
+      "has_unreviewed_suggestion": 5,
+      "without_suggestion": 5,
+      "suggestion_edges": 5,
+      "independently_approved": 0
+    },
+    "ELECTIVE_E": {
+      "objective_candidates": 8,
+      "has_unreviewed_suggestion": 5,
+      "without_suggestion": 3,
+      "suggestion_edges": 5,
+      "independently_approved": 0
+    }
+  },
+  "items": [
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-001",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 15,
+      "objective_snapshot_sha256": "4ae4808ce0c4acad5c9e2b4c33d3ee7fb09dcf45361133a33cfc395230276c69",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.sets.representations",
+          "lesson_snapshot_sha256": "6d68617a2d9a1c09be7a002b44b67c05bca9f6db8faed9da4167bf9d4d052a3a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-002",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 15,
+      "objective_snapshot_sha256": "fe205a23ae2485b3dd4c0a94aa36dac5f0d921dbbfe517167cd07488484b9e33",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-003",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 15,
+      "objective_snapshot_sha256": "045d240e77b88c76cc94160b5b1f8eabf94d154e3655403b44a9ff03d60b71dd",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.sets.union-intersection",
+          "lesson_snapshot_sha256": "40029e02c2e169a5b22736ae4edcc88ee7b99a643f813e4e58d25a316ad3097b",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.sets.de-morgan-laws",
+          "lesson_snapshot_sha256": "ed8617ea7c79ebfde54a346ef72e255e235475a8fed62348ec8efd57c1469c2e",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-004",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 16,
+      "objective_snapshot_sha256": "3ec98b5ab060166d3ef40dc198f90453151218cbdd352781e7f4951299a28e90",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.logic.implication",
+          "lesson_snapshot_sha256": "89bd0c1b11c56aa9d3689b271c70ce8cb584e3e369eae108db236c8765e5e3e2",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-005",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 16,
+      "objective_snapshot_sha256": "790347b487c06774e71052b9be38ad540ce8fd830102b831ade7ba95bdc3d776",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.logic.quantifier",
+          "lesson_snapshot_sha256": "5a853a01d9212c0a7cdb86b298ad5998f34fa299cfc2a0169a49e1dd14416499",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-006",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 16,
+      "objective_snapshot_sha256": "ad50dcb9fe434ed772c2053c7ba6bbf252bcd9cd7ebfe44cfdcd239835aa44d1",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.inequality.transformation-obligations",
+          "lesson_snapshot_sha256": "67c5c2722ca7ea69b9c503a7ec240e61956d0e29cd71d78dbb6377e7cf22dbdd",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-007",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 16,
+      "objective_snapshot_sha256": "19b44e2add9ba8b0be8662a190158dd69ed42fa79c1f58e3bc3959e4f0fac0b5",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.inequality.amgm",
+          "lesson_snapshot_sha256": "644cfb08f2948905dccef5a89e93072c7815c5cc7d6100cbea21541e919ace6f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-008",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 17,
+      "objective_snapshot_sha256": "18f35d9e50d376c09487881a7f48c3cebf75e24b160126b1ffcf120e20c412e8",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.quadratic.sign",
+          "lesson_snapshot_sha256": "89fb1b0f4d613fc80aaa101362d54ea4e518f4281bb54dfcc538c59eaed3c87f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.quadratic.discriminant-roots",
+          "lesson_snapshot_sha256": "37b226a67839ede8449249908291c20d36e924aec11e64f2a1cd99be3e2ca900",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-009",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 19,
+      "objective_snapshot_sha256": "a908f8e344f88c2d2dd4d054e7ec425688d602fa747dffb1e7f9785779021503",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.function.domain",
+          "lesson_snapshot_sha256": "303025075227e926bae560cd7da421f03df095894f24768ed5433b584519d03b",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.function.range",
+          "lesson_snapshot_sha256": "8ae62e642dc9acf411fc09d71ea5e62a77603167736c5327b7507580dff3b6a0",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-010",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 19,
+      "objective_snapshot_sha256": "f200f81d4d8a8db03989596f54200156e50bc51cc949b8b80f4967d77c58fdc7",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-011",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 19,
+      "objective_snapshot_sha256": "6379fe1397c82d9bc35efe2ae273a8386cd9087549c747557f9fc26dd5c81789",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.function.piecewise",
+          "lesson_snapshot_sha256": "d2398e513adc2e80ef2de3fdf604960c48f90907d50e1cc44354008b1a5fe30c",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-012",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 19,
+      "objective_snapshot_sha256": "bd4e23fa01d87380d400fef942ef9f13cd086202bb13e4a8487efc49bef36bd5",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.function.monotonicity",
+          "lesson_snapshot_sha256": "dde57dec3ba686a8a40b9ec96e75260c980bdf1c28f0252e78e3908aa7b2681a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-013",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 19,
+      "objective_snapshot_sha256": "7077a2fdacd92dddb420a3d68111ca7de451210acb89f3282d7401464ce4812f",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.function.parity",
+          "lesson_snapshot_sha256": "557000e248fa20439817d7c1f36d08490dfc57156a96ae40a2971bcf659e8575",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-014",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 19,
+      "objective_snapshot_sha256": "ed3efccc2d53dd743db11a99749f0b21c765267e67e64277901691eb5e8ff0ca",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.function.periodicity",
+          "lesson_snapshot_sha256": "5c952a36524cdc8df12c5acc3120a2114af8c04b3e12ec174a4f0b0e3dcda25a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-015",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 20,
+      "objective_snapshot_sha256": "ba2bb5a3312c17651fe4fa311a98e80f7bdc6b2ca9a9b3be11ac941a2fd3822c",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.function.power-domain",
+          "lesson_snapshot_sha256": "7cfb114aea52126d22f6b49f076255314f1df494653fa96de6c2b9c7e247523e",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-016",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 20,
+      "objective_snapshot_sha256": "bda3f17ee1b7a4373caa9d71149cf62a0fc14ac15c0da0a3a5db26e497ae369c",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-017",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 20,
+      "objective_snapshot_sha256": "63112f909b4b28ccf77045b1b20072a35551755127e43d8f159bf5aab2c65e4f",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.exponent.monotone",
+          "lesson_snapshot_sha256": "f7935f4ec8c971de78930e61ffb0c3fa7434ea7591f836e0eaf1fd59a2c0fa6d",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-018",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 20,
+      "objective_snapshot_sha256": "10a251df50e1307459f259ee2d566463fcfc2759241a766ab41594bff2e4e8f2",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.logarithm.inverse",
+          "lesson_snapshot_sha256": "c4a9ae7b754bccf1404219f4f6bca1bc3a719fd2723869a2ba72c8bd5933317f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-019",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 20,
+      "objective_snapshot_sha256": "eb7a94d5c40ddda6e48a5ca5ea6101bd38cc0f979aae93b0b8ae1362a3255491",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.logarithm.change-base",
+          "lesson_snapshot_sha256": "1545f715bf4c3c1066bfbb07092b3fb4ca620887fc6bbf1ed56e31873c611dd1",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.logarithm.product-law",
+          "lesson_snapshot_sha256": "203610f42902049353ba29a700047a0b942905ad8ed0721dc1ad7c24492fb80a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-020",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 21,
+      "objective_snapshot_sha256": "54f0f16c3c1b8ea6fd0f2e8d189242f51fc59cb3b26bd5caf2a130455d537569",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.trig.radians-unit-circle",
+          "lesson_snapshot_sha256": "11ded6e6e3dd2db5988c5cafa5cf1d1499df2149772062e576096fcb3d5795a2",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-021",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 21,
+      "objective_snapshot_sha256": "c636e39ad87af7770dd10205c0355340437377e54f9001ee9b2e51c4861d57cb",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.trig.tangent-domain",
+          "lesson_snapshot_sha256": "df3d432ec7465107e1044eabb470ded87bb1e3828511babd25d726601ca92792",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.trig.radians-unit-circle",
+          "lesson_snapshot_sha256": "11ded6e6e3dd2db5988c5cafa5cf1d1499df2149772062e576096fcb3d5795a2",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-022",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 21,
+      "objective_snapshot_sha256": "db5f623e6b91f43e031e3b09ecf56d394e6f2748654a6d77794ffdbec7e94f02",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.trig.reduction",
+          "lesson_snapshot_sha256": "2e8e92221c4d35721d3671baca98c7485a2a56cdfac3cd39c24ff563291bbed3",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-023",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 22,
+      "objective_snapshot_sha256": "d1d91366df6090da06dbeee91fc4ffc2943748172ded51d30c72925dfcf63faa",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.trig.pythagorean",
+          "lesson_snapshot_sha256": "4f49daec101beeb16c6581dd98e00ba28f37b47e21d0bbc52548d0cf3d3d95bd",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.trig.sum-angle",
+          "lesson_snapshot_sha256": "0b1b9a48729095da458e9e755a32f2831bff7b38e7117d26d308fa6bd1d4623c",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.trig.double-angle-reduction",
+          "lesson_snapshot_sha256": "f5ced54200cd452c63de77f779635bdba95f5a405bccb66d4225bf9d4568a1cb",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-024",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 22,
+      "objective_snapshot_sha256": "c0d23f83151c7201a83b1c042a16cb3a194408d29a8504d2b2c5952e3a4e4e56",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.trig.phase-transform",
+          "lesson_snapshot_sha256": "bb11f217ce48a062e6e82ec5f3dcba61f0f93c0b8a6856a0b0cc9d4247966042",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-025",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 23,
+      "objective_snapshot_sha256": "98e471fbc0b6a5891c45f15f4745f911c06a773b87ca3179334720d448a395a3",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.function.bisection-root",
+          "lesson_snapshot_sha256": "4a8b14cd2c7a323c1b3cc24f684b3cbe40c5f12c2e53fa4e391ce06bbafbd4f9",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-026",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 25,
+      "objective_snapshot_sha256": "5c4dfbfbe1ff2b93b4e9f090e86dcae801f8e0fe6d79dbc34735b85e90c6280e",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.vector.free-coordinates",
+          "lesson_snapshot_sha256": "13a8f7275e3542fa5a2777cdddf05588fed3588dd034d0fe6e2fc2c4ae8edc10",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.vector.linear-operations",
+          "lesson_snapshot_sha256": "ce4d8f75e4ccb20a695f299c041b2ec84157a885466fbc70b5dbe90e253923e6",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-027",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 26,
+      "objective_snapshot_sha256": "88ceb843e0e7ea2b85c3c5ac31a514e109bce569813cf84e9efe702d72497e5b",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.vector.dot-product",
+          "lesson_snapshot_sha256": "17f5e0fb8408ebb0757d03874708b6b06249831a36708fe48070e7113cbe6fc2",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-028",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 26,
+      "objective_snapshot_sha256": "063146fe2e142d419794ee19847c56dc5833e98b87a37e3378e6a81a98ffb99f",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.triangle.sine-law",
+          "lesson_snapshot_sha256": "815723a8fb36afbe6f703417f69b3f7dbc795cff6dbcd70c2f09fe882d04e872",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.triangle.cosine-law",
+          "lesson_snapshot_sha256": "67d0a7306cc2c7f3b50ba25ef79f581d66cadb1e10dc727ee7085ffe6d32276f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.triangle.ssa-ambiguity",
+          "lesson_snapshot_sha256": "f4e6e8bb8de5f37f21cc971c06c9c7a26bf88b06d7969675a3f7633a97b080c7",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-029",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 27,
+      "objective_snapshot_sha256": "fc09eb8b2aaefcc08c319ee2ed3d8438c9de719b3752773ae1726f25c258a47a",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.complex.algebraic-basics",
+          "lesson_snapshot_sha256": "3c9bdbd6faee16974b90b8fbdf03c0ff89c4bc6dc827c3a3747a6f5a9900cf36",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.complex.operations",
+          "lesson_snapshot_sha256": "1dc47beae7cb53ebcc77e30ab39ce3c78115e0cfcb8da3ebdf424ba1e21c2b47",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-030",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 28,
+      "objective_snapshot_sha256": "d2ad569368727899f7df397d2b3d04e00ef4f32391c92888b873401f390b7be8",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.space.polyhedron-types",
+          "lesson_snapshot_sha256": "b9bc74e5a7a5782dc516513e5c8c99b923f9f614bfd155a5ee2a2182e90723b6",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.space.solids-revolution",
+          "lesson_snapshot_sha256": "f1203a699138b0234a2cbfb9250ebb8e7e4c675daa6fbe42893ba0db98361431",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-031",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 29,
+      "objective_snapshot_sha256": "a31e701aee8b9d77a3606ccd0ad69fbb857a9b20d683395fa5288d4ad008281f",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.space.parallel-perpendicular-criteria",
+          "lesson_snapshot_sha256": "0805a4a62d2ef25f92865bd0b9be04154b3a6c9ef1d9349bccc64bc78e65550b",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-032",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 31,
+      "objective_snapshot_sha256": "068a4743655f0290887789bbc2c78847018bf05a825e594f80ec81bf55fda76b",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.sample-space-event",
+          "lesson_snapshot_sha256": "f61b55a9b32aa0a35bd2a9e1bc00c15a13279ae5a265624d996cbb48a14f4228",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-033",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 31,
+      "objective_snapshot_sha256": "66d766eadc64d0cb5730f15ef346cfa4af686052be076594e3f64531e43168b5",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.laplace",
+          "lesson_snapshot_sha256": "28aa1116356acd836e9cd0d0c5fb8c9722efc0b3d6c5d4e8aa7272ae67ddfa2e",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-034",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 31,
+      "objective_snapshot_sha256": "7254f5a8a012130a43f0caa0b4be43915451334eaf8cf9e61c57c8ff74f2ce70",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.independence",
+          "lesson_snapshot_sha256": "1ffa6bde9868eb1093600f75ddd9c77df0fa717432655bd2b3d5bca5a6b16b7f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-035",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 32,
+      "objective_snapshot_sha256": "995b6fbcd0558142f0b94a554ed3c94404c1dd7adb9da73f75fbb20ff89f5ef2",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.statistics.sampling",
+          "lesson_snapshot_sha256": "bd7b36393a6c25501d81836c02252e88f02f9a6dff14dad9c9b6d696b846c49a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-036",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 32,
+      "objective_snapshot_sha256": "5e0dfdddaafac9e6543cd499300b8e2f28cc24352e9794cca85ee9dd933244ee",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.statistics.simple-random-sampling",
+          "lesson_snapshot_sha256": "39185c252a2f174dd36041e00c399804f86e0803a597580982a1d97b84e881a0",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-037",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 32,
+      "objective_snapshot_sha256": "607adefaa99e6933ff59f6273ffb37a9ca397a6d2bef08cc443c179dd58e0163",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.statistics.variance",
+          "lesson_snapshot_sha256": "90ecdb505ad2b64f3d0b3950694549f60aa422d4a9a2bf0850ffce17b55bbf62",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.statistics.percentiles",
+          "lesson_snapshot_sha256": "9d493e2cad3140c8f04e36c25c25754587c964a70f3684b9c8447b9de3590b13",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-COMPULSORY-038",
+      "candidate_track": "COMPULSORY",
+      "candidate_source_page": 33,
+      "objective_snapshot_sha256": "f8a8b84e5f0952d3e6efbbf5b54a948e75d2103ad7d639ba50c3576f3dd205b6",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.modeling.workflow",
+          "lesson_snapshot_sha256": "c8ed4ad1135cab8e27c7b7c219fdfa1833e62ab6d3124b635f9fa180c4b2fc29",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-001",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 38,
+      "objective_snapshot_sha256": "07e3784f9ebb9c6cfbd6cf32d4e89873adedbd71f7b3bf64587931e7c126b80f",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.sequence.recurrence",
+          "lesson_snapshot_sha256": "aa582773b3c2af66d319c4b4d0323e195ccefe44fe9cbd266fc9b12674a16886",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-002",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 38,
+      "objective_snapshot_sha256": "f90cc7d64817ecb580678e35368f8b03724e73120b3e9beaa3c70d5d57bc8c39",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.sequence.arithmetic-nth-term",
+          "lesson_snapshot_sha256": "b55cd4ed2b67f93019a42e609439fd9c88d8f3a2203be53fd268a0e9579662c8",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.sequence.arithmetic-sum",
+          "lesson_snapshot_sha256": "c80dcf2146b92eebf6ab9798666f498c249477b2dc40a422bd348dba46f90cc2",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-003",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 38,
+      "objective_snapshot_sha256": "4b8c826da96656bcdc21b6e0edfa2d09fceae9f8caabfffb1092b959a5a0631f",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.sequence.geometric-sum",
+          "lesson_snapshot_sha256": "5e07eb12cc2ed191317897c154ca13cf29dbc041d254ca5a42f51320ae1fc812",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-004",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 38,
+      "objective_snapshot_sha256": "4f061949805f6dd350a743764e0f33cf1dad4fa53d4910c00dd3f4e6fc82b37f",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.proof.induction",
+          "lesson_snapshot_sha256": "41311f33c4f525914eebf89845668f90f3f885f4ae380e556295f3c97eb73928",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-005",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 39,
+      "objective_snapshot_sha256": "cad66f4df9694b1669b6e66b59bac8ed16f3dbe6691b6e19166b8859821b475f",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.calculus.derivative-definition",
+          "lesson_snapshot_sha256": "412b4389047b24ba48ad4116646a306e6ef4cbdfa232be993e3be734fb08259d",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-006",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 39,
+      "objective_snapshot_sha256": "4cff53b489b3231d908ef9ba8c339ea12c7017c2cb8c2cd18da38542eeda0b88",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.calculus.power-rule",
+          "lesson_snapshot_sha256": "5d8e904dcd9b2e63effe8f0e6b764006413fa76e84f35f1f79e5e1619429b232",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.calculus.product-derivative",
+          "lesson_snapshot_sha256": "75406e4b93d60b12e6eb60dc58a443c8f1cebc9751b91e8634ca2024caf8d327",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-007",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 39,
+      "objective_snapshot_sha256": "98813d451759978df60a3afcb6a9cf7fc39cebe6d7389c45ac14f628619691a2",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.calculus.chain-rule",
+          "lesson_snapshot_sha256": "b6b26bf808c422302f798a4117ed5f952c10a220aae77da525ed122f148dfdb5",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-008",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 39,
+      "objective_snapshot_sha256": "43ee829476563fe5282166c5781bf96e4509d0a381d4f42de708df0a65e62e1e",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.calculus.derivative-monotonicity",
+          "lesson_snapshot_sha256": "9f5a341513759b25650ee95ee073d71819bbb4e906991e8ec9713429b1a31b2a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.calculus.extrema",
+          "lesson_snapshot_sha256": "46bb95356860961f96991d93d2f20e0ac99ba10e541121125358e8226697d41e",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-009",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 39,
+      "objective_snapshot_sha256": "d20bfdf6d6f61df1d4fe469489b02be23de7f25c774a37792155a0f71865e44a",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.calculus.extrema",
+          "lesson_snapshot_sha256": "46bb95356860961f96991d93d2f20e0ac99ba10e541121125358e8226697d41e",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-010",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 43,
+      "objective_snapshot_sha256": "a3b12fdec39b6bbd1e0e54e71a3eb517060cc21a30db7592a0880b8e97138a5b",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.line-slope",
+          "lesson_snapshot_sha256": "82530dd92999ec0b4afb3da68c98dd0ae28132c5f32f554ae48c0f3cc495f780",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-011",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 43,
+      "objective_snapshot_sha256": "5659b1a6c213240b181c3c4134afe641601f06b7245e2c6ecdd08bde6ecf88d4",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.line-general",
+          "lesson_snapshot_sha256": "dede4af03e5360e4a0ec5d7306f297388e70039bd00c5614146746e5077e6059",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-012",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 43,
+      "objective_snapshot_sha256": "9a78ec04dec20afdc1025cd2e2973adfd7ef794c107baee775e698709d2a1390",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.line-relations",
+          "lesson_snapshot_sha256": "d9829c8d4db10fb41b1dfa24d00e251892ad742bd42d4dbab628e5d69ba9eb33",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-013",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 44,
+      "objective_snapshot_sha256": "0ce3c63d23fdaf4f6bcc6429ff037681aec7ec42b650617eb1062920bc7aa9a0",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.point-line-distance",
+          "lesson_snapshot_sha256": "dac0d1540d6b01096ffa722c34f4c548181d6f02d8de3d3c2117981beda5838e",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-014",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 44,
+      "objective_snapshot_sha256": "c4e50720c269b913dec7de81e52655b8fc49d596a41e218139021316ac133964",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.circle-complete-square",
+          "lesson_snapshot_sha256": "f7d05672daf3e4b41ffe5bc7b4e22335aae84c7b7f96ee645c9590bba9d6c7a6",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-015",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 44,
+      "objective_snapshot_sha256": "bd1a6018346c40c32bdb5d547f6200c4f0165ae78f7383d51da8f148441b8861",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.ellipse-focus",
+          "lesson_snapshot_sha256": "dbf2e82ceb18c4ee35cdad37a622e25c75a64e3c097fe5a1ed0115d803e375c0",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-016",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 44,
+      "objective_snapshot_sha256": "2ddf4f3bb05a44fb831a2d31e9a0ee40b778f1d41cace5d2f48622f6e67cdfe8",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.parabola-focus",
+          "lesson_snapshot_sha256": "0b1ba3e2a42847683467b61801724c2311c548d52b9b26a73d3e1a606a600bfa",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.geometry.hyperbola-foci",
+          "lesson_snapshot_sha256": "2a79e17e03bf40631e86de3fee6f4d37606ecc59ab762bd069666d3af581f5bf",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-017",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 42,
+      "objective_snapshot_sha256": "8522941dda7a86c165920cca6701c790614e13fed72366abc97a651719a1fdb3",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.space.coordinate-distance",
+          "lesson_snapshot_sha256": "4f216510813fbd9d5ec723c3ef485fa8bb0ef0136f4095c310c3e010f0cd7e44",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-018",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 42,
+      "objective_snapshot_sha256": "e4e26d2f8f346ed92d9d6fbd686f80f8946c54f5b7b496a24cbf6d1ce9d01767",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-019",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 42,
+      "objective_snapshot_sha256": "62117344cfb9217fd1322da80072247d97ccff83106e75ba8626eb0ad9760198",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.space-dot",
+          "lesson_snapshot_sha256": "e26ad1400b3df404a848e54977c10162890224f2eba29642926c1c84e7e6524e",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-020",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 43,
+      "objective_snapshot_sha256": "a9a72091a425e062132ba8728285a4f496a9d939ce5b059dcb1d2a3715deda83",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.space.line-plane-normal",
+          "lesson_snapshot_sha256": "98eac20c71295a8fcc22302d629005d3019dd69745294911bb3ed72d041ac1aa",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-021",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 43,
+      "objective_snapshot_sha256": "61b34e2593ba4b7112181ded992cb3de9991cd6e45be5e348aaff6f5f362e05e",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.space.angle-distance",
+          "lesson_snapshot_sha256": "0ed768ab517f3005d92b4035e299e3c03299599be938cf7ccb673ff800caa793",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-022",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 44,
+      "objective_snapshot_sha256": "1d4252d410e07b18d1ecd9fa3848989fb4ce685c7fa151a85ed1ce0026763b49",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.circle-intersections",
+          "lesson_snapshot_sha256": "75b31f7a9acddc1b7fbcfab23981eb60df34d4c7d80406c54a8e44dfda5ed06f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-023",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 45,
+      "objective_snapshot_sha256": "f7df24f25d9f94272b7e1478b42cd7936e2fbb32b2c6719f1d76159e4631fb82",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.conic-focal-directrix",
+          "lesson_snapshot_sha256": "c98383359ffa2cd2beb0997703c744457ccf5ed9239f8e5931bc651cb78dc5fe",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-024",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 46,
+      "objective_snapshot_sha256": "9c9dc1cdaa888dc0df02bcd28fbd564fe94b0b94323d0a9645c1d2a3556ac8f3",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.counting.product-rule",
+          "lesson_snapshot_sha256": "0861ba5161ce9a8f9012f896e2dea66ba1566d45d09d9a768b0db673fa6377d3",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-025",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 46,
+      "objective_snapshot_sha256": "be35c9b0f34c139af2fa28563db4fb20668723257564b44cbc62fb6c9bc8245c",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.counting.permutation-combination",
+          "lesson_snapshot_sha256": "3bd86818b59750b74a94e47496701b570b3f4c13ec1119acc03ff4f88455f9fe",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-026",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 47,
+      "objective_snapshot_sha256": "9da4d8a58b6dcb97a364170326e020a55a0b6ed9855ba46c8d62653a5fc8036b",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.counting.binomial",
+          "lesson_snapshot_sha256": "c074db68d21add4c786a1bd931e2f1afed59dd0c861f802805eadddbe1c3b50a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-027",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 47,
+      "objective_snapshot_sha256": "0de07582bde0f0341d5f081766fcb445626baaa7afc21a63ccae55622ee307f9",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.multiplication",
+          "lesson_snapshot_sha256": "bd61431794144a1753ed762fe89441ae93448e2fd70887f62d6cd611fc8c613f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-028",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 47,
+      "objective_snapshot_sha256": "11717ad4f8f6761be5d5be5ef8318c05289c371507fcdbdbd1ea7ffeb3cb4360",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.discrete-variable",
+          "lesson_snapshot_sha256": "8c1ba0ce3230a09a76ad461370fe1886ee63257f6b021a459688b03f08724e71",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-029",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 47,
+      "objective_snapshot_sha256": "b54f38988e65f9d5340b6f14bdfe65c442e58871196874b510e4be40efc0a9a2",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.binomial-distribution",
+          "lesson_snapshot_sha256": "699a78f5f5518ded8f9277535f670acb28a4cfd15bbddc20930a0d014276e3ae",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.probability.hypergeometric",
+          "lesson_snapshot_sha256": "8b241b93c47cef3f88d5e601c6e5481b1168c57cd5cebadb915f8f1d4b81a69a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-030",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 48,
+      "objective_snapshot_sha256": "c7f2ad447ef09b691f2b918f93f635ff9f20ee7c22f5ca66701cff67e09c3da8",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.normal-density",
+          "lesson_snapshot_sha256": "2445ca30fabd8b34754ecb26f24818056f8fdebb66e79a08a35ae7e497fb8f95",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-031",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 48,
+      "objective_snapshot_sha256": "44d832b4da514a18d596163e72ec706cf04e83d7bfcbe7fb53327345f32ffeac",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.statistics.correlation-regression",
+          "lesson_snapshot_sha256": "9b1444a77b709f2e8fc4cb7cbe23cba08d1580ab920a31d3bb6d6b52d9e22e09",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-SELECTIVE_COMPULSORY-032",
+      "candidate_track": "SELECTIVE_COMPULSORY",
+      "candidate_source_page": 48,
+      "objective_snapshot_sha256": "5affc8e08107e5a59505ac7ac628e71baa6556c513b00eed02c1ad4613741260",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.statistics.chi-square",
+          "lesson_snapshot_sha256": "18b6802c0c505405cf203e691b2ada60bec227097ac4fc9874bd5b0ef02acf6f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-001",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 52,
+      "objective_snapshot_sha256": "7dfcbcc90232c4b87ab19274c77c70c145a32ef21dec1310edae0fad4f9c65ff",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-002",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 52,
+      "objective_snapshot_sha256": "aed37edec180eb4d4f5a48b92ae0e8965864477900f4b0c0e4994051ef0c7f31",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-003",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 52,
+      "objective_snapshot_sha256": "b1d74cfbc2c03d24c5e0a689db945e0c929089f53dcef43487565ab7c1147110",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-004",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 52,
+      "objective_snapshot_sha256": "57cda8a7300090fa7aa43437861711ed16e042c5b995953ecdc841c2380944c7",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-005",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 52,
+      "objective_snapshot_sha256": "5d5100741565cf536b35c80886a87f92c71485f565813e4b5466126bf0a2f5bd",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-006",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 52,
+      "objective_snapshot_sha256": "92ce5494ad4de4cc15200d7feb09e700ac34c92a2027f8a25ccc756ef60ef960",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-007",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 53,
+      "objective_snapshot_sha256": "272ea26a317f55c13d9b8128bd3c309ec09910e72c039eb3fa7d8992d67627f3",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.function.zero-ivt",
+          "lesson_snapshot_sha256": "a711b76c4db2777645835732e23494aa378ed3a123ea1b8cc86d96dd7a3e247c",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-008",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 53,
+      "objective_snapshot_sha256": "4dc78e9966af6c337d788f2fd4b90b447c89fa40de853b1d64170c8d4bb7c282",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.calculus.derivative-definition",
+          "lesson_snapshot_sha256": "412b4389047b24ba48ad4116646a306e6ef4cbdfa232be993e3be734fb08259d",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-009",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 53,
+      "objective_snapshot_sha256": "7651f09c27bf192c00878c9bf035829a6c3aa852c6ff9e1c0bdf12913bbd2592",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-010",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 53,
+      "objective_snapshot_sha256": "e138a69cea8fe0efdb1868b195f88975f68f03507ea853875236f026fcae3201",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-011",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 53,
+      "objective_snapshot_sha256": "b64075e426c0395c145295c69f9f99d286030ac1ecf4c38cb7efc39c3b9bf6c9",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-012",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 53,
+      "objective_snapshot_sha256": "987c85c884073980dc030bd591656d1aad629957b20b54c3cebc5d8723f577f0",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-013",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 54,
+      "objective_snapshot_sha256": "b5a703cc89673711d15c09bd0c6f6e98851a6334b85ea039ee3d6b47e9936319",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.extension.cross-product",
+          "lesson_snapshot_sha256": "ee290bd127bf20bc4e97853ef04989c9e65b11cfffe47020507ef9ebbe3d4b7f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-014",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 54,
+      "objective_snapshot_sha256": "839fb6c0928c62c5f4b3ade3eadf16e8deac9f64026c5b922912dcca7c36912b",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-015",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 54,
+      "objective_snapshot_sha256": "2481a0c243efc31b54f23d7662a567726c6097299ee2de54624d8ceb6e6f23bd",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-016",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 54,
+      "objective_snapshot_sha256": "eb44a806e56b3ff50e3b4cdf69a88b1dee6a4459d6c94deb9ad6ca2724d14262",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-017",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 55,
+      "objective_snapshot_sha256": "3d3bc3322fdcd042ab70bb9a231f06deb15b0f3621b33de45f4e3eca8788d007",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_A-018",
+      "candidate_track": "ELECTIVE_A",
+      "candidate_source_page": 55,
+      "objective_snapshot_sha256": "df3a81dbdf8725619f35983077f50946480f0eaa9aba54fd95df191645b3edaa",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.space.line-plane-normal",
+          "lesson_snapshot_sha256": "98eac20c71295a8fcc22302d629005d3019dd69745294911bb3ed72d041ac1aa",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-001",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 58,
+      "objective_snapshot_sha256": "850a8b04226fa6ad4263272dac2a0218573d11074d84adb45b9abe1da788a51e",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-002",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 58,
+      "objective_snapshot_sha256": "f31d6a83c21fe39afb0d8ca9f0583378ae5e2716eb022a91cb8abe448013d5e3",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-003",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 58,
+      "objective_snapshot_sha256": "39024caf8157ee65a12e3b642cd8551ce49fc5eb0aaae236f12e47b5ca4a36ea",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-004",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 59,
+      "objective_snapshot_sha256": "4114469682fc056188c9047eedb416268e4c5d2ee6e88d2717f9ae520645f53e",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-005",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 59,
+      "objective_snapshot_sha256": "04e6b646e410a65bcbb171d8b21a0d9abf47c50195ce97e4cb5f2d37b1224ceb",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-006",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 59,
+      "objective_snapshot_sha256": "095a5835162597b4e37758b150ff155b4edf8874475eac071d6e60908759eace",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-007",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 60,
+      "objective_snapshot_sha256": "937fb0de8bb0ece8fe6a3988423d9dadb060e7b5499da62c66a4f52e96f958c8",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-008",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 60,
+      "objective_snapshot_sha256": "7686ac09037c927a27b97c9535e5671a2660226e11dbc208c9dff4e85a369e73",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-009",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 61,
+      "objective_snapshot_sha256": "3aad58c357cbb20a854b7d7d1c93fe1fd1ded7ce45cf591a538be282491213fc",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.normal-density",
+          "lesson_snapshot_sha256": "2445ca30fabd8b34754ecb26f24818056f8fdebb66e79a08a35ae7e497fb8f95",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-010",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 61,
+      "objective_snapshot_sha256": "34b987963bbd58bca264b8dc775c5070ad6bf1bcdb3bea200d7b4d0b38b68077",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.variance-covariance",
+          "lesson_snapshot_sha256": "9b815330578e64b2af3f1fcc95c183af0f28bf8c2ab086f73e12dca8da1917b6",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-011",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 61,
+      "objective_snapshot_sha256": "cf615a6eb6c62dfa9893bf3be8d0082acb315659b445eaa4d934c5af3c017db0",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-012",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 62,
+      "objective_snapshot_sha256": "8872b909c39d2078f655e4165e69bab2472da5742f685203049326a2a7666e92",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-013",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 62,
+      "objective_snapshot_sha256": "7ccdee23b6a6a3c57d60b87cdd42312b415de76010ffd453f0eebe5ec846478d",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.statistics.correlation-regression",
+          "lesson_snapshot_sha256": "9b1444a77b709f2e8fc4cb7cbe23cba08d1580ab920a31d3bb6d6b52d9e22e09",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-014",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 63,
+      "objective_snapshot_sha256": "e468bd3fa2ca2210dc9175d015c269a50e223a8658f6a34ebdf3d4f9741c139d",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_B-015",
+      "candidate_track": "ELECTIVE_B",
+      "candidate_source_page": 63,
+      "objective_snapshot_sha256": "d79b351ca2cfe60ec02debbb427e63ae3ffd9de844184f350a5e641005179e9f",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-001",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 64,
+      "objective_snapshot_sha256": "9d1b9d130c0f8b9b242e2aff4fd08ed75c4fdefddad5cfa347cae0f6be105b34",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.logic.implication",
+          "lesson_snapshot_sha256": "89bd0c1b11c56aa9d3689b271c70ce8cb584e3e369eae108db236c8765e5e3e2",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-002",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 65,
+      "objective_snapshot_sha256": "325bff132b9381a2d8376b916592391300919e8449da2029405cc625fa44f031",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-003",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 65,
+      "objective_snapshot_sha256": "99969ca8b0b5686024f70d7edf63ab85a3d7928da67e1f38bd007f9feb02b4e9",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.modeling.inquiry-claim",
+          "lesson_snapshot_sha256": "5edb3c7f09672b5fecb5c1bd9df465a76ad8638505243beb9b3961a56a9d5b50",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-004",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 65,
+      "objective_snapshot_sha256": "ca7464e229617175b24b932f5c519f09a0a6f0aee8472a7cc8306a09674cdf21",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-005",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 65,
+      "objective_snapshot_sha256": "d787597f4b7a0e9c49c9c4d6219960829a56032dd8ea84a2d0e1872bd0fcc630",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-006",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 66,
+      "objective_snapshot_sha256": "dd1213b6f6b3df32adf933f2a8ecb5bca23b873eb91a0ce2cb07aabe4191e1d0",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-007",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 66,
+      "objective_snapshot_sha256": "dfb29fe6d064e50e49e7095798f974e91ae67bc11a22075ddb0d87625ff73992",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-008",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 67,
+      "objective_snapshot_sha256": "d158754e0bbb79056238f61a35e413979b4fb3a98fbb502ea1a686cc24218bc6",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-009",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 67,
+      "objective_snapshot_sha256": "c00f6bfd882ecb8340aa4ed8acf80f394dbb172b4ae4a5aef6d701855c06072f",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-010",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 68,
+      "objective_snapshot_sha256": "34ab5ec3b1d34cee62978f8407b9dde6f0d73cb4de66479f6a4519c472f253ed",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.statistics.sampling",
+          "lesson_snapshot_sha256": "bd7b36393a6c25501d81836c02252e88f02f9a6dff14dad9c9b6d696b846c49a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_C-011",
+      "candidate_track": "ELECTIVE_C",
+      "candidate_source_page": 68,
+      "objective_snapshot_sha256": "e439070e87458203b0f0594a9166e3040261198f51447b1e4b40548ff9299c82",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-001",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 69,
+      "objective_snapshot_sha256": "867e4d5f512e3416865f0e502f0302301f434240f0e445f4af3351880e0bcdc0",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.geometry.ellipse-focus",
+          "lesson_snapshot_sha256": "dbf2e82ceb18c4ee35cdad37a622e25c75a64e3c097fe5a1ed0115d803e375c0",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-002",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 70,
+      "objective_snapshot_sha256": "7063538caadc845fd716cf7b6c28e89112af001dff1f703451390b56de092c16",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-003",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 70,
+      "objective_snapshot_sha256": "92253ca3556e5434b9446067f8b838727614eb1c457d9fc5e87c1e677b899956",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.trig.phase-transform",
+          "lesson_snapshot_sha256": "bb11f217ce48a062e6e82ec5f3dcba61f0f93c0b8a6856a0b0cc9d4247966042",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-004",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 70,
+      "objective_snapshot_sha256": "f19d4d9fa93d6629e41ff0688401d314ea8f055fbdd3136e826ea442f51a5c6e",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-005",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 70,
+      "objective_snapshot_sha256": "df72c18253d55e119af80c54dadca2ca3dccf4c8f15f4fa6d111e1bb0e07f2c0",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.trig.wave-transformation",
+          "lesson_snapshot_sha256": "2e4a0b42a5cf9fd9a5a669d55991714b2a32f58d3706cdce038b9e76270eeac8",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-006",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 71,
+      "objective_snapshot_sha256": "fe86e2e159b554470aa14aecb1e2c25fd87fdc46380936f6c6880d5ed778efe7",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-007",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 71,
+      "objective_snapshot_sha256": "5b883498dae2375052888cf5fed2e5c600289b9ac5e69ca0acbfe319df90e2e7",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-008",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 72,
+      "objective_snapshot_sha256": "18630cafec90d0ab367005f924b66f235c5a3d0c85c0f1490d3d918df0b12e83",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.vector.free-coordinates",
+          "lesson_snapshot_sha256": "13a8f7275e3542fa5a2777cdddf05588fed3588dd034d0fe6e2fc2c4ae8edc10",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-009",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 72,
+      "objective_snapshot_sha256": "71a828d142a65d6e7e46360472d0b08f8afab1fe08f58caaae5236632b5877d5",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.statistics.sampling",
+          "lesson_snapshot_sha256": "bd7b36393a6c25501d81836c02252e88f02f9a6dff14dad9c9b6d696b846c49a",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_D-010",
+      "candidate_track": "ELECTIVE_D",
+      "candidate_source_page": 72,
+      "objective_snapshot_sha256": "84d25eaccb7dbad9fd4003f63acb4bd4ae2eea1fc6a8ba767f04242cc912b8e2",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_E-001",
+      "candidate_track": "ELECTIVE_E",
+      "candidate_source_page": 73,
+      "objective_snapshot_sha256": "144efb22b14639feaf250333b0a4193f569a9ecfd785e7146daeb4e36316f92c",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.modeling.workflow",
+          "lesson_snapshot_sha256": "c8ed4ad1135cab8e27c7b7c219fdfa1833e62ab6d3124b635f9fa180c4b2fc29",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_E-002",
+      "candidate_track": "ELECTIVE_E",
+      "candidate_source_page": 73,
+      "objective_snapshot_sha256": "5f9798d47fa1d7ae14f3b571cefbc1a6541b90f9f1ebf22e9a86bdc1011e7de7",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_E-003",
+      "candidate_track": "ELECTIVE_E",
+      "candidate_source_page": 73,
+      "objective_snapshot_sha256": "6119c42ee924f1ef98fd0e797cb62159b1c0509ad10ccb7494b16113ca80e371",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.extension.algorithm-invariant",
+          "lesson_snapshot_sha256": "bb0dc5c66f44166037623ef0225f9d3c8f43f95674e74d406e487bbf8e935934",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_E-004",
+      "candidate_track": "ELECTIVE_E",
+      "candidate_source_page": 73,
+      "objective_snapshot_sha256": "a95e5d4bf3d5f9a5bebb7ea390b834d522c70b5fd45f2dd7c70dd92fd7cd17fe",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_E-005",
+      "candidate_track": "ELECTIVE_E",
+      "candidate_source_page": 73,
+      "objective_snapshot_sha256": "e112f76e757913f05ff90d78d9404174e26a7b415d153e6d10976998e3570ffd",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.modeling.workflow",
+          "lesson_snapshot_sha256": "c8ed4ad1135cab8e27c7b7c219fdfa1833e62ab6d3124b635f9fa180c4b2fc29",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_E-006",
+      "candidate_track": "ELECTIVE_E",
+      "candidate_source_page": 73,
+      "objective_snapshot_sha256": "dcd9fa7290b3deb5ce076abe324e815c0bacb3255fee382fb272a3aad49f8e74",
+      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
+      "proposed_deep_lessons": [],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_E-007",
+      "candidate_track": "ELECTIVE_E",
+      "candidate_source_page": 73,
+      "objective_snapshot_sha256": "71df7b5295e23d508452aa8888235870290be9051527b7f0201cc7a13d848466",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.space.coordinate-distance",
+          "lesson_snapshot_sha256": "4f216510813fbd9d5ec723c3ef485fa8bb0ef0136f4095c310c3e010f0cd7e44",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "HS-STD2020-ELECTIVE_E-008",
+      "candidate_track": "ELECTIVE_E",
+      "candidate_source_page": 73,
+      "objective_snapshot_sha256": "4399d870d8ddcd44883aaeadd8e7e0eea3cfc41413ea0cb1052536d9f20edea5",
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.probability.discrete-variable",
+          "lesson_snapshot_sha256": "8c1ba0ce3230a09a76ad461370fe1886ee63257f6b021a459688b03f08724e71",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
+      "review_questions": [
+        "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
+        "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
+        "是否需要拆为更多教材级原子知识、避免借题目名称冒充覆盖？"
+      ],
+      "review_state": "QUEUED_FOR_HUMAN_REVIEW"
+    }
+  ],
+  "warnings": [
+    "The official standard has not been atomized completely or independently signed.",
+    "Suggestions are authored topic overlaps, not reviewed evidence that a lesson satisfies a source clause.",
+    "All deep lessons remain REVIEW_PENDING; no student teaching publication is authorized.",
+    "Null official denominator and null course coverage percent must remain null."
+  ]
+}
