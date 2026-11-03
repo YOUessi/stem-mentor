@@ -30,7 +30,7 @@ def audit():
     proof=json.loads(PROOF.read_text(encoding="utf8"))
     old_count=153
     assert len(new)==11
-    assert len(current)==old_count+len(new)
+    assert len(current)>=old_count+len(new)  # Preserve Batch10 baseline; permit subsequent batches
     assert set(x["id"] for x in new).issubset({d.id for d in current})
     assert all(x["review"]["status"]=="REVIEW_PENDING" and x["teacher_solution_visibility"]=="TEACHER_ONLY" for x in new)
     assert all(x["provenance"]["permission"]=="PROJECT_AUTHORED" for x in new)
