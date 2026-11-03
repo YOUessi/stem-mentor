@@ -1,0 +1,35 @@
+{
+  "scope": "PROJECT_AUTHORED_DRAFTS_NOT_CERTIFIED_CURRICULUM",
+  "base_drafts": 153,
+  "batch10_added_theorems": 11,
+  "batch10_lesson_ids": [
+    "math.hs.exponent.monotone",
+    "math.hs.logarithm.product-law",
+    "math.hs.sequence.square-sum",
+    "math.hs.sequence.cube-sum",
+    "math.hs.vector.parallelogram",
+    "math.hs.probability.variance-covariance",
+    "math.hs.probability.bernoulli-variance",
+    "math.hs.probability.complement-independence",
+    "math.hs.geometry.circle-complete-square",
+    "math.hs.geometry.ellipse-parameter",
+    "math.hs.counting.pascal-identity"
+  ],
+  "source_sha256": "2710cae6620e22caf47bad6765ef1451d1d0c36cd6119da1170276439b538d21",
+  "current_total_drafts": 192,
+  "current_theorem_drafts": 112,
+  "current_concept_drafts": 66,
+  "current_method_drafts": 14,
+  "uncertified_proof_steps": 364,
+  "full_proofs_formally_certified": 0,
+  "teacher_approved": 0,
+  "student_released_evidence": 0,
+  "student_model_api_requests": 0,
+  "verified_official_elective_atoms": 0,
+  "review_required": true,
+  "warnings": [
+    "Finite exact oracle checks support sampled statements; they are not formal proofs of entire authored lesson.",
+    "Project engineering IDs remain an incomplete proxy for full ministry curriculum coverage.",
+    "Student-facing cloud teaching is disabled without external human approval and consent."
+  ]
+}

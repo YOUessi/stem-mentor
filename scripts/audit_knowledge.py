@@ -16,6 +16,11 @@ def read(path):
     return json.loads((ROOT/path).read_text(encoding="utf8"))
 
 
+def _deep_knowledge_inventory():
+    from app.deep_knowledge import public_summary
+    return public_summary()
+
+
 def audit():
     cards=read("knowledge/corpus/methods.json")
     graphs=read("knowledge/reasoning_graphs.json")
@@ -62,6 +67,7 @@ def audit():
         "tool_types":dict(Counter(x["tool"] for x in presets)),
         "presets_pending_teacher_review":sum(x.get("expert_review")=="PENDING" for x in presets)
       },
+      "deep_knowledge_drafts":_deep_knowledge_inventory(),
       "reliability":{
         "retrieval_technique":"LOCAL_FTS5_BM25_AND_STRUCTURE_V1",
         "teacher_approved_corpus_available":False,
@@ -85,7 +91,7 @@ def main():
         print(json.dumps(summary,ensure_ascii=False,indent=2))
     else:
         print("High-school STEM Mentor knowledge inventory, not teacher-certified content")
-        for k in ("curriculum","method_corpus","problem_bank","interactive_math","reliability"):
+        for k in ("curriculum","method_corpus","problem_bank","interactive_math","deep_knowledge_drafts","reliability"):
             print(f"\n[{k}]")
             for key,value in summary[k].items():print(f"  {key}: {value}")
 

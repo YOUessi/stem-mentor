@@ -1,0 +1,173 @@
+{
+  "version": "2026-11-03.batch04",
+  "scope": "PROJECT_ENGINEERING_IDS_NOT_OFFICIAL_ATOMIC_SYLLABUS",
+  "review_status": "PROJECT_EDITORIAL_CANDIDATES_NOT_TEACHER_CERTIFIED",
+  "notes": [
+    "All rows are known or suspected missing subcompetencies in an existing engineering topic; related draft lesson IDs may be linked but do not certify full coverage.",
+    "Entries describe original editorial findings from the current lesson titles and outlines, not an independent teacher review or verified official granular syllabus.",
+    "Human-reviewed official A–E elective track mapping remains unavailable."
+  ],
+  "gaps": [
+    {
+      "curriculum_id": "HS-MATH-001",
+      "missing_content": "集合的列举法、描述法、区间表示与元素/集合关系未有独立完整教学单元",
+      "recommended_lesson_id": "math.hs.sets.representations",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-005",
+      "missing_content": "一般命题真假、否定与四种命题等逻辑关系未有系统受控内容",
+      "recommended_lesson_id": "math.hs.logic.truth-negation",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-010",
+      "missing_content": "代数不等式等价变形的定义域、非零乘除、平方增根尚缺统一判定流程",
+      "recommended_lesson_id": "math.hs.inequality.transformation-obligations",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-025",
+      "missing_content": "弧度与角度换算、单位圆坐标角的定义未被正弦余弦恒等式完整覆盖",
+      "recommended_lesson_id": "math.hs.trig.radians-unit-circle",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-026",
+      "missing_content": "正弦/余弦图像及平移周期振幅的完整图像性质不能由一个恒等式替代",
+      "recommended_lesson_id": "math.hs.trig.sine-cosine-graphs",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-030",
+      "missing_content": "和差角之外的倍角、降幂与恒等变换训练缺少专门定理与反例",
+      "recommended_lesson_id": "math.hs.trig.double-angle-reduction",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-035",
+      "missing_content": "向量投影定义、方向与长度分解的适用条件未形成独立证明/题族",
+      "recommended_lesson_id": "math.hs.vector.projection",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-040",
+      "missing_content": "复数的代数表示、相等规则与虚数单位运算并非模长的全部内容",
+      "recommended_lesson_id": "math.hs.complex.algebraic-basics",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-041",
+      "missing_content": "复数辐角、多值性和零复数辐角无定义尚未完整覆盖",
+      "recommended_lesson_id": "math.hs.complex.argument",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-042",
+      "missing_content": "复数加减乘除、共轭与几何意义的完整运算不等同于模长定义",
+      "recommended_lesson_id": "math.hs.complex.operations",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-044",
+      "missing_content": "空间直线平面平行判定与面面垂直等命题尚不能由单个线面垂直定理代表",
+      "recommended_lesson_id": "math.hs.space.parallel-perpendicular-criteria",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-045",
+      "missing_content": "线面距离的定义与位置分类不能被三维点到直线距离公式覆盖",
+      "recommended_lesson_id": "math.hs.space.line-plane-distance",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-048",
+      "missing_content": "表面积/侧面积及截面与展开图计算仍缺独立单元，已关联内容偏重体积",
+      "recommended_lesson_id": "math.hs.space.surface-areas",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-050",
+      "missing_content": "随机试验、样本点、事件及其表示需补概念层；等可能古典概型只是特例",
+      "recommended_lesson_id": "math.hs.probability.sample-space-event",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-053",
+      "missing_content": "独立事件乘法、一般条件概率乘法与概率加法的条件差别尚未形成完整单元",
+      "recommended_lesson_id": "math.hs.probability.multiplication",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-056",
+      "missing_content": "中位数、众数、离群值与均值的对比未被均值和方差课程完整覆盖",
+      "recommended_lesson_id": "math.hs.statistics.median-mode",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-061",
+      "missing_content": "提出问题、共同协作与报告反思有教学步骤要求，建模公式例题不足以覆盖探究全过程",
+      "recommended_lesson_id": "math.hs.modeling.collaborative-inquiry",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-066",
+      "missing_content": "导数极限定义、割线到切线的几何意义不是整数幂求导规则的充分替代",
+      "recommended_lesson_id": "math.hs.calculus.derivative-definition",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-067",
+      "missing_content": "一般点处切线斜率及线性近似、竖直切线等边界尚未独立覆盖",
+      "recommended_lesson_id": "math.hs.calculus.tangent-line",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-069",
+      "missing_content": "函数极值/闭区间最值候选、端点、不可导点和全局比较需单独可验证课程",
+      "recommended_lesson_id": "math.hs.calculus.extrema",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-089",
+      "missing_content": "圆锥曲线焦点与准线的一般性质尚不能仅由抛物线焦点准线单元覆盖",
+      "recommended_lesson_id": "math.hs.geometry.conic-focal-directrix",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-091",
+      "missing_content": "法线公式、圆锥曲线不同类型与曲线上非奇异条件未被椭圆切线单元完整覆盖",
+      "recommended_lesson_id": "math.hs.geometry.conic-tangent-normal",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    },
+    {
+      "curriculum_id": "HS-MATH-096",
+      "missing_content": "事件独立的定义、边界反例及其与互斥的差异尚未与条件概率形成完整配套",
+      "recommended_lesson_id": "math.hs.probability.independence",
+      "confidence": "PRELIMINARY_EDITORIAL_FLAG",
+      "status": "OPEN"
+    }
+  ]
+}

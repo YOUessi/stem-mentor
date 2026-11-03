@@ -1,0 +1,338 @@
+[
+  {
+    "id": "HS-MATH-114",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "数列极限的 ε–N 定义与 1/n 的严格证明",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-001",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-115",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "收敛实数数列必有界（逆命题为假）",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-002",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-116",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "单调有界数列收敛的确界证明",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-003",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-117",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "收敛数列的和极限定律与 ε/2 分配",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-004",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-118",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "函数极限 ε–δ 证明：x² 在任意点 a 的极限",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-005",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-119",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "介值定理：连续函数跨越中间值",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-007",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-120",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "可导必连续：反命题与尖点反例",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-008",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-121",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "拉格朗日中值定理与 Rolle 引理推导",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-009",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-122",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "黎曼和定义计算 ∫₀ᵇ x dx",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-011",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-123",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "微积分基本定理（一）：变上限积分的导数",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-012",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-124",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "三维标准基向量线性无关与唯一坐标分解",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-014",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-125",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "二阶矩阵可逆判据与逆矩阵公式",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-016",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-126",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修A课程深度内容",
+    "concept": "高斯消元初等行变换保持方程组解集",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_A-017",
+    "elective_track": "ELECTIVE_A",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-127",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修B课程深度内容",
+    "concept": "二元多项式偏导数按定义计算",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_B-005",
+    "elective_track": "ELECTIVE_B",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-128",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修B课程深度内容",
+    "concept": "协方差在仿射变换下的缩放规律",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_B-010",
+    "elective_track": "ELECTIVE_B",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  },
+  {
+    "id": "HS-MATH-129",
+    "level": "选修拓展",
+    "theme": "选修 A–E 独立学习目标候选",
+    "unit": "选修B课程深度内容",
+    "concept": "独立伯努利试验的极大似然估计及边界",
+    "editorial_objective_id": "HS-STD2020-ELECTIVE_B-011",
+    "elective_track": "ELECTIVE_B",
+    "recommended_tool": "enrichment",
+    "status": "PLANNED",
+    "capability": "深度知识草案，不代表已开发交互场景",
+    "source": {
+      "standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "uri": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "mapping_type": "ENGINEERING_INTERPRETATION",
+      "teacher_review": "PENDING"
+    },
+    "notes": "本工程映射从 Batch12 项目自编候选目标拆解，未经官方逐条核对及教师审签；不代表官方课标原子或完整选修覆盖。",
+    "available_presets": [],
+    "capability_limits": "没有专属可视化或经过正式审核的学生知识发布。"
+  }
+]

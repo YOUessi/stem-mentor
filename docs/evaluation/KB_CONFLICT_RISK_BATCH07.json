@@ -1,0 +1,451 @@
+{
+  "scope": "PRIORITIZED_HUMAN_EDITORIAL_TRIAGE_NOT_AUTOMATIC_MERGE",
+  "summary": {
+    "conflict_count": 10,
+    "unresolved_conflicts": 10,
+    "automatically_resolved": 0,
+    "conflicts_with_changed_math_risk_fields": 10
+  },
+  "conflicts": [
+    {
+      "id": "math.hs.function.composition-domain",
+      "candidate_sha256": "0a9eba9335bd48642d1bee6df94f9e391060c06d6d6492b61dbf9100b5a6e8f9",
+      "active_sha256": "8f4ca2c9ffe46431847027164f7eca2ecb203272cb3057f2e6eaedb3e4c3ab26",
+      "candidate_kind": "theorem",
+      "active_kind": "theorem",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "review_hint": "验证先 g 后 f，联合 g 的定义域和 g(x) 属于 f 定义域；逐项检查根式/分母。",
+      "candidate_assumptions": [
+        "f 和 g 均为明确的实函数，f 的输入必须属于其定义域 D_f。"
+      ],
+      "active_assumptions": [
+        "f,g 的原始定义域已经明确，不能用后续代数化简自动扩大定义域。"
+      ],
+      "candidate_boundaries": [
+        "外层有对数时需要 g(x)>0 等真数条件；有平方根时需 g(x)≥0。"
+      ],
+      "active_boundaries": [
+        "f∘g 一般不等于 g∘f；化简后可能出现原始表达式未定义的伪新增点。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "求 f(g(x)) 定义域时只检查 g 的定义域即可",
+          "example": "f(t)=ln t，g(x)=x−1，虽然 g 在 ℝ 上有定义，但 ln(x−1) 要求 x>1。",
+          "explanation": "若忽略外层 f 的输入条件就会错误扩大复合函数定义域。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "复合函数定义域等于两个原函数定义域的交集",
+          "example": "令 f(t)=√t，g(x)=x-5，二者原定义域交集为 [0,+∞)，但 f(g(x)) 要求 x≥5。",
+          "explanation": "定义域取决于内层的输出是否进入外层定义域。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    },
+    {
+      "id": "math.hs.function.parity",
+      "candidate_sha256": "dfbfc8ec6b1fb25484c4f6b5c49a56fd893a99559da77416a533d1f380b669c3",
+      "active_sha256": "557000e248fa20439817d7c1f36d08490dfc57156a96ae40a2971bcf659e8575",
+      "candidate_kind": "concept",
+      "active_kind": "concept",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "definition"
+      ],
+      "review_hint": "先确认定义域关于零对称，再验证 f(-x)=±f(x)，并检查零函数的双重情况。",
+      "candidate_assumptions": [
+        "定义域 D 必须关于原点对称，即 x∈D 蕴含 −x∈D。"
+      ],
+      "active_assumptions": [
+        "每个参与比较的 x 和 -x 都必须属于同一函数定义域。"
+      ],
+      "candidate_boundaries": [
+        "零函数在对称定义域上同时是奇函数和偶函数；非零函数不能两者兼具。"
+      ],
+      "active_boundaries": [
+        "零函数在关于原点对称的定义域上既奇又偶；一般函数可以既非奇也非偶。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "只看代数表达式就可以判定函数为偶函数",
+          "example": "f(x)=x²，但 D=[0,2]，−1 不在 D 中。",
+          "explanation": "即使表达式关于 x 的代数形式对称，定义域不对称仍不能称为偶函数。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "公式含 x² 就一定是偶函数",
+          "example": "f(x)=x² 定义于 D=(0,+∞) 时，-1 不属于 D。",
+          "explanation": "表达式具对称性不足以代替定义域对称性。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    },
+    {
+      "id": "math.hs.function.piecewise",
+      "candidate_sha256": "b7cd6eeb5feaeca859c90061d20359b23d3c76edf2b89ab1df599a1a2f1f1116",
+      "active_sha256": "d2398e513adc2e80ef2de3fdf604960c48f90907d50e1cc44354008b1a5fe30c",
+      "candidate_kind": "concept",
+      "active_kind": "concept",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "definition"
+      ],
+      "review_hint": "检查分段条件交并是否恰好覆盖定义域，边界点仅属于一个分支。",
+      "candidate_assumptions": [
+        "多个分段定义的区间覆盖完整定义域。",
+        "各段间重叠部分应给出相同函数值，否则不是单值函数。"
+      ],
+      "active_assumptions": [
+        "各段合起来覆盖定义域，同一输入在交界处不允许产生互相冲突的输出。"
+      ],
+      "candidate_boundaries": [
+        "两个分段都包含同一端点且给出不同值，无法构成合法单值函数。"
+      ],
+      "active_boundaries": [
+        "边界处使用 < 与 ≤ 会改变函数值；分界处是否连续需要额外核对。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "只要左右两个公式分别连续，分段函数整体就连续",
+          "example": "f(x)=0 (x<0)，f(x)=1 (x≥0)。",
+          "explanation": "每段分别为常值且连续，但 x=0 左右极限不同，整体不连续。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "分段函数必定在分段点间断",
+          "example": "f(x)=x (x<0), x (x≥0) 完全等同于连续函数 f(x)=x。",
+          "explanation": "分段仅是表达方法，连续性是额外性质。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    },
+    {
+      "id": "math.hs.function.zero-ivt",
+      "candidate_sha256": "5b2775f2eac0269a11e2bfe96e6b3e729d31978a2800d79f9299f473082e472e",
+      "active_sha256": "a711b76c4db2777645835732e23494aa378ed3a123ea1b8cc86d96dd7a3e247c",
+      "candidate_kind": "theorem",
+      "active_kind": "theorem",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "review_hint": "闭区间连续且端点异号保证至少一个零点；无条件保证唯一性，端点同号也不能推断无零点。",
+      "candidate_assumptions": [
+        "a<b，f 在整个闭区间 [a,b] 连续。",
+        "端点函数值严格异号，即 f(a)f(b)<0。"
+      ],
+      "active_assumptions": [
+        "a<b 且端点属于定义域；f 在整个闭区间连续；f(a)与f(b)严格异号。"
+      ],
+      "candidate_boundaries": [
+        "异号只是存在零点的充分条件，不是必要条件；端点同号也可能有零点。",
+        "若 f 不连续，则端点异号并不足以保证中间存在零点。"
+      ],
+      "active_boundaries": [
+        "f 不连续时异号端点未必有零点；端点同号不能推出没有根；本定理不判定根的个数。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "端点异号就必定存在零点，不要求连续",
+          "example": "f(x)=−1 (x<0)，f(x)=1 (x≥0)，取区间 [−1,1]。",
+          "explanation": "两端异号但函数跳跃，区间内无任何函数零点。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "端点同号意味着区间内部没有零点",
+          "example": "f(x)=x²-1 在 [-2,2] 两端为 3，但内部 ±1 都是零点。",
+          "explanation": "异号是充分条件而非零点存在的必要条件。"
+        },
+        {
+          "false_claim": "异号端点不要求连续也有零点",
+          "example": "f(x) 在 x<0 为 -1，在 x≥0 为 1，于 [-1,1] 两端异号但函数值永不为零。",
+          "explanation": "若缺少连续性，函数可跳过零。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    },
+    {
+      "id": "math.hs.geometry.point-line-distance",
+      "candidate_sha256": "fe6966d4605d4097363eb1a7ad94d3c8a156d11177fecbaf4a1e411818be8b47",
+      "active_sha256": "dac0d1540d6b01096ffa722c34f4c548181d6f02d8de3d3c2117981beda5838e",
+      "candidate_kind": "theorem",
+      "active_kind": "theorem",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "review_hint": "检查 A,B 不同时为零，点到直线的法向量及平方根分母。",
+      "candidate_assumptions": [
+        "直线 ℓ:Ax+By+C=0 且 A²+B²>0。",
+        "点 P=(x₀,y₀) 为平面任意点。"
+      ],
+      "active_assumptions": [
+        "a,b,c,x₀,y₀ 都是实数，且直线法向量 n=(a,b) 非零。"
+      ],
+      "candidate_boundaries": [
+        "如果 A=B=0，就不是合法直线；使用距离公式会除以零。"
+      ],
+      "active_boundaries": [
+        "若 a=b=0，则给定式不代表合法直线；不应无条件把分母写成零。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "点到直线距离可以不取绝对值",
+          "example": "点 P=(−1,0) 到直线 x=0，令 A=1,B=0,C=0。",
+          "explanation": "不取绝对值得 −1，距离不能为负，正确为 1。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "直线 ax+by+c=0 的点距分母是 a²+b²",
+          "example": "L:3x+4y=0，点(0,5) 的真实距离 |20|/5=4，不是 20/25=0.8。",
+          "explanation": "应除以法向量模 √(a²+b²)，不是模的平方。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    },
+    {
+      "id": "math.hs.probability.binomial-distribution",
+      "candidate_sha256": "2f19452fc3bfb0c0f595365e7c2b1580c9e7b0b242a6f07df9d866a5e494d0d0",
+      "active_sha256": "699a78f5f5518ded8f9277535f670acb28a4cfd15bbddc20930a0d014276e3ae",
+      "candidate_kind": "theorem",
+      "active_kind": "theorem",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "review_hint": "独立同分布伯努利试验，边界 p=0,1 和整数 0<=k<=n。",
+      "candidate_assumptions": [
+        "n 为非负整数，p∈[0,1]；进行 n 次相互独立且成功概率恒为 p 的伯努利试验。"
+      ],
+      "active_assumptions": [
+        "各次成功与失败二选一、试验之间独立且成功概率恒为 p。"
+      ],
+      "candidate_boundaries": [
+        "不放回取样通常缺乏独立性；若成功概率随轮次变化，也不服从单参数 Bin(n,p)。在 n=0 或 p=0/1 时，概率乘积中的 0⁰ 按空乘积约定为 1，或对退化试验直接分类计数。"
+      ],
+      "active_boundaries": [
+        "不放回抽样通常不独立；每次成功概率不同也不满足普通 Bin(n,p) 假设。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "任何重复抽取中成功个数都服从二项分布",
+          "example": "盒中 1 红 1 蓝球，连续无放回取两次，红球出现次数恒等于 1。",
+          "explanation": "两次抽取高度依赖，不符合独立同分布的伯努利试验假设。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "只要每次结果只有成功失败，就必服从相同参数二项分布",
+          "example": "袋中红球2、蓝球1，连续不放回抽两次，第二次成功概率依赖第一次结果。",
+          "explanation": "缺失独立性和同分布前提，不能使用普通二项模型。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    },
+    {
+      "id": "math.hs.probability.hypergeometric",
+      "candidate_sha256": "32e19775af8d600e9ed132c6154a1fbc871fd014fa229fbff8a3ab43415347f6",
+      "active_sha256": "8b241b93c47cef3f88d5e601c6e5481b1168c57cd5cebadb915f8f1d4b81a69a",
+      "candidate_kind": "theorem",
+      "active_kind": "theorem",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "review_hint": "有限总体无放回，参数满足 0<=K<=N、0<=n<=N、合法 k 支撑。",
+      "candidate_assumptions": [
+        "N,K,n,k 都是整数，0≤K≤N，0≤n≤N，max(0,n−(N−K))≤k≤min(n,K)。",
+        "从 N 个可区分对象中，K 个为成功类，对全部 C(N,n) 个大小 n 的子集等概率抽取。"
+      ],
+      "active_assumptions": [
+        "总体固定且对象彼此可区分；每个 n 元样本子集等可能，无放回且参数为合法整数。"
+      ],
+      "candidate_boundaries": [
+        "样本有放回时一般改用二项分布；总体中成功数固定且抽样无放回是核心前提。"
+      ],
+      "active_boundaries": [
+        "若样本有放回或对象抽取概率不相同，则不应直接使用该超几何模型。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "无放回抽样成功数直接服从二项分布",
+          "example": "2 球含 1 红 1 蓝，抽取 2 球不放回，X 恒为 1。",
+          "explanation": "若错误按两次独立成功概率 1/2，会赋予 X=0 或 2 正概率，违反实际试验。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "不放回抽样与有放回抽样的成功次数概率完全一样",
+          "example": "袋中 1 红1蓝，连续不放回抽2个，恰好2红概率为0；有放回恰好2红概率为1/4。",
+          "explanation": "缺少放回条件时不能把超几何分布替换为二项分布。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    },
+    {
+      "id": "math.hs.statistics.correlation-regression",
+      "candidate_sha256": "acc74aacbf1fa0c20eff89a29f73bd94d745214cc614545b9c75df78e42ce1da",
+      "active_sha256": "9b1444a77b709f2e8fc4cb7cbe23cba08d1580ab920a31d3bb6d6b52d9e22e09",
+      "candidate_kind": "concept",
+      "active_kind": "concept",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "definition"
+      ],
+      "review_hint": "回归系数分母非零；相关不是因果；常量自变量时斜率未定义。",
+      "candidate_assumptions": [
+        "给定 n≥2 组有限实数观测 (x_i,y_i)，且 Σ(x_i−x̄)²>0。"
+      ],
+      "active_assumptions": [
+        "计算相关需双方有非零方差；线性回归预测应标注建模假设和观测范围。"
+      ],
+      "candidate_boundaries": [
+        "所有 x 相同时斜率公式失效；离群值、非线性、混杂因素会影响统计解释。"
+      ],
+      "active_boundaries": [
+        "当某变量为常数时相关系数未定义；r=0 不排除非线性关系；相关≠因果。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "回归斜率为正就证明 x 增大会导致 y 增大",
+          "example": "冰淇淋销量与溺水事件在夏季可能同时增加。",
+          "explanation": "共同的季节性混杂可产生正相关而不证明销量导致溺水。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "相关系数 r=1 表明一个变量造成另一个变量",
+          "example": "时间 t、气温变化与另一随时间变化的指标都可能与 t 近似线性相关，但时间共趋势并不确定因果方向。",
+          "explanation": "混杂变量、时间趋势与逆因果可使高度相关不代表因果。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    },
+    {
+      "id": "math.hs.triangle.area-sine",
+      "candidate_sha256": "65f0f943e5c9568894a150f757a9065920564f6e019e60f84112394c77633007",
+      "active_sha256": "feca569a56b1d149b0e6bb391b9dfd6af6e6d96b32cb64bac55da5b2256fc360",
+      "candidate_kind": "theorem",
+      "active_kind": "theorem",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "review_hint": "两边夹角的正弦，非夹角不得直接套用；退化零角不构成非退化三角形。",
+      "candidate_assumptions": [
+        "非退化欧氏三角形，a,b 为夹角 C 对应的两条边长，a,b>0 且 C∈(0,π)。"
+      ],
+      "active_assumptions": [
+        "a,b 必须来自同一顶点的两条边；C 是 a、b 的夹角，0<C<π。"
+      ],
+      "candidate_boundaries": [
+        "若题目角不是两已知边的夹角，必须先找到对应夹角；退化 C=0 或 π 给出面积零而不再是非退化三角形。"
+      ],
+      "active_boundaries": [
+        "夹角 C=0 或 π 时图形退化为共线段，面积为0，不满足非退化三角形条件。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "知道任意两边与某个角就能直接使用面积公式",
+          "example": "边长 a=3,b=4，给定的 A 是对边 a 的角而非它们的夹角 C。",
+          "explanation": "面积公式中的 sin 必须对应实际夹角，不能随意使用非夹角。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "只要两条边和任意一个角就能用 ab sinθ/2",
+          "example": "三角形中给出 AB=3、AC=4 却用 B 角代入，B 一般不是 AB 与 AC 的夹角。",
+          "explanation": "必须选两边夹角 A，否则计算的高不正确。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    },
+    {
+      "id": "math.hs.vector.linear-operations",
+      "candidate_sha256": "a8977ba555d84ed6fd84d7ce38b0e8834d8386b13cc42a93d17b940d4d397fc1",
+      "active_sha256": "ce4d8f75e4ccb20a695f299c041b2ec84157a885466fbc70b5dbe90e253923e6",
+      "candidate_kind": "concept",
+      "active_kind": "theorem",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "definition",
+        "kind",
+        "proof_steps",
+        "statement"
+      ],
+      "review_hint": "确保向量维度相同、分量逐一计算；两版 kind 不同须分别审查定义与命题。",
+      "candidate_assumptions": [
+        "a,b 为平面向量，λ 为实数；采用相同正交基底。"
+      ],
+      "active_assumptions": [
+        "u,v 处于同一坐标系与单位基底中，λ 是实数。"
+      ],
+      "candidate_boundaries": [
+        "向量的加法不是模长加法：一般 |a+b|≠|a|+|b|。"
+      ],
+      "active_boundaries": [
+        "坐标加法不意味着向量模可以逐项相加；不同坐标系下的分量不能不变换就混算。"
+      ],
+      "candidate_counterexamples": [
+        {
+          "false_claim": "两个向量相加时其模长必定等于原来的模长之和",
+          "example": "a=(1,0), b=(−1,0)，a+b=(0,0)。",
+          "explanation": "|a+b|=0 而 |a|+|b|=2。"
+        }
+      ],
+      "active_counterexamples": [
+        {
+          "false_claim": "任意向量都满足 |u+v|=|u|+|v|",
+          "example": "u=(1,0),v=(-1,0) 时左边为0，右边为2。",
+          "explanation": "向量模服从三角不等式，等号需要同向等条件。"
+        }
+      ],
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED"
+    }
+  ],
+  "warning": "Both originals remain unchanged; subject-specific hints are not verification or teacher approval."
+}

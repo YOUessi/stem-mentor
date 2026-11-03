@@ -1,0 +1,1149 @@
+[
+  {
+    "id": "math.hs.exponent.monotone",
+    "curriculum_ids": [
+      "HS-MATH-021"
+    ],
+    "kind": "theorem",
+    "title": "实数指数函数的严格单调方向与底数边界",
+    "version": "1.0.0",
+    "notation": [
+      "a^x",
+      "a>0",
+      "a≠1"
+    ],
+    "prerequisites": [
+      "指数函数与对数的互逆",
+      "实数指数的运算律"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.exponent.product"
+    ],
+    "definition": null,
+    "statement": "对实数 a>0 且 a≠1，函数 f(x)=a^x 定义于全体实数；若 a>1 则严格递增，若 0<a<1 则严格递减。",
+    "assumptions": [
+      "底数 a 为正且不等于 1；x、y 均为实数。",
+      "本证明使用严格为正的指数与 log 单调的基础性质，并未由有限数值采样推出全域结论。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对任意实数 h>0，若 a>1，则 a^h>1；若 0<a<1，则 0<a^h<1。",
+        "reason": "指数函数的实数指数构造与正底数单调延拓的基本性质，必须作为先修事实而非整数指数猜想。"
+      },
+      {
+        "claim": "若 x<y，令 h=y-x>0；则 a^y=a^x a^h 且 a^x>0。",
+        "reason": "实数指数乘法律及正值性，避免对非正底数错误推广。"
+      },
+      {
+        "claim": "当 a>1，因 a^h>1 有 a^y>a^x；当 0<a<1，有 a^y<a^x。",
+        "reason": "只对正值 a^x 乘不等式，保留正确方向。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "a=1 时为常数函数，不是严格单调；a≤0 时不能按此规则在全体实数定义 a^x。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "所有实数底数的 a^x 都严格递增",
+        "example": "a=1 时 1^x=1；a=1/2 时 (1/2)^x 严格递减。",
+        "explanation": "必须区分 a>1、0<a<1、a=1 和不合法底数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "比较 3^2 与 3^5。",
+        "steps": [
+          "检查底数 3>1。",
+          "指数 2<5，严格递增，故 3^2<3^5。"
+        ],
+        "answer": "9<243",
+        "check": "按正整数幂计算 3^2=9、3^5=243。"
+      },
+      {
+        "question": "比较 (1/2)^(-1) 与 (1/2)^2。",
+        "steps": [
+          "底数属于 (0,1)，函数严格递减。",
+          "-1<2，因此 (1/2)^(-1)>(1/2)^2。"
+        ],
+        "answer": "2>1/4",
+        "check": "直接计算两项与比较关系完全一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "认为负指数必使正底数幂函数减小",
+        "why_wrong": "指数为负与底数相对 1 的位置是不同维度，不能混淆单调性和幂的符号。",
+        "repair_question": "当底数为 1/2，比较 -1 与 2 哪个指数对应更大的数？"
+      }
+    ],
+    "hint_ladder": [
+      "先确定底数 a 的取值范围以及定义域。",
+      "令 h=y-x>0，先比较 a^h 与 1。",
+      "乘上正数 a^x 后再判断方向。"
+    ],
+    "transfer": {
+      "near": "把底数改为 1/3，比较 x=-2 与 x=1。",
+      "far": "解释为什么 a=1 与 a=-2 都不能直接套用严格单调结论。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.logarithm.product-law",
+    "curriculum_ids": [
+      "HS-MATH-022"
+    ],
+    "kind": "theorem",
+    "title": "对数积法则与真数严格正值条件",
+    "version": "1.0.0",
+    "notation": [
+      "log_a(xy)",
+      "log_a x+log_a y"
+    ],
+    "prerequisites": [
+      "对数和指数的逆关系",
+      "正实数乘法"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.logarithm.inverse",
+      "math.hs.exponent.product"
+    ],
+    "definition": null,
+    "statement": "当 a>0、a≠1 且 x>0、y>0 时，log_a(xy)=log_a x+log_a y；不得对非正真数的实对数拆分。",
+    "assumptions": [
+      "实对数底数 a>0 且不等于 1；两个真数分别严格大于 0。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "设 u=log_a x、v=log_a y，则 a^u=x、a^v=y。",
+        "reason": "根据对数作为严格正底数指数函数逆函数的定义。"
+      },
+      {
+        "claim": "由指数乘法则得到 a^(u+v)=a^u a^v=xy>0。",
+        "reason": "正值性和指数运算律给出两个对数真数均合法。"
+      },
+      {
+        "claim": "对两边取底为 a 的对数，得 log_a(xy)=u+v=log_a x+log_a y。",
+        "reason": "指数函数单射保证逆操作有效，等式中的对数均在定义域内。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "即使 xy>0，x<0 与 y<0 时右侧两个实对数都无定义；a=1 不能作底数。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要 xy>0 就能拆成两个实对数",
+        "example": "x=y=-1 时 xy=1，log_2 1=0，但 log_2(-1) 与 log_2(-1) 均无实数意义。",
+        "explanation": "原式有定义不足以保证拆开后的两项有定义。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 log_2 8+log_2 4。",
+        "steps": [
+          "底数 2 合法，两个真数正。",
+          "合并为 log_2(32)。"
+        ],
+        "answer": "5",
+        "check": "因为 2^5=32。"
+      },
+      {
+        "question": "解实方程 log_3 x+log_3(x-2)=1。",
+        "steps": [
+          "先要求 x>2。",
+          "合并为 log_3[x(x-2)]=1，得 x²-2x=3。",
+          "候选根 x=3、x=-1，仅 x=3 满足定义域。"
+        ],
+        "answer": "x=3",
+        "check": "代回真数 3 和 1，log_3 3+log_3 1=1；x=-1 必须拒绝。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "使用积法则合并后忘记逐项真数正值",
+        "why_wrong": "合并后的表达式的定义域可能大于原来各个对数同时有定义的范围。",
+        "repair_question": "候选根 x=-1 为什么不可以代回原方程？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查底数是否在 (0,1)∪(1,∞)。",
+      "逐项确认每个 log 的真数都严格大于零。",
+      "再根据指数乘法律合并，并回代检查全部候选。"
+    ],
+    "transfer": {
+      "near": "求 log_5 25+log_5 125。",
+      "far": "讨论 log_2(x²)=2log_2 x 是否对所有非零实数 x 成立，给出反例。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.sequence.square-sum",
+    "curriculum_ids": [
+      "HS-MATH-065"
+    ],
+    "kind": "theorem",
+    "title": "前 n 个正整数平方和公式及归纳证明",
+    "version": "1.0.0",
+    "notation": [
+      "Σ_{k=1}^n k²",
+      "n(n+1)(2n+1)/6"
+    ],
+    "prerequisites": [
+      "正整数求和",
+      "数学归纳法"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.proof.induction",
+      "math.hs.sequence.arithmetic-sum"
+    ],
+    "definition": null,
+    "statement": "对每个正整数 n，1²+2²+⋯+n²=n(n+1)(2n+1)/6。",
+    "assumptions": [
+      "n 属于正整数；求和上限是 n，且每一项平方的项号是 k。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "当 n=1，左侧为 1，右侧 1×2×3/6=1。",
+        "reason": "数学归纳法的初始命题真实成立。"
+      },
+      {
+        "claim": "假设对 n=m≥1 成立：Σ_{k=1}^m k²=m(m+1)(2m+1)/6。",
+        "reason": "只把归纳假设用于 m，不将待证结论当作前提。"
+      },
+      {
+        "claim": "Σ_{k=1}^{m+1} k²=m(m+1)(2m+1)/6+(m+1)²。",
+        "reason": "按有限和定义在末尾加上新项。"
+      },
+      {
+        "claim": "因 m(m+1)(2m+1)+6(m+1)²=(m+1)(m+2)(2m+3)，代回得 (m+1)(m+2)(2m+3)/6。",
+        "reason": "提取 m+1 后通分展开，完成 m→m+1 归纳过渡。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "n=0 时空和可额外规定为 0，但本定理量词只含正整数；不用于非整数上限。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "平方和就是先算 1+⋯+n 再平方",
+        "example": "n=2 时 1²+2²=5，而 (1+2)²=9。",
+        "explanation": "有限求和的各项平方和不等于先求和再平方，交叉项不能忽略。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 Σ_{k=1}^4 k²。",
+        "steps": [
+          "代入 n=4。",
+          "计算 4×5×9/6=30。"
+        ],
+        "answer": "30",
+        "check": "直接相加 1+4+9+16=30。"
+      },
+      {
+        "question": "计算 Σ_{k=1}^{10} k²。",
+        "steps": [
+          "代入 n=10。",
+          "计算 10×11×21/6=385。"
+        ],
+        "answer": "385",
+        "check": "拆成前 5 项 55 与后 5 项 330，合计 385。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "归纳步骤直接将 m 替换成 m+1 并声称成立",
+        "why_wrong": "那是重写目标，缺少从归纳假设出发的逻辑桥梁。",
+        "repair_question": "你能写出 Σ_{k=1}^{m+1}k² 与 Σ_{k=1}^{m}k² 的精确差吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先验证 n=1 的数字。",
+      "假设 n=m 成立，写出 m+1 项的和多出的具体项。",
+      "通分因式分解，对比目标分子。"
+    ],
+    "transfer": {
+      "near": "从 n=5 检查通项和直接逐项求和是否相同。",
+      "far": "仿照归纳法证明 Σ_{k=1}^n k(k+1)=n(n+1)(n+2)/3。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.sequence.cube-sum",
+    "curriculum_ids": [
+      "HS-MATH-065"
+    ],
+    "kind": "theorem",
+    "title": "前 n 个立方和等于三角数平方",
+    "version": "1.0.0",
+    "notation": [
+      "Σ_{k=1}^n k³",
+      "[n(n+1)/2]²"
+    ],
+    "prerequisites": [
+      "等差数列前项和",
+      "数学归纳法"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.proof.induction",
+      "math.hs.sequence.square-sum"
+    ],
+    "definition": null,
+    "statement": "对每个正整数 n，有 1³+2³+⋯+n³=[n(n+1)/2]²。",
+    "assumptions": [
+      "n≥1 且为整数，所有项以 k³ 求和到 n。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "n=1 时两边均为 1。",
+        "reason": "直接代入检验 n=1 时归纳起点的两侧相等。"
+      },
+      {
+        "claim": "假定 Σ_{k=1}^m k³=[m(m+1)/2]² 对 m≥1 成立。",
+        "reason": "明确归纳假设仅关于已完成的前 m 项。"
+      },
+      {
+        "claim": "前 m+1 项和=[m(m+1)/2]²+(m+1)³=(m+1)²[m²/4+(m+1)]。",
+        "reason": "按和的定义添加末项并提取 (m+1)²。"
+      },
+      {
+        "claim": "因 m²+4m+4=(m+2)²，右侧为 [(m+1)(m+2)/2]²。",
+        "reason": "配方使 m+1 时的公式逐字出现，完成归纳。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "此式是整数有限求和结论；不表示对连续实数变量有立方和。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "立方和等于逐项平方和的立方",
+        "example": "n=2 时 1³+2³=9，而 (1²+2²)³=125。",
+        "explanation": "必须明确括号中是 1+⋯+n 的平方，而不是平方和再立方。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 1³+2³+3³。",
+        "steps": [
+          "计算 3×4/2=6。",
+          "平方得 36。"
+        ],
+        "answer": "36",
+        "check": "1+8+27=36。"
+      },
+      {
+        "question": "计算 1³+⋯+5³。",
+        "steps": [
+          "先求 5×6/2=15。",
+          "平方得 225。"
+        ],
+        "answer": "225",
+        "check": "1+8+27+64+125=225。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把 Σk³ 误写成 (Σk²)³",
+        "why_wrong": "对 Σ 的作用域和幂次缺乏辨别。",
+        "repair_question": "n=2 时哪两个表达式分别等于 9 和 125？"
+      }
+    ],
+    "hint_ladder": [
+      "先求较小 n 的立方和。",
+      "观察 1³+⋯+n³ 与 (1+⋯+n)² 的关系。",
+      "归纳时明确新增的是 (n+1)³ 而非 (n+1)²。"
+    ],
+    "transfer": {
+      "near": "证明 n=6 的数值例子。",
+      "far": "尝试从 (k(k+1)/2)² 的相邻差推导同一公式。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.vector.parallelogram",
+    "curriculum_ids": [
+      "HS-MATH-034",
+      "HS-MATH-073"
+    ],
+    "kind": "theorem",
+    "title": "实向量平行四边形恒等式与内积展开",
+    "version": "1.0.0",
+    "notation": [
+      "‖u+v‖²+‖u-v‖²=2‖u‖²+2‖v‖²"
+    ],
+    "prerequisites": [
+      "向量数量积",
+      "范数平方"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.vector.dot-product"
+    ],
+    "definition": null,
+    "statement": "同一实欧氏内积空间中的任意向量 u,v，满足 ‖u+v‖²+‖u-v‖²=2‖u‖²+2‖v‖²，包括零向量。",
+    "assumptions": [
+      "两个向量处于同一有限维实欧氏空间，范数由对应内积诱导。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "按定义展开 ‖u+v‖²=(u+v)·(u+v)=‖u‖²+2u·v+‖v‖²。",
+        "reason": "内积的对称性和双线性性给出两项交叉项。"
+      },
+      {
+        "claim": "同理 ‖u-v‖²=‖u‖²-2u·v+‖v‖²。",
+        "reason": "将 v 替换为 -v，交叉项改变符号。"
+      },
+      {
+        "claim": "两式相加，±2u·v 抵消，得到右边 2‖u‖²+2‖v‖²。",
+        "reason": "同类项合并，无需假设 u 与 v 垂直或非零。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "对任意非内积诱导的范数不自动成立，例如 ℓ¹ 范数；不是向量垂直定理。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "该恒等式只适用于互相垂直的向量",
+        "example": "取 u=v=(1,0)，左侧 ‖(2,0)‖²+‖(0,0)‖²=4，右侧 2+2=4。",
+        "explanation": "无需 u·v=0，交叉项会在相加时抵消。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "令 u=(1,2),v=(3,-1)，验证平行四边形恒等式。",
+        "steps": [
+          "u+v=(4,1)，模平方为 17。",
+          "u-v=(-2,3)，模平方为 13。",
+          "两原向量模平方为 5、10。"
+        ],
+        "answer": "17+13=2×5+2×10=30",
+        "check": "逐坐标计算没有用到垂直假设。"
+      },
+      {
+        "question": "令 u=(1,0),v=(1,0)，验证此式。",
+        "steps": [
+          "u+v=(2,0)，u-v=(0,0)。",
+          "原向量模平方都是 1。"
+        ],
+        "answer": "4+0=2+2",
+        "check": "共线向量仍满足恒等式。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "两向量不垂直就不能用范数平方公式",
+        "why_wrong": "范数加法不能逐项相加，但两个特定展开式相加恰好消除交叉项。",
+        "repair_question": "把 ‖u+v‖² 与 ‖u-v‖² 分别写成内积时，交叉项符号如何变化？"
+      }
+    ],
+    "hint_ladder": [
+      "将范数平方写成向量与自身的内积。",
+      "分别展开加法和减法形式，标出交叉项。",
+      "相加前不要假设交叉项各自为零。"
+    ],
+    "transfer": {
+      "near": "验证 u=(0,0) 的退化情况。",
+      "far": "比较在 ℓ¹ 范数下 u=(1,0),v=(0,1) 的等式是否成立。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.variance-covariance",
+    "curriculum_ids": [
+      "HS-MATH-098",
+      "HS-MATH-102"
+    ],
+    "kind": "theorem",
+    "title": "有限随机变量和的方差与协方差",
+    "version": "1.0.0",
+    "notation": [
+      "Var(X+Y)",
+      "Cov(X,Y)"
+    ],
+    "prerequisites": [
+      "期望线性性",
+      "随机变量方差"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.expectation-linearity",
+      "math.hs.probability.discrete-variable"
+    ],
+    "definition": null,
+    "statement": "在有限概率空间中，实值随机变量 X,Y 满足 Var(X+Y)=Var(X)+Var(Y)+2Cov(X,Y)，其中 Cov(X,Y)=E[(X-EX)(Y-EY)]；若独立则 Cov=0，但逆命题一般不成立。",
+    "assumptions": [
+      "样本空间有限，概率非负且总和为 1，X,Y 都有有限实值，协方差按同一概率分布计算。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "设 U=X-E[X]、V=Y-E[Y]，由期望线性性有 E[X+Y]=E[X]+E[Y]。",
+        "reason": "期望拆分不要求 X,Y 独立。"
+      },
+      {
+        "claim": "Var(X+Y)=E[(U+V)²]=E[U²]+2E[UV]+E[V²]。",
+        "reason": "实数平方恒等式与有限期望的线性性。"
+      },
+      {
+        "claim": "按照 Var(X)=E[U²]、Var(Y)=E[V²] 和 Cov(X,Y)=E[UV] 的定义代回。",
+        "reason": "得到完整公式，未擅自删去协方差。"
+      },
+      {
+        "claim": "若 X,Y 独立，则 E[XY]=E[X]E[Y]，协方差为零；反向在一般情形不成立。",
+        "reason": "独立性是协方差为零的充分条件而非必要条件。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不能无条件把 Var(X+Y) 写成 Var X+Var Y；独立性只给出无协方差，零协方差不蕴含独立性。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "方差总满足 Var(X+Y)=Var(X)+Var(Y)",
+        "example": "公平伯努利 X∈{0,1}，令 Y=X，则 Var(X+Y)=4VarX=1，而 VarX+VarY=1/2。",
+        "explanation": "关联变量的协方差可能不为零。"
+      },
+      {
+        "false_claim": "只要两个随机变量协方差为零，它们就一定相互独立。",
+        "example": "X 在 {-1,0,1} 上等概率，Y=X²，则 E[X]=E[X³]=0、Cov(X,Y)=0，但 P(X=0,Y=0)=1/3 而 P(X=0)P(Y=0)=1/9。",
+        "explanation": "零协方差仅排除线性相关性，联合概率不满足独立性要求，不能把充分条件逆用。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平伯努利 X 取 0、1 各一半，令 Y=X，求 Var(X+Y)。",
+        "steps": [
+          "EX=1/2，VarX=1/4。",
+          "Cov(X,Y)=VarX=1/4。",
+          "代入 1/4+1/4+2×1/4。"
+        ],
+        "answer": "1",
+        "check": "X+Y 为 0 或 2，各概率一半，方差为 1。"
+      },
+      {
+        "question": "同样的 X，令 Y=1-X，求 Var(X+Y)。",
+        "steps": [
+          "VarX=VarY=1/4。",
+          "Cov(X,1-X)=-VarX=-1/4。",
+          "方差相加再加两倍协方差。"
+        ],
+        "answer": "0",
+        "check": "X+Y 恒等于 1，方差必为 0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把不相关误当作独立并在所有情形删掉协方差",
+        "why_wrong": "计算 X 与 Y 的协方差需要其联合分布，两个边缘方差不足以确定和的方差。",
+        "repair_question": "当 Y=1-X 时，随机变量和有没有随机性？"
+      }
+    ],
+    "hint_ladder": [
+      "先求两个均值，再写 X-EX 与 Y-EY。",
+      "对 (U+V)² 展开，注意交叉项。",
+      "只有证明协方差为零才能使用简式。"
+    ],
+    "transfer": {
+      "near": "令 Y=2X 再算 Var(X+Y)。",
+      "far": "找出零协方差却不独立的离散随机变量例子，说明逆命题失效。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.bernoulli-variance",
+    "curriculum_ids": [
+      "HS-MATH-098",
+      "HS-MATH-099"
+    ],
+    "kind": "theorem",
+    "title": "伯努利指示随机变量的均值与方差",
+    "version": "1.0.0",
+    "notation": [
+      "X∈{0,1}",
+      "E[X]=p",
+      "Var(X)=p(1-p)"
+    ],
+    "prerequisites": [
+      "概率质量函数",
+      "期望与方差定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.discrete-variable"
+    ],
+    "definition": null,
+    "statement": "设 X 只取 0 或 1，且 P(X=1)=p∈[0,1]、P(X=0)=1-p，则 E[X]=p，Var(X)=p(1-p)，并在 p=0 或 p=1 时方差为零。",
+    "assumptions": [
+      "0≤p≤1 且概率归一，随机变量确实只取 0、1。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "E[X]=0(1-p)+1p=p。",
+        "reason": "直接应用有限离散随机变量的期望定义。"
+      },
+      {
+        "claim": "因 X 取 0 或 1，逐点有 X²=X，因此 E[X²]=p。",
+        "reason": "二值指示函数的幂等性质，仅对 {0,1} 值成立。"
+      },
+      {
+        "claim": "Var(X)=E[X²]-[EX]²=p-p²=p(1-p)。",
+        "reason": "使用方差恒等式并因式分解。"
+      },
+      {
+        "claim": "当 p∈{0,1} 时 X 为常量，方差 0；当 p=1/2 方差最大为 1/4。",
+        "reason": "p(1-p)=1/4-(p-1/2)²。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "对取值不为 0/1 的随机变量不可直接套用 p(1-p)；p 超出 [0,1] 不是概率。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何取值只有两个数的随机变量都满足 Var=p(1-p)",
+        "example": "若 Z∈{1,3} 且各半，Var(Z)=1 而 p(1-p)=1/4。",
+        "explanation": "此公式针对标准 0/1 伯努利变量，仿射变换须乘尺度平方。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平硬币正面记 1，反面记 0，求方差。",
+        "steps": [
+          "p=1/2。",
+          "代入 p(1-p)=1/2×1/2。"
+        ],
+        "answer": "1/4",
+        "check": "直接计算 E[X²]=1/2、[EX]²=1/4，差为 1/4。"
+      },
+      {
+        "question": "若某事件概率为 1/5，其指示变量 X 的方差是多少？",
+        "steps": [
+          "定义 X=1 表示发生，X=0 表示未发生。",
+          "计算 (1/5)(4/5)。"
+        ],
+        "answer": "4/25",
+        "check": "E[X]=1/5，E[X²]=1/5，二者差 1/5-1/25=4/25。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把一般二点分布直接等同于 0/1 伯努利",
+        "why_wrong": "只知道成功概率不够，还要确认两个数值分别是 0 与 1。",
+        "repair_question": "若把成功编码改为 3，失败仍为 1，方差应如何变化？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确随机变量实际有哪些可能取值。",
+      "用定义分别求 E[X] 与 E[X²]。",
+      "再作差得到方差并检查 p=0、1 的极端情形。"
+    ],
+    "transfer": {
+      "near": "计算 p=3/4 时的方差。",
+      "far": "将指示变量 X 映射为 Y=2X+3，利用方差的缩放规律比较。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.complement-independence",
+    "curriculum_ids": [
+      "HS-MATH-096"
+    ],
+    "kind": "theorem",
+    "title": "事件独立性在补事件下保持",
+    "version": "1.0.0",
+    "notation": [
+      "P(A∩B)=P(A)P(B)",
+      "Aᶜ",
+      "Bᶜ"
+    ],
+    "prerequisites": [
+      "独立事件定义",
+      "概率加法公式"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.independence",
+      "math.hs.probability.event-addition"
+    ],
+    "definition": null,
+    "statement": "在概率空间中，若事件 A 与 B 独立，则 Aᶜ 与 B、A 与 Bᶜ、Aᶜ 与 Bᶜ 也分别独立；不要求 P(A)、P(B) 非零。",
+    "assumptions": [
+      "A、B 在同一个概率空间中，且 P(A∩B)=P(A)P(B)；补集相对于同一个样本空间。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由于 B=(A∩B)⊔(Aᶜ∩B)，有 P(Aᶜ∩B)=P(B)-P(A∩B)。",
+        "reason": "互斥并集的概率加法公式。"
+      },
+      {
+        "claim": "利用原独立性，P(Aᶜ∩B)=P(B)-P(A)P(B)=(1-P(A))P(B)=P(Aᶜ)P(B)。",
+        "reason": "补事件概率与分配律，完成 Aᶜ 和 B 的独立性。"
+      },
+      {
+        "claim": "将 A 与 B 对调同理可得 A 与 Bᶜ 独立。",
+        "reason": "原独立性定义对 A、B 对称。"
+      },
+      {
+        "claim": "对已经独立的 Aᶜ 与 B 再对 B 取补集，得到 Aᶜ 与 Bᶜ 独立。",
+        "reason": "重复已证明的单侧补事件独立性，无需分母条件。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "独立不等于互斥；该证明未用 P(B)>0，故零概率事件不需要以条件概率定义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "事件 A 和 B 独立则 Aᶜ 和 B 必互斥",
+        "example": "公平硬币独立掷两次，A 为第一次正面、B 为第二次正面，则 P(Aᶜ∩B)=1/4>0。",
+        "explanation": "独立意味着概率乘积关系而非交集为空。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "两次公平独立抛硬币，A 第一次正面，B 第二次正面，求 P(Aᶜ∩B)。",
+        "steps": [
+          "P(Aᶜ)=P(B)=1/2。",
+          "补事件独立，因此交概率为 1/4。"
+        ],
+        "answer": "1/4",
+        "check": "样本为 HH,HT,TH,TT；Aᶜ∩B 是 TH，一共一项。"
+      },
+      {
+        "question": "A,B 独立且 P(A)=0.2、P(B)=0.6，求 P(Aᶜ∩Bᶜ)。",
+        "steps": [
+          "P(Aᶜ)=0.8，P(Bᶜ)=0.4。",
+          "两补事件依然独立，概率为 0.8×0.4。"
+        ],
+        "answer": "0.32",
+        "check": "1-P(A∪B)=1-[0.2+0.6-0.12]=0.32。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "用条件概率 P(B|Aᶜ) 证明时偷偷除以 P(Aᶜ)=0",
+        "why_wrong": "直接的概率乘积等式无需分母非零，因此覆盖退化概率 0/1。",
+        "repair_question": "当 P(A)=1 时 Aᶜ 的概率为 0，能否仍用乘积定义检查独立？"
+      }
+    ],
+    "hint_ladder": [
+      "先回到 P(A∩B)=P(A)P(B) 的定义。",
+      "将 B 分为交集 A∩B 与 Aᶜ∩B 两块。",
+      "求差并把 1-P(A) 识别为 P(Aᶜ)。"
+    ],
+    "transfer": {
+      "near": "计算 P(A∩Bᶜ) 的一般公式。",
+      "far": "解释为什么把 '独立' 改成 '互斥' 时该结论不再等价。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.circle-complete-square",
+    "curriculum_ids": [
+      "HS-MATH-084"
+    ],
+    "kind": "theorem",
+    "title": "一般二元二次圆方程的配方判别",
+    "version": "1.0.0",
+    "notation": [
+      "x²+y²+Dx+Ey+F=0",
+      "r²=(D²+E²)/4-F"
+    ],
+    "prerequisites": [
+      "完全平方公式",
+      "平面点到点距离"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.quadratic-vertex",
+      "math.hs.space.coordinate-distance"
+    ],
+    "definition": null,
+    "statement": "实数 D,E,F 固定时，方程 x²+y²+Dx+Ey+F=0 可化为 (x+D/2)²+(y+E/2)²=r²，其中 r²=(D²+E²)/4-F；r²>0 表示半径 r 的圆，r²=0 表示单点，r²<0 无实点。",
+    "assumptions": [
+      "二次项系数都是 1，xy 项系数 0，D、E、F 是实数；讨论实平面中的点集。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "将 x²+Dx 写成 (x+D/2)²-D²/4，将 y²+Ey 写成 (y+E/2)²-E²/4。",
+        "reason": "两个实数完全平方恒等式。"
+      },
+      {
+        "claim": "原方程等价于 (x+D/2)²+(y+E/2)²=(D²+E²)/4-F。",
+        "reason": "等式两侧同时移项，未改变实数解集。"
+      },
+      {
+        "claim": "左侧为两个实数平方和，必非负；r²<0 无解，r²=0 两平方都为零，r²>0 为圆。",
+        "reason": "平方非负及欧氏距离定义，三类情形互斥且穷尽。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "xy 混合项或二次系数不相等时不可直接用此式；r²=0 退化为点，不能称正半径圆。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "一般形式 x²+y²+Dx+Ey+F=0 总是一条真实圆周",
+        "example": "x²+y²+1=0 无实数解，因为两平方和不可能等于 -1。",
+        "explanation": "必须先检查配方得到的半径平方是否严格大于零。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "判断 x²+y²-4x+6y+9=0 的几何图形。",
+        "steps": [
+          "配方 (x-2)²+(y+3)²=4。",
+          "半径平方 4>0。"
+        ],
+        "answer": "圆心 (2,-3)、半径 2",
+        "check": "展开 (x-2)²+(y+3)²=4 得 x²+y²-4x+6y+9=0。"
+      },
+      {
+        "question": "判断 x²+y²+2x-4y+5=0。",
+        "steps": [
+          "配方 (x+1)²+(y-2)²=0。",
+          "两个平方必须同时等于零。"
+        ],
+        "answer": "唯一实点 (-1,2)，不是正半径圆",
+        "check": "代入 (-1,2) 得 1+4-2-8+5=0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只计算圆心不检查半径平方",
+        "why_wrong": "形式上像圆的二次方程可能退化为点或空集。",
+        "repair_question": "配方后右侧取负数时是否还存在实平面上的点？"
+      }
+    ],
+    "hint_ladder": [
+      "先将 x 与 y 的线性项分别配方。",
+      "计算 r² 并分三类讨论符号。",
+      "圆心与半径仅在 r²>0 时按正常圆解释。"
+    ],
+    "transfer": {
+      "near": "判断 x²+y²+4=0。",
+      "far": "说明加入 xy 项后为什么直接配方成同心正圆可能失败。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.ellipse-parameter",
+    "curriculum_ids": [
+      "HS-MATH-086"
+    ],
+    "kind": "theorem",
+    "title": "椭圆标准方程的三角参数表示",
+    "version": "1.0.0",
+    "notation": [
+      "x=a cos t",
+      "y=b sin t",
+      "x²/a²+y²/b²=1"
+    ],
+    "prerequisites": [
+      "单位圆恒等式",
+      "椭圆标准方程"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.pythagorean",
+      "math.hs.geometry.ellipse-focus"
+    ],
+    "definition": null,
+    "statement": "若 a,b>0，则平面点 (x,y) 满足 x²/a²+y²/b²=1 当且仅当存在实数 t 使 x=a cos t、y=b sin t；参数 t 可加整数个 2π 不改变点。",
+    "assumptions": [
+      "a,b 是严格正实数，横纵轴均不退化；使用所有实数 t 的正弦余弦圆周参数化性质。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "若 x=a cos t、y=b sin t，则 x²/a²+y²/b²=cos²t+sin²t=1。",
+        "reason": "a,b 非零且三角恒等式成立，完成一个方向。"
+      },
+      {
+        "claim": "若 x²/a²+y²/b²=1，则向量 (x/a,y/b) 在单位圆上。",
+        "reason": "两坐标平方和为 1；正的 a,b 保证除法有意义。"
+      },
+      {
+        "claim": "由单位圆上的每一点均可表示为 (cos t,sin t)，存在实数 t 使 x/a=cos t、y/b=sin t。",
+        "reason": "单位圆的满射参数化是先修事实，乘 a,b 即得反方向。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "a 或 b 为零时标准椭圆方程分母无意义；只用 t∈[0,π] 不能覆盖完整椭圆。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "参数 t 在 [0,π] 就覆盖所有椭圆点",
+        "example": "当 t∈[0,π] 时 sin t≥0，因此 y=b sin t≥0，无法得到下半椭圆。",
+        "explanation": "完整一周须覆盖 sin t 的正负。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "椭圆 x²/9+y²/4=1，t=π/2 对应什么点？",
+        "steps": [
+          "a=3、b=2。",
+          "cos(π/2)=0，sin(π/2)=1。"
+        ],
+        "answer": "(0,2)",
+        "check": "代入 0/9+4/4=1。"
+      },
+      {
+        "question": "椭圆 x²/4+y²/9=1，t=π 对应什么点？",
+        "steps": [
+          "a=2、b=3。",
+          "cos π=-1，sin π=0。"
+        ],
+        "answer": "(-2,0)",
+        "check": "代入 4/4+0/9=1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把参数 t 当作横轴坐标 x",
+        "why_wrong": "t 是产生平面点的一种角参数，并非笛卡儿 x 的简单重命名。",
+        "repair_question": "为什么不同的 t 与 t+2π 会对应同一个点？"
+      }
+    ],
+    "hint_ladder": [
+      "先把 x/a、y/b 看成单位圆坐标。",
+      "利用平方和为 1 找一个角参数。",
+      "分别写 x=a cos t 与 y=b sin t 并核查 a,b 是否为正。"
+    ],
+    "transfer": {
+      "near": "用 t=3π/2 找到下半椭圆顶点。",
+      "far": "比较参数化的一对一性和覆盖性，说明如何避免重复计数 t=0 与 2π。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.counting.pascal-identity",
+    "curriculum_ids": [
+      "HS-MATH-094",
+      "HS-MATH-095"
+    ],
+    "kind": "theorem",
+    "title": "组合数 Pascal 递推的集合分类证明",
+    "version": "1.0.0",
+    "notation": [
+      "C(n,k)=C(n-1,k-1)+C(n-1,k)"
+    ],
+    "prerequisites": [
+      "有限集合子集计数",
+      "组合数定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.permutation-combination"
+    ],
+    "definition": null,
+    "statement": "若 n 为正整数且 1≤k≤n-1，则 C(n,k)=C(n-1,k-1)+C(n-1,k)。在定义 C(n,k)=0（k<0 或 k>n）后还可把边界写成统一形式，但必须明确采用该约定。",
+    "assumptions": [
+      "n≥2 为整数、1≤k≤n-1；等式中的组合数表示从 n 个不同元素中选出指定数量的子集。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "固定一个有 n 个不同元素的集合 U 及指定元素 u，全部 k 元子集分为包含 u 与不包含 u 两类。",
+        "reason": "这两个集合类互斥，且并集覆盖所有 k 元子集。"
+      },
+      {
+        "claim": "若 k 元子集包含 u，其他 k-1 个元素从 U\\{u} 的 n-1 个元素中选，有 C(n-1,k-1) 种。",
+        "reason": "包含指定元素时形成一一对应的 k-1 子集。"
+      },
+      {
+        "claim": "若不包含 u，所有 k 个元素从剩余 n-1 个元素中选择，有 C(n-1,k) 种。",
+        "reason": "不包含指定元素时形成另一个一一对应。"
+      },
+      {
+        "claim": "按互斥分类加法原理相加，得到 Pascal 递推。",
+        "reason": "同一对象不重计、不漏计。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "n、k 必须为整数；若 k=0 或 k=n 则需按约定解释 C(n-1,-1) 或 C(n-1,n)，不可把这些越界项误当负数量。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "Pascal 递推的两个加数表示同一类子集，可以不区分重复",
+        "example": "若 n=3、k=1，C(3,1)=3，而把两类都计为 C(2,1) 得 4。",
+        "explanation": "必须用是否包含固定元素进行不重叠分类。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "验证 C(5,2)=C(4,1)+C(4,2)。",
+        "steps": [
+          "C(4,1)=4。",
+          "C(4,2)=6。"
+        ],
+        "answer": "10=4+6",
+        "check": "C(5,2)=5×4/2=10。"
+      },
+      {
+        "question": "计算 C(6,3) 的 Pascal 分解。",
+        "steps": [
+          "含指定元素为 C(5,2)=10。",
+          "不含指定元素为 C(5,3)=10。"
+        ],
+        "answer": "20",
+        "check": "6!/(3!3!)=20。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "没有固定一个元素就把任意两类子集相加",
+        "why_wrong": "分类必须覆盖全集且彼此互斥，不能凭形式等式拆分。",
+        "repair_question": "你选定的固定元素是否在每个子集中只能处于包含或不包含这两种状态？"
+      }
+    ],
+    "hint_ladder": [
+      "先从 n 元集合选一个特殊元素。",
+      "按所选 k 元子集是否包含该元素分类。",
+      "分别解释每类余下需要选择几个元素。"
+    ],
+    "transfer": {
+      "near": "用 n=7、k=2 验证公式。",
+      "far": "用 Pascal 递推推导 C(n,k)=C(n,n-k) 的另一种组合解释。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

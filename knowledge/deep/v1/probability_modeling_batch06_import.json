@@ -1,0 +1,828 @@
+[
+  {
+    "id": "math.hs.sequence.recurrence-initial",
+    "curriculum_ids": [
+      "HS-MATH-062"
+    ],
+    "kind": "concept",
+    "title": "递推数列和初始条件的唯一确定性",
+    "version": "1.0.0",
+    "notation": [
+      "a_(n+1)=F(n,a_n)",
+      "a_1"
+    ],
+    "prerequisites": [
+      "数列项号",
+      "函数对应法则"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": "数列递推给出当前项怎样决定下一项；对一阶递推 a_(n+1)=F(n,a_n)，若给定合法的首项 a_1，就能依次唯一算出后续各项。没有初始条件则通常不能唯一确定数列；二阶递推一般还需要两个初始项。",
+    "statement": null,
+    "assumptions": [
+      "项号 n 为正整数，初始项与递推函数在每步定义良好。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "一阶递推在 n=1 时通过给定 a_1 唯一生成 a_2，重复得到后续项。",
+      "对于二阶递推 a_(n+2)=G(a_(n+1),a_n)，通常需先提供 a_1 与 a_2 才能启动。"
+    ],
+    "boundaries": [
+      "递推函数无定义或出现除零时，给定初值也可能无法无限继续；递推不是自动的显式通项。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只有一个递推公式就必然确定唯一数列",
+        "example": "a_(n+1)=a_n+2 且未规定 a_1，取 a_1=0 或 10 得不同数列。",
+        "explanation": "首项未指定时有无穷多个符合递推关系的数列。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "a_1=3,a_(n+1)=a_n+2，求前四项。",
+        "steps": [
+          "由 a_1=3 得 a_2=5,a_3=7。",
+          "再得 a_4=9。"
+        ],
+        "answer": "3,5,7,9",
+        "check": "每相邻两项的差均为 2 且首项满足给定值。"
+      },
+      {
+        "question": "a_1=1,a_2=1,a_(n+2)=a_(n+1)+a_n，求 a_5。",
+        "steps": [
+          "由二阶递推得到 a_3=2,a_4=3。",
+          "再算 a_5=5。"
+        ],
+        "answer": "a_5=5",
+        "check": "两初始条件均参与确定后续值。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只抄写递推式却没检查初始条件",
+        "why_wrong": "递推式只限制相邻项关系，初始项不定时无法确定唯一数列。",
+        "repair_question": "若首项改为 100，递推相同的数列会怎样变化？"
+      }
+    ],
+    "hint_ladder": [
+      "先看递推关系用到前面几个项。",
+      "检查是否提供足够的初始项与合法计算域。",
+      "按项号依次算出前几项，再尝试猜测通项。"
+    ],
+    "transfer": {
+      "near": "给定 a_1=2,a_(n+1)=3a_n，求前五项。",
+      "far": "构造一个包含除法的递推，让某个合法初值导致后续某项无定义。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.normal-distribution",
+    "curriculum_ids": [
+      "HS-MATH-101"
+    ],
+    "kind": "concept",
+    "title": "正态分布密度、标准化和单点概率",
+    "version": "1.0.0",
+    "notation": [
+      "X~N(μ,σ²)",
+      "Z=(X−μ)/σ"
+    ],
+    "prerequisites": [
+      "连续型随机变量",
+      "标准差与概率密度",
+      "积分面积"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.statistics.variance"
+    ],
+    "definition": "正态分布 N(μ,σ²) 的密度为 f(x)=exp[−(x−μ)²/(2σ²)]/(σ√(2π))，其中 μ∈ℝ、σ>0。标准化 Z=(X−μ)/σ 服从 N(0,1)；连续型变量任一点概率 P(X=x)=0，而区间概率是密度曲线下的面积。",
+    "statement": null,
+    "assumptions": [
+      "μ 为实数、标准差 σ>0，连续型变量由非负密度积分定义概率。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "密度关于 μ 对称，中心左右的累计面积相同，因此 P(X≤μ)=1/2。",
+      "把变量线性变换 z=(x−μ)/σ，可得到标准化概率 P(X≤a)=P(Z≤(a−μ)/σ)。"
+    ],
+    "boundaries": [
+      "σ=0 不符合正态密度的常规定义；密度函数在 μ 处的高度不是 P(X=μ)。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "连续正态密度在某一点的函数值就是该点发生的概率",
+        "example": "标准正态密度在 0 处为 1/√(2π)>0，但 P(Z=0)=0。",
+        "explanation": "概率对应积分面积，单点宽度为零因而概率为零。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "X~N(10,4)，求 P(X≤10)。",
+        "steps": [
+          "均值 μ=10、标准差 σ=2。",
+          "正态分布关于均值对称，均值左侧面积为一半。"
+        ],
+        "answer": "P(X≤10)=0.5",
+        "check": "连续分布单点概率零，≤ 与 < 在此处概率相同。"
+      },
+      {
+        "question": "X~N(5,9)，把 X=11 标准化。",
+        "steps": [
+          "标准差 σ=√9=3。",
+          "z=(11−5)/3=2。"
+        ],
+        "answer": "z=2",
+        "check": "换回 X=5+3×2=11 验证一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把方差误认为标准差代入标准化公式",
+        "why_wrong": "N(μ,σ²) 第二参数为方差，标准化分母是 σ 而不是 σ²。",
+        "repair_question": "N(5,9) 的标准差是 9 还是 3？"
+      }
+    ],
+    "hint_ladder": [
+      "先区分方差 σ² 与标准差 σ。",
+      "区间概率应考虑密度下的面积而非点上高度。",
+      "用 z=(x−μ)/σ 化为标准正态，再查所需概率。"
+    ],
+    "transfer": {
+      "near": "对 X~N(0,16)，求阈值 X=8 对应的 Z 值。",
+      "far": "比较连续正态模型与离散计数模型的单点概率区别。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.statistics.independence-hypothesis",
+    "curriculum_ids": [
+      "HS-MATH-103"
+    ],
+    "kind": "concept",
+    "title": "列联表独立性检验的原假设与条件",
+    "version": "1.0.0",
+    "notation": [
+      "H₀:独立",
+      "E_ij=R_i C_j/n"
+    ],
+    "prerequisites": [
+      "条件概率与独立性",
+      "列联表",
+      "抽样分布的近似"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.conditioning"
+    ],
+    "definition": "二维分类变量的独立性检验以 H₀:两个变量在总体中独立为原假设。独立时第 i 行第 j 列的期望频数为 E_ij=(行合计 R_i×列合计 C_j)/n，常用检验统计量 χ²=Σ(O_ij−E_ij)²/E_ij；拒绝原假设不是证明因果关联。",
+    "statement": null,
+    "assumptions": [
+      "使用二维分类列联表，观察频数 O_ij≥0，总样本数 n>0。",
+      "经典皮尔逊卡方近似还需足够大的期望格频数，并避免结构零。",
+      "检验基于具有合理随机性或代表性的数据采集机制；观测单位间的依赖结构需要单独评估。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先核对抽样机制和列联表是否完整，写明行列分类的实际含义。",
+      "在独立性假设下各单元联合比例等于行边际比例乘列边际比例，乘样本总数得到 E_ij。"
+    ],
+    "boundaries": [
+      "若 E_ij 为零或极小，经典 χ² 近似可能失效；拒绝 H₀ 不等于证明因果性或某个具体效应大小。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "检验统计量显著就可以证明一个因素导致另一个因素",
+        "example": "从非随机观察样本得到显著关联，例如季节同时影响两个指标。",
+        "explanation": "统计显著仅描述对独立原假设的不利证据，不排除混杂与测量偏差。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "2×2 列联表行合计 30、70，列合计 40、60，总数 100，求左上格期望频数。",
+        "steps": [
+          "按独立原假设计算 R₁C₁/n。",
+          "代入 30×40/100=12。"
+        ],
+        "answer": "E₁₁=12",
+        "check": "第一行期望频数合计为 30，列一合计为 40。"
+      },
+      {
+        "question": "2×2 表有一行全为 0，总样本非零，可否直接用经典卡方统计量？",
+        "steps": [
+          "该行行合计 0，期望格频数也为 0。",
+          "χ² 中分母为 0，经典公式不可直接计算。"
+        ],
+        "answer": "不可直接使用，需先检查结构与适用条件",
+        "check": "删除空类或更换检验设计需遵循事先确定的统计方法。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忽略期望频数为零或过低的问题",
+        "why_wrong": "在无效分母或稀疏样本下卡方近似的数学与统计依据不成立。",
+        "repair_question": "如果某格 E_ij=0，(O−E)²/E 应该如何处理？"
+      }
+    ],
+    "hint_ladder": [
+      "明确零假设 H₀ 是哪两个总体分类变量独立。",
+      "根据边际合计计算各格 E_ij，检查合法性。",
+      "解释结果时区分反对独立假设与证明因果关系。"
+    ],
+    "transfer": {
+      "near": "计算行合计 20、80，列合计 10、90 的 2×2 表四格期望频数。",
+      "far": "讨论选择偏差导致假相关时为什么拒绝独立性不能自动支持因果推断。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.modeling.question-to-model",
+    "curriculum_ids": [
+      "HS-MATH-059"
+    ],
+    "kind": "method",
+    "title": "数学建模：问题定义、变量、假设与单位",
+    "version": "1.0.0",
+    "notation": [
+      "x(t)",
+      "单位一致性"
+    ],
+    "prerequisites": [
+      "函数与变量",
+      "物理量和单位",
+      "实际测量误差"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": null,
+    "statement": "数学建模首先明确现实问题的目标、受控/不可控变量、输入输出的量纲和有效范围；之后建立含假设的数学关系。未经验证的现实假设必须保持假设状态，不能仅因能写出方程就当作事实。",
+    "assumptions": [
+      "研究对象与使用场景明确，观测量具有统一单位和时间范围。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先写目标与可观测变量，再列变量的单位、可取范围和约束。",
+      "说明简化假设如何对应现实情境，并写出该假设可能失效的边界。",
+      "根据假设选择函数或概率关系，对实际数据验证前只称为候选模型。"
+    ],
+    "boundaries": [
+      "常数速度或线性增长等简化仅适用于特定区间；单位不一致的等式不可直接比较。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要方程形式正确，就一定解释了真实现象",
+        "example": "把全程车速假设为 10 m/s，但实际包含红绿灯停车，不能保证距离 d=10t 全程成立。",
+        "explanation": "数学等式在给定假设下可算，但没有证明该假设与真实交通条件吻合。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "某人以恒定 3 m/s 走 10 s，建立距离模型。",
+        "steps": [
+          "定义自变量 t 单位秒，范围 0≤t≤10。",
+          "在匀速前提下 s(t)=3t，路程单位米。"
+        ],
+        "answer": "s(10)=30 m",
+        "check": "单位 m/s×s=m，边界为有限时间区间。"
+      },
+      {
+        "question": "用每天+2升水估计水箱 5 天体积，初始 10 L。",
+        "steps": [
+          "定义 t 为整数天且 0≤t≤5。",
+          "恒定净增加假设下 V(t)=10+2t。"
+        ],
+        "answer": "V(5)=20 L",
+        "check": "必须同时核对水箱容量，模型外推不能假定无边界。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "直接选公式而未说明现实假设与量纲",
+        "why_wrong": "现实变量有单位和适用范围，公式匹配不代表解释有效。",
+        "repair_question": "该模型中的 x 代表什么，单位是什么，什么时候可能失效？"
+      }
+    ],
+    "hint_ladder": [
+      "先用一句话写清要解释或预测什么。",
+      "列出变量、单位、测量方式与适用范围。",
+      "说明每条方程依赖的假设及一个可能的反例。"
+    ],
+    "transfer": {
+      "near": "在恒温加热假设下写一个线性升温模型并说明失效边界。",
+      "far": "将匀速交通模型改为分段速度模型，说明何时必须增加状态变量。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.modeling.residual-validation",
+    "curriculum_ids": [
+      "HS-MATH-060"
+    ],
+    "kind": "method",
+    "title": "数据模型拟合与残差检验",
+    "version": "1.0.0",
+    "notation": [
+      "e_i=y_i−ŷ_i",
+      "MAE=Σ|e_i|/n"
+    ],
+    "prerequisites": [
+      "函数模型",
+      "观测数据",
+      "平均绝对误差"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.modeling.question-to-model"
+    ],
+    "definition": null,
+    "statement": "建立候选模型后，必须在观测点比较预测值与真实值：残差 e_i=y_i−ŷ_i，平均绝对误差 MAE=(1/n)Σ|e_i|。拟合数据上的低误差不等于未见样本上的好表现；需要独立验证集和残差结构分析。",
+    "assumptions": [
+      "观测 y_i 与预测 ŷ_i 位于相同单位和对应时间/输入点；n≥1。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先按照同一单位与同一输入点对齐模型预测和观测，防止时间错位。",
+      "逐点计算残差和绝对误差，并区分训练误差与冻结验证误差。",
+      "检查残差是否随时间或输入系统偏离零，发现偏差时优先复核模型假设。"
+    ],
+    "boundaries": [
+      "误差指标不同侧重不同；MAE 不反映误差符号，异常值和数据泄漏会影响结论。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "训练样本上平均误差很低就证明模型对未来一定准确",
+        "example": "用一条高次多项式精确穿过有限观测点，但新数据点可能大幅偏离。",
+        "explanation": "插值拟合的训练误差零不能排除过拟合，必须进行独立样本检验。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "真实 y=[2,4,5]、预测 ŷ=[2,3,7]，计算 MAE。",
+        "steps": [
+          "残差 e=[0,1,−2]。",
+          "绝对误差之和 0+1+2=3，除以 3。"
+        ],
+        "answer": "MAE=1",
+        "check": "两组数据同单位且逐项位置对应。"
+      },
+      {
+        "question": "真实 y=[10,10]，预测 ŷ=[8,12]，平均残差与 MAE。",
+        "steps": [
+          "残差为 [2,−2]，平均残差为 0。",
+          "绝对残差为 [2,2]，MAE=2。"
+        ],
+        "answer": "平均残差 0；MAE=2",
+        "check": "平均残差相互抵消不能证明误差很小。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只看平均带符号残差而不检查误差大小",
+        "why_wrong": "正负预测误差可相互抵消，掩盖较大的单点误差。",
+        "repair_question": "如果残差是 +10 和 −10，平均为零是否说明模型准确？"
+      }
+    ],
+    "hint_ladder": [
+      "先对齐样本的实际值与预测值及其单位。",
+      "计算每个 e_i，再计算 |e_i| 而非直接求残差平均。",
+      "将训练和未见样本误差分开，检查残差是否呈系统模式。"
+    ],
+    "transfer": {
+      "near": "计算 y=[1,2,5] 和 ŷ=[0,3,4] 的 MAE。",
+      "far": "设计冻结验证集说明为什么多项式插值模型虽训练零误差却不一定优于简单线性模型。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.modeling.inquiry-claim",
+    "curriculum_ids": [
+      "HS-MATH-061"
+    ],
+    "kind": "method",
+    "title": "数学探究：猜想、证明、反例与合作复核",
+    "version": "1.0.0",
+    "notation": [
+      "∀x∈D",
+      "∃x∈D"
+    ],
+    "prerequisites": [
+      "全称命题",
+      "反例",
+      "条件推理"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.logic.quantifier"
+    ],
+    "definition": null,
+    "statement": "数学探究从具体案例提出可检验猜想，随后明确命题的论域与假设。有限数量的正例不能证明全称命题；一个满足假设且违反结论的反例即可推翻全称命题。合作复核时应记录独立推导与可能的失效边界。",
+    "assumptions": [
+      "每个探究命题有清晰的量词、论域和可判定条件。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "将口头观察转换成有量词与完整条件的数学命题，区分必要条件和充分条件。",
+      "尝试特殊值、退化情形与反例，先筛除明显不成立的猜想。",
+      "对未被反例推翻的命题尝试一般证明，并让他人逐步检查每条推论是否使用了合法前提。"
+    ],
+    "boundaries": [
+      "有限实验归纳仅增加猜想可信度，不能代替一般证明。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "前一百个正整数验证成立，就证明所有正整数都成立",
+        "example": "命题 n<101 对 n=1,...,100 都成立，但在 n=101 不成立。",
+        "explanation": "有限多个正例无法覆盖所有正整数的全称量词。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "猜想“每个整数 n 的 n²−n 都是偶数”，怎样证明？",
+        "steps": [
+          "写成 n(n−1)，发现两个相邻整数。",
+          "相邻整数必有一个偶数，乘积因而是偶数。"
+        ],
+        "answer": "对所有整数 n 成立",
+        "check": "论证覆盖整数全集而不依赖有限枚举。"
+      },
+      {
+        "question": "反驳“每个正整数的平方都大于它自身”。",
+        "steps": [
+          "令 n=1，得到 n²=1。",
+          "严格大于关系 1>1 不成立。"
+        ],
+        "answer": "反例 n=1 推翻命题",
+        "check": "n=1 满足正整数前提，但违反结论。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把电脑大量枚举结果当成形式证明",
+        "why_wrong": "全称命题需要覆盖整个定义域，有限计算永远不能排除未枚举点失败。",
+        "repair_question": "你尝试过最小值、边界条件以及没有枚举到的情况吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确猜想适用的对象与量词。",
+      "尝试最小值、零值、等号与退化边界寻找反例。",
+      "若要证明全称，找一般规律并逐步论证，不仅列举数据。"
+    ],
+    "transfer": {
+      "near": "证明任意整数 n 的 n(n+1) 为偶数。",
+      "far": "探究一个有限数值实验看起来始终正确但一般情形失败的数学猜想。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.modeling.experimental-inquiry",
+    "curriculum_ids": [
+      "HS-MATH-104"
+    ],
+    "kind": "method",
+    "title": "选择性必修数学探究活动的可重复实验设计",
+    "version": "1.0.0",
+    "notation": [
+      "∀θ∈D",
+      "实验参数 θ"
+    ],
+    "prerequisites": [
+      "数学猜想",
+      "变量控制",
+      "误差检验"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.modeling.inquiry-claim"
+    ],
+    "definition": null,
+    "statement": "开展数学探究活动时，先定义可证伪的数学问题和参数范围，再选择反例搜索或控制变量实验，对观察结果与严格命题分别记录。复现条件包括数据、公式、随机种子、边界与执行过程，不允许由实验趋势直接宣称证明。",
+    "assumptions": [
+      "实验参数范围、随机种子（若有）、比较方法和评价指标事先固定。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "把“可能存在规律”改写成特定参数范围内、可通过反例否定的判断。",
+      "将可能变化的一个或几个参数明确记录，并保持其他假设不变完成对照。",
+      "复现异常结果，最后区分猜想、数值证据和数学证明三类结论。"
+    ],
+    "boundaries": [
+      "随机模拟存在抽样误差；没有说明参数范围的“全局最优”不可验证。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "仿真次数越多就自动等于证明数学命题",
+        "example": "随机模拟一百万次未出现小概率反例，不意味着反例不存在。",
+        "explanation": "随机有限采样无法穷尽无限参数空间。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "对固定周长 20 的矩形，探索面积最大情况。",
+        "steps": [
+          "令边长 x 和 10−x，范围 0<x<10。",
+          "面积 A=x(10−x)=25−(x−5)²，最大 25。"
+        ],
+        "answer": "x=5 时最大，形成正方形",
+        "check": "平方非负给出全域证明而不依赖离散网格搜索。"
+      },
+      {
+        "question": "检验‘随机掷硬币中正面比例总是严格 1/2’这一命题。",
+        "steps": [
+          "一次掷硬币出现正面，则样本比例为 1。",
+          "有限样本比例不保证恰好 1/2。"
+        ],
+        "answer": "命题为假",
+        "check": "给出一次试验即可构成反例。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把实验曲线平滑看成没有例外的严格证明",
+        "why_wrong": "曲线仅覆盖所采样点，未采样参数可能出现相反行为。",
+        "repair_question": "能否写出独立于采样结果的数学理由？"
+      }
+    ],
+    "hint_ladder": [
+      "先写出可否定的具体数学猜想。",
+      "记录参数、范围、种子与结果，尝试特别极端的参数。",
+      "把数值证据和可审查的数学证明分别保存。"
+    ],
+    "transfer": {
+      "near": "探索固定面积矩形周长最小时的形状，再给出严格证明。",
+      "far": "用反例说明数值拟合很好的函数不一定满足全域单调性命题。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.modeling.data-driven",
+    "curriculum_ids": [
+      "HS-MATH-105"
+    ],
+    "kind": "method",
+    "title": "数据驱动建模中的训练验证分离与时点约束",
+    "version": "1.0.0",
+    "notation": [
+      "train/validation/test",
+      "MSE"
+    ],
+    "prerequisites": [
+      "样本与总体",
+      "函数拟合",
+      "时间序列"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.modeling.residual-validation"
+    ],
+    "definition": null,
+    "statement": "数据驱动建模要先声明预测目标与可用信息的时间边界，再划分训练、验证和冻结测试。任何在预测时点之后才产生的信息都不能作为模型输入；按时间预测时随机打乱可能造成时间信息泄漏。",
+    "assumptions": [
+      "数据存在可定义的采集时点和待预测目标；所有训练步骤必须与测试评价独立。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "首先对每个变量列出真正可观测的时间戳，排除目标时点之后才会知道的特征。",
+      "建立独立验证与测试切分，调参仅使用训练与验证信息。",
+      "冻结后在未见测试数据上报告误差与适用范围，并分开记录异常与缺失。"
+    ],
+    "boundaries": [
+      "历史相关性不代表未来稳定，分布漂移必须单独核验；测试集不能重复参与调参。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "随机划分训练测试总能避免时间信息泄漏",
+        "example": "预测某天需求却把当天结束后才统计的真实销售量作为特征。",
+        "explanation": "即使随机划分，未来产生的特征仍然包含目标时点不可用信息。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "预测第 10 天销量，允许使用什么输入？",
+        "steps": [
+          "把目标时点固定为第 10 天开门前。",
+          "只允许使用此前已经公布的天气预报和第 1–9 天历史销量。"
+        ],
+        "answer": "可使用历史销量，不可使用第 10 天实销",
+        "check": "可用性以预测时点的信息集合为准。"
+      },
+      {
+        "question": "训练误差 1、冻结测试误差 5，能否只报告训练误差？",
+        "steps": [
+          "两种误差来自不同样本。",
+          "报告时保留真实测试误差和可能分布差异。"
+        ],
+        "answer": "必须报告测试误差并分析差异",
+        "check": "不能为了好看丢弃不利的独立结果。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把未来数据或完整标签当作提前可用信息",
+        "why_wrong": "时间泄漏会让离线评分显著偏高而真实部署无法取得相同特征。",
+        "repair_question": "你在当时真正做出预测前能看到这个输入吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先写预测时点及可用数据清单。",
+      "按时点区分过去与未来，冻结独立测试集。",
+      "评估时同时报告误差和数据漂移边界。"
+    ],
+    "transfer": {
+      "near": "设计用前三周气温预测第四周用电量的无泄漏切分。",
+      "far": "解释为什么已有标签参与特征工程会造成间接信息泄漏。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.modeling.model-validation",
+    "curriculum_ids": [
+      "HS-MATH-106"
+    ],
+    "kind": "method",
+    "title": "数学模型验证、敏感性与外推失效判定",
+    "version": "1.0.0",
+    "notation": [
+      "f(x;θ)",
+      "Δf/Δθ"
+    ],
+    "prerequisites": [
+      "变量与参数",
+      "误差指标",
+      "反例检验"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.modeling.data-driven"
+    ],
+    "definition": null,
+    "statement": "模型评价不能只检查公式推导：还应分别检查数据拟合、参数敏感性、合理极端情况和实际使用条件。对参数 θ 的微小扰动若导致结果大幅变化，应报告不确定性；超出拟合输入范围的推断属于外推，必须单独验证。",
+    "assumptions": [
+      "模型有明确参数、输入范围和外部验证指标；评价数据与建模假设可追溯。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "明确需要评估的预测指标和允许输入范围，并记录训练/验证集分工。",
+      "系统扰动关键参数和输入边界，观察输出是否符合物理、数学及量纲约束。",
+      "对不满足假设的真实场景列出拒绝使用或重新校准的改判条件。"
+    ],
+    "boundaries": [
+      "低均方误差不能自动排除结构性错误，边界样本和现实机制变化需要独立检查。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "插值区间内误差小就保证外推区间同样准确",
+        "example": "在 0≤t≤1 拟合 y=t，但真实系统在 t>1 时达到饱和。",
+        "explanation": "模型内推成功没有验证超出数据范围时的机制不变性。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "匀速模型 s(t)=2t 在 0≤t≤5 测试良好，能直接预测 t=100 吗？",
+        "steps": [
+          "先确定模型只在 0–5 范围内验证过。",
+          "t=100 是外推，需要新数据确认速度是否仍恒定。"
+        ],
+        "answer": "不能不加验证地保证 s(100)=200",
+        "check": "即使算术上 200 没错，也未证明现实机制保持。"
+      },
+      {
+        "question": "模型 f(x;θ)=θx，θ=2,x=10，参数 θ 增加 10% 后输出变化多少？",
+        "steps": [
+          "原输出 f=20，扰动 θ'=2.2。",
+          "新输出 22，相对增长 10%。"
+        ],
+        "answer": "由 20 变为 22",
+        "check": "线性比例模型对 θ 的局部相对敏感度为 1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "混淆数学上代入有结果与现实上预测可信",
+        "why_wrong": "公式可计算不等于对应机制在新情境下仍然成立。",
+        "repair_question": "这组新输入是否落在有观测证据的范围内？"
+      }
+    ],
+    "hint_ladder": [
+      "先标出模型在哪些参数和输入范围验证过。",
+      "测试一个极端值和一个小参数扰动，记录结果变化。",
+      "明确何时应拒绝外推、收集新数据或更换模型。"
+    ],
+    "transfer": {
+      "near": "讨论线性增长模型在接近容器最大容量时为何失效。",
+      "far": "设计一个对不同模型参数进行敏感性分析的冻结测试方案。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]
