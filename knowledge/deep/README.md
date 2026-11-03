@@ -113,3 +113,8 @@ cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q
 - \`scripts/build_kb_batch07_lessons.py --check\` 与 \`scripts/build_kb_batch07_audit.py --check\`：新增生成一致性检查，已接入 GitHub CI。
 
 注意：项目 8 篇新草案的 **16 道题**由独立精确数学 oracle 点验算，另对 10 类争议知识构建 **110 个参数化数学案例**。这不是通用自动证明，也不意味着 214 条证明步骤已经接受教研审核。开发、验收及后续 GitHub PR 参见 \`docs/logs/2026-11-03-kb-batch07-syllabus-proof-audit.md\`。
+
+
+## Batch08｜独立审校签名发布门禁
+
+参见 docs/evaluation/KB_BATCH08_ATTESTED_RELEASE.md。新增双 reviewer 签名、完整版本内容哈希及仅学生首层提示发布契约。技术签名规则不代替真实教师身份确认、证明认证或在线 Agent。当前已有 146 篇草案仍全部 REVIEW_PENDING。
