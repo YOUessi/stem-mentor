@@ -1,4 +1,4 @@
-"""Negative gating for crosswalk semantics and teacher-review honesty."""
+"""Negative gates for open Batch04 gaps and new Batch05 draft candidates."""
 import copy
 import json
 import sys
@@ -18,6 +18,7 @@ def test_113_links_do_not_falsely_equal_full_curriculum():
     assert summary["deep_draft_documents"]>=86
     assert summary["linked_project_topics"]==113
     assert summary["known_partial_topic_count"]>=23
+    assert summary["gap_draft_candidate_count"] + summary["gap_without_candidate_count"] == summary["known_partial_topic_count"]
     assert summary["other_linked_unreviewed_topic_count"]+summary["known_partial_topic_count"]==113
     assert summary["official_curriculum_atom_mapping_reviewed"]==0
     assert summary["explicit_official_elective_tracks_completed"]==0
@@ -32,7 +33,9 @@ def test_113_links_do_not_falsely_equal_full_curriculum():
  "HS-MATH-069","HS-MATH-089","HS-MATH-091","HS-MATH-096"])
 def test_semantic_gaps_are_open_and_have_specific_next_lesson(topic):
     rows={r["engineering_topic_id"]:r for r in build()["topics"]}
-    assert rows[topic]["evidence_status"]=="KNOWN_PARTIAL_UNREVIEWED"
+    assert rows[topic]["evidence_status"]=="GAP_DRAFT_CANDIDATE_UNREVIEWED"
+    assert rows[topic]["gap_candidate_draft_present"] is True
+    assert rows[topic]["gap_review_status"] == "OPEN"
     assert rows[topic]["recommended_next_lesson"].startswith("math.hs.")
     assert rows[topic]["curriculum_atom_officially_verified"] is False
     assert rows[topic]["teacher_approved_lesson_ids"]==[]
@@ -62,7 +65,7 @@ def test_gap_catalog_fails_closed_on_forgery(mutation):
 
 
 def test_coverage_snapshot_is_stable_and_remains_editorial():
-    snapshot=json.loads((ROOT/"docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH04.json").read_text(encoding="utf-8"))
+    snapshot=json.loads((ROOT/"docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH05.json").read_text(encoding="utf-8"))
     result=build()
     assert result==snapshot
     assert "CONSERVATIVE" in snapshot["scope"]

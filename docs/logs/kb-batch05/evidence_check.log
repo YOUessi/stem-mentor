@@ -1,0 +1,30 @@
+{
+  "actual_status_counts": {
+    "DERIVATIVE_IDENTITY": 5,
+    "DOMAIN_NOT_ESTABLISHED": 5,
+    "IDENTITY_ON_DECLARED_DOMAIN": 28,
+    "VALID_COUNTEREXAMPLE": 10
+  },
+  "claims": 48,
+  "expected_status_counts": {
+    "DERIVATIVE_IDENTITY": 5,
+    "DOMAIN_NOT_ESTABLISHED": 5,
+    "IDENTITY_ON_DECLARED_DOMAIN": 28,
+    "VALID_COUNTEREXAMPLE": 10
+  },
+  "failures": [],
+  "linked_lesson_count": 14,
+  "math_subclaims_checked": 48,
+  "notes": [
+    "Each result applies to one explicitly authored rational or trig statement only.",
+    "Domain guards are declared assumptions, not premises independently established.",
+    "Finite witnesses disprove only the particular stated false universal claim.",
+    "No derived result may be marked as a reviewed proof of a course theorem."
+  ],
+  "review_state": "REVIEW_PENDING",
+  "scope": "LIMITED_AUTHORED_EXPRESSION_EVIDENCE_NOT_FULL_PROOF",
+  "student_free_text_steps_verified": 0,
+  "teacher_approved": 0,
+  "total_draft_lessons": 109,
+  "whole_theorems_verified": 0
+}

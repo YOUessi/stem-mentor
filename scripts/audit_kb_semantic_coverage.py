@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "backend"))
 from app.deep_knowledge import coverage_report, curriculum, lessons
 
 GAPS = ROOT / "knowledge/deep/semantic_gaps_batch04.json"
-DEFAULT_OUT = ROOT / "docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH04.json"
+DEFAULT_OUT = ROOT / "docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH05.json"
 
 
 def validate_gaps(raw, known_ids):
@@ -53,8 +53,10 @@ def build():
     for row in all_rows:
         topic_id = row["id"]
         docs = links.get(topic_id, ())
+        candidate_present = (topic_id in gaps and
+                             gaps[topic_id]["recommended_lesson_id"] in {d.id for d in docs})
         if topic_id in gaps:
-            state = "KNOWN_PARTIAL_UNREVIEWED"
+            state = "GAP_DRAFT_CANDIDATE_UNREVIEWED" if candidate_present else "KNOWN_PARTIAL_UNREVIEWED"
         elif docs:
             state = "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE"
         else:
@@ -69,6 +71,8 @@ def build():
             "evidence_status":state,
             "explicit_missing_subskill":gaps[topic_id]["missing_content"] if topic_id in gaps else None,
             "recommended_next_lesson":gaps[topic_id]["recommended_lesson_id"] if topic_id in gaps else None,
+            "gap_candidate_draft_present":candidate_present,
+            "gap_review_status":"OPEN" if topic_id in gaps else None,
             "curriculum_atom_officially_verified":False
         })
     status=Counter(row["evidence_status"] for row in output_rows)
@@ -78,7 +82,9 @@ def build():
         by_level[level]={
             "engineering_topics":len(select),
             "with_any_draft_link":sum(bool(x["deep_lesson_ids"]) for x in select),
-            "known_partial_topics":sum(x["evidence_status"]=="KNOWN_PARTIAL_UNREVIEWED" for x in select),
+            "known_partial_topics":sum(x["gap_review_status"]=="OPEN" for x in select),
+            "gap_draft_candidates":sum(x["gap_candidate_draft_present"] for x in select),
+            "gap_without_candidate":sum(x["evidence_status"]=="KNOWN_PARTIAL_UNREVIEWED" for x in select),
             "teacher_reviewed_complete":0
         }
     old=coverage_report()
@@ -96,6 +102,8 @@ def build():
             "deep_draft_documents":len(records),
             "linked_project_topics":sum(bool(x["deep_lesson_ids"]) for x in output_rows),
             "known_partial_topic_count":len(gaps),
+            "gap_draft_candidate_count":status["GAP_DRAFT_CANDIDATE_UNREVIEWED"],
+            "gap_without_candidate_count":status["KNOWN_PARTIAL_UNREVIEWED"],
             "other_linked_unreviewed_topic_count":status["LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE"],
             "teacher_reviewed_complete":0,
             "fully_formally_proven_natural_language_lessons":0,
@@ -107,7 +115,7 @@ def build():
         "warnings":[
             "113 engineering IDs are NOT an official atomic syllabus denominator.",
             "113 linked draft topics do not mean 113 fully taught or mathematically proved topics.",
-            "23 preliminary missing subskill flags represent a known *minimum* gap list; other linked topics remain unreviewed.",
+            "23 editorial gaps remain OPEN pending independent review even after draft candidates are added; other linked topics remain unreviewed.",
             "Review_PENDING drafts, teacher worked solutions, and their text are never approved student evidence.",
             "The 7 legacy extension topics do not constitute completion of official electives A–E."
         ],
@@ -128,7 +136,7 @@ def main():
         if not target.exists() or target.read_text(encoding="utf-8")!=canonical:
             print("FAIL: semantic coverage snapshot missing or out of date",file=sys.stderr)
             sys.exit(1)
-        print("PASS: semantic coverage snapshot matches project drafts and 23 open gaps")
+        print("PASS: semantic coverage snapshot matches project drafts and 23 open, non-approved gaps")
     elif args.output:
         target.parent.mkdir(parents=True,exist_ok=True)
         target.write_text(canonical,encoding="utf-8")
