@@ -13,6 +13,7 @@ from functools import lru_cache
 from typing import Literal
 
 from .deep_knowledge import lessons
+from .attested_releases import approved_lesson_ids
 
 _UNSAFE = re.compile(r"[\u0000-\u001f]")
 _WORDS = re.compile(r"[\u3400-\u9fff]+|[a-z0-9_]+")
@@ -82,7 +83,8 @@ def _validate_query(query: str, limit: int):
 
 
 def _search_metadata(query: str, *, curriculum_ids: tuple[str, ...] | None = None,
-                     kind: str | None = None, limit: int = 8):
+                     kind: str | None = None, limit: int = 8,
+                     allowed_ids: frozenset[str] | None = None):
     _validate_query(query, limit)
     if kind not in (None, "concept", "method", "theorem"):
         raise ValueError("Unknown mathematical knowledge kind")
@@ -108,6 +110,8 @@ def _search_metadata(query: str, *, curriculum_ids: tuple[str, ...] | None = Non
     all_docs = lessons()
     for row_id, rank in candidates:
         doc = all_docs[row_id - 1]
+        if allowed_ids is not None and doc.id not in allowed_ids:
+            continue
         if curriculum_ids and not (set(curriculum_ids) & set(doc.curriculum_ids)):
             continue
         if kind and doc.kind != kind:
@@ -154,14 +158,44 @@ def editor_draft_full(knowledge_id: str, *, scope: str = ""):
 
 
 def student_evidence_lookup(query: str, *, limit: int = 8):
-    """Production-safe fail-closed placeholder until authenticated approvals exist."""
+    """Only return minimum hint metadata for independently attested lessons.
+
+    Returning a hint is not a proof check or automatic applicability judgment.
+    No full worked examples, proof steps, theorem statements or teacher plans
+    enter student payloads or external LLM prompts.
+    """
     _validate_query(query, limit)
-    # No approved content is possible under the current review model.
-    # Do not hand unreviewed drafts or teacher solutions to a remote model.
+    approved = approved_lesson_ids()
+    if not approved:
+        return {
+            "status": "NO_APPROVED_EVIDENCE",
+            "candidates": [],
+            "teacher_solution_exposed": False,
+            "unverified_content_exposed": False,
+            "note": "No externally doubly attested lesson versions are available.",
+        }
+    docs = {doc.id: doc for doc in lessons()}
+    hits = _search_metadata(query, limit=limit, allowed_ids=approved)
+    safe = []
+    for hit in hits:
+        if hit.knowledge_id not in approved:
+            continue
+        doc = docs[hit.knowledge_id]
+        safe.append({
+            "knowledge_id": doc.id,
+            "curriculum_ids": list(doc.curriculum_ids),
+            "title": doc.title,
+            "version": doc.version,
+            "hint": doc.hint_ladder[0],
+            "condition_status": "CONDITIONS_NOT_ESTABLISHED",
+            "approval_evidence": "TWO_EXTERNAL_SIGNATURES",
+        })
+        if len(safe) >= limit:
+            break
     return {
-        "status": "NO_APPROVED_EVIDENCE",
-        "candidates": [],
+        "status": "APPROVED_HINTS_ONLY" if safe else "NO_MATCHING_APPROVED_EVIDENCE",
+        "candidates": safe,
         "teacher_solution_exposed": False,
         "unverified_content_exposed": False,
-        "note": "Student RAG disabled until independently authenticated review exists.",
+        "note": "Signed human review is a publication gate, not mathematical applicability proof.",
     }
