@@ -1,0 +1,1938 @@
+{
+  "scope": "CONSERVATIVE_PROJECT_ENGINEERING_MAP_ONLY",
+  "unverified_official_syllabus_coverage": true,
+  "generated_from": "curriculum/highschool_math/curriculum_map.json + knowledge/deep/v1/*.json + semantic_gaps_batch04.json",
+  "summary": {
+    "engineering_topic_denominator": 113,
+    "deep_draft_documents": 153,
+    "linked_project_topics": 113,
+    "known_partial_topic_count": 23,
+    "gap_draft_candidate_count": 23,
+    "gap_without_candidate_count": 0,
+    "other_linked_unreviewed_topic_count": 90,
+    "teacher_reviewed_complete": 0,
+    "fully_formally_proven_natural_language_lessons": 0,
+    "official_curriculum_atom_mapping_reviewed": 0,
+    "explicit_official_elective_tracks_completed": 0,
+    "student_draft_release_allowed": false,
+    "per_level": {
+      "必修": {
+        "engineering_topics": 61,
+        "with_any_draft_link": 61,
+        "known_partial_topics": 17,
+        "gap_draft_candidates": 17,
+        "gap_without_candidate": 0,
+        "teacher_reviewed_complete": 0
+      },
+      "选择性必修": {
+        "engineering_topics": 45,
+        "with_any_draft_link": 45,
+        "known_partial_topics": 6,
+        "gap_draft_candidates": 6,
+        "gap_without_candidate": 0,
+        "teacher_reviewed_complete": 0
+      },
+      "选修拓展": {
+        "engineering_topics": 7,
+        "with_any_draft_link": 7,
+        "known_partial_topics": 0,
+        "gap_draft_candidates": 0,
+        "gap_without_candidate": 0,
+        "teacher_reviewed_complete": 0
+      }
+    }
+  },
+  "warnings": [
+    "113 engineering IDs are NOT an official atomic syllabus denominator.",
+    "113 linked draft topics do not mean 113 fully taught or mathematically proved topics.",
+    "23 editorial gaps remain OPEN pending independent review even after draft candidates are added; other linked topics remain unreviewed.",
+    "Review_PENDING drafts, teacher worked solutions, and their text are never approved student evidence.",
+    "The 7 legacy extension topics do not constitute completion of official electives A–E."
+  ],
+  "topics": [
+    {
+      "engineering_topic_id": "HS-MATH-001",
+      "level": "必修",
+      "unit": "集合与常用逻辑用语",
+      "concept": "集合及其表示",
+      "deep_lesson_ids": [
+        "math.hs.sets.union-intersection",
+        "math.hs.sets.representations"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "集合的列举法、描述法、区间表示与元素/集合关系未有独立完整教学单元",
+      "recommended_next_lesson": "math.hs.sets.representations",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-002",
+      "level": "必修",
+      "unit": "集合与常用逻辑用语",
+      "concept": "交集并集补集",
+      "deep_lesson_ids": [
+        "math.hs.sets.union-intersection",
+        "math.hs.sets.de-morgan-laws"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-003",
+      "level": "必修",
+      "unit": "集合与常用逻辑用语",
+      "concept": "充分条件与必要条件",
+      "deep_lesson_ids": [
+        "math.hs.logic.implication"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-004",
+      "level": "必修",
+      "unit": "集合与常用逻辑用语",
+      "concept": "全称量词与存在量词",
+      "deep_lesson_ids": [
+        "math.hs.logic.quantifier"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-005",
+      "level": "必修",
+      "unit": "集合与常用逻辑用语",
+      "concept": "命题真假与逻辑关系",
+      "deep_lesson_ids": [
+        "math.hs.logic.implication",
+        "math.hs.logic.truth-negation"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "一般命题真假、否定与四种命题等逻辑关系未有系统受控内容",
+      "recommended_next_lesson": "math.hs.logic.truth-negation",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-006",
+      "level": "必修",
+      "unit": "不等式与代数",
+      "concept": "等式性质与不等式性质",
+      "deep_lesson_ids": [
+        "math.hs.inequality.sign-multiplication"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-007",
+      "level": "必修",
+      "unit": "不等式与代数",
+      "concept": "一元二次不等式",
+      "deep_lesson_ids": [
+        "math.hs.quadratic.sign"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-008",
+      "level": "必修",
+      "unit": "不等式与代数",
+      "concept": "含参数不等式",
+      "deep_lesson_ids": [
+        "math.hs.inequality.parameter-cases"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-009",
+      "level": "必修",
+      "unit": "不等式与代数",
+      "concept": "基本不等式",
+      "deep_lesson_ids": [
+        "math.hs.inequality.amgm"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-010",
+      "level": "必修",
+      "unit": "不等式与代数",
+      "concept": "不等式等价变换和定义域",
+      "deep_lesson_ids": [
+        "math.hs.inequality.sign-multiplication",
+        "math.hs.inequality.transformation-obligations"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "代数不等式等价变形的定义域、非零乘除、平方增根尚缺统一判定流程",
+      "recommended_next_lesson": "math.hs.inequality.transformation-obligations",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-011",
+      "level": "必修",
+      "unit": "函数基本概念与性质",
+      "concept": "函数映射和定义域",
+      "deep_lesson_ids": [
+        "math.hs.function.domain"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-012",
+      "level": "必修",
+      "unit": "函数基本概念与性质",
+      "concept": "函数值域",
+      "deep_lesson_ids": [
+        "math.hs.function.range"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-013",
+      "level": "必修",
+      "unit": "函数基本概念与性质",
+      "concept": "单调性",
+      "deep_lesson_ids": [
+        "math.hs.function.monotonicity",
+        "math.hs.function.strict-inverse-monotonic"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-014",
+      "level": "必修",
+      "unit": "函数基本概念与性质",
+      "concept": "奇偶性",
+      "deep_lesson_ids": [
+        "math.hs.function.parity"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-015",
+      "level": "必修",
+      "unit": "函数基本概念与性质",
+      "concept": "周期性",
+      "deep_lesson_ids": [
+        "math.hs.function.periodicity",
+        "math.hs.function.period"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-016",
+      "level": "必修",
+      "unit": "函数基本概念与性质",
+      "concept": "零点与方程",
+      "deep_lesson_ids": [
+        "math.hs.function.bisection-root",
+        "math.hs.function.zero-ivt"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-017",
+      "level": "必修",
+      "unit": "函数基本概念与性质",
+      "concept": "分段函数",
+      "deep_lesson_ids": [
+        "math.hs.function.piecewise"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-018",
+      "level": "必修",
+      "unit": "基本初等函数",
+      "concept": "一次函数",
+      "deep_lesson_ids": [
+        "math.hs.function.linear-slope"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-019",
+      "level": "必修",
+      "unit": "基本初等函数",
+      "concept": "二次函数",
+      "deep_lesson_ids": [
+        "math.hs.function.quadratic-vertex"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-020",
+      "level": "必修",
+      "unit": "基本初等函数",
+      "concept": "幂函数",
+      "deep_lesson_ids": [
+        "math.hs.function.power-domain"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-021",
+      "level": "必修",
+      "unit": "基本初等函数",
+      "concept": "指数函数",
+      "deep_lesson_ids": [
+        "math.hs.exponent.product"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-022",
+      "level": "必修",
+      "unit": "基本初等函数",
+      "concept": "对数函数",
+      "deep_lesson_ids": [
+        "math.hs.logarithm.inverse"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-023",
+      "level": "必修",
+      "unit": "基本初等函数",
+      "concept": "绝对值函数",
+      "deep_lesson_ids": [
+        "math.hs.function.abs-triangle",
+        "math.hs.function.absolute"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-024",
+      "level": "必修",
+      "unit": "基本初等函数",
+      "concept": "函数变换与复合",
+      "deep_lesson_ids": [
+        "math.hs.function.composition-domain"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-025",
+      "level": "必修",
+      "unit": "三角函数",
+      "concept": "弧度制和单位圆",
+      "deep_lesson_ids": [
+        "math.hs.trig.pythagorean",
+        "math.hs.trig.radians-unit-circle"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "弧度与角度换算、单位圆坐标角的定义未被正弦余弦恒等式完整覆盖",
+      "recommended_next_lesson": "math.hs.trig.radians-unit-circle",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-026",
+      "level": "必修",
+      "unit": "三角函数",
+      "concept": "正弦余弦函数图像",
+      "deep_lesson_ids": [
+        "math.hs.trig.pythagorean",
+        "math.hs.trig.sine-cosine-graphs"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "正弦/余弦图像及平移周期振幅的完整图像性质不能由一个恒等式替代",
+      "recommended_next_lesson": "math.hs.trig.sine-cosine-graphs",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-027",
+      "level": "必修",
+      "unit": "三角函数",
+      "concept": "正切函数",
+      "deep_lesson_ids": [
+        "math.hs.trig.tangent",
+        "math.hs.trig.tangent-domain"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-028",
+      "level": "必修",
+      "unit": "三角函数",
+      "concept": "诱导公式",
+      "deep_lesson_ids": [
+        "math.hs.trig.reduction"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-029",
+      "level": "必修",
+      "unit": "三角函数",
+      "concept": "和差与倍角公式",
+      "deep_lesson_ids": [
+        "math.hs.trig.sum-angle"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-030",
+      "level": "必修",
+      "unit": "三角函数",
+      "concept": "三角恒等变换",
+      "deep_lesson_ids": [
+        "math.hs.trig.sum-angle",
+        "math.hs.trig.double-angle-reduction"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "和差角之外的倍角、降幂与恒等变换训练缺少专门定理与反例",
+      "recommended_next_lesson": "math.hs.trig.double-angle-reduction",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-031",
+      "level": "必修",
+      "unit": "三角函数",
+      "concept": "三角函数图像变换",
+      "deep_lesson_ids": [
+        "math.hs.trig.phase-transform",
+        "math.hs.trig.wave-transformation"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-032",
+      "level": "必修",
+      "unit": "平面向量与解三角形",
+      "concept": "平面向量的表示",
+      "deep_lesson_ids": [
+        "math.hs.vector.free-coordinates",
+        "math.hs.vector.representation"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-033",
+      "level": "必修",
+      "unit": "平面向量与解三角形",
+      "concept": "向量加减与数乘",
+      "deep_lesson_ids": [
+        "math.hs.vector.linear-operations"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-034",
+      "level": "必修",
+      "unit": "平面向量与解三角形",
+      "concept": "向量数量积",
+      "deep_lesson_ids": [
+        "math.hs.vector.dot-product",
+        "math.hs.vector.cauchy-schwarz"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-035",
+      "level": "必修",
+      "unit": "平面向量与解三角形",
+      "concept": "向量投影与夹角",
+      "deep_lesson_ids": [
+        "math.hs.vector.dot-product",
+        "math.hs.vector.projection"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "向量投影定义、方向与长度分解的适用条件未形成独立证明/题族",
+      "recommended_next_lesson": "math.hs.vector.projection",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-036",
+      "level": "必修",
+      "unit": "平面向量与解三角形",
+      "concept": "正弦定理",
+      "deep_lesson_ids": [
+        "math.hs.triangle.sine-law"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-037",
+      "level": "必修",
+      "unit": "平面向量与解三角形",
+      "concept": "余弦定理",
+      "deep_lesson_ids": [
+        "math.hs.triangle.cosine-law"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-038",
+      "level": "必修",
+      "unit": "平面向量与解三角形",
+      "concept": "SSA 二解与三角形存在性",
+      "deep_lesson_ids": [
+        "math.hs.triangle.ssa-ambiguity",
+        "math.hs.triangle.ssa-two-solutions"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-039",
+      "level": "必修",
+      "unit": "平面向量与解三角形",
+      "concept": "三角形面积与几何关系",
+      "deep_lesson_ids": [
+        "math.hs.triangle.area-sine"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-040",
+      "level": "必修",
+      "unit": "复数",
+      "concept": "复数与复平面",
+      "deep_lesson_ids": [
+        "math.hs.complex.modulus",
+        "math.hs.complex.algebraic-basics"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "复数的代数表示、相等规则与虚数单位运算并非模长的全部内容",
+      "recommended_next_lesson": "math.hs.complex.algebraic-basics",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-041",
+      "level": "必修",
+      "unit": "复数",
+      "concept": "复数模与辐角",
+      "deep_lesson_ids": [
+        "math.hs.complex.modulus",
+        "math.hs.complex.argument"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "复数辐角、多值性和零复数辐角无定义尚未完整覆盖",
+      "recommended_next_lesson": "math.hs.complex.argument",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-042",
+      "level": "必修",
+      "unit": "复数",
+      "concept": "复数加减乘除及几何意义",
+      "deep_lesson_ids": [
+        "math.hs.complex.modulus",
+        "math.hs.complex.operations"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "复数加减乘除、共轭与几何意义的完整运算不等同于模长定义",
+      "recommended_next_lesson": "math.hs.complex.operations",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-043",
+      "level": "必修",
+      "unit": "立体几何初步",
+      "concept": "空间点线面位置关系",
+      "deep_lesson_ids": [
+        "math.hs.geometry.space-incidence",
+        "math.hs.space.incidence"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-044",
+      "level": "必修",
+      "unit": "立体几何初步",
+      "concept": "平行与垂直的判定",
+      "deep_lesson_ids": [
+        "math.hs.geometry.line-plane-parallel",
+        "math.hs.space.parallel-perpendicular-criteria",
+        "math.hs.space.perpendicular-plane"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "空间直线平面平行判定与面面垂直等命题尚不能由单个线面垂直定理代表",
+      "recommended_next_lesson": "math.hs.space.parallel-perpendicular-criteria",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-045",
+      "level": "必修",
+      "unit": "立体几何初步",
+      "concept": "直线与平面距离",
+      "deep_lesson_ids": [
+        "math.hs.space.line-plane-distance",
+        "math.hs.space.point-line-distance"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "线面距离的定义与位置分类不能被三维点到直线距离公式覆盖",
+      "recommended_next_lesson": "math.hs.space.line-plane-distance",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-046",
+      "level": "必修",
+      "unit": "立体几何初步",
+      "concept": "棱柱棱锥与棱台",
+      "deep_lesson_ids": [
+        "math.hs.space.polyhedron-types"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-047",
+      "level": "必修",
+      "unit": "立体几何初步",
+      "concept": "圆柱圆锥球",
+      "deep_lesson_ids": [
+        "math.hs.space.solids-revolution"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-048",
+      "level": "必修",
+      "unit": "立体几何初步",
+      "concept": "表面积与体积",
+      "deep_lesson_ids": [
+        "math.hs.space.surface-areas",
+        "math.hs.space.solid-volumes"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "表面积/侧面积及截面与展开图计算仍缺独立单元，已关联内容偏重体积",
+      "recommended_next_lesson": "math.hs.space.surface-areas",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-049",
+      "level": "必修",
+      "unit": "立体几何初步",
+      "concept": "空间截面与展开图",
+      "deep_lesson_ids": [
+        "math.hs.space.cross-sections"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-050",
+      "level": "必修",
+      "unit": "概率基础",
+      "concept": "样本空间与随机事件",
+      "deep_lesson_ids": [
+        "math.hs.probability.laplace",
+        "math.hs.probability.sample-space-event"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "随机试验、样本点、事件及其表示需补概念层；等可能古典概型只是特例",
+      "recommended_next_lesson": "math.hs.probability.sample-space-event",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-051",
+      "level": "必修",
+      "unit": "概率基础",
+      "concept": "互斥和对立事件",
+      "deep_lesson_ids": [
+        "math.hs.probability.event-addition",
+        "math.hs.probability.exclusive-complement"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-052",
+      "level": "必修",
+      "unit": "概率基础",
+      "concept": "古典概型",
+      "deep_lesson_ids": [
+        "math.hs.probability.laplace"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-053",
+      "level": "必修",
+      "unit": "概率基础",
+      "concept": "概率加法与乘法基本关系",
+      "deep_lesson_ids": [
+        "math.hs.probability.event-addition",
+        "math.hs.probability.union-addition",
+        "math.hs.probability.multiplication"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "独立事件乘法、一般条件概率乘法与概率加法的条件差别尚未形成完整单元",
+      "recommended_next_lesson": "math.hs.probability.multiplication",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-054",
+      "level": "必修",
+      "unit": "数据与统计",
+      "concept": "数据的收集与抽样",
+      "deep_lesson_ids": [
+        "math.hs.statistics.sampling",
+        "math.hs.statistics.simple-random-sampling"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-055",
+      "level": "必修",
+      "unit": "数据与统计",
+      "concept": "频数分布与直方图",
+      "deep_lesson_ids": [
+        "math.hs.statistics.histogram",
+        "math.hs.statistics.histogram-density"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-056",
+      "level": "必修",
+      "unit": "数据与统计",
+      "concept": "均值中位数众数",
+      "deep_lesson_ids": [
+        "math.hs.statistics.variance",
+        "math.hs.statistics.median-mode"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "中位数、众数、离群值与均值的对比未被均值和方差课程完整覆盖",
+      "recommended_next_lesson": "math.hs.statistics.median-mode",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-057",
+      "level": "必修",
+      "unit": "数据与统计",
+      "concept": "方差标准差",
+      "deep_lesson_ids": [
+        "math.hs.statistics.variance",
+        "math.hs.statistics.variance-affine"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-058",
+      "level": "必修",
+      "unit": "数据与统计",
+      "concept": "百分位数与样本估计",
+      "deep_lesson_ids": [
+        "math.hs.statistics.percentiles",
+        "math.hs.statistics.empirical-quantile"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-059",
+      "level": "必修",
+      "unit": "综合应用",
+      "concept": "数学建模流程",
+      "deep_lesson_ids": [
+        "math.hs.modeling.workflow",
+        "math.hs.modeling.question-to-model"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-060",
+      "level": "必修",
+      "unit": "综合应用",
+      "concept": "数据模型与检验",
+      "deep_lesson_ids": [
+        "math.hs.modeling.workflow",
+        "math.hs.modeling.residual-validation"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-061",
+      "level": "必修",
+      "unit": "综合应用",
+      "concept": "问题提出与合作探究",
+      "deep_lesson_ids": [
+        "math.hs.modeling.workflow",
+        "math.hs.modeling.inquiry-claim",
+        "math.hs.modeling.collaborative-inquiry"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "提出问题、共同协作与报告反思有教学步骤要求，建模公式例题不足以覆盖探究全过程",
+      "recommended_next_lesson": "math.hs.modeling.collaborative-inquiry",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-062",
+      "level": "选择性必修",
+      "unit": "数列与导数",
+      "concept": "数列概念与递推",
+      "deep_lesson_ids": [
+        "math.hs.sequence.recurrence",
+        "math.hs.sequence.recurrence-initial",
+        "math.hs.sequence.arithmetic-nth-term"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-063",
+      "level": "选择性必修",
+      "unit": "数列与导数",
+      "concept": "等差数列",
+      "deep_lesson_ids": [
+        "math.hs.sequence.arithmetic-sum",
+        "math.hs.sequence.arithmetic-nth-term"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-064",
+      "level": "选择性必修",
+      "unit": "数列与导数",
+      "concept": "等比数列",
+      "deep_lesson_ids": [
+        "math.hs.sequence.geometric-sum"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-065",
+      "level": "选择性必修",
+      "unit": "数列与导数",
+      "concept": "数列求和与数列模型",
+      "deep_lesson_ids": [
+        "math.hs.sequence.arithmetic-sum",
+        "math.hs.sequence.geometric-sum"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-066",
+      "level": "选择性必修",
+      "unit": "数列与导数",
+      "concept": "导数的几何意义",
+      "deep_lesson_ids": [
+        "math.hs.calculus.chain-rule",
+        "math.hs.calculus.quotient-rule",
+        "math.hs.calculus.power-rule",
+        "math.hs.calculus.product-derivative",
+        "math.hs.calculus.derivative-definition"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "导数极限定义、割线到切线的几何意义不是整数幂求导规则的充分替代",
+      "recommended_next_lesson": "math.hs.calculus.derivative-definition",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-067",
+      "level": "选择性必修",
+      "unit": "数列与导数",
+      "concept": "导数与切线",
+      "deep_lesson_ids": [
+        "math.hs.calculus.power-rule",
+        "math.hs.calculus.product-derivative",
+        "math.hs.calculus.tangent-line"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "一般点处切线斜率及线性近似、竖直切线等边界尚未独立覆盖",
+      "recommended_next_lesson": "math.hs.calculus.tangent-line",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-068",
+      "level": "选择性必修",
+      "unit": "数列与导数",
+      "concept": "导数判断单调性",
+      "deep_lesson_ids": [
+        "math.hs.calculus.derivative-monotonicity"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-069",
+      "level": "选择性必修",
+      "unit": "数列与导数",
+      "concept": "极值与最值",
+      "deep_lesson_ids": [
+        "math.hs.calculus.fermat-stationary",
+        "math.hs.calculus.derivative-monotonicity",
+        "math.hs.calculus.extrema"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "函数极值/闭区间最值候选、端点、不可导点和全局比较需单独可验证课程",
+      "recommended_next_lesson": "math.hs.calculus.extrema",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-070",
+      "level": "选择性必修",
+      "unit": "数列与导数",
+      "concept": "函数零点和参数讨论",
+      "deep_lesson_ids": [
+        "math.hs.calculus.parameter-zeros"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-071",
+      "level": "选择性必修",
+      "unit": "空间向量与立体几何",
+      "concept": "空间直角坐标系",
+      "deep_lesson_ids": [
+        "math.hs.space.coordinate-distance",
+        "math.hs.geometry.space-coordinate"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-072",
+      "level": "选择性必修",
+      "unit": "空间向量与立体几何",
+      "concept": "空间向量与坐标运算",
+      "deep_lesson_ids": [
+        "math.hs.space.coordinate-distance",
+        "math.hs.vector.cauchy-schwarz",
+        "math.hs.geometry.space-dot"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-073",
+      "level": "选择性必修",
+      "unit": "空间向量与立体几何",
+      "concept": "空间向量数量积",
+      "deep_lesson_ids": [
+        "math.hs.space.coordinate-distance",
+        "math.hs.geometry.space-dot"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-074",
+      "level": "选择性必修",
+      "unit": "空间向量与立体几何",
+      "concept": "直线方向向量",
+      "deep_lesson_ids": [
+        "math.hs.space.line-plane-normal"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-075",
+      "level": "选择性必修",
+      "unit": "空间向量与立体几何",
+      "concept": "平面法向量",
+      "deep_lesson_ids": [
+        "math.hs.space.line-plane-normal"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-076",
+      "level": "选择性必修",
+      "unit": "空间向量与立体几何",
+      "concept": "直线平面夹角",
+      "deep_lesson_ids": [
+        "math.hs.space.angle-distance"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-077",
+      "level": "选择性必修",
+      "unit": "空间向量与立体几何",
+      "concept": "二面角",
+      "deep_lesson_ids": [
+        "math.hs.space.angle-distance"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-078",
+      "level": "选择性必修",
+      "unit": "空间向量与立体几何",
+      "concept": "空间距离计算",
+      "deep_lesson_ids": [
+        "math.hs.space.angle-distance"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-079",
+      "level": "选择性必修",
+      "unit": "空间向量与立体几何",
+      "concept": "空间多面体与投影",
+      "deep_lesson_ids": [
+        "math.hs.space.polyhedron-projection"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-080",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "倾斜角与直线斜率",
+      "deep_lesson_ids": [
+        "math.hs.geometry.line-slope",
+        "math.hs.geometry.line-equation"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-081",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "直线方程",
+      "deep_lesson_ids": [
+        "math.hs.geometry.line-general",
+        "math.hs.geometry.line-equation"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-082",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "两直线的位置关系",
+      "deep_lesson_ids": [
+        "math.hs.geometry.line-relations"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-083",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "点到直线距离",
+      "deep_lesson_ids": [
+        "math.hs.geometry.point-line-distance"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-084",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "直线与圆的位置关系",
+      "deep_lesson_ids": [
+        "math.hs.geometry.circle-intersections",
+        "math.hs.geometry.line-circle",
+        "math.hs.geometry.circle-chord-length"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-085",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "圆与圆的位置关系",
+      "deep_lesson_ids": [
+        "math.hs.geometry.circle-intersections",
+        "math.hs.geometry.circle-chord-length"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-086",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "椭圆定义及几何性质",
+      "deep_lesson_ids": [
+        "math.hs.geometry.ellipse-focus"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-087",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "双曲线定义及几何性质",
+      "deep_lesson_ids": [
+        "math.hs.geometry.hyperbola-foci"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-088",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "抛物线定义及几何性质",
+      "deep_lesson_ids": [
+        "math.hs.geometry.parabola-focus"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-089",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "圆锥曲线焦点与准线",
+      "deep_lesson_ids": [
+        "math.hs.geometry.parabola-focus",
+        "math.hs.geometry.conic-focal-directrix"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "圆锥曲线焦点与准线的一般性质尚不能仅由抛物线焦点准线单元覆盖",
+      "recommended_next_lesson": "math.hs.geometry.conic-focal-directrix",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-090",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "圆锥曲线与直线联立",
+      "deep_lesson_ids": [
+        "math.hs.geometry.conic-line-elimination"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-091",
+      "level": "选择性必修",
+      "unit": "平面解析几何",
+      "concept": "圆锥曲线的切线与法线",
+      "deep_lesson_ids": [
+        "math.hs.geometry.ellipse-tangent",
+        "math.hs.geometry.conic-tangent-normal"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "法线公式、圆锥曲线不同类型与曲线上非奇异条件未被椭圆切线单元完整覆盖",
+      "recommended_next_lesson": "math.hs.geometry.conic-tangent-normal",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-092",
+      "level": "选择性必修",
+      "unit": "计数原理",
+      "concept": "分类加法计数原理",
+      "deep_lesson_ids": [
+        "math.hs.counting.product-rule",
+        "math.hs.counting.two-set-inclusion-exclusion"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-093",
+      "level": "选择性必修",
+      "unit": "计数原理",
+      "concept": "分步乘法计数原理",
+      "deep_lesson_ids": [
+        "math.hs.counting.product-rule",
+        "math.hs.counting.two-set-inclusion-exclusion"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-094",
+      "level": "选择性必修",
+      "unit": "计数原理",
+      "concept": "排列与组合",
+      "deep_lesson_ids": [
+        "math.hs.counting.permutation-combination",
+        "math.hs.counting.permutations-combinations"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-095",
+      "level": "选择性必修",
+      "unit": "计数原理",
+      "concept": "二项式定理",
+      "deep_lesson_ids": [
+        "math.hs.counting.binomial-sum",
+        "math.hs.counting.binomial"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-096",
+      "level": "选择性必修",
+      "unit": "概率分布与统计推断",
+      "concept": "条件概率与独立性",
+      "deep_lesson_ids": [
+        "math.hs.probability.conditioning",
+        "math.hs.probability.bayes-partition",
+        "math.hs.probability.independence"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "GAP_DRAFT_CANDIDATE_UNREVIEWED",
+      "explicit_missing_subskill": "事件独立的定义、边界反例及其与互斥的差异尚未与条件概率形成完整配套",
+      "recommended_next_lesson": "math.hs.probability.independence",
+      "gap_candidate_draft_present": true,
+      "gap_review_status": "OPEN",
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-097",
+      "level": "选择性必修",
+      "unit": "概率分布与统计推断",
+      "concept": "全概率公式",
+      "deep_lesson_ids": [
+        "math.hs.probability.total",
+        "math.hs.probability.bayes-partition"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-098",
+      "level": "选择性必修",
+      "unit": "概率分布与统计推断",
+      "concept": "离散型随机变量",
+      "deep_lesson_ids": [
+        "math.hs.probability.expectation-linearity",
+        "math.hs.probability.discrete-variable",
+        "math.hs.probability.discrete-random-variable",
+        "math.hs.statistics.variance-affine"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-099",
+      "level": "选择性必修",
+      "unit": "概率分布与统计推断",
+      "concept": "二项分布",
+      "deep_lesson_ids": [
+        "math.hs.probability.binomial-distribution"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-100",
+      "level": "选择性必修",
+      "unit": "概率分布与统计推断",
+      "concept": "超几何分布",
+      "deep_lesson_ids": [
+        "math.hs.probability.hypergeometric"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-101",
+      "level": "选择性必修",
+      "unit": "概率分布与统计推断",
+      "concept": "正态分布",
+      "deep_lesson_ids": [
+        "math.hs.probability.normal-density",
+        "math.hs.probability.normal-distribution"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-102",
+      "level": "选择性必修",
+      "unit": "概率分布与统计推断",
+      "concept": "回归分析与相关性",
+      "deep_lesson_ids": [
+        "math.hs.statistics.correlation-regression"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-103",
+      "level": "选择性必修",
+      "unit": "概率分布与统计推断",
+      "concept": "独立性检验",
+      "deep_lesson_ids": [
+        "math.hs.statistics.chi-square",
+        "math.hs.statistics.independence-hypothesis"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-104",
+      "level": "选择性必修",
+      "unit": "综合应用",
+      "concept": "数学探究活动",
+      "deep_lesson_ids": [
+        "math.hs.modeling.validation",
+        "math.hs.modeling.experimental-inquiry"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-105",
+      "level": "选择性必修",
+      "unit": "综合应用",
+      "concept": "数据驱动的建模",
+      "deep_lesson_ids": [
+        "math.hs.modeling.validation",
+        "math.hs.modeling.data-driven"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-106",
+      "level": "选择性必修",
+      "unit": "综合应用",
+      "concept": "对模型进行验证与评价",
+      "deep_lesson_ids": [
+        "math.hs.modeling.validation",
+        "math.hs.modeling.model-validation"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-107",
+      "level": "选修拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "三角形五心与综合几何",
+      "deep_lesson_ids": [
+        "math.hs.extension.triangle-centers"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-108",
+      "level": "选修拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "圆锥曲线极线与换一半法则",
+      "deep_lesson_ids": [
+        "math.hs.extension.circle-polar"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-109",
+      "level": "选修拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "参数方程与极坐标",
+      "deep_lesson_ids": [
+        "math.hs.extension.polar-parameter"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-110",
+      "level": "选修拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "更一般的二次曲面",
+      "deep_lesson_ids": [
+        "math.hs.extension.quadratic-surfaces"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-111",
+      "level": "选修拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "数学归纳法",
+      "deep_lesson_ids": [
+        "math.hs.proof.induction"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-112",
+      "level": "选修拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "向量外积",
+      "deep_lesson_ids": [
+        "math.hs.extension.cross-product"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-113",
+      "level": "选修拓展",
+      "unit": "竞赛或专题延伸",
+      "concept": "算法与数学证明",
+      "deep_lesson_ids": [
+        "math.hs.extension.algorithm-invariant"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    }
+  ]
+}

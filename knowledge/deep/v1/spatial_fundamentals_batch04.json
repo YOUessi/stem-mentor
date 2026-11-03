@@ -1,0 +1,928 @@
+[
+  {
+    "id": "math.hs.inequality.parameter-cases",
+    "curriculum_ids": [
+      "HS-MATH-008"
+    ],
+    "kind": "method",
+    "title": "含参数不等式的临界值分段与等价变形",
+    "version": "1.0.0",
+    "notation": [
+      "ax>b",
+      "a≠0",
+      "a=0"
+    ],
+    "prerequisites": [
+      "实数不等式、参数分类、符号乘除"
+    ],
+    "definition": null,
+    "statement": "求解含实参数的不等式时，必须先找出导致系数、分母、判别式或定义域改变性质的参数临界值，再对每个参数区间检查合法等价变形；未知符号的乘除不允许直接保持不等号方向。",
+    "assumptions": [
+      "参数为实数，并明确自变量及任何分母的非零条件。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先识别含参数表达式中可能为零的因子，列出临界参数值及必须排除的定义域。",
+      "对临界值和每个符号稳定的开区间分别求解，不等式乘负数时翻转符号，乘零时单独讨论。",
+      "将各个参数分支的解集逐一回代原不等式或抽取合法值验证，最后按参数归纳结果。"
+    ],
+    "boundaries": [
+      "如果参数也出现在定义域或分母中，不能仅看线性系数符号。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "对于任意实参数 a，ax>2 总能推出 x>2/a",
+        "example": "当 a=-1 时正确不等式是 x<-2；a=0 时原式不成立且 2/a 无定义。",
+        "explanation": "除以未知符号的参数必须分类。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "对实数参数 a 解不等式 ax>2。",
+        "steps": [
+          "a>0 时同除以正数得 x>2/a；a<0 时反向得 x<2/a。",
+          "a=0 时成为 0>2，没有解。"
+        ],
+        "answer": "a>0:x>2/a；a<0:x<2/a；a=0:∅",
+        "check": "分别代入正、负和零参数核验。"
+      },
+      {
+        "question": "对实数 t 解 (t-1)x≤0。",
+        "steps": [
+          "t>1 时系数为正，x≤0。",
+          "t<1 时系数为负，x≥0；t=1 时恒0≤0。"
+        ],
+        "answer": "t>1:x≤0；t<1:x≥0；t=1:R",
+        "check": "临界值 t=1 不能直接除以 t−1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不分参数正负就直接除以含参数系数",
+        "why_wrong": "系数可能为负或零，影响方向或使除法无意义。",
+        "repair_question": "哪个参数值会令你正准备除的量变为零？"
+      }
+    ],
+    "hint_ladder": [
+      "先列出所有参数临界值。",
+      "临界值处能否直接除法？",
+      "不同参数分支不等号方向是否一致？"
+    ],
+    "transfer": {
+      "near": "讨论 (a²−1)x>1 的解集如何随 a 改变。",
+      "far": "在机器学习损失函数中分析参数变化造成的可行域分支变化。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.inequality.sign-multiplication"
+    ]
+  },
+  {
+    "id": "math.hs.space.incidence",
+    "curriculum_ids": [
+      "HS-MATH-043"
+    ],
+    "kind": "concept",
+    "title": "空间点线面共线、共面与相交的位置关系",
+    "version": "1.0.0",
+    "notation": [
+      "P∈l",
+      "l⊂Π",
+      "l∩Π"
+    ],
+    "prerequisites": [
+      "欧氏空间、公理化直线与平面、空间坐标"
+    ],
+    "definition": "在三维欧氏空间中，两不同点确定一条直线，三个不共线点确定一个平面；直线和平面可能相交于一点、直线包含于平面或没有交点而平行。两直线除相交和平行外，还可能异面。",
+    "statement": null,
+    "assumptions": [
+      "讨论通常的三维欧氏空间，位置关系依赖点线面是不同对象且有合法几何定义。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "两个不同点确定唯一的直线；三点共线时不能通过它们唯一确定一个平面。",
+      "若两直线不平行也不相交，在三维空间仍可能为异面直线，不能套用二维直线位置分类。"
+    ],
+    "boundaries": [
+      "“两条直线没有交点”不等于平行；空间中还应检查是否共面。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "空间中任意两条不相交直线一定互相平行",
+        "example": "L₁={(t,0,0)}，L₂={(0,s,1)}，两者没有公共点但方向分别为(1,0,0)与(0,1,0)。",
+        "explanation": "方向不平行且不相交，故两线异面。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "L={(t,0,0)}，平面 Π:z=0，判断位置关系。",
+        "steps": [
+          "L 上任意点的 z 坐标都是0。",
+          "所有 L 点满足平面方程。"
+        ],
+        "answer": "L⊂Π",
+        "check": "整条 x 轴位于水平面 z=0 中。"
+      },
+      {
+        "question": "直线 L={(0,0,t)} 与平面 z=2 的交点。",
+        "steps": [
+          "令点的 z=t 满足平面条件 t=2。",
+          "其余两个坐标都是0。"
+        ],
+        "answer": "(0,0,2)，唯一交点",
+        "check": "直线方向不在平面内且交点唯一。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把平面内的相交平行分类照搬到空间直线",
+        "why_wrong": "异面直线没有交点，方向也可不同。",
+        "repair_question": "这两条直线能否同时被同一个平面包含？"
+      }
+    ],
+    "hint_ladder": [
+      "先用坐标或图形描述点线面。",
+      "判断能否找到公共点。",
+      "若没有交点，方向是否成比例以及是否共面？"
+    ],
+    "transfer": {
+      "near": "判断直线(1,t,0)与平面 z=1 是否相交。",
+      "far": "分析三维机器人路径线段与墙面的相交可能性。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.coordinate-distance"
+    ]
+  },
+  {
+    "id": "math.hs.space.perpendicular-plane",
+    "curriculum_ids": [
+      "HS-MATH-044"
+    ],
+    "kind": "theorem",
+    "title": "直线垂直平面的两条相交线判据",
+    "version": "1.0.0",
+    "notation": [
+      "l⊥l₁,l⊥l₂",
+      "l⊥Π"
+    ],
+    "prerequisites": [
+      "空间线面关系、数量积、平面方向张成"
+    ],
+    "definition": null,
+    "statement": "设 l₁、l₂ 是同一平面 Π 内两条相交直线，且空间直线 l 的方向与 l₁、l₂ 的方向都垂直，则 l 的方向与 Π 内任意方向垂直，因此 l⊥Π。两条验证线必须不平行，否则不足以张成平面方向。",
+    "assumptions": [
+      "l₁,l₂ 在同一平面且真实相交，l 的方向向量非零，垂直指向量数量积为零。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "令 u 为 l 的非零方向向量，v₁、v₂ 为平面内相交两线的非零方向向量。",
+        "reason": "相交且不同方向保证 v₁、v₂ 线性无关。"
+      },
+      {
+        "claim": "根据前提有 u·v₁=0 和 u·v₂=0，任意平面内方向 w 可写为 αv₁+βv₂。",
+        "reason": "两条不平行的平面方向向量张成整个二维平面方向子空间。"
+      },
+      {
+        "claim": "由数量积分配律 u·w=α(u·v₁)+β(u·v₂)=0，故 u 与平面内任意方向垂直。",
+        "reason": "u 是平面的法向方向，所以其所属直线与平面垂直。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "只与平面内两条平行线垂直，不能推出与平面垂直；须核验两线相交。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "一条线只要垂直平面内任意两条线就垂直该平面",
+        "example": "在 z=0 平面里取两条不同且平行于 x 轴的线，y 轴方向垂直于二者，但 y 轴仍位于平面内。",
+        "explanation": "两条验证方向线性相关，不能确定完整平面法向。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "在平面 z=0 中取 x、y 轴，若直线方向 u=(0,0,1)，能判 l⊥平面吗？",
+        "steps": [
+          "x、y 轴在平面中相交且方向非平行。",
+          "u·(1,0,0)=0，u·(0,1,0)=0。"
+        ],
+        "answer": "能，l⊥z=0",
+        "check": "u 为水平面法向量。"
+      },
+      {
+        "question": "u=(0,1,0) 垂直两条 x 方向的平行线，能断定 u⊥z=0 吗？",
+        "steps": [
+          "两条 x 方向线不相交，且方向相关。",
+          "u 本身沿平面 z=0。"
+        ],
+        "answer": "不能",
+        "check": "u·(0,1,0)=1，不垂直平面内 y 方向。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忘记判据要求两条直线相交",
+        "why_wrong": "两条平行方向只提供一个独立的约束。",
+        "repair_question": "为什么不能用同一方向的两条线代替相交线？"
+      }
+    ],
+    "hint_ladder": [
+      "验证两个平面内方向是否线性无关。",
+      "u 与这两个方向的数量积分别是多少？",
+      "能否表示平面内的任意方向？"
+    ],
+    "transfer": {
+      "near": "验证方向(1,1,1)是否垂直由(1,-1,0),(1,0,-1)张成的平面。",
+      "far": "用两条独立表面切线估计三维扫描点的局部法向量。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.line-plane-normal"
+    ]
+  },
+  {
+    "id": "math.hs.space.point-line-distance",
+    "curriculum_ids": [
+      "HS-MATH-045"
+    ],
+    "kind": "theorem",
+    "title": "三维点到直线距离的正交投影公式",
+    "version": "1.0.0",
+    "notation": [
+      "d(P,L)²=|w|²−(w·u)²/|u|²"
+    ],
+    "prerequisites": [
+      "空间向量、点积、勾股分解"
+    ],
+    "definition": null,
+    "statement": "三维空间中直线 L={Q+t u:t∈R}，u≠0。对点 P，令 w=P−Q，则 P 到 L 的最短欧氏距离满足 d²=|w|²−(w·u)²/|u|²，故 d 为该非负值的平方根。",
+    "assumptions": [
+      "方向向量 u 非零，P、Q 为真实空间点且使用同一正交坐标系。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "将 w 沿 u 方向作正交投影 w∥=((w·u)/|u|²)u。",
+        "reason": "数量积给出投影系数，|u|²>0 允许相应除法。"
+      },
+      {
+        "claim": "余下的垂直分量 w⊥=w−w∥ 与 u 数量积为零。",
+        "reason": "展开 w⊥·u=w·u−(w·u)=0，因此该分量垂直整条直线方向。"
+      },
+      {
+        "claim": "对任意 t，P−(Q+t u)=w⊥+(w∥−t u)，两分量正交，距离平方至少为 |w⊥|²。",
+        "reason": "选择 t=(w·u)/|u|² 使沿线分量消失；展开平方得所述 d² 公式。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不能对零方向向量使用投影；异面直线间距离另有不同定义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "从点到空间直线距离就是两点 P、Q 直接距离",
+        "example": "Q=(0,0,0)、L 沿 x 轴，P=(3,4,0)，|P-Q|=5，但垂足(3,0,0)距离4。",
+        "explanation": "最短距离允许垂足不是预先选定的 Q。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "P=(0,3,4) 到通过原点沿 x 轴直线的距离。",
+        "steps": [
+          "w=(0,3,4)，u=(1,0,0)，w·u=0。",
+          "距离平方为3²+4²=25。"
+        ],
+        "answer": "5",
+        "check": "点到 x 轴的垂足为原点。"
+      },
+      {
+        "question": "P=(4,2,8) 到过 Q=(1,2,3) 沿 z 轴直线的距离。",
+        "steps": [
+          "w=(3,0,5)，u=(0,0,1)，|w|²=34，(w·u)²=25。",
+          "距离平方为34−25=9。"
+        ],
+        "answer": "3",
+        "check": "垂足为(1,2,8)，到 P 的距离确为3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "没有找垂足就用给定线上的任意一点求距离",
+        "why_wrong": "点到直线最短距离必须垂直直线。",
+        "repair_question": "当前选的 Q 是否确实为最近点？"
+      }
+    ],
+    "hint_ladder": [
+      "写出 P-Q 和非零方向向量 u。",
+      "先求沿 u 的投影。",
+      "用勾股式扣掉平行分量的平方。"
+    ],
+    "transfer": {
+      "near": "求点(1,2,3)到过原点沿(1,1,0)方向直线的距离。",
+      "far": "计算机械臂端点到三维轨迹中心线的最短安全间距。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.coordinate-distance"
+    ]
+  },
+  {
+    "id": "math.hs.space.polyhedron-types",
+    "curriculum_ids": [
+      "HS-MATH-046"
+    ],
+    "kind": "concept",
+    "title": "棱柱、棱锥与棱台的几何定义和截面",
+    "version": "1.0.0",
+    "notation": [
+      "棱柱",
+      "棱锥",
+      "棱台"
+    ],
+    "prerequisites": [
+      "空间点线面、相似多边形、平行截面"
+    ],
+    "definition": "棱柱的两个底面是全等且平行的多边形，对应侧棱平行且等长；棱锥有一个多边形底面和共顶点的三角形侧面；用与底面平行的平面截取棱锥并保留中段（近底的一段），得到具有两个相似平行底面的棱台。",
+    "statement": null,
+    "assumptions": [
+      "讨论非退化凸棱柱和凸棱锥，平行截面不经过顶点与底面。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "识别棱柱要检查两个全等平行底面与对应侧棱的平移关系，不要求侧棱一定垂直底面。",
+      "棱锥的平行截面按距顶点的比例相似缩放，棱台的两个底面相似但一般不全等。"
+    ],
+    "boundaries": [
+      "斜棱柱不一定是直棱柱；并非所有两个平行多边形的凸包都是棱台。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "棱柱的所有侧棱都必须垂直底面",
+        "example": "把长方体顶部整体平移一个非零水平向量可得到斜棱柱，侧棱不垂直底面。",
+        "explanation": "底面全等平行与侧棱平行不要求直角。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "某棱柱两个底面均为三角形，其底面边数和侧面数。",
+        "steps": [
+          "底面是3边形。",
+          "每条对应底边连成一个侧面。"
+        ],
+        "answer": "三条侧棱围成3个四边形侧面",
+        "check": "三棱柱具有2个三角形底面和3个侧面。"
+      },
+      {
+        "question": "正四棱锥从顶点向下高度比例1/2处平行截面与底面面积之比。",
+        "steps": [
+          "平行截面与原底面相似，线性比例1/2。",
+          "面积按线性比例平方缩小。"
+        ],
+        "answer": "1:4",
+        "check": "相似线段缩小一半，面积缩小为1/4。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把棱台上下底面认为必定全等",
+        "why_wrong": "平行截面相似但一般会因距离顶点不同而改变尺寸。",
+        "repair_question": "截面到顶点的比例怎样影响边长和面积？"
+      }
+    ],
+    "hint_ladder": [
+      "先找出底面与侧面。",
+      "底面是全等还是只相似？",
+      "平行截面是否与原底面保留相似形状？"
+    ],
+    "transfer": {
+      "near": "比较直四棱柱、斜四棱柱和四棱锥侧面构成。",
+      "far": "用简单多面体作为 CAD 建模和三维打印支撑件的几何近似。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.incidence"
+    ]
+  },
+  {
+    "id": "math.hs.space.solids-revolution",
+    "curriculum_ids": [
+      "HS-MATH-047"
+    ],
+    "kind": "concept",
+    "title": "圆柱、圆锥与球的定义及轴截面",
+    "version": "1.0.0",
+    "notation": [
+      "x²+y²=r²",
+      "x²+y²+z²=R²"
+    ],
+    "prerequisites": [
+      "圆、直线旋转、三维距离与曲面"
+    ],
+    "definition": "直圆柱可看作固定半径圆盘沿垂直其所在平面的轴平移形成的立体；直圆锥由顶点连至底面圆盘各点构成；球是与固定中心距离不超过 R 的所有空间点组成的实体，球面为距离恰等于 R 的点集。",
+    "statement": null,
+    "assumptions": [
+      "半径 r,R>0，高度 h>0；球体和球面必须区分。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "圆柱的垂直轴截面是矩形，宽为底面直径2r、高为h。",
+      "圆锥经过轴的截面为等腰三角形，底为2r，高为h；球面过中心的截面是半径 R 的圆。"
+    ],
+    "boundaries": [
+      "圆柱的侧面母线在直圆柱中垂直底面；斜圆柱需要另外描述；球面并非整个球体。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "球体的所有内部点都满足 x²+y²+z²=R²",
+        "example": "中心点(0,0,0) 属于半径R>0的球体，但不在球面上。",
+        "explanation": "球体用 ≤ 表达，球面用 = 表达。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "中心在原点、半径3的球面方程。",
+        "steps": [
+          "球面任意点到中心的距离是3。",
+          "将三维距离平方写成坐标平方和。"
+        ],
+        "answer": "x²+y²+z²=9",
+        "check": "点(0,0,3)在球面上，中心(0,0,0)不在球面上。"
+      },
+      {
+        "question": "半径2、高5的直圆柱轴截面形状和面积。",
+        "steps": [
+          "轴截面是宽2r=4、高5的矩形。",
+          "面积=4×5。"
+        ],
+        "answer": "面积20",
+        "check": "侧面轴截面两个边长为4和5，单位面积正确。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把球体不等式与球面方程混为一谈",
+        "why_wrong": "球体包含内部，球面只包含边界等距点。",
+        "repair_question": "球心到球心的距离为零，它属于球面还是球体内部？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确是曲面还是实心立体。",
+      "沿旋转轴截面的形状是什么？",
+      "球面等号能否替代球体不等式？"
+    ],
+    "transfer": {
+      "near": "中心(1,2,3)、半径2的球体不等式。",
+      "far": "借助轴对称几何构建机器人避障的圆柱形和球形碰撞体。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.coordinate-distance"
+    ]
+  },
+  {
+    "id": "math.hs.space.solid-volumes",
+    "curriculum_ids": [
+      "HS-MATH-048"
+    ],
+    "kind": "theorem",
+    "title": "等截面与相似截面的柱锥体积公式",
+    "version": "1.0.0",
+    "notation": [
+      "V柱=Bh",
+      "V锥=Bh/3"
+    ],
+    "prerequisites": [
+      "截面面积、相似比与积分的面积累加直观"
+    ],
+    "definition": null,
+    "statement": "对高 h>0、底面积 B>0 的直棱柱和直圆柱，若沿高方向每层截面面积恒为 B，则体积 V=Bh；对相同底面积和高度的棱锥或直圆锥，距顶点高度 t 的平行截面面积为 B(t/h)²，故 V=Bh/3。",
+    "assumptions": [
+      "截面面积可作连续累加，依赖卡瓦列里原理或定积分作为体积依据；体积公式讨论非退化有界几何体。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对于柱体，每个与底面平行的截面面积是常量 B，因此高度范围内的体积累加为 ∫₀ʰ B dt=Bh。",
+        "reason": "体积可通过层状切片或卡瓦列里原理计算，截面恒等是关键前提。"
+      },
+      {
+        "claim": "对于以顶点为起点的锥体，相似截面线性比例 t/h，因此面积比例为 (t/h)²。",
+        "reason": "相似平面图形的面积按对应长度的平方缩放。"
+      },
+      {
+        "claim": "切片积分得到 V=∫₀ʰ B(t/h)² dt=(B/h²)[t³/3]₀ʰ=Bh/3。",
+        "reason": "积分 t² 的原函数为 t³/3，高度 h>0 使分母合法。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "空心柱体、斜截或复杂不等面积截面必须重新确认模型和测量口径；球体积不是 Bh/3 的一般特例。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "圆柱和圆锥同底同高时体积相等",
+        "example": "同底面积 B、高 h 的圆柱体积 Bh，圆锥只有 Bh/3。",
+        "explanation": "锥体的截面面积沿高变化，不能用柱体等截面公式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "直棱柱底面矩形3×4，高5，求体积。",
+        "steps": [
+          "底面积 B=12。",
+          "柱体体积 Bh=12×5。"
+        ],
+        "answer": "60",
+        "check": "单位为长度单位的三次方，截面恒定。"
+      },
+      {
+        "question": "直圆锥底面半径3、高4，求体积。",
+        "steps": [
+          "底面积 B=π×3²=9π。",
+          "锥体体积 Bh/3=9π×4/3。"
+        ],
+        "answer": "12π",
+        "check": "同底同高圆柱体积为36π，圆锥正好是其1/3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "柱锥体积公式不区分截面变化",
+        "why_wrong": "柱体沿高截面不变，锥体截面按平方缩小。",
+        "repair_question": "如果接近锥尖，截面积还会是底面积 B 吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先求准确底面积 B 和真实高度 h。",
+      "各截面是否与底面等面积？",
+      "是柱体还是锥体，积分因子是多少？"
+    ],
+    "transfer": {
+      "near": "底面积6、高9的四棱锥体积。",
+      "far": "通过三维激光扫描的离散截面积近似计算不规则物体体积。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.polyhedron-types",
+      "math.hs.space.solids-revolution"
+    ]
+  },
+  {
+    "id": "math.hs.space.cross-sections",
+    "curriculum_ids": [
+      "HS-MATH-049"
+    ],
+    "kind": "concept",
+    "title": "正方体平面截面、展开图与真实尺度",
+    "version": "1.0.0",
+    "notation": [
+      "C=[0,L]³",
+      "Π:z=h"
+    ],
+    "prerequisites": [
+      "空间坐标、平面方程、几何长度"
+    ],
+    "definition": "空间多面体与平面的交集是截面，截面各边由该平面与多面体各面的交线组成，须同时满足两个几何对象的全部约束；展开图是将面沿公共棱旋转到平面，理想展开保持每个面的边长和面积，但不同面的相对空间角度改变。",
+    "statement": null,
+    "assumptions": [
+      "考虑边长 L>0 的封闭正方体，截面平面确实与立体相交，坐标界限0≤x,y,z≤L。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先求截面平面与正方体边或面的交点，逐一检查所有点坐标仍落在正方体范围内。",
+      "计算边长时使用真正的空间距离而不是投影长度；展开图邻接关系需要沿共享棱保持连接。"
+    ],
+    "boundaries": [
+      "平面可能与立体不相交或仅接触顶点/棱；有无限制的平面截线不能误当作有限截面。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "正方体被任何平面截得的多边形都是正方形",
+        "example": "边长2的正方体 [0,2]³ 被平面 x+y=2 截得边长2√2和2的矩形。",
+        "explanation": "倾斜截面不必与原表面平行，也不必保持正方形形状。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "边长2的正方体 [0,2]³ 与平面 z=1 的截面面积。",
+        "steps": [
+          "截面四顶点(0,0,1),(2,0,1),(2,2,1),(0,2,1)。",
+          "截面为边长2的正方形。"
+        ],
+        "answer": "面积4",
+        "check": "全部顶点满足 z=1 且位于正方体内部。"
+      },
+      {
+        "question": "同一正方体与平面 x+y=2 的截面形状与面积。",
+        "steps": [
+          "平面与 z 方向平行，截面四点(0,2,0),(2,0,0),(2,0,2),(0,2,2)。",
+          "两条相邻边长分别为2√2和2，互相垂直。"
+        ],
+        "answer": "矩形，面积4√2",
+        "check": "非正方形且各顶点满足三个坐标限制。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "按投影长度而非空间真实边长求截面面积",
+        "why_wrong": "斜截面的边长应使用三维距离公式。",
+        "repair_question": "由(0,2,0)到(2,0,0)距离是2还是2√2？"
+      }
+    ],
+    "hint_ladder": [
+      "先把平面与正方体各个面的交点找全。",
+      "筛选满足立体内部坐标界限的交点。",
+      "实际截面边长与画面投影是否相同？"
+    ],
+    "transfer": {
+      "near": "研究边长1的正方体与平面 x+y+z=1 的截面三角形。",
+      "far": "在医学体数据中区分真实三维切片与屏幕投影形状。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.line-plane-normal"
+    ]
+  },
+  {
+    "id": "math.hs.calculus.parameter-zeros",
+    "curriculum_ids": [
+      "HS-MATH-070"
+    ],
+    "kind": "method",
+    "title": "含参数函数零点个数的判别式与定义域分类",
+    "version": "1.0.0",
+    "notation": [
+      "fₜ(x)=0",
+      "Δ(t)"
+    ],
+    "prerequisites": [
+      "函数零点、参数分类、二次判别式、定义域"
+    ],
+    "definition": null,
+    "statement": "讨论含实参数 t 的函数零点数时，要固定合法定义域，寻找使方程次数、判别式、单调区间或端点符号变化的临界参数，再在每个分支上分别计入重根、定义域边界及无解情况。",
+    "assumptions": [
+      "参数属于题目规定集合，解方程时保留原始函数定义域和可能的零系数分支。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先把 fₜ(x)=0 化成支持的代数式，并列出在不同参数下可能使最高次项消失或使分母为零的情况。",
+      "对于合法的一元二次方程，计算 Δ(t) 并区分正、零、负；若次数退化必须重做一次方程分析。",
+      "对每个实根再检查 x 是否属于题目规定区间与原始定义域，合并根的重复情况得到真实零点数。"
+    ],
+    "boundaries": [
+      "判别式正并不自动保证根落在限定区间；重复根仅算一个不同零点。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "Δ>0 就表示任意定义域下有两个零点",
+        "example": "f(x)=x²−1 在 D=(0,+∞) 上仅有零点 x=1，虽然判别式为正。",
+        "explanation": "根的个数必须先经过定义域筛选。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "fₜ(x)=x²−t 在 R 上零点个数如何随 t 改变？",
+        "steps": [
+          "t<0 时 x²=t 不可能；t=0 时唯一根x=0。",
+          "t>0 时有两个不同根 ±√t。"
+        ],
+        "answer": "t<0:0个；t=0:1个；t>0:2个",
+        "check": "通过平方非负及根的符号检验每个分支。"
+      },
+      {
+        "question": "fₜ(x)=x²−2tx+1 在 R 上的零点数。",
+        "steps": [
+          "判别式 Δ=4(t²−1)。",
+          "|t|<1 为负、|t|=1 为零、|t|>1 为正。"
+        ],
+        "answer": "|t|<1:0个；|t|=1:1个；|t|>1:2个",
+        "check": "重根仅计一个不同零点。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只凭判别式不检查定义域或方程次数",
+        "why_wrong": "临界参数可能导致次数退化或根不属于指定区间。",
+        "repair_question": "这两个代数根是否都属于函数的实际定义域？"
+      }
+    ],
+    "hint_ladder": [
+      "确定 x 的定义域，再写零点方程。",
+      "列出让判别式或最高次项变号的参数值。",
+      "所有根都要回代原始函数条件。"
+    ],
+    "transfer": {
+      "near": "讨论 fₜ(x)=x²−t 在 [0,2] 上的零点数。",
+      "far": "分析动力系统参数变化如何使平衡点数发生变化。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.function.zero-ivt",
+      "math.hs.quadratic.sign"
+    ]
+  },
+  {
+    "id": "math.hs.space.polyhedron-projection",
+    "curriculum_ids": [
+      "HS-MATH-079"
+    ],
+    "kind": "concept",
+    "title": "空间多面体的正交投影与可见区域",
+    "version": "1.0.0",
+    "notation": [
+      "proj_Π(P)",
+      "投影方向法向量 n"
+    ],
+    "prerequisites": [
+      "空间点线面、法向量、正交投影"
+    ],
+    "definition": "对平面 Π 和三维点 P，正交投影 proj_Π(P) 是过 P 作 Π 的垂线得到的唯一交点；对多面体逐点投影得到的平面集合可能发生重叠。投影通常不保留三维长度、面积或体积，不能由单张投影唯一恢复全部空间位置。",
+    "statement": null,
+    "assumptions": [
+      "Π 为有效平面，有非零法向量；投影沿平面法向量，不是任意透视相机投影。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "投影点满足两项约束：它属于 Π，且与原点 P 的连线方向平行于非零法向量。",
+      "空间中不同高度的点可能具有相同平面投影，所以正交投影一般不是一一映射。"
+    ],
+    "boundaries": [
+      "透视投影与正交投影不同；遮挡和重叠使可见投影丢失深度信息。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "正交投影一定保持任何两点之间的真实距离",
+        "example": "A=(0,0,0),B=(0,0,3) 正交投影到 z=0 后都变成(0,0,0)。",
+        "explanation": "沿法向的分量在投影中消失，真实距离3变为0。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "点 P=(2,-1,5) 到平面 z=0 的正交投影。",
+        "steps": [
+          "沿平面法向 z 轴作垂线。",
+          "保留 x,y 坐标，把 z 设为0。"
+        ],
+        "answer": "(2,-1,0)",
+        "check": "投影点位于 z=0，连线方向为(0,0,5)。"
+      },
+      {
+        "question": "边长2的正方体 [0,2]³ 在 z=0 上的正交投影面积。",
+        "steps": [
+          "对每个点舍弃 z 坐标，得到 [0,2]×[0,2]。",
+          "这是边长2的平面正方形。"
+        ],
+        "answer": "4",
+        "check": "体积8与投影面积4的单位和数值均不同。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "由投影长度直接认定真实空间距离",
+        "why_wrong": "投影会舍去法向分量，导致不同空间点重合。",
+        "repair_question": "两个投影点重合能说明原始空间点相同吗？"
+      }
+    ],
+    "hint_ladder": [
+      "平面的非零法向量是什么？",
+      "沿该方向投到哪个交点？",
+      "哪些三维信息在投影过程中丢失？"
+    ],
+    "transfer": {
+      "near": "点(1,2,3) 到平面 x=0 的正交投影。",
+      "far": "解释深度相机和平面照片为什么需要多视角才能可靠恢复三维几何。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.space.line-plane-normal"
+    ]
+  }
+]

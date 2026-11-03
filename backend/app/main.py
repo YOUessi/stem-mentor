@@ -293,6 +293,13 @@ def session_review_suggestion(session_id:str):
     return {'suggestion':None,'why':'当前没有到期的关联考点'}
 
 
+@app.get('/api/knowledge/depth/coverage')
+def deep_knowledge_coverage():
+    """Unauthenticated diagnostics: counts only, NEVER draft teacher solutions."""
+    from .deep_knowledge import public_summary
+    return public_summary()
+
+
 @app.get('/api/knowledge/quality')
 def knowledge_quality_report():
     from .knowledge_quality import validate_knowledge

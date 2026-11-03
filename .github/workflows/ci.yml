@@ -12,6 +12,17 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r backend/requirements.txt
+      - run: python scripts/build_kb_coverage.py --summary
+      - run: python scripts/audit_deep_math_evidence.py --check
+      - run: python scripts/build_semantic_gap_batch05.py --check
+      - run: python scripts/reconcile_kb_batch02.py --check
+      - run: python scripts/build_kb_legacy_bridge.py --check
+      - run: python scripts/build_kb_batch07_audit.py --check
+      - run: python scripts/audit_kb_attested_release.py --check
+      - run: python scripts/build_kb_batch07_lessons.py --check
+      - run: python scripts/build_kb_batch09_lessons.py --check
+      - run: python scripts/audit_kb_batch09_release.py --check
+      - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
       - uses: actions/setup-node@v4
         with:

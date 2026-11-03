@@ -1,0 +1,1368 @@
+[
+  {
+    "id": "math.hs.triangle.sine-law",
+    "curriculum_ids": [
+      "HS-MATH-036"
+    ],
+    "kind": "theorem",
+    "title": "三角形正弦定理与对应边",
+    "version": "1.0.0",
+    "notation": [
+      "a/sin A",
+      "2R"
+    ],
+    "prerequisites": [
+      "三角形内角和、正弦定义、面积"
+    ],
+    "definition": null,
+    "statement": "任一非退化欧氏三角形 ABC 的对边长分别为 a,b,c，对角为 A,B,C，外接圆半径为 R>0，则 a/sin A=b/sin B=c/sin C=2R。",
+    "assumptions": [
+      "三点不共线，a,b,c>0；内角 A,B,C 均在 (0,π)，正弦均严格为正。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "从顶点 A 向边 BC 作高 h，三角形面积 Δ=(1/2)bc sin A。",
+        "reason": "两边及其夹角的面积公式适用于非退化三角形。"
+      },
+      {
+        "claim": "同一面积亦为 Δ=(1/2)ca sin B=(1/2)ab sin C。",
+        "reason": "对三个不同顶点应用相同的高与面积公式。"
+      },
+      {
+        "claim": "由于 a,b,c 均非零，等式两边同除以 abc/2，得到 sin A/a=sin B/b=sin C/c。",
+        "reason": "除以正数合法，倒数得到 a/sin A=b/sin B=c/sin C。"
+      },
+      {
+        "claim": "任一边作为外接圆弦时有 a=2R sin A。",
+        "reason": "在三角形外接圆上取 BD 为经过 B 的直径，令 D 为直径另一端。直角三角形 BCD 中 sin∠BDC=BC/BD=a/(2R)；圆周角 ∠BDC 与 ∠BAC 同弦 BC，或相等或互补，正弦相同，故 sinA=a/(2R)。依次轮换其余两边。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "给定 SSA 两边一非夹角时，反正弦可能有两种角；不能只取主值。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "已知两边和一个非夹角，正弦定理保证唯一三角形",
+        "example": "令 A=30°，a=1，b=1.5，sinB=0.75，可取两个不同 B 值。",
+        "explanation": "B≈48.59° 或 131.41° 均与 A 组成合法三角形，故解不唯一。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "若三角形 A=30°, B=60°, a=5，求 b。",
+        "steps": [
+          "正弦定理 b=a sinB/sinA。",
+          "代入 sin60°=√3/2, sin30°=1/2。"
+        ],
+        "answer": "b=5√3",
+        "check": "b/a=√3 与正弦比 √3 一致。"
+      },
+      {
+        "question": "三角形中 A=30°, a=4, b=4，求 B。",
+        "steps": [
+          "正弦定理 sinB=(b/a)sinA=1/2。",
+          "候选 B=30° 或 150°；后者使 A+B=180°，第三角为 0 不合法。"
+        ],
+        "answer": "B=30°",
+        "check": "剩余角 120° 大于零，三边相等性对边对应正确。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只根据 sinB 数值就直接确定 B 的唯一值",
+        "why_wrong": "正弦在 (0,π) 关于 π/2 对称，必须检查所有可行角。",
+        "repair_question": "若 sinB=3/4，补角 π−B 也符合吗，第三角还能为正吗？"
+      }
+    ],
+    "hint_ladder": [
+      "确认每一边和对角是否正确配对。",
+      "由正弦定理列出 sinB 的值。",
+      "若求角，检查补角候选是否仍满足内角和。"
+    ],
+    "transfer": {
+      "near": "取 A=40°, a=7, b=9，检查可能的三角形数量。",
+      "far": "用三角形外接圆弦长与半径的关系识别几何长度约束。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.pythagorean"
+    ]
+  },
+  {
+    "id": "math.hs.triangle.cosine-law",
+    "curriculum_ids": [
+      "HS-MATH-037"
+    ],
+    "kind": "theorem",
+    "title": "余弦定理与三边可行性",
+    "version": "1.0.0",
+    "notation": [
+      "a²=b²+c²−2bc cosA"
+    ],
+    "prerequisites": [
+      "平面向量数量积、勾股定理"
+    ],
+    "definition": null,
+    "statement": "对任意非退化三角形 ABC，a,b,c 是 A,B,C 的对边长，则 a²=b²+c²−2bc cos A；三边均为正且满足严格三角形不等式时，cos A=(b²+c²−a²)/(2bc)。",
+    "assumptions": [
+      "a,b,c>0 且两边和严格大于第三边；夹角 A∈(0,π)。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "以 A 为公共起点，令向量 AB 长 c，AC 长 b。",
+        "reason": "两向量 AB、AC 的夹角严格定义为顶点 A 的内角。"
+      },
+      {
+        "claim": "向量 BC=AC−AB，从而 |BC|²=|AC|²+|AB|²−2AB·AC。",
+        "reason": "向量数量积的展开与对称性成立。"
+      },
+      {
+        "claim": "因 AB·AC=bc cos A，且 |BC|=a，得到 a²=b²+c²−2bc cos A。",
+        "reason": "将边长及夹角代入向量恒等式。"
+      },
+      {
+        "claim": "当 b,c>0，移项除以 2bc，得到 cos A 的表达式。",
+        "reason": "除数非零；三角形不等式保证角 A 可取在 (0,π)。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不能用不满足三角形不等式的三边计算所谓实际内角。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任取三段正长度都能由余弦定理计算三角形内角",
+        "example": "a=1,b=2,c=4 不满足 1+2>4，不能构成三角形。",
+        "explanation": "即使代数式能写出，几何对象根本不存在。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "边 b=3,c=4，夹角 A=90°，求 a。",
+        "steps": [
+          "cos90°=0，余弦定理化为 a²=9+16。",
+          "边长取正根，得到 a=5。"
+        ],
+        "answer": "a=5",
+        "check": "3、4、5 满足三角形不等式，且直角边平方和为 25。"
+      },
+      {
+        "question": "三边 a=√3,b=1,c=2，求角 A。",
+        "steps": [
+          "cosA=(1+4-3)/(2·1·2)=1/2。",
+          "A 在 (0,π) 内，余弦为 1/2 时 A=60°。"
+        ],
+        "answer": "A=60°",
+        "check": "1+√3>2，三边合法，回代得 a²=3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "利用三边代入公式之前忽略几何存在性",
+        "why_wrong": "正数条件不足以保证三角形成立，还要严格三角形不等式。",
+        "repair_question": "最大边是不是严格小于另两边之和？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查三边或已知夹角的几何合法性。",
+      "正确找到所求角的对边。",
+      "求角后确认角度位于 (0,180°)。"
+    ],
+    "transfer": {
+      "near": "若 a=t,b=3,c=4，求所有允许的 t 并给出 cosA 范围。",
+      "far": "将两点距离转为向量数量积验证移动机器人三角定位。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.vector.dot-product"
+    ]
+  },
+  {
+    "id": "math.hs.complex.modulus",
+    "curriculum_ids": [
+      "HS-MATH-040",
+      "HS-MATH-041",
+      "HS-MATH-042"
+    ],
+    "kind": "concept",
+    "title": "复数模与复平面坐标",
+    "version": "1.0.0",
+    "notation": [
+      "z=a+bi",
+      "i²=-1",
+      "|z|=√(a²+b²)"
+    ],
+    "prerequisites": [
+      "有序实数对、平方根"
+    ],
+    "definition": "复数 z=a+bi 由实部 a 和虚部 b（a,b∈R）确定，其复平面对应点为 (a,b)；模定义为 |z|=√(a²+b²)，共轭复数为 z̄=a−bi。",
+    "statement": null,
+    "assumptions": [
+      "a,b 为实数，i 为满足 i²=-1 的虚数单位。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "在复平面，点 (a,b) 到原点的欧氏距离由勾股公式给出 √(a²+b²)，因此定义为模。",
+      "将 z 与其共轭相乘得 (a+bi)(a−bi)=a²+b²=|z|²，故模平方非负。"
+    ],
+    "boundaries": [
+      "虚部系数 b 可以为负；共轭不会改变模长。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "复数 z=1+2i 的模是实部加虚部即 3",
+        "example": "|1+2i|=√(1+4)=√5，与 3 不相等。",
+        "explanation": "模是复平面欧氏距离，不是坐标简单求和。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 z=3−4i 的模。",
+        "steps": [
+          "读出实部 3、虚部 -4。",
+          "模长等于 √(3²+(-4)²)=5。"
+        ],
+        "answer": "5",
+        "check": "点 (3,-4) 与原点的距离是 3-4-5 三角形斜边。"
+      },
+      {
+        "question": "计算 (2+i)(2−i)。",
+        "steps": [
+          "两数互为共轭，乘积等于 2²+1²。",
+          "展开消去交叉虚部得到 5。"
+        ],
+        "answer": "5",
+        "check": "复数乘积是纯实数，并等于 |2+i|²。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把复数的模理解为实部与虚部的算术和",
+        "why_wrong": "复数模是向量长度，需将分量平方相加再开非负根。",
+        "repair_question": "如果虚部变成 -b，你计算出的模是否应改变？"
+      }
+    ],
+    "hint_ladder": [
+      "先在复平面标出实部和虚部坐标。",
+      "由欧氏距离求到原点的长度。",
+      "用共轭乘积检查模长平方。"
+    ],
+    "transfer": {
+      "near": "求所有满足 |z|=2 的复数对应轨迹。",
+      "far": "用复数模表示电路交流相量振幅的大小。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.probability.laplace",
+    "curriculum_ids": [
+      "HS-MATH-050",
+      "HS-MATH-052"
+    ],
+    "kind": "concept",
+    "title": "有限等可能样本空间与古典概型",
+    "version": "1.0.0",
+    "notation": [
+      "Ω",
+      "P(A)=|A|/|Ω|"
+    ],
+    "prerequisites": [
+      "有限集合、计数"
+    ],
+    "definition": "当有限样本空间 Ω 中每个基本结果概率都相等，且 Ω 非空时，对事件 A⊆Ω，古典概型的概率定义为 P(A)=|A|/|Ω|；若基本结果不等可能，不能使用简单计数比。",
+    "statement": null,
+    "assumptions": [
+      "Ω 有限且非空；所有基本结果等可能；A 是 Ω 的子集。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "互斥的基本结果总概率为 1，等可能意味着每个基本结果概率为 1/|Ω|。",
+      "事件 A 由 |A| 个不同基本结果组成，所以概率为 |A|/|Ω|。"
+    ],
+    "boundaries": [
+      "计数时既不能重计重复基本结果，也不能把带权或不等可能样本空间误当作等可能。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "凡样本结果只有两种，两个结果概率都应为一半",
+        "example": "不均匀硬币正面概率 0.8，反面 0.2，虽只有两个结果仍不等可能。",
+        "explanation": "必须先证明基本事件等可能才能用基本结果个数比例。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平六面骰子掷一次，出现偶数的概率是多少？",
+        "steps": [
+          "Ω={1,2,3,4,5,6}，六个等可能结果。",
+          "有利结果 {2,4,6} 共 3 个。"
+        ],
+        "answer": "P=3/6=1/2",
+        "check": "概率在 [0,1] 且 3 个结果中占一半。"
+      },
+      {
+        "question": "两个公平硬币独立投掷，恰好一枚正面的概率。",
+        "steps": [
+          "列出有序结果 HH、HT、TH、TT 四个等可能结果。",
+          "有利结果是 HT、TH 两个。"
+        ],
+        "answer": "P=2/4=1/2",
+        "check": "结果按硬币顺序区分，不可错误只列三种无序结果。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把未验证的“等可能”当成古典概率公式前提",
+        "why_wrong": "古典概型分母不是任意分类数，而是等可能基本事件总数。",
+        "repair_question": "这些基本结果真的是等可能的吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先列出不重不漏的基本结果。",
+      "核查它们是否等可能。",
+      "数出符合事件的基本结果数，再做比值。"
+    ],
+    "transfer": {
+      "near": "不放回抽两个颜色球，比较有序与无序样本空间计数。",
+      "far": "概率模型中的样本空间设计如何影响条件独立判断？"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.statistics.variance",
+    "curriculum_ids": [
+      "HS-MATH-056",
+      "HS-MATH-057"
+    ],
+    "kind": "concept",
+    "title": "算术平均数和方差（总体与样本）",
+    "version": "1.0.0",
+    "notation": [
+      "x̄",
+      "σ²",
+      "s²"
+    ],
+    "prerequisites": [
+      "实数求和、平方非负"
+    ],
+    "definition": "给定 n≥1 个实数 x1,…,xn，算术平均数 x̄=(Σxi)/n，总体描述性方差 σ²=(Σ(xi−x̄)²)/n；分母 n−1 的样本方差 s² 在 n≥2 时定义，在独立同分布且二阶矩存在的抽样下它是总体方差的无偏估计。",
+    "statement": null,
+    "assumptions": [
+      "n≥1 个实数可计算描述性总体均值与方差；s² 需 n≥2。",
+      "只有观测是独立同分布抽样且总体方差有限时，分母 n−1 的样本方差才具有对总体方差的无偏性。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "每一项 (xi−x̄)² 都非负，所以总体方差非负，且全部 xi 相等时方差为 0。",
+      "分母 n 与 n−1 对应不同统计目的；不能在计算过程中混合。"
+    ],
+    "boundaries": [
+      "仅有一个样本观测时分母 n−1=0，样本方差未定义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "计算任意两个数据的方差都应该除以 n−1",
+        "example": "总体数据 {1,3} 的描述性方差为 [(1−2)²+(3−2)²]/2=1。",
+        "explanation": "若作无偏样本估计才除以 1 得 2，不能混称。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "把 {1,3,5} 当作总体数据，求均值和方差。",
+        "steps": [
+          "均值 (1+3+5)/3=3。",
+          "离差平方为 4、0、4，总体方差 8/3。"
+        ],
+        "answer": "均值 3，方差 8/3",
+        "check": "三项离差平方和 8，除以 3，满足非负。"
+      },
+      {
+        "question": "把 {2,4} 当作样本，求无偏样本方差。",
+        "steps": [
+          "样本均值为 3，两项离差平方为 1 和 1。",
+          "使用分母 n−1=1，得到 s²=2。"
+        ],
+        "answer": "s²=2",
+        "check": "若错误使用分母 n=2 会得到总体方差 1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "没有明确方差定义就选择 n 或 n−1",
+        "why_wrong": "总体描述和估计总体方差是不同统计任务，分母必须写清。",
+        "repair_question": "你要描述这批完整数据，还是估计未知总体方差？"
+      }
+    ],
+    "hint_ladder": [
+      "先写明数据是完整总体还是抽样样本。",
+      "计算均值以及每个数据与均值的差。",
+      "平方求和后选对应分母。"
+    ],
+    "transfer": {
+      "near": "比较 {0,0,6} 与 {1,2,3} 的总体方差。",
+      "far": "分析多次测量误差中总体离散程度与估计不确定性的区别。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.sequence.arithmetic-sum",
+    "curriculum_ids": [
+      "HS-MATH-063",
+      "HS-MATH-065"
+    ],
+    "kind": "theorem",
+    "title": "等差数列前 n 项和",
+    "version": "1.0.0",
+    "notation": [
+      "a_n=a1+(n−1)d",
+      "S_n=n(a1+a_n)/2"
+    ],
+    "prerequisites": [
+      "整数计数、等差数列递推"
+    ],
+    "definition": null,
+    "statement": "设 n 为正整数，实数首项 a1、公差 d，数列满足 a_(k+1)=a_k+d，则前 n 项和 S_n=n(a1+a_n)/2=n[2a1+(n−1)d]/2。",
+    "assumptions": [
+      "n≥1 为整数；每一步递推公差 d 恒定。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "递推展开得到 a_k=a1+(k−1)d，因此 a1+a_n=a2+a_(n−1)。",
+        "reason": "两端项指标和恒为 n+1，项值之和恒定。"
+      },
+      {
+        "claim": "写 S_n=a1+a2+…+a_n，再从后向前写一次 S_n=a_n+a_(n−1)+…+a1。",
+        "reason": "两次求和包括同一组 n 个项。"
+      },
+      {
+        "claim": "逐项相加得到 2S_n=n(a1+a_n)。",
+        "reason": "每列相对位置的两项之和均为 a1+a_n。"
+      },
+      {
+        "claim": "除以 2 得 S_n=n(a1+a_n)/2，代入 a_n=a1+(n−1)d 得另一形式。",
+        "reason": "2 非零且递推通项公式在 n≥1 成立。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "首项与末项平均法依赖常差递推，非等差数列不可直接使用。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "等差数列前 n 项和公式适用于任何数列",
+        "example": "数列 1,2,4 的前 3 项和为 7，但 3(1+4)/2=7.5。",
+        "explanation": "这些项差分别为 1、2，不满足等差数列假设。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "等差数列 2,5,8,… 前 10 项和。",
+        "steps": [
+          "公差 d=3，a10=2+9·3=29。",
+          "S10=10(2+29)/2=155。"
+        ],
+        "answer": "155",
+        "check": "用首末配对：每对 31 共 5 对，总和 155。"
+      },
+      {
+        "question": "等差数列 a1=7,d=-2，求前 5 项和。",
+        "steps": [
+          "a5=7+4·(-2)=-1。",
+          "S5=5(7+(-1))/2=15。"
+        ],
+        "answer": "15",
+        "check": "逐项 7+5+3+1−1=15。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把等差求和公式用于任意给定数列",
+        "why_wrong": "首末两项配对等和需要公差固定。",
+        "repair_question": "检查相邻两项的差是不是同一常量？"
+      }
+    ],
+    "hint_ladder": [
+      "识别公差并写出第 n 项。",
+      "把求和从正反两个方向各写一遍。",
+      "每组相对项的和是否都相等？"
+    ],
+    "transfer": {
+      "near": "给定 a1=t、d=-1，讨论使前 n 项和为正的整数 n。",
+      "far": "用等差数列建模固定速度下每时刻增加的成本或收益。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.sequence.geometric-sum",
+    "curriculum_ids": [
+      "HS-MATH-064",
+      "HS-MATH-065"
+    ],
+    "kind": "theorem",
+    "title": "等比递推的有限前 n 项和与 q=1 分支",
+    "version": "1.0.0",
+    "notation": [
+      "S_n",
+      "a1",
+      "q",
+      "q≠1"
+    ],
+    "prerequisites": [
+      "整数指数、有限求和"
+    ],
+    "definition": null,
+    "statement": "设 n≥1 为整数、a1,q∈R，数列满足 a_(k+1)=q a_k。有限和 S_n=Σ(k=1..n)a_k 在 q=1 时等于 n a1，在 q≠1 时等于 a1(1−q^n)/(1−q)。这里允许 q=0 作为递推的退化情形，不主张所有教材都把它称为等比数列。",
+    "assumptions": [
+      "n 为正整数，a1 与 q 是实数；使用分式前必须确认 q≠1。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由递推得 a_k=a1 q^(k−1)，因此 S_n=a1+a1q+…+a1 q^(n−1)。",
+        "reason": "项号从 1 到 n，第一项直接由 a1 定义以避免 0^0。"
+      },
+      {
+        "claim": "同乘 q，得到 qS_n=a1q+a1q²+…+a1q^n。",
+        "reason": "这是对有限个实数求和逐项相乘。"
+      },
+      {
+        "claim": "两式相减，中间项抵消，得 (1−q)S_n=a1(1−q^n)。",
+        "reason": "相邻幂次对齐后是逐项相消。"
+      },
+      {
+        "claim": "若 q≠1 可同除 1−q；若 q=1，数列每项均是 a1，直接相加 n 次。",
+        "reason": "分别处理分母非零与分母为零，两个分支覆盖所有实数 q。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "有限和不需要 |q|<1；无穷级数的和另需 |q|<1 才可直接使用 a1/(1−q)。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "有限等比和分式可以在 q=1 时直接使用",
+        "example": "设 a1=3,n=4,q=1，分式是 0/0，但 S4=12。",
+        "explanation": "必须单独列出 q=1 的分支，否则出现未定义表达式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "数列首项 2、公比 -2，求前 4 项和。",
+        "steps": [
+          "列出 2,-4,8,-16，先算直接和得 -10。",
+          "用分式 2(1−16)/(1+2)=-10。"
+        ],
+        "answer": "S4=-10",
+        "check": "两种有限计算一致且 q=-2≠1。"
+      },
+      {
+        "question": "递推 a_(k+1)=a_k，a1=5，求前 8 项和。",
+        "steps": [
+          "这里公比 q=1，不能使用分母含 1−q 的公式。",
+          "八项全部等于 5，直接相加。"
+        ],
+        "answer": "S8=40",
+        "check": "8·5=40，分母为零的分式没有合法值。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把无限等比级数条件 |q|<1 搬到有限求和",
+        "why_wrong": "有限项求和对任何实数 q 都存在，收敛限制只针对无穷级数。",
+        "repair_question": "本题要求前 n 项，还是 n 趋于无穷时的极限？"
+      }
+    ],
+    "hint_ladder": [
+      "先区分有限 n 与无穷求和。",
+      "试把 S_n 乘以 q，观察两行错位相减。",
+      "即将除以 1−q 时应该先讨论什么分支？"
+    ],
+    "transfer": {
+      "near": "取 q=-1、0、1，比较前 n 项和的奇偶或退化表现。",
+      "far": "在分期现金流模型中分析有限支付期与永续年金公式差别。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.exponent.product"
+    ]
+  },
+  {
+    "id": "math.hs.calculus.power-rule",
+    "curriculum_ids": [
+      "HS-MATH-066",
+      "HS-MATH-067"
+    ],
+    "kind": "theorem",
+    "title": "幂函数的导数规则（整数指数）",
+    "version": "1.0.0",
+    "notation": [
+      "d(x^m)/dx=m x^(m−1)"
+    ],
+    "prerequisites": [
+      "导数极限定义、二项式展开"
+    ],
+    "definition": null,
+    "statement": "设 m 为正整数，函数 f(x)=x^m 在全部实数上可导，且 f'(x)=m x^(m−1)；m=0 时常函数 f(x)=1 的导数为 0。",
+    "assumptions": [
+      "m 是非负整数，x 为实数；本条不讨论负指数的 x=0 奇点。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对 m≥1，按定义 f'(x)=lim(h→0)[(x+h)^m−x^m]/h。",
+        "reason": "导数定义中的 h≠0 后取极限。"
+      },
+      {
+        "claim": "由二项式展开，差为 m x^(m−1)h+C(m,2)x^(m−2)h²+…+h^m。",
+        "reason": "二项式公式对固定正整数 m 成立。"
+      },
+      {
+        "claim": "把差式除以 h，得到 m x^(m−1)+若干带 h 正幂的项。",
+        "reason": "每一项均有至少一个因子 h 的高阶部分。"
+      },
+      {
+        "claim": "令 h→0，所有带 h 的项趋于零，留下 m x^(m−1)。",
+        "reason": "有限个多项式项可以逐项取极限；常函数差商恒为零。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "x^(-1) 等负整数幂在 x=0 不可导，也没有函数值，不能直接宣称全 R 成立。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "所有 x^m 在全部实数上都可导",
+        "example": "取 m=-1，则 f(x)=1/x 在 x=0 根本无定义。",
+        "explanation": "该命题只对本条的非负整数指数在全实数域成立。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 f(x)=x^4 的导函数。",
+        "steps": [
+          "应用 m=4 的整数幂法则。",
+          "得到 f'(x)=4x³。"
+        ],
+        "answer": "4x³",
+        "check": "在 x=1 的差商极限为 4，与公式一致。"
+      },
+      {
+        "question": "求 g(x)=3x²−5x+7 的导函数。",
+        "steps": [
+          "分别求导得 6x、-5 与 0。",
+          "利用导数线性性合并得到 6x−5。"
+        ],
+        "answer": "6x−5",
+        "check": "代入 x=0，函数在该点切线斜率为 -5。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "对负整数幂使用法则时忘记定义域",
+        "why_wrong": "代数形式可能有分母，先检查函数在求导点有定义。",
+        "repair_question": "若函数为 1/x，是否可以在 x=0 求切线斜率？"
+      }
+    ],
+    "hint_ladder": [
+      "先写出差商定义。",
+      "对 (x+h)^m 做整数二项式展开。",
+      "把 h 的一次因子约去后再取极限。"
+    ],
+    "transfer": {
+      "near": "对 f(x)=x⁵ 求 x=-1 的切线斜率。",
+      "far": "用多项式位置函数求速度并说明瞬时变化率的极限含义。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.calculus.derivative-monotonicity",
+    "curriculum_ids": [
+      "HS-MATH-068",
+      "HS-MATH-069"
+    ],
+    "kind": "theorem",
+    "title": "导数符号与区间单调性",
+    "version": "1.0.0",
+    "notation": [
+      "f'(x)",
+      "f'(x)>0",
+      "f'(x)<0"
+    ],
+    "prerequisites": [
+      "导数定义、均值定理、单调定义"
+    ],
+    "definition": null,
+    "statement": "若 f 在闭区间 [a,b] 连续且在 (a,b) 可导，并且在 (a,b) 有 f'(x)>0（或 f'(x)<0），则 f 在 [a,b] 严格递增（或严格递减）。f'(x)≥0 仅能保证不减，不能据此推出严格递增。",
+    "assumptions": [
+      "a<b 为实数；f 在 [a,b] 连续、(a,b) 可导；导数符号在整段内成立。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "取任意 a≤u<v≤b，均值定理适用于 [u,v]，存在 ξ∈(u,v)。",
+        "reason": "f 在子区间连续且内部可导，满足均值定理条件。"
+      },
+      {
+        "claim": "有 f(v)−f(u)=f'(ξ)(v−u)。",
+        "reason": "均值定理给出割线斜率等于某处导数。"
+      },
+      {
+        "claim": "若 f' 在内点恒正，因 v−u>0，差必严格为正；恒负同理。",
+        "reason": "任意点对均成立，符合严格单调性的定义。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若仅知道 f'≥0，例子常函数 f(x)=0 说明未必严格递增；导数为 0 的孤立点不必破坏严格递增。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "f'(x)≥0 在每一点成立就能推出 f 严格递增",
+        "example": "常函数 f(x)=3 在 R 上满足 f'(x)=0，却不是严格递增。",
+        "explanation": "导数非负保证不减，不自动保证严格增长。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "判断 f(x)=x³ 在 R 的单调性。",
+        "steps": [
+          "导数 f'=3x²≥0，仅凭严格正无法处理 x=0。",
+          "另由立方函数对任意 u<v 有 u³<v³，得严格递增。"
+        ],
+        "answer": "在 R 上严格递增",
+        "check": "导数在孤立点为零不影响任意两点的严格不等式。"
+      },
+      {
+        "question": "判断 f(x)=-x 在 [-2,2] 的单调性。",
+        "steps": [
+          "f'(x)=-1 在开区间恒小于零。",
+          "满足连续可导前提，按均值定理可判严格递减。"
+        ],
+        "answer": "在 [-2,2] 严格递减",
+        "check": "任意 u<v 时 f(v)-f(u)=-(v-u)<0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把在几个采样点 f' 为正当成全区间 f'>0",
+        "why_wrong": "均值定理要求所讨论的每个内点导数满足符号条件。",
+        "repair_question": "你已经证明所有 x∈(a,b) 的导数符号了吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确端点连续、内部可导这两个前提。",
+      "求导并判断整个区间的导数符号。",
+      "导数是否恒严格正，还是只非负且含零点？"
+    ],
+    "transfer": {
+      "near": "分析 f(x)=x³ 在含 0 的区间为何仍严格单调。",
+      "far": "把导数符号与函数模型的增长约束联系，而非只靠绘图。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.calculus.power-rule",
+      "math.hs.function.monotonicity"
+    ]
+  },
+  {
+    "id": "math.hs.counting.product-rule",
+    "curriculum_ids": [
+      "HS-MATH-092",
+      "HS-MATH-093"
+    ],
+    "kind": "theorem",
+    "title": "分类加法与分步乘法计数原理",
+    "version": "1.0.0",
+    "notation": [
+      "N=ΣN_i",
+      "N=Πn_i"
+    ],
+    "prerequisites": [
+      "有限集合、互斥分类、笛卡儿积"
+    ],
+    "definition": null,
+    "statement": "若目标结果被分为有限个互斥且完备的类别，每类有 N_i 个，则总数为 ΣN_i；若一个结果需依次完成 k 步，每步在前面选择确定后都有固定 n_i 种选择，则总数为 Πn_i。",
+    "assumptions": [
+      "分类必须互斥且覆盖所有结果；乘法原理各步分支数应与已经选过的路径条件相符。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "分类情形下，把互不重叠的结果集合记为 A_i，则总集合为不交并。",
+        "reason": "有限集合的不交并元素个数等于各集合大小之和。"
+      },
+      {
+        "claim": "分步情形下，每个结果唯一对应一个长度为 k 的选择序列。",
+        "reason": "没有重复记录和遗漏，是乘法计数的结构前提。"
+      },
+      {
+        "claim": "若第 i 步选项数对所有允许的此前路径恒为 n_i，则按树状分支每层数量成倍扩张。",
+        "reason": "逐层归纳，总结果数等于 n1×…×nk。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "互不相交类别可加，同一任务连贯步骤可乘；若后续选项数依赖前序分支，要分情况求和。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "选择第一步有 3 种、第二步最多 2 种，所以一定有 6 种结果",
+        "example": "若某第一步选择使第二步没有合法选项，实际总数小于 6。",
+        "explanation": "乘法要求每条已选路径的下一步合法选择数满足模型。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "两位密码每一位可选 {1,2,3}，允许重复，共多少种？",
+        "steps": [
+          "第一位 3 种，第二位独立地有 3 种。",
+          "分步乘法得到 3×3=9。"
+        ],
+        "answer": "9",
+        "check": "可列出 11 到 33 的九个有序组合核对。"
+      },
+      {
+        "question": "一人从 4 辆公交或 3 辆地铁中选一辆出行，有多少方式？",
+        "steps": [
+          "公交和地铁方案互斥且穷尽。",
+          "分类加法得到 4+3=7。"
+        ],
+        "answer": "7",
+        "check": "没有人同时选两个方式，故不重计。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把互斥类别相乘，或把连续步骤相加",
+        "why_wrong": "乘法要求结果同时包含各步骤；加法要求每个结果属于某一互斥类。",
+        "repair_question": "完成一件事需要同时做两步，还是只要二选一？"
+      }
+    ],
+    "hint_ladder": [
+      "先确定是在分类完成还是分步完成。",
+      "检查分类互斥或每步选项数是否固定。",
+      "用小案例枚举验证是否重复或遗漏。"
+    ],
+    "transfer": {
+      "near": "计算长度为 3 的不重复数字密码时每步选择数。",
+      "far": "将有限自动机中符合条件的路径数表示为按状态分支求和。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.counting.binomial",
+    "curriculum_ids": [
+      "HS-MATH-095"
+    ],
+    "kind": "theorem",
+    "title": "二项式定理（非负整数指数）",
+    "version": "1.0.0",
+    "notation": [
+      "(a+b)^n",
+      "C(n,k)"
+    ],
+    "prerequisites": [
+      "分步选择、组合数"
+    ],
+    "definition": null,
+    "statement": "对任意实数 a,b 与非负整数 n，(a+b)^n=Σ(k=0..n) C(n,k)a^(n−k)b^k，其中 C(n,k)=n!/[k!(n−k)!]。",
+    "assumptions": [
+      "n∈{0,1,2,...}，a,b∈R，0≤k≤n 为整数。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "把 (a+b)^n 写成 n 个二项式因子的乘积。",
+        "reason": "指数为非负整数时有限次乘法定义明确；n=0 时乘积为 1。"
+      },
+      {
+        "claim": "每个展开项从每一个因子中选择 a 或 b；若恰选 k 个 b，则该项为 a^(n−k)b^k。",
+        "reason": "乘法分配律保证所有选择路径被完整展开。"
+      },
+      {
+        "claim": "恰好选择 k 个位置放 b 的方式有 C(n,k) 种。",
+        "reason": "组合数计算从 n 个位置选 k 个，不计顺序。"
+      },
+      {
+        "claim": "对所有 k=0,...,n 分类求和，得到二项式展开。",
+        "reason": "类别按选择 b 的个数互斥且覆盖所有路径。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "非整数 n 的广义二项级数需要额外收敛条件，不能照搬有限项公式。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "二项式展开只含 a^n+b^n 两项",
+        "example": "取 n=2，(1+1)^2=4，而 1^2+1^2=2。",
+        "explanation": "缺少交叉项 2ab，展开必须考虑不同选择路径。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "展开 (x+2)³。",
+        "steps": [
+          "系数为 1,3,3,1，分别对应 k=0..3。",
+          "得到 x³+6x²+12x+8。"
+        ],
+        "answer": "x³+6x²+12x+8",
+        "check": "代入 x=1，原式 27，展开式也为 27。"
+      },
+      {
+        "question": "求 (1+t)^5 中 t² 的系数。",
+        "steps": [
+          "选 k=2 时对应 C(5,2)·t²。",
+          "计算 C(5,2)=10。"
+        ],
+        "answer": "10",
+        "check": "组合位置数为 5·4/2=10。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把组合数 C(n,k) 当成排列数 P(n,k)",
+        "why_wrong": "每一项仅由选择 b 的位置集合确定，选择次序无区别。",
+        "repair_question": "同样两个 b 对调位置，会不会形成不同展开项？"
+      }
+    ],
+    "hint_ladder": [
+      "把乘方理解为 n 个相同因子的乘积。",
+      "数出从 n 个位置选择 k 个 b 的方案。",
+      "按 k 分类合并相同幂次项。"
+    ],
+    "transfer": {
+      "near": "推导 (a−b)^n 中每项符号的规律。",
+      "far": "将二项式系数用于独立伯努利试验的二项概率分布。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.product-rule"
+    ]
+  },
+  {
+    "id": "math.hs.probability.conditioning",
+    "curriculum_ids": [
+      "HS-MATH-096"
+    ],
+    "kind": "concept",
+    "title": "条件概率及其定义域",
+    "version": "1.0.0",
+    "notation": [
+      "P(A|B)",
+      "P(A∩B)/P(B)"
+    ],
+    "prerequisites": [
+      "概率事件、交集、非零除数"
+    ],
+    "definition": "在概率空间中，只要事件 B 的概率严格大于 0，条件概率 P(A|B) 定义为 P(A∩B)/P(B)，表示已知 B 发生时 A 的相对概率。",
+    "statement": null,
+    "assumptions": [
+      "P(B)>0；事件 A、B 位于同一个概率空间。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "原样本空间在已知 B 发生后限制为 B；同时发生 A 的有利部分是 A∩B。",
+      "将两者概率之比作为在 B 内部归一化的测度，得到 P(A|B)。",
+      "若 A 与 B 独立，则 P(A∩B)=P(A)P(B)，因此 P(A|B)=P(A)。",
+      "当 P(B)=0 时上述分式无定义，不能直接用此公式讨论条件概率。"
+    ],
+    "boundaries": [
+      "互斥与独立不能混同；对零概率条件事件不适用初等条件概率分式。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "概率为零的条件事件可以直接用于条件概率分式",
+        "example": "取不可能事件 B=∅，P(B)=0，分母为 0。",
+        "explanation": "公式出现未定义的 0/0，不能给出数值。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平骰子一次，已知点数为偶数，求点数大于 3 的概率。",
+        "steps": [
+          "条件 B={2,4,6}，A∩B={4,6}。",
+          "条件概率为 (2/6)/(3/6)=2/3。"
+        ],
+        "answer": "2/3",
+        "check": "在三个等可能偶数中有两个大于 3。"
+      },
+      {
+        "question": "公平硬币一次，求 P(正面|正面)。",
+        "steps": [
+          "A=B={正面}，交集就是正面事件。",
+          "由条件概率得 (1/2)/(1/2)=1。"
+        ],
+        "answer": "1",
+        "check": "已知正面发生，正面发生的条件概率必为 1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "在条件概率中仍使用原来的样本空间作分母",
+        "why_wrong": "已知 B 发生后，应把观察范围限制在 B 内，并归一化。",
+        "repair_question": "条件 B 中到底有几个可以发生的基本结果？"
+      }
+    ],
+    "hint_ladder": [
+      "明确条件事件 B 并检查 P(B)>0。",
+      "把符合 A 且 B 的部分写成交集。",
+      "再计算交集概率与 P(B) 的比值。"
+    ],
+    "transfer": {
+      "near": "若 P(A)=1/2、P(B)=1/4、P(A∩B)=1/8，求条件概率并判独立。",
+      "far": "把条件概率与分类器的阳性预测值、基率混淆问题联系。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  },
+  {
+    "id": "math.hs.probability.total",
+    "curriculum_ids": [
+      "HS-MATH-097"
+    ],
+    "kind": "theorem",
+    "title": "全概率公式与分割事件",
+    "version": "1.0.0",
+    "notation": [
+      "P(A)=ΣP(A|B_i)P(B_i)"
+    ],
+    "prerequisites": [
+      "条件概率、互斥并集"
+    ],
+    "definition": null,
+    "statement": "若 B1,…,Bk 构成有限样本空间的两两互斥且并为 Ω 的事件划分，且 P(B_i)>0，则对任意事件 A 有 P(A)=Σ(i=1..k)P(A|B_i)P(B_i)。",
+    "assumptions": [
+      "B_i 两两互斥；并集为全部 Ω；每个 P(B_i)>0。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由 Ω=B1∪…∪Bk，事件 A 可写成不交并 (A∩B1)∪…∪(A∩Bk)。",
+        "reason": "交集对并集分配，且 B_i 两两互斥保证不重叠。"
+      },
+      {
+        "claim": "概率可加性得到 P(A)=ΣP(A∩B_i)。",
+        "reason": "不交事件的有限并概率等于各自概率之和。"
+      },
+      {
+        "claim": "按定义 P(A∩B_i)=P(A|B_i)P(B_i)。",
+        "reason": "每个条件事件概率严格大于 0，分母合法。"
+      },
+      {
+        "claim": "代回逐项等式即得 P(A)=ΣP(A|B_i)P(B_i)。",
+        "reason": "有限个事件的求和保持等式。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "分类必须穷尽全部情况；若遗漏一类，全概率值通常偏小。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要选择几个互斥 B_i，就能用全概率公式求 P(A)",
+        "example": "只有 B1={1},B2={2}，但三点骰的 Ω={1,2,3}，遗漏结果 3。",
+        "explanation": "互斥不足够，还要求 B_i 的并集覆盖整个样本空间。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "机器有两条生产线：A 线占 60% 且次品率 1%，B 线占 40% 且次品率 3%，求随机次品率。",
+        "steps": [
+          "按生产线事件分割，满足两线占比之和为 1。",
+          "全概率为 0.6·0.01+0.4·0.03=0.018。"
+        ],
+        "answer": "1.8%",
+        "check": "结果在两个次品率之间且加权平均为 1.8%。"
+      },
+      {
+        "question": "两组顾客分别占 1/4、3/4，购买率分别 0.8、0.2，求总体购买率。",
+        "steps": [
+          "划分为两个互斥且穷尽的顾客组。",
+          "加权求和为 0.25·0.8+0.75·0.2=0.35。"
+        ],
+        "answer": "35%",
+        "check": "购买概率在 20% 与 80% 之间，合理。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "将类别概率忽略后直接相加条件概率",
+        "why_wrong": "每组的条件概率应按该组在总体中的概率权重计算。",
+        "repair_question": "两类的出现比例相同吗，为什么应等权？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查 B_i 是否两两互斥且完整覆盖。",
+      "逐组计算 P(A|B_i) 与 P(B_i)。",
+      "对乘积求和后核对结果是否在 [0,1]。"
+    ],
+    "transfer": {
+      "near": "给定三条生产线占比 1/2,1/3,1/6，推导总体合格率。",
+      "far": "将分组模型中的基率变化与医疗筛查预测概率结合。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.conditioning"
+    ]
+  },
+  {
+    "id": "math.hs.geometry.ellipse-focus",
+    "curriculum_ids": [
+      "HS-MATH-086"
+    ],
+    "kind": "concept",
+    "title": "椭圆的双焦点距离和定义",
+    "version": "1.0.0",
+    "notation": [
+      "PF1+PF2=2a",
+      "a>c>0",
+      "b²=a²−c²"
+    ],
+    "prerequisites": [
+      "平面两点距离、三角不等式"
+    ],
+    "definition": "给定两个不同焦点 F1=(-c,0)、F2=(c,0)，c>0，常数 a>c，则平面上到两焦点距离之和等于 2a 的点 P 构成椭圆；其标准方程为 x²/a²+y²/b²=1，其中 b²=a²−c²>0。",
+    "statement": null,
+    "assumptions": [
+      "c>0,a>c；P 为平面点，距离均按非负欧氏长度。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "由三角不等式 PF1+PF2≥F1F2=2c。若 2a<2c 无符合要求的点，等号 a=c 时点落在两焦点间线段而非非退化椭圆。",
+      "设 r1=√((x+c)²+y²)，r2=√((x−c)²+y²)，那么 r1+r2=2a；两平方差 r1²−r2²=4cx，所以 r1−r2=2cx/a。",
+      "联立 r1+r2=2a 与 r1−r2=2cx/a 得 r1=a+cx/a、r2=a−cx/a；把 r1 平方并与 (x+c)²+y² 比较，消去 2cx 后得到 (1−c²/a²)x²+y²=a²−c²。",
+      "记 b²=a²−c²>0，两边除以 b²，即 x²/a²+y²/b²=1。反向：该椭圆上 |x|≤a，故 a±cx/a>0；把标准式代回可证明两根式分别等于 a±cx/a，其和确为 2a。"
+    ],
+    "boundaries": [
+      "当 a=c 时退化为线段；当 a<c 时轨迹为空；不能仅凭图像“椭圆形”证明焦点定义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何正的两焦点距离和常数都能得到非退化椭圆",
+        "example": "取 c=2,a=1，距离和必须 2，但焦点距离为 4。",
+        "explanation": "由三角不等式距离和至少为 4，该轨迹不存在。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "椭圆 x²/25+y²/9=1 的焦距参数是多少？",
+        "steps": [
+          "a²=25,b²=9，故 c²=a²−b²=16。",
+          "取 c=4，焦点为 (±4,0)。"
+        ],
+        "answer": "F1=(-4,0), F2=(4,0)",
+        "check": "在点 (5,0)，到焦点的距离是 9 和 1，总和为 10=2a。"
+      },
+      {
+        "question": "给定焦点 (±3,0)，距离和为 10，写标准方程。",
+        "steps": [
+          "2a=10 得 a=5；c=3，b²=25−9=16。",
+          "写成 x²/25+y²/16=1。"
+        ],
+        "answer": "x²/25+y²/16=1",
+        "check": "a>c>0 且 b²>0，满足非退化条件。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "误把焦距 2c 直接当作长轴长 2a",
+        "why_wrong": "焦距是两焦点间距离，椭圆定义中距离和更大。",
+        "repair_question": "你求得的是两焦点间距离，还是点到两焦点的距离和？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确两个固定焦点和距离和常数。",
+      "用三角不等式检查是否可能存在轨迹。",
+      "求得 a,c 后检查 b²=a²−c² 是否严格为正。"
+    ],
+    "transfer": {
+      "near": "若两焦点重合 c=0，讨论轨迹如何变化。",
+      "far": "利用椭圆焦点定义与卫星轨道几何的约束进行模型核查。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "prerequisite_lesson_ids": []
+  }
+]

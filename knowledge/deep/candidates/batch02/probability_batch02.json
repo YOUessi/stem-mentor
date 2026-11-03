@@ -1,0 +1,751 @@
+[
+  {
+    "id": "math.hs.probability.exclusive-complement",
+    "curriculum_ids": [
+      "HS-MATH-051"
+    ],
+    "kind": "concept",
+    "title": "互斥事件、对立事件和全集约束",
+    "version": "1.0.0",
+    "notation": [
+      "A∩B=∅",
+      "A^c=Ω\\A"
+    ],
+    "prerequisites": [
+      "事件与样本空间",
+      "集合的交并和补"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.sets.union-intersection",
+      "math.hs.probability.laplace"
+    ],
+    "definition": "互斥事件指 A∩B=∅，即不能同时发生；对立事件是 A 与其在同一样本空间 Ω 中的补集 A^c，既互斥又满足 A∪A^c=Ω。互斥不一定对立；对立事件的概率互补和为 1。",
+    "statement": null,
+    "assumptions": [
+      "事件 A、B 是同一概率空间 Ω 的子集。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先由事件共同出现的结果集合判断交集是否为空；交集为空仅能证明不能同时发生。",
+      "对立事件还要求所有可能结果都属于二者之一，因此必须同时检查并集是否等于整个样本空间。"
+    ],
+    "boundaries": [
+      "若 A、B 虽互斥但还存在第三类结果，两者并非对立事件。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要两个事件互斥，它们就一定是对立事件",
+        "example": "掷一枚骰子，A={1}、B={2}，二者互斥。",
+        "explanation": "仍有 3、4、5、6 不属于 A∪B，故两者不是对立事件。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "骰子样本空间 {1,...,6}，A={1,3,5}，B={2,4,6}，判断是否对立。",
+        "steps": [
+          "两个事件没有公共元素，交集为空。",
+          "两个事件的并集恰好为整个样本空间。"
+        ],
+        "answer": "既互斥又对立",
+        "check": "全集中六个结果恰好被分成两类。"
+      },
+      {
+        "question": "骰子 A={1}、B={2} 是否对立？",
+        "steps": [
+          "A∩B=∅ 说明互斥。",
+          "A∪B={1,2} 未覆盖 3–6。"
+        ],
+        "answer": "互斥但不对立",
+        "check": "存在未被二者覆盖的样本点。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把没有交集当成没有其他可能情况",
+        "why_wrong": "互斥只检查交集，对立还必须证明并集覆盖样本空间。",
+        "repair_question": "若 3 也可能发生，A={1}、B={2} 还能算对立吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确样本空间 Ω 中究竟有哪些结果。",
+      "交集为空对应哪种关系？",
+      "再检查两事件并集是否等于整个 Ω。"
+    ],
+    "transfer": {
+      "near": "掷两次硬币，把“恰有一次正面”与“没有正面”进行事件关系分析。",
+      "far": "比较互斥与独立：在概率均正的情况下它们能否同时成立？"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.union-addition",
+    "curriculum_ids": [
+      "HS-MATH-053"
+    ],
+    "kind": "theorem",
+    "title": "事件加法公式与交集重计修正",
+    "version": "1.0.0",
+    "notation": [
+      "P(A∪B)=P(A)+P(B)−P(A∩B)"
+    ],
+    "prerequisites": [
+      "概率加法公理",
+      "事件集合的包含排除"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.exclusive-complement"
+    ],
+    "definition": null,
+    "statement": "任意同一概率空间内的事件 A、B 满足 P(A∪B)=P(A)+P(B)−P(A∩B)。仅当 A∩B=∅ 或 P(A∩B)=0 时，才可把交集项省略。",
+    "assumptions": [
+      "A、B 是同一个概率空间中的事件；概率函数可加。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "分解 A∪B 为互不相交的 A 与 B\\A，因概率可加有 P(A∪B)=P(A)+P(B\\A)。",
+        "reason": "两部分交集为空且并集恰为 A∪B。"
+      },
+      {
+        "claim": "再把 B 分解为互不相交的 B\\A 与 A∩B，得到 P(B)=P(B\\A)+P(A∩B)。",
+        "reason": "同一事件 B 被不重叠部分完整分割。"
+      },
+      {
+        "claim": "将 P(B\\A)=P(B)−P(A∩B) 代回得到所示加法公式。",
+        "reason": "代数移项合法，且每项都是定义良好的概率。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "事件不互斥时直接相加会重复计算交集；概率为零的交集未必是空事件。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意事件的并集概率就是两概率相加",
+        "example": "均匀掷骰，A={1,2,3},B={3,4}，P(A)+P(B)=3/6+2/6=5/6。",
+        "explanation": "交集 {3} 概率 1/6，正确并集 {1,2,3,4} 的概率为 4/6。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "骰子 A={1,2,3},B={3,4}，计算并集概率。",
+        "steps": [
+          "P(A)=3/6，P(B)=2/6，P(A∩B)=1/6。",
+          "由加法公式得 3/6+2/6−1/6=4/6。"
+        ],
+        "answer": "P(A∪B)=2/3",
+        "check": "直接计数并集四个等可能结果，等于 4/6。"
+      },
+      {
+        "question": "若 P(A)=0.4、P(B)=0.3，且事件互斥，求并集概率。",
+        "steps": [
+          "互斥意味着交集为空，概率为零。",
+          "用公式得 0.4+0.3−0=0.7。"
+        ],
+        "answer": "P(A∪B)=0.7",
+        "check": "结果位于 [0,1] 且不小于两个单独事件概率。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不核对重叠事件就直接使用加法公理",
+        "why_wrong": "概率可加公理要求事件互不相交，重叠部分必须减去一次。",
+        "repair_question": "A∩B 有哪些结果？你是否已经把它们算了两次？"
+      }
+    ],
+    "hint_ladder": [
+      "先画韦恩图并圈出 A∩B。",
+      "对总概率加总时交集被重复计入几次？",
+      "用 P(A)+P(B)−P(A∩B) 修正一次。"
+    ],
+    "transfer": {
+      "near": "三个事件并集的概率怎样用二元公式迭代处理？",
+      "far": "使用概率加法解释医学筛查中两个条件同时触发的去重计数问题。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.statistics.simple-random-sampling",
+    "curriculum_ids": [
+      "HS-MATH-054"
+    ],
+    "kind": "concept",
+    "title": "有限总体的简单随机抽样与偏差来源",
+    "version": "1.0.0",
+    "notation": [
+      "C(N,n)",
+      "n≤N"
+    ],
+    "prerequisites": [
+      "有限总体",
+      "组合数与等概率"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.permutations-combinations"
+    ],
+    "definition": "有限总体的不放回简单随机抽样要求每个大小为 n 的子集作为样本的概率相等，均为 1/C(N,n)。每个单位单独被选中的概率为 n/N，但仅有边际概率相等不能保证每种样本组合等概率。",
+    "statement": null,
+    "assumptions": [
+      "总体包含 N 个可区分单位，要求无放回抽取 n 个不同单位，其中 0≤n≤N。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "总体 N 个不同单位中大小为 n 的无序样本共有 C(N,n) 种。",
+      "若随机机制给每个样本相同机会，则按等概率定义每组抽样概率为 1/C(N,n)。"
+    ],
+    "boundaries": [
+      "方便样本、自愿样本、遗漏群体可能带来系统性偏差；抽样误差与调查偏差应区分。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要抽取人数足够多，就不会发生选择偏差",
+        "example": "只在体育馆入口调查全校学生，即使样本数多，未到体育馆者仍被系统遗漏。",
+        "explanation": "覆盖范围不一致造成的偏差不会自动随样本数增大消失。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "5 名学生中随机无放回选 2 人，某特定二人组合概率。",
+        "steps": [
+          "合法无序组合数 C(5,2)=10。",
+          "每个组合等概率时概率为 1/10。"
+        ],
+        "answer": "1/10",
+        "check": "10 种互斥组合概率加起来为 1。"
+      },
+      {
+        "question": "总体 100 人简单随机抽样 20 人，单个人被抽中的概率。",
+        "steps": [
+          "总共有 C(100,20) 个等概率样本。",
+          "包含某人的样本数 C(99,19)，比值为 20/100。"
+        ],
+        "answer": "1/5",
+        "check": "边际抽中概率与样本比例 n/N 一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把样本量扩大等同于解决了样本选择偏差",
+        "why_wrong": "偏差来自抽样框与实际机制，增加同一偏差机制的样本量不能消除偏差。",
+        "repair_question": "如果某类群体永远不可能入选，抽一万人有帮助吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确总体、抽样框和样本单位。",
+      "判断每个大小为 n 的无序样本是否等概率。",
+      "区分随机波动与系统性遗漏两种误差。"
+    ],
+    "transfer": {
+      "near": "从 10 个编号球中无放回随机取 3 个，求某组的抽取概率。",
+      "far": "设计一个覆盖全校的抽样方案并解释方便抽样的失真机制。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.statistics.histogram-density",
+    "curriculum_ids": [
+      "HS-MATH-055"
+    ],
+    "kind": "concept",
+    "title": "频率直方图与组距不等时的面积",
+    "version": "1.0.0",
+    "notation": [
+      "h_i=p_i/w_i",
+      "∑h_iw_i=1"
+    ],
+    "prerequisites": [
+      "频率和频数",
+      "区间分组与面积"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "样本分组的频率 p_i=该组频数/总样本数。当不同组的组距 w_i 不等时，频率直方图柱高应取频率密度 h_i=p_i/w_i，使每个柱子的面积 h_iw_i=p_i，全部柱子的总面积为 1。",
+    "statement": null,
+    "assumptions": [
+      "样本的分组区间不相交并覆盖分析样本；每个组距 w_i>0。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先将每组频数除以样本总数得到 p_i，检查 ∑p_i=1。",
+      "每组矩形的底为组距 w_i，高取 p_i/w_i，故面积恰等于组频率。"
+    ],
+    "boundaries": [
+      "组距不等时不能直接把频数或频率当成柱高比较，除非明确改变了图表定义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "频率直方图柱子越高必定该组频数越多",
+        "example": "组 A 宽 1、频率 0.2，高 0.2；组 B 宽 4、频率 0.4，高 0.1。",
+        "explanation": "组 B 频数占比更高却柱子更矮，比较频率必须比较面积。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "两组频率分别 0.2、0.8，组距 1、4，求密度柱高。",
+        "steps": [
+          "第一组 0.2/1=0.2。",
+          "第二组 0.8/4=0.2。"
+        ],
+        "answer": "两柱高度均为 0.2",
+        "check": "矩形面积分别 0.2 和 0.8，相加为 1。"
+      },
+      {
+        "question": "一组频数 15，总数 60、组距 2，求柱高。",
+        "steps": [
+          "频率为 15/60=0.25。",
+          "频率密度为 0.25/2=0.125。"
+        ],
+        "answer": "柱高 0.125",
+        "check": "高度乘组距 2 得面积 0.25。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把直方图的柱高错误等同于组频率",
+        "why_wrong": "组距变化时应由面积代表概率或频率，柱高是频率密度。",
+        "repair_question": "如果组距翻倍、频率不变，柱高应如何变化？"
+      }
+    ],
+    "hint_ladder": [
+      "先列出每一组宽度和对应频率。",
+      "问柱子面积应该等于哪一个量？",
+      "用频率除以组距，再验证总面积。"
+    ],
+    "transfer": {
+      "near": "将一组宽 1 频率 0.3 和另一组宽 3 频率 0.6 画成频率密度直方图。",
+      "far": "解释为什么直方图的概率密度与离散柱状图的“柱高即频数”不同。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.statistics.empirical-quantile",
+    "curriculum_ids": [
+      "HS-MATH-058"
+    ],
+    "kind": "concept",
+    "title": "经验分位数与分位算法的约定差异",
+    "version": "1.0.0",
+    "notation": [
+      "F_n(t)",
+      "Q(p)=inf{t:F_n(t)≥p}"
+    ],
+    "prerequisites": [
+      "有序数据",
+      "经验累计频率"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "对排序样本 x_(1)≤⋯≤x_(n)，经验分布函数 F_n(t)=#{i:x_i≤t}/n。本单元采用经验分位数 Q(p)=inf{t:F_n(t)≥p}，等于第 ceil(np) 个顺序统计量。不同教材、软件可能使用插值约定，必须先声明规则。",
+    "statement": null,
+    "assumptions": [
+      "有 n≥1 个实数观测值；采用经验分布广义逆分位定义，p∈(0,1]。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "按从小到大排列数据，检查重复值不会被丢弃。",
+      "给定 p∈(0,1]，找到使累计比例达到 p 的最小样本值，即第 ceil(np) 个有序值。"
+    ],
+    "boundaries": [
+      "不同统计软件的样本分位数插值约定会得到不同数值；本定义不能自动代替所有统计教学约定。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "同一组样本的百分位数不需说明计算定义",
+        "example": "数据 {1,2,4,7} 的 50% 经验分位数本定义给出 2，而均值式中位数给出 3。",
+        "explanation": "两种约定不矛盾，使用不同分位数定义必须事先说明。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "样本 1,2,4,7，按所给经验分位数定义求 Q(0.5)。",
+        "steps": [
+          "n=4，np=2，ceil(np)=2。",
+          "排序第 2 个数是 2。"
+        ],
+        "answer": "Q(0.5)=2",
+        "check": "F_n(2)=2/4=0.5，而低于 2 的值累计小于 0.5。"
+      },
+      {
+        "question": "样本 1,1,3,6,8,9，求 Q(0.75)。",
+        "steps": [
+          "n=6，np=4.5，取 ceil=5。",
+          "第 5 个有序观测值为 8。"
+        ],
+        "answer": "Q(0.75)=8",
+        "check": "F_n(6)=4/6<0.75，而 F_n(8)=5/6≥0.75。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把分位点与样本均值混为一谈",
+        "why_wrong": "分位数由顺序位置和累计比例决定，与均值不一定相同。",
+        "repair_question": "如果样本有一个极大离群值，经验中位数一定大幅改变吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先声明你使用的是哪一种分位数算法。",
+      "排序并保留重复观测值，计算 ceil(np)。",
+      "核对该值前的累计比例小于 p、该值的累计比例至少为 p。"
+    ],
+    "transfer": {
+      "near": "样本 0,0,2,4,8，按所给定义求 20% 和 80% 分位。",
+      "far": "比较这一定义和线性插值分位数在小样本下的不同，说明为何需要记录算法版本。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.counting.permutations-combinations",
+    "curriculum_ids": [
+      "HS-MATH-094"
+    ],
+    "kind": "theorem",
+    "title": "排列数与组合数：顺序是否重要",
+    "version": "1.0.0",
+    "notation": [
+      "A(n,k)=n!/(n−k)!",
+      "C(n,k)=n!/(k!(n−k)!)"
+    ],
+    "prerequisites": [
+      "分步计数原理",
+      "阶乘定义",
+      "无重复抽取"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.product-rule"
+    ],
+    "definition": null,
+    "statement": "从 n 个可区分对象中取 k 个并排列，顺序不同算不同结果时共有 A(n,k)=n!/(n−k)! 种；只关心无序选出的 k 元素子集时共有 C(n,k)=n!/[k!(n−k)!] 种，并满足 A(n,k)=k!C(n,k)。",
+    "assumptions": [
+      "n 为非负整数，0≤k≤n，n 个对象两两可区分且一次抽取不放回。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "有序抽取第 1 步有 n 种，之后依次减少 1，前 k 步共有 n(n−1)⋯(n−k+1)=n!/(n−k)! 种。",
+        "reason": "使用无放回抽取的分步乘法计数原理。"
+      },
+      {
+        "claim": "每个无序 k 元素集合内部可以按 k! 种顺序排列，且不同无序子集对应的有序序列不重合。",
+        "reason": "单个 k 元素集合内部没有重复对象，因此全排列数是 k!。"
+      },
+      {
+        "claim": "所以 C(n,k)=A(n,k)/k!=n!/[k!(n−k)!]，并同时包含 k=0 时只有空集一种选法。",
+        "reason": "将所有有序排列等量分组成每组 k! 个即可得到组合数。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "放回选取、对象不可区分或 k>n 时不能直接按本式作为一般排列计数规则。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "挑选三名学生与安排三名学生不同座位总是同样多种结果",
+        "example": "5 人中挑 3 人有 C(5,3)=10，安排 3 人到三个不同座位有 A(5,3)=60。",
+        "explanation": "前者无序，后者要区分座位顺序，因此数量不同。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "从 5 个不同学生中选 2 个代表，求方案数。",
+        "steps": [
+          "代表身份无顺序，使用组合数 C(5,2)。",
+          "计算 5×4/(2×1)=10。"
+        ],
+        "answer": "10 种选法",
+        "check": "手列无序二人组也共有 10 个。"
+      },
+      {
+        "question": "从 5 名学生中选主席与副主席，求方案数。",
+        "steps": [
+          "两职位可区分，先选主席 5 种。",
+          "副主席从余下 4 人选，乘法原理给 5×4。"
+        ],
+        "answer": "20 种方案",
+        "check": "与排列数 A(5,2)=20 一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "看到抽取就机械地套组合公式",
+        "why_wrong": "是否区分顺序决定结果是否需要按每组 k! 进行去重。",
+        "repair_question": "交换两人位置后是同一结果还是新结果？"
+      }
+    ],
+    "hint_ladder": [
+      "先判断交换选中对象顺序会不会产生新方案。",
+      "有序用乘法原理、无序可在其上除以 k!。",
+      "确认 n、k 为非负整数且 k≤n。"
+    ],
+    "transfer": {
+      "near": "10 种不同书籍选 3 本和按顺序排 3 本分别多少种？",
+      "far": "结合超几何分布解释不放回抽样为什么使用组合计数。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.discrete-random-variable",
+    "curriculum_ids": [
+      "HS-MATH-098"
+    ],
+    "kind": "concept",
+    "title": "离散型随机变量与概率质量函数",
+    "version": "1.0.0",
+    "notation": [
+      "P(X=x_i)=p_i",
+      "∑p_i=1"
+    ],
+    "prerequisites": [
+      "随机试验与样本空间",
+      "事件概率"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.laplace"
+    ],
+    "definition": "离散型随机变量是从样本空间 Ω 到实数集合的函数 X，其可能取值可数。概率质量函数 p(x)=P(X=x) 要满足 p(x)≥0 且所有可能取值的概率总和为 1；不同取值事件互斥。",
+    "statement": null,
+    "assumptions": [
+      "随机变量 X 的取值集合可数且每个取值事件具有合法概率。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "每一个取值 x 对应事件 {ω:X(ω)=x}，所以 p(x) 必须非负。",
+      "各个不同的取值事件两两不交并覆盖所有可能的样本结果，因此其概率求和应为 1。"
+    ],
+    "boundaries": [
+      "不能用连续型随机变量在单点处的概率密度值直接当作 P(X=x)；两类对象定义不同。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "离散随机变量的各取值概率可以随意指定而不核对总和",
+        "example": "定义 X 只取 0、1，若 P(X=0)=0.7 且 P(X=1)=0.6，总和为 1.3。",
+        "explanation": "概率加和超过 1，不存在符合该分布的随机变量。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平硬币 H 记 X=1、T 记 X=0，写出概率分布。",
+        "steps": [
+          "两结果等可能且覆盖整个试验。",
+          "P(X=0)=P(X=1)=1/2。"
+        ],
+        "answer": "p(0)=p(1)=0.5",
+        "check": "非负且概率和为 1。"
+      },
+      {
+        "question": "两个公平骰子掷一次，记 X 为第一次是否为偶数，写分布。",
+        "steps": [
+          "第一次骰子有三个偶数结果、三个奇数结果。",
+          "X=1 与 X=0 分别对应概率 3/6。"
+        ],
+        "answer": "P(X=0)=P(X=1)=1/2",
+        "check": "与第二个骰子的结果无关，不影响取值概率。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忽略概率分布的归一化与样本空间覆盖",
+        "why_wrong": "所有取值概率相加必须恰为 1，否则不是完整合法分布。",
+        "repair_question": "你是否把所有可能取值都列出来并求和？"
+      }
+    ],
+    "hint_ladder": [
+      "先把每种样本结果映射成 X 的数值。",
+      "同一数值的样本结果概率需要合并。",
+      "最后检查每个 p_i≥0 且总和恰好 1。"
+    ],
+    "transfer": {
+      "near": "两次掷公平硬币，令 X 为正面数，列出完整概率分布。",
+      "far": "区分离散概率质量函数和正态密度函数在单点处的含义。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.binomial-distribution",
+    "curriculum_ids": [
+      "HS-MATH-099"
+    ],
+    "kind": "theorem",
+    "title": "独立伯努利重复试验的二项分布",
+    "version": "1.0.0",
+    "notation": [
+      "X~Bin(n,p)",
+      "P(X=k)=C(n,k)p^k(1−p)^(n−k)"
+    ],
+    "prerequisites": [
+      "伯努利试验",
+      "组合数",
+      "独立事件乘法法则"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.counting.permutations-combinations",
+      "math.hs.probability.discrete-random-variable"
+    ],
+    "definition": null,
+    "statement": "若 X 为 n 次独立且同成功概率 p 的二分类试验中的成功次数，则 X 服从二项分布 Bin(n,p)，对 k=0,...,n，有 P(X=k)=C(n,k)p^k(1−p)^(n−k)。当试验之间依赖或概率不一致时不能直接使用这一形式。",
+    "assumptions": [
+      "n 为非负整数，p∈[0,1]；进行 n 次相互独立且成功概率恒为 p 的伯努利试验。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "固定某一条成功恰 k 次的有序试验序列，由独立性，其概率为 p^k(1−p)^(n−k)。",
+        "reason": "每次成功与失败分别具有 p 与 1−p 的概率，独立性允许逐项相乘。"
+      },
+      {
+        "claim": "成功位置共有 C(n,k) 种选择，且不同位置组合代表互斥的完整试验结果。",
+        "reason": "同一个成功次数可以由多条不同顺序序列实现。"
+      },
+      {
+        "claim": "对 C(n,k) 个互斥序列累加其相同概率，得到二项分布公式。",
+        "reason": "互斥事件概率相加，所有 k 的总概率由二项式展开归一化为 1。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不放回取样通常缺乏独立性；若成功概率随轮次变化，也不服从单参数 Bin(n,p)。在 n=0 或 p=0/1 时，概率乘积中的 0⁰ 按空乘积约定为 1，或对退化试验直接分类计数。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何重复抽取中成功个数都服从二项分布",
+        "example": "盒中 1 红 1 蓝球，连续无放回取两次，红球出现次数恒等于 1。",
+        "explanation": "两次抽取高度依赖，不符合独立同分布的伯努利试验假设。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "三次独立公平掷硬币，恰两次正面的概率。",
+        "steps": [
+          "n=3,p=1/2,k=2，组合数 C(3,2)=3。",
+          "概率 3×(1/2)²×(1/2)=3/8。"
+        ],
+        "answer": "P(X=2)=3/8",
+        "check": "对应 HHT、HTH、THH 三个互斥序列。"
+      },
+      {
+        "question": "独立做 4 次成功概率 0.25 的试验，恰一次成功概率。",
+        "steps": [
+          "组合成功位置 C(4,1)=4。",
+          "概率为 4×0.25×0.75³=27/64。"
+        ],
+        "answer": "27/64",
+        "check": "各项概率非负，值约 0.421875 小于 1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把不放回抽样直接当作独立重复试验",
+        "why_wrong": "前一次抽出某类对象后总体组成变化，下一次成功概率可能改变。",
+        "repair_question": "抽到红球后剩余红球比例是否还和第一次一样？"
+      }
+    ],
+    "hint_ladder": [
+      "先确认次数固定、每次只有成功失败、独立且概率相同。",
+      "选出 k 个成功位置共有多少组合？",
+      "给每种固定位置序列算概率，再按互斥加法相加。"
+    ],
+    "transfer": {
+      "near": "计算 Bin(5,1/2) 恰好 0 次成功的概率。",
+      "far": "解释有放回与无放回抽样在二项分布和超几何分布中的根本区别。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "id": "math.hs.function.period",
+    "curriculum_ids": [
+      "HS-MATH-015"
+    ],
+    "kind": "concept",
+    "title": "周期函数与基本正周期的条件",
+    "version": "1.0.0",
+    "notation": [
+      "f(x+T)=f(x)",
+      "T>0"
+    ],
+    "prerequisites": [
+      "函数与定义域",
+      "周期平移"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": "设 f:D→ℝ。当存在 T>0，使定义域 D+T=D 且每个 x∈D 都有 f(x+T)=f(x) 时，称 T 是 f 的正周期。若所有正周期中存在最小者，称为基本正周期；一般周期函数不一定有最小正周期。",
+    "statement": null,
+    "assumptions": [
+      "存在正数 T，满足 D+T=D，且对一切 x∈D 有 f(x+T)=f(x)，平移前后定义域完全一致。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "对正周期的验证同时检查函数表达式和定义域平移闭合，不能只在若干采样点比较。",
+      "常值函数在 ℝ 上任意 T>0 都是周期，因此没有最小正周期；sin(ωx) 在 ω≠0 时的基本正周期为 2π/|ω|。"
+    ],
+    "boundaries": [
+      "周期函数可以没有基本正周期；定义域被截断时原有周期公式可能不成立。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "所有周期函数都有最小正周期",
+        "example": "f(x)=5，定义在 ℝ 上，每个正数都是周期。",
+        "explanation": "任意 T>0 还可取更小的 T/2，所以没有最小正周期。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f(x)=sin(3x)，定义域 ℝ，求基本正周期。",
+        "steps": [
+          "平移 2π/3 后相位增加 2π。",
+          "对正弦非退化角频率 3，基本正周期 2π/3。"
+        ],
+        "answer": "T=2π/3",
+        "check": "代入 sin(3(x+2π/3))=sin(3x+2π)=sin(3x)。"
+      },
+      {
+        "question": "f(x)=7 定义域 ℝ，是否有基本正周期？",
+        "steps": [
+          "每个 T>0 平移后函数值仍为 7。",
+          "对任意周期 T，T/2 也是正周期。"
+        ],
+        "answer": "有周期但无基本正周期",
+        "check": "不存在最小的正实数，故不能定义最小正周期。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把发现的一个周期当作基本正周期",
+        "why_wrong": "具有周期 T 不等于任何比 T 小的正周期都不成立。",
+        "repair_question": "为什么 sin x 的 4π 不能称为基本正周期？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查平移是否把定义域保持在自身。",
+      "计算函数自变量平移 T 后相位变化多少。",
+      "能否证明不存在更小的正周期，而不只是找到一个可行周期？"
+    ],
+    "transfer": {
+      "near": "求 cos(2x) 与 sin(2x) 的基本正周期。",
+      "far": "讨论常数函数、有限定义域函数是否存在基本正周期。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.function.absolute",
+    "curriculum_ids": [
+      "HS-MATH-023"
+    ],
+    "kind": "concept",
+    "title": "绝对值函数与三角不等式",
+    "version": "1.0.0",
+    "notation": [
+      "|x|",
+      "|x+y|≤|x|+|y|"
+    ],
+    "prerequisites": [
+      "实数绝对值",
+      "非负性"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.domain"
+    ],
+    "definition": "实数的绝对值定义为 |x|=x (x≥0)，|x|=−x (x<0)；即数轴上到 0 的距离。恒有 |x|≥0，且 |x+y|≤|x|+|y|，三角不等式在不等号方向上须谨慎。",
+    "statement": null,
+    "assumptions": [
+      "x 与 y 均为实数。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "由 −|x|≤x≤|x|，可得 −(|x|+|y|)≤x+y≤|x|+|y|。",
+      "结合绝对值定义，位于对称区间 [−M,M] 的数 z 满足 |z|≤M，所以得到 |x+y|≤|x|+|y|。"
+    ],
+    "boundaries": [
+      "|x+y|=|x|+|y| 并非恒等式；对实数 x,y 同号或其中一个为 0 时可取等号。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "绝对值可以直接逐项拆开，|x+y|=|x|+|y| 对所有实数成立",
+        "example": "x=2,y=−1，则 |x+y|=1，而 |x|+|y|=3。",
+        "explanation": "只有满足同号/零等号条件才能拆为等号，否则只保证不等式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "解不等式 |x−2|<3。",
+        "steps": [
+          "将距离不等式改写成 −3<x−2<3。",
+          "两端都加 2，得到 −1<x<5。"
+        ],
+        "answer": "x∈(−1,5)",
+        "check": "x=−1 或 x=5 给出绝对值恰为 3，端点不包含。"
+      },
+      {
+        "question": "比较 |−4+1| 与 |−4|+|1|。",
+        "steps": [
+          "左侧 |−3|=3。",
+          "右侧 4+1=5，符合三角不等式。"
+        ],
+        "answer": "3≤5，严格不等",
+        "check": "正负抵消导致绝对值和不等于和的绝对值。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "在任意符号情况下把绝对值分配到加法",
+        "why_wrong": "绝对值对乘法可相乘，对加法通常只有三角不等式。",
+        "repair_question": "试用 x=−1,y=1 验证错误等号。"
+      }
+    ],
+    "hint_ladder": [
+      "把绝对值理解为数轴上的距离。",
+      "解不等式时先判断内部表达式位于哪个对称区间。",
+      "等号成立需要哪些符号条件？"
+    ],
+    "transfer": {
+      "near": "解 |2x+1|≥5 并检查端点。",
+      "far": "将 |x−a|+|x−b| 的最小值解释为两定点距离，建立几何关系。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.trig.tangent-domain",
+    "curriculum_ids": [
+      "HS-MATH-027"
+    ],
+    "kind": "concept",
+    "title": "正切函数的定义域和基本周期",
+    "version": "1.0.0",
+    "notation": [
+      "tan x=sin x/cos x",
+      "x≠π/2+kπ"
+    ],
+    "prerequisites": [
+      "单位圆定义正弦余弦",
+      "分母非零"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.pythagorean"
+    ],
+    "definition": "正切函数定义为 tan x=sin x/cos x，因此其定义域为 ℝ\\{π/2+kπ:k∈ℤ}。在此定义域内 tan(x+π)=tan x，最小正周期为 π；在每个相邻渐近线间的开区间严格递增。",
+    "statement": null,
+    "assumptions": [
+      "角度统一采用弧度制；tan x 只在 cos x≠0 时定义。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先列出 cos x=0 的角 x=π/2+kπ，并从正切定义域中排除所有这些点。",
+      "由 sin(x+π)=−sin x、cos(x+π)=−cos x 得到 tan(x+π)=tan x；长度为 π 的合法区间内正切从 −∞ 增至 +∞。"
+    ],
+    "boundaries": [
+      "tan(π/2) 不存在，不可把渐近线当作函数上的点。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "正切在所有实数上都有定义",
+        "example": "取 x=π/2，cos x=0，sin x=1。",
+        "explanation": "分母为零，tan(π/2) 没有实数值。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 tan(π/4) 和 tan(5π/4)。",
+        "steps": [
+          "先计算 tan(π/4)=1。",
+          "由于正切以 π 为周期，5π/4=π/4+π。"
+        ],
+        "answer": "二者均为 1",
+        "check": "两点均非正切的未定义点。"
+      },
+      {
+        "question": "求 tan x=0 在 [0,2π] 的解。",
+        "steps": [
+          "根据正切分子 sin x=0 且 cos x≠0。",
+          "在给定区间得到 x=0、π、2π。"
+        ],
+        "answer": "{0,π,2π}",
+        "check": "三个点余弦均为 ±1，不会出现分母零。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把正切的基本周期误写为 2π",
+        "why_wrong": "2π 也是周期，但 π 更小且仍保持所有合法函数值。",
+        "repair_question": "tan(x+π) 与 tan(x) 的比值如何化简？"
+      }
+    ],
+    "hint_ladder": [
+      "从 tan x=sin x/cos x 出发检查分母。",
+      "周期判断先找一个合法的平移，再考虑是否最小。",
+      "渐近线附近只能讨论趋势，不能代入未定义点。"
+    ],
+    "transfer": {
+      "near": "求 tan(2x) 的定义域与基本周期。",
+      "far": "分析 tan x 图像为何由断开的递增分支构成，不能用一个连续全域函数取代。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.trig.wave-transformation",
+    "curriculum_ids": [
+      "HS-MATH-031"
+    ],
+    "kind": "concept",
+    "title": "正弦型函数的振幅、周期与相位平移",
+    "version": "1.0.0",
+    "notation": [
+      "y=A sin(ωx+φ)+b",
+      "T=2π/|ω|"
+    ],
+    "prerequisites": [
+      "正弦周期",
+      "函数平移与伸缩"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.function.period",
+      "math.hs.trig.pythagorean"
+    ],
+    "definition": "对 y=A sin(ωx+φ)+b，非退化 Aω≠0 时振幅为 |A|、最小正周期为 2π/|ω|、竖直中心线 y=b；水平相位位移可写为 −φ/ω。A=0 或 ω=0 时函数常值，没有最小正周期。",
+    "statement": null,
+    "assumptions": [
+      "参数 A,ω,φ,b 均为实数；讨论非退化正弦波的最小正周期时要求 Aω≠0。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先将 ωx+φ 化为 ω(x+φ/ω)，且先确认 ω 非零，以识别水平位移。",
+      "外部乘数 A 改变纵向振幅并可能翻折；常数 b 产生整体竖直平移，振幅仍为 |A|。"
+    ],
+    "boundaries": [
+      "若 A=0 或 ω=0，不能套用非退化波的基本周期公式；ω 为负时需要取绝对值。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意 y=A sin(ωx+φ)+b 都有基本周期 2π/|ω|",
+        "example": "取 A=0,ω=2,φ=0,b=3，函数恒为 3。",
+        "explanation": "常值函数有任意正周期，但不存在最小正周期。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "y=2sin(3x−π)+1，求振幅、周期与中心线。",
+        "steps": [
+          "|A|=2，ω=3 非零，所以 T=2π/3。",
+          "水平位移为 +π/3，中心线 y=1。"
+        ],
+        "answer": "振幅 2；周期 2π/3；中心线 y=1",
+        "check": "将 x 增加 2π/3，相位恰增加 2π。"
+      },
+      {
+        "question": "y=−sin(2x+π/2)，求基本周期。",
+        "steps": [
+          "绝对振幅为 1，不因负号改变。",
+          "ω=2，因此周期为 2π/2=π。"
+        ],
+        "answer": "T=π",
+        "check": "代入 x+π 后正弦相位增加 2π，函数值保持。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把 ω 的负号带入周期造成负周期",
+        "why_wrong": "正周期必须为正，长度只取决于角频率大小 |ω|。",
+        "repair_question": "若 ω=−4，最小正周期应为多少？"
+      }
+    ],
+    "hint_ladder": [
+      "先判断 A 与 ω 是否为零，避免套用失效公式。",
+      "把相位写成 ω(x−x0) 寻找水平平移量。",
+      "验证 x 增加一个候选周期后相位是否增加整周。"
+    ],
+    "transfer": {
+      "near": "求 y=3sin(−2x+π)+4 的振幅、周期和位移。",
+      "far": "解释为什么常数函数不具最小正周期，并讨论相同公式在退化参数下的失效。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

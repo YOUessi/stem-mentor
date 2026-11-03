@@ -1,0 +1,263 @@
+{
+  "status": "CANDIDATE_CROSSWALK_UNVERIFIED",
+  "scope": "ELECTIVES_A_E_HIGH_LEVEL_THEMES_NOT_OFFICIAL_ATOMS",
+  "standard": "普通高中数学课程标准（2017年版2020年修订）",
+  "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+  "tracks": [
+    "ELECTIVE_A",
+    "ELECTIVE_B",
+    "ELECTIVE_C",
+    "ELECTIVE_D",
+    "ELECTIVE_E"
+  ],
+  "summary": {
+    "elective_tracks": 5,
+    "high_level_theme_slots": 18,
+    "atomic_subtopics_verified": 0,
+    "legacy_extension_topics_without_explicit_track": 7,
+    "teacher_approved_elective_lessons": 0,
+    "mapped_draft_links": 0
+  },
+  "theme_candidates": [
+    {
+      "key": "ELECTIVE_A:THEME:01",
+      "track": "ELECTIVE_A",
+      "theme": "微积分",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_A:THEME:02",
+      "track": "ELECTIVE_A",
+      "theme": "空间向量与代数",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_A:THEME:03",
+      "track": "ELECTIVE_A",
+      "theme": "概率与统计",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_B:THEME:01",
+      "track": "ELECTIVE_B",
+      "theme": "微积分",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_B:THEME:02",
+      "track": "ELECTIVE_B",
+      "theme": "空间向量与代数",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_B:THEME:03",
+      "track": "ELECTIVE_B",
+      "theme": "应用统计",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_B:THEME:04",
+      "track": "ELECTIVE_B",
+      "theme": "模型",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_C:THEME:01",
+      "track": "ELECTIVE_C",
+      "theme": "逻辑推理初步",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_C:THEME:02",
+      "track": "ELECTIVE_C",
+      "theme": "数学模型",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_C:THEME:03",
+      "track": "ELECTIVE_C",
+      "theme": "社会调查与数据分析",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_D:THEME:01",
+      "track": "ELECTIVE_D",
+      "theme": "美与数学",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_D:THEME:02",
+      "track": "ELECTIVE_D",
+      "theme": "音乐中的数学",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_D:THEME:03",
+      "track": "ELECTIVE_D",
+      "theme": "美术中的数学",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_D:THEME:04",
+      "track": "ELECTIVE_D",
+      "theme": "体育运动中的数学",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_E:THEME:01",
+      "track": "ELECTIVE_E",
+      "theme": "拓展视野",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_E:THEME:02",
+      "track": "ELECTIVE_E",
+      "theme": "日常生活",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_E:THEME:03",
+      "track": "ELECTIVE_E",
+      "theme": "地方特色",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    },
+    {
+      "key": "ELECTIVE_E:THEME:04",
+      "track": "ELECTIVE_E",
+      "theme": "大学数学先修（微积分、解析几何与线性代数、概率论与数理统计）",
+      "mapping_status": "HIGH_LEVEL_THEME_ONLY_NOT_ATOMIC",
+      "verified_official_atom_ids": [],
+      "assigned_legacy_engineering_topic_ids": [],
+      "approved_deep_lesson_ids": [],
+      "human_review": "PENDING",
+      "note": "Official high-level curriculum theme transcription is not an itemized teaching syllabus."
+    }
+  ],
+  "unassigned_legacy_extension_topics": [
+    {
+      "id": "HS-MATH-107",
+      "concept": "三角形五心与综合几何",
+      "status": "ELECTIVE_TRACK_NOT_ASSIGNED"
+    },
+    {
+      "id": "HS-MATH-108",
+      "concept": "圆锥曲线极线与换一半法则",
+      "status": "ELECTIVE_TRACK_NOT_ASSIGNED"
+    },
+    {
+      "id": "HS-MATH-109",
+      "concept": "参数方程与极坐标",
+      "status": "ELECTIVE_TRACK_NOT_ASSIGNED"
+    },
+    {
+      "id": "HS-MATH-110",
+      "concept": "更一般的二次曲面",
+      "status": "ELECTIVE_TRACK_NOT_ASSIGNED"
+    },
+    {
+      "id": "HS-MATH-111",
+      "concept": "数学归纳法",
+      "status": "ELECTIVE_TRACK_NOT_ASSIGNED"
+    },
+    {
+      "id": "HS-MATH-112",
+      "concept": "向量外积",
+      "status": "ELECTIVE_TRACK_NOT_ASSIGNED"
+    },
+    {
+      "id": "HS-MATH-113",
+      "concept": "算法与数学证明",
+      "status": "ELECTIVE_TRACK_NOT_ASSIGNED"
+    }
+  ],
+  "warnings": [
+    "A-E themes were copied from the existing internal high-level scope; no page-level atomic crosswalk has been independently verified.",
+    "A high-level theme does not represent a complete approved lesson or track curriculum.",
+    "Seven old engineering extension topics have no verified A-E allocation; none may be silently assigned."
+  ]
+}
