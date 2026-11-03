@@ -96,9 +96,12 @@ def _search_metadata(query: str, *, curriculum_ids: tuple[str, ...] | None = Non
     # The only FTS query syntax is constructed from internally generated tokens.
     expression = " OR ".join('"' + term + '"' for term in terms)
     db = _index()
+    # Filter on curriculum/kind AFTER retrieval, so a global top-100 cut
+    # would silently drop a valid lower-ranked matching lesson. The current
+    # curated corpus is small and local; keep every FTS hit before filtering.
     candidates = db.execute(
         "SELECT rowid, bm25(evidence, 4.0, 1.0) AS rank "
-        "FROM evidence WHERE evidence MATCH ? ORDER BY rank LIMIT 100",
+        "FROM evidence WHERE evidence MATCH ? ORDER BY rank",
         (expression,),
     ).fetchall()
     found: list[EvidenceHit] = []

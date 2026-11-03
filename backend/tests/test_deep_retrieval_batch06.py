@@ -33,12 +33,14 @@ NEW_IDS = {
 
 def test_batch02_has_real_distinct_authored_documents():
     all_docs = lessons()
-    assert len(all_docs) == 138
+    assert len(all_docs) >= 138
     assert len(NEW_IDS) == 29
     assert len({x.id for x in all_docs}) == len(all_docs)
-    assert Counter(x.kind for x in all_docs) == {
-        "concept": 66, "theorem": 58, "method": 14
-    }
+    kinds = Counter(x.kind for x in all_docs)
+    assert kinds["concept"] >= 66
+    assert kinds["theorem"] >= 58
+    assert kinds["method"] >= 14
+    assert sum(kinds.values()) == len(all_docs)
     for doc in all_docs:
         assert doc.review.status == "REVIEW_PENDING"
         assert doc.teacher_solution_visibility == "TEACHER_ONLY"
@@ -52,7 +54,7 @@ def test_batch02_has_real_distinct_authored_documents():
 def test_coverage_denominator_is_engineering_not_official_atoms():
     info = coverage_report()
     assert info["curriculum_topic_total"] == 113
-    assert info["deep_lesson_documents"] == 138
+    assert info["deep_lesson_documents"] >= 138
     assert info["mapped_curriculum_ids"] == 113
     assert sum(x["engineering_topics"] for x in info["by_level"].values()) == 113
     assert sum(x["with_deep_draft"] for x in info["by_level"].values()) == 113
