@@ -51,7 +51,7 @@ def test_each_track_theme_is_only_a_slot_not_a_completed_lesson(row):
 
 def test_legacy_extension_topics_still_no_official_track():
     original = read("curriculum/highschool_math/curriculum_map.json")["coverage"]
-    raw = {x["id"] for x in original if x["level"] == "选修拓展"}
+    raw = {x["id"] for x in original if x["level"] == "选修拓展" and not x.get("elective_track")}
     listed = {x["id"] for x in ELECTIVES["unassigned_legacy_extension_topics"]}
     assert raw == listed and len(raw) == 7
 

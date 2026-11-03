@@ -2,9 +2,9 @@
   "scope": "EDITORIAL_OBJECTIVE_LESSON_PROPOSALS_ONLY",
   "inventory_status": "EDITORIAL_MATCH_QUEUE_NOT_APPROVED",
   "total_source_objective_candidates": 132,
-  "total_deep_draft_lessons": 176,
-  "proposed_objectives": 86,
-  "proposed_edges": 104,
+  "total_deep_draft_lessons": 192,
+  "proposed_objectives": 99,
+  "proposed_edges": 120,
   "by_track": {
     "COMPULSORY": {
       "objective_candidates": 38,
@@ -22,16 +22,16 @@
     },
     "ELECTIVE_A": {
       "objective_candidates": 18,
-      "has_unreviewed_suggestion": 4,
-      "without_suggestion": 14,
-      "suggestion_edges": 4,
+      "has_unreviewed_suggestion": 15,
+      "without_suggestion": 3,
+      "suggestion_edges": 17,
       "independently_approved": 0
     },
     "ELECTIVE_B": {
       "objective_candidates": 15,
-      "has_unreviewed_suggestion": 3,
-      "without_suggestion": 12,
-      "suggestion_edges": 3,
+      "has_unreviewed_suggestion": 5,
+      "without_suggestion": 10,
+      "suggestion_edges": 6,
       "independently_approved": 0
     },
     "ELECTIVE_C": {
@@ -60,7 +60,7 @@
   "official_atomic_denominator": null,
   "official_coverage_percent": null,
   "student_published_knowledge_count": 0,
-  "unmapped_candidates": 46,
+  "unmapped_candidates": 33,
   "full_standard_review_completed": false,
   "all_math_proofs_certified": false,
   "notes": [

@@ -63,7 +63,8 @@ def build():
     if [t["id"] for t in tracks] != ["ELECTIVE_A", "ELECTIVE_B", "ELECTIVE_C",
                                      "ELECTIVE_D", "ELECTIVE_E"]:
         raise ValueError("Missing elective track from official high-level scope")
-    legacy = [x for x in course if x["level"] == "选修拓展"]
+    legacy = [x for x in course if x["level"] == "选修拓展" and not x.get("elective_track")]
+    new_editorial = [x for x in course if x.get("elective_track") in {t["id"] for t in tracks}]
     matrix = []
     for track in tracks:
         for order, theme in enumerate(track["themes"], 1):
@@ -90,6 +91,7 @@ def build():
             "mapped_draft_links": 0,
         },
         "theme_candidates": matrix,
+        "new_unreviewed_elective_engineering_candidates": len(new_editorial),
         "unassigned_legacy_extension_topics": [
             {"id": x["id"], "concept": x["concept"], "status": "ELECTIVE_TRACK_NOT_ASSIGNED"}
             for x in legacy

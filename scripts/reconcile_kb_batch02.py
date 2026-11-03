@@ -50,6 +50,7 @@ def build():
             "differentiation_vector_count_probability_batch09.json",
             "algebra_geometry_probability_batch10.json",
             "algebra_count_geometry_probability_batch11.json",
+            "elective_a_b_core_batch14.json",
         }:
             continue
         for item in read_rows(path):

@@ -7,6 +7,7 @@ from extend_v010 import apply_coverage as foundation_coverage
 from extend_v011 import apply_coverage as sequence_coverage
 from extend_v011b import apply_coverage as extrema_coverage
 from extend_v012 import apply_coverage as probability_coverage
+from extend_elective_batch14 import apply as elective_atom_coverage
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
@@ -50,6 +51,7 @@ def make():
     rows=sequence_coverage(rows,presets)
     rows=extrema_coverage(rows,presets)
     rows=probability_coverage(rows,presets)
+    rows=elective_atom_coverage(rows)
     assert len({v["id"] for v in rows})==len(rows)
     data={"version":"2026-10-19.3","subject":"高中数学",
           "curriculum_reference":"普通高中数学课程标准（2017年版2020年修订）",

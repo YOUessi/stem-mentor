@@ -53,11 +53,11 @@ def test_batch02_has_real_distinct_authored_documents():
 
 def test_coverage_denominator_is_engineering_not_official_atoms():
     info = coverage_report()
-    assert info["curriculum_topic_total"] == 113
+    assert info["curriculum_topic_total"] == 129
     assert info["deep_lesson_documents"] >= 138
-    assert info["mapped_curriculum_ids"] == 113
-    assert sum(x["engineering_topics"] for x in info["by_level"].values()) == 113
-    assert sum(x["with_deep_draft"] for x in info["by_level"].values()) == 113
+    assert info["mapped_curriculum_ids"] == 129
+    assert sum(x["engineering_topics"] for x in info["by_level"].values()) == 129
+    assert sum(x["with_deep_draft"] for x in info["by_level"].values()) == 129
     assert sum(x["teacher_approved"] for x in info["by_level"].values()) == 0
     assert info["human_teacher_review_complete"] is False
     assert info["student_math_proofs_verified"] is False

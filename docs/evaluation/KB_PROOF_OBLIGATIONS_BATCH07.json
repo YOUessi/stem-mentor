@@ -1,9 +1,9 @@
 {
   "scope": "HUMAN_PROOF_OBLIGATION_QUEUE_NOT_MATHEMATICAL_CERTIFICATION",
   "summary": {
-    "deep_draft_lessons": 176,
-    "theorems": 96,
-    "proof_step_obligations_not_formally_verified": 313,
+    "deep_draft_lessons": 192,
+    "theorems": 112,
+    "proof_step_obligations_not_formally_verified": 364,
     "existing_supporting_oracles_linked": 48,
     "theorems_with_whole_proof_certification": 0,
     "teacher_approved": 0,
@@ -2307,6 +2307,664 @@
           "index": 4,
           "claim": "n 次后宽度为 (b-a)/2^n；根若在新区间，中点到该根的距离至多为区间长度一半。",
           "reason": "由区间位置关系得到误差界，未假设被选中的是唯一根。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.sequence.epsilon-n",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-114"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n 为正整数；ε 为任意正实数；N 可依赖 ε，但不能依赖 n。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "取任意 ε>0；由阿基米德性质存在正整数 N>1/ε。",
+          "reason": "正整数无上界，选取一次 N 后对后面的所有项同时生效。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对所有 n≥N，有 0<1/n≤1/N<ε。",
+          "reason": "n、N 均为正数，取倒数改变不等号方向。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "故 |1/n-0|=1/n<ε，对任意 ε 完成存在 N 的验证。",
+          "reason": "逐一对应 ε–N 定义的全称与存在量词。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.sequence.convergent-bounded",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-115"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "极限 L 是有限实数；数列中的每一项为实数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "取 ε=1，从收敛定义得到 N，满足 n≥N 时 |a_n-L|<1。",
+          "reason": "从全称 ε 条件中选一个固定精度控制尾部。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "尾部项满足 |a_n|≤|a_n-L|+|L|<1+|L|。",
+          "reason": "三角不等式给出尾部的统一上界。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "前 N-1 项有限，令 M=max(1+|L|,|a_1|,...,|a_{N-1}|)；则所有项模长≤M。",
+          "reason": "有限实数集存在最大值，将有限前缀与无穷尾部拼接。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.sequence.monotone-bounded",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-116"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "每一项为实数；对所有 n 有 a_n≤a_(n+1)；存在有限上界；证明用到实数完备性。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "令 S={a_n:n≥1}；S 非空且有上界，由实数最小上界性质存在 L=sup S。",
+          "reason": "最小上界性质是实数完备性，并非对任意有序数域成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对任意 ε>0，由 L-ε 不是 S 的上界可取某个 N，使 a_N>L-ε。",
+          "reason": "若没有这样的项，则 L-ε 也是上界，与 L 最小矛盾。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "对任意 n≥N，单调性保证 L-ε<a_N≤a_n≤L，故 |a_n-L|<ε。",
+          "reason": "单调性保证尾部维持在 ε 邻域，从而满足收敛定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.sequence.limit-sum-law",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-117"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "两个数列分别具有有限极限；索引 n 相同且趋向正无穷。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对任意 ε>0，由 a_n→A 选 N1，使 n≥N1 时 |a_n-A|<ε/2。",
+          "reason": "使用已知收敛定义，控制第一部分误差。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由 b_n→B 选 N2，使 n≥N2 时 |b_n-B|<ε/2。",
+          "reason": "第二个阈值可不同，但都独立于最终 n。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "令 N=max(N1,N2)，则对 n≥N，|(a_n+b_n)-(A+B)|≤|a_n-A|+|b_n-B|<ε。",
+          "reason": "取共同尾部并运用三角不等式完成证明。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.function.epsilon-delta-square",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-118"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a∈R；x∈R 且 0<|x-a|<δ；δ 必须为固定的正实数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "将误差写为 |x²-a²|=|x-a||x+a|；先要求 |x-a|<1。",
+          "reason": "因式分解并将无界的第二因子局部控制。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由 |x+a|≤|x-a|+2|a|<1+2|a|，取 δ=min(1,ε/(1+2|a|))。",
+          "reason": "δ>0 且只依赖 a 与给定 ε，分母恒正。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若 0<|x-a|<δ，则 |x²-a²|<δ(1+2|a|)≤ε。",
+          "reason": "由局部界与 δ 的选取得到任意精度误差控制。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.function.ivt-intermediate",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-119"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "f 是在整个闭区间 [a,b] 连续的实函数；c 为端点函数值之间的实数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "可不失一般性设 f(a)≤c≤f(b)；若端点恰等于 c，直接取该端点。否则令 S={x∈[a,b]:f(x)<c}。",
+          "reason": "端点取值严格夹住 c 时集合 S 非空且有上界。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "令 ξ=sup S。由连续性，若 f(ξ)<c，则在 ξ 右侧足够近的点仍 <c，与上确界矛盾。",
+          "reason": "连续性保留严格不等式的局部稳定性，并且 ξ<b。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若 f(ξ)>c，则在 ξ 左侧足够近的点也 >c，ξ 不可能是 S 中点的上确界。",
+          "reason": "上确界的逼近性意味着 ξ 左侧存在 S 的元素，产生矛盾。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "所以 f(ξ) 既不能小于也不能大于 c，必须等于 c。",
+          "reason": "实数三歧性完成中间值存在性证明。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.calculus.differentiable-continuous",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-120"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a 为定义域内点，两侧足够近有定义；导数 f'(a) 作为有限实数极限存在。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "将函数值差写作 f(a+h)-f(a)=h·[(f(a+h)-f(a))/h]，h≠0。",
+          "reason": "这是对非零 h 的代数恒等式，没有在 h=0 时除零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "当 h→0 时，第二因子按导数定义趋于有限 f'(a)，而 h→0。",
+          "reason": "两因子均有有限极限，乘积极限定理适用。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "因此 f(a+h)-f(a)→0，亦即 f(a+h)→f(a)。",
+          "reason": "函数连续在 a 的 ε–δ/极限判据成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.calculus.mean-value-theorem",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-121"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "实数 a<b，闭区间连续，开区间内部处处可导；不能省去任一连续/可导条件。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "先证 Rolle 引理：设 g 在 [a,b] 连续、(a,b) 可导且 g(a)=g(b)。连续函数极值定理保证 g 达到最大最小。",
+          "reason": "闭区间紧致是极值存在的关键；需要实数完备性。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 g 常值，则任意内部点导数为 0；若 g 非常值，至少一个最大/最小发生于内部，费马引理给该处 g'(c)=0。",
+          "reason": "结合端点同值与极值，验证 Rolle 在两类情况下均成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "令 m=[f(b)-f(a)]/(b-a)，g(x)=f(x)-m(x-a)；则 g 在 [a,b] 连续、(a,b) 可导且 g(a)=g(b)。",
+          "reason": "减去线性函数保留连续与可导，端点相等可直接代入验证。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "由 Rolle 得 g'(c)=0，即 f'(c)-m=0，故中值定理成立。",
+          "reason": "求导线性函数，转回原函数即可得到结论。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.calculus.riemann-linear-integral",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-122"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "b 为有限非负实数；在 [0,b] 进行等分，n 为趋于无穷的正整数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "取 n 等分，Δx=b/n。右端点和为 R_n=Σ(kb/n)(b/n)=(b²/n²)·n(n+1)/2。",
+          "reason": "有限等差求和 Σk=n(n+1)/2，保留每个小区间宽度。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "左端点和为 L_n=(b²/n²)·n(n-1)/2；因 f(x)=x 单调不减，任意插值和夹在 L_n 与 R_n 之间。",
+          "reason": "每小区间函数取值位于左右端点之间，得到积分上下和。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "n→∞ 时 L_n→b²/2 且 R_n→b²/2，故黎曼和极限存在且为 b²/2。",
+          "reason": "上下和夹逼证明可积性及积分值；b=0 时两和均为零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.calculus.ftc-integral-derivative",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-123"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a<b；f 在闭区间 [a,b] 连续，积分存在；计算导数的 x 为内点。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对内点 x 及足够小的 h，F(x+h)-F(x)=∫ₓ^{x+h}f(t)dt。",
+          "reason": "定积分区间可加性和有向积分适用正负 h。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "差商减去 f(x) 后为 (1/h)∫ₓ^{x+h}[f(t)-f(x)]dt，其绝对值不大于 sup_{t 在两端点间}|f(t)-f(x)|。",
+          "reason": "积分绝对值估计对 h<0 也成立，因使用 |h| 与有向区间。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "f 在 x 连续，h→0 时该上确界趋于 0，故差商→f(x)。",
+          "reason": "连续性保证充分小邻域中的函数值统一接近 f(x)。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.linear.standard-basis-independence",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-124"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "向量空间取实三维空间 R³；允许任意实系数；线性无关以零组合只含零系数为定义。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "设 αe₁+βe₂+γe₃=(0,0,0)。按坐标运算左边=(α,β,γ)。",
+          "reason": "标准基各自只有一个坐标分量为 1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "由坐标逐项相等，得 α=β=γ=0，因此三向量线性无关。",
+          "reason": "零向量只有三个零坐标，满足线性无关定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "任取 v=(x,y,z)，可写 v=xe₁+ye₂+ze₃；若另有表达，则相减给标准基零组合，系数必须相同。",
+          "reason": "存在性来自坐标分解，唯一性来自线性无关。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.matrix.inverse-two-by-two",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-125"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a,b,c,d 为实数；矩阵为二阶方阵；仅当 det(A) 非零才允许除以行列式。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "记 B=[[d,-b],[-c,a]]；直接计算 AB=BA=(ad-bc)I₂。",
+          "reason": "逐项矩阵乘法：非对角项为 -ab+ab 和 cd-dc。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "若 Δ=ad-bc≠0，则 C=B/Δ 满足 AC=CA=I₂，故 A 可逆且给出显式公式。",
+          "reason": "双侧乘法单位元和非零数除法构成逆矩阵定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若 Δ=0 且 A 非零，则行或列线性相关，存在 v≠0 使 Av=0；若 A=0 也显然成立。",
+          "reason": "二阶行列式为零时齐次系统有非零解，可由线性方程消元检验。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "如 A 有逆则 v=A⁻¹Av=0，与 v≠0 矛盾，所以 Δ=0 不可逆。",
+          "reason": "逆矩阵将核中的零像唯一恢复，故核必须平凡。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.matrix.gaussian-row-equivalence",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-126"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "增广矩阵包含系数与常数列；同一行变换须同时作用所有列；缩放系数必须非零；第三类两行下标不同。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "交换两行只是更改等式排列，任何满足全部等式的解仍满足重排后的全部等式。",
+          "reason": "等式的合取不依赖书写顺序，且交换两次恢复。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "将一行等式乘 λ≠0 的新方程可除以 λ 恢复原式。",
+          "reason": "双向等价使用非零数乘法的可逆性。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "把第 i 行改为原第 i 行加 λ 倍第 j 行；反向只需再减 λ 倍第 j 行即可恢复。",
+          "reason": "由于第 j 行没有被改变，逆变换存在且解集不变。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.multivariable.partial-polynomial",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-127"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "x,y 为任意实数；计算 ∂x 时 y 保持常数，计算 ∂y 时 x 保持常数。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "按 x 偏导差商， [f(x+h,y)-f(x,y)]/h=[(2xh+h²)y]/h=2xy+hy。",
+          "reason": "y 固定，h≠0 的代数展开合法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "令 h→0，得到 ∂f/∂x=2xy。",
+          "reason": "多项式各项连续，hy→0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "按 y 偏导差商， [f(x,y+h)-f(x,y)]/h=x²+6y+3h，取 h→0 得 ∂f/∂y=x²+6y。",
+          "reason": "固定 x，按定义展开平方。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.statistics.covariance-affine",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-128"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "X,Y 的二阶矩有限以确保各项期望存在；a,b,c,d 为确定的实常数；不要求 X,Y 独立。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由期望线性性，E[aX+b]=aEX+b，E[cY+d]=cEY+d。",
+          "reason": "常数可移出期望，变量二阶可积保证一阶可积。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "两个中心化变量分别为 a(X-EX) 与 c(Y-EY)。",
+          "reason": "减去均值后常数平移恰好抵消。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "乘积为 ac(X-EX)(Y-EY)，取期望即 Cov(aX+b,cY+d)=acCov(X,Y)。",
+          "reason": "乘法交换和期望线性性，有限二阶矩由 Cauchy–Schwarz 保证乘积可积。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.elective.statistics.bernoulli-mle",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-129"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n 为正整数、0≤k≤n；每次试验相互独立且有相同成功概率 p；估计参数区间包含 0 和 1。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "对于给定有序样本，联合似然为 L(p)=p^k(1-p)^(n-k)（0<p<1）；若只保留总成功次数还会乘以与 p 无关的组合系数，不影响最优点。",
+          "reason": "独立性使联合概率连乘，同分布保证所有成功事件共享参数 p。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "当 0<k<n，log L=k log p+(n-k)log(1-p)，其导数 k/p-(n-k)/(1-p)=0 给 p=k/n。",
+          "reason": "在开区间合法取对数和求导；严格二阶导数 -k/p²-(n-k)/(1-p)²<0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "因 log L 严格凹，内点 k/n 为唯一极大值；若 k=0，则 L=(1-p)^n 在 [0,1] 最大于 p=0；若 k=n，则 L=p^n 最大于 p=1。",
+          "reason": "端点必须单独讨论，不能把 0/0 的对数微分套用于边界。",
           "status": "NOT_FORMALLY_VERIFIED"
         }
       ],

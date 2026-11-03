@@ -1,0 +1,1611 @@
+[
+  {
+    "id": "math.hs.elective.sequence.epsilon-n",
+    "curriculum_ids": [
+      "HS-MATH-114"
+    ],
+    "kind": "theorem",
+    "title": "数列极限的 ε–N 定义与 1/n 的严格证明",
+    "version": "1.0.0",
+    "notation": [
+      "a_n→L",
+      "∀ε>0 ∃N∈N, n≥N⇒|a_n-L|<ε"
+    ],
+    "prerequisites": [
+      "实数绝对值",
+      "阿基米德性质"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对实数数列 a_n，极限为 L 意味着每个 ε>0 都存在正整数 N，使所有 n≥N 时有 |a_n-L|<ε。特别地，a_n=1/n 收敛到 0。",
+    "assumptions": [
+      "n 为正整数；ε 为任意正实数；N 可依赖 ε，但不能依赖 n。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "取任意 ε>0；由阿基米德性质存在正整数 N>1/ε。",
+        "reason": "正整数无上界，选取一次 N 后对后面的所有项同时生效。"
+      },
+      {
+        "claim": "对所有 n≥N，有 0<1/n≤1/N<ε。",
+        "reason": "n、N 均为正数，取倒数改变不等号方向。"
+      },
+      {
+        "claim": "故 |1/n-0|=1/n<ε，对任意 ε 完成存在 N 的验证。",
+        "reason": "逐一对应 ε–N 定义的全称与存在量词。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "只验证一个具体 ε 不足以证明极限；N 不可随 n 临时改变。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "1/n 在 n=10 时很小就能证明它收敛到零",
+        "example": "ε=10^-9 时 n=10 仍有 1/n=0.1，不满足精度要求。",
+        "explanation": "必须为每个 ε 给出同一个适用于所有 n≥N 的阈值。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "证明 a_n=2/n→0。",
+        "steps": [
+          "任选 ε>0，找 N>2/ε。",
+          "当 n≥N 时 2/n<ε。"
+        ],
+        "answer": "lim 2/n=0",
+        "check": "由 N>2/ε 确保余项绝对值 <ε。"
+      },
+      {
+        "question": "给 ε=0.01，求保证 1/n<ε 的 N。",
+        "steps": [
+          "解 n>100。",
+          "选 N=101。"
+        ],
+        "answer": "N=101",
+        "check": "n≥101 时 1/n≤1/101<0.01。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "误把 N 设为固定常数，对任意 ε 都用同一个 N。",
+        "why_wrong": "必须为每个 ε 给出同一个适用于所有 n≥N 的阈值。",
+        "repair_question": "当 ε 从 0.1 缩小到 10^-6，原来的 N 还够用吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先指出欲控制的绝对误差。",
+      "用正数不等式解出 n 的下界。",
+      "通过阿基米德性质选取整数 N，检查所有后续项。"
+    ],
+    "transfer": {
+      "near": "用 ε–N 定义证明 3/(n+1)→0。",
+      "far": "解释为什么序列 (-1)^n 不能趋于 0，构造固定 ε 反驳。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.sequence.convergent-bounded",
+    "curriculum_ids": [
+      "HS-MATH-115"
+    ],
+    "kind": "theorem",
+    "title": "收敛实数数列必有界（逆命题为假）",
+    "version": "1.0.0",
+    "notation": [
+      "a_n→L",
+      "∃M>0∀n |a_n|≤M"
+    ],
+    "prerequisites": [
+      "ε–N 收敛定义",
+      "三角不等式"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.sequence.epsilon-n"
+    ],
+    "definition": null,
+    "statement": "若实数数列 a_n 收敛到有限实数 L，则存在常数 M 使任意正整数 n 都满足 |a_n|≤M；有界不必然收敛。",
+    "assumptions": [
+      "极限 L 是有限实数；数列中的每一项为实数。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "取 ε=1，从收敛定义得到 N，满足 n≥N 时 |a_n-L|<1。",
+        "reason": "从全称 ε 条件中选一个固定精度控制尾部。"
+      },
+      {
+        "claim": "尾部项满足 |a_n|≤|a_n-L|+|L|<1+|L|。",
+        "reason": "三角不等式给出尾部的统一上界。"
+      },
+      {
+        "claim": "前 N-1 项有限，令 M=max(1+|L|,|a_1|,...,|a_{N-1}|)；则所有项模长≤M。",
+        "reason": "有限实数集存在最大值，将有限前缀与无穷尾部拼接。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "这是收敛的必要条件，不是充分条件；有界数列可能振荡。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要每一项有共同的上下界，数列一定有极限",
+        "example": "a_n=(-1)^n 始终在 [-1,1]，但偶项与奇项分别为 1、-1。",
+        "explanation": "尾部必须进入任意小的同一个邻域，仅仅有上界不足。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "a_n=1+1/n 有界吗？",
+        "steps": [
+          "因为 n≥1，0<1/n≤1。",
+          "故 1<a_n≤2。"
+        ],
+        "answer": "有界，取 M=2",
+        "check": "对所有 n≥1 都有 |a_n|≤2。"
+      },
+      {
+        "question": "举有界却发散的例子。",
+        "steps": [
+          "让奇偶下标取不同值。",
+          "检查两个子列的极限不同。"
+        ],
+        "answer": "a_n=(-1)^n",
+        "check": "奇数项=-1，偶数项=1，故不可能收敛到同一 L。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把有界性与收敛性当作等价条件。",
+        "why_wrong": "尾部必须进入任意小的同一个邻域，仅仅有上界不足。",
+        "repair_question": "(-1)^n 的项有统一上界，为什么仍不能找到极限？"
+      }
+    ],
+    "hint_ladder": [
+      "先从极限定义控制 n≥N 的项。",
+      "利用三角不等式控制尾部。",
+      "对前 N-1 项取最大值，再检查逆命题反例。"
+    ],
+    "transfer": {
+      "near": "证明收敛序列 (n+1)/(2n) 有界。",
+      "far": "在闭区间 [-1,1] 内构造一个没有极限的数列。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.sequence.monotone-bounded",
+    "curriculum_ids": [
+      "HS-MATH-116"
+    ],
+    "kind": "theorem",
+    "title": "单调有界数列收敛的确界证明",
+    "version": "1.0.0",
+    "notation": [
+      "a_n≤a_(n+1)",
+      "L=sup{a_n:n≥1}"
+    ],
+    "prerequisites": [
+      "实数完备性的最小上界性质",
+      "单调数列",
+      "ε–N 定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.sequence.epsilon-n"
+    ],
+    "definition": null,
+    "statement": "若实数数列单调不减且有上界，则它收敛到全体项集合的最小上界；单调不增且有下界时对 -a_n 应用同一结论。",
+    "assumptions": [
+      "每一项为实数；对所有 n 有 a_n≤a_(n+1)；存在有限上界；证明用到实数完备性。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "令 S={a_n:n≥1}；S 非空且有上界，由实数最小上界性质存在 L=sup S。",
+        "reason": "最小上界性质是实数完备性，并非对任意有序数域成立。"
+      },
+      {
+        "claim": "对任意 ε>0，由 L-ε 不是 S 的上界可取某个 N，使 a_N>L-ε。",
+        "reason": "若没有这样的项，则 L-ε 也是上界，与 L 最小矛盾。"
+      },
+      {
+        "claim": "对任意 n≥N，单调性保证 L-ε<a_N≤a_n≤L，故 |a_n-L|<ε。",
+        "reason": "单调性保证尾部维持在 ε 邻域，从而满足收敛定义。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "只单调但无界可发散到正无穷；仅有界未必收敛。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意单调实数数列都有有限极限",
+        "example": "a_n=n 单调增加，但无有限上界，也没有实数极限。",
+        "explanation": "有限上界是单调不减情形的必要补充假设。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "a_n=1-1/n 的极限是什么？",
+        "steps": [
+          "检查单调不减且小于 1。",
+          "用上确界 1 或直接 ε–N 验证。"
+        ],
+        "answer": "1",
+        "check": "对任意 ε>0，n>1/ε 时 |a_n-1|<ε。"
+      },
+      {
+        "question": "a_n=-1/n 单调性及极限？",
+        "steps": [
+          "从 -1 逐步增加到接近 0。",
+          "上界为 0、上确界为 0。"
+        ],
+        "answer": "单调不减且极限 0",
+        "check": "|a_n|=1/n→0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "将单调性当作足以保证收敛的条件。",
+        "why_wrong": "有限上界是单调不减情形的必要补充假设。",
+        "repair_question": "数列 a_n=n 中的哪个必要前提不存在？"
+      }
+    ],
+    "hint_ladder": [
+      "先找全体项集合的上界。",
+      "用确界性质对 L-ε 找到一个下界足够高的项。",
+      "利用单调性推广到后续全部项。"
+    ],
+    "transfer": {
+      "near": "证明 a_n=2-1/n 收敛到 2。",
+      "far": "解释为什么在有理数域仅使用有界单调性不足以证明极限仍为有理数。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.sequence.limit-sum-law",
+    "curriculum_ids": [
+      "HS-MATH-117"
+    ],
+    "kind": "theorem",
+    "title": "收敛数列的和极限定律与 ε/2 分配",
+    "version": "1.0.0",
+    "notation": [
+      "lim(a_n+b_n)=A+B",
+      "ε/2"
+    ],
+    "prerequisites": [
+      "ε–N 定义",
+      "三角不等式"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.sequence.epsilon-n"
+    ],
+    "definition": null,
+    "statement": "若实数数列 a_n→A、b_n→B，且 A、B 为有限实数，则 a_n+b_n→A+B。该结论不能无条件推广到一个数列不收敛的情形。",
+    "assumptions": [
+      "两个数列分别具有有限极限；索引 n 相同且趋向正无穷。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对任意 ε>0，由 a_n→A 选 N1，使 n≥N1 时 |a_n-A|<ε/2。",
+        "reason": "使用已知收敛定义，控制第一部分误差。"
+      },
+      {
+        "claim": "由 b_n→B 选 N2，使 n≥N2 时 |b_n-B|<ε/2。",
+        "reason": "第二个阈值可不同，但都独立于最终 n。"
+      },
+      {
+        "claim": "令 N=max(N1,N2)，则对 n≥N，|(a_n+b_n)-(A+B)|≤|a_n-A|+|b_n-B|<ε。",
+        "reason": "取共同尾部并运用三角不等式完成证明。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "∞−∞ 是不定型；一个加数发散时不能直接套有限极限定律。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "两个无穷大的数列之差等于两者无穷大的极限相减",
+        "example": "a_n=n,b_n=-n 时和恒为 0，但 ∞+(-∞) 不是合法实数极限运算。",
+        "explanation": "只能在每个数列先有有限实数极限时直接应用定律。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 lim(1/n+2/n)。",
+        "steps": [
+          "分别证明两项都趋于 0。",
+          "利用和极限定律。"
+        ],
+        "answer": "0",
+        "check": "表达式等于 3/n，其极限由 ε–N 定义为 0。"
+      },
+      {
+        "question": "求 lim[(1+1/n)+(2-1/n)]。",
+        "steps": [
+          "分别极限为 1 和 2。",
+          "和恒为 3。"
+        ],
+        "answer": "3",
+        "check": "每一项精确等于 3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把形式上的无穷当作可以相加减的实数。",
+        "why_wrong": "只能在每个数列先有有限实数极限时直接应用定律。",
+        "repair_question": "在写 lim(a_n+b_n)=lim a_n+lim b_n 前，要先检查什么？"
+      }
+    ],
+    "hint_ladder": [
+      "为两个部分分别使用 ε/2。",
+      "用最大阈值 N 同时控制两项。",
+      "最后合并绝对值并检查是否有有限极限前提。"
+    ],
+    "transfer": {
+      "near": "证明 1/n+1/n²→0。",
+      "far": "构造各项都无有限极限但和恒为 1 的两个数列。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.function.epsilon-delta-square",
+    "curriculum_ids": [
+      "HS-MATH-118"
+    ],
+    "kind": "theorem",
+    "title": "函数极限 ε–δ 证明：x² 在任意点 a 的极限",
+    "version": "1.0.0",
+    "notation": [
+      "lim_(x→a)x²=a²",
+      "0<|x-a|<δ"
+    ],
+    "prerequisites": [
+      "函数极限的去心邻域定义",
+      "因式分解与绝对值"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对任意实数 a，函数 f(x)=x² 满足 lim_(x→a)f(x)=a²。证明须找到与 ε 和 a 有关但与 x 无关的 δ>0。",
+    "assumptions": [
+      "a∈R；x∈R 且 0<|x-a|<δ；δ 必须为固定的正实数。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "将误差写为 |x²-a²|=|x-a||x+a|；先要求 |x-a|<1。",
+        "reason": "因式分解并将无界的第二因子局部控制。"
+      },
+      {
+        "claim": "由 |x+a|≤|x-a|+2|a|<1+2|a|，取 δ=min(1,ε/(1+2|a|))。",
+        "reason": "δ>0 且只依赖 a 与给定 ε，分母恒正。"
+      },
+      {
+        "claim": "若 0<|x-a|<δ，则 |x²-a²|<δ(1+2|a|)≤ε。",
+        "reason": "由局部界与 δ 的选取得到任意精度误差控制。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "x 是否等于 a 不影响去心极限；连续性还需要 f(a) 已定义且等于极限。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "令 δ=ε 就能证明所有 a 处的平方函数极限",
+        "example": "a=100，ε=0.1，取 x=100.05，|x-a|=0.05<ε，但 |x²-a²|>10。",
+        "explanation": "必须先对 |x+a| 给出依赖 a 的局部上界。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "证明 lim_(x→2)x²=4，给出 δ。",
+        "steps": [
+          "先限制 |x-2|<1，故 |x+2|<5。",
+          "取 δ=min(1,ε/5)。"
+        ],
+        "answer": "lim=4",
+        "check": "0<|x-2|<δ⇒|x²-4|<5δ≤ε。"
+      },
+      {
+        "question": "对 a=0 求 δ。",
+        "steps": [
+          "误差是 |x|²。",
+          "取 δ=min(1,ε) 也成立。"
+        ],
+        "answer": "lim_(x→0)x²=0",
+        "check": "若 |x|<δ≤1 且 δ≤ε，则 |x|²<|x|<ε。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "在极限证明中让 δ 直接依赖正在变化的 x。",
+        "why_wrong": "必须先对 |x+a| 给出依赖 a 的局部上界。",
+        "repair_question": "你的 δ 能在给定 ε 后、尚未知道 x 时确定吗？"
+      }
+    ],
+    "hint_ladder": [
+      "把两平方差写成两个因子。",
+      "先强制 |x-a|<1 控制另一个因子。",
+      "将全部常数吸收到 δ 的表达式里。"
+    ],
+    "transfer": {
+      "near": "证明 lim_(x→-3)x²=9。",
+      "far": "分析 f(x)=x² 在 x→∞ 时为什么不能套用固定 a 的 ε–δ 证明。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.function.ivt-intermediate",
+    "curriculum_ids": [
+      "HS-MATH-119"
+    ],
+    "kind": "theorem",
+    "title": "介值定理：连续函数跨越中间值",
+    "version": "1.0.0",
+    "notation": [
+      "f(a)≤c≤f(b)",
+      "∃ξ∈[a,b],f(ξ)=c"
+    ],
+    "prerequisites": [
+      "闭区间连续",
+      "实数确界性质"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "若 f 在 [a,b] 连续且 a<b，且 c 在 f(a)、f(b) 之间，则存在 ξ∈[a,b] 使 f(ξ)=c；仅端点不等值而区间不连续时结论未必成立。",
+    "assumptions": [
+      "f 是在整个闭区间 [a,b] 连续的实函数；c 为端点函数值之间的实数。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "可不失一般性设 f(a)≤c≤f(b)；若端点恰等于 c，直接取该端点。否则令 S={x∈[a,b]:f(x)<c}。",
+        "reason": "端点取值严格夹住 c 时集合 S 非空且有上界。"
+      },
+      {
+        "claim": "令 ξ=sup S。由连续性，若 f(ξ)<c，则在 ξ 右侧足够近的点仍 <c，与上确界矛盾。",
+        "reason": "连续性保留严格不等式的局部稳定性，并且 ξ<b。"
+      },
+      {
+        "claim": "若 f(ξ)>c，则在 ξ 左侧足够近的点也 >c，ξ 不可能是 S 中点的上确界。",
+        "reason": "上确界的逼近性意味着 ξ 左侧存在 S 的元素，产生矛盾。"
+      },
+      {
+        "claim": "所以 f(ξ) 既不能小于也不能大于 c，必须等于 c。",
+        "reason": "实数三歧性完成中间值存在性证明。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不能推出根唯一；缺少区间连续性时，即使两端异号也可能没有根。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要 f(a)<0<f(b)，中间一定有零点，不必检查连续",
+        "example": "f(x)=-1 (x<0)，f(x)=1 (x≥0)，在 [-1,1] 端点异号却从不取零。",
+        "explanation": "闭区间连续是保证跨越值不跳过的核心假设。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "证明 x³-2 在 [1,2] 有实根。",
+        "steps": [
+          "f(1)=-1,f(2)=6。",
+          "多项式连续，由介值定理。"
+        ],
+        "answer": "存在 ξ∈(1,2) 满足 ξ³=2",
+        "check": "端点异号且多项式在闭区间连续。"
+      },
+      {
+        "question": "证明 x²-1 在 [-2,2] 有零点，能否说只有一个？",
+        "steps": [
+          "f(-2)=3、f(0)=-1、f(2)=3。",
+          "两段各异号。"
+        ],
+        "answer": "至少两个零点 -1 和 1",
+        "check": "直接代入 f(-1)=f(1)=0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把存在性定理误用为唯一性定理。",
+        "why_wrong": "闭区间连续是保证跨越值不跳过的核心假设。",
+        "repair_question": "为什么 f(x)=x²-1 在 [-2,2] 同时有两个根？"
+      }
+    ],
+    "hint_ladder": [
+      "核查全闭区间连续及端点值。",
+      "先判断目标值 c 是否夹在两端之间。",
+      "只得存在性，若要唯一须另有严格单调等条件。"
+    ],
+    "transfer": {
+      "near": "证明 x³+x-1 在 [0,1] 有零点。",
+      "far": "构造区间内有跳跃且端点异号、却从不取零的函数。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.calculus.differentiable-continuous",
+    "curriculum_ids": [
+      "HS-MATH-120"
+    ],
+    "kind": "theorem",
+    "title": "可导必连续：反命题与尖点反例",
+    "version": "1.0.0",
+    "notation": [
+      "f'(a)=lim_(h→0)(f(a+h)-f(a))/h",
+      "f(a+h)→f(a)"
+    ],
+    "prerequisites": [
+      "导数定义",
+      "函数连续"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.calculus.derivative-definition"
+    ],
+    "definition": null,
+    "statement": "若实函数 f 在定义域内点 a 可导，则在 a 连续；连续未必可导，譬如 |x| 在零点连续但不可导。",
+    "assumptions": [
+      "a 为定义域内点，两侧足够近有定义；导数 f'(a) 作为有限实数极限存在。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "将函数值差写作 f(a+h)-f(a)=h·[(f(a+h)-f(a))/h]，h≠0。",
+        "reason": "这是对非零 h 的代数恒等式，没有在 h=0 时除零。"
+      },
+      {
+        "claim": "当 h→0 时，第二因子按导数定义趋于有限 f'(a)，而 h→0。",
+        "reason": "两因子均有有限极限，乘积极限定理适用。"
+      },
+      {
+        "claim": "因此 f(a+h)-f(a)→0，亦即 f(a+h)→f(a)。",
+        "reason": "函数连续在 a 的 ε–δ/极限判据成立。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "在端点需要改用单侧可导/连续；不可用连续性反推可导。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何在某点连续的函数在该点都必定具有导数",
+        "example": "f(x)=|x| 在 0 连续，但右差商为 1、左差商为 -1。",
+        "explanation": "检查左右差商是否趋于同一个有限数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "说明 f(x)=x² 在 x=1 可导且连续。",
+        "steps": [
+          "差商 ( (1+h)²-1 )/h=2+h。",
+          "导数为 2，故连续。"
+        ],
+        "answer": "f'(1)=2，且 f 在 1 连续",
+        "check": "f(1+h)→1 与 f(1)=1 一致。"
+      },
+      {
+        "question": "|x| 在 0 可导吗？",
+        "steps": [
+          "左右差商分别为 ±1。",
+          "左右极限不同。"
+        ],
+        "answer": "不可导但连续",
+        "check": "|h|→0，而差商 |h|/h 无双侧极限。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "用极限值等于函数值就断言导数存在。",
+        "why_wrong": "检查左右差商是否趋于同一个有限数。",
+        "repair_question": "连续只检查函数值趋近，为什么导数还需要比较两侧变化率？"
+      }
+    ],
+    "hint_ladder": [
+      "把函数增量写成 h 乘差商。",
+      "利用可导保证差商有有限极限。",
+      "乘回 h→0，反例用左右差商。"
+    ],
+    "transfer": {
+      "near": "证明 f(x)=x³ 在 x=0 可导并连续。",
+      "far": "举一个在某点连续但左右导数不同的函数。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.calculus.mean-value-theorem",
+    "curriculum_ids": [
+      "HS-MATH-121"
+    ],
+    "kind": "theorem",
+    "title": "拉格朗日中值定理与 Rolle 引理推导",
+    "version": "1.0.0",
+    "notation": [
+      "f'(c)=(f(b)-f(a))/(b-a)",
+      "c∈(a,b)"
+    ],
+    "prerequisites": [
+      "闭区间连续函数取最值",
+      "费马引理",
+      "导数与切线"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.calculus.fermat-stationary"
+    ],
+    "definition": null,
+    "statement": "若 f 在 [a,b] 连续且在 (a,b) 可导，a<b，则存在 c∈(a,b) 使 f'(c)=[f(b)-f(a)]/(b-a)；该存在点一般不唯一。",
+    "assumptions": [
+      "实数 a<b，闭区间连续，开区间内部处处可导；不能省去任一连续/可导条件。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "先证 Rolle 引理：设 g 在 [a,b] 连续、(a,b) 可导且 g(a)=g(b)。连续函数极值定理保证 g 达到最大最小。",
+        "reason": "闭区间紧致是极值存在的关键；需要实数完备性。"
+      },
+      {
+        "claim": "若 g 常值，则任意内部点导数为 0；若 g 非常值，至少一个最大/最小发生于内部，费马引理给该处 g'(c)=0。",
+        "reason": "结合端点同值与极值，验证 Rolle 在两类情况下均成立。"
+      },
+      {
+        "claim": "令 m=[f(b)-f(a)]/(b-a)，g(x)=f(x)-m(x-a)；则 g 在 [a,b] 连续、(a,b) 可导且 g(a)=g(b)。",
+        "reason": "减去线性函数保留连续与可导，端点相等可直接代入验证。"
+      },
+      {
+        "claim": "由 Rolle 得 g'(c)=0，即 f'(c)-m=0，故中值定理成立。",
+        "reason": "求导线性函数，转回原函数即可得到结论。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "区间端点不连续或内点不可导时不满足假设；不能断言 c 唯一。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意函数在 [a,b] 都有导数等于割线斜率的内点",
+        "example": "f(x)=|x| 在 [-1,1] 的割线斜率 0，但导数在 x<0 为 -1，在 x>0 为 1，x=0 不可导。",
+        "explanation": "必须在 (a,b) 内每点可导，尖点会破坏条件。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f(x)=x² 在 [1,3] 的中值点 c 是多少？",
+        "steps": [
+          "割线斜率 (9-1)/2=4。",
+          "f'(c)=2c，故 c=2。"
+        ],
+        "answer": "c=2",
+        "check": "2∈(1,3) 且 f'(2)=4。"
+      },
+      {
+        "question": "f(x)=x³ 在 [-1,1] 的中值点？",
+        "steps": [
+          "割线斜率 (1-(-1))/2=1。",
+          "3c²=1。"
+        ],
+        "answer": "c=±1/√3",
+        "check": "两点均在 (-1,1)，说明 c 可不唯一。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "由中值定理误以为存在唯一的 c。",
+        "why_wrong": "必须在 (a,b) 内每点可导，尖点会破坏条件。",
+        "repair_question": "为什么 x³ 在 [-1,1] 有两个满足平均变化率的点？"
+      }
+    ],
+    "hint_ladder": [
+      "先核查闭区间连续与开区间可导。",
+      "计算割线斜率 m。",
+      "建立辅助函数 f(x)-m(x-a)，应用 Rolle 引理。"
+    ],
+    "transfer": {
+      "near": "求 f(x)=x² 在 [0,2] 的中值点。",
+      "far": "用 |x| 在 [-1,1] 反驳缺少可导性时的错误推断。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.calculus.riemann-linear-integral",
+    "curriculum_ids": [
+      "HS-MATH-122"
+    ],
+    "kind": "theorem",
+    "title": "黎曼和定义计算 ∫₀ᵇ x dx",
+    "version": "1.0.0",
+    "notation": [
+      "∫₀ᵇ x dx=b²/2",
+      "Δx=b/n"
+    ],
+    "prerequisites": [
+      "等差数列求和",
+      "闭区间分割与黎曼和"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.sequence.arithmetic-sum"
+    ],
+    "definition": null,
+    "statement": "对任意 b≥0，函数 f(x)=x 在 [0,b] 可黎曼积分，并且 ∫₀ᵇ x dx=b²/2。证明通过左右端点和逼近，不仅凭图形面积。",
+    "assumptions": [
+      "b 为有限非负实数；在 [0,b] 进行等分，n 为趋于无穷的正整数。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "取 n 等分，Δx=b/n。右端点和为 R_n=Σ(kb/n)(b/n)=(b²/n²)·n(n+1)/2。",
+        "reason": "有限等差求和 Σk=n(n+1)/2，保留每个小区间宽度。"
+      },
+      {
+        "claim": "左端点和为 L_n=(b²/n²)·n(n-1)/2；因 f(x)=x 单调不减，任意插值和夹在 L_n 与 R_n 之间。",
+        "reason": "每小区间函数取值位于左右端点之间，得到积分上下和。"
+      },
+      {
+        "claim": "n→∞ 时 L_n→b²/2 且 R_n→b²/2，故黎曼和极限存在且为 b²/2。",
+        "reason": "上下和夹逼证明可积性及积分值；b=0 时两和均为零。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "用左右端点夹逼时利用了函数在区间单调；带符号积分不总等于几何面积。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "积分 ∫₀ᵇ x dx 对任意负 b 都是几何面积",
+        "example": "b=-2 时有向积分 ∫₀^{-2}x dx=2，而区间 [0,-2] 的写法需处理反向端点，不能直接套本证明的 b≥0 划分。",
+        "explanation": "先明确积分上下限方向和证明所用的非负区间长度。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "用黎曼和求 ∫₀² x dx。",
+        "steps": [
+          "代 b=2，右和=2(n+1)/n。",
+          "令 n→∞。"
+        ],
+        "answer": "2",
+        "check": "闭式 b²/2=4/2=2。"
+      },
+      {
+        "question": "求 ∫₀⁴ x dx。",
+        "steps": [
+          "将 b=4 代入上式。",
+          "积分值=16/2。"
+        ],
+        "answer": "8",
+        "check": "梯形/三角形面积 4×4/2=8 与黎曼极限一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把每一个矩形的宽度误写成 b 而不是 b/n。",
+        "why_wrong": "先明确积分上下限方向和证明所用的非负区间长度。",
+        "repair_question": "把 n 加倍时区间宽度应该怎样变化？"
+      }
+    ],
+    "hint_ladder": [
+      "把 [0,b] 分成 n 个等宽段。",
+      "分别写左/右端点的有限求和公式。",
+      "由两个极限夹出所有黎曼和。"
+    ],
+    "transfer": {
+      "near": "用黎曼和计算 ∫₀³ x dx。",
+      "far": "思考 ∫₀ᵇ (x+1) dx 如何从基本线性性与两项黎曼和得到。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.calculus.ftc-integral-derivative",
+    "curriculum_ids": [
+      "HS-MATH-123"
+    ],
+    "kind": "theorem",
+    "title": "微积分基本定理（一）：变上限积分的导数",
+    "version": "1.0.0",
+    "notation": [
+      "F(x)=∫ₐˣf(t)dt",
+      "F'(x)=f(x)"
+    ],
+    "prerequisites": [
+      "连续函数的局部一致控制",
+      "定积分有向性",
+      "导数定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.calculus.riemann-linear-integral"
+    ],
+    "definition": null,
+    "statement": "设 f 在包含 [a,b] 的区间上连续，定义 F(x)=∫ₐˣf(t)dt。则 F 在 (a,b) 可导且 F'(x)=f(x)。端点处如有定义可讨论相应单侧导数。",
+    "assumptions": [
+      "a<b；f 在闭区间 [a,b] 连续，积分存在；计算导数的 x 为内点。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对内点 x 及足够小的 h，F(x+h)-F(x)=∫ₓ^{x+h}f(t)dt。",
+        "reason": "定积分区间可加性和有向积分适用正负 h。"
+      },
+      {
+        "claim": "差商减去 f(x) 后为 (1/h)∫ₓ^{x+h}[f(t)-f(x)]dt，其绝对值不大于 sup_{t 在两端点间}|f(t)-f(x)|。",
+        "reason": "积分绝对值估计对 h<0 也成立，因使用 |h| 与有向区间。"
+      },
+      {
+        "claim": "f 在 x 连续，h→0 时该上确界趋于 0，故差商→f(x)。",
+        "reason": "连续性保证充分小邻域中的函数值统一接近 f(x)。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 f 在 x 不连续，变上限积分未必在 x 有导数等于 f(x)；区间端点需单侧讨论。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "变上限积分在积分函数不连续点仍必满足 F'=f",
+        "example": "f(t)=0(t<0)，f(t)=1(t≥0)，F(x)=∫_{-1}^x f(t)dt 在 x=0 左右导数分别为 0 和 1。",
+        "explanation": "等式 F'(x)=f(x) 的结论依赖积分函数在该点的连续性。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 F(x)=∫₀ˣ t² dt 的导数。",
+        "steps": [
+          "f(t)=t² 连续。",
+          "由基本定理 F'(x)=x²。"
+        ],
+        "answer": "F'(x)=x²",
+        "check": "F(x)=x³/3，直接求导得到 x²。"
+      },
+      {
+        "question": "G(x)=∫₁ˣ(3t+1)dt 的导数是什么？",
+        "steps": [
+          "被积函数连续。",
+          "换掉积分变量 t→x。"
+        ],
+        "answer": "G'(x)=3x+1",
+        "check": "显式 G(x)=(3x²/2+x)-(3/2+1)，求导一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把积分里的哑变量 t 与积分上限 x 混同成固定常数。",
+        "why_wrong": "等式 F'(x)=f(x) 的结论依赖积分函数在该点的连续性。",
+        "repair_question": "F 的变化是来自哪个端点移动？"
+      }
+    ],
+    "hint_ladder": [
+      "先写 F(x+h)-F(x) 的区间加法式。",
+      "将积分中的 f(x) 常数项剥离。",
+      "利用连续性控制剩余部分，再令 h→0。"
+    ],
+    "transfer": {
+      "near": "求 d/dx ∫₂ˣ(1+t³)dt。",
+      "far": "分析被积函数在某内点跳跃时，F'(x) 为什么可能不存在。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.linear.standard-basis-independence",
+    "curriculum_ids": [
+      "HS-MATH-124"
+    ],
+    "kind": "theorem",
+    "title": "三维标准基向量线性无关与唯一坐标分解",
+    "version": "1.0.0",
+    "notation": [
+      "e₁=(1,0,0)",
+      "e₂=(0,1,0)",
+      "e₃=(0,0,1)"
+    ],
+    "prerequisites": [
+      "向量坐标相等",
+      "线性组合的定义"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "在 R³ 中，e₁,e₂,e₃ 线性无关，并且任意 v=(x,y,z) 都有唯一分解 v=xe₁+ye₂+ze₃。因此它们构成 R³ 的一组基。",
+    "assumptions": [
+      "向量空间取实三维空间 R³；允许任意实系数；线性无关以零组合只含零系数为定义。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "设 αe₁+βe₂+γe₃=(0,0,0)。按坐标运算左边=(α,β,γ)。",
+        "reason": "标准基各自只有一个坐标分量为 1。"
+      },
+      {
+        "claim": "由坐标逐项相等，得 α=β=γ=0，因此三向量线性无关。",
+        "reason": "零向量只有三个零坐标，满足线性无关定义。"
+      },
+      {
+        "claim": "任取 v=(x,y,z)，可写 v=xe₁+ye₂+ze₃；若另有表达，则相减给标准基零组合，系数必须相同。",
+        "reason": "存在性来自坐标分解，唯一性来自线性无关。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "在 R² 中第三维坐标没有定义；非标准三向量可能线性相关而不能作为基。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意三条三维向量都能构成一组基",
+        "example": "(1,0,0),(2,0,0),(0,1,0) 中前两向量互为倍数，不能生成 (0,0,1)。",
+        "explanation": "必须同时满足线性无关和张成整个空间。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "把 (2,-1,3) 分解为标准基线性组合。",
+        "steps": [
+          "各坐标直接作为系数。",
+          "检查各坐标的和。"
+        ],
+        "answer": "2e₁-e₂+3e₃",
+        "check": "2(1,0,0)-(0,1,0)+3(0,0,1)=(2,-1,3)。"
+      },
+      {
+        "question": "解 αe₁+βe₂+γe₃=(0,5,-2)。",
+        "steps": [
+          "逐项对齐。",
+          "分别等于 0、5、-2。"
+        ],
+        "answer": "α=0,β=5,γ=-2",
+        "check": "线性组合的坐标为 (0,5,-2)。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把张成空间与线性无关中的任意一个条件当作基的充分条件。",
+        "why_wrong": "必须同时满足线性无关和张成整个空间。",
+        "repair_question": "若三向量都落在 xy 平面，还能张成任意 z≠0 的向量吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先把标准基写成三维坐标。",
+      "解零组合的系数。",
+      "再证明任意向量都有唯一坐标表示。"
+    ],
+    "transfer": {
+      "near": "证明 R² 的两个标准基构成一组基。",
+      "far": "说明为何三个彼此不同的三维向量仍可能线性相关。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.matrix.inverse-two-by-two",
+    "curriculum_ids": [
+      "HS-MATH-125"
+    ],
+    "kind": "theorem",
+    "title": "二阶矩阵可逆判据与逆矩阵公式",
+    "version": "1.0.0",
+    "notation": [
+      "A=[[a,b],[c,d]]",
+      "det(A)=ad-bc",
+      "A⁻¹=(1/det A)[[d,-b],[-c,a]]"
+    ],
+    "prerequisites": [
+      "矩阵乘法",
+      "行列式定义"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对实二阶方阵 A=[[a,b],[c,d]]，存在双侧逆矩阵当且仅当 ad-bc≠0；此时 A⁻¹=(ad-bc)^(-1)[[d,-b],[-c,a]]。",
+    "assumptions": [
+      "a,b,c,d 为实数；矩阵为二阶方阵；仅当 det(A) 非零才允许除以行列式。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "记 B=[[d,-b],[-c,a]]；直接计算 AB=BA=(ad-bc)I₂。",
+        "reason": "逐项矩阵乘法：非对角项为 -ab+ab 和 cd-dc。"
+      },
+      {
+        "claim": "若 Δ=ad-bc≠0，则 C=B/Δ 满足 AC=CA=I₂，故 A 可逆且给出显式公式。",
+        "reason": "双侧乘法单位元和非零数除法构成逆矩阵定义。"
+      },
+      {
+        "claim": "若 Δ=0 且 A 非零，则行或列线性相关，存在 v≠0 使 Av=0；若 A=0 也显然成立。",
+        "reason": "二阶行列式为零时齐次系统有非零解，可由线性方程消元检验。"
+      },
+      {
+        "claim": "如 A 有逆则 v=A⁻¹Av=0，与 v≠0 矛盾，所以 Δ=0 不可逆。",
+        "reason": "逆矩阵将核中的零像唯一恢复，故核必须平凡。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不可把二阶公式直接用于三阶矩阵；Δ=0 时即使方程有解也不意味着唯一。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意一个二阶实方阵都必然存在逆矩阵",
+        "example": "A=[[1,2],[2,4]] 的行列式 4-4=0，第二行是第一行两倍。",
+        "explanation": "检查方阵行列式非零或等价的零空间平凡条件。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 A=[[2,1],[1,1]] 的逆矩阵。",
+        "steps": [
+          "Δ=2·1-1·1=1。",
+          "交换对角项、反号非对角项。"
+        ],
+        "answer": "A⁻¹=[[1,-1],[-1,2]]",
+        "check": "直接计算 AA⁻¹=I₂。"
+      },
+      {
+        "question": "A=[[1,2],[2,4]] 可逆吗？",
+        "steps": [
+          "Δ=0。",
+          "第二行与第一行相关。"
+        ],
+        "answer": "不可逆",
+        "check": "A(-2,1)^T=0，存在非零核向量。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把 det(A)=0 时仍强行将公式分母设零。",
+        "why_wrong": "检查方阵行列式非零或等价的零空间平凡条件。",
+        "repair_question": "当 Δ=0 时，逆矩阵公式哪一部分不合法？"
+      }
+    ],
+    "hint_ladder": [
+      "先计算 ad-bc 并判断是否为零。",
+      "非零时验证候选矩阵左右相乘均为 I。",
+      "零时用非零核向量反证可逆。"
+    ],
+    "transfer": {
+      "near": "判断 A=[[3,1],[0,2]] 是否可逆并求逆。",
+      "far": "解释线性相关的两列为什么会导致非唯一的零空间解。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.matrix.gaussian-row-equivalence",
+    "curriculum_ids": [
+      "HS-MATH-126"
+    ],
+    "kind": "theorem",
+    "title": "高斯消元初等行变换保持方程组解集",
+    "version": "1.0.0",
+    "notation": [
+      "R_i↔R_j",
+      "R_i←λR_i (λ≠0)",
+      "R_i←R_i+λR_j (i≠j)"
+    ],
+    "prerequisites": [
+      "增广矩阵",
+      "线性方程组"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.matrix.inverse-two-by-two"
+    ],
+    "definition": null,
+    "statement": "对实数域线性方程组的增广矩阵，交换两行、将一行乘非零数、给一行加另一行倍数，均不改变原方程组的解集；它们都可逆。",
+    "assumptions": [
+      "增广矩阵包含系数与常数列；同一行变换须同时作用所有列；缩放系数必须非零；第三类两行下标不同。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "交换两行只是更改等式排列，任何满足全部等式的解仍满足重排后的全部等式。",
+        "reason": "等式的合取不依赖书写顺序，且交换两次恢复。"
+      },
+      {
+        "claim": "将一行等式乘 λ≠0 的新方程可除以 λ 恢复原式。",
+        "reason": "双向等价使用非零数乘法的可逆性。"
+      },
+      {
+        "claim": "把第 i 行改为原第 i 行加 λ 倍第 j 行；反向只需再减 λ 倍第 j 行即可恢复。",
+        "reason": "由于第 j 行没有被改变，逆变换存在且解集不变。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "乘以零会丢失约束；仅变换系数列而不变换常数列会改变方程组。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意行缩放都保留线性方程组的解集",
+        "example": "方程 x=1 的增广行 [1|1] 乘 0 变 [0|0]，原来 x=1，后来任何 x 都满足。",
+        "explanation": "行缩放必须非零，且变换覆盖整条增广行。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "解 x+y=3、x-y=1。",
+        "steps": [
+          "第二行减第一行得到 -2y=-2。",
+          "解 y=1，再代 x=2。"
+        ],
+        "answer": "(x,y)=(2,1)",
+        "check": "2+1=3 且 2-1=1。"
+      },
+      {
+        "question": "方程 x+y=1、2x+2y=2 是否唯一解？",
+        "steps": [
+          "第二行减第一行的两倍。",
+          "得到 0=0，而非另一个约束。"
+        ],
+        "answer": "无穷多解 {(t,1-t):t∈R}",
+        "check": "任意 t 代回两行成立。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把增广矩阵中的常数列遗忘或使用不可逆的零倍缩放。",
+        "why_wrong": "行缩放必须非零，且变换覆盖整条增广行。",
+        "repair_question": "为什么做 R₂←R₂-2R₁ 时必须连同等号右端一起变换？"
+      }
+    ],
+    "hint_ladder": [
+      "把每行理解为完整的等式。",
+      "说明每个允许变换怎样反向恢复。",
+      "完成消元后回代，并把答案代入原方程组。"
+    ],
+    "transfer": {
+      "near": "用高斯消元解 x+2y=4、3x+4y=10。",
+      "far": "构造一组退化方程，说明 0=0 表示自由变量而非唯一解。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.multivariable.partial-polynomial",
+    "curriculum_ids": [
+      "HS-MATH-127"
+    ],
+    "kind": "theorem",
+    "title": "二元多项式偏导数按定义计算",
+    "version": "1.0.0",
+    "notation": [
+      "∂f/∂x",
+      "∂f/∂y"
+    ],
+    "prerequisites": [
+      "一元导数差商",
+      "二元函数定义域"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.calculus.derivative-definition"
+    ],
+    "definition": null,
+    "statement": "设 f(x,y)=x²y+3y²（x,y∈R），固定另一变量按偏导数定义可得 ∂f/∂x=2xy，∂f/∂y=x²+6y。",
+    "assumptions": [
+      "x,y 为任意实数；计算 ∂x 时 y 保持常数，计算 ∂y 时 x 保持常数。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "按 x 偏导差商， [f(x+h,y)-f(x,y)]/h=[(2xh+h²)y]/h=2xy+hy。",
+        "reason": "y 固定，h≠0 的代数展开合法。"
+      },
+      {
+        "claim": "令 h→0，得到 ∂f/∂x=2xy。",
+        "reason": "多项式各项连续，hy→0。"
+      },
+      {
+        "claim": "按 y 偏导差商， [f(x,y+h)-f(x,y)]/h=x²+6y+3h，取 h→0 得 ∂f/∂y=x²+6y。",
+        "reason": "固定 x，按定义展开平方。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "偏导存在本身不保证任意一般函数可微；本多项式函数处处全微分，但该推广需要另证。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "求 ∂f/∂x 时也要把 y 随 x 变化并求导",
+        "example": "对 f=x²y，固定 y=2 时 ∂x f=4x；若误令 y=x 会得到 3x²，这属于另一个复合函数。",
+        "explanation": "偏导只改变一个自变量，其他自变量保持常数。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "在 (1,2) 求 f=x²y+3y² 的两个偏导。",
+        "steps": [
+          "∂x=2xy。",
+          "∂y=x²+6y。"
+        ],
+        "answer": "∂x=4，∂y=13",
+        "check": "代入 (1,2)：2·1·2=4，1+12=13。"
+      },
+      {
+        "question": "在 (0,1) 求偏导。",
+        "steps": [
+          "∂x=0。",
+          "∂y=0²+6·1。"
+        ],
+        "answer": "∂x=0，∂y=6",
+        "check": "由极限定义计算对应变化率一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把偏导与复合函数的全导数混为一谈。",
+        "why_wrong": "偏导只改变一个自变量，其他自变量保持常数。",
+        "repair_question": "求 ∂/∂x 时 y 是否可以随 x 一起变化？"
+      }
+    ],
+    "hint_ladder": [
+      "明确要变化的单一坐标。",
+      "固定其他坐标，写一个差商。",
+      "令增量趋零，再代入给定点。"
+    ],
+    "transfer": {
+      "near": "求 f=x³y+y² 在 (1,1) 处两个偏导。",
+      "far": "举出偏导都存在但函数不连续的例子，说明不能以偏导存在直接认定全可微。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.statistics.covariance-affine",
+    "curriculum_ids": [
+      "HS-MATH-128"
+    ],
+    "kind": "theorem",
+    "title": "协方差在仿射变换下的缩放规律",
+    "version": "1.0.0",
+    "notation": [
+      "Cov(X,Y)=E[(X-EX)(Y-EY)]",
+      "Cov(aX+b,cY+d)=acCov(X,Y)"
+    ],
+    "prerequisites": [
+      "有限二阶矩",
+      "期望线性性",
+      "协方差定义"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.expectation-linearity"
+    ],
+    "definition": null,
+    "statement": "若随机变量 X,Y 有有限二阶矩，a,b,c,d 是实常数，则 Cov(aX+b,cY+d)=ac·Cov(X,Y)；平移 b,d 不改变协方差。",
+    "assumptions": [
+      "X,Y 的二阶矩有限以确保各项期望存在；a,b,c,d 为确定的实常数；不要求 X,Y 独立。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由期望线性性，E[aX+b]=aEX+b，E[cY+d]=cEY+d。",
+        "reason": "常数可移出期望，变量二阶可积保证一阶可积。"
+      },
+      {
+        "claim": "两个中心化变量分别为 a(X-EX) 与 c(Y-EY)。",
+        "reason": "减去均值后常数平移恰好抵消。"
+      },
+      {
+        "claim": "乘积为 ac(X-EX)(Y-EY)，取期望即 Cov(aX+b,cY+d)=acCov(X,Y)。",
+        "reason": "乘法交换和期望线性性，有限二阶矩由 Cauchy–Schwarz 保证乘积可积。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "协方差为 0 不总意味着独立；当 ac<0 时协方差符号反转。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要两个随机变量协方差为零就一定独立",
+        "example": "令 X 在 {-1,0,1} 上均匀分布，Y=X²，则 E[X]=0、E[XY]=E[X³]=0，协方差为 0，但 Y 由 X 决定且非独立。",
+        "explanation": "零协方差只说明一阶线性相关程度为零，无法推出完整联合分布独立。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平伯努利 X∈{0,1}，求 Cov(X,X)。",
+        "steps": [
+          "EX=1/2，Var(X)=1/4。",
+          "Cov(X,X)=Var(X)。"
+        ],
+        "answer": "1/4",
+        "check": "E[X²]=1/2，EX²=1/4，差为 1/4。"
+      },
+      {
+        "question": "对同一 X，求 Cov(2X+1,1-X)。",
+        "steps": [
+          "a=2,c=-1。",
+          "缩放为 -2Var(X)。"
+        ],
+        "answer": "-1/2",
+        "check": "-2·1/4=-1/2。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "认为平移 b,d 会改变中心化后的协方差。",
+        "why_wrong": "零协方差只说明一阶线性相关程度为零，无法推出完整联合分布独立。",
+        "repair_question": "将 X 加 100 后，X-EX 的形式会变化吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先计算两个线性变换后的期望。",
+      "相减得到中心化形式，观察常数是否消失。",
+      "提出 ac 并检查是否需要独立条件。"
+    ],
+    "transfer": {
+      "near": "证明 Cov(3X,2Y-5)=6Cov(X,Y)。",
+      "far": "构造两个零协方差但明显依赖的随机变量。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.statistics.bernoulli-mle",
+    "curriculum_ids": [
+      "HS-MATH-129"
+    ],
+    "kind": "theorem",
+    "title": "独立伯努利试验的极大似然估计及边界",
+    "version": "1.0.0",
+    "notation": [
+      "L(p)=p^k(1-p)^(n-k)",
+      "p̂=k/n"
+    ],
+    "prerequisites": [
+      "独立伯努利模型",
+      "对数求导与凹性"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.probability.bernoulli-variance"
+    ],
+    "definition": null,
+    "statement": "对 n≥1 次独立同分布的 Bernoulli(p) 观察，成功 k 次、失败 n-k 次，未知 p∈[0,1] 的极大似然估计为 p̂=k/n，包括 k=0、k=n 的边界情况。",
+    "assumptions": [
+      "n 为正整数、0≤k≤n；每次试验相互独立且有相同成功概率 p；估计参数区间包含 0 和 1。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对于给定有序样本，联合似然为 L(p)=p^k(1-p)^(n-k)（0<p<1）；若只保留总成功次数还会乘以与 p 无关的组合系数，不影响最优点。",
+        "reason": "独立性使联合概率连乘，同分布保证所有成功事件共享参数 p。"
+      },
+      {
+        "claim": "当 0<k<n，log L=k log p+(n-k)log(1-p)，其导数 k/p-(n-k)/(1-p)=0 给 p=k/n。",
+        "reason": "在开区间合法取对数和求导；严格二阶导数 -k/p²-(n-k)/(1-p)²<0。"
+      },
+      {
+        "claim": "因 log L 严格凹，内点 k/n 为唯一极大值；若 k=0，则 L=(1-p)^n 在 [0,1] 最大于 p=0；若 k=n，则 L=p^n 最大于 p=1。",
+        "reason": "端点必须单独讨论，不能把 0/0 的对数微分套用于边界。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "独立同分布假设失效时 k/n 未必是对应模型的极大似然估计；p̂ 是频率估计，不代表参数的后验概率。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "极大似然估计始终在 (0,1) 内",
+        "example": "连续 4 次伯努利试验全部失败时 k=0，似然 (1-p)^4 在 p=0 最大。",
+        "explanation": "对边界参数先单独处理，再使用内部求导。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "5 次独立伯努利试验中成功 3 次，求 p 的 MLE。",
+        "steps": [
+          "n=5,k=3。",
+          "p̂=3/5。"
+        ],
+        "answer": "p̂=0.6",
+        "check": "导数 3/p-2/(1-p) 在 p=0.6 为 0 且二阶导数为负。"
+      },
+      {
+        "question": "4 次试验全失败，求 MLE。",
+        "steps": [
+          "k=0，似然 (1-p)^4。",
+          "最大在 p=0。"
+        ],
+        "answer": "p̂=0",
+        "check": "L(0)=1≥L(p) 对全部 p∈[0,1] 成立。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忽略 k=0 或 k=n，机械对 log L 在边界求导。",
+        "why_wrong": "对边界参数先单独处理，再使用内部求导。",
+        "repair_question": "如果 4 次试验全失败，MLE 为什么可以等于零？"
+      }
+    ],
+    "hint_ladder": [
+      "写出独立同分布联合似然。",
+      "只有内部成功与失败都存在时才对 log L 求导。",
+      "检查二阶导数与 0、1 两个端点。"
+    ],
+    "transfer": {
+      "near": "12 次伯努利试验成功 9 次，计算 MLE。",
+      "far": "解释为什么有放回与无放回取样的似然未必相同。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

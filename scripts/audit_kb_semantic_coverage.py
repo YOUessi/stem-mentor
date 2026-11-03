@@ -113,8 +113,8 @@ def build():
             "per_level":by_level
         },
         "warnings":[
-            "113 engineering IDs are NOT an official atomic syllabus denominator.",
-            "113 linked draft topics do not mean 113 fully taught or mathematically proved topics.",
+            "The expanded engineering ID inventory is NOT an official atomic syllabus denominator.",
+            "All engineering IDs have draft links; none are automatically taught, approved or fully mathematically proved.",
             "23 editorial gaps remain OPEN pending independent review even after draft candidates are added; other linked topics remain unreviewed.",
             "Review_PENDING drafts, teacher worked solutions, and their text are never approved student evidence.",
             "The 7 legacy extension topics do not constitute completion of official electives A–E."

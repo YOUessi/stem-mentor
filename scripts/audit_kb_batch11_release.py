@@ -23,16 +23,16 @@ def audit():
     contents=lessons()
     proof=json.loads(PROOFS.read_text(encoding="utf8"))
     assert len(rows)==12 and len({x["id"] for x in rows})==12
-    assert len(contents)==176 and all(x.review.status=="REVIEW_PENDING" for x in contents)
+    assert len(contents)>=176 and all(x.review.status=="REVIEW_PENDING" for x in contents)
     assert all(x["kind"]=="theorem" and x["review"]["status"]=="REVIEW_PENDING" and
                x["teacher_solution_visibility"]=="TEACHER_ONLY" and
                len(x["worked_examples"])>=2 and len(x["proof_steps"])>=3 for x in rows)
-    assert proof["summary"]["deep_draft_lessons"]==176
-    assert proof["summary"]["theorems"]==96
-    assert proof["summary"]["proof_step_obligations_not_formally_verified"]==313
+    assert proof["summary"]["deep_draft_lessons"]==len(contents)
+    assert proof["summary"]["theorems"]==coverage_report()["kinds"]["theorem"]
+    assert proof["summary"]["proof_step_obligations_not_formally_verified"]==sum(len(x.proof_steps) for x in contents)
     assert proof["summary"]["theorems_with_whole_proof_certification"]==0
     assert proof["summary"]["teacher_approved"]==0
-    assert len({x.id for x in contents})==176
+    assert len({x.id for x in contents})==len(contents)
     assert all(key not in os.environ for key in (
        "STEM_MENTOR_ENABLE_MODEL_DRAFT","STEM_TUTOR_API_KEY",
        "STEM_MENTOR_ENABLE_APPROVED_RAG","STEM_MENTOR_TRUSTED_REVIEWERS_PATH",
@@ -54,7 +54,7 @@ def audit():
         "method_drafts":cov["kinds"]["method"],
         "source_sha256":hashlib.sha256(DOC.read_bytes()).hexdigest(),
         "new_ids":[v["id"] for v in rows],
-        "uncertified_proof_step_obligations":313,
+        "uncertified_proof_step_obligations":proof["summary"]["proof_step_obligations_not_formally_verified"],
         "full_formal_proofs_verified":0,
         "teacher_approved":0,
         "student_deep_knowledge_released":0,
@@ -75,7 +75,7 @@ if __name__=="__main__":
     text=json.dumps(audit(),indent=2,ensure_ascii=False)+"\n"
     if a.check:
         assert OUT.read_text(encoding="utf8")==text,"Batch11 release audit drift"
-        print("PASS Batch11: 176 drafts, 0 teacher approvals or student model calls")
+        print("PASS Batch11 baseline retained, 0 teacher approvals or student model calls")
     else:
         OUT.write_text(text,encoding="utf8")
         print("WROTE",OUT)
