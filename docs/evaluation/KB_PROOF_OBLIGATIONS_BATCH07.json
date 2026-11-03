@@ -1,9 +1,9 @@
 {
   "scope": "HUMAN_PROOF_OBLIGATION_QUEUE_NOT_MATHEMATICAL_CERTIFICATION",
   "summary": {
-    "deep_draft_lessons": 146,
-    "theorems": 66,
-    "proof_step_obligations_not_formally_verified": 214,
+    "deep_draft_lessons": 153,
+    "theorems": 73,
+    "proof_step_obligations_not_formally_verified": 237,
     "existing_supporting_oracles_linked": 48,
     "theorems_with_whole_proof_certification": 0,
     "teacher_approved": 0,
@@ -1033,6 +1033,302 @@
           "index": 4,
           "claim": "当 a,b 都非零时，a·b=0 等价于 cosθ=0，即 θ=90°。",
           "reason": "|a||b| 严格为正可相除，θ 在 0 到 π 的唯一余弦零点是 π/2。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.chain-rule",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-066"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "g 必须在 x₀ 的邻域内取值落入 f 的定义域，且 g 在 x₀ 可导。",
+        "f 必须在 y₀=g(x₀) 可导；不能只检查 f 在其他点的可导性。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由 f 在 y₀ 可导，可写 f(y₀+t)-f(y₀)=[f'(y₀)+ε(t)]t，其中 ε(t)→0 且约定 ε(0)=0。",
+          "reason": "定义导数余项的连续延拓；这样即使某些 x 满足 g(x)=y₀ 也不会错误地除以零。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "令 t=g(x)-g(x₀)，当 x→x₀ 时由 g 可导推出 t→0，将上式代入复合函数增量。",
+          "reason": "可导蕴含连续，因此 g(x) 的增量趋于零，余项 ε(g(x)-y₀)→0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "两边除以 x-x₀ 并令 x→x₀，得到 [f'(y₀)+ε(g(x)-y₀)]·[g(x)-g(x₀)]/(x-x₀)→f'(y₀)g'(x₀)。",
+          "reason": "利用乘积极限定理，避免对 g(x)-g(x₀)=0 的情形非法约分。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.quotient-rule",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-066"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "u,v 在 x₀ 可导，由连续性和 v(x₀)≠0 可知邻近点分母也非零。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "取倒数 w(x)=1/v(x)，差商为 [w(x)-w(x₀)]/(x-x₀)=-[v(x)-v(x₀)]/[(x-x₀)v(x)v(x₀)]。",
+          "reason": "由分式通分恒等式得出精确差商；仅在分母邻域非零时合法。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "令 x→x₀，由 v 的连续和可导性得到 w'(x₀)=-v'(x₀)/[v(x₀)]²。",
+          "reason": "分母极限为 v(x₀)²>0，因此极限乘除成立。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "对 u·w 使用乘积求导法则，得到 u'/v-u v'/v²=(u'v-u v')/v²。",
+          "reason": "只依赖已证明倒数可导和两个因子可导，条件齐全。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.calculus.fermat-stationary",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-069"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "x₀ 的两侧有足够近的定义域点（内点）；f 在 x₀ 可导。",
+        "局部最大/小的比较应在同一邻域进行，不是任意远处的取值。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "设 x₀ 为局部极大点，则存在 δ>0，|h|<δ 时 f(x₀+h)-f(x₀)≤0。",
+          "reason": "这是局部极大的定义；局部极小只需将不等式方向反转。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对 h>0，差商 [f(x₀+h)-f(x₀)]/h≤0；对 h<0，差商 ≥0。",
+          "reason": "除以负数必须改变不等号方向，左右极限受相反符号约束。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "若 f'(x₀) 存在，则左右差商有同一极限 L，必须同时满足 L≤0 且 L≥0，故 L=0。",
+          "reason": "由导数双侧极限存在和实数序关系完成证明；极小值情形类似。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.vector.cauchy-schwarz",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-034",
+        "HS-MATH-072"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "u 和 v 属于同一有限维实欧氏空间，内积为标准实数量积，范数取非负平方根。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "当 v=0 时，两边都是 0，等号成立；以下讨论 v≠0。",
+          "reason": "先处理可能导致除以零的退化情形。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "对任意实数 t，0≤‖u-tv‖²=‖u‖²-2t(u·v)+t²‖v‖²。",
+          "reason": "实向量的范数平方非负，将数量积双线性展开得到二次多项式。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "取 t=(u·v)/‖v‖²，得到 0≤‖u‖²-(u·v)²/‖v‖²，于是 (u·v)²≤‖u‖²‖v‖²。",
+          "reason": "v≠0 保证分母非零；两边乘正数并移项。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "等号当且仅当 ‖u-tv‖²=0，即 u=tv；加上 v=0 情形可表述为两个向量线性相关。",
+          "reason": "欧氏范数为零当且仅当向量是零，完成等号条件的充分性与必要性。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.counting.binomial-sum",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-095"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "n 是非负整数，组合数 C(n,k) 只在 0≤k≤n 的整数 k 下使用。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由二项式定理，(a+b)^n=Σ_{k=0}^n C(n,k)a^{n-k}b^k。",
+          "reason": "有限二项式展开对所有非负整数 n 成立，包括 n=0。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "令 a=b=1，得到 2^n=Σ_{k=0}^n C(n,k)。",
+          "reason": "每项的幂都为 1，n=0 时和为 C(0,0)=1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "令 a=1、b=-1，对 n≥1，(1-1)^n=0，得到 Σ(-1)^kC(n,k)=0。",
+          "reason": "仅对正整数 n 才有 0^n=0；n=0 时按空乘积约定 (1-1)^0=1。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.probability.expectation-linearity",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-098"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "有限样本空间 Ω 上每个 ω 有概率 p(ω)≥0，且 Σ p(ω)=1；X,Y 在每个样本点取有限实值。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "由期望定义，E[aX+bY]=Σ_{ω∈Ω} (aX(ω)+bY(ω))p(ω)。",
+          "reason": "有限样本空间下可以直接使用有限加权和定义。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "利用实数乘法分配律和有限求和线性性，拆成 aΣX(ω)p(ω)+bΣY(ω)p(ω)。",
+          "reason": "有限和可交换与分配，无需联合独立分解概率。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "两部分分别是 aE[X] 和 bE[Y]，从而得到原式。",
+          "reason": "按期望定义识别两项，独立性不是前提。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        }
+      ],
+      "counterexample_count": 1,
+      "worked_example_count": 2,
+      "linked_existing_supporting_oracle_ids": [],
+      "oracle_scope": "LIMITED_SUPPORTING_SUBCLAIMS_NOT_WHOLE_PROOF",
+      "human_review": "PENDING",
+      "needs_editorial_reconciliation": false
+    },
+    {
+      "id": "math.hs.function.bisection-root",
+      "kind": "theorem",
+      "curriculum_ids": [
+        "HS-MATH-016"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "math_truth_status": "NOT_CERTIFIED",
+      "formal_natural_language_proof_verified": false,
+      "theorem_assumptions": [
+        "a<b 且 f 在闭区间连续，初始端点函数值均非零且异号。",
+        "每轮 f(m) 可计算并能正确判断符号；若恰为零，算法终止。"
+      ],
+      "proof_step_obligations": [
+        {
+          "index": 1,
+          "claim": "根据连续函数零点存在性定理，初始 [a,b] 至少含一个零点。",
+          "reason": "连续性和异号端点是存在结论的充分条件，不保证根唯一。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 2,
+          "claim": "取 m=(a+b)/2，若 f(m)=0 则结束；否则 f(m) 与两个端点中恰有一端异号，保留对应半区间。",
+          "reason": "中点非零时符号只能正或负，原两端异号确保总能选出异号的一对。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 3,
+          "claim": "半区间上 f 仍连续且两端异号，故它至少含一个根；每一步长度恰好减半。",
+          "reason": "连续性限制到子区间仍成立，反复使用零点存在性定理和等分长度。",
+          "status": "NOT_FORMALLY_VERIFIED"
+        },
+        {
+          "index": 4,
+          "claim": "n 次后宽度为 (b-a)/2^n；根若在新区间，中点到该根的距离至多为区间长度一半。",
+          "reason": "由区间位置关系得到误差界，未假设被选中的是唯一根。",
           "status": "NOT_FORMALLY_VERIFIED"
         }
       ],

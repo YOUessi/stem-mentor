@@ -4,7 +4,7 @@
   "generated_from": "curriculum/highschool_math/curriculum_map.json + knowledge/deep/v1/*.json + semantic_gaps_batch04.json",
   "summary": {
     "engineering_topic_denominator": 113,
-    "deep_draft_documents": 146,
+    "deep_draft_documents": 153,
     "linked_project_topics": 113,
     "known_partial_topic_count": 23,
     "gap_draft_candidate_count": 23,
@@ -302,6 +302,7 @@
       "unit": "函数基本概念与性质",
       "concept": "零点与方程",
       "deep_lesson_ids": [
+        "math.hs.function.bisection-root",
         "math.hs.function.zero-ivt"
       ],
       "teacher_approved_lesson_ids": [],
@@ -597,7 +598,8 @@
       "unit": "平面向量与解三角形",
       "concept": "向量数量积",
       "deep_lesson_ids": [
-        "math.hs.vector.dot-product"
+        "math.hs.vector.dot-product",
+        "math.hs.vector.cauchy-schwarz"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -1136,6 +1138,8 @@
       "unit": "数列与导数",
       "concept": "导数的几何意义",
       "deep_lesson_ids": [
+        "math.hs.calculus.chain-rule",
+        "math.hs.calculus.quotient-rule",
         "math.hs.calculus.power-rule",
         "math.hs.calculus.product-derivative",
         "math.hs.calculus.derivative-definition"
@@ -1188,6 +1192,7 @@
       "unit": "数列与导数",
       "concept": "极值与最值",
       "deep_lesson_ids": [
+        "math.hs.calculus.fermat-stationary",
         "math.hs.calculus.derivative-monotonicity",
         "math.hs.calculus.extrema"
       ],
@@ -1239,6 +1244,7 @@
       "concept": "空间向量与坐标运算",
       "deep_lesson_ids": [
         "math.hs.space.coordinate-distance",
+        "math.hs.vector.cauchy-schwarz",
         "math.hs.geometry.space-dot"
       ],
       "teacher_approved_lesson_ids": [],
@@ -1618,6 +1624,7 @@
       "unit": "计数原理",
       "concept": "二项式定理",
       "deep_lesson_ids": [
+        "math.hs.counting.binomial-sum",
         "math.hs.counting.binomial"
       ],
       "teacher_approved_lesson_ids": [],
@@ -1669,6 +1676,7 @@
       "unit": "概率分布与统计推断",
       "concept": "离散型随机变量",
       "deep_lesson_ids": [
+        "math.hs.probability.expectation-linearity",
         "math.hs.probability.discrete-variable",
         "math.hs.probability.discrete-random-variable",
         "math.hs.statistics.variance-affine"

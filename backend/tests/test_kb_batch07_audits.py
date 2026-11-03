@@ -75,18 +75,18 @@ def test_conflict_retains_original_provenance_and_high_risk_differences(row):
     assert row["candidate_boundaries"] == new["boundaries"]
     assert row["active_boundaries"] == old["boundaries"]
 
-def test_all_146_drafts_have_explicit_unverified_step_obligations():
+def test_all_current_drafts_have_explicit_unverified_step_obligations():
     s = PROOFS["summary"]
     assert s == {
-        "deep_draft_lessons":146,
-        "theorems":66,
-        "proof_step_obligations_not_formally_verified":214,
+        "deep_draft_lessons":153,
+        "theorems":73,
+        "proof_step_obligations_not_formally_verified":237,
         "existing_supporting_oracles_linked":48,
         "theorems_with_whole_proof_certification":0,
         "teacher_approved":0,
         "student_solution_steps_verified":0,
     }
-    assert len(PROOFS["lessons"]) == 146
+    assert len(PROOFS["lessons"]) == 153
     assert not any(x["formal_natural_language_proof_verified"] for x in PROOFS["lessons"])
 
 @pytest.mark.parametrize("row",PROOFS["lessons"], ids=lambda x:x["id"])
