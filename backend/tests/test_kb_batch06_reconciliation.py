@@ -25,7 +25,7 @@ def test_39_candidate_records_partition_into_29_and_10():
     assert r["scope"] == "EDITORIAL_CANDIDATE_MERGE_NOT_MATH_CERTIFICATION"
     assert r["summary"] == {
         "source_candidates":39,"nonconflicting_imports":29,"held_for_review":10,
-        "published_active_lessons_after_import":138,"still_teacher_approved":0,
+        "published_active_lessons_after_import":147,"still_teacher_approved":0,
         "candidate_conflicts_automatically_resolved":0,
     }
     candidates=[x for f in ROOT_SOURCE.glob("*batch02.json") for x in json.loads(f.read_text())]

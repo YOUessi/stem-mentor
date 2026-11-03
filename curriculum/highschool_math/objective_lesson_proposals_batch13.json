@@ -7,9 +7,9 @@
   "independent_teacher_approved_matches": 0,
   "student_published_knowledge_count": 0,
   "total_source_objective_candidates": 132,
-  "total_deep_draft_lessons": 192,
-  "proposed_objectives": 99,
-  "proposed_edges": 120,
+  "total_deep_draft_lessons": 201,
+  "proposed_objectives": 107,
+  "proposed_edges": 129,
   "by_track": {
     "COMPULSORY": {
       "objective_candidates": 38,
@@ -27,16 +27,16 @@
     },
     "ELECTIVE_A": {
       "objective_candidates": 18,
-      "has_unreviewed_suggestion": 15,
-      "without_suggestion": 3,
-      "suggestion_edges": 17,
+      "has_unreviewed_suggestion": 18,
+      "without_suggestion": 0,
+      "suggestion_edges": 20,
       "independently_approved": 0
     },
     "ELECTIVE_B": {
       "objective_candidates": 15,
-      "has_unreviewed_suggestion": 5,
-      "without_suggestion": 10,
-      "suggestion_edges": 6,
+      "has_unreviewed_suggestion": 10,
+      "without_suggestion": 5,
+      "suggestion_edges": 12,
       "independently_approved": 0
     },
     "ELECTIVE_C": {
@@ -1900,8 +1900,17 @@
       "candidate_track": "ELECTIVE_A",
       "candidate_source_page": 52,
       "objective_snapshot_sha256": "92ce5494ad4de4cc15200d7feb09e700ac34c92a2027f8a25ccc756ef60ef960",
-      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
-      "proposed_deep_lessons": [],
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.elective.limit.sin-x-over-x",
+          "lesson_snapshot_sha256": "5af0d014c9cb1ac38856fd386746df2f759f568ef41dabf35cda8da90ef92607",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
       "review_questions": [
         "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
         "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
@@ -1999,8 +2008,17 @@
       "candidate_track": "ELECTIVE_A",
       "candidate_source_page": 53,
       "objective_snapshot_sha256": "e138a69cea8fe0efdb1868b195f88975f68f03507ea853875236f026fcae3201",
-      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
-      "proposed_deep_lessons": [],
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.elective.calculus.monotonicity-mvt",
+          "lesson_snapshot_sha256": "b9a81e7f00b9c7835aea22e808b463aed2fa3ec4f7291094ecb7384c4c0c980f",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
       "review_questions": [
         "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
         "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
@@ -2105,8 +2123,17 @@
       "candidate_track": "ELECTIVE_A",
       "candidate_source_page": 54,
       "objective_snapshot_sha256": "2481a0c243efc31b54f23d7662a567726c6097299ee2de54624d8ceb6e6f23bd",
-      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
-      "proposed_deep_lessons": [],
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.elective.matrix.product-dimensions",
+          "lesson_snapshot_sha256": "dabfb0c7bf1171c927d4cfaffc66e91e45a255e284de440de63b58e0b234b436",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
       "review_questions": [
         "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
         "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
@@ -2267,8 +2294,17 @@
       "candidate_track": "ELECTIVE_B",
       "candidate_source_page": 59,
       "objective_snapshot_sha256": "095a5835162597b4e37758b150ff155b4edf8874475eac071d6e60908759eace",
-      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
-      "proposed_deep_lessons": [],
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.elective.multivariable.stationary-boundary",
+          "lesson_snapshot_sha256": "f0a63c522de0e44cabc21ae04d5c185a0f56a15c9143494ac93f8ab10336b2bb",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
       "review_questions": [
         "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
         "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
@@ -2281,8 +2317,17 @@
       "candidate_track": "ELECTIVE_B",
       "candidate_source_page": 60,
       "objective_snapshot_sha256": "937fb0de8bb0ece8fe6a3988423d9dadb060e7b5499da62c66a4f52e96f958c8",
-      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
-      "proposed_deep_lessons": [],
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.elective.linear.rank-vectors",
+          "lesson_snapshot_sha256": "f78468222b15c4b516b985146968fe57ab2d12c81b45d157b6c72479d4423feb",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
       "review_questions": [
         "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
         "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
@@ -2295,8 +2340,17 @@
       "candidate_track": "ELECTIVE_B",
       "candidate_source_page": 60,
       "objective_snapshot_sha256": "7686ac09037c927a27b97c9535e5671a2660226e11dbc208c9dff4e85a369e73",
-      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
-      "proposed_deep_lessons": [],
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.elective.linear.cramer-three",
+          "lesson_snapshot_sha256": "3deda4c93e5ed24334b00cc404fea80f278b32110b2da56352b6db97873b0944",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
       "review_questions": [
         "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
         "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
@@ -2386,8 +2440,17 @@
       "candidate_track": "ELECTIVE_B",
       "candidate_source_page": 62,
       "objective_snapshot_sha256": "8872b909c39d2078f655e4165e69bab2472da5742f685203049326a2a7666e92",
-      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
-      "proposed_deep_lessons": [],
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.elective.statistics.pvalue-null",
+          "lesson_snapshot_sha256": "74cf72d9f74ce7ad4ed09f2aef52cc8e82befdfea39650e332ceae97a26b2fb9",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
       "review_questions": [
         "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
         "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",
@@ -2405,6 +2468,14 @@
         {
           "lesson_id": "math.hs.statistics.correlation-regression",
           "lesson_snapshot_sha256": "9b1444a77b709f2e8fc4cb7cbe23cba08d1580ab920a31d3bb6d6b52d9e22e09",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        },
+        {
+          "lesson_id": "math.hs.elective.statistics.ols-two-parameter",
+          "lesson_snapshot_sha256": "fb82f0f29da530ba64965c73d02d5c8c4b56db7082cedcecfe966fd6228437b5",
           "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
           "source_grounding_review": "NOT_CHECKED",
           "math_proof_review": "NOT_CERTIFIED",
@@ -2437,8 +2508,17 @@
       "candidate_track": "ELECTIVE_B",
       "candidate_source_page": 63,
       "objective_snapshot_sha256": "d79b351ca2cfe60ec02debbb427e63ae3ffd9de844184f350a5e641005179e9f",
-      "match_status": "NO_PROPOSAL_NOT_A_COVERAGE_DECISION",
-      "proposed_deep_lessons": [],
+      "match_status": "EDITORIAL_PROPOSAL_NOT_VERIFIED",
+      "proposed_deep_lessons": [
+        {
+          "lesson_id": "math.hs.elective.model.parametric-circle",
+          "lesson_snapshot_sha256": "98428e4a9bd6cd7d0ed0357db3e50011b3198d56d0f54685b3e173db458ec030",
+          "scope": "TOPIC_OVERLAP_PARTIAL_UNKNOWN",
+          "source_grounding_review": "NOT_CHECKED",
+          "math_proof_review": "NOT_CERTIFIED",
+          "teacher_review": "PENDING"
+        }
+      ],
       "review_questions": [
         "逐条核对官方正文要求、所在页和本项目拆分是否对应？",
         "该草案的定义、所有适用前提、证明、例题、反例是否覆盖这一目标？",

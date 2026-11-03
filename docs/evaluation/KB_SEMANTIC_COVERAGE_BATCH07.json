@@ -3,13 +3,13 @@
   "unverified_official_syllabus_coverage": true,
   "generated_from": "curriculum/highschool_math/curriculum_map.json + knowledge/deep/v1/*.json + semantic_gaps_batch04.json",
   "summary": {
-    "engineering_topic_denominator": 129,
-    "deep_draft_documents": 192,
-    "linked_project_topics": 129,
+    "engineering_topic_denominator": 138,
+    "deep_draft_documents": 201,
+    "linked_project_topics": 138,
     "known_partial_topic_count": 23,
     "gap_draft_candidate_count": 23,
     "gap_without_candidate_count": 0,
-    "other_linked_unreviewed_topic_count": 106,
+    "other_linked_unreviewed_topic_count": 115,
     "teacher_reviewed_complete": 0,
     "fully_formally_proven_natural_language_lessons": 0,
     "official_curriculum_atom_mapping_reviewed": 0,
@@ -33,8 +33,8 @@
         "teacher_reviewed_complete": 0
       },
       "选修拓展": {
-        "engineering_topics": 23,
-        "with_any_draft_link": 23,
+        "engineering_topics": 32,
+        "with_any_draft_link": 32,
         "known_partial_topics": 0,
         "gap_draft_candidates": 0,
         "gap_without_candidate": 0,
@@ -2219,6 +2219,150 @@
       "concept": "独立伯努利试验的极大似然估计及边界",
       "deep_lesson_ids": [
         "math.hs.elective.statistics.bernoulli-mle"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-130",
+      "level": "选修拓展",
+      "unit": "选修A课程深度内容",
+      "concept": "基本三角极限 sin(x)/x（弧度制）的夹逼证明",
+      "deep_lesson_ids": [
+        "math.hs.elective.limit.sin-x-over-x"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-131",
+      "level": "选修拓展",
+      "unit": "选修A课程深度内容",
+      "concept": "中值定理推出严格单调与指数型不等式",
+      "deep_lesson_ids": [
+        "math.hs.elective.calculus.monotonicity-mvt"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-132",
+      "level": "选修拓展",
+      "unit": "选修A课程深度内容",
+      "concept": "矩阵乘法维度约束与三阶单位矩阵",
+      "deep_lesson_ids": [
+        "math.hs.elective.matrix.product-dimensions"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-133",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "二元函数驻点与闭域边界极值的区别",
+      "deep_lesson_ids": [
+        "math.hs.elective.multivariable.stationary-boundary"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-134",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "三维三向量行列式判定线性相关",
+      "deep_lesson_ids": [
+        "math.hs.elective.linear.rank-vectors"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-135",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "三元线性方程组的 Cramer 法则及零行列式边界",
+      "deep_lesson_ids": [
+        "math.hs.elective.linear.cramer-three"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-136",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "零假设、单侧 p 值与一类错误的准确区分",
+      "deep_lesson_ids": [
+        "math.hs.elective.statistics.pvalue-null"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-137",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "简单线性回归最小二乘斜率公式与可识别性",
+      "deep_lesson_ids": [
+        "math.hs.elective.statistics.ols-two-parameter"
+      ],
+      "teacher_approved_lesson_ids": [],
+      "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
+      "explicit_missing_subskill": null,
+      "recommended_next_lesson": null,
+      "gap_candidate_draft_present": false,
+      "gap_review_status": null,
+      "curriculum_atom_officially_verified": false
+    },
+    {
+      "engineering_topic_id": "HS-MATH-138",
+      "level": "选修拓展",
+      "unit": "选修B课程深度内容",
+      "concept": "参数方程圆轨迹与速度非零条件",
+      "deep_lesson_ids": [
+        "math.hs.elective.model.parametric-circle"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",

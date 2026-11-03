@@ -15,14 +15,14 @@ from app.deep_knowledge import (
 
 def test_course_matrix_count_and_levels_are_engineering_not_official():
     topic_rows = curriculum()
-    assert len(topic_rows) == 129
-    assert len({row["id"] for row in topic_rows}) == 129
+    assert len(topic_rows) ==138
+    assert len({row["id"] for row in topic_rows}) ==138
     assert {row["level"] for row in topic_rows} == {"必修", "选择性必修", "选修拓展"}
     report = coverage_report()
     assert report["scope"] == "PROJECT_ENGINEERING_MAP_NOT_OFFICIAL_ATOMIC_SYLLABUS"
-    assert sum(r["engineering_topics"] for r in report["by_level"].values()) == 129
+    assert sum(r["engineering_topics"] for r in report["by_level"].values()) ==138
     assert sum(r["with_deep_draft"] for r in report["by_level"].values()) == report["mapped_curriculum_ids"]
-    assert report["mapped_curriculum_ids"] + sum(r["without_deep_draft"] for r in report["by_level"].values()) == 129
+    assert report["mapped_curriculum_ids"] + sum(r["without_deep_draft"] for r in report["by_level"].values()) ==138
 
 
 def test_all_non_authoritative_lessons_and_no_fake_approvals():
@@ -81,9 +81,9 @@ def test_forged_teacher_approval_is_rejected_even_with_claimed_metadata():
 
 def test_there_is_no_approval_and_electives_are_not_overstated():
     c = coverage_report()
-    assert c["by_level"]["选修拓展"]["engineering_topics"] == 23
+    assert c["by_level"]["选修拓展"]["engineering_topics"] == 32
     assert c["by_level"]["选修拓展"]["teacher_approved"] == 0
-    assert c["by_level"]["选修拓展"]["with_deep_draft"] == 23  # 7 legacy + 16 authored unapproved A/B candidates
+    assert c["by_level"]["选修拓展"]["with_deep_draft"] == 32  # 7 legacy + 25 authored unapproved A/B candidates
     assert sum(v["teacher_approved"] for v in c["by_level"].values()) == 0
     official = json.loads((ROOT/"curriculum/highschool_math/official_scope_v1.json").read_text())
     assert {x["id"] for x in official["tracks"]} >= {
