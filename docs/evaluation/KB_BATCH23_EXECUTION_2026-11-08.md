@@ -58,6 +58,13 @@ The 7 new theorem drafts contain **22 unverified proof steps**, all in a new cla
 
 `evaluations/results/2026-11-08-kb-batch23/` stores initial failed run logs, focused review logs, final backend/node/CI logs, policy/retrieval, and browser evidence. No genuine student data or external LLM calls were used.
 
+## Source SHA and GitHub delivery verification
+
+- Tested Mac source implementation commit: `f0a26cda8961df78c5c5c1c8f567cc8c47968205`; Mac versioned evidence commit: `6b5e871e43c08b47874917dd34ad7d3f5d3dc96c`.
+- GitHub Draft PR: [#49](https://github.com/YOUessi/stem-mentor/pull/49), stacked on #48. First remote combined commit `fcd927d1172c428589d1d700dd3bc47ba4b4066e` synchronized 63 changed files with **Git Tree SHA `9844d9bd8f303aa548f00572089d29e2d7a69ef8`**, identical to the Mac tree after completed tests/evidence.
+- GitHub Actions **Simulation test suite** run [42423881572](https://github.com/YOUessi/stem-mentor/actions/runs/42423881572) completed `success` on that exact combined remote commit, independently of Mac tests. This report-only provenance update does not change authored mathematics or tests.
+- Mac outbound Git HTTPS push failed the 12-second low-speed threshold, so Github native Git Tree/Commit/Ref operations were used; individual key content files were read back and matched expected Git blob hashes.
+
 ## Next batch high-value dependencies
 
 1. **K00:** independent original-source clause split and overlap deduplication; verify compulsory, selective compulsory and elective A–E per-clause denominators, maintaining NULL for unreviewed.
