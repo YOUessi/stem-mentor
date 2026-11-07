@@ -25,7 +25,7 @@ def audit():
     proposals=editorial_review_queue()
     all_docs=lessons()
     assert len(authored)==11 and len(mapping)==11
-    assert len(all_docs)==224 and len(curriculum())==161
+    assert len(all_docs)>=224 and len(curriculum())==161
     assert len({r["id"] for r in authored})==11
     assert {r["curriculum_ids"][0] for r in authored}=={m["id"] for m in mapping}
     assert {r["curriculum_ids"][0] for r in authored}=={f"HS-MATH-{i}" for i in range(151,162)}
@@ -57,7 +57,8 @@ def audit():
         "new_pending_theorem_steps":12,
         "new_teacher_only_worked_examples":22,
         "new_engineering_nodes":11,
-        "deep_drafts_total":224,
+        "deep_drafts_total":len(all_docs),
+        "deep_drafts_total_at_batch17":224,
         "engineering_nodes_total":161,
         "curriculum_objective_candidate_sample":132,
         "candidate_objectives_with_unreviewed_proposals":132,
@@ -86,5 +87,5 @@ def main():
     else:
         OUT.parent.mkdir(parents=True,exist_ok=True)
         OUT.write_text(report,encoding="utf8")
-    print("PASS Batch17 editorial audit; 224 drafts; 132/132 only author-proposed; teacher=0")
+    print("PASS Batch17 historical 224 draft snapshot; current=",len(lessons()),"132/132 author-proposed; teacher=0")
 if __name__=="__main__":main()

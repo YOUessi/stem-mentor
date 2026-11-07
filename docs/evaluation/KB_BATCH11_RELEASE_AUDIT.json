@@ -2,10 +2,10 @@
   "scope": "AUTHOR_DRAFT_MATH_ORACLES_NOT_FORMAL_PROOF_OR_TEACHER_RELEASE",
   "prior_drafts": 164,
   "new_theorem_drafts": 12,
-  "total_drafts": 224,
-  "theorem_drafts": 136,
-  "concept_drafts": 70,
-  "method_drafts": 18,
+  "total_drafts": 235,
+  "theorem_drafts": 142,
+  "concept_drafts": 71,
+  "method_drafts": 22,
   "source_sha256": "b5d0032b37ee55e558a8e18ea0245b8d7116533cf3b8b299c996811a97eaf63c",
   "new_ids": [
     "math.hs.logarithm.quotient-law",
@@ -21,7 +21,7 @@
     "math.hs.geometry.centroid-median",
     "math.hs.probability.indicator-linearity"
   ],
-  "uncertified_proof_step_obligations": 451,
+  "uncertified_proof_step_obligations": 474,
   "full_formal_proofs_verified": 0,
   "teacher_approved": 0,
   "student_deep_knowledge_released": 0,

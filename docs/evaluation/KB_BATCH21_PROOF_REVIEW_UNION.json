@@ -1,0 +1,233 @@
+{
+  "schema_version": "batch21-proof-union-v1",
+  "frozen_batch20_baseline_sha256": "9921810f7762951be6786a4f1b532d8f8762bad8f1602611bd7a2f160df65847",
+  "new_batch21_lesson_blob_sha256": "300c5f4df4548b76fd3e859cfd7cbf988f86b479edfe7674bfa837d8ca032754",
+  "scope": "EDITORIAL_PROOF_OBLIGATIONS_UNVERIFIED",
+  "summary": {
+    "existing_historical_draft_lessons": 224,
+    "batch21_new_deep_drafts": 11,
+    "current_draft_lessons": 235,
+    "historical_unverified_proof_steps": 451,
+    "batch21_unverified_proof_steps": 23,
+    "total_current_unverified_proof_steps": 474,
+    "formal_proof_certifications": 0,
+    "teacher_approved": 0,
+    "student_publication": 0,
+    "official_atomic_denominator": null,
+    "official_coverage_rate": null
+  },
+  "new_proof_review_queue": [
+    {
+      "id": "math.hs.elective.sequence.e-series-bounds#1",
+      "lesson_id": "math.hs.elective.sequence.e-series-bounds",
+      "step_index": 1,
+      "claim_reason_sha256": "d3ec00afcc3f510aa49293c9fa3ac66c0bd4a6a6fee0371a1c2d29d751e16c2d",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.sequence.e-series-bounds#2",
+      "lesson_id": "math.hs.elective.sequence.e-series-bounds",
+      "step_index": 2,
+      "claim_reason_sha256": "7a315d268186cb44f4c31b6e3992365cd34bfe22c7ad58995535e7bdfe72778e",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.sequence.e-series-bounds#3",
+      "lesson_id": "math.hs.elective.sequence.e-series-bounds",
+      "step_index": 3,
+      "claim_reason_sha256": "58e329b6cb44f00691e382cd0d172156324efbc5f0977fc1980bac24ea747c56",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.matrix.orthogonal-isometry#1",
+      "lesson_id": "math.hs.elective.matrix.orthogonal-isometry",
+      "step_index": 1,
+      "claim_reason_sha256": "31205c25b1d6e65f583cbb77cf6b982341037a24eaaf0b79a10e9db6658f6e85",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.matrix.orthogonal-isometry#2",
+      "lesson_id": "math.hs.elective.matrix.orthogonal-isometry",
+      "step_index": 2,
+      "claim_reason_sha256": "64009ad8e8a670372342c9ee809c6811acfa10ec0e7149865cc7fb309fe1acf1",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.matrix.orthogonal-isometry#3",
+      "lesson_id": "math.hs.elective.matrix.orthogonal-isometry",
+      "step_index": 3,
+      "claim_reason_sha256": "e1ca1953b5a06ee8537d005b075fea00c93fd96ac74ab0aa7c80b86246ecd29c",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.matrix.orthogonal-isometry#4",
+      "lesson_id": "math.hs.elective.matrix.orthogonal-isometry",
+      "step_index": 4,
+      "claim_reason_sha256": "dd0cda0ec72f83781ba6387cb71d350cc9fecdcef510e870076bd88ffba3678a",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.linear.ranks-consistency#1",
+      "lesson_id": "math.hs.elective.linear.ranks-consistency",
+      "step_index": 1,
+      "claim_reason_sha256": "0861c91e3ba415f8c9825a44bd8c59b7e9c9bf0b5eee9d30f1e60ddf96bff61a",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.linear.ranks-consistency#2",
+      "lesson_id": "math.hs.elective.linear.ranks-consistency",
+      "step_index": 2,
+      "claim_reason_sha256": "0b431d590773363d5ecd76efa54ca56ab5fae1b3d612ac939e80bd2951a01858",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.linear.ranks-consistency#3",
+      "lesson_id": "math.hs.elective.linear.ranks-consistency",
+      "step_index": 3,
+      "claim_reason_sha256": "05d3fa124bb28fd8c1031d55b5eda4b6f222da0dfff72164fa689e15b7bcfd2a",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.linear.ranks-consistency#4",
+      "lesson_id": "math.hs.elective.linear.ranks-consistency",
+      "step_index": 4,
+      "claim_reason_sha256": "956414c75e306cd81555ba81cf3e76ccce5173f223446e71a65c9ed306c532c8",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.optimization.polytope-vertices#1",
+      "lesson_id": "math.hs.elective.optimization.polytope-vertices",
+      "step_index": 1,
+      "claim_reason_sha256": "cc05036e02d6fe56ce1001ec0eaec829328a68911fb7fe5699ed8e58351d162d",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.optimization.polytope-vertices#2",
+      "lesson_id": "math.hs.elective.optimization.polytope-vertices",
+      "step_index": 2,
+      "claim_reason_sha256": "f39766bc2d30c5d73d6c09e44156144d930b09f0137c060bc50ba31241aab3a3",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.optimization.polytope-vertices#3",
+      "lesson_id": "math.hs.elective.optimization.polytope-vertices",
+      "step_index": 3,
+      "claim_reason_sha256": "8e5f21e96fa545bee23232d9d6e33e98821d8ec364675c6f583a552a6ac6c08c",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.optimization.polytope-vertices#4",
+      "lesson_id": "math.hs.elective.optimization.polytope-vertices",
+      "step_index": 4,
+      "claim_reason_sha256": "7cd4e4beedbae8ee01c714dc071dde47afebb0ffc286070cecbf3a137f2b0c11",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.skew-lines-distance#1",
+      "lesson_id": "math.hs.elective.geometry.skew-lines-distance",
+      "step_index": 1,
+      "claim_reason_sha256": "71c41d79f3a473290aa12057b1517b066e6a3a3d9dae27da237c29788c4b9617",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.skew-lines-distance#2",
+      "lesson_id": "math.hs.elective.geometry.skew-lines-distance",
+      "step_index": 2,
+      "claim_reason_sha256": "09a32cbf5eebb8308046b8df4d384852b39c5a9b06b5e45bf72f620acf281c69",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.skew-lines-distance#3",
+      "lesson_id": "math.hs.elective.geometry.skew-lines-distance",
+      "step_index": 3,
+      "claim_reason_sha256": "eed8cff03d004d16f4793a8369f284dac628cad4ddfce9fc26641f23278319cd",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.skew-lines-distance#4",
+      "lesson_id": "math.hs.elective.geometry.skew-lines-distance",
+      "step_index": 4,
+      "claim_reason_sha256": "fb16c751557eb29c034c4c05f42bb8f902135ee3f5b1c2d0a37392a9fb67cb04",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.difference.affine-fixed-point#1",
+      "lesson_id": "math.hs.elective.difference.affine-fixed-point",
+      "step_index": 1,
+      "claim_reason_sha256": "22724b961e88506a5ad521b5b373f403f74bb54781682f5b5fff0f21bcb20e5a",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.difference.affine-fixed-point#2",
+      "lesson_id": "math.hs.elective.difference.affine-fixed-point",
+      "step_index": 2,
+      "claim_reason_sha256": "3e4039b2db6d54b955ac64e93c69f0203bb019a9c2ef173d7961b19cbf41f05f",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.difference.affine-fixed-point#3",
+      "lesson_id": "math.hs.elective.difference.affine-fixed-point",
+      "step_index": 3,
+      "claim_reason_sha256": "3b5b7a8edaea59449a985d943c6aced0941b7501a42a3e7b08e135f241254d73",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.difference.affine-fixed-point#4",
+      "lesson_id": "math.hs.elective.difference.affine-fixed-point",
+      "step_index": 4,
+      "claim_reason_sha256": "2a657e0fbc0687d6c9d538d64140e857684156249d92bcdda5ef045390281e7f",
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    }
+  ],
+  "warnings": [
+    "23 new natural-language proof steps remain unverified; finite exact pytest checks do not formally certify them.",
+    "Old 451-step risk priorities are frozen; new steps require separate independent human proof risk triage.",
+    "This worklist is editor-only; student challenge and teacher signing are unavailable."
+  ]
+}

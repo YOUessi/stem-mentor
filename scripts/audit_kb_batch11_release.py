@@ -17,19 +17,22 @@ from app.main import app
 
 DOC=ROOT/"knowledge/deep/v1/algebra_count_geometry_probability_batch11.json"
 PROOFS=ROOT/"docs/evaluation/KB_PROOF_OBLIGATIONS_BATCH07.json"
+UNION=ROOT/"docs/evaluation/KB_BATCH21_PROOF_REVIEW_UNION.json"
 OUT=ROOT/"docs/evaluation/KB_BATCH11_RELEASE_AUDIT.json"
 def audit():
     rows=json.loads(DOC.read_text(encoding="utf8"))
     contents=lessons()
     proof=json.loads(PROOFS.read_text(encoding="utf8"))
+    union=json.loads(UNION.read_text(encoding="utf8"))["summary"]
     assert len(rows)==12 and len({x["id"] for x in rows})==12
     assert len(contents)>=176 and all(x.review.status=="REVIEW_PENDING" for x in contents)
     assert all(x["kind"]=="theorem" and x["review"]["status"]=="REVIEW_PENDING" and
                x["teacher_solution_visibility"]=="TEACHER_ONLY" and
                len(x["worked_examples"])>=2 and len(x["proof_steps"])>=3 for x in rows)
-    assert proof["summary"]["deep_draft_lessons"]==len(contents)
-    assert proof["summary"]["theorems"]==coverage_report()["kinds"]["theorem"]
-    assert proof["summary"]["proof_step_obligations_not_formally_verified"]==sum(len(x.proof_steps) for x in contents)
+    assert proof["summary"]["deep_draft_lessons"]==union["existing_historical_draft_lessons"]
+    assert union["current_draft_lessons"]==len(contents)
+    assert proof["summary"]["theorems"] + sum(x.kind=="theorem" for x in contents if x.id in {r["lesson_id"] for r in json.loads(UNION.read_text(encoding="utf8"))["new_proof_review_queue"]})==coverage_report()["kinds"]["theorem"]
+    assert union["total_current_unverified_proof_steps"]==sum(len(x.proof_steps) for x in contents)
     assert proof["summary"]["theorems_with_whole_proof_certification"]==0
     assert proof["summary"]["teacher_approved"]==0
     assert len({x.id for x in contents})==len(contents)
@@ -54,7 +57,7 @@ def audit():
         "method_drafts":cov["kinds"]["method"],
         "source_sha256":hashlib.sha256(DOC.read_bytes()).hexdigest(),
         "new_ids":[v["id"] for v in rows],
-        "uncertified_proof_step_obligations":proof["summary"]["proof_step_obligations_not_formally_verified"],
+        "uncertified_proof_step_obligations":union["total_current_unverified_proof_steps"],
         "full_formal_proofs_verified":0,
         "teacher_approved":0,
         "student_deep_knowledge_released":0,

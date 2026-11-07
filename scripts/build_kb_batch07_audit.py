@@ -57,7 +57,13 @@ def build():
     evidence = as_json(EVIDENCE)
     sys.path.insert(0, str(ROOT))
     from backend.app.deep_knowledge import lessons  # full strict validation
-    docs = list(lessons())
+    # Preserve the Batch20 historical 224-lesson proof baseline. Batch21 has
+    # a separately versioned 11-lesson / 24-proof-step audit; do not silently
+    # rewrite earlier 451 unverified obligations or risk-priority snapshots.
+    added = {row["id"] for row in as_json(LESSON_DIR / "elective_gap_batch21.json")}
+    docs = [doc for doc in lessons() if doc.id not in added]
+    if len(docs) != 224 or len(added) != 11:
+        raise ValueError("Batch20 frozen mathematical proof baseline drift")
 
     tracks = [t for t in official["tracks"] if t["id"].startswith("ELECTIVE_")]
     if [t["id"] for t in tracks] != ["ELECTIVE_A", "ELECTIVE_B", "ELECTIVE_C",

@@ -52,6 +52,7 @@ def build():
             "algebra_count_geometry_probability_batch11.json",
             "elective_a_b_core_batch14.json",
             "cross_track_batch17.json",
+            "elective_gap_batch21.json",  # New independent material outside frozen Batch02 reconciliation.
         }:
             continue
         for item in read_rows(path):
