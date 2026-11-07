@@ -2,7 +2,7 @@
 """Conservative proof-obligation prioritization and conflict triage report.
 
 No automated step changes REVIEW_PENDING or NOT_FORMALLY_VERIFIED.
-The 32 limited arithmetic checks guard against common false implications;
+The limited arithmetic checks guard against common false implications;
 none select a winning historical version or certify 451 natural-language steps.
 """
 import hashlib

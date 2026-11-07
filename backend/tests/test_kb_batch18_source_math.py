@@ -106,7 +106,7 @@ def test_student_api_reports_evidence_without_claiming_official_completion():
 def test_ten_historic_conflicts_remain_unresolved():
     rows=conflict_subclaim_checks()
     assert set(rows)==set(CONFLICT_IDS)
-    assert sum(len(x["exact_observations"]) for x in rows.values())==32
+    assert sum(len(x["exact_observations"]) for x in rows.values())==33
     assert all(x["teacher_review"]=="PENDING" and not x["source_versions_adjudicated"]
                and not x["full_natural_language_proof_certified"] for x in rows.values())
     assert all(z["passed"] for row in rows.values() for z in row["exact_observations"])
