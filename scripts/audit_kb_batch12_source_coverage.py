@@ -16,7 +16,7 @@ def audit():
     inventory=source_inventory()
     summary=coverage_report()
     progress=public_progress()
-    assert summary["deep_lesson_documents"]==247  # live schema index; historical snapshot remains 235
+    assert summary["deep_lesson_documents"]==267  # live schema index; historical snapshot remains 235
     assert progress["official_atomic_denominator"] is None
     assert progress["complete_curriculum"] is False
     assert all(row["teacher_review"]=="PENDING" for row in inventory["items"])
@@ -29,7 +29,7 @@ def audit():
       "source_page_anchored_candidates":len(inventory["items"]),
       "official_atomic_denominator":None,
       "full_course_coverage_percent":None,
-      "deep_draft_lessons":summary["deep_lesson_documents"] - 12,  # frozen Batch21 snapshot
+      "deep_draft_lessons":summary["deep_lesson_documents"] - 32,  # frozen Batch21 snapshot
 
       "independent_teacher_approved":0,
       "student_deep_lesson_release_count":0,

@@ -38,8 +38,8 @@ def build():
     base=json.loads(BASE.read_text(encoding='utf8'))
     previous=json.loads(PRIOR.read_text(encoding='utf8'))
     new=json.loads(NEW.read_text(encoding='utf8'))
-    course=list(curriculum())
-    current={x.id:x for x in lessons()}
+    course=[x for x in curriculum() if int(x["id"].split("-")[-1])<=173]
+    current={x.id:x for x in lessons() if not x.id.startswith("math.hs.batch23.")}
     historical={x['id'] for x in base['lessons']}
     prior_ids={x['lesson_id'] for x in previous['new_proof_review_queue']}
     b21={r['id'] for r in json.loads((ROOT/'knowledge/deep/v1/elective_gap_batch21.json').read_text(encoding='utf8'))}

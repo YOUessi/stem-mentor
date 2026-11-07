@@ -14,12 +14,12 @@ from audit_kb_semantic_coverage import GAPS, build, validate_gaps
 def test_113_links_do_not_falsely_equal_full_curriculum():
     matrix=build()
     summary=matrix["summary"]
-    assert summary["engineering_topic_denominator"]==173
+    assert summary["engineering_topic_denominator"]==178
     assert summary["deep_draft_documents"]>=86
-    assert summary["linked_project_topics"]==173
+    assert summary["linked_project_topics"]==178
     assert summary["known_partial_topic_count"]>=23
     assert summary["gap_draft_candidate_count"] + summary["gap_without_candidate_count"] == summary["known_partial_topic_count"]
-    assert summary["other_linked_unreviewed_topic_count"]+summary["known_partial_topic_count"]==173
+    assert summary["other_linked_unreviewed_topic_count"]+summary["known_partial_topic_count"]==178
     assert summary["official_curriculum_atom_mapping_reviewed"]==0
     assert summary["explicit_official_elective_tracks_completed"]==0
     assert summary["student_draft_release_allowed"] is False
@@ -67,8 +67,15 @@ def test_gap_catalog_fails_closed_on_forgery(mutation):
 def test_coverage_snapshot_is_stable_and_remains_editorial():
     snapshot=json.loads((ROOT/"docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH07.json").read_text(encoding="utf-8"))
     result=build()
-    assert result["topics"][:len(snapshot["topics"])] == snapshot["topics"]
-    assert len(result["topics"]) == len(snapshot["topics"]) + 12
-    assert result["summary"]["deep_draft_documents"] == snapshot["summary"]["deep_draft_documents"] + 12
-    assert result["summary"]["engineering_topic_denominator"] == snapshot["summary"]["engineering_topic_denominator"] + 12
+    # Historical Batch07 snapshot is immutable; additional Batch23 deep subskills
+    # append review-pending links to existing required-course IDs without approval.
+    for live,historical in zip(result["topics"],snapshot["topics"]):
+        assert live["engineering_topic_id"]==historical["engineering_topic_id"]
+        assert set(historical["deep_lesson_ids"]).issubset(set(live["deep_lesson_ids"]))
+        assert live["teacher_approved_lesson_ids"]==[]
+        assert live["curriculum_atom_officially_verified"] is False
+        assert live["evidence_status"]==historical["evidence_status"]
+    assert len(result["topics"]) == len(snapshot["topics"]) + 17
+    assert result["summary"]["deep_draft_documents"] == snapshot["summary"]["deep_draft_documents"] + 32
+    assert result["summary"]["engineering_topic_denominator"] == snapshot["summary"]["engineering_topic_denominator"] + 17
     assert "CONSERVATIVE" in snapshot["scope"]

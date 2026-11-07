@@ -36,8 +36,8 @@ def test_batch21_11_units_integrated_and_28_open_gaps():
     assert len(ROWS) == 11
     assert len({r["lesson"]["id"] for r in ROWS}) == 11
     assert {r["gap"] for r in ROWS} == {1, 2, 3, 6, 10, 11, 12, 14, 17, 20, 27}
-    assert len(lessons()) == 247  # Includes independent Batch22; Batch21 snapshot itself remains 235
-    assert coverage_report()["deep_lesson_documents"] == 247
+    assert len(lessons()) == 267  # Includes independent Batch22; Batch21 snapshot itself remains 235
+    assert coverage_report()["deep_lesson_documents"] == 267
     assert set(GAPS["summary"]["by_elective_track"]) == {
         "ELECTIVE_A", "ELECTIVE_B", "ELECTIVE_C", "ELECTIVE_D", "ELECTIVE_E"}
     assert GAPS["summary"]["open_editorial_gap_candidates"] == 28

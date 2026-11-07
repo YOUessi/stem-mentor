@@ -12,6 +12,7 @@ from extend_elective_batch15 import apply as elective_advanced_coverage
 from extend_elective_batch16 import apply as elective_cde_coverage
 from extend_cross_track_batch17 import apply as cross_track_candidate_coverage
 from extend_elective_batch22 import apply as gap_batch22_candidate_coverage
+from extend_elective_batch23 import apply as gap_batch23_candidate_coverage
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
@@ -60,6 +61,7 @@ def make():
     rows=elective_cde_coverage(rows)
     rows=cross_track_candidate_coverage(rows)
     rows=gap_batch22_candidate_coverage(rows)
+    rows=gap_batch23_candidate_coverage(rows)
     assert len({v["id"] for v in rows})==len(rows)
     data={"version":"2026-10-19.3","subject":"高中数学",
           "curriculum_reference":"普通高中数学课程标准（2017年版2020年修订）",

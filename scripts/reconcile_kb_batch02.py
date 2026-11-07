@@ -54,6 +54,7 @@ def build():
             "cross_track_batch17.json",
             "elective_gap_batch21.json",  # New independent material outside frozen Batch02 reconciliation.
             "elective_gap_batch22.json",
+            "core_elective_batch23.json",
         }:
             continue
         for item in read_rows(path):

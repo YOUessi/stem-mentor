@@ -27,7 +27,7 @@ def build():
     added=json.loads(MAP.read_text(encoding='utf-8'))
     previous=json.loads(B21.read_text(encoding='utf-8'))
     gaps={int(x['id'][-3:]):x for x in gap_tickets()['tickets']}
-    course={x['id']:x for x in curriculum()}
+    course={x['id']:x for x in curriculum() if int(x['id'].split('-')[-1])<=173}
     assert len(course)==173
     assert len(authors)==len(added)==12
     if {x['gap'] for x in authors}!=EXPECTED_GAPS or len({x['lesson']['id'] for x in authors})!=12:
