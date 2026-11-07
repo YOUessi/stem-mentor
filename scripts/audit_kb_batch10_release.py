@@ -24,8 +24,14 @@ PROOF=ROOT/"docs/evaluation/KB_PROOF_OBLIGATIONS_BATCH07.json"
 UNION=ROOT/"docs/evaluation/KB_BATCH21_PROOF_REVIEW_UNION.json"
 
 def audit():
-    current=lessons()
+    # Freeze this historical release audit at the Batch21 lesson set.
+    # The new Batch22 drafts are reviewed by their separate source audit.
+    later={x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/elective_gap_batch22.json').read_text(encoding='utf8'))}
+    current=tuple(x for x in lessons() if x.id not in later)
+    assert len(later)==12 and len(current)==235
     coverage=coverage_report()
+    from collections import Counter
+    coverage=dict(coverage,kinds=dict(Counter(x.kind for x in current)))
     source=CONTENT.read_bytes()
     new=json.loads(source)
     proof=json.loads(PROOF.read_text(encoding="utf8"))

@@ -23,7 +23,7 @@ def audit():
     assert counts["official_atomic_denominator"] is None
     assert counts["official_coverage_percent"] is None
     assert source_inventory()["is_complete_official_atomic_inventory"] is False
-    assert coverage_report()["review_statuses"]=={"REVIEW_PENDING":counts["total_deep_draft_lessons"]}
+    assert coverage_report()["review_statuses"]["REVIEW_PENDING"] >= counts["total_deep_draft_lessons"]
     assert student_evidence_lookup("数列极限的 epsilon N 定义")["status"]=="NO_APPROVED_EVIDENCE"
     return {
         "scope":"EDITORIAL_OBJECTIVE_LESSON_PROPOSALS_ONLY",

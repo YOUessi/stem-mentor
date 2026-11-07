@@ -1,0 +1,54 @@
+
+==================================== ERRORS ====================================
+____________ ERROR collecting tests/browser/test_ipad_touch_v014.py ____________
+tests/browser/test_ipad_touch_v014.py:10: in <module>
+    page.goto(BASE+"/ipad",wait_until="networkidle")
+.venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:18528: in goto
+    self._sync(
+.venv/lib/python3.13/site-packages/playwright/_impl/_page.py:564: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:157: in goto
+    await self._channel.send(
+.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:78: in send
+    return await self._connection.wrap_api_call(
+.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:636: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8000/ipad
+E   Call log:
+E     - navigating to "http://127.0.0.1:8000/ipad", waiting until "networkidle"
+__________ ERROR collecting tests/browser/test_learning_tools_v07.py ___________
+import file mismatch:
+imported module 'test_learning_tools_v07' has this __file__ attribute:
+  /Users/youtang/Documents/文件/stem-mentor-kb-batch22/backend/tests/test_learning_tools_v07.py
+which is not the same as the test file we want to collect:
+  /Users/youtang/Documents/文件/stem-mentor-kb-batch22/tests/browser/test_learning_tools_v07.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_____________ ERROR collecting tests/browser/test_math_lab_v08.py ______________
+import file mismatch:
+imported module 'test_math_lab_v08' has this __file__ attribute:
+  /Users/youtang/Documents/文件/stem-mentor-kb-batch22/backend/tests/test_math_lab_v08.py
+which is not the same as the test file we want to collect:
+  /Users/youtang/Documents/文件/stem-mentor-kb-batch22/tests/browser/test_math_lab_v08.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_____________ ERROR collecting tests/browser/test_transfer_v013.py _____________
+import file mismatch:
+imported module 'test_transfer_v013' has this __file__ attribute:
+  /Users/youtang/Documents/文件/stem-mentor-kb-batch22/backend/tests/test_transfer_v013.py
+which is not the same as the test file we want to collect:
+  /Users/youtang/Documents/文件/stem-mentor-kb-batch22/tests/browser/test_transfer_v013.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR tests/browser/test_ipad_touch_v014.py - playwright._impl._errors.Error:...
+ERROR tests/browser/test_learning_tools_v07.py
+ERROR tests/browser/test_math_lab_v08.py
+ERROR tests/browser/test_transfer_v013.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 4 errors during collection !!!!!!!!!!!!!!!!!!!!
+1 warning, 4 errors in 14.66s
+PYTEST_EXIT:2

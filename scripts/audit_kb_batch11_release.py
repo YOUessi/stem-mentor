@@ -21,7 +21,11 @@ UNION=ROOT/"docs/evaluation/KB_BATCH21_PROOF_REVIEW_UNION.json"
 OUT=ROOT/"docs/evaluation/KB_BATCH11_RELEASE_AUDIT.json"
 def audit():
     rows=json.loads(DOC.read_text(encoding="utf8"))
-    contents=lessons()
+    # Freeze this historical release audit at the Batch21 lesson set.
+    # The new Batch22 drafts are reviewed by their separate source audit.
+    later={x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/elective_gap_batch22.json').read_text(encoding='utf8'))}
+    contents=tuple(x for x in lessons() if x.id not in later)
+    assert len(later)==12 and len(contents)==235
     proof=json.loads(PROOFS.read_text(encoding="utf8"))
     union=json.loads(UNION.read_text(encoding="utf8"))["summary"]
     assert len(rows)==12 and len({x["id"] for x in rows})==12
@@ -29,9 +33,11 @@ def audit():
     assert all(x["kind"]=="theorem" and x["review"]["status"]=="REVIEW_PENDING" and
                x["teacher_solution_visibility"]=="TEACHER_ONLY" and
                len(x["worked_examples"])>=2 and len(x["proof_steps"])>=3 for x in rows)
+    from collections import Counter
+    historical_kinds=Counter(x.kind for x in contents)
     assert proof["summary"]["deep_draft_lessons"]==union["existing_historical_draft_lessons"]
     assert union["current_draft_lessons"]==len(contents)
-    assert proof["summary"]["theorems"] + sum(x.kind=="theorem" for x in contents if x.id in {r["lesson_id"] for r in json.loads(UNION.read_text(encoding="utf8"))["new_proof_review_queue"]})==coverage_report()["kinds"]["theorem"]
+    assert proof["summary"]["theorems"] + sum(x.kind=="theorem" for x in contents if x.id in {r["lesson_id"] for r in json.loads(UNION.read_text(encoding="utf8"))["new_proof_review_queue"]})==historical_kinds["theorem"]
     assert union["total_current_unverified_proof_steps"]==sum(len(x.proof_steps) for x in contents)
     assert proof["summary"]["theorems_with_whole_proof_certification"]==0
     assert proof["summary"]["teacher_approved"]==0
@@ -46,7 +52,7 @@ def audit():
     attempt=draft_next_question("对数商法则",operator_scope="EDITOR_LOCAL",
                   help_requested=True,consent_to_cloud=True)
     assert attempt.status=="BLOCKED" and not attempt.model_called and not attempt.student_visible
-    cov=coverage_report()
+    cov=dict(coverage_report(),kinds=dict(historical_kinds))
     return {
         "scope":"AUTHOR_DRAFT_MATH_ORACLES_NOT_FORMAL_PROOF_OR_TEACHER_RELEASE",
         "prior_drafts":164,

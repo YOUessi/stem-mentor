@@ -1,0 +1,253 @@
+FFFFFFFFFFFFFFFFFFFFF..FFF...F.......FF..F.F.F...........F.              [100%]
+=================================== FAILURES ===================================
+______________ test_authored_content_schema_and_no_fake_approval _______________
+tests/test_batch11_exact_math.py:43: in test_authored_content_schema_and_no_fake_approval
+    assert len(lessons())==235
+E   AssertionError: assert 247 == 235
+E    +  where 247 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E    +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = <functools._lru_cache_wrapper object at 0x1089eb690>()
+_______ test_course_matrix_count_and_levels_are_engineering_not_official _______
+tests/test_deep_knowledge_v1.py:18: in test_course_matrix_count_and_levels_are_engineering_not_official
+    assert len(topic_rows) ==161
+E   AssertionError: assert 173 == 161
+E    +  where 173 = len(({'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...))
+__________ test_there_is_no_approval_and_electives_are_not_overstated __________
+tests/test_deep_knowledge_v1.py:84: in test_there_is_no_approval_and_electives_are_not_overstated
+    assert c["by_level"]["选修拓展"]["engineering_topics"] == 51
+E   assert 63 == 51
+_________ test_coverage_denominator_is_engineering_not_official_atoms __________
+tests/test_deep_retrieval_batch06.py:56: in test_coverage_denominator_is_engineering_not_official_atoms
+    assert info["curriculum_topic_total"] ==161
+E   assert 173 == 161
+______ test_reconciliation_build_reproducible_and_not_student_http_route _______
+tests/test_kb_batch06_reconciliation.py:79: in test_reconciliation_build_reproducible_and_not_student_http_route
+    assert result.returncode==0, result.stderr+result.stdout
+E   AssertionError: Reconciliation drift: docs/evaluation/KB_BATCH02_RECONCILIATION.json
+E     
+E   assert 1 == 0
+E    +  where 1 = CompletedProcess(args=['/Users/youtang/Documents/文件/stem-mentor-kb-batch22/backend/../.venv/bin/python', '/Users/youta..., '--check'], returncode=1, stdout='', stderr='Reconciliation drift: docs/evaluation/KB_BATCH02_RECONCILIATION.json\n').returncode
+__________________ test_reproducible_reports_and_full_schema ___________________
+tests/test_kb_batch07_audits.py:28: in test_reproducible_reports_and_full_schema
+    assert result.returncode == 0, result.stderr + result.stdout
+E   AssertionError: Traceback (most recent call last):
+E       File "/Users/youtang/Documents/文件/stem-mentor-kb-batch22/scripts/build_kb_batch07_audit.py", line 233, in <module>
+E         main()
+E         ~~~~^^
+E       File "/Users/youtang/Documents/文件/stem-mentor-kb-batch22/scripts/build_kb_batch07_audit.py", line 219, in main
+E         artifacts = build()
+E       File "/Users/youtang/Documents/文件/stem-mentor-kb-batch22/scripts/build_kb_batch07_audit.py", line 66, in build
+E         raise ValueError("Batch20 frozen mathematical proof baseline drift")
+E     ValueError: Batch20 frozen mathematical proof baseline drift
+E     
+E   assert 1 == 0
+E    +  where 1 = CompletedProcess(args=['/Users/youtang/Documents/文件/stem-mentor-kb-batch22/backend/../.venv/bin/python', 'scripts/buil...r("Batch20 frozen mathematical proof baseline drift")\nValueError: Batch20 frozen mathematical proof baseline drift\n').returncode
+______ test_all_current_drafts_have_explicit_unverified_step_obligations _______
+tests/test_kb_batch07_audits.py:85: in test_all_current_drafts_have_explicit_unverified_step_obligations
+    union = build_proof_union()
+            ^^^^^^^^^^^^^^^^^^^
+../scripts/build_kb_batch21_proof_union.py:37: in build
+    raise ValueError("Old + new proof queue must exactly cover current independent draft IDs")
+E   ValueError: Old + new proof queue must exactly cover current independent draft IDs
+______________ test_all_source_candidates_have_a_review_queue_row ______________
+tests/test_kb_batch13_editorial_links.py:15: in test_all_source_candidates_have_a_review_queue_row
+    data=editorial_review_queue()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:92: in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:36: in validate_proposals
+    raise ValueError("Deep lesson count drift")
+E   ValueError: Deep lesson count drift
+__________________ test_no_human_teacher_or_student_evidence ___________________
+tests/test_kb_batch13_editorial_links.py:23: in test_no_human_teacher_or_student_evidence
+    stats=internal_review_counts()
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:95: in internal_review_counts
+    data=editorial_review_queue()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:92: in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:36: in validate_proposals
+    raise ValueError("Deep lesson count drift")
+E   ValueError: Deep lesson count drift
+_ test_elective_candidates_have_distinct_engineering_ids_and_real_objective_targets _
+tests/test_kb_batch14_elective.py:37: in test_elective_candidates_have_distinct_engineering_ids_and_real_objective_targets
+    assert len(curriculum())==161
+E   AssertionError: assert 173 == 161
+E    +  where 173 = len(({'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...))
+E    +    where ({'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...) = curriculum()
+_____ test_source_schema_mathematical_proof_obligations_are_not_approvals ______
+tests/test_kb_batch14_elective.py:40: in test_source_schema_mathematical_proof_obligations_are_not_approvals
+    assert len(lessons())==235
+E   AssertionError: assert 247 == 235
+E    +  where 247 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E    +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = lessons()
+________ test_16_editorial_proposals_still_do_not_certify_any_objective ________
+tests/test_kb_batch14_elective.py:59: in test_16_editorial_proposals_still_do_not_certify_any_objective
+    d=editorial_review_queue()
+      ^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:92: in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:36: in validate_proposals
+    raise ValueError("Deep lesson count drift")
+E   ValueError: Deep lesson count drift
+_________________ test_whole_proof_status_remains_uncertified __________________
+tests/test_kb_batch14_elective.py:172: in test_whole_proof_status_remains_uncertified
+    assert r["kinds"]["theorem"]==142  # 136 Batch20 + 6 Batch21 pending theorem drafts
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   assert 148 == 142
+___________ test_9_unique_authored_theorems_and_no_teacher_approval ____________
+tests/test_kb_batch15_advanced.py:27: in test_9_unique_authored_theorems_and_no_teacher_approval
+    assert len(lessons())==235 and len(curriculum())==161
+E   AssertionError: assert (247 == 235)
+E    +  where 247 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E    +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = lessons()
+________ test_8_new_objective_candidates_have_only_editorial_proposals _________
+tests/test_kb_batch15_advanced.py:41: in test_8_new_objective_candidates_have_only_editorial_proposals
+    p=editorial_review_queue()
+      ^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:92: in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:36: in validate_proposals
+    raise ValueError("Deep lesson count drift")
+E   ValueError: Deep lesson count drift
+____ test_all_twelve_editorial_drafts_are_structurally_valid_and_unapproved ____
+tests/test_kb_batch16_electives.py:23: in test_all_twelve_editorial_drafts_are_structurally_valid_and_unapproved
+    assert len(lessons())==235 and len(curriculum())==161
+E   AssertionError: assert (247 == 235)
+E    +  where 247 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E    +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = lessons()
+____ test_proposal_scope_is_clearly_unverified_and_no_student_data_released ____
+tests/test_kb_batch16_electives.py:41: in test_proposal_scope_is_clearly_unverified_and_no_student_data_released
+    a=editorial_review_queue()
+      ^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:92: in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:36: in validate_proposals
+    raise ValueError("Deep lesson count drift")
+E   ValueError: Deep lesson count drift
+___ test_pending_cross_track_editors_are_listed_without_fake_official_theme ____
+tests/test_kb_batch17_ci_scope_regression.py:17: in test_pending_cross_track_editors_are_listed_without_fake_official_theme
+    assert report["totals"]["legacy_engineering_topics"] == 161
+E   assert 173 == 161
+____________ test_batch17_source_and_structured_lessons_unapproved _____________
+tests/test_kb_batch17_cross_track.py:26: in test_batch17_source_and_structured_lessons_unapproved
+    assert len(lessons())==235 and len(curriculum())==161
+E   AssertionError: assert (247 == 235)
+E    +  where 247 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E    +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = lessons()
+_____ test_thirteen_sample_objective_links_are_explicit_but_not_certified ______
+tests/test_kb_batch17_cross_track.py:48: in test_thirteen_sample_objective_links_are_explicit_but_not_certified
+    data=editorial_review_queue()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:92: in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/objective_proposals.py:36: in validate_proposals
+    raise ValueError("Deep lesson count drift")
+E   ValueError: Deep lesson count drift
+______________ test_batch21_11_units_integrated_and_28_open_gaps _______________
+tests/test_kb_batch21_gap_math.py:39: in test_batch21_11_units_integrated_and_28_open_gaps
+    assert len(lessons()) == 235  # Batch20: 224, Batch21: +11
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: assert 247 == 235
+E    +  where 247 = len((DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...))
+E    +    where (DeepLesson(id='math.hs.probability.binomial-distribution', curriculum_ids=['HS-MATH-099'], kind='theorem', title='独立伯...EW_PENDING', reviewer_id=None, reviewed_at=None, review_record=None), teacher_solution_visibility='TEACHER_ONLY'), ...) = lessons()
+_____________ test_113_links_do_not_falsely_equal_full_curriculum ______________
+tests/test_kb_semantic_coverage_batch04.py:17: in test_113_links_do_not_falsely_equal_full_curriculum
+    assert summary["engineering_topic_denominator"]==161
+E   assert 173 == 161
+____________ test_coverage_snapshot_is_stable_and_remains_editorial ____________
+tests/test_kb_semantic_coverage_batch04.py:70: in test_coverage_snapshot_is_stable_and_remains_editorial
+    assert result==snapshot
+E   AssertionError: assert {'generated_f....}, ...], ...} == {'generated_f....}, ...], ...}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Differing items:
+E     {'topics': [{'concept': '集合及其表示', 'curriculum_atom_officially_verified': False, 'deep_lesson_ids': ['math.hs.sets.unio...alse, 'deep_lesson_ids': ['math.hs.inequality.sign-multiplication'], 'engineering_topic_id': 'HS-MATH-006', ...}, ...]} != {'topics': [{'concept': '集合及其表示', 'curriculum_atom_officially_verified': False, 'deep_lesson_ids': ['math.hs.sets.unio...alse, 'deep_lesson_ids': ['math.hs.inequality.sign-multiplication'], 'engineering_topic_id': 'HS-MATH-006', ...}, ...]}
+E     {'summary': {'deep_draft_document...
+E     
+E     ...Full output truncated (2 lines hidden), use '-vv' to show
+____ test_curriculum_mapping_is_complete_inventory_not_full_implementation _____
+tests/test_math_lab_v08.py:24: in test_curriculum_mapping_is_complete_inventory_not_full_implementation
+    assert len(body["topics"])==161
+E   AssertionError: assert 173 == 161
+E    +  where 173 = len([{'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...])
+___________ test_v010_adds_ten_scenes_without_losing_the_original_39 ___________
+tests/test_v010_catalog.py:29: in test_v010_adds_ten_scenes_without_losing_the_original_39
+    assert len(body['topics'])==161 and body['no_llm_api'] is True
+E   AssertionError: assert (173 == 161)
+E    +  where 173 = len([{'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...])
+__________ test_v010_builders_are_deterministic_and_keep_prior_models __________
+tests/test_v010_catalog.py:98: in test_v010_builders_are_deterministic_and_keep_prior_models
+    subprocess.run([sys.executable,str(tmp_path/file)],cwd=tmp_path,check=True,capture_output=True)
+../../../../miniforge3/lib/python3.13/subprocess.py:577: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/Users/youtang/Documents/文件/stem-mentor-kb-batch22/backend/../.venv/bin/python', '/private/tmp/pytest-of-youtang/pytest-10/test_v010_builders_are_determi0/build_curriculum.py']' returned non-zero exit status 1.
+_______________ test_v011_presets_exact_and_previous_49_retained _______________
+tests/test_v011_sequences.py:26: in test_v011_presets_exact_and_previous_49_retained
+    assert body["counts"]["planned_concepts"]<=84
+E   assert 96 <= 84
+___________ test_extrema_catalog_five_fixed_models_without_spoilers ____________
+tests/test_v011b_extrema.py:20: in test_extrema_catalog_five_fixed_models_without_spoilers
+    assert data["counts"]["total_concepts"]==161
+E   assert 173 == 161
+_________ test_scene_catalog_exact_count_and_real_curriculum_evidence __________
+tests/test_v012_probability.py:18: in test_scene_catalog_exact_count_and_real_curriculum_evidence
+    assert len(cat["topics"])==161
+E   AssertionError: assert 173 == 161
+E    +  where 173 = len([{'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...])
+____________ test_v09_ten_new_scenes_preserve_previous_twenty_nine _____________
+tests/test_v09_catalog.py:25: in test_v09_ten_new_scenes_preserve_previous_twenty_nine
+    assert len(data['topics'])==161
+E   AssertionError: assert 173 == 161
+E    +  where 173 = len([{'available_presets': ['sets-operations', 'interval-single'], 'capability': '可打开具体受控数学场景', 'capability_limits': '有限全集..., 'capability': '可打开具体受控数学场景', 'capability_limits': '只观察一次不等式系数符号与方向；一般等式变换证明未实现。', 'concept': '等式性质与不等式性质', ...}, ...])
+___ test_catalog_builders_reproduce_versioned_evidence_without_mutating_repo ___
+tests/test_v09_catalog.py:74: in test_catalog_builders_reproduce_versioned_evidence_without_mutating_repo
+    subprocess.run([sys.executable,str(tmp_path/'build_curriculum.py')],cwd=tmp_path,check=True,capture_output=True)
+../../../../miniforge3/lib/python3.13/subprocess.py:577: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/Users/youtang/Documents/文件/stem-mentor-kb-batch22/backend/../.venv/bin/python', '/private/tmp/pytest-of-youtang/pytest-10/test_catalog_builders_reproduc0/build_curriculum.py']' returned non-zero exit status 1.
+=============================== warnings summary ===============================
+../../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_batch11_exact_math.py::test_authored_content_schema_and_no_fake_approval
+FAILED tests/test_deep_knowledge_v1.py::test_course_matrix_count_and_levels_are_engineering_not_official
+FAILED tests/test_deep_knowledge_v1.py::test_there_is_no_approval_and_electives_are_not_overstated
+FAILED tests/test_deep_retrieval_batch06.py::test_coverage_denominator_is_engineering_not_official_atoms
+FAILED tests/test_kb_batch06_reconciliation.py::test_reconciliation_build_reproducible_and_not_student_http_route
+FAILED tests/test_kb_batch07_audits.py::test_reproducible_reports_and_full_schema
+FAILED tests/test_kb_batch07_audits.py::test_all_current_drafts_have_explicit_unverified_step_obligations
+FAILED tests/test_kb_batch13_editorial_links.py::test_all_source_candidates_have_a_review_queue_row
+FAILED tests/test_kb_batch13_editorial_links.py::test_no_human_teacher_or_student_evidence
+FAILED tests/test_kb_batch14_elective.py::test_elective_candidates_have_distinct_engineering_ids_and_real_objective_targets
+FAILED tests/test_kb_batch14_elective.py::test_source_schema_mathematical_proof_obligations_are_not_approvals
+FAILED tests/test_kb_batch14_elective.py::test_16_editorial_proposals_still_do_not_certify_any_objective
+FAILED tests/test_kb_batch14_elective.py::test_whole_proof_status_remains_uncertified
+FAILED tests/test_kb_batch15_advanced.py::test_9_unique_authored_theorems_and_no_teacher_approval
+FAILED tests/test_kb_batch15_advanced.py::test_8_new_objective_candidates_have_only_editorial_proposals
+FAILED tests/test_kb_batch16_electives.py::test_all_twelve_editorial_drafts_are_structurally_valid_and_unapproved
+FAILED tests/test_kb_batch16_electives.py::test_proposal_scope_is_clearly_unverified_and_no_student_data_released
+FAILED tests/test_kb_batch17_ci_scope_regression.py::test_pending_cross_track_editors_are_listed_without_fake_official_theme
+FAILED tests/test_kb_batch17_cross_track.py::test_batch17_source_and_structured_lessons_unapproved
+FAILED tests/test_kb_batch17_cross_track.py::test_thirteen_sample_objective_links_are_explicit_but_not_certified
+FAILED tests/test_kb_batch21_gap_math.py::test_batch21_11_units_integrated_and_28_open_gaps
+FAILED tests/test_kb_semantic_coverage_batch04.py::test_113_links_do_not_falsely_equal_full_curriculum
+FAILED tests/test_kb_semantic_coverage_batch04.py::test_coverage_snapshot_is_stable_and_remains_editorial
+FAILED tests/test_math_lab_v08.py::test_curriculum_mapping_is_complete_inventory_not_full_implementation
+FAILED tests/test_v010_catalog.py::test_v010_adds_ten_scenes_without_losing_the_original_39
+FAILED tests/test_v010_catalog.py::test_v010_builders_are_deterministic_and_keep_prior_models
+FAILED tests/test_v011_sequences.py::test_v011_presets_exact_and_previous_49_retained
+FAILED tests/test_v011b_extrema.py::test_extrema_catalog_five_fixed_models_without_spoilers
+FAILED tests/test_v012_probability.py::test_scene_catalog_exact_count_and_real_curriculum_evidence
+FAILED tests/test_v09_catalog.py::test_v09_ten_new_scenes_preserve_previous_twenty_nine
+FAILED tests/test_v09_catalog.py::test_catalog_builders_reproduce_versioned_evidence_without_mutating_repo
+31 failed, 28 passed, 1 warning in 6.70s

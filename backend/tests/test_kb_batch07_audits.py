@@ -85,14 +85,23 @@ def test_all_current_drafts_have_explicit_unverified_step_obligations():
     union = build_proof_union()
     new_ids = {r["lesson_id"] for r in union["new_proof_review_queue"]}
     assert s["deep_draft_lessons"] == 224
-    assert s["deep_draft_lessons"] + 11 == len(docs) == union["summary"]["current_draft_lessons"]
-    assert s["theorems"] + sum(x.kind == "theorem" for x in docs if x.id in new_ids) == sum(x.kind == "theorem" for x in docs)
-    assert s["proof_step_obligations_not_formally_verified"] == 451
-    assert s["proof_step_obligations_not_formally_verified"] + len(union["new_proof_review_queue"]) == sum(len(x.proof_steps) for x in docs) == 474
-    # Methods/concepts have no proof steps, but remain part of the lesson index.
     new_lesson_ids = {r["id"] for r in json.loads((ROOT / "knowledge/deep/v1/elective_gap_batch21.json").read_text(encoding="utf-8"))}
+    batch22_ids = {r["id"] for r in json.loads((ROOT / "knowledge/deep/v1/elective_gap_batch22.json").read_text(encoding="utf-8"))}
+    from scripts.build_kb_batch22_proof_and_scope import build as build_current_review
+    latest_proofs, _ = build_current_review()
+    latest = json.loads(latest_proofs)
+    assert s["deep_draft_lessons"] + 11 == union["summary"]["current_draft_lessons"] == 235  # frozen Batch21 report
+    assert len(docs) == latest["summary"]["current_draft_lessons"] == 247
+    assert s["theorems"] + sum(x.kind == "theorem" for x in docs
+          if x.id in new_lesson_ids | batch22_ids) == sum(x.kind == "theorem" for x in docs)
+    assert s["proof_step_obligations_not_formally_verified"] == 451
+    assert (s["proof_step_obligations_not_formally_verified"]
+            + len(union["new_proof_review_queue"])
+            + len(latest["new_review_obligations"])
+            == sum(len(x.proof_steps) for x in docs) == 497)
+    # Historical, Batch21 and Batch22 reviews remain separate, with no automatic certification.
     assert new_ids <= new_lesson_ids
-    assert {x["id"] for x in PROOFS["lessons"]} | new_lesson_ids == {x.id for x in docs}
+    assert {x["id"] for x in PROOFS["lessons"]} | new_lesson_ids | batch22_ids == {x.id for x in docs}
     assert s["existing_supporting_oracles_linked"] >= 48
     assert s["theorems_with_whole_proof_certification"] == 0
     assert s["teacher_approved"] == 0

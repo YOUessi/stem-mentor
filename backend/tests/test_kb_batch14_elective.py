@@ -34,10 +34,10 @@ def test_elective_candidates_have_distinct_engineering_ids_and_real_objective_ta
         assert obj["track"]==x["elective_track"]
         assert x["level"]=="选修拓展"
         assert x["source"]["teacher_review"]=="PENDING"
-    assert len(curriculum())==161
+    assert len(curriculum())==173
 
 def test_source_schema_mathematical_proof_obligations_are_not_approvals():
-    assert len(lessons())==235
+    assert len(lessons())==247
     for d in BATCH:
         item=DeepLesson.model_validate(d)
         assert item.kind=="theorem" and len(item.proof_steps)>=3
@@ -169,7 +169,7 @@ def test_ivt_and_inverse_direction_counterexample():
 
 def test_whole_proof_status_remains_uncertified():
     r=coverage_report()
-    assert r["kinds"]["theorem"]==142  # 136 Batch20 + 6 Batch21 pending theorem drafts
+    assert r["kinds"]["theorem"]==148  # +6 new Batch22 pending theorem drafts
     assert all(d.review.status=="REVIEW_PENDING" for d in lessons())
     assert not r["human_teacher_review_complete"]
     assert not r["direct_student_teaching_enabled"]

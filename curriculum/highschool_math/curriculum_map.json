@@ -3372,6 +3372,258 @@
         "teacher_review": "PENDING"
       },
       "notes": "课程目标系项目作者拆解；尚无国家课标完整原子分母及正式签审。"
+    },
+    {
+      "id": "HS-MATH-162",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修A课程深度内容",
+      "concept": "二维等距仿射变换的矩阵表示与复合",
+      "editorial_objective_id": "EDITORIAL-GAP-004",
+      "elective_track": "ELECTIVE_A",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-004；纸质页55，页哈希91738424d6a1dbd83646b08167da7d461bb192c28c3a86cc40e540fa5ba43d8b；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-163",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修A课程深度内容",
+      "concept": "三维正交变换保持内积、长度与体积",
+      "editorial_objective_id": "EDITORIAL-GAP-005",
+      "elective_track": "ELECTIVE_A",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-005；纸质页55，页哈希91738424d6a1dbd83646b08167da7d461bb192c28c3a86cc40e540fa5ba43d8b；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-164",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修A课程深度内容",
+      "concept": "连续概率密度的规范化、分布函数和矩",
+      "editorial_objective_id": "EDITORIAL-GAP-007",
+      "elective_track": "ELECTIVE_A",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-007；纸质页56，页哈希b9e7b4d1323e872f902de19c07cb4ba23dbfce554fcc8e56ce49547340606718；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-165",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修A课程深度内容",
+      "concept": "正态总体方差的卡方检验及适用前提",
+      "editorial_objective_id": "EDITORIAL-GAP-008",
+      "elective_track": "ELECTIVE_A",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-008；纸质页57，页哈希b06b9e379b4d7fcc2afbbb1626b51d06efe9468d4af5ece8e6b0bbe1565d6a50；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-166",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修A课程深度内容",
+      "concept": "Pearson 拟合优度检验的期望频数与自由度",
+      "editorial_objective_id": "EDITORIAL-GAP-009",
+      "elective_track": "ELECTIVE_A",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-009；纸质页57，页哈希b06b9e379b4d7fcc2afbbb1626b51d06efe9468d4af5ece8e6b0bbe1565d6a50；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-167",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修B课程深度内容",
+      "concept": "二因素两水平正交设计的平衡与交互混淆",
+      "editorial_objective_id": "EDITORIAL-GAP-013",
+      "elective_track": "ELECTIVE_B",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-013；纸质页62，页哈希3f1e8d22a1dc7f2695a0827cfc57ef84d68bac1b9605038354a7e2a19a02b970；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-168",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修C课程深度内容",
+      "concept": "线性收支均衡与迭代稳定性",
+      "editorial_objective_id": "EDITORIAL-GAP-015",
+      "elective_track": "ELECTIVE_C",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-015；纸质页66，页哈希25bff84e35329b3343b247358a63c1de34d9c733bf6890a892246e54d600f42a；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-169",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修C课程深度内容",
+      "concept": "乘幂生产模型的对数线性化与经济解释边界",
+      "editorial_objective_id": "EDITORIAL-GAP-016",
+      "elective_track": "ELECTIVE_C",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-016；纸质页66，页哈希25bff84e35329b3343b247358a63c1de34d9c733bf6890a892246e54d600f42a；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-170",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修D课程深度内容",
+      "concept": "平面旋转与镜像在曲式图案中的非交换复合",
+      "editorial_objective_id": "EDITORIAL-GAP-021",
+      "elective_track": "ELECTIVE_D",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-021；纸质页71，页哈希68e6330baba8f9a9ada9c8dcfd02afb940ef898ca3d8f2c52ff0b59121ab16a7；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-171",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修D课程深度内容",
+      "concept": "针孔投影的深度条件与几何不变量限制",
+      "editorial_objective_id": "EDITORIAL-GAP-022",
+      "elective_track": "ELECTIVE_D",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-022；纸质页72，页哈希36959126d90e768a65b202f2da62cf00c84f94e99b059a49df41af2fe1667443；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-172",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修E课程深度内容",
+      "concept": "球面大圆测地线与直角球面三角形非欧性质",
+      "editorial_objective_id": "EDITORIAL-GAP-025",
+      "elective_track": "ELECTIVE_E",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-025；纸质页73，页哈希04eecc184ebde477d84aca24b3a4933c1c1887c6a2901c1dbbbc04a3842e34de；不代表官方原子。"
+    },
+    {
+      "id": "HS-MATH-173",
+      "level": "选修拓展",
+      "theme": "选修 A–E 项目自编缺口邻近候选",
+      "unit": "选修E课程深度内容",
+      "concept": "正态独立样本均值的抽样分布与标准误",
+      "editorial_objective_id": "EDITORIAL-GAP-028",
+      "elective_track": "ELECTIVE_E",
+      "recommended_tool": "enrichment",
+      "status": "PLANNED",
+      "capability": "仅编辑态知识草案；不支持学生端正式发布。",
+      "available_presets": [],
+      "capability_limits": "尚无专用交互场景及可直接向学生披露的已审核数学证据。",
+      "source": {
+        "standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "uri": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "mapping_type": "ENGINEERING_INTERPRETATION",
+        "teacher_review": "PENDING"
+      },
+      "notes": "本候选项目自编，来自尚未核准缺口 STD2020-EDITORIAL-GAP-028；纸质页73，页哈希04eecc184ebde477d84aca24b3a4933c1c1887c6a2901c1dbbbc04a3842e34de；不代表官方原子。"
     }
   ]
 }
