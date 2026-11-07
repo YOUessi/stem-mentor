@@ -1,0 +1,24 @@
+{
+  "proof_obligations": 451,
+  "by_priority": {
+    "P1_THEOREM_PROOF": 118,
+    "P2_REVIEW": 206,
+    "P0_GUARD_AND_COUNTEREXAMPLE": 127
+  },
+  "by_risk_group": {
+    "PROBABILITY_STATISTICS": 40,
+    "OTHER_MATHEMATICAL_REASONING": 206,
+    "ASSUMPTIONS_DOMAIN": 118,
+    "GEOMETRY_DEGENERACY": 60,
+    "LINEAR_ALGEBRA": 30,
+    "LIMIT_CALCULUS": 53
+  },
+  "whole_proofs_certified": 0,
+  "student_steps_verified": 0,
+  "conflicting_version_pairs": 10,
+  "versions_resolved": 0,
+  "limited_subclaim_checks": 33,
+  "existing_semantic_gaps_open": 23,
+  "new_source_located_gap_tickets_open": 28,
+  "teacher_approved_lessons": 0
+}

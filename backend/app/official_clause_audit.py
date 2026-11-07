@@ -4,6 +4,7 @@ A physical page and a source enumeration marker are measurable denominators.
 Neither constitutes a formally defined count of official atomic knowledge units.
 """
 import json
+import hashlib
 import re
 from collections import Counter
 from functools import lru_cache
@@ -13,12 +14,24 @@ SOURCE = Path(__file__).resolve().parents[2] / "curriculum/highschool_math/offic
 TRACKS = ("COMPULSORY", "SELECTIVE_COMPULSORY", "ELECTIVE_A",
           "ELECTIVE_B", "ELECTIVE_C", "ELECTIVE_D", "ELECTIVE_E")
 SOURCE_URL = "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+# Pinned from a separately obtained 2020 revised standard PDF (Mac re-extraction).
+# A syntactically valid SHA256 is NOT proof of source integrity.
+# Change these constants only after re-extracting and reviewing the evidence.
+PINNED_PDF_SHA256 = "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195"
+PINNED_LEDGER_SHA256 = "26abbb442d8ebf4c7866af11475a139235efb004d452fe1080c4238996dac53b"
+
+def canonical_ledger_sha256(data):
+    """Canonical UTF-8 digest of ALL ledger evidence and status/count fields."""
+    raw = json.dumps(data, ensure_ascii=False, sort_keys=True,
+                     separators=(",", ":"), allow_nan=False).encode("utf-8")
+    return hashlib.sha256(raw).hexdigest()
+
 
 def validate_ledger(data):
     if data.get("status") != "SOURCE_ENUMERATION_AUDIT_NOT_COMPLETE_ATOMIC_INVENTORY":
         raise ValueError("Unreviewed enumeration cannot be approved")
     src = data.get("source", {})
-    if src.get("url") != SOURCE_URL or not re.fullmatch(r"[0-9a-f]{64}", src.get("sha256", "")):
+    if src.get("url") != SOURCE_URL or src.get("sha256") != PINNED_PDF_SHA256:
         raise ValueError("Incorrect official standard source or missing PDF SHA")
     if (src.get("printed_page_start"), src.get("printed_page_end"), src.get("printed_to_pdf_index_offset")) != (13, 73, 7):
         raise ValueError("Unexpected physical syllabus page span")
@@ -68,6 +81,11 @@ def validate_ledger(data):
             contract["is_full_official_atomic_inventory"] is not False or
             contract["teacher_approved_clauses"] != 0):
         raise ValueError("Unreviewed source enumeration falsely claims complete syllabus")
+    # Format+internal counts alone allow valid-looking 64-digit forged hashes.
+    # This is a snapshot drift gate, not a teacher attestation or proof that
+    # the original PDF itself was faithfully extracted.
+    if canonical_ledger_sha256(data) != PINNED_LEDGER_SHA256:
+        raise ValueError("Source evidence changed without independent re-extraction/repinning")
     return data
 
 @lru_cache(maxsize=1)

@@ -4,7 +4,8 @@ Never use these tests to adjudicate a disputed version, certify a full proof,
 mark teacher_review APPROVED, or verify an arbitrary student's steps.
 """
 from math import comb
-from sympy import Matrix, Rational, cos, pi, simplify, sqrt, sin
+from fractions import Fraction
+from sympy import Matrix, Rational, Symbol, cos, pi, simplify, sqrt, sin, limit
 
 CONFLICT_IDS = (
     "math.hs.function.composition-domain",
@@ -55,15 +56,26 @@ def conflict_subclaim_checks():
         "Formula x² restricted to (0,+infinity) is not an even function in the standard definition.",
         "Keep the zero-function both-even-and-odd boundary and verify domain conditions.")
 
-    add(CONFLICT_IDS[2], "each input has exactly one output; branch domains cover stated D",
+    # x/x is NOT x, and the original expression has a genuine hole at x=0.
+    # Cancelling it yields 1 only on the old domain R\{0}; an extension
+    # at zero is continuous iff its assigned value is 1.
+    t = Symbol("t", real=True)
+    try:
+        Fraction(0, 0)
+        zero_ratio_rejected = False
+    except ZeroDivisionError:
+        zero_ratio_rejected = True
+    add(CONFLICT_IDS[2], "each input has exactly one output; branch domains cover stated D; original expression domains survive simplification",
         [("overlapping boundary with contradictory outputs rejected",
           len({0, 1}) != 1),
          ("partition x<0 and x>=0 covers integers once",
           all((int(x<0)+int(x>=0))==1 for x in range(-20,21))),
-         ("piecewise x/x has no forced discontinuity at 0",
-          all((x if x<0 else x)==x for x in range(-20,21)))],
-        "Two clauses at x=0 assigning different values do not define a function.",
-        "Check branch cover, disjointness or consistency, and continuity separately.")
+         ("x/x equals 1 only for nonzero inputs; x=0 is undefined",
+          zero_ratio_rejected and all(Fraction(x,x)==1 for x in range(-20,21) if x != 0)),
+         ("continuous extension of x/x at 0 requires the value 1",
+          limit(t/t, t, 0)==1 and Rational(0)!=1 and Rational(1)==1)],
+        "An x/x branch at x=0 is undefined even though x/x simplifies to 1 away from 0; choosing f(0)=0 makes a discontinuous extension.",
+        "Compare original branch domains and endpoint values; do not treat cancellation as repairing a hole.")
 
     add(CONFLICT_IDS[3], "closed-interval continuity AND strict opposite signs",
         [("same-sign endpoints can hide two roots",

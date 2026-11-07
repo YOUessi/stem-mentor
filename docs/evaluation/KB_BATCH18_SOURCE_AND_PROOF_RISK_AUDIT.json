@@ -43,7 +43,7 @@
     "student_steps_verified": 0,
     "conflicting_version_pairs": 10,
     "versions_resolved": 0,
-    "limited_subclaim_checks": 32,
+    "limited_subclaim_checks": 33,
     "existing_semantic_gaps_open": 23,
     "new_source_located_gap_tickets_open": 28,
     "teacher_approved_lessons": 0
@@ -131,7 +131,7 @@
         "definition"
       ],
       "comparison_status": "BOTH_VERSIONS_ON_HOLD",
-      "required_guard": "each input has exactly one output; branch domains cover stated D",
+      "required_guard": "each input has exactly one output; branch domains cover stated D; original expression domains survive simplification",
       "exact_observations": [
         {
           "claim": "overlapping boundary with contradictory outputs rejected",
@@ -142,16 +142,20 @@
           "passed": true
         },
         {
-          "claim": "piecewise x/x has no forced discontinuity at 0",
+          "claim": "x/x equals 1 only for nonzero inputs; x=0 is undefined",
+          "passed": true
+        },
+        {
+          "claim": "continuous extension of x/x at 0 requires the value 1",
           "passed": true
         }
       ],
-      "counterexample_to_unguarded_claim": "Two clauses at x=0 assigning different values do not define a function.",
+      "counterexample_to_unguarded_claim": "An x/x branch at x=0 is undefined even though x/x simplifies to 1 away from 0; choosing f(0)=0 makes a discontinuous extension.",
       "scope": "FINITE_CASE_OR_LOCAL_SYMBOLIC_TEST_NOT_WHOLE_PROOF",
       "teacher_review": "PENDING",
       "full_natural_language_proof_certified": false,
       "source_versions_adjudicated": false,
-      "next_reviewer_task": "Check branch cover, disjointness or consistency, and continuity separately."
+      "next_reviewer_task": "Compare original branch domains and endpoint values; do not treat cancellation as repairing a hole."
     },
     {
       "lesson_id": "math.hs.function.zero-ivt",
