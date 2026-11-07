@@ -37,7 +37,7 @@ def test_elective_candidates_have_distinct_engineering_ids_and_real_objective_ta
     assert len(curriculum())==161
 
 def test_source_schema_mathematical_proof_obligations_are_not_approvals():
-    assert len(lessons())==224
+    assert len(lessons())==235
     for d in BATCH:
         item=DeepLesson.model_validate(d)
         assert item.kind=="theorem" and len(item.proof_steps)>=3
@@ -58,7 +58,7 @@ def test_new_drafts_cannot_promote_to_student_authority(bad):
 def test_16_editorial_proposals_still_do_not_certify_any_objective():
     d=editorial_review_queue()
     assert len(d["items"])==132
-    assert d["total_deep_draft_lessons"]==224
+    assert d["total_deep_draft_lessons"]==235
     assert d["official_atomic_denominator"] is None
     assert d["official_coverage_percent"] is None
     assert d["independent_teacher_approved_matches"]==0
@@ -169,7 +169,7 @@ def test_ivt_and_inverse_direction_counterexample():
 
 def test_whole_proof_status_remains_uncertified():
     r=coverage_report()
-    assert r["kinds"]["theorem"]==136
+    assert r["kinds"]["theorem"]==142  # 136 Batch20 + 6 Batch21 pending theorem drafts
     assert all(d.review.status=="REVIEW_PENDING" for d in lessons())
     assert not r["human_teacher_review_complete"]
     assert not r["direct_student_teaching_enabled"]

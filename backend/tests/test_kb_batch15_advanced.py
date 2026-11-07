@@ -24,7 +24,7 @@ def test_9_unique_authored_theorems_and_no_teacher_approval():
     assert len({x["id"] for x in BATCH})==9
     assert len({x["id"] for x in COURSE})==9
     assert {x["id"] for x in COURSE}=={x["curriculum_ids"][0] for x in BATCH}
-    assert len(lessons())==224 and len(curriculum())==161
+    assert len(lessons())==235 and len(curriculum())==161
     for r in BATCH:
         x=DeepLesson.model_validate(r)
         assert x.kind=="theorem" and x.review.status=="REVIEW_PENDING"

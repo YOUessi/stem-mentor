@@ -4,7 +4,7 @@
   "generated_from": "curriculum/highschool_math/curriculum_map.json + knowledge/deep/v1/*.json + semantic_gaps_batch04.json",
   "summary": {
     "engineering_topic_denominator": 161,
-    "deep_draft_documents": 224,
+    "deep_draft_documents": 235,
     "linked_project_topics": 161,
     "known_partial_topic_count": 23,
     "gap_draft_candidate_count": 23,
@@ -2010,7 +2010,8 @@
       "unit": "选修A课程深度内容",
       "concept": "单调有界数列收敛的确界证明",
       "deep_lesson_ids": [
-        "math.hs.elective.sequence.monotone-bounded"
+        "math.hs.elective.sequence.monotone-bounded",
+        "math.hs.elective.sequence.e-series-bounds"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2074,7 +2075,8 @@
       "unit": "选修A课程深度内容",
       "concept": "可导必连续：反命题与尖点反例",
       "deep_lesson_ids": [
-        "math.hs.elective.calculus.differentiable-continuous"
+        "math.hs.elective.calculus.differentiable-continuous",
+        "math.hs.elective.calculus.differential-remainder"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2170,7 +2172,8 @@
       "unit": "选修A课程深度内容",
       "concept": "高斯消元初等行变换保持方程组解集",
       "deep_lesson_ids": [
-        "math.hs.elective.matrix.gaussian-row-equivalence"
+        "math.hs.elective.matrix.gaussian-row-equivalence",
+        "math.hs.elective.linear.ranks-consistency"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2266,7 +2269,8 @@
       "unit": "选修A课程深度内容",
       "concept": "矩阵乘法维度约束与三阶单位矩阵",
       "deep_lesson_ids": [
-        "math.hs.elective.matrix.product-dimensions"
+        "math.hs.elective.matrix.product-dimensions",
+        "math.hs.elective.matrix.orthogonal-isometry"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2282,7 +2286,8 @@
       "unit": "选修B课程深度内容",
       "concept": "二元函数驻点与闭域边界极值的区别",
       "deep_lesson_ids": [
-        "math.hs.elective.multivariable.stationary-boundary"
+        "math.hs.elective.multivariable.stationary-boundary",
+        "math.hs.elective.optimization.polytope-vertices"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2298,7 +2303,8 @@
       "unit": "选修B课程深度内容",
       "concept": "三维三向量行列式判定线性相关",
       "deep_lesson_ids": [
-        "math.hs.elective.linear.rank-vectors"
+        "math.hs.elective.linear.rank-vectors",
+        "math.hs.elective.geometry.skew-lines-distance"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2346,7 +2352,8 @@
       "unit": "选修B课程深度内容",
       "concept": "简单线性回归最小二乘斜率公式与可识别性",
       "deep_lesson_ids": [
-        "math.hs.elective.statistics.ols-two-parameter"
+        "math.hs.elective.statistics.ols-two-parameter",
+        "math.hs.elective.cluster.kmeans-conditions"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2426,7 +2433,8 @@
       "unit": "选修B课程深度内容",
       "concept": "时间尺度变更对线性、指数与二次模型参数的影响",
       "deep_lesson_ids": [
-        "math.hs.elective.model.time-rescaling"
+        "math.hs.elective.model.time-rescaling",
+        "math.hs.elective.model.dimension-guard"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2522,7 +2530,8 @@
       "unit": "选修D课程深度内容",
       "concept": "十二平均律的频率等比模型与八度关系",
       "deep_lesson_ids": [
-        "math.hs.elective.music.equal-temperament"
+        "math.hs.elective.music.equal-temperament",
+        "math.hs.elective.music.harmonic-period"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2554,7 +2563,8 @@
       "unit": "选修E课程深度内容",
       "concept": "等额期末现金流的现值、利率与收付时点",
       "deep_lesson_ids": [
-        "math.hs.elective.finance.annuity-present-value"
+        "math.hs.elective.finance.annuity-present-value",
+        "math.hs.elective.difference.affine-fixed-point"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",
@@ -2682,7 +2692,8 @@
       "unit": "社会数学模型",
       "concept": "信度、预测相关与因果推断的数学边界",
       "deep_lesson_ids": [
-        "math.hs.elective.model.scores-not-causes"
+        "math.hs.elective.model.scores-not-causes",
+        "math.hs.elective.survey.ordinal-mean"
       ],
       "teacher_approved_lesson_ids": [],
       "evidence_status": "LINKED_UNREVIEWED_NOT_CERTIFIED_COMPLETE",

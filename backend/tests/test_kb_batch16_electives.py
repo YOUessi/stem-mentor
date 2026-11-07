@@ -20,7 +20,7 @@ MAP=json.loads(TARGETS.read_text(encoding="utf8"))
 
 def test_all_twelve_editorial_drafts_are_structurally_valid_and_unapproved():
     assert len(ROWS)==len(MAP)==12
-    assert len(lessons())==224 and len(curriculum())==161
+    assert len(lessons())==235 and len(curriculum())==161
     assert {x["id"] for x in MAP}=={r["curriculum_ids"][0] for r in ROWS}
     assert len({r["id"] for r in ROWS})==12
     assert {r["curriculum_ids"][0] for r in ROWS}=={"HS-MATH-"+str(n) for n in range(139,151)}
@@ -41,7 +41,7 @@ def test_proposal_scope_is_clearly_unverified_and_no_student_data_released():
     a=editorial_review_queue()
     assert validate_proposals(a)
     assert a["total_source_objective_candidates"]==132
-    assert a["total_deep_draft_lessons"]==224
+    assert a["total_deep_draft_lessons"]==235
     assert a["proposed_objectives"]==132 and a["proposed_edges"]==154
     assert sum(x["without_suggestion"] for x in a["by_track"].values())==0
     assert a["official_atomic_denominator"] is None

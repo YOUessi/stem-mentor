@@ -21,6 +21,7 @@ from backend.app.main import app
 CONTENT=ROOT/"knowledge/deep/v1/algebra_geometry_probability_batch10.json"
 OUTPUT=ROOT/"docs/evaluation/KB_BATCH10_RELEASE_AUDIT.json"
 PROOF=ROOT/"docs/evaluation/KB_PROOF_OBLIGATIONS_BATCH07.json"
+UNION=ROOT/"docs/evaluation/KB_BATCH21_PROOF_REVIEW_UNION.json"
 
 def audit():
     current=lessons()
@@ -28,6 +29,7 @@ def audit():
     source=CONTENT.read_bytes()
     new=json.loads(source)
     proof=json.loads(PROOF.read_text(encoding="utf8"))
+    union=json.loads(UNION.read_text(encoding="utf8"))["summary"]
     old_count=153
     assert len(new)==11
     assert len(current)>=old_count+len(new)  # Preserve Batch10 baseline; permit subsequent batches
@@ -36,9 +38,10 @@ def audit():
     assert all(x["provenance"]["permission"]=="PROJECT_AUTHORED" for x in new)
     assert all(x["kind"]=="theorem" and len(x["proof_steps"])>=3 and len(x["worked_examples"])>=2 for x in new)
     assert sum(x.review.status=="APPROVED" for x in current)==0
-    assert proof["summary"]["deep_draft_lessons"]==len(current)
-    assert proof["summary"]["theorems"]==coverage["kinds"]["theorem"]
-    assert proof["summary"]["proof_step_obligations_not_formally_verified"]==sum(len(x.proof_steps) for x in current)
+    assert proof["summary"]["deep_draft_lessons"]==union["existing_historical_draft_lessons"]
+    assert union["current_draft_lessons"]==len(current)
+    assert proof["summary"]["theorems"] + sum(x.kind=="theorem" for x in current if x.id in {r["lesson_id"] for r in json.loads(UNION.read_text(encoding="utf8"))["new_proof_review_queue"]})==coverage["kinds"]["theorem"]
+    assert union["total_current_unverified_proof_steps"]==sum(len(x.proof_steps) for x in current)
     assert proof["summary"]["theorems_with_whole_proof_certification"]==0
     assert not any("draft" in route.path or "editor" in route.path for route in app.routes)
     # Never use external credentials or enable model egress during CI audit.
@@ -61,7 +64,7 @@ def audit():
         "current_theorem_drafts":coverage["kinds"]["theorem"],
         "current_concept_drafts":coverage["kinds"]["concept"],
         "current_method_drafts":coverage["kinds"]["method"],
-        "uncertified_proof_steps":proof["summary"]["proof_step_obligations_not_formally_verified"],
+        "uncertified_proof_steps":union["total_current_unverified_proof_steps"],
         "full_proofs_formally_certified":0,
         "teacher_approved":0,
         "student_released_evidence":len(evidence["candidates"]),
