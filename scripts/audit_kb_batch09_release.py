@@ -20,8 +20,9 @@ def audit():
     # Freeze this historical release audit at the Batch21 lesson set.
     # The new Batch22 drafts are reviewed by their separate source audit.
     later={x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/elective_gap_batch22.json').read_text(encoding='utf8'))}
+    later.update(x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/core_elective_batch23.json').read_text(encoding='utf8')))
     existing=tuple(x for x in lessons() if x.id not in later)
-    assert len(later)==12 and len(existing)==235
+    assert len(later)==32 and len(existing)==235
     coverage=coverage_report()
     from collections import Counter
     coverage=dict(coverage, kinds=dict(Counter(x.kind for x in existing)),review_statuses={"REVIEW_PENDING":len(existing)})

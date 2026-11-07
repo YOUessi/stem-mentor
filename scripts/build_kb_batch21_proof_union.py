@@ -34,7 +34,7 @@ def build():
     fresh_ids = {x["id"] for x in new}
     if (len(old_rows) != 224 or len(new) != 11
             or set(old_rows) & fresh_ids or not (set(old_rows) | fresh_ids <= set(current))
-            or len(set(current) - set(old_rows) - fresh_ids) != 12):
+            or len(set(current) - set(old_rows) - fresh_ids) != 32):
         raise ValueError("Old + new proof queue must exactly cover current independent draft IDs")
     for key, prior in old_rows.items():
         doc = current[key]

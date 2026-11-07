@@ -1,0 +1,39 @@
+F....................................................................... [  6%]
+........................................................................ [ 13%]
+........................................................................ [ 20%]
+........................................................................ [ 27%]
+........................................................................ [ 34%]
+........................................................................ [ 41%]
+........................................................................ [ 48%]
+........................................................................ [ 55%]
+........................................................................ [ 62%]
+........................................................................ [ 69%]
+........................................................................ [ 76%]
+........................................................................ [ 82%]
+........................................................................ [ 89%]
+........................................................................ [ 96%]
+..................................                                       [100%]
+=================================== FAILURES ===================================
+___________ test_materialization_exact_and_coverage_is_not_official ____________
+
+    def test_materialization_exact_and_coverage_is_not_official():
+        assert len(SOURCE)==20 and len(CORPUS)==20
+        assert author.render()[0][1]==(ROOT/'curriculum/highschool_math/author_draft_batch23.json').read_text()
+        rendered,report=build.build()
+        assert json.loads(rendered)==CORPUS==[x['lesson'] for x in SOURCE]
+        assert json.loads(report)==AUDIT
+        assert len(lessons())==267 and len(curriculum())==178
+        assert coverage_report()['deep_lesson_documents']==267
+        assert AUDIT['summary']['official_atomic_denominator'] is None
+        assert AUDIT['summary']['official_coverage_rate'] is None
+        assert AUDIT['summary']['editorial_gap_tickets_still_open']==28
+        assert AUDIT['summary']['draft_nearby_gap_candidates']==28
+        assert AUDIT['source_review_tasks_preserved']==427
+>       assert AUDIT['summary']['teacher_approved']==0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'teacher_approved'
+
+tests/test_kb_batch23_core_math.py:41: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch23_core_math.py::test_materialization_exact_and_coverage_is_not_official
+1 failed, 1041 passed in 3.63s

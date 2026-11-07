@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "backend"))
 from app.deep_knowledge import coverage_report, curriculum, lessons
 
 GAPS = ROOT / "knowledge/deep/semantic_gaps_batch04.json"
-DEFAULT_OUT = ROOT / "docs/evaluation/KB_BATCH22_SEMANTIC_COVERAGE.json"
+DEFAULT_OUT = ROOT / "docs/evaluation/KB_BATCH23_SEMANTIC_COVERAGE.json"
 # Historical Batch07 report remains unchanged; current counts are written separately.
 
 

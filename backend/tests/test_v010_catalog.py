@@ -26,7 +26,7 @@ def test_v010_adds_ten_scenes_without_losing_the_original_39(client):
     ids={p['id'] for p in body['presets']}
     assert NEW_IDS<=ids,NEW_IDS-ids
     assert len(ids)>=49
-    assert len(body['topics'])==173 and body['no_llm_api'] is True
+    assert len(body['topics'])==178 and body['no_llm_api'] is True
     assert {'vec2d-add','unit-circle','derivative-log','3d-section-prism','tri-ssa',
             'fn-linear','conic-ellipse','3d-sphere'}<=ids
     assert len(body['counts']['scene_families'])>=8
@@ -95,6 +95,7 @@ def test_v010_builders_are_deterministic_and_keep_prior_models(tmp_path):
     shutil.copy2(source/'elective_b_c_d_e_atomic_candidates_batch16.json',tmp_path/'elective_b_c_d_e_atomic_candidates_batch16.json')
     shutil.copy2(source/'cross_track_atomic_candidates_batch17.json',tmp_path/'cross_track_atomic_candidates_batch17.json')
     shutil.copy2(source/'engineering_gap_candidates_batch22.json',tmp_path/'engineering_gap_candidates_batch22.json')
+    shutil.copy2(source/'engineering_gap_candidates_batch23.json',tmp_path/'engineering_gap_candidates_batch23.json')
     for file in ('build_presets.py','build_curriculum.py'):
         subprocess.run([sys.executable,str(tmp_path/file)],cwd=tmp_path,check=True,capture_output=True)
     for file in ('visual_presets.json','curriculum_map.json'):
