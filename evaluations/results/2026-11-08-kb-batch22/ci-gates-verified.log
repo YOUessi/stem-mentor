@@ -1,0 +1,54 @@
+CI_PYTHON_SCRIPT_COMMANDS 35
+[01/35] python scripts/build_kb_coverage.py --summary EXIT=0 cial curriculum.",
+      "Schema validation cannot prove mathematical truth; a draft is never a teacher-reviewed fact.",
+      "Draft worked examples and proof steps remain TEACHER_ONLY until genuine review."
+    ]
+  }
+}
+[02/35] python scripts/audit_deep_math_evidence.py --check EXIT=0 state": "REVIEW_PENDING",
+  "scope": "LIMITED_AUTHORED_EXPRESSION_EVIDENCE_NOT_FULL_PROOF",
+  "student_free_text_steps_verified": 0,
+  "teacher_approved": 0,
+  "total_draft_lessons": 247,
+  "whole_theorems_verified": 0
+}
+[03/35] python scripts/build_semantic_gap_batch05.py --check EXIT=0 PASS: 23 independently authored gap drafts match frozen JSON; 0 teacher-approved
+[04/35] python scripts/reconcile_kb_batch02.py --check EXIT=0 PASS: 39 candidates => 29 imported drafts, 10 held, 0 auto-overwrites
+[05/35] python scripts/build_kb_legacy_bridge.py --check EXIT=0 Bridge current: 26 unreviewed legacy cards
+[06/35] python scripts/build_kb_batch07_audit.py --check EXIT=0 , 'theorems': 136, 'proof_step_obligations_not_formally_verified': 451, 'existing_supporting_oracles_linked': 48, 'theorems_with_whole_proof_certification': 0, 'teacher_approved': 0, 'student_solution_steps_verified': 0}
+[07/35] python scripts/audit_kb_attested_release.py --check EXIT=0 47,
+  "review_pending_count": 247,
+  "externally_attested_count": 0,
+  "student_release_available": false,
+  "formal_math_proof_review_complete": false,
+  "real_teacher_identities_authenticated_by_this_software": false
+}
+[08/35] python scripts/build_kb_batch07_lessons.py --check EXIT=0 PASS 8 original rigorous theorem draft records
+[09/35] python scripts/build_kb_batch09_lessons.py --check EXIT=0 Batch09 authored lessons: 7, check=True
+[10/35] python scripts/build_kb_batch10_lessons.py --check EXIT=0 Batch10 deterministic source matches 11 theorem lessons
+[11/35] python scripts/build_kb_batch11_lessons.py --check EXIT=0 PASS Batch11 12 original teacher-pending lessons
+[12/35] python scripts/audit_kb_batch10_release.py --check EXIT=0 PASS 235 drafts, 0 approvals, 0 student/cloud requests
+[13/35] python scripts/audit_kb_batch11_release.py --check EXIT=0 PASS Batch11 baseline retained, 0 teacher approvals or student model calls
+[14/35] python scripts/build_kb_batch12_source_crosswalk.py --check EXIT=0 PASS source-anchored scope checklist 132
+[15/35] python scripts/audit_kb_batch12_source_coverage.py --check EXIT=0 PASS Batch12: sampled curriculum remains non-certified
+[16/35] python scripts/build_kb_batch13_proposals.py --check EXIT=0 PASS batch13 editorial mapping proposal hash guards
+[17/35] python scripts/audit_kb_batch13_proposals.py --check EXIT=0 PASS Batch13 review queue is draft-only and source-anchored
+[18/35] python scripts/build_kb_batch14_lessons.py --check EXIT=0 Batch14 authored elective proof drafts=16 check= True
+[19/35] python scripts/audit_kb_batch14_content.py --check EXIT=0 PASS Batch14 16 new electives, no approvals
+[20/35] python scripts/build_kb_batch15_lessons.py --check EXIT=0 PASS Batch15 9 authored lessons True
+[21/35] python scripts/audit_kb_batch15_content.py --check EXIT=0 PASS Batch15 audit 9 drafts
+[22/35] python scripts/build_kb_batch16_lessons.py --check EXIT=0 PASS batch16 12 editorial draft lessons; check= True
+[23/35] python scripts/audit_kb_batch16_content.py --check EXIT=0 PASS frozen Batch16 source hashes and historical 213/150 snapshot; current totals belong to Batch17
+[24/35] python scripts/author_kb_batch17.py --check EXIT=0 Batch17 11 authored editorial lessons with 12 unverified proof steps; check= True
+[25/35] python scripts/build_kb_batch17_lessons.py --check EXIT=0 PASS 11 unapproved Batch17 drafts; check= True
+[26/35] python scripts/audit_kb_batch17_content.py --check EXIT=0 PASS Batch17 historical 224 draft snapshot; current= 247 132/132 author-proposed; teacher=0
+[27/35] python scripts/audit_kb_batch18_source_proofs.py --check EXIT=0 ent_steps_verified": 0, "conflicting_version_pairs": 10, "versions_resolved": 0, "limited_subclaim_checks": 33, "existing_semantic_gaps_open": 23, "new_source_located_gap_tickets_open": 28, "teacher_approved_lessons": 0}
+[28/35] python scripts/build_kb_batch20_k00_review_queue.py --check EXIT=0 K00 source-review queue PASS: {'SOURCE_PAGE_SPLIT': 61, 'NUMBERED_MARKER_SPLIT': 315, 'UNNUMBERED_DE_HEADING_SPLIT': 23, 'EDITORIAL_GAP_DECISION': 28}
+[29/35] python scripts/build_kb_batch21_lessons.py --check EXIT=0 PASS Batch21: 11 REVIEW_PENDING lessons; 11 editorial overlaps; 28/28 gaps still OPEN
+[30/35] python scripts/build_kb_batch21_proof_union.py --check EXIT=0 PASS Batch21 proof review: 451 historical + 23 new = 474 unverified, 0 certified
+[31/35] python scripts/author_kb_batch22.py --check EXIT=0 Batch22 author source: 12 mathematical drafts; pending teacher/source review
+[32/35] python scripts/build_kb_batch22_lessons.py --check EXIT=0 PASS: 12 REVIEW_PENDING lessons, 23/28 editorial overlaps; official denominator remains null
+[33/35] python scripts/build_kb_batch22_proof_and_scope.py --check EXIT=0 PASS: 247 draft lessons; new 23 unverified proof steps; 497 total; 427 K00 source tasks; official denominator NULL
+[34/35] python scripts/audit_kb_batch09_release.py --check EXIT=0 PASS: 235 draft lessons, 0 approved, 0 cloud calls, safe editor-only gate
+[35/35] python scripts/audit_kb_semantic_coverage.py --check EXIT=0 PASS: semantic coverage snapshot matches project drafts and 23 open, non-approved gaps
+CI_PYTHON_SCRIPT_CHECKS_SUCCESS 35

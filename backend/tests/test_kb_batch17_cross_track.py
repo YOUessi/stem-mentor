@@ -23,7 +23,7 @@ MAP=json.loads(COURSE.read_text(encoding="utf8"))
 
 def test_batch17_source_and_structured_lessons_unapproved():
     assert len(ROWS)==len(MAP)==11
-    assert len(lessons())==235 and len(curriculum())==161
+    assert len(lessons())==247 and len(curriculum())==173
     assert len({x["id"] for x in ROWS})==11
     assert set(x["curriculum_ids"][0] for x in ROWS)==set(x["id"] for x in MAP)
     assert set(x["curriculum_ids"][0] for x in ROWS)=={f"HS-MATH-{x}" for x in range(151,162)}

@@ -14,7 +14,7 @@ from scripts import build_kb_coverage as audit
 def test_pending_cross_track_editors_are_listed_without_fake_official_theme():
     report = audit.build()
     rows = {row["curriculum_id"]: row for row in report["curriculum"]}
-    assert report["totals"]["legacy_engineering_topics"] == 161
+    assert report["totals"]["legacy_engineering_topics"] == 173
     for index in range(151, 162):
         row = rows[f"HS-MATH-{index:03}"]
         assert row["editorial_theme_uncertified"] is True

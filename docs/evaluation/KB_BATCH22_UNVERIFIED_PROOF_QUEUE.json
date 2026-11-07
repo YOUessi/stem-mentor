@@ -1,0 +1,357 @@
+{
+  "schema_version": "batch22-proof-union-v1",
+  "scope": "REVIEW_ONLY_NOT_FORMAL_VERIFICATION",
+  "baseline_batch07_sha256": "9921810f7762951be6786a4f1b532d8f8762bad8f1602611bd7a2f160df65847",
+  "historical_batch21_sha256": "b224f95ef1cfa2849865cae1e30e84404941581b7d035a9849e151c7a68ea59c",
+  "new_lesson_source_sha256": "2b90e622c2704ee7d174e034d8e6e78cba282463b4b0a91826d18cd5a4947a04",
+  "summary": {
+    "current_draft_lessons": 247,
+    "historical_proof_steps": 451,
+    "batch21_unverified_proof_steps": 23,
+    "batch22_unverified_proof_steps": 23,
+    "total_unverified_proof_steps": 497,
+    "batch22_priority_counts": {
+      "P0_HUMAN_ATTENTION": 14,
+      "P1_HUMAN_ATTENTION": 9
+    },
+    "certified_whole_proofs": 0,
+    "teacher_approved": 0,
+    "student_steps_verified": 0,
+    "official_atomic_denominator": null
+  },
+  "new_review_obligations": [
+    {
+      "id": "math.hs.elective.geometry.plane-isometry-composition#1",
+      "lesson_id": "math.hs.elective.geometry.plane-isometry-composition",
+      "step_index": 1,
+      "claim_reason_sha256": "c968bbe668ec2e7a45deb9b4a6426059f9782ac60ef726f47d3da87690f440db",
+      "editorial_priority": "P1_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GENERAL_PROOF_REVIEW"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.plane-isometry-composition#2",
+      "lesson_id": "math.hs.elective.geometry.plane-isometry-composition",
+      "step_index": 2,
+      "claim_reason_sha256": "f250bd316427150aca33f91a7075a86cc6af4da7458824bf1e077f57a71dd9f6",
+      "editorial_priority": "P1_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GENERAL_PROOF_REVIEW"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.plane-isometry-composition#3",
+      "lesson_id": "math.hs.elective.geometry.plane-isometry-composition",
+      "step_index": 3,
+      "claim_reason_sha256": "4a743524fc24e66dfd9970e4ba5dd3f44ecb5830de1a51ce5df0a28c09aa71be",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "DENOMINATOR_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.space-isometry-orientation#1",
+      "lesson_id": "math.hs.elective.geometry.space-isometry-orientation",
+      "step_index": 1,
+      "claim_reason_sha256": "7460ba0dc843dca08d82762f5655bf2318935d360940fdccb33737dd74adb417",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "DENOMINATOR_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.space-isometry-orientation#2",
+      "lesson_id": "math.hs.elective.geometry.space-isometry-orientation",
+      "step_index": 2,
+      "claim_reason_sha256": "9cde23c328515fcfb005304db9dbac7aa7d62a45ff339031d796bc97cfb7e620",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "DENOMINATOR_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.space-isometry-orientation#3",
+      "lesson_id": "math.hs.elective.geometry.space-isometry-orientation",
+      "step_index": 3,
+      "claim_reason_sha256": "2c3b2316cdeee68d104b825e146b41fea0ddf0b7e01d3fe68ec892820d1bbefb",
+      "editorial_priority": "P1_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GENERAL_PROOF_REVIEW"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.space-isometry-orientation#4",
+      "lesson_id": "math.hs.elective.geometry.space-isometry-orientation",
+      "step_index": 4,
+      "claim_reason_sha256": "90c0a9ae824e9fd663991e78614d29e817039f410094ad19e3aa7df25e5a0b4d",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GEOMETRY_DEGENERACY"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.triangular-density-moments#1",
+      "lesson_id": "math.hs.elective.statistics.triangular-density-moments",
+      "step_index": 1,
+      "claim_reason_sha256": "d5e7d113bac0853d3b167fc3a7b5cd0618e89ef467c4921a077607b89facb144",
+      "editorial_priority": "P1_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GENERAL_PROOF_REVIEW"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.triangular-density-moments#2",
+      "lesson_id": "math.hs.elective.statistics.triangular-density-moments",
+      "step_index": 2,
+      "claim_reason_sha256": "dc58b414b63315ea6201e23f09c6a98a98681eba57f742386b2583e4a250178c",
+      "editorial_priority": "P1_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GENERAL_PROOF_REVIEW"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.triangular-density-moments#3",
+      "lesson_id": "math.hs.elective.statistics.triangular-density-moments",
+      "step_index": 3,
+      "claim_reason_sha256": "4e2f4a227d0c37b598673e25eb894e3d43ed1110bd476988343269cde72e185b",
+      "editorial_priority": "P1_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GENERAL_PROOF_REVIEW"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.triangular-density-moments#4",
+      "lesson_id": "math.hs.elective.statistics.triangular-density-moments",
+      "step_index": 4,
+      "claim_reason_sha256": "dc8aa84122265c34fc52eea29080c87626785dbd0c4a26401ca9f0c8f6fd8aaa",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.models.keynes-affine-stability#1",
+      "lesson_id": "math.hs.elective.models.keynes-affine-stability",
+      "step_index": 1,
+      "claim_reason_sha256": "53b6794b10a4ce18a176a74cdef156c41c66b52cc42601cd4fc233c63acc6c5b",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "DENOMINATOR_DOMAIN"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.models.keynes-affine-stability#2",
+      "lesson_id": "math.hs.elective.models.keynes-affine-stability",
+      "step_index": 2,
+      "claim_reason_sha256": "32e2a1cabc7cfbb4590c9fe0307c29cce69e769857bea23f5e06b71f07239b14",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "DENOMINATOR_DOMAIN"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.models.keynes-affine-stability#3",
+      "lesson_id": "math.hs.elective.models.keynes-affine-stability",
+      "step_index": 3,
+      "claim_reason_sha256": "f9d590bca52680ecb9df106e58df04e2bcb137d27f751458915d33ac0f38b17c",
+      "editorial_priority": "P1_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GENERAL_PROOF_REVIEW"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.models.keynes-affine-stability#4",
+      "lesson_id": "math.hs.elective.models.keynes-affine-stability",
+      "step_index": 4,
+      "claim_reason_sha256": "a585b16fe8e37ab9a5f65f40123310ef8eb4a25543d8aab08a1e21901af33321",
+      "editorial_priority": "P1_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GENERAL_PROOF_REVIEW"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.music.transformations-noncommute#1",
+      "lesson_id": "math.hs.elective.music.transformations-noncommute",
+      "step_index": 1,
+      "claim_reason_sha256": "8977863218244125d190cf15be10bde9d31f1636183012a38b2f5a133d8b9a68",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GEOMETRY_DEGENERACY"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.music.transformations-noncommute#2",
+      "lesson_id": "math.hs.elective.music.transformations-noncommute",
+      "step_index": 2,
+      "claim_reason_sha256": "f7e00b65314e687b9853340ef6cd2a579d1eca49d918afe40f7341aabebefabd",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GEOMETRY_DEGENERACY"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.music.transformations-noncommute#3",
+      "lesson_id": "math.hs.elective.music.transformations-noncommute",
+      "step_index": 3,
+      "claim_reason_sha256": "f112ed61b019bd226cbe50d909e7f94ec2a612181219ab43334b3cea6744e86d",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GEOMETRY_DEGENERACY"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.music.transformations-noncommute#4",
+      "lesson_id": "math.hs.elective.music.transformations-noncommute",
+      "step_index": 4,
+      "claim_reason_sha256": "2e095017b17744ac844e747fb3b39b943267eddb9ff3f378193921584cc71b9d",
+      "editorial_priority": "P1_HUMAN_ATTENTION",
+      "risk_tags": [
+        "GENERAL_PROOF_REVIEW"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.normal-sampling-mean#1",
+      "lesson_id": "math.hs.elective.statistics.normal-sampling-mean",
+      "step_index": 1,
+      "claim_reason_sha256": "969551f62958404dd571de252c64b80fddaaf50419911e198a86ac99153d3882",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "DENOMINATOR_DOMAIN",
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.normal-sampling-mean#2",
+      "lesson_id": "math.hs.elective.statistics.normal-sampling-mean",
+      "step_index": 2,
+      "claim_reason_sha256": "6645636523e33bc5b51be8bb05bd3258b1a264150429034bfc57d37cc7c8e148",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.normal-sampling-mean#3",
+      "lesson_id": "math.hs.elective.statistics.normal-sampling-mean",
+      "step_index": 3,
+      "claim_reason_sha256": "c86b62e0d00cffd18c6f18930e4f4b4bc0b4ecf608bfa22573ff0c5aeec69e7e",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "DENOMINATOR_DOMAIN",
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.normal-sampling-mean#4",
+      "lesson_id": "math.hs.elective.statistics.normal-sampling-mean",
+      "step_index": 4,
+      "claim_reason_sha256": "5ee71a4581fc94af7d26a2ba43835f180b8c727dc97aba972339850ce8eb7cf1",
+      "editorial_priority": "P0_HUMAN_ATTENTION",
+      "risk_tags": [
+        "DENOMINATOR_DOMAIN",
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "complete_proof_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    }
+  ],
+  "warnings": [
+    "Risk tagging is keyword triage, not a mathematical correctness decision.",
+    "Historical 451 obligations and Batch21 23 remain frozen without certification.",
+    "Even independently verified finite examples cannot validate full proof language."
+  ]
+}

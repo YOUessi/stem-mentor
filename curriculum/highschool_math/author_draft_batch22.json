@@ -1,0 +1,1179 @@
+[
+  {
+    "gap": 4,
+    "lesson": {
+      "id": "math.hs.elective.geometry.plane-isometry-composition",
+      "curriculum_ids": [
+        "HS-MATH-162"
+      ],
+      "kind": "theorem",
+      "title": "二维等距仿射变换的矩阵表示与复合",
+      "version": "1.0.0",
+      "notation": [
+        "T(x)=Qx+t",
+        "Q^TQ=I_2",
+        "(Q_2,t_2)∘(Q_1,t_1)"
+      ],
+      "prerequisites": [
+        "矩阵乘法、向量长度、正交矩阵"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "若 Q_1,Q_2 是实二阶正交矩阵，t_1,t_2 是二维平移向量，则 T_i(x)=Q_i x+t_i 保持任意两点距离，复合仍是等距变换，且复合参数为 (Q_2Q_1,Q_2t_1+t_2)。",
+      "assumptions": [
+        "二维欧氏空间，Q_i 为 2×2 实矩阵且 Q_i^TQ_i=I_2；平移向量维度匹配。"
+      ],
+      "proof_steps": [
+        {
+          "claim": "两点像之差 T(x)-T(y)=Q(x-y)，平移项相消。",
+          "reason": "对任意 v，||Qv||²=v^TQ^TQv=||v||²，所以距离保持。"
+        },
+        {
+          "claim": "T_2(T_1(x))=Q_2Q_1x+Q_2t_1+t_2。",
+          "reason": "矩阵分配律与乘法结合律。"
+        },
+        {
+          "claim": "(Q_2Q_1)^T(Q_2Q_1)=Q_1^TQ_2^TQ_2Q_1=I_2。",
+          "reason": "两正交矩阵乘积仍正交，因此复合仍等距。"
+        }
+      ],
+      "rationale_steps": [],
+      "boundaries": [
+        "不能将任意可逆矩阵当成等距变换；一般先后复合不交换。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "任意可逆线性映射都保持长度",
+          "example": "Q=diag(2,1) 可逆，但把 (1,0) 长度从 1 变成 2。",
+          "explanation": "可逆只保证一一对应，未保证 Q^TQ=I。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "先绕原点旋转90°，后平移(3,0)，求(1,2)的像。",
+          "steps": [
+            "使用旋转 R(x,y)=(-y,x) 先计算中间像。",
+            "旋转得(-2,1)，再平移得(1,1)。"
+          ],
+          "answer": "(1,1)",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "先平移(1,0)再绕原点旋转90°，求原点的像。",
+          "steps": [
+            "写出 T(0,0)=(1,0)，再使用旋转矩阵。",
+            "原点先到(1,0)后到(0,1)。"
+          ],
+          "answer": "(0,1)",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "误以为旋转和平移交换",
+          "why_wrong": "不能将任意可逆矩阵当成等距变换；一般先后复合不交换。",
+          "repair_question": "先写清 T_2∘T_1 的作用顺序。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先考察两点的差以消去平移。",
+        "验证正交矩阵是否保持内积。",
+        "最后展开复合并检查正交性。"
+      ],
+      "transfer": {
+        "near": "验证反射 H=diag(1,-1) 保持距离。",
+        "far": "比较旋转和平移不同顺序对非原点的作用。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 5,
+    "lesson": {
+      "id": "math.hs.elective.geometry.space-isometry-orientation",
+      "curriculum_ids": [
+        "HS-MATH-163"
+      ],
+      "kind": "theorem",
+      "title": "三维正交变换保持内积、长度与体积",
+      "version": "1.0.0",
+      "notation": [
+        "Q^TQ=I_3",
+        "det(Q)=±1",
+        "|det(Q)|=1"
+      ],
+      "prerequisites": [
+        "三维向量、内积、行列式的乘法公式"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "对实三阶正交矩阵 Q，任意 u,v 都有 (Qu)·(Qv)=u·v；线性变换保持欧氏长度，且任意平行六面体体积的绝对值不变，但可能反转取向。",
+      "assumptions": [
+        "Q 为 3×3 实正交矩阵；体积以三向量构成的行列式绝对值计算。"
+      ],
+      "proof_steps": [
+        {
+          "claim": "计算 (Qu)·(Qv)=u^TQ^TQv=u·v。",
+          "reason": "正交条件 Q^TQ=I_3。"
+        },
+        {
+          "claim": "取 u=v 得 ||Qu||²=||u||²，且夹角的余弦在非零向量上保持。",
+          "reason": "范数非负及内积夹角定义。"
+        },
+        {
+          "claim": "det(Q)^2=det(Q^TQ)=det(I_3)=1，故 det(Q)=1 或 -1。",
+          "reason": "实数域上 det(Q^TQ)=det(Q)^2 与乘法性质。"
+        },
+        {
+          "claim": "|det(Qu,Qv,Qw)|=|det(Q)|·|det(u,v,w)|。",
+          "reason": "矩阵列的合成及行列式乘法，体积不变。"
+        }
+      ],
+      "rationale_steps": [],
+      "boundaries": [
+        "反射 det(Q)=-1 不保取向；对零向量不能定义夹角。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "正交变换必定保持有向体积的符号",
+          "example": "反射 Q=diag(-1,1,1) 行列式为 -1。",
+          "explanation": "保持的是体积绝对值，不必保持定向。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "Q=diag(-1,1,1)，求向量(2,3,4)的像及长度平方。",
+          "steps": [
+            "反射矩阵将第一坐标变号，其他坐标保持。",
+            "像为(-2,3,4)，平方和29不变。"
+          ],
+          "answer": "(-2,3,4)，平方长度29",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "求反射 Q=diag(1,1,-1) 的行列式与立方体体积变化。",
+          "steps": [
+            "正交矩阵体积比例为 |det(Q)|，先计算对角乘积。",
+            "行列式为 -1，绝对值为1。"
+          ],
+          "answer": "取向翻转，体积不变",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "将长度保持误写成取向保持",
+          "why_wrong": "反射 det(Q)=-1 不保取向；对零向量不能定义夹角。",
+          "repair_question": "考虑行列式正负两个分支。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先将内积写成转置乘积。",
+        "对正交条件取行列式得到符号条件。",
+        "区分绝对体积和有向体积。"
+      ],
+      "transfer": {
+        "near": "以 Q=diag(-1,1,1) 检查两个向量内积。",
+        "far": "讨论连续刚体运动是否可能通过反射分支。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 7,
+    "lesson": {
+      "id": "math.hs.elective.statistics.triangular-density-moments",
+      "curriculum_ids": [
+        "HS-MATH-164"
+      ],
+      "kind": "theorem",
+      "title": "连续概率密度的规范化、分布函数和矩",
+      "version": "1.0.0",
+      "notation": [
+        "f(x)=2x (0≤x≤1)",
+        "F(t)=∫_{-∞}^t f(x)dx",
+        "E[X]=∫x f(x)dx"
+      ],
+      "prerequisites": [
+        "定积分和概率密度的定义"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "令 f(x)=2x 在 0≤x≤1，区间外为0，则它是概率密度；对应 F(t) 在 t≤0 为0、0<t<1 为 t²、t≥1 为1；E[X]=2/3 且 Var(X)=1/18。",
+      "assumptions": [
+        "f 在全体实数上定义且非负、可积；矩计算使用有界支持所以存在。"
+      ],
+      "proof_steps": [
+        {
+          "claim": "f(x)≥0，且 ∫₀¹2x dx=[x²]₀¹=1。",
+          "reason": "非负性与积分规范化给出有效密度。"
+        },
+        {
+          "claim": "F(t)=∫_{-∞}^t f(x)dx，在区间内积分为 t²，区间外取0/1。",
+          "reason": "分布函数的分段积分定义。"
+        },
+        {
+          "claim": "E[X]=∫₀¹2x²dx=2/3，E[X²]=∫₀¹2x³dx=1/2。",
+          "reason": "连续型随机变量矩的定义。"
+        },
+        {
+          "claim": "Var(X)=E[X²]-(E[X])²=1/2-4/9=1/18。",
+          "reason": "方差恒等式及本例矩存在。"
+        }
+      ],
+      "rationale_steps": [],
+      "boundaries": [
+        "概率密度值可以大于1，要求的是积分为1；在单点取值不等于该点概率。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "任意非负函数都是概率密度",
+          "example": "g(x)=2 对 0≤x≤1 积分为2，不是概率密度。",
+          "explanation": "除非积分归一化，否则非负仍不足。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "计算 P(X≤1/2)。",
+          "steps": [
+            "先确定 t=1/2 落在密度支持区间，再用 F(t)=t²。",
+            "F(1/2)=(1/2)²。"
+          ],
+          "answer": "1/4",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "计算 E[X] 并与区间中点比较。",
+          "steps": [
+            "根据 E[X]=∫x f(x)dx，列出区间 [0,1] 上的积分。",
+            "对 x·2x 在0到1积分。"
+          ],
+          "answer": "2/3，严格大于1/2",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "误将 f(1/2)=1 当作 P(X=1/2)",
+          "why_wrong": "概率密度值可以大于1，要求的是积分为1；在单点取值不等于该点概率。",
+          "repair_question": "连续密度下单点概率为零。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先在实数轴写出分段密度。",
+        "积分检查总质量。",
+        "再分段积分出 F、期望和方差。"
+      ],
+      "transfer": {
+        "near": "比较 P(X>3/4) 与 P(X<1/4)。",
+        "far": "将参数 2x 替换为 c x 并由规范化求 c。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 8,
+    "lesson": {
+      "id": "math.hs.elective.statistics.normal-variance-chi-square",
+      "curriculum_ids": [
+        "HS-MATH-165"
+      ],
+      "kind": "method",
+      "title": "正态总体方差的卡方检验及适用前提",
+      "version": "1.0.0",
+      "notation": [
+        "(n-1)S²/σ₀²",
+        "χ²_{n-1}",
+        "S²=Σ(X_i-X̄)²/(n-1)"
+      ],
+      "prerequisites": [
+        "样本方差、正态分布、假设检验"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "当 X_1,…,X_n 独立同分布于 N(μ,σ²)，n≥2，检验 H₀:σ²=σ₀²>0 可用 T=(n-1)S²/σ₀²，在 H₀ 下 T 服从自由度 n-1 的卡方分布；拒绝域须事先按单/双侧假设和显著性水平设定。",
+      "assumptions": [
+        "n≥2、样本独立同分布且总体严格正态；σ₀²>0；样本方差使用 n-1 分母。"
+      ],
+      "proof_steps": [],
+      "rationale_steps": [
+        "先算 X̄ 与 S²，确认 n≥2、样本是否满足独立正态建模假设。 理由：该精确枢轴结论依赖正态与独立，不是任意数据通用规则。",
+        "在 H₀ 下 T=(n-1)S²/σ₀²。 理由：样本方差平方和的正态卡方定理；这里将其作为先修定理而非声称数值测试证明分布。",
+        "用预先确定的 χ²_{n-1} 分位数和备择方向比较 T。 理由：单侧大方差用上尾，双侧分配两尾；不可读数后再挑备择。"
+      ],
+      "boundaries": [
+        "非正态或强依赖样本不能直接套精确 χ² 分布；卡方检验并不直接检验总体均值。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "任意总体样本方差标准化必服从卡方分布",
+          "example": "重尾分布样本不满足正态，平方和一般没有精确卡方分布。",
+          "explanation": "缺失独立正态的精确分布前提，统计量不能套用。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "n=5、S²=4、H₀:σ²=1，求 T 和自由度。",
+          "steps": [
+            "先检验 n≥2 与 σ₀²>0，再代入 (n-1)S²/σ₀²。",
+            "T=4×4/1，自由度5-1。"
+          ],
+          "answer": "T=16，自由度4；是否拒绝需指定显著性水平",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "n=4、S²=2、σ₀²=2，求 T。",
+          "steps": [
+            "先用 n-1=3 确定平方和自由度。",
+            "T=3×2/2。"
+          ],
+          "answer": "T=3，自由度3",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "将统计量值大直接等同有统计显著性",
+          "why_wrong": "非正态或强依赖样本不能直接套精确 χ² 分布；卡方检验并不直接检验总体均值。",
+          "repair_question": "先写显著性水平与拒绝域。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "核对独立同分布和正态假设。",
+        "清楚区分分子样本方差与原假设方差。",
+        "再根据预定尾部查临界分位数。"
+      ],
+      "transfer": {
+        "near": "样本数翻倍但方差不变时统计量如何变化？",
+        "far": "模拟偏态分布下统计量分布并讨论何时拒绝精确推断。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 9,
+    "lesson": {
+      "id": "math.hs.elective.statistics.pearson-gof-expected-counts",
+      "curriculum_ids": [
+        "HS-MATH-166"
+      ],
+      "kind": "method",
+      "title": "Pearson 拟合优度检验的期望频数与自由度",
+      "version": "1.0.0",
+      "notation": [
+        "χ²=Σ(O_i-E_i)²/E_i",
+        "E_i=np_i",
+        "df≈k-1-r"
+      ],
+      "prerequisites": [
+        "古典概率、计数、统计假设检验"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "给定 k 个互斥且完备类别及预先确定的 p_i>0，Σp_i=1，n 次独立同分布观察下用 E_i=np_i 和 X²=Σ(O_i-E_i)²/E_i；大样本近似 χ²_{k-1}。若由同一数据估计 r 个独立自由参数，常规正则条件下自由度需相应调整；小期望频数时近似可能失效。",
+      "assumptions": [
+        "类别划分互斥完备，p_i>0，Σp_i=1，n≥1，观察相互独立且类别概率模型固定或参数估计规则已知。"
+      ],
+      "proof_steps": [],
+      "rationale_steps": [
+        "计算每格 E_i=np_i，并确认 ΣE_i=n 与所有分母正。 理由：期望频数的定义与检验统计量的可计算性。",
+        "计算各格 (O_i-E_i)²/E_i 再求和。 理由：偏差平方非负，标准化由模型期望确定。",
+        "在预定原假设和大样本正则条件下比较 χ² 近似参考分布；参数拟合影响自由度。 理由：渐近近似不是小样本恒等式；期望频数≥5 常作为经验诊断而非严格充分条件。"
+      ],
+      "boundaries": [
+        "若 E_i 为0，统计量无定义；极小期望频数时应考虑合并有意义类别或精确/模拟方法，不能机械声称显著。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "只要 χ²>0 就可拒绝原假设",
+          "example": "观察 O=(12,8)、期望 E=(10,10) 时 χ²=0.8>0，但拒绝须按显著性水平比较。",
+          "explanation": "统计量非零仅反映偏差，不能代替阈值。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "E=(10,10)、O=(12,8)，计算 X²。",
+          "steps": [
+            "先写两格期望均为10，再分别求观察与期望之差。",
+            "两项分别为4/10和4/10。"
+          ],
+          "answer": "X²=4/5",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "E=(2,2)、O=(4,0)，计算并判断参考分布可靠性。",
+          "steps": [
+            "先验证两格 E_i>0，并注意期望频数过小的警告。",
+            "X²=4/2+4/2=4。"
+          ],
+          "answer": "X²=4，但 E_i=2 太小，常规 χ² 近似可信度低",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "把期望频数≥5误写成数学定理的充要条件",
+          "why_wrong": "若 E_i 为0，统计量无定义；极小期望频数时应考虑合并有意义类别或精确/模拟方法，不能机械声称显著。",
+          "repair_question": "说明它只是常用经验规则，关注真实离散分布。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先检查类别与概率合法。",
+        "分别求观察频数和模型期望。",
+        "辨别渐近参考分布与有限样本结论。"
+      ],
+      "transfer": {
+        "near": "把四格合并为两格时为什么不能直接沿用旧自由度？",
+        "far": "参数由同一组样本拟合时对自由度有何影响？"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 13,
+    "lesson": {
+      "id": "math.hs.elective.experiment.orthogonal-factorial-four",
+      "curriculum_ids": [
+        "HS-MATH-167"
+      ],
+      "kind": "method",
+      "title": "二因素两水平正交设计的平衡与交互混淆",
+      "version": "1.0.0",
+      "notation": [
+        "x_A,x_B∈{-1,+1}",
+        "Σx_A=Σx_B=Σx_Ax_B=0"
+      ],
+      "prerequisites": [
+        "向量内积、实验设计的因素水平与重复"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "在四次试验中取 (A,B)=(-1,-1),(-1,+1),(+1,-1),(+1,+1)，两因素列均平衡且正交，可以计算设计矩阵意义上的正交主效应对比；若同时拟合截距、两个主效应和交互作用四个系数，四次试验饱和而没有残差自由度。",
+      "assumptions": [
+        "两因素各只有两个已定义水平；观察次序应随机化，独立重复及误差模型需额外说明；正交不是因果识别的充分条件。"
+      ],
+      "proof_steps": [],
+      "rationale_steps": [
+        "列 A、B 各含两个 +1 与两个 -1，列和均为零。 理由：各因素列元素和为零，故与截距列正交。",
+        "A·B=(+1)+(-1)+(-1)+(+1)=0。 理由：逐行相乘，正交列内积为零。",
+        "模型 1,A,B,AB 四列两两正交且均非零，故在四行中秩为4。 理由：无额外观测维度估计随机误差，因此满模型无残差自由度。"
+      ],
+      "boundaries": [
+        "正交仅是设计矩阵的代数性质；交互作用并不自动可忽略；无随机化也不能保证因果解释。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "正交表一定可以检验每个交互作用是否显著",
+          "example": "四行满秩同时拟合四个参数，残差自由度为0，无法直接估计误差方差。",
+          "explanation": "饱和设计不能独立检验交互显著性。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "四次响应(1,3,5,7)按上述行序，求 B 的高低水平均值差。",
+          "steps": [
+            "B 的高水平是第二、四行，低水平是第一、三行。",
+            "B=+1 响应3,7平均5；B=-1 响应1,5平均3。"
+          ],
+          "answer": "B 主效应对比为2",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "取 A 列(-1,-1,+1,+1)和 B 列(-1,+1,-1,+1)，求点积。",
+          "steps": [
+            "将两列逐行相乘，累加四个乘积。",
+            "对应乘积相加1-1-1+1。"
+          ],
+          "answer": "0",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "未记录随机化就断言因果作用",
+          "why_wrong": "正交仅是设计矩阵的代数性质；交互作用并不自动可忽略；无随机化也不能保证因果解释。",
+          "repair_question": "记录可能的混杂因素和执行顺序。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先写完整试验矩阵。",
+        "逐列检查平衡性与列间内积。",
+        "数清参数与残差自由度。"
+      ],
+      "transfer": {
+        "near": "计算 A 的主效应对比。",
+        "far": "扩展到三因素并思考交互项混杂与重复试验。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 15,
+    "lesson": {
+      "id": "math.hs.elective.models.keynes-affine-stability",
+      "curriculum_ids": [
+        "HS-MATH-168"
+      ],
+      "kind": "theorem",
+      "title": "线性收支均衡与迭代稳定性",
+      "version": "1.0.0",
+      "notation": [
+        "Y=C+I",
+        "C=a+bY",
+        "Y*=(a+I)/(1-b)"
+      ],
+      "prerequisites": [
+        "一阶方程、等比数列、线性差分递推"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "在外生 I、常数 a 及 0≤b<1 下，模型 Y=C+I、C=a+bY 存在唯一均衡 Y*=(a+I)/(1-b)。以 Y_{t+1}=a+bY_t+I 迭代时对任意实初值收敛到 Y*，且对 I 的均衡乘数为1/(1-b)。",
+      "assumptions": [
+        "a,I 是给定常数；0≤b<1，I 不随 Y 反馈；迭代仅是该简化模型的设定而非现实预测。"
+      ],
+      "proof_steps": [
+        {
+          "claim": "将消费表达式代入 Y=C+I，整理为 (1-b)Y=a+I。",
+          "reason": "1-b>0，所以可安全除以非零数。"
+        },
+        {
+          "claim": "均衡解为 Y*=(a+I)/(1-b)，因线性方程系数非零故唯一。",
+          "reason": "因为系数 1-b 非零，一元一次方程解唯一。"
+        },
+        {
+          "claim": "令 e_t=Y_t-Y*，则 e_{t+1}=b e_t，故 e_t=b^t e_0→0。",
+          "reason": "0≤b<1 的等比数列收敛到零。"
+        },
+        {
+          "claim": "对固定 a,b，两组投资 I_2,I_1 的均衡差为 (I_2-I_1)/(1-b)。",
+          "reason": "直接相减得出乘数，不将其扩展为普遍宏观因果结论。"
+        }
+      ],
+      "rationale_steps": [],
+      "boundaries": [
+        "b=1 时无唯一解或无解；|b|≥1 通常不稳定，特殊初值在固定点除外；宏观参数不是永远常数。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "任何 b 都产生唯一且稳定的均衡",
+          "example": "取 b=1、a+I=1，则均衡方程 Y=Y+1 不可能。",
+          "explanation": "1-b=0 时不能除法。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "a=20、I=30、b=1/2 求均衡。",
+          "steps": [
+            "将 C=a+bY 代回 Y=C+I 得 (1-b)Y=a+I。",
+            "(20+30)/(1-1/2)。"
+          ],
+          "answer": "Y*=100",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "a=10、I=0、b=1/2、Y₀=0，求 Y₂。",
+          "steps": [
+            "从给定初值先算 Y₁，再代回同一递推式。",
+            "Y₁=10，Y₂=10+(1/2)·10。"
+          ],
+          "answer": "Y₂=15",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "把均衡代数解与动态稳定性视为一回事",
+          "why_wrong": "b=1 时无唯一解或无解；|b|≥1 通常不稳定，特殊初值在固定点除外；宏观参数不是永远常数。",
+          "repair_question": "单独检验迭代误差的绝对值是否收缩。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先将两个等式联立。",
+        "注意除以1-b要求不为零。",
+        "用误差递推检验稳定而不只求固定点。"
+      ],
+      "transfer": {
+        "near": "令 b=3/4 计算投资增加4时的均衡变化。",
+        "far": "讨论负反馈 b=-1/2 与正反馈 b=3/2 的动态。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 16,
+    "lesson": {
+      "id": "math.hs.elective.models.cobb-douglas-log-conditions",
+      "curriculum_ids": [
+        "HS-MATH-169"
+      ],
+      "kind": "method",
+      "title": "乘幂生产模型的对数线性化与经济解释边界",
+      "version": "1.0.0",
+      "notation": [
+        "Y=A K^α L^β",
+        "lnY=lnA+αlnK+βlnL"
+      ],
+      "prerequisites": [
+        "实数幂、对数函数、函数定义域"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "对于 A,K,L>0 和实数 α,β，乘幂模型 Y=A K^α L^β 可严格取自然对数变为 lnY=lnA+αlnK+βlnL；若模型有乘法噪声，其对数才可写为加性误差，不能由代数转换自动推出因果解释或误差独立性。",
+      "assumptions": [
+        "A>0、K>0、L>0；Y>0；α、β 有限实数；系数视为模型参数非已验证经济常数。"
+      ],
+      "proof_steps": [],
+      "rationale_steps": [
+        "正数幂 K^α、L^β 为正，所以 Y>0 可以取 ln。 理由：自然对数定义域与实幂定义。",
+        "应用 ln(uvw)=lnu+lnv+lnw，ln(K^α)=αlnK。 理由：仅对严格正实数使用对数恒等式。",
+        "若乘法噪声 ε>0，则 ln(Y)=lnA+αlnK+βlnL+lnε。 理由：误差变换仍需独立统计假设，不能凭对数化成立。"
+      ],
+      "boundaries": [
+        "K=0 或 L=0 时对数无法计算；观察数据拟合相关性不证明产出变化的因果性。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "对数线性化可以处理 K=0 的观测",
+          "example": "ln0 不存在，不能通过任意设零解释为有效。",
+          "explanation": "需要重新建模或者明确数据处理方案。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "A=2、α=β=1/2、K=4、L=9，求 Y。",
+          "steps": [
+            "先确认 A、K、L 都大于零，幂与开方有定义。",
+            "Y=2×√4×√9。"
+          ],
+          "answer": "Y=12",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "令 α=1/2、其他固定，K 增为原来的4倍，Y 增为几倍？",
+          "steps": [
+            "固定其余参数，用产出比 Y新/Y旧=4^α。",
+            "比值为 4^(1/2)。"
+          ],
+          "answer": "2倍",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "把回归的 α 解释成必然因果弹性",
+          "why_wrong": "K=0 或 L=0 时对数无法计算；观察数据拟合相关性不证明产出变化的因果性。",
+          "repair_question": "区分代数模型敏感度和真实政策因果。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先逐项确认严格正数域。",
+        "再用对数运算展开。",
+        "最后陈述误差和因果推断需要的额外假设。"
+      ],
+      "transfer": {
+        "near": "对 A=1、α=1/3、β=2/3 算给定 K,L 的产出。",
+        "far": "当 K=0 时讨论是否存在可用的替代模型和可观测性问题。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 21,
+    "lesson": {
+      "id": "math.hs.elective.music.transformations-noncommute",
+      "curriculum_ids": [
+        "HS-MATH-170"
+      ],
+      "kind": "theorem",
+      "title": "平面旋转与镜像在曲式图案中的非交换复合",
+      "version": "1.0.0",
+      "notation": [
+        "R(x,y)=(-y,x)",
+        "H(x,y)=(x,-y)",
+        "R∘H ≠ H∘R"
+      ],
+      "prerequisites": [
+        "平面旋转、轴对称、函数复合"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "令 R 为绕原点逆时针旋转90°、H 为关于 x 轴反射，则 R,H 均是等距变换，但通常 R∘H 与 H∘R 不同，例如作用在 (1,0) 上分别得到 (0,1) 与 (0,-1)。",
+      "assumptions": [
+        "欧氏平面原点和坐标轴固定，按右侧函数先作用的复合约定。"
+      ],
+      "proof_steps": [
+        {
+          "claim": "R(x,y)=(-y,x)，H(x,y)=(x,-y)。",
+          "reason": "90°旋转与 x 轴镜像的坐标规则。"
+        },
+        {
+          "claim": "R(H(x,y))=R(x,-y)=(y,x)。",
+          "reason": "按函数复合从右向左的顺序，先反射后旋转。"
+        },
+        {
+          "claim": "H(R(x,y))=H(-y,x)=(-y,-x)。",
+          "reason": "按函数复合从右向左的顺序，先旋转后反射。"
+        },
+        {
+          "claim": "取 (1,0)，得到 (0,1) 与 (0,-1)，因此两个复合映射不相等。",
+          "reason": "一个反例足以否定两个函数恒等。"
+        }
+      ],
+      "rationale_steps": [],
+      "boundaries": [
+        "若 x=y=0 两次作用相同，不代表映射相同；模式变换不证明真实音乐心理效果。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "两个保距变换任意次序效果都一样",
+          "example": "以点(1,0)比较两种复合，得到相反方向。",
+          "explanation": "非交换群中的运算次序重要。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "算 R(H(2,1))。",
+          "steps": [
+            "复合 R∘H 表示先 H 再 R，依此写中间点。",
+            "H(2,1)=(2,-1)，再旋转得(1,2)。"
+          ],
+          "answer": "(1,2)",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "算 H(R(2,1))。",
+          "steps": [
+            "复合 H∘R 表示先 R 再 H，不可交换顺序。",
+            "R(2,1)=(-1,2)，再反射得(-1,-2)。"
+          ],
+          "answer": "(-1,-2)",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "忽略复合函数从右往左的次序",
+          "why_wrong": "若 x=y=0 两次作用相同，不代表映射相同；模式变换不证明真实音乐心理效果。",
+          "repair_question": "在每步都记录中间坐标。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先写旋转与镜像的坐标公式。",
+        "分别计算两种复合。",
+        "找一个使结果不同的输入点。"
+      ],
+      "transfer": {
+        "near": "在点(0,2)比较两种复合。",
+        "far": "讨论将节奏图案平移后旋转的顺序对对称性的影响。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 22,
+    "lesson": {
+      "id": "math.hs.elective.geometry.pinhole-projection-domain",
+      "curriculum_ids": [
+        "HS-MATH-171"
+      ],
+      "kind": "method",
+      "title": "针孔投影的深度条件与几何不变量限制",
+      "version": "1.0.0",
+      "notation": [
+        "π_f(X,Y,Z)=(fX/Z,fY/Z)",
+        "f>0",
+        "Z>0"
+      ],
+      "prerequisites": [
+        "相似三角形、空间坐标和分式定义域"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "在理想针孔模型中，光轴取 Z 轴、焦距 f>0，前方三维点 Z>0 的像点为 (fX/Z,fY/Z)。同一视线上的不同深度点投到同一像素，长度和一般平行关系不保持；这是几何模型，不自动包含镜头畸变或遮挡。",
+      "assumptions": [
+        "f>0、Z>0；理想透视投影、同一相机坐标系；图像平面与焦点配置按上述约定。"
+      ],
+      "proof_steps": [],
+      "rationale_steps": [
+        "由相似三角形得到 x/f=X/Z、y/f=Y/Z。 理由：前方点 Z>0，安全除法。",
+        "解出 x=fX/Z、y=fY/Z，沿射线 λ(X,Y,Z),λ>0 投影结果相同。 理由：分子分母同时乘同一非零数，说明非单射。",
+        "改变 Z 时像点尺度随1/Z变化，所以欧氏长度与深度一般不保留。 理由：相机坐标中的尺度变化；不能当作正交投影。"
+      ],
+      "boundaries": [
+        "Z=0 时公式未定义；Z<0 属相机后方，不可当作可见真实图像；透视不保角度或真实长度。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "一个像点总能唯一确定三维空间点",
+          "example": "(1,2,1) 与 (2,4,2) 在 f=1 时都投成 (1,2)。",
+          "explanation": "单张理想图像一般没有深度唯一性。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "f=1、P=(2,4,2)，求投影。",
+          "steps": [
+            "先检查 Z=2>0，再写出 x=fX/Z 和 y=fY/Z。",
+            "分别除以 Z=2。"
+          ],
+          "answer": "(1,2)",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "f=2、P=(1,0,4)，求横向像坐标。",
+          "steps": [
+            "先检查 f=2>0、Z=4>0，代入成像公式。",
+            "x=2×1/4。"
+          ],
+          "answer": "x=1/2，y=0",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "忽略深度 Z=0 的分母条件",
+          "why_wrong": "Z=0 时公式未定义；Z<0 属相机后方，不可当作可见真实图像；透视不保角度或真实长度。",
+          "repair_question": "先确定相机前方可见的几何域。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "在相机坐标中画相似三角形。",
+        "先判定 Z 是否可除。",
+        "再分析不同深度的像点重合。"
+      ],
+      "transfer": {
+        "near": "比较 f=1 时点(1,0,1)与(1,0,2)的像。",
+        "far": "说明为什么单目透视不能仅凭一个像素直接测真实物体长度。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 25,
+    "lesson": {
+      "id": "math.hs.elective.geometry.sphere-great-circle-orthant",
+      "curriculum_ids": [
+        "HS-MATH-172"
+      ],
+      "kind": "concept",
+      "title": "球面大圆测地线与直角球面三角形非欧性质",
+      "version": "1.0.0",
+      "notation": [
+        "x²+y²+z²=R²",
+        "d=Rθ (0≤θ≤π)",
+        "球面三角形角和"
+      ],
+      "prerequisites": [
+        "欧氏三维空间、圆弧长度、向量夹角"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": "半径 R>0 球面上，两点间短大圆弧是其共同球心平面与球面相交的短弧；若两点相异且不为对径点，则短大圆弧唯一；重合点的最短路径长度为0，对径点则有无穷多条等长半圆弧。由三个正坐标轴单位点构成的正八分体球面三角形，三个角均为 π/2，总角为3π/2，不能套平面三角形180°角和。",
+      "statement": null,
+      "assumptions": [
+        "R>0；圆弧用弧度计；不同且非对径两点确定唯一短大圆弧；同一点的最短曲线为常值路径，不能声称确定唯一大圆；对径点有不唯一短大圆弧。"
+      ],
+      "proof_steps": [],
+      "rationale_steps": [
+        "对两相异非对径点，球心与这两个点确定唯一大圆平面，最短弧长 Rθ（0<θ<π）；同一点距离0，对径点距离πR但路径不唯一。 理由：三点不共线条件保证大圆平面唯一；圆弧长定义与0≤θ≤π。",
+        "正八分体三顶点坐标轴两两垂直，每条短大圆弧长 πR/2。 理由：三组中心角均为 π/2。",
+        "每个顶点两边所在大圆切线互相垂直，因此球面内角均为π/2。 理由：球面角以切向量夹角定义。",
+        "三个角之和为 3π/2>π，提供欧氏平面角和失效的具体例子。 理由：仅为这类三角形的有限几何计算，不冒称全部球面几何分类定理。"
+      ],
+      "boundaries": [
+        "当两点相互对径时短大圆弧不唯一；将平面“直线”直接解释为三维直线会离开球面。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "所有三角形的三个内角都是π",
+          "example": "正八分体球面三角形角和为3π/2。",
+          "explanation": "内角取决于底层几何与测地线。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "R=2，正交单位方向两点间短弧长度是多少？",
+          "steps": [
+            "两个半径方向互相垂直，所以中心角 θ=π/2。",
+            "中心角π/2，弧长R×π/2。"
+          ],
+          "answer": "π",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "算正八分体球面三角形角和。",
+          "steps": [
+            "在每个球面顶点比较两条大圆弧的切向量。",
+            "每角π/2，共3角。"
+          ],
+          "answer": "3π/2",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "把圆弧弦长当成球面测地距离",
+          "why_wrong": "当两点相互对径时短大圆弧不唯一；将平面“直线”直接解释为三维直线会离开球面。",
+          "repair_question": "区分空间直线距离和球面路径长度。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先说明球面和测地线对象。",
+        "计算中心角而不是平面投影角。",
+        "在顶点用切向量定义球面角。"
+      ],
+      "transfer": {
+        "near": "R=1 时对径点的球面最短路径有几条？",
+        "far": "比较大圆与纬度圈在球面上是否一般最短。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  },
+  {
+    "gap": 28,
+    "lesson": {
+      "id": "math.hs.elective.statistics.normal-sampling-mean",
+      "curriculum_ids": [
+        "HS-MATH-173"
+      ],
+      "kind": "theorem",
+      "title": "正态独立样本均值的抽样分布与标准误",
+      "version": "1.0.0",
+      "notation": [
+        "X̄=(1/n)ΣX_i",
+        "X̄~N(μ,σ²/n)",
+        "SE=σ/√n"
+      ],
+      "prerequisites": [
+        "正态分布、随机变量期望与方差、独立性"
+      ],
+      "prerequisite_lesson_ids": [],
+      "definition": null,
+      "statement": "若 X_1,…,X_n 独立同分布于 N(μ,σ²)，其中 n≥1 且 σ>0，则样本均值 X̄ 精确服从 N(μ,σ²/n)，故标准误为 σ/√n。对一般总体仅凭同方差独立只能推出均值和方差，不必精确正态。",
+      "assumptions": [
+        "n 为正整数，X_i 相互独立且每个严格服从 N(μ,σ²)；σ>0。"
+      ],
+      "proof_steps": [
+        {
+          "claim": "期望线性性给出 E[X̄]=(1/n)Σμ=μ。",
+          "reason": "正态随机变量期望存在且有限，线性性无需独立。"
+        },
+        {
+          "claim": "独立性使协方差为0，所以 Var(X̄)=(1/n²)Σσ²=σ²/n。",
+          "reason": "独立随机变量两两协方差为零，方差相加合法。"
+        },
+        {
+          "claim": "独立正态变量的线性组合仍正态，因此 X̄~N(μ,σ²/n)。",
+          "reason": "此处明确引用正态线性组合定理，非靠几个样本验证。"
+        },
+        {
+          "claim": "标准差取正平方根，SE=√(σ²/n)=σ/√n。",
+          "reason": "因为 σ>0、n≥1，方差的正平方根等于 σ/√n。"
+        }
+      ],
+      "rationale_steps": [],
+      "boundaries": [
+        "样本不独立时协方差项可能非零；非正态总体的小样本均值不必正态；样本标准差 S 不等于已知总体 σ。"
+      ],
+      "counterexamples": [
+        {
+          "false_claim": "不论总体分布如何，样本均值都精确正态",
+          "example": "X_i 为独立伯努利0/1，n=1 时 X̄ 仍只取0或1，不是连续正态分布。",
+          "explanation": "中心极限定理只是特定条件下的渐近近似。"
+        }
+      ],
+      "worked_examples": [
+        {
+          "question": "μ=3、σ=2、n=4，写出样本均值的分布。",
+          "steps": [
+            "先用独立同分布的正态前提写出均值分布 N(μ,σ²/n)。",
+            "方差 σ²/n=4/4。"
+          ],
+          "answer": "N(3,1)",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        },
+        {
+          "question": "σ=10、n=25，求标准误。",
+          "steps": [
+            "标准误是均值方差 σ²/n 的正平方根。",
+            "10/√25。"
+          ],
+          "answer": "2",
+          "check": "使用给定前提和精确运算复核；不得由有限例子推广成无限域证明。"
+        }
+      ],
+      "misconceptions": [
+        {
+          "error": "把 X̄ 的方差与标准差混为一谈",
+          "why_wrong": "样本不独立时协方差项可能非零；非正态总体的小样本均值不必正态；样本标准差 S 不等于已知总体 σ。",
+          "repair_question": "区分 σ²/n 和 σ/√n。请说明判断依据。"
+        }
+      ],
+      "hint_ladder": [
+        "先明确独立正态前提。",
+        "分别算 E 与 Var。",
+        "使用正态线性组合结论并开平方。"
+      ],
+      "transfer": {
+        "near": "样本量从25增至100时标准误如何变化？",
+        "far": "当独立性被强相关破坏时写出方差中的协方差修正项。"
+      },
+      "provenance": {
+        "kind": "PROJECT_AUTHORED",
+        "permission": "PROJECT_AUTHORED",
+        "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+        "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+        "author_role": "PROJECT_AUTHOR"
+      },
+      "review": {
+        "status": "REVIEW_PENDING",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "review_record": null
+      },
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  }
+]

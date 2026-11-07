@@ -30,10 +30,10 @@ def main():
         page.locator('button[data-view="lab"]').click()
         page.wait_for_function("() => document.querySelectorAll('#labPreset option').length>=12")
         assert page.locator("#lab").is_visible()
-        assert page.locator("#labSummary").inner_text().find("161")>=0
+        assert page.locator("#labSummary").inner_text().find("173")>=0
         assert str(page.request.get(BASE+"/api/math-lab/catalog").json()["counts"]["scene_presets"]) in page.locator("#labSummary").inner_text()
         assert "174938" in page.locator('meta[name="theme-color"]').get_attribute("content")
-        report["interaction_checks"].append("Standalone green lab navigation and 161-topic engineering catalog (not official scope)")
+        report["interaction_checks"].append("Standalone green lab navigation and 173-topic engineering catalog (not official scope)")
 
         page.wait_for_selector("#labFormula mjx-container svg",timeout=17000)
         for family in ["function_2d","conic_2d","triangle_2d","space_3d"]:

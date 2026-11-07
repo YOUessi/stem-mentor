@@ -52,7 +52,8 @@ def lookup(path, key):
 
 def build():
     official = as_json(OFFICIAL)
-    course = as_json(CURRICULUM)["coverage"]
+    course = [x for x in as_json(CURRICULUM)["coverage"]
+              if int(x["id"].removeprefix("HS-MATH-")) <= 161]  # Immutable pre-Batch22 ledger.
     reconciled = as_json(RECONCILE)
     evidence = as_json(EVIDENCE)
     sys.path.insert(0, str(ROOT))
@@ -60,9 +61,10 @@ def build():
     # Preserve the Batch20 historical 224-lesson proof baseline. Batch21 has
     # a separately versioned 11-lesson / 24-proof-step audit; do not silently
     # rewrite earlier 451 unverified obligations or risk-priority snapshots.
-    added = {row["id"] for row in as_json(LESSON_DIR / "elective_gap_batch21.json")}
+    added = {row["id"] for filename in ("elective_gap_batch21.json","elective_gap_batch22.json")
+             for row in as_json(LESSON_DIR / filename)}
     docs = [doc for doc in lessons() if doc.id not in added]
-    if len(docs) != 224 or len(added) != 11:
+    if len(docs) != 224 or len(added) != 23:
         raise ValueError("Batch20 frozen mathematical proof baseline drift")
 
     tracks = [t for t in official["tracks"] if t["id"].startswith("ELECTIVE_")]

@@ -42,6 +42,9 @@ jobs:
       - run: python scripts/build_kb_batch20_k00_review_queue.py --check
       - run: python scripts/build_kb_batch21_lessons.py --check
       - run: python scripts/build_kb_batch21_proof_union.py --check
+      - run: python scripts/author_kb_batch22.py --check
+      - run: python scripts/build_kb_batch22_lessons.py --check
+      - run: python scripts/build_kb_batch22_proof_and_scope.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q

@@ -32,8 +32,9 @@ def build():
     old_rows = {x["id"]: x for x in base["lessons"]}
     current = {x.id: x for x in lessons()}
     fresh_ids = {x["id"] for x in new}
-    if (len(old_rows) != 224 or len(new) != 11 or len(current) != 235
-            or set(old_rows) & fresh_ids or set(current) != set(old_rows) | fresh_ids):
+    if (len(old_rows) != 224 or len(new) != 11
+            or set(old_rows) & fresh_ids or not (set(old_rows) | fresh_ids <= set(current))
+            or len(set(current) - set(old_rows) - fresh_ids) != 12):
         raise ValueError("Old + new proof queue must exactly cover current independent draft IDs")
     for key, prior in old_rows.items():
         doc = current[key]
@@ -68,7 +69,7 @@ def build():
         raise ValueError("Batch21 expected exactly 23 new unverified theorem proof steps")
     summary = {
         "existing_historical_draft_lessons": 224, "batch21_new_deep_drafts": 11,
-        "current_draft_lessons": len(current),
+        "current_draft_lessons": len(old_rows) + len(new),  # Frozen Batch21 snapshot, not live Batch22.
         "historical_unverified_proof_steps": prior_count,
         "batch21_unverified_proof_steps": len(items),
         "total_current_unverified_proof_steps": prior_count + len(items),

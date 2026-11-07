@@ -14,7 +14,8 @@ def raw():
 def test_all_source_candidates_have_a_review_queue_row():
     data=editorial_review_queue()
     assert len(data["items"])==len(source_inventory()["items"])==132
-    assert data["total_deep_draft_lessons"]==len(lessons())==235
+    assert data["total_deep_draft_lessons"] == 235  # frozen Batch13 review scope
+    assert len(lessons()) == 247  # Batch22 separately audited
     assert data["proposed_objectives"]>60
     assert data["proposed_edges"]>=data["proposed_objectives"]
     assert all(r["review_state"]=="QUEUED_FOR_HUMAN_REVIEW" for r in data["items"])

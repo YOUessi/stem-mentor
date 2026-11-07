@@ -18,9 +18,21 @@ def digest(value):
     raw=json.dumps(value,sort_keys=True,ensure_ascii=False,separators=(",",":"))
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
+def historical_batch13_deep():
+    """Explicit frozen Batch21 editorial proposal scope (235), excluding later drafts.
+
+    The new Batch22 index is separately audited and still unavailable to students.
+    """
+    later_path=PATH.parents[2]/"knowledge/deep/v1/elective_gap_batch22.json"
+    later={x["id"] for x in json.loads(later_path.read_text(encoding="utf-8"))}
+    full={x.id:x.model_dump(mode="json") for x in lessons()}
+    if len(later)!=12 or not later<=set(full) or len(full)-len(later)!=235:
+        raise ValueError("Historical review snapshot is not reconcilable with live lessons")
+    return {k:v for k,v in full.items() if k not in later}
+
 def validate_proposals(data, original=None, deep=None):
     original=source_inventory() if original is None else original
-    deep={x.id:x.model_dump(mode="json") for x in lessons()} if deep is None else deep
+    deep=historical_batch13_deep() if deep is None else deep
     if data.get("inventory_status")!="EDITORIAL_MATCH_QUEUE_NOT_APPROVED":
         raise ValueError("Proposed curriculum matches cannot be certified")
     if data.get("official_atomic_denominator") is not None or data.get("official_coverage_percent") is not None:

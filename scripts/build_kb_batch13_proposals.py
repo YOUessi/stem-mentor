@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "backend"))
 from app.standard_scope import source_inventory
 from app.deep_knowledge import lessons
+from app.objective_proposals import historical_batch13_deep
 
 OUT = ROOT / "curriculum/highschool_math/objective_lesson_proposals_batch13.json"
 
@@ -170,7 +171,7 @@ def digest(v: object) -> str:
 def build():
     src=source_inventory()
     student_scope={x["id"]:x for x in src["items"]}
-    deep={x.id:x.model_dump(mode="json") for x in lessons()}
+    deep=historical_batch13_deep()  # Original 235 lesson proposal universe; Batch22 separately reviewed.
     rows=[]
     for item in src["items"]:
         small=item["id"].replace("HS-STD2020-","")
