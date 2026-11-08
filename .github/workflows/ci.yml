@@ -68,6 +68,7 @@ jobs:
       - run: python scripts/build_kb_batch33_draft_crosswalk.py --check
       - run: python scripts/build_kb_batch33_math_finite_audit.py --check
       - run: python scripts/build_kb_batch34_editorial_review.py --check
+      - run: python scripts/build_kb_batch35_editorial_review.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
