@@ -34,6 +34,7 @@ echo "[0/4] Batch24+25 source/P0/math/review guards"
 .venv/bin/python scripts/author_kb_batch38_partial.py --check
 .venv/bin/python scripts/author_kb_batch39_remaining.py --check
 .venv/bin/python scripts/build_kb_batch40_official_clauses.py --check
+PYTHONPATH=backend .venv/bin/python -m app.kb_batch41_core_review --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"

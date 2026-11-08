@@ -1,0 +1,840 @@
+{
+  "authored_seed_sha256": "f5a882c47c62ccc14b2b3c015840cbef3e8ad337a4080377d18735b01023462a",
+  "editorial_source_shas": {
+    "kb31": "b541e15070fefefc05d9730fd8dbc0ba571a9110fa84452f537c31879399dcf3",
+    "kb32": "a851ae8ece74bfb33be0f080c635af6df52252a73b8ff7536e0118a928a98140"
+  },
+  "records": [
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.001",
+      "lesson_sha256": "021cf06db74445386e99cc9acaba95dfb6b70d3273bd88d9254cdf2c1225bce0",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "区分空集与含空集作唯一元素的集合",
+        "printed_page": 15,
+        "source": "kb31",
+        "source_line": 5,
+        "topic": "集合与集合语言",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "空集与单元素集合",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "set_complement_mask"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.002",
+      "lesson_sha256": "3f5d4d0649f193e0e3723de9970144d8ef0da09d2eb43b4601e9c53ae401123d",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "在给定论域下解释全集及相对补集的依赖",
+        "printed_page": 15,
+        "source": "kb31",
+        "source_line": 6,
+        "topic": "集合与集合语言",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "全集与补集的论域前提",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.003",
+      "lesson_sha256": "92d80d2e96d7d98f0f5a63ae1cc1fff665dd19ebadffd90f1ce9fc27240eacba",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "逐元素论证两个集合相等而非仅比较元素数目",
+        "printed_page": 15,
+        "source": "kb31",
+        "source_line": 8,
+        "topic": "集合关系",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "集合相等的双向包含证明",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.004",
+      "lesson_sha256": "cff45082e0c4d530b966998ce52b49d5b9a320bb83f1fa581f1d21b0e98f2549",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "分清条件命题中结论为真所要求的必要条件",
+        "printed_page": 16,
+        "source": "kb31",
+        "source_line": 13,
+        "topic": "逻辑命题",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "必要条件与逆命题",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.005",
+      "lesson_sha256": "52691a2c2fda98e57dd504d0e6c37a94dc47fbd80937db927df64ca755c0de47",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "把全称命题的否定化为存在反例的形式",
+        "printed_page": 16,
+        "source": "kb31",
+        "source_line": 18,
+        "topic": "量词与否定",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "全称量词否定",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "amgm_square_gap"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.006",
+      "lesson_sha256": "324e03b645118670d1ff69c4d5bf3e0ca085122c7fca5ed75b656cb620c797bd",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "theorem",
+        "optional": "N",
+        "original_goal": "在两个非负实数的前提下运用算术几何平均界并检验等号",
+        "printed_page": 16,
+        "source": "kb31",
+        "source_line": 21,
+        "topic": "基本不等式",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "两数 AM–GM 与取等条件",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "inequality_scale"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.007",
+      "lesson_sha256": "e7c377bf14b24a37fa8ebf08e6b72aaed2397bc42182ed2a0df9917d8bcef1a6",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "辨析等式加减和不等式同乘时符号条件的区别",
+        "printed_page": 16,
+        "source": "kb31",
+        "source_line": 20,
+        "topic": "不等关系",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "不等式同乘的符号门槛",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "quadratic_roots_count"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.008",
+      "lesson_sha256": "2ab7de365d81914bd7f25444236490f06372fbc4f0ba6c34ec510244db02d513",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "借助抛物线与横轴交点讨论二次方程实根个数",
+        "printed_page": 17,
+        "source": "kb31",
+        "source_line": 22,
+        "topic": "二次函数与根",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "二次方程的判别式",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.009",
+      "lesson_sha256": "c49f532d203870dbc6dbc3f9f0382daf0d3898d8d97553bc5760b3428a93665f",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "按定义域与对应法则区分两个函数是否是同一函数",
+        "printed_page": 19,
+        "source": "kb31",
+        "source_line": 26,
+        "topic": "函数概念",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "函数相等的定义域与对应规则",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "radical_fraction_domain"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.010",
+      "lesson_sha256": "8823ba0196a258661a9f7ad0dea01f689980b6351498c7187b98f43962904e53",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "从根式与分式的合法输入条件计算实函数定义域",
+        "printed_page": 19,
+        "source": "kb31",
+        "source_line": 27,
+        "topic": "函数概念",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "根式与分母定义域的交集",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.011",
+      "lesson_sha256": "07068208a5a85f90648685d280d1c092c76bffd10d07e97857670d88be992614",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "根据输入所属分区选择合法的分段表达式",
+        "printed_page": 19,
+        "source": "kb31",
+        "source_line": 29,
+        "topic": "分段函数",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "分段函数与边界归属",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.012",
+      "lesson_sha256": "cec609bc5062f7154f7a07813a4b1907bff29929358156f86c6b97c3c8d837e9",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "在给定区间使用两点序关系表述单调增减",
+        "printed_page": 19,
+        "source": "kb31",
+        "source_line": 30,
+        "topic": "函数单调性",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "严格单调递增的双点定义",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.013",
+      "lesson_sha256": "48138ddc1bda5daa395d46769dcb77ad824971d8884297710e117b04d2e77966",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "以定义域关于零对称为先决条件判定奇偶性",
+        "printed_page": 19,
+        "source": "kb31",
+        "source_line": 32,
+        "topic": "函数奇偶性",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "函数奇偶性的对称定义域",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.014",
+      "lesson_sha256": "d4abfceb903fcc3480d0c424520122e83151c9ac4079c8e81559c7a00fb29e2c",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "区分周期恒等关系与某些点函数值相等",
+        "printed_page": 19,
+        "source": "kb31",
+        "source_line": 33,
+        "topic": "函数周期性",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "函数周期的全域平移条件",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.015",
+      "lesson_sha256": "68ab62194b5734e9e1d2c1eadcd52755d25f727302c538518cc38f55557b912b",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "建立对数与指数互逆关系并指出真数正值限制",
+        "printed_page": 20,
+        "source": "kb31",
+        "source_line": 39,
+        "topic": "对数",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "对数的合法底数与正真数",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "log_product_powers"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.016",
+      "lesson_sha256": "9bc092e9f74eedfb1eca96f986774baf86f27f7b767f97d80ee7475700d1a563",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "在底数合法真数为正时使用对数乘除与幂法则",
+        "printed_page": 20,
+        "source": "kb31",
+        "source_line": 40,
+        "topic": "对数",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "对数乘积法则的双真数限制",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.017",
+      "lesson_sha256": "d237285b90eb588e42b72cf36b4bfa2ccefee19fa765ba4c2ac012e30aaeb72e",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "theorem",
+        "optional": "N",
+        "original_goal": "限定适当定义域后证明同底指数函数与对数函数互逆",
+        "printed_page": 21,
+        "source": "kb31",
+        "source_line": 43,
+        "topic": "互为反函数",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "指数与对数互逆的复合恒等式",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.018",
+      "lesson_sha256": "aaf4a0469663b62a1c830743f933c7017b21d14b11c1d6e976ad696dcaf246d5",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "为具有有限结果的随机试验确定包含全部样本点的集合",
+        "printed_page": 31,
+        "source": "kb32",
+        "source_line": 13,
+        "topic": "样本空间",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "有限样本空间与事件",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "classical_probability"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.019",
+      "lesson_sha256": "f1e092185982aed718e4f488a2bb162a440b70cf47541b60375a7ca75eee76f1",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "在古典概型成立时以有利样本点数比总样本点数求概率",
+        "printed_page": 31,
+        "source": "kb32",
+        "source_line": 18,
+        "topic": "古典概型",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "古典概型的有限等可能门槛",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "event_union"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.020",
+      "lesson_sha256": "b52fd30b4060f8e9e5e28184472bc84e02ca2ffb0e5187464e54831de81f31fd",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "theorem",
+        "optional": "N",
+        "original_goal": "利用概率加法性质计算并事件并避免重复计入交集",
+        "printed_page": 31,
+        "source": "kb32",
+        "source_line": 19,
+        "topic": "概率性质",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "概率并集的容斥公式",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "event_independent"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.021",
+      "lesson_sha256": "9cf55da8e35b8b0f5dca1ee0b36af0e3df0fd57d7b912c8fc2c1c1e1aa5c7175",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "concept",
+        "optional": "N",
+        "original_goal": "用概率乘积关系区别事件独立与事件互斥两个概念",
+        "printed_page": 31,
+        "source": "kb32",
+        "source_line": 21,
+        "topic": "事件独立性",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "独立与互斥的严格区别",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "weighted_population_mean"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.022",
+      "lesson_sha256": "4a9495f2f78f11e2ccc49663331b1b6117fa23b11effab77290113fb80bb53e0",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "合成各层统计量时使用恰当权重而非直接平均各层均值",
+        "printed_page": 32,
+        "source": "kb32",
+        "source_line": 30,
+        "topic": "分层抽样",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "分层均值的权重来自总体比例",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "arithmetic_term"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.selective_compulsory.023",
+      "lesson_sha256": "24a1a92da2b30869d30cb095f265a9f8e6e691321f42a6b0f5932c1e07956635",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "theorem",
+        "optional": "N",
+        "original_goal": "从公差恒定条件分步推导等差数列通项公式",
+        "printed_page": 38,
+        "source": "kb32",
+        "source_line": 45,
+        "topic": "等差数列",
+        "track": "SELECTIVE_COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "等差数列通项公式及索引条件",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "arithmetic_sum"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.selective_compulsory.024",
+      "lesson_sha256": "a1b6edd26810a471d35c5f85ffb52ea851849d1eab46b81fdb2f8b33c3e6d657",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "theorem",
+        "optional": "N",
+        "original_goal": "配对求和推出等差数列前若干项之和并检查项数",
+        "printed_page": 38,
+        "source": "kb32",
+        "source_line": 46,
+        "topic": "等差数列",
+        "track": "SELECTIVE_COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "等差数列配对求和定理",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "geometric_sum"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.selective_compulsory.025",
+      "lesson_sha256": "bb157a7c1e6e5cd0abe739f82e6a7db5de224c9af66ddd7b62dcdf284c205e6b",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "theorem",
+        "optional": "N",
+        "original_goal": "推导等比前若干项之和时显式区分公比等于一",
+        "printed_page": 38,
+        "source": "kb32",
+        "source_line": 50,
+        "topic": "等比数列",
+        "track": "SELECTIVE_COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "等比数列前n项和的分支",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "square_increase"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.selective_compulsory.026",
+      "lesson_sha256": "52b2e854b172b3c61cef5d4fe9b763984e0251a292e0a5cf0f58f97005ae713c",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "theorem",
+        "optional": "N",
+        "original_goal": "在区间可导且导数严格为正时证明函数严格递增",
+        "printed_page": 39,
+        "source": "kb32",
+        "source_line": 59,
+        "topic": "导数与单调性",
+        "track": "SELECTIVE_COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "导数正值推出严格递增",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "plane_normal_dot"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.027",
+      "lesson_sha256": "574a11202b22d93e4f15e519c5ae2e44085337880c24ba7d4149de8c2ab698e7",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "theorem",
+        "optional": "N",
+        "original_goal": "检查平面内两条直线相交并分别垂直后判断线面垂直",
+        "printed_page": 29,
+        "source": "kb32",
+        "source_line": 6,
+        "topic": "空间位置判定",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "线面垂直判定的两相交直线前提",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "complex_division"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.028",
+      "lesson_sha256": "06d105d46fbb5c70fe403a40e79429bde5877724e3f1f5d72292fd0f78122bd1",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "将复数代数式的四则计算与复平面的几何表示相互核对",
+        "printed_page": 30,
+        "source": "kb32",
+        "source_line": 11,
+        "topic": "复数运算",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "复数除法的共轭与分母非零",
+      "worked_examples": 2
+    },
+    {
+      "counterexamples": 1,
+      "finite_case_witness_operators": [
+        "sample_variance_unbiased_2"
+      ],
+      "has_general_proof_certification": false,
+      "hint_levels": 3,
+      "id": "math.hs.editorial.batch41.compulsory.029",
+      "lesson_sha256": "e89bb5bf396d5b08dd6a53eeb6bbf939b472dc67c9fad9a1478f136ecbb8ee83",
+      "math_certified": false,
+      "near_far_tasks": 2,
+      "official_clause_alignment_verified": false,
+      "source": {
+        "kind": "method",
+        "optional": "N",
+        "original_goal": "从给定样本按约定分母计算样本均值与样本方差",
+        "printed_page": 32,
+        "source": "kb32",
+        "source_line": 27,
+        "topic": "样本数值特征",
+        "track": "COMPULSORY"
+      },
+      "status": "REVIEW_PENDING",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "title": "样本方差分母必须声明",
+      "worked_examples": 2
+    }
+  ],
+  "source_original_pdf_sha256_prior_audit_only": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "student_projection": {
+    "approved": 0,
+    "official_atomic_denominators": {
+      "COMPULSORY": null,
+      "ELECTIVE_A": null,
+      "ELECTIVE_B": null,
+      "ELECTIVE_C": null,
+      "ELECTIVE_D": null,
+      "ELECTIVE_E": null,
+      "SELECTIVE_COMPULSORY": null
+    },
+    "review_pending": 29,
+    "status": "UNPUBLISHED_REVIEW_ONLY",
+    "student_documents": [],
+    "student_published": 0,
+    "teacher_solutions_exposed": []
+  },
+  "summary": {
+    "by_track": {
+      "COMPULSORY": 25,
+      "SELECTIVE_COMPULSORY": 4
+    },
+    "counterexamples": 29,
+    "draft_manuscripts": 29,
+    "finite_case_witnessed_units": 17,
+    "hint_levels": 87,
+    "historical_deep_drafts_unchanged": 287,
+    "near_far_transfers": 58,
+    "official_atomic_denominators": {
+      "COMPULSORY": null,
+      "ELECTIVE_A": null,
+      "ELECTIVE_B": null,
+      "ELECTIVE_C": null,
+      "ELECTIVE_D": null,
+      "ELECTIVE_E": null,
+      "SELECTIVE_COMPULSORY": null
+    },
+    "student_published": 0,
+    "teacher_approved": 0,
+    "teacher_examples": 58,
+    "units_without_independent_finite_case": 12
+  }
+}
