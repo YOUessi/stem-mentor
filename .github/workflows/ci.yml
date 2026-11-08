@@ -77,6 +77,8 @@ jobs:
       - run: PYTHONPATH=backend python -m app.kb_batch41_core_review --check
       - run: PYTHONPATH=backend python -m app.kb_batch42_review --check
       - run: PYTHONPATH=backend python -m app.kb_batch42_coverage --check
+      - run: python scripts/build_kb_batch43_seed.py --check
+      - run: PYTHONPATH=backend python -m app.kb_batch43_review --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
