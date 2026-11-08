@@ -1,0 +1,268 @@
+#!/usr/bin/env python3
+"""Complete seven Batch36 PARTIAL_SCOPE gaps with original, unapproved teacher manuscripts."""
+from __future__ import annotations
+import argparse, hashlib, json, sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "backend"))
+from app.kb_batch34_review import Manuscript
+from pydantic import Field
+
+class Batch39Manuscript(Manuscript):
+    id: str = Field(pattern=r"^math\.hs\.editorial\.batch39\.kb33\.[c-d]\.p0[567]\d\.a\d{3}$")
+
+SOURCE = ROOT / "docs/evaluation/KB_BATCH36_47_LEGACY_SCOPE_AUDIT.json"
+PREVIOUS = ROOT / "docs/evaluation/KB_BATCH38_PARTIAL_SCOPE_AUDIT.json"
+SEED = ROOT / "knowledge/editorial_review/kb_batch39_remaining.jsonl"
+MD = ROOT / "docs/evaluation/KB_BATCH39_SEVEN_MATHEMATICAL_MANUSCRIPTS.md"
+AUDIT = ROOT / "docs/evaluation/KB_BATCH39_SEVEN_REPAIR_AUDIT.json"
+ROWS = []
+
+def add(cid, title, kind, claim, notation, assumptions, steps, false_claim, bad_example,
+        explanation, examples, boundaries, near, far, hints):
+    assert len(steps) == 3 and len(examples) == 2 and len(hints) == 3
+    data = dict(
+        editorial_candidate_id=cid,
+        id="math.hs.editorial.batch39." + cid.lower().replace("-", "."),
+        kind=kind, title=title, claim=claim, notation=[notation],
+        assumptions=[assumptions],
+        reasoning_steps=[{"claim":a, "reason":b} for a,b in steps],
+        counterexample={"false_claim":false_claim, "example":bad_example, "explanation":explanation},
+        worked_examples=[{"question":q,"steps":s,"answer":a,"check":check}
+                         for q,s,a,check in examples],
+        boundaries=[boundaries, "项目自编课标目标不是逐句官方条款；旧讲义链接尚未证实数学等价，需教师审核。"],
+        misconception={"error":false_claim,"why_wrong":explanation,
+                       "repair_question":"在尝试该结论前，需要补上哪个条件或检查哪一个反例？"},
+        hint_ladder=hints, transfer={"near":near,"far":far},
+        review={"status":"REVIEW_PENDING","reviewer_id":None,"reviewed_at":None,"review_record":None},
+        teacher_solution_visibility="TEACHER_ONLY",source_license="PROJECT_AUTHORED",
+        proof_verification="NOT_FORMALLY_CERTIFIED",student_publishable=False,
+    )
+    Batch39Manuscript.model_validate(data)
+    ROWS.append(data)
+
+add("KB33-C-P065-A005","有限命题语义中的相容、独立与完备区分","concept",
+    "相对固定有限原子集合及经典二值语义，公理集相容当且仅当至少有一个共同满足赋值；某条公理独立于其余公理，当且仅当余下公理存在使该条为假的模型；语义完备是每个公式或其否定都由公理集语义蕴含。",
+    "Σ ⊨ φ；Mod(Σ)={v:v满足Σ}；Σ语义完备 ⇔ 对任意φ，Σ⊨φ或Σ⊨¬φ",
+    "原子集合有限、经典二值真值表；区别语义完备与特定形式推演系统的证明完备性。",
+    [("逐行枚举全部2^n个赋值，交集满足所有公理的赋值。","有限二值语义中每个公式的真值可直接计算。"),
+     ("去掉公理ψ后，若存在满足其余公理但不满足ψ的赋值，ψ才独立。","独立的定义是不能从其余公理语义蕴含ψ。"),
+     ("相容且只剩唯一全体原子赋值时，任何公式在该模型上有确定真值。","固定有限原子的真值函数在唯一模型取真或取假，因而语义决定。")],
+    "只要一个公理集相容，它就必然语义完备。",
+    "在原子p、q上取Σ={p}，(p=真,q=真)和(p=真,q=假)都是模型，因此既不蕴含q也不蕴含¬q。",
+    "存在模型仅保证相容，不会自动决定剩余原子的真值。",
+    [("在原子p,q上，Σ={p,p→q}是否相容并蕴含q？",
+      ["列出p为真的赋值。","同时满足p→q必须q为真。"],"相容且蕴含q","唯一满足赋值是(p,q)=(真,真)。"),
+     ("Σ={p}是否蕴含q？",
+      ["固定p=真列举q两种可能。","找到q=假的反模型即可否定蕴含。"],"不蕴含q","(真,假)满足Σ而不满足q。")],
+    "不把有限真值表检验迁移为对任意无限一阶理论的可判定性或形式证明完备性。",
+    "检查Σ={p,q}中每条公理是否独立于另一条。",
+    "对比语义蕴含与某个指定推演系统的形式可证明性。",
+    ["先固定全部命题原子与经典真值赋值范围，列举可能模型。",
+     "分别问：至少有一个模型吗？删除一条公理后有反模型吗？",
+     "针对完备性，用未被决定的原子构造两个模型，检验公式及否定是否都无法推出。"])
+
+add("KB33-C-P067-A004","调查覆盖、非应答与测量偏差的机制分离","method",
+    "覆盖偏差来自目标总体未进入抽样框；非应答偏差来自被抽中的个体响应机制与目标值关联；测量偏差来自记录值与真实值系统差异，这三类机制不可互相替代。",
+    "总体均值μ=Σy_i/N；响应均值μ_R=ΣR_i y_i / ΣR_i；测量值y*_i=y_i+e_i",
+    "目标总体明确；响应平均要求响应人数大于0；观测偏差的定量描述需要真实值或可信验证基准。",
+    [("先比较抽样框与目标总体，识别哪些成员根本没有抽样机会。","覆盖问题发生在随机响应之前。"),
+     ("在已进入抽样框的样本中按响应指示R分组，检查目标值分布可能不同。","仅统计回答人数不意味着响应是随机缺失。"),
+     ("单独检查测量方程y*=y+e的系统误差。","量表或仪器偏移不能靠增加响应率自动消除。")],
+    "只要回答率达到100%，调查就不会存在偏差。",
+    "抽样框只包含城市居民，即使其中全部应答，也不能代表城乡总体；测量仪器统一多报5还会造成测量偏差。",
+    "回答率仅涉及入框后的响应机制，无法解决总体覆盖和测量系统误差。",
+    [("总体四人的值为10,20,30,40，前两人响应，响应均值是多少？",
+      ["总体均值为(10+20+30+40)/4。","响应均值是(10+20)/2。"],"响应均值15，总体均值25","本固定案例响应差为−10，不可直接推广为普遍偏差。"),
+     ("四人均响应但仪器每次多报5，记录值均值是多少？",
+      ["真实值均值25。","给每个测量加5再取平均。"],"30","同样本不消除常数测量偏移。")],
+    "没有覆盖率、非应答机制或测量金标准时，不得把样本均值声称为无偏总体估计。",
+    "构造相同观测响应率、不同覆盖范围的调查并比较结论。",
+    "设计不泄漏个人信息的调查质控矩阵，区分三种偏差和可修复性。",
+    ["先画出目标总体、抽样框、实际响应者三层集合，区分漏人发生位置。",
+     "再写出调查值和真实值之间的测量方程，观察是否存在常数偏移。",
+     "用一个同样100%响应却漏掉整个群体的例子，测试自己的结论是否成立。"])
+
+add("KB33-C-P068-A004","非随机缺失下均值不可识别与有条件加权","theorem",
+    "已观测响应者的结果不能在无额外假设时唯一确定总体均值；如果各组总体人数和组内响应机制可辩护且组内响应均值能代表组均值，则总体均值可按组总体比例加权估计。",
+    "μ=Σ_g (N_g/N)μ_g；μ̂=Σ_g (N_g/N)ȳ_{R,g}",
+    "每组N_g已知且为正，组内至少有响应；组内可忽略响应/代表性为附加建模假设，不由观察数据自动证明。",
+    [("以各组人数N_g对真实总体均值做加权分解。","有限和按不交叠组重新排列恒等成立。"),
+     ("若组内响应与结果不相关或满足可辩护的缺失机制，才用响应均值替代组均值。","这一步是有条件估计假设，不是代数恒等式。"),
+     ("若没有这类假设，同一响应记录可对应多种未响应值。","构造不同未响应值而相同观察数据便证实不可识别。")],
+    "只要知道响应者样本均值，就能直接恢复总体均值。",
+    "两名已响应者值均为10，另外两名未响应；未响应值全为0时总体均值5，全为100时总体均值55。",
+    "两种总体具有完全相同的已观测数据，故没有额外假设无法区分。",
+    [("A组两个值10、B组两个值30，B组仅一人响应，观测总体响应均值？",
+      ["响应值为10,10,30。","把三项相加再除以3。"],"50/3","(10+10+30)/3=50/3。"),
+     ("若两组真实人口各两人且组内响应有代表性，分组加权均值是多少？",
+      ["A组响应均值10、B组响应均值30。","权重都是1/2。"],"20","10/2+30/2=20；需承认组内可忽略缺失假设。")],
+    "对缺失非随机的群体，分组加权也可能失败；不能自动称统计推断已经识别因果关系。",
+    "计算A占四分之一、B占四分之三时的有条件加权估计。",
+    "比较敏感性分析上下界与单点估计对真实调查政策结论的影响。",
+    ["先列出已观测结果和未观测人数，区分数据与假设。",
+     "为同一批响应者构造两组截然不同的未响应值，检验能否唯一确定总体。",
+     "若采用分组加权，逐一说明每组比例已知和组内响应可代表总体的依据。"])
+
+add("KB33-D-P071-A001","十二平均律频率等比模型及八度约束","theorem",
+    "在理想十二平均律中设相邻半音的正频率比固定为r，并要求升十二个半音频率恰好翻倍，则r唯一等于2^(1/12)，f_n=f_0 2^(n/12)。",
+    "r>0；r^12=2；f_n=f_0 r^n (f_0>0)",
+    "f_0>0；理想倍频八度与同一等比半音比；不对真实乐器走音、音色或谐律作经验断言。",
+    [("十二次相同频率比使f_12=f_0 r^12。","等比数列乘积形式。"),
+     ("八度条件f_12=2f_0且f_0>0，约去f_0得r^12=2。","仅在初始频率非零时合法约分。"),
+     ("在正实数范围x↦x^12严格递增，故r=2^(1/12)唯一。","正数幂的严格单调性。")],
+    "十二平均律每升一个半音增加固定赫兹数。",
+    "若从440Hz每步加(880−440)/12，则第二个半音到第一个的比值不同于第一个到基频的比值。",
+    "固定差值是等差模型，不能满足所有相邻比值相等的等比模型。",
+    [("基频440Hz上行12个半音的频率是多少？",
+      ["十二次公比相乘得到2。","用440乘以2。"],"880Hz","频率是基频的2倍。"),
+     ("基频220Hz上行24个半音的频率是多少？",
+      ["24=2×12对应两次倍频。","220乘以2的平方。"],"880Hz","跨两个八度为四倍频率。")],
+    "频率纯数学模型不等于真实乐器调律误差或听觉感受规律。",
+    "求下行12个半音的正频率比并检查半音数负号。",
+    "用对数刻度解释等比音程在绘图时为何等距。",
+    ["先确定这里每一步相等的是频率比，而不是赫兹差。",
+     "把十二个正的相邻公比相乘，写出八度翻倍的方程。",
+     "只在正数域求十二次方根，再代入两个八度的频率计算核对。"])
+
+add("KB33-D-P071-A004","曲式图案中的平移与镜像复合次序","method",
+    "设S(x,y)=(-x,y)为关于y轴的反射、T_a(x,y)=(x+a,y)为水平平移，则T_a∘S(x,y)=(-x+a,y)，而S∘T_a(x,y)=(-x−a,y)；a≠0时通常不交换。",
+    "T_a(S(P))=(-x+a,y)；S(T_a(P))=(-x−a,y)",
+    "同一欧氏平面坐标系；复合次序约定右侧映射先作用；若扩展至音乐动机则仅作为图形表征。",
+    [("写出反射和水平平移各自对点坐标的作用。","两种变换的定义式。"),
+     ("把S的输出代入T，再把T的输出代入S，分别得到两个表达式。","函数复合定义不自动允许调换顺序。"),
+     ("比较横坐标差2a；a≠0时两种输出不同。","不同实数坐标代表不同图案位置。")],
+    "所有镜像和平移复合都不可能交换。",
+    "当水平平移量a=0时T_a是恒等映射；沿y轴的平移也与此y轴反射交换。",
+    "不交换是具体变换及参数的性质，不能脱离轴与位移方向作全称结论。",
+    [("点(2,3)先反射再向右平移1，得到什么？",
+      ["反射得到(−2,3)。","加(1,0)得到(−1,3)。"],"(−1,3)","T_1(S(2,3))=(−1,3)。"),
+     ("同一点先向右平移1再反射，得到什么？",
+      ["先得(3,3)。","反射得(−3,3)。"],"(−3,3)","S(T_1(2,3))=(−3,3)，与上题不同。")],
+    "二维图形反射与位移的结果不是关于乐句听感的经验规律证明。",
+    "比较水平平移量a=2时点(0,1)的两种复合。",
+    "讨论乐谱变换图案时为何必须先固定坐标轴与操作顺序。",
+    ["先明确复合符号从右向左作用，勿把操作口头顺序弄反。",
+     "分别计算反射后的坐标和平移后的坐标，再交叉代入。",
+     "写出两条横坐标表达式之差，找出会交换的特殊参数与方向。"])
+
+add("KB33-D-P072-A001","针孔中心投影的深度定义域与非保距性","method",
+    "在理想针孔投影约定下，对相机坐标点(X,Y,Z)、焦距f>0、可见前方深度Z>0，有图像坐标(x,y)=(fX/Z,fY/Z)；当Z=0不定义，且不同深度一般不保持长度或角度。",
+    "(x,y)=(fX/Z,fY/Z)；f>0；Z>0",
+    "采用光轴为Z的理想相机坐标约定，图像平面符号与实相机内参可能不同；遮挡与视场未纳入此式。",
+    [("原点与三维点连线的参数形式是t(X,Y,Z)。","中心投影每个像点与投影中心共线。"),
+     ("在图像平面深度f处令tZ=f，得到t=f/Z。","除以Z必须先证明Z≠0。"),
+     ("代回X、Y坐标得到fX/Z和fY/Z；缩放因子依赖深度。","对不同Z的点不能使用同一保距线性缩放。")],
+    "针孔投影总保持不同深度图形的欧氏长度。",
+    "焦距f=2，同样三维水平线段长1：在Z=2时像长1，而在Z=4时像长1/2。",
+    "尺度f/Z依赖深度，不能把透视投影当统一尺度的正交投影。",
+    [("f=3，点(2,4,2)在图像平面坐标是什么？",
+      ["确认Z=2>0。","分别求3×2/2与3×4/2。"],"(3,6)","代回投影公式得x=3,y=6。"),
+     ("f=4，点(1,−2,0)能否使用这个投影式？",
+      ["投影分母Z=0。","除零无定义。"],"不可使用","Z=0需返回前提不满足而不是一个像点。")],
+    "遮挡、有限视场、镜头畸变与真实标定参数必须另行建模。",
+    "保持(X,Y)不变，把Z由2增加到4并比较图像尺度。",
+    "解释为什么照片中平行于成像面的等长物体远近看起来不同。",
+    ["先从三维点、相机原点和图像平面写出相似三角形关系。",
+     "在除以深度变量Z之前，必须检查Z的正负符号以及零点退化情况。",
+     "对两个不同深度代入同一真实长度，观察投影长度是否守恒。"])
+
+add("KB33-D-P073-A002","单循环赛的完全图边着色轮次构造","theorem",
+    "n≥2支队伍各两队恰比赛一次且每队每轮至多一场，轮数下界为n−1（偶数n）或n（奇数n）；通过轮转配对该下界可达到，因此这是理想无场地限制赛程的最少轮次。",
+    "|E(K_n)|=n(n−1)/2；一轮最多⌊n/2⌋场",
+    "n≥2整数；单循环无重赛、无跨队轮内冲突；不计场地、休息日、赛程公平性等现实限制。",
+    [("每支队伍须与其余n−1队相遇，故至少n−1轮。","同队一轮至多一场。"),
+     ("奇数n每轮必有至少一支轮空，每轮最多(n−1)/2场，故至少n轮。","总赛数n(n−1)/2除以单轮最大场数得到n。"),
+     ("偶数n用固定一队其余队轮转构造n−1个完美匹配；奇数n加入一支虚拟队再轮转。","每个无序队对恰出现一次，虚拟队配对记为轮空。")],
+    "奇数参赛人数也一定能在n−1轮完成单循环赛。",
+    "n=3时每轮只能安排一场，共三场比赛，故至少三轮而不是两轮。",
+    "奇数人数时每轮至少一队轮空，不能单凭每队需赛n−1场计算总轮数。",
+    [("4支队伍理想单循环最少几轮？",
+      ["总比赛数4×3/2=6。","每轮最多2场，至少3轮；轮转构造可达到。"],"3轮","每轮两场可覆盖全部6对。"),
+     ("5支队伍理想单循环最少几轮？",
+      ["总比赛数5×4/2=10。","每轮至多2场，至少5轮；加入虚拟队构造可达到。"],"5轮","每轮一队轮空、两场比赛。")],
+    "场地上限、时段不可用、主客场或公平性约束可能使现实最少轮数超过理想边着色结果。",
+    "列出6队单循环的5轮、每轮3场安排并核对无重复。",
+    "给体育赛事引入同场地冲突约束并比较图模型下界与可行赛程。",
+    ["把每队当图顶点、每场比赛当边，先数总边数。",
+     "区分n奇偶：每轮最多能放多少条不共端点的边？",
+     "用轮转圆桌或加入虚拟轮空队构造赛程，再检查每条边只出现一次。"])
+
+def content_and_report():
+    previous = json.loads(PREVIOUS.read_text(encoding="utf-8"))
+    source = json.loads(SOURCE.read_text(encoding="utf-8"))
+    partial = {r["editorial_candidate_id"]:r for r in source["links"] if r["review_finding"]=="PARTIAL_SCOPE"}
+    remaining = set(previous["partial_ids_remaining"])
+    ids = [x["editorial_candidate_id"] for x in ROWS]
+    if len(ROWS) != 7 or set(ids) != remaining or len(set(ids)) != 7 or len(partial) != 27:
+        raise ValueError("Seven remaining PARTIAL_SCOPE targets must match the frozen 27/20 baseline")
+    if any(partial[i]["official_clause_alignment_verified"] or partial[i]["mathematical_equivalence_certified"]
+           for i in remaining):
+        raise ValueError("An editorial scope gap was incorrectly marked certified")
+    docs = [Batch39Manuscript.model_validate(d) for d in ROWS]
+    seed = "".join(json.dumps(d.model_dump(mode="json"),sort_keys=True,ensure_ascii=False)+"\n" for d in docs)
+    pages = ["# Batch39 | 剩余七项选修课程关联：原创教师审核稿",
+             "",
+             "> 只作为项目编辑候选，**并非官方条款认证、数学形式证明或教师批准**。完整答案只在教师审核稿内。",
+             ""]
+    for d in docs:
+        pages += [f"## {d.editorial_candidate_id}｜{d.title}",
+                  f"**类别与陈述：** {d.kind}；{d.claim}",
+                  f"**符号：** {'；'.join(d.notation)}",
+                  f"**全部适用前提：** {'；'.join(d.assumptions)}"]
+        pages += [f"{i}. **推导/判定：** {s.claim}。**依据：** {s.reason}" for i,s in enumerate(d.reasoning_steps,1)]
+        pages += [f"**不可泛化的错误：** {d.counterexample.false_claim}",
+                  f"**具体反例：** {d.counterexample.example}；**解释：** {d.counterexample.explanation}"]
+        for i,e in enumerate(d.worked_examples,1):
+            pages += [f"**教师例题 {i}：** {e.question}",
+                      f"**分步：** {' → '.join(e.steps)}；**答案：** {e.answer}；**检查：** {e.check}"]
+        pages += [f"**边界：** {'；'.join(d.boundaries)}",
+                  f"**三级非剧透提示：** {' → '.join(d.hint_ladder)}",
+                  f"**近迁移：** {d.transfer.near}", f"**远迁移：** {d.transfer.far}", ""]
+    md = "\n".join(pages).rstrip()+"\n"
+    entries = []
+    for d in docs:
+        row = partial[d.editorial_candidate_id]
+        entries.append({"editorial_candidate_id":d.editorial_candidate_id,"candidate_track":row["candidate_track"],
+                        "original_editorial_goal":row["original_editorial_goal"],
+                        "legacy_lesson_id":row["legacy_lesson_id"],
+                        "legacy_content_sha256":row["legacy_lesson_content_sha256"],
+                        "manuscript_id":d.id,
+                        "manuscript_sha256":hashlib.sha256(json.dumps(d.model_dump(mode="json"),sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()).hexdigest(),
+                        "finding":"PARTIAL_SCOPE","official_clause_alignment_verified":False,
+                        "mathematical_equivalence_certified":False,
+                        "teacher_review":"REVIEW_PENDING","student_publishable":False})
+    report = {"schema_version":"kb-batch39-seven-partial-v1",
+              "source_47_audit_sha256":hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
+              "batch38_partial_audit_sha256":hashlib.sha256(PREVIOUS.read_bytes()).hexdigest(),
+              "seed_sha256":hashlib.sha256(seed.encode()).hexdigest(),
+              "manuscript_sha256":hashlib.sha256(md.encode()).hexdigest(),
+              "summary":{"historical_partial_links":27,"prior_repaired":20,"new_repaired":7,
+                         "remaining_unaddressed":0,"teacher_examples_new":14,
+                         "new_counterexamples":7,"review_only_manuscripts_total":84,
+                         "legacy_deep_drafts":287,"historical_conflicts_unresolved":10,
+                         "historical_proof_steps_uncertified":538,
+                         "unverified_official_clause_links":12,"teacher_approved":0,
+                         "student_published":0,
+                         "official_denominators":{k:None for k in ("COMPULSORY","SELECTIVE_COMPULSORY",
+                           "ELECTIVE_A","ELECTIVE_B","ELECTIVE_C","ELECTIVE_D","ELECTIVE_E")}},
+              "addressed_remaining_ids":sorted(ids),"records":entries,
+              "student_retrieval":{"status":"UNPUBLISHED_REVIEW_ONLY","student_documents":[],
+                                   "teacher_solutions_exposed":[]}}
+    return {SEED:seed,MD:md,AUDIT:json.dumps(report,ensure_ascii=False,sort_keys=True,indent=2)+"\n"}
+
+def create(check:bool=False):
+    items=content_and_report()
+    for f,body in items.items():
+        if check:
+            if not f.exists() or f.read_text(encoding="utf-8") != body:
+                raise SystemExit(f"DRIFT {f}")
+        else:
+            f.parent.mkdir(parents=True,exist_ok=True)
+            f.write_text(body,encoding="utf-8")
+    print("Batch39", "CHECK" if check else "WRITE", "7 manuscripts / 14 teacher examples / zero student releases")
+if __name__=="__main__":
+    parser=argparse.ArgumentParser()
+    parser.add_argument("--check",action="store_true")
+    create(parser.parse_args().check)
