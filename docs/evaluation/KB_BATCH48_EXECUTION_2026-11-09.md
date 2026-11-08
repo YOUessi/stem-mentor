@@ -48,3 +48,13 @@
 2. 剩余40条项目编辑候选缺稿：**14条必修建模、史料与空间推理，26条选择性必修统计/计数与研究活动**；需按来源先核对再编写高质量原创讲义。
 3. 历史538条未形式认证的证明步骤、10个未解决数学冲突，以及12个历史关联的等价性仍需数学专家逐条验证；有限数值测试不能替代证明。
 4. K08/K09仍需真实教师批准（当前0）、冻结独立题评估、真实 API 费用/质量/安全对照和逐章发布；本批没有宣称正式学生端上线。
+
+## 最终 Mac 测试与 GitHub 提交回执（2026-11-09）
+
+- 完整 Mac Python：**41,026 passed / 0 failed / 1 条 Starlette/anyio 第三方弃用警告**，见 `evaluations/results/2026-11-09-kb-batch48/mac_check_full.log`。这包含全部新增 403 项测试，不是 41,026+403 个独立测试。
+- Node：**111 passed / 0 failed**；Tutor 策略：**33/33**；RAG hard negatives：**40/40**、Top3 **22/22**；`mac_check.exit=0`。
+- 本批专项：**403 passed / 0 failed**，见 `selective_geometry_incremental.log`、`incremental.exit=0`。
+- Chrome/Playwright：**15 个脚本检查通过**，browser pytest **2 passed / 0 failed**，`mac_browser.exit=0`，见 `mac_browser_full.log`。全部用合成数据库，iPad pinch/pen 为 Chrome CDP 指针模拟、不是实体硬件验证；无真实学生数据或云端模型调用。
+- Mac 代码提交：`d30984d901feba329fb845e21bbc2dbdbe4dce3c`，源码 tree `c08a4a68ac8ae156ff4fc31db7dd7b6e3071d9f5`；Mac SSH push GitHub feature branch 成功，独立 Draft PR **#73**，base 为 Batch47 PR #72，不合并 main，不强推。
+- 随后本报告及浏览器最终原始日志单独追加到同一功能分支，最终 commit 与 GitHub CI 以远端实际 SHA 及 Workflow 状态为准。
+- 本批期间验证 Github issues #17–#27 均仍 OPEN；本批未伪造官方完整课程分母、历史证明完成、教师签字或学生端发布。
