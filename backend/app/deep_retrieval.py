@@ -149,10 +149,14 @@ def editor_draft_full(knowledge_id: str, *, scope: str = ""):
     doc = next((d for d in lessons() if d.id == knowledge_id), None)
     if doc is None:
         raise KeyError("Unknown draft ID")
+    # Separate editorial hypotheses from the authoritative lesson graph.
+    # These IDs are not evidence and never reach student_evidence_lookup.
+    from .kb_batch26_graph import editor_prerequisite_proposals
     return {
         "content": doc.model_dump(mode="json"),
         "review_status": doc.review.status,
         "condition_status": "CONDITIONS_NOT_ESTABLISHED",
+        "prerequisite_editorial_candidates": editor_prerequisite_proposals(doc.id, scope=scope),
         "note": "Unreviewed authored draft; not proof-checked or safe for student answers.",
     }
 

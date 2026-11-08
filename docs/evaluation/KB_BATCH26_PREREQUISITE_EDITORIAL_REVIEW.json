@@ -1,0 +1,1577 @@
+{
+  "schema_version": "kb-batch26-prereq-review-v1",
+  "scope": "EDITORIAL_REVIEW_QUEUE_NOT_STUDENT_READY_PREREQUISITE_GRAPH",
+  "summary": {
+    "draft_lessons": 287,
+    "authoritative_unlinked_lessons": 133,
+    "lessons_with_new_editorial_proposals": 31,
+    "still_without_editorial_proposals": 102,
+    "proposed_edges": 31,
+    "candidate_merged_graph_acyclic": true,
+    "approved_edges": 0,
+    "student_published": 0,
+    "teacher_approved": 0,
+    "officially_verified_atomic_denominator": null
+  },
+  "by_track_candidate_associations": {
+    "COMPULSORY": {
+      "EDITORIAL_CANDIDATE_PENDING": 18,
+      "NO_PROPOSAL_YET": 39
+    },
+    "ELECTIVE_A": {
+      "NO_PROPOSAL_YET": 13
+    },
+    "ELECTIVE_B": {
+      "NO_PROPOSAL_YET": 11
+    },
+    "ELECTIVE_C": {
+      "EDITORIAL_CANDIDATE_PENDING": 2,
+      "NO_PROPOSAL_YET": 10
+    },
+    "ELECTIVE_D": {
+      "EDITORIAL_CANDIDATE_PENDING": 1,
+      "NO_PROPOSAL_YET": 8
+    },
+    "ELECTIVE_E": {
+      "EDITORIAL_CANDIDATE_PENDING": 1,
+      "NO_PROPOSAL_YET": 4
+    },
+    "SELECTIVE_COMPULSORY": {
+      "EDITORIAL_CANDIDATE_PENDING": 9,
+      "NO_PROPOSAL_YET": 17
+    }
+  },
+  "items": [
+    {
+      "id": "math.hs.batch23.c18",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.statistics.sampling"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.c19",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.statistics.sampling"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core003",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.logic.truth-negation"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core010",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.inequality.transformation-obligations"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core013",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.quadratic.discriminant-roots"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core017",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.calculus.derivative-definition"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core027",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.trig.radians-unit-circle"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core038",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.triangle.sine-law"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core042",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.complex.algebraic-basics"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core044",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.geometry.space-dot"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core053",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.probability.sample-space-event"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core065",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core068",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.calculus.derivative-definition"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core090",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.geometry.parabola-focus"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core096",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.probability.conditioning"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core099",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.counting.binomial"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.core102",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.statistics.variance"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.d23",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.d24",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.modeling.workflow"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch23.e26",
+      "tracks": [
+        "ELECTIVE_E"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.geometry.space-incidence"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.add029",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.trig.radians-unit-circle"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.am009",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.cl052",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.counting.product-rule"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.comp024",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.function.strict-inverse-monotonic"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.d011",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.sets.representations"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.d074",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.geometry.space-coordinate"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.eo014",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.batch24.d011"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.g064",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.h087",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.hg100",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.counting.permutation-combination"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.i006",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.ind103",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.statistics.chi-square"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.p008",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.quadratic.discriminant-roots"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.po020",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.q004",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.logic.truth-negation"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.root070",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.quadratic.discriminant-roots"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.s080",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.sin036",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.tr028",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.trig.radians-unit-circle"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.batch24.v046",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "EDITORIAL_CANDIDATE_PENDING",
+      "prerequisites_currently_linked": 0,
+      "proposed": [
+        "math.hs.space.polyhedron-types"
+      ],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.calculus.derivative-definition",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.calculus.extrema",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.calculus.power-rule",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.calculus.tangent-line",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.complex.algebraic-basics",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.complex.argument",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.complex.modulus",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.complex.operations",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.counting.product-rule",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.algebra.square-rotations-group",
+      "tracks": [
+        "ELECTIVE_E"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.calculus.integral-area-ftc",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.calculus.monotonicity-mvt",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.calculus.second-derivative-convexity",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.experiment.orthogonal-factorial-four",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.finance.annuity-present-value",
+      "tracks": [
+        "ELECTIVE_E"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.function.epsilon-delta-square",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.function.ivt-intermediate",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.geometry.euclidean-isometries",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.geometry.pinhole-projection-domain",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.geometry.plane-isometry-composition",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.geometry.space-isometry-orientation",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.geometry.sphere-great-circle-orthant",
+      "tracks": [
+        "ELECTIVE_E"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.graph.round-robin-schedule",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.limit.sequence-continuity",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.limit.sin-x-over-x",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.linear.cramer-three",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.linear.rank-vectors",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.linear.standard-basis-independence",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.logic.axiom-consistency-independence",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.logic.classical-laws",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.logic.proof-strategies",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.matrix.inverse-two-by-two",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.matrix.product-dimensions",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.model.compound-effective-rate",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.model.input-output-triangular",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.model.logistic-discrete-bounds",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.model.parametric-circle",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.model.scores-not-causes",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.model.time-rescaling",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.models.cobb-douglas-log-conditions",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.models.keynes-affine-stability",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.multivariable.stationary-boundary",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.music.equal-temperament",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.music.rhythm-cycle-lcm",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.music.transformations-noncommute",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.sequence.epsilon-n",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.sequence.fibonacci-golden-ratio",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.statistics.normal-sampling-mean",
+      "tracks": [
+        "ELECTIVE_E"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.statistics.normal-variance-chi-square",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.statistics.ols-two-parameter",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.statistics.pearson-gof-expected-counts",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.statistics.pvalue-null",
+      "tracks": [
+        "ELECTIVE_B"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.statistics.survey-audit-report",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.elective.statistics.triangular-density-moments",
+      "tracks": [
+        "ELECTIVE_A"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.exponent.product",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.exponent.real-exponent-domain",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.function.domain",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.function.quadratic-vertex",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.function.same-mapping-three-representations",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.geometry.conic-focal-directrix",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.geometry.conic-tangent-normal",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.geometry.ellipse-focus",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.geometry.space-coordinate",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.geometry.space-incidence",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.inequality.sign-multiplication",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.inequality.transformation-obligations",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.logic.implication",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.logic.quantifier",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.logic.truth-negation",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.modeling.collaborative-inquiry",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.probability.conditioning",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.probability.independence",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.probability.laplace",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.probability.multiplication",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.probability.sample-space-event",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.sequence.arithmetic-sum",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.sets.inclusion-empty-equality",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.sets.representations",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.sets.union-intersection",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.space.basis-three-unique",
+      "tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.space.line-plane-distance",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.space.parallel-perpendicular-criteria",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.space.surface-areas",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.statistics.empirical-quantile",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.statistics.histogram-density",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.statistics.median-mode",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.statistics.variance",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.trig.double-angle-reduction",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.trig.pythagorean",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.trig.radians-unit-circle",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.trig.sine-cosine-graphs",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.vector.projection",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    },
+    {
+      "id": "math.hs.vector.representation",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "status": "NO_PROPOSAL_YET",
+      "prerequisites_currently_linked": 0,
+      "proposed": [],
+      "teacher_verified": false,
+      "student_visible": false
+    }
+  ],
+  "warnings": [
+    "31 editorial links are NOT inserted into authoritative DeepLesson.prerequisite_lesson_ids.",
+    "Human confirmation and source lesson semantics remain required.",
+    "Missing explicit prerequisite edges need not be errors for mathematically foundational root concepts.",
+    "Future importer must separately verify teacher signature and recheck all graph cycles."
+  ]
+}
