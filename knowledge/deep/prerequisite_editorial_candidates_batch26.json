@@ -1,0 +1,227 @@
+{
+  "schema_version": "kb-batch26-prerequisite-proposals-v1",
+  "scope": "EDITORIAL_CANDIDATES_NOT_TEACHER_REVIEWED_NOT_STUDENT_PUBLISHED",
+  "prerequisite_proposal_status": "EDITORIAL_REVIEW_PENDING",
+  "teacher_signature": null,
+  "mathematically_certified": false,
+  "student_publishable": false,
+  "items": [
+    {
+      "lesson_id": "math.hs.batch23.c18",
+      "prerequisite_lesson_id": "math.hs.statistics.sampling",
+      "rationale": "无应答偏差的诊断需要先区分总体、抽样框、样本与响应样本。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.c19",
+      "prerequisite_lesson_id": "math.hs.statistics.sampling",
+      "rationale": "观察记录的选择机制与记录覆盖率必须先明确样本与总体口径。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.d24",
+      "prerequisite_lesson_id": "math.hs.modeling.workflow",
+      "rationale": "净空几何约束是建模中的变量、量纲、假设与可行域的实例。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.e26",
+      "prerequisite_lesson_id": "math.hs.geometry.space-incidence",
+      "rationale": "描述多面体顶点、棱与面之前须明确空间点线面的从属和连通关系。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core003",
+      "prerequisite_lesson_id": "math.hs.logic.truth-negation",
+      "rationale": "充分必要条件的量词方向需要先区分命题真值与否定。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core010",
+      "prerequisite_lesson_id": "math.hs.inequality.transformation-obligations",
+      "rationale": "平方消元和不等式平方变形均需定义域、符号及逆向验证义务。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core013",
+      "prerequisite_lesson_id": "math.hs.quadratic.discriminant-roots",
+      "rationale": "讨论二次函数根及对应半轴时首先需要判别式和顶点结构。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core017",
+      "prerequisite_lesson_id": "math.hs.calculus.derivative-definition",
+      "rationale": "判断左右导数是否存在依赖导数差商的定义，连续性是另一项需独立检查的条件。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core027",
+      "prerequisite_lesson_id": "math.hs.trig.radians-unit-circle",
+      "rationale": "正切的定义需要单位圆上的正弦余弦及分母不为零。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core038",
+      "prerequisite_lesson_id": "math.hs.triangle.sine-law",
+      "rationale": "SSA 分支由正弦定理联系边与对角，并结合三角形角和筛选。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core042",
+      "prerequisite_lesson_id": "math.hs.complex.algebraic-basics",
+      "rationale": "复数除法必须先掌握虚数单位和复数乘法，之后才能做共轭化简。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core044",
+      "prerequisite_lesson_id": "math.hs.geometry.space-dot",
+      "rationale": "线面垂直判定要使用空间方向向量的数量积和非零条件。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core053",
+      "prerequisite_lesson_id": "math.hs.probability.sample-space-event",
+      "rationale": "事件并交及互斥条件先由样本空间与事件的集合定义给出。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core068",
+      "prerequisite_lesson_id": "math.hs.calculus.derivative-definition",
+      "rationale": "使用导数符号判断单调性之前必须建立导数存在与定义区间的前提。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core090",
+      "prerequisite_lesson_id": "math.hs.geometry.parabola-focus",
+      "rationale": "抛物线与直线相交的消元需先有含焦点准线条件的合法抛物线方程。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core096",
+      "prerequisite_lesson_id": "math.hs.probability.conditioning",
+      "rationale": "条件概率 P(A|B) 的定义及 P(B)>0 是独立判定的基本前提。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core099",
+      "prerequisite_lesson_id": "math.hs.counting.binomial",
+      "rationale": "独立伯努利和的概率质量函数需要组合系数的乘法与计数。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch23.core102",
+      "prerequisite_lesson_id": "math.hs.statistics.variance",
+      "rationale": "相关系数计算要先区分均值、方差及零方差退化。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.q004",
+      "prerequisite_lesson_id": "math.hs.logic.truth-negation",
+      "rationale": "交换全称与存在量词的否定规则依赖命题真值及否定语义。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.p008",
+      "prerequisite_lesson_id": "math.hs.quadratic.discriminant-roots",
+      "rationale": "二次参数不等式按首项系数与判别式分类，先需掌握二次方程实根条件。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.d011",
+      "prerequisite_lesson_id": "math.hs.sets.representations",
+      "rationale": "函数定义域要以集合表示和元素隶属为起点。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.eo014",
+      "prerequisite_lesson_id": "math.hs.batch24.d011",
+      "rationale": "奇偶性的定义域对称性必须建立在函数合法输入集合的概念上。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.comp024",
+      "prerequisite_lesson_id": "math.hs.function.strict-inverse-monotonic",
+      "rationale": "反函数的讨论先要求严格单调区间上的单射性，并核对复合输入输出域。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.tr028",
+      "prerequisite_lesson_id": "math.hs.trig.radians-unit-circle",
+      "rationale": "诱导公式中的 π 减角关系应从单位圆的坐标对称性开始。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.add029",
+      "prerequisite_lesson_id": "math.hs.trig.radians-unit-circle",
+      "rationale": "和角公式的旋转推导需要单位圆上正弦余弦的坐标定义。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.v046",
+      "prerequisite_lesson_id": "math.hs.space.polyhedron-types",
+      "rationale": "计算棱柱和棱锥体积前需要先区分柱、锥、截面及高的几何定义。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.cl052",
+      "prerequisite_lesson_id": "math.hs.counting.product-rule",
+      "rationale": "有限等可能样本计数先需理解分步乘法与无重复计数。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.root070",
+      "prerequisite_lesson_id": "math.hs.quadratic.discriminant-roots",
+      "rationale": "对含参数二次函数根数分支必须先辨明二次方程根与判别式，含参数退化另行分析。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.d074",
+      "prerequisite_lesson_id": "math.hs.geometry.space-coordinate",
+      "rationale": "空间直线方向向量及参数方程依赖空间坐标的表示。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.hg100",
+      "prerequisite_lesson_id": "math.hs.counting.permutation-combination",
+      "rationale": "超几何分布不放回样本数由组合计数及合法整数支撑集决定。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    },
+    {
+      "lesson_id": "math.hs.batch24.ind103",
+      "prerequisite_lesson_id": "math.hs.statistics.chi-square",
+      "rationale": "列联表独立性检验的期望格数要先理解分类变量、表格与卡方检验的适用条件。",
+      "teacher_review": "PENDING",
+      "applied_to_authoritative_lesson_graph": false
+    }
+  ]
+}

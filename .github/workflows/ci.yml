@@ -54,6 +54,8 @@ jobs:
       - run: python scripts/build_kb_batch25_scope_queue.py --check
       - run: python scripts/build_kb_batch25_risk_triage.py --check
       - run: python scripts/build_kb_batch25_content_readiness.py --check
+      - run: python scripts/build_kb_batch26_source_reextract.py --check
+      - run: python scripts/build_kb_batch26_graph_progress.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
