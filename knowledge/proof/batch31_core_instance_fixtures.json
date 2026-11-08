@@ -1,0 +1,21 @@
+{
+  "schema_version": "kb-batch31-core-exact-v1",
+  "scope": "FINITE_TEACHER_EDITORIAL_INSTANCES_ONLY_NO_FORMAL_PROOF_AUTHORITY",
+  "teacher_approved": false,
+  "student_publishable": false,
+  "official_atomic_denominator": null,
+  "fixtures": [
+    {"op":"finite_relative_complement","valid":{"universe":[0,1,2,3],"subset":[1,3]},"invalid":{"universe":[1,2],"subset":[1,3]},"k00_page":15},
+    {"op":"strict_inequality_scale","valid":{"a":"-2","b":"3","multiplier":"-2"},"invalid":{"a":1,"b":3,"multiplier":0},"k00_page":16},
+    {"op":"quadratic_discriminant","valid":{"a":1,"b":-4,"c":4},"invalid":{"a":0,"b":1,"c":1},"k00_page":17},
+    {"op":"agm_squared_witness","valid":{"a":4,"b":9},"invalid":{"a":-1,"b":9},"k00_page":16},
+    {"op":"exact_log_integer_power","valid":{"base":2,"argument":8},"invalid":{"base":1,"argument":8},"k00_page":20},
+    {"op":"unit_circle_tangent","valid":{"sin":"3/5","cos":"4/5"},"invalid":{"sin":1,"cos":0},"k00_page":21},
+    {"op":"geometric_sum","valid":{"first":3,"q":"1/2","n":5},"invalid":{"first":3,"q":2,"n":0},"k00_page":null,"source_alignment":"CROSS_TOPIC_BOUNDED_VERIFIER_NOT_MAPPED_TO_THIS_BATCH_SOURCE"},
+    {"op":"affine_bisection","valid":{"a":2,"b":-3,"lo":1,"hi":2},"invalid":{"a":2,"b":-3,"lo":2,"hi":3},"k00_page":22},
+    {"op":"vector_perpendicular_nonzero","valid":{"u":[3,4],"v":[-4,3]},"invalid":{"u":[0,0],"v":[3,4]},"k00_page":26},
+    {"op":"three_points_unique_plane","valid":{"p":[0,0,0],"q":[1,0,0],"r":[0,1,0]},"invalid":{"p":[0,0,0],"q":[1,1,1],"r":[2,2,2]},"k00_page":28},
+    {"op":"complex_division","valid":{"a":2,"b":1,"c":1,"d":-1},"invalid":{"a":1,"b":1,"c":0,"d":0},"k00_page":27},
+    {"op":"finite_quantifier","valid":{"predicate_values":[true,true,false]},"invalid":{"predicate_values":[true,"false",false]},"k00_page":16}
+  ]
+}
