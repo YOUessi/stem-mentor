@@ -6,6 +6,11 @@ if [[ ! -x .venv/bin/python ]]; then
   echo "Missing Mac virtual environment. Set it up using the README instructions." >&2
   exit 2
 fi
+echo "[0/4] Batch24 author/source/proof scope checks"
+.venv/bin/python scripts/author_kb_batch24.py --check
+.venv/bin/python scripts/build_kb_batch24_scope.py --check
+.venv/bin/python scripts/build_kb_batch24_integrity.py --check
+.venv/bin/python scripts/build_kb_batch24_progress.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"

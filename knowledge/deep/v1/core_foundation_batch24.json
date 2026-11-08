@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "math.hs.batch24.q004",
+    "curriculum_ids": [
+      "HS-MATH-004"
+    ],
+    "kind": "theorem",
+    "title": "全称命题与存在命题的否定量词",
+    "version": "1.0.0",
+    "notation": [
+      "对非空论域D及谓词P，¬(∀x∈D,P(x)) 等价于 ∃x∈D,¬P(x)；¬(∃x∈D,P(x)) 等价于 ∀x∈D,¬P(x)。空论域也遵守标准逻辑语义。"
+    ],
+    "prerequisites": [
+      "量词、逻辑否定与真值定义"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对非空论域D及谓词P，¬(∀x∈D,P(x)) 等价于 ∃x∈D,¬P(x)；¬(∃x∈D,P(x)) 等价于 ∀x∈D,¬P(x)。空论域也遵守标准逻辑语义。",
+    "assumptions": [
+      "固定论域D与谓词P的真假解释；符号¬表示命题否定。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "若“对所有x，P成立”为假，则至少有一个x使P不成立。",
+        "reason": "这是全称量词的语义定义而非仅举一个例子。"
+      },
+      {
+        "claim": "至少存在一个违背P的x，必然使“所有x均P”为假。",
+        "reason": "由存在反例直接否定全称命题。"
+      },
+      {
+        "claim": "“存在x使P成立”为假，意味着每个x都不满足P；反向亦然。",
+        "reason": "按照存在量词语义，对每个成员取否定。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "否定命题的真假与证明或反证该命题是两件事；不要把否定文本自动视为真。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "否定∀x,P时只需写∀x,¬P",
+        "example": "在D={1,2}、P(x)为x=1时，“所有x为1”为假而“所有x不为1”也为假。",
+        "explanation": "否定需交换量词而非只改变谓词。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "否定“所有实数x都满足x²≥0”。",
+        "steps": [
+          "将全称换成存在并否定谓词。",
+          "得到“存在实数x满足x²<0”。"
+        ],
+        "answer": "∃x∈R:x²<0（此句为假）",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "否定“存在整数n满足n²=2”。",
+        "steps": [
+          "存在换全称，并取不等。",
+          "得到对任意整数n，n²≠2。"
+        ],
+        "answer": "∀n∈Z:n²≠2（此句为真）",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "否定∀x,P时只需写∀x,¬P",
+        "why_wrong": "否定需交换量词而非只改变谓词。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "确认论域和量词作用域。",
+      "交换∀与∃。",
+      "只否定量词支配的谓词。"
+    ],
+    "transfer": {
+      "near": "否定“每位学生至少有一个答案”。",
+      "far": "写出嵌套量词∀x∃y的完整否定。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.i006",
+    "curriculum_ids": [
+      "HS-MATH-006"
+    ],
+    "kind": "method",
+    "title": "不等式乘除同一常数的符号守卫",
+    "version": "1.0.0",
+    "notation": [
+      "在有序实数域，a<b，乘以正数c得ac<bc；乘以负数c得ac>bc；c=0时两边同为0，不能保持严格不等式。"
+    ],
+    "prerequisites": [
+      "实数大小关系、正负数及零的乘法"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "在有序实数域，a<b，乘以正数c得ac<bc；乘以负数c得ac>bc；c=0时两边同为0，不能保持严格不等式。",
+    "assumptions": [
+      "a,b,c为实数；必须先确定c符号，除法还需c≠0。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "因为a<b，所以实数差b−a严格大于零。 理由：两边减去同一个实数不会改变大小关系。",
+      "对于c>0，有c(b−a)>0，从而bc>ac。 理由：正数与严格正数的乘积严格为正。",
+      "当c<0，c(b−a)<0，故bc<ac；c=0两边均零。 理由：负数乘正数为负，零乘法抹去严格性。"
+    ],
+    "boundaries": [
+      "分母为含参数式时先分类正、负、零；未知符号时不能直接约去。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "解未知符号参数c的同乘不等式时方向永不变",
+        "example": "a=1<b=3，c=−2时−2>−6。",
+        "explanation": "同乘负数必须反向，同乘零不再严格。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "在实数范围内求解严格不等式−2x<6。",
+        "steps": [
+          "先除以−2并反向。",
+          "得x>−3。"
+        ],
+        "answer": "x>−3",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "若a<b且c=0，ac与bc关系？",
+        "steps": [
+          "计算两边都为0。",
+          "严格小于不再成立。"
+        ],
+        "answer": "ac=bc=0",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "解未知符号参数c的同乘不等式时方向永不变",
+        "why_wrong": "同乘负数必须反向，同乘零不再严格。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "标记同乘因子的符号。",
+      "判定能否保留严格性。",
+      "把结果代回原式抽样复核。"
+    ],
+    "transfer": {
+      "near": "分别讨论参数t>0、t<0的tx<t。",
+      "far": "研究分式不等式交叉相乘的合法条件。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.p008",
+    "curriculum_ids": [
+      "HS-MATH-008"
+    ],
+    "kind": "method",
+    "title": "含参数二次不等式的首项退化与根判别",
+    "version": "1.0.0",
+    "notation": [
+      "求解ax²+bx+c>0时先按a=0与a≠0分支；a≠0再用Δ=b²−4ac和a符号决定符号区间。"
+    ],
+    "prerequisites": [
+      "实二次方程和因式分解、一次不等式"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "求解ax²+bx+c>0时先按a=0与a≠0分支；a≠0再用Δ=b²−4ac和a符号决定符号区间。",
+    "assumptions": [
+      "a,b,c为实数；x∈R；等号与严格符号须单独对待。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "a=0时原式退化为线性bx+c>0，b=0时甚至为常值命题。 理由：不能对a=0使用二次根公式或判别式结论。",
+      "a≠0且Δ>0时，两根r1<r2，表达式=a(x−r1)(x−r2)。 理由：因式分解及实根存在条件。",
+      "a>0时两根外侧为正，a<0时两根之间为正；Δ≤0时检查a符号及重根。 理由：分段符号表与重根处等号例外。"
+    ],
+    "boundaries": [
+      "a=0时Δ=b²不代表二次方程仍合法；重根处严格不等式不含根。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要判别式Δ<0便断言二次式恒正",
+        "example": "a=−1,b=0,c=−1时Δ=−4<0，而−x²−1恒负。",
+        "explanation": "判别式无实根不能替代首项符号。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "在实数范围内求严格不等式x²−1>0的解集。",
+        "steps": [
+          "根−1与1，首项正。",
+          "取两根外侧且不含根。"
+        ],
+        "answer": "x<−1或x>1",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "求解−x²+4>0。",
+        "steps": [
+          "根−2与2，首项负。",
+          "取两根之间。"
+        ],
+        "answer": "−2<x<2",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只要判别式Δ<0便断言二次式恒正",
+        "why_wrong": "判别式无实根不能替代首项符号。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先检查最高次系数。",
+      "算判别式和根。",
+      "以首项符号决定区间并检验端点。"
+    ],
+    "transfer": {
+      "near": "比较ax²−1>0在a>0、a=0、a<0时的解集。",
+      "far": "研究参数a决定不等式解集为空、单区间或两射线的条件。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.am009",
+    "curriculum_ids": [
+      "HS-MATH-009"
+    ],
+    "kind": "theorem",
+    "title": "非负实数算术几何平均不等式及等号",
+    "version": "1.0.0",
+    "notation": [
+      "对于a,b≥0，(a+b)/2≥√(ab)，等号成立当且仅当a=b；用该式求最值要固定a+b或ab等恰当约束。"
+    ],
+    "prerequisites": [
+      "非负实数、平方根及平方非负"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对于a,b≥0，(a+b)/2≥√(ab)，等号成立当且仅当a=b；用该式求最值要固定a+b或ab等恰当约束。",
+    "assumptions": [
+      "a,b是非负实数；√为主平方根；等号判定要求同一合法域。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对非负a,b有(√a−√b)²≥0。",
+        "reason": "非负实数平方根存在，其差的平方非负。"
+      },
+      {
+        "claim": "展开得a+b−2√(ab)≥0。",
+        "reason": "平方展开，√a√b=√(ab)对非负a,b成立。"
+      },
+      {
+        "claim": "除以2得到结论，等号时√a=√b即a=b。",
+        "reason": "正数除法和平方为零当且仅当底数为零。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "约束不固定时不能直接把某个表达式视为最小或最大，等号若不可达亦不能宣称取到最值。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意两个实数都可套√ab不等式",
+        "example": "a=−1,b=−1时√ab=1，但(a+b)/2=−1，结论不成立。",
+        "explanation": "必须检查非负条件，不能只检查乘积为正。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "若a+b=10且a,b≥0，ab最大多少？",
+        "steps": [
+          "AM-GM给√ab≤5。",
+          "平方得ab≤25，等号a=b=5。"
+        ],
+        "answer": "25",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "a=1,b=9，计算算术均值和几何均值。",
+        "steps": [
+          "(1+9)/2=5。",
+          "√(1×9)=3。"
+        ],
+        "answer": "5与3",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "任意两个实数都可套√ab不等式",
+        "why_wrong": "必须检查非负条件，不能只检查乘积为正。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "明确两个量非负。",
+      "找出和或积的约束。",
+      "验证等号条件是否可行。"
+    ],
+    "transfer": {
+      "near": "在x>0时求x+4/x最小值。",
+      "far": "比较有边界条件的几何优化中等号是否可达。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.d011",
+    "curriculum_ids": [
+      "HS-MATH-011"
+    ],
+    "kind": "concept",
+    "title": "函数定义域是合法输入的集合",
+    "version": "1.0.0",
+    "notation": [
+      "函数f:D→Y必须对每个x∈D指定唯一f(x)∈Y；实值表达式的自然定义域由全部运算合法约束的交集决定，复合f∘g要求x∈D_g且g(x)∈D_f。"
+    ],
+    "prerequisites": [
+      "集合表示、实数运算定义域与函数映射"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "函数f:D→Y必须对每个x∈D指定唯一f(x)∈Y；实值表达式的自然定义域由全部运算合法约束的交集决定，复合f∘g要求x∈D_g且g(x)∈D_f。",
+    "statement": null,
+    "assumptions": [
+      "指定实数范围内表达式解释；函数域非空且每个输入只有唯一输出。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "分式1/(x−2)要求实数输入x≠2。 理由：实数除法若分母为零则没有定义。",
+      "实平方根√(x−1)要求x−1≥0。 理由：非负实数的平方根定义域。",
+      "复合√(1/(x−2))要求x≠2且1/(x−2)≥0，因此x>2。 理由：先求内层合法域，再核查内层输出。"
+    ],
+    "boundaries": [
+      "人为限制的指定定义域可小于自然定义域；两表达式化简后在原函数域之外不能擅自延拓。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "根号中有分式只需分母不为零",
+        "example": "x=1时1/(1−2)=−1，平方根不是实数。",
+        "explanation": "多个运算约束必须取交集。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求f(x)=1/(x+3)自然实定义域。",
+        "steps": [
+          "分母不能为零。",
+          "x+3≠0。"
+        ],
+        "answer": "R\\{−3}",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "求√(x−4)的实定义域。",
+        "steps": [
+          "根号内非负。",
+          "x−4≥0。"
+        ],
+        "answer": "[4,+∞)",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "根号中有分式只需分母不为零",
+        "why_wrong": "多个运算约束必须取交集。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "列出每个运算的合法输入。",
+      "多个限制取交集。",
+      "复合函数还要检查中间输出。"
+    ],
+    "transfer": {
+      "near": "求ln(3−x)的定义域。",
+      "far": "构造两个代数式相等但原始定义域不同的函数。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.eo014",
+    "curriculum_ids": [
+      "HS-MATH-014"
+    ],
+    "kind": "concept",
+    "title": "偶函数与奇函数的定义域对称条件",
+    "version": "1.0.0",
+    "notation": [
+      "对于D⊆R且x∈D⇒−x∈D的函数f:D→R，若对所有x∈D有f(−x)=f(x)称偶函数，f(−x)=−f(x)称奇函数。"
+    ],
+    "prerequisites": [
+      "函数定义域、负号代入和代数恒等式"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "对于D⊆R且x∈D⇒−x∈D的函数f:D→R，若对所有x∈D有f(−x)=f(x)称偶函数，f(−x)=−f(x)称奇函数。",
+    "statement": null,
+    "assumptions": [
+      "函数定义域必须关于原点对称；等式对所有合法x成立。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "f(x)=x²在R上满足f(−x)=x²=f(x)。 理由：平方消除负号，符合偶定义。",
+      "f(x)=x³在R上满足f(−x)=−x³=−f(x)。 理由：立方保留负号，符合奇定义。",
+      "f(x)=x定义在[0,1]时−x不总属于域，不能称奇函数。 理由：对称定义域是量词取值的先决条件。"
+    ],
+    "boundaries": [
+      "零函数在对称定义域上同时是奇偶函数；不能把“只允许二选一”视为定义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要式子写成x³就必是奇函数",
+        "example": "把f(x)=x³仅定义在[0,1]，−1/2不在定义域。",
+        "explanation": "判定先检查定义域再检查代数对称。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f(x)=x²+1在R上是否偶？",
+        "steps": [
+          "代入−x。",
+          "(−x)²+1=x²+1。"
+        ],
+        "answer": "偶函数",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "f(x)=x+1在R上是否奇？",
+        "steps": [
+          "f(−x)=−x+1，而−f(x)=−x−1。",
+          "两式不相等。"
+        ],
+        "answer": "不是奇函数",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只要式子写成x³就必是奇函数",
+        "why_wrong": "判定先检查定义域再检查代数对称。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先检查定义域对称。",
+      "计算f(−x)。",
+      "逐一与f(x)、−f(x)比较。"
+    ],
+    "transfer": {
+      "near": "判断f(x)=1/x在R\\{0}上的奇偶。",
+      "far": "构造既非奇又非偶的周期函数示例。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.po020",
+    "curriculum_ids": [
+      "HS-MATH-020"
+    ],
+    "kind": "method",
+    "title": "有理数指数幂的实数定义边界",
+    "version": "1.0.0",
+    "notation": [
+      "对x>0、m∈Z、n∈正整数，x^(m/n)定义为(ⁿ√x)^m；x=0时负指数未定义；负底数的有理指数需用最简分数且仅在分母为奇数时能取实值。"
+    ],
+    "prerequisites": [
+      "整数幂、实数n次根与零的倒数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对x>0、m∈Z、n∈正整数，x^(m/n)定义为(ⁿ√x)^m；x=0时负指数未定义；负底数的有理指数需用最简分数且仅在分母为奇数时能取实值。",
+    "assumptions": [
+      "实数幂运算；有理指数先写最简分数；x>0时可以用指数律。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "正底数x>0的n次方根唯一非负，m为负时因为x≠0可取倒数。 理由：正实数根和倒数定义合法。",
+      "x=0且m<0时要除以0，故不可定义。 理由：负整数幂是正整数幂的倒数。",
+      "负底数时最简分数如(−8)^(1/3)=−2有实意义，但(−8)^(1/2)没有实平方根。 理由：奇次根可对负实数定义，偶次根不可。"
+    ],
+    "boundaries": [
+      "在负底数上随意套(x^a)^b=x^(ab)可能改变根号分支甚至把未定义表达式当合法。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "负底数所有分数指数都可以实数计算",
+        "example": "(−1)^(1/2)在实数域未定义。",
+        "explanation": "检查最简分母奇偶并不能盲用指数律。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算27^(2/3)。",
+        "steps": [
+          "先开三次方根得3。",
+          "再平方得9。"
+        ],
+        "answer": "9",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "实数域里计算(−27)^(1/3)。",
+        "steps": [
+          "负数存在唯一实三次根。",
+          "(−3)³=−27。"
+        ],
+        "answer": "−3",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "负底数所有分数指数都可以实数计算",
+        "why_wrong": "检查最简分母奇偶并不能盲用指数律。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先注明实数域。",
+      "将指数约分后检查分母。",
+      "有负指数则另检查底数非零。"
+    ],
+    "transfer": {
+      "near": "讨论x^(−1/2)的实数定义域。",
+      "far": "寻找负底数上指数律失效的具体反例。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.comp024",
+    "curriculum_ids": [
+      "HS-MATH-024"
+    ],
+    "kind": "method",
+    "title": "复合函数运算次序与反函数的存在条件",
+    "version": "1.0.0",
+    "notation": [
+      "定义(f∘g)(x)=f(g(x))，自然定义域为{x∈D_g:g(x)∈D_f}。只有在指定定义域上单射且满射到目标值域的函数才有对应的双侧反函数。"
+    ],
+    "prerequisites": [
+      "函数映射与复合输入输出"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "定义(f∘g)(x)=f(g(x))，自然定义域为{x∈D_g:g(x)∈D_f}。只有在指定定义域上单射且满射到目标值域的函数才有对应的双侧反函数。",
+    "assumptions": [
+      "f,g的定义域和值域均需写清；不把复合交换为g∘f。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先检验输入x能否进入g，再检验g(x)能否进入f。 理由：两个层次的定义域约束不能漏项。",
+      "f(x)=x²,g(x)=x+1时f(g(x))=(x+1)²，g(f(x))=x²+1。 理由：复合运算顺序不同且一般不交换。",
+      "在R上平方函数不是单射；限制为[0,+∞)后平方到[0,+∞)双射，反函数为√x。 理由：反函数要求一一对应以及合理指定的目标域。"
+    ],
+    "boundaries": [
+      "平方函数在非负半轴的反函数与整实轴的“解方程±√x”不是同一对象。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意函数都可以交换复合次序",
+        "example": "x=1时(x+1)²=4，而x²+1=2。",
+        "explanation": "两个不同的函数复合通常不满足交换律。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "f=x²,g=x+1时求(f∘g)(2)。",
+        "steps": [
+          "先g(2)=3。",
+          "再f(3)=9。"
+        ],
+        "answer": "9",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "判断f(x)=x²在R上是否有双侧实反函数。",
+        "steps": [
+          "1和−1映射到同一输出。",
+          "不满足单射。"
+        ],
+        "answer": "没有",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "任意函数都可以交换复合次序",
+        "why_wrong": "两个不同的函数复合通常不满足交换律。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先标明两个函数的域。",
+      "按内到外顺序运算。",
+      "检查单射和目标值域再求逆。"
+    ],
+    "transfer": {
+      "near": "计算f∘g与g∘f的不同定义域。",
+      "far": "研究对数与指数复合为何需要底数及定义域限制。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.tr028",
+    "curriculum_ids": [
+      "HS-MATH-028"
+    ],
+    "kind": "theorem",
+    "title": "正弦与余弦的π减角诱导关系",
+    "version": "1.0.0",
+    "notation": [
+      "任意实数弧度x有sin(π−x)=sin x，cos(π−x)=−cos x；符号由单位圆上关于y轴反射决定。"
+    ],
+    "prerequisites": [
+      "弧度制、单位圆与正余弦的坐标定义"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "任意实数弧度x有sin(π−x)=sin x，cos(π−x)=−cos x；符号由单位圆上关于y轴反射决定。",
+    "assumptions": [
+      "x∈R，角按弧度；单位圆参数化为(cos x,sin x)。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "单位圆上角x对应点(cos x,sin x)。",
+        "reason": "单位圆三角函数的坐标定义。"
+      },
+      {
+        "claim": "对点绕y轴反射得到(−cos x,sin x)。",
+        "reason": "平面镜像反射保持纵坐标，横坐标变号。"
+      },
+      {
+        "claim": "反射点的方向角为π−x（模2π），故分别等于(cos(π−x),sin(π−x))。",
+        "reason": "余弦、正弦在模2π同角上相同，坐标比较得到恒等式。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "诱导公式是恒等式但直接对tan套用前需确认两端余弦不为零。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "角π−x的正弦和余弦都必须变号",
+        "example": "x=π/6时sin(5π/6)=1/2>0，而cos(5π/6)=−√3/2。",
+        "explanation": "关于纵轴的镜像反射只改变横坐标符号。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算sin(5π/6)。",
+        "steps": [
+          "写成sin(π−π/6)。",
+          "等于sinπ/6。"
+        ],
+        "answer": "1/2",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "计算cos(2π/3)。",
+        "steps": [
+          "写成cos(π−π/3)。",
+          "等于−cosπ/3。"
+        ],
+        "answer": "−1/2",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "角π−x的正弦和余弦都必须变号",
+        "why_wrong": "关于纵轴的镜像反射只改变横坐标符号。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "标记单位圆坐标。",
+      "确定反射对坐标符号的影响。",
+      "将新角写成旧角的等价模2π形式。"
+    ],
+    "transfer": {
+      "near": "利用同法说明cos(−x)=cos x。",
+      "far": "把单位圆对称与三角图像变换联系起来。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.add029",
+    "curriculum_ids": [
+      "HS-MATH-029"
+    ],
+    "kind": "theorem",
+    "title": "正弦两角和公式及角度范围",
+    "version": "1.0.0",
+    "notation": [
+      "对任意实数弧度α,β，sin(α+β)=sinαcosβ+cosαsinβ；不需要假定两角锐角。"
+    ],
+    "prerequisites": [
+      "单位圆和二维旋转的线性表达"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对任意实数弧度α,β，sin(α+β)=sinαcosβ+cosαsinβ；不需要假定两角锐角。",
+    "assumptions": [
+      "α,β∈R；使用欧氏平面旋转矩阵及单位圆。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "旋转β的矩阵Rβ=[[cosβ,−sinβ],[sinβ,cosβ]]作用在单位圆向量(cosα,sinα)。",
+        "reason": "平面旋转的坐标定义及矩阵乘法。"
+      },
+      {
+        "claim": "旋转后的第二坐标为sinβcosα+cosβsinα。",
+        "reason": "矩阵第二行与输入向量内积。"
+      },
+      {
+        "claim": "按旋转角度叠加，结果向量为(cos(α+β),sin(α+β))。",
+        "reason": "单位圆上角度的加法定义。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不应把三角函数加法公式当作任意函数的加法分配律。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "sin(α+β)总等于sinα+sinβ",
+        "example": "α=β=π/2时左侧sinπ=0，右侧为2。",
+        "explanation": "和角公式有余弦系数，不能直接分配正弦。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算sin(π/3+π/6)。",
+        "steps": [
+          "用和角公式代入。",
+          "√3/2×√3/2+1/2×1/2=1。"
+        ],
+        "answer": "1",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "计算sin(π/4−π/4)。",
+        "steps": [
+          "把第二角取−π/4。",
+          "两项相消。"
+        ],
+        "answer": "0",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "sin(α+β)总等于sinα+sinβ",
+        "why_wrong": "和角公式有余弦系数，不能直接分配正弦。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "确认正弦和余弦的参数。",
+      "写出完整两项。",
+      "利用象限及精确特殊角核对。"
+    ],
+    "transfer": {
+      "near": "推导cos(α+β)公式。",
+      "far": "用旋转矩阵证明两角差公式。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.sin036",
+    "curriculum_ids": [
+      "HS-MATH-036"
+    ],
+    "kind": "theorem",
+    "title": "正弦定理和面积桥梁的推导",
+    "version": "1.0.0",
+    "notation": [
+      "非退化欧氏三角形ABC，边a,b,c分别对角A,B,C，则a/sin A=b/sin B=c/sin C=2R，其中R是外接圆正半径。"
+    ],
+    "prerequisites": [
+      "三角形面积和外接圆圆周角性质"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "非退化欧氏三角形ABC，边a,b,c分别对角A,B,C，则a/sin A=b/sin B=c/sin C=2R，其中R是外接圆正半径。",
+    "assumptions": [
+      "三顶点不共线，三内角在(0,π)，边长及正弦正，外接圆半径R>0。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "三角形面积S=(1/2)bc sinA=(1/2)ca sinB=(1/2)ab sinC。",
+        "reason": "各边夹角的高为边长乘正弦，面积底乘高一半。"
+      },
+      {
+        "claim": "同一正面积S满足sin A=2S/(bc)，sin B=2S/(ca)，sin C=2S/(ab)。",
+        "reason": "对应关系清楚且边长非零。"
+      },
+      {
+        "claim": "分别相除得a/sin A=b/sin B=c/sin C=abc/(2S)。",
+        "reason": "三边和面积S都严格为正，所有约分分母均非零。"
+      },
+      {
+        "claim": "考虑外接圆半径R上的弦BC，对应较小圆心角θ，则从圆心向弦作垂线平分弦，直角三角形给出a=2Rsin(θ/2)；圆周角A对应这条弦时A=θ/2或π−θ/2，故sinA=sin(θ/2)，从而a/sinA=2R。",
+        "reason": "用等腰三角形的垂线平分性质、直角三角形正弦定义及同弧圆周角定理，先独立建立弦长关系，再代入前面的公共比值。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "证明公共比例时可由面积直接得到，2R还依赖外接圆弦长的单独几何事实，不能把有限例子当作证据。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "正弦定理可直接套在共线三点组成的“退化三角形”",
+        "example": "共线时S=0，内角可能为0或π，a/sinA出现除0。",
+        "explanation": "非退化和正弦分母非零是必要条件。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "直角三角形A=90°且a=10，求外接圆R。",
+        "steps": [
+          "sinA=1。",
+          "a=2R。"
+        ],
+        "answer": "R=5",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "A=30°且R=4，求a。",
+        "steps": [
+          "应用a=2R sinA。",
+          "2×4×1/2。"
+        ],
+        "answer": "a=4",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "正弦定理可直接套在共线三点组成的“退化三角形”",
+        "why_wrong": "非退化和正弦分母非零是必要条件。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先检查非退化三角形。",
+      "以面积连接边与角。",
+      "由外接圆弦长解释2R。"
+    ],
+    "transfer": {
+      "near": "用面积法独立推出余弦定理的一个式子。",
+      "far": "讨论SSA二解时正弦定理不能直接决定角的唯一性。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.v046",
+    "curriculum_ids": [
+      "HS-MATH-046"
+    ],
+    "kind": "method",
+    "title": "棱柱与棱锥体积的适用对象",
+    "version": "1.0.0",
+    "notation": [
+      "直棱柱的体积V=Bh，棱锥体积V=Bh/3，其中B是同一垂直高度定义下的底面积、h为底面到顶点的垂直距离；斜棱柱仍可用Bh但h不是侧棱长。"
+    ],
+    "prerequisites": [
+      "几何面积、相似比及垂直高度"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "直棱柱的体积V=Bh，棱锥体积V=Bh/3，其中B是同一垂直高度定义下的底面积、h为底面到顶点的垂直距离；斜棱柱仍可用Bh但h不是侧棱长。",
+    "assumptions": [
+      "实体为普通欧氏三维棱柱或棱锥，底面积非负且h≥0，体积采用常规勒贝格/初等体积概念。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "直棱柱等高平行截面面积恒为B，体积为B×h。 理由：等截面积原理或体积的分层积分解释。",
+      "一般棱柱平行截面仍为面积B，用斜切平移保持体积。 理由：卡瓦列里原理需对应高度区间截面积相等。",
+      "棱锥距顶点高度z处平行截面积为B(z/h)²（h>0）。 理由：相似三角形线性比为z/h，面积比为平方。",
+      "沿垂直方向积分B∫₀^h(z/h)² dz=Bh/3。 理由：积分给出面积随高度变化的总体积，h>0条件已核。"
+    ],
+    "boundaries": [
+      "非均匀、不规则截面实体不能直接套棱柱公式；h=0是退化体积0，棱锥积分推导需单独用退化解释。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "棱锥的体积等于底面积乘任意侧棱长度再除以3",
+        "example": "斜棱锥侧棱长通常大于垂直高，因此结果偏大。",
+        "explanation": "公式中的h是垂直距离而非任意线段。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "底面积为12、高为6的棱锥体积。",
+        "steps": [
+          "先算Bh=72。",
+          "再除以3。"
+        ],
+        "answer": "24",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "底面积为7、高为5的棱柱体积。",
+        "steps": [
+          "截面积7沿高度恒定。",
+          "7×5。"
+        ],
+        "answer": "35",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "棱锥的体积等于底面积乘任意侧棱长度再除以3",
+        "why_wrong": "公式中的h是垂直距离而非任意线段。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "辨别棱柱与棱锥。",
+      "标出与底面垂直的高。",
+      "用截面积模型检查公式系数。"
+    ],
+    "transfer": {
+      "near": "计算底面积相同高度相同的两实体体积比。",
+      "far": "研究斜棱柱为何侧棱与高度不同。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.cl052",
+    "curriculum_ids": [
+      "HS-MATH-052"
+    ],
+    "kind": "concept",
+    "title": "古典概型的等可能有限样本空间",
+    "version": "1.0.0",
+    "notation": [
+      "在有限非空样本空间Ω且每个基本结果等可能的概率模型中，事件A⊆Ω的概率P(A)=|A|/|Ω|；结果不等可能时不可仅用个数相除。"
+    ],
+    "prerequisites": [
+      "有限集合、互斥事件及概率可加性"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "在有限非空样本空间Ω且每个基本结果等可能的概率模型中，事件A⊆Ω的概率P(A)=|A|/|Ω|；结果不等可能时不可仅用个数相除。",
+    "statement": null,
+    "assumptions": [
+      "Ω为有限非空集合；所有基本结果两两互斥、合起来必有一个发生且等概率。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "设Ω有n个互斥且等概率结果，每个概率必为1/n。 理由：由于n个互斥概率之和为1，每项共同概率是1/n。",
+      "事件A含m个基本结果，P(A)=m×(1/n)。 理由：这些基本事件互斥，因此有限可加给出事件概率m/n。",
+      "若抽样规则使基本结果权重不同，计数法的等可能前提不成立。 理由：模型概率由真实抽样方式决定而非标签数量。"
+    ],
+    "boundaries": [
+      "样本空间可选择不同粒度，必须证明选择的基本样本点等可能。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何样本空间中按事件结果数除以总结果数均正确",
+        "example": "袋中一红一蓝且红球被选中概率3/4，两个颜色标签等数但不等概率。",
+        "explanation": "基本事件必须在所选抽样实验下等可能。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平六面骰子出现偶数的概率。",
+        "steps": [
+          "偶数结果{2,4,6}有3个。",
+          "总样本点6个。"
+        ],
+        "answer": "1/2",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "抛两次公平硬币恰一次正面的概率。",
+        "steps": [
+          "列HH,HT,TH,TT四个等可能结果。",
+          "HT和TH满足。"
+        ],
+        "answer": "1/2",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "任何样本空间中按事件结果数除以总结果数均正确",
+        "why_wrong": "基本事件必须在所选抽样实验下等可能。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先写出完整Ω。",
+      "判断是否等可能。",
+      "再数满足事件的样本点。"
+    ],
+    "transfer": {
+      "near": "从1至10等概率抽一个数求质数概率。",
+      "far": "比较两阶段不等概率试验中错误的样本点计数。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.g064",
+    "curriculum_ids": [
+      "HS-MATH-064"
+    ],
+    "kind": "theorem",
+    "title": "有限等比数列通项和求和的分母条件",
+    "version": "1.0.0",
+    "notation": [
+      "对于实数首项a₁和公比q及n≥1，a_n=a₁q^(n−1)；S_n=a₁(1−q^n)/(1−q)当q≠1，而q=1时S_n=na₁。"
+    ],
+    "prerequisites": [
+      "数列递推、有限和与等比数列定义"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对于实数首项a₁和公比q及n≥1，a_n=a₁q^(n−1)；S_n=a₁(1−q^n)/(1−q)当q≠1，而q=1时S_n=na₁。",
+    "assumptions": [
+      "n为正整数；q是固定实数；有限项求和；写分式时q≠1。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "公比恒定给出a₂=a₁q，反复乘法可归纳出a_n=a₁q^(n−1)。",
+        "reason": "递推定义及正整数数学归纳法。"
+      },
+      {
+        "claim": "对S_n=a₁+a₁q+⋯+a₁q^(n−1)，计算qS_n并相减得(1−q)S_n=a₁(1−q^n)。",
+        "reason": "有限代数运算与同项抵消。"
+      },
+      {
+        "claim": "q≠1时除以1−q合法，得到分式；q=1时每项均为a₁，直接相加n项。",
+        "reason": "必须分支处理零分母，不能通过取极限替代有限求和定义。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "当q=0时a₁之外后续项全0，n=1的0^0指数按空乘积1处理；无限和收敛另需|q|<1及极限证明。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "公比q=1仍可直接把q代入分式公式",
+        "example": "q=1时分母1−q=0；即使形式为0/0也不是数。",
+        "explanation": "先使用q=1的独立分支。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "a₁=2,q=3,n=3，求S₃。",
+        "steps": [
+          "列2+6+18。",
+          "相加为26。"
+        ],
+        "answer": "26",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "a₁=5,q=1,n=4，求S₄。",
+        "steps": [
+          "走q=1分支。",
+          "4×5。"
+        ],
+        "answer": "20",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "公比q=1仍可直接把q代入分式公式",
+        "why_wrong": "先使用q=1的独立分支。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先确认首项、公比和n。",
+      "根据q=1分支。",
+      "将结果回代少量项检查。"
+    ],
+    "transfer": {
+      "near": "讨论公比q=−1时的奇偶项求和。",
+      "far": "比较有限等比和与无限级数条件差异。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.root070",
+    "curriculum_ids": [
+      "HS-MATH-070"
+    ],
+    "kind": "method",
+    "title": "含参数二次函数实根个数分支",
+    "version": "1.0.0",
+    "notation": [
+      "研究ax²+bx+c=0的实根数须先检查a=0；当a≠0时用Δ=b²−4ac，Δ>0、=0、<0对应2、1、0个不同实根。"
+    ],
+    "prerequisites": [
+      "一元一次方程、配方、实数平方根"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "研究ax²+bx+c=0的实根数须先检查a=0；当a≠0时用Δ=b²−4ac，Δ>0、=0、<0对应2、1、0个不同实根。",
+    "assumptions": [
+      "a,b,c∈R；计不同的实数根；a=0需进一步区分b与c。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "a=0时化为bx+c=0：b≠0恰一根，b=0且c≠0无根，b=c=0任意实数皆为根。 理由：一次方程与恒等方程分类讨论。",
+      "a≠0时配方4a(ax²+bx+c)=(2ax+b)²−Δ。 理由：两侧代数展开核实恒等式；a≠0保证原多项式是二次。",
+      "从(2ax+b)²=Δ判断实平方非负以及不同根个数。 理由：实平方根在Δ>0时有两支，在Δ=0有一支，Δ<0无实解。"
+    ],
+    "boundaries": [
+      "重根数量按不同根计；根的重数与不同交点数不能混同。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "判别式Δ=0必然恰有一个实根",
+        "example": "a=b=0,c=1时Δ=0，却是1=0无根。",
+        "explanation": "判别式根数结论依赖a≠0。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求x²−4x+4=0根个数。",
+        "steps": [
+          "a=1≠0，Δ=16−16=0。",
+          "重根x=2。"
+        ],
+        "answer": "1",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "讨论a=0,b=2,c=4时方程根。",
+        "steps": [
+          "化为2x+4=0。",
+          "x=−2。"
+        ],
+        "answer": "1",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "判别式Δ=0必然恰有一个实根",
+        "why_wrong": "判别式根数结论依赖a≠0。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "检查二次项系数是否为0。",
+      "再计算判别式。",
+      "明确计重数还是计不同实根。"
+    ],
+    "transfer": {
+      "near": "按参数t讨论tx²−2x+1=0实根数。",
+      "far": "讨论参数触发方程次数下降的临界面。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.d074",
+    "curriculum_ids": [
+      "HS-MATH-074"
+    ],
+    "kind": "concept",
+    "title": "空间直线方向向量与参数方程",
+    "version": "1.0.0",
+    "notation": [
+      "给定点P₀∈R³与非零向量v，直线L={P₀+tv:t∈R}；方向向量可乘任意非零实数但不得为零向量。"
+    ],
+    "prerequisites": [
+      "空间点坐标、向量数乘和非零向量"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "给定点P₀∈R³与非零向量v，直线L={P₀+tv:t∈R}；方向向量可乘任意非零实数但不得为零向量。",
+    "statement": null,
+    "assumptions": [
+      "工作于欧氏R³；v≠0；P₀的坐标已指定。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "P₀+tv是过P₀并沿v方向平移的所有点。 理由：t取遍实数时既含正向也含反向。",
+      "把v替换为kv（k≠0），令s=kt，所生成集合相同。 理由：非零乘法重新参数化具有双向对应。",
+      "v=0时P₀+tv永远为同一个点，不再是一条直线。 理由：缺少非零方向向量会退化为单点。"
+    ],
+    "boundaries": [
+      "两个方向向量平行只能说明两条直线平行或重合；位置还需基点检查。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "零向量也能作为空间直线的方向向量",
+        "example": "P₀=(1,2,3)，v=(0,0,0)时参数式仅含P₀一个点。",
+        "explanation": "零向量使参数直线退化成一个单点，须排除。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求过(1,0,2)沿(0,1,0)方向点的参数式。",
+        "steps": [
+          "P=P₀+tv。",
+          "(x,y,z)=(1,t,2)。"
+        ],
+        "answer": "(1,t,2)",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "点(1,3,2)在上述直线上吗？",
+        "steps": [
+          "令t=3。",
+          "三坐标满足。"
+        ],
+        "answer": "是",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "零向量也能作为空间直线的方向向量",
+        "why_wrong": "零向量使参数直线退化成一个单点，须排除。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先找一个直线上的点。",
+      "找非零方向向量。",
+      "将点代入参数方程判别。"
+    ],
+    "transfer": {
+      "near": "判断两组不同参数是否描述同一条直线。",
+      "far": "以方向向量判定空间异面直线的局限性。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.s080",
+    "curriculum_ids": [
+      "HS-MATH-080"
+    ],
+    "kind": "method",
+    "title": "直线斜率及竖直线退化",
+    "version": "1.0.0",
+    "notation": [
+      "平面上两点(x₁,y₁),(x₂,y₂)不重合，若x₁≠x₂则斜率m=(y₂−y₁)/(x₂−x₁)；若x₁=x₂则直线竖直、斜率未定义。"
+    ],
+    "prerequisites": [
+      "平面坐标、方向向量与正切定义域"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "平面上两点(x₁,y₁),(x₂,y₂)不重合，若x₁≠x₂则斜率m=(y₂−y₁)/(x₂−x₁)；若x₁=x₂则直线竖直、斜率未定义。",
+    "assumptions": [
+      "点为实坐标且不同；角度制与m=tanθ仅适用于非竖直线。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "两点式方向向量为(Δx,Δy)且非零。 理由：不同点保证至少一个分量不为零。",
+      "当Δx≠0，方向倾角的正切等于Δy/Δx。 理由：定义斜率时分母为非零水平增量。",
+      "当Δx=0，方向向量为(0,Δy)，对应直线x=x₁；tan(π/2)未定义。 理由：竖直方向余弦为0，无法用有限实数斜率表示。"
+    ],
+    "boundaries": [
+      "同一点不能唯一决定直线；斜率不存在与斜率为0对应完全不同的几何方向。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意两点连线的斜率一定是实数",
+        "example": "点(2,1)与(2,5)都在x=2上，斜率公式分母为0。",
+        "explanation": "竖直直线无有限斜率，不是斜率为无限大。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "两点(1,2),(3,6)斜率多少？",
+        "steps": [
+          "Δy=4、Δx=2。",
+          "4/2=2。"
+        ],
+        "answer": "2",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "两点(2,0),(2,5)斜率多少？",
+        "steps": [
+          "横坐标相同。",
+          "分母为零。"
+        ],
+        "answer": "未定义",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "任意两点连线的斜率一定是实数",
+        "why_wrong": "竖直直线无有限斜率，不是斜率为无限大。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先检查两点是否重合。",
+      "再检查横坐标差。",
+      "只在非零分母时作比。"
+    ],
+    "transfer": {
+      "near": "讨论互相垂直的水平、竖直直线的斜率条件。",
+      "far": "分析用斜率积−1判垂直为何存在例外。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.h087",
+    "curriculum_ids": [
+      "HS-MATH-087"
+    ],
+    "kind": "concept",
+    "title": "双曲线标准式的焦点和实轴边界",
+    "version": "1.0.0",
+    "notation": [
+      "对a>0,b>0，平面曲线x²/a²−y²/b²=1是以原点为中心、实轴沿x轴的双曲线，其焦点在(±c,0)，c²=a²+b²。"
+    ],
+    "prerequisites": [
+      "圆锥曲线方程、两点距离"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "对a>0,b>0，平面曲线x²/a²−y²/b²=1是以原点为中心、实轴沿x轴的双曲线，其焦点在(±c,0)，c²=a²+b²。",
+    "statement": null,
+    "assumptions": [
+      "欧氏平面，a,b为正实参数；标准式右侧固定为1，不能直接套椭圆c²=a²−b²。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "对y=0，曲线与x轴交于(±a,0)，为左右顶点。 理由：代入y=0得x²=a²。",
+      "式子要求x²/a²=1+y²/b²≥1，所以|x|≥a。 理由：右边非负且至少为1，曲线两支不跨中心。",
+      "通过对曲线点的两焦点距离差|PF₁−PF₂|=2a对应恒等关系，焦距满足c²=a²+b²。 理由：焦点性质与标准式配方之间的关系，完整等价证明待教师审核。"
+    ],
+    "boundaries": [
+      "若a或b为0分母未定义；双曲线分支的渐近线是y=±(b/a)x，实际曲线不与其交。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "双曲线的c²=a²−b²与椭圆一样",
+        "example": "a=3,b=4时c=5而非√(9−16)。",
+        "explanation": "双曲线与椭圆的参数关系不同。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "x²/9−y²/16=1，求顶点。",
+        "steps": [
+          "y=0。",
+          "x²=9。"
+        ],
+        "answer": "(±3,0)",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "同一双曲线焦距参数c是多少？",
+        "steps": [
+          "c²=9+16=25。",
+          "c取正值。"
+        ],
+        "answer": "5",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "双曲线的c²=a²−b²与椭圆一样",
+        "why_wrong": "双曲线与椭圆的参数关系不同。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先确认标准式的正项轴。",
+      "读取a²与b²。",
+      "用加法计算焦距参数。"
+    ],
+    "transfer": {
+      "near": "把标准式x、y互换判定焦点位置。",
+      "far": "比较双曲线与椭圆在同一轴上的焦点关系。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.hg100",
+    "curriculum_ids": [
+      "HS-MATH-100"
+    ],
+    "kind": "method",
+    "title": "超几何分布无放回抽样的支持集与概率",
+    "version": "1.0.0",
+    "notation": [
+      "总体N个对象中K个标为成功，等可能无放回取n个，成功数X的概率P(X=k)=C(K,k)C(N−K,n−k)/C(N,n)，有效k满足max(0,n−(N−K))≤k≤min(n,K)。"
+    ],
+    "prerequisites": [
+      "组合数、无放回抽样及等可能子集"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "总体N个对象中K个标为成功，等可能无放回取n个，成功数X的概率P(X=k)=C(K,k)C(N−K,n−k)/C(N,n)，有效k满足max(0,n−(N−K))≤k≤min(n,K)。",
+    "assumptions": [
+      "N≥1为整数，0≤K≤N，0≤n≤N，所有n元子集等可能，二项式系数超域按0计。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "全部等可能大小为n的子集数C(N,n)。 理由：不计次序的无放回等可能抽样。",
+      "恰取k个成功对象需从K个成功中取k、从N−K个失败中取n−k。 理由：两组选择可独立组合计数，得到乘积。",
+      "要同时保证0≤k≤K及0≤n−k≤N−K，整理得到支持集两侧界。 理由：组合数实物选择数不能为负，计数分母C(N,n)>0。"
+    ],
+    "boundaries": [
+      "放回或按次序有不同样本空间；边界N=0不在此模型定义内，不把组合数0分母误作概率。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "无放回抽样每次成功概率不变，因此直接套二项分布",
+        "example": "袋内两红一蓝连抽两次，第一球红后第二球红概率从2/3变为1/2。",
+        "explanation": "成功事件依赖前次结果，需超几何模型。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "N=5,K=2,n=2，求两次全成功概率。",
+        "steps": [
+          "C(2,2)C(3,0)/C(5,2)。",
+          "1/10。"
+        ],
+        "answer": "1/10",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "N=5,K=2,n=2，求恰成功一次概率。",
+        "steps": [
+          "C(2,1)C(3,1)/C(5,2)。",
+          "6/10。"
+        ],
+        "answer": "3/5",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "无放回抽样每次成功概率不变，因此直接套二项分布",
+        "why_wrong": "成功事件依赖前次结果，需超几何模型。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "写清N,K,n。",
+      "先求k有效范围。",
+      "用组合计数并检查概率和1。"
+    ],
+    "transfer": {
+      "near": "比较N很大而n很小时超几何与二项分布近似。",
+      "far": "设计一组无放回抽样反例推翻独立性假设。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.batch24.ind103",
+    "curriculum_ids": [
+      "HS-MATH-103"
+    ],
+    "kind": "method",
+    "title": "列联表独立性检验的期望格数和限制",
+    "version": "1.0.0",
+    "notation": [
+      "2×2列联表观察数Oᵢⱼ，独立性假设下期望数Eᵢⱼ=(行合计×列合计)/总样本数，卡方统计量χ²=Σ(O−E)²/E仅当所有所用E>0时有定义；常见渐近p值要求适当样本量。"
+    ],
+    "prerequisites": [
+      "条件概率、边际频率和抽样独立性"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "2×2列联表观察数Oᵢⱼ，独立性假设下期望数Eᵢⱼ=(行合计×列合计)/总样本数，卡方统计量χ²=Σ(O−E)²/E仅当所有所用E>0时有定义；常见渐近p值要求适当样本量。",
+    "assumptions": [
+      "独立随机样本且观测分类互斥；行列合计和总数正，期望格数正；不能把显著性等同因果。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "独立性假设意味着格(i,j)概率为行边际概率乘列边际概率。 理由：独立事件乘法和样本频率估计。",
+      "将总体样本数N乘以(行合计/N)(列合计/N)得到期望格数。 理由：在零分母已排除时合法约分。",
+      "各格以平方标准化偏差(O−E)²/E求和形成Pearson χ²统计量。 理由：这是统计量定义而非有限样本精确分布证明。",
+      "小格数稀疏时χ²近似不可靠，可考虑Fisher精确检验等替代策略。 理由：近似参考分布的条件依赖抽样模型和大样本理论。"
+    ],
+    "boundaries": [
+      "不能以任意单元格期望=0进入除法；检验的拒绝/不拒绝均不构成数学必然的独立与否证明。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "p值显著必能证明一个变量导致另一个变量",
+        "example": "观察到关联可由混杂、选择偏差等造成，即使p<0.05也不等于因果。",
+        "explanation": "统计独立性检验不是随机干预因果识别。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "行合计30、列合计20、总数60的格的期望数。",
+        "steps": [
+          "E=(30×20)/60。",
+          "600/60。"
+        ],
+        "answer": "10",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      },
+      {
+        "question": "观察O=12，期望E=10时单格χ²贡献。",
+        "steps": [
+          "(12−10)²/10。",
+          "4/10。"
+        ],
+        "answer": "2/5",
+        "check": "教师侧须独立回代或以精确算术检验这一实例；不构成完整定理的形式认证。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "p值显著必能证明一个变量导致另一个变量",
+        "why_wrong": "统计独立性检验不是随机干预因果识别。",
+        "repair_question": "指出此错解遗漏的假设、量词或不等价操作，并用一个实例说明如何修复。"
+      }
+    ],
+    "hint_ladder": [
+      "先查随机样本与分类规则。",
+      "计算每格期望数并核查大小。",
+      "最后讨论统计显著性与因果解释边界。"
+    ],
+    "transfer": {
+      "near": "从给定完整2×2表求四格期望并核对合计。",
+      "far": "构造样本选择偏差导致的虚假独立性结论。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

@@ -88,12 +88,13 @@ def test_all_current_drafts_have_explicit_unverified_step_obligations():
     new_lesson_ids = {r["id"] for r in json.loads((ROOT / "knowledge/deep/v1/elective_gap_batch21.json").read_text(encoding="utf-8"))}
     batch22_ids = {r["id"] for r in json.loads((ROOT / "knowledge/deep/v1/elective_gap_batch22.json").read_text(encoding="utf-8"))}
     batch23_ids = {r["id"] for r in json.loads((ROOT / "knowledge/deep/v1/core_elective_batch23.json").read_text(encoding="utf-8"))}
-    frozen_docs = [d for d in docs if d.id not in batch23_ids]
+    batch24_ids = {r["id"] for r in json.loads((ROOT / "knowledge/deep/v1/core_foundation_batch24.json").read_text(encoding="utf-8"))}
+    frozen_docs = [d for d in docs if d.id not in batch23_ids | batch24_ids]
     from scripts.build_kb_batch22_proof_and_scope import build as build_current_review
     latest_proofs, _ = build_current_review()
     latest = json.loads(latest_proofs)
     assert s["deep_draft_lessons"] + 11 == union["summary"]["current_draft_lessons"] == 235  # frozen Batch21 report
-    assert len(docs)==267 and latest["summary"]["current_draft_lessons"]==247
+    assert len(docs)==287 and latest["summary"]["current_draft_lessons"]==247
     assert s["theorems"] + sum(x.kind == "theorem" for x in docs
           if x.id in new_lesson_ids | batch22_ids) == sum(x.kind == "theorem" for x in frozen_docs)
     assert s["proof_step_obligations_not_formally_verified"] == 451

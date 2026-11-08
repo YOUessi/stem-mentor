@@ -1,0 +1,210 @@
+GATES 41
+[1/41] python scripts/build_kb_coverage.py --summary
+iewed_legacy_atoms": 178,
+  "deep_knowledge": {
+    "scope": "PROJECT_ENGINEERING_MAP_NOT_OFFICIAL_ATOMIC_SYLLABUS",
+    "curriculum_topic_total": 178,
+    "deep_lesson_documents": 287,
+    "mapped_curriculum_ids": 178,
+    "review_statuses": {
+      "REVIEW_PENDING": 287
+    },
+    "kinds": {
+      "theorem": 161,
+      "concept": 80,
+      "method": 46
+    },
+    "by_level": {
+      "必修": {
+        "engineering_topics": 64,
+        "with_deep_draft": 64,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选择性必修": {
+        "engineering_topics": 46,
+        "with_deep_draft": 46,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选修拓展": {
+        "engineering_topics": 68,
+        "with_deep_draft": 68,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      }
+    },
+    "human_teacher_review_complete": false,
+    "student_math_proofs_verified": false,
+    "direct_student_teaching_enabled": false,
+    "notes": [
+      "Existing topic IDs are project granularity and must be audited against the official curriculum.",
+      "Schema validation cannot prove mathematical truth; a draft is never a teacher-reviewed fact.",
+      "Draft worked examples and proof steps remain TEACHER_ONLY until genuine review."
+    ]
+  }
+}
+ 
+[2/41] python scripts/audit_deep_math_evidence.py --check
+{
+  "actual_status_counts": {
+    "DERIVATIVE_IDENTITY": 5,
+    "DOMAIN_NOT_ESTABLISHED": 5,
+    "IDENTITY_ON_DECLARED_DOMAIN": 28,
+    "VALID_COUNTEREXAMPLE": 10
+  },
+  "claims": 48,
+  "expected_status_counts": {
+    "DERIVATIVE_IDENTITY": 5,
+    "DOMAIN_NOT_ESTABLISHED": 5,
+    "IDENTITY_ON_DECLARED_DOMAIN": 28,
+    "VALID_COUNTEREXAMPLE": 10
+  },
+  "failures": [],
+  "linked_lesson_count": 14,
+  "math_subclaims_checked": 48,
+  "notes": [
+    "Each result applies to one explicitly authored rational or trig statement only.",
+    "Domain guards are declared assumptions, not premises independently established.",
+    "Finite witnesses disprove only the particular stated false universal claim.",
+    "No derived result may be marked as a reviewed proof of a course theorem."
+  ],
+  "review_state": "REVIEW_PENDING",
+  "scope": "LIMITED_AUTHORED_EXPRESSION_EVIDENCE_NOT_FULL_PROOF",
+  "student_free_text_steps_verified": 0,
+  "teacher_approved": 0,
+  "total_draft_lessons": 287,
+  "whole_theorems_verified": 0
+}
+ 
+[3/41] python scripts/build_semantic_gap_batch05.py --check
+PASS: 23 independently authored gap drafts match frozen JSON; 0 teacher-approved
+ 
+[4/41] python scripts/reconcile_kb_batch02.py --check
+PASS: 39 candidates => 29 imported drafts, 10 held, 0 auto-overwrites
+ 
+[5/41] python scripts/build_kb_legacy_bridge.py --check
+Bridge current: 26 unreviewed legacy cards
+ 
+[6/41] python scripts/build_kb_batch07_audit.py --check
+CHECKED curriculum/highschool_math/elective_track_crosswalk_batch07.json {'elective_tracks': 5, 'high_level_theme_slots': 18, 'atomic_subtopics_verified': 0, 'legacy_extension_topics_without_explicit_track': 7, 'teacher_approved_elective_lessons': 0, 'mapped_draft_links': 0}
+CHECKED docs/evaluation/KB_CONFLICT_RISK_BATCH07.json {'conflict_count': 10, 'unresolved_conflicts': 10, 'automatically_resolved': 0, 'conflicts_with_changed_math_risk_fields': 10}
+CHECKED docs/evaluation/KB_PROOF_OBLIGATIONS_BATCH07.json {'deep_draft_lessons': 224, 'theorems': 136, 'proof_step_obligations_not_formally_verified': 451, 'existing_supporting_oracles_linked': 48, 'theorems_with_whole_proof_certification': 0, 'teacher_approved': 0, 'student_solution_steps_verified': 0}
+ 
+[7/41] python scripts/audit_kb_attested_release.py --check
+{
+  "scope": "EXTERNAL_SIGNED_CONTENT_RELEASE_NOT_REAL_TEACHER_IDENTITY_VERIFICATION",
+  "draft_count": 287,
+  "review_pending_count": 287,
+  "externally_attested_count": 0,
+  "student_release_available": false,
+  "formal_math_proof_review_complete": false,
+  "real_teacher_identities_authenticated_by_this_software": false
+}
+ 
+[8/41] python scripts/build_kb_batch07_lessons.py --check
+PASS 8 original rigorous theorem draft records
+ 
+[9/41] python scripts/build_kb_batch09_lessons.py --check
+Batch09 authored lessons: 7, check=True
+ 
+[10/41] python scripts/build_kb_batch10_lessons.py --check
+Batch10 deterministic source matches 11 theorem lessons
+ 
+[11/41] python scripts/build_kb_batch11_lessons.py --check
+PASS Batch11 12 original teacher-pending lessons
+ 
+[12/41] python scripts/audit_kb_batch10_release.py --check
+PASS 235 drafts, 0 approvals, 0 student/cloud requests
+ 
+[13/41] python scripts/audit_kb_batch11_release.py --check
+PASS Batch11 baseline retained, 0 teacher approvals or student model calls
+ 
+[14/41] python scripts/build_kb_batch12_source_crosswalk.py --check
+PASS source-anchored scope checklist 132
+ 
+[15/41] python scripts/audit_kb_batch12_source_coverage.py --check
+PASS Batch12: sampled curriculum remains non-certified
+ 
+[16/41] python scripts/build_kb_batch13_proposals.py --check
+PASS batch13 editorial mapping proposal hash guards
+ 
+[17/41] python scripts/audit_kb_batch13_proposals.py --check
+PASS Batch13 review queue is draft-only and source-anchored
+ 
+[18/41] python scripts/build_kb_batch14_lessons.py --check
+Batch14 authored elective proof drafts=16 check= True
+ 
+[19/41] python scripts/audit_kb_batch14_content.py --check
+PASS Batch14 16 new electives, no approvals
+ 
+[20/41] python scripts/build_kb_batch15_lessons.py --check
+PASS Batch15 9 authored lessons True
+ 
+[21/41] python scripts/audit_kb_batch15_content.py --check
+PASS Batch15 audit 9 drafts
+ 
+[22/41] python scripts/build_kb_batch16_lessons.py --check
+PASS batch16 12 editorial draft lessons; check= True
+ 
+[23/41] python scripts/audit_kb_batch16_content.py --check
+PASS frozen Batch16 source hashes and historical 213/150 snapshot; current totals belong to Batch17
+ 
+[24/41] python scripts/author_kb_batch17.py --check
+Batch17 11 authored editorial lessons with 12 unverified proof steps; check= True
+ 
+[25/41] python scripts/build_kb_batch17_lessons.py --check
+PASS 11 unapproved Batch17 drafts; check= True
+ 
+[26/41] python scripts/audit_kb_batch17_content.py --check
+PASS Batch17 historical 224 draft snapshot; current= 287 132/132 author-proposed; teacher=0
+ 
+[27/41] python scripts/audit_kb_batch18_source_proofs.py --check
+Batch18 source/proof audit PASS: {"proof_obligations": 451, "by_priority": {"P1_THEOREM_PROOF": 118, "P2_REVIEW": 206, "P0_GUARD_AND_COUNTEREXAMPLE": 127}, "by_risk_group": {"PROBABILITY_STATISTICS": 40, "OTHER_MATHEMATICAL_REASONING": 206, "ASSUMPTIONS_DOMAIN": 118, "GEOMETRY_DEGENERACY": 60, "LINEAR_ALGEBRA": 30, "LIMIT_CALCULUS": 53}, "whole_proofs_certified": 0, "student_steps_verified": 0, "conflicting_version_pairs": 10, "versions_resolved": 0, "limited_subclaim_checks": 33, "existing_semantic_gaps_open": 23, "new_source_located_gap_tickets_open": 28, "teacher_approved_lessons": 0}
+ 
+[28/41] python scripts/build_kb_batch20_k00_review_queue.py --check
+K00 source-review queue PASS: {'SOURCE_PAGE_SPLIT': 61, 'NUMBERED_MARKER_SPLIT': 315, 'UNNUMBERED_DE_HEADING_SPLIT': 23, 'EDITORIAL_GAP_DECISION': 28}
+ 
+[29/41] python scripts/build_kb_batch21_lessons.py --check
+PASS Batch21: 11 REVIEW_PENDING lessons; 11 editorial overlaps; 28/28 gaps still OPEN
+ 
+[30/41] python scripts/build_kb_batch21_proof_union.py --check
+PASS Batch21 proof review: 451 historical + 23 new = 474 unverified, 0 certified
+ 
+[31/41] python scripts/author_kb_batch22.py --check
+Batch22 author source: 12 mathematical drafts; pending teacher/source review
+ 
+[32/41] python scripts/build_kb_batch22_lessons.py --check
+PASS: 12 REVIEW_PENDING lessons, 23/28 editorial overlaps; official denominator remains null
+ 
+[33/41] python scripts/build_kb_batch22_proof_and_scope.py --check
+PASS: 247 draft lessons; new 23 unverified proof steps; 497 total; 427 K00 source tasks; official denominator NULL
+ 
+[34/41] python scripts/author_kb_batch23.py --check
+PASS: 20 original Batch23 REVIEW_PENDING lessons, 5 optional editorial candidates + 15 core subskills
+ 
+[35/41] python scripts/build_kb_batch23_integrity.py --check
+PASS: 20 new lessons, 5 editorial-near gaps still open; official denominator NULL
+ 
+[36/41] python scripts/author_kb_batch24.py --check
+PASS: Batch24 20 original teacher-only REVIEW_PENDING draft lessons
+ 
+[37/41] python scripts/build_kb_batch24_scope.py --check
+PASS: 315 source markers, 132 editorial objectives, 23 D/E headings, 28 open gaps; official atomic denominator NULL; repeated text hash groups 22
+ 
+[38/41] python scripts/build_kb_batch24_integrity.py --check
+PASS: Batch24 20 lesson drafts, 19 unverified proof steps, 538 in all; official denominator NULL
+ 
+[39/41] python scripts/build_kb_batch24_progress.py --check
+PASS: 178 engineering topics, 287 REVIEW_PENDING drafts; official knowledge denominator NULL; 0 engineering rows with no lesson
+ 
+[40/41] python scripts/audit_kb_batch09_release.py --check
+PASS: 235 draft lessons, 0 approved, 0 cloud calls, safe editor-only gate
+ 
+[41/41] python scripts/audit_kb_semantic_coverage.py --check
+ FAIL: semantic coverage snapshot missing or out of date
+
+FAILED 41 python scripts/audit_kb_semantic_coverage.py --check EXIT 1

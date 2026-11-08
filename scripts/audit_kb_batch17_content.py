@@ -57,7 +57,7 @@ def audit():
         "new_pending_theorem_steps":12,
         "new_teacher_only_worked_examples":22,
         "new_engineering_nodes":11,
-        "deep_drafts_total":len(all_docs)-32,  # frozen Batch21 snapshot; Batch22/23 separately reviewed.
+        "deep_drafts_total":len(all_docs)-52,  # frozen Batch21 snapshot; Batch22/23/24 separately reviewed.
         "deep_drafts_total_at_batch17":224,
         "engineering_nodes_total":161,
         "curriculum_objective_candidate_sample":132,

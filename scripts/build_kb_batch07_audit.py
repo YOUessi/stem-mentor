@@ -61,10 +61,10 @@ def build():
     # Preserve the Batch20 historical 224-lesson proof baseline. Batch21 has
     # a separately versioned 11-lesson / 24-proof-step audit; do not silently
     # rewrite earlier 451 unverified obligations or risk-priority snapshots.
-    added = {row["id"] for filename in ("elective_gap_batch21.json","elective_gap_batch22.json","core_elective_batch23.json")
+    added = {row["id"] for filename in ("elective_gap_batch21.json","elective_gap_batch22.json","core_elective_batch23.json","core_foundation_batch24.json")
              for row in as_json(LESSON_DIR / filename)}
     docs = [doc for doc in lessons() if doc.id not in added]
-    if len(docs) != 224 or len(added) != 43:
+    if len(docs) != 224 or len(added) != 63:
         raise ValueError("Batch20 frozen mathematical proof baseline drift")
 
     tracks = [t for t in official["tracks"] if t["id"].startswith("ELECTIVE_")]
