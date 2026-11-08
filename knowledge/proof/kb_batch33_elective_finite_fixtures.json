@@ -1,0 +1,43 @@
+{
+  "schema_version": "kb33-editorial-finite-v1",
+  "teacher_approved": false,
+  "student_publishable": false,
+  "exact_official_clause_coverage": false,
+  "fixtures": [
+    {
+      "op": "affine_recurrence",
+      "editorial_id": "KB33-E-P073-A004",
+      "valid": {"a": "1/2", "b": 1, "x0": 0, "n": 4},
+      "invalid": {"a": "1/2", "b": 1, "x0": 0, "n": -1},
+      "math_justification": "以x_{n+1}=a x_n+b反复代入得到a^n x_0+b(1+a+...+a^{n-1})。当a不等于1时有限等比和为(a^n-1)/(a-1)；当a等于1时和为n。固定点只有在a不等于1时唯一存在。负序号不属于本有限迭代定义域。"
+    },
+    {
+      "op": "compound_growth",
+      "editorial_id": "KB33-C-P066-A001",
+      "valid": {"principal": 100, "rate": "1/10", "n": 2},
+      "invalid": {"principal": 100, "rate": -1, "n": 2},
+      "math_justification": "每个计息期本金乘以同一正增长因子1+r，有限归纳得P_n=P_0(1+r)^n。这里额外要求本金非负、增长因子为正，是本教学模型约束；利率为-1导致该约束失败，不能仍称普通复利正增长过程。"
+    },
+    {
+      "op": "rhythm_sync",
+      "editorial_id": "KB33-D-P071-A002",
+      "valid": {"p": 6, "q": 8},
+      "invalid": {"p": 0, "q": 8},
+      "math_justification": "两个正整数节拍周期同时回到起点当且仅当同步时刻是两者的公倍数。最早正同步时刻为最小公倍数pq/gcd(p,q)，可通过逐个正整数扫描独立交叉检验。零周期不是有效节拍周期。"
+    },
+    {
+      "op": "orthogonal_matrix_2d",
+      "editorial_id": "KB33-D-P070-A001",
+      "valid": {"matrix": [[0,-1],[1,0]]},
+      "invalid": {"matrix": [[2,0],[0,1]]},
+      "math_justification": "若二维实矩阵两列长度均为1且互相正交，则列向量内积构成单位Gram矩阵A^TA=I。由det(A)^2=det(I)=1知行列式为正负1；伸缩矩阵diag(2,1)不满足第一列单位长度。"
+    },
+    {
+      "op": "unique_linear_system_2d",
+      "editorial_id": "KB33-A-P055-A002",
+      "valid": {"matrix": [[2,1],[1,1]],"rhs":[5,3]},
+      "invalid": {"matrix": [[1,2],[2,4]],"rhs":[3,6]},
+      "math_justification": "二维系数矩阵行列式af-be非零时，可依消元或克拉默法则求唯一解x=(fc-bd)/det、y=(ad-ec)/det；再将结果回代两个方程逐项核验。若行列式为零，不能以相同公式宣称唯一解。"
+    }
+  ]
+}

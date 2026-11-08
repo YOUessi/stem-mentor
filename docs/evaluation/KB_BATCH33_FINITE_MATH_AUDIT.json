@@ -1,0 +1,91 @@
+{
+  "schema_version": "kb-batch33-finite-math-editorial-v1",
+  "mathematical_evidence": [
+    {
+      "op": "affine_recurrence",
+      "editorial_id": "KB33-E-P073-A004",
+      "track": "ELECTIVE_E",
+      "scope": "EXACT_FINITE_INPUT_ONLY",
+      "positive": "VERIFIED_FINITE_INSTANCE",
+      "negative": "CONDITIONS_NOT_ESTABLISHED",
+      "witness": {
+        "direct": "15/8",
+        "closed_form": "15/8",
+        "fixed_point": "2"
+      },
+      "formal_general_proof_certificate": null,
+      "student_step_verification": null
+    },
+    {
+      "op": "compound_growth",
+      "editorial_id": "KB33-C-P066-A001",
+      "track": "ELECTIVE_C",
+      "scope": "EXACT_FINITE_INPUT_ONLY",
+      "positive": "VERIFIED_FINITE_INSTANCE",
+      "negative": "CONDITIONS_NOT_ESTABLISHED",
+      "witness": {
+        "amount": "121",
+        "formula": "121"
+      },
+      "formal_general_proof_certificate": null,
+      "student_step_verification": null
+    },
+    {
+      "op": "rhythm_sync",
+      "editorial_id": "KB33-D-P071-A002",
+      "track": "ELECTIVE_D",
+      "scope": "EXACT_FINITE_INPUT_ONLY",
+      "positive": "VERIFIED_FINITE_INSTANCE",
+      "negative": "CONDITIONS_NOT_ESTABLISHED",
+      "witness": {
+        "first_sync": 24,
+        "gcd": 2
+      },
+      "formal_general_proof_certificate": null,
+      "student_step_verification": null
+    },
+    {
+      "op": "orthogonal_matrix_2d",
+      "editorial_id": "KB33-D-P070-A001",
+      "track": "ELECTIVE_D",
+      "scope": "EXACT_FINITE_INPUT_ONLY",
+      "positive": "VERIFIED_FINITE_INSTANCE",
+      "negative": "CONDITIONS_NOT_ESTABLISHED",
+      "witness": {
+        "gram_identity": true,
+        "determinant": "1"
+      },
+      "formal_general_proof_certificate": null,
+      "student_step_verification": null
+    },
+    {
+      "op": "unique_linear_system_2d",
+      "editorial_id": "KB33-A-P055-A002",
+      "track": "ELECTIVE_A",
+      "scope": "EXACT_FINITE_INPUT_ONLY",
+      "positive": "VERIFIED_FINITE_INSTANCE",
+      "negative": "CONDITIONS_NOT_ESTABLISHED",
+      "witness": {
+        "x": "2",
+        "y": "1",
+        "determinant": "1"
+      },
+      "formal_general_proof_certificate": null,
+      "student_step_verification": null
+    }
+  ],
+  "summary": {
+    "operators": 5,
+    "valid_instances": 5,
+    "invalid_premises_rejected": 5,
+    "universal_theorems_formally_certified": 0,
+    "teacher_approved_lessons": 0,
+    "verified_freeform_student_steps": 0,
+    "official_atomic_goals_verified": 0
+  },
+  "safety": {
+    "student_index_unchanged": true,
+    "teacher_solution_not_exposed": true,
+    "finite_instance_does_not_imply_general_theorem": true
+  }
+}
