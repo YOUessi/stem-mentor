@@ -1,0 +1,449 @@
+{
+  "schema_version": "kb-batch30-p0-last44-editorial-v1",
+  "authoring": "ORIGINAL_EDITORIAL_MATHEMATICAL_CONDITION_REVIEWS",
+  "authority": "NO_FORMAL_PROOF_OR_TEACHER_APPROVAL",
+  "student_visibility": "NEVER_STUDENT_EXPOSE",
+  "review_state": "REVIEW_PENDING",
+  "entries": [
+    {
+      "risk_step_id": "math.hs.counting.product-rule#2",
+      "necessary_hypotheses": "每一步选择的选项集合必须对该步的全部历史选择已明确定义；不同选择序列对应不同最终结果，且每个目标结果都可由恰一序列获得；固定乘积 n₁⋯nₖ 的简化式还要求每层选择数不随先前选择改变。",
+      "explanatory_counterexample": "两条不同路径都写出同一个数 12 时，直接相乘会重复计数；若第二步是否有选项取决于第一步，固定的 n₁n₂ 也不是实际方案数。",
+      "next_review_action": "检查从选择序列到最终结果的双射，而不是只计数路径。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.calculus.differentiable-continuous#1",
+      "necessary_hypotheses": "必须在 a 的邻域内定义 f，并仅对 h≠0 使用商式；在该点可导意味着差商有有限极限，乘回趋零的 h 才推出函数值差趋零。端点导数需要明确单侧定义。",
+      "explanatory_counterexample": "在 h=0 代入差商会除零；令 f(0)=0 而 f(x)=1 (x≠0)，此时 f 在 0 不连续，差商 1/h 无有限极限。",
+      "next_review_action": "分离非零 h 代数恒等式、差商极限存在、连续性结论三个层次。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.calculus.monotonicity-mvt#1",
+      "necessary_hypotheses": "每对 a<b 所围闭区间 [a,b] 必须处于函数定义区间 I 内，f 在 [a,b] 连续、(a,b) 可导；若利用 f′≥0 推出不减，符号须在整个开区间成立。",
+      "explanatory_counterexample": "函数在 x=0 发生跳跃但两侧导数均为零时，不能跨过断点直接使用中值定理断言全局常数；只测某一点导数符号也无法推出全局单调。",
+      "next_review_action": "分别核查闭区间连续、开区间可导、任意两点量词和导数符号。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.calculus.second-derivative-convexity#3",
+      "necessary_hypotheses": "要求 x<z<y 为同一区间内三点，f 在其间连续、内点可导，f′非减；交叉相乘的 z−x、y−z 和 y−x 必须严格为正。端点 z=x 或 z=y 另取等号。",
+      "explanatory_counterexample": "取 f(t)=−t²，x=−1,z=0,y=1，得 f(z)=0>−1，反驳凸性弦不等式；若颠倒点次序，乘负数需改变不等号方向。",
+      "next_review_action": "先证明割线斜率有序，再由正分母导出弦不等式。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.finance.annuity-present-value#3",
+      "necessary_hypotheses": "期数 n 为正整数，期利率 i 满足 1+i>0 以确保正常贴现；使用公比求和分式的这一支必须 i≠0，即 q=(1+i)⁻¹≠1。",
+      "explanatory_counterexample": "i=0 时每期贴现因子为 1，现值系数为 n，不能用 [1−(1+i)⁻ⁿ]/i 的 0/0；i=−1 时贴现因子根本不存在。",
+      "next_review_action": "校验一般分支的分母并单列零利率极限与精确值。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.function.epsilon-delta-square#2",
+      "necessary_hypotheses": "a 为给定实数，ε>0；令 δ=min(1,ε/(1+2|a|))>0，仅从 0<|x−a|<δ 得到 |x+a|<1+2|a|，从而 |x²−a²|<ε。",
+      "explanatory_counterexample": "若未先控制 |x−a|<1，仅设 δ=ε/(1+2|a|) 的估计步骤并不自动有效；若 ε≤0，则 δ 不是有效的正邻域半径。",
+      "next_review_action": "逐行检查局部有界因子和 δ 的正性，而非直接声称平方函数连续。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.linear.cramer-three#1",
+      "necessary_hypotheses": "A 为实数域上的 3×3 方阵，b∈R³，det A≠0；由行列式可逆定理确保 Ax=b 有唯一解；克拉默列替换需与列顺序一致。",
+      "explanatory_counterexample": "A=零矩阵且 b=0 时解不唯一；若 b=(1,0,0) 则无解。行列式为零时不能直接调用 A⁻¹。",
+      "next_review_action": "需要独立核查三阶行列式非零、逆矩阵存在及解的唯一性。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.linear.rank-vectors#3",
+      "necessary_hypotheses": "三个列向量组成 R³ 上的 3×3 方阵；det A=0 与秩小于3等价，因而存在非零 z 满足 Az=0。讨论的是非平凡线性组合而非向量各自为零。",
+      "explanatory_counterexample": "若在 R⁴ 选择三个独立向量，不存在相应的 3×3 直接行列式；把齐次系统的恒零解当成非平凡零组合毫无信息。",
+      "next_review_action": "给出维数、秩与零空间维数的独立论证。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.matrix.gaussian-row-equivalence#2",
+      "necessary_hypotheses": "方程系统的某一行乘以标量 λ 必须 λ≠0 才有反向除法；行交换与一行加另一行倍数也须说明逆变换，适用于同一系数域。",
+      "explanatory_counterexample": "将 x=1 的整行乘以 λ=0 变成 0=0，会增加全部实数作为解；这种变换只保留旧解，不保证解集相等。",
+      "next_review_action": "分别验证初等行操作的逆变换及解集双向包含。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.model.input-output-triangular#2",
+      "necessary_hypotheses": "参数 b<1 使 1−b>0；需求量 d₂≥0，且方程的右端没有额外负项，才能从 x₂=d₂/(1−b) 推出唯一且非负的 x₂。",
+      "explanatory_counterexample": "取 b=1,d₂=1 时方程 0·x₂=1 无解；取 b=2,d₂=1 虽有唯一解 x₂=−1，却不满足非负经济产量。",
+      "next_review_action": "区分可逆条件、数学唯一解与物理非负可行性。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.model.parametric-circle#3",
+      "necessary_hypotheses": "半径 r>0、t 为弧度参数且参数映射可导；速度向量为 (−r sin t,r cos t)，其平方范数为 r²，取非负平方根得速度 r。",
+      "explanatory_counterexample": "r=0 时曲线退化为固定点，速度等于0而非正值；若角度 t 以度数数值直接求导，还需乘 π/180。",
+      "next_review_action": "保留平方根绝对值步骤并说明 r>0 与弧度参数假设。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.model.time-rescaling#4",
+      "necessary_hypotheses": "对任意实 a,b,c,s,u，a(su)²+b(su)+c=(as²)u²+(bs)u+c 是代数恒等式；若宣称 t=su 是等价的可逆参数替换，必须另外要求 s≠0。",
+      "explanatory_counterexample": "令 s=0：代数代入仍成立，但所有 u 被映到 t=0，无法反向恢复原时间变量；仅把二次系数乘 s 而非 s² 则会算错。",
+      "next_review_action": "分别标注恒等式不要求 s 非零与参数变换可逆需要 s 非零。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.multivariable.partial-polynomial#3",
+      "necessary_hypotheses": "固定 x 只让 y 变化，按 h≠0 的差商展开，假设 f(x,y)=x²y+3y² 且变量为实数；取 h→0 才得到偏导 x²+6y。",
+      "explanatory_counterexample": "若让 x 同时随 h 改变，就计算方向导数而不是保持 x 不变的 y 偏导；把 h=0 代入尚未化简的差商会除零。",
+      "next_review_action": "独立检验差商、变量固定条件与极限交换步骤。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.sequence.epsilon-n#2",
+      "necessary_hypotheses": "ε>0，N∈正整数，选取 1/N<ε；对于所有整数 n≥N，因倒数函数在正数上递减而有 0<1/n≤1/N<ε。",
+      "explanatory_counterexample": "ε=1/2 若只取 N=2，则 1/N=ε 而不是严格小于；若允许 n=0，1/n 无定义，不能套用倒数不等式。",
+      "next_review_action": "为任意 ε 显式构造整数 N>1/ε 并验证全称量词。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.sequence.fibonacci-golden-ratio#3",
+      "necessary_hypotheses": "采用 F₀=0,F₁=1，n≥1，φ=(1+√5)/2，ψ=(1−√5)/2；Binet 表达式成立且 Fₙ>0，分母 1−(ψ/φ)ⁿ 不为零，才能取比值。",
+      "explanatory_counterexample": "n=0 时 F₀=0，因此 F₁/F₀ 未定义；若仅凭 |ψ/φ|<1 而省略 Fₙ 非零检查，就存在未证的除法步骤。",
+      "next_review_action": "核对闭式索引、分母及极限取值的独立证明。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.statistics.bernoulli-mle#2",
+      "necessary_hypotheses": "n∈正整数且 0<k<n，观测为独立同分布 Bernoulli(p) 样本，p∈(0,1)；log L 的导数零点 p=k/n 且二阶导数严格负。",
+      "explanatory_counterexample": "当 k=0 时 log(p) 项前系数为0，直接写 k log p 并在 p=0 求导没有意义；若观测不是同一 Bernoulli 参数，似然的二项形式也不成立。",
+      "next_review_action": "先证明模型似然，再核查开区间求导的合法性及内部极值。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.statistics.bernoulli-mle#3",
+      "necessary_hypotheses": "n≥1，0≤k≤n，p∈[0,1]；当 0<k<n 时内部最大值为 k/n，当 k=0 或 n 时用原始似然函数单独处理边界；对数似然不能在 p=0 或1直接套开区间求导。",
+      "explanatory_counterexample": "全零观测 k=0 的 MLE 为 p=0；若只求解 k/p−(n−k)/(1−p)=0 会遗漏边界甚至产生 0/0。",
+      "next_review_action": "对三种计数区间分别比较边界与内部取值，不使用数值网格冒充全局证明。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.statistics.ols-two-parameter#1",
+      "necessary_hypotheses": "样本数 n≥1 且每个 (xᵢ,yᵢ) 为有限实数；对固定斜率 b，关于截距 a 的平方误差和是首项系数 n>0 的二次函数，驻点 a=ȳ−b x̄ 唯一。",
+      "explanatory_counterexample": "空样本 n=0 时均值未定义，平方误差恒0导致截距完全不可识别；仅对 a 求偏导不能推出 b 唯一。",
+      "next_review_action": "单独证明截距方向严格凸与 b 方向尚待的识别条件。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.elective.statistics.ols-two-parameter#3",
+      "necessary_hypotheses": "样本 n≥2，Sxx=Σ(xᵢ−x̄)²>0；经消去截距后的 SSE 关于 b 的二次项系数为 Sxx，因此唯一最小点 b̂=Sxy/Sxx，再回代 â。",
+      "explanatory_counterexample": "若 xᵢ 全部等于 2，Sxx=0，此时只能识别 a+2b，任何满足该条件的 (a,b) 都有同样拟合，不能宣称唯一斜率。",
+      "next_review_action": "检查中心化恒等式和非零分母，并给出常数自变量反例。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.extension.circle-polar#1",
+      "necessary_hypotheses": "欧氏平面圆心原点、半径 R>0，T 在圆上满足 T·T=R²；梯度 2T≠0，故切线法向量 T 非零且切线方程 T·X=R²。",
+      "explanatory_counterexample": "当 R=0 时 T=0，所谓切线方程 0=0 代表整平面，不能视作退化圆上一点的普通切线。",
+      "next_review_action": "先核实切点在圆上且正规法向量非零。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.extension.circle-polar#3",
+      "necessary_hypotheses": "半径 R>0、极点 P≠0；极线 P·X=R² 的法向量为 P，圆心到直线距离是 R²/|P|；按 |P| 与 R 的大小分类，等于时相切。",
+      "explanatory_counterexample": "P=0 时等式 0=R² 无解且距离公式分母为0，不能宣称存在一条极线；若 |P|=R 应是一交点而非两交点。",
+      "next_review_action": "核查 P≠0 与严格/等号三种位置分类。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.extension.cross-product#3",
+      "necessary_hypotheses": "u,v∈R³ 使用标准右手欧氏外积，分量由行列式定义；|u×v|²=|u|²|v|²−(u·v)² 对零向量也成立，但角度及夹角正弦形式另外需要两向量非零。",
+      "explanatory_counterexample": "二维一般向量不能无定义地直接使用三分量外积；令 u=0 时面积0成立，但用 |u||v| 作分母求 sin θ 会除零。",
+      "next_review_action": "先用坐标恒等式证明平方关系，再另证非零向量角度公式。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.function.abs-triangle#2",
+      "necessary_hypotheses": "x,y∈实数，分别由 −|x|≤x≤|x| 及 −|y|≤y≤|y| 同向相加；这是对任意实数成立的上下界，取绝对值后得到三角不等式。",
+      "explanatory_counterexample": "x=1,y=−1 时 |x+y|=0<2=|x|+|y|，故上界不能擅自当成等号；复数上的有序实数逐项比较也不成立。",
+      "next_review_action": "复核两个方向的不等式，并辨别不等式与等号成立条件。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.function.bisection-root#2",
+      "necessary_hypotheses": "f 在 [a,b] 连续，a<b，且 f(a)f(b)<0；中点 m 有定义，若 f(m)=0 结束，否则从 f(m) 的符号选择保持端点异号的半区间。",
+      "explanatory_counterexample": "令 f(x)=−1 (x<0), f(x)=1 (x≥0)，在 [−1,1] 端点异号却无零点：仅反复二分不能忽略连续性假设。",
+      "next_review_action": "区分符号保留这一有限逻辑和连续性保证存在根的定理。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.geometry.circle-complete-square#1",
+      "necessary_hypotheses": "D,E,x,y 为实数，使用 (x+D/2)²=x²+Dx+D²/4 及 y 项对应恒等式；除以 2 是合法非零数除法。",
+      "explanatory_counterexample": "若原方程的二次项为 x²−y²，依照两个正平方项直接归类圆是错误的；不能跳过系数标准化与符号确认。",
+      "next_review_action": "以原方程左右两侧展开复核恒等式。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.geometry.circle-complete-square#3",
+      "necessary_hypotheses": "系数为实数且已规范为 (x−h)²+(y−k)²=r²，圆的中心和半径来自欧氏距离；r²>0 圆、r²=0 单点、r²<0 空集，三类互斥。",
+      "explanatory_counterexample": "x²+y²=−1 在实平面无解，不是虚半径的实圆；x²+y²=0 只有原点，不能标为正半径圆。",
+      "next_review_action": "分别核验半径平方的三种符号，不以判别式/单位形式替代。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.geometry.line-circle#3",
+      "necessary_hypotheses": "直线非零法向量、圆半径 r>0；投影垂足 H 到圆心距离 d≥0，在直线方向的偏移平方等于 r²−d²，因此 d=r 一点、d>r 零点。",
+      "explanatory_counterexample": "若直线一般式 A=B=0，则点线距离无法定义；若 r²−d²<0 却取其实数平方根，就产生不存在的实交点。",
+      "next_review_action": "与之前 d<r 两点情况合并，独立检验三分分类。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.logarithm.inverse#2",
+      "necessary_hypotheses": "底数 a>0 且 a≠1，真数 x,y>0；指数函数 a^t 在实数上严格单调且取值 (0,∞)，定义 log_a 为逆函数，所以存在唯一实数 u,v。",
+      "explanatory_counterexample": "a=1 时 1^u=1 对所有 u，log₁1 无唯一值；x=−1 不在实指数正值域，log_a x 在实数内不存在。",
+      "next_review_action": "检查对数定义域、底数条件和逆函数唯一性。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.probability.complement-independence#4",
+      "necessary_hypotheses": "A、B 属于同一个概率空间且独立，即 P(A∩B)=P(A)P(B)；从该恒等式可分别对 A、B 取补，整个推导仅用加减，不需条件概率分母 P(B)>0。",
+      "explanatory_counterexample": "在均匀抛硬币中令 A=B={正面}，P(A∩B)=1/2≠1/4，A、B 不独立，此时不能仅凭补事件形式就宣称 Aᶜ、Bᶜ 独立。",
+      "next_review_action": "独立核对两次补集概率的代数展开，无需错误新增正概率条件。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.probability.expectation-linearity#3",
+      "necessary_hypotheses": "X、Y 为有有限期望的随机变量，a,b 为常实数；利用期望积分或有限分布求和的线性性，即使 X、Y 不独立亦成立。",
+      "explanatory_counterexample": "如果 E|X|=∞ 且相关加减产生 ∞−∞，单独期望未定义，不能把无穷量写成有限等式；在有限模型中令 Y=−X 可反驳必须独立的错误条件。",
+      "next_review_action": "核查可积性，不把独立性误当成线性期望前提。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.proof.induction#3",
+      "necessary_hypotheses": "命题 P(n) 定义于 n≥n₀ 的整数域，已证明起始命题 P(n₀)，且对每个 k≥n₀ 有 P(k)⇒P(k+1)；最小反例 m>n₀，才有 P(m−1) 且可应用归纳蕴含。",
+      "explanatory_counterexample": "若没有证明基例，命题 P(n) 恒为假时 P(k)⇒P(k+1) 仍逻辑为真，但不能推出任一 P(n)。",
+      "next_review_action": "分别检查基例、归纳蕴含全称量词和最小反例是否超过起点。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.space.basis-three-unique#2",
+      "necessary_hypotheses": "三个向量是 R³ 上同一坐标系的列向量，组成 3×3 矩阵 M；只有零线性组合为零意味着 ker M={0}，由秩–零度才推出 det M≠0 和唯一坐标表达。",
+      "explanatory_counterexample": "在 R⁴ 中三个独立向量的 4×3 矩阵可有平凡零空间，却不能写出一个 3×3 行列式或整个 R⁴ 的唯一三向量展开。",
+      "next_review_action": "说明方阵维数与可逆性的等价链条。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.space.coordinate-distance#2",
+      "necessary_hypotheses": "采用三维欧氏空间两两正交的等单位直角坐标轴；水平面投影与竖直分量正交，因此 d²=Δx²+Δy²+Δz²。",
+      "explanatory_counterexample": "斜坐标基下坐标差虽为 (1,1,0)，实际平方距离还含非零交叉项，不能直接用三个坐标差平方相加。",
+      "next_review_action": "核查坐标正交性及两次勾股定理。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.space.line-plane-normal#1",
+      "necessary_hypotheses": "P∈R³，u∈R³ 且 u≠0，直线所有点与 P 的位移均属于 span(u)，反之任意 t∈R 所给点也在直线上。",
+      "explanatory_counterexample": "若 u=0，则 P+t u 始终等于 P，仅表示单点而非一条直线，不能声称方向向量为零时仍得到一维直线。",
+      "next_review_action": "审计向量非零和位移参数化的双向包含。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.space.line-plane-normal#3",
+      "necessary_hypotheses": "Q∈R³，n 是该欧氏平面的非零法向量，n·(X−Q)=0 定义其二维正交补的平移，且法向量与该平面所有方向垂直。",
+      "explanatory_counterexample": "若 n=0，0·(X−Q)=0 对全空间成立，不再代表一个二维平面。",
+      "next_review_action": "独立验证非零法向量、正交补维数和逆向等价。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.space.parallel-perpendicular-criteria#3",
+      "necessary_hypotheses": "两平面在欧氏三维空间均有非零法向量 n₁,n₂，平面夹角定义为两法向夹角的锐角或补角；当 n₁·n₂=0 时两平面夹角为90°。",
+      "explanatory_counterexample": "写入零法向量会使二面角定义失效；法向平行只意味着平面平行或重合，不能判成垂直。",
+      "next_review_action": "审计几何角定义、向量非退化及点积为零的充分必要方向。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.space.point-line-distance#3",
+      "necessary_hypotheses": "过 Q 的直线方向 u∈R³ 必须非零，P 与 Q 在同一欧氏空间；分解 w=P−Q 为沿 u 的投影和正交残差，选 t=(w·u)/|u|²，距离平方为 |w|²−(w·u)²/|u|²≥0。",
+      "explanatory_counterexample": "u=0 时投影系数除零；若沿线参数没有覆盖全部实数，所求将是射线/线段距离而不一定等于整条直线的距离。",
+      "next_review_action": "区分直线、射线和线段，核查最小化 t 的取值域。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.space.solid-volumes#1",
+      "necessary_hypotheses": "柱体以底面为参考，B 为固定有限非负横截面积，高度 h≥0；平行底面的切片面积恒 B，才可按体积切片公式得到 Bh。",
+      "explanatory_counterexample": "圆锥或锥台的平行截面面积会变化，不能直接用 B·h 作为一般立体的体积；B 不能理解成侧面积。",
+      "next_review_action": "审计 B 的几何定义、截面不变性以及积分的体积适用性。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.space.solid-volumes#2",
+      "necessary_hypotheses": "锥体高度 h>0，按距顶点垂直高度 t∈[0,h] 取与底面平行截面，相似比为 t/h；截面面积缩放为平方比例 B(t/h)²。",
+      "explanatory_counterexample": "若截平面不与底面平行，相似比例不能直接设 t/h；若 h=0，比例分母为零且不构成非退化的锥体。",
+      "next_review_action": "区分线性尺度与面积平方尺度的合法范围。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.space.solid-volumes#3",
+      "necessary_hypotheses": "锥体底面积 B≥0 且高 h>0，切片面积为 B(t/h)²；积分基本公式 ∫₀ʰt²dt=h³/3 成立，才能得到 V=Bh/3。",
+      "explanatory_counterexample": "h=0 时从一开始使用 B/h² 不合法，尽管极限体积可能是0；若面积随高度不是二次比例，结论不适用于任意形体。",
+      "next_review_action": "将切片面积事实与代数积分拆开逐步核对。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.triangle.cosine-law#4",
+      "necessary_hypotheses": "边长 a,b,c>0 满足全部严格三角形不等式，角 A∈(0,π) 与 a 对边；bc>0 保证 cos A=(b²+c²−a²)/(2bc) 合法。",
+      "explanatory_counterexample": "b=c=1,a=3 不构成三角形，计算的 cos A=(1+1−9)/2=−7/2 超出 [−1,1]，不能代入反三角求角。",
+      "next_review_action": "先检查非退化三角形不等式，再核查非零分母。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.triangle.sine-law#3",
+      "necessary_hypotheses": "非退化欧氏三角形，a,b,c>0 且角 A,B,C∈(0,π)，故 sin A,sin B,sin C>0；所用双向除法均合法。",
+      "explanatory_counterexample": "若三点共线，出现 sin A=0，虽可能形式上写出含0等式，但 a/sin A 无定义，不能说正弦定理的分式照样成立。",
+      "next_review_action": "审计内角范围与双方除数，防止退化三角形。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.trig.sum-angle#1",
+      "necessary_hypotheses": "角 α 是带方向的平面旋转角度，二维坐标采用标准正交基；旋转矩阵两列是基向量的像且应满足 QᵀQ=I、det Q=1。",
+      "explanatory_counterexample": "反射矩阵 diag(1,−1) 虽保距，却有 det=−1，并非旋转，故不能只检查距离不变就判定旋转矩阵。",
+      "next_review_action": "分别核查线性、保距、定向和基向量像。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "risk_step_id": "math.hs.vector.linear-operations#1",
+      "necessary_hypotheses": "u,v 作为同一欧氏平面的有向位移，使用一致的坐标轴/单位/方向；首尾相接后的位移分量分别相加，这与位移起点无关。",
+      "explanatory_counterexample": "若把一个向量的坐标按旋转了90°的局部坐标轴给出，另一个按全局坐标轴给出，未经坐标转换直接相加会算错实际位移。",
+      "next_review_action": "核对同一基坐标表达与几何首尾相接的一致性。",
+      "math_status": "EDITORIAL_CONDITIONS_WITH_EXPLICIT_COUNTEREXAMPLE_NOT_CERTIFIED",
+      "human_math_review": "PENDING",
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    }
+  ]
+}
