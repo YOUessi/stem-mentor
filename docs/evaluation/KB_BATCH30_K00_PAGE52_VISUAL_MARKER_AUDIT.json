@@ -1,0 +1,85 @@
+{
+  "schema_version": "kb-batch30-p52-original-visual-evidence-v1",
+  "source": {
+    "description": "Ordinary high-school mathematics curriculum standard (2017 edition, 2020 revision)",
+    "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "original_pdf_total_pages": 188,
+    "printed_page": 52,
+    "pdf_page_index_zero_based": 59,
+    "render": "macOS PDFKit at 2x resolution",
+    "original_page_png_sha256": "50de0f8c0bbfb53484b5e31b0aebc38e8bb80e3ae1c9f957cf305c1134fb9076",
+    "image_committed_to_git": false,
+    "visual_verification_method": "ASSISTANT_VISUAL_INSPECTION_OF_RENDERED_ORIGINAL_NOT_HUMAN_TEACHER_REVIEW",
+    "original_pdf_embedded_in_git": false,
+    "original_paragraphs_copied": false
+  },
+  "source_ledger_sha256": {
+    "historical": "427ae60de66a528b73f44a16f5892fd07f7136621cf7f1dbc6ffd1685b8672da",
+    "reextracted": "c0747fd67bba8261cd332ce76f130e014deb529efa999762f07aadb33dbda65f"
+  },
+  "marker_audit": {
+    "historical_page52_count": 6,
+    "rendered_original_page52_count": 8,
+    "reextracted_page52_count": 8,
+    "section_1_sequence": [
+      "（１）",
+      "（２）",
+      "（３）",
+      "（４）",
+      "（５）"
+    ],
+    "section_2_sequence": [
+      "（１）",
+      "（２）",
+      "（３）"
+    ],
+    "two_historically_omitted_numbered_markers": [
+      {
+        "marker": "（２）",
+        "section": "1. 数列极限",
+        "historical_ledger": "OMITTED",
+        "rendered_original": "VISUALLY_PRESENT",
+        "normalized_reextract": "PRESENT",
+        "anchor_id": "STD2020-P52-L013",
+        "source_line_sha256": "4825eb8382841d5b9864e134ed353f0c719154b1c97c0651c13a07de082dc582"
+      },
+      {
+        "marker": "（４）",
+        "section": "1. 数列极限",
+        "historical_ledger": "OMITTED",
+        "rendered_original": "VISUALLY_PRESENT",
+        "normalized_reextract": "PRESENT",
+        "anchor_id": "STD2020-P52-L017",
+        "source_line_sha256": "ad4ce7f0f45d954d060e21030200f2d58b1579988140372389beab73a96899d5"
+      }
+    ],
+    "resolved_issue": "NUMBERED_MARKER_OCCURRENCE_EXTRACTION_OMISSION_IN_HISTORICAL_LEDGER",
+    "numbered_markers_are_atomic_knowledge_units": false
+  },
+  "global_scope": {
+    "source_pages": 61,
+    "assistant_visually_rechecked_pages": 1,
+    "remaining_without_assistant_visual_recheck": 60,
+    "teacher_visually_rechecked_pages": 0,
+    "frozen_extractor_marker_count": 315,
+    "source_reextract_marker_count": 317,
+    "new_count_for_marker_occurrence_audit": 317,
+    "verified_official_atom_denominators": {
+      "COMPULSORY": null,
+      "SELECTIVE_COMPULSORY": null,
+      "ELECTIVE_A": null,
+      "ELECTIVE_B": null,
+      "ELECTIVE_C": null,
+      "ELECTIVE_D": null,
+      "ELECTIVE_E": null
+    },
+    "official_knowledge_atom_coverage_rate": null,
+    "teacher_approved_lessons": 0
+  },
+  "warnings": [
+    "The original page visibly has five subsection markers under sequence limits and three under function limits: eight occurrences, not eight atomic learning outcomes.",
+    "Batch18 missed the (2) and (4) markers in the first group on printed page 52; the pinned 317 re-extraction matches the render.",
+    "One page is visually reviewed by an assistant only; 60 printed pages and all unnumbered requirements still lack corresponding visual review.",
+    "This is not certification of official syllabus atoms, formal proofs, source licensing or teacher review."
+  ]
+}
