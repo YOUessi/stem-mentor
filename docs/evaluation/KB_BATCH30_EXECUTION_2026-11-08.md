@@ -18,10 +18,12 @@ Mac 本机核实原版 188 页 PDF 的 SHA256 cc4d3a20daa09f5185037e93fbacd58f7d
 
 ## Mac 真实测试
 
-新增 backend/tests/test_kb_batch30_p0_scope.py：专项 2169 passed、0 failed（日志 evaluations/results/2026-11-08-kb-batch30/targeted.log）。Mac Python 全量：31956 passed、0 failed、1 warning，125.35s。Node 111/111，教学策略 33/33，困难负例 40/40，检索 Top3 22/22。来源/证明审计器检查 PASS；新增检查已加入 mac_check.sh 与 GitHub Actions CI。日志 evaluations/results/2026-11-08-kb-batch30/mac-check.log。Chrome/Playwright 浏览器回归见 evaluations/results/2026-11-08-kb-batch30/browser.log，最终成功与否应以真实退出码核准。
+新增 backend/tests/test_kb_batch30_p0_scope.py：专项 2169 passed、0 failed（日志 evaluations/results/2026-11-08-kb-batch30/targeted.log）。Mac Python 全量：31956 passed、0 failed、1 warning，125.35s。Node 111/111，教学策略 33/33，困难负例 40/40，检索 Top3 22/22。来源/证明审计器检查 PASS；新增检查已加入 mac_check.sh 与 GitHub Actions CI。日志 evaluations/results/2026-11-08-kb-batch30/mac-check.log。Chrome/Playwright 全量浏览器回归已在 Mac 实际完成，脚本退出码 0；15 组浏览器子脚本通过，浏览器 pytest 2 passed in 11.41s，合成数据库、无外部请求，iPad 为模拟笔/触控而非真实硬件；日志 evaluations/results/2026-11-08-kb-batch30/browser.log。
 
 初次生成审计报告时遇到源 SHA 零分隔符转义与条件字符串长度阈值错误，均已实际修复、全量复测。Mac git fetch HTTPS 低速超时，若推送受阻可通过 GitHub 原生 Git 数据接口同步，但需对比 Mac 与远端 Git Tree SHA。
 
 ## 下一批与权限
 
 继续 60 页源课标视觉校核及未编号要求拆分，建立必修/选择性必修/选修 A–E 官方原子分母；独立审查 127 条 P0 编辑稿及全部 538 条证明步骤，对 10 组历史冲突逐项校验；继续扩充真正完整的章节、题族、先修与 Agent 检索无剧透回归；需真实教师审核后再发布。此次完成软件测试不意味着数学认证或教师批准，#17–#27 仍 OPEN。
+
+本批已完成 Mac 全量测试的源码提交 2e2e18192d9296446009a9a7ca8bee0e7342500d，Git Tree 437ead2e73535727af7c6296f3159c0135227238；追加浏览器日志与本报告的后续 HEAD 将单独记录并校验。
