@@ -56,3 +56,12 @@
 4. 教师批准0、学生正式深度内容发布0。后续需要经过真实审校的已批准课程索引、RAG/API冻结对照和无剧透未见题评测。
 
 **本批交付的是原创教师审核稿、机器可检验边界与离线软件测试；未达到完整课标、形式证明、教师审校与正式发布门槛，不得关闭总任务。**
+
+## 最终 Mac 回归及提交证据（本批更新）
+
+- **最终内容修正后增量测试 401 passed / 0 failed**：`evaluations/results/2026-11-09-kb-batch47/geometry_statistics_incremental.log`，`incremental.exit=0`。
+- **最终内容修正后完整 Mac Python 40,623 passed / 0 failed / 1 条第三方弃用警告**；Node **111/111**；Tutor policy **33/33**；RAG difficult-negative **40/40**、Top3 **22/22**；`scripts/mac_check.sh` **exit 0**。归档 `mac_check_full.log`、`mac_check.exit`。
+- **Chrome/Playwright 15 个浏览器脚本通过、browser pytest 2 passed**；`scripts/mac_browser_check.sh` **exit 0**，见 `mac_browser_full.log`、`mac_browser.exit`。浏览器用临时合成数据库，iPad 触屏为模拟交互。
+- 受控「普查计数等于总体数」修复后，首轮专项 400 passed / 1 failed 是因为原始有限证据审计文件尚未同步；重新生成审计文件并严格执行 `--check` 后，增量测试恢复 **401 passed / 0 failed**；全量 Python 回归随后再次执行通过。
+- 源码初始提交：`7ecccaa790f649ec530451c589e856b8938d7d0e`，tree `adf3886cee1807db6068c269df7f049b255f6a71`。完整测试日志追加于后续 docs commit；最终远端以 GitHub PR 实际 HEAD 与 Actions 为准。
+- 本批源码推送首次使用 Mac git HTTP/1.1 仍出现 `curl 56 Recv failure: Operation timed out`，属于网络传输错误而非测试失败。需明确核实远端分支/文件/CI，不可假报已完成同步。
