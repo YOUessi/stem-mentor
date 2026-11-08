@@ -1,0 +1,16 @@
+
+==================================== ERRORS ====================================
+______ ERROR collecting backend/tests/test_kb_batch38_partial_repairs.py _______
+ImportError while importing test module '/Users/youtang/Documents/文件/stem-mentor-kb-batch38/backend/tests/test_kb_batch38_partial_repairs.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../../miniforge3/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+backend/tests/test_kb_batch38_partial_repairs.py:7: in <module>
+    from app.kb_batch38_review import staged,validate_seed,student_retrieval_projection,SOURCE,AUDIT,BASE,PartialRepair
+E   ModuleNotFoundError: No module named 'app'
+=========================== short test summary info ============================
+ERROR backend/tests/test_kb_batch38_partial_repairs.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.35s
