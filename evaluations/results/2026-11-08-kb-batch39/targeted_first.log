@@ -1,0 +1,51 @@
+......F......................................................F           [100%]
+=================================== FAILURES ===================================
+_ test_original_source_bound_curriculum_draft_not_certified[KB33-D-P072-A001] __
+
+doc = RemainingPartial(editorial_candidate_id='KB33-D-P072-A001', id='math.hs.editorial.batch39.kb33.d.p072.a001', kind='met...ACHER_ONLY', source_license='PROJECT_AUTHORED', proof_verification='NOT_FORMALLY_CERTIFIED', student_publishable=False)
+
+    @pytest.mark.parametrize("doc",DOCS,ids=lambda d:d.editorial_candidate_id)
+    def test_original_source_bound_curriculum_draft_not_certified(doc):
+        original=HIST_IDS[doc.editorial_candidate_id]
+        report=next(r for r in REPORT["records"] if r["editorial_candidate_id"]==doc.editorial_candidate_id)
+        assert doc.id=="math.hs.editorial.batch39."+doc.editorial_candidate_id.lower().replace("-",".")
+        assert original["review_finding"]=="PARTIAL_SCOPE" and not original["official_clause_alignment_verified"]
+        assert not original["mathematical_equivalence_certified"]
+        assert report["legacy_content_sha256"]==original["legacy_lesson_content_sha256"]
+        assert report["legacy_lesson_id"]==original["legacy_lesson_id"]
+        assert report["candidate_track"]==original["candidate_track"]
+        assert report["official_clause_alignment_verified"] is False
+        assert report["mathematical_equivalence_certified"] is False
+        assert report["teacher_review"]=="REVIEW_PENDING"
+        assert doc.review.status=="REVIEW_PENDING" and doc.review.reviewer_id is None
+        assert doc.review.review_record is None and doc.review.reviewed_at is None
+        assert doc.student_publishable is False and doc.teacher_solution_visibility=="TEACHER_ONLY"
+        assert doc.proof_verification=="NOT_FORMALLY_CERTIFIED"
+        assert doc.source_license=="PROJECT_AUTHORED"
+        assert len(doc.reasoning_steps)==3 and all(s.reason for s in doc.reasoning_steps)
+        assert len(doc.worked_examples)==2 and all(len(e.steps)==2 for e in doc.worked_examples)
+        assert len(doc.hint_ladder)==len(set(doc.hint_ladder))==3
+>       assert all(len(h)>20 for h in doc.hint_ladder)
+E       assert False
+E        +  where False = all(<generator object test_original_source_bound_curriculum_draft_not_certified.<locals>.<genexpr> at 0x102b82b50>)
+
+tests/test_kb_batch39_seven_partial_closure.py:62: AssertionError
+________ test_mathematical_counterexamples_are_independently_checkable _________
+
+    def test_mathematical_counterexamples_are_independently_checkable():
+        # finite logic: p alone has models with both values of q, hence cannot entail q or not-q.
+        assert witness("finite_propositional",{"include_p":1,"include_imp":0})["exact_value"]=="2|0"
+        # one extra known response from the four-person finite population changes the conditional arithmetic.
+        assert witness("response_mean_gap",dict(VALID["response_mean_gap"],responded=4))["exact_value"]=="0"
+        # missing-response inference ambiguity: same observed [10,10], totals change if missing [0,0] vs [100,100].
+        assert Fraction(10+10+0+0,4)==5
+        assert Fraction(10+10+100+100,4)==55
+>       assert witness("equal_temperament_octaves",{"f0":440,"steps":12})["exact_value"]=="880"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'exact_value'
+
+tests/test_kb_batch39_seven_partial_closure.py:153: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch39_seven_partial_closure.py::test_original_source_bound_curriculum_draft_not_certified[KB33-D-P072-A001]
+FAILED tests/test_kb_batch39_seven_partial_closure.py::test_mathematical_counterexamples_are_independently_checkable
+2 failed, 60 passed in 0.71s
