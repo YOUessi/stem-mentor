@@ -72,3 +72,11 @@ cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195
 4. K02–K05：恢复成组补齐必修与选择性必修实际课程原子完整讲义、题族和 near/far 迁移；K08/K09 持续测教学 Agent 只引用经过签署批准的内容及不泄漏教师完整解答。
 
 **GitHub 审查界限**：本批来源是教育部公开课标的页号及哈希、手工原创审查逻辑与数学链接关系，无原 PDF、无教材正文、无学生真实数据。分支保持 Draft PR；不合并 main，不发布未经教师批准的内容。
+
+## 6. 已核实的源码/远端证据
+
+- 上游 GitHub 起点：`0c0f927cdce0b16c72a1903f38e1ac84afa6b327`（Draft PR #51）。
+- Mac 已实际跑过全量后端/Node/策略/检索/浏览器测试的本批**源码与日志提交**：`7904ac9963a27cd179dadb77640da9ae2f4e142b`；Git tree：`ce87cf0ba027989959c844a35d73ca8711b9ae45`。最后的 `python-final.log` 确认 `25233 passed, 1 warning`，`browser.log` 记录 Chrome 脚本和浏览器 pytest 终态 `EXIT=0`。
+- GitHub `git push` 已实际成功，无需调用替代推送接口；推送证据 `evaluations/results/2026-11-08-kb-batch26/git-push.log`。
+- 远端 Draft PR [#52](https://github.com/YOUessi/stem-mentor/pull/52) 基于 Batch25 feature 分支，不合并 main；本次源码 HEAD 在 GitHub Actions [#42436061579](https://github.com/YOUessi/stem-mentor/actions/runs/42436061579) **completed / success**。该 CI 是软件正确性验证，**不是数学形式证明和真实教师签署**。
+- 后续若仅新增记录本节的纯文档/日志 commit，应单独核实其 CI；已测试的源码树保持不变。所有 GitHub Issues #17–#27 的真正最终完成门槛依旧未满足。
