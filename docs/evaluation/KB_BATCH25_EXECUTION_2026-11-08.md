@@ -56,4 +56,4 @@ K01/K06：对 133 项缺少显式先修图边的草案逐项确认关系，扩�
 - 继承远端起点：5d7f7482e2e2ca0aa63ac91286743284e7748a57。
 - Mac 本批经全量测试的源码 commit：`69ddbd32a77ea3a659849f651ae539943e04454c`，Git tree：`faadd42878c0be804c6409a9c9b66f146e4f1b87`。
 - 测试后纯日志归档 commit：`53eab32e3a5e644c3701eb90a600bd29c797262c`，其源代码与前一提交一致。直接 `git push` 曾遇到连接重置，使用 `http.version=HTTP/1.1` 重试成功，`git ls-remote` 验证 GitHub 分支精确 HEAD。
-- [Draft PR #51](https://github.com/YOUessi/stem-mentor/pull/51) 基于 [Draft PR #50](https://github.com/YOUessi/stem-mentor/pull/50)；GitHub Actions 的最终结果需独立等待并核验，不能把本地绿色结果冒充远端成功。
+- [Draft PR #51](https://github.com/YOUessi/stem-mentor/pull/51) 基于 [Draft PR #50](https://github.com/YOUessi/stem-mentor/pull/50)；GitHub HEAD `2c8573d68998cd751c9944d74a92cbd739b9cb17` 对应 [Actions run #42431798769](https://github.com/YOUessi/stem-mentor/actions/runs/42431798769) 已独立核实为 `completed/success`。该结果是**软件 CI**，不是教师审核或定理完整形式验证；此条后续纯文档提交若触发新的 CI，必须按其独立状态另行核对。
