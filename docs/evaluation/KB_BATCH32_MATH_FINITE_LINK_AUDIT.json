@@ -1,0 +1,135 @@
+{
+  "schema_version": "kb-batch32-finite-math-source-links-v1",
+  "scope": "SIX_FINITE_INSTANCE_GUARDS_NOT_THEOREM_CERTIFICATES",
+  "source_atoms_sha256": "963592e3e61bd825e870eb3e8ce0d6375f5da5926fa2af5b2de08ae464761f4a",
+  "summary": {
+    "checked_editorial_links": 6,
+    "legal_finite_fixtures_passed": 6,
+    "invalid_fixtures_refused": 6,
+    "formal_general_proof_certificates": 0,
+    "student_freetext_steps_verified": 0,
+    "teacher_approved": 0
+  },
+  "items": [
+    {
+      "op": "arithmetic_series",
+      "editorial_id": "KB32-SELE-P038-A005",
+      "track": "SELECTIVE_COMPULSORY",
+      "page": 38,
+      "math_justification": "Pair first and last terms: 2S=n(2a+(n-1)d), with positive integer n.",
+      "legal_status": "VERIFIED_FINITE_INSTANCE",
+      "legal_witness": {
+        "direct": "0",
+        "formula": "0",
+        "exact_match": "True",
+        "n": "7"
+      },
+      "invalid_condition_status": "CONDITIONS_NOT_ESTABLISHED",
+      "invalid_rejection_reason": "Bounded non-boolean integer required",
+      "entire_statement_proven": false,
+      "student_freeform_solution_verified": false,
+      "teacher_reviewer_id": null,
+      "student_publishable": false
+    },
+    {
+      "op": "conditional_probability_finite",
+      "editorial_id": "KB32-SELE-P047-A003",
+      "track": "SELECTIVE_COMPULSORY",
+      "page": 47,
+      "math_justification": "In a finite equally likely space, P(A given B)=|A intersection B|/|B| for nonempty B.",
+      "legal_status": "VERIFIED_FINITE_INSTANCE",
+      "legal_witness": {
+        "intersection_size": "2",
+        "given_size": "3",
+        "conditional": "2/3",
+        "finite_equiprobable_sample_space": "True"
+      },
+      "invalid_condition_status": "CONDITIONS_NOT_ESTABLISHED",
+      "invalid_rejection_reason": "Distinct universe and events subsets; positive B probability",
+      "entire_statement_proven": false,
+      "student_freeform_solution_verified": false,
+      "teacher_reviewer_id": null,
+      "student_publishable": false
+    },
+    {
+      "op": "hypergeometric_mass",
+      "editorial_id": "KB32-SELE-P047-A012",
+      "track": "SELECTIVE_COMPULSORY",
+      "page": 47,
+      "math_justification": "Count k successful and n-k unsuccessful selections without replacement, divide by all n-subsets.",
+      "legal_status": "VERIFIED_FINITE_INSTANCE",
+      "legal_witness": {
+        "mass": "3/10",
+        "numerator": "36",
+        "denominator": "120",
+        "draw_without_replacement": "True"
+      },
+      "invalid_condition_status": "CONDITIONS_NOT_ESTABLISHED",
+      "invalid_rejection_reason": "Impossible observed count under no replacement",
+      "entire_statement_proven": false,
+      "student_freeform_solution_verified": false,
+      "teacher_reviewer_id": null,
+      "student_publishable": false
+    },
+    {
+      "op": "point_line_distance_squared",
+      "editorial_id": "KB32-SELE-P044-A001",
+      "track": "SELECTIVE_COMPULSORY",
+      "page": 44,
+      "math_justification": "Square the signed normal component; A and B cannot both vanish for a genuine line.",
+      "legal_status": "VERIFIED_FINITE_INSTANCE",
+      "legal_witness": {
+        "exact_distance_squared": "169/25",
+        "normal_nonzero": "True"
+      },
+      "invalid_condition_status": "CONDITIONS_NOT_ESTABLISHED",
+      "invalid_rejection_reason": "General-form line must have nonzero normal",
+      "entire_statement_proven": false,
+      "student_freeform_solution_verified": false,
+      "teacher_reviewer_id": null,
+      "student_publishable": false
+    },
+    {
+      "op": "binomial_choice",
+      "editorial_id": "KB32-SELE-P046-A005",
+      "track": "SELECTIVE_COMPULSORY",
+      "page": 46,
+      "math_justification": "Unordered k-subsets of n elements number n!/(k!(n-k)!) and obey Pascal recursion.",
+      "legal_status": "VERIFIED_FINITE_INSTANCE",
+      "legal_witness": {
+        "count": "35",
+        "symmetry": "True",
+        "pascal": "True"
+      },
+      "invalid_condition_status": "CONDITIONS_NOT_ESTABLISHED",
+      "invalid_rejection_reason": "Bounded non-boolean integer required",
+      "entire_statement_proven": false,
+      "student_freeform_solution_verified": false,
+      "teacher_reviewer_id": null,
+      "student_publishable": false
+    },
+    {
+      "op": "least_squares_line",
+      "editorial_id": "KB32-SELE-P048-A005",
+      "track": "SELECTIVE_COMPULSORY",
+      "page": 48,
+      "math_justification": "Minimize a quadratic residual sum; with nonconstant x, the stationary normal equations uniquely determine slope and intercept.",
+      "legal_status": "VERIFIED_FINITE_INSTANCE",
+      "legal_witness": {
+        "slope": "9/10",
+        "intercept": "9/10",
+        "sum_residuals": "0",
+        "sum_x_residuals": "0",
+        "stationary_normal_equations": "True",
+        "causality_not_established": "True"
+      },
+      "invalid_condition_status": "CONDITIONS_NOT_ESTABLISHED",
+      "invalid_rejection_reason": "Nonconstant predictor required for unique slope",
+      "entire_statement_proven": false,
+      "student_freeform_solution_verified": false,
+      "teacher_reviewer_id": null,
+      "student_publishable": false
+    }
+  ],
+  "teacher_release_unchanged": true
+}
