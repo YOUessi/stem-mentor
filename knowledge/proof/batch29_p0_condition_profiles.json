@@ -1,0 +1,633 @@
+{
+  "schema_version": "kb-batch29-p0-conditions-v1",
+  "authoring": "PROJECT_AUTHORED_EDITORIAL_CONDITION_PROPOSALS",
+  "student_visibility": "NEVER_STUDENT_EXPOSE",
+  "teacher_review": "PENDING",
+  "complete_proof_certificates": 0,
+  "profiles": [
+    {
+      "operation": "metric_expansion",
+      "risk_step_ids": [
+        "math.hs.vector.pythagorean-dot#2",
+        "math.hs.vector.pythagorean-dot#3",
+        "math.hs.vector.parallelogram#3",
+        "math.hs.geometry.space-dot#1"
+      ],
+      "necessary_hypotheses": "u、v 必须属于同一有限维实欧氏内积空间；平方范数展开只用正交坐标及双线性，不要求 u、v 非零或互相垂直。勾股等价命题由交叉项等于零推出。",
+      "explanatory_counterexample": "把不同维向量直接相加没有定义；把平方和恒等式说成仅在两非零向量夹角为90°时有定义也不正确，零向量情形应保留。",
+      "valid_exact_fixture": {
+        "u": [
+          1,
+          2,
+          3
+        ],
+        "v": [
+          -2,
+          4,
+          1
+        ]
+      },
+      "invalid_fixture": {
+        "u": [
+          1,
+          2
+        ],
+        "v": [
+          1,
+          2,
+          3
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "dot_angle_guard",
+      "risk_step_ids": [
+        "math.hs.geometry.space-dot#2",
+        "math.hs.geometry.space-dot#3",
+        "math.hs.vector.dot-product#2"
+      ],
+      "necessary_hypotheses": "u、v 是同一实欧氏内积空间中的非零向量，才能在 cosθ=(u·v)/(|u||v|) 中作除法；若其中一方为零，数量积仍有定义，但夹角不能由该式定义。",
+      "explanatory_counterexample": "取 u=(0,0)、v=(1,0)，u·v=0，却不能据此断言两向量夹角为 90°；零向量没有方向。",
+      "valid_exact_fixture": {
+        "u": [
+          1,
+          2,
+          3
+        ],
+        "v": [
+          -2,
+          1,
+          1
+        ]
+      },
+      "invalid_fixture": {
+        "u": [
+          0,
+          0,
+          0
+        ],
+        "v": [
+          1,
+          0,
+          0
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "line_general",
+      "risk_step_ids": [
+        "math.hs.geometry.line-general#1",
+        "math.hs.geometry.line-general#2",
+        "math.hs.geometry.line-general#3",
+        "math.hs.geometry.line-equation#2",
+        "math.hs.geometry.line-equation#3"
+      ],
+      "necessary_hypotheses": "二维实平面中法向量 (A,B) 必须非零，P0 是给定直线上一点；n·(P-P0)=0 才是一维仿射直线，其逆向判别依赖非零法向量的正交补恰为一维。",
+      "explanatory_counterexample": "若 A=B=0，方程 0=0 代表整个平面，或 0=C≠0 代表空集，不能称为通过指定点的唯一直线。",
+      "valid_exact_fixture": {
+        "A": 2,
+        "B": -1,
+        "x0": 1,
+        "y0": 3,
+        "x": 2,
+        "y": 5
+      },
+      "invalid_fixture": {
+        "A": 0,
+        "B": 0,
+        "x0": 1,
+        "y0": 3,
+        "x": 2,
+        "y": 5
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "line_relations",
+      "risk_step_ids": [
+        "math.hs.geometry.line-relations#1",
+        "math.hs.geometry.line-relations#2",
+        "math.hs.geometry.line-relations#3"
+      ],
+      "necessary_hypotheses": "每条直线须有非零法向量，二维方向向量 d=(-B,A) 因而非零；行列式零判别方向平行，点积零判别方向垂直。两条直线方向平行不意味着它们是不同的平行线，亦可重合。",
+      "explanatory_counterexample": "一般式 0x+0y+1=0 不是直线；即使两个法向量行列式为零，两直线仍可能重合，不能直接说它们无公共点。",
+      "valid_exact_fixture": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "invalid_fixture": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 1
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "point_line_distance",
+      "risk_step_ids": [
+        "math.hs.geometry.point-line-distance#2",
+        "math.hs.geometry.point-line-distance#3"
+      ],
+      "necessary_hypotheses": "点 Q=(x,y) 和直线 Ax+By+C=0 都在欧氏平面，(A,B) 不可同时为零；距离是有定义的法向投影的绝对长度，不带符号。",
+      "explanatory_counterexample": "A=B=0 令距离分母 sqrt(A²+B²)=0；此时 0x+0y+C=0 根本不是一条普通直线，不能计算点线距。",
+      "valid_exact_fixture": {
+        "A": 3,
+        "B": 4,
+        "C": -10,
+        "x": 5,
+        "y": 6
+      },
+      "invalid_fixture": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "x": 5,
+        "y": 6
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "quadratic_vertex",
+      "risk_step_ids": [
+        "math.hs.function.quadratic-vertex#2",
+        "math.hs.function.quadratic-vertex#4"
+      ],
+      "necessary_hypotheses": "实二次函数 ax²+bx+c 必须 a≠0 才能以 -b/(2a) 配方；全局极值在全实数定义域才可由平方非负与 a 的符号得到，指定受限域时顶点可能不在域内。",
+      "explanatory_counterexample": "取 a=0,b=2,c=1，函数是一次函数，没有二次顶点，-b/(2a) 分母为零；另若域限制 x>3，顶点 x=1 不可取到。",
+      "valid_exact_fixture": {
+        "a": 2,
+        "b": -4,
+        "c": 3,
+        "x": 1
+      },
+      "invalid_fixture": {
+        "a": 0,
+        "b": 2,
+        "c": 1,
+        "x": 1
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "quadratic_sign",
+      "risk_step_ids": [
+        "math.hs.quadratic.sign#2"
+      ],
+      "necessary_hypotheses": "ax²+bx+c=a(x-r1)(x-r2) 中必须 a≠0 且 r1<r2 为两个不同实根；根外乘积正，再乘 a 后符号由 a 决定，根内则符号相反。",
+      "explanatory_counterexample": "若忽略 a<0，-x²+1 在 x>1 时实际为负；若两根重合，也不能套用两个相异零点之间的分段符号图。",
+      "valid_exact_fixture": {
+        "a": -1,
+        "r1": -1,
+        "r2": 1,
+        "x": 2
+      },
+      "invalid_fixture": {
+        "a": 1,
+        "r1": 2,
+        "r2": 2,
+        "x": 3
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "conditional_probability",
+      "risk_step_ids": [
+        "math.hs.probability.multiplication#1",
+        "math.hs.probability.multiplication#2"
+      ],
+      "necessary_hypotheses": "有限概率空间需权重非负且总和1；P(B|A)=P(A∩B)/P(A) 的条件是 P(A)>0，不能用独立性代替该条件；乘法公式从此定义同乘正数得到。",
+      "explanatory_counterexample": "取样本权重 P(0)=1、P(1)=0、A={1}，则 P(A)=0；即使集合 A 非空，也不能定义 P(B|A) 为实数比值。",
+      "valid_exact_fixture": {
+        "weights": [
+          "1/2",
+          "1/4",
+          "1/4"
+        ],
+        "A": [
+          0,
+          1
+        ],
+        "B": [
+          1,
+          2
+        ]
+      },
+      "invalid_fixture": {
+        "weights": [
+          1,
+          0,
+          0
+        ],
+        "A": [
+          1
+        ],
+        "B": [
+          0,
+          1
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "bayes_partition",
+      "risk_step_ids": [
+        "math.hs.probability.total#3",
+        "math.hs.probability.bayes-partition#3"
+      ],
+      "necessary_hypotheses": "A_i 必须构成整个样本空间的有限两两互斥且穷尽分割，使用 P(B|A_i) 要有 P(A_i)>0；Bayes 分母 P(B) 也须严格大于零。",
+      "explanatory_counterexample": "若分割漏掉一类结果，全概率求和会少算；若观察 B 的概率为零，后验 P(A_i|B) 因分母为零而没有定义。",
+      "valid_exact_fixture": {
+        "weights": [
+          "1/2",
+          "1/4",
+          "1/4"
+        ],
+        "partition": [
+          [
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "B": [
+          0,
+          1
+        ]
+      },
+      "invalid_fixture": {
+        "weights": [
+          "1/2",
+          "1/4",
+          "1/4"
+        ],
+        "partition": [
+          [
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "B": []
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "variance_affine_covariance",
+      "risk_step_ids": [
+        "math.hs.probability.variance-covariance#2",
+        "math.hs.statistics.variance-affine#3"
+      ],
+      "necessary_hypotheses": "X、Y 定义在同一有限概率空间，有有限二阶矩；中心化和平方展开只用期望线性性，不需独立；Var(X+Y) 还有 2Cov 项，仿射变换的常数偏移不影响方差。",
+      "explanatory_counterexample": "若直接写 Var(X+Y)=Var(X)+Var(Y)，取 Y=X 且 Var(X)>0，就漏掉 2Cov=2Var(X)；缺少有效概率权重无法定义期望。",
+      "valid_exact_fixture": {
+        "weights": [
+          "1/2",
+          "1/4",
+          "1/4"
+        ],
+        "X": [
+          0,
+          1,
+          2
+        ],
+        "Y": [
+          0,
+          2,
+          4
+        ],
+        "a": 3,
+        "b": -2
+      },
+      "invalid_fixture": {
+        "weights": [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        "X": [
+          0,
+          1,
+          2
+        ],
+        "Y": [
+          0,
+          2,
+          4
+        ],
+        "a": 3,
+        "b": -2
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "finite_series",
+      "risk_step_ids": [
+        "math.hs.sequence.square-sum#2",
+        "math.hs.sequence.arithmetic-sum#4",
+        "math.hs.sequence.geometric-sum#4"
+      ],
+      "necessary_hypotheses": "仅讨论 n≥1 的有限项数列；等差求和恒等式与平方和公式均须定义首项和索引，等比数列 q=1 应走直接相加分支，q≠1 才能除以 1-q。",
+      "explanatory_counterexample": "把 q=1 代入 (1-q^n)/(1-q) 得 0/0，不能把未定义表达式当成和；对 n=0 的空和若未声明约定不能冒充 n≥1 归纳基础。",
+      "valid_exact_fixture": {
+        "n": 5,
+        "q": 2,
+        "a": 3,
+        "diff": 2
+      },
+      "invalid_fixture": {
+        "n": 0,
+        "q": 1,
+        "a": 3,
+        "diff": 2
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "double_angle",
+      "risk_step_ids": [
+        "math.hs.trig.double-angle-reduction#2",
+        "math.hs.trig.double-angle-reduction#3"
+      ],
+      "necessary_hypotheses": "正弦余弦来自同一实角，其坐标必须满足 cos²x+sin²x=1；cos2x、sin2x 与降幂公式不需分母变量，分母2 非零。有限有理单位圆点只检验一个代数实例。",
+      "explanatory_counterexample": "把 c=s=1 冒充某角的余弦与正弦就违反 c²+s²=1，不能从任意两个数构造真实同角的二倍角公式。",
+      "valid_exact_fixture": {
+        "c": "3/5",
+        "s": "4/5"
+      },
+      "invalid_fixture": {
+        "c": 1,
+        "s": 1
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "vector_projection",
+      "risk_step_ids": [
+        "math.hs.vector.projection#1",
+        "math.hs.vector.projection#2"
+      ],
+      "necessary_hypotheses": "a 与 b 在同一实内积空间，b 必须非零以保证 b·b>0；投影系数 t=(a·b)/(b·b) 是法向残差为零的唯一解。a 可以是零向量。",
+      "explanatory_counterexample": "当 b=0 时 b·b=0，投影方向没有唯一的一维子空间，公式的分母为零；不能据 a·b=0 说这个商已定义。",
+      "valid_exact_fixture": {
+        "a": [
+          3,
+          4
+        ],
+        "b": [
+          1,
+          2
+        ]
+      },
+      "invalid_fixture": {
+        "a": [
+          3,
+          4
+        ],
+        "b": [
+          0,
+          0
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "complex_quotient",
+      "risk_step_ids": [
+        "math.hs.complex.operations#2",
+        "math.hs.complex.operations#3"
+      ],
+      "necessary_hypotheses": "复数 w=c+di 的共轭乘积 w·conj(w)=c²+d²；只有 c、d 不同时为零时，c²+d²>0，才可同乘非零共轭并约去分母。",
+      "explanatory_counterexample": "取 w=0+0i，其共轭仍为零，c²+d²=0；即使式子形式上能写出，也绝不能把零除法当作复数合法运算。",
+      "valid_exact_fixture": {
+        "a": 2,
+        "b": 3,
+        "c": 1,
+        "d": 2
+      },
+      "invalid_fixture": {
+        "a": 2,
+        "b": 3,
+        "c": 0,
+        "d": 0
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "finite_composition",
+      "risk_step_ids": [
+        "math.hs.function.composition-domain#1",
+        "math.hs.function.composition-domain#3"
+      ],
+      "necessary_hypotheses": "复合函数自然定义域是 {x∈Dg:g(x)∈Df}；两个映射均需有明确输入/输出域与对应值，外层输入必须与内层结果匹配。有限映射实例是定义域规则的见证而非任意函数的证明。",
+      "explanatory_counterexample": "g(2)=7 而 f 仅在 {2,4} 定义时，虽然 x=2 属于 Dg，f(g(2)) 依然未定义；仅检查内层定义域不够。",
+      "valid_exact_fixture": {
+        "g": {
+          "1": 2,
+          "2": 7
+        },
+        "f": {
+          "2": 4,
+          "4": 8
+        },
+        "x": 1
+      },
+      "invalid_fixture": {
+        "g": {
+          "1": 2,
+          "2": 7
+        },
+        "f": {
+          "2": 4,
+          "4": 8
+        },
+        "x": 2
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "polynomial_tangent",
+      "risk_step_ids": [
+        "math.hs.calculus.tangent-line#1",
+        "math.hs.calculus.tangent-line#3"
+      ],
+      "necessary_hypotheses": "函数在所讨论的 x0 须可导且导数有限，切线使用点 (x0,f(x0)) 与斜率 f'(x0)；这里的受控多项式检查只证明有理输入实例，不替代一般函数的可导性证明。",
+      "explanatory_counterexample": "取 f(x)=|x| 且 x0=0，左右差商不同，没有有限导数，不能取普通点斜式的切线斜率；缺失所求点也无法核验。",
+      "valid_exact_fixture": {
+        "coeff": [
+          1,
+          2,
+          3
+        ],
+        "x": 2
+      },
+      "invalid_fixture": {
+        "coeff": [
+          1,
+          2,
+          3
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "ellipse_parametric",
+      "risk_step_ids": [
+        "math.hs.geometry.ellipse-parameter#1",
+        "math.hs.geometry.ellipse-parameter#2"
+      ],
+      "necessary_hypotheses": "实椭圆 x²/a²+y²/b²=1 要求半轴 a,b>0；参数 c=cos t、s=sin t 满足 c²+s²=1，代入才有单位圆对应。反向全称论证须另外证明单位圆每点可表为某角。",
+      "explanatory_counterexample": "a=0 时 x²/a² 未定义，不能把退化线段叫作该标准椭圆；随意取 c=1,s=1 也不满足单位圆条件。",
+      "valid_exact_fixture": {
+        "a": 2,
+        "b": 3,
+        "c": "3/5",
+        "s": "4/5"
+      },
+      "invalid_fixture": {
+        "a": 0,
+        "b": 3,
+        "c": "3/5",
+        "s": "4/5"
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "plane_perpendicular",
+      "risk_step_ids": [
+        "math.hs.space.perpendicular-plane#1",
+        "math.hs.space.perpendicular-plane#2",
+        "math.hs.space.perpendicular-plane#3"
+      ],
+      "necessary_hypotheses": "u 为非零直线方向向量；平面内两条确实相交且方向不平行的直线，其非零方向 v,w 张成整个平面；只有 u 同时垂直 v,w 才能推出 u 垂直平面。",
+      "explanatory_counterexample": "若两条给定直线其实平行，例如 v=(1,0,0)、w=(2,0,0)，u=(0,1,0) 虽垂直两者，却仍在 xy 平面内，不垂直该平面。",
+      "valid_exact_fixture": {
+        "u": [
+          0,
+          0,
+          1
+        ],
+        "v": [
+          1,
+          0,
+          0
+        ],
+        "w": [
+          0,
+          1,
+          0
+        ]
+      },
+      "invalid_fixture": {
+        "u": [
+          0,
+          1,
+          0
+        ],
+        "v": [
+          1,
+          0,
+          0
+        ],
+        "w": [
+          2,
+          0,
+          0
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "matrix_inverse_2",
+      "risk_step_ids": [
+        "math.hs.elective.matrix.inverse-two-by-two#2",
+        "math.hs.elective.matrix.inverse-two-by-two#3"
+      ],
+      "necessary_hypotheses": "二维实方阵只有 det A=ad-bc≠0 时存在显式逆矩阵，双侧乘积为单位阵；若 det=0，则核非平凡，不能将伴随矩阵除以0；奇异情形需要单独证明而非计算逆。",
+      "explanatory_counterexample": "A=[[1,2],[2,4]] 行列式为 0，存在非零向量(-2,1) 被映射为零；不能写 A^{-1}=adj(A)/0。",
+      "valid_exact_fixture": {
+        "a": 1,
+        "b": 2,
+        "c": 3,
+        "d": 7
+      },
+      "invalid_fixture": {
+        "a": 1,
+        "b": 2,
+        "c": 2,
+        "d": 4
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "orthogonal_isometry",
+      "risk_step_ids": [
+        "math.hs.elective.geometry.euclidean-isometries#2",
+        "math.hs.elective.geometry.euclidean-isometries#3"
+      ],
+      "necessary_hypotheses": "实二维线性变换 Q 必须满足 Q^TQ=I 才保持范数及点积；通过非零向量的余弦公式讨论角度时，必须另外排除零向量。这里只独立抽检范数，不冒充一般角度证明。",
+      "explanatory_counterexample": "Q=diag(2,1) 把 (1,0) 长度从 1 变成 2，不是等距变换；即便 Q 正交，零向量与任何向量的夹角仍无定义。",
+      "valid_exact_fixture": {
+        "Q": [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "u": [
+          3,
+          4
+        ]
+      },
+      "invalid_fixture": {
+        "Q": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "u": [
+          3,
+          4
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    }
+  ]
+}

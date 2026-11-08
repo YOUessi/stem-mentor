@@ -1,0 +1,976 @@
+........................................................................ [  2%]
+........................................................................ [  4%]
+........................................................................ [  6%]
+........................................................................ [  8%]
+........................................................................ [ 10%]
+........................................................................ [ 12%]
+........................................................................ [ 14%]
+........................................................................ [ 16%]
+........................................................................ [ 18%]
+........................................................................ [ 20%]
+........................................................................ [ 22%]
+........................................................................ [ 24%]
+........................................................................ [ 26%]
+........................................................................ [ 28%]
+........................................................................ [ 30%]
+........................................................................ [ 32%]
+........................................................................ [ 34%]
+........F........F.......F............................F........FFF...... [ 36%]
+...........F...FF....................................................... [ 38%]
+.......................................FF.................F............. [ 40%]
+......................F....FF.F.F.............F....FF................... [ 42%]
+.....FF....F.............F.F.FF....F...................................F [ 44%]
+.................FF..................................................... [ 46%]
+.........................................FF...F.................FFF..... [ 49%]
+...F............................F.......F........F...................... [ 51%]
+........................................................................ [ 53%]
+........................................................................ [ 55%]
+........................................................................ [ 57%]
+........................................................................ [ 59%]
+........................................................................ [ 61%]
+........................................................................ [ 63%]
+........................................................................ [ 65%]
+........................................................................ [ 67%]
+........................................................................ [ 69%]
+........................................................................ [ 71%]
+........................................................................ [ 73%]
+........................................................................ [ 75%]
+........................................................................ [ 77%]
+........................................................................ [ 79%]
+........................................................................ [ 81%]
+........................................................................ [ 83%]
+........................................................................ [ 85%]
+........................................................................ [ 87%]
+........................................................................ [ 89%]
+........................................................................ [ 91%]
+........................................................................ [ 93%]
+........................................................................ [ 96%]
+........................................................................ [ 98%]
+.....................................................................    [100%]
+=================================== FAILURES ===================================
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2--1--2-1] _
+
+a = -2, b = -1, c = -2, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (3/5 + (I * 4/5)) == (2 + I)**2/5
+E        +  where 3/5 = <class 'sympy.core.numbers.Rational'>('3/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   4/5 = <class 'sympy.core.numbers.Rational'>('4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   (2 + I)**2/5 = <function simplify at 0x1044698a0>(((-2 + (-1 * I)) / (-2 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2--1-0-1] _
+
+a = -2, b = -1, c = 0, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * 2)) == I*(2 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   2 = <class 'sympy.core.numbers.Rational'>('2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(2 + I) = <function simplify at 0x1044698a0>(((-2 + (-1 * I)) / (0 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2--1-2--1] _
+
+a = -2, b = -1, c = 2, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-3/5 + (I * -4/5)) == -(2 + I)**2/5
+E        +  where -3/5 = <class 'sympy.core.numbers.Rational'>('-3/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -4/5 = <class 'sympy.core.numbers.Rational'>('-4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   -(2 + I)**2/5 = <function simplify at 0x1044698a0>(((-2 + (-1 * I)) / (2 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-1--2--1] _
+
+a = -2, b = 1, c = -2, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (3/5 + (I * -4/5)) == (2 - I)**2/5
+E        +  where 3/5 = <class 'sympy.core.numbers.Rational'>('3/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -4/5 = <class 'sympy.core.numbers.Rational'>('-4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   (2 - I)**2/5 = <function simplify at 0x1044698a0>(((-2 + (1 * I)) / (-2 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-1-0--2] _
+
+a = -2, b = 1, c = 0, d = -2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/2 + (I * -1)) == I*(-2 + I)/2
+E        +  where -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-2 + I)/2 = <function simplify at 0x1044698a0>(((-2 + (1 * I)) / (0 + (-2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-1-0--1] _
+
+a = -2, b = 1, c = 0, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * -2)) == I*(-2 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -2 = <class 'sympy.core.numbers.Rational'>('-2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-2 + I) = <function simplify at 0x1044698a0>(((-2 + (1 * I)) / (0 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-1-0-1] _
+
+a = -2, b = 1, c = 0, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (1 + (I * 2)) == I*(2 - I)
+E        +  where 1 = <class 'sympy.core.numbers.Rational'>('1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   2 = <class 'sympy.core.numbers.Rational'>('2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(2 - I) = <function simplify at 0x1044698a0>(((-2 + (1 * I)) / (0 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-2--1--1] _
+
+a = -2, b = 2, c = -1, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (0 + (I * -2)) == (1 - I)**2
+E        +  where 0 = <class 'sympy.core.numbers.Rational'>('0')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -2 = <class 'sympy.core.numbers.Rational'>('-2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   (1 - I)**2 = <function simplify at 0x1044698a0>(((-2 + (2 * I)) / (-1 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-2-0--2] _
+
+a = -2, b = 2, c = 0, d = -2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * -1)) == I*(-1 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I) = <function simplify at 0x1044698a0>(((-2 + (2 * I)) / (0 + (-2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-2-0--1] _
+
+a = -2, b = 2, c = 0, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-2 + (I * -2)) == 2*I*(-1 + I)
+E        +  where -2 = <class 'sympy.core.numbers.Rational'>('-2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -2 = <class 'sympy.core.numbers.Rational'>('-2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   2*I*(-1 + I) = <function simplify at 0x1044698a0>(((-2 + (2 * I)) / (0 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-1-1-0--2] _
+
+a = -1, b = 1, c = 0, d = -2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/2 + (I * -1/2)) == I*(-1 + I)/2
+E        +  where -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I)/2 = <function simplify at 0x1044698a0>(((-1 + (1 * I)) / (0 + (-2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-1-1-0--1] _
+
+a = -1, b = 1, c = 0, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * -1)) == I*(-1 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I) = <function simplify at 0x1044698a0>(((-1 + (1 * I)) / (0 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-1-2--1--2] _
+
+a = -1, b = 2, c = -1, d = -2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-3/5 + (I * -4/5)) == (1 - 2*I)**2/5
+E        +  where -3/5 = <class 'sympy.core.numbers.Rational'>('-3/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -4/5 = <class 'sympy.core.numbers.Rational'>('-4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   (1 - 2*I)**2/5 = <function simplify at 0x1044698a0>(((-1 + (2 * I)) / (-1 + (-2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--2-1-1] _
+
+a = 0, b = -2, c = 1, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * -1)) == I*(-1 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I) = <function simplify at 0x1044698a0>(((0 + (-2 * I)) / (1 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--2-2-1] _
+
+a = 0, b = -2, c = 2, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-2/5 + (I * -4/5)) == 2*I*(-2 + I)/5
+E        +  where -2/5 = <class 'sympy.core.numbers.Rational'>('-2/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -4/5 = <class 'sympy.core.numbers.Rational'>('-4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   2*I*(-2 + I)/5 = <function simplify at 0x1044698a0>(((0 + (-2 * I)) / (2 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--2-2-2] _
+
+a = 0, b = -2, c = 2, d = 2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/2 + (I * -1/2)) == I*(-1 + I)/2
+E        +  where -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I)/2 = <function simplify at 0x1044698a0>(((0 + (-2 * I)) / (2 + (2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1--2--1] _
+
+a = 0, b = -1, c = -2, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (1/5 + (I * 2/5)) == I*(2 - I)/5
+E        +  where 1/5 = <class 'sympy.core.numbers.Rational'>('1/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   2/5 = <class 'sympy.core.numbers.Rational'>('2/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(2 - I)/5 = <function simplify at 0x1044698a0>(((0 + (-1 * I)) / (-2 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1--2-1] _
+
+a = 0, b = -1, c = -2, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/5 + (I * 2/5)) == I*(2 + I)/5
+E        +  where -1/5 = <class 'sympy.core.numbers.Rational'>('-1/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   2/5 = <class 'sympy.core.numbers.Rational'>('2/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(2 + I)/5 = <function simplify at 0x1044698a0>(((0 + (-1 * I)) / (-2 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1-1-1] _
+
+a = 0, b = -1, c = 1, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/2 + (I * -1/2)) == I*(-1 + I)/2
+E        +  where -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I)/2 = <function simplify at 0x1044698a0>(((0 + (-1 * I)) / (1 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1-2-1] _
+
+a = 0, b = -1, c = 2, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/5 + (I * -2/5)) == I*(-2 + I)/5
+E        +  where -1/5 = <class 'sympy.core.numbers.Rational'>('-1/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -2/5 = <class 'sympy.core.numbers.Rational'>('-2/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-2 + I)/5 = <function simplify at 0x1044698a0>(((0 + (-1 * I)) / (2 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1-2-2] _
+
+a = 0, b = -1, c = 2, d = 2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/4 + (I * -1/4)) == I*(-1 + I)/4
+E        +  where -1/4 = <class 'sympy.core.numbers.Rational'>('-1/4')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1/4 = <class 'sympy.core.numbers.Rational'>('-1/4')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I)/4 = <function simplify at 0x1044698a0>(((0 + (-1 * I)) / (2 + (2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1--2--2] _
+
+a = 0, b = 1, c = -2, d = -2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/4 + (I * -1/4)) == I*(-1 + I)/4
+E        +  where -1/4 = <class 'sympy.core.numbers.Rational'>('-1/4')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1/4 = <class 'sympy.core.numbers.Rational'>('-1/4')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I)/4 = <function simplify at 0x1044698a0>(((0 + (1 * I)) / (-2 + (-2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1--2--1] _
+
+a = 0, b = 1, c = -2, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/5 + (I * -2/5)) == I*(-2 + I)/5
+E        +  where -1/5 = <class 'sympy.core.numbers.Rational'>('-1/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -2/5 = <class 'sympy.core.numbers.Rational'>('-2/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-2 + I)/5 = <function simplify at 0x1044698a0>(((0 + (1 * I)) / (-2 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1--1--1] _
+
+a = 0, b = 1, c = -1, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/2 + (I * -1/2)) == I*(-1 + I)/2
+E        +  where -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I)/2 = <function simplify at 0x1044698a0>(((0 + (1 * I)) / (-1 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1-2--1] _
+
+a = 0, b = 1, c = 2, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/5 + (I * 2/5)) == I*(2 + I)/5
+E        +  where -1/5 = <class 'sympy.core.numbers.Rational'>('-1/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   2/5 = <class 'sympy.core.numbers.Rational'>('2/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(2 + I)/5 = <function simplify at 0x1044698a0>(((0 + (1 * I)) / (2 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1-2-1] _
+
+a = 0, b = 1, c = 2, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (1/5 + (I * 2/5)) == I*(2 - I)/5
+E        +  where 1/5 = <class 'sympy.core.numbers.Rational'>('1/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   2/5 = <class 'sympy.core.numbers.Rational'>('2/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(2 - I)/5 = <function simplify at 0x1044698a0>(((0 + (1 * I)) / (2 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-2--2--2] _
+
+a = 0, b = 2, c = -2, d = -2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/2 + (I * -1/2)) == I*(-1 + I)/2
+E        +  where -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I)/2 = <function simplify at 0x1044698a0>(((0 + (2 * I)) / (-2 + (-2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-2--2--1] _
+
+a = 0, b = 2, c = -2, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-2/5 + (I * -4/5)) == 2*I*(-2 + I)/5
+E        +  where -2/5 = <class 'sympy.core.numbers.Rational'>('-2/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -4/5 = <class 'sympy.core.numbers.Rational'>('-4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   2*I*(-2 + I)/5 = <function simplify at 0x1044698a0>(((0 + (2 * I)) / (-2 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-2--1--1] _
+
+a = 0, b = 2, c = -1, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * -1)) == I*(-1 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I) = <function simplify at 0x1044698a0>(((0 + (2 * I)) / (-1 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[1--2-1-2] _
+
+a = 1, b = -2, c = 1, d = 2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-3/5 + (I * -4/5)) == (1 - 2*I)**2/5
+E        +  where -3/5 = <class 'sympy.core.numbers.Rational'>('-3/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -4/5 = <class 'sympy.core.numbers.Rational'>('-4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   (1 - 2*I)**2/5 = <function simplify at 0x1044698a0>(((1 + (-2 * I)) / (1 + (2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[1--1-0-1] _
+
+a = 1, b = -1, c = 0, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * -1)) == I*(-1 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I) = <function simplify at 0x1044698a0>(((1 + (-1 * I)) / (0 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[1--1-0-2] _
+
+a = 1, b = -1, c = 0, d = 2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/2 + (I * -1/2)) == I*(-1 + I)/2
+E        +  where -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I)/2 = <function simplify at 0x1044698a0>(((1 + (-1 * I)) / (0 + (2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--2-0-1] _
+
+a = 2, b = -2, c = 0, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-2 + (I * -2)) == 2*I*(-1 + I)
+E        +  where -2 = <class 'sympy.core.numbers.Rational'>('-2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -2 = <class 'sympy.core.numbers.Rational'>('-2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   2*I*(-1 + I) = <function simplify at 0x1044698a0>(((2 + (-2 * I)) / (0 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--2-0-2] _
+
+a = 2, b = -2, c = 0, d = 2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * -1)) == I*(-1 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-1 + I) = <function simplify at 0x1044698a0>(((2 + (-2 * I)) / (0 + (2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--2-1-1] _
+
+a = 2, b = -2, c = 1, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (0 + (I * -2)) == (1 - I)**2
+E        +  where 0 = <class 'sympy.core.numbers.Rational'>('0')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -2 = <class 'sympy.core.numbers.Rational'>('-2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   (1 - I)**2 = <function simplify at 0x1044698a0>(((2 + (-2 * I)) / (1 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--1-0--1] _
+
+a = 2, b = -1, c = 0, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (1 + (I * 2)) == I*(2 - I)
+E        +  where 1 = <class 'sympy.core.numbers.Rational'>('1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   2 = <class 'sympy.core.numbers.Rational'>('2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(2 - I) = <function simplify at 0x1044698a0>(((2 + (-1 * I)) / (0 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--1-0-1] _
+
+a = 2, b = -1, c = 0, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * -2)) == I*(-2 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -2 = <class 'sympy.core.numbers.Rational'>('-2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-2 + I) = <function simplify at 0x1044698a0>(((2 + (-1 * I)) / (0 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--1-0-2] _
+
+a = 2, b = -1, c = 0, d = 2
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1/2 + (I * -1)) == I*(-2 + I)/2
+E        +  where -1/2 = <class 'sympy.core.numbers.Rational'>('-1/2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(-2 + I)/2 = <function simplify at 0x1044698a0>(((2 + (-1 * I)) / (0 + (2 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--1-2-1] _
+
+a = 2, b = -1, c = 2, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (3/5 + (I * -4/5)) == (2 - I)**2/5
+E        +  where 3/5 = <class 'sympy.core.numbers.Rational'>('3/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -4/5 = <class 'sympy.core.numbers.Rational'>('-4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   (2 - I)**2/5 = <function simplify at 0x1044698a0>(((2 + (-1 * I)) / (2 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2-1--2-1] _
+
+a = 2, b = 1, c = -2, d = 1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-3/5 + (I * -4/5)) == -(2 + I)**2/5
+E        +  where -3/5 = <class 'sympy.core.numbers.Rational'>('-3/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   -4/5 = <class 'sympy.core.numbers.Rational'>('-4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   -(2 + I)**2/5 = <function simplify at 0x1044698a0>(((2 + (1 * I)) / (-2 + (1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2-1-0--1] _
+
+a = 2, b = 1, c = 0, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (-1 + (I * 2)) == I*(2 + I)
+E        +  where -1 = <class 'sympy.core.numbers.Rational'>('-1')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   2 = <class 'sympy.core.numbers.Rational'>('2')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I*(2 + I) = <function simplify at 0x1044698a0>(((2 + (1 * I)) / (0 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+_ test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2-1-2--1] _
+
+a = 2, b = 1, c = 2, d = -1
+
+    @pytest.mark.parametrize("a,b,c,d",[(a,b,c,d) for a,b,c,d in product((-2,-1,0,1,2),repeat=4) if c or d])
+    def test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals(a,b,c,d):
+        w=exact("complex_quotient",dict(a=a,b=b,c=c,d=d))
+        assert F(w["product_re"])==a and F(w["product_im"])==b
+>       assert sp.Rational(w["real"])+sp.I*sp.Rational(w["imag"])==sp.simplify((a+b*sp.I)/(c+d*sp.I))
+E       AssertionError: assert (3/5 + (I * 4/5)) == (2 + I)**2/5
+E        +  where 3/5 = <class 'sympy.core.numbers.Rational'>('3/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   I = sp.I
+E        +  and   4/5 = <class 'sympy.core.numbers.Rational'>('4/5')
+E        +    where <class 'sympy.core.numbers.Rational'> = sp.Rational
+E        +  and   (2 + I)**2/5 = <function simplify at 0x1044698a0>(((2 + (1 * I)) / (2 + (-1 * I))))
+E        +    where <function simplify at 0x1044698a0> = sp.simplify
+E        +    and   I = sp.I
+E        +    and   I = sp.I
+
+tests/test_kb_batch29_p0_evidence.py:113: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2--1--2-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2--1-0-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2--1-2--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-1--2--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-1-0--2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-1-0--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-1-0-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-2--1--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-2-0--2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-2-2-0--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-1-1-0--2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-1-1-0--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[-1-2--1--2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--2-1-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--2-2-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--2-2-2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1--2--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1--2-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1-1-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1-2-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0--1-2-2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1--2--2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1--2--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1--1--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1-2--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-1-2-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-2--2--2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-2--2--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[0-2--1--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[1--2-1-2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[1--1-0-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[1--1-0-2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--2-0-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--2-0-2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--2-1-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--1-0--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--1-0-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--1-0-2]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2--1-2-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2-1--2-1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2-1-0--1]
+FAILED tests/test_kb_batch29_p0_evidence.py::test_complex_quotient_reconstructs_dividend_over_exact_gaussian_rationals[2-1-2--1]
+42 failed, 3483 passed in 15.36s
