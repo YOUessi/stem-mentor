@@ -30,3 +30,10 @@ Batch33 对官方课标 61 页做过首次内容检查，并提出 **313 项项�
 Mac 源码已测提交 `adab05952808999806533690f1e6fdb3f490327f`，Git Tree `537f252d5c7618b0165d07b825f061292f3d6d3a`。对应 Draft PR #60：https://github.com/YOUessi/stem-mentor/pull/60，base 为 Batch34 Draft PR #59 的 feature branch。日志/本报告使用独立 docs commit 归档；GitHub 远端最终 HEAD/CI 应独立读取后才判定成功。无 main 合并、强推和伪教师审批。
 
 **下一批**首先继续 K00：逐句对照原版官方课标，补完 61 页中编号及未编号要求的真正逐条归属、特别检查原第35页图形乱码，建立可核准的七轨道原子分母；对 47 条旧稿链接逐项判断准确、缺失或冲突。然后 K07 对 538 条证明步骤分级独立审查与 10 组冲突裁决，K02–K06 按全章节补齐原创深度讲义与题族，K08/K09 对新审核稿强化检索拒答、防剧透、未见题测试；真实教师审批前全部保持待审，不能宣布课程发布或任务完成。
+
+## 堆叠 PR 远端基线核验与无内容改动的冲突修复
+本批发现：Mac 端父提交 `e2ef05825cf65251441f19ac53f7d40ee29920a8` 与 GitHub 上的 Batch34 父提交 `8590e4eecb7bc6887b9d41d1415cb90a385898db` **commit SHA 不同，但 Git Tree SHA 完全相同**：`e8ae43dcd04750c0277d3705a42a72713599660c`。最初创建的 Draft PR #60 因这两条并行提交历史导致 `mergeable=false`（`.github/workflows/ci.yml` 和 `scripts/mac_check.sh` 发生虚假文本冲突），尽管实际代码文件内容一致。
+
+核对 `git diff origin/feat/kb-batch34-review-candidate-lessons HEAD~2` 为空并核实两者父 Git Tree 完全相同后，仅在独立 Batch35 **feature 分支**追加了普通双父 merge commit `964a200c12d8812bf2f01bc13b776b52aa71f474`，将真正远端 Batch34 父提交并入已有 Batch35 分支（`git merge --no-ff -s ours origin/feat/kb-batch34-review-candidate-lessons`）。此操作保留原所有提交、不使用强推、不改主仓，且合并前后的 Batch35 源码 Git Tree **完全不变**：`ae7d4f9bb7a1a5d6d9e516ba63183959ff5d1efc`。GitHub 回读 PR #60 显示 `mergeable=true`、Draft=true、只含本批 14 个变更文件。此合并只是在两份**内容一致的来源树**之间补齐 Git 历史，不是将任何数学草案批准或发布。
+
+GitHub Actions 在恢复正常 PR 祖先关系后触发运行 `42464313289`；最终远端 CI 状态按独立查询结果报告，不以本地绿色测试冒充远端成功。
