@@ -70,6 +70,7 @@ jobs:
       - run: python scripts/build_kb_batch34_editorial_review.py --check
       - run: python scripts/build_kb_batch35_editorial_review.py --check
       - run: python scripts/build_kb_batch36_legacy_scope_review.py --check
+      - run: python scripts/author_kb_batch37_scope.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
