@@ -1,0 +1,458 @@
+{
+  "schema_version": "kb-batch28-p0-conditions-v1",
+  "authoring": "PROJECT_AUTHORED_EDITORIAL_CONDITION_PROPOSALS",
+  "student_visibility": "NEVER_STUDENT_EXPOSE",
+  "teacher_review": "PENDING",
+  "complete_proof_certificates": 0,
+  "profiles": [
+    {
+      "operation": "log_product_domain",
+      "risk_step_ids": [
+        "math.hs.logarithm.product-law#1",
+        "math.hs.logarithm.product-law#2",
+        "math.hs.logarithm.product-law#3"
+      ],
+      "necessary_hypotheses": "a>0, a≠1, x>0, y>0；只有乘积 xy>0 不够，因为 log_a(x) 与 log_a(y) 还须分别有定义。",
+      "explanatory_counterexample": "x=-2,y=-3 虽使 xy>0，却使两个实数对数均无定义。",
+      "valid_exact_fixture": {
+        "base": 2,
+        "x": 4,
+        "y": 8
+      },
+      "invalid_fixture": {
+        "base": 1,
+        "x": 4,
+        "y": 8
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "log_quotient_domain",
+      "risk_step_ids": [
+        "math.hs.logarithm.quotient-law#1",
+        "math.hs.logarithm.quotient-law#3"
+      ],
+      "necessary_hypotheses": "a>0, a≠1，真数 x>0、y>0；不能仅要求 x/y>0。",
+      "explanatory_counterexample": "x=-2,y=-1 时 x/y=2>0，但 log_a x 与 log_a y 都无定义。",
+      "valid_exact_fixture": {
+        "base": 2,
+        "x": 8,
+        "y": 4
+      },
+      "invalid_fixture": {
+        "base": 2,
+        "x": 8,
+        "y": 0
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "log_change_base_domain",
+      "risk_step_ids": [
+        "math.hs.logarithm.change-base#1",
+        "math.hs.logarithm.change-base#2"
+      ],
+      "necessary_hypotheses": "a,b>0 且 a,b 均不等于 1，x>0；log_b(a) 非零才能作分母。",
+      "explanatory_counterexample": "b=1 时 log_b a 不存在；a=1 时 log_a x 也不存在。",
+      "valid_exact_fixture": {
+        "base": 2,
+        "other_base": 4,
+        "x": 8
+      },
+      "invalid_fixture": {
+        "base": 2,
+        "other_base": 1,
+        "x": 8
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "quadratic_discriminant",
+      "risk_step_ids": [
+        "math.hs.quadratic.discriminant-roots#1",
+        "math.hs.quadratic.discriminant-roots#2",
+        "math.hs.quadratic.discriminant-roots#3"
+      ],
+      "necessary_hypotheses": "ax²+bx+c=0 的一元二次判别式必须 a≠0，实数平方非负。",
+      "explanatory_counterexample": "a=0,b=1,c=1 时仍可能有一个一次方程根，不能套 Δ 判别式的二次根数公式。",
+      "valid_exact_fixture": {
+        "a": 1,
+        "b": -3,
+        "c": 2
+      },
+      "invalid_fixture": {
+        "a": 0,
+        "b": 1,
+        "c": 1
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "amgm_rational_roots",
+      "risk_step_ids": [
+        "math.hs.inequality.amgm#1",
+        "math.hs.inequality.amgm#2",
+        "math.hs.inequality.amgm#3"
+      ],
+      "necessary_hypotheses": "a,b≥0；由 (√a−√b)²≥0 得算术几何均值不等式，等号 ⇔a=b。",
+      "explanatory_counterexample": "a=-1 时实数平方根不存在，不能照搬 AM–GM 的推导。",
+      "valid_exact_fixture": {
+        "a": 4,
+        "b": 9
+      },
+      "invalid_fixture": {
+        "a": -1,
+        "b": 9
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "line_circle",
+      "risk_step_ids": [
+        "math.hs.geometry.circle-intersections#1",
+        "math.hs.geometry.circle-intersections#2"
+      ],
+      "necessary_hypotheses": "直线法向量 (A,B) 非零，圆半径 r>0，圆心到直线距离平方与 r² 比较。",
+      "explanatory_counterexample": "A=B=0 时 Ax+By+C=0 不是一条直线，点线距离分母为零。",
+      "valid_exact_fixture": {
+        "A": 1,
+        "B": 0,
+        "C": -1,
+        "cx": 0,
+        "cy": 0,
+        "r": 1
+      },
+      "invalid_fixture": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "cx": 0,
+        "cy": 0,
+        "r": 1
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "circle_circle",
+      "risk_step_ids": [
+        "math.hs.geometry.circle-intersections#3",
+        "math.hs.geometry.circle-intersections#4"
+      ],
+      "necessary_hypotheses": "两半径均>0。先分同心与不同心；同心等半径的两圆重合，有无穷多个公共点。",
+      "explanatory_counterexample": "同心同半径时 d=0=|r1-r2|，却不是普通内切的一点。",
+      "valid_exact_fixture": {
+        "x1": 0,
+        "y1": 0,
+        "r1": 1,
+        "x2": 2,
+        "y2": 0,
+        "r2": 1
+      },
+      "invalid_fixture": {
+        "x1": 0,
+        "y1": 0,
+        "r1": 1,
+        "x2": 2,
+        "y2": 0,
+        "r2": 0
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "parabola_focus",
+      "risk_step_ids": [
+        "math.hs.geometry.parabola-focus#1",
+        "math.hs.geometry.parabola-focus#2",
+        "math.hs.geometry.parabola-focus#3"
+      ],
+      "necessary_hypotheses": "焦点(p,0)与准线x=-p应不同，p≠0；两距离均非负，平方相等与距离相等等价。",
+      "explanatory_counterexample": "p=0 时焦点落在准线，得到的 y²=0 是退化对象，不能仍称非退化抛物线。",
+      "valid_exact_fixture": {
+        "p": 1,
+        "x": 1,
+        "y": 2
+      },
+      "invalid_fixture": {
+        "p": 0,
+        "x": 1,
+        "y": 2
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "ellipse_tangent",
+      "risk_step_ids": [
+        "math.hs.geometry.ellipse-tangent#1",
+        "math.hs.geometry.ellipse-tangent#2"
+      ],
+      "necessary_hypotheses": "椭圆 a,b>0，切点 P0 必须在 x²/a²+y²/b²=1 上；此时 ∇F(P0) 非零，才能给出切线。",
+      "explanatory_counterexample": "把椭圆中心 (0,0) 当作切点，梯度为零，切线方程退化。",
+      "valid_exact_fixture": {
+        "a": 2,
+        "b": 1,
+        "x0": 2,
+        "y0": 0,
+        "x": 2,
+        "y": 3
+      },
+      "invalid_fixture": {
+        "a": 2,
+        "b": 1,
+        "x0": 0,
+        "y0": 0,
+        "x": 2,
+        "y": 3
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "cauchy_schwarz",
+      "risk_step_ids": [
+        "math.hs.vector.cauchy-schwarz#1",
+        "math.hs.vector.cauchy-schwarz#2",
+        "math.hs.vector.cauchy-schwarz#3",
+        "math.hs.vector.cauchy-schwarz#4"
+      ],
+      "necessary_hypotheses": "u,v 属于同一个实内积空间；分母含 ‖v‖² 的证明必须先单独处理 v=0。",
+      "explanatory_counterexample": "若 v=0 直接取 t=(u·v)/‖v‖²，就除以零；正确做法是先讨论零向量。",
+      "valid_exact_fixture": {
+        "u": [
+          1,
+          2,
+          3
+        ],
+        "v": [
+          2,
+          4,
+          6
+        ]
+      },
+      "invalid_fixture": {
+        "u": [
+          1,
+          2
+        ],
+        "v": [
+          1,
+          2,
+          3
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "quotient_polynomial_derivative",
+      "risk_step_ids": [
+        "math.hs.calculus.quotient-rule#1",
+        "math.hs.calculus.quotient-rule#2"
+      ],
+      "necessary_hypotheses": "u,v 在所求点附近可导且 v(x0)≠0；v 连续保证邻域内不为零，差商才可合法通分取极限。",
+      "explanatory_counterexample": "v(x)=x−1 在 x0=1 为零，即使 u,v 都可导，(u/v) 在该点无定义。",
+      "valid_exact_fixture": {
+        "u": [
+          1,
+          2
+        ],
+        "v": [
+          1,
+          1
+        ],
+        "x": 1
+      },
+      "invalid_fixture": {
+        "u": [
+          1,
+          2
+        ],
+        "v": [
+          -1,
+          1
+        ],
+        "x": 1
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "union_probability",
+      "risk_step_ids": [
+        "math.hs.probability.union-bound-two#3"
+      ],
+      "necessary_hypotheses": "A,B 在同一概率空间，P(A∪B)=P(A)+P(B)−P(A∩B)；等号上界 ⇔P(A∩B)=0，不要求交集为空。",
+      "explanatory_counterexample": "一个零概率原子可同时属于 A、B，故交集非空但交集概率仍为 0。",
+      "valid_exact_fixture": {
+        "n": 3,
+        "A": [
+          0,
+          1
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "weights": [
+          "1/2",
+          "0",
+          "1/2"
+        ]
+      },
+      "invalid_fixture": {
+        "n": 3,
+        "A": [
+          0,
+          1
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "weights": [
+          "1/2",
+          "1/2",
+          "1/2"
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "hypergeometric",
+      "risk_step_ids": [
+        "math.hs.probability.hypergeometric#1"
+      ],
+      "necessary_hypotheses": "0≤K,n≤N；max(0,n−(N−K))≤k≤min(n,K)；抽样须是有限总体中等可能不放回抽样。",
+      "explanatory_counterexample": "样本仅抽 n=3 个，写 k=4 个成功是不可能事件，不能用无约束组合分式求值。",
+      "valid_exact_fixture": {
+        "N": 10,
+        "K": 4,
+        "n": 3,
+        "k": 2
+      },
+      "invalid_fixture": {
+        "N": 10,
+        "K": 4,
+        "n": 3,
+        "k": 4
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "vector_angle",
+      "risk_step_ids": [
+        "math.hs.vector.dot-product#4",
+        "math.hs.space.angle-distance#2"
+      ],
+      "necessary_hypotheses": "要谈两个向量夹角，二者都必须非零；仅要验证内积为零时零向量可被允许，但不能称零向量与任意向量夹角为 90°。",
+      "explanatory_counterexample": "0·v=0 不能推出零向量与 v 垂直的夹角为 90°，零向量没有方向。",
+      "valid_exact_fixture": {
+        "u": [
+          1,
+          0
+        ],
+        "v": [
+          0,
+          1
+        ]
+      },
+      "invalid_fixture": {
+        "u": [
+          0,
+          0
+        ],
+        "v": [
+          0,
+          1
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "odd_square_induction",
+      "risk_step_ids": [
+        "math.hs.sequence.odd-square-sum#3"
+      ],
+      "necessary_hypotheses": "从 n≥1 的基例出发，再验证 n²+(2n+1)=(n+1)²；必须将归纳假设的下标连接至目标。",
+      "explanatory_counterexample": "只检查 n=1，或假设 n+1 也满足待证结论，是循环论证。",
+      "valid_exact_fixture": {
+        "n": 6
+      },
+      "invalid_fixture": {
+        "n": 0
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "fermat_difference",
+      "risk_step_ids": [
+        "math.hs.calculus.fermat-stationary#2"
+      ],
+      "necessary_hypotheses": "f(x)=−(x−x0)² 在 x0 取局部极大；右差商≤0，左差商≥0；两侧极限相同才推出 f′(x0)=0。",
+      "explanatory_counterexample": "在 h<0 时把分子≤0直接除以负 h 而仍写≤0，会使不等号方向错误。",
+      "valid_exact_fixture": {
+        "h": "1/2"
+      },
+      "invalid_fixture": {
+        "h": 0
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    },
+    {
+      "operation": "point_plane_distance",
+      "risk_step_ids": [
+        "math.hs.space.angle-distance#1"
+      ],
+      "necessary_hypotheses": "n≠0 才是平面的法向量；点到平面距离平方=((P−Q)·n)²/‖n‖²。",
+      "explanatory_counterexample": "n=0 导致距离公式分母零，且 n·(X−Q)=0 并不确定一个平面。",
+      "valid_exact_fixture": {
+        "P": [
+          0,
+          0,
+          2
+        ],
+        "Q": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      "invalid_fixture": {
+        "P": [
+          0,
+          0,
+          2
+        ],
+        "Q": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          0
+        ]
+      },
+      "status": "EDITORIAL_CONDITION_PROPOSAL_NOT_PROOF",
+      "teacher_review": "PENDING"
+    }
+  ]
+}
