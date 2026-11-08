@@ -31,9 +31,9 @@ def test_batch22_all_drafts_integrated_reproducible_not_official():
     assert json.loads(rendered)==[x['lesson'] for x in DATA]
     assert json.loads(report)==MATRIX
     assert len(DATA)==12
-    assert len(lessons())==267
+    assert len(lessons())==287
     assert len(curriculum())==178
-    assert coverage_report()['deep_lesson_documents']==267
+    assert coverage_report()['deep_lesson_documents']==287
     assert {x['gap'] for x in DATA}=={4,5,7,8,9,13,15,16,21,22,25,28}
     assert MATRIX['summary']['combined_adjacencies']==23
     assert MATRIX['summary']['not_yet_adjacent']==5

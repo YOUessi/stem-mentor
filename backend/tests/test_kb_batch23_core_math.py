@@ -31,8 +31,8 @@ def test_materialization_exact_and_coverage_is_not_official():
     rendered,report=build.build()
     assert json.loads(rendered)==CORPUS==[x['lesson'] for x in SOURCE]
     assert json.loads(report)==AUDIT
-    assert len(lessons())==267 and len(curriculum())==178
-    assert coverage_report()['deep_lesson_documents']==267
+    assert len(lessons())==287 and len(curriculum())==178
+    assert coverage_report()['deep_lesson_documents']==287
     assert AUDIT['summary']['official_atomic_denominator'] is None
     assert AUDIT['summary']['official_coverage_rate'] is None
     assert AUDIT['summary']['editorial_gap_tickets_still_open']==28

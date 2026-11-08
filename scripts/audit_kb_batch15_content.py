@@ -20,7 +20,7 @@ def audit():
         assert hashlib.sha256(frozen).hexdigest()=="c428b13ba052df7f860b126cb6e3d2fc28a7ac73571bf7e2a0c89443205457cb"
         assert hashlib.sha256(SRC.read_bytes()).hexdigest()=="f0532c1f781d1d308073bfe4d9014cc80433d65b71b3736639459224152f5a89"
         assert len(own)==9 and len(curriculum())>=138
-        assert review["total_deep_draft_lessons"]==235 and len(docs)==267  # live includes Batch23; editorial queue remains frozen
+        assert review["total_deep_draft_lessons"]==235 and len(docs)==287  # live includes Batch23; editorial queue remains frozen
         assert all(x["review"]["status"]=="REVIEW_PENDING"
                    and x["teacher_solution_visibility"]=="TEACHER_ONLY" for x in own)
         return json.loads(frozen)

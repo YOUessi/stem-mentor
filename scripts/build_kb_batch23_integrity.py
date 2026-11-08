@@ -109,7 +109,7 @@ def build():
             teacher_review='PENDING',official_atom=False,student_publishable=False))
     if sum(x['has_any_project_draft'] for x in editorial)!=28:
         raise ValueError('Unexpected draft adjacency count')
-    current_lessons={d.id:d for d in lessons()}
+    current_lessons={d.id:d for d in lessons() if not d.id.startswith("math.hs.batch24.")}
     # This build can be invoked before materialization; validate the source without pretending it is live.
     if OUT.exists():
         if len(current_lessons)!=267 or any(current_lessons.get(x['id']) is None or current_lessons[x['id']].model_dump(mode='json')!=x for x in rendered):

@@ -26,8 +26,9 @@ def historical_batch13_deep():
     later_path=PATH.parents[2]/"knowledge/deep/v1/elective_gap_batch22.json"
     later={x["id"] for x in json.loads(later_path.read_text(encoding="utf-8"))}
     later.update(x["id"] for x in json.loads((later_path.parent / "core_elective_batch23.json").read_text(encoding="utf-8")))
+    later.update(x["id"] for x in json.loads((later_path.parent / "core_foundation_batch24.json").read_text(encoding="utf-8")))
     full={x.id:x.model_dump(mode="json") for x in lessons()}
-    if len(later)!=32 or not later<=set(full) or len(full)-len(later)!=235:
+    if len(later)!=52 or not later<=set(full) or len(full)-len(later)!=235:
         raise ValueError("Historical review snapshot is not reconcilable with live lessons")
     return {k:v for k,v in full.items() if k not in later}
 

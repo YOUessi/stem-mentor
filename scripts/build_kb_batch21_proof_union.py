@@ -30,7 +30,7 @@ def build():
     base = json.loads(BASE.read_text(encoding="utf-8"))
     new = json.loads(NEW.read_text(encoding="utf-8"))
     old_rows = {x["id"]: x for x in base["lessons"]}
-    current = {x.id: x for x in lessons()}
+    current = {x.id: x for x in lessons() if not x.id.startswith("math.hs.batch24.")}
     fresh_ids = {x["id"] for x in new}
     if (len(old_rows) != 224 or len(new) != 11
             or set(old_rows) & fresh_ids or not (set(old_rows) | fresh_ids <= set(current))
