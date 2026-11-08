@@ -65,4 +65,8 @@
 
 ## 6. 后续远端提交与 CI 回执
 
-待提交并完成 GitHub Draft PR/CI 核验后追记；本地验收不能替代远端CI。
+- 首个源码提交：`9ddb72390ff55bee83f448477dd61f676ca8d594`，Git Tree `b58148c240ef876e5b9decec86a6b104ee648cd2`，Mac 独立 worktree 已提交且 clean。
+- GitHub Draft PR **#75**：https://github.com/YOUessi/stem-mentor/pull/75 ，Open / Draft，基准分支 `feat/kb-batch49-modeling-inference`；没有合并main。
+- 首次 GitHub Actions **#42531082960** 对源码提交 `9ddb723` 实际返回 **completed/success**：https://github.com/YOUessi/stem-mentor/actions/runs/42531082960 。
+- 通过 GitHub原生读取复核4个关键文件：20篇原始 JSONL 的 Git Blob `0ceecec23466a20143a3a6c6ad4fc05e5d371f38`、数学算子 `35c0ce788532f243b24de608dd315a800f9585c7`、课程矩阵 `3c5a0a02a34e6dcf25b11ed339de9eed5799f82f`、执行报告初稿 `967384f41d5acadf033ada4f2fcbc64d3ebb802f`，均与 Mac 本地 `git hash-object` 完全一致。
+- 本段最终 CI 回执通过后续文档提交更新。后续文档提交也必须再次触发 CI 并单独核实，不能把先前源码 CI 结果冒充最终 HEAD 结果。
