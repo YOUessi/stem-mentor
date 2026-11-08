@@ -1,0 +1,269 @@
+{
+  "manuscripts_sha256": "4d7bf0139e9ef65bec610864bba5b320dbf8d63d3b3bcce9d6a1a1a8e8f60c61",
+  "partial_ids_covered": [
+    "KB33-A-P052-A005",
+    "KB33-A-P054-A005",
+    "KB33-A-P055-A001",
+    "KB33-A-P055-A002",
+    "KB33-A-P055-A003",
+    "KB33-A-P056-A001",
+    "KB33-A-P057-A003",
+    "KB33-B-P058-A002",
+    "KB33-B-P058-A003",
+    "KB33-B-P059-A003",
+    "KB33-B-P059-A005",
+    "KB33-B-P060-A004",
+    "KB33-B-P062-A002",
+    "KB33-B-P062-A003",
+    "KB33-B-P063-A003",
+    "KB33-B-P064-A002",
+    "KB33-C-P065-A004",
+    "KB33-C-P066-A001",
+    "KB33-D-P070-A001",
+    "KB33-E-P073-A007"
+  ],
+  "partial_ids_remaining": [
+    "KB33-C-P065-A005",
+    "KB33-C-P067-A004",
+    "KB33-C-P068-A004",
+    "KB33-D-P071-A001",
+    "KB33-D-P071-A004",
+    "KB33-D-P072-A001",
+    "KB33-D-P073-A002"
+  ],
+  "policy": {
+    "formal_proof_automatically_certified": false,
+    "student_index_modified": false,
+    "teacher_only": true
+  },
+  "records": [
+    {
+      "editorial_candidate_id": "KB33-A-P052-A005",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.a.p052.a005",
+      "official_clause_verified": false,
+      "record_sha256": "bba97a1a3a0a77e74bdc333a63317b73fe40515b6af28e50e28b967d8474b881",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-A-P054-A005",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.a.p054.a005",
+      "official_clause_verified": false,
+      "record_sha256": "25e9efeb22aee5bec250101cf047d84fbf1c80c8c3379cbc0a13f3181ce29921",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-A-P055-A001",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.a.p055.a001",
+      "official_clause_verified": false,
+      "record_sha256": "5019fce61c61c27bdeeff9ee504f36dc890c767ba479b811fe2bf1d6e207b275",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-A-P055-A002",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.a.p055.a002",
+      "official_clause_verified": false,
+      "record_sha256": "599715319347cf5cab5836eac8775511c80528be725f42f06aac709a6c2fc887",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-A-P055-A003",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.a.p055.a003",
+      "official_clause_verified": false,
+      "record_sha256": "dac0abb7c066c1f5bc77505c316d75833b688be06a9d679e1d452e889e0ba2b7",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-A-P056-A001",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.a.p056.a001",
+      "official_clause_verified": false,
+      "record_sha256": "7793bc15346c15fc507999c47354534eb65979b48eda0188aa1c081a3a27bad9",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-A-P057-A003",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.a.p057.a003",
+      "official_clause_verified": false,
+      "record_sha256": "9feab1f82d9bee832488653d142a80ecd1540d65234db8c3a029a66ba2c9314f",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-B-P058-A002",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.b.p058.a002",
+      "official_clause_verified": false,
+      "record_sha256": "6b476abfd3502383e6cff4bb26bc976d08b95cf5614b25a7cc5e75009778b3cc",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-B-P058-A003",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.b.p058.a003",
+      "official_clause_verified": false,
+      "record_sha256": "9cf474177af5a5edd98a1b820c14123a3b4d9f3a4b7145acbe2dbad1287b681e",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-B-P059-A003",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.b.p059.a003",
+      "official_clause_verified": false,
+      "record_sha256": "adb50e7896d81e498fa0016b9399a4d3ddfaf2e1ff8b6bb6e9036007b11daad1",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-B-P059-A005",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.b.p059.a005",
+      "official_clause_verified": false,
+      "record_sha256": "4c9d583cde981368261b0f7f2cdf0d0ce8a1039b60fe93108975f5b912cb0372",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-B-P060-A004",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.b.p060.a004",
+      "official_clause_verified": false,
+      "record_sha256": "af55bc6779ced2b3333d844975b9ae2792d7714bd634db56c041a7b9460b4cde",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-B-P062-A002",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.b.p062.a002",
+      "official_clause_verified": false,
+      "record_sha256": "13a2edda1aa17845b245e28dc16d7546114c6e62066742cc3e410dc54722dc17",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-B-P062-A003",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.b.p062.a003",
+      "official_clause_verified": false,
+      "record_sha256": "e97603e49fb72a3fcf9f7e56814b424708ca80023ef5004bc919547e670196d9",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-B-P063-A003",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.b.p063.a003",
+      "official_clause_verified": false,
+      "record_sha256": "b544bb682beae8b24c70b88c4af92e8db3aa34b816fd25e60b2cf67937ed0ae2",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-B-P064-A002",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.b.p064.a002",
+      "official_clause_verified": false,
+      "record_sha256": "e7df88f1a596e84360a0c753a33c20c3ba458dbfc7ac3f7d61da9072c8dabf98",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-C-P065-A004",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.c.p065.a004",
+      "official_clause_verified": false,
+      "record_sha256": "267fd1344b7b0ac20d8a0b9fc23626c0ca27034126b6c91e90d3e106c280df2a",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-C-P066-A001",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.c.p066.a001",
+      "official_clause_verified": false,
+      "record_sha256": "394279ddfbf4ac3bbe73d2de0418f35063973574ed87132d5f4969fbae27a0bd",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-D-P070-A001",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.d.p070.a001",
+      "official_clause_verified": false,
+      "record_sha256": "20092d1385af0bec8b1e405acea46d0ffd3b1c44b3a8183f877dfe009d5fae6b",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    },
+    {
+      "editorial_candidate_id": "KB33-E-P073-A007",
+      "historical_finding": "PARTIAL_SCOPE",
+      "legacy_equivalence_certified": false,
+      "manuscript_id": "math.hs.editorial.batch38.kb33.e.p073.a007",
+      "official_clause_verified": false,
+      "record_sha256": "bb902d74757fdf526de83f4787263854b92b1e9c38436f21d0fb33a6cfc61cfb",
+      "review": "REVIEW_PENDING",
+      "student_publishable": false
+    }
+  ],
+  "schema_version": "kb-batch38-partial-v1",
+  "scope": "EDITORIAL_ONLY_NOT_OFFICIAL_SYLLABUS",
+  "seed_sha256": "d28e04b16511017119c3560568d9d22f46af6f8eebc57185ee8bf7773f7e2be1",
+  "source_audit_sha256": "0db385ee6afaa824a2ff54877709214953c6c146d899b5f9044e01ab2049c148",
+  "summary": {
+    "batch37_mismatch_repairs": 8,
+    "current_teacher_review_manuscripts": 77,
+    "deep_drafts_unchanged": 287,
+    "historical_partial_links": 27,
+    "new_counterexamples": 20,
+    "official_denominators": {
+      "COMPULSORY": null,
+      "ELECTIVE_A": null,
+      "ELECTIVE_B": null,
+      "ELECTIVE_C": null,
+      "ELECTIVE_D": null,
+      "ELECTIVE_E": null,
+      "SELECTIVE_COMPULSORY": null
+    },
+    "previous_teacher_review_manuscripts": 57,
+    "remaining_partial_links": 7,
+    "reviewed_partial_links_in_batch": 20,
+    "student_published": 0,
+    "teacher_approved": 0,
+    "teacher_worked_examples": 40,
+    "unresolved_conflicts": 10,
+    "unverified_historical_proof_steps": 538
+  }
+}
