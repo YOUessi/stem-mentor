@@ -22,6 +22,8 @@ echo "[0/4] Batch24+25 source/P0/math/review guards"
 .venv/bin/python scripts/build_kb_batch30_k00_page52.py --check
 .venv/bin/python scripts/build_kb_batch31_atomic_core.py --check
 .venv/bin/python scripts/build_kb_batch31_graph.py --check
+.venv/bin/python scripts/build_kb_batch32_source_atoms.py --check
+.venv/bin/python scripts/build_kb_batch32_math_links.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"
