@@ -201,3 +201,12 @@ def test_independent_sympy_algebraic_cross_checks_not_general_proof_certificatio
         plane_point=[0,0,0],normal=[0,0,0]))["status"]=="CONDITIONS_NOT_ESTABLISHED"
     assert all(v["general_theorem_certified"] is False
         for v in (witness(op,VALID[op]) for op in KEYS))
+
+
+def test_quadratic_extremum_witness_tracks_vertex_and_value_not_origin():
+    # f(x)=a(x-center)^2+shift: extremum is at center, value is shift.
+    positive=witness("fermat_quadratic",dict(a=2,center=7,shift=-5))
+    negative=witness("fermat_quadratic",dict(a=-3,center=-4,shift=6))
+    assert positive["exact_value"]=="MINIMUM|7|-5"
+    assert negative["exact_value"]=="MAXIMUM|-4|6"
+    assert witness("fermat_quadratic",dict(a=0,center=7,shift=-5))["status"]=="CONDITIONS_NOT_ESTABLISHED"

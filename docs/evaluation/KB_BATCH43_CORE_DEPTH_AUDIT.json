@@ -383,7 +383,7 @@
       "exact_operator": "fermat_quadratic",
       "examples": 2,
       "finite_case_only": true,
-      "finite_verified_case": "MINIMUM|0",
+      "finite_verified_case": "MINIMUM|0|0",
       "general_theorem_certified": false,
       "goal": "核对内点可导假设后讨论局部极值点的一阶必要条件",
       "hint_levels": 3,

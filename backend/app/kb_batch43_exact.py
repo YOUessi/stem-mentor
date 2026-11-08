@@ -120,7 +120,7 @@ def _calc(op,a):
         return f"{formal}|{diff}"
     if op=="fermat_quadratic":
         if a["a"]==0:raise ValueError("nonzero curvature for strict extremum")
-        return "MINIMUM|0" if a["a"]>0 else "MAXIMUM|0"
+        return f"{'MINIMUM' if a['a']>0 else 'MAXIMUM'}|{a['center']}|{a['shift']}"
     if op=="plane_distance_squared":
         p,p0,n=[a[k] for k in ("point","plane_point","normal")]
         if not all(_vec(v,3,3) for v in (p,p0,n)) or not any(n):
@@ -240,7 +240,7 @@ EXPECTED={
 "neg_exists":"true","quadratic_inequality":"2,3","change_base":"3/2",
 "unit_identity":"true","bisection":"1|3/2|1/2","parallel_nonzero":"true",
 "perpendicular_nonzero":"true","ssa_acute":"TWO","induction_sum":"55",
-"quadratic_derivative":"6|7","fermat_quadratic":"MINIMUM|0",
+"quadratic_derivative":"6|7","fermat_quadratic":"MINIMUM|0|0",
 "plane_distance_squared":"9","line_slope":"2","circle_line":"TWO",
 "permutation":"24","combination":"10","binomial_coefficients":"1,3,3,1",
 "total_probability":"2/5","bayes_posterior":"1/2","discrete_moments":"1|1",
