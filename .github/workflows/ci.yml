@@ -91,6 +91,7 @@ jobs:
       - run: PYTHONPATH=backend python -m app.kb_batch49_review --check
       - run: PYTHONPATH=backend python -m app.kb_batch50_review --check
       - run: python scripts/build_kb_batch51_official_source_gate.py --check
+      - run: python scripts/build_kb_batch52_critical_requirement_crosswalk.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
