@@ -27,7 +27,7 @@
 - 新增独立回归 `backend/tests/test_kb_batch53_cross_page_witness.py`，覆盖35个来源候选、16个此前缺少跨页关联的目标（其中9文字页/7图像页）、12条旧稿队列、非法变更与有界数学反例。
 - 35项候选逐项执行真实 `student_evidence_lookup` 与 `draft_next_question` 离线代码路径，检查 `NO_APPROVED_EVIDENCE / NO_APPROVED_MATH_EVIDENCE`、无教师解答泄露、没有云端调用。
 - 开发中首次增量测试 **123 passed / 1 failed**，失败项暴露源码只检查“被引用编辑目标”的教师状态，而没有阻断313候选中任意其他条目的非法批准标记。已加全量313条状态校验，复测 **159 passed / 0 failed**。实际结果保存 `evaluations/results/2026-11-09-kb-batch53/incremental.log`。
-- **Mac Python全量真实执行：42,866 passed / 0 failed / 1第三方弃用warning**（已包含本批159项专项用例，不重复加总）；Node **111/111 passed**；Tutor策略 **33/33 passed**；RAG困难负例 **40/40** 与Top3 **22/22**；`mac_check.exit=0`。原始日志 `evaluations/results/2026-11-09-kb-batch53/mac_check_full.log`。浏览器结果在真实执行完成后追加，不能预填。
+- **Mac Python全量真实执行：42,866 passed / 0 failed / 1第三方弃用warning**（已包含本批159项专项用例，不重复加总）；Node **111/111 passed**；Tutor策略 **33/33 passed**；RAG困难负例 **40/40** 与Top3 **22/22**；`mac_check.exit=0`。原始日志 `evaluations/results/2026-11-09-kb-batch53/mac_check_full.log`。Mac Chrome/Playwright 15个浏览器脚本及browser pytest **2 passed / 0 failed**；`mac_browser.exit=0`，日志 `evaluations/results/2026-11-09-kb-batch53/mac_browser_full.log`。iPad手势/压感是CDP模拟，不代表真实硬件验收。
 
 ## 未完成/下一批
 
@@ -38,4 +38,4 @@
 
 ## 源码与远端验收
 
-待本地全量测试及 GitHub push/PR/CI 完成后，将此处追加真正的 commit SHA、树 SHA、最终测试摘要与远端 Actions 结果；**不预先声称提交成功或CI成功**。
+第一阶段源码和Mac测试日志提交 `b3fe857cb5cfc41c2d17c8fa66a779bd946603f8`，Mac SSH已推送，GitHub Draft PR #78：https://github.com/YOUessi/stem-mentor/pull/78（base Batch52 #77）。GitHub Actions #42542510509 已核实 `completed/success`：https://github.com/YOUessi/stem-mentor/actions/runs/42542510509。GitHub直接读取生成器、审计JSON、数学校验器、专项测试的Git Blob SHA均与Mac本地一致。最终Mac Chrome日志随本页回执再次提交，最终远端HEAD及后续CI以PR #78最新SHA为准。
