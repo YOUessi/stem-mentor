@@ -1,0 +1,5 @@
+Initial Batch60 incremental test attempt:
+Command: PYTHONPATH=backend:. .venv/bin/python -m pytest -q backend/tests/test_kb_batch60_elective_source_and_math.py
+Observed: zsh:1: no such file or directory: .venv/bin/python
+Exit status: 127
+Resolution: local worktree-only symlink to the existing authorized Mac Batch59 virtualenv; then 195/195 passed.
