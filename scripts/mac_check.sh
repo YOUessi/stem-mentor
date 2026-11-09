@@ -53,6 +53,7 @@ PYTHONPATH=backend .venv/bin/python -m app.kb_batch50_review --check
 .venv/bin/python scripts/build_kb_batch51_official_source_gate.py --check
 .venv/bin/python scripts/build_kb_batch52_critical_requirement_crosswalk.py --check
 .venv/bin/python scripts/build_kb_batch53_cross_page_review.py --check
+.venv/bin/python scripts/author_kb_batch54_legacy_scope.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"
