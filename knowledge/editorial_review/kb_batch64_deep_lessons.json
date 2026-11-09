@@ -1,0 +1,902 @@
+[
+  {
+    "lesson_id": "KB64-DEEP-01",
+    "loc": [
+      15,
+      10
+    ],
+    "title": "集合的判定性与元素属于关系",
+    "kind": "CONCEPT",
+    "statement": "集合A由确定的判定规则指定；对论域中的任一对象x，x∈A或者x∉A，其真假必须确定。",
+    "assumptions": [
+      "先指定论域及对象类型",
+      "集合的成员资格有明确判别标准"
+    ],
+    "notation": [
+      "x∈A",
+      "x∉A"
+    ],
+    "prerequisites": [
+      "命题真假值",
+      "对象与类别"
+    ],
+    "reasoning": [
+      [
+        "固定论域D并给出性质P(x)，定义A={x∈D|P(x)}。",
+        "集合描述法以判别谓词为前提。"
+      ],
+      [
+        "对任一x∈D，判定P(x)真则x∈A，否则x∉A。",
+        "元素属于依赖该对象的判定结果。"
+      ],
+      [
+        "集合成员资格不依赖对象重复列出或排列顺序。",
+        "外延集合按所含元素确定，而非按列举次序确定。"
+      ]
+    ],
+    "examples": [
+      [
+        "在整数中设A={x|x²=4}，判定2和3是否属于。",
+        "2∈A，3∉A。",
+        "2²=4而3²=9，逐一代入定义。"
+      ],
+      [
+        "设B={2,1,2}，写出其元素。",
+        "B={1,2}。",
+        "重复元素不影响集合的成员资格。"
+      ]
+    ],
+    "counterexample": "“班里比较优秀的同学”未给客观规则时不能当作唯一确定的成员集合。",
+    "wrong": "把对象2和单元素集合{2}混同，写2⊆A。",
+    "why_wrong": "属于符号作用于元素与集合；包含符号作用于两个集合，对象类型不同。",
+    "hints": [
+      "先明确谁是待判定的对象以及所属论域。",
+      "用集合定义的判定谓词代入对象。",
+      "区分∈与⊆各自左右两侧对象的类型。"
+    ],
+    "near": "判断-2是否属于{n∈Z|n²=4}。",
+    "far": "分析数据库筛选标签若没有确定阈值为何无法形成可重复的集合。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-02",
+    "loc": [
+      15,
+      15
+    ],
+    "title": "子集、真子集与双向包含",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "对于集合A,B，A⊆B当且仅当∀x(x∈A⇒x∈B)；A=B当且仅当A⊆B且B⊆A。",
+    "assumptions": [
+      "A与B的对象类型及论域相容",
+      "使用集合的外延相等标准"
+    ],
+    "notation": [
+      "A⊆B",
+      "A⊊B",
+      "A=B"
+    ],
+    "prerequisites": [
+      "量词与蕴含",
+      "集合属于关系"
+    ],
+    "reasoning": [
+      [
+        "假设A=B，任意x∈A也属于B，故A⊆B。",
+        "外延相等意味着相同的成员资格。"
+      ],
+      [
+        "反向亦然，从A=B可推B⊆A。",
+        "对称地应用集合相等定义。"
+      ],
+      [
+        "若A⊆B与B⊆A，则任意x属于A当且仅当属于B，故A=B。",
+        "集合外延公理和双向蕴含。"
+      ]
+    ],
+    "examples": [
+      [
+        "A={1,2}，B={2,1,2}，判断关系。",
+        "A=B，且A⊆B、B⊆A。",
+        "删除重复后两集合均含1和2。"
+      ],
+      [
+        "A=∅，B={0}，判断是否真包含。",
+        "A⊊B。",
+        "空集是任意集合的子集且A≠B。"
+      ]
+    ],
+    "counterexample": "A={1}与B={1}互为子集但A不是B的真子集；把⊆直接当作⊊是错误的。",
+    "wrong": "从A⊆B直接推出A≠B。",
+    "why_wrong": "子集允许相等；真子集另需证明存在B的元素不在A中。",
+    "hints": [
+      "写出包含关系的全称量词定义。",
+      "判断所有A的元素是否也在B中。",
+      "若要断言真子集，还需另外证明不相等。"
+    ],
+    "near": "判断{2,4}与{4,2,2}是否相等。",
+    "far": "检验两个不同表达式定义的解集能否用双向包含证明相同。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-03",
+    "loc": [
+      15,
+      17
+    ],
+    "title": "相对补集和全集约束",
+    "kind": "CONCEPT",
+    "statement": "固定全集U及A⊆U时，A关于U的补集定义为U\\A={x∈U|x∉A}；换全集可能改变补集。",
+    "assumptions": [
+      "全集U明确",
+      "被求补的集合A是U的子集"
+    ],
+    "notation": [
+      "U\\A",
+      "A∩(U\\A)=∅"
+    ],
+    "prerequisites": [
+      "集合差集",
+      "集合包含"
+    ],
+    "reasoning": [
+      [
+        "确定U和A⊆U后，U\\A只包含U内不属于A的元素。",
+        "按补集的定义逐元素检验。"
+      ],
+      [
+        "任何x不可能同时属于A和U\\A，故交集为空。",
+        "命题P与¬P不可能同时成立。"
+      ],
+      [
+        "任何x∈U必落在A或U\\A，因此A∪(U\\A)=U。",
+        "排中律在指定全集U内成立。"
+      ]
+    ],
+    "examples": [
+      [
+        "U={1,2,3,4}，A={2,4}，求补集。",
+        "{1,3}。",
+        "只在U内筛选不属于A的元素。"
+      ],
+      [
+        "U=Z，A={0}，问1是否属于补集。",
+        "是，1∈Z\\{0}。",
+        "1是整数且不为0。"
+      ]
+    ],
+    "counterexample": "A={0}在U={0,1}中的补集是{1}，在U={0,1,2}中的补集是{1,2}。",
+    "wrong": "不指定全集就给出A的绝对补集。",
+    "why_wrong": "补集是关于全集的相对运算；不同全集产生不同结果。",
+    "hints": [
+      "先找出题目给定的全集U。",
+      "列出全集里不属于A的元素。",
+      "用交为空与并为U检查结果。"
+    ],
+    "near": "在U={-1,0,1}内计算{0,1}的补集。",
+    "far": "在用户权限过滤中解释为何必须先明确允许访问对象的全集。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-04",
+    "loc": [
+      16,
+      7
+    ],
+    "title": "充分条件必要条件的蕴含方向",
+    "kind": "METHOD",
+    "statement": "对命题P,Q，P⇒Q表示P是Q的充分条件、Q是P的必要条件；P⇔Q才是充要条件。",
+    "assumptions": [
+      "P和Q是具有确定真假条件的命题",
+      "论域及量词一致"
+    ],
+    "notation": [
+      "P⇒Q",
+      "P⇔Q"
+    ],
+    "prerequisites": [
+      "命题蕴含",
+      "集合包含"
+    ],
+    "reasoning": [
+      [
+        "若对所有对象P为真时Q必真，则P⇒Q成立。",
+        "蕴含命题的语义。"
+      ],
+      [
+        "在该方向上P成立足以保证Q，称P充分。",
+        "充分条件名称的定义。"
+      ],
+      [
+        "同一蕴含不能直接翻转为Q⇒P；翻转方向需独立证明。",
+        "逆命题可能为假。"
+      ]
+    ],
+    "examples": [
+      [
+        "对实数x，x>2与x>0，哪个充分？",
+        "x>2是x>0的充分但非必要条件。",
+        "x=1满足x>0却不满足x>2。"
+      ],
+      [
+        "对整数n，n为偶数与n²为偶数的关系？",
+        "互为充要条件。",
+        "偶数平方为偶；若n奇则n²奇，逆否命题成立。"
+      ]
+    ],
+    "counterexample": "x²=4⇒x=2不成立，因为x=-2也满足前件。",
+    "wrong": "观察到P⇒Q就把P称为Q的必要条件。",
+    "why_wrong": "必要与充分对应蕴含的不同位置，方向不能互换。",
+    "hints": [
+      "把条件写成带箭头的命题P⇒Q。",
+      "先找一个逆命题可能失败的反例。",
+      "只有两个箭头都成立才可以使用充要条件。"
+    ],
+    "near": "判断x=0对x²=0是否为充分必要条件。",
+    "far": "分析程序中通过验证的前置条件与成功输出之间是否仅有单向保证。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-05",
+    "loc": [
+      16,
+      26
+    ],
+    "title": "非负实数基本不等式和等号条件",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "当a,b≥0时，(a+b)/2≥√(ab)，且等号当且仅当a=b。",
+    "assumptions": [
+      "a,b为非负实数",
+      "√a及√b取算术主平方根"
+    ],
+    "notation": [
+      "(a+b)/2≥√(ab)",
+      "a=b"
+    ],
+    "prerequisites": [
+      "非负平方",
+      "平方根与实数运算"
+    ],
+    "reasoning": [
+      [
+        "非负实数有实数主平方根，且(√a-√b)²≥0。",
+        "任意实数的平方非负。"
+      ],
+      [
+        "展开为a+b-2√(ab)≥0，移项后除以2得到结论。",
+        "恒等变形与正数除法保持不等式。"
+      ],
+      [
+        "等号成立当且仅当√a=√b，而非负时等价于a=b。",
+        "平方为零的唯一条件及平方根单调。"
+      ]
+    ],
+    "examples": [
+      [
+        "a=1,b=9，比较平均数与几何平均数。",
+        "5≥3。",
+        "(1+9)/2=5，√9=3。"
+      ],
+      [
+        "a=b=4时为何取等？",
+        "4=4。",
+        "两个平方根相同，平方差为0。"
+      ]
+    ],
+    "counterexample": "取a=-1,b=-4虽ab=4，但(a+b)/2=-2<√4=2；不能删除非负假设。",
+    "wrong": "只要ab≥0就直接套用两数基本不等式。",
+    "why_wrong": "ab≥0并不保证两数分别非负；根的比较推导依赖非负主平方根。",
+    "hints": [
+      "先判断两个数是否都非负。",
+      "考虑(√a-√b)²的非负性。",
+      "等号需要两数完全相等。"
+    ],
+    "near": "在a+b=10,a,b≥0的条件下最大化ab。",
+    "far": "说明资源分配中均分最优的结论为何需要总量固定且资源非负。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-06",
+    "loc": [
+      19,
+      13
+    ],
+    "title": "函数定义域与对应唯一性",
+    "kind": "CONCEPT",
+    "statement": "函数f:D→R要求对定义域D内每个x恰好对应一个实数f(x)；同一输入若有两个输出则不是单值函数。",
+    "assumptions": [
+      "定义域D事先确定",
+      "函数输出落在指定实数范围"
+    ],
+    "notation": [
+      "f:D→R",
+      "y=f(x)"
+    ],
+    "prerequisites": [
+      "集合与关系",
+      "实数与坐标表示"
+    ],
+    "reasoning": [
+      [
+        "先确定输入集合D，逐个检查输入是否都有输出。",
+        "函数必须在定义域上处处有定义。"
+      ],
+      [
+        "同一输入的输出必须唯一，即使不同输入可以对应同一输出。",
+        "函数是单值对应而非一一对应。"
+      ],
+      [
+        "比较两个函数是否相同，需要同时检查定义域及各点的对应值。",
+        "函数对象由定义域和对应关系共同确定。"
+      ]
+    ],
+    "examples": [
+      [
+        "f(x)=1/x，实数定义域是什么？",
+        "R\\{0}。",
+        "分母不允许为零；其余实数均可计算。"
+      ],
+      [
+        "关系y²=x对x=1是否定义单值实函数y？",
+        "否。",
+        "当x=1时输出既可能1也可能-1。"
+      ]
+    ],
+    "counterexample": "f(x)=x²定义域R与g(x)=x²定义域[0,∞)尽管表达式相同，却不是相同的函数对象。",
+    "wrong": "认为一条竖线可与关系曲线交于两点仍可代表单值函数。",
+    "why_wrong": "同一横坐标若有两纵坐标，违反每个输入唯一输出要求。",
+    "hints": [
+      "首先明确定义域是哪些输入。",
+      "检查每个输入是否有且只有一个输出。",
+      "函数相同还必须要求定义域与对应规则一致。"
+    ],
+    "near": "求f(x)=√(x-2)的实数定义域。",
+    "far": "评价传感器映射中同一输入产生两个不同定值是否能建成确定性函数。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-07",
+    "loc": [
+      20,
+      19
+    ],
+    "title": "指数函数底数条件与严格单调性",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "对实数x，y=a^x在a>1时严格递增，在0<a<1时严格递减；定义为指数函数须a>0且a≠1。",
+    "assumptions": [
+      "指数变量x取全体实数",
+      "底数a>0且a≠1"
+    ],
+    "notation": [
+      "a^x",
+      "0<a<1"
+    ],
+    "prerequisites": [
+      "指数运算规律",
+      "实数序关系"
+    ],
+    "reasoning": [
+      [
+        "对x2>x1有a^x2/a^x1=a^(x2-x1)，且x2-x1>0。",
+        "正底数指数的商法则。"
+      ],
+      [
+        "a>1时正指数幂大于1，于是a^x2>a^x1。",
+        "指数幂有序性。"
+      ],
+      [
+        "0<a<1时正指数幂小于1，于是a^x2<a^x1。",
+        "底数小于1的正指数幂范围。"
+      ]
+    ],
+    "examples": [
+      [
+        "比较2^2与2^3。",
+        "4<8。",
+        "底数2>1，指数增加使函数值增大。"
+      ],
+      [
+        "比较(1/2)^2与(1/2)^3。",
+        "1/4>1/8。",
+        "底数在0与1之间，函数严格递减。"
+      ]
+    ],
+    "counterexample": "a=1时1^x恒为1不严格单调；a=-2对任意实数指数并不定义实数值。",
+    "wrong": "所有正底数幂函数指数增加都增大。",
+    "why_wrong": "当0<a<1时严格递减，底数a=1又不是严格单调指数函数。",
+    "hints": [
+      "先确认底数合法并与1比较。",
+      "取x2>x1，观察两函数值的比值。",
+      "判断a^(x2-x1)大于还是小于1。"
+    ],
+    "near": "比较0.3^1与0.3^4。",
+    "far": "分析固定衰减比率的离散增长模型与连续指数延伸的单调性区别。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-08",
+    "loc": [
+      20,
+      31
+    ],
+    "title": "对数换底公式的非零分母",
+    "kind": "METHOD",
+    "statement": "若a,b>0且a≠1,b≠1,x>0，则log_a x=log_b x/log_b a；换底分母必须非零。",
+    "assumptions": [
+      "x>0",
+      "a,b为正且均不等于1"
+    ],
+    "notation": [
+      "log_a x",
+      "log_b a"
+    ],
+    "prerequisites": [
+      "指数和对数互逆",
+      "实数非零除法"
+    ],
+    "reasoning": [
+      [
+        "设y=log_a x，则a^y=x。",
+        "对数定义及底数a的合法性。"
+      ],
+      [
+        "两边取以b为底的对数，得y log_b a=log_b x。",
+        "对数幂法则在正实数域合法。"
+      ],
+      [
+        "因a≠1有log_b a≠0，除得所需换底表达式。",
+        "除法需证明分母非零。"
+      ]
+    ],
+    "examples": [
+      [
+        "求log_4 8。",
+        "3/2。",
+        "以2为底换底，log_2 8/log_2 4=3/2。"
+      ],
+      [
+        "求log_9 3。",
+        "1/2。",
+        "以3为底换底，log_3 3/log_3 9=1/2。"
+      ]
+    ],
+    "counterexample": "b=1时log_1不可定义；a=1时log_b a=0导致除零。",
+    "wrong": "不检查a,b,x就直接除以log_b a。",
+    "why_wrong": "对数的真数及底数受正域约束，换底分母的非零依赖a≠1。",
+    "hints": [
+      "列出真数和两个底数的合法范围。",
+      "将log_a x设为y，改写成指数形式。",
+      "换底后证明分母log_b a不等于零。"
+    ],
+    "near": "计算log_8 4。",
+    "far": "解释数值实现中换底公式为何在底数趋近1时可能数值不稳定。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-09",
+    "loc": [
+      21,
+      21
+    ],
+    "title": "单位圆弧度坐标与正切定义域",
+    "kind": "CONCEPT",
+    "statement": "在单位圆上角θ终边交点为(cosθ,sinθ)；tanθ=sinθ/cosθ仅在cosθ≠0时有定义。",
+    "assumptions": [
+      "θ为实数弧度角",
+      "tan的使用必须排除cosθ=0"
+    ],
+    "notation": [
+      "sinθ",
+      "cosθ",
+      "tanθ"
+    ],
+    "prerequisites": [
+      "直角坐标系",
+      "单位圆和除法"
+    ],
+    "reasoning": [
+      [
+        "单位圆半径为1，旋转角θ对应坐标(cosθ,sinθ)。",
+        "单位圆三角函数定义。"
+      ],
+      [
+        "坐标满足cos²θ+sin²θ=1。",
+        "圆方程x²+y²=1。"
+      ],
+      [
+        "定义tanθ为两坐标之商，需要分母cosθ非零。",
+        "实数除法合法性。"
+      ]
+    ],
+    "examples": [
+      [
+        "θ=0，求三角函数值。",
+        "sin0=0，cos0=1，tan0=0。",
+        "单位圆点(1,0)且分母为1。"
+      ],
+      [
+        "θ=π/2时tanθ是否存在？",
+        "不存在。",
+        "单位圆点(0,1)，cosθ=0。"
+      ]
+    ],
+    "counterexample": "sin(π/2)=1并不意味着tan(π/2)=1/0是无穷大实数；该正切没有定义。",
+    "wrong": "把所有角的正切都当作有实数值。",
+    "why_wrong": "定义中分母可为零，必须排除π/2+kπ。",
+    "hints": [
+      "先在单位圆上确定横坐标和纵坐标。",
+      "写出tan=sin/cos而非直接读图。",
+      "检查横坐标cos是否等于零再计算。"
+    ],
+    "near": "求tanπ及判断tan(3π/2)的定义性。",
+    "far": "解释图形渲染时为什么不能把正切的竖直渐近线连接成连续曲线。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-10",
+    "loc": [
+      22,
+      18
+    ],
+    "title": "三角周期模型的非退化参数",
+    "kind": "METHOD",
+    "statement": "对y=A sin(ωt+φ)+c，若A≠0且ω≠0，最小正周期为T=2π/|ω|；ω的量纲须与t一致。",
+    "assumptions": [
+      "时间变量t以固定单位计量",
+      "A≠0且ω≠0，正弦项非恒定"
+    ],
+    "notation": [
+      "T=2π/|ω|",
+      "ωt+φ"
+    ],
+    "prerequisites": [
+      "正弦函数周期",
+      "函数自变量量纲"
+    ],
+    "reasoning": [
+      [
+        "正弦自变量相差2π时函数值相同。",
+        "sin(α+2π)=sinα。"
+      ],
+      [
+        "令ω(t+T)+φ=(ωt+φ)+2π sign(ω)，得T=2π/|ω|。",
+        "解满足最小完整一周相位差的正时间长度。"
+      ],
+      [
+        "A与c的线性缩放平移不改变非退化正弦的最小周期。",
+        "振幅非零时正弦形状保持，竖直平移不改重复间隔。"
+      ]
+    ],
+    "examples": [
+      [
+        "y=sin(4t)，求最小正周期。",
+        "π/2。",
+        "ω=4，故T=2π/4。"
+      ],
+      [
+        "y=3cos(πt)-2，求最小正周期。",
+        "2。",
+        "余弦相位系数π，T=2π/π。"
+      ]
+    ],
+    "counterexample": "A=0时y=c为常数，任意正数都是周期，不存在最小正周期，不能硬套T公式。",
+    "wrong": "把ω直接当作周期T或忘记绝对值。",
+    "why_wrong": "ω是相位变化率（角频率），周期是相位累积2π所需时间。",
+    "hints": [
+      "先检查振幅和角频率是否为零。",
+      "观察相位什么时候增加一个完整的2π。",
+      "将相位增量方程解成正的时间间隔。"
+    ],
+    "near": "求y=2sin(-3t+1)的最小正周期。",
+    "far": "当采样时间单位由秒改成分钟时，说明ω的数值应如何变换。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-11",
+    "loc": [
+      32,
+      9
+    ],
+    "title": "简单随机抽样与等可能样本组",
+    "kind": "CONCEPT",
+    "statement": "容量为N的有限总体，不放回抽取n个不同个体的简单随机样本，要求每个n元素子集有相同被选中概率1/C(N,n)。",
+    "assumptions": [
+      "有限总体个体可区分",
+      "1≤n≤N且不放回、所有n子集等可能"
+    ],
+    "notation": [
+      "C(N,n)",
+      "P(i入样本)=n/N"
+    ],
+    "prerequisites": [
+      "排列组合",
+      "有限样本空间"
+    ],
+    "reasoning": [
+      [
+        "N个不同个体的n元素无序子集总数为C(N,n)。",
+        "组合计数。"
+      ],
+      [
+        "若所有子集等可能，每个子集概率是其总数的倒数。",
+        "有限等可能概率模型。"
+      ],
+      [
+        "固定个体i，包含它的子集数为C(N-1,n-1)，故入样本概率为n/N。",
+        "组合恒等式C(N-1,n-1)/C(N,n)=n/N。"
+      ]
+    ],
+    "examples": [
+      [
+        "N=4,n=2时有几种等可能样本？",
+        "6种，每一种概率1/6。",
+        "C(4,2)=6。"
+      ],
+      [
+        "N=5,n=2时某固定个体入样本概率？",
+        "2/5。",
+        "包含该个体的样本数C(4,1)=4，总数10。"
+      ]
+    ],
+    "counterexample": "每个人各有相同边缘入样概率并不足以保证每种样本组等可能，例如N=4,n=2，只选{1,2}或{3,4}各1/2。",
+    "wrong": "把每个个体入样概率相同等同于所有样本组合等概率。",
+    "why_wrong": "边缘概率相同不决定联合选取机制，简单随机抽样的组合等可能要求更强。",
+    "hints": [
+      "先确定抽样是有放回还是无放回。",
+      "枚举等可能的n元素子集而不是排列。",
+      "区分单个个体入样概率与整组样本的概率。"
+    ],
+    "near": "N=6,n=3时某个体被抽到的概率。",
+    "far": "设计抽样流程解释仅实现每人均等入样不能保证对成对样本无偏。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-12",
+    "loc": [
+      27,
+      4
+    ],
+    "title": "复数代数形式与相等判据",
+    "kind": "CONCEPT",
+    "statement": "任何复数z可唯一写成a+bi(a,b∈R，i²=-1)；a+bi=c+di当且仅当a=c且b=d。",
+    "assumptions": [
+      "a,b,c,d均为实数",
+      "使用i²=-1的复数域"
+    ],
+    "notation": [
+      "z=a+bi",
+      "Re z=a",
+      "Im z=b"
+    ],
+    "prerequisites": [
+      "实数与有序对",
+      "代数式运算"
+    ],
+    "reasoning": [
+      [
+        "将复数与实数有序对(a,b)对应，a和b分别表示实、虚部。",
+        "复数代数表示法。"
+      ],
+      [
+        "若a+bi=c+di，移项得(a-c)+(b-d)i=0。",
+        "复数加法及减法规则。"
+      ],
+      [
+        "零复数有实部和虚部都为零，故a=c及b=d；反向代回成立。",
+        "复数相等按有序对坐标逐项判定。"
+      ]
+    ],
+    "examples": [
+      [
+        "求z=2-3i的实部和虚部。",
+        "实部2，虚部-3。",
+        "系数-3是虚部而非-3i。"
+      ],
+      [
+        "若x+2i=3+yi，解实数x,y。",
+        "x=3，y=2。",
+        "分别比较实部与虚部。"
+      ]
+    ],
+    "counterexample": "0并非虚部非零的纯虚数；把实数0称作非零纯虚数会混淆对象。",
+    "wrong": "认为复数a+bi的虚部是bi。",
+    "why_wrong": "虚部是实数系数b；bi是虚数项，不是虚部的定义值。",
+    "hints": [
+      "将复数整理成实数加上i的实系数。",
+      "把对应的实部与虚部分别比较。",
+      "特别区分虚部b与虚数项bi。"
+    ],
+    "near": "比较1+(m-1)i与1+2i并求m。",
+    "far": "把复数视为二维向量，解释按坐标判断相等和分量独立的关系。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-13",
+    "loc": [
+      23,
+      2
+    ],
+    "title": "函数建模的观测范围与外推风险",
+    "kind": "METHOD",
+    "statement": "给定观测区间I及数据(x_i,y_i)，拟合函数f只对观测点残差r_i=y_i-f(x_i)作已知计算；超出I的预测没有仅凭拟合而保证正确的结论。",
+    "assumptions": [
+      "记录输入的物理意义、单位和观测区间",
+      "模型参数和拟合误差计算基于已给数据"
+    ],
+    "notation": [
+      "r_i=y_i-f(x_i)",
+      "I=[x_min,x_max]"
+    ],
+    "prerequisites": [
+      "函数对应关系",
+      "实数四则运算"
+    ],
+    "reasoning": [
+      [
+        "选择模型f后对每个已观察点计算f(x_i)。",
+        "模型定义及给定参数。"
+      ],
+      [
+        "计算残差r_i=y_i-f(x_i)，只能描述该观测点的偏差。",
+        "残差的定义。"
+      ],
+      [
+        "x超出观测区间时，y未知；仅用区间内残差不能逻辑证明外推误差为零。",
+        "有限观测不足以唯一决定区间外函数规律。"
+      ]
+    ],
+    "examples": [
+      [
+        "数据(0,1),(1,3),(2,5)，拟合f(x)=2x+1，求残差。",
+        "三个残差都是0。",
+        "逐点代入f(0)=1,f(1)=3,f(2)=5。"
+      ],
+      [
+        "按同模型预测x=3时值是多少？",
+        "模型预测7，但不是已证实观测值。",
+        "代入f(3)=7；x=3不属于已观测0到2范围。"
+      ]
+    ],
+    "counterexample": "g(x)=2x+1+x(x-1)(x-2)在x=0,1,2与f(x)=2x+1完全相同，却在x=3预测13而不是7。",
+    "wrong": "因三个样本残差为0就宣称模型对全部实数精确成立。",
+    "why_wrong": "有限点拟合不能证明区间外函数结构，其他函数可与有限样本完全吻合。",
+    "hints": [
+      "写出数据实际覆盖的自变量区间。",
+      "逐点计算残差但不要混同真实误差总体。",
+      "构造另一个在采样点相同、区间外不同的模型反例。"
+    ],
+    "near": "给定f(x)=x²与两组观测，计算残差并指出外推点。",
+    "far": "解释城市人口短期线性回归为何无法单独证明远期指数增长或饱和趋势。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB64-DEEP-14",
+    "loc": [
+      28,
+      16
+    ],
+    "title": "直线平面平行判定中的包含例外",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "若直线l不在平面α内，且l平行于平面α内的一条直线m，则l与α无公共点，即l∥α。",
+    "assumptions": [
+      "m⊂α且l∥m，为两条不同的平行直线",
+      "l不包含于α（否则只是平面内平行另一线）"
+    ],
+    "notation": [
+      "l∥m",
+      "m⊂α",
+      "l∥α"
+    ],
+    "prerequisites": [
+      "空间直线位置关系",
+      "两相交平面交线性质"
+    ],
+    "reasoning": [
+      [
+        "两条不同平行直线l,m确定一个平面β。",
+        "平行直线的共面性质。"
+      ],
+      [
+        "若l与α相交于P，则P∈β∩α；因m⊂β∩α且β≠α，交线只能是m。",
+        "两个不同相交平面的交线唯一。"
+      ],
+      [
+        "于是P在l与m上，与l∥m的无公共点性质矛盾，所以l∩α=∅。",
+        "反证法与平行直线定义。"
+      ]
+    ],
+    "examples": [
+      [
+        "α为z=0平面，m={(t,0,0)}，l={(t,0,1)}，判断。",
+        "l∥α。",
+        "l与m方向相同，l所有点z=1不在α。"
+      ],
+      [
+        "α为z=0，m={(0,t,0)}，l={(0,t,2)}。",
+        "l∥α。",
+        "沿y方向相同且l的z恒为2，故无交点。"
+      ]
+    ],
+    "counterexample": "l和m都位于α且彼此平行时，l并不与α无交点，不能省略l不包含于α的前提。",
+    "wrong": "只知道l平行于α里某直线，就立刻判定l∥α。",
+    "why_wrong": "若l本身在α内，仍可能平行于α内m，但l⊂α而非无公共点。",
+    "hints": [
+      "先核对已知平面内的直线m。",
+      "检查目标直线l是否在平面α内。",
+      "将l、m确定的平面与α取交，用反证法排除交点。"
+    ],
+    "near": "给定z=0及z=3中的两条同方向平行线，判定线面关系。",
+    "far": "解释工程CAD中俯视投影平行不等于空间实体平行于工作平面。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]
