@@ -1,0 +1,79 @@
+{
+  "auto_merge_permitted": false,
+  "cross_page_overlap_candidates": 6,
+  "math_equivalence_certified": 0,
+  "nonoverlap_pairs_not_established_equivalent": true,
+  "rows": [
+    {
+      "editorial_bigram_overlap": 0.2941,
+      "left": "KB63-P019-L013-C01",
+      "left_page": 19,
+      "merge_permitted": false,
+      "requires_full_clauses": true,
+      "review_status": "HYPOTHESIS_NOT_MATH_EQUIVALENCE",
+      "right": "KB63-P020-L034-C01",
+      "right_page": 20,
+      "shared_failure_note": false
+    },
+    {
+      "editorial_bigram_overlap": 0.2353,
+      "left": "KB63-P019-L013-C01",
+      "left_page": 19,
+      "merge_permitted": false,
+      "requires_full_clauses": true,
+      "review_status": "HYPOTHESIS_NOT_MATH_EQUIVALENCE",
+      "right": "KB63-P020-L031-C01",
+      "right_page": 20,
+      "shared_failure_note": false
+    },
+    {
+      "editorial_bigram_overlap": 0.2,
+      "left": "KB63-P019-L021-C01",
+      "left_page": 19,
+      "merge_permitted": false,
+      "requires_full_clauses": true,
+      "review_status": "HYPOTHESIS_NOT_MATH_EQUIVALENCE",
+      "right": "KB63-P020-L034-C02",
+      "right_page": 20,
+      "shared_failure_note": false
+    },
+    {
+      "editorial_bigram_overlap": 0.1739,
+      "left": "KB63-P016-L026-C02",
+      "left_page": 16,
+      "merge_permitted": false,
+      "requires_full_clauses": true,
+      "review_status": "HYPOTHESIS_NOT_MATH_EQUIVALENCE",
+      "right": "KB63-P022-L012-C02",
+      "right_page": 22,
+      "shared_failure_note": false
+    },
+    {
+      "editorial_bigram_overlap": 0.1579,
+      "left": "KB63-P016-L024-C02",
+      "left_page": 16,
+      "merge_permitted": false,
+      "requires_full_clauses": true,
+      "review_status": "HYPOTHESIS_NOT_MATH_EQUIVALENCE",
+      "right": "KB63-P017-L012-C01",
+      "right_page": 17,
+      "shared_failure_note": false
+    },
+    {
+      "editorial_bigram_overlap": 0.15,
+      "left": "KB63-P016-L026-C02",
+      "left_page": 16,
+      "merge_permitted": false,
+      "requires_full_clauses": true,
+      "review_status": "HYPOTHESIS_NOT_MATH_EQUIVALENCE",
+      "right": "KB63-P017-L012-C01",
+      "right_page": 17,
+      "shared_failure_note": false
+    }
+  ],
+  "same_parent_pairs_excluded": 31,
+  "same_terms_do_not_prove_math_equivalence": true,
+  "schema_version": "kb66-lexical-overlap-review-only-v1",
+  "source_candidate_count": 62,
+  "total_unordered_candidate_pairs": 1891
+}
