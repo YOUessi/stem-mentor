@@ -1,0 +1,590 @@
+[
+  {
+    "assessment_id": "KB59-ASSESS-01",
+    "source_requirement_id": "KB59-C-P041-S002",
+    "topic": "数列通项与部分和",
+    "question": "某方案第1期支付12元，以后每期比前一期多3元，连续6期付款。写出第n期费用和前n期总额，并用相邻部分和检查。",
+    "assumptions": "期数n为正整数；保持固定增量3元，费用同单位。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "由固定相邻差得到a_n=12+3(n-1)",
+        "reason": "用等差数列定义和从第1期开始的索引。"
+      },
+      {
+        "index": 2,
+        "claim": "使用配对求和S_n=n[24+3(n-1)]/2，S_6=117",
+        "reason": "配对首末项的和恒为a_1+a_n，6项分成3对。"
+      },
+      {
+        "index": 3,
+        "claim": "a_6=27；由S_6-S_5=117-90=27反向检验",
+        "reason": "前n项和相减恰消去前n-1项。"
+      }
+    ],
+    "typical_wrong_method": "误把第n期当成12+3n，使第1期变15元。",
+    "counterexample_or_failure": "第1期代n=1应为12元，错误式从起点就不成立。",
+    "hint_ladder": [
+      "先判断相邻两期之间变化了多少。",
+      "写出第1期与第n期的对应关系。",
+      "用首末配对或S_n-S_{n-1}检查。"
+    ],
+    "near_transfer": "改为首项9、公差-1，计算前5项。",
+    "far_transfer": "对比每期乘1.1的复利型支出，解释为何不再是等差模型。",
+    "rubric": "核对模型、n域、公式、算值和单位。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-02",
+    "source_requirement_id": "KB59-C-P041-S003",
+    "topic": "导数的局部变化率",
+    "question": "工件的理想面积模型为A(t)=(2t+1)^2，求t=3时瞬时变化率，并与从t=3到t=4的平均变化率对比。",
+    "assumptions": "t取可导的实数区间；A值非负，模型单位一致。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "展开A(t)=4t²+4t+1",
+        "reason": "乘法展开与多项式恒等式。"
+      },
+      {
+        "index": 2,
+        "claim": "按求导规则A'(t)=8t+4，因此A'(3)=28",
+        "reason": "多项式处处可导，复合求导也给出2(2t+1)·2。"
+      },
+      {
+        "index": 3,
+        "claim": "平均变化率[A(4)-A(3)]/(4-3)=(81-49)=32",
+        "reason": "差商定义；平均值32不等于指定时刻的导数28。"
+      }
+    ],
+    "typical_wrong_method": "误漏内层导数得到14。",
+    "counterexample_or_failure": "复合函数内层2t+1的导数为2，漏乘导致结果减半。",
+    "hint_ladder": [
+      "先写出平均变化率的差商。",
+      "用乘法展开避免遗漏复合规则。",
+      "明确瞬时变化率是指定点的导数。"
+    ],
+    "near_transfer": "把模型改为(3t-1)²，在t=2处求变化率。",
+    "far_transfer": "讨论实际采样测量误差为什么不能靠一个有限差商认证真实瞬时变化率。",
+    "rubric": "区分导数/差商/单位及模型边界。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-03",
+    "source_requirement_id": "KB59-C-P041-S004",
+    "topic": "模型辨识与解释能力",
+    "question": "某现象四次连续观测值为5、8、11、14；另一现象为5、10、20、40。判断分别适合等差还是等比的有限数据模型，并说明不可证的外推内容。",
+    "assumptions": "仅给四项观测，没有完整未来过程公理。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "第一组相邻差均为3，可建离散等差候选模型a_n=5+3(n-1)",
+        "reason": "逐项计算三个有限相邻差，观察到有限样本恒为3。"
+      },
+      {
+        "index": 2,
+        "claim": "第二组相邻比均为2且前项非零，可建等比候选模型b_n=5·2^(n-1)",
+        "reason": "有限倍率检查且避开零分母。"
+      },
+      {
+        "index": 3,
+        "claim": "两组模型都只解释已知四点，不能由四点唯一证明第5项必然遵守同律",
+        "reason": "构造在第五项改写数值的另一过程同样匹配前四项。"
+      }
+    ],
+    "typical_wrong_method": "把拟合的四点规律当作已证明的全时段定理。",
+    "counterexample_or_failure": "例如数列5、8、11、14、999也满足前四期数据但第五期不同。",
+    "hint_ladder": [
+      "先分别计算三组连续相邻项的差并记录。",
+      "如果差不稳定再比较非零项的比值。",
+      "说明有限观测与全域模型假设不同。"
+    ],
+    "near_transfer": "观察7、12、17、22，拟合前四项。",
+    "far_transfer": "研究温度变化是否适合指数模型，设计额外采样验证。",
+    "rubric": "必须给出两种模型、有限证据与不保证外推的说明。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-04",
+    "source_requirement_id": "KB59-C-P045-S005",
+    "topic": "空间向量基底分解",
+    "question": "取基向量u=(1,0,0)、v=(1,1,0)、w=(0,0,2)，把点位移(5,3,4)唯一表示为αu+βv+γw。",
+    "assumptions": "三个基向量必须线性无关，坐标系和单位相同。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "基向量作为列组成矩阵的行列式为2，不为0",
+        "reason": "行列式非零蕴含三个向量张成空间且分解唯一。"
+      },
+      {
+        "index": 2,
+        "claim": "坐标方程为α+β=5，β=3，2γ=4",
+        "reason": "把向量等式按同一坐标基底逐个分量相等进行比较。"
+      },
+      {
+        "index": 3,
+        "claim": "解得(α,β,γ)=(2,3,2)，回代重构(5,3,4)",
+        "reason": "精确线性方程求解与反向代入。"
+      }
+    ],
+    "typical_wrong_method": "直接把(5,3,4)当成该非正交基下的系数。",
+    "counterexample_or_failure": "若系数(5,3,4)，重构为(8,3,8)，不等于目标向量。",
+    "hint_ladder": [
+      "先检查三个向量能否作为基。",
+      "将未知系数写成三个分量方程。",
+      "把得到的系数带回原向量线性组合检验。"
+    ],
+    "near_transfer": "保持基底，分解(2,1,6)。",
+    "far_transfer": "把位移向量换成真实三维导航路径，解释基底选择与距离单位。",
+    "rubric": "行列式、系数、重建和物理解释均正确。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-05",
+    "source_requirement_id": "KB59-C-P045-S006",
+    "topic": "解析几何正逆向解释",
+    "question": "圆x²+y²=25与直线y=3相交于哪些平面点？先用代数求解，再用几何意义检查。",
+    "assumptions": "实数平面坐标；半径为5，直线为水平线。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "代入y=3得到x²+9=25，故x²=16",
+        "reason": "两个原方程同时成立是交点的必要条件，所以可以代入消元。"
+      },
+      {
+        "index": 2,
+        "claim": "两个交点为(4,3)和(-4,3)",
+        "reason": "由平方等式在实数域求根，必须分别考虑正负两种。"
+      },
+      {
+        "index": 3,
+        "claim": "两点到原点的距离均为5且纵坐标为3，符合几何交点定义",
+        "reason": "回代圆方程和直线方程，核对必要与充分条件。"
+      }
+    ],
+    "typical_wrong_method": "仅取x=4而漏掉负根。",
+    "counterexample_or_failure": "(-4,3)也同时满足两个方程，删去会遗漏交点。",
+    "hint_ladder": [
+      "先将直线上的纵坐标代入圆的原方程。",
+      "求平方根时考虑两种符号。",
+      "逐点回代两个原方程。"
+    ],
+    "near_transfer": "改为y=5，解释切线只有一个公共点。",
+    "far_transfer": "解释圆与y=6没有公共点时现实测量模型是否需要误差范围。",
+    "rubric": "交点数量和反向几何解释均完整。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-06",
+    "source_requirement_id": "KB59-C-P046-S001",
+    "topic": "椭圆焦点参数与退化条件",
+    "question": "两焦点坐标为(-3,0)、(3,0)，到两焦点距离之和固定为10。写出轨迹标准方程并核对必要条件。",
+    "assumptions": "两焦点不同；距和大于两焦点间距，轨迹不是退化线段。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "焦距2c=6得c=3；距和2a=10得a=5",
+        "reason": "椭圆焦点定义的参数对应。"
+      },
+      {
+        "index": 2,
+        "claim": "b²=a²-c²=25-9=16>0，得x²/25+y²/16=1",
+        "reason": "由焦点参数关系a²=b²+c²和正半轴长度得到合法标准方程。"
+      },
+      {
+        "index": 3,
+        "claim": "验证a>c>=0，且顶点(5,0)到两焦点距离为8与2，之和10",
+        "reason": "检验几何原定义而非只看二次方程。"
+      }
+    ],
+    "typical_wrong_method": "误用b²=c²-a²得到负分母。",
+    "counterexample_or_failure": "椭圆要求a²=b²+c²，正确b²为16；错误参数根本不表示椭圆。",
+    "hint_ladder": [
+      "先用焦点距离之和求出椭圆参数2a。",
+      "再用两个焦点的坐标求出焦距参数c。",
+      "用a²=b²+c²并检查b²>0。"
+    ],
+    "near_transfer": "距和改为12，求新椭圆参数。",
+    "far_transfer": "设计测距误差下焦点坐标扰动的模型适用性检查。",
+    "rubric": "必须展示焦点定义、参数与有效性验证。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-07",
+    "source_requirement_id": "KB59-C-P046-S002",
+    "topic": "向量条件与垂直判断",
+    "question": "给定三维向量u=(2,-1,2)、v=(1,4,1)，证明它们在通常欧氏空间中垂直，并说明何时不能用零向量判断夹角。",
+    "assumptions": "欧氏标准数量积；两向量均非零。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "计算u·v=2·1+(-1)·4+2·1=0",
+        "reason": "使用标准欧氏空间内积的逐坐标乘积求和定义。"
+      },
+      {
+        "index": 2,
+        "claim": "||u||=3，||v||=√18均不为0",
+        "reason": "三维向量长度计算及非零条件。"
+      },
+      {
+        "index": 3,
+        "claim": "由cosθ=(u·v)/(|u||v|)=0得到夹角θ=90度",
+        "reason": "余弦定义需要非零向量，并选取[0,π]夹角。"
+      }
+    ],
+    "typical_wrong_method": "仅由0·v=0宣称零向量与任意向量成90度。",
+    "counterexample_or_failure": "零向量长度为0无法作夹角余弦分母，通常夹角未定义。",
+    "hint_ladder": [
+      "先计算两个三维向量的数量积并检查是否为零。",
+      "别忘了两个向量长度。",
+      "使用夹角公式时列出分母非零。"
+    ],
+    "near_transfer": "构造一个与(1,2,3)正交且非零的整数向量。",
+    "far_transfer": "在空间平面法向量选择中说明零向量为何不能作有效法向量。",
+    "rubric": "代数运算及非零条件同时达标。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-08",
+    "source_requirement_id": "KB59-C-P049-S004",
+    "topic": "分类加法与分步乘法",
+    "question": "某活动有3种主食与2种饮料，每次必须各选一种；另有独立的4种只领礼券的参加方式（不选食物）。总共有多少种互斥参加方案？",
+    "assumptions": "食物方案与只领礼券方案互斥，饮料和主食的配对均可行。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "食物方案分两步选择，共3·2=6种",
+        "reason": "独立合法步骤的乘法计数原则。"
+      },
+      {
+        "index": 2,
+        "claim": "礼券方式有4种，且不与食物方案重合",
+        "reason": "领券与餐食方案按题意互不重叠，因此归入独立类别。"
+      },
+      {
+        "index": 3,
+        "claim": "把互斥的餐食与只领礼券两类相加，全部可行方案数为6+4=10。",
+        "reason": "两类互不重叠且已穷尽全部允许参加形式，适用加法计数原理。"
+      }
+    ],
+    "typical_wrong_method": "把所有数直接乘为3·2·4=24。",
+    "counterexample_or_failure": "礼券不是每一份餐食都要附加的第三步，因此24重复设定了不存在的搭配。",
+    "hint_ladder": [
+      "先把互斥且穷尽的参加方式划分为两大类。",
+      "餐食类内部有连续选择步骤。",
+      "最后再合并互斥类别的计数。"
+    ],
+    "near_transfer": "将主食改5种、饮料改3种、礼券仍4种。",
+    "far_transfer": "规划校园活动志愿者班次与领取方式，设计无重无漏方案集合。",
+    "rubric": "说明互斥完整和每步合法选择的数目。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-09",
+    "source_requirement_id": "KB59-C-P049-S005",
+    "topic": "排列组合与二项计数",
+    "question": "从5名不同学生中选2人参赛（不分角色）与选队长和副队长（角色不同），各多少种？再给出(a+b)^4的a²b²系数。",
+    "assumptions": "5人互异且不重复选人；二项式指数是非负整数。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "不分角色有组合C(5,2)=5·4/2=10",
+        "reason": "将每个2人有序组按2!消除重复计数。"
+      },
+      {
+        "index": 2,
+        "claim": "不同角色有排列P(5,2)=5·4=20",
+        "reason": "先选队长再选副队长的两步计数。"
+      },
+      {
+        "index": 3,
+        "claim": "从4因子中选2个产生b，系数C(4,2)=6",
+        "reason": "二项展开中每一项的选择子集计数。"
+      }
+    ],
+    "typical_wrong_method": "混同排列与组合，均写为20。",
+    "counterexample_or_failure": "同一选手组甲乙在不分角色时只有1组，但排列甲乙与乙甲是两种角色分配。",
+    "hint_ladder": [
+      "先确认次序是否重要。",
+      "列出选择后能否交换而产生新结果。",
+      "二项系数数的是指定因子的选择集合。"
+    ],
+    "near_transfer": "从6人选3人，不分角色与区分三角色分别计数。",
+    "far_transfer": "设计随机分组与职务分配的概率样本空间并检验等可能假设。",
+    "rubric": "公式、取值域和区分次序的解释正确。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-10",
+    "source_requirement_id": "KB59-C-P049-S006",
+    "topic": "无放回超几何与独立性",
+    "question": "袋中4红6蓝共10球，无放回抽3球，求恰有2红的概率；与每次放回抽取的结果比较。",
+    "assumptions": "每个3球子集等可能，第一情境无放回，第二情境独立同分布放回。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "无放回样本数C(10,3)=120，恰2红有C(4,2)C(6,1)=36种",
+        "reason": "超几何组合计数且抽样子集等可能。"
+      },
+      {
+        "index": 2,
+        "claim": "无放回概率36/120=3/10",
+        "reason": "有利情形数除以总情形数。"
+      },
+      {
+        "index": 3,
+        "claim": "放回抽取概率C(3,2)(2/5)^2(3/5)=36/125，与3/10不同",
+        "reason": "三次伯努利独立假设成立，二项分布公式可用。"
+      }
+    ],
+    "typical_wrong_method": "把无放回看成3次成功率恒2/5的独立试验。",
+    "counterexample_or_failure": "首次取红后袋内红球占比变成3/9，抽样概率发生变化。",
+    "hint_ladder": [
+      "先辨别抽取后是否放回。",
+      "用组合数描述无放回的子集数。",
+      "有放回时再用二项分布对照。"
+    ],
+    "near_transfer": "将袋中红球改为5个且仍抽3球，计算恰2红概率。",
+    "far_transfer": "分析抽样容量接近总体时为何二项近似可能较差。",
+    "rubric": "比较两种实验前提、组合数及准确有理结果。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-11",
+    "source_requirement_id": "KB59-C-P049-S007",
+    "topic": "相关回归与列联表推断",
+    "question": "观察成对样本(1,2),(2,4),(3,6)，求Pearson相关系数及最小二乘回归线；另给2×2计数表[[10,20],[20,10]]，求Pearson卡方统计量。",
+    "assumptions": "成对数据配对正确，x与y样本变异非零；列联表每行列边际数正。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "成对数据满足y=2x且双方变异不为0，因此r=1",
+        "reason": "Pearson协方差标准化，正比例关系下达到正一。"
+      },
+      {
+        "index": 2,
+        "claim": "最小二乘斜率2截距0，拟合线为ŷ=2x",
+        "reason": "斜率Sxy/Sxx且Sxx>0，截距均值关系。"
+      },
+      {
+        "index": 3,
+        "claim": "每格独立期望频数15，卡方和为4·25/15=20/3",
+        "reason": "利用行列边际计算期望频数与Σ(O-E)²/E。"
+      }
+    ],
+    "typical_wrong_method": "把r=1宣称x必然造成y变化，或把样本卡方统计值当作总体独立性的逻辑证明。",
+    "counterexample_or_failure": "观测样本完全共线仍可由第三共同因素产生；显著性检验给统计证据而非逻辑必然。",
+    "hint_ladder": [
+      "先核查两个变量是否有非零离差。",
+      "拟合线由Sxy和Sxx决定。",
+      "列联表先算独立假设的期望频数。"
+    ],
+    "near_transfer": "让y依次为6、4、2，判断r符号并求回归线。",
+    "far_transfer": "分析观测范围外的回归预测是否有可信证据及所需抽样假设。",
+    "rubric": "完整区分样本统计、模型与因果判断。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-12",
+    "source_requirement_id": "KB59-C-P050-S001",
+    "topic": "数据分析与建模解释",
+    "question": "观察成本C(t)=3t+5在t=2、4、6的数值。恢复直线模型，预测t=5成本，并说明t=100的外推是否已被这三点证明。",
+    "assumptions": "暂只知三个准确观测点，t为非负且成本单位一致。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "从(2,11),(4,17)求斜率(17-11)/(4-2)=3",
+        "reason": "两点异横坐标确定候选仿射关系。"
+      },
+      {
+        "index": 2,
+        "claim": "截距为11-3·2=5，t=5时C(5)=20",
+        "reason": "线性插值按候选模型计算。"
+      },
+      {
+        "index": 3,
+        "claim": "t=100的候选外推为305但三个点不足以证明现实过程在100仍遵循同律",
+        "reason": "构造在采样点均为0的附加项(t-2)(t-4)(t-6)改变远端值。"
+      }
+    ],
+    "typical_wrong_method": "把三点拟合准确当作所有区间真实函数被证明。",
+    "counterexample_or_failure": "函数3t+5+(t-2)(t-4)(t-6)在三观测点相同，但t=100时差异很大。",
+    "hint_ladder": [
+      "先画出三个点并判断是否共线。",
+      "从两点坐标计算候选直线的斜率和截距。",
+      "区分区间内插值与远离数据的外推。"
+    ],
+    "near_transfer": "给定(1,7),(3,11),(5,15)恢复模型。",
+    "far_transfer": "为水电使用量设计收集新观测验证预测的实验方案。",
+    "rubric": "运算、解释、模型可证范围三者分别评价。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-13",
+    "source_requirement_id": "KB59-C-P050-S002",
+    "topic": "选择性必修探究项目设计",
+    "question": "学校打算研究午间用水量变化。为两周研究拟定变量、样本、测量过程、模型选择、验证和交付物，并指出可能无法识别的因果因素。",
+    "assumptions": "需匿名合规汇总用水，明确设备误差及学校作息变化；不采集个人学生数据。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "定义每日中午用水量L与日期/天气/活动状况并写单位，预先设计14天相同采集窗口",
+        "reason": "建模先确定变量及观测条件，避免不同计量尺度混淆。"
+      },
+      {
+        "index": 2,
+        "claim": "用预先声明的候选模型或汇总统计描述数据，并保留异常值、缺失值及采样过程",
+        "reason": "有限数据拟合不保证机制正确，记录质量影响模型解释。"
+      },
+      {
+        "index": 3,
+        "claim": "对最后若干天作留出检验，报告预测误差、限制与数据来源，并提交研究过程记录",
+        "reason": "用未用于拟合的数据评估误差，结论仅对研究条件负责。"
+      }
+    ],
+    "typical_wrong_method": "用两周相关性直接断言某种校园活动造成用水上升。",
+    "counterexample_or_failure": "天气、人数或设备故障等未控因素可能同时影响活动与用水，相关不蕴含因果。",
+    "hint_ladder": [
+      "先列研究问题与单位。",
+      "设计可重复测量及不泄漏个人信息的采样方案。",
+      "保留验证集和研究局限说明。"
+    ],
+    "near_transfer": "改为研究图书馆能源消耗，设计独立变量与匿名记录。",
+    "far_transfer": "讨论跨校区比较时怎样处理规模、天气等混杂因素。",
+    "rubric": "评分包括完整研究流程、数据治理、模型条件、验证和可信解释。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  },
+  {
+    "assessment_id": "KB59-ASSESS-14",
+    "source_requirement_id": "KB59-C-P050-S005",
+    "topic": "探究活动成果审查",
+    "question": "某研究组沿用上学期的线性模型，只把原报告改名后提交且没有新数据或方法。是否满足本阶段深入研究要求？请提出可核验改进。",
+    "assumptions": "研究课题可延续，但必须披露与先前工作差异，保留证据与独立审核。",
+    "reasoning_steps": [
+      {
+        "index": 1,
+        "claim": "对比两份报告的研究问题、数据与方法，发现只有名称变化",
+        "reason": "研究产物需要明确新增问题、研究路径或结果，单纯改名没有新增贡献。"
+      },
+      {
+        "index": 2,
+        "claim": "提出独立验证集、不同假设比较或新变量测量的研究方案，并写可观察指标",
+        "reason": "新增方法必须使结果可证伪或可复查，而非只增加华丽文字。"
+      },
+      {
+        "index": 3,
+        "claim": "建立数据来源、误差分析、版本差异与失败例记录，提交教师审核",
+        "reason": "课程活动考核是过程加产物的综合证据，不能由AI自动批准。"
+      }
+    ],
+    "typical_wrong_method": "把多页排版与增加图表数量当成研究创新性证据。",
+    "counterexample_or_failure": "新图表可能只是已有数据的重复可视化，缺少新方法或新问题不构成有效深化。",
+    "hint_ladder": [
+      "列出上一阶段已经完成的内容。",
+      "指出新报告真正新增了什么。",
+      "写能由第三方核验的过程与成果证据。"
+    ],
+    "near_transfer": "为原课题增加一项外部留出验证并说明报告结构。",
+    "far_transfer": "研究不同模型在不同地点或季节的适用边界与迁移性。",
+    "rubric": "必须有版本差异、研究完整性与真实教研审核。",
+    "approval_state": "REVIEW_PENDING",
+    "visibility": "TEACHER_ONLY",
+    "formal_proof_certified": false,
+    "student_answer_verified": false,
+    "real_teacher_signature": null,
+    "student_publishable": false,
+    "source_license": "ORIGINAL_EDITORIAL_WORK",
+    "general_math_certificate": "NOT_FORMALLY_CERTIFIED"
+  }
+]
