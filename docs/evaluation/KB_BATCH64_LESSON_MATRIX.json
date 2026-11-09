@@ -1,0 +1,305 @@
+{
+  "authored_counterexamples": 14,
+  "certified_general_proofs": 0,
+  "confirmed_curriculum_coverage_atoms": 0,
+  "draft_count": 14,
+  "hint_tiers": 42,
+  "justified_steps": 42,
+  "manuscript_sha256": "2792ae2f214a8277e67c3a7a9243cd85545061fd16388b0f24dcd74603397873",
+  "official_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "pending_teacher_reviews": 14,
+  "previous_batch_proposals_sha256": "697e737817356650302f15f496d41a8ac9e993a63baf86f38539fcb336b427ec",
+  "rows": [
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P015-L010-C01",
+        "KB63-P015-L010-C02"
+      ],
+      "lesson_id": "KB64-DEEP-01",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "4498250c58f78733eaec3be6bf6713a30396cf2ea3fc940014569b528e2f4eab",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P015-L010",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P015-L015-C01",
+        "KB63-P015-L015-C02"
+      ],
+      "lesson_id": "KB64-DEEP-02",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "d6b4659b401e6393815fd5ef18b965677a2d9300521049972d60a7f9b994cefc",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P015-L015",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P015-L017-C01",
+        "KB63-P015-L017-C02"
+      ],
+      "lesson_id": "KB64-DEEP-03",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "bec52c9e9c364ccaec704c4a032b08dbb75fa25a8272c2546c0e55399e5ad577",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P015-L017",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P016-L007-C01",
+        "KB63-P016-L007-C02"
+      ],
+      "lesson_id": "KB64-DEEP-04",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "b4885ca7a81590c162048d87d31fa7c5f375c1a8f0c559b8ddeaae3aa46514e2",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P016-L007",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P016-L026-C01",
+        "KB63-P016-L026-C02"
+      ],
+      "lesson_id": "KB64-DEEP-05",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "a0318834ddcdad64853dbca750ed56540a7924a952e608a2f99b503f99db92b8",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P016-L026",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P019-L013-C01",
+        "KB63-P019-L013-C02"
+      ],
+      "lesson_id": "KB64-DEEP-06",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "97b056feef8dabeee243894b2cced7baa623765e5fc30d8a4449e18eeca70157",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P019-L013",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P020-L019-C01",
+        "KB63-P020-L019-C02"
+      ],
+      "lesson_id": "KB64-DEEP-07",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "28faacd3c045189272b8242010fcc38f61ae9e58ba0a97f806063c1a086b5630",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P020-L019",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P020-L031-C01",
+        "KB63-P020-L031-C02"
+      ],
+      "lesson_id": "KB64-DEEP-08",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "85de16851cf867ae767a2a4654b13473773af177547669b3300b26fc3ae751b6",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P020-L031",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P021-L021-C01",
+        "KB63-P021-L021-C02"
+      ],
+      "lesson_id": "KB64-DEEP-09",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "24fdd809049cb13c91a4efe1dfb76a45ff8873c9f585d2c668b919038d77dc00",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P021-L021",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P022-L018-C01",
+        "KB63-P022-L018-C02"
+      ],
+      "lesson_id": "KB64-DEEP-10",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "8099166e006f105c84a3c5e67a5b7559327f24b03c1419e0715e2afda9483c21",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P022-L018",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P032-L009-C01",
+        "KB63-P032-L009-C02"
+      ],
+      "lesson_id": "KB64-DEEP-11",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "67cfac1ace524ce488d4fb82391de12a01a864b3dc65bb7facbe02e2645a2f1c",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P032-L009",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P027-L004-C01",
+        "KB63-P027-L004-C02"
+      ],
+      "lesson_id": "KB64-DEEP-12",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "5cfcf84529d63f7c9d34d1435953a43dc9e4cf42d991b099f09f87c7fce6bb68",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P027-L004",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P023-L002-C01",
+        "KB63-P023-L002-C02"
+      ],
+      "lesson_id": "KB64-DEEP-13",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "539ef70b0e48683578f0c589c8ff99e65badcc6a991545741ff95c98703e619f",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P023-L002",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    },
+    {
+      "certified_general_proof": false,
+      "counterexample": true,
+      "hypothesized_atom_ids": [
+        "KB63-P028-L016-C01",
+        "KB63-P028-L016-C02"
+      ],
+      "lesson_id": "KB64-DEEP-14",
+      "near_far": true,
+      "official_membership_confirmed": false,
+      "original_provenance_sha256": "fdefc06f3ba4f3b0747d269e1d4e37afea7e3113f1f7e0c6b979f481b3253668",
+      "real_teacher_approved": false,
+      "source_anchor_id": "KB61-P028-L016",
+      "source_full_clause_reviewed": false,
+      "step_justifications": 3,
+      "student_visible": false,
+      "teacher_examples": 2,
+      "three_hints": true,
+      "unresolved_math_equivalence": true
+    }
+  ],
+  "schema_version": "kb64-teacher-only-manuscript-v1",
+  "student_published": 0,
+  "teacher_example_count": 28
+}
