@@ -102,6 +102,7 @@ jobs:
       - run: python scripts/author_kb_batch59_selective_assessments.py --check
       - run: python scripts/build_kb_batch60_elective_source_review.py --check
       - run: python scripts/build_kb_batch61_requirement_anchors.py --check
+      - run: python scripts/build_kb_batch62_anchor_triage.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
