@@ -1,0 +1,103 @@
+{
+  "complete_editorial_drafts": 7,
+  "official_clause_certified": 0,
+  "official_denominator": null,
+  "printed_page": 35,
+  "records": [
+    {
+      "candidate_id": "KB51-C-P035-V001",
+      "candidate_kind": "METHOD",
+      "earlier_visual_render_sha256": "bfcf80effdcf8289eb4eb1bc006bdad55476d0872a14c43a5ebff1232548b435",
+      "internal_draft_full_fields": true,
+      "lesson_id": "KB71-MODEL-01",
+      "official_atomic_membership": "UNDETERMINED",
+      "official_clause_review": "NOT_DONE",
+      "source_document_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_page": 35,
+      "student_publishable": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "KB51-C-P035-V002",
+      "candidate_kind": "METHOD",
+      "earlier_visual_render_sha256": "bfcf80effdcf8289eb4eb1bc006bdad55476d0872a14c43a5ebff1232548b435",
+      "internal_draft_full_fields": true,
+      "lesson_id": "KB71-MODEL-02",
+      "official_atomic_membership": "UNDETERMINED",
+      "official_clause_review": "NOT_DONE",
+      "source_document_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_page": 35,
+      "student_publishable": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "KB51-C-P035-V003",
+      "candidate_kind": "METHOD",
+      "earlier_visual_render_sha256": "bfcf80effdcf8289eb4eb1bc006bdad55476d0872a14c43a5ebff1232548b435",
+      "internal_draft_full_fields": true,
+      "lesson_id": "KB71-MODEL-03",
+      "official_atomic_membership": "UNDETERMINED",
+      "official_clause_review": "NOT_DONE",
+      "source_document_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_page": 35,
+      "student_publishable": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "KB51-C-P035-V004",
+      "candidate_kind": "METHOD",
+      "earlier_visual_render_sha256": "bfcf80effdcf8289eb4eb1bc006bdad55476d0872a14c43a5ebff1232548b435",
+      "internal_draft_full_fields": true,
+      "lesson_id": "KB71-MODEL-04",
+      "official_atomic_membership": "UNDETERMINED",
+      "official_clause_review": "NOT_DONE",
+      "source_document_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_page": 35,
+      "student_publishable": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "KB51-C-P035-V005",
+      "candidate_kind": "CONCEPT",
+      "earlier_visual_render_sha256": "bfcf80effdcf8289eb4eb1bc006bdad55476d0872a14c43a5ebff1232548b435",
+      "internal_draft_full_fields": true,
+      "lesson_id": "KB71-MODEL-05",
+      "official_atomic_membership": "UNDETERMINED",
+      "official_clause_review": "NOT_DONE",
+      "source_document_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_page": 35,
+      "student_publishable": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "KB51-C-P035-V006",
+      "candidate_kind": "METHOD",
+      "earlier_visual_render_sha256": "bfcf80effdcf8289eb4eb1bc006bdad55476d0872a14c43a5ebff1232548b435",
+      "internal_draft_full_fields": true,
+      "lesson_id": "KB71-MODEL-06",
+      "official_atomic_membership": "UNDETERMINED",
+      "official_clause_review": "NOT_DONE",
+      "source_document_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_page": 35,
+      "student_publishable": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "KB51-C-P035-V007",
+      "candidate_kind": "TEACHING_ACTIVITY",
+      "earlier_visual_render_sha256": "bfcf80effdcf8289eb4eb1bc006bdad55476d0872a14c43a5ebff1232548b435",
+      "internal_draft_full_fields": true,
+      "lesson_id": "KB71-MODEL-07",
+      "official_atomic_membership": "UNDETERMINED",
+      "official_clause_review": "NOT_DONE",
+      "source_document_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_page": 35,
+      "student_publishable": false,
+      "teacher_review": "REVIEW_PENDING"
+    }
+  ],
+  "schema_version": "kb71-page35-lineage-v1",
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "source_split_sha256": "171f3f6147c06f51fce17b892225fcb5a70b0ab5840ac1952ca6d0c6cb94f1ce",
+  "teacher_approved": 0
+}
