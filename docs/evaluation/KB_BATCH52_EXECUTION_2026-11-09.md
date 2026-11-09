@@ -48,3 +48,11 @@
 2. K01–K06：将真实缺口连接到原创完整讲义、形式准确的定义/定理/反例/题族/迁移，而非仅建立目录或候选数。
 3. K07：继续处理历史538条未形式认证证明步骤与10组冲突，逐前提审查；本批真值表实例不能取代一般证明。
 4. K08/K09：0份教师批准意味着正式学生内容索引仍然不得上线；真实授权模型 API 的引用、数学正确率、泄露率、拒答率、成本和 P95 评估尚待执行。
+
+## GitHub 源码与首轮 CI 验收回执
+
+- Batch52 真实源代码、审计、测试日志完整提交：`baa04978a4cec4ebf7cede919fbe951b88788d24`，Git Tree `dcb01e9ca0933d9f9d9e5af6a54d02eb43f67798`；12 个变更文件。
+- GitHub Draft PR #77：https://github.com/YOUessi/stem-mentor/pull/77，基线 Batch51 #76；保留原有 main，不合并。
+- 此源码 SHA 触发的 GitHub Actions #42540202153 已核实 `completed/success`：https://github.com/YOUessi/stem-mentor/actions/runs/42540202153；CI 包含本批 source crosswalk `--check`、Python/Node与教学策略回归。
+- Mac 本地 worktree 与 GitHub 上脚本、审计JSON、专项测试、报告的 Git Blob SHA 一致；main 仍有既存11项未提交修改，没有被修改或覆盖。
+- 本页回执追加本身会形成后续 Git commit；最终 GitHub HEAD 和对应 CI 应以 PR #77 最新回执为准。
