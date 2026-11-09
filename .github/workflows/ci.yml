@@ -109,6 +109,7 @@ jobs:
       - run: python scripts/build_kb_batch65_substantive_lessons.py --check
       - run: PYTHONPATH=backend python scripts/build_kb_batch66_competency_evidence.py --check
       - run: python scripts/build_kb_batch67_clause_review.py --check
+      - run: python scripts/build_kb_batch68_counterparts.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
