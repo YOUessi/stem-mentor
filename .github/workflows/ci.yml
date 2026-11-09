@@ -98,6 +98,8 @@ jobs:
       - run: python scripts/build_kb_batch56_source_span_review.py --check
       - run: python scripts/build_kb_batch57_source_review.py --check
       - run: python scripts/build_kb_batch58_competency_coverage.py --check
+      - run: python scripts/build_kb_batch59_selective_source_review.py --check
+      - run: python scripts/author_kb_batch59_selective_assessments.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q

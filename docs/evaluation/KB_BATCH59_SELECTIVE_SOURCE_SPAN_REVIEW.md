@@ -1,0 +1,158 @@
+# Batch59｜选择性必修来源审计：印刷37–50页
+
+仅在授权Mac通过锁定2020修订课标原PDF/PDFKit行区间做来源核对，仓库仅保存原创释义与SHA位置，不收录原文。
+原始课标 SHA256：`cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195`。
+
+新增 **108 条非去重来源位置**；合计 238 条；
+**不是正式课标原子分母、教师认证覆盖率或完整讲义数**。
+
+| 类别 | 数量 |
+|---|---:|
+| ACHIEVEMENT_REQUIREMENT | 13 |
+| ACTIVITY_REQUIREMENT | 1 |
+| CONTENT | 60 |
+| OPTIONAL_STARRED | 5 |
+| TEACHING_GUIDANCE | 28 |
+| TRACK_BOUNDARY | 1 |
+
+非内容要求另列为 **42 条UNMAPPED能力/教学/活动项**，没有认证量规映射。
+带星内容只能列为可选：数学归纳法、微积分史、解析几何史、贝叶斯公式等五个来源位置，不能冒充考试必授。
+P50选修A–E轨道边界已经标识，但本批没有审查这些选修轨的内部内容。
+22页前置局部定位+14页本批局部定位=36/61页；尚有25页未做该系列定位；**0页完成教师全页原子化**。
+538条历史证明步骤未形式认证、10组冲突未裁决；七轨分母仍null，正式教师批准0，学生发布0。
+
+## 逐页来源位置
+
+| 印刷页 | 本批位置 |
+|---:|---:|
+| 37 | 2 |
+| 38 | 12 |
+| 39 | 9 |
+| 40 | 6 |
+| 41 | 5 |
+| 42 | 9 |
+| 43 | 10 |
+| 44 | 10 |
+| 45 | 6 |
+| 46 | 6 |
+| 47 | 11 |
+| 48 | 9 |
+| 49 | 7 |
+| 50 | 6 |
+
+## 逐条来源释义及前提
+
+- `KB59-C-P037-S001` P37 `P037-L019-026` TEACHING_GUIDANCE：选择性必修函数主题引入数列与导数：前者把离散自变量的变化关系模型化，后者刻画可导函数局部变化率。 （前提 `DISCRETE_SEQUENCE_VS_DERIVATIVE`；`REVIEW_PENDING`）。
+- `KB59-C-P037-S002` P37 `P037-L028-029` CONTENT：函数领域的课程范围同时包括数列和一元函数导数，后续核对须拆成分别可审计的内容要求。 （前提 `SELECTIVE_FUNCTION_CONTENT_SCOPE`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S001` P38 `P038-L002-008` TEACHING_GUIDANCE：用具有离散索引的现实现象引入数列，比较等差与等比的变化规律，并解释通项与部分和的不同职责。 （前提 `SEQUENCE_DISCRETE_INDEX_DOMAIN`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S002` P38 `P038-L009-010` OPTIONAL_STARRED：数列单元包含可选的数学归纳法；不能把这一带星主题无条件升级为全体必修考试要求。 （前提 `INDUCTION_EXPLICITLY_STARRED`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S003` P38 `P038-L011-013` CONTENT：数列是一种以正整数等离散索引为自变量的函数，可以由表格、散点图或有效通项描述。 （前提 `DISCRETE_INDEX_NOT_CONTINUOUS_INTERVAL`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S004` P38 `P038-L014-015` CONTENT：等差数列存在固定公差，理解首项、公差及通项之间的关系须明确索引起点。 （前提 `ARITHMETIC_RECURRENCE_VALID_INDEX`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S005` P38 `P038-L016-017` CONTENT：等差前n项和可用配对方法推导，求和与通项的关系需区分n为正整数和空和约定。 （前提 `ARITHMETIC_SUM_POSITIVE_N`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S006` P38 `P038-L018-019` CONTENT：识别现实情境中相邻两项的差值是否恒定，不能因观察少量样本就认证无限后续规律。 （前提 `FINITE_SAMPLES_NOT_GLOBAL_MODEL`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S007` P38 `P038-L020-020` CONTENT：等差数列的通项是离散点上的仿射关系，与定义于整个实数域的一次函数并不完全等同。 （前提 `DISCRETE_AFFINE_RESTRICTION`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S008` P38 `P038-L021-022` CONTENT：等比数列的相邻倍比关系应优先使用递推形式，前项为零时不可直接进行除法。 （前提 `GEOMETRIC_RATIO_ZERO_DIVISOR`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S009` P38 `P038-L023-024` CONTENT：等比前n项和需分公比等于一与不等于一的情况，不能将分母为零的公式直接套用。 （前提 `GEOMETRIC_SUM_RATIO_ONE_BRANCH`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S010` P38 `P038-L025-026` CONTENT：判断情境是否适用等比模型应核对恒定乘法因子与取值域，不能只依据三项拟合。 （前提 `GEOMETRIC_MODEL_ASSUMPTIONS`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S011` P38 `P038-L027-027` CONTENT：等比通项与指数模型在整数自变量上的对应关系有域和首项约束，不能擅自延伸到连续时间。 （前提 `EXPONENTIAL_DISCRETE_RESTRICTION`；`REVIEW_PENDING`）。
+- `KB59-C-P038-S012` P38 `P038-L028-030` OPTIONAL_STARRED：带星归纳法要求基例与从任意有效指标到下一指标的归纳步骤，单个数值验证不构成证明。 （前提 `INDUCTION_BASE_AND_STEP_NEEDED`；`REVIEW_PENDING`）。
+- `KB59-C-P039-S001` P39 `P039-L001-007` TEACHING_GUIDANCE：导数学习先从平均变化率的极限过渡到瞬时变化率，再进入运算规则、单调性及极值应用。 （前提 `DERIVATIVE_LIMIT_FIRST`；`REVIEW_PENDING`）。
+- `KB59-C-P039-S002` P39 `P039-L008-011` CONTENT：瞬时变化率需在指定点定义为差商极限，若极限不存在则不能宣称普通有限导数存在。 （前提 `DIFFERENCE_QUOTIENT_LIMIT_EXISTS`；`REVIEW_PENDING`）。
+- `KB59-C-P039-S003` P39 `P039-L012-012` CONTENT：导数概念关联极限思想，但高中直观体会与完整严格极限证明应标注不同认知层级。 （前提 `LIMIT_INTUITIVE_SCOPE`；`REVIEW_PENDING`）。
+- `KB59-C-P039-S004` P39 `P039-L013-013` CONTENT：函数在可导点的切线斜率由导数给出；图像上的尖角点不能自动得到唯一切线斜率。 （前提 `TANGENT_SLOPE_DIFFERENTIABLE`；`REVIEW_PENDING`）。
+- `KB59-C-P039-S005` P39 `P039-L014-021` CONTENT：基础函数的求导公式从差商或既有合法规则得到，倒数函数排除零点，根号函数在端点有边界。 （前提 `BASIC_DERIVATIVE_DOMAIN_GUARD`；`REVIEW_PENDING`）。
+- `KB59-C-P039-S006` P39 `P039-L022-024` CONTENT：四则求导和简单仿射复合函数求导必须同时检查函数定义域及内部自变量系数。 （前提 `CHAIN_RULE_AFFINE_INNER`；`REVIEW_PENDING`）。
+- `KB59-C-P039-S007` P39 `P039-L025-025` CONTENT：导数公式表只在其给定的变量域和可导条件下使用，不能用表格代替前提检查。 （前提 `DERIVATIVE_TABLE_DOMAIN`；`REVIEW_PENDING`）。
+- `KB59-C-P039-S008` P39 `P039-L026-029` CONTENT：通过导数符号研究函数单调区间需先确认区间上的可导性，并区分严格增减与非严格增减。 （前提 `DERIVATIVE_SIGN_INTERVAL`；`REVIEW_PENDING`）。
+- `KB59-C-P039-S009` P39 `P039-L030-032` CONTENT：内部极值处若可导则导数为零只是必要条件；求最值须检查端点及全部候选值。 （前提 `EXTREMUM_STATIONARY_NOT_SUFFICIENT`；`REVIEW_PENDING`）。
+- `KB59-C-P040-S001` P40 `P040-L002-006` OPTIONAL_STARRED：微积分发展史研究报告属于明确带星的文化探究目标，不应被代替成强制数学定理证明考核。 （前提 `CALCULUS_HISTORY_EXPLICIT_OPTIONAL`；`REVIEW_PENDING`）。
+- `KB59-C-P040-S002` P40 `P040-L007-014` TEACHING_GUIDANCE：利用实际数列模型与函数联系组织类比教学，同时区分递推、通项以及连续模型的适用范围。 （前提 `MODEL_COMPARISON_NO_FALSE_EQUIVALENCE`；`REVIEW_PENDING`）。
+- `KB59-C-P040-S003` P40 `P040-L015-018` TEACHING_GUIDANCE：数列数学文化小论文侧重文献、人物及成果核实，应评估研究过程与引用而非伪造定理证明。 （前提 `HISTORY_REPORT_SOURCE_INTEGRITY`；`REVIEW_PENDING`）。
+- `KB59-C-P040-S004` P40 `P040-L019-025` TEACHING_GUIDANCE：导数教学使用物理或经济变化率的实例时须明示单位、观测背景及由平均到瞬时的极限转换。 （前提 `RATE_OF_CHANGE_UNITS_LIMIT`；`REVIEW_PENDING`）。
+- `KB59-C-P040-S005` P40 `P040-L026-028` TEACHING_GUIDANCE：高中阶段导数运用的默认函数通常可导；这条教学范围不能被误用成所有函数都处处可导。 （前提 `DEFAULT_DIFFERENTIABLE_STUDY_SCOPE`；`REVIEW_PENDING`）。
+- `KB59-C-P040-S006` P40 `P040-L029-030` TEACHING_GUIDANCE：历史文献讨论可训练学生追溯数学发展，但人物叙述不能自动成为数学定理的形式认证证据。 （前提 `HISTORY_SOURCE_NOT_PROOF`；`REVIEW_PENDING`）。
+- `KB59-C-P041-S001` P41 `P041-L001-002` TEACHING_GUIDANCE：关于微积分起源的短报告需要事实性参考资料与合法引用，不能将历史讨论计作数学知识证明。 （前提 `HISTORY_REPORT_PROVENANCE`；`REVIEW_PENDING`）。
+- `KB59-C-P041-S002` P41 `P041-L003-008` ACHIEVEMENT_REQUIREMENT：学习者应能在真实离散情境中写出通项与部分和的关系，并利用等差或等比模型求解与解释结果。 （前提 `SEQUENCE_COMPETENCY_OBSERVABLE`；`REVIEW_PENDING`）。
+- `KB59-C-P041-S003` P41 `P041-L009-014` ACHIEVEMENT_REQUIREMENT：导数能力考核应观察实际问题中的变化率解释、规则使用、函数分析与可导前提的明确陈述。 （前提 `DERIVATIVE_COMPETENCY_OBSERVABLE`；`REVIEW_PENDING`）。
+- `KB59-C-P041-S004` P41 `P041-L015-016` ACHIEVEMENT_REQUIREMENT：综合素养目标需要单列活动或题族评价证据，不能因相关讲义存在就自动视为能力达标。 （前提 `MATHEMATICAL_COMPETENCIES_SEPARATE`；`REVIEW_PENDING`）。
+- `KB59-C-P041-S005` P41 `P041-L017-023` TEACHING_GUIDANCE：几何与代数主题融合空间向量及解析几何，强调坐标表示、图形约束与代数结论的往返核对。 （前提 `GEOMETRY_ALGEBRA_TRANSLATION`；`REVIEW_PENDING`）。
+- `KB59-C-P042-S001` P42 `P042-L002-012` TEACHING_GUIDANCE：本主题研究空间直角坐标、向量运算和空间关系，应明确二维技巧推广到三维时增加的约束。 （前提 `THREE_DIMENSIONAL_SPACE_GUARDS`；`REVIEW_PENDING`）。
+- `KB59-C-P042-S002` P42 `P042-L013-015` CONTENT：空间直角坐标系用有序三元数刻画点的位置；坐标依赖选定原点与三条互相垂直的轴。 （前提 `ORTHOGONAL_CARTESIAN_FRAME`；`REVIEW_PENDING`）。
+- `KB59-C-P042-S003` P42 `P042-L016-017` CONTENT：空间两点距离使用三维坐标差的平方和开方，必须在同一正交单位坐标系中比较。 （前提 `SAME_ORTHONORMAL_FRAME_DISTANCE`；`REVIEW_PENDING`）。
+- `KB59-C-P042-S004` P42 `P042-L018-020` CONTENT：空间向量按大小方向定义，允许同一自由向量平移表示，运算法则推广须明示向量维数一致。 （前提 `SPACE_VECTOR_DIMENSION_MATCH`；`REVIEW_PENDING`）。
+- `KB59-C-P042-S005` P42 `P042-L021-023` CONTENT：空间向量基本定理的唯一坐标表示要求三个基向量线性无关，正交基是特例而非必要条件。 （前提 `BASIS_LINEAR_INDEPENDENCE`；`REVIEW_PENDING`）。
+- `KB59-C-P042-S006` P42 `P042-L024-024` CONTENT：空间向量数乘与加减按分量进行，所有操作数须使用同一个空间基底与一致维度。 （前提 `VECTOR_COMMON_BASIS`；`REVIEW_PENDING`）。
+- `KB59-C-P042-S007` P42 `P042-L025-025` CONTENT：三维数量积可按对应坐标乘积求和，并用于非零向量夹角，零向量不具有通常夹角。 （前提 `DOT_PRODUCT_NONZERO_FOR_ANGLE`；`REVIEW_PENDING`）。
+- `KB59-C-P042-S008` P42 `P042-L026-026` CONTENT：空间投影向量的计算需要投影目标非零，投影为零不等价于原向量不存在。 （前提 `PROJECTION_TARGET_NONZERO`；`REVIEW_PENDING`）。
+- `KB59-C-P042-S009` P42 `P042-L027-028` CONTENT：直线方向向量和平面法向量均不得取零向量；描述的几何对象必须先存在且非退化。 （前提 `LINE_DIRECTION_PLANE_NORMAL_NONZERO`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S001` P43 `P043-L001-003` CONTENT：线线与线面及面面夹角须按定义选取非零方向或法向量，平行和垂直判定要考虑相交与包含。 （前提 `ANGLE_GEOMETRY_RELATION_GUARDS`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S002` P43 `P043-L004-005` CONTENT：空间向量法证明线面位置定理必须由几何前提建立等价向量条件，不能以示意图测量代替证明。 （前提 `VECTOR_PROOF_REQUIRES_HYPOTHESES`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S003` P43 `P043-L006-009` CONTENT：点线点面及平行对象距离用投影或法向量计算前须检查方向非零与平行关系确实成立。 （前提 `DISTANCE_NONDEGENERATE_GEOMETRY`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S004` P43 `P043-L010-018` TEACHING_GUIDANCE：解析几何使用曲线几何定义推导合法方程，轨迹方程与原图形必须通过充要条件双向核验。 （前提 `CONIC_LOCUS_BIDIRECTIONAL_CHECK`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S005` P43 `P043-L019-021` CONTENT：两点确定平面直线的前提是两点互异，直线几何位置可由点和非零方向信息确定。 （前提 `TWO_DISTINCT_POINTS_LINE`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S006` P43 `P043-L022-023` CONTENT：斜率是直线方向的有限比值，竖直直线的斜率未定义，不应误判成数值零。 （前提 `VERTICAL_LINE_SLOPE_UNDEFINED`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S007` P43 `P043-L024-024` CONTENT：利用斜率判定两直线平行或垂直时必须单独处理竖直方向，乘积负一只适用有限斜率。 （前提 `SLOPE_PARALLEL_PERP_EXCEPTION`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S008` P43 `P043-L025-026` CONTENT：直线点斜式两点式与一般式的参数条件不同，两点式要求坐标差不为零，垂直直线须用合适形式。 （前提 `LINE_EQUATION_FORM_DOMAINS`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S009` P43 `P043-L027-027` CONTENT：两直线联立方程可能有唯一交点、无交点或重合无穷多交点，求解前需核对系数秩。 （前提 `LINEAR_SYSTEM_RANK_GEOMETRY`；`REVIEW_PENDING`）。
+- `KB59-C-P043-S010` P43 `P043-L028-028` CONTENT：点到直线的距离公式要求一般式的法向量不全为零，退化零方程不是一条有效直线。 （前提 `POINT_LINE_DISTANCE_NONZERO_NORMAL`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S001` P44 `P044-L001-002` CONTENT：平行直线间的距离应在两条确实平行且系数规范一致时计算，不可对交叉直线套用。 （前提 `PARALLEL_LINES_SAME_NORMAL`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S002` P44 `P044-L003-005` CONTENT：圆的标准式和一般式必须对应正半径的真实圆，平方完成得到的半径平方不能为负。 （前提 `CIRCLE_RADIUS_POSITIVE`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S003` P44 `P044-L006-006` CONTENT：直线与圆及两圆的位置判断应比较圆心距与半径并处理重合、切线和半径退化分支。 （前提 `CIRCLE_RELATION_ALL_BRANCHES`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S004` P44 `P044-L007-008` CONTENT：圆的现实应用模型须明确几何边界与测量误差，代数解必须回译至原来的实际变量。 （前提 `CIRCLE_APPLICATION_REAL_DOMAIN`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S005` P44 `P044-L009-011` TEACHING_GUIDANCE：圆锥曲线教学从几何背景提取约束条件，不能仅看到二次方程就声称图形是非退化椭圆。 （前提 `CONIC_DEGENERACY_CHECK`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S006` P44 `P044-L012-013` CONTENT：椭圆作为两个固定焦点距离和为常数的轨迹，要求该常数严格大于两焦点距离。 （前提 `ELLIPSE_FOCAL_SUM_GREATER_DISTANCE`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S007` P44 `P044-L014-015` CONTENT：抛物线焦点准线定义要求焦点不落在准线上；双曲线焦距差绝对值常数须小于两焦点间距。 （前提 `PARABOLA_HYPERBOLA_NONDEGENERATE`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S008` P44 `P044-L016-017` CONTENT：圆锥曲线标准方程中的参数有几何含义，平方移项可能产生增根，应用解需重新代入定义。 （前提 `CONIC_EQUATION_BACKSUBSTITUTION`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S009` P44 `P044-L018-021` OPTIONAL_STARRED：解析几何发展史是带星选学研究题材，历史报告不自动转化为必授圆锥曲线公式证明。 （前提 `ANALYTIC_GEOMETRY_HISTORY_OPTIONAL`；`REVIEW_PENDING`）。
+- `KB59-C-P044-S010` P44 `P044-L022-029` TEACHING_GUIDANCE：空间向量与综合几何并行介绍应突出维数及不同证明路线，不能因为图形看似正确而跳过前提。 （前提 `VECTOR_SYNTHETIC_METHOD_CONTRAST`；`REVIEW_PENDING`）。
+- `KB59-C-P045-S001` P45 `P045-L001-003` TEACHING_GUIDANCE：向量法求立体几何距离时应解释选择基底及法向量的合法性，再与综合几何结果相互校验。 （前提 `VECTOR_BASIS_GEOMETRIC_VALIDITY`；`REVIEW_PENDING`）。
+- `KB59-C-P045-S002` P45 `P045-L004-011` TEACHING_GUIDANCE：解析几何教学完整循环包括选择坐标、从几何约束导方程、解代数问题及把结论回译为几何。 （前提 `COORDINATE_TRANSLATION_REVERSIBLE`；`REVIEW_PENDING`）。
+- `KB59-C-P045-S003` P45 `P045-L012-014` TEACHING_GUIDANCE：动态参数演示只能展示部分曲线样本，屏幕动画不能替代方程定义域和退化参数的数学分析。 （前提 `VISUAL_SIMULATION_NOT_PROOF`；`REVIEW_PENDING`）。
+- `KB59-C-P045-S004` P45 `P045-L015-017` TEACHING_GUIDANCE：数学史研究写作应保存引用与来源合法性，以研究方法表现为依据而不是伪造数学事实认证。 （前提 `GEOMETRY_HISTORY_PROVENANCE`；`REVIEW_PENDING`）。
+- `KB59-C-P045-S005` P45 `P045-L018-022` ACHIEVEMENT_REQUIREMENT：空间向量学业考核应包含坐标运算、基本定理与简单空间关系题，还需观察解释而不仅是计算答案。 （前提 `SPACE_VECTOR_COMPETENCY_EVIDENCE`；`REVIEW_PENDING`）。
+- `KB59-C-P045-S006` P45 `P045-L023-027` ACHIEVEMENT_REQUIREMENT：解析几何能力需独立测评几何转代数、求解及反向解释三环节，不因方程计算正确就认定模型恰当。 （前提 `ANALYTIC_GEOMETRY_COMPETENCY`；`REVIEW_PENDING`）。
+- `KB59-C-P046-S001` P46 `P046-L002-005` ACHIEVEMENT_REQUIREMENT：学生需能建立直线圆及典型圆锥曲线模型并解决适当应用问题；退化情境与求解范围仍要检查。 （前提 `CURVE_MODEL_APPLICATION_LIMITS`；`REVIEW_PENDING`）。
+- `KB59-C-P046-S002` P46 `P046-L006-007` ACHIEVEMENT_REQUIREMENT：直观想象与代数运算等综合素养需要明确的可观察评价任务，不能以完成章节学习自动算通过。 （前提 `GEOMETRY_COMPETENCIES_SEPARATE`；`REVIEW_PENDING`）。
+- `KB59-C-P046-S003` P46 `P046-L008-015` TEACHING_GUIDANCE：选择性必修概率统计主题包含计数、分布与推断三个部分，与必修基础不可混为同一完成状态。 （前提 `SELECTIVE_STATISTICS_SCOPE`；`REVIEW_PENDING`）。
+- `KB59-C-P046-S004` P46 `P046-L016-020` TEACHING_GUIDANCE：将基本加乘计数原理用于排列组合和二项展开，须区分互斥分类与连续选择步骤。 （前提 `COUNTING_SUM_PRODUCT_DISTINCTION`；`REVIEW_PENDING`）。
+- `KB59-C-P046-S005` P46 `P046-L021-023` CONTENT：分类计数必须覆盖全部且互不重叠的情况，分步计数的每层选择总数须与实际条件相符。 （前提 `DISJOINT_CLASSES_COMPLETE_STEPS`；`REVIEW_PENDING`）。
+- `KB59-C-P046-S006` P46 `P046-L024-026` CONTENT：排列考虑次序而组合不计次序；公式推导必须满足整数范围且元素互异的前提。 （前提 `PERMUTATION_COMBINATION_INTEGER_DOMAIN`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S001` P47 `P047-L001-003` CONTENT：二项式定理可由展开式中选择k个因子的计数得到，n为非负整数且选取数量在允许范围。 （前提 `BINOMIAL_THEOREM_NONNEGATIVE_N`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S002` P47 `P047-L004-011` TEACHING_GUIDANCE：概率建模借随机变量统一描述伯努利、二项、超几何与连续正态，但不应混淆有放回和无放回。 （前提 `DISTRIBUTION_SAMPLING_ASSUMPTIONS`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S003` P47 `P047-L012-014` CONTENT：条件概率必须在被条件事件的概率为正时定义，不能用空事件做普通条件概率的分母。 （前提 `CONDITIONAL_PROBABILITY_POSITIVE_EVENT`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S004` P47 `P047-L015-015` CONTENT：独立事件与条件概率关系需要正概率条件，独立不同于事件互斥；两者不可作为同义判断。 （前提 `INDEPENDENCE_NOT_MUTUAL_EXCLUSION`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S005` P47 `P047-L016-016` CONTENT：概率乘法规则要求清楚指定条件事件，避免将联合概率错写成两个边缘概率的简单乘积。 （前提 `JOINT_MULTIPLICATION_CONDITION`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S006` P47 `P047-L017-017` CONTENT：全概率公式要求事件划分互斥且穷尽，并排除无效条件分母及遗漏的分块。 （前提 `TOTAL_PROBABILITY_PARTITION`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S007` P47 `P047-L018-019` OPTIONAL_STARRED：贝叶斯公式在该页以标星方式出现，不应自动算作全体学生强制考试定理；使用时仍需正概率分母。 （前提 `BAYES_STARRED_NOT_CORE_EXAM`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S008` P47 `P047-L020-022` CONTENT：离散随机变量分布列的概率不得为负且必须总和为一，均值方差依该分布合法计算。 （前提 `DISCRETE_PMF_NONNEGATIVE_SUM_ONE`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S009` P47 `P047-L023-024` CONTENT：二项分布需要固定试验次数、每次同分布且相互独立的伯努利试验，不能直接用无放回抽样替代。 （前提 `BINOMIAL_IID_BERNOULLI`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S010` P47 `P047-L025-026` CONTENT：超几何分布适用于有限总体不放回取样，其组合项须满足总体、成功数和样本数的整数约束。 （前提 `HYPERGEOMETRIC_WITHOUT_REPLACEMENT`；`REVIEW_PENDING`）。
+- `KB59-C-P047-S011` P47 `P047-L027-028` CONTENT：正态分布是连续随机变量模型，密度曲线的单点高度不是点概率，方差需严格为正。 （前提 `NORMAL_DENSITY_NOT_POINT_PROBABILITY`；`REVIEW_PENDING`）。
+- `KB59-C-P048-S001` P48 `P048-L001-003` CONTENT：正态分布均值为位置参数、方差为离散程度参数，概率由区间面积而不是端点密度给出。 （前提 `NORMAL_VARIANCE_POSITIVE_AREA`；`REVIEW_PENDING`）。
+- `KB59-C-P048-S002` P48 `P048-L004-009` TEACHING_GUIDANCE：统计主题围绕相关性、线性回归及列联表，要求模型假设与样本结构被记录后再作推断。 （前提 `STATISTICAL_MODEL_DESIGN`；`REVIEW_PENDING`）。
+- `KB59-C-P048-S003` P48 `P048-L010-012` CONTENT：Pearson样本相关系数的分母要求两组数据均有非零离差平方和，标准化向量夹角才有定义。 （前提 `PEARSON_VARIANCES_NONZERO`；`REVIEW_PENDING`）。
+- `KB59-C-P048-S004` P48 `P048-L013-013` CONTENT：比较相关系数强弱时须注意符号与绝对值的含义，相关性不等于因果作用。 （前提 `CORRELATION_NOT_CAUSATION`；`REVIEW_PENDING`）。
+- `KB59-C-P048-S005` P48 `P048-L014-017` CONTENT：最小二乘一元回归要求解释变量具有样本变异，其拟合参数是统计估计而非确定因果律。 （前提 `OLS_PREDICTOR_VARIANCE_POSITIVE`；`REVIEW_PENDING`）。
+- `KB59-C-P048-S006` P48 `P048-L018-018` CONTENT：用回归线预测应说明自变量是否处在观测范围，超出训练域的外推不能被默认认证准确。 （前提 `REGRESSION_EXTRAPOLATION_UNCERTAIN`；`REVIEW_PENDING`）。
+- `KB59-C-P048-S007` P48 `P048-L019-020` CONTENT：列联表统计的行列事件须定义明确且分类互斥完整，总计数与边际频数必须一致。 （前提 `CONTINGENCY_NONNEGATIVE_COUNTS`；`REVIEW_PENDING`）。
+- `KB59-C-P048-S008` P48 `P048-L021-021` CONTENT：列联表独立性检验需核对样本设计和期望频数有效性，显著性证据不能被误称为逻辑证明。 （前提 `CHI_SQUARE_EXPECTED_COUNTS_ASSUMPTIONS`；`REVIEW_PENDING`）。
+- `KB59-C-P048-S009` P48 `P048-L022-028` TEACHING_GUIDANCE：概率统计示例应兼顾从具体问题抽象条件的教学步骤，图表与软件输出不能单独代替推断假设。 （前提 `STATISTICAL_SOFTWARE_NOT_PROOF`；`REVIEW_PENDING`）。
+- `KB59-C-P049-S001` P49 `P049-L001-001` TEACHING_GUIDANCE：计数原理教学须从每次操作对应的分类或选择过程出发，先说明互斥完整再机械套用公式。 （前提 `COUNTING_CASES_BEFORE_FORMULA`；`REVIEW_PENDING`）。
+- `KB59-C-P049-S002` P49 `P049-L002-007` TEACHING_GUIDANCE：概率教学区分试验独立、条件概率、有无放回的分布适配，强调用现实条件检验数学模型。 （前提 `PROBABILITY_MODEL_CONTEXT`；`REVIEW_PENDING`）。
+- `KB59-C-P049-S003` P49 `P049-L008-013` TEACHING_GUIDANCE：统计教学通过数据分析过程而非只读软件结果，并分别说明相关、预测与独立性检验的结论范围。 （前提 `STATISTICAL_ANALYSIS_PROCESS`；`REVIEW_PENDING`）。
+- `KB59-C-P049-S004` P49 `P049-L014-016` ACHIEVEMENT_REQUIREMENT：计数学习表现须能在新情境里判断分类与分步并明确总数计算理由，不能只背加法或乘法口诀。 （前提 `COUNTING_COMPETENCY_TASK_REQUIRED`；`REVIEW_PENDING`）。
+- `KB59-C-P049-S005` P49 `P049-L017-020` ACHIEVEMENT_REQUIREMENT：排列组合与二项式学习表现应通过完整推导、选择顺序说明及适当概率应用任务独立验收。 （前提 `COMBINATORIAL_DERIVATION_EVIDENCE`；`REVIEW_PENDING`）。
+- `KB59-C-P049-S006` P49 `P049-L021-024` ACHIEVEMENT_REQUIREMENT：概率学习表现须区分条件概率、独立及两类离散分布的情境和计算，不自动用一次例题代替达标。 （前提 `DISTRIBUTION_COMPETENCY_EVIDENCE`；`REVIEW_PENDING`）。
+- `KB59-C-P049-S007` P49 `P049-L025-027` ACHIEVEMENT_REQUIREMENT：数据学习表现需包含成对样本分析、回归与列联表问题的假设检查和现实解释。 （前提 `STATISTICS_COMPETENCY_EVIDENCE`；`REVIEW_PENDING`）。
+- `KB59-C-P050-S001` P50 `P050-L002-003` ACHIEVEMENT_REQUIREMENT：数据分析与建模等总体能力需要可观察的独立评价证据，不能被章节知识条目覆盖数吞并。 （前提 `STATISTICS_COMPETENCIES_SEPARATE`；`REVIEW_PENDING`）。
+- `KB59-C-P050-S002` P50 `P050-L004-009` ACTIVITY_REQUIREMENT：选择性必修的建模或探究课题要有一个可交付研究项目，可延续旧课题但须指出新增研究内容。 （前提 `SELECTIVE_RESEARCH_PROJECT_REQUIRED`；`REVIEW_PENDING`）。
+- `KB59-C-P050-S003` P50 `P050-L010-013` TEACHING_GUIDANCE：探究教学需要可记录的选题开题、实施、结题过程，教师引导与学生自主决策应分别保留证据。 （前提 `RESEARCH_FOUR_PHASE_DOCUMENTATION`；`REVIEW_PENDING`）。
+- `KB59-C-P050-S004` P50 `P050-L014-017` TEACHING_GUIDANCE：延续既有课题的报告必须明确新方法或新结论，也可用测量、程序或论文等不同产物展示。 （前提 `RESEARCH_EXTENSION_NEW_RESULTS`；`REVIEW_PENDING`）。
+- `KB59-C-P050-S005` P50 `P050-L018-019` ACHIEVEMENT_REQUIREMENT：选择性必修研究活动的学业评估需回溯必修研究标准，不可因为交付研究报告而自动通过。 （前提 `RESEARCH_COMPETENCY_NOT_AUTOPASS`；`REVIEW_PENDING`）。
+- `KB59-C-P050-S006` P50 `P050-L020-023` TRACK_BOUNDARY：本页开始引入学校按需要设置的选修A至E五类，课程路径不得错误并入全国统一必修范围。 （前提 `ELECTIVE_TRACK_BOUNDARY_EXPLICIT`；`REVIEW_PENDING`）。
+
+## 机器重放与审核边界
+
+CI: `python scripts/build_kb_batch59_selective_source_review.py --check`，核验版本化快照、前提及负面门禁。
+Mac PDFKit: `python scripts/build_kb_batch59_selective_source_review.py --check --verify-source-pdf /private/tmp/stem-mentor-official-math-2020-batch51.pdf --source-dir /private/tmp`。
+原PDF不入仓库、源图语义没有被自动读入；全量数学范围去重、未覆盖章节与教师审批继续阻断正式学生发布。
