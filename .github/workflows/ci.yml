@@ -95,6 +95,7 @@ jobs:
       - run: python scripts/build_kb_batch53_cross_page_review.py --check
       - run: python scripts/author_kb_batch54_legacy_scope.py --check
       - run: python scripts/build_kb_batch55_conflict_review.py --check
+      - run: python scripts/build_kb_batch56_source_span_review.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
