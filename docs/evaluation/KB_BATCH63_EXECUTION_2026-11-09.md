@@ -77,4 +77,3 @@ mac_check.log SHA256: f3d0df3dc8b7f850cc78c256809c7b5df7de49235ade578a09579adc48
 mac_browser.log SHA256: 49d3e25b9fe11b045ffb2ea8825abc5110b82f88f5300889a71f1f7d44162597
 mac_check.exit: 0
 mac_browser.exit: 0
-
