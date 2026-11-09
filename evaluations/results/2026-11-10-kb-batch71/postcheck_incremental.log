@@ -1,0 +1,18 @@
+
+==================================== ERRORS ====================================
+_________ ERROR collecting backend/tests/test_kb_batch71_modelling.py __________
+ImportError while importing test module '/Users/youtang/Documents/文件/stem-mentor-kb-batch71/backend/tests/test_kb_batch71_modelling.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../../miniforge3/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+backend/tests/test_kb_batch71_modelling.py:189: in <module>
+    from test_attested_release_batch08 import offline_reviewer_fixture
+backend/tests/test_attested_release_batch08.py:14: in <module>
+    from app.attested_releases import approved_lesson_ids, lesson_digest, _canonical
+E   ModuleNotFoundError: No module named 'app'
+=========================== short test summary info ============================
+ERROR backend/tests/test_kb_batch71_modelling.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.36s

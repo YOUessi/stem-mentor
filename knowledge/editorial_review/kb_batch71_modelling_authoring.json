@@ -1,0 +1,676 @@
+{
+  "schema_version": "kb71-page35-original-modelling-lessons-v1",
+  "course_basis": "普通高中数学课程标准（2017年版2020年修订）页35项目既有视觉核验候选；非官方全条款认证",
+  "notice": "All authoring original; teacher-only, no formal certification; not seven-track official denominator.",
+  "items": [
+    {
+      "title": "模型化问题识别：从现实目标到可检验数学问题",
+      "anchor": "KB51-C-P035-V001",
+      "knowledge_kind": "METHOD",
+      "definition": "建模问题是把一个现实目标限定为可观察对象、输入变量、待估目标与可检验约束的明确问题；选择模型之前先约定对象与观察区间。",
+      "assumptions": [
+        "情境中的对象和目标量已明确且可以记录，例如某次租用的时长和费用。",
+        "研究场景的价格规则仅作为自编示例假设，不宣称外部服务的实际收费。"
+      ],
+      "symbols": [
+        "t：租用时长（小时），0≤t≤5",
+        "C：总费用（元），C(t)=5+3t"
+      ],
+      "prerequisites": [
+        "实数变量与单位",
+        "一次函数及定义域"
+      ],
+      "validity_why": "只有先定义输出目标、输入与边界，计算出的数才可回答相应现实问题；把不同对象的规则混用即使代数正确也没有现实意义。",
+      "steps": [
+        [
+          "确认目标量",
+          "提出在指定收费规则下，租用2小时应付多少钱，而不是泛问‘怎样更划算’。"
+        ],
+        [
+          "指定输入与边界",
+          "令t表示一次租用时长（小时），限定0≤t≤5，只考察该条件内的一次租用。"
+        ],
+        [
+          "建立待检验规则",
+          "假设每次固定5元，时长费用每小时3元，则C(t)=5+3t（元）。"
+        ],
+        [
+          "计算并回到情境",
+          "代入t=2得11元，结果的意义是模型约定下这次租用的费用。"
+        ]
+      ],
+      "worked_examples": [
+        {
+          "question": "某模拟租赁点固定收费5元、每小时3元，研究0—5小时区间内租用2小时的费用；请写出问题、变量和模型。",
+          "teacher_solution": "目标是求该次费用C；t为小时、定义域0≤t≤5，C(t)=5+3t元，C(2)=11元。"
+        },
+        {
+          "question": "自编用水模型：每分钟用2升，初始表读数为7升；3分钟后的累计读数是多少？",
+          "teacher_solution": "以时间s（分钟）为输入、读数W（升）为输出，假设速率恒定且s≥0，W(s)=7+2s，W(3)=13升。"
+        }
+      ],
+      "invalid_case": {
+        "false_claim": "把另一租赁点的每小时3元费率直接用于免费计时的公益自行车，并说其2小时一定收费11元。",
+        "counterexample_explanation": "收费规则是本模型的条件，不是所有租赁场景的事实；对象改变时条件失效，结论也不跟随成立。"
+      },
+      "boundary": "只对假定的同一计价对象和0—5小时有效；收费规则变更、超过区间或存在四舍五入计费时需另建模型。",
+      "hints": [
+        "先说你要预测的现实量是什么。",
+        "写出输入变量、单位、允许的时间区间。",
+        "区分情境给定的收费规则与仅凭想象加入的假设。"
+      ],
+      "near_transfer": "把每小时费率改为4元、固定费改为2元，研究3小时的费用。",
+      "far_transfer": "给校园食堂排队时长建立可检验的问题，明确要预测的是均值还是最长等待时间。",
+      "scoring_rubric": [
+        [
+          "明确研究对象与目标",
+          2
+        ],
+        [
+          "变量、量纲和约束",
+          2
+        ],
+        [
+          "模型和数值对应正确",
+          1
+        ],
+        [
+          "识别假设失效情境",
+          1
+        ]
+      ],
+      "finite_case": {
+        "type": "linear_fee",
+        "base": 5,
+        "rate": 3,
+        "time": 2,
+        "expected": 11
+      },
+      "status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "formal_certification": "NOT_FORMALLY_CERTIFIED",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "full_official_clause_review": "NOT_COMPLETED"
+    },
+    {
+      "title": "建模假设与量纲一致性：区分变量、参数和约束",
+      "anchor": "KB51-C-P035-V002",
+      "knowledge_kind": "METHOD",
+      "definition": "模型假设是限定数学关系可能适用的情境陈述；变量会随观测改变，参数是给定模型内暂按固定取值的量，约束限制可行输入。量纲一致要求同一等式两侧物理单位相容。",
+      "assumptions": [
+        "速度在指定行程中按常数12千米/小时处理，忽略加减速、停留与路线变化。",
+        "时间观测20分钟须先换算为1/3小时；速度、时间、路程单位采用千米/小时、小时、千米。"
+      ],
+      "symbols": [
+        "v=12 km/h：假定常数速度参数",
+        "t=20 min=1/3 h：给定输入",
+        "s=vt：路程（km）"
+      ],
+      "prerequisites": [
+        "单位换算",
+        "乘法与一次模型"
+      ],
+      "validity_why": "s=vt对匀速或合适的平均速度口径有效；直接以20乘以km/h的12得到240，量纲实际是km·min/h，不能解释为240km。",
+      "steps": [
+        [
+          "识别参数与输入",
+          "把v=12 km/h设为本模型常数，t=20 min为观测时长。"
+        ],
+        [
+          "统一单位",
+          "t=20/60 h=1/3 h，保持km与h的配套。"
+        ],
+        [
+          "说明约束和前提",
+          "仅在指定时段匀速、不考虑途中休息的假设下使用s=vt。"
+        ],
+        [
+          "计算并解释",
+          "s=12×(1/3)=4 km；该数是模型下的行程路程，不是实际骑行记录。"
+        ]
+      ],
+      "worked_examples": [
+        {
+          "question": "某人按假设恒速12 km/h骑行20分钟，估计模型路程，写出两个限制条件。",
+          "teacher_solution": "t=20/60=1/3 h，s=vt=12×1/3=4 km；需满足该段匀速（或平均速度含义准确）及单位一致。"
+        },
+        {
+          "question": "原水箱装90 L水，按6 L/min匀速放水8分钟，剩余量是多少？",
+          "teacher_solution": "设放水期间流量保持6 L/min且不再补水，V=90−6t（L），t∈[0,15] min，V(8)=42 L。"
+        }
+      ],
+      "invalid_case": {
+        "false_claim": "速度为12 km/h，时间为20分钟，所以s=12×20=240 km。",
+        "counterexample_explanation": "单位没有换算；12 km/h乘20 min不是240 km。正确统一为1/3 h后得到4 km，且不提供真实测量证据。"
+      },
+      "boundary": "速度变化、停止、不同单位和超过水箱耗尽时间等均要求修订假设或定义域；参数不能脱离来源无限沿用。",
+      "hints": [
+        "给所有变量标出单位。",
+        "核对乘法后的单位是否等于待求量的单位。",
+        "再问一次：匀速是观测事实还是本题约定的假设？"
+      ],
+      "near_transfer": "同速度骑行45分钟，计算模型行程并核对单位。",
+      "far_transfer": "制作不同城市气温与用电量模型，列出量纲和至少两个潜在混杂变量。",
+      "scoring_rubric": [
+        [
+          "变量与参数区分",
+          2
+        ],
+        [
+          "单位换算",
+          2
+        ],
+        [
+          "正确计算",
+          1
+        ],
+        [
+          "说明适用假设",
+          1
+        ]
+      ],
+      "finite_case": {
+        "type": "speed_distance",
+        "speed_kmh": 12,
+        "minutes": 20,
+        "expected_km": 4
+      },
+      "status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "formal_certification": "NOT_FORMALLY_CERTIFIED",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "full_official_clause_review": "NOT_COMPLETED"
+    },
+    {
+      "title": "模型求解与约束检查：整数盈亏平衡",
+      "anchor": "KB51-C-P035-V003",
+      "knowledge_kind": "METHOD",
+      "definition": "模型求解是在给定数学约束内寻找满足目标条件的变量；现实中的件数等计数变量一般取非负整数，不应把连续方程的解无条件视为可行现实决策。",
+      "assumptions": [
+        "售出每件售价8元、单位变动成本5元，固定成本30元不随件数变化。",
+        "本题仅考察n为非负整数的盈亏平衡，忽略税、库存与折扣。"
+      ],
+      "symbols": [
+        "n∈ℤ≥0：售出件数",
+        "R(n)=8n元、K(n)=30+5n元",
+        "P(n)=R(n)−K(n)=3n−30元"
+      ],
+      "prerequisites": [
+        "一元一次不等式",
+        "非负整数的含义"
+      ],
+      "validity_why": "平衡条件R≥K等价于3n−30≥0；必须结合n的现实离散性。只解实数不等式而忽略计数约束可能输出不可执行的件数。",
+      "steps": [
+        [
+          "列明现实量",
+          "R为收入，K为成本，P为净收益，均以元表示；n为非负整数。"
+        ],
+        [
+          "写出不亏约束",
+          "至少不亏损要求P(n)=8n−(30+5n)≥0。"
+        ],
+        [
+          "合法变形",
+          "合并同类项得3n≥30；正数3除两边不改变不等号方向，得到n≥10。"
+        ],
+        [
+          "验证边界",
+          "n=10时P=0；n=9时P=−3，因此最小可行整数为10。"
+        ]
+      ],
+      "worked_examples": [
+        {
+          "question": "每件产品售价8元、单位成本5元、固定成本30元，至少售出多少件才不亏？",
+          "teacher_solution": "n∈ℤ≥0，8n−(30+5n)≥0等价于3n≥30，所以n≥10；代入10得0元、9得−3元，故至少10件。"
+        },
+        {
+          "question": "某活动每张票收15元，固定支出48元、每人可变支出7元，至少售出多少张票才不亏？",
+          "teacher_solution": "净收益为15n−48−7n=8n−48，n∈ℤ≥0，n≥6，代入6票恰好收支平衡。"
+        }
+      ],
+      "invalid_case": {
+        "false_claim": "只要达到9.5件就差不多不亏，允许把现实售出件数写作9.5。",
+        "counterexample_explanation": "件数为整数，且代入9.5使模型净收益为−1.5元，仍亏损；对一般模型也必须先识别可行整数域。"
+      },
+      "boundary": "售价和成本为假设参数，达到10件的结论不允许迁移到打折、阶梯成本、限购或有损耗的情境。",
+      "hints": [
+        "先区分收入、成本与净收益。",
+        "不亏意味着哪个量≥0？",
+        "最后检查解是否满足件数为非负整数。"
+      ],
+      "near_transfer": "固定成本改为31元，仍是8元售出、5元变动成本，找最小整数n。",
+      "far_transfer": "将盈亏平衡模型改为按阶梯票价收款，讨论何时必须使用分段函数。",
+      "scoring_rubric": [
+        [
+          "准确建立收入成本模型",
+          2
+        ],
+        [
+          "推出并解释不等式",
+          2
+        ],
+        [
+          "边界代入检查",
+          1
+        ],
+        [
+          "整数可行性与假设",
+          1
+        ]
+      ],
+      "finite_case": {
+        "type": "break_even",
+        "fixed": 30,
+        "variable": 5,
+        "unit_price": 8,
+        "minimum_units": 10
+      },
+      "status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "formal_certification": "NOT_FORMALLY_CERTIFIED",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "full_official_clause_review": "NOT_COMPLETED"
+    },
+    {
+      "title": "模型预测与现实验证：残差、留出点及失配判断",
+      "anchor": "KB51-C-P035-V004",
+      "knowledge_kind": "METHOD",
+      "definition": "残差是在同一观测点上观测值减去模型预测值；留出数据是未参与拟合的观察，检验其误差可以揭示样本内拟合与独立适用之间的区别。",
+      "assumptions": [
+        "训练点为人为构造的(0,1),(1,3),(2,5)，只是教学样例。",
+        "独立留出点(3,9)不参加模型构造；观测量与预测量有相同单位。"
+      ],
+      "symbols": [
+        "预测模型ŷ=2x+1",
+        "残差e=y−ŷ",
+        "训练残差为0、留出点残差为2"
+      ],
+      "prerequisites": [
+        "一次函数",
+        "差值、残差的含义"
+      ],
+      "validity_why": "训练点的代数吻合只能说明这些点与表达式一致，不能证明未知点也满足模型；应在未见点测试预测误差，再考虑假设或函数形式是否需要调整。",
+      "steps": [
+        [
+          "区分训练与留出",
+          "只用(0,1),(1,3),(2,5)构造模型ŷ=2x+1。"
+        ],
+        [
+          "核对样本内结果",
+          "在训练三点，预测分别为1、3、5，训练残差都是0。"
+        ],
+        [
+          "预测留出点",
+          "当x=3时，模型预测ŷ=7，留出观测为9。"
+        ],
+        [
+          "得出有限结论",
+          "留出残差e=9−7=2，显示该点失配；无法凭一个点断言所有外部输入失配。"
+        ]
+      ],
+      "worked_examples": [
+        {
+          "question": "训练点(0,1),(1,3),(2,5)支持ŷ=2x+1；留出观测为(3,9)，求残差并说明。",
+          "teacher_solution": "模型预测7、观测9，残差e=9−7=2。训练残差0不表示留出残差0；应核查测量误差或调整模型。"
+        },
+        {
+          "question": "模型预测某日水耗量为12 L，真实记录为15 L，给出同口径残差及绝对误差。",
+          "teacher_solution": "残差=15−12=3 L，绝对误差=|3|=3 L；单次误差不能证明模型长期好坏。"
+        }
+      ],
+      "invalid_case": {
+        "false_claim": "因为一次模型在3个训练样本上残差均为0，故以后所有x上的预测必准确。",
+        "counterexample_explanation": "同模型在留出样本(3,9)预测7，残差2，已反驳对所有未知点均准确的结论。"
+      },
+      "boundary": "必须确认训练和验证样本未混用且观测单位一致；一个留出点只验证该点，不能推断总体泛化性能。",
+      "hints": [
+        "哪些点曾用于确定模型？",
+        "先写残差e=y−ŷ，再逐点计算。",
+        "检查留出点误差是否支持之前的泛化陈述。"
+      ],
+      "near_transfer": "把留出观测(3,9)改为(3,6)，写出残差符号和含义。",
+      "far_transfer": "比较线性模型与分段模型在多个未见时间段的残差，而不是只比较训练误差。",
+      "scoring_rubric": [
+        [
+          "训练/留出清晰区分",
+          2
+        ],
+        [
+          "残差计算准确",
+          2
+        ],
+        [
+          "合理解释误差",
+          1
+        ],
+        [
+          "不夸大泛化",
+          1
+        ]
+      ],
+      "finite_case": {
+        "type": "residual",
+        "intercept": 1,
+        "slope": 2,
+        "train": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "holdout": [
+          3,
+          9
+        ],
+        "expected_residual": 2
+      },
+      "status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "formal_certification": "NOT_FORMALLY_CERTIFIED",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "full_official_clause_review": "NOT_COMPLETED"
+    },
+    {
+      "title": "数学计算正确≠现实模型适切：解的可行性双门禁",
+      "anchor": "KB51-C-P035-V005",
+      "knowledge_kind": "CONCEPT",
+      "definition": "数学内在正确性指在给定假设和形式系统中推导、计算不矛盾；现实适切性指模型的对象、参数、定义域和验证证据与真实使用情境相符，两者是独立判断维度。",
+      "assumptions": [
+        "简化预测方程4t+2=18按代数规则求解，其中t为小时。",
+        "现实研究仅允许0≤t≤3小时；这一边界来自研究方案而不是代数表达式。"
+      ],
+      "symbols": [
+        "代数解t=4 h",
+        "现实允许域D=[0,3] h",
+        "可行解集合S={4}∩D=∅"
+      ],
+      "prerequisites": [
+        "一元一次方程",
+        "集合交与定义域"
+      ],
+      "validity_why": "方程解t=4可经代入准确验证，但4不在情境允许域内，不能作为现实可执行结论。必须分别给出代数检验与外部约束检验。",
+      "steps": [
+        [
+          "分开两个问题",
+          "先检查方程4t+2=18是否成立，再检查t是否属于现实允许域。"
+        ],
+        [
+          "求数学解",
+          "移项得4t=16，除以4得t=4；代回4×4+2=18。"
+        ],
+        [
+          "检查现实边界",
+          "因为4∉[0,3]，在给定现实研究范围内没有可行解。"
+        ],
+        [
+          "形成两个结论",
+          "代数计算正确；作为该情境内的计划方案不适切，不能把4小时当合规答案。"
+        ]
+      ],
+      "worked_examples": [
+        {
+          "question": "研究只允许0—3小时，模型方程4t+2=18。说明代数解是否正确、现实中是否可行。",
+          "teacher_solution": "代数解t=4且4×4+2=18；但t=4超过允许上限3小时，故数学等式成立，现实无可行解。"
+        },
+        {
+          "question": "模型假定用水量V=10−2t L，t以分钟计，若问8分钟后还剩多少水，直接代入会怎样？",
+          "teacher_solution": "代入得V(8)=−6 L，负水量违反物理边界；原模型实际只能用于0≤t≤5 min，8分钟应改用水已耗尽等分段约束。"
+        }
+      ],
+      "invalid_case": {
+        "false_claim": "方程有精确解4，因此现实研究允许安排4小时，说明模型完全正确。",
+        "counterexample_explanation": "方程的代入检验不能替代情境约束检查；4小时违反研究上限3小时。"
+      },
+      "boundary": "数学推导真不等于现实观测真；反过来某次观测吻合也不认证推导所有前提；两套证据需分开记录。",
+      "hints": [
+        "先独立核验方程代入。",
+        "再把解和现实允许区间写成集合。",
+        "两个门禁的结果是否必须相同？为什么？"
+      ],
+      "near_transfer": "把现实允许域扩大为[0,5]，重新评价同一个代数解。",
+      "far_transfer": "讨论折线预测模型在观测区间外的外推值为何不能自动形成安全决策。",
+      "scoring_rubric": [
+        [
+          "正确求出代数解",
+          2
+        ],
+        [
+          "现实约束明确",
+          2
+        ],
+        [
+          "两层结论区分",
+          1
+        ],
+        [
+          "给出边界反例",
+          1
+        ]
+      ],
+      "finite_case": {
+        "type": "algebra_domain",
+        "slope": 4,
+        "fixed": 2,
+        "target": 18,
+        "max_t": 3,
+        "expected_solution": 4
+      },
+      "status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "formal_certification": "NOT_FORMALLY_CERTIFIED",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "full_official_clause_review": "NOT_COMPLETED"
+    },
+    {
+      "title": "数学探究中的猜想与反例：有限检验不能代替一般证明",
+      "anchor": "KB51-C-P035-V006",
+      "knowledge_kind": "METHOD",
+      "definition": "猜想是由观察提出但仍待一般证明的命题。一个满足全部前提的反例可否定全称命题；有限个验证成功的正例不能在无限论域上直接证成全称命题。",
+      "assumptions": [
+        "变量n属于非负整数集合，素数定义为大于1且只有1和自身两个正因数的整数。",
+        "原始猜想是n²+n+41对所有n≥0都是素数，不应把小n的实验观察当成证明。"
+      ],
+      "symbols": [
+        "p(n)=n²+n+41，n∈ℤ≥0",
+        "p(41)=41×43=1763（合数）"
+      ],
+      "prerequisites": [
+        "整除与素数定义",
+        "全称量词和反例"
+      ],
+      "validity_why": "证明“所有n”要求覆盖论域中全部值或给出通用逻辑；只需找到一个满足论域而违反结论的n即可否证。有限枚举能寻找反例，但本身不升级为任意全称证明。",
+      "steps": [
+        [
+          "形成可证伪的命题",
+          "明确猜想：对每个非负整数n，p(n)=n²+n+41都是素数。"
+        ],
+        [
+          "找可能的反例",
+          "令n=41，计算41²+41+41=1763。"
+        ],
+        [
+          "证明该数非素数",
+          "分解1763=41×43，两因数均大于1，因此1763为合数。"
+        ],
+        [
+          "给出逻辑结论",
+          "全称猜想被一个反例否定，先前许多正例不能修复这一全称陈述。"
+        ]
+      ],
+      "worked_examples": [
+        {
+          "question": "有人检验若干个n后猜想n²+n+41总为素数。计算n=41并判断猜想。",
+          "teacher_solution": "p(41)=41²+41+41=1763=41×43，是合数。n=41符合非负整数论域，构成合法反例，故全称猜想为假。"
+        },
+        {
+          "question": "猜想“相邻两个整数之积必为偶数”，怎样从例子走向证明？",
+          "teacher_solution": "设任意整数k，相邻数为k和k+1，其中恰有一个为偶数，故乘积k(k+1)为偶数；这是对任意k的论证，不是只枚举几个k。"
+        }
+      ],
+      "invalid_case": {
+        "false_claim": "计算器显示n=0到40时该式都为素数，因此对所有非负整数n都成立。",
+        "counterexample_explanation": "n=41就是合法反例。验证41个值不涵盖无限论域，即便前面的有限计算正确也不能推出所有n。"
+      },
+      "boundary": "反例必须属于原命题论域且满足全部前提；有限枚举对有限且穷尽的论域可能构成证明，对无穷论域一般不能。",
+      "hints": [
+        "先把‘总是’改写成全称量词。",
+        "寻找满足定义域而结论不成立的一个值。",
+        "分解所得整数以检查其是否确为素数。"
+      ],
+      "near_transfer": "构造一个反例反驳‘所有偶数都能被4整除’。",
+      "far_transfer": "针对统计模型的‘每次预测都准确’，设计独立留出测试，并解释它与数学反例的异同。",
+      "scoring_rubric": [
+        [
+          "命题量词与论域明确",
+          2
+        ],
+        [
+          "精确反例计算",
+          2
+        ],
+        [
+          "素数性质判断",
+          1
+        ],
+        [
+          "区分猜想与证明",
+          1
+        ]
+      ],
+      "finite_case": {
+        "type": "prime_counterexample",
+        "n": 41,
+        "factor1": 41,
+        "factor2": 43,
+        "expected": 1763
+      },
+      "status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "formal_certification": "NOT_FORMALLY_CERTIFIED",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "full_official_clause_review": "NOT_COMPLETED"
+    },
+    {
+      "title": "研究过程的可追溯记录：模型、数据、验证与反思",
+      "anchor": "KB51-C-P035-V007",
+      "knowledge_kind": "TEACHING_ACTIVITY",
+      "definition": "建模研究成果应当使独立读者能够追踪问题、数据来源与允许域、假设、计算、验证、失效情境和修订建议；单一数值答案不构成可复核研究记录。",
+      "assumptions": [
+        "演示数据均为合成：时长h=1、2、3小时，对应观察值7、9、11元。",
+        "讨论的是教学模拟的一次收费规则C(h)=5+2h，研究范围h∈[1,3]小时；不涉及真实学生或实际商家数据。"
+      ],
+      "symbols": [
+        "h：租用时长(h)",
+        "C(h)=5+2h：模型金额(元)",
+        "观测点(1,7),(2,9),(3,11)"
+      ],
+      "prerequisites": [
+        "函数列表与表示",
+        "建模假设、残差计算"
+      ],
+      "validity_why": "保留输入、单位与版本可以让他人重算结果，留出证据位置可暴露模型未被真实验证的局限；不记录范围与假设会造成外推误用。",
+      "steps": [
+        [
+          "问题与来源记录",
+          "注明研究目标是预测模拟租赁费用，数据为合成演示，量纲为小时与元。"
+        ],
+        [
+          "假设和版本记录",
+          "模型v1为C(h)=5+2h，仅在1≤h≤3小时假定规则不变。"
+        ],
+        [
+          "计算与观察对照",
+          "分别预测7、9、11元，与三个合成观察点相同，样本内残差为0。"
+        ],
+        [
+          "反思与外部限制",
+          "h=8小时预测21元虽可代数计算，却超出记录的有效域，不宣称这一预测现实准确。"
+        ]
+      ],
+      "worked_examples": [
+        {
+          "question": "给出三个合成点(1,7),(2,9),(3,11)，按C(h)=5+2h撰写可复核研究记录，并指出外推风险。",
+          "teacher_solution": "记录输入h(小时)、输出C(元)、假设收费常量、源数据为合成样例。三点预测7/9/11、残差0；h=8虽算得21却超出[1,3]有效范围，需新证据。"
+        },
+        {
+          "question": "某模型在两次观测上误差均为0，但未记录观测时间和单位，这种研究报告是否足够？",
+          "teacher_solution": "不够。缺少时间窗口、单位和来源，无法确认模型与数据同口径，更无法据此复核应用边界；应补数据字典、记录条件和留出验证。"
+        }
+      ],
+      "invalid_case": {
+        "false_claim": "只展示‘预测21元’的演示截图，就可以证明模型适用于8小时租用情境。",
+        "counterexample_explanation": "8小时超出合成数据的1—3小时范围；截图不包含假设、来源、误差或外部验证，不能作为现实适用证据。"
+      },
+      "boundary": "演示台账只能支撑合成案例的可复现性；任何真实部署均需许可、隐私处理、实际验证及教师审核。",
+      "hints": [
+        "按‘问题—数据—假设—模型—验证—限制’顺序整理材料。",
+        "为每列数据注明单位、来源、允许域。",
+        "哪些主张已有数学证据、哪些仍需现实采样？"
+      ],
+      "near_transfer": "把合成观察数据改成(1,7),(2,10),(3,11)，记录模型残差及下一步检查。",
+      "far_transfer": "设计保护隐私的校园节水研究报告模板，包含数据授权说明、模型版本与失效判断。",
+      "scoring_rubric": [
+        [
+          "研究目标与数据出处可追踪",
+          2
+        ],
+        [
+          "模型假设与量纲清楚",
+          2
+        ],
+        [
+          "计算可复核",
+          1
+        ],
+        [
+          "证据边界与修订建议",
+          1
+        ]
+      ],
+      "finite_case": {
+        "type": "traceable_report",
+        "fixed": 5,
+        "rate": 2,
+        "times": [
+          1,
+          2,
+          3
+        ],
+        "observed": [
+          7,
+          9,
+          11
+        ],
+        "out_of_domain": 8,
+        "algebraic_forecast": 21
+      },
+      "status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "formal_certification": "NOT_FORMALLY_CERTIFIED",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "full_official_clause_review": "NOT_COMPLETED"
+    }
+  ]
+}

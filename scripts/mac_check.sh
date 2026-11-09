@@ -72,6 +72,7 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch66_competency_evidence
 .venv/bin/python scripts/build_kb_batch68_counterparts.py --check --verify-local
 .venv/bin/python scripts/build_kb_batch69_remaining.py --check --verify-local
 .venv/bin/python scripts/build_kb_batch70_conflict_review.py --check
+.venv/bin/python scripts/build_kb_batch71_modelling.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"
