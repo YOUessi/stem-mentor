@@ -49,3 +49,9 @@
 4. K08/K09尚待合法教师签字、审核发布凭据、已批准索引及冻结的真实LLM API/规则基线对照评测。真实教师批准0，学生端深度发布0。所有 PR 均保持 Draft，不自动合并 main。
 
 **Batch56源码提交 SHA `023890ea93baf13d1804765a3b5bf9299e3c1a4c`；最终报告及测试日志单独提交（以最终GitHub HEAD为准）。远端Draft PR及GitHub Actions最后回执以本轮GitHub实际核验为准；不得提前声称CI成功。**
+
+## GitHub 远端验收回执
+
+- GitHub Draft PR **#81**：https://github.com/YOUessi/stem-mentor/pull/81 ，基线为 Batch55 Draft PR #80，未合并。
+- 已通过 GitHub 读取确认提交 `50faddaf62561bcc8648391228e3234a1c7a090a` 和版本化执行报告；2026-11-09 GitHub Actions **#42556979056** 状态 `completed / success`：https://github.com/YOUessi/stem-mentor/actions/runs/42556979056 。该检查对应上述提交 SHA，不等于正式教师审核。
+- 追加本回执后的后继元数据提交如产生新的 CI，则以其对应的独立 GitHub Actions 结果为准，不能沿用旧 SHA 的 Success。
