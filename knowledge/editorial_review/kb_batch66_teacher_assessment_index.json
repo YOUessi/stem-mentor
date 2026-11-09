@@ -1,0 +1,119 @@
+{
+  "contains_teacher_answers": false,
+  "rows": [
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "集合元素关系与包含关系",
+      "id": "KB66-ASM-01",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P015-L001",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "充分必要条件与逆命题",
+      "id": "KB66-ASM-02",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P017-L018",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "全称量词与有限反例",
+      "id": "KB66-ASM-03",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P018-L016",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "同乘负数的不等号方向",
+      "id": "KB66-ASM-04",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P019-L003",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "复合函数与定义域",
+      "id": "KB66-ASM-05",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P023-L012",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "对数单调性与底数条件",
+      "id": "KB66-ASM-06",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P025-L008",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "单位圆恒等式与退化",
+      "id": "KB66-ASM-07",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P029-L014",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "复数商与零分母",
+      "id": "KB66-ASM-08",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P030-L016",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "二维基底与非共线条件",
+      "id": "KB66-ASM-09",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P031-L003",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "空间直线与投影假交点",
+      "id": "KB66-ASM-10",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P033-L003",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "古典概型与等可能假设",
+      "id": "KB66-ASM-11",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P034-L002",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "线性收费模型与现实边界",
+      "id": "KB66-ASM-12",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P034-L014",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "线性拟合与残差解释",
+      "id": "KB66-ASM-13",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P035-L022",
+      "student_retrievable": false
+    },
+    {
+      "access": "TEACHER_ONLY",
+      "domain": "样本均值与代表性边界",
+      "id": "KB66-ASM-14",
+      "review": "REVIEW_PENDING",
+      "source_section_anchor": "KB61-P036-L006",
+      "student_retrievable": false
+    }
+  ],
+  "schema_version": "kb66-teacher-index-only-v1",
+  "student_index_write_permitted": false
+}
