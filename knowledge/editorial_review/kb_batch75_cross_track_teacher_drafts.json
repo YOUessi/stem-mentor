@@ -1,0 +1,646 @@
+{
+  "distribution": "TEACHER_ONLY",
+  "finite_case_certification": "EXACT_BOUNDED_INSTANCES_ONLY",
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "schema_version": "kb75-cross-track-original-teacher-drafts-v1",
+  "source_editorial_matrix_sha256": "7dbacbaa0a863f76352797adefa7013e11de6d6184603258fd54e221465fb75b",
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "student_published": 0,
+  "teacher_approved": 0,
+  "teacher_drafts": [
+    {
+      "assumptions": [
+        "论域为全体整数n",
+        "整除的定义是存在整数k满足n=4k"
+      ],
+      "common_wrong_method": "把P⇒Q直接倒过来写成Q⇒P，属于逆命题未证。",
+      "counterexample": "n=2满足偶数却不满足4倍数，因此Q⇒P失败。",
+      "curriculum_track_hint": "COMPULSORY",
+      "definition": "对于同一论域内的命题P,Q，若P⇒Q总成立，则P是Q的充分条件，Q是P的必要条件；仅当反向也成立才是充要条件。",
+      "far_transfer": "判断几何中正方形与矩形的条件方向，必须保持图形定义一致。",
+      "finite_case": {
+        "consequent": 2,
+        "divisor": 4,
+        "expected": true,
+        "n": 12,
+        "type": "implication_divisible"
+      },
+      "graduated_hints": [
+        "先把题中两个性质写成P和Q。",
+        "证明P能否推出Q而不是凭样本猜测。",
+        "尝试构造满足Q但不满足P的整数。"
+      ],
+      "id": "KB75-M01",
+      "independent_challenge_solution_reveal": false,
+      "invalid_boundary": "不能因观察几个偶数都是4的倍数就把偶数当成4倍数的充分条件。",
+      "knowledge_kind": "CONCEPT",
+      "mathematical_certification": "NOT_FORMALLY_CERTIFIED",
+      "mathematical_validity": "充分条件判断须检查正向全称命题；必要条件判断须检查反向。",
+      "near_transfer": "讨论n是6倍数与n是3倍数的充分必要方向。",
+      "official_atom_count": null,
+      "reasoning_steps": [
+        [
+          "先固定论域",
+          "若把n换成非整数，整除表述可能失去原有含义。"
+        ],
+        [
+          "证明正向",
+          "n=4k=2(2k)，因k整数，2k整数，故n偶。"
+        ],
+        [
+          "检验逆向",
+          "取n=2，n是偶数却不是4的整数倍。"
+        ],
+        [
+          "区分条件方向",
+          "成立P⇒Q并不自动意味着Q⇒P，所以不是充要条件。"
+        ]
+      ],
+      "source_editorial_subspan_id": "KB75-P016-S02",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "statement": "在整数域中被4整除是偶数的充分而非必要条件。",
+      "student_publishable": false,
+      "symbols": [
+        "P: n被4整除",
+        "Q: n是偶数"
+      ],
+      "teacher_proof_review": "NOT_COMPLETED",
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "充分条件与必要条件及逆命题",
+      "worked_examples": [
+        [
+          "在整数中，12是4的倍数能推出什么？",
+          "12=4×3=2×6，因此12是偶数；这是P⇒Q的实例，不单凭一个例子证明所有整数。"
+        ],
+        [
+          "10为偶数，能推出10被4整除吗？",
+          "10=2×5而10/4不是整数，因此反向不成立；一个反例即可否定全称逆命题。"
+        ]
+      ]
+    },
+    {
+      "assumptions": [
+        "本例的样本为完全自编的合成数字",
+        "样本容量n必须为正且取值均可相加"
+      ],
+      "common_wrong_method": "把观察到的样本均值当成无误差的总体均值，忽视抽样偏差。",
+      "counterexample": "总体[3,5,7,9]的均值6，前3人的样本均值5，并非必然相等。",
+      "curriculum_track_hint": "COMPULSORY",
+      "definition": "有限样本均值为所有样本值之和除以样本个数；总体均值是目标总体全部取值的均值或其分布期望，通常不等于一次抽样的均值。",
+      "far_transfer": "调研投票率时区分调查对象、未应答者和估计总体。",
+      "finite_case": {
+        "expected_den": 1,
+        "expected_num": 5,
+        "type": "sample_mean",
+        "values": [
+          3,
+          5,
+          7
+        ]
+      },
+      "graduated_hints": [
+        "先区分样本与目标总体。",
+        "列出样本总和及非零样本容量。",
+        "讨论抽样机制是否足以支持总体结论。"
+      ],
+      "id": "KB75-M02",
+      "independent_challenge_solution_reveal": false,
+      "invalid_boundary": "偏向高分样本、仅挑选容易联系的人，都不能当然代表目标总体。",
+      "knowledge_kind": "METHOD",
+      "mathematical_certification": "NOT_FORMALLY_CERTIFIED",
+      "mathematical_validity": "把样本统计量用作总体参数估计时，必须报告抽样方式和不确定性。",
+      "near_transfer": "用随机抽样与便利抽样比较抽样设计前提。",
+      "official_atom_count": null,
+      "reasoning_steps": [
+        [
+          "写出平均数定义",
+          "样本均值是(x1+…+xn)/n，n=0时不可定义。"
+        ],
+        [
+          "执行本例计算",
+          "对3、5、7，平均值(3+5+7)/3=5。"
+        ],
+        [
+          "展示推断边界",
+          "若目标总体为3、5、7、9，则总体均值=6，并非5。"
+        ],
+        [
+          "识别误推原因",
+          "样本均值是统计量而非每次都与总体参数一致的恒等量。"
+        ]
+      ],
+      "source_editorial_subspan_id": "KB75-P032-S02",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "statement": "算术平均数可从给定观测求出，但代表性与总体推断需要抽样设计和附加假设。",
+      "student_publishable": false,
+      "symbols": [
+        "x_i:第i个观察值",
+        "n:样本容量",
+        "x_bar:样本均值"
+      ],
+      "teacher_proof_review": "NOT_COMPLETED",
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "样本均值与总体均值不能混为一谈",
+      "worked_examples": [
+        [
+          "样本4、6、8的平均值是多少？",
+          "总和为18，除以3得到6；这只对该三元素样本成立。"
+        ],
+        [
+          "样本2、2与总体2、2、10能否有相同均值？",
+          "样本均值2；总体均值14/3；两者不同，不能从样本直接断言总体。"
+        ]
+      ]
+    },
+    {
+      "assumptions": [
+        "A和B均是同一概率空间的可测事件",
+        "P(B)>0并且0≤P(A∩B)≤P(B)≤1"
+      ],
+      "common_wrong_method": "把P(A|B)误写为P(A∩B)/P(A)，颠倒条件事件。",
+      "counterexample": "若P(B)=0，写成1/5÷0属于非法运算，不存在该商。",
+      "curriculum_track_hint": "SELECTIVE_COMPULSORY",
+      "definition": "在同一概率空间中，若P(B)>0，则P(A|B)=P(A∩B)/P(B)，即把样本空间限制到B后的A发生概率。",
+      "far_transfer": "医疗筛查的阳性预测值与灵敏度不是同一条件概率。",
+      "finite_case": {
+        "condition": [
+          2,
+          5
+        ],
+        "expected": [
+          1,
+          2
+        ],
+        "intersection": [
+          1,
+          5
+        ],
+        "type": "conditional"
+      },
+      "graduated_hints": [
+        "先写清楚究竟是给定A还是给定B。",
+        "检查分母是否为零。",
+        "核对交事件包含关系后做分式约分。"
+      ],
+      "id": "KB75-M03",
+      "independent_challenge_solution_reveal": false,
+      "invalid_boundary": "P(B)=0时不能套除法公式；交事件概率大于P(B)不可能。",
+      "knowledge_kind": "THEOREM",
+      "mathematical_certification": "NOT_FORMALLY_CERTIFIED",
+      "mathematical_validity": "分母必须严格正；A和B必须来自同一事件模型。",
+      "near_transfer": "若条件从B改成A，解释为什么结果可能不同。",
+      "official_atom_count": null,
+      "reasoning_steps": [
+        [
+          "限定条件事件",
+          "只在B发生的情况下讨论，新的归一化基准是P(B)。"
+        ],
+        [
+          "使用交事件",
+          "同时发生A与B的概率不能大于B的概率。"
+        ],
+        [
+          "归一化",
+          "P(B)>0才可用P(A∩B)/P(B)计算条件概率。"
+        ],
+        [
+          "核对边界",
+          "由0≤P(A∩B)≤P(B)得0≤P(A|B)≤1。"
+        ]
+      ],
+      "source_editorial_subspan_id": "KB75-P046-S03",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "statement": "条件概率公式在非零条件事件上成立，且计算值处于[0,1]。",
+      "student_publishable": false,
+      "symbols": [
+        "A,B:同一概率空间中的事件",
+        "P(B):条件事件概率",
+        "P(A∩B):交事件概率"
+      ],
+      "teacher_proof_review": "NOT_COMPLETED",
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "条件概率的非零分母和事件包含关系",
+      "worked_examples": [
+        [
+          "P(B)=2/5，P(A∩B)=1/5，求P(A|B)。",
+          "(1/5)/(2/5)=1/2；同时检查1/5≤2/5以验证事件包含约束。"
+        ],
+        [
+          "P(B)=1/2，P(A∩B)=1/4，求条件概率。",
+          "(1/4)/(1/2)=1/2，分母非零且交事件不超过条件事件。"
+        ]
+      ]
+    },
+    {
+      "assumptions": [
+        "a,b为有限实数且a<b",
+        "仅在模型已指定均匀密度时使用该公式"
+      ],
+      "common_wrong_method": "把概率密度函数在一个点上的高度误当作该点概率。",
+      "counterexample": "X在[2,6]均匀分布时P(X=3)=0，尽管密度f(3)=1/4。",
+      "curriculum_track_hint": "ELECTIVE_A",
+      "definition": "若X在a<b的实数区间[a,b]均匀分布，则密度在该区间为1/(b-a)，区间外为0；区间概率是密度在交集上的积分。",
+      "far_transfer": "用持续到达时间模型说明与离散等可能模型的区别。",
+      "finite_case": {
+        "a": 2,
+        "b": 6,
+        "expected": [
+          1,
+          2
+        ],
+        "type": "uniform_interval",
+        "u": 3,
+        "v": 5
+      },
+      "graduated_hints": [
+        "先找概率密度支撑区间。",
+        "对目标区间和支撑求交集。",
+        "把交集长度除以总长度。"
+      ],
+      "id": "KB75-M04",
+      "independent_challenge_solution_reveal": false,
+      "invalid_boundary": "区间长度为0时单点概率为0；将密度1/4解释为P(X=3)=1/4是错误的。",
+      "knowledge_kind": "CONCEPT",
+      "mathematical_certification": "NOT_FORMALLY_CERTIFIED",
+      "mathematical_validity": "计算区间概率先交支撑域；密度值并不是单点发生概率。",
+      "near_transfer": "讨论不同宽度均匀密度的最高值可能大于1却无矛盾。",
+      "official_atom_count": null,
+      "reasoning_steps": [
+        [
+          "确认密度归一",
+          "密度非负且积分从a到b等于(b-a)/(b-a)=1。"
+        ],
+        [
+          "计算区间概率",
+          "求区间[u,v]与支撑[a,b]的交长度，再除以b-a。"
+        ],
+        [
+          "处理点概率",
+          "连续密度在单点上的积分为0。"
+        ],
+        [
+          "辨认定义域",
+          "若a=b，1/(b-a)无意义，不能当作均匀连续分布。"
+        ]
+      ],
+      "source_editorial_subspan_id": "KB75-P056-S02",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "statement": "对a≤u≤v≤b，P(u≤X≤v)=(v-u)/(b-a)；连续变量单点概率为0。",
+      "student_publishable": false,
+      "symbols": [
+        "X:连续随机变量",
+        "a,b:有限支撑端点",
+        "f_X(x):密度"
+      ],
+      "teacher_proof_review": "NOT_COMPLETED",
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "均匀连续分布的密度与区间概率",
+      "worked_examples": [
+        [
+          "X在[2,6]均匀分布，P(3≤X≤5)是多少？",
+          "有利区间长度2，总长度4，概率=2/4=1/2。"
+        ],
+        [
+          "X在[0,10]均匀分布，P(8≤X≤12)是多少？",
+          "只能落在[8,10]部分，交集长度2，故概率2/10=1/5，而不是4/10。"
+        ]
+      ]
+    },
+    {
+      "assumptions": [
+        "被考察点周围允许x方向的非零小增量",
+        "所需单变量差商极限存在"
+      ],
+      "common_wrong_method": "把另一个变量当作x的函数，却声称在求偏导。",
+      "counterexample": "f(x,x)=x³+3x，导数3x²+3；固定y求偏导后代y=x得到2x²，两者一般不同。",
+      "curriculum_track_hint": "ELECTIVE_B",
+      "definition": "设f在(x0,y0)邻域内有定义，若lim(h→0)[f(x0+h,y0)-f(x0,y0)]/h存在，则称其为对x的偏导数，并且计算中保持y=y0不变。",
+      "far_transfer": "在多变量成本模型中解释固定产量或固定价格的假设。",
+      "finite_case": {
+        "expected_x": 4,
+        "expected_y": 7,
+        "type": "partial_polynomial",
+        "x": 2,
+        "y": 1
+      },
+      "graduated_hints": [
+        "先标明求哪一个方向的偏导。",
+        "其余变量在该方向差商中固定。",
+        "取差商极限并在指定点代值。"
+      ],
+      "id": "KB75-M05",
+      "independent_challenge_solution_reveal": false,
+      "invalid_boundary": "沿y=x变化得到的d/dx f(x,x)并非固定y时的∂f/∂x。",
+      "knowledge_kind": "CONCEPT",
+      "mathematical_certification": "NOT_FORMALLY_CERTIFIED",
+      "mathematical_validity": "偏导数不是沿任意曲线路径的导数；混合变化需要链式法则或全微分。",
+      "near_transfer": "比较方向导数与偏导，检查方向是否沿坐标轴。",
+      "official_atom_count": null,
+      "reasoning_steps": [
+        [
+          "回到偏导定义",
+          "求x偏导时，y始终取固定y0，不能随着h变化。"
+        ],
+        [
+          "计算差商",
+          "( (x+h)²y+3y -(x²y+3y) )/h = 2xy+hy。"
+        ],
+        [
+          "取极限",
+          "h趋0得2xy，导数存在。"
+        ],
+        [
+          "交换方向",
+          "求y偏导时x固定，得x²+3；两种偏导不同。"
+        ]
+      ],
+      "source_editorial_subspan_id": "KB75-P058-S02",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "statement": "对多项式f(x,y)=x²y+3y，∂f/∂x=2xy，∂f/∂y=x²+3。",
+      "student_publishable": false,
+      "symbols": [
+        "f(x,y):二元函数",
+        "h:x方向增量",
+        "∂f/∂x:对x偏导数"
+      ],
+      "teacher_proof_review": "NOT_COMPLETED",
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "二元函数偏导数必须固定另一变量",
+      "worked_examples": [
+        [
+          "f=x²y+3y，在(2,1)的x偏导是多少？",
+          "∂f/∂x=2xy，代入得4；另一变量y保持1。"
+        ],
+        [
+          "f=x²y+3y，在(2,1)的y偏导是多少？",
+          "∂f/∂y=x²+3=7；与x偏导4不同。"
+        ]
+      ]
+    },
+    {
+      "assumptions": [
+        "矩阵必须恰为3×3且元素属于实数或有理数",
+        "det(A)≠0时才可除以det(A)"
+      ],
+      "common_wrong_method": "未计算行列式是否为0就对它作除法。",
+      "counterexample": "A为零矩阵，b=0时有无穷多解；b非零时无解，均不满足唯一解断言。",
+      "curriculum_track_hint": "ELECTIVE_B",
+      "definition": "三阶系数矩阵A对应线性系统Ax=b；当det(A)≠0时A可逆，存在唯一解x=A⁻¹b。克拉默法则将第i列替为b得xi=det(Ai)/det(A)。",
+      "far_transfer": "对三传感器标定讨论何时测量方程不足以唯一确定参数。",
+      "finite_case": {
+        "A": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ]
+        ],
+        "b": [
+          4,
+          9,
+          10
+        ],
+        "expected": [
+          2,
+          3,
+          2
+        ],
+        "type": "cramer_3x3"
+      },
+      "graduated_hints": [
+        "检查系数矩阵形状是否正好3×3。",
+        "先计算det(A)并判断是否为0。",
+        "使用克拉默或消元后将解代回三式。"
+      ],
+      "id": "KB75-M06",
+      "independent_challenge_solution_reveal": false,
+      "invalid_boundary": "系数矩阵存在两行相等时行列式为0，不能因为写出形式分式就说唯一解。",
+      "knowledge_kind": "THEOREM",
+      "mathematical_certification": "NOT_FORMALLY_CERTIFIED",
+      "mathematical_validity": "det(A)=0时不能使用逆矩阵或克拉默分母；零行列式可能无解也可能无穷多解。",
+      "near_transfer": "构造一组线性相关的列并比较无解和无穷多解。",
+      "official_atom_count": null,
+      "reasoning_steps": [
+        [
+          "说明可逆条件",
+          "非零行列式意味着矩阵列向量线性无关，线性映射可逆。"
+        ],
+        [
+          "取得存在性",
+          "对任意b令x=A⁻¹b，则Ax=b。"
+        ],
+        [
+          "证明唯一性",
+          "若Ax=b且Ay=b，则A(x-y)=0，左乘A⁻¹得到x=y。"
+        ],
+        [
+          "说明克拉默法则",
+          "行列式对列线性，用b=ΣxiAi列展开得到det(Ai)=xi det(A)。"
+        ]
+      ],
+      "source_editorial_subspan_id": "KB75-P060-S02",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "statement": "当det(A)≠0时三元一次方程组有唯一解，并可用克拉默法则。",
+      "student_publishable": false,
+      "symbols": [
+        "A:3×3系数矩阵",
+        "b:常数列向量",
+        "det(A):行列式"
+      ],
+      "teacher_proof_review": "NOT_COMPLETED",
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "三阶线性方程组的行列式非零唯一解",
+      "worked_examples": [
+        [
+          "A=diag(2,3,5)，b=(4,9,10)，求解。",
+          "det(A)=30≠0，解为(2,3,2)，代入A得到(4,9,10)，各行严格成立。"
+        ],
+        [
+          "A=diag(1,2,3)，b=(2,6,12)，求解。",
+          "det(A)=6≠0，逐行解得(2,3,4)，代入验证等式。"
+        ]
+      ]
+    },
+    {
+      "assumptions": [
+        "P与Q具有确定真值且采用经典二值逻辑",
+        "需保持P和Q的论域和量词范围不变"
+      ],
+      "common_wrong_method": "把逆否命题偷换成逆命题或简单把结论否定。",
+      "counterexample": "n=3为3的倍数而不是6的倍数，否定了非法逆向推理。",
+      "curriculum_track_hint": "ELECTIVE_C",
+      "definition": "对于任意命题P和Q，P⇒Q与¬Q⇒¬P在所有真假赋值下有相同真值，因此两命题等价。",
+      "far_transfer": "在自动程序断言中区分逆否推理与不合法的逆向推断。",
+      "finite_case": {
+        "expected": false,
+        "p": true,
+        "q": false,
+        "type": "contrapositive_truth"
+      },
+      "graduated_hints": [
+        "写出P,Q并将二者分别取否定。",
+        "逆否是¬Q⇒¬P，顺序和真假均要调整。",
+        "检查真值表四组情形是否一致。"
+      ],
+      "id": "KB75-M07",
+      "independent_challenge_solution_reveal": false,
+      "invalid_boundary": "正向n是6倍数⇒n是3倍数成立；逆向n是3倍数⇒n是6倍数不成立。",
+      "knowledge_kind": "THEOREM",
+      "mathematical_certification": "NOT_FORMALLY_CERTIFIED",
+      "mathematical_validity": "仅在相同论域和一致否定下作等价替换；反命题或逆命题不一定等价。",
+      "near_transfer": "尝试把不能被偶数整除的问题改用逆否证明。",
+      "official_atom_count": null,
+      "reasoning_steps": [
+        [
+          "蕴含假值情况",
+          "P⇒Q仅在P真且Q假时为假。"
+        ],
+        [
+          "逆否命题假值",
+          "¬Q⇒¬P仅在¬Q真且¬P假时为假，亦即Q假且P真。"
+        ],
+        [
+          "逐真值组合比较",
+          "两者唯一的假值组合相同，其余三个组合都为真。"
+        ],
+        [
+          "阐明证明方法",
+          "因此为证明原命题，可证明逆否；逆命题需另证。"
+        ]
+      ],
+      "source_editorial_subspan_id": "KB75-P064-S03",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "statement": "证明P⇒Q可等价地证明¬Q⇒¬P，而不能直接替换成Q⇒P。",
+      "student_publishable": false,
+      "symbols": [
+        "P,Q:命题",
+        "¬:否定",
+        "⇒:蕴含"
+      ],
+      "teacher_proof_review": "NOT_COMPLETED",
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "逆否命题与原命题的逻辑等价",
+      "worked_examples": [
+        [
+          "若n被6整除，则n被3整除，写出逆否命题。",
+          "若n不被3整除，则n不被6整除；这与原命题等价。"
+        ],
+        [
+          "n被3整除⇒n被6整除是否成立？",
+          "不成立，n=3就是反例；不能将逆命题当逆否命题。"
+        ]
+      ]
+    },
+    {
+      "assumptions": [
+        "采用同一正交单位的直角坐标系",
+        "反射轴为y轴，不是任意倾斜坐标轴"
+      ],
+      "common_wrong_method": "只看图形大致像镜面就断言每点满足精确反射关系。",
+      "counterexample": "点(2,3)变为(4,3)属于x方向拉伸，而y轴反射应该是(-2,3)。",
+      "curriculum_track_hint": "ELECTIVE_D",
+      "definition": "在直角坐标平面中，关于y轴的反射T(x,y)=(-x,y)；它保留点到原点的距离和两点间距离，且T(T(P))=P。",
+      "far_transfer": "在图案设计中用坐标与距离数据验证严格轴对称而非主观美感。",
+      "finite_case": {
+        "expected": [
+          -2,
+          3
+        ],
+        "point": [
+          2,
+          3
+        ],
+        "type": "reflection_y"
+      },
+      "graduated_hints": [
+        "先指定镜像轴而不凭视觉猜测。",
+        "写出坐标变换的精确公式。",
+        "检查变换两次是否还原并核对距离平方。"
+      ],
+      "id": "KB75-M08",
+      "independent_challenge_solution_reveal": false,
+      "invalid_boundary": "变换(x,y)→(2x,y)不是关于y轴的反射，且改变了横向长度。",
+      "knowledge_kind": "METHOD",
+      "mathematical_certification": "NOT_FORMALLY_CERTIFIED",
+      "mathematical_validity": "对称性是一种可测几何关系，不能从美观主观感受推出严格数学对称。",
+      "near_transfer": "比较关于x轴与关于y轴的反射顺序。",
+      "official_atom_count": null,
+      "reasoning_steps": [
+        [
+          "写出变换",
+          "T只改变横坐标符号，纵坐标不变。"
+        ],
+        [
+          "验证两次反射",
+          "T(T(x,y))=T(-x,y)=(x,y)。"
+        ],
+        [
+          "验证距离",
+          "反射后两点差变为(-(x1-x2),y1-y2)，平方距离不变。"
+        ],
+        [
+          "明确适用范围",
+          "一般仿射缩放不一定保距，不能把所有图案变化称为反射。"
+        ]
+      ],
+      "source_editorial_subspan_id": "KB75-P069-S03",
+      "source_license": "ORIGINAL_PROJECT_AUTHORED",
+      "statement": "对任意平面点，关于y轴反射是保距且为自身逆变换。",
+      "student_publishable": false,
+      "symbols": [
+        "P=(x,y):原平面点",
+        "T:关于y轴镜像变换",
+        "d:欧氏距离"
+      ],
+      "teacher_proof_review": "NOT_COMPLETED",
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "轴对称变换的坐标不变量",
+      "worked_examples": [
+        [
+          "P=(2,3)关于y轴的像是什么？",
+          "T(P)=(-2,3)，两点到原点的距离都为√13。"
+        ],
+        [
+          "点(-4,1)连续反射两次的结果是什么？",
+          "第一次(4,1)，第二次(-4,1)，与原点完全重合。"
+        ]
+      ]
+    }
+  ],
+  "teacher_review": "REVIEW_PENDING",
+  "universal_math_proof_certification": "NOT_FORMALLY_CERTIFIED"
+}

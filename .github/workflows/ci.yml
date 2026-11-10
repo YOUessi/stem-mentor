@@ -118,6 +118,8 @@ jobs:
       - run: python scripts/build_kb_batch74_unmarked_review.py --check
       - run: python scripts/build_kb_batch74_geometry_theorems.py --check
       - run: python scripts/build_kb_batch74_page35_visual.py --check
+      - run: python scripts/build_kb_batch75_clause_splits.py --check
+      - run: python scripts/build_kb_batch75_lessons.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
