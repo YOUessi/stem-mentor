@@ -43,3 +43,9 @@
 4. K08/K09：复核已批准索引边界、学生自由解题步骤的 `UNSUPPORTED`/未验证返回、真实教师审核及正式发布门禁。
 
 本批 Draft PR 保持 Draft，不合并 main。实际提交 SHA、最终测试数字及 GitHub CI 运行记录以 PR/Issues 的后续验收回执为准。
+
+## 冻结源码 SHA 与远端CI验收回执
+
+- 本批 Mac 源码+数学内容+原始测试证据提交：`2e1dc8062c27f1c681ea2acb9be542e29741255c`；对应 Git Tree：`13a27ba65db4589167e213cf9969bf46b0edf5a1`，26个变更文件。正常 Git push 成功，GitHub 原生接口已回读同SHA Commit及关键源码。
+- 对上述源码提交的 GitHub Actions：`https://github.com/YOUessi/stem-mentor/actions/runs/42811308968`，Completed / Success；test job 138/138个步骤成功，0失败、0跳过。
+- 上述SHA锚定冻结的源码和原始日志，不用对本报告后续记录补充产生的文档提交反向重写历史代码SHA。CI成功只证明工程及受限数学实例检查通过，未通过教师审校、一般形式证明或学生正式发布门禁。
