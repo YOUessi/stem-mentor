@@ -69,3 +69,10 @@
 - Mac原始课标的整文件SHA及PDFKit逐行来源SHA检查通过；GitHub CI因受版权限制仅复查冻结SHA/模式与原创派生数据，不宣称复制了原PDF或执行云端原文校验。
 - 此次12条P0仅增加了“与原始历史步骤直接绑定的待审教师材料”：累计 **60/182** 项P0有直连审稿稿；**538**条历史自然语言证明步骤仍无一般形式认证、10组冲突未裁决、教师批准0、学生正式深度发布0。
 - GitHub PR、远端Commit SHA及CI最终状态须以真实远端完成后另行追加，不得将仅Mac完成误作远端交付完成。
+
+## GitHub首次正式提交核验
+
+- Mac通过`git commit`创建源码/原创审稿稿/测试日志共同提交 `d773fff96925d68015cc2f746ed57f7dceaf62e9`，对应 Git Tree `931213fd79586d6f27e063924a81c253dc46b180`。
+- Mac正常执行`git push --set-upstream origin feat/kb-batch85-source-guard-debt`，退出码0。通过GitHub原生Git commit读取，确认远端实际同一 Commit SHA、Tree SHA与直接父提交`27651f2b4c68f6355e4cee6d66a22dea987a67dc`一致，且远端报告正文可读取。
+- 已创建真实Draft PR **#110**：https://github.com/YOUessi/stem-mentor/pull/110 ，基于Batch84 PR #109对应分支。未合并、未强推、未更改主仓原有未提交内容。
+- GitHub Actions最终结果和GitHub PR的mergeability是独立验收门槛；以实际远端状态为准，尚无新CI证据前不得报告Success。原始Mac测试结果不因GitHub状态而改变。
