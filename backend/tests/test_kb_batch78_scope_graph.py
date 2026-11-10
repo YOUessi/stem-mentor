@@ -69,6 +69,31 @@ def test_cross_stage_wrong_official_pdf_rejected(which,field,bad):
     data=B.read(B.SOURCES[which]);data[field]=bad
     with pytest.raises(ValueError):B.build(input_override={which:data})
 
+# Regression: chained != comparisons allowed matching forged review counters to
+# slip through. Every independent input must carry the exact integer 0.
+@pytest.mark.parametrize("which", tuple(B.SOURCES))
+@pytest.mark.parametrize("forged", [1, -1, True, "0", None, 0.0, [], {}])
+def test_each_independent_source_rejects_forged_or_noninteger_teacher_review(which, forged):
+    data=B.read(B.SOURCES[which])
+    data["teacher_full_page_reviews"]=forged
+    with pytest.raises(ValueError,match="Fake teacher full-page review"):
+        B.build(input_override={which:data})
+
+@pytest.mark.parametrize("forged", [1, -1, True, "0", None, 0.0])
+def test_all_four_matching_forged_review_counters_are_rejected(forged):
+    data={k:B.read(p) for k,p in B.SOURCES.items()}
+    for artifact in data.values():
+        artifact["teacher_full_page_reviews"]=forged
+    with pytest.raises(ValueError,match="Fake teacher full-page review"):
+        B.build(input_override=data)
+
+@pytest.mark.parametrize("which", tuple(B.SOURCES))
+def test_missing_review_counter_rejected_in_each_input(which):
+    data=B.read(B.SOURCES[which])
+    del data["teacher_full_page_reviews"]
+    with pytest.raises(ValueError,match="Fake teacher full-page review"):
+        B.build(input_override={which:data})
+
 @pytest.mark.parametrize("op",[
  "wrong_subspan_parent_sha","out_of_parent_extent","cross_track_reassignment",
  "fake_subspan_official_count","fake_candidate_source_sha","fake_teacher_approval",

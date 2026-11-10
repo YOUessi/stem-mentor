@@ -127,6 +127,8 @@ jobs:
       - run: PYTHONPATH=backend python scripts/build_kb_batch78_proof_review.py --check
       - run: PYTHONPATH=backend python scripts/build_kb_batch78_scope_graph.py --check
       - run: PYTHONPATH=backend python scripts/build_kb_batch79_proof_conditions.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch80_eight_cards.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch80_review_queue.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
