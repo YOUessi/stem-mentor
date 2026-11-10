@@ -17,5 +17,5 @@ PINCH {'zoom': 1, 'panX': 0, 'panY': 0} => {'zoom': 2, 'panX': -532, 'panY': -35
 CDP PEN 1 [{'x': 532, 'y': 380, 'p': 0.3499999940395355}, {'x': 552, 'y': 380, 'p': 0.550000011920929}, {'x': 572, 'y': 380, 'p': 0.800000011920929}]
 iPad pointer emulation PASS: two-finger pinch, no unintended touch ink, pen pressure samples; NOT physical device validation
 ..                                                                       [100%]
-2 passed in 7.16s
+2 passed in 11.17s
 Chrome browser suite passed; temporary synthetic database will be removed.

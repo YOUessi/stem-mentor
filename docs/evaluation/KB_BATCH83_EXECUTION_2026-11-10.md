@@ -52,10 +52,10 @@ scripts/build_kb_batch83_semantic_coverage.py
 
 ## K08/K09｜自动化回归与追溯
 
-新增728项Batch83专项测试（均通过，包含在Python全量回归内），覆盖60条来源溯源与逐项反面审核状态、防跨轨污染、内容降级、结构误判及SymPy数学独立交叉检查。新增生成器一致性检查到scripts/mac_check.sh和.github/workflows/ci.yml。真实原始日志在 evaluations/results/2026-11-10-kb-batch83/，包含专项、全量Mac、浏览器各自.log及.exit。
+新增729项Batch83专项测试（均通过，包含在Python全量回归内），覆盖60条来源溯源与逐项反面审核状态、防跨轨污染、内容降级、结构误判及SymPy数学独立交叉检查。新增生成器一致性检查到scripts/mac_check.sh和.github/workflows/ci.yml。真实原始日志在 evaluations/results/2026-11-10-kb-batch83/，包含专项、全量Mac、浏览器各自.log及.exit。
 
 测试脚本：bash scripts/mac_check.sh；bash scripts/mac_browser_check.sh。
-**Mac实测结果（仅本批实际运行）**：Batch83专项728 passed/0 failed；Python全量 **56,793 passed、5 skipped、0 failed、1个第三方warning**；Node测试 **111/111 passed**；RAG困难负例 **40/40**、Top3 **22/22**；Mac全量EXIT 0。专项728已计入Python全量，不重复累计。浏览器单独在mac_browser.log和退出码中记录。
+**Mac实测结果（仅本批实际运行）**：Batch83专项729 passed/0 failed；Python全量 **56,794 passed、5 skipped、0 failed、1个第三方warning**；Node测试 **111/111 passed**；RAG困难负例 **40/40**、Top3 **22/22**；Mac全量EXIT 0。专项729已计入Python全量，不重复累计。浏览器单独在mac_browser.log和退出码中记录。
 
 ## 下一批待办
 
@@ -66,3 +66,13 @@ K00对剩余326个来源锚点继续逐项原文语义分类，特别是必修12
 本批的GitHub Draft PR、完整源码SHA、Tree和GitHub Actions状态在提交后凭真实远端结果写入PR验收回执；本报告不预先虚构尚未获得的编号或CI结论。
 
 **浏览器最终验收：** Mac Chrome/Playwright 15项脚本成功，浏览器pytest 2 passed，0 failed；mac_browser.exit=0。其输出保存在同批日志。
+
+**本批可复核源码Blob SHA（Git原生SHA-1）**：最终修复版 `backend/tests/test_kb_batch83_semantic_coverage.py` = `beedad7482b0934f244eb9426232cf8cc012e7f6`；数学验证模块 `backend/app/kb_batch83_math_relations.py` = `17903421f8cb94db25e0b989bd8f1be7ab363db4`；语义生成器 `scripts/build_kb_batch83_semantic_coverage.py` = `72cd5ed67a2bb92b923e56c480f3967d0e9637cc`。Mac初始提交 `776128ddc226e9c335c5f0a47e2f74c0fcc327b9` 仅是修复前基线。最终修复提交和对应CI状态以GitHub PR回执及本次版本化报告后续记录为准。
+
+## GitHub CI首轮失败与针对性修复
+
+首轮远端CI [Actions #42835895242](https://github.com/YOUessi/stem-mentor/actions/runs/42835895242) 的Python 3.12步骤真实失败：`test_actual_mac_pdf_line_sha_for_all_new_records`无条件要求只能保存在授权Mac的课标原始PDF在GitHub runner存在。该runner不能且不应获得受版权保护的原文；首轮运行有1 failed（其余56791 passed、6 skipped），不计为成功验收。
+
+在Mac实际修复：只对不存在原始PDF的机器将需要真实原文逐行校验的测试显式`pytest.skip`，但保留`build(verify_local_source=True)`对缺失原文、SHA不一致严格拒绝；另新增一个负例测试通过monkeypatch使来源丢失，必须抛出ValueError。**授权Mac上原PDF存在，真实60行校验照常执行，不能把CI跳过的原文核验冒充远端已完成的验证。** 其余来源SHA、状态门禁、数学精确反例和冻结产物检查仍在GitHub runner真实执行。
+
+Mac修复后重新执行完整专项测试729 passed/0 failed；完整Python 56,794 passed、5 skipped、0 failed、1个第三方warning；Node111；浏览器回归及全部退出码在同目录日志和`.exit`中记录。最终GitHub修复版CI另在PR附回执，不事先宣称通过。

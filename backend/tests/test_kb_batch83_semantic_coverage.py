@@ -155,8 +155,19 @@ def test_forged_previous_review_completeness_rejected():
 
 
 def test_actual_mac_pdf_line_sha_for_all_new_records():
+    # The copyrighted original is deliberately absent from GitHub Actions.
+    # Never silently turn an unavailable source into a verified source.
+    if not B83.B81.LOCAL_PDF.is_file():
+        pytest.skip("original source PDF only available on authorized Mac; frozen hashes checked in CI")
     result = B83.build(verify_local_source=True)
     assert len(result["new_rows"]) == 60
+
+
+def test_explicit_local_pdf_verification_rejects_missing_source(monkeypatch, tmp_path):
+    missing = tmp_path / "unavailable-official-curriculum.pdf"
+    monkeypatch.setattr(B83.B81, "LOCAL_PDF", missing)
+    with pytest.raises(ValueError, match="official source PDF unavailable"):
+        B83.build(verify_local_source=True)
 
 
 def test_exact_finite_witness_count_and_status(report):
