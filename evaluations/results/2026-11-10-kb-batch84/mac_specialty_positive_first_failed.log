@@ -1,0 +1,45 @@
+........................................................................ [  8%]
+........................................................................ [ 17%]
+........................................................................ [ 25%]
+........................................................................ [ 34%]
+........................................................................ [ 43%]
+........................................................................ [ 51%]
+........................................................................ [ 60%]
+........................................................................ [ 68%]
+........................................................................ [ 77%]
+........................................................................ [ 86%]
+........................................................................ [ 94%]
+............................................F                            [100%]
+=================================== FAILURES ===================================
+_ test_ten_independent_guarded_valid_examples_are_not_confused_with_counterexamples _
+
+    def test_ten_independent_guarded_valid_examples_are_not_confused_with_counterexamples():
+        # Independent of check_case: the legal side of the transformations.
+        q = sp.Rational
+        assert 2**2 == 2**2 and 2 >= 0
+        assert q(2)*3 == q(2)*3 and 3 != 0
+        assert 1 < 2 and 1*3 < 2*3 and 3 > 0
+        assert q(1, 2) - q(1, 5) == q(3, 10) > 0
+        assert sp.sqrt(sp.Integer(4)**2) == 4
+        x = sp.symbols("x")
+        assert sp.solve(x*x-3*x+2, x) == [1, 2]
+        assert sp.Matrix.eye(2).det() == 1 and sp.Matrix.eye(2).inv()*sp.Matrix([2, 3]) == sp.Matrix([2, 3])
+        assert q(1,2) == q(2,4) and 1*4 == 2*2
+        assert q(1,4) / q(1,2) == q(1,2)
+>       assert sp.expand_log(sp.log(2*sp.Integer(3)), force=True) == sp.log(2) + sp.log(3)
+E       AssertionError: assert log(6) == (log(2) + log(3))
+E        +  where log(6) = <function expand_log at 0x1079496c0>(log(6), force=True)
+E        +    where <function expand_log at 0x1079496c0> = sp.expand_log
+E        +    and   log(6) = log((2 * 3))
+E        +      where log = sp.log
+E        +      and   3 = <class 'sympy.core.numbers.Integer'>(3)
+E        +        where <class 'sympy.core.numbers.Integer'> = sp.Integer
+E        +  and   log(2) = log(2)
+E        +    where log = sp.log
+E        +  and   log(3) = log(3)
+E        +    where log = sp.log
+
+backend/tests/test_kb_batch84_semantic_review.py:261: AssertionError
+=========================== short test summary info ============================
+FAILED backend/tests/test_kb_batch84_semantic_review.py::test_ten_independent_guarded_valid_examples_are_not_confused_with_counterexamples
+1 failed, 836 passed in 46.34s
