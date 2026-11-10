@@ -41,3 +41,5 @@
 - **Chrome/Playwright**：15个场景脚本通过，浏览器pytest `2 passed`，`mac_browser.exit=0`，独立Mac真实浏览器执行；未声称真实iPad设备覆盖。
 - 保留数学文本完善前的专项及全量快照日志 `mac_specialty_pre_math_editorial_fix.log` 与 `mac_full_pre_math_editorial_fix.log`，区分首次成功与最终版本；只有`mac_full_final.log`才用于终版验收。原始课标PDFKit行SHA已在Mac门禁中核验，云端CI无原PDF。
 - Mac版本：Python 3.13.13，Node v22.23.1。最终源码提交SHA及远端CI结果另经Git/GitHub分别验收；无真正教师审核且不发布学生端。
+
+- 原创内容、数学修订和Mac最终测试的源码提交：`37da729d36e8376474c0b7e4a6e2bf240803587d`；对应Git Tree：`ff4c8f908ce210b97716ec020c2f1ffb92c5efb8`。
