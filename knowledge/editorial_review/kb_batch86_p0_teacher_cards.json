@@ -1,0 +1,1049 @@
+{
+  "P0_total": 182,
+  "author_sha256": "c26232d5928033d53a558439663aa29917ccb54b39d137e7ef496e30a493ee32",
+  "cards": [
+    {
+      "assumptions": [
+        "a>0, a≠1, x>0, y>0；只有乘积 xy>0 不够，因为 log_a(x) 与 log_a(y) 还须分别有定义。"
+      ],
+      "boundary": "在复数的多值对数中等式需考虑分支，本稿只讨论实数单值对数。",
+      "counterexample_or_failed_premise": "x=-2,y=-3 虽使 xy>0，却使两个实数对数均无定义。",
+      "far": "在含负数观测值的对数回归预处理中说明为什么不能直接拆分变量。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "base": 1,
+        "x": 4,
+        "y": 8
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Log base cannot be one",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "log_product_domain",
+      "finite_valid_fixture": {
+        "base": 2,
+        "x": 4,
+        "y": 8
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "base": "2",
+          "combined_argument": "32",
+          "identity_not_independently_proved": true,
+          "legal_domain": true,
+          "x": "4",
+          "y": "8"
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P01",
+      "kind": "THEOREM",
+      "near": "把log_5(25·125)分拆并逐项说明定义域前提。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "4493e259c85eb86971446c4805035321895ee3cbf1afb994575902049dd0aa4b",
+      "proof_steps": [
+        "先由x>0和y>0说明log_a(x)、log_a(y)及log_a(xy)都在实数范围内有定义。",
+        "令u=log_a(x),v=log_a(y)，则a^u=x、a^v=y，从正底数指数的乘法法则得到a^(u+v)=xy。",
+        "因a>0且a≠1时指数函数在实数上单射，u+v=log_a(xy)；反向拆分仍须同时满足x,y>0。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.logarithm.product-law#3",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "当a>0且a≠1，x>0，y>0时，在实数域有log_a(xy)=log_a(x)+log_a(y)。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "对数乘积拆分中的实数域逆向风险",
+      "worked_examples": [
+        {
+          "question": "在a=3、x=9、y=27时把两项对数合并并核对。",
+          "teacher_solution": "log_3(9)=2、log_3(27)=3，合并成log_3(243)=5，两边在实数域均有定义。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "当a=2、x=-2、y=-4时，能否从xy>0推出拆分公式？",
+          "teacher_solution": "虽有xy=8且log_2(8)=3，但log_2(-2)与log_2(-4)实数无定义，拆分右侧不存在。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "只核对xy为正，忽略乘积对数拆为两项时要求两项真数分别为正。"
+    },
+    {
+      "assumptions": [
+        "ax²+bx+c=0 的一元二次判别式必须 a≠0，实数平方非负。"
+      ],
+      "boundary": "复数域中Δ<0仍有复数根；判别式的实根结论不能直接移植到复根计数。",
+      "counterexample_or_failed_premise": "a=0,b=1,c=1 时仍可能有一个一次方程根，不能套 Δ 判别式的二次根数公式。",
+      "far": "在参数a可能取零的二次模型中设计先分类再解方程的判断流程。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "a": 0,
+        "b": 1,
+        "c": 1
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Quadratic leading coefficient must be nonzero",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "quadratic_discriminant",
+      "finite_valid_fixture": {
+        "a": 1,
+        "b": -3,
+        "c": 2
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "delta": "1",
+          "real_root_count": 2,
+          "vertex_value": "-1/4",
+          "vertex_x": "3/2"
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P02",
+      "kind": "THEOREM",
+      "near": "比较x²-2x+1和x²+1的判别式及实根情况。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "5b715bf35232fe5c15537cd264dd13c7791b97791a5a0b6a84f6362a1a400eae",
+      "proof_steps": [
+        "先确认a不为零，配方可写成(2ax+b)²=b²-4ac=Δ。",
+        "左边是实数平方所以非负；当Δ<0无法取实数平方根，而Δ≥0时有非负主平方根√Δ，因此2ax+b只能取+√Δ或−√Δ。",
+        "将2ax+b=±√Δ解出x=(-b±√Δ)/(2a)；当Δ=0两式相同，其他正值相异。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.quadratic.discriminant-roots#2",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "对于a,b,c属于实数且a≠0，方程ax²+bx+c=0的实数根存在性由Δ=b²-4ac决定，Δ>0有两个相异实根，Δ=0有一个重实根，Δ<0没有实根。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "一元二次实根判别式与二次项非零",
+      "worked_examples": [
+        {
+          "question": "求方程2x²-5x+2=0的判别式并给出实根。",
+          "teacher_solution": "Δ=25-16=9>0，套入非零二次系数2，得x=(5±3)/4，实根为2与1/2。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "当a=0、b=2、c=1时还能按二次判别式数根吗？",
+          "teacher_solution": "此时方程退化为2x+1=0，仅有实根-1/2；公式除以2a=0不合法。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把退化线性方程也当作二次式，并直接用判别式推断根的个数。"
+    },
+    {
+      "assumptions": [
+        "a,b≥0；由 (√a−√b)²≥0 得算术几何均值不等式，等号 ⇔a=b。"
+      ],
+      "boundary": "允许某一项为零，但负数或复数均不在本不等式的实数非负条件内。",
+      "counterexample_or_failed_premise": "a=-1 时实数平方根不存在，不能照搬 AM–GM 的推导。",
+      "far": "在成本约束优化里检查待优化量是否实际非负，再使用均值不等式给界。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "a": -1,
+        "b": 9
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "AM-GM requires nonnegative real operands",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "amgm_rational_roots",
+      "finite_valid_fixture": {
+        "a": 4,
+        "b": 9
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "arithmetic_mean": "13/2",
+          "equal_iff_a_eq_b": true,
+          "exact_gap": "1/2",
+          "geometric_mean": "6"
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P03",
+      "kind": "THEOREM",
+      "near": "检查u=0、v=4及u=v=2时的不等号与等号。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "e0bc5b3829912231c78160ae6d08e2cafc3100bda71452a50b2d1c1dbee9fba3",
+      "proof_steps": [
+        "非负u,v保证√u、√v为实数，故(√u-√v)²≥0。",
+        "展开得u+v-2√(uv)≥0，两边除以正数2得到目标不等式。",
+        "等号成立当且仅当两个非负主平方根相同，从而等价于u=v，包含u=v=0情形。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.inequality.amgm#3",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "当u,v为非负实数时，(u+v)/2≥√(uv)，且等号当且仅当u=v。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "AM–GM不等式的非负域及等号条件",
+      "worked_examples": [
+        {
+          "question": "对u=1、v=9验证不等式并说明为什么严格大于。",
+          "teacher_solution": "左侧(1+9)/2=5，右侧√9=3；因1≠9所以严格不等。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "u=-1、v=-9时能否套用AM–GM实数不等式？",
+          "teacher_solution": "虽然uv=9有平方根3，但左边均值为-5，-5≥3为假；非负数前提被破坏。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "凭乘积uv非负就断言两项能够套用非负实数的算术几何平均不等式。"
+    },
+    {
+      "assumptions": [
+        "两半径均>0。先分同心与不同心；同心等半径的两圆重合，有无穷多个公共点。"
+      ],
+      "boundary": "半径须严格正，半径零的点圆不属于本稿定义的圆；分支表需要另扩展。",
+      "counterexample_or_failed_premise": "同心同半径时 d=0=|r1-r2|，却不是普通内切的一点。",
+      "far": "用圆形覆盖区的接触判定讨论完全重合与外部相切的不同优化意义。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "r1": 1,
+        "r2": 0,
+        "x1": 0,
+        "x2": 2,
+        "y1": 0,
+        "y2": 0
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Both radii must be positive",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "circle_circle",
+      "finite_valid_fixture": {
+        "r1": 1,
+        "r2": 1,
+        "x1": 0,
+        "x2": 2,
+        "y1": 0,
+        "y2": 0
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "center_distance_squared": "4",
+          "intersection_count": 1
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P04",
+      "kind": "THEOREM",
+      "near": "分析圆心距2、半径分别2与4的两圆位置。 解释这个等号为何属于内切而不是两交点。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "ed7c89d7b27327bf1748752ee00db456b8a11aea8b8000c7dfb2434e3186d0ed",
+      "proof_steps": [
+        "由三角不等式，两圆公共点到两圆心的距离分别为r1与r2，必须有|r1-r2|≤d≤r1+r2。",
+        "在非退化严格不等式下三个边长可构成非退化三角形，公共弦两侧关于连心线对称，得到两个交点。",
+        "端点三角形退化时只有一接触点；若d=0且r1=r2两圆完全重合有无穷多交点，半径不同则无交点。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.geometry.circle-intersections#3",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "给定半径r1,r2>0的平面两圆，圆心距d：若|r1-r2|<d<r1+r2则相交于两点，若d=r1+r2或d=|r1-r2|>0则相切于一点；同心时需另判。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "两圆交点个数与同心退化分支",
+      "worked_examples": [
+        {
+          "question": "圆心距5、两半径3和4时两圆有几个交点？",
+          "teacher_solution": "|3-4|=1<5<7=3+4，所以相交于两个不同交点。 这是两圆非同心且严格三角不等式成立的标准相交情形。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "圆心重合且半径都是2时是否属于内切一点？",
+          "teacher_solution": "不能；两圆完全重合，公共点无穷多；d=0不能机械当作一般内切端点。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "不单独处理同心，见到d=|r1-r2|就一律宣布只有一个交点。"
+    },
+    {
+      "assumptions": [
+        "焦点(p,0)与准线x=-p应不同，p≠0；两距离均非负，平方相等与距离相等等价。"
+      ],
+      "boundary": "若p为负需要更改开口及焦点准线约定，不能混用本稿的p>0表达。",
+      "counterexample_or_failed_premise": "p=0 时焦点落在准线，得到的 y²=0 是退化对象，不能仍称非退化抛物线。",
+      "far": "设计反射面模型时应区分理想抛物线几何与实际反射面的制造误差。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "p": 0,
+        "x": 1,
+        "y": 2
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "p=0 collapses distinct focus/directrix",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "parabola_focus",
+      "finite_valid_fixture": {
+        "p": 1,
+        "x": 1,
+        "y": 2
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "directrix_distance_squared": "4",
+          "equal_distances": true,
+          "focus_distance_squared": "4",
+          "standard_equation_holds": true
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P05",
+      "kind": "THEOREM",
+      "near": "求y²=12x的焦点并对点(3,6)作距离检查。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "bba9bff646f1c07d50feb0d030c379d96ed8b70ef0c5402e35f56458d331ce81",
+      "proof_steps": [
+        "设P=(x,y)，按距离公式有PF²=(x-p)²+y²，点P到竖直直线x=-p的距离平方为(x+p)²。",
+        "两平方差为(x-p)²+y²-(x+p)²=y²-4px，故轨迹方程等价于两个距离平方相等。",
+        "两个距离均为非负实数，平方相等可恢复距离相等；p>0保证焦点不在准线上且开口方向固定。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.geometry.parabola-focus#2",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "对于p>0，抛物线y²=4px上任意点(x,y)到焦点(p,0)和准线x=-p的欧氏距离相等，反之该等距轨迹满足该方程。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "抛物线焦点准线距离的代数平方与符号条件",
+      "worked_examples": [
+        {
+          "question": "对y²=8x取P=(2,4)验证焦点与准线距离。",
+          "teacher_solution": "p=2，焦点(2,0)，PF=4；准线x=-2，到P的距离也是4，且点满足16=8·2。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "p=0时能否仍将y²=4px视为同类非退化抛物线？",
+          "teacher_solution": "若p=0则退化成y=0，焦点(0,0)位于准线x=0上；不符合焦点不在准线的定义。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "只在方程两侧平方后忽视非负距离与焦点准线不重合的前提。"
+    },
+    {
+      "assumptions": [
+        "u,v 属于同一个实内积空间；分母含 ‖v‖² 的证明必须先单独处理 v=0。"
+      ],
+      "boundary": "线性相关包括零向量情形，不能把等号条件误写成两向量夹角为零。",
+      "counterexample_or_failed_premise": "若 v=0 直接取 t=(u·v)/‖v‖²，就除以零；正确做法是先讨论零向量。",
+      "far": "在相关系数证明中检查样本方差可能为零时归一化分母是否合法。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "u": [
+          1,
+          2
+        ],
+        "v": [
+          1,
+          2,
+          3
+        ]
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Vector dimensions differ",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "cauchy_schwarz",
+      "finite_valid_fixture": {
+        "u": [
+          1,
+          2,
+          3
+        ],
+        "v": [
+          2,
+          4,
+          6
+        ]
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "equality": true,
+          "gap": "0",
+          "sum_minor_squares": "0",
+          "zero_vector_allowed": true
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P06",
+      "kind": "THEOREM",
+      "near": "验证u=(2,4)、v=(1,2)的等号成立情形。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "550a05fd0c8eeff2940a8638a8e64138dfbc2a7a3b02f17dc46c72f13116d02a",
+      "proof_steps": [
+        "若v非零，则对任意实数t有||u-tv||²=||u||²-2t(u·v)+t²||v||²≥0。",
+        "取t=(u·v)/||v||²使二次式取最小值，得||u||²-(u·v)²/||v||²≥0；此步要求||v||²>0。",
+        "若v=0两边都为零，需单独处理；非零分支等号时u-tv=0，由此得到线性相关条件。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.vector.cauchy-schwarz#3",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "任意实向量u,v∈R^n满足(u·v)²≤(u·u)(v·v)，等号当且仅当u与v线性相关（包括零向量）。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "柯西不等式的零向量与等号判定",
+      "worked_examples": [
+        {
+          "question": "令u=(1,2)、v=(3,4)，检查平方点积与两模平方乘积。",
+          "teacher_solution": "点积11，平方121；模平方分别5和25，其乘积125；有121≤125。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "当v=(0,0)、u=(1,2)时能否直接按t=(u·v)/||v||²取值？",
+          "teacher_solution": "此时分母||v||²=0；原不等式成立且等号为0=0，但该除法证明分支不可用。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把v为零时仍套入含||v||²分母的最小化证明。"
+    },
+    {
+      "assumptions": [
+        "A,B 在同一概率空间，P(A∪B)=P(A)+P(B)−P(A∩B)；等号上界 ⇔P(A∩B)=0，不要求交集为空。"
+      ],
+      "boundary": "交集概率为零不必意味着事件集合严格互斥；公式不依赖独立性。",
+      "counterexample_or_failed_premise": "一个零概率样本点可同时属于 A、B，故交集非空但交集概率仍为 0。",
+      "far": "在用户标签覆盖率统计中说明同一用户落在两个标签组时为什么要去重。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "A": [
+          0,
+          1
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "n": 3,
+        "weights": [
+          "1/2",
+          "1/2",
+          "1/2"
+        ]
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Probabilities nonnegative, sum one",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "union_probability",
+      "finite_valid_fixture": {
+        "A": [
+          0,
+          1
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "n": 3,
+        "weights": [
+          "1/2",
+          "0",
+          "1/2"
+        ]
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "p_a": "1/2",
+          "p_b": "1/2",
+          "p_intersection": "0",
+          "p_union": "1",
+          "zero_probability_does_not_imply_empty": true
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P07",
+      "kind": "THEOREM",
+      "near": "推导P(A∪B)在P(A)=0.7、P(B)=0.6时的可能范围。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "6ccc5319207953d107e30e568bdde23df76e8a156d2ee58ff7f64fad5890b484",
+      "proof_steps": [
+        "将A∪B分拆为互不相交的A和B\\A，概率可加性给出P(A∪B)=P(A)+P(B\\A)。",
+        "同时将B分拆为B\\A与A∩B，故P(B\\A)=P(B)-P(A∩B)。",
+        "两式代入得到容斥恒等式；只有A∩B为空集（或交集概率零）时才能删去交集项。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.probability.union-bound-two#3",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "任意同一概率空间上的事件A、B均满足P(A∪B)=P(A)+P(B)-P(A∩B)，不要求独立。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "两事件并集容斥恒等式与非互斥风险",
+      "worked_examples": [
+        {
+          "question": "P(A)=1/2，P(B)=1/3，P(A∩B)=1/6时求P(A∪B)。",
+          "teacher_solution": "代入容斥式得到1/2+1/3-1/6=2/3；交集被计入两次故必须扣除一次。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "若A=B且P(A)=1/2，能否直接用P(A∪B)=P(A)+P(B)？",
+          "teacher_solution": "不能；A∪B=A，实际概率1/2，而直接相加得到1，交集项恰为1/2。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "无论事件是否相交都把两事件概率简单相加，出现交集重复计数。"
+    },
+    {
+      "assumptions": [
+        "要谈两个向量夹角，二者都必须非零；仅要验证内积为零时零向量可被允许，但不能称零向量与任意向量夹角为 90°。"
+      ],
+      "boundary": "代数意义的正交可以容许零向量，但非零向量夹角定义另有前提。",
+      "counterexample_or_failed_premise": "0·v=0 不能推出零向量与 v 垂直的夹角为 90°，零向量没有方向。",
+      "far": "在机器人朝向计算中区分速度为零时的未知方向与垂直运动方向。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "u": [
+          0,
+          0
+        ],
+        "v": [
+          0,
+          1
+        ]
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Angle undefined for zero vector",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "vector_angle",
+      "finite_valid_fixture": {
+        "u": [
+          1,
+          0
+        ],
+        "v": [
+          0,
+          1
+        ]
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "dot": "0",
+          "perpendicular": true
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P08",
+      "kind": "THEOREM",
+      "near": "计算(1,1)和(1,-1)的夹角并明确每个非零条件。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "6ac2a4d5681faf932f4f8ea4569bc55db876beca0e6e048104700ef9d5d18ec6",
+      "proof_steps": [
+        "非零向量存在确定方向，因此夹角θ可由几何定义在[0,π]确定。",
+        "根据数量积的几何定义u·v=|u||v|cosθ，且两模长均正。",
+        "两侧除以正数|u||v|得到余弦表达；若任一向量为零则除法无定义，也没有方向夹角。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.vector.dot-product#4",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "当平面向量u、v均非零时，cosθ=(u·v)/(|u||v|)，其中θ是两向量夹角且0≤θ≤π。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "数量积与夹角公式的零向量定义边界",
+      "worked_examples": [
+        {
+          "question": "求u=(1,0)、v=(0,2)的夹角。",
+          "teacher_solution": "两向量模长分别为1与2，数量积0，故cosθ=0，范围[0,π]内夹角π/2。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "u=(0,0)、v=(1,1)时是否可声称夹角90度？",
+          "teacher_solution": "不可；数量积虽为0，但|u|=0使夹角公式分母为0，零向量也没有方向。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把数量积为零当作两向量有九十度夹角的充分条件，遗漏非零要求。"
+    },
+    {
+      "assumptions": [
+        "从 n≥1 的基例出发，再验证 n²+(2n+1)=(n+1)²；必须将归纳假设的下标连接至目标。"
+      ],
+      "boundary": "当n=0时约定空和可另行成立，但本稿命题域限定正整数。",
+      "counterexample_or_failed_premise": "只检查 n=1，或假设 n+1 也满足待证结论，是循环论证。",
+      "far": "在循环算法的不变量证明中对应写出初始、保持、终止三个环节。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "n": 0
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Invalid integer parameter",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "odd_square_induction",
+      "finite_valid_fixture": {
+        "n": 6
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "expected_next": 49,
+          "next_sum": 49,
+          "next_term": 13,
+          "previous_sum": 36
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P09",
+      "kind": "THEOREM",
+      "near": "用归纳法证明前n项偶数之和为n(n+1)。 明确写出基步和归纳过渡。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "29ae1a7d3404263f30632b9ff82a3f7cb317cd49b2ac3979524ca6e7b84ee2a2",
+      "proof_steps": [
+        "当n=1时左侧为1，右侧1²=1，归纳起点成立。 因此命题P(1)为真。",
+        "假设某k≥1时前k项奇数和为k²，则前k+1项再加第k+1个奇数2k+1。",
+        "由k²+(2k+1)=(k+1)²得到下一步，结合数学归纳法可覆盖所有正整数。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.sequence.odd-square-sum#3",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "对每个正整数n，有1+3+⋯+(2n-1)=n²；归纳从n=1起步且不能把n取作非整数。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "前n个奇数求和的数学归纳法完整过渡",
+      "worked_examples": [
+        {
+          "question": "用归纳式核对前五个正奇数的和。",
+          "teacher_solution": "1+3+5+7+9=25，与5²=25一致；完整证明还须基步与任意k到k+1的推广。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "有人只验算n=1、2、3就声称对所有n成立，是否构成证明？",
+          "teacher_solution": "不构成；三个有限算例不能推出所有正整数，需要完整归纳步骤。 基步以外必须对任意正整数k证明归纳过渡。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把若干有限例子误当归纳法，省略从任意k推出k+1的关键逻辑。"
+    },
+    {
+      "assumptions": [
+        "f(x)=−(x−x0)² 在 x0 取局部极大；右差商≤0，左差商≥0；两侧极限相同才推出 f′(x0)=0。"
+      ],
+      "boundary": "内点可导是必要前提，边界极值不能直接套用同样的双侧差商论证。",
+      "counterexample_or_failed_premise": "在 h<0 时把分子≤0直接除以负 h 而仍写≤0，会使不等号方向错误。",
+      "far": "在参数优化里判断变量位于约束区间端点时是否应使用费马必要条件。",
+      "finite_evidence_scope": "BOUNDED_EXACT_FIXTURE_NOT_UNIVERSAL_PROOF",
+      "finite_invalid_fixture": {
+        "h": 0
+      },
+      "finite_invalid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Difference quotient requires h != 0",
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "student_step_verified": false,
+        "teacher_approved": false
+      },
+      "finite_op": "fermat_difference",
+      "finite_valid_fixture": {
+        "h": "1/2"
+      },
+      "finite_valid_result": {
+        "complete_theorem_certified": false,
+        "official_curriculum_atom_verified": false,
+        "reason": "Exact bounded operands only; no general proof certification",
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness": {
+          "difference_quotient": "-1/2",
+          "h": "1/2",
+          "required_sign_holds": true,
+          "side": "RIGHT"
+        }
+      },
+      "general_theorem_formally_certified": false,
+      "hints": [
+        "先写出命题用到的所有量及允许的取值域，不要直接代入公式。",
+        "逐步对照定义或恒等变换的合法性，试着构造一个有效例子。",
+        "特别检查零、退化、边界以及量词，再用反例排除不成立的逆向推断。"
+      ],
+      "human_teacher_reviewer": null,
+      "id": "KB86-P10",
+      "kind": "THEOREM",
+      "near": "说明f(x)=x³在x=0驻点但不是局部极值的原因。",
+      "official_curriculum_atom_id": null,
+      "original_authorship": "PROJECT_AUTHORED",
+      "original_step_sha256": "3ca552a8f402f02791b1540c3fe9c8418f221bf5b9fb7d8d7e3c9c02a23799be",
+      "proof_steps": [
+        "以局部极小为例，存在δ>0使|h|<δ时f(c+h)-f(c)≥0；局部极大则符号相反。",
+        "当h>0和h<0分别取差商，局部极小时右侧差商非负而左侧差商非正。",
+        "若f在c可导，左右差商同收敛到f'(c)，因此极小与极大的两种不等式都逼出f'(c)=0。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_STEP",
+      "source_step": "math.hs.calculus.fermat-stationary#2",
+      "source_step_risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "statement": "若实函数f在内点c的某邻域有定义且在c可导，并在c取得局部极大或极小值，则f'(c)=0。",
+      "student_authoritative_index_eligible": false,
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "费马驻点必要条件及可导的双侧极限",
+      "worked_examples": [
+        {
+          "question": "对f(x)=(x-1)²在x=1的局部最小值核对导数。",
+          "teacher_solution": "在x=1处导数f'(x)=2(x-1)等于0，且函数差f(1+h)-f(1)=h²≥0。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "f(x)=|x|在x=0处有最小值，是否违反费马必要条件？",
+          "teacher_solution": "不违反；|x|在0左右导数分别为-1和1，不可导，因而不满足定理假设。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把驻点当作极值的充分条件，或在尖点不可导时误用必要条件。"
+    }
+  ],
+  "combined_reported_card_links": 70,
+  "combined_unique_P0_steps_with_drafts": 64,
+  "formal_math_certifications": 0,
+  "free_text_student_steps_verified": 0,
+  "historical_steps": 538,
+  "new_supplementary_reviews_of_previously_linked_steps": 4,
+  "new_teacher_draft_cards": 10,
+  "new_unique_P0_steps_with_drafts": 6,
+  "previous_duplicate_card_links": 2,
+  "previous_reported_card_links": 60,
+  "previous_unique_P0_steps_with_drafts": 58,
+  "profile_sha256": "8fafd89de6d593b8a7224ed4c429ce5a8f9b0a79aa4a7135206ca757dcb203cf",
+  "remaining_P0_source_step_ids": [
+    "math.hs.proof.induction#3",
+    "math.hs.vector.pythagorean-dot#3",
+    "math.hs.sequence.square-sum#2",
+    "math.hs.vector.parallelogram#3",
+    "math.hs.geometry.ellipse-parameter#2",
+    "math.hs.function.quadratic-vertex#2",
+    "math.hs.function.quadratic-vertex#4",
+    "math.hs.logarithm.inverse#2",
+    "math.hs.trig.sum-angle#1",
+    "math.hs.space.basis-three-unique#2",
+    "math.hs.vector.cauchy-schwarz#4",
+    "math.hs.probability.expectation-linearity#3",
+    "math.hs.elective.linear.rank-vectors#3",
+    "math.hs.elective.statistics.ols-two-parameter#1",
+    "math.hs.elective.model.parametric-circle#3",
+    "math.hs.elective.sequence.epsilon-n#2",
+    "math.hs.elective.function.epsilon-delta-square#2",
+    "math.hs.elective.calculus.differentiable-continuous#1",
+    "math.hs.elective.matrix.inverse-two-by-two#3",
+    "math.hs.elective.matrix.gaussian-row-equivalence#2",
+    "math.hs.elective.multivariable.partial-polynomial#3",
+    "math.hs.elective.statistics.bernoulli-mle#2",
+    "math.hs.elective.statistics.bernoulli-mle#3",
+    "math.hs.elective.calculus.second-derivative-convexity#3",
+    "math.hs.elective.model.time-rescaling#4",
+    "math.hs.elective.model.input-output-triangular#2",
+    "math.hs.elective.geometry.euclidean-isometries#2",
+    "math.hs.elective.geometry.euclidean-isometries#3",
+    "math.hs.elective.sequence.fibonacci-golden-ratio#3",
+    "math.hs.elective.finance.annuity-present-value#3",
+    "math.hs.extension.circle-polar#1",
+    "math.hs.extension.circle-polar#3",
+    "math.hs.extension.cross-product#3",
+    "math.hs.function.composition-domain#3",
+    "math.hs.vector.linear-operations#1",
+    "math.hs.geometry.space-dot#1",
+    "math.hs.geometry.space-dot#2",
+    "math.hs.geometry.space-dot#3",
+    "math.hs.geometry.line-general#1",
+    "math.hs.geometry.line-general#2",
+    "math.hs.geometry.line-general#3",
+    "math.hs.geometry.line-circle#3",
+    "math.hs.triangle.sine-law#3",
+    "math.hs.geometry.line-equation#2",
+    "math.hs.geometry.line-equation#3",
+    "math.hs.geometry.line-relations#1",
+    "math.hs.geometry.line-relations#2",
+    "math.hs.geometry.line-relations#3",
+    "math.hs.geometry.point-line-distance#3",
+    "math.hs.trig.double-angle-reduction#3",
+    "math.hs.vector.projection#2",
+    "math.hs.complex.operations#2",
+    "math.hs.complex.operations#3",
+    "math.hs.space.parallel-perpendicular-criteria#3",
+    "math.hs.probability.multiplication#2",
+    "math.hs.calculus.tangent-line#3",
+    "math.hs.space.perpendicular-plane#1",
+    "math.hs.space.perpendicular-plane#2",
+    "math.hs.space.perpendicular-plane#3",
+    "math.hs.space.point-line-distance#3",
+    "math.hs.space.solid-volumes#1",
+    "math.hs.space.solid-volumes#2",
+    "math.hs.space.solid-volumes#3",
+    "math.hs.elective.geometry.plane-isometry-composition#3",
+    "math.hs.elective.geometry.space-isometry-orientation#1",
+    "math.hs.elective.geometry.space-isometry-orientation#2",
+    "math.hs.elective.geometry.space-isometry-orientation#4",
+    "math.hs.elective.statistics.triangular-density-moments#4",
+    "math.hs.elective.models.keynes-affine-stability#1",
+    "math.hs.elective.models.keynes-affine-stability#2",
+    "math.hs.elective.music.transformations-noncommute#1",
+    "math.hs.elective.music.transformations-noncommute#2",
+    "math.hs.elective.music.transformations-noncommute#3",
+    "math.hs.elective.statistics.normal-sampling-mean#1",
+    "math.hs.elective.statistics.normal-sampling-mean#2",
+    "math.hs.elective.statistics.normal-sampling-mean#3",
+    "math.hs.elective.statistics.normal-sampling-mean#4",
+    "math.hs.batch23.core013#1",
+    "math.hs.batch23.core013#2",
+    "math.hs.batch23.core013#3",
+    "math.hs.batch23.core044#1",
+    "math.hs.batch23.core044#2",
+    "math.hs.batch23.core044#3",
+    "math.hs.batch23.core053#1",
+    "math.hs.batch23.core053#2",
+    "math.hs.batch23.core053#3",
+    "math.hs.batch23.core065#1",
+    "math.hs.batch23.core065#2",
+    "math.hs.batch23.core065#3",
+    "math.hs.batch23.core068#1",
+    "math.hs.batch23.core068#2",
+    "math.hs.batch23.core068#3",
+    "math.hs.batch23.core096#1",
+    "math.hs.batch23.core096#2",
+    "math.hs.batch23.core096#3",
+    "math.hs.batch23.core099#1",
+    "math.hs.batch23.core099#2",
+    "math.hs.batch23.core099#3",
+    "math.hs.batch23.core099#4",
+    "math.hs.batch24.q004#1",
+    "math.hs.batch24.q004#2",
+    "math.hs.batch24.q004#3",
+    "math.hs.batch24.am009#1",
+    "math.hs.batch24.am009#2",
+    "math.hs.batch24.am009#3",
+    "math.hs.batch24.tr028#1",
+    "math.hs.batch24.tr028#2",
+    "math.hs.batch24.tr028#3",
+    "math.hs.batch24.add029#1",
+    "math.hs.batch24.add029#2",
+    "math.hs.batch24.add029#3",
+    "math.hs.batch24.sin036#1",
+    "math.hs.batch24.sin036#2",
+    "math.hs.batch24.sin036#3",
+    "math.hs.batch24.sin036#4",
+    "math.hs.batch24.g064#1",
+    "math.hs.batch24.g064#2",
+    "math.hs.batch24.g064#3"
+  ],
+  "remaining_P0_without_source_step_cards": 118,
+  "review_status": "REVIEW_PENDING",
+  "schema_version": "kb86-ten-history-p0-teacher-drafts-v1",
+  "source_queue_sha256": "339ceb2ecb0b60116f38093f5a7a52a3e60c7b738fe5a4fc2021a06695232c01",
+  "student_published": 0,
+  "teacher_approvals": 0,
+  "total_duplicate_card_links": 6,
+  "unresolved_conflicts": 10
+}
