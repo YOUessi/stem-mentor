@@ -1,0 +1,658 @@
+{
+  "approved_teacher_count": 0,
+  "bounded_exact_case_verified_count": 8,
+  "by_track": {
+    "COMPULSORY": {
+      "candidate_count": 4,
+      "official_denominator": null,
+      "with_review_only_teacher_draft": 2
+    },
+    "ELECTIVE_A": {
+      "candidate_count": 6,
+      "official_denominator": null,
+      "with_review_only_teacher_draft": 5
+    },
+    "ELECTIVE_B": {
+      "candidate_count": 11,
+      "official_denominator": null,
+      "with_review_only_teacher_draft": 5
+    },
+    "ELECTIVE_C": {
+      "candidate_count": 2,
+      "official_denominator": null,
+      "with_review_only_teacher_draft": 1
+    },
+    "ELECTIVE_D": {
+      "candidate_count": 1,
+      "official_denominator": null,
+      "with_review_only_teacher_draft": 1
+    },
+    "ELECTIVE_E": {
+      "candidate_count": 0,
+      "official_denominator": null,
+      "with_review_only_teacher_draft": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "candidate_count": 2,
+      "official_denominator": null,
+      "with_review_only_teacher_draft": 1
+    }
+  },
+  "candidate_denominator": 26,
+  "candidate_denominator_scope": "Only 26 Batch75 project atom candidates; NOT national standard denominator",
+  "candidate_with_any_review_only_teacher_draft": 15,
+  "candidate_without_draft": 11,
+  "candidates": [
+    {
+      "candidate_id": "KB75-P016-S02",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB75-M01"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "ad188e8982a4291db7aabcdd84f9929db9d0c41f647325e5738021f02a2f133a",
+      "teacher_approved": false,
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB75-P016-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "ad188e8982a4291db7aabcdd84f9929db9d0c41f647325e5738021f02a2f133a",
+      "teacher_approved": false,
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB75-P027-S01",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "44374aeff9c4681121bf16e2ce7279cf8300d9a8f5167edf8ad153d1915f52a6",
+      "teacher_approved": false,
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB75-P032-S02",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB75-M02"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "f7c618ae8e5ffda431e4616c9b97471b8f5e2b973fbba0112fe894efeb7ba7b2",
+      "teacher_approved": false,
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB75-P046-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB75-M03"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "f57f40f85c9a502cc0ed476e1e10e99663fdc7a8ba9f44885a742991b1bfdf38",
+      "teacher_approved": false,
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate_id": "KB75-P046-S04",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "274b06eb4b2933426d3c4a9ab7eb27210c408f81ee0993754b2dcf28bbfa7d1d",
+      "teacher_approved": false,
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate_id": "KB75-P052-S02",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB76-M01"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB75-P052-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB76-M02"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB75-P052-S04",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB76-M03"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB75-P056-S02",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB75-M04",
+        "KB76-M08"
+      ],
+      "linked_teacher_draft_count": 2,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB75-P056-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB76-M04"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB75-P056-S04",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB75-P058-S02",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB75-M05"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "e6f12d7719a399df309ecbec935c4a83b07ba6aa67e2426062cfc9491dff66f2",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P058-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "e6f12d7719a399df309ecbec935c4a83b07ba6aa67e2426062cfc9491dff66f2",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P060-S01",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB76-M06"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P060-S02",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB75-M06"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P060-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P061-S02",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P061-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB76-M05"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P061-S04",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P063-S02",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P063-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P063-S04",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB76-M07"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "candidate_id": "KB75-P064-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB75-M07"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "0ad99d77bd0341735a49381f8d968287b0112eb5ebdc3e942a2912ea4ba1c21b",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "candidate_id": "KB75-P066-S02",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [],
+      "linked_teacher_draft_count": 0,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "6df1ec50b0cfb1c0c09168756482c7cec2ec605ee3f37b9c5514e379a92a7609",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "candidate_id": "KB75-P069-S03",
+      "full_teacher_clause_review": false,
+      "linked_review_only_teacher_draft_ids": [
+        "KB75-M08"
+      ],
+      "linked_teacher_draft_count": 1,
+      "official_knowledge_atom": null,
+      "publishing_allowed": false,
+      "source_certified": false,
+      "source_sha256": "16d936d6dc748e7013f723f9b9da577d1391e37599976ee6872b35e9f28b0afb",
+      "teacher_approved": false,
+      "track_hint": "ELECTIVE_D"
+    }
+  ],
+  "comparison_sha256": "6360879f1c0e79b91baf3df92150c5f13c20895aac173b6884bf63aee14ee5bc",
+  "formal_proof_certified_count": 0,
+  "fully_teacher_atomized_pages": 0,
+  "lesson_completeness": [
+    {
+      "bounded_exact_case_verified": true,
+      "candidate_id": "KB75-P052-S02",
+      "editorial_field_count": 14,
+      "editorial_field_presence_count": 14,
+      "lesson_id": "KB76-M01",
+      "number_of_reasoned_steps": 4,
+      "number_of_worked_examples": 2,
+      "prerequisites_linked_to_approved_ids": false,
+      "required_field_presence": {
+        "assumptions": true,
+        "common_wrong_method": true,
+        "counterexample": true,
+        "definition": true,
+        "far_transfer": true,
+        "graduated_hints": true,
+        "invalid_boundary": true,
+        "mathematical_validity": true,
+        "near_transfer": true,
+        "prerequisite_topics": true,
+        "reasoning_steps": true,
+        "statement": true,
+        "symbols": true,
+        "worked_examples": true
+      },
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "track_hint": "ELECTIVE_A",
+      "verified_universal_proof": false
+    },
+    {
+      "bounded_exact_case_verified": true,
+      "candidate_id": "KB75-P052-S03",
+      "editorial_field_count": 14,
+      "editorial_field_presence_count": 14,
+      "lesson_id": "KB76-M02",
+      "number_of_reasoned_steps": 4,
+      "number_of_worked_examples": 2,
+      "prerequisites_linked_to_approved_ids": false,
+      "required_field_presence": {
+        "assumptions": true,
+        "common_wrong_method": true,
+        "counterexample": true,
+        "definition": true,
+        "far_transfer": true,
+        "graduated_hints": true,
+        "invalid_boundary": true,
+        "mathematical_validity": true,
+        "near_transfer": true,
+        "prerequisite_topics": true,
+        "reasoning_steps": true,
+        "statement": true,
+        "symbols": true,
+        "worked_examples": true
+      },
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "track_hint": "ELECTIVE_A",
+      "verified_universal_proof": false
+    },
+    {
+      "bounded_exact_case_verified": true,
+      "candidate_id": "KB75-P052-S04",
+      "editorial_field_count": 14,
+      "editorial_field_presence_count": 14,
+      "lesson_id": "KB76-M03",
+      "number_of_reasoned_steps": 4,
+      "number_of_worked_examples": 2,
+      "prerequisites_linked_to_approved_ids": false,
+      "required_field_presence": {
+        "assumptions": true,
+        "common_wrong_method": true,
+        "counterexample": true,
+        "definition": true,
+        "far_transfer": true,
+        "graduated_hints": true,
+        "invalid_boundary": true,
+        "mathematical_validity": true,
+        "near_transfer": true,
+        "prerequisite_topics": true,
+        "reasoning_steps": true,
+        "statement": true,
+        "symbols": true,
+        "worked_examples": true
+      },
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "track_hint": "ELECTIVE_A",
+      "verified_universal_proof": false
+    },
+    {
+      "bounded_exact_case_verified": true,
+      "candidate_id": "KB75-P056-S03",
+      "editorial_field_count": 14,
+      "editorial_field_presence_count": 14,
+      "lesson_id": "KB76-M04",
+      "number_of_reasoned_steps": 4,
+      "number_of_worked_examples": 2,
+      "prerequisites_linked_to_approved_ids": false,
+      "required_field_presence": {
+        "assumptions": true,
+        "common_wrong_method": true,
+        "counterexample": true,
+        "definition": true,
+        "far_transfer": true,
+        "graduated_hints": true,
+        "invalid_boundary": true,
+        "mathematical_validity": true,
+        "near_transfer": true,
+        "prerequisite_topics": true,
+        "reasoning_steps": true,
+        "statement": true,
+        "symbols": true,
+        "worked_examples": true
+      },
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "track_hint": "ELECTIVE_A",
+      "verified_universal_proof": false
+    },
+    {
+      "bounded_exact_case_verified": true,
+      "candidate_id": "KB75-P061-S03",
+      "editorial_field_count": 14,
+      "editorial_field_presence_count": 14,
+      "lesson_id": "KB76-M05",
+      "number_of_reasoned_steps": 4,
+      "number_of_worked_examples": 2,
+      "prerequisites_linked_to_approved_ids": false,
+      "required_field_presence": {
+        "assumptions": true,
+        "common_wrong_method": true,
+        "counterexample": true,
+        "definition": true,
+        "far_transfer": true,
+        "graduated_hints": true,
+        "invalid_boundary": true,
+        "mathematical_validity": true,
+        "near_transfer": true,
+        "prerequisite_topics": true,
+        "reasoning_steps": true,
+        "statement": true,
+        "symbols": true,
+        "worked_examples": true
+      },
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "track_hint": "ELECTIVE_B",
+      "verified_universal_proof": false
+    },
+    {
+      "bounded_exact_case_verified": true,
+      "candidate_id": "KB75-P060-S01",
+      "editorial_field_count": 14,
+      "editorial_field_presence_count": 14,
+      "lesson_id": "KB76-M06",
+      "number_of_reasoned_steps": 4,
+      "number_of_worked_examples": 2,
+      "prerequisites_linked_to_approved_ids": false,
+      "required_field_presence": {
+        "assumptions": true,
+        "common_wrong_method": true,
+        "counterexample": true,
+        "definition": true,
+        "far_transfer": true,
+        "graduated_hints": true,
+        "invalid_boundary": true,
+        "mathematical_validity": true,
+        "near_transfer": true,
+        "prerequisite_topics": true,
+        "reasoning_steps": true,
+        "statement": true,
+        "symbols": true,
+        "worked_examples": true
+      },
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "track_hint": "ELECTIVE_B",
+      "verified_universal_proof": false
+    },
+    {
+      "bounded_exact_case_verified": true,
+      "candidate_id": "KB75-P063-S04",
+      "editorial_field_count": 14,
+      "editorial_field_presence_count": 14,
+      "lesson_id": "KB76-M07",
+      "number_of_reasoned_steps": 4,
+      "number_of_worked_examples": 2,
+      "prerequisites_linked_to_approved_ids": false,
+      "required_field_presence": {
+        "assumptions": true,
+        "common_wrong_method": true,
+        "counterexample": true,
+        "definition": true,
+        "far_transfer": true,
+        "graduated_hints": true,
+        "invalid_boundary": true,
+        "mathematical_validity": true,
+        "near_transfer": true,
+        "prerequisite_topics": true,
+        "reasoning_steps": true,
+        "statement": true,
+        "symbols": true,
+        "worked_examples": true
+      },
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "track_hint": "ELECTIVE_B",
+      "verified_universal_proof": false
+    },
+    {
+      "bounded_exact_case_verified": true,
+      "candidate_id": "KB75-P056-S02",
+      "editorial_field_count": 14,
+      "editorial_field_presence_count": 14,
+      "lesson_id": "KB76-M08",
+      "number_of_reasoned_steps": 4,
+      "number_of_worked_examples": 2,
+      "prerequisites_linked_to_approved_ids": false,
+      "required_field_presence": {
+        "assumptions": true,
+        "common_wrong_method": true,
+        "counterexample": true,
+        "definition": true,
+        "far_transfer": true,
+        "graduated_hints": true,
+        "invalid_boundary": true,
+        "mathematical_validity": true,
+        "near_transfer": true,
+        "prerequisite_topics": true,
+        "reasoning_steps": true,
+        "statement": true,
+        "symbols": true,
+        "worked_examples": true
+      },
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "track_hint": "ELECTIVE_A",
+      "verified_universal_proof": false
+    }
+  ],
+  "lesson_pack_sha256": "638745bae5df538f84d1a2e3774783909d3d353c04d333f48392b286ba5d5290",
+  "new_draft_count": 8,
+  "official_full_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "schema_version": "kb76-honest-project-candidate-coverage-v1",
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "student_published_count": 0,
+  "syllabus_version": "普通高中数学课程标准(2017年版2020年修订)"
+}
