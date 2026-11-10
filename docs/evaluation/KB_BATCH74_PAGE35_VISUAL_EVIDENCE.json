@@ -1,0 +1,76 @@
+{
+  "edges": [
+    {
+      "condition": "NEXT",
+      "source": "REAL_SCENARIO",
+      "target": "FORMULATE"
+    },
+    {
+      "condition": "NEXT",
+      "source": "FORMULATE",
+      "target": "CONSTRUCT"
+    },
+    {
+      "condition": "NEXT",
+      "source": "CONSTRUCT",
+      "target": "SOLVE"
+    },
+    {
+      "condition": "NEXT",
+      "source": "SOLVE",
+      "target": "VALIDATE"
+    },
+    {
+      "condition": "INVALID_REALITY_REVISE_MODEL",
+      "source": "VALIDATE",
+      "target": "CONSTRUCT"
+    },
+    {
+      "condition": "CONSISTENT_WITH_REALITY",
+      "source": "VALIDATE",
+      "target": "RESULT"
+    }
+  ],
+  "evidence_type": "AGENT_VISUAL_OBSERVATION_OF_MAC_PDF_RENDER",
+  "extract_text_corrupted": true,
+  "image_not_committed": true,
+  "local_render_png_sha256": "bfcf80effdcf8289eb4eb1bc006bdad55476d0872a14c43a5ebff1232548b435",
+  "mathematics_proof_certification": "NOT_APPLICABLE_WORKFLOW_DIAGRAM",
+  "nodes": [
+    {
+      "node_id": "REAL_SCENARIO",
+      "original_paraphrase": "呈现具体现实背景"
+    },
+    {
+      "node_id": "FORMULATE",
+      "original_paraphrase": "明确可研究的问题"
+    },
+    {
+      "node_id": "CONSTRUCT",
+      "original_paraphrase": "设定变量与假设并建立模型"
+    },
+    {
+      "node_id": "SOLVE",
+      "original_paraphrase": "进行数学求解"
+    },
+    {
+      "node_id": "VALIDATE",
+      "original_paraphrase": "将输出与现实条件核对"
+    },
+    {
+      "node_id": "RESULT",
+      "original_paraphrase": "解释为实际结论"
+    }
+  ],
+  "official_atom_count": null,
+  "pdf_page_index": 42,
+  "printed_page": 35,
+  "schema_version": "kb74-page35-image-attested-v1",
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "source_segment_id": "KB73-P035-L001-021",
+  "source_span_sha256": "9ac0fa26dfe5ffe6908bded742bfbcc7a6c0c618cf77e8a68e582916a646542b",
+  "student_publishable": false,
+  "teacher_follow_up": "需核查此流程与后续选题/开题/做题/结题活动是否分别落在知识、实践能力或教学方法；不得按6个框图节点虚构6条官方知识原子。",
+  "teacher_review": "REVIEW_PENDING",
+  "visual_check_summary": "源图展示现实情境经问题提出、建模和求解进入结果检验；不合实际则回到建模，合乎实际则形成实际结果。项目释义而非原文复制。"
+}
