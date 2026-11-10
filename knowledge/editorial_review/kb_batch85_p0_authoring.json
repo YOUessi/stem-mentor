@@ -1,0 +1,407 @@
+{
+  "cards": [
+    {
+      "assumptions": [],
+      "boundary": "若把实数对数扩展到复数，还需要处理分支与多值，不能机械沿用实数公式。",
+      "far": "在对数回归中自变量存在零值时如何处理建模约束？",
+      "finite_op": "log_product_domain",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P01",
+      "kind": "THEOREM",
+      "near": "检查log_3(9)+log_3(27)的合并前提。",
+      "proof_steps": [
+        "由x>0与y>0可知两个单独对数与乘积对数都存在。",
+        "令u=log_a(x),v=log_a(y)，则a^u=x且a^v=y。",
+        "指数运算给出a^(u+v)=xy，指数函数单射故u+v=log_a(xy)。"
+      ],
+      "source_step": "math.hs.logarithm.product-law#2",
+      "statement": "在实数体系中a>0且a≠1、x>0、y>0时，log_a(xy)=log_a(x)+log_a(y)。",
+      "title": "对数乘积公式的逐项真数域",
+      "worked_examples": [
+        {
+          "question": "求log_2(4)+log_2(8)，与log_2(32)比较。",
+          "teacher_solution": "两项分别是2与3，相加为5；乘积是32，其以2为底的对数也是5。"
+        },
+        {
+          "question": "x=y=-1时能否把log_2(x)+log_2(y)替换为log_2(xy)？",
+          "teacher_solution": "乘积xy=1虽然为正，但log_2(-1)在实数域无定义，不能使用等式。"
+        }
+      ],
+      "wrong_method": "只检查乘积大于零，忽视两个单独对数的定义域。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "分母y=0时x/y本身不存在，即使其它参数可写也不构成等式。",
+      "far": "信息熵比值公式对零概率事件怎样避免无定义项？",
+      "finite_op": "log_quotient_domain",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P02",
+      "kind": "THEOREM",
+      "near": "当分母是负数且分子也是负数时，原实数对数是否各自存在？",
+      "proof_steps": [
+        "首先检查x,y均正从而x/y有定义且为正。",
+        "分别设置a^u=x与a^v=y并利用a^(u-v)=x/y。",
+        "由指数函数单射可得到两个对数的差式，逆向不能丢掉真数约束。"
+      ],
+      "source_step": "math.hs.logarithm.quotient-law#3",
+      "statement": "当a>0且a≠1、x>0、y>0时，log_a(x/y)=log_a(x)-log_a(y)。",
+      "title": "对数商式与分母真数约束",
+      "worked_examples": [
+        {
+          "question": "计算log_2(8)-log_2(4)，并使用商式复核。",
+          "teacher_solution": "两项分别为3和2，差为1；8/4=2，log_2(2)=1。"
+        },
+        {
+          "question": "x=-8,y=-4时log_2(x/y)能否拆成两个实数对数？",
+          "teacher_solution": "x/y=2的对数存在，但两个负真数的实数对数都不存在，拆分非法。"
+        }
+      ],
+      "wrong_method": "凭商为正就判定两个原真数都为正，等价变形丢失了前提。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "换底的分母可能很接近零导致浮点计算不稳定，但数学上仍须区分恰为零。",
+      "far": "对数模型参数a渐近1时如何解释数值病态？",
+      "finite_op": "log_change_base_domain",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P03",
+      "kind": "THEOREM",
+      "near": "换底计算log_9(3)并注明底数条件。",
+      "proof_steps": [
+        "由a>0且a≠1，log_b(a)存在且不等于零。",
+        "设u=log_a(x)，得到a^u=x，两侧取以b为底的对数有u log_b(a)=log_b(x)。",
+        "只因分母log_b(a)非零，才能合法除以它求u。"
+      ],
+      "source_step": "math.hs.logarithm.change-base#2",
+      "statement": "设a,b均为正且都不等于1、x>0，则log_a(x)=log_b(x)/log_b(a)。",
+      "title": "换底公式的非零底数对数分母",
+      "worked_examples": [
+        {
+          "question": "将log_2(8)换成以4为底的对数比值。",
+          "teacher_solution": "log_4(8)=3/2、log_4(2)=1/2，两者比值为3。"
+        },
+        {
+          "question": "令a=1,b=2,x=8能否用换底分式？",
+          "teacher_solution": "log_2(1)=0导致分母为零，且log_1(8)本来不定义。"
+        }
+      ],
+      "wrong_method": "忘记对新旧两个底数同时排除1，从而除以零。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "Δ<0表示无实根，不意味着在复数域中没有根。",
+      "far": "拟合二次模型退化成直线时如何重新选择模型阶数？",
+      "finite_op": "quadratic_discriminant",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P04",
+      "kind": "THEOREM",
+      "near": "含参数m的mx²+2x+1=0先分m=0和m≠0。",
+      "proof_steps": [
+        "把多项式配方成(2ax+b)²=b²−4ac，步骤使用a≠0。",
+        "左端为实数平方非负，所以Δ<0时不存在实根。",
+        "当Δ=0时有一重合实根；Δ>0时有两个不同实根且可安全除以2a。"
+      ],
+      "source_step": "math.hs.quadratic.discriminant-roots#3",
+      "statement": "对于a≠0的实系数方程ax²+bx+c=0，判别式Δ=b²−4ac决定不同实根数。",
+      "title": "一元二次判别式首项系数和实根分支",
+      "worked_examples": [
+        {
+          "question": "求x²−3x+2=0的根数与根。",
+          "teacher_solution": "a=1、Δ=9−8=1>0；两实根分别为1和2。由于a非零且两个候选都满足原方程。"
+        },
+        {
+          "question": "方程0x²+2x−4=0为何不能使用二次求根公式？",
+          "teacher_solution": "此时a=0，2a为零分母；实际是一次方程，唯一解2。"
+        }
+      ],
+      "wrong_method": "把任意最高系数为零的方程都套用二次判别式与求根公式。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "零输入允许，且a=b=0取等；无需多加a,b严格正的前提。",
+      "far": "用定周长矩形面积最优推导时先界定长宽正数。",
+      "finite_op": "amgm_rational_roots",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P05",
+      "kind": "THEOREM",
+      "near": "将a=0,b=9代入不等式，讨论是否可以取等以及使用非负平方根的理由。",
+      "proof_steps": [
+        "两个非负实数都有非负平方根，平方差(√a−√b)²≥0。",
+        "展开得a+b−2√(ab)≥0，移项除以正数2得到不等式。",
+        "平方差等于0当且仅当√a=√b，又由平方根在非负数上单射得a=b。"
+      ],
+      "source_step": "math.hs.inequality.amgm#2",
+      "statement": "实数a,b≥0时有(a+b)/2≥√(ab)，取等当且仅当a=b。",
+      "title": "算术几何平均不等式的非负前提",
+      "worked_examples": [
+        {
+          "question": "以a=4,b=9检验AM–GM并说明差值。",
+          "teacher_solution": "算术平均为13/2，几何平均为6，差为1/2且非零。"
+        },
+        {
+          "question": "a=-1,b=-1时可以代入实数AM–GM吗？",
+          "teacher_solution": "两个输入不满足非负假设，实数√a不定义，公式的证明路径不合法。"
+        }
+      ],
+      "wrong_method": "把只适用于非负数的平方根证明强行用于任意实数。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "若r=0，退化成单点而不是本证明所说的几何圆。",
+      "far": "测量误差下接近相切的圆与直线如何报告不确定性？",
+      "finite_op": "line_circle",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P06",
+      "kind": "METHOD",
+      "near": "半径为2的圆若与直线x=0相交，圆心横坐标如何决定交点个数？",
+      "proof_steps": [
+        "直线法向量(A,B)非零才能定义到直线的正交距离d。",
+        "以圆心作垂足，交点到垂足的距离平方为r²−d²。",
+        "d>r时没有实数交点；d=r时相切；d<r时有两个不同交点。"
+      ],
+      "source_step": "math.hs.geometry.circle-intersections#2",
+      "statement": "圆半径r>0且直线Ax+By+C=0满足A²+B²>0时，以圆心到直线距离d与r比较判0、1、2交点。",
+      "title": "直线与圆公共点分类的非退化法向量",
+      "worked_examples": [
+        {
+          "question": "单位圆x²+y²=1与直线x=1相交几次？",
+          "teacher_solution": "圆心到x=1距离是1，等于半径1，所以只有切点(1,0)。"
+        },
+        {
+          "question": "把0x+0y+1=0当直线来用距离公式会怎样？",
+          "teacher_solution": "法向量为零，它不描述直线且距离分母为0，不能讨论切线和割线。"
+        }
+      ],
+      "wrong_method": "不先判直线的一般式法向量是否为零，就直接对d进行比较。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "半径为0的对象是点，超出常规两圆交点计数证明假设。",
+      "far": "机器人定位中两个距离约束重合时为何没有唯一位置解？",
+      "finite_op": "circle_circle",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P07",
+      "kind": "METHOD",
+      "near": "当两圆半径分别为2和1而圆心距等于1时，应怎样分类内切情况？",
+      "proof_steps": [
+        "半径r1,r2须为正，中心距d由两圆心欧氏距离给出。",
+        "若d=0且两半径相等，两圆轨迹重合，因此公共点无限多个；同心异半径无交点。",
+        "若d>0，三角形不等式给出|r1−r2|≤d≤r1+r2的交点范围，边界切、内部交两点。"
+      ],
+      "source_step": "math.hs.geometry.circle-intersections#4",
+      "statement": "两个半径均正的实平面圆，先判断圆心是否相同；不同心时再比较中心距与两半径和差。",
+      "title": "两圆公共点分类须先判同心重合",
+      "worked_examples": [
+        {
+          "question": "圆心(0,0),(2,0)半径都为1时交点数是多少？",
+          "teacher_solution": "圆心距2等于半径之和2，两圆外切于(1,0)，只有一个交点。"
+        },
+        {
+          "question": "两个圆心相同且半径同为1，能按一般公式判一个交点吗？",
+          "teacher_solution": "这是两条完全重合的圆，公共点无穷多，不可用非同心公式误判。"
+        }
+      ],
+      "wrong_method": "忽略同心同半径分支，把圆与自身相交也当作有限交点。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "参数p可为负，但焦点准线的朝向改变而不是自动无解。",
+      "far": "卫星反射面焦距参数变化时如何区分物理模型与曲线退化？",
+      "finite_op": "parabola_focus",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P08",
+      "kind": "THEOREM",
+      "near": "p=-1时判定点(-1,2)是否属于曲线。",
+      "proof_steps": [
+        "点(x,y)到焦点的平方距离为(x−p)²+y²，到准线x=−p的平方距离为(x+p)²。",
+        "两侧原本均为距离非负，故平方相等与距离相等等价。",
+        "展开消去x²与p²得到y²=4px；逆向由等式恢复平方距离相等。"
+      ],
+      "source_step": "math.hs.geometry.parabola-focus#3",
+      "statement": "焦点(p,0)与准线x=−p，p≠0时，等距轨迹满足y²=4px；反向也需两距离的非负性。",
+      "title": "抛物线焦准线平方变形需要非退化参数",
+      "worked_examples": [
+        {
+          "question": "p=1、点(1,2)是否在抛物线上？",
+          "teacher_solution": "y²=4，4px=4，两者相等；到焦点与准线的距离都为2。"
+        },
+        {
+          "question": "当p=0时焦点与准线发生什么问题？",
+          "teacher_solution": "焦点在准线上，轨迹退化为y=0，不能继续声称非退化抛物线。"
+        }
+      ],
+      "wrong_method": "只对平方公式做代数消元，却不检查焦点与准线不重合。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "若a或b为零则所写曲线分母无定义，不属于这一椭圆模型。",
+      "far": "轨迹数据带噪导致点不落在拟合椭圆上时，何种近似切线有定义？",
+      "finite_op": "ellipse_tangent",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P09",
+      "kind": "METHOD",
+      "near": "椭圆x²/9+y²/4=1在(3,0)处的切线。",
+      "proof_steps": [
+        "先确认a,b为正且P0=(x0,y0)满足F(P0)=0。",
+        "梯度∇F(P0)=(2x0/a²,2y0/b²)，椭圆切点非原点故该梯度非零。",
+        "利用梯度与切线方向正交得到x x0/a²+y y0/b²=1。"
+      ],
+      "source_step": "math.hs.geometry.ellipse-tangent#2",
+      "statement": "对a,b>0及椭圆F(x,y)=x²/a²+y²/b²−1=0，只有P0在椭圆上才能将其代入切线公式。",
+      "title": "椭圆切线方程的切点在曲线条件",
+      "worked_examples": [
+        {
+          "question": "椭圆x²/4+y²=1在(2,0)的切线是什么？",
+          "teacher_solution": "切点满足椭圆方程，代入公式得x/2=1即x=2。该直线在切点处与椭圆相切且只相交一次。"
+        },
+        {
+          "question": "点(0,0)能当作上面椭圆的切点吗？",
+          "teacher_solution": "原点不在椭圆上，将其代入公式只得到0=1的伪直线。"
+        }
+      ],
+      "wrong_method": "记住模板而不验证指定点是否在椭圆上以及梯度是否非零。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "同一实内积空间要求向量维数兼容，不能混用不同维度。",
+      "far": "数据特征向量为零时余弦相似度与柯西不等式的适用域有何区别？",
+      "finite_op": "cauchy_schwarz",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P10",
+      "kind": "THEOREM",
+      "near": "计算u=(1,0),v=(0,1)的严格不等情况。",
+      "proof_steps": [
+        "当v=0时，两侧同为零，不应用除以||v||²。",
+        "当v≠0时，取t=⟨u,v⟩/⟨v,v⟩并利用||u−tv||²≥0。",
+        "展开整理得||u||²−⟨u,v⟩²/||v||²≥0，再乘正数||v||²。"
+      ],
+      "source_step": "math.hs.vector.cauchy-schwarz#2",
+      "statement": "实内积空间中|⟨u,v⟩|²≤⟨u,u⟩⟨v,v⟩，允许零向量，但除以||v||²的证明须另分v=0。",
+      "title": "柯西不等式平方范数证明的零向量分支",
+      "worked_examples": [
+        {
+          "question": "计算u=(1,2),v=(2,4)是否取等。",
+          "teacher_solution": "内积10平方100；两个平方范数5与20的乘积100，因此取等。"
+        },
+        {
+          "question": "若v=(0,0)，上述投影参数t还能计算吗？",
+          "teacher_solution": "分母||v||²=0不能除；但定理本身仍是0≤0，必须另设证明分支。"
+        }
+      ],
+      "wrong_method": "误将证明中分母非零的要求说成柯西不等式本身不适用零向量。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "只保证u和v分别可导，不自动保证商函数在所有点有定义。",
+      "far": "可训练模型的损失函数含参数分母时，奇异参数怎样进行可靠梯度检查？",
+      "finite_op": "quotient_polynomial_derivative",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P11",
+      "kind": "THEOREM",
+      "near": "求(2x+1)/(x+2)在x=0处的导数。",
+      "proof_steps": [
+        "v在x0可导因而连续，v(x0)≠0保证x0附近v不为零。",
+        "差商通分后拆为u的差商与v的差商，分母包含v(x0+h)v(x0)。",
+        "对h趋零取极限并代入连续值，得所需分子与平方分母的比值。"
+      ],
+      "source_step": "math.hs.calculus.quotient-rule#2",
+      "statement": "u,v在x0可导且v(x0)≠0时，(u/v)'(x0)=[u'v−uv'](x0)/v(x0)²。",
+      "title": "商法则需要分母邻域非零与可导",
+      "worked_examples": [
+        {
+          "question": "u(x)=1+2x、v(x)=1+x，x0=1时商导数多少？",
+          "teacher_solution": "u'=2,v'=1，分子2×2−3×1=1，分母2²=4，导数1/4。"
+        },
+        {
+          "question": "u(x)=1、v(x)=x−1在x0=1时能用商法则吗？",
+          "teacher_solution": "v(1)=0，原商在该点无定义，因此不能给出这个点的导数。"
+        }
+      ],
+      "wrong_method": "忘记分母在求导点非零而把极限分式当作实值。"
+    },
+    {
+      "assumptions": [],
+      "boundary": "零向量与任意向量内积为零，但在内积正交的代数定义中仍需区分角度定义。",
+      "far": "机器人姿态角计算中方向向量范数接近零时如何拒绝不稳定角度？",
+      "finite_op": "vector_angle",
+      "hints": [
+        "先确定数学对象的定义域与必要的非零前提。",
+        "尝试将定理逐项假设与当前给定值核对。",
+        "先求一个明确合法例子与一个失效例子再检查推导。"
+      ],
+      "id": "KB85-P12",
+      "kind": "THEOREM",
+      "near": "u=(1,1),v=(1,-1)的内积和夹角。",
+      "proof_steps": [
+        "首先确认u和v都不是零向量，从而长度乘积严格正。",
+        "由柯西不等式可知归一化内积位于[-1,1]，反余弦存在且唯一。",
+        "当u·v=0时θ=π/2；若任一向量零则公式分母为零，不能定义此夹角。"
+      ],
+      "source_step": "math.hs.space.angle-distance#2",
+      "statement": "两个非零欧氏向量之间的夹角θ∈[0,π]由cosθ=(u·v)/(|u||v|)唯一确定。",
+      "title": "空间夹角与零向量的定义域",
+      "worked_examples": [
+        {
+          "question": "u=(1,0),v=(0,1)的夹角是多少？",
+          "teacher_solution": "两向量非零、内积0且范数均1，所以cosθ=0、θ=π/2。"
+        },
+        {
+          "question": "把零向量与(0,1)称为垂直并给出90度夹角合法吗？",
+          "teacher_solution": "虽然内积为0，但零向量没有可定义的方向夹角，公式分母为0。"
+        }
+      ],
+      "wrong_method": "把内积为零与夹角90度在所有向量上视为等价，不排除零向量。"
+    }
+  ],
+  "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+  "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+  "general_formal_certificates": 0,
+  "review_status": "REVIEW_PENDING",
+  "schema_version": "kb85-12-history-p0-source-linked-original-drafts-v1",
+  "student_releases": 0,
+  "teacher_approvals": 0
+}
