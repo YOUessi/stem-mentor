@@ -69,3 +69,13 @@
 ## 代码保护
 
 本轮保留Mac主仓原有未提交变动；使用独立worktree，未使用Tang/强制推送/合并main。全部新稿为项目自创，学校真实学生数据及版权教材全文未上传。
+
+
+## GitHub镜像交付补记（本批内容源码）
+
+- Mac本地内容源码提交：`80ad812b32516b781e314780c68f94d6c5ff8c68`。
+- GitHub原生Blob/Tree/Commit创建的等价镜像提交：`50bd5b86fde263f7d94204edf43bfea0fbe39445`；来源父提交：`219009ef235089228971a8c9508e2b6777d76146`。
+- Mac内容树与远端内容树严格相同：`1a02cd9c48e40900f9af4ea0dd51904dfb83f28e`；15个源码/内容/报告及测试证据Blob SHA逐一相同。
+- Draft PR：`https://github.com/YOUessi/stem-mentor/pull/102`，堆叠在Batch76 Draft PR #101，不合并main。
+- HTTPS git push受阻：连接github.com:443超时，`git_push.exit=128`，原始证据一并归档；未强推。
+- GitHub Actions运行编号：`42766793976`；远端CI结果在最终评论另行核验，不在本次报告中预先声称成功。
