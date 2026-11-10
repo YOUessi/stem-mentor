@@ -43,7 +43,8 @@
 - 最终 Mac 合并专项 `semantic_and_math_specialty.log`：**1,164 passed、0 failed、退出码0**，其中旧 Batch81 风险与数学专项820项，新增K00来源语义负面/回归344项；这1,164项包含在全量内，不能累加。
 - 最终 Mac 完整回归 `mac_full_after_semantic.log`：**55,879 passed、5 skipped、0 failed、1条第三方依赖警告**，Mac `mac_full_after_semantic.exit=0`。其中前一版只含K07的历史基线为55,535 passed、5 skipped；本批增加的344项K00测试已在最终全量中体现。Node **111/111通过**；Tutor策略及RAG离线回归也在完整日志中执行，未调用模型API。
 - Mac浏览器回归 `mac_browser.log`、`mac_browser.exit=0`：**15个 Chrome/Playwright 脚本通过**，浏览器pytest **2 passed**；包括课程页面、极值边界、笔/触控/iPad模拟及不同响应式宽度；无页面错误、外部请求或学生真实数据写入。iPad输入为浏览器模拟，**不是物理iPad验收**。
-- GitHub最终源码 SHA / Tree、CI运行ID及 Draft PR：交付成功后补写并以远端GitHub为唯一事实源。
+- Mac已冻结并提交的源码+测试证据快照：commit **`5b7e2dc83fe97413b632bdf35c3c8fcf1f23cd12`**，Git Tree **`4faf01fef43902a66cc89e4f0c381fa621a1214d`**，共30个变更文件。该SHA来自唯一Mac环境真实Git对象；本报告最终验收附记单独作为后续提交，不更改这份冻结源码快照。
+- GitHub最终交付：仅当远端 branch HEAD、相关Blob和CI回执核实后，才在PR #106与对应Issues记录；Draft状态不等于全量课程验收。
 
 ## 后续批次重点
 
