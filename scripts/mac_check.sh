@@ -80,6 +80,9 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch66_competency_evidence
 .venv/bin/python scripts/build_kb_batch74_page35_visual.py --check --verify-local-image
 .venv/bin/python scripts/build_kb_batch75_clause_splits.py --check --verify-local-source
 .venv/bin/python scripts/build_kb_batch75_lessons.py --check
+.venv/bin/python scripts/build_kb_batch76_equivalence.py --check
+.venv/bin/python scripts/build_kb_batch76_eight_lessons.py --check
+.venv/bin/python scripts/build_kb_batch76_progress.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"
