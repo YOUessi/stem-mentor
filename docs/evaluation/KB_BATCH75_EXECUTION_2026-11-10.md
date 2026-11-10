@@ -40,3 +40,10 @@ Node：111/111 passed；模拟Tutor策略33/33；RAG困难负例40/40；Top3=22/
 真实教师批准0，学生正式深度发布0；61页教师完整原子化0页；七轨官方完整知识原子分母全null；历史538条未形式认证证明步骤与10个未裁决历史冲突继续开放。
 下一批要审核选修A/B微积分与统计的跨页重叠及数学等价关系，补齐课程原子分母的教师可审证据；对真正缺失的数学原子扩充严谨原创讲义和题族、逐步检查假设，继续处理历史证明债务与冲突。不能因为本批60候选或8草案就宣称课程正式覆盖；不自动关闭#17–#27。
 GitHub正式PR、commit与CI以最终远端记录为事实源。
+
+## GitHub 远端初次CI及源码SHA核验（2026-11-10）
+- 源码提交（通过Mac原始完整回归）：`c75a5049cf9f0784e48fb85def64ebd5bce6acce`；源码Git Tree：`1879b6291e2ec407e40d90d14eb660c88b336c39`。
+- 远端独立 Draft PR #100：https://github.com/YOUessi/stem-mentor/pull/100；stacked base 是 Batch74 PR #99，对应 `a54e27464101bdffc4e2043a1bea4591783e2539`。
+- GitHub Actions 初次源码CI #42753661200：https://github.com/YOUessi/stem-mentor/actions/runs/42753661200；`completed / success`，test job 129/129步骤成功，0失败。
+- 已核实 8 个关键源码/数据/日志文件的远端 Git blob SHA 与 Mac 测试源码相同（含原版课标子片段见证、两份生成器、课程编辑矩阵、8篇教师稿、专测与执行证据）；远端commit SHA与Mac源码commit一致。
+- 此节为补充验收记录的纯文档修改；未修改任何教学源码、测试代码、内容JSON或审核状态。后续文档提交产生的新HEAD需要单独接受CI。
