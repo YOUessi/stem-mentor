@@ -1,0 +1,979 @@
+{
+  "formal_certifications": 0,
+  "official_atom_denominator": null,
+  "original_author_sha256": "52444bd8701973b67fbd414f87035c59103218af9fb0d27c95d179e31e69e6a8",
+  "original_teacher_cards": 12,
+  "proof_source_sha256": "339ceb2ecb0b60116f38093f5a7a52a3e60c7b738fe5a4fc2021a06695232c01",
+  "review_cards": [
+    {
+      "assumptions": [
+        "A、B在同一欧氏三维直角坐标系中表示",
+        "三个坐标均是有定义的实数，不允许缺失坐标"
+      ],
+      "boundary": "如果输入只有两个坐标或使用不同单位坐标轴，不能将其直接称作三维欧氏距离。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "考虑同一位置但采用不同刻度的地图坐标，为什么需要先统一量纲？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Wrong vector/list length"
+      },
+      "finite_op": "space_distance",
+      "finite_positive_evidence": {
+        "distance_squared": "9"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "首先核对三个坐标和同一坐标系。",
+        "写出位移的三个坐标差而不是先求和。",
+        "按正交分量平方和求距离的平方。"
+      ],
+      "id": "KB81-P01",
+      "invalid": {
+        "distance_squared": 9,
+        "u": [
+          0,
+          0
+        ],
+        "v": [
+          1,
+          2,
+          2
+        ]
+      },
+      "kind": "METHOD",
+      "linked_historical_step_id": "math.hs.space.coordinate-distance#2",
+      "near": "A=(0,0,0),B=(1,2,2) 的距离平方。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "6dad090c005d4e0b015f7af09a301c70ff36c655d74e137d2a955a3392a4b167",
+      "proof_steps": [
+        "从A指向B的位移向量为各分量差，分量可为负而平方非负。",
+        "三条坐标轴相互正交，反复应用平面勾股定理得到位移长度平方。",
+        "当A=B时所得长度为0，公式仍成立，不应擅自加非零距离前提。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.space.coordinate-distance#2",
+      "statement": "在三维直角坐标系中，任意两点 A=(x1,y1,z1)、B=(x2,y2,z2) 的距离平方为各对应坐标差平方之和。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "空间两点距离的平方公式",
+      "valid": {
+        "distance_squared": 9,
+        "u": [
+          0,
+          0,
+          0
+        ],
+        "v": [
+          1,
+          2,
+          2
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "A=(0,0,0)，B=(1,2,2)，距离是多少？",
+          "teacher_solution": "位移(1,2,2)，平方和1+4+4=9，因此距离3。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "A=(2,-1,5)，B=(2,-1,5)，距离是否能为0？",
+          "teacher_solution": "三分量差均为0，距离平方为0；无需另加两点必须不同的条件。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "将坐标差求和后再平方，会产生交叉项；而正交分量的平方应分别相加。"
+    },
+    {
+      "assumptions": [
+        "平面法向量n为非零三维向量",
+        "直线方向向量v非零，且n·v=0、n·p≠d"
+      ],
+      "boundary": "仅n·v=0不能断言严格线面平行：若起点在平面中则整个直线在平面内。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "平面z=0，直线(0,0,0)+t(1,0,0)属于何种位置关系？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Line is inside the plane; not strictly disjoint"
+      },
+      "finite_op": "line_plane_strict_parallel",
+      "finite_positive_evidence": {
+        "disjoint": true,
+        "normal_dot_direction": "0"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "写出平面法向量和直线方向向量。",
+        "点乘判定方向是否平行平面。",
+        "将直线上一个点代入平面方程判断是否包含。"
+      ],
+      "id": "KB81-P02",
+      "invalid": {
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "plane_offset": 0,
+        "point": [
+          0,
+          0,
+          0
+        ]
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.space.line-plane-normal#3",
+      "near": "平面z=0，直线(0,0,1)+t(1,0,0)，为何严格平行？",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "390062f36e9ea7e05992f538c695162310e3130fe43030cc9d40b2f42bdbec5c",
+      "proof_steps": [
+        "把直线参数式代入平面方程，得到 n·p+t(n·v)=d。",
+        "由n·v=0，左边恒为n·p；由n·p≠d，方程无任何实数t解。",
+        "因此整条直线与平面不相交；若n·p=d则直线包含于平面，必须区分。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.space.line-plane-normal#3",
+      "statement": "设平面 n·x=d，n≠0，直线 x=p+t v，v≠0。若 n·v=0 且 n·p≠d，则直线与平面无公共点。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "线面严格平行与平面内直线的区分",
+      "valid": {
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "plane_offset": 0,
+        "point": [
+          0,
+          0,
+          1
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "z=0与直线(0,0,1)+t(2,1,0)是否有交点？",
+          "teacher_solution": "法向量(0,0,1)，与方向点乘为0；直线z恒为1，无法等于0，无交点。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "把起点改为(0,0,0)，还算严格平行吗？",
+          "teacher_solution": "方向点乘为0，但全部点z=0；直线包含于平面，严格无交点结论不成立。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把方向垂直法向量当作严格不相交，忘了检查直线上的点是否已落在平面。"
+    },
+    {
+      "assumptions": [
+        "两个圆半径r1、r2严格大于零",
+        "圆心不同，且圆心距同时满足严格内外三角不等式"
+      ],
+      "boundary": "当d=r1+r2或d=|r1-r2|时是相切，仅一个交点；同心等半径时两圆重合。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "同心同半径两个圆的交点个数，为什么不是两个？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Two distinct intersections require strict triangle inequalities"
+      },
+      "finite_op": "two_circle_points",
+      "finite_positive_evidence": {
+        "center_distance_squared": "36",
+        "intersection_count": 2
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先确认r1、r2均严格为正。",
+        "比较d与半径的和与差。",
+        "检查两侧不等号是否严格，并单独讨论相切和重合。"
+      ],
+      "id": "KB81-P03",
+      "invalid": {
+        "c1": [
+          0,
+          0
+        ],
+        "c2": [
+          6,
+          0
+        ],
+        "r1": 1,
+        "r2": 1
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.geometry.circle-intersections#3",
+      "near": "r1=r2=5、圆心距6，交点个数是多少？",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "ed7c89d7b27327bf1748752ee00db456b8a11aea8b8000c7dfb2434e3186d0ed",
+      "proof_steps": [
+        "连接两个圆心与一个交点构成边长为r1、r2、d的三角形。",
+        "两条严格三角不等式保证非退化三角形，从中心连线两侧分别得到镜像交点。",
+        "两交点不同且两圆相交点至圆心距离均被半径固定，因此不会额外产生第三交点。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.geometry.circle-intersections#3",
+      "statement": "半径正的两圆若圆心距 d 满足 |r1-r2|<d<r1+r2，则恰有两个不同交点。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "两圆具有两个交点的严格条件",
+      "valid": {
+        "c1": [
+          0,
+          0
+        ],
+        "c2": [
+          6,
+          0
+        ],
+        "r1": 5,
+        "r2": 5
+      },
+      "worked_examples": [
+        {
+          "question": "半径各5，圆心相距6，两个交点为何存在？",
+          "teacher_solution": "内界0<6，外界6<10成立，产生关于圆心连线对称的两个交点。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "r1=2,r2=3,d=5有几个交点？",
+          "teacher_solution": "d=r1+r2为外切，只产生1个交点，严格两点条件不成立。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把允许相切的非严格不等式当作存在两个不同交点的充分条件。"
+    },
+    {
+      "assumptions": [
+        "在标准直角坐标系中使用y²=4px",
+        "参数p为非零实数，p符号决定抛物线开口"
+      ],
+      "boundary": "p=0时轨迹y²=0是一条重合直线而非该定义下的非退化抛物线。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "若方程y²=-12x，负p如何影响开口和焦点？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Degenerate zero p"
+      },
+      "finite_op": "parabola_focus",
+      "finite_positive_evidence": {
+        "directrix_x": "-2",
+        "focus": [
+          "2",
+          "0"
+        ]
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "对照4p系数找出p。",
+        "焦点与准线坐标应关于原点左右分布。",
+        "讨论p=0时退化，不直接代入判定非退化。"
+      ],
+      "id": "KB81-P04",
+      "invalid": {
+        "directrix_x": 0,
+        "focus": [
+          0,
+          0
+        ],
+        "p": 0
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.geometry.parabola-focus#2",
+      "near": "y²=8x的焦点及准线。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "bba9bff646f1c07d50feb0d030c379d96ed8b70ef0c5402e35f56458d331ce81",
+      "proof_steps": [
+        "点(x,y)到焦点(p,0)的距离平方是(x-p)²+y²。",
+        "点到竖直准线x=-p的距离平方为(x+p)²；两式相等当且仅当y²=4px。",
+        "因为p≠0，该等距轨迹是非退化抛物线，可反推出给定的焦点及准线。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.geometry.parabola-focus#2",
+      "statement": "对p≠0的实数，曲线 y²=4px 的焦点是(p,0)，准线是x=-p。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "标准抛物线焦点和准线参数条件",
+      "valid": {
+        "directrix_x": -2,
+        "focus": [
+          2,
+          0
+        ],
+        "p": 2
+      },
+      "worked_examples": [
+        {
+          "question": "y²=8x的焦点是什么？",
+          "teacher_solution": "4p=8，p=2，焦点(2,0)，准线x=-2。 注意先核对对应定理的定义域与退化前提，才可将该结论用于此题。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "y²=-12x向何处开口？",
+          "teacher_solution": "4p=-12，p=-3，焦点(-3,0)在左侧，准线x=3，开口向左。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "将y²=4px中的p误认为焦点到准线的全部距离2p而忘记符号和绝对值。"
+    },
+    {
+      "assumptions": [
+        "a与b是正的半轴长度，方程确为非退化椭圆",
+        "(x0,y0)满足椭圆方程，不允许把外部点代作切点"
+      ],
+      "boundary": "对于不在椭圆上的点，该式通常为极线而非该点处切线。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "为什么(4,0)代入同一公式得到的直线不能称为椭圆在(4,0)处的切线？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Claimed tangency point is not on ellipse"
+      },
+      "finite_op": "ellipse_tangent",
+      "finite_positive_evidence": {
+        "point_on_ellipse": true,
+        "point_on_tangent": true
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先验证候选切点确实属于椭圆。",
+        "求隐函数梯度获得法向量。",
+        "以切点为基点写法线方程并化简。"
+      ],
+      "id": "KB81-P05",
+      "invalid": {
+        "a": 3,
+        "b": 2,
+        "line_point": [
+          3,
+          1
+        ],
+        "tangent_point": [
+          4,
+          0
+        ]
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.geometry.ellipse-tangent#2",
+      "near": "x²/9+y²/4=1在(3,0)处的切线。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "443ac6f37a1400f09adbfb3531dbc6b02de29f251636aacf5a5b9b6bbf63c2b9",
+      "proof_steps": [
+        "对F(x,y)=x²/a²+y²/b²-1求梯度，得到(2x/a²,2y/b²)。",
+        "在曲线上点(x0,y0)处梯度不为零，因为x0、y0不可能同时为零。",
+        "梯度与切向量垂直，展开线性切线方程得到xx0/a²+yy0/b²=1。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.geometry.ellipse-tangent#2",
+      "statement": "椭圆x²/a²+y²/b²=1在曲线上点(x0,y0)的切线为 xx0/a²+yy0/b²=1，a,b>0。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "椭圆切线公式的切点在曲线上前提",
+      "valid": {
+        "a": 3,
+        "b": 2,
+        "line_point": [
+          3,
+          1
+        ],
+        "tangent_point": [
+          3,
+          0
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "x²/9+y²/4=1在(3,0)处切线是什么？",
+          "teacher_solution": "3x/9=1，切线x=3。 注意先核对对应定理的定义域与退化前提，才可将该结论用于此题。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "(0,2)作为切点得到什么？",
+          "teacher_solution": "点在椭圆上，切线2y/4=1即y=2，验证切点成立。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "看到任意(x0,y0)就套切线公式，省略其必须位于椭圆上的验证。"
+    },
+    {
+      "assumptions": [
+        "底数a为正且不等于1",
+        "分子真数x及分母真数y分别严格大于零"
+      ],
+      "boundary": "当x,y都是负数时商可能为正但右侧两个实对数均无定义，不能反推合法。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "x=-8,y=-2时为什么左侧有定义而右侧没有？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Real logarithm domain violated"
+      },
+      "finite_op": "real_log_quotient",
+      "finite_positive_evidence": {
+        "integer_log_difference": 2,
+        "ratio": "4"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "列出左右每一个对数的定义域。",
+        "分别表示成同底指数幂。",
+        "用幂的商法则推导差值，并注意不可逆的情况。"
+      ],
+      "id": "KB81-P06",
+      "invalid": {
+        "base": 2,
+        "claimed_difference": 2,
+        "exp_x": 3,
+        "exp_y": 1,
+        "x": -8,
+        "y": -2
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.logarithm.quotient-law#3",
+      "near": "a=2,x=8,y=2的商法则数值证据。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "c1ee45dbd39b231b8aec3afbe28c8503d5bfb28f7bbee15316682f8ae9ae40d5",
+      "proof_steps": [
+        "令u=log_a x、v=log_a y，此时u与v均定义且x=a^u、y=a^v。",
+        "作商得x/y=a^(u-v)，其中每一项都为正，不涉及零分母。",
+        "由对数与指数互逆，log_a(x/y)=u-v，即所需等式。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.logarithm.quotient-law#3",
+      "statement": "若a>0且a≠1、x>0、y>0，则log_a(x/y)=log_a x-log_a y。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "实对数商法则必须分别满足真数条件",
+      "valid": {
+        "base": 2,
+        "claimed_difference": 2,
+        "exp_x": 3,
+        "exp_y": 1,
+        "x": 8,
+        "y": 2
+      },
+      "worked_examples": [
+        {
+          "question": "log₂(8/2)是否等于log₂8-log₂2？",
+          "teacher_solution": "log₂4=2，右侧3-1=2；x,y均为正，前提满足。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "x=-8,y=-2能否使用商法则？",
+          "teacher_solution": "商为4，左侧log₂4有定义，但log₂(-8)和log₂(-2)在实数域无定义，不能套用。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "只检查x/y>0，忽略log_a x及log_a y单独存在的必要条件。"
+    },
+    {
+      "assumptions": [
+        "a,b,c为实数且a严格非零",
+        "讨论实数根时判别式Δ非负，重复根需要按重数处理"
+      ],
+      "boundary": "a=0时不是二次方程；Δ<0时实数域无根，不得使用实数平方根。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "x²+1=0为什么不能在实数域使用根号形式得到实数根？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Not a quadratic equation"
+      },
+      "finite_op": "real_quadratic_roots",
+      "finite_positive_evidence": {
+        "discriminant": "1"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先判断最高次项系数是否非零。",
+        "计算判别式确定实根存在性。",
+        "代入根公式并回代验证，包括重根特殊情形。"
+      ],
+      "id": "KB81-P07",
+      "invalid": {
+        "a": 0,
+        "b": -3,
+        "c": 2,
+        "roots": [
+          1,
+          2
+        ]
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.quadratic.discriminant-roots#2",
+      "near": "x²-3x+2=0的两个实根。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "5b715bf35232fe5c15537cd264dd13c7791b97791a5a0b6a84f6362a1a400eae",
+      "proof_steps": [
+        "将方程除以a，配方得(x+b/(2a))²=Δ/(4a²)。",
+        "Δ≥0时可在实数域取平方根，得到两种符号表达式。",
+        "当Δ=0两种表达式相同，是一个二重实根，不能误认为有两个不同根。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.quadratic.discriminant-roots#2",
+      "statement": "实系数二次方程ax²+bx+c=0在a≠0、Δ=b²-4ac≥0时有实根(-b±√Δ)/(2a)。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "实数域求根公式的a非零及判别式前提",
+      "valid": {
+        "a": 1,
+        "b": -3,
+        "c": 2,
+        "roots": [
+          1,
+          2
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "x²-3x+2=0的根是什么？",
+          "teacher_solution": "Δ=1，根(3±1)/2，得到1、2，两根回代方程均为零。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "x²-2x+1=0有几个不同根？",
+          "teacher_solution": "Δ=0，两根公式都给x=1，是一个二重根，而不是两个不同实根。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "忘记a≠0就除以2a，或者Δ=0时仍声称存在两个不同实根。"
+    },
+    {
+      "assumptions": [
+        "在相同维数的实欧氏向量空间讨论标准内积",
+        "向量允许是零向量；无需无根据地补充两向量均非零"
+      ],
+      "boundary": "非正交时会出现交叉项2u·v；在非内积意义的任意范数空间不能直接使用该等式。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "u=(1,0),v=(1,2)为什么不满足这个勾股等式？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Vectors not orthogonal"
+      },
+      "finite_op": "orthogonal_pythagoras",
+      "finite_positive_evidence": {
+        "dot_product": "0"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先写平方范数为自内积。",
+        "展开得到交叉项并识别点积。",
+        "考察点积为零的充分和必要性。"
+      ],
+      "id": "KB81-P08",
+      "invalid": {
+        "u": [
+          1,
+          0
+        ],
+        "v": [
+          1,
+          2
+        ]
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.vector.pythagorean-dot#2",
+      "near": "u=(1,0),v=(0,2)验证勾股向量恒等式。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "0fe9ac83fab9a47e95fdfb06e1474fe8a82c6eba91b0754f081d995d76b585e2",
+      "proof_steps": [
+        "按内积双线性，||u+v||²=(u+v)·(u+v)。",
+        "展开为u·u+2u·v+v·v。",
+        "两侧范数平方等价当且仅当2u·v=0，即u·v=0。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.vector.pythagorean-dot#2",
+      "statement": "在实内积空间中，u·v=0当且仅当||u+v||²=||u||²+||v||²。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "正交向量与勾股平方范数的对应",
+      "valid": {
+        "u": [
+          1,
+          0
+        ],
+        "v": [
+          0,
+          2
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "u=(1,0),v=(0,2)，平方范数关系是什么？",
+          "teacher_solution": "u·v=0，u+v=(1,2)，范数平方为5，右侧1+4=5。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "u=(0,0),v=(2,3)还能满足吗？",
+          "teacher_solution": "零向量与任意向量内积为0，两侧都等于13；非零不是必要前提。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "只看到向量长度数值就猜正交，而不检验内积；或错误排除零向量。"
+    },
+    {
+      "assumptions": [
+        "A、B都是同一概率空间中的可测事件",
+        "有限实例中每一基本事件概率非负且总和为1"
+      ],
+      "boundary": "不能把任意负权重或不归一化数列直接称为概率分布后套用概率上界。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "将基本事件赋予负权重时为何不再是合法概率空间？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Not a probability mass function"
+      },
+      "finite_op": "finite_union_bound",
+      "finite_positive_evidence": {
+        "sum_bound": "7/5",
+        "union_probability": "1"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先确认事件处于同一概率空间。",
+        "把并集拆成不交并。",
+        "使用概率非负和单调性推导不等式。"
+      ],
+      "id": "KB81-P09",
+      "invalid": {
+        "A": [
+          0
+        ],
+        "B": [
+          1
+        ],
+        "weights": [
+          -1,
+          2
+        ]
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.probability.union-bound-two#3",
+      "near": "两个事件有交集时为什么并集概率小于相加？",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "6ccc5319207953d107e30e568bdde23df76e8a156d2ee58ff7f64fad5890b484",
+      "proof_steps": [
+        "用互不相交分解A∪B=A ⊔ (B\\A)，得到P(A∪B)=P(A)+P(B\\A)。",
+        "因为B\\A是B的子集且概率单调，P(B\\A)≤P(B)。",
+        "合并可得上界，交集为空时恰取等号。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.probability.union-bound-two#3",
+      "statement": "对定义在同一概率空间内的任意事件A,B，有P(A∪B)≤P(A)+P(B)。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "有限样本空间两事件并集的上界",
+      "valid": {
+        "A": [
+          0,
+          1
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "weights": [
+          {
+            "den": 5,
+            "num": 1
+          },
+          {
+            "den": 5,
+            "num": 2
+          },
+          {
+            "den": 5,
+            "num": 2
+          }
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "概率0.2、0.3、0.5的三个结果，A={0,1},B={1,2}，并集概率？",
+          "teacher_solution": "A∪B为全部三个结果，概率为1；P(A)+P(B)=0.5+0.8=1.3，是上界不是等式。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "A={0}, B={2}互不相交时如何？",
+          "teacher_solution": "并集概率0.2+0.5=0.7，恰等于两个事件概率相加。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把事件重叠部分算两遍当作并集的准确概率，误把上界写成恒等式。"
+    },
+    {
+      "assumptions": [
+        "X、Y的期望、二阶矩及交叉矩存在且有限",
+        "有限离散验证中联合权重非负、总和为1，X、Y样本长度一致"
+      ],
+      "boundary": "不能用非归一化的频数直接代入概率期望公式；总体协方差与样本无偏估计分母不同。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "相关与独立之间的关系为何不能反向推出？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Invalid joint sample / probability weights"
+      },
+      "finite_op": "discrete_covariance",
+      "finite_positive_evidence": {
+        "covariance": "1"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "分别计算两个期望与乘积期望。",
+        "将中心化乘积展开并应用线性性。",
+        "确定这是总体分布的协方差而不是样本协方差估计。"
+      ],
+      "id": "KB81-P10",
+      "invalid": {
+        "claimed_covariance": 1,
+        "weights": [
+          1,
+          -1
+        ],
+        "xs": [
+          1,
+          3
+        ],
+        "ys": [
+          2,
+          4
+        ]
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.probability.variance-covariance#2",
+      "near": "X取1/3、Y取2/4，各占1/2的协方差。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "a3b4da758ef2c3a46722b5fbba424f21ac8d6561c713238b2dd47ca50a1a546f",
+      "proof_steps": [
+        "写Cov(X,Y)=E[(X-EX)(Y-EY)]，展开括号。",
+        "利用期望线性与常数可提出，得到E[XY]-(EX)(EY)-(EY)(EX)+(EX)(EY)。",
+        "相同项合并后只剩E[XY]-E[X]E[Y]，适用于约定矩存在的情况。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.probability.variance-covariance#2",
+      "statement": "具有有限二阶矩的随机变量X、Y满足Cov(X,Y)=E[XY]-E[X]E[Y]。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "离散协方差中心化公式与乘积矩等价",
+      "valid": {
+        "claimed_covariance": 1,
+        "weights": [
+          {
+            "den": 2,
+            "num": 1
+          },
+          {
+            "den": 2,
+            "num": 1
+          }
+        ],
+        "xs": [
+          1,
+          3
+        ],
+        "ys": [
+          2,
+          4
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "两个等概率点(1,2),(3,4)的总体协方差？",
+          "teacher_solution": "EX=2、EY=3、EXY=(2+12)/2=7，Cov=7-6=1。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "若Y取(4,2)，而X取(1,3)，Cov多少？",
+          "teacher_solution": "EX=2、EY=3、EXY=(4+6)/2=5，协方差=-1。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把E[XY]写成E[X]E[Y]作为一般事实，错误推断任意变量不相关。"
+    },
+    {
+      "assumptions": [
+        "半轴a、b是正实数且a>b，长轴必须沿x轴",
+        "讨论的是非圆椭圆，不将a=b的圆误称两个不同焦点"
+      ],
+      "boundary": "若a<b则长轴沿y轴，焦点方向应交换；a=b时c=0，退化为圆形焦点重合。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "a=b时哪一步的两个不同焦点前提失败？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "This focal-axis convention requires a>b>0"
+      },
+      "finite_op": "ellipse_focal_parameter",
+      "finite_positive_evidence": {
+        "c_squared": "16"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "检查a>b>0，不要只看方程字母。",
+        "用短轴端点到焦点的几何距离。",
+        "根据勾股关系写出c²=a²-b²。"
+      ],
+      "id": "KB81-P11",
+      "invalid": {
+        "a": 3,
+        "b": 5,
+        "c_squared": 16
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.geometry.ellipse-parameter#1",
+      "near": "a=5,b=3的椭圆焦距c如何求？",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "2796d506f645c2d43b2e03f678e194e3117b86c0aeefa58fe12db08101deab42",
+      "proof_steps": [
+        "取长轴顶点(a,0)，其到两个焦点距离为a-c与a+c。",
+        "利用椭圆上任一点到两焦点距离和为2a，在短轴端点(0,b)得2√(b²+c²)=2a。",
+        "平方整理得c²=a²-b²，并由a>b>0确定c为正实数。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.geometry.ellipse-parameter#1",
+      "statement": "标准长轴沿x轴的非圆椭圆x²/a²+y²/b²=1，满足a>b>0，焦点坐标(±c,0)，c²=a²-b²。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "椭圆焦距参数c²=a²-b²的轴约定",
+      "valid": {
+        "a": 5,
+        "b": 3,
+        "c_squared": 16
+      },
+      "worked_examples": [
+        {
+          "question": "x²/25+y²/9=1的焦点是什么？",
+          "teacher_solution": "a=5,b=3，c²=16，c=4，焦点(±4,0)。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "x²/9+y²/25=1还能取横轴焦点(±4,0)吗？",
+          "teacher_solution": "不行，长轴沿y轴，应取焦点(0,±4)，必须交换轴约定。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "不区分长短轴，直接把较小的半轴值当作长轴a，得到负的c平方。"
+    },
+    {
+      "assumptions": [
+        "x²和y²系数相同且为1，无xy交叉项",
+        "参数D、E、C为实数，半径平方必须严格大于零"
+      ],
+      "boundary": "半径平方为0对应单点轨迹，不是有正半径的非退化实圆。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "x²+y²+1=0在实平面为何没有任何点？",
+      "finite_instance_check": "EXACT_WITNESS_NOT_GENERAL_THEOREM_PROOF",
+      "finite_invalid_rejection": {
+        "reason": "Zero or negative radius squared is not a nondegenerate circle"
+      },
+      "finite_op": "real_circle_radius",
+      "finite_positive_evidence": {
+        "radius_squared": "9"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "分开对x和y配方。",
+        "将补偿的平方常数移到右侧。",
+        "检查半径平方的正负并区分圆、单点、空集。"
+      ],
+      "id": "KB81-P12",
+      "invalid": {
+        "C": 1,
+        "D": 0,
+        "E": 0,
+        "radius_squared": -1
+      },
+      "kind": "METHOD",
+      "linked_historical_step_id": "math.hs.geometry.circle-complete-square#1",
+      "near": "x²+y²-2x-4y-4=0的圆心及半径。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "12bf2c8bd2be2c1e45485bd93f52d4c77b4507b1eae8328de65e29dd617db4df",
+      "proof_steps": [
+        "分别对x²+Dx及y²+Ey进行完全平方补偿。",
+        "整理为(x+D/2)²+(y+E/2)²=(D²+E²)/4-C。",
+        "右侧大于零得到半径为正的圆；等于零仅一个点，小于零没有实点。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.geometry.circle-complete-square#1",
+      "statement": "实数D、E、C给出的x²+y²+Dx+Ey+C=0有非退化实圆，当且仅当(D²+E²)/4-C>0。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "圆的一般式配方与真实半径条件",
+      "valid": {
+        "C": -4,
+        "D": -2,
+        "E": -4,
+        "radius_squared": 9
+      },
+      "worked_examples": [
+        {
+          "question": "x²+y²-2x-4y-4=0的圆心和半径？",
+          "teacher_solution": "配方得(x-1)²+(y-2)²=9，圆心(1,2)，半径3。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "x²+y²=0定义的是什么？",
+          "teacher_solution": "只有(0,0)满足，半径平方为0，是单点集合，不是正半径的圆。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "只见x²+y²项就称为圆，却没有检查配方后半径平方是否为正。"
+    }
+  ],
+  "schema_version": "kb81-twelve-p0-proof-conditions-v1",
+  "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+  "student_releases": 0,
+  "teacher_approvals": 0
+}
