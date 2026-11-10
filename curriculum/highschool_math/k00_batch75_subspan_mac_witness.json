@@ -1,0 +1,365 @@
+{
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "subspans": {
+    "KB75-P013-S01": {
+      "first_line": 1,
+      "last_line": 6,
+      "sha256": "4a2ef4dd19871cad24050417fbda7a8304cdc6013cf0abc55df9bca78f9d0327",
+      "source_segment_id": "KB73-P013-L001-017"
+    },
+    "KB75-P013-S02": {
+      "first_line": 7,
+      "last_line": 17,
+      "sha256": "23db6bfceee06f80804da96fa4a61413481d1710dca48875d0679b2144da6e33",
+      "source_segment_id": "KB73-P013-L001-017"
+    },
+    "KB75-P014-S01": {
+      "first_line": 2,
+      "last_line": 26,
+      "sha256": "1b7c7bf581c9025793c387fd43e340ecca837d8333cc463e22f942f7b8a43cea",
+      "source_segment_id": "KB73-P014-L001-032"
+    },
+    "KB75-P014-S02": {
+      "first_line": 27,
+      "last_line": 31,
+      "sha256": "224e1c7473706adff45f317d84f7410201cdd8cde083f022c68e75c25072fb5e",
+      "source_segment_id": "KB73-P014-L001-032"
+    },
+    "KB75-P016-S01": {
+      "first_line": 2,
+      "last_line": 4,
+      "sha256": "1c996cdfdce78078eb51d437a4b2351762ff70d244f08f250f1234cc8c9efa77",
+      "source_segment_id": "KB73-P016-L001-006"
+    },
+    "KB75-P016-S02": {
+      "first_line": 5,
+      "last_line": 6,
+      "sha256": "ad188e8982a4291db7aabcdd84f9929db9d0c41f647325e5738021f02a2f133a",
+      "source_segment_id": "KB73-P016-L001-006"
+    },
+    "KB75-P016-S03": {
+      "first_line": 5,
+      "last_line": 6,
+      "sha256": "ad188e8982a4291db7aabcdd84f9929db9d0c41f647325e5738021f02a2f133a",
+      "source_segment_id": "KB73-P016-L001-006"
+    },
+    "KB75-P025-S01": {
+      "first_line": 1,
+      "last_line": 3,
+      "sha256": "0bf57944c5151a1214a0c7843a4cf3d253160f668ba5786f4c152372cf6ef3ef",
+      "source_segment_id": "KB73-P025-L001-007"
+    },
+    "KB75-P025-S02": {
+      "first_line": 4,
+      "last_line": 7,
+      "sha256": "10ff30ad66d0c377151e65ba3bec7c2f90d7bbeea0c8ba3d93a8382ae2108e4c",
+      "source_segment_id": "KB73-P025-L001-007"
+    },
+    "KB75-P027-S01": {
+      "first_line": 1,
+      "last_line": 2,
+      "sha256": "44374aeff9c4681121bf16e2ce7279cf8300d9a8f5167edf8ad153d1915f52a6",
+      "source_segment_id": "KB73-P027-L001-003"
+    },
+    "KB75-P027-S02": {
+      "first_line": 3,
+      "last_line": 3,
+      "sha256": "b37fbd231173f397cfaa5ee57a8e3540914e169bf09c5d31bd822503ab98067c",
+      "source_segment_id": "KB73-P027-L001-003"
+    },
+    "KB75-P029-S01": {
+      "first_line": 1,
+      "last_line": 3,
+      "sha256": "f82eddde9694f45916a68e9057ab1a93ed016a61cba08b2289b7b5c9e9abd632",
+      "source_segment_id": "KB73-P029-L001-008"
+    },
+    "KB75-P029-S02": {
+      "first_line": 4,
+      "last_line": 5,
+      "sha256": "c4b602e53bdc7bc40d102a3247ca24b106a20535386395f7555f977a5e49c14a",
+      "source_segment_id": "KB73-P029-L001-008"
+    },
+    "KB75-P029-S03": {
+      "first_line": 6,
+      "last_line": 7,
+      "sha256": "45bf71e4dc15d920151378e5265cbbb8509aeafab535273293bda08ae20ec4f3",
+      "source_segment_id": "KB73-P029-L001-008"
+    },
+    "KB75-P029-S04": {
+      "first_line": 8,
+      "last_line": 8,
+      "sha256": "4d46c5ca1960a147091e3072872adbbc6bb78a52bfad52f049c3962d6cb5ab69",
+      "source_segment_id": "KB73-P029-L001-008"
+    },
+    "KB75-P032-S01": {
+      "first_line": 2,
+      "last_line": 4,
+      "sha256": "5ffb8570e646a77dbd37da5db3ddaac01fa54f40838d31a6d03ac649c453c339",
+      "source_segment_id": "KB73-P032-L001-004"
+    },
+    "KB75-P032-S02": {
+      "first_line": 3,
+      "last_line": 4,
+      "sha256": "f7c618ae8e5ffda431e4616c9b97471b8f5e2b973fbba0112fe894efeb7ba7b2",
+      "source_segment_id": "KB73-P032-L001-004"
+    },
+    "KB75-P037-S01": {
+      "first_line": 1,
+      "last_line": 18,
+      "sha256": "c5b63853b79ee989fd32c8a71894ee89f30f74eb745c91a970dff320853627ab",
+      "source_segment_id": "KB73-P037-L001-027"
+    },
+    "KB75-P037-S02": {
+      "first_line": 19,
+      "last_line": 26,
+      "sha256": "887e1acbf28098d0f58c13a9e6621dde995f59c3e2ec79d73cbbd4db12288067",
+      "source_segment_id": "KB73-P037-L001-027"
+    },
+    "KB75-P046-S01": {
+      "first_line": 2,
+      "last_line": 7,
+      "sha256": "cb9497d5c7ed4fff0293b3f78f2405152be26e07de44a03d5e01e106e51a7c32",
+      "source_segment_id": "KB73-P046-L001-013"
+    },
+    "KB75-P046-S02": {
+      "first_line": 8,
+      "last_line": 13,
+      "sha256": "f6d3e7fd30f3a1766b94ed2d836675364ee67f8d3fe2e1a9f8319314ff9834f8",
+      "source_segment_id": "KB73-P046-L001-013"
+    },
+    "KB75-P046-S03": {
+      "first_line": 10,
+      "last_line": 13,
+      "sha256": "f57f40f85c9a502cc0ed476e1e10e99663fdc7a8ba9f44885a742991b1bfdf38",
+      "source_segment_id": "KB73-P046-L001-013"
+    },
+    "KB75-P046-S04": {
+      "first_line": 11,
+      "last_line": 13,
+      "sha256": "274b06eb4b2933426d3c4a9ab7eb27210c408f81ee0993754b2dcf28bbfa7d1d",
+      "source_segment_id": "KB73-P046-L001-013"
+    },
+    "KB75-P050-S01": {
+      "first_line": 1,
+      "last_line": 3,
+      "sha256": "b152b4269d41c93cc5948ef51a147591ddfc44ced33e61b5a2a746c08bea93d3",
+      "source_segment_id": "KB73-P050-L001-004"
+    },
+    "KB75-P050-S02": {
+      "first_line": 4,
+      "last_line": 4,
+      "sha256": "cab2a50684bf46e350730f0d1ed5c413e7ee9591ecc02bcdbdce30adfd35c23d",
+      "source_segment_id": "KB73-P050-L001-004"
+    },
+    "KB75-P051-S01": {
+      "first_line": 20,
+      "last_line": 23,
+      "sha256": "f0b4b5d97fc506cdf2a447144eefbf3c74238aa33b69e94843cf34e1875de9d2",
+      "source_segment_id": "KB73-P051-L020-027"
+    },
+    "KB75-P051-S02": {
+      "first_line": 24,
+      "last_line": 27,
+      "sha256": "6841adbeade3a0a5e6db2ac06bc9903b5f4b8c9385b65582968d7f340de5b384",
+      "source_segment_id": "KB73-P051-L020-027"
+    },
+    "KB75-P052-S01": {
+      "first_line": 2,
+      "last_line": 6,
+      "sha256": "456c19f69408e890b43953ddb6297eb1e1da1cba9b1c3f23cb1134cef91710a9",
+      "source_segment_id": "KB73-P052-L001-008"
+    },
+    "KB75-P052-S02": {
+      "first_line": 7,
+      "last_line": 8,
+      "sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "source_segment_id": "KB73-P052-L001-008"
+    },
+    "KB75-P052-S03": {
+      "first_line": 7,
+      "last_line": 8,
+      "sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "source_segment_id": "KB73-P052-L001-008"
+    },
+    "KB75-P052-S04": {
+      "first_line": 7,
+      "last_line": 8,
+      "sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "source_segment_id": "KB73-P052-L001-008"
+    },
+    "KB75-P056-S01": {
+      "first_line": 2,
+      "last_line": 11,
+      "sha256": "37f9fb0164d2362b2f3e49fbe7abe051345bb6aa1aee0dda4270fcccb3d90889",
+      "source_segment_id": "KB73-P056-L001-013"
+    },
+    "KB75-P056-S02": {
+      "first_line": 12,
+      "last_line": 13,
+      "sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "source_segment_id": "KB73-P056-L001-013"
+    },
+    "KB75-P056-S03": {
+      "first_line": 12,
+      "last_line": 13,
+      "sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "source_segment_id": "KB73-P056-L001-013"
+    },
+    "KB75-P056-S04": {
+      "first_line": 12,
+      "last_line": 13,
+      "sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "source_segment_id": "KB73-P056-L001-013"
+    },
+    "KB75-P057-S01": {
+      "first_line": 16,
+      "last_line": 19,
+      "sha256": "a2c5e9fec6ca5ba28a90d6120f26d51bac915161945e5a0a6472e1b9ae205fe6",
+      "source_segment_id": "KB73-P057-L016-023"
+    },
+    "KB75-P057-S02": {
+      "first_line": 20,
+      "last_line": 23,
+      "sha256": "fb1cd2453d9a1df34e7015cd6e2b35d525f35ab918b274a295b20045b6f15231",
+      "source_segment_id": "KB73-P057-L016-023"
+    },
+    "KB75-P058-S01": {
+      "first_line": 2,
+      "last_line": 6,
+      "sha256": "145360b960d961b77f106b27b0a0b35e491e8c17a862bfc3a7e75dda4a59f7df",
+      "source_segment_id": "KB73-P058-L001-007"
+    },
+    "KB75-P058-S02": {
+      "first_line": 7,
+      "last_line": 7,
+      "sha256": "e6f12d7719a399df309ecbec935c4a83b07ba6aa67e2426062cfc9491dff66f2",
+      "source_segment_id": "KB73-P058-L001-007"
+    },
+    "KB75-P058-S03": {
+      "first_line": 7,
+      "last_line": 7,
+      "sha256": "e6f12d7719a399df309ecbec935c4a83b07ba6aa67e2426062cfc9491dff66f2",
+      "source_segment_id": "KB73-P058-L001-007"
+    },
+    "KB75-P060-S01": {
+      "first_line": 2,
+      "last_line": 3,
+      "sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "source_segment_id": "KB73-P060-L001-003"
+    },
+    "KB75-P060-S02": {
+      "first_line": 2,
+      "last_line": 3,
+      "sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "source_segment_id": "KB73-P060-L001-003"
+    },
+    "KB75-P060-S03": {
+      "first_line": 2,
+      "last_line": 3,
+      "sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "source_segment_id": "KB73-P060-L001-003"
+    },
+    "KB75-P061-S01": {
+      "first_line": 1,
+      "last_line": 10,
+      "sha256": "4fdb3d69ad294ae11b3a6a12f44d1e5b6ed6a68da00c6d21e7ee0413d5ab0f99",
+      "source_segment_id": "KB73-P061-L001-013"
+    },
+    "KB75-P061-S02": {
+      "first_line": 11,
+      "last_line": 13,
+      "sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "source_segment_id": "KB73-P061-L001-013"
+    },
+    "KB75-P061-S03": {
+      "first_line": 11,
+      "last_line": 13,
+      "sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "source_segment_id": "KB73-P061-L001-013"
+    },
+    "KB75-P061-S04": {
+      "first_line": 11,
+      "last_line": 13,
+      "sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "source_segment_id": "KB73-P061-L001-013"
+    },
+    "KB75-P063-S01": {
+      "first_line": 2,
+      "last_line": 6,
+      "sha256": "245aa6ea5cd830fe89adb12db769a710a77fe9c8b1468e4c1bad0e4c83be8a33",
+      "source_segment_id": "KB73-P063-L001-008"
+    },
+    "KB75-P063-S02": {
+      "first_line": 7,
+      "last_line": 8,
+      "sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "source_segment_id": "KB73-P063-L001-008"
+    },
+    "KB75-P063-S03": {
+      "first_line": 7,
+      "last_line": 8,
+      "sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "source_segment_id": "KB73-P063-L001-008"
+    },
+    "KB75-P063-S04": {
+      "first_line": 7,
+      "last_line": 8,
+      "sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "source_segment_id": "KB73-P063-L001-008"
+    },
+    "KB75-P064-S01": {
+      "first_line": 10,
+      "last_line": 12,
+      "sha256": "7b4614b3281d08bdba5971f343884379326bb9d63dc7d624a4cbeee11571c980",
+      "source_segment_id": "KB73-P064-L010-020"
+    },
+    "KB75-P064-S02": {
+      "first_line": 13,
+      "last_line": 18,
+      "sha256": "d855dfb27230b351a42bf76cbd314deb9b11163b2c8a23fe50a5cdf264072791",
+      "source_segment_id": "KB73-P064-L010-020"
+    },
+    "KB75-P064-S03": {
+      "first_line": 19,
+      "last_line": 20,
+      "sha256": "0ad99d77bd0341735a49381f8d968287b0112eb5ebdc3e942a2912ea4ba1c21b",
+      "source_segment_id": "KB73-P064-L010-020"
+    },
+    "KB75-P066-S01": {
+      "first_line": 2,
+      "last_line": 5,
+      "sha256": "260deb739dba4103711acdee2fe00285868304e17cb4e911d585dfefc14c3257",
+      "source_segment_id": "KB73-P066-L001-006"
+    },
+    "KB75-P066-S02": {
+      "first_line": 6,
+      "last_line": 6,
+      "sha256": "6df1ec50b0cfb1c0c09168756482c7cec2ec605ee3f37b9c5514e379a92a7609",
+      "source_segment_id": "KB73-P066-L001-006"
+    },
+    "KB75-P068-S01": {
+      "first_line": 1,
+      "last_line": 2,
+      "sha256": "640cb4c464d3ee8b673e99084ed2a60a4395ddaa0076f4a4e94d8b627a37566a",
+      "source_segment_id": "KB73-P068-L001-002"
+    },
+    "KB75-P069-S01": {
+      "first_line": 6,
+      "last_line": 8,
+      "sha256": "2cc687be45e08a9a32a2a7119c8a019ff630dedd6d332dfdbfa641d0ff5eb6ff",
+      "source_segment_id": "KB73-P069-L006-016"
+    },
+    "KB75-P069-S02": {
+      "first_line": 9,
+      "last_line": 14,
+      "sha256": "1e5b4fb8755a8f1edf57993f513dfec7858497ba5c872da65560b5da8b612205",
+      "source_segment_id": "KB73-P069-L006-016"
+    },
+    "KB75-P069-S03": {
+      "first_line": 15,
+      "last_line": 16,
+      "sha256": "16d936d6dc748e7013f723f9b9da577d1391e37599976ee6872b35e9f28b0afb",
+      "source_segment_id": "KB73-P069-L006-016"
+    }
+  }
+}
