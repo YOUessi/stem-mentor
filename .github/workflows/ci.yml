@@ -124,6 +124,8 @@ jobs:
       - run: python scripts/build_kb_batch76_eight_lessons.py --check
       - run: python scripts/build_kb_batch76_progress.py --check
       - run: python scripts/build_kb_batch77_missing_lessons.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch78_proof_review.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch78_scope_graph.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
