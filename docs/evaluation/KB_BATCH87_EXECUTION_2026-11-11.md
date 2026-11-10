@@ -74,3 +74,8 @@ Mac冻结源码全量执行 **60,813 passed / 5 skipped / 0 failed / 1 第三方
 
 ### 最终格式一致性与源码冻结专项复验
 发布前检测到两份自动生成Markdown存在末尾多余空行（git diff --check拒绝），修复其两个生成器的最终换行规范，并重新生成确定性内容。这是排版修正，不改变任何数学陈述或测试输入。修正后在Mac重新执行Batch87专项 **1,100 passed / 0 failed（147.82秒）**，日志 `mac_specialty_release.log`、退出码 `mac_specialty_release.exit=0`。先前 60,813 项Python全量、Node、Tutor与Chrome验收是在排版修正前运行；除此两份Markdown排版没有代码或内容变化，最终 GitHub CI 必须作为新提交的独立全量验收。
+
+## 已冻结的Mac开发提交（GitHub提交以远端实际核验为准）
+- Mac数学内容/生成器/验证/原始日志提交：`b23e8ad1045e5a090282971f77e61ce1a034734d`。
+- 该提交完整 Git Tree：`5556289d91398426cd0b0fc64a09e2b6cd820400`；共28变更文件。
+- 任何后续交付说明提交将改变最终HEAD和Tree；以PR实际远端commit、CI为准，不把本地提交推断为已经上传。
