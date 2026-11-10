@@ -140,6 +140,9 @@ jobs:
       - run: PYTHONPATH=backend python scripts/build_kb_batch85_p0_history.py --check
       - run: python scripts/build_kb_batch86_semantic_review.py --check
       - run: PYTHONPATH=backend python scripts/build_kb_batch86_p0_reviews.py --check
+      - run: python scripts/build_kb_batch87_semantic_review.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch87_math_lessons.py --check
+      - run: python scripts/build_kb_batch87_candidate_census.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q

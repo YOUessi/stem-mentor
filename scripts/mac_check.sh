@@ -100,6 +100,9 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch84_math_cards.py --che
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch85_p0_history.py --check
 .venv/bin/python scripts/build_kb_batch86_semantic_review.py --check --verify-local-source
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch86_p0_reviews.py --check
+.venv/bin/python scripts/build_kb_batch87_semantic_review.py --check --verify-local-source
+PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch87_math_lessons.py --check
+.venv/bin/python scripts/build_kb_batch87_candidate_census.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"
