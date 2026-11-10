@@ -1,0 +1,416 @@
+{
+  "card_count": 10,
+  "cards": [
+    {
+      "assumptions": "实数中平方只确定绝对值；反推同号解需补充符号条件。",
+      "claim": "由 x²=t² 可以直接认定 x=t",
+      "evidence": {
+        "candidate": -2,
+        "claimed_target": 2,
+        "squared": 4
+      },
+      "failure": "从平方后方程逆推原方程时漏掉符号分支。",
+      "far": "由向量模相等能否认定两个向量相同？",
+      "general_theorem_certified": false,
+      "hints": [
+        "平方可能丢失哪类信息？",
+        "比较 x 与 -x 的平方。",
+        "分别代回平方前的方程判断。"
+      ],
+      "id": "KB84-T01",
+      "near": "解 sqrt(x+1)=x-1 时检查右侧非负。",
+      "op": "square_equation_reverse",
+      "operation": "square_equation_reverse",
+      "payload": {
+        "t": 2,
+        "x": -2
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "先检验候选根能否满足平方后的方程。",
+        "因 x²=t² 等价于 x=t 或 x=-t，分别检查原式。",
+        "把未满足原式的候选根标为增根，不可删去核验步骤。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "平方方程的增根",
+      "valid_guarded_example": "若 x,t 均非负且 x²=t²，则 |x|=|t|，所以 x=t；例如 x=t=2。",
+      "worked_example": "方程 x=2 两边平方得到 x²=4；后者的 -2 并非原方程的根。"
+    },
+    {
+      "assumptions": "在域中 k≠0 才允许同时除以 k。",
+      "claim": "ak=bk 必然推出 a=b",
+      "evidence": {
+        "factor": 0,
+        "left": 0,
+        "right": 0
+      },
+      "failure": "把可能为零的量作为分母。",
+      "far": "参数矩阵有零特征值时消去矩阵是否合法？",
+      "general_theorem_certified": false,
+      "hints": [
+        "等式两端有哪些因子？",
+        "若公因子取零会怎样？",
+        "先拆分零因子分支再约分。"
+      ],
+      "id": "KB84-T02",
+      "near": "解 x(x-1)=0 时不要消去 x。",
+      "op": "zero_factor_cancellation",
+      "operation": "zero_factor_cancellation",
+      "payload": {
+        "a": 2,
+        "b": 7,
+        "k": 0
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "把等式写成 (a-b)k=0。",
+        "由零因子性质得到 a=b 或 k=0。",
+        "消去 k 前必须确认它不是零。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "等式约去可能为零的公因子",
+      "valid_guarded_example": "若 k=3≠0 且 2k=2k，除以3得到2=2；先验证被消因子非零。",
+      "worked_example": "2·0=7·0 成立，而 2≠7。"
+    },
+    {
+      "assumptions": "乘数 k>0 时方向保持；k<0 时方向翻转；k=0 时变成相等。",
+      "claim": "a<b 时任意乘 k 后仍有 ak<bk",
+      "evidence": {
+        "a_times_k": -3,
+        "b_times_k": -6
+      },
+      "failure": "负乘数下保持原方向。",
+      "far": "参数 c 未知时乘 c 的不等式如何分类？",
+      "general_theorem_certified": false,
+      "hints": [
+        "乘数的符号是否已知？",
+        "在数轴上比较 -3 和 -6。",
+        "按正负零分情况整理。"
+      ],
+      "id": "KB84-T03",
+      "near": "解 -2x<6 时翻转不等号。",
+      "op": "multiply_order_negative",
+      "operation": "multiply_order_negative",
+      "payload": {
+        "a": 1,
+        "b": 2,
+        "k": -3
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "确认 a<b 在实数有序域成立。",
+        "分 k>0、k<0、k=0 三种情况。",
+        "将所用乘数符号写在转换旁。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "不等式乘以负数方向翻转",
+      "valid_guarded_example": "当 a=1<b=2 且 k=3>0 时，乘法后3<6仍成立。",
+      "worked_example": "1<2，却有 -3>-6。"
+    },
+    {
+      "assumptions": "0<a<b 时 ab>0，倒数关系严格反向。",
+      "claim": "0<a<b 便有 1/a<1/b",
+      "evidence": {
+        "inverse_a": "1",
+        "inverse_b": "1/2"
+      },
+      "failure": "将正数区间的倒数函数误认成递增。",
+      "far": "若 a,b 跨零，能否不分情况比较倒数？",
+      "general_theorem_certified": false,
+      "hints": [
+        "倒数的分母是否可为零？",
+        "先算两个具体值。",
+        "考察倒数差的分子与分母符号。"
+      ],
+      "id": "KB84-T04",
+      "near": "比较 1/3 与 1/5 的大小。",
+      "op": "reciprocal_direction_positive",
+      "operation": "reciprocal_direction_positive",
+      "payload": {
+        "a": 1,
+        "b": 2
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "先确认 a,b 为正且不为零。",
+        "比较倒数差 (1/a-1/b)=(b-a)/(ab)。",
+        "分子分母均正，因此倒数差大于零。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "正数倒数次序反向",
+      "valid_guarded_example": "对 a=2,b=5，0<a<b 且 ab>0；倒数差1/2−1/5=3/10>0。",
+      "worked_example": "1<2 但 1>1/2。"
+    },
+    {
+      "assumptions": "主平方根取非负值，所以 sqrt(n²)=|n|。",
+      "claim": "对任意实数 n，sqrt(n²)=n",
+      "evidence": {
+        "n_squared": 9,
+        "nonnegative_sqrt": 3
+      },
+      "failure": "对负数误删绝对值符号。",
+      "far": "用距离公式化简两点横坐标差的平方根。",
+      "general_theorem_certified": false,
+      "hints": [
+        "根号的结果能否为负？",
+        "试算 -3 的平方再开方。",
+        "用绝对值写出总是成立的式子。"
+      ],
+      "id": "KB84-T05",
+      "near": "化简 sqrt((x-2)²) 时分区间。",
+      "op": "absolute_root",
+      "operation": "absolute_root",
+      "payload": {
+        "n": -3
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "按照平方根定义选择非负的主值。",
+        "令 n<0，比较 n 和 |n|。",
+        "仅在 n≥0 条件下把 |n| 写成 n。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "主值平方根与绝对值",
+      "valid_guarded_example": "当 n=4≥0 时，主平方根 sqrt(4²)=4=|4|，可以去绝对值。",
+      "worked_example": "n=-3 时 sqrt(9)=3，不是 -3。"
+    },
+    {
+      "assumptions": "二次公式只适用于 a≠0；a=0 时先按一次方程或常数方程处理。",
+      "claim": "ax²+bx+c=0 对任意 a 都可套二次公式",
+      "evidence": {
+        "linear_root": "2",
+        "quadratic_formula_denominator": 0
+      },
+      "failure": "忽略公式分母中的 2a≠0。",
+      "far": "二阶微分方程最高阶系数退化时仍是二阶吗？",
+      "general_theorem_certified": false,
+      "hints": [
+        "所谓二次方程的首项条件是什么？",
+        "令 a=0 后还有几次？",
+        "先分次数再选择公式。"
+      ],
+      "id": "KB84-T06",
+      "near": "解含参数 m 的 mx²+x-1=0。",
+      "op": "quadratic_formula_degenerate",
+      "operation": "quadratic_formula_degenerate",
+      "payload": {
+        "a": 0,
+        "b": 2,
+        "c": -4
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "检查最高次项系数 a 是否为零。",
+        "a=0,b≠0 时求唯一解 x=-c/b。",
+        "不要在 a=0 的分支使用分母 2a。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "二次公式的首项系数前提",
+      "valid_guarded_example": "a=1,b=-3,c=2 且判别式1≥0；二次公式得 x=(3±1)/2，即1或2。",
+      "worked_example": "0x²+2x-4=0 的解为 x=2，但二次公式含分母0。"
+    },
+    {
+      "assumptions": "唯一解的克拉默分式需要 det(A)≠0；det(A)=0 时另判秩与相容性。",
+      "claim": "行列式为零时仍可直接使用克拉默法则唯一求解",
+      "evidence": {
+        "consistent": true,
+        "determinant": 0,
+        "unique": false
+      },
+      "failure": "把秩亏损系统误当唯一解。",
+      "far": "最小二乘正规方程矩阵奇异时参数是否唯一？",
+      "general_theorem_certified": false,
+      "hints": [
+        "分母行列式是否非零？",
+        "第二个方程和第一个有何关系？",
+        "给出两个不同满足方程的解。"
+      ],
+      "id": "KB84-T07",
+      "near": "求解线性方程组 x+y=2,2x+2y=4。",
+      "op": "cramer_determinant_zero",
+      "operation": "cramer_determinant_zero",
+      "payload": {
+        "a": 1,
+        "b": 2,
+        "c": 2,
+        "d": 4,
+        "e": 3,
+        "f": 6
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "求系数矩阵行列式。",
+        "行列式零时拒绝用 det(A_i)/det(A) 求解。",
+        "分别检查是否无解或有无限多解。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "克拉默法则的非零行列式条件",
+      "valid_guarded_example": "对可逆系数阵 A=diag(1,1)，det(A)=1≠0；方程 Ax=(2,3) 唯一解 x=(2,3)。",
+      "worked_example": "x+2y=3 与 2x+4y=6 同一约束；(3,0)及(1,1)均为解。"
+    },
+    {
+      "assumptions": "有理式交叉相乘的等价关系要求 b≠0 且 d≠0。",
+      "claim": "ad=bc 即能说明 a/b=c/d",
+      "evidence": {
+        "cross_left": 0,
+        "cross_right": 0,
+        "fractions_defined": false
+      },
+      "failure": "把等价变形的定义域条件省掉。",
+      "far": "在概率公式中消去概率分母能否容许零概率事件？",
+      "general_theorem_certified": false,
+      "hints": [
+        "原分式是否都存在？",
+        "计算 b 和 d 的值。",
+        "先标定义域再交叉相乘。"
+      ],
+      "id": "KB84-T08",
+      "near": "解 (x-1)/(x-1)=1 时注意 x=1。",
+      "op": "cross_multiplication_zero_denominator",
+      "operation": "cross_multiplication_zero_denominator",
+      "payload": {
+        "a": 0,
+        "b": 0,
+        "c": 1,
+        "d": 1
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "先明确两个分式各自的定义域。",
+        "仅在 b,d 都不为零时相乘得到 ad=bc。",
+        "对被清除的分母再检查是否带来虚假的解。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "交叉相乘隐藏零分母",
+      "valid_guarded_example": "a=1,b=2,c=2,d=4 且 b,d 均非零；交叉积4=4，因此1/2=2/4。",
+      "worked_example": "a=0,b=0,c=1,d=1 时 ad=bc=0，但 a/b 无定义。"
+    },
+    {
+      "assumptions": "初等条件概率的比式需要 P(B)>0。",
+      "claim": "P(A|B)=P(A∩B)/P(B) 在 P(B)=0 时仍有定义",
+      "evidence": {
+        "conditional_ratio_defined": false,
+        "event_mass": "0"
+      },
+      "failure": "把 0/0 误解释为零概率或一概率。",
+      "far": "连续随机变量的点条件分布为什么不能直接使用概率比式？",
+      "general_theorem_certified": false,
+      "hints": [
+        "公式的分母是哪一个概率？",
+        "空事件概率是多少？",
+        "判定该条件概率是否按现有定义成立。"
+      ],
+      "id": "KB84-T09",
+      "near": "在两次掷硬币中以不可能事件作条件。",
+      "op": "conditional_probability_zero",
+      "operation": "conditional_probability_zero",
+      "payload": {
+        "event": 0,
+        "intersection": 0,
+        "total": 2
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "先从样本空间计算条件事件的概率。",
+        "P(B)=0 时拒绝分母为零的条件概率定义。",
+        "需要更一般条件分布理论时不能套用初等离散比式。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "条件概率不能以零概率事件为条件",
+      "valid_guarded_example": "若 P(B)=1/2>0 且 P(A∩B)=1/4，条件概率按定义为(1/4)/(1/2)=1/2。",
+      "worked_example": "等可能两点样本空间中令 B=空集，P(B)=0，无论 A 如何均不能用0/0。"
+    },
+    {
+      "assumptions": "实数对数积公式要求 x>0 且 y>0，不能只检查 xy>0。",
+      "claim": "只要 xy>0 就可在实数内写 ln(xy)=ln x+ln y",
+      "evidence": {
+        "product": 1,
+        "real_log_x_defined": false,
+        "real_log_y_defined": false
+      },
+      "failure": "把乘积在定义域内误当各因子在定义域内。",
+      "far": "实数与复数对数的分支条件能否混用？",
+      "general_theorem_certified": false,
+      "hints": [
+        "对数函数允许的真数范围是什么？",
+        "两个负数的积是否正？",
+        "分别检查公式两端每个子表达式。"
+      ],
+      "id": "KB84-T10",
+      "near": "化简 ln((x-2)(x+2)) 时列出实数定义域。",
+      "op": "real_log_product",
+      "operation": "real_log_product",
+      "payload": {
+        "x": -1,
+        "y": -1
+      },
+      "review_state": "REVIEW_PENDING",
+      "source_license": "ORIGINAL_MATH_EXPLANATION",
+      "status": "FINITE_EXACT_COUNTEREXAMPLE_ONLY",
+      "steps": [
+        "先检验 ln(x)、ln(y) 分别在实数域有定义。",
+        "负负相乘使 xy>0 并不能让两个对数项存在。",
+        "仅在两因子各自为正时使用实数对数积公式。"
+      ],
+      "student_answer_verified": false,
+      "student_authoritative_index_eligible": false,
+      "teacher_approved": false,
+      "teacher_only": true,
+      "topic": "实数对数积公式的正值前提",
+      "valid_guarded_example": "对 x=2>0,y=3>0，实数对数积公式合法：ln6=ln2+ln3。",
+      "worked_example": "x=y=-1 时 ln(xy)=ln(1)=0，而 ln(-1) 在实数域无定义。"
+    }
+  ],
+  "general_math_proof_certified": false,
+  "independent_student_step_verification": false,
+  "schema_version": "kb84-guarded-transformations-exact-counterexample-v1",
+  "source": "ORIGINAL_MATH_WORK_NOT_COPYRIGHT_TEXTBOOK",
+  "student_index_eligible": false,
+  "teacher_review": "REVIEW_PENDING",
+  "visibility": "TEACHER_ONLY"
+}
