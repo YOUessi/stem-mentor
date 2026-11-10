@@ -1,0 +1,810 @@
+{
+  "schema_version": "kb83-60-source-semantic-editorial-proposals-v1",
+  "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+  "source_lineage": "SHA_VERIFIED_MAC_PDFKIT_SOURCE_FOR_SELECTED_ROWS",
+  "copyright_policy": "ORIGINAL_PARAPHRASES_NO_SOURCE_PASSAGE",
+  "teacher_review": "REVIEW_PENDING",
+  "records": [
+    {
+      "review_id": "KB80-A015-L017",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "集合运算小节的结构位置，下一层才分别规定交、并、补的具体学习目标。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "子条款不能被标题替代",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A015-L018",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "要求从成员判定出发理解并集和交集，能够从两个给定集合中准确构造结果。",
+      "possible_math_units_for_teacher_split": [
+        "并集成员条件",
+        "交集成员条件"
+      ],
+      "condition_or_scope_caution": "不能把并集解释为交集",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A015-L020",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "补集运算依赖先约定全集或相对的母集，不能把补集当成不依赖语境的对象。",
+      "possible_math_units_for_teacher_split": [
+        "相对补集及全集约定"
+      ],
+      "condition_or_scope_caution": "母集需先固定一致",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A015-L022",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "COMPETENCY_REQUIREMENT",
+      "original_editorial_paraphrase": "以区域图表示成员条件与集合间运算，并判断图示与符号表达是否一致。",
+      "possible_math_units_for_teacher_split": [
+        "集合区域图与运算表征"
+      ],
+      "condition_or_scope_caution": "画图不能替代元素条件",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A015-L024",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "逻辑用语单元总标题，需向下追踪具体命题条件与量词要求。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "不可计成逻辑定理",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A016-L007",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "条件命题子节的总标题，下面需要分别处理必要、充分与双向蕴含。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "不合并不同方向",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A016-L008",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "必要性对应由结论反推前提的蕴含方向，性质陈述的逻辑方向需单独辨认。",
+      "possible_math_units_for_teacher_split": [
+        "必要条件与蕴含方向"
+      ],
+      "condition_or_scope_caution": "逆命题不得无依据使用",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A016-L010",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "充分性对应由前提推出目标命题，应区分可用的判定定理与必要条件。",
+      "possible_math_units_for_teacher_split": [
+        "充分条件与蕴含方向"
+      ],
+      "condition_or_scope_caution": "不能擅自反向推出",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A016-L012",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "充要关系要求两个蕴含方向均成立，数学定义常以这样的双向条件表述。",
+      "possible_math_units_for_teacher_split": [
+        "充要条件的双向证明"
+      ],
+      "condition_or_scope_caution": "只证明一向不成立",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A016-L014",
+      "track": "COMPULSORY",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "量词子节标题与随后的语义要求，需独立核对存在性和全称性的作用域。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "标题不是形式定义",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A038-L020",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "COMPETENCY_REQUIREMENT",
+      "original_editorial_paraphrase": "通过索引到数值的对应比较等差数列和一次函数，强调离散定义域与连续变量的不同。",
+      "possible_math_units_for_teacher_split": [
+        "等差数列的线性索引表示"
+      ],
+      "condition_or_scope_caution": "定义域不能混同",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A038-L021",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "等比数列子节开头，具体的公比限制与求和公式需要对应下级要求。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "公比零值分支单独核查",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A038-L022",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "等比数列以相邻项的乘法规则为核心，应单独明确首项与公比的适用前提。",
+      "possible_math_units_for_teacher_split": [
+        "等比数列定义与通项"
+      ],
+      "condition_or_scope_caution": "涉及除法时检查非零项",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A038-L023",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "MIXED_CLAUSE",
+      "original_editorial_paraphrase": "把等比数列通项和有限和联系起来，同时区分公比为一与不为一的计算分支。",
+      "possible_math_units_for_teacher_split": [
+        "等比数列有限项和",
+        "通项与前缀和关系"
+      ],
+      "condition_or_scope_caution": "q=1时禁用除以1-q",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A038-L025",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "APPLICATION_CONTEXT",
+      "original_editorial_paraphrase": "在题目情境中识别乘法变化模式，必须先确定是否满足固定公比而不是套用公式。",
+      "possible_math_units_for_teacher_split": [
+        "等比关系建模识别"
+      ],
+      "condition_or_scope_caution": "现实数据只近似等比",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A038-L027",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "COMPETENCY_REQUIREMENT",
+      "original_editorial_paraphrase": "将等比数列的整数索引与指数型表达作联系，保留整数索引这一关键边界。",
+      "possible_math_units_for_teacher_split": [
+        "整数索引等比与指数表达的联系"
+      ],
+      "condition_or_scope_caution": "离散与连续不应自动等价",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A038-L028",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "带有选学标记的归纳法子节，不能自动并入全体学生必修认证分母。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "选修标记需要保留",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A039-L001",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "导数及应用的领域标题，包含概念、求导法则及函数性质多个需拆开的学习任务。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "不能把单元标题当数学命题",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A039-L008",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "导数概念的子节标题，具体瞬时变化率语义应在随后条款中审阅。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "子节并非求导法则",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A039-L009",
+      "track": "SELECTIVE_COMPULSORY",
+      "semantic_role_provisional": "MIXED_CLAUSE",
+      "original_editorial_paraphrase": "以平均变化率逼近局部瞬时变化率的过程介绍导数，需约束差商极限存在。",
+      "possible_math_units_for_teacher_split": [
+        "瞬时变化率与导数定义",
+        "差商极限存在性"
+      ],
+      "condition_or_scope_caution": "不可把有限差商当导数",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A052-L033",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "MIXED_CLAUSE",
+      "original_editorial_paraphrase": "用若干初等表达式在邻近点的行为导入函数极限，精确定义应核对自变量趋近方向。",
+      "possible_math_units_for_teacher_split": [
+        "函数趋近点的极限例型"
+      ],
+      "condition_or_scope_caution": "不能把点值当极限",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A052-L039",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "基本函数极限的运算法则需要分别验证参与运算的极限存在与除法分母非零。",
+      "possible_math_units_for_teacher_split": [
+        "函数极限的四则运算法则"
+      ],
+      "condition_or_scope_caution": "商法则要求分母极限不为零",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A052-L041",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "两个典型基本极限具有专门的定义域与趋近点条件，不能作为任意点恒等式。",
+      "possible_math_units_for_teacher_split": [
+        "重要初等函数极限与适用条件"
+      ],
+      "condition_or_scope_caution": "三角函数角度采用弧度",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A053-L001",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "连续函数单元标题，连续定义和闭区间性质需要区分不同数学前提。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "标题不算完整定理",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A053-L002",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "连续性应通过函数在点附近的极限及该点取值关系陈述，检查函数定义域。",
+      "possible_math_units_for_teacher_split": [
+        "一点处连续的定义"
+      ],
+      "condition_or_scope_caution": "左右连续不能随意代替双侧",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A053-L003",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "MIXED_CLAUSE",
+      "original_editorial_paraphrase": "闭区间连续性可以支持有界性和介值推论；二分法还依赖端点异号与求根目标。",
+      "possible_math_units_for_teacher_split": [
+        "闭区间连续函数有界性",
+        "连续函数介值性质",
+        "二分求根的条件"
+      ],
+      "condition_or_scope_caution": "缺闭区间或缺连续不得套结论",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A053-L005",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "导数与微分总标题，严格导数定义与计算公式不是同一个知识原子。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "分清导数与微分",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A053-L006",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "严格导数描述差商极限存在，物理及几何解释仅帮助说明该极限的意义。",
+      "possible_math_units_for_teacher_split": [
+        "导数差商极限的严格定义"
+      ],
+      "condition_or_scope_caution": "图像切线猜测不构成严格证明",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A053-L008",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "MIXED_CLAUSE",
+      "original_editorial_paraphrase": "二阶导数是导函数的导数，几何曲率直观并不足以替代二次可导前提。",
+      "possible_math_units_for_teacher_split": [
+        "二阶导数定义",
+        "二阶导数物理与几何解释"
+      ],
+      "condition_or_scope_caution": "需要在相应点可二次求导",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A053-L010",
+      "track": "ELECTIVE_A",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "复合求导法则同时涉及内层与外层的可导性，不能把连续性当成可导性。",
+      "possible_math_units_for_teacher_split": [
+        "复合函数链式法则"
+      ],
+      "condition_or_scope_caution": "内外函数可导条件须齐备",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A058-L031",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "MIXED_CLAUSE",
+      "original_editorial_paraphrase": "利用导数寻找极值时，驻点条件与成为极值点的条件不同，来源特别区分不要求证明的部分。",
+      "possible_math_units_for_teacher_split": [
+        "驻点与局部极值关系",
+        "导数判别极值的充分条件"
+      ],
+      "condition_or_scope_caution": "驻点不必是极值",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A058-L033",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "闭区间上一至三次多项式求最值，需要同时比较内点临界值与区间端点值。",
+      "possible_math_units_for_teacher_split": [
+        "闭区间多项式最值求法"
+      ],
+      "condition_or_scope_caution": "漏端点造成错误",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A058-L035",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "微分的符号及应用与线性近似相联系，不能把有限增量等同于微分。",
+      "possible_math_units_for_teacher_split": [
+        "一元函数微分及线性近似"
+      ],
+      "condition_or_scope_caution": "高阶余项不可被忽略为精确等号",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A059-L001",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "定积分单元标题，本身不是定义或公式的验收证据。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "下级学习内容应另审",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A059-L002",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "定积分把区间分割与求和极限联系起来，几何面积解释还需处理符号面积。",
+      "possible_math_units_for_teacher_split": [
+        "定积分基本意义",
+        "定积分的有向面积解释"
+      ],
+      "condition_or_scope_caution": "负值积分不等于几何面积",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A059-L004",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "特殊等分区间求和的极限涉及分割数增长与端点取样规则，需核验可积性。",
+      "possible_math_units_for_teacher_split": [
+        "特殊黎曼和与定积分"
+      ],
+      "condition_or_scope_caution": "有限和不直接等于极限",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A059-L005",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "MATHEMATICAL_REQUIREMENT",
+      "original_editorial_paraphrase": "微积分基本定理连接函数的导数积分与区间端点原函数值，需要严格说明连续性。",
+      "possible_math_units_for_teacher_split": [
+        "牛顿莱布尼茨公式的适用前提"
+      ],
+      "condition_or_scope_caution": "原函数存在与连续条件不能省略",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A059-L009",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "MIXED_CLAUSE",
+      "original_editorial_paraphrase": "平面区域面积和几类立体体积属于不同积分建模任务，几何边界必须分别校验。",
+      "possible_math_units_for_teacher_split": [
+        "定积分计算平面面积",
+        "几何体体积的积分分割"
+      ],
+      "condition_or_scope_caution": "负面积或截面选取错误",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A059-L011",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "二元函数单元标题，偏导数与二元极值仍需进一步拆分审查。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "标题不能计为二元函数定义",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A059-L012",
+      "track": "ELECTIVE_B",
+      "semantic_role_provisional": "APPLICATION_CONTEXT",
+      "original_editorial_paraphrase": "具体双变量例子说明函数对两个输入的依赖，需进一步区分二元定义域与参数。",
+      "possible_math_units_for_teacher_split": [
+        "二元函数与定义域实例"
+      ],
+      "condition_or_scope_caution": "输入对未必来自矩形域",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A066-L012",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "APPLICATION_CONTEXT",
+      "original_editorial_paraphrase": "投入产出规划可以表达为带非负变量与系数约束的线性关系，但可行解不自动唯一。",
+      "possible_math_units_for_teacher_split": [
+        "投入产出线性模型的可行性"
+      ],
+      "condition_or_scope_caution": "负产量的代数解未必有现实意义",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A066-L016",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "APPLICATION_CONTEXT",
+      "original_editorial_paraphrase": "经济时间序列线性回归依赖观测数据与误差假设，预测不应解释为因果关系。",
+      "possible_math_units_for_teacher_split": [
+        "经济数据时间趋势回归"
+      ],
+      "condition_or_scope_caution": "结构变化使外推失效",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A066-L021",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "APPLICATION_CONTEXT",
+      "original_editorial_paraphrase": "收入、消费与投资间的简化线性关系可用于说明乘数效应，但其系数来自模型假设。",
+      "possible_math_units_for_teacher_split": [
+        "宏观简化模型与乘数效应"
+      ],
+      "condition_or_scope_caution": "稳定参数需独立验证",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A066-L025",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "APPLICATION_CONTEXT",
+      "original_editorial_paraphrase": "生产函数中的投入变量应有单位和正值域限制，对数变换要求输入严格大于零。",
+      "possible_math_units_for_teacher_split": [
+        "生产函数及对数线性变换"
+      ],
+      "condition_or_scope_caution": "零或负投入不可直接取对数",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A067-L002",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "社会数学模型总标题，具体模型应以以下不同情境的学习任务界定。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "不能声称单元数学同构",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A067-L003",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "APPLICATION_CONTEXT",
+      "original_editorial_paraphrase": "综合评价可用加权或稳健汇总，但不同均值的权重和适用前提不相同。",
+      "possible_math_units_for_teacher_split": [
+        "加权均值与稳健评价建模"
+      ],
+      "condition_or_scope_caution": "权重非负及总权重非零",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A067-L008",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "APPLICATION_CONTEXT",
+      "original_editorial_paraphrase": "人口指数模型只有在相对增长机制与观察尺度合理时才可能适用，需说明参数解释。",
+      "possible_math_units_for_teacher_split": [
+        "指数增长模型的参数与局限"
+      ],
+      "condition_or_scope_caution": "有限资源不能长期指数扩张",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A067-L012",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "APPLICATION_CONTEXT",
+      "original_editorial_paraphrase": "二分类风险评分可通过对数几率模型表达，输出概率与实际类别判定阈值应分开。",
+      "possible_math_units_for_teacher_split": [
+        "逻辑回归概率映射与阈值"
+      ],
+      "condition_or_scope_caution": "分类器分数不代表因果性",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A068-L003",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "社会调查概论标题，调查设计和数据分析过程不等于一项确定数学定理。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "必须保留活动与数学事实区别",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A068-L004",
+      "track": "ELECTIVE_C",
+      "semantic_role_provisional": "COMPETENCY_REQUIREMENT",
+      "original_editorial_paraphrase": "调查任务强调目的、抽样、实施和分析的流程选择，不能凭流程完整宣称样本无偏。",
+      "possible_math_units_for_teacher_split": [
+        "调查方法使用范围与偏差意识"
+      ],
+      "condition_or_scope_caution": "不代表调查质量通过审核",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A071-L008",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "乐器与数学的应用专题标题，后续应分别追踪频率、谐波和振动模型。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "专题目录不是频率定理",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A071-L011",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "音乐作品中的数学文化主题，比例或变换的类比属于活动而非一般音乐定律。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "黄金比例不应声称普遍成立",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A072-L002",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "绘画与数学文化标题，需要分别核对几何透视、对称及比例的证据。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "美术风格不是几何证明",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A072-L005",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "艺术作品中的几何规律主题汇总，不能将多个艺术作品混为一个定理条目。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "作品实例需合法来源",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A072-L008",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "计算机辅助艺术作品的跨学科实践主题，算法技能与数学知识需分开统计。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "软件使用不等于数学知识原子",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A072-L011",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "艺术家的数学思想属于研究与文化主题，个人风格不能当数学普适事实。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "历史资料待独立来源审核",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A072-L022",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "体育运动力学与优化的主题标题，特定运动轨迹依赖简化模型和实际条件。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "不能直接声称某种动作最优",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A073-L002",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "运动成绩数据分析主题标题，统计数据及评价目标必须从活动任务单独审核。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "数据需无隐私且许可",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A073-L006",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "赛事安排与图优化应用标题，调度规则与可行性条件需要单独建模。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "计划可行不等于最优",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    },
+    {
+      "review_id": "KB80-A073-L009",
+      "track": "ELECTIVE_D",
+      "semantic_role_provisional": "CURRICULUM_HEADING",
+      "original_editorial_paraphrase": "体育器械和设施中的几何设计专题，安全标准与制造参数不作为通用数学结论。",
+      "possible_math_units_for_teacher_split": [],
+      "condition_or_scope_caution": "工程规范需另外引用",
+      "cross_track_equivalence": "NOT_ADJUDICATED",
+      "teacher_confirmed": false,
+      "official_atom_count": null,
+      "student_publishable": false
+    }
+  ]
+}
