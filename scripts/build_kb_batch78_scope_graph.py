@@ -34,7 +34,11 @@ def build(input_override=None):
         raise ValueError("Falsified official denominators")
     if w["local_denominator"]!=26 or w["local_candidates_with_drafts"]!=26 or w["teacher_approvals"]!=0:
         raise ValueError("Local candidate coverage falsely reported")
-    if x["teacher_full_page_reviews"]!=y["teacher_full_page_reviews"]!=z["teacher_full_page_reviews"]!=w["teacher_full_page_reviews"]!=0:
+    # Every independent upstream must report the exact unapproved integer zero.
+    # Python chained comparisons do NOT mean "all values != 0": equal forged
+    # counters previously escaped the review gate (e.g. all four == 1).
+    if any(type(data[k].get("teacher_full_page_reviews")) is not int
+           or data[k]["teacher_full_page_reviews"] != 0 for k in SOURCES):
         raise ValueError("Fake teacher full-page review")
     edges=[];nodes=[]
     for r in x["segments"]:
