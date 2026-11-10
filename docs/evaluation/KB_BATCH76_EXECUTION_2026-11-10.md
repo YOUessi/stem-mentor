@@ -69,3 +69,11 @@
 4. 教研签核后才允许正式多层RAG索引，开展真实API与规则基线的冻结对照。
 
 GitHub独立分支、Draft PR及CI须以最终远端核验为准，不用本地测试代替远端确认。
+
+## GitHub正式源码同步与首次 CI 验收（2026-11-10）
+
+- Mac 实际开发与测试提交：`5a92556c5819136bc41e5486132a6724853f1447`，Git Tree：`660dcd081f4b67c77b50192b9a38ff8a27d370ef`。
+- Mac HTTPS `git push` 原生网络尝试因 `Recv failure: Operation timed out` 失败，未强制推送、没有合并 main；随后经 GitHub 原生 `create_blob` 对 27 个完整文件逐项核对 SHA，再由相同的 base tree 和 mode 生成**完全相同的 Git Tree**，创建以 Batch75 远端HEAD为父节点的提交并非强制更新独立分支。
+- GitHub 同内容源码提交：`2f1356ef996e2f61d51eda74eb0a3b40ad509c3e`；Draft PR #101：<https://github.com/YOUessi/stem-mentor/pull/101>，依赖 Batch75 #100，不合并 main。
+- 首次远端 GitHub Actions #42761262296：<https://github.com/YOUessi/stem-mentor/actions/runs/42761262296>，`completed / success`，test job **132/132 步成功，0 失败、0 跳过**。该结果仅是源码工程CI，不等于数学定理形式验证或教师批准。
+- 本节为验收报告追加，未改变数学内容、生成器、测试和学生/教师审核权限；追加报告形成的新提交与新CI仍需单独核验。
