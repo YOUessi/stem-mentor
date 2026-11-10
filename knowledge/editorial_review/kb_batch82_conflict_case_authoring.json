@@ -1,0 +1,543 @@
+{
+  "schema_version": "kb82-independent-conflict-exact-evidence-v1",
+  "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+  "authoring_origin": "ORIGINAL_PROJECT_AUTHORED",
+  "review_status": "REVIEW_PENDING",
+  "student_publishable": false,
+  "general_proof_certified": false,
+  "teacher_approved": false,
+  "claim": "These finite exact witnesses check assumptions/counterexamples, not active-vs-candidate version correctness. Independent teacher adjudication is still required.",
+  "cases": [
+    {
+      "op": "composition_domain",
+      "topic": "复合函数定义域",
+      "reason": "内层g(x)=x−2输出为零时，外层f(t)=1/t不合法；不能将两个函数的定义域直接取交替代逆像条件。",
+      "valid": {
+        "x": 3,
+        "shift": 2
+      },
+      "invalid": [
+        {
+          "x": 2,
+          "shift": 2
+        },
+        {
+          "x": -2,
+          "shift": -2
+        }
+      ],
+      "transfer": "令g(x)=x+5，重新辨认外层零分母对应的禁用输入。"
+    },
+    {
+      "op": "parity_domain",
+      "topic": "奇偶函数先审核定义域",
+      "reason": "在对称定义域样本上检查f(−x)=±f(x)，不对称域上即使表达式为x²也不得直接宣称偶函数。",
+      "valid": {
+        "domain": [
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ],
+        "degree": 2,
+        "parity": 0
+      },
+      "invalid": [
+        {
+          "domain": [
+            0,
+            1,
+            2
+          ],
+          "degree": 2,
+          "parity": 0
+        },
+        {
+          "domain": [
+            -1,
+            0,
+            1
+          ],
+          "degree": 3,
+          "parity": 0
+        }
+      ],
+      "extra_valid": [
+        {
+          "domain": [
+            -2,
+            -1,
+            0,
+            1,
+            2
+          ],
+          "degree": 3,
+          "parity": 1
+        }
+      ],
+      "transfer": "改为奇次多项式并明确域为对称有限样本；有限抽样不证明全实数结论。"
+    },
+    {
+      "op": "piecewise_well_defined",
+      "topic": "分段定义必须覆盖且重叠一致",
+      "reason": "分支重叠并非必然非法；只有同一点有冲突输出才破坏函数唯一值性质。",
+      "valid": {
+        "domain": [
+          -1,
+          0,
+          1
+        ],
+        "branches": [
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        ]
+      },
+      "invalid": [
+        {
+          "domain": [
+            -1,
+            0,
+            1
+          ],
+          "branches": [
+            [
+              [
+                -1,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          ]
+        },
+        {
+          "domain": [
+            -1,
+            0,
+            1
+          ],
+          "branches": [
+            [
+              [
+                -1
+              ],
+              [
+                1
+              ]
+            ],
+            [
+              [
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          ]
+        }
+      ],
+      "extra_valid": [
+        {
+          "domain": [
+            0
+          ],
+          "branches": [
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        }
+      ],
+      "transfer": "在x=0处分别检查左闭与右闭分支的输出是否一致。"
+    },
+    {
+      "op": "ivt_zero",
+      "topic": "介值定理需要连续性且只保证存在",
+      "reason": "对于多项式给出闭区间端点严格异号的精确证据，拒绝以阶梯函数替代连续性。",
+      "valid": {
+        "a": -2,
+        "b": 2,
+        "coefficients": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "family": 0
+      },
+      "invalid": [
+        {
+          "a": -2,
+          "b": 2,
+          "coefficients": [
+            0,
+            -1,
+            0,
+            1
+          ],
+          "family": 1
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "coefficients": [
+            0,
+            -1,
+            0,
+            1
+          ],
+          "family": 0
+        }
+      ],
+      "transfer": "将区间替换为[1,2]，检查原来的端点异号条件是否仍成立。"
+    },
+    {
+      "op": "point_line_distance",
+      "topic": "点线距离必须有非零法向量",
+      "reason": "对3x+4y−10=0的原点算出距离平方4；系数A=B=0时该式不是平面直线。",
+      "valid": {
+        "A": 3,
+        "B": 4,
+        "C": -10,
+        "point": [
+          0,
+          0
+        ]
+      },
+      "invalid": [
+        {
+          "A": 0,
+          "B": 0,
+          "C": 1,
+          "point": [
+            0,
+            0
+          ]
+        },
+        {
+          "A": 0,
+          "B": 0,
+          "C": 0,
+          "point": [
+            1,
+            2
+          ]
+        }
+      ],
+      "transfer": "改写为6x+8y−20=0并比较距离不变性。"
+    },
+    {
+      "op": "binomial_independence",
+      "topic": "二项分布依赖独立同分布",
+      "reason": "对两次伯努利试验精确审计四种联合结果，边际成功率均1/2仍不能推出两次独立。",
+      "valid": {
+        "weights": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "invalid": [
+        {
+          "weights": [
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "weights": [
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "extra_valid": [
+        {
+          "weights": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "transfer": "当两次总是一起成功或失败时直接计算恰好一次成功的概率。"
+    },
+    {
+      "op": "hypergeometric_support",
+      "topic": "超几何无放回与合法支持",
+      "reason": "对四项抽两项枚举所有等可能无放回子集，与超几何组合数公式精确比对；有放回试验模型不同。",
+      "valid": {
+        "N": 4,
+        "K": 2,
+        "n": 2,
+        "k": 2,
+        "replacement": 0
+      },
+      "invalid": [
+        {
+          "N": 4,
+          "K": 2,
+          "n": 2,
+          "k": 2,
+          "replacement": 1
+        },
+        {
+          "N": 4,
+          "K": 2,
+          "n": 2,
+          "k": 3,
+          "replacement": 0
+        }
+      ],
+      "extra_valid": [
+        {
+          "N": 4,
+          "K": 2,
+          "n": 2,
+          "k": 1,
+          "replacement": 0
+        }
+      ],
+      "transfer": "列举恰有一个成功品的六个子集并核对组合数。"
+    },
+    {
+      "op": "ols_variances",
+      "topic": "OLS斜率与相关系数需要不同非零方差",
+      "reason": "用有理数精确计算Sxx、Syy与最小二乘斜率；x恒定时斜率分母为零，y恒定时相关系数未定义。",
+      "valid": {
+        "pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "require_correlation": 1
+      },
+      "invalid": [
+        {
+          "pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "require_correlation": 1
+        },
+        {
+          "pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "require_correlation": 1
+        }
+      ],
+      "extra_valid": [
+        {
+          "pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "require_correlation": 0
+        }
+      ],
+      "transfer": "比较回归斜率为0与皮尔逊相关系数无定义的区别。"
+    },
+    {
+      "op": "triangle_included_angle",
+      "topic": "两边夹角正弦决定面积",
+      "reason": "坐标叉积严格给出3-4-5直角三角形面积6；换用非夹角的正弦3/5会算错面积。",
+      "valid": {
+        "P": [
+          0,
+          0
+        ],
+        "Q": [
+          3,
+          0
+        ],
+        "R": [
+          0,
+          4
+        ],
+        "sine": [
+          1,
+          1
+        ]
+      },
+      "invalid": [
+        {
+          "P": [
+            0,
+            0
+          ],
+          "Q": [
+            3,
+            0
+          ],
+          "R": [
+            0,
+            4
+          ],
+          "sine": [
+            3,
+            5
+          ]
+        },
+        {
+          "P": [
+            0,
+            0
+          ],
+          "Q": [
+            3,
+            0
+          ],
+          "R": [
+            6,
+            0
+          ],
+          "sine": [
+            1,
+            1
+          ]
+        }
+      ],
+      "transfer": "固定两邻边，改变夹角并用坐标行列式计算面积验证。"
+    },
+    {
+      "op": "vector_linear_dimensions",
+      "topic": "向量分配律须同维",
+      "reason": "同一R^n中的坐标分配律通过逐坐标整数恒等式检查，不同维向量未给定映射不能相加。",
+      "valid": {
+        "u": [
+          1,
+          2
+        ],
+        "v": [
+          -3,
+          4
+        ],
+        "scalar": 2
+      },
+      "invalid": [
+        {
+          "u": [
+            1,
+            2
+          ],
+          "v": [
+            3,
+            4,
+            5
+          ],
+          "scalar": 2
+        },
+        {
+          "u": [],
+          "v": [],
+          "scalar": 1
+        }
+      ],
+      "extra_valid": [
+        {
+          "u": [
+            1,
+            -1,
+            2
+          ],
+          "v": [
+            3,
+            0,
+            4
+          ],
+          "scalar": -3
+        }
+      ],
+      "transfer": "检查R²与R³对象相加时是否偷偷进行了补零嵌入。"
+    }
+  ]
+}
