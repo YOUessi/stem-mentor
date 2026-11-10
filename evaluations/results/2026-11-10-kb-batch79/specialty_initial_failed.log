@@ -1,0 +1,264 @@
+........................................................................ [  3%]
+........................................................................ [  6%]
+.FFFFFFFFFFFF........................................................... [  9%]
+........................................................................ [ 12%]
+........................................................................ [ 15%]
+........................................................................ [ 18%]
+........................................................................ [ 21%]
+........................................................................ [ 24%]
+........................................................................ [ 27%]
+........................................................................ [ 30%]
+........................................................................ [ 33%]
+........................................................................ [ 36%]
+........................................................................ [ 39%]
+........................................................................ [ 42%]
+........................................................................ [ 45%]
+........................................................................ [ 48%]
+........................................................................ [ 51%]
+........................................................................ [ 54%]
+........................................................................ [ 57%]
+........................................................................ [ 60%]
+........................................................................ [ 63%]
+........................................................................ [ 67%]
+........................................................................ [ 70%]
+........................................................................ [ 73%]
+........................................................................ [ 76%]
+........................................................................ [ 79%]
+........................................................................ [ 82%]
+........................................................................ [ 85%]
+........................................................................ [ 88%]
+........................................................................ [ 91%]
+........................................................................ [ 94%]
+........................................................................ [ 97%]
+............................................................             [100%]
+=================================== FAILURES ===================================
+________________ test_historical_step_sha_tampering_rejected[0] ________________
+
+idx = 0
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+________________ test_historical_step_sha_tampering_rejected[1] ________________
+
+idx = 1
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+________________ test_historical_step_sha_tampering_rejected[2] ________________
+
+idx = 2
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+________________ test_historical_step_sha_tampering_rejected[3] ________________
+
+idx = 3
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+________________ test_historical_step_sha_tampering_rejected[4] ________________
+
+idx = 4
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+________________ test_historical_step_sha_tampering_rejected[5] ________________
+
+idx = 5
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+________________ test_historical_step_sha_tampering_rejected[6] ________________
+
+idx = 6
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+________________ test_historical_step_sha_tampering_rejected[7] ________________
+
+idx = 7
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+________________ test_historical_step_sha_tampering_rejected[8] ________________
+
+idx = 8
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+________________ test_historical_step_sha_tampering_rejected[9] ________________
+
+idx = 9
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+_______________ test_historical_step_sha_tampering_rejected[10] ________________
+
+idx = 10
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+_______________ test_historical_step_sha_tampering_rejected[11] ________________
+
+idx = 11
+package = {'existing_batch78_guard_cards': 16, 'formally_certified_proofs': 0, 'historical_step_count': 538, 'new_batch79_guard_cards': 12, ...}
+
+    @pytest.mark.parametrize("idx",range(12))
+    def test_historical_step_sha_tampering_rejected(idx,package):
+        history=deepcopy(B.read(B.PARENT))
+        chosen=package["review_cards"][idx]["linked_historical_step_id"]
+        for row in history["proof_obligations"]:
+            if row["id"]==chosen:
+                row["original_step_sha256"]="0"*64
+                break
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch79_proof_conditions.py:80: Failed
+=========================== short test summary info ============================
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[0]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[1]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[2]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[3]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[4]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[5]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[6]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[7]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[8]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[9]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[10]
+FAILED backend/tests/test_kb_batch79_proof_conditions.py::test_historical_step_sha_tampering_rejected[11]
+12 failed, 2352 passed in 13.21s
