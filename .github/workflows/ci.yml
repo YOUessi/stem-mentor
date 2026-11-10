@@ -145,6 +145,7 @@ jobs:
       - run: python scripts/build_kb_batch87_candidate_census.py --check
       - run: python scripts/build_kb_batch88_relations.py --check
       - run: python scripts/build_kb_batch89_proofs_and_scope.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch90_relations.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       - run: cd backend && PYTHONPATH=. pytest -q
