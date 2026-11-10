@@ -1,0 +1,952 @@
+{
+  "authoring_sha256": "cc6b05a9da313b0fea2f573bcde2eeb3f98988e822a53df7f68c0ec518582d71",
+  "conflicts_resolved": 0,
+  "conflicts_total": 10,
+  "finite_negative_cases": 20,
+  "finite_positive_cases": 16,
+  "general_proofs_formally_certified": 0,
+  "official_curriculum_atom_denominator": null,
+  "schema_version": "kb82-exact-conflict-witnesses-v1",
+  "scope": "PROJECT_HISTORICAL_DRAFT_CONFLICTS_NOT_OFFICIAL_ATOMS",
+  "source_dossier_sha256": "38acbf47ca53b0c480f96daabc6746798f0a75e0349dad2560f8b2030cf9ba8c",
+  "student_publishable": 0,
+  "teacher_approved": 0,
+  "witnesses": [
+    {
+      "active_sha256": "8f4ca2c9ffe46431847027164f7eca2ecb203272cb3057f2e6eaedb3e4c3ab26",
+      "active_version_preferred": null,
+      "candidate_sha256": "0a9eba9335bd48642d1bee6df94f9e391060c06d6d6492b61dbf9100b5a6e8f9",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [],
+      "far_transfer": "令g(x)=x+5，重新辨认外层零分母对应的禁用输入。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.function.composition-domain",
+      "independent_reason": "内层g(x)=x−2输出为零时，外层f(t)=1/t不合法；不能将两个函数的定义域直接取交替代逆像条件。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "inner_value_not_in_outer_domain"
+          },
+          "input": {
+            "shift": 2,
+            "x": 2
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "inner_value_not_in_outer_domain"
+          },
+          "input": {
+            "shift": -2,
+            "x": -2
+          }
+        }
+      ],
+      "op": "composition_domain",
+      "positive": {
+        "finite_evidence": {
+          "f_of_g": "1",
+          "g_of_x": 1
+        },
+        "input": {
+          "shift": 2,
+          "x": 3
+        }
+      },
+      "review_packet_id": "KB82-IC-01",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "g:D_g→ℝ、f:D_f→ℝ 均为确定的实值函数。",
+        "只讨论先计算 g(x)、后计算 f(g(x)) 的复合。"
+      ],
+      "source_precise_statement": "复合函数 f∘g 的定义域恰为 {x∈D_g | g(x)∈D_f}；不一定等于 D_f∩D_g。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "复合函数定义域"
+    },
+    {
+      "active_sha256": "557000e248fa20439817d7c1f36d08490dfc57156a96ae40a2971bcf659e8575",
+      "active_version_preferred": null,
+      "candidate_sha256": "dfbfc8ec6b1fb25484c4f6b5c49a56fd893a99559da77416a533d1f380b669c3",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [
+        {
+          "evidence": {
+            "parity": "ODD",
+            "sample_points": 5
+          },
+          "input": {
+            "degree": 3,
+            "domain": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "parity": 1
+          }
+        }
+      ],
+      "far_transfer": "改为奇次多项式并明确域为对称有限样本；有限抽样不证明全实数结论。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.function.parity",
+      "independent_reason": "在对称定义域样本上检查f(−x)=±f(x)，不对称域上即使表达式为x²也不得直接宣称偶函数。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "domain_not_symmetric_under_negation"
+          },
+          "input": {
+            "degree": 2,
+            "domain": [
+              0,
+              1,
+              2
+            ],
+            "parity": 0
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "even_or_odd_equality_fails_at_sample"
+          },
+          "input": {
+            "degree": 3,
+            "domain": [
+              -1,
+              0,
+              1
+            ],
+            "parity": 0
+          }
+        }
+      ],
+      "op": "parity_domain",
+      "positive": {
+        "finite_evidence": {
+          "parity": "EVEN",
+          "sample_points": 5
+        },
+        "input": {
+          "degree": 2,
+          "domain": [
+            -2,
+            -1,
+            0,
+            1,
+            2
+          ],
+          "parity": 0
+        }
+      },
+      "review_packet_id": "KB82-IC-02",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "函数 f:D→ℝ 的自变量集合 D 非空。",
+        "谈论全域奇偶性时 D 必须关于原点对称，即 x∈D⇒−x∈D。"
+      ],
+      "source_precise_statement": "定义域关于0对称且 ∀x∈D，f(−x)=f(x) 时为偶函数；对称且 f(−x)=−f(x) 时为奇函数；在对称定义域上的零函数同时是奇函数和偶函数。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "奇偶函数先审核定义域"
+    },
+    {
+      "active_sha256": "d2398e513adc2e80ef2de3fdf604960c48f90907d50e1cc44354008b1a5fe30c",
+      "active_version_preferred": null,
+      "candidate_sha256": "b7cd6eeb5feaeca859c90061d20359b23d3c76edf2b89ab1df599a1a2f1f1116",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [
+        {
+          "evidence": {
+            "finite_domain_size": 1,
+            "overlap_points_agree": 1
+          },
+          "input": {
+            "branches": [
+              [
+                [
+                  0
+                ],
+                [
+                  1
+                ]
+              ],
+              [
+                [
+                  0
+                ],
+                [
+                  1
+                ]
+              ]
+            ],
+            "domain": [
+              0
+            ]
+          }
+        }
+      ],
+      "far_transfer": "在x=0处分别检查左闭与右闭分支的输出是否一致。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.function.piecewise",
+      "independent_reason": "分支重叠并非必然非法；只有同一点有冲突输出才破坏函数唯一值性质。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "overlapping_branches_disagree"
+          },
+          "input": {
+            "branches": [
+              [
+                [
+                  -1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "domain": [
+              -1,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "uncovered_input"
+          },
+          "input": {
+            "branches": [
+              [
+                [
+                  -1
+                ],
+                [
+                  1
+                ]
+              ],
+              [
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ]
+            ],
+            "domain": [
+              -1,
+              0,
+              1
+            ]
+          }
+        }
+      ],
+      "op": "piecewise_well_defined",
+      "positive": {
+        "finite_evidence": {
+          "finite_domain_size": 3,
+          "overlap_points_agree": 0
+        },
+        "input": {
+          "branches": [
+            [
+              [
+                -1
+              ],
+              [
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          "domain": [
+            -1,
+            0,
+            1
+          ]
+        }
+      },
+      "review_packet_id": "KB82-IC-03",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "给定各分支定义区域 D_i 和对应规则 f_i。",
+        "在每一 x 上至少存在一个适用分支；若多个分支同时适用，给出的函数值必须一致。"
+      ],
+      "source_precise_statement": "分段表达定义函数的充要条件是对每个定义域内 x 至少有一适用分支且所有适用分支输出一致；分支两两不交并覆盖定义域只是充分条件而非必要条件。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "分段定义必须覆盖且重叠一致"
+    },
+    {
+      "active_sha256": "a711b76c4db2777645835732e23494aa378ed3a123ea1b8cc86d96dd7a3e247c",
+      "active_version_preferred": null,
+      "candidate_sha256": "5b2775f2eac0269a11e2bfe96e6b3e729d31978a2800d79f9299f473082e472e",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [],
+      "far_transfer": "将区间替换为[1,2]，检查原来的端点异号条件是否仍成立。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.function.zero-ivt",
+      "independent_reason": "对于多项式给出闭区间端点严格异号的精确证据，拒绝以阶梯函数替代连续性。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "continuity_not_established_for_nonpolynomial"
+          },
+          "input": {
+            "a": -2,
+            "b": 2,
+            "coefficients": [
+              0,
+              -1,
+              0,
+              1
+            ],
+            "family": 1
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "endpoint_strict_sign_change_not_established"
+          },
+          "input": {
+            "a": 1,
+            "b": 2,
+            "coefficients": [
+              0,
+              -1,
+              0,
+              1
+            ],
+            "family": 0
+          }
+        }
+      ],
+      "op": "ivt_zero",
+      "positive": {
+        "finite_evidence": {
+          "conclusion": "EXISTENCE_BY_IVT_NOT_UNIQUENESS",
+          "continuity": "POLYNOMIAL_FAMILY_ONLY",
+          "left": -6,
+          "right": 6
+        },
+        "input": {
+          "a": -2,
+          "b": 2,
+          "coefficients": [
+            0,
+            -1,
+            0,
+            1
+          ],
+          "family": 0
+        }
+      },
+      "review_packet_id": "KB82-IC-04",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "实函数 f 在闭区间 [a,b] 连续，a<b。",
+        "端点满足 f(a)f(b)<0。"
+      ],
+      "source_precise_statement": "存在 c∈(a,b) 使 f(c)=0；结论只有存在性，不保证零点唯一；端点异号是充分条件而非必要条件。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "介值定理需要连续性且只保证存在"
+    },
+    {
+      "active_sha256": "dac0d1540d6b01096ffa722c34f4c548181d6f02d8de3d3c2117981beda5838e",
+      "active_version_preferred": null,
+      "candidate_sha256": "fe6966d4605d4097363eb1a7ad94d3c8a156d11177fecbaf4a1e411818be8b47",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [],
+      "far_transfer": "改写为6x+8y−20=0并比较距离不变性。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.geometry.point-line-distance",
+      "independent_reason": "对3x+4y−10=0的原点算出距离平方4；系数A=B=0时该式不是平面直线。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "nonzero_normal_and_two_coordinates_required"
+          },
+          "input": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "point": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "nonzero_normal_and_two_coordinates_required"
+          },
+          "input": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "point": [
+              1,
+              2
+            ]
+          }
+        }
+      ],
+      "op": "point_line_distance",
+      "positive": {
+        "finite_evidence": {
+          "distance_squared": "4"
+        },
+        "input": {
+          "A": 3,
+          "B": 4,
+          "C": -10,
+          "point": [
+            0,
+            0
+          ]
+        }
+      },
+      "review_packet_id": "KB82-IC-05",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "平面直线 L: Ax+By+C=0，其中 (A,B)≠(0,0)。",
+        "点 P=(x₀,y₀) 及系数为实数，使用欧氏距离。"
+      ],
+      "source_precise_statement": "d(P,L)=|Ax₀+By₀+C|/√(A²+B²)。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "点线距离必须有非零法向量"
+    },
+    {
+      "active_sha256": "699a78f5f5518ded8f9277535f670acb28a4cfd15bbddc20930a0d014276e3ae",
+      "active_version_preferred": null,
+      "candidate_sha256": "2f19452fc3bfb0c0f595365e7c2b1580c9e7b0b242a6f07df9d866a5e494d0d0",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [
+        {
+          "evidence": {
+            "binomial_n2_k1": "0",
+            "exactly_one_success": "0",
+            "individual_success_probability": "0"
+          },
+          "input": {
+            "weights": [
+              4,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "far_transfer": "当两次总是一起成功或失败时直接计算恰好一次成功的概率。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.probability.binomial-distribution",
+      "independent_reason": "对两次伯努利试验精确审计四种联合结果，边际成功率均1/2仍不能推出两次独立。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "independence_not_established_by_marginals"
+          },
+          "input": {
+            "weights": [
+              2,
+              0,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "independence_not_established_by_marginals"
+          },
+          "input": {
+            "weights": [
+              1,
+              1,
+              1,
+              2
+            ]
+          }
+        }
+      ],
+      "op": "binomial_independence",
+      "positive": {
+        "finite_evidence": {
+          "binomial_n2_k1": "1/2",
+          "exactly_one_success": "1/2",
+          "individual_success_probability": "1/2"
+        },
+        "input": {
+          "weights": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "review_packet_id": "KB82-IC-06",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "n 为非负整数，X 是 n 次相互独立试验中成功次数。",
+        "各次试验成功概率均为 p∈[0,1]，失败概率1−p。",
+        "k 为整数且 0≤k≤n。"
+      ],
+      "source_precise_statement": "P(X=k)=C(n,k)p^k(1−p)^(n−k)，端点 p=0 或1按直接事件概率解释；独立性不能省略。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "二项分布依赖独立同分布"
+    },
+    {
+      "active_sha256": "8b241b93c47cef3f88d5e601c6e5481b1168c57cd5cebadb915f8f1d4b81a69a",
+      "active_version_preferred": null,
+      "candidate_sha256": "32e19775af8d600e9ed132c6154a1fbc871fd014fa229fbff8a3ab43415347f6",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [
+        {
+          "evidence": {
+            "enumerated_samples": 6,
+            "probability": "2/3",
+            "support": [
+              0,
+              2
+            ]
+          },
+          "input": {
+            "K": 2,
+            "N": 4,
+            "k": 1,
+            "n": 2,
+            "replacement": 0
+          }
+        }
+      ],
+      "far_transfer": "列举恰有一个成功品的六个子集并核对组合数。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.probability.hypergeometric",
+      "independent_reason": "对四项抽两项枚举所有等可能无放回子集，与超几何组合数公式精确比对；有放回试验模型不同。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "without_replacement_required"
+          },
+          "input": {
+            "K": 2,
+            "N": 4,
+            "k": 2,
+            "n": 2,
+            "replacement": 1
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "out_of_hypergeometric_support"
+          },
+          "input": {
+            "K": 2,
+            "N": 4,
+            "k": 3,
+            "n": 2,
+            "replacement": 0
+          }
+        }
+      ],
+      "op": "hypergeometric_support",
+      "positive": {
+        "finite_evidence": {
+          "enumerated_samples": 6,
+          "probability": "1/6",
+          "support": [
+            0,
+            2
+          ]
+        },
+        "input": {
+          "K": 2,
+          "N": 4,
+          "k": 2,
+          "n": 2,
+          "replacement": 0
+        }
+      },
+      "review_packet_id": "KB82-IC-07",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "总体 N∈ℕ_{>0}，其中成功项 K 满足0≤K≤N。",
+        "不放回等可能选取大小 n 的子集，0≤n≤N。"
+      ],
+      "source_precise_statement": "k 的有效范围为 max(0,n−(N−K))≤k≤min(n,K) 且为整数；P(X=k)=C(K,k)C(N−K,n−k)/C(N,n)。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "超几何无放回与合法支持"
+    },
+    {
+      "active_sha256": "9b1444a77b709f2e8fc4cb7cbe23cba08d1580ab920a31d3bb6d6b52d9e22e09",
+      "active_version_preferred": null,
+      "candidate_sha256": "acc74aacbf1fa0c20eff89a29f73bd94d745214cc614545b9c75df78e42ce1da",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [
+        {
+          "evidence": {
+            "Sxx": "2",
+            "Syy": "0",
+            "correlation_defined": false,
+            "intercept": "1",
+            "slope": "0"
+          },
+          "input": {
+            "pairs": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "require_correlation": 0
+          }
+        }
+      ],
+      "far_transfer": "比较回归斜率为0与皮尔逊相关系数无定义的区别。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.statistics.correlation-regression",
+      "independent_reason": "用有理数精确计算Sxx、Syy与最小二乘斜率；x恒定时斜率分母为零，y恒定时相关系数未定义。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "ols_slope_denominator_Sxx_zero"
+          },
+          "input": {
+            "pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                5
+              ]
+            ],
+            "require_correlation": 1
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "correlation_denominator_Syy_zero"
+          },
+          "input": {
+            "pairs": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "require_correlation": 1
+          }
+        }
+      ],
+      "op": "ols_variances",
+      "positive": {
+        "finite_evidence": {
+          "Sxx": "2",
+          "Syy": "8",
+          "correlation_defined": true,
+          "intercept": "1",
+          "slope": "2"
+        },
+        "input": {
+          "pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "require_correlation": 1
+        }
+      },
+      "review_packet_id": "KB82-IC-08",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "有至少两组有限实数数据 (x_i,y_i)。",
+        "OLS中 Sxx=Σ(x_i−x̄)²>0；定义皮尔逊相关系数还必须 Syy=Σ(y_i−ȳ)²>0。"
+      ],
+      "source_precise_statement": "最小二乘直线 ŷ=a+bx 的斜率 b=Sxy/Sxx、截距 a=ȳ−b x̄；r=Sxy/√(Sxx Syy) 仅在两样本方差均非零时有定义，相关不意味着因果。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "OLS斜率与相关系数需要不同非零方差"
+    },
+    {
+      "active_sha256": "feca569a56b1d149b0e6bb391b9dfd6af6e6d96b32cb64bac55da5b2256fc360",
+      "active_version_preferred": null,
+      "candidate_sha256": "65f0f943e5c9568894a150f757a9065920564f6e019e60f84112394c77633007",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [],
+      "far_transfer": "固定两邻边，改变夹角并用坐标行列式计算面积验证。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.triangle.area-sine",
+      "independent_reason": "坐标叉积严格给出3-4-5直角三角形面积6；换用非夹角的正弦3/5会算错面积。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "sine_does_not_match_included_angle"
+          },
+          "input": {
+            "P": [
+              0,
+              0
+            ],
+            "Q": [
+              3,
+              0
+            ],
+            "R": [
+              0,
+              4
+            ],
+            "sine": [
+              3,
+              5
+            ]
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "nondegenerate_triangle_required"
+          },
+          "input": {
+            "P": [
+              0,
+              0
+            ],
+            "Q": [
+              3,
+              0
+            ],
+            "R": [
+              6,
+              0
+            ],
+            "sine": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "op": "triangle_included_angle",
+      "positive": {
+        "finite_evidence": {
+          "area": "6",
+          "sine_of_included_angle_squared": "1"
+        },
+        "input": {
+          "P": [
+            0,
+            0
+          ],
+          "Q": [
+            3,
+            0
+          ],
+          "R": [
+            0,
+            4
+          ],
+          "sine": [
+            1,
+            1
+          ]
+        }
+      },
+      "review_packet_id": "KB82-IC-09",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "非退化平面三角形的两边长度 a>0、b>0。",
+        "θ 是这两边真正的夹角，0<θ<π。"
+      ],
+      "source_precise_statement": "三角形面积 S=(1/2)ab sinθ；不可以把 θ 任意替换成某个非夹角。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "两边夹角正弦决定面积"
+    },
+    {
+      "active_sha256": "ce4d8f75e4ccb20a695f299c041b2ec84157a885466fbc70b5dbe90e253923e6",
+      "active_version_preferred": null,
+      "candidate_sha256": "a8977ba555d84ed6fd84d7ce38b0e8834d8386b13cc42a93d17b940d4d397fc1",
+      "candidate_version_preferred": null,
+      "conflict_resolution": "UNRESOLVED_NEEDS_INDEPENDENT_TEACHER",
+      "evidence_scope": "FINITE_EXACT_CASES_AND_PRECONDITIONS_ONLY",
+      "extra_positive": [
+        {
+          "evidence": {
+            "dimension": 3,
+            "distributive_result": [
+              -12,
+              3,
+              -18
+            ]
+          },
+          "input": {
+            "scalar": -3,
+            "u": [
+              1,
+              -1,
+              2
+            ],
+            "v": [
+              3,
+              0,
+              4
+            ]
+          }
+        }
+      ],
+      "far_transfer": "检查R²与R³对象相加时是否偷偷进行了补零嵌入。",
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "historical_conflict_id": "math.hs.vector.linear-operations",
+      "independent_reason": "同一R^n中的坐标分配律通过逐坐标整数恒等式检查，不同维向量未给定映射不能相加。",
+      "negative": [
+        {
+          "evidence": {
+            "failed_condition": "same_positive_dimension_required"
+          },
+          "input": {
+            "scalar": 2,
+            "u": [
+              1,
+              2
+            ],
+            "v": [
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "evidence": {
+            "failed_condition": "same_positive_dimension_required"
+          },
+          "input": {
+            "scalar": 1,
+            "u": [],
+            "v": []
+          }
+        }
+      ],
+      "op": "vector_linear_dimensions",
+      "positive": {
+        "finite_evidence": {
+          "dimension": 2,
+          "distributive_result": [
+            -4,
+            12
+          ]
+        },
+        "input": {
+          "scalar": 2,
+          "u": [
+            1,
+            2
+          ],
+          "v": [
+            -3,
+            4
+          ]
+        }
+      },
+      "review_packet_id": "KB82-IC-10",
+      "review_status": "REVIEW_PENDING",
+      "source_original_assumptions": [
+        "u,v∈ℝ^n 且 n 是固定正整数。",
+        "a,b∈ℝ，运算按坐标分量定义。"
+      ],
+      "source_precise_statement": "(u+v)_i=u_i+v_i，(au)_i=a u_i；同维线性运算在 ℝ^n 中封闭，并满足 a(u+v)=au+av；概念定义与分配律定理不能视为同一类证明任务。",
+      "student_publishable": false,
+      "teacher_approved": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "topic": "向量分配律须同维"
+    }
+  ]
+}
