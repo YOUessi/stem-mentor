@@ -10,6 +10,8 @@ from fractions import Fraction as F
 from math import pi, sin, cos
 from sympy import symbols, simplify, sqrt, diff, log, sin as ssin, cos as scos
 
+from app.kb_math_real_log_domain import valid_real_log_domain
+
 SUPPORTED = tuple(range(1, 17))
 
 
@@ -52,7 +54,12 @@ def verify(i: int) -> dict:
         witness = "sin x奇、cos x偶；sin(x+1)一般不是奇函数"
     elif i == 7:
         positive = simplify(log(sqrt(2),2)-F(1,2)) == 0 and 2 ** F(1,1) == 2
-        negative = 1 > 0 and 1 != 1
+        positive = (positive and valid_real_log_domain(2, 8)
+                    and valid_real_log_domain(4, 16, change_base=2))
+        invalid = ((1, 8, None), (0, 8, None), (-2, 8, None),
+                   (2, 0, None), (2, -3, None), (2, 8, 1),
+                   (2, 8, 0), (2, 8, -4))
+        negative = any(valid_real_log_domain(a, x, change_base=b) for a, x, b in invalid)
         witness = "对数底数2合法，底数1不合法"
     elif i == 8:
         a,b = symbols("a b", real=True)

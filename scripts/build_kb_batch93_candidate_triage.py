@@ -19,6 +19,16 @@ AUTHOR=ROOT/"scripts/kb_batch93_authoring.py"
 OUTPUT=ROOT/"docs/evaluation/KB_BATCH93_CANDIDATE_TRIAGE.json"
 MARKDOWN=ROOT/"docs/evaluation/KB_BATCH93_CANDIDATE_TRIAGE.md"
 TRACKS=("COMPULSORY","SELECTIVE_COMPULSORY",*(f"ELECTIVE_{x}" for x in "ABCDE"))
+# Frozen canonical SHA256 of Batch89's entire 300-row candidate source snapshot.
+# Audit revisions require an explicitly reviewed new frozen checksum, not just
+# a 64-character string or another internally consistent generated JSON.
+FROZEN_BATCH89_CANDIDATES_SHA256 = "56b87b4a9094c2f279fd8103ac5551338db9408c9207f5a8ce971bf295759543"
+
+def candidate_snapshot_sha256(candidates):
+    payload=json.dumps(candidates,sort_keys=True,ensure_ascii=False,
+                       separators=(",",":"),allow_nan=False).encode("utf-8")
+    return sha256(payload).hexdigest()
+
 def require(pred,msg):
     if not pred: raise ValueError(msg)
 def read(p):
@@ -64,6 +74,8 @@ def build(source=None,previous=None,notes=None):
                 type(s["source_line_sha256"]) is str and
                 len(s["source_line_sha256"]) == 64,
                 "forged prior source review or official authority")
+    require(candidate_snapshot_sha256(originals)==FROZEN_BATCH89_CANDIDATES_SHA256,
+            "frozen Batch89 source candidate snapshot mismatch")
     require(previous["general_theorem_proof_certificates"]==0 and
             all(v is None for v in previous["official_atom_denominators_by_track"].values()),
             "forged mathematical certification or syllabus count")

@@ -148,3 +148,28 @@ def test_reproducible_generated_artifacts_are_frozen():
     check=b.run(check=True)
     assert check["new_individual_math_scope_reviews"]==24
     assert check["finite_math_checks"]==14
+
+
+# Regression: a forged 64-hex digest used to pass length-only provenance checks.
+@pytest.mark.parametrize("candidate_index", [0, 35, 75, 141, 201, 261, 291, 299])
+def test_valid_length_forged_source_line_sha_is_rejected(candidate_index):
+    source = b.read(b.SOURCES)
+    current = source["provisional_candidate_backlog"][candidate_index]["source_line_sha256"]
+    source["provisional_candidate_backlog"][candidate_index]["source_line_sha256"] = (
+        "a" * 64 if current != "a" * 64 else "b" * 64
+    )
+    with pytest.raises(ValueError, match="frozen Batch89"):
+        b.build(source=source)
+
+
+@pytest.mark.parametrize("field, replacement", [
+    ("source_page", 999),
+    ("source_review_id", "FORGED-SOURCE"),
+    ("provisional_topic", "伪造知识单元"),
+    ("track", "ELECTIVE_E"),
+])
+def test_source_identity_change_without_new_review_is_rejected(field,replacement):
+    source = b.read(b.SOURCES)
+    source["provisional_candidate_backlog"][0][field] = replacement
+    with pytest.raises(ValueError, match="frozen Batch89"):
+        b.build(source=source)

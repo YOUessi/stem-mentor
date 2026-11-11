@@ -5,6 +5,7 @@ and student free-form work are NEVER certified by these checks.
 from fractions import Fraction as F
 from math import comb, pi, sin, log, sqrt, isclose
 from sympy import Matrix
+from app.kb_math_real_log_domain import valid_real_log_domain
 CASES = {
  "KB80-A020-L032-C01": "logarithm-positive-domain",
  "KB80-A022-L002-C01": "nondegenerate-sine-period",
@@ -27,7 +28,11 @@ def finite_check(candidate_id):
     assert candidate_id in CASES
     if candidate_id=="KB80-A020-L032-C01":
         good=8*2==16 and 2**4==16
-        bad=not (-2>0 and -3>0)
+        good=(good and valid_real_log_domain(2,8) and valid_real_log_domain(2,2))
+        bad=(not valid_real_log_domain(2,-2)
+             and not valid_real_log_domain(2,-3)
+             and not valid_real_log_domain(1,8)
+             and not valid_real_log_domain(2,8,change_base=1))
     elif candidate_id=="KB80-A022-L002-C01":
         good=isclose(2*sin(3*(pi/5)+1),2*sin(3*(pi/5)+1+2*pi),abs_tol=1e-12)
         bad=(0==0) and (not (0!=0))  # degenerate angular frequency

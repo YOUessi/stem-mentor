@@ -199,3 +199,14 @@ def test_generated_artifacts_are_frozen_and_in_sync(scope):
     doc=json.loads(B.OUT.read_text(encoding="utf-8"))
     assert doc["teacher_approved"]==0
     assert doc["official_curriculum_atom_denominator"] is None
+
+
+@pytest.mark.parametrize("index",[0,45,82,141,190,249,299])
+def test_valid_hex_but_forged_batch89_provenance_fails_closed(previous,index):
+    raw=deepcopy(B.read(B.AUTHOR))
+    earlier,historical=deepcopy(previous[0]),deepcopy(previous[1])
+    old=historical["provisional_candidate_backlog"][index]["source_line_sha256"]
+    historical["provisional_candidate_backlog"][index]["source_line_sha256"] = (
+        "f"*64 if old != "f"*64 else "e"*64)
+    with pytest.raises(ValueError,match="frozen Batch89"):
+        B.build(raw=raw,earlier=earlier,historical=historical)
