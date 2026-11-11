@@ -10,7 +10,7 @@ sys.path[:0]=[str(ROOT/"backend"),str(ROOT/"scripts")]
 import build_kb_batch100_depth as DEPTH
 import build_kb_batch100_coverage as COVER
 from kb_batch100_authoring import ROWS,SELECTED
-from app.kb_batch100_oracles import IDS,check_all,evaluate,nonzero,pair_balanced,quadratic_interval,matrix_prediction
+from app.kb_batch100_oracles import IDS,check_all,evaluate,nonzero,pair_balanced,quadratic_interval,matrix_prediction,class_line_plane
 from app.deep_knowledge import DeepLesson,lessons
 from app.deep_retrieval import student_evidence_lookup
 from pydantic import ValidationError
@@ -104,6 +104,25 @@ def test_invalid_math_input_edges_rejected():
     with pytest.raises(ValueError):pair_balanced([0,1],[0,0,1])
     with pytest.raises(ValueError):quadratic_interval(1,-4,0,5,0)
     with pytest.raises(ValueError):matrix_prediction([[1,1],[1,1],[1,1]],[2,3,4])
+
+@pytest.mark.parametrize("normal,base,direction", [
+    ([1,0,0], [0,0], [1,0,0]),
+    ([1,0,0], [0,0,0], [1,0]),
+    ([1,0], [0,0,0], [1,0,0]),
+    ([], [], []),
+])
+def test_line_plane_rejects_dimension_mismatch_instead_of_zip_truncation(normal,base,direction):
+    with pytest.raises(ValueError):
+        class_line_plane(normal,base,direction,0)
+
+@pytest.mark.parametrize("x,y", [
+    ([], []),
+    ([[1],[1]], [[2,3],[3,4]]),
+    ([[1,2],[3,4]], [1]),
+])
+def test_least_squares_rejects_empty_multitarget_or_unequal_rows(x,y):
+    with pytest.raises(ValueError):
+        matrix_prediction(x,y)
 
 def test_20_packs_and_markdown_are_deterministic():
     docs,report=DEPTH.build()

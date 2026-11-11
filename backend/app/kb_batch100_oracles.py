@@ -16,6 +16,10 @@ def nonzero(v):
     return v
 
 def class_line_plane(normal, base, direction, c):
+    # zip() silently truncates mismatched dimensions; that is not a valid 3D test.
+    if not all(isinstance(v, (tuple, list)) and len(v) == 3
+               for v in (normal, base, direction)):
+        raise ValueError("normal, base and direction must all be 3D vectors")
     nonzero(normal);nonzero(direction)
     dot=sum(a*b for a,b in zip(normal,direction))
     off=sum(a*b for a,b in zip(normal,base))-c
@@ -56,8 +60,9 @@ def quadratic_interval(a,b,c,left,right):
 
 def matrix_prediction(x,y):
     X=Matrix(x);Y=Matrix(y)
-    if X.rows!=Y.rows or X.rank()!=X.cols:
-        raise ValueError("design matrix must have full column rank")
+    if (X.rows == 0 or X.cols == 0 or Y.cols != 1 or
+            X.rows != Y.rows or X.rank() != X.cols):
+        raise ValueError("nonempty design matrix needs one target column and full column rank")
     return (X.T*X).inv()*X.T*Y
 
 def evaluate(i):
