@@ -1,0 +1,76 @@
+# Batch99｜先修图谱未解绑定台账
+
+以下均为来源锁定深度草案的文本先修要求，不等于已验证的知识图谱边。未经教研审核全部保持 REVIEW_PENDING。
+
+讲义 66；先修文字 132；解析成正式讲义ID的引用 0。
+
+| 讲义 | 来源轨道 | 文本先修数 | 已解析ID数 | 状态 |
+|---|---|---:|---:|---|
+| math.hs.batch94.01 | COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.02 | COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.03 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.04 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.05 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.06 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.07 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.08 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.09 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.10 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.11 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.12 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.13 | ELECTIVE_C | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch94.14 | ELECTIVE_D | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.01 | COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.02 | COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.03 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.04 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.05 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.06 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.07 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.08 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.09 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.10 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.11 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.12 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.13 | ELECTIVE_C | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.14 | ELECTIVE_C | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.15 | ELECTIVE_D | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch95.16 | ELECTIVE_D | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.01 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.02 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.03 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.04 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.05 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.06 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.07 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.08 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.09 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.10 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.11 | ELECTIVE_C | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch96.12 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.01 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.02 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.03 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.04 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.05 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.06 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.07 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.08 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.09 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.10 | ELECTIVE_C | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.11 | ELECTIVE_C | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch97.12 | ELECTIVE_D | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.01 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.02 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.03 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.04 | SELECTIVE_COMPULSORY | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.05 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.06 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.07 | ELECTIVE_A | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.08 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.09 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.10 | ELECTIVE_B | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.11 | ELECTIVE_C | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+| math.hs.batch98.12 | ELECTIVE_D | 2 | 0 | TEXT_ONLY_UNRESOLVED |
+
+正式课标七轨原子分母仍 UNKNOWN。不得把文本条件静默升权为教学Agent可用的正式先修路径。

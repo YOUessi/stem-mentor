@@ -252,7 +252,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "零向量是向量加法单位元，0+v=v；但它没有确定方向，不能被归一化或用于定义与另一向量的夹角。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "空间零向量的定义及方向禁区",
     "transfer": {
@@ -716,7 +716,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "当行边际严格大于0时，行条件比例如a/(a+b)有意义；两个组别比例的差异是描述性关联，不自动给出因果关系。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "二乘二列联表的条件比例与边际",
     "transfer": {
@@ -998,7 +998,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "数学命题为真需要覆盖其量词及全部前提的论证；有限多个成功算例不能代替对所有对象的证明，而一个合法反例足以推翻全称命题。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "类比推理与证明有效性的边界",
     "transfer": {

@@ -252,7 +252,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "标准化Z=(X−μ)/σ服从N(0,1)。改变μ只平移分布中心，改变正的σ使分布水平伸缩，不能将σ²误作标准差。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "正态分布均值方差与尺度参数",
     "transfer": {
@@ -626,7 +626,7 @@
     "rationale_steps": [
       "计算两点变换后差向量T(x)−T(y)=Q(x−y)，平移项消去。",
       "利用QᵀQ=I得|Q(x−y)|²=(x−y)ᵀQᵀQ(x−y)=|x−y|²。",
-      "用det(Q)区分保向旋转与反向反射；复合顺序应通过矩阵乘法实际核查。"
+      "用det(Q)区分保向和反向，解(I−Q)x=b检验不动点；反向且没有不动点的等距变换可为滑移反射。"
     ],
     "review": {
       "review_record": null,
@@ -634,7 +634,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": "平面上的等距仿射变换T(x)=Qx+b，其中Q为实2×2正交矩阵，QᵀQ=I，b为平移向量；反射对应det(Q)=−1。\n任意正交Q和任意b均保持两点欧氏距离；单纯缩放矩阵Q=2I并不等距，且一般的两次刚体变换复合顺序不能交换。",
+    "statement": "平面等距仿射变换T(x)=Qx+b，其中Q为实2×2正交矩阵且QᵀQ=I，b任意；det(Q)=−1仅表示反向，不能仅凭此断定是有不动点的轴反射。\n任意正交Q和任意b均保持两点欧氏距离；单纯缩放矩阵Q=2I并不等距，且一般的两次刚体变换复合顺序不能交换。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "平面平移旋转反射的距离保持条件",
     "transfer": {
@@ -772,7 +772,7 @@
     "curriculum_ids": [
       "HS-MATH-164"
     ],
-    "definition": "二维正态随机向量(X,Y)的均值μx,μy、标准差σx,σy>0及相关系数ρ∈(−1,1)决定非退化二维正态联合密度。",
+    "definition": "令u=(x−μx)/σx、v=(y−μy)/σy。非退化联合正态向量(X,Y)在σx,σy>0、|ρ|<1时，二维密度f(x,y)=exp(−(u²−2ρuv+v²)/(2(1−ρ²)))/(2πσxσy√(1−ρ²))；x,y取全体实数。",
     "hint_ladder": [
       "先确认是否假设联合正态。",
       "检查两个标准差和|ρ|的取值。",
@@ -816,9 +816,9 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "非退化协方差矩阵Σ=[[σx²,ρσxσy],[ρσxσy,σy²]]必须正定，detΣ=σx²σy²(1−ρ²)>0；ρ=±1时退化到直线分布，不具有平面上的普通二维密度。",
     "teacher_solution_visibility": "TEACHER_ONLY",
-    "title": "二维标准正态联合密度与相关系数的限制",
+    "title": "一般非退化二维正态联合密度与相关约束",
     "transfer": {
       "far": "在金融风险估计中区分统计相关系数与因果关系。",
       "near": "给定σx=1,σy=4,ρ=0，求协方差矩阵并判别非退化。"
@@ -1089,7 +1089,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "围绕圆心的任意平面旋转保持到圆心的距离，因此将圆周映为自身；圆的旋转对称不代表任何椭圆或任意仿射图形也有相同性质。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "圆的半径定义及旋转不变性",
     "transfer": {

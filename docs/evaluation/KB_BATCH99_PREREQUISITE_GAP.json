@@ -1,0 +1,947 @@
+{
+  "lessons": [
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.01",
+      "prerequisite_descriptions": [
+        "集合属于关系",
+        "经典命题逻辑中的且或非"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.02",
+      "prerequisite_descriptions": [
+        "向量加减运算",
+        "欧氏内积与范数平方"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.03",
+      "prerequisite_descriptions": [
+        "整数项号与顺序",
+        "常数增量及线性表达式"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.04",
+      "prerequisite_descriptions": [
+        "求和定义",
+        "代数式相减与差分"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.05",
+      "prerequisite_descriptions": [
+        "局部极值定义",
+        "导数符号与单调性"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.06",
+      "prerequisite_descriptions": [
+        "向量加法与数乘",
+        "三维直角坐标系"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.07",
+      "prerequisite_descriptions": [
+        "欧氏内积与正交投影",
+        "向量范数"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.08",
+      "prerequisite_descriptions": [
+        "乘法计数原理",
+        "无重复有限集合"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.09",
+      "prerequisite_descriptions": [
+        "独立事件乘法关系",
+        "排列组合与互补事件"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.10",
+      "prerequisite_descriptions": [
+        "数列ε–N收敛定义",
+        "绝对值三角不等式"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.11",
+      "prerequisite_descriptions": [
+        "矩阵乘法",
+        "向量内积与范数"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.12",
+      "prerequisite_descriptions": [
+        "一元导数与驻点",
+        "二元函数定义域及边界"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.13",
+      "prerequisite_descriptions": [
+        "数学命题与全称量词",
+        "蕴含命题与代数恒等式"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_C",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch94.14",
+      "prerequisite_descriptions": [
+        "一元二次方程",
+        "正实数与比例"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.01",
+      "prerequisite_descriptions": [
+        "空间直角坐标系",
+        "平行投影与相似比例"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.02",
+      "prerequisite_descriptions": [
+        "平面基本公理",
+        "三不共线点确定唯一平面"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.03",
+      "prerequisite_descriptions": [
+        "乘方运算",
+        "离散递推及增长率"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.04",
+      "prerequisite_descriptions": [
+        "函数及定义域",
+        "极限和差商"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.05",
+      "prerequisite_descriptions": [
+        "集合的交并",
+        "乘法原理与有序对"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.06",
+      "prerequisite_descriptions": [
+        "离散样本空间",
+        "有限加权平均"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.07",
+      "prerequisite_descriptions": [
+        "导数定义",
+        "函数复合与可导性"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.08",
+      "prerequisite_descriptions": [
+        "Rolle引理",
+        "闭区间连续与开区间可导"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.09",
+      "prerequisite_descriptions": [
+        "条件概率",
+        "统计抽样模型"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.10",
+      "prerequisite_descriptions": [
+        "一元函数定义域",
+        "平面不等式区域"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.11",
+      "prerequisite_descriptions": [
+        "一次不等式",
+        "凸多边形与线性函数"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.12",
+      "prerequisite_descriptions": [
+        "函数复合",
+        "平面解析几何"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.13",
+      "prerequisite_descriptions": [
+        "命题真假表",
+        "充分条件与必要条件"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_C",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.14",
+      "prerequisite_descriptions": [
+        "总体与样本",
+        "概率抽样定义"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_C",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.15",
+      "prerequisite_descriptions": [
+        "三角函数周期性",
+        "弧度与角速度"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch95.16",
+      "prerequisite_descriptions": [
+        "整数整除",
+        "质因数分解"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.01",
+      "prerequisite_descriptions": [
+        "整数项号与代数式",
+        "相邻项差与线性函数"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.02",
+      "prerequisite_descriptions": [
+        "函数极限",
+        "绝对值与分段函数"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.03",
+      "prerequisite_descriptions": [
+        "空间向量坐标",
+        "平方根与非零除法"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.04",
+      "prerequisite_descriptions": [
+        "二维向量坐标",
+        "线性相关与垂直"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.05",
+      "prerequisite_descriptions": [
+        "分步乘法原理",
+        "排列与组合"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.06",
+      "prerequisite_descriptions": [
+        "概率区间事件",
+        "线性变量变换"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.07",
+      "prerequisite_descriptions": [
+        "坐标与一次函数",
+        "平均值与平方误差"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.08",
+      "prerequisite_descriptions": [
+        "非负整数计数",
+        "分数及条件概率"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.09",
+      "prerequisite_descriptions": [
+        "单调与有界",
+        "实数上确界性质"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.10",
+      "prerequisite_descriptions": [
+        "空间坐标与内积",
+        "三维线性相关"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.11",
+      "prerequisite_descriptions": [
+        "命题逻辑",
+        "整数整除性质"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_C",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch96.12",
+      "prerequisite_descriptions": [
+        "三角函数周期性",
+        "空间坐标与参数曲线"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.01",
+      "prerequisite_descriptions": [
+        "二维直角坐标系",
+        "向量减法和勾股定理"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.02",
+      "prerequisite_descriptions": [
+        "空间向量点积",
+        "直线参数式与平面方程"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.03",
+      "prerequisite_descriptions": [
+        "平面点线距离",
+        "三角不等式与轨迹"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.04",
+      "prerequisite_descriptions": [
+        "函数极限定义",
+        "三角不等式与有界性"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.05",
+      "prerequisite_descriptions": [
+        "连续函数与定积分",
+        "极限与导数定义"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.06",
+      "prerequisite_descriptions": [
+        "一元概率密度",
+        "二重积分与区域面积"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.07",
+      "prerequisite_descriptions": [
+        "二元函数偏导",
+        "闭区间极值与边界参数化"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.08",
+      "prerequisite_descriptions": [
+        "平方和与欧氏距离",
+        "均值和标准差"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.09",
+      "prerequisite_descriptions": [
+        "分类计数",
+        "简单实验设计"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.10",
+      "prerequisite_descriptions": [
+        "命题逻辑真值表",
+        "全称与存在的区别"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_C",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.11",
+      "prerequisite_descriptions": [
+        "简单分数与百分比",
+        "统计抽样和条件概率"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_C",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch97.12",
+      "prerequisite_descriptions": [
+        "三维点积与投影",
+        "勾股定理和正交分解"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.01",
+      "prerequisite_descriptions": [
+        "三维正交坐标系",
+        "勾股定理与三维欧氏距离"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.02",
+      "prerequisite_descriptions": [
+        "向量点积与投影",
+        "一元二次函数配方"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.03",
+      "prerequisite_descriptions": [
+        "连续型随机变量与密度",
+        "线性变量变换"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.04",
+      "prerequisite_descriptions": [
+        "随机抽样与分类频数",
+        "独立事件与条件概率"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "SELECTIVE_COMPULSORY",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.05",
+      "prerequisite_descriptions": [
+        "实数绝对值",
+        "阿基米德性质与整数上取整"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.06",
+      "prerequisite_descriptions": [
+        "实数数列收敛子列",
+        "函数连续性与极值"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.07",
+      "prerequisite_descriptions": [
+        "向量模与矩阵转置",
+        "平面坐标变换"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_A",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.08",
+      "prerequisite_descriptions": [
+        "三维叉积与点积",
+        "线性方程组与直线参数式"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.09",
+      "prerequisite_descriptions": [
+        "一元正态分布",
+        "矩阵行列式与正定性"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.10",
+      "prerequisite_descriptions": [
+        "线性方程组和矩阵求逆",
+        "非负约束和经济变量定义"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_B",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.11",
+      "prerequisite_descriptions": [
+        "等比数列通项",
+        "指数幂与复利"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_C",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "description_count": 2,
+      "editorial_status": "TEXT_ONLY_UNRESOLVED",
+      "lesson_id": "math.hs.batch98.12",
+      "prerequisite_descriptions": [
+        "二维勾股距离",
+        "正交矩阵与旋转"
+      ],
+      "prerequisite_lesson_ids": [],
+      "resolved_id_count": 0,
+      "source_provisional_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    }
+  ],
+  "official_atom_denominators_by_track": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "resolved_prerequisite_id_references": 0,
+  "schema_version": "kb99-prerequisite-editorial-gap-v1",
+  "scope": "TEXTUAL_PREREQUISITES_NOT_APPROVED_GRAPH_EDGES",
+  "status_counts": {
+    "TEXT_ONLY_UNRESOLVED": 66
+  },
+  "student_authoritative_releases": 0,
+  "teacher_approved": 0,
+  "textual_prerequisite_descriptions": 132,
+  "total_deep_draft_lessons": 66
+}

@@ -115,7 +115,7 @@ def build(records=None,baseline=None):
             "notation":row["notation"],"prerequisites":row["prerequisites"],
             "prerequisite_lesson_ids":[],
             "definition":row["definition"] if row["kind"]=="concept" else None,
-            "statement":row["statement"] if row["kind"]!="concept" else None,
+            "statement":row["statement"] if row["kind"]!="concept" else row["statement"],
             "assumptions":row["assumptions"],"proof_steps":proof,"rationale_steps":reasoning,
             "boundaries":[row["boundary"]],
             "counterexamples":[dict(false_claim=row["negative"][0],
@@ -187,7 +187,7 @@ def to_markdown(docs,report):
         out.extend([f'## {doc["id"]}｜{doc["title"]}',"",
            f'课标内部来源：{link["source_candidate_id"]}；轨道：{link["source_track"]}；页码：{link["source_page"]}；SHA256：{link["source_line_sha256"]}',"",
            f'工程映射：{link["engineering_curriculum_id"]}；状态：REVIEW_PENDING／TEACHER_ONLY／NOT_FORMALLY_CERTIFIED。',"",
-           "**定义及表述：** "+(doc["definition"] or doc["statement"]), "",
+           "**定义及表述：** "+(doc["definition"] + "；正式性质/命题：" + doc["statement"] if doc["definition"] and doc["statement"] else (doc["definition"] or doc["statement"])), "",
            "**论域与假设：** "+'；'.join(doc["assumptions"]),"",
            "**符号：** "+'；'.join(doc["notation"]),"",
            "**证明/方法合法性：**"])
