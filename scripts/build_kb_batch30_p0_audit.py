@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
-from app.deep_knowledge import lessons
+from kb_frozen_batch24 import frozen_batch24_lessons
 from app.kb_batch30_exact_witnesses import SUPPORTED,evaluate
 
 HISTORY=ROOT/"docs/evaluation/KB_BATCH25_P0_PROOF_AND_CONFLICT_TRIAGE.json"
@@ -73,7 +73,7 @@ def build(editorial=None,fixtures=None,history=None,prior28=None,prior29=None):
             if any(v[k] for k in ("student_step_verified","complete_theorem_certified","teacher_approved","official_curriculum_atom_verified")):
                 raise ValueError("Unsupported proof/student/teacher promotion")
         witness_rows.append(dict(operation=op,good=good,bad=bad))
-    index={x.id:x for x in lessons()}
+    index={x.id:x for x in frozen_batch24_lessons()}
     if len(index)!=287:raise ValueError("287 existing lessons changed: explicit rebaseline required")
     rows=[]
     for r in entries:

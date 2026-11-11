@@ -10,11 +10,14 @@ from collections import Counter
 import hashlib
 import json
 from pathlib import Path
+import sys
 
 from pydantic import BaseModel, ConfigDict, Field
 from typing import Literal
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path[:0]=[str(ROOT/"backend"),str(ROOT/"scripts")]
+from kb_frozen_batch24 import frozen_batch24_lessons
 SEED = ROOT / "curriculum/highschool_math/k00_batch36_47_legacy_scope_reviews.tsv"
 PRIOR = ROOT / "docs/evaluation/KB_BATCH33_DRAFT_CROSSWALK_AUDIT.json"
 OUT = ROOT / "docs/evaluation/KB_BATCH36_47_LEGACY_SCOPE_AUDIT.json"
@@ -49,6 +52,7 @@ def load_seed(text: str | None = None, *, enforce_pin: bool = True) -> tuple[Rev
     return tuple(rows)
 
 def deep_index() -> dict:
+    frozen_ids={d.id for d in frozen_batch24_lessons()}
     out = {}
     for file in sorted((ROOT / "knowledge/deep/v1").glob("*.json")):
         parsed = json.loads(file.read_text(encoding="utf-8"))
@@ -56,6 +60,7 @@ def deep_index() -> dict:
             raise ValueError(f"Unexpected lesson collection: {file}")
         for x in parsed:
             ident = x["id"]
+            if ident not in frozen_ids: continue  # preserve original legacy 287
             if ident in out:
                 raise ValueError("Duplicate pre-existing deep lesson ID")
             if x["review"]["status"] != "REVIEW_PENDING" or x["teacher_solution_visibility"] != "TEACHER_ONLY":

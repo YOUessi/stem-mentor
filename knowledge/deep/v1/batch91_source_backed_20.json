@@ -1,0 +1,1906 @@
+[
+  {
+    "assumptions": [
+      "讨论对象是普通集合，不将∅与{∅}混为同一对象",
+      "符号∈要求左侧为元素，⊆要求两侧为集合"
+    ],
+    "boundaries": [
+      "∅⊆A总为真不代表∅∈A总为真；例如A={1}时后者为假。"
+    ],
+    "counterexamples": [
+      {
+        "example": "∅没有元素而{∅}含一个元素",
+        "explanation": "集合相等需要元素完全一致。",
+        "false_claim": "空集∅和只含空集元素的集合{∅}相等"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-001"
+    ],
+    "definition": "空集∅没有任何元素；{∅}却是含有唯一元素∅的单元素集合。x∈A描述元素归属，A⊆B描述集合元素的全称包含关系。",
+    "hint_ladder": [
+      "先问花括号内部有几个元素。",
+      "区分∈与⊆两种判断对象。",
+      "对包含关系按任意元素逐一验证。"
+    ],
+    "id": "math.hs.batch91.01",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把空集∅错当成一个集合的唯一空白元素",
+        "repair_question": "让学生列出{∅}到底有几个元素。",
+        "why_wrong": "空集本身可以作为另一个集合的元素"
+      }
+    ],
+    "notation": [
+      "∅：空集",
+      "∈：元素归属",
+      "⊆：子集包含"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "集合外延性",
+      "全称命题的真值"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "核查∅无元素，所以不存在x满足x∈∅。",
+      "检查{∅}的唯一元素恰是空集本身。",
+      "判断A⊆B要对A中任意元素检查归属，A=∅时条件空真。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": null,
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "空集、单元素集合及属于与包含关系",
+    "transfer": {
+      "far": "用集合表示嵌套JSON数组的层级避免把数据对象与元素混淆。",
+      "near": "判断{1}与{{1}}之间的元素关系。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "两命题都为真。",
+        "check": "使用元素归属和全称包含分别核查。",
+        "question": "判断∅∈{∅}和∅⊆{∅}。",
+        "steps": [
+          "{∅}唯一元素是∅，所以前者成立。",
+          "∅不含反例元素，因而是任意集合的子集。"
+        ]
+      },
+      {
+        "answer": "两命题都为假。",
+        "check": "明确左侧{∅}非空。",
+        "question": "判断{∅}⊆∅及∅∈∅。",
+        "steps": [
+          "前者因左集合有元素∅而右边为空集不成立。",
+          "后者需要空集自身含元素∅，实际没有。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "x属于实数域且二次项系数a≠0",
+      "先确认Δ的符号、是否存在两个不同实根"
+    ],
+    "boundaries": [
+      "Δ=0出现重根，表达式在根两侧不改变符号；Δ<0时无实根，不能照抄两根符号图。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=−x²+1在(−1,1)严格为正",
+        "explanation": "忽略a的符号会将解集翻转。",
+        "false_claim": "所有二次式都在两个根之间为负"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-007"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先计算判别式辨认根的数量。",
+      "明确二次项系数正负及根的先后。",
+      "在每个区间取样或因子符号相乘，最后检查端点。"
+    ],
+    "id": "math.hs.batch91.02",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "直接套开口向上图像而不查a",
+        "repair_question": "让学生改成a<0重新列符号。",
+        "why_wrong": "符号表是由a与因子符号共同决定的"
+      }
+    ],
+    "notation": [
+      "a：非零二次系数",
+      "Δ：判别式",
+      "r1<r2：不同实根"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "因式分解",
+      "不等式严格与非严格端点"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "把式子写成a(x-r1)(x-r2)，根按从小到大排列。",
+      "按各开区间上因子的正负号求乘积符号。",
+      "严格不等式排除零点，非严格不等式在相应端点包含等号。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "当Δ>0、r1<r2且a>0时f(x)<0恰在(r1,r2)，f(x)>0在两外侧；a<0时符号全部反转。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二次不等式符号表与重根边界",
+    "transfer": {
+      "far": "对带参数阻尼模型讨论判别式改变时可行区间的突变。",
+      "near": "讨论(x−1)²≤0的全部实数解与根的重数。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "(−2,2)。",
+        "check": "x=0满足，x=3不满足，端点不能包含。",
+        "question": "求x²−4<0的解集。",
+        "steps": [
+          "因式分解为(x−2)(x+2)，两根−2、2。",
+          "首项系数为正，根之间乘积为负。"
+        ]
+      },
+      {
+        "answer": "(−2,2)。",
+        "check": "x=0代原式得4>0。",
+        "question": "求−x²+4>0的解集。",
+        "steps": [
+          "等价于x²−4<0，这是乘负数后的方向反转。",
+          "重复核对两实根及严格边界。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "分支条件覆盖目标定义域",
+      "同一点不能因条件重叠给出两个不同取值"
+    ],
+    "boundaries": [
+      "函数在分界点有值不保证在该点连续；还需检查左极限、右极限与函数值是否一致。"
+    ],
+    "counterexamples": [
+      {
+        "example": "g(x)=1 (x<0)，g(x)=2 (x≥0)，故g(0)=2而不是1",
+        "explanation": "忽略不等号的等号会造成错误。",
+        "false_claim": "边界值可任意取任一段表达式"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-017"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "画出两个分支的定义区间。",
+      "把输入与每个条件逐项比较。",
+      "边界处另外检查两侧趋近值是否一致。"
+    ],
+    "id": "math.hs.batch91.03",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "将左右两条规则同时代入分界点",
+        "repair_question": "问0满足哪一个严格或非严格条件。",
+        "why_wrong": "函数的单值性要求分支选择唯一"
+      }
+    ],
+    "notation": [
+      "f(x)：分段函数",
+      "x<0：负值分支",
+      "x≥0：含0分支"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "函数定义域",
+      "严格不等式与端点"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "先判断输入x属于哪个分支的条件集合。",
+      "只代入该分支表达式而不混用另一段。",
+      "在边界处检查≤与<以确保函数值唯一，并单独讨论左右极限。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对于f(x)=x (x<0)，f(x)=x² (x≥0)，有f(0)=0、f(−2)=−2、f(2)=4。若两分支对同一点冲突则不能定义单值函数。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "分段函数分支判定与边界唯一取值",
+    "transfer": {
+      "far": "模拟不同税率区间的分段计费函数并检查阈值误差。",
+      "near": "把x<0与x≥0改成x≤0与x>0再分析0。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "f(−2)=−2，f(2)=4。",
+        "check": "分支条件与计算均匹配。",
+        "question": "f(x)=x (x<0)，f(x)=x² (x≥0)，计算f(−2)和f(2)。",
+        "steps": [
+          "−2满足x<0，选择第一式得到−2。",
+          "2满足x≥0，第二式得4。"
+        ]
+      },
+      {
+        "answer": "g(0)=2且0处不连续。",
+        "check": "连续性不能仅由存在函数值推断。",
+        "question": "g(x)=1 (x<0)，g(x)=2 (x≥0)，求g(0)并判断连续性。",
+        "steps": [
+          "0属于第二段，所以g(0)=2。",
+          "左极限1，右极限2，两者不相等。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "自变量x与角均按弧度制",
+      "A≠0且ω≠0时才讨论最小正周期"
+    ],
+    "boundaries": [
+      "常数函数虽有任意正周期，却没有最小的正周期；ω是角频率，若自变量单位改变，数值要同步换算。"
+    ],
+    "counterexamples": [
+      {
+        "example": "A=0时f(x)=0，没有最小正周期；ω=0时公式分母为0",
+        "explanation": "公式必须同时满足非退化条件。",
+        "false_claim": "任意A和ω都能套周期公式"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-031"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先检查振幅与角频率是否为零。",
+      "将角度变化量设为ωT。",
+      "要求最小的正角度周期，注意绝对值。"
+    ],
+    "id": "math.hs.batch91.04",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "把T写成2π/ω而忽略ω<0",
+        "repair_question": "问ω=−2时周期能否是负数。",
+        "why_wrong": "正周期必须为正，角频率的绝对值不可省"
+      }
+    ],
+    "notation": [
+      "A：振幅系数",
+      "ω：角频率",
+      "T：基本正周期"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "正弦函数周期性",
+      "弧度制"
+    ],
+    "proof_steps": [
+      {
+        "claim": "给出周期：f(x+2π/|ω|)的角度相较于f(x)增加±2π，正弦值不变。",
+        "reason": "使用恒等式sin(t+2π)=sin(t)，并且ω/|ω|只可能为±1。"
+      },
+      {
+        "claim": "排除更小正周期：若A≠0，任何周期h>0都要求sin(t+ωh)=sin(t)对所有实t成立，故ωh为2π整数倍。",
+        "reason": "在Aω均非零时令t=ωx+φ遍历R，利用正弦恒等全局周期必须是2π的整数倍。"
+      },
+      {
+        "claim": "判定最小值：|ω|h最小正值为2π，所以h=2π/|ω|；若ω=0或A=0则常数函数的每个正数都是周期。",
+        "reason": "对任意正周期h有|ω|h≥2π；常数函数不满足存在最小正周期的定义。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "只有非退化的正弦型函数A sin(ωx+φ)才具有T=2π/|ω|这一基本正周期；平移φ不会改变周期。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "正弦型函数基本周期的非退化条件",
+    "transfer": {
+      "far": "由弹簧信号的角频率估算物理周期并检查单位。",
+      "near": "求sin(−3x+1)的最小正周期。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "T=π。",
+        "check": "移相项π/3不改变周期。",
+        "question": "求y=3sin(2x+π/3)基本周期。",
+        "steps": [
+          "A=3非零且ω=2非零，允许使用公式。",
+          "T=2π/|2|。"
+        ]
+      },
+      {
+        "answer": "没有基本正周期。",
+        "check": "不能把2π/5错当最小正周期。",
+        "question": "y=0·sin(5x)有基本正周期吗？",
+        "steps": [
+          "该函数对所有x取0，是常数。",
+          "任意T>0均满足周期条件但不存在最小正T。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "逻辑使用经典二值真假",
+      "原命题与否定命题的变量论域完全相同"
+    ],
+    "boundaries": [
+      "不能只反向不等式符号却保持原全称量词，也不能将实数论域替换为自然数论域。"
+    ],
+    "counterexamples": [
+      {
+        "example": "在R中∀x,x²>0为假，其真正否定有见证x=0；∀x,x²≤0也为假",
+        "explanation": "后一公式过强，不与原命题的否定等价。",
+        "false_claim": "¬∀x P(x)应写成∀x ¬P(x)"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-004"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "识别命题最外层量词类型。",
+      "保持同一个论域并交换量词。",
+      "否定内部谓词，最后用反例或全称证明检查。"
+    ],
+    "id": "math.hs.batch91.05",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "否定量词命题时忘记交换全称与存在",
+        "repair_question": "先试着找一个让全称命题失败的见证。",
+        "why_wrong": "存在一个反例与所有对象都违反不同"
+      }
+    ],
+    "notation": [
+      "∀：任意",
+      "∃：至少一个",
+      "¬：逻辑否定"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "命题真假",
+      "集合与论域"
+    ],
+    "proof_steps": [
+      {
+        "claim": "否定全称：∀x∈D,P(x)不成立，按语义恰意味着存在一个x∈D使P(x)假。",
+        "reason": "经典逻辑中全称式的真假由所有论域成员的P取值定义，失败正是存在反例。"
+      },
+      {
+        "claim": "否定存在：不存在任何x∈D满足P(x)，正是对每个x∈D都有¬P(x)。",
+        "reason": "存在量词式为假等价于每个论域成员都无法使谓词成立。"
+      },
+      {
+        "claim": "保持论域：以上转换只操作量词与谓词真假，不改变D，也适用于空论域的经典语义。",
+        "reason": "量词变换作用于同一集合D；空集时的全称真与存在假也保持等价。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "否定量词命题必须交换最外层全称/存在量词，并逐点否定同一谓词，论域D不允许偷换。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "全称与存在量词的精确否定",
+    "transfer": {
+      "far": "用软件属性测试对照一个反例与全部样本测试通过的逻辑差别。",
+      "near": "否定存在整数n使n²=2。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "∃x∈R,x²≤0。",
+        "check": "x=0是使否定为真的证据。",
+        "question": "否定∀x∈R,x²>0。",
+        "steps": [
+          "外层全称交换为存在，论域R不变。",
+          "把x²>0否定为x²≤0。"
+        ]
+      },
+      {
+        "answer": "∀n∈Z,n²≥0。",
+        "check": "整数平方非负，所得命题确实为真。",
+        "question": "否定∃n∈Z,n²<0。",
+        "steps": [
+          "外层存在改全称，论域整数Z不变。",
+          "将小于0否定为大于等于0。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "对数原底数a>0且a≠1",
+      "b>0且b≠1，并且x>0"
+    ],
+    "boundaries": [
+      "当a=1或b=1时对数底不合法；当x≤0时实对数无定义，不能把无效值代入。"
+    ],
+    "counterexamples": [
+      {
+        "example": "a=1时log_b(a)=0且原log_1(x)不构成合法函数",
+        "explanation": "分母非零与真数正不能省略。",
+        "false_claim": "log_a(x)对任意实a,x都能换底"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-022"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先检查两个底数与真数的域。",
+      "从a^y=x出发两侧取同一合法底的对数。",
+      "除以log_b(a)前证明其非零。"
+    ],
+    "id": "math.hs.batch91.06",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "将ln(a)=0时仍然约掉分母",
+        "repair_question": "检查a=1对应了哪一步不可逆除法。",
+        "why_wrong": "取对数必须先证明底数和真数在定义域内"
+      }
+    ],
+    "notation": [
+      "a,b：合法底数",
+      "x：正真数",
+      "log_a(x)：以a为底对数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "指数对数互逆",
+      "非零除法条件"
+    ],
+    "proof_steps": [
+      {
+        "claim": "引入变量：令y=log_a(x)，由对数定义有a^y=x。",
+        "reason": "实对数定义以a>0、a≠1、x>0为前提，指数与对数互逆。"
+      },
+      {
+        "claim": "两侧同底取对数：对a^y=x使用底数b的对数得到y log_b(a)=log_b(x)。",
+        "reason": "在b>0且b≠1时，对数幂法则log_b(a^y)=ylog_b(a)合法。"
+      },
+      {
+        "claim": "检验除法合法：由a≠1得log_b(a)≠0，因而可相除并得到换底表达式。",
+        "reason": "log_b(a)=0当且仅当a=1，因此前提a≠1保证所除因子非零。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对数换底只在底数正且不为1、真数为正时合法；log_b(a)≠0来自a≠1，不能凭公式忘掉分母条件。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "对数换底公式的域和分母条件",
+    "transfer": {
+      "far": "讨论数值程序中log(0)及换底分母接近0的稳定性。",
+      "near": "用底数10计算log_4(2)。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "log_2(8)=3。",
+        "check": "2³=8可反代核实。",
+        "question": "求log_2(8)，用自然对数换底。",
+        "steps": [
+          "2>0且2≠1、8>0，域合法。",
+          "ln8/ln2=3ln2/ln2。"
+        ]
+      },
+      {
+        "answer": "不能计算实对数log_1(8)。",
+        "check": "1的任何实数幂恒为1而不是8。",
+        "question": "能否计算log_1(8)并换底？",
+        "steps": [
+          "底数1违反a≠1条件。",
+          "换底分母ln1=0，没有合法商。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "求和索引n为正整数且至少有一项",
+      "数列项由a_k=a₁q^(k−1)定义，q可为任意实数但分母讨论分支"
+    ],
+    "boundaries": [
+      "q=1时分式为0/0，不能直接代入；q=0时应以首项a₁及递推项定义数列，后续各项为0，避免不经约定使用0^0；a₁=0时不能用相邻项相除来定义公比；默认n≥1。"
+    ],
+    "counterexamples": [
+      {
+        "example": "q=1时分母1−q=0，但三项为a₁的数列和为3a₁",
+        "explanation": "求和实际存在却不能使用未分支的分式公式。",
+        "false_claim": "等比数列求和分式公式对q=1也能够直接代入"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-065"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先看n与首项、公比取值。",
+      "写出S_n和qS_n的错位排列。",
+      "相减之后按q=1与q≠1分类。"
+    ],
+    "id": "math.hs.batch91.07",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "先除以1−q再检查q=1",
+        "repair_question": "问当q=1时错位相减留下什么等式。",
+        "why_wrong": "任何除法都需要先确定分母非零"
+      }
+    ],
+    "notation": [
+      "a₁：首项",
+      "q：公比",
+      "S_n：前n项和"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "等比数列定义",
+      "多项式代数与合法除法"
+    ],
+    "proof_steps": [
+      {
+        "claim": "列出原和：S_n=a₁+a₁q+⋯+a₁q^(n−1)，qS_n=a₁q+⋯+a₁q^n。",
+        "reason": "等比数列项由a_k=a₁q^(k−1)定义，对有限n列出两组错位和。"
+      },
+      {
+        "claim": "错位相减：逐项相减后(1−q)S_n=a₁(1−q^n)，这是对任意q成立的等式。",
+        "reason": "等式每项两两抵消，仅首项和新产生的末项没有抵消。"
+      },
+      {
+        "claim": "分支除法：只有q≠1时才能除以(1−q)；q=1时由定义直接累加n项得na₁。",
+        "reason": "q=1时不能用1−q作分母，按有限求和定义得到na₁。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "q≠1时S_n=a₁(1−q^n)/(1−q)；q=1时所有项均为a₁，S_n=na₁。两个分支不能混淆。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "等比数列有限和的公比分类推导",
+    "transfer": {
+      "far": "在复利增长模型中检查增长率为0时的累计额分类。",
+      "near": "计算q=−1时奇偶n的和。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "S₃=26。",
+        "check": "逐项累加与错位相减公式得到相同数值。",
+        "question": "a₁=2、q=3、n=3求S₃。",
+        "steps": [
+          "逐项2,6,18相加得到26。",
+          "分类条件q≠1，公式2(1−27)/(1−3)=26。"
+        ]
+      },
+      {
+        "answer": "S₄=8。",
+        "check": "逐项相加2+2+2+2=8。",
+        "question": "a₁=2、q=1、n=4求S₄。",
+        "steps": [
+          "四项分别都等于2。",
+          "q=1应直接用na₁而非分式。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "x₀属于函数定义域的内部",
+      "f在x₀可导，且假设存在局部极值"
+    ],
+    "boundaries": [
+      "边界极值不需要满足导数为零；f(x)=x³在x=0有f′(0)=0但严格单调，非局部极值。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=x³在0处导数为0，却在0两侧继续上升",
+        "explanation": "缺少导数符号变化或高阶判断。",
+        "false_claim": "只要导数等于零的驻点一定是极大或极小点"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-069"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "确认x₀在定义域内点且f可导。",
+      "用f′=0确定候选，再比较邻近函数值。",
+      "通过符号变化或直接不等式验证充分性。"
+    ],
+    "id": "math.hs.batch91.08",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "把必要条件错误当作充要条件",
+        "repair_question": "问x³的左右导数符号有否改变。",
+        "why_wrong": "f′为0只筛出候选而不是完成证明"
+      }
+    ],
+    "notation": [
+      "x₀：候选驻点",
+      "f′：导数",
+      "局部极值：某邻域中的极大或极小"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "导数的极限定义",
+      "局部最大最小值"
+    ],
+    "proof_steps": [
+      {
+        "claim": "考虑右侧差商：局部极大时h>0足够小，(f(x₀+h)−f(x₀))/h≤0。",
+        "reason": "局部极大定义保证足够小邻域内函数值不超过中心函数值。"
+      },
+      {
+        "claim": "考虑左侧差商：同样极大时h<0足够小，分子≤0而分母负，差商≥0。",
+        "reason": "对负h做除法会翻转分子非正所导出的不等式方向。"
+      },
+      {
+        "claim": "使用可导性：左右极限若同为f′(x₀)，必满足同时≥0且≤0，故等于0；极小情形不等式反向。",
+        "reason": "点处可导使左右差商趋向同一个实数，两侧的符号夹逼迫使其为0。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "费马必要条件要求可导和内点局部极值；只有f′(x₀)=0本身无法判定该点是否为极值。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "驻点为极值的必要条件而非充分条件",
+    "transfer": {
+      "far": "在优化算法中区分梯度为零的鞍点、极值点和平台点。",
+      "near": "讨论x⁴与x³在0的差别。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "0是局部和全局最小值点。",
+        "check": "直接用非负性证明而非仅凭f′=0。",
+        "question": "f(x)=x²，判断x=0是否极值。",
+        "steps": [
+          "导数2x在0处为0，只得到候选。",
+          "x²≥0且仅x=0取0。"
+        ]
+      },
+      {
+        "answer": "0不是局部极值点。",
+        "check": "在任意0邻域两侧都有更大和更小值。",
+        "question": "f(x)=x³，判断x=0是否极值。",
+        "steps": [
+          "f′(x)=3x²，0是驻点。",
+          "负x对应负函数值，正x对应正函数值，因此0不是极值。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "n与v均为非零三维向量",
+      "P为直线上一点，Q为平面上一点"
+    ],
+    "boundaries": [
+      "当n·v≠0时有唯一交点参数t；n=0不能充当平面法向量，v=0不能充当直线方向向量。"
+    ],
+    "counterexamples": [
+      {
+        "example": "Π为z=0，L为(x,0,0)，n=(0,0,1)，v=(1,0,0)，线实际在面内",
+        "explanation": "只检测方向不足以区分重合与不交。",
+        "false_claim": "n·v=0总表示两者不相交"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-075"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写出非零方向向量与非零法向量。",
+      "检查点积是否为零。",
+      "再检验一个直线基点满足平面方程与否。"
+    ],
+    "id": "math.hs.batch91.09",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "忘记检查直线上一点是否在平面上",
+        "repair_question": "代P到平面方程看看是否为0。",
+        "why_wrong": "平行的方向点积条件没有判定直线的实际空间位置"
+      }
+    ],
+    "notation": [
+      "Π：三维平面",
+      "n：非零法向量",
+      "v：非零直线方向"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "三维向量点积",
+      "空间直线参数方程"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "先验算n·v，零意味着沿直线方向平面方程值不变。",
+      "将直线参数式代入平面方程，得到n·(P−Q)+t(n·v)=0。",
+      "若n·v=0，则检验常数项是零还是非零，分别为包含或不相交。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "n·v=0说明直线的方向与平面平行，但若n·(P−Q)=0则L包含于Π；若该值不为0才是L与Π不相交的通常平行关系。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "线面平行向量条件与直线包含退化",
+    "transfer": {
+      "far": "对机器人的路径约束区分路径平行地面与路径实际位于地面。",
+      "near": "平面x+y+z=0与方向(1,−1,0)的直线位置讨论。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "两者平行而不相交。",
+        "check": "每个t都不使z=0。",
+        "question": "Π:z=0，L:(t,0,1)有交点吗？",
+        "steps": [
+          "n=(0,0,1)，v=(1,0,0)，n·v=0。",
+          "P=(0,0,1)不在Π内，代入恒为z=1。"
+        ]
+      },
+      {
+        "answer": "直线包含于平面。",
+        "check": "所有实数t均有z=0，原直线全部在平面内。",
+        "question": "Π:z=0，L:(t,0,0)位置关系。",
+        "steps": [
+          "方向同样满足n·v=0。",
+          "此时P=(0,0,0)满足平面方程，整条直线在面内。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a<b且f在[a,b]连续",
+      "f在(a,b)可导并且内部导数保持指定符号"
+    ],
+    "boundaries": [
+      "导数非负在适当连续可导条件下给出非减，不一定严格递增；不可凭离散少量导数采样推广到整个区间。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=x³严格递增，但f′(0)=0",
+        "explanation": "把充分条件误当必要条件。",
+        "false_claim": "严格递增函数的导数必须处处正"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-068"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先核查闭区间连续及内部可导。",
+      "研究导数在整个内区间的符号而不是一两个样本。",
+      "注意充分与必要条件的方向是否被倒置。"
+    ],
+    "id": "math.hs.batch91.10",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "只取一个点导数为正就宣布全区间递增",
+        "repair_question": "要问导数在哪些区间保持正号。",
+        "why_wrong": "全区间符号条件才支撑中值定理论证"
+      }
+    ],
+    "notation": [
+      "f′：导数",
+      "[a,b]：闭区间",
+      "严格递增：任取x1<x2有f(x1)<f(x2)"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "导数与中值定理",
+      "函数单调性定义"
+    ],
+    "proof_steps": [
+      {
+        "claim": "任取两点：选a≤x1<x2≤b，函数在[x1,x2]连续且内部可导。",
+        "reason": "连续函数的限制仍连续，可导函数在更小开区间仍可导。"
+      },
+      {
+        "claim": "套中值定理：存在c∈(x1,x2)使f(x2)−f(x1)=f′(c)(x2−x1)。",
+        "reason": "由拉格朗日中值定理且c位于(x1,x2)中，存在精确增量等式。"
+      },
+      {
+        "claim": "检验符号：若f′(c)>0且x2−x1>0，则f(x2)>f(x1)，满足严格递增定义。",
+        "reason": "两个严格正因子的积严格正，任意点对满足严格单调定义。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "导数严格正提供函数严格递增的充分条件，但严格递增不要求每个点的导数都严格正，如x³在0导数为0。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "导数符号与单调性的充分条件",
+    "transfer": {
+      "far": "用单调性检查模型的变量变化方向而非单点斜率。",
+      "near": "研究x⁴在[−2,2]上的单调分段。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "[1,3]严格递增。",
+        "check": "f(1)=1<f(3)=9。",
+        "question": "求f(x)=x²在[1,3]的单调性。",
+        "steps": [
+          "f′(x)=2x，在(1,3)>0。",
+          "闭区间连续且内部可导，应用单调性充分条件。"
+        ]
+      },
+      {
+        "answer": "严格递增，不需要导数处处严格正。",
+        "check": "用−1<0<1代入检查直觉。",
+        "question": "f(x)=x³在[−1,1]严格递增吗？",
+        "steps": [
+          "f′=3x²在0为零，但别处非负。",
+          "x1<x2时立方函数保持次序，直接证明严格递增。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a_n为实数且索引n取正整数",
+      "极限存在某个有限实数L"
+    ],
+    "boundaries": [
+      "(−1)^n始终在[−1,1]但奇偶子列分别趋向−1与1；有界性是必要非充分条件。"
+    ],
+    "counterexamples": [
+      {
+        "example": "a_n=(−1)^n有界却来回振荡",
+        "explanation": "必须检查极限定义而不是只检查范围。",
+        "false_claim": "每个有界的实数数列都必须收敛到一个实数"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-115"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "分清有界与ε–N收敛的量词。",
+      "先从收敛假设控制充分大的尾项。",
+      "再用有限前段的最大值补齐全体。"
+    ],
+    "id": "math.hs.batch91.11",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "认为收敛只需要没有无穷大项",
+        "repair_question": "比较奇数和偶数子列。",
+        "why_wrong": "振荡同样能阻止存在唯一极限"
+      }
+    ],
+    "notation": [
+      "a_n：数列第n项",
+      "L：有限极限",
+      "ε>0：任意误差阈值"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "绝对值与三角不等式",
+      "数列收敛定义"
+    ],
+    "proof_steps": [
+      {
+        "claim": "控制尾项：取ε=1，根据收敛定义存在N，使所有n≥N有|a_n−L|<1。",
+        "reason": "收敛定义对于固定ε=1给出所有充分大索引项的尾部误差控制。"
+      },
+      {
+        "claim": "尾项统一有界：三角不等式给|a_n|≤|L|+|a_n−L|<|L|+1。",
+        "reason": "使用绝对值三角不等式|u+v|≤|u|+|v|。"
+      },
+      {
+        "claim": "合并有限前段：有限个|a_1|,…,|a_(N−1)|有最大值，和|L|+1取较大者便控制全体。",
+        "reason": "正整数的有限前缀有有限最大绝对值，与尾部统一上界合并。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "每个收敛实数数列必有界；有界数列却未必收敛，典型反例是a_n=(−1)^n。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "收敛数列有界：真命题与错误逆命题",
+    "transfer": {
+      "far": "检验迭代算法状态量有界是否足以说明其数值收敛。",
+      "near": "讨论sin(nπ/2)的有界与收敛。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "有界且收敛于0。",
+        "check": "对ε>0取N>1/ε。",
+        "question": "a_n=1/n是否有界？",
+        "steps": [
+          "n≥1使0<1/n≤1，直接得到上界1。",
+          "用ε–N定义也可证其趋于0。"
+        ]
+      },
+      {
+        "answer": "有界但不收敛。",
+        "check": "单个数列不可能同时收敛到两个不同极限。",
+        "question": "a_n=(−1)^n是否收敛？",
+        "steps": [
+          "所有项绝对值为1，有界。",
+          "偶数项为1、奇数项为−1，两个子列不同极限。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a属于定义域且是定义域的聚点",
+      "讨论通常实函数在定义域内的极限"
+    ],
+    "boundaries": [
+      "端点处应使用定义域内的单侧极限；孤立定义域点在相对拓扑下另有连续性定义，不能套双侧趋近。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=x (x≠0)，f(0)=1有函数值但lim(x→0)f(x)=0",
+        "explanation": "函数在考察点的取值与邻域趋近的极限不一致。",
+        "false_claim": "只要f(a)存在就足以证明f在a点连续"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-139"
+    ],
+    "definition": "设a属于定义域且a是可从定义域其他点趋近的聚点；函数f在a连续指lim(x→a)f(x)=f(a)，其中左右两侧的合法趋近应共同符合要求。",
+    "hint_ladder": [
+      "先列出点值是否存在。",
+      "求左右合法极限而不是直接代点值。",
+      "比较极限和点值是否完全相等。"
+    ],
+    "id": "math.hs.batch91.12",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "只计算函数值而忘记极限",
+        "repair_question": "试着只改变f(0)并观察极限是否改变。",
+        "why_wrong": "连续性需要点值和邻近行为的匹配"
+      }
+    ],
+    "notation": [
+      "lim：极限符号",
+      "a：考察点",
+      "f(a)：点处函数值"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch91.03"
+    ],
+    "prerequisites": [
+      "函数极限",
+      "分段函数定义域"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "先检查f(a)是否确有定义。",
+      "独立研究x趋近a但x≠a时的函数值极限。",
+      "仅当极限存在且等于点值f(a)时宣布连续。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": null,
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "一点连续性与函数值修补的区别",
+    "transfer": {
+      "far": "软件数值函数在分支切换处检测突变与可去异常。",
+      "near": "讨论f(x)=|x|/x (x≠0)能否在0修补连续。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "0处不连续。",
+        "check": "极限0不等于点值1。",
+        "question": "f(x)=x (x≠0)，f(0)=1，0处连续吗？",
+        "steps": [
+          "f(0)=1。",
+          "由x≠0部分可知lim(x→0)f(x)=0。"
+        ]
+      },
+      {
+        "answer": "设f(0)=0即可连续。",
+        "check": "改值后lim(x→0)f(x)=f(0)=0。",
+        "question": "怎样修改上一题使0处连续？",
+        "steps": [
+          "保留x≠0时f(x)=x的表达式。",
+          "把f(0)由1改为极限0。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a<b，f在闭区间连续",
+      "f在开区间可导，且有统一导数上界M≥0"
+    ],
+    "boundaries": [
+      "只在一小部分采样点观察导数大小不能确定全区间M；若f不可导或有跳跃，不能无条件套用中值定理。"
+    ],
+    "counterexamples": [
+      {
+        "example": "阶跃函数在0断开时无法直接用跨0区间的导数界推增量界",
+        "explanation": "连续可导是不可省略的前提。",
+        "false_claim": "只要端点函数值存在就有中值定理增量界"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-121"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "确认连续、可导及整个区间的导数界。",
+      "先写中值定理给出的某个中间点。",
+      "取绝对值后使用统一M，不要用端点采样冒充上界。"
+    ],
+    "id": "math.hs.batch91.13",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "以单点f′值替代全区间上界",
+        "repair_question": "让学生画导数随x变化图而非只在x=a测量。",
+        "why_wrong": "中值点c未知，需确保所有可能c均满足界"
+      }
+    ],
+    "notation": [
+      "M：导数绝对值统一上界",
+      "a<b：区间端点",
+      "c：中值定理给出的内点"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch91.10"
+    ],
+    "prerequisites": [
+      "导数定义",
+      "拉格朗日中值定理"
+    ],
+    "proof_steps": [
+      {
+        "claim": "套用中值定理：先通过连续、可导假设取得存在c∈(a,b)的等式f(b)−f(a)=f′(c)(b−a)。",
+        "reason": "连续闭区间、可导开区间的条件允许使用已知中值定理。"
+      },
+      {
+        "claim": "取绝对值：得到|f(b)−f(a)|=|f′(c)|·|b−a|。",
+        "reason": "对实数等式两侧取绝对值，并用绝对值积法则。"
+      },
+      {
+        "claim": "使用一致上界：因为c位于需要检查的全区间内，|f′(c)|≤M，立即得到要求的增量界。",
+        "reason": "统一上界必须对每个c∈(a,b)有效，因而适用于未知中值点。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在上述条件下，若所有内点满足|f′(x)|≤M，则|f(b)−f(a)|≤M|b−a|；M≥0须覆盖整个内区间。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "中值定理的导数上界与增量界",
+    "transfer": {
+      "far": "将已知最大速度换算成位置增量上界，但注意速度假设需覆盖全时段。",
+      "near": "利用|cos x|≤1证明|sin b−sin a|≤|b−a|。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "3≤4成立。",
+        "check": "真实差值来自4−1=3。",
+        "question": "f(x)=x²在[1,2]，取M=4检验增量界。",
+        "steps": [
+          "f在闭区间连续内部可导，导数2x∈[2,4]。",
+          "|f(2)−f(1)|=3，M|2−1|=4。"
+        ]
+      },
+      {
+        "answer": "M=3合法且恰好取等。",
+        "check": "中值定理在仿射函数上精确取等。",
+        "question": "f(x)=3x+1在[0,2]，M能取3吗？",
+        "steps": [
+          "导数对全区间为常数3。",
+          "增量f(2)−f(0)=6，界3×2=6。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "可行域是非空且有界的闭凸多边形",
+      "目标f(x,y)=px+qy为仿射函数"
+    ],
+    "boundaries": [
+      "若可行域无界，线性目标可能不具有有限最大值；若可行域为空，则根本不存在可行解。"
+    ],
+    "counterexamples": [
+      {
+        "example": "可行域x≥0，y=0且目标最大化x没有最大值",
+        "explanation": "无界域的目标可向无穷增加。",
+        "false_claim": "任意线性规划都有顶点最优解"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-133"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先把不等式组对应的可行域画出并验证非空有界。",
+      "求全部候选顶点并代入约束筛掉假顶点。",
+      "比较顶点目标值并解释为何不用猜测内部值。"
+    ],
+    "id": "math.hs.batch91.14",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "仅比较直线交点但不检验约束",
+        "repair_question": "逐个代入所有原不等式。",
+        "why_wrong": "两条边界交点不一定落在可行多边形内"
+      }
+    ],
+    "notation": [
+      "f=px+qy：仿射目标",
+      "可行域：约束交集",
+      "顶点：多边形极点"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "二元一次不等式",
+      "凸组合与仿射性质"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "确定全部约束直线的交点并代回每个不等式筛选真实可行顶点。",
+      "凸多边形中每个点都是顶点的凸组合；仿射函数在凸组合上取各顶点目标值的同样加权平均。",
+      "加权平均不超出顶点目标值的最小与最大，所以极值至少在顶点达到。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "多边形顶点法要求非空且有界的多边形可行域；目标函数线性时，只需比较全部实际可行顶点就能找到最优值。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "有界多边形线性规划顶点法的适用范围",
+    "transfer": {
+      "far": "资源配置中如果预算约束缺失，讨论为何最优解可能无界。",
+      "near": "当目标x+y的等值线平行某条边时分析多解。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "最大值3在(0,3)。",
+        "check": "(0,3)确实满足x≥0,y≥0,3x+2y≤6。",
+        "question": "三角形顶点(0,0),(2,0),(0,3)上最大化x+y。",
+        "steps": [
+          "逐顶点目标值分别为0、2、3。",
+          "目标仿射，非空有界多边形保证有顶点最优。"
+        ]
+      },
+      {
+        "answer": "最小值0在(0,0)。",
+        "check": "所有可行点x,y非负，目标不可能小于0。",
+        "question": "相同可行域上最小化2x+y。",
+        "steps": [
+          "三个顶点值0、4、3。",
+          "仿射目标最低顶点值为0。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "函数定义在考察点附近的二维域内",
+      "偏导差商仅在坐标轴方向取极限，和二维同时趋近不同"
+    ],
+    "boundaries": [
+      "偏导存在只提供方向信息；即使偏导全为零，也不能保证其余路径的函数值趋近同一点值。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x,y)=xy/(x²+y²) (非原点),f(0,0)=0在轴上恒零，但沿y=x趋向1/2",
+        "explanation": "函数不连续，因此不可微。",
+        "false_claim": "某点只要有两个偏导数就必然在这一点连续"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-127"
+    ],
+    "definition": "二元函数f在(a,b)的x偏导数是固定y=b后的一元差商极限，y偏导类似；可微要求f(a+h,b+k)=f(a,b)+Ah+Bk+o(√(h²+k²))。",
+    "hint_ladder": [
+      "先只固定一个坐标再计算偏导。",
+      "思考可微要求对所有趋近路径有效。",
+      "尝试对角线或曲线方向寻找反例。"
+    ],
+    "id": "math.hs.batch91.15",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "用两条轴方向极限代替二维极限",
+        "repair_question": "提出沿y=x的验证问题。",
+        "why_wrong": "检查对角线y=x能直接揭示漏掉的行为"
+      }
+    ],
+    "notation": [
+      "∂f/∂x：x偏导",
+      "∂f/∂y：y偏导",
+      "o(r)：高阶无穷小"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch91.12"
+    ],
+    "prerequisites": [
+      "一元导数",
+      "二维极限"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "沿x轴令k=0计算偏导差商。",
+      "沿y轴令h=0计算另一个偏导差商。",
+      "可微要求所有(h,k)趋零的方向上同时满足统一线性近似，不可仅靠两条坐标轴。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": null,
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "偏导数存在与全微分存在不能混同",
+    "transfer": {
+      "far": "二参数风险模型在只沿单一变量变化时是否能代表联合扰动。",
+      "near": "计算f=x²+y²在(1,1)的线性近似。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "两个偏导都为0。",
+        "check": "该函数实际上可微，但此结论须另证。",
+        "question": "f(x,y)=x²+y²在(0,0)的两个偏导。",
+        "steps": [
+          "固定y=0得到x²，差商x趋零。",
+          "固定x=0得到y²，差商y趋零。"
+        ]
+      },
+      {
+        "answer": "原点不连续，故不可微。",
+        "check": "不同路径极限不一致。",
+        "question": "f=xy/(x²+y²)在非原点，原点置0，原点连续吗？",
+        "steps": [
+          "x轴和y轴上函数值0，所以两偏导都为0。",
+          "沿y=x且x≠0时函数值恒为1/2。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "D非空、闭且有界，f在D连续",
+      "对内部候选使用可微与梯度条件，边界单独参数化"
+    ],
+    "boundaries": [
+      "若可行域不是紧集，极值未必存在；边界存在不可导点时还需额外检查，不能只看可微方程。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x,y)=x+y在[0,1]²内无驻点，却在(1,1)取最大2",
+        "explanation": "闭域的边界和角点候选必须独立纳入最值比较。",
+        "false_claim": "内部驻点决定闭域的全部极值"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-133"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "核查定义域紧致与连续性以保证存在最值。",
+      "先查内部可微驻点，但不要因此停止。",
+      "逐条边界和角点进行值比较。"
+    ],
+    "id": "math.hs.batch91.16",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "只求梯度为零就提交答案",
+        "repair_question": "先问边界是否可能产生更大值。",
+        "why_wrong": "梯度条件仅针对内部可微极值"
+      }
+    ],
+    "notation": [
+      "D：可行闭域",
+      "∇f：梯度",
+      "内点/边界：不同候选条件"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "二元偏导",
+      "紧集上的连续函数最值"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "列出内部驻点：有内点局部极值且可微时两个偏导均为0。",
+      "分别参数化每条边界并求其受约束的一元极值及端点。",
+      "将所有合法候选代回f比较，才能确定全域最值。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在闭有界可行域求极值，要同时计算内部驻点、边界上一元化后的候选以及角点，并比较实际函数值。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二元函数闭域极值必须检查边界",
+    "transfer": {
+      "far": "经济二元优化中加入预算约束后最优点为什么移动到边界。",
+      "near": "对三角形区域求x²+y²的最值。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "最大值2在(1,1)。",
+        "check": "每个可行x,y≤1故x+y≤2。",
+        "question": "f=x+y在方形[0,1]²求最大值。",
+        "steps": [
+          "内部梯度(1,1)永不为零。",
+          "比较四角，(1,1)使x+y=2。"
+        ]
+      },
+      {
+        "answer": "最小0；最大1在整个圆周。",
+        "check": "闭圆盘满足0≤x²+y²≤1。",
+        "question": "f=x²+y²在单位闭圆盘求最小与最大值。",
+        "steps": [
+          "内部驻点(0,0)给出最小候选0。",
+          "边界x²+y²=1上函数恒为1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "先清楚定义目标人群与调查指标",
+      "抽样概率或响应机制须有可以核查的假设"
+    ],
+    "boundaries": [
+      "数值反例只是虚构小总体，不代表任何真实学生数据；有些覆盖偏差可用有根据的权重模型缓解，但不保证通用修正。"
+    ],
+    "counterexamples": [
+      {
+        "example": "总体200人中线上群100人全支持，线下100人全反对，线上随机样本100%支持而总体仅50%",
+        "explanation": "没有进入抽样框的目标成员根本不可能被选到，入样概率是0。",
+        "false_claim": "框内完全随机就保证对目标总体无偏"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-159"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写出目标总体到底是谁。",
+      "检查抽样框遗漏了哪些目标对象。",
+      "说明抽样误差与覆盖偏差的不同来源。"
+    ],
+    "id": "math.hs.batch91.17",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把抽样随机和覆盖完整混作同一条件",
+        "repair_question": "让学生说出谁根本不可能被抽中。",
+        "why_wrong": "随机只描述已纳入框内的抽取过程"
+      }
+    ],
+    "notation": [
+      "目标总体：推断对象",
+      "抽样框：可被抽中的成员集合",
+      "覆盖偏差：遗漏或重复覆盖"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "比例与加权平均",
+      "随机抽样的样本空间"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "区分目标总体与抽样框的成员资格。",
+      "检查哪些目标成员的入样概率为0，记录覆盖缺口。",
+      "再分析框内抽样、无应答、测量误差如何影响推断，不能用样本大小弥补系统性缺口。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "只有在抽样框与目标总体足够匹配且响应机制受控时，才可能按相应抽样设计推断总体；不能用框内随机性代替总体代表性。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "抽样框覆盖与目标总体的偏差",
+    "transfer": {
+      "far": "评估某App用户满意度时只抽活跃用户会造成什么偏差。",
+      "near": "调查仅从白天到店顾客抽取，对全部顾客会遗漏谁？"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "框内结果100%，总体真实值50%。",
+        "check": "大样本不能修复缺失的另一半成员。",
+        "question": "某虚构总体200人：前100人支持，后100人不支持；抽样框仅前100人。框内全查会报多少支持率？",
+        "steps": [
+          "框内100人均支持，报告100%。",
+          "真实目标总体支持100/200=50%。"
+        ]
+      },
+      {
+        "answer": "总体支持率50%。",
+        "check": "分层人数已知且两个子组均覆盖才可直接合并。",
+        "question": "若已知总体两层各100人且分别支持80和20人，总体支持率多少？",
+        "steps": [
+          "两层等权：80+20=100人支持。",
+          "总体容量200，计算100/200。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "P≥0,n为非负整数且r>−1",
+      "每期利率恒定，期末复投且无中途现金流"
+    ],
+    "boundaries": [
+      "现实金融产品可能存在变动利率、缴款、复利频率、税费与信用风险；这是教学数学模型而非投资收益承诺。"
+    ],
+    "counterexamples": [
+      {
+        "example": "r=0时两者相等；r<0时可能比较关系反转",
+        "explanation": "不能无视r及n直接宣称严格不等式。",
+        "false_claim": "在所有本金、利率和期数下复利余额总大于单利余额"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-143"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先明确每期是否将利息加入下期计息基数。",
+      "写出每一期余额递推规则。",
+      "用n和r的假设讨论何时两模型相同。"
+    ],
+    "id": "math.hs.batch91.18",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把复利模型当成单利的线性增长",
+        "repair_question": "问第二期计息的本金是否仍只有初始P。",
+        "why_wrong": "复利每期计算基数会发生变化"
+      }
+    ],
+    "notation": [
+      "P：初始本金",
+      "r：每期利率",
+      "n：非负整数期数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch91.07"
+    ],
+    "prerequisites": [
+      "指数运算",
+      "数列递推与模型假设"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "复利递推余额B_(k+1)=B_k(1+r)。",
+      "由B_0=P依次迭代得B_n=P(1+r)^n。",
+      "单利每期固定增加Pr，共n期得P+nPr，与复利计算机制不同。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在没有额外缴存、费用、税收且利率每期固定的假设下，复利依赖前期余额，单利不计利息的再生利息。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "离散复利与单利的建模前提",
+    "transfer": {
+      "far": "辨认现实商品分期方案中现金流与费用导致简化复利公式失效。",
+      "near": "n=3且r=0时两模型各是多少？"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "余额121。",
+        "check": "直接100(1.1)²=121。",
+        "question": "本金100，期利率10%，2期复利余额。",
+        "steps": [
+          "第一期100×1.1=110。",
+          "第二期110×1.1=121。"
+        ]
+      },
+      {
+        "answer": "余额120。",
+        "check": "100(1+2×0.1)=120。",
+        "question": "本金100，期利率10%，2期单利余额。",
+        "steps": [
+          "每期以原本金100计息10。",
+          "两期总利息20。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "时间t按秒计且频率f>0",
+      "讨论非退化周期时A>0并使用弧度角"
+    ],
+    "boundaries": [
+      "实际音色可能有谐波与噪声，此正弦式只是单一频率模型；仅凭数学频率不能推断响度、听力风险或实际音质。"
+    ],
+    "counterexamples": [
+      {
+        "example": "s1=sin(2π·2t)，s2=4sin(2π·2t)振幅不同但频率同为2Hz",
+        "explanation": "振幅和周期是两种独立参数。",
+        "false_claim": "将一列正弦信号的振幅加倍时，其频率也必然加倍"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-026"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "核对A和f的非退化条件及单位。",
+      "将相位写成2πft+φ。",
+      "相位变化2π所需时间就是周期。"
+    ],
+    "id": "math.hs.batch91.19",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把角频率ω与普通频率f直接视作相等",
+        "repair_question": "先核查相位角增加一整周需要多久。",
+        "why_wrong": "角频率ω的数值包含2π倍因子，不能直接等于普通频率f"
+      }
+    ],
+    "notation": [
+      "A：非负振幅",
+      "f：频率Hz",
+      "T：基本周期秒"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch91.04"
+    ],
+    "prerequisites": [
+      "正弦函数基本周期",
+      "频率和时间单位"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "时间增加1/f使相位增加2π，所以产生周期。",
+      "任意更小的正周期会要求相位增加小于2π且对所有t正弦值不变，与正弦基本周期矛盾。",
+      "若A=0，信号恒零，所有正T均为周期而无最小正周期。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "频率f的单位为Hz（每秒周数），T的单位为秒；若A=0恒为零，则没有最小正周期，不能机械代入模型宣称存在可听声音。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "正弦声波的频率、周期与零振幅退化",
+    "transfer": {
+      "far": "比较乐器真实波形谐波与单频正弦教学模型的局限。",
+      "near": "求f=440Hz时T的精确表达式。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "频率2Hz，周期0.5秒。",
+        "check": "t增加0.5使角度增加2π。",
+        "question": "s(t)=3sin(4πt)，求频率与周期。",
+        "steps": [
+          "4π=2πf得到f=2Hz。",
+          "T=1/2=0.5秒。"
+        ]
+      },
+      {
+        "answer": "没有基本正周期。",
+        "check": "非退化公式不可在A=0时冒充基本周期结论。",
+        "question": "s(t)=0·sin(880πt)有基本周期吗？",
+        "steps": [
+          "幅度为0使整个函数恒为0。",
+          "恒值信号每个正数都是周期，无最小的正数。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "f₀>0且半音序号n为整数",
+      "采用十二平均律这一特定音乐调律模型而非所有调律方法"
+    ],
+    "boundaries": [
+      "纯律和其他调律不满足每个半音完全相等；本模型不考虑实际乐器跑调、谐波或复杂声学知觉。"
+    ],
+    "counterexamples": [
+      {
+        "example": "六次频率倍数为(2^(1/12))^6=√2，只有十二次才是2",
+        "explanation": "混淆半个八度与完整八度。",
+        "false_claim": "向上六个半音恰好翻倍频率"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-148"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "写出相邻半音是否是等差还是等比。",
+      "用八度翻倍关系建立r^12=2。",
+      "对n个半音取r的n次方并检查负n方向。"
+    ],
+    "id": "math.hs.batch91.20",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把频率按等差数列增加",
+        "repair_question": "比较基频100和200上移半音时增量是否相同。",
+        "why_wrong": "音乐半音间隔是固定比例而非固定Hz增量"
+      }
+    ],
+    "notation": [
+      "r：相邻半音频率比",
+      "f₀：基准正频率",
+      "n：整数半音步数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch91.07"
+    ],
+    "prerequisites": [
+      "等比数列与指数",
+      "声音频率的含义"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf"
+    },
+    "rationale_steps": [
+      "假设相邻半音的频率比相同，设为r>1。",
+      "一个八度为频率翻倍，连乘12次得到r^12=2。",
+      "取唯一正十二次根r=2^(1/12)，连续n次得到f_n=f₀r^n。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "将某正频率f₀上移n个半音给出f_n=f₀·2^(n/12)，其中n可取整数；下移时n<0，12个半音恰为一倍频。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "十二平均律半音比例与等比模型",
+    "transfer": {
+      "far": "讨论用音频频谱测频时十二平均律与真实演奏音准的偏差。",
+      "near": "基频200Hz上移6半音的频率精确表达。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "880Hz。",
+        "check": "一个八度频率恰好翻倍。",
+        "question": "基频440Hz，上移12半音后的频率。",
+        "steps": [
+          "相邻比r=2^(1/12)。",
+          "十二次连乘为2，得到440×2。"
+        ]
+      },
+      {
+        "answer": "220Hz。",
+        "check": "再次上移12半音回到440Hz。",
+        "question": "基频440Hz，下移12半音后的频率。",
+        "steps": [
+          "n=−12，频率因子2^(−1)=1/2。",
+          "440乘以1/2。"
+        ]
+      }
+    ]
+  }
+]

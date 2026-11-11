@@ -2,6 +2,7 @@
 Numeric grids/symbolic identities do not certify full proofs or any official syllabus.
 """
 from __future__ import annotations
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 import copy
 import json
 from fractions import Fraction as F
@@ -24,7 +25,7 @@ def test_9_unique_authored_theorems_and_no_teacher_approval():
     assert len({x["id"] for x in BATCH})==9
     assert len({x["id"] for x in COURSE})==9
     assert {x["id"] for x in COURSE}=={x["curriculum_ids"][0] for x in BATCH}
-    assert len(lessons())==287 and len(curriculum())==178
+    assert len(frozen_batch24_lessons())==287 and len(curriculum())==178
     for r in BATCH:
         x=DeepLesson.model_validate(r)
         assert x.kind=="theorem" and x.review.status=="REVIEW_PENDING"

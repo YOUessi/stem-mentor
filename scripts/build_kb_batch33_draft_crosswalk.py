@@ -12,6 +12,8 @@ from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
+sys.path.insert(0,str(ROOT/"backend"))
+from kb_frozen_batch24 import frozen_batch24_lessons
 import build_kb_batch33_elective_scope as scope
 TSV=ROOT/"curriculum/highschool_math/k00_batch33_draft_associations.tsv"
 REPORT=ROOT/"docs/evaluation/KB_BATCH33_DRAFT_CROSSWALK_AUDIT.json"
@@ -19,12 +21,14 @@ PIN="6dddfc4f5d8e92b5302ca05c456fc9a6bed9b834f47d66f0429ba1091c6c02a4"
 LESSONS_DIR=ROOT/"knowledge/deep/v1"
 
 def lessons():
+    frozen_ids={d.id for d in frozen_batch24_lessons()}
     rows={}
     for f in sorted(LESSONS_DIR.glob("*.json")):
         doc=json.loads(f.read_text(encoding="utf-8"))
         if not isinstance(doc,list):continue
         for lesson in doc:
             ident=lesson["id"]
+            if ident not in frozen_ids: continue  # exclude post-Batch24 drafts
             if ident in rows:raise ValueError("Duplicate deep lesson id")
             if lesson["review"]["status"]!="REVIEW_PENDING" or lesson["teacher_solution_visibility"]!="TEACHER_ONLY":
                 raise ValueError("Draft review/visibility contract changed")

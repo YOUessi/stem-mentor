@@ -12,13 +12,14 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
-from app.deep_knowledge import curriculum,lessons
+from app.deep_knowledge import curriculum
+from kb_frozen_batch24 import frozen_batch24_lessons
 
 OUT=ROOT/"docs/evaluation/KB_BATCH24_COURSE_PROGRESS_MATRIX.json"
 TRACKS=("COMPULSORY","SELECTIVE_COMPULSORY","ELECTIVE_A","ELECTIVE_B",
         "ELECTIVE_C","ELECTIVE_D","ELECTIVE_E","ELECTIVE_UNASSIGNED")
 def build():
-    rows=curriculum();corpus=lessons()
+    rows=curriculum();corpus=frozen_batch24_lessons()
     links=defaultdict(list)
     for d in corpus:
         for cid in d.curriculum_ids:links[cid].append(d)

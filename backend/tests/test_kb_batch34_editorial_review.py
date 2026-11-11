@@ -13,7 +13,7 @@ from app.kb_batch34_review import (
 from app.kb_batch34_exact_witness import (
     evidence,rejected_bad_conditions,guarded_premise,guarded_fixture_pairs,
 )
-from app.deep_knowledge import lessons as student_authoritative_corpus
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons as student_authoritative_corpus
 
 ROOT=Path(__file__).resolve().parents[2]
 AUDIT=ROOT/"docs/evaluation/KB_BATCH34_EDITORIAL_REVIEW_AUDIT.json"

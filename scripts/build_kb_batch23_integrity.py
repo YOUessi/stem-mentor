@@ -11,7 +11,9 @@ from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'backend'))
+sys.path.insert(0,str(ROOT))
 from app.deep_knowledge import DeepLesson, curriculum, lessons
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 from app.k00_gap_audit import gap_tickets
 from app.official_clause_audit import TRACKS
 
@@ -109,7 +111,7 @@ def build():
             teacher_review='PENDING',official_atom=False,student_publishable=False))
     if sum(x['has_any_project_draft'] for x in editorial)!=28:
         raise ValueError('Unexpected draft adjacency count')
-    current_lessons={d.id:d for d in lessons() if not d.id.startswith("math.hs.batch24.")}
+    current_lessons={d.id:d for d in frozen_batch24_lessons() if not d.id.startswith("math.hs.batch24.")}
     # This build can be invoked before materialization; validate the source without pretending it is live.
     if OUT.exists():
         if len(current_lessons)!=267 or any(current_lessons.get(x['id']) is None or current_lessons[x['id']].model_dump(mode='json')!=x for x in rendered):

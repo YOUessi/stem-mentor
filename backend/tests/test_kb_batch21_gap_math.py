@@ -1,3 +1,4 @@
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 """Batch21: independent exact bounded examples, scope integrity and tutor leakage regressions.
 
 These oracles sample stated algebraic subclaims; they do NOT mechanically
@@ -36,8 +37,8 @@ def test_batch21_11_units_integrated_and_28_open_gaps():
     assert len(ROWS) == 11
     assert len({r["lesson"]["id"] for r in ROWS}) == 11
     assert {r["gap"] for r in ROWS} == {1, 2, 3, 6, 10, 11, 12, 14, 17, 20, 27}
-    assert len(lessons()) == 287  # Includes independent Batch22; Batch21 snapshot itself remains 235
-    assert coverage_report()["deep_lesson_documents"] == 287
+    assert len(frozen_batch24_lessons()) == 287  # Includes independent Batch22; Batch21 snapshot itself remains 235
+    assert coverage_report()["deep_lesson_documents"] == len(lessons())
     assert set(GAPS["summary"]["by_elective_track"]) == {
         "ELECTIVE_A", "ELECTIVE_B", "ELECTIVE_C", "ELECTIVE_D", "ELECTIVE_E"}
     assert GAPS["summary"]["open_editorial_gap_candidates"] == 28

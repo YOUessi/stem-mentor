@@ -8,7 +8,7 @@ from app.kb_batch35_review import (SOURCE,PIN,Manuscript35,review_only_manuscrip
     validate_seed,expected_candidates,student_retrieval_projection,official_denominators,known_source)
 from app.kb_batch34_review import review_only_manuscripts
 from app.kb_batch35_exact_witness import finite_evidence,guard,guard_pairs
-from app.deep_knowledge import lessons as original_deep_lessons
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons as original_deep_lessons
 ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/"docs/evaluation/KB_BATCH35_EDITORIAL_COVERAGE_AUDIT.json"
 MD=ROOT/"docs/evaluation/KB_BATCH35_REMAINING_29_ELECTIVE_MANUSCRIPTS.md"

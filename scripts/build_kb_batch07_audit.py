@@ -57,13 +57,15 @@ def build():
     reconciled = as_json(RECONCILE)
     evidence = as_json(EVIDENCE)
     sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "backend"))
     from backend.app.deep_knowledge import lessons  # full strict validation
+    from scripts.kb_frozen_batch24 import frozen_batch24_lessons
     # Preserve the Batch20 historical 224-lesson proof baseline. Batch21 has
     # a separately versioned 11-lesson / 24-proof-step audit; do not silently
     # rewrite earlier 451 unverified obligations or risk-priority snapshots.
     added = {row["id"] for filename in ("elective_gap_batch21.json","elective_gap_batch22.json","core_elective_batch23.json","core_foundation_batch24.json")
              for row in as_json(LESSON_DIR / filename)}
-    docs = [doc for doc in lessons() if doc.id not in added]
+    docs = [doc for doc in frozen_batch24_lessons() if doc.id not in added]
     if len(docs) != 224 or len(added) != 63:
         raise ValueError("Batch20 frozen mathematical proof baseline drift")
 

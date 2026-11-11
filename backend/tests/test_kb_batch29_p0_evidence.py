@@ -203,8 +203,8 @@ def test_invalid_conditions_do_not_claim_mathematical_falsehoods_as_proofs():
         assert not r["student_step_verified"] and not r["complete_theorem_certified"]
 
 def test_all_287_existing_lessons_remain_teacher_only_without_releasing_this_manifest():
-    from app.deep_knowledge import lessons
-    data=lessons()
+    from scripts.kb_frozen_batch24 import frozen_batch24_lessons
+    data=frozen_batch24_lessons()
     assert len(data)==287
     assert all(x.review.status=="REVIEW_PENDING" and x.teacher_solution_visibility=="TEACHER_ONLY" for x in data)
     # These editorial files live outside knowledge/deep and are never accepted as published lessons.

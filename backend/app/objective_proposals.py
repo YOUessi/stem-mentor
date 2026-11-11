@@ -27,10 +27,23 @@ def historical_batch13_deep():
     later={x["id"] for x in json.loads(later_path.read_text(encoding="utf-8"))}
     later.update(x["id"] for x in json.loads((later_path.parent / "core_elective_batch23.json").read_text(encoding="utf-8")))
     later.update(x["id"] for x in json.loads((later_path.parent / "core_foundation_batch24.json").read_text(encoding="utf-8")))
+    # The Batch24 course matrix is a versioned record of the historical
+    # 287 members. A newly authored lesson cannot change the Batch13 queue's
+    # signed-by-nobody 235-lesson snapshot, nor conceal a removed original.
+    manifest=PATH.parents[2]/"docs/evaluation/KB_BATCH24_COURSE_PROGRESS_MATRIX.json"
+    raw=manifest.read_bytes()
+    if hashlib.sha256(raw).hexdigest()!="416961454ed515e7a80d0daafd382bc9d746eee93cc7f498f513eb506193d377":
+        raise ValueError("Historical Batch24 audit manifest content changed")
+    snapshot=json.loads(raw.decode("utf-8"))
+    if snapshot.get("schema_version")!="batch24-course-completeness-v1":
+        raise ValueError("Historical course membership schema changed")
+    frozen_ids={id_ for row in snapshot["courses"] for id_ in row["structured_draft_ids"]}
     full={x.id:x.model_dump(mode="json") for x in lessons()}
-    if len(later)!=52 or not later<=set(full) or len(full)-len(later)!=235:
-        raise ValueError("Historical review snapshot is not reconcilable with live lessons")
-    return {k:v for k,v in full.items() if k not in later}
+    if (len(later)!=52 or len(frozen_ids)!=287 or
+        not frozen_ids<=set(full) or not later<=frozen_ids or
+        len(frozen_ids-later)!=235):
+        raise ValueError("Historical review snapshot is not reconcilable with frozen lesson IDs")
+    return {k:v for k,v in full.items() if k in frozen_ids and k not in later}
 
 def validate_proposals(data, original=None, deep=None):
     original=source_inventory() if original is None else original

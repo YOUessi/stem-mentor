@@ -18,6 +18,21 @@ SOURCE = ROOT / "knowledge/deep/candidates/batch02"
 ACTIVE = ROOT / "knowledge/deep/v1"
 REPORT = ROOT / "docs/evaluation/KB_BATCH02_RECONCILIATION.json"
 RECONCILED_SUFFIX = "_batch06_import.json"
+# Exactly the ten existing collections that participated in the historical
+# Batch02 -> Batch06 reconciliation. Appending Batch07...Batch91 lessons must
+# not change this frozen decision ledger. All ten must continue to exist.
+FROZEN_ACTIVE_BASE_FILENAMES = (
+    "advanced_space_prob_model_batch04.json",
+    "core_foundations_v1.json",
+    "elective_a_b_advanced_batch15.json",
+    "elective_b_c_d_e_batch16.json",
+    "extension_topics_batch04.json",
+    "functional_trig_vector_batch04.json",
+    "geometry_probability_sequences_v1.json",
+    "geometry_stats_foundations_batch04.json",
+    "semantic_gap_subskills_batch05.json",
+    "spatial_fundamentals_batch04.json",
+)
 EXCLUDED_FIELDS = {"version"}  # Version differences alone do not settle mathematical meaning.
 
 
@@ -42,27 +57,18 @@ def build():
         raise ValueError("Missing original Batch02 candidate files; refuse empty import")
 
     existing = {}
-    for path in sorted(ACTIVE.glob("*.json")):
-        # This is a frozen Batch02->Batch06 reconciliation. New independent
-        # Batch07/Batch09/Batch10/Batch11 lessons are not part of its source denominator.
-        if path.name.endswith(RECONCILED_SUFFIX) or path.name in {
-            "rigorous_foundations_batch07.json",
-            "differentiation_vector_count_probability_batch09.json",
-            "algebra_geometry_probability_batch10.json",
-            "algebra_count_geometry_probability_batch11.json",
-            "elective_a_b_core_batch14.json",
-            "cross_track_batch17.json",
-            "elective_gap_batch21.json",  # New independent material outside frozen Batch02 reconciliation.
-            "elective_gap_batch22.json",
-            "core_elective_batch23.json",
-            "core_foundation_batch24.json",
-        }:
-            continue
+    for filename in FROZEN_ACTIVE_BASE_FILENAMES:
+        path = ACTIVE / filename
+        if not path.is_file():
+            raise ValueError(f"Missing frozen reconciliation source: {filename}")
         for item in read_rows(path):
             key = item["id"]
             if key in existing:
                 raise ValueError(f"Ambiguous existing published lesson ID: {key}")
             existing[key] = (path.name, item)
+
+    if len(existing) != 130:
+        raise ValueError("Historical reconciliation base must have exactly 130 distinct lessons")
 
     imported = {}
     conflicts = []

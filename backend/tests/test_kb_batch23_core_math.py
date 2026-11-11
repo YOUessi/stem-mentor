@@ -1,3 +1,4 @@
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 """Batch23 independent exact checks, draft-only K00 audit and anti-spoiler controls."""
 import copy
 import importlib.util
@@ -31,8 +32,8 @@ def test_materialization_exact_and_coverage_is_not_official():
     rendered,report=build.build()
     assert json.loads(rendered)==CORPUS==[x['lesson'] for x in SOURCE]
     assert json.loads(report)==AUDIT
-    assert len(lessons())==287 and len(curriculum())==178
-    assert coverage_report()['deep_lesson_documents']==287
+    assert len(frozen_batch24_lessons())==287 and len(curriculum())==178
+    assert coverage_report()['deep_lesson_documents']==len(lessons())
     assert AUDIT['summary']['official_atomic_denominator'] is None
     assert AUDIT['summary']['official_coverage_rate'] is None
     assert AUDIT['summary']['editorial_gap_tickets_still_open']==28

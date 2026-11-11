@@ -8,7 +8,7 @@ import sys
 import pytest
 from pydantic import ValidationError
 from app.kb_batch36_finite_review import SPECS, VALID, INVALID, witness
-from app.deep_knowledge import lessons as original_deep_lessons
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons as original_deep_lessons
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/"scripts"))

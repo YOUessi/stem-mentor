@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
+sys.path.insert(0,str(ROOT))
 
 from app.deep_knowledge import lessons, coverage_report
 from app.deep_retrieval import student_evidence_lookup
@@ -22,7 +23,8 @@ def audit():
     later={x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/elective_gap_batch22.json').read_text(encoding='utf8'))}
     later.update(x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/core_elective_batch23.json').read_text(encoding='utf8')))
     later.update(x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/core_foundation_batch24.json').read_text(encoding='utf8')))
-    existing=tuple(x for x in lessons() if x.id not in later)
+    from scripts.kb_frozen_batch24 import frozen_batch24_lessons
+    existing=tuple(x for x in frozen_batch24_lessons() if x.id not in later)
     assert len(later)==52 and len(existing)==235
     coverage=coverage_report()
     from collections import Counter

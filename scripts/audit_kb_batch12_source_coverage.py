@@ -6,8 +6,10 @@ import sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
+sys.path.insert(0,str(ROOT))
 from app.standard_scope import source_inventory,public_progress
 from app.deep_knowledge import coverage_report
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 from app.deep_retrieval import student_evidence_lookup
 from app.main import app
 OUT=ROOT/"docs/evaluation/KB_BATCH12_STANDARD_SOURCE_COVERAGE.json"
@@ -16,7 +18,8 @@ def audit():
     inventory=source_inventory()
     summary=coverage_report()
     progress=public_progress()
-    assert summary["deep_lesson_documents"]==287  # live schema index; historical snapshot remains 235
+    assert summary["deep_lesson_documents"]>=287  # live index grows, frozen snapshot does not
+    assert len(frozen_batch24_lessons())==287
     assert progress["official_atomic_denominator"] is None
     assert progress["complete_curriculum"] is False
     assert all(row["teacher_review"]=="PENDING" for row in inventory["items"])
@@ -29,7 +32,7 @@ def audit():
       "source_page_anchored_candidates":len(inventory["items"]),
       "official_atomic_denominator":None,
       "full_course_coverage_percent":None,
-      "deep_draft_lessons":summary["deep_lesson_documents"] - 52,  # frozen Batch21 snapshot; Batch22+23+24 excluded
+      "deep_draft_lessons":len(frozen_batch24_lessons()) - 52,  # frozen Batch21 snapshot
 
       "independent_teacher_approved":0,
       "student_deep_lesson_release_count":0,

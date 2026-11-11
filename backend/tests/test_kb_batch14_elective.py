@@ -4,6 +4,7 @@ These are bounded mathematical oracles: they do not certify all 364 proof
 obligations or authorize student evidence. No LLM is used as its own judge.
 """
 from __future__ import annotations
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 import copy
 from fractions import Fraction
 from itertools import product
@@ -37,7 +38,7 @@ def test_elective_candidates_have_distinct_engineering_ids_and_real_objective_ta
     assert len(curriculum())==178
 
 def test_source_schema_mathematical_proof_obligations_are_not_approvals():
-    assert len(lessons())==287
+    assert len(frozen_batch24_lessons())==287
     for d in BATCH:
         item=DeepLesson.model_validate(d)
         assert item.kind=="theorem" and len(item.proof_steps)>=3
@@ -169,7 +170,8 @@ def test_ivt_and_inverse_direction_counterexample():
 
 def test_whole_proof_status_remains_uncertified():
     r=coverage_report()
-    assert r["kinds"]["theorem"]==161  # +6 new Batch22 pending theorem drafts
+    assert sum(d.kind=="theorem" for d in frozen_batch24_lessons())==161
+    assert r["kinds"]["theorem"]==sum(d.kind=="theorem" for d in lessons())
     assert all(d.review.status=="REVIEW_PENDING" for d in lessons())
     assert not r["human_teacher_review_complete"]
     assert not r["direct_student_teaching_enabled"]

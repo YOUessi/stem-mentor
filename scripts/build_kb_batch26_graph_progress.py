@@ -7,14 +7,15 @@ from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
-from app.deep_knowledge import lessons,curriculum
-from app.kb_batch26_graph import proposed_graph
+from app.deep_knowledge import curriculum
+from app.kb_batch26_graph import validate_editorial_graph, MANIFEST
+from kb_frozen_batch24 import frozen_batch24_lessons
 
 OUT=ROOT/"docs/evaluation/KB_BATCH26_PREREQUISITE_EDITORIAL_REVIEW.json"
 def build():
-    docs=lessons()
+    docs=frozen_batch24_lessons()
     c={r["id"]:r for r in curriculum()}
-    graph=proposed_graph()
+    graph=validate_editorial_graph(json.loads(MANIFEST.read_text(encoding="utf-8")),docs=docs)
     no_edges={d.id for d in docs if not d.prerequisite_lesson_ids}
     proposed=set(graph["by_lesson"])
     if not proposed<=no_edges:raise ValueError("Proposal must refer to currently unlinked lesson")

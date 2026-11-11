@@ -106,8 +106,9 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch87_math_lessons.py --c
 .venv/bin/python scripts/build_kb_batch88_relations.py --check
 .venv/bin/python scripts/build_kb_batch89_proofs_and_scope.py --check
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch90_relations.py --check
+PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch91_source_lessons.py --check
 echo "[1/4] Backend regression tests"
-(cd backend && PYTHONPATH=. ../.venv/bin/python -m pytest -q)
+(cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"
 (cd backend && PYTHONPATH=. ../.venv/bin/python evaluate_policy.py)
 echo "[3/4] Structured retrieval hard negatives"
