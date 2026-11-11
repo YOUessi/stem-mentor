@@ -1,0 +1,117 @@
+{
+  "candidate_only_prerequisite_edges_promoted": 0,
+  "cumulative_editorially_compared_labels": 186,
+  "drafts_pending_teacher": 86,
+  "final_teacher_semantic_equivalence_adjudications": 0,
+  "finite_math_instance_comparisons": 20,
+  "full_official_source_pages": 61,
+  "fully_human_atomized_pages": 0,
+  "general_mathematical_proofs_certified_this_batch": 0,
+  "math_conflicts_unresolved_legacy": 10,
+  "math_pair_artifact_sha256": "d57b9cc8e1fcf213265431841fe3a1ee4aae64dfb63348e508b4dc87e3d7cc7d",
+  "newly_math_compared_this_batch": 20,
+  "next_work": "Complete 114 unpaired semantic source comparisons and the 61-page official atomization; review all 172 textual prerequisite relations with domain experts; expand full lessons, teacher proof certificates and safe retrieval.",
+  "official_atom_denominator": null,
+  "official_atom_denominators_by_track": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+  "originally_editorially_compared": 166,
+  "pages_with_no_project_source_anchors": [
+    13,
+    14,
+    51
+  ],
+  "prerequisite_manual_search_required": 135,
+  "proof_steps_unverified_legacy": 538,
+  "provisional_project_labels": 300,
+  "remaining_without_pairwise_editorial": 114,
+  "review_queue_artifact_sha256": "9e3cdfff0ab19d32c2320dadbdcc56eb9aa64867b855a2d289defddda9a2119d",
+  "schema_version": "kb101-cumulative-conservative-coverage-v1",
+  "semantic_manual_search_required": 101,
+  "source_anchor_lines": 428,
+  "source_sha256": "e4305e377713de664853a3458454ee70e0d7bd27251acb6187ca9e43e30bf235",
+  "source_status": "PROJECT_PROVISIONAL_LABELS_NOT_OFFICIAL_ATOMS",
+  "student_authoritative_release": 0,
+  "teacher_approved": 0,
+  "textual_prerequisite_notes": 172,
+  "track_matrix": {
+    "COMPULSORY": {
+      "editorially_compared_prior": 64,
+      "formal_teacher_atom_memberships": 0,
+      "newly_authored_math_comparisons": 7,
+      "official_curriculum_atom_denominator": null,
+      "provisional_project_labels": 75,
+      "remaining_without_pairwise_editorial": 4,
+      "student_authoritative_release": 0,
+      "teacher_approved_lessons": 0
+    },
+    "ELECTIVE_A": {
+      "editorially_compared_prior": 35,
+      "formal_teacher_atom_memberships": 0,
+      "newly_authored_math_comparisons": 3,
+      "official_curriculum_atom_denominator": null,
+      "provisional_project_labels": 60,
+      "remaining_without_pairwise_editorial": 22,
+      "student_authoritative_release": 0,
+      "teacher_approved_lessons": 0
+    },
+    "ELECTIVE_B": {
+      "editorially_compared_prior": 32,
+      "formal_teacher_atom_memberships": 0,
+      "newly_authored_math_comparisons": 2,
+      "official_curriculum_atom_denominator": null,
+      "provisional_project_labels": 60,
+      "remaining_without_pairwise_editorial": 26,
+      "student_authoritative_release": 0,
+      "teacher_approved_lessons": 0
+    },
+    "ELECTIVE_C": {
+      "editorially_compared_prior": 5,
+      "formal_teacher_atom_memberships": 0,
+      "newly_authored_math_comparisons": 0,
+      "official_curriculum_atom_denominator": null,
+      "provisional_project_labels": 31,
+      "remaining_without_pairwise_editorial": 26,
+      "student_authoritative_release": 0,
+      "teacher_approved_lessons": 0
+    },
+    "ELECTIVE_D": {
+      "editorially_compared_prior": 2,
+      "formal_teacher_atom_memberships": 0,
+      "newly_authored_math_comparisons": 0,
+      "official_curriculum_atom_denominator": null,
+      "provisional_project_labels": 8,
+      "remaining_without_pairwise_editorial": 6,
+      "student_authoritative_release": 0,
+      "teacher_approved_lessons": 0
+    },
+    "ELECTIVE_E": {
+      "editorially_compared_prior": 0,
+      "formal_teacher_atom_memberships": 0,
+      "newly_authored_math_comparisons": 0,
+      "official_curriculum_atom_denominator": null,
+      "provisional_project_labels": 0,
+      "remaining_without_pairwise_editorial": 0,
+      "student_authoritative_release": 0,
+      "teacher_approved_lessons": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "editorially_compared_prior": 28,
+      "formal_teacher_atom_memberships": 0,
+      "newly_authored_math_comparisons": 8,
+      "official_curriculum_atom_denominator": null,
+      "provisional_project_labels": 66,
+      "remaining_without_pairwise_editorial": 30,
+      "student_authoritative_release": 0,
+      "teacher_approved_lessons": 0
+    }
+  },
+  "unresolved_textual_prerequisites": 172
+}
