@@ -54,7 +54,11 @@ def table_row_proportion(a,b,c,d,which=0):
     return Q(numerator,denominator)
 
 def dot_cross(u,v):
-    normalize_vector(u);normalize_vector(v)
+    # Dot and cross products are defined for zero vectors; only the direction,
+    # angle cosine, or normalization requires nonzero vectors.
+    if any(type(w) is not tuple or len(w)!=3 or
+           any(type(x) not in (int,Q) for x in w) for w in (u,v)):
+        raise ValueError('three exact vector components required')
     a,b=Matrix(u),Matrix(v)
     return Q(a.dot(b)),tuple(a.cross(b))
 
@@ -104,8 +108,11 @@ def check(i):
         pos=all(a<b<1 for a,b in zip(vals,vals[1:]))
         neg=(((-1)**2)!=((-1)**3) and abs((-1)**2)<=1 and abs((-1)**3)<=1)
     elif i==10:
-        pos=(dot_cross((1,0,0),(0,2,0))==(0,(0,0,2)))
-        try:dot_cross((0,0,0),(1,0,0));neg=False
+        pos=(dot_cross((1,0,0),(0,2,0))==(0,(0,0,2)) and
+             dot_cross((0,0,0),(1,0,0))==(0,(0,0,0)))
+        # Undefined is a *direction/normalization* of a zero vector, not its
+        # valid dot or cross product.
+        try:normalize_vector((0,0,0));neg=False
         except ValueError:neg=True
     elif i==11:
         pos=all(n*n>=0 for n in range(-50,51))

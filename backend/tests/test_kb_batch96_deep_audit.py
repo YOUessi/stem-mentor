@@ -141,7 +141,11 @@ def test_math_callable_domains_and_exact_fractions():
     assert normalize_vector((3,4,0))==(Q(3,5),Q(4,5),0)
     with pytest.raises(ValueError):normalize_vector((0,0,0))
     assert dot_cross((1,0,0),(0,2,0))==(0,(0,0,2))
+    assert dot_cross((0,0,0),(3,4,5))==(0,(0,0,0))
+    assert dot_cross((3,4,5),(0,0,0))==(0,(0,0,0))
     assert dot_cross((Q(1,2),0,0),(Q(1,2),1,0))[0]==Q(1,4)
+    for bad in ((1,2), (1,2,3.0), (True,0,0)):
+        with pytest.raises(ValueError):dot_cross(bad,(1,0,0))
     assert classify_lines((1,2,-3),(2,4,-5))=='PARALLEL_DISTINCT'
     assert classify_lines((1,2,-3),(2,4,-6))=='COINCIDENT'
     with pytest.raises(ValueError):classify_lines((0,0,1),(2,3,4))
@@ -155,6 +159,26 @@ def test_math_callable_domains_and_exact_fractions():
     assert helix_point(2,1,0)!=helix_point(2,1,1)
     assert helix_point(2,0,0)==helix_point(2,0,1)
     with pytest.raises(ValueError):helix_point(0,1,1)
+
+def test_dot_cross_exact_all_short_integer_vectors_including_zero():
+    # 3**6 = 729 independent exact cases, including 0 and antiparallel pairs.
+    from itertools import product
+    vv=list(product((-1,0,1), repeat=3))
+    for u in vv:
+        for v in vv:
+            dot,cross=dot_cross(u,v)
+            expected_dot=sum(a*b for a,b in zip(u,v))
+            expected_cross=(u[1]*v[2]-u[2]*v[1],
+                            u[2]*v[0]-u[0]*v[2],
+                            u[0]*v[1]-u[1]*v[0])
+            assert dot==expected_dot
+            assert cross==expected_cross
+            assert sum(a*b for a,b in zip(u,cross))==0
+            assert sum(a*b for a,b in zip(v,cross))==0
+            if u==(0,0,0):
+                with pytest.raises(ValueError):
+                    normalize_vector(u)
+
 
 def test_coverage_and_generated_files(artifact):
     report=coverage_report()

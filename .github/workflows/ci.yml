@@ -155,6 +155,8 @@ jobs:
       - run: PYTHONPATH=backend python scripts/build_kb_batch96_candidate_matrix.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
+      # Fail fast on syntax errors before the long Python/Node/browser suite.
+      - run: bash -n scripts/mac_check.sh scripts/mac_browser_check.sh
       # Tests now import both 'app' (backend package root) and the versioned
       # 'scripts' audit namespace (repository root). Keep both import roots.
       - run: cd backend && PYTHONPATH=.:.. python -c "from app.deep_knowledge import lessons; from scripts.kb_frozen_batch24 import frozen_batch24_lessons; assert len(frozen_batch24_lessons()) == 287"
