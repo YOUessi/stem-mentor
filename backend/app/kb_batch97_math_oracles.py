@@ -51,12 +51,19 @@ def rectangle_probability(density,xmax,ymax,width,height):
     if not(v>=0 and x>0 and y>0 and v*x*y==1 and 0<=w<=x and 0<=h<=y):
         raise ValueError("valid normalized constant rectangle density and subrectangle required")
     return v*w*h
-def closed_rectangle_poly_extrema():
-    # f=(x-3)^2+y^2 on [0,2]^2; global bounds from separable factors.
-    for x,y in product(range(3),repeat=2):
-        f=(x-3)**2+y*y
-        if not 1<=f<=13:raise AssertionError("candidate violates proved bound")
-    return ((2,0),1),((0,2),13)
+def closed_rectangle_poly_extrema(x_lo=0,x_hi=2,y_lo=0,y_hi=2):
+    # f=(x-3)^2+y^2, evaluated on an exact nonempty compact rectangle.
+    # Minimum is the Cartesian projection of (3,0) to the box.
+    # Maximum is attained at a corner, by convexity in each coordinate.
+    xl,xh,yl,yh=map(_frac,(x_lo,x_hi,y_lo,y_hi))
+    if xl>xh or yl>yh:
+        raise ValueError("nonempty closed rectangular domain required")
+    x_min=min(max(Q(3),xl),xh)
+    y_min=min(max(Q(0),yl),yh)
+    x_max=max((xl,xh),key=lambda x:(x-3)**2)
+    y_max=max((yl,yh),key=lambda y:y*y)
+    val=lambda x,y:(x-3)**2+y*y
+    return ((x_min,y_min),val(x_min,y_min)),((x_max,y_max),val(x_max,y_max))
 def euclidean_sq(u,v):
     if type(u) is not tuple or type(v) is not tuple or len(u)!=len(v) or not u:
         raise ValueError("equal nonempty feature dimensions")
@@ -121,7 +128,8 @@ def check(i):
             except ValueError:neg=True
         elif i==7:
             pos=closed_rectangle_poly_extrema()==(((2,0),1),((0,2),13))
-            neg=(0<13 and 1!=13) # Finite diagnostic for saddle/constraint mistake; no theorem claim.
+            try:closed_rectangle_poly_extrema(2,0,0,2);neg=False
+            except ValueError:neg=True
         elif i==8:
             pos=euclidean_sq((1,1000),(2,1010))==101
             try:zscore(7,7,0);neg=False

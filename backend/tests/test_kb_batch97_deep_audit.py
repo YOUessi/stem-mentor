@@ -60,6 +60,12 @@ def test_schema_proof_counterexample_and_provenance(i,artifact):
     assert len(obj.worked_examples)==2 and len(obj.hint_ladder)==3
     assert len(obj.assumptions)>=2 and obj.boundaries and obj.counterexamples and obj.misconceptions
     assert obj.transfer.near!=obj.transfer.far
+    # Fail if a formal method/theorem loses its authored definitions in rendering.
+    if obj.kind=='concept':
+        assert obj.definition==RECORDS[i]['definition']
+    else:
+        assert RECORDS[i]['definition'] in obj.statement
+        assert RECORDS[i]['statement'] in obj.statement
     assert len(obj.proof_steps)==3 if obj.kind=='theorem' else len(obj.rationale_steps)==3
 
 @pytest.mark.parametrize('i',range(1,13))
@@ -152,6 +158,8 @@ def test_guarded_independent_math_boundaries():
     assert rectangle_probability(2,Q(1,2),1,Q(1,4),Q(1,2))==Q(1,4)
     with pytest.raises(ValueError):rectangle_probability(2,1,1,1,1)
     assert closed_rectangle_poly_extrema()==(((2,0),1),((0,2),13))
+    with pytest.raises(ValueError):closed_rectangle_poly_extrema(2,0,0,2)
+    assert closed_rectangle_poly_extrema(-1,1,-2,3)[0]==((Q(1),Q(0)),Q(4))
     assert euclidean_sq((1,1000),(2,1010))==101
     with pytest.raises(ValueError):zscore(7,7,0)
     assert oa_strength2([(0,0,0),(0,1,1),(1,0,1),(1,1,0)])
@@ -172,6 +180,17 @@ def test_reflection_involution_and_isometry_finite_exact_grid():
         for i,p in enumerate(points):
             for j,q in enumerate(points):
                 assert distance_sq(p,q)==distance_sq(mirror[i],mirror[j])
+
+def test_rectangle_exact_extrema_against_dense_integer_grid():
+    # Independent finite exhaustive evidence for the supported polynomial, not general certification.
+    for x_lo in range(-2,4):
+        for x_hi in range(x_lo,4):
+            for y_lo in range(-2,3):
+                for y_hi in range(y_lo,3):
+                    low,high=closed_rectangle_poly_extrema(x_lo,x_hi,y_lo,y_hi)
+                    grid=[(x-3)**2+y*y for x in range(x_lo,x_hi+1)
+                                           for y in range(y_lo,y_hi+1)]
+                    assert low[1]==min(grid) and high[1]==max(grid)
 
 @pytest.mark.parametrize('bad',[(1,2,3.5),(1,2),(True,2,3),'bad'])
 def test_reflection_invalid_vectors_rejected(bad):

@@ -152,7 +152,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": "若d·n≠0，则直线与平面恰有一个交点；若d·n=0，则L要么包含于Π（n·(p−a)=0），要么与Π无交点而平行；直线垂直平面当且仅当d与n线性相关。",
+    "statement": "直线L用p+td表示，其中d≠0；平面Π用n·(x−a)=0表示，其中法向量n≠0，p为直线上一点，a为平面上一点。\n若d·n≠0，则直线与平面恰有一个交点；若d·n=0，则L要么包含于Π（n·(p−a)=0），要么与Π无交点而平行；直线垂直平面当且仅当d与n线性相关。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "空间直线和平面的向量位置判别",
     "transfer": {
@@ -288,7 +288,7 @@
       }
     ],
     "curriculum_ids": [
-      "HS-MATH-117"
+      "HS-MATH-118"
     ],
     "definition": null,
     "hint_ladder": [
@@ -343,7 +343,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": "乘积极限定律中的有限性使g在充分靠近a的去心邻域有界；商法则必须有M非零且分母在附近非零，不可对0/0直接做极限之商。",
+    "statement": "若f(x)与g(x)在a的去心邻域有定义，且有限极限分别为L、M，则极限和为L+M，积为LM；当M≠0时商的极限为L/M。\n乘积极限定律中的有限性使g在充分靠近a的去心邻域有界；商法则必须有M非零且分母在附近非零，不可对0/0直接做极限之商。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "有限函数极限的和积商法则",
     "transfer": {
@@ -443,7 +443,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": "对每个内点x∈(a,b)有F'(x)=f(x)，端点可在相应单侧意义求导；若G是f的一个原函数，则∫_a^b f(t)dt=G(b)−G(a)。",
+    "statement": "对于在闭区间[a,b]连续的实值函数f，定义F(x)=∫_a^x f(t)dt，x∈[a,b]；连续性保证定积分存在。\n对每个内点x∈(a,b)有F'(x)=f(x)，端点可在相应单侧意义求导；若G是f的一个原函数，则∫_a^b f(t)dt=G(b)−G(a)。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "微积分基本定理的变上限积分形式",
     "transfer": {
@@ -625,7 +625,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": "若f可微且内部点为局部极值则其梯度为零，但梯度零不是全局最值充分条件；边界极值不能被内部偏导方程遗漏。",
+    "statement": "连续函数f在非空紧集K上存在最大值和最小值；对有界闭多边形约束，求全局极值要综合内部驻点、光滑边界驻点和顶点。\n若f可微且内部点为局部极值则其梯度为零，但梯度零不是全局最值充分条件；边界极值不能被内部偏导方程遗漏。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "闭约束域上多元函数的全局极值检查",
     "transfer": {
@@ -716,7 +716,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": "在欧氏距离聚类之前可以选择基于训练数据统计量的尺度变换，但必须保留原始单位解释；标准差为0的常量特征不可直接做z-score除法。",
+    "statement": "无监督聚类将未标标签的数据依据指定相似度或距离规则分组；标准欧氏距离d(x,y)=√Σ(x_i−y_i)²受各坐标的物理单位和数值尺度影响。\n在欧氏距离聚类之前可以选择基于训练数据统计量的尺度变换，但必须保留原始单位解释；标准差为0的常量特征不可直接做z-score除法。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "聚类距离尺度与无监督划分的边界",
     "transfer": {
@@ -989,7 +989,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": "样本量大不能自动纠正抽样框漏掉人群或无应答的系统性偏差；对代表性的论断需要说明总体、抽样框、应答率及可能的非应答机制。",
+    "statement": "调查总体是希望推断的目标对象集合；抽样框是有机会被抽取的登记列表。覆盖误差是框与总体不匹配，无应答偏差来自被抽到者的参与行为与所测变量有关。\n样本量大不能自动纠正抽样框漏掉人群或无应答的系统性偏差；对代表性的论断需要说明总体、抽样框、应答率及可能的非应答机制。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "抽样框、无应答与选择偏差的区分",
     "transfer": {
@@ -1089,7 +1089,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": "镜像反射固定平面上所有点，沿法向分量取反、切向分量不变；因此对任意两点p,q保欧氏距离，且反射两次回到原点。",
+    "statement": "给定平面Π={x:n·(x−a)=0}，非零法向量n，空间点p关于Π的镜像点定义为p'=p−2[(p−a)·n/(n·n)]n。\n镜像反射固定平面上所有点，沿法向分量取反、切向分量不变；因此对任意两点p,q保欧氏距离，且反射两次回到原点。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "三维关于平面的镜像反射公式与保距",
     "transfer": {

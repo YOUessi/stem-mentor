@@ -115,7 +115,7 @@ def build(records=None,prior=None):
             "version":"1.0.0","notation":row["notation"],"prerequisites":row["prerequisites"],
             "prerequisite_lesson_ids":[],
             "definition":row["definition"] if row["kind"]=="concept" else None,
-            "statement":row["statement"] if row["kind"]!="concept" else None,
+            "statement":(row["definition"]+"\n"+row["statement"]) if row["kind"]!="concept" else None,
             "assumptions":row["assumptions"],
             "proof_steps":[dict(claim=s[0],reason=s[1]) for s in row["steps"]] if theorem else [],
             "rationale_steps":[] if theorem else row["steps"],
