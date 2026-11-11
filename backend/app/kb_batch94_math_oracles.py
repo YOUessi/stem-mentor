@@ -7,6 +7,23 @@ from fractions import Fraction as F
 from math import comb, perm
 from sympy import Matrix, Symbol, sqrt, simplify, diff, limit, oo
 
+def valid_line_normal(a,b):
+    """A pair of real finite coefficients defines a nondegenerate 2-D line."""
+    from fractions import Fraction
+    from math import isfinite
+    values=(a,b)
+    if any(type(x) not in (int,float,Fraction) for x in values):
+        return False
+    if any(type(x) is float and not isfinite(x) for x in values):
+        return False
+    return Fraction(a)**2+Fraction(b)**2>0
+
+def induction_base_valid(n0,claimed_sum):
+    """Finite base case of sum_{k=1}^n k=n(n+1)/2; not an induction proof."""
+    if type(n0) is not int or n0<1 or type(claimed_sum) not in (int,F):
+        return False
+    return F(claimed_sum)==F(n0*(n0+1),2)
+
 IDS=(
 "KB80-A015-L022-C01","KB80-A026-L023-C01",
 "KB80-A038-L018-C02","KB80-A038-L023-C02",
@@ -47,9 +64,7 @@ def check(i:int):
     elif i==7:
         a,b,c=3,4,-10
         pos=(F(abs(c),1)/sqrt(a*a+b*b)==2)
-        neg=(0*0+0*0==0) # zero normal rejected in check below
-        # explicit guard: both zero must not define a line
-        neg=neg and not (0*0+0*0>0)
+        neg=not valid_line_normal(0,0) and valid_line_normal(3,4)
     elif i==8:
         pos=(comb(5,2)==10 and perm(5,2)==20)
         neg=(comb(5,2)!=perm(5,2))
@@ -78,7 +93,7 @@ def check(i:int):
         k=Symbol("k",integer=True,positive=True)
         pos=(simplify(k*(k+1)/2+(k+1)-(k+1)*(k+2)/2)==0
              and 1*2//2==1)
-        neg=(not (0<0)) # a failed base case cannot be rescued by the step
+        neg=(not induction_base_valid(1,2) and induction_base_valid(1,1))
     else:
         phi=(1+sqrt(5))/2
         pos=(simplify(phi**2-phi-1)==0 and phi>1)
