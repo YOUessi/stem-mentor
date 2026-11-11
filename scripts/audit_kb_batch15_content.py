@@ -4,13 +4,15 @@ import argparse,hashlib,json,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
+sys.path.insert(0,str(ROOT))
 from app.deep_knowledge import lessons,curriculum
 from app.objective_proposals import editorial_review_queue
 from app.deep_retrieval import student_evidence_lookup
 SRC=ROOT/"curriculum/highschool_math/author_draft_batch15.json"
 OUT=ROOT/"docs/evaluation/KB_BATCH15_ADVANCED_DRAFT_AUDIT.json"
 def audit():
-    own=json.loads(SRC.read_text(encoding="utf8")); docs=lessons()
+    from scripts.kb_frozen_batch24 import frozen_batch24_lessons
+    own=json.loads(SRC.read_text(encoding="utf8")); docs=frozen_batch24_lessons()
     review=editorial_review_queue()
     # Later batches must NOT rewrite the historical Batch15 snapshot. Reconfirm
     # original authored bytes and immutable snapshot SHA, then use its archived

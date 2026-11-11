@@ -8,6 +8,7 @@ from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
+sys.path.insert(0,str(ROOT))
 from app.deep_knowledge import lessons,curriculum
 from app.objective_proposals import editorial_review_queue,validate_proposals
 from app.deep_retrieval import student_evidence_lookup
@@ -23,7 +24,8 @@ def audit():
     authored=json.loads(SRC.read_text(encoding="utf8"))
     mapping=json.loads(COURSE.read_text(encoding="utf8"))
     proposals=editorial_review_queue()
-    all_docs=lessons()
+    from scripts.kb_frozen_batch24 import frozen_batch24_lessons
+    all_docs=frozen_batch24_lessons()
     assert len(authored)==11 and len(mapping)==11
     assert len(all_docs)>=224 and len(curriculum())>=161
     assert len({r["id"] for r in authored})==11

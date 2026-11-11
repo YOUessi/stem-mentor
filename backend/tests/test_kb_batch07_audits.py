@@ -77,8 +77,8 @@ def test_conflict_retains_original_provenance_and_high_risk_differences(row):
 
 def test_all_current_drafts_have_explicit_unverified_step_obligations():
     s = PROOFS["summary"]
-    from app.deep_knowledge import lessons
-    docs=lessons()
+    from scripts.kb_frozen_batch24 import frozen_batch24_lessons
+    docs=frozen_batch24_lessons()
     # Historical 451 unverified obligations belong to 224 frozen drafts.
     # New Batch21 proof steps are independently versioned in the 474-step union.
     from scripts.build_kb_batch21_proof_union import build as build_proof_union

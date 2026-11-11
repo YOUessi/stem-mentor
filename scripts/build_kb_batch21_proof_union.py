@@ -15,7 +15,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "backend"))
+sys.path.insert(0,str(ROOT))
 from app.deep_knowledge import lessons
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 
 BASE = ROOT / "docs/evaluation/KB_PROOF_OBLIGATIONS_BATCH07.json"
 NEW = ROOT / "knowledge/deep/v1/elective_gap_batch21.json"
@@ -30,7 +32,7 @@ def build():
     base = json.loads(BASE.read_text(encoding="utf-8"))
     new = json.loads(NEW.read_text(encoding="utf-8"))
     old_rows = {x["id"]: x for x in base["lessons"]}
-    current = {x.id: x for x in lessons() if not x.id.startswith("math.hs.batch24.")}
+    current = {x.id: x for x in frozen_batch24_lessons() if not x.id.startswith("math.hs.batch24.")}
     fresh_ids = {x["id"] for x in new}
     if (len(old_rows) != 224 or len(new) != 11
             or set(old_rows) & fresh_ids or not (set(old_rows) | fresh_ids <= set(current))

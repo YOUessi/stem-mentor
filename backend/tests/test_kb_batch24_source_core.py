@@ -1,3 +1,4 @@
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 """Independent Batch24 source integrity, mathematical boundaries, and anti-leak regression."""
 import copy
 import importlib.util
@@ -47,7 +48,7 @@ def test_full_source_lesson_authoring_and_proof_union():
     scope=load_script("build_kb_batch24_scope.py")
     assert json.loads(author.build())==DATA
     assert json.loads(scope.build())==SCOPE
-    assert len(DATA)==20 and len(lessons())==287 and len(curriculum())==178
+    assert len(DATA)==20 and len(frozen_batch24_lessons())==287 and len(curriculum())==178
     assert AUDIT["summary"]["all_unverified_proof_steps"]==538
     assert AUDIT["summary"]["new_unverified_proof_steps"]==19
     assert AUDIT["summary"]["new_teacher_side_examples"]==40

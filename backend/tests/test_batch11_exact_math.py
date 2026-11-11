@@ -4,6 +4,7 @@ They do not constitute formal verification of the entire theorem proof, and
 never mark a draft as APPROVED or expose teacher solutions to student endpoints.
 """
 from __future__ import annotations
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 
 import itertools
 import json
@@ -40,7 +41,7 @@ def test_authored_content_schema_and_no_fake_approval():
     assert all(p["review"]["status"]=="REVIEW_PENDING" for p in r)
     assert all(p["teacher_solution_visibility"]=="TEACHER_ONLY" for p in r)
     assert all(len(p["proof_steps"])>=3 and len(p["worked_examples"])>=2 for p in r)
-    assert len(lessons())==287
+    assert len(frozen_batch24_lessons())==287
     assert subprocess.run(
        [sys.executable,str(ROOT/"scripts/build_kb_batch11_lessons.py"),"--check"],
        check=False,capture_output=True).returncode==0

@@ -1,5 +1,6 @@
 """Batch16: independent exact bounded subclaims, not natural-language proof certification."""
 from __future__ import annotations
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 import copy
 import json
 from fractions import Fraction as F
@@ -20,7 +21,7 @@ MAP=json.loads(TARGETS.read_text(encoding="utf8"))
 
 def test_all_twelve_editorial_drafts_are_structurally_valid_and_unapproved():
     assert len(ROWS)==len(MAP)==12
-    assert len(lessons())==287 and len(curriculum())==178
+    assert len(frozen_batch24_lessons())==287 and len(curriculum())==178
     assert {x["id"] for x in MAP}=={r["curriculum_ids"][0] for r in ROWS}
     assert len({r["id"] for r in ROWS})==12
     assert {r["curriculum_ids"][0] for r in ROWS}=={"HS-MATH-"+str(n) for n in range(139,151)}

@@ -10,6 +10,7 @@ import sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
+sys.path.insert(0,str(ROOT))
 from app.deep_knowledge import lessons,coverage_report
 from app.deep_retrieval import student_evidence_lookup
 from app.model_tutor_draft import draft_next_question
@@ -26,7 +27,8 @@ def audit():
     later={x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/elective_gap_batch22.json').read_text(encoding='utf8'))}
     later.update(x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/core_elective_batch23.json').read_text(encoding='utf8')))
     later.update(x['id'] for x in json.loads((ROOT/'knowledge/deep/v1/core_foundation_batch24.json').read_text(encoding='utf8')))
-    contents=tuple(x for x in lessons() if x.id not in later)
+    from scripts.kb_frozen_batch24 import frozen_batch24_lessons
+    contents=tuple(x for x in frozen_batch24_lessons() if x.id not in later)
     assert len(later)==52 and len(contents)==235
     proof=json.loads(PROOFS.read_text(encoding="utf8"))
     union=json.loads(UNION.read_text(encoding="utf8"))["summary"]

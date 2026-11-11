@@ -40,7 +40,8 @@ def test_all_three_reports_reproduce_and_never_claim_authority():
     assert READY["summary"]["draft_lessons"]==287
     assert READY["summary"]["total_unverified_proof_steps"]==538
     assert READY["summary"]["teacher_side_examples"]==574
-    assert len(READY["items"])==len(lessons())
+    from scripts.kb_frozen_batch24 import frozen_batch24_lessons
+    assert len(READY["items"])==len(frozen_batch24_lessons())
     for report in (PAGES,RISKS,READY):
         assert report["summary"]["verified_official_atomic_denominator"] is None
 

@@ -41,9 +41,9 @@ def validate_gaps(raw, known_ids):
     return {g["curriculum_id"]:g for g in raw["gaps"]}
 
 
-def build():
+def build(docs=None):
     all_rows = curriculum()
-    records = lessons()
+    records = lessons() if docs is None else docs
     links = defaultdict(list)
     for item in records:
         for topic_id in item.curriculum_ids:
@@ -91,7 +91,7 @@ def build():
     old=coverage_report()
     if sum(v["engineering_topics"] for v in by_level.values()) != old["curriculum_topic_total"]:
         raise ValueError("denominator drift against the published engineering map")
-    if len(records)!=old["deep_lesson_documents"]:
+    if docs is None and len(records)!=old["deep_lesson_documents"]:
         raise ValueError("deep document count drift")
     # Deliberately never infer that a non-flagged topic is fully taught or safe.
     return {
@@ -130,7 +130,14 @@ def main():
     parser.add_argument("--check",action="store_true")
     parser.add_argument("--summary",action="store_true")
     args=parser.parse_args()
-    result=build()
+    # The default Batch24 snapshot is historical: append-only future lessons
+    # must never retroactively change that original 287-draft review.
+    if args.check and (args.output is None or args.output == DEFAULT_OUT):
+        sys.path.insert(0,str(ROOT))
+        from scripts.kb_frozen_batch24 import frozen_batch24_lessons
+        result=build(frozen_batch24_lessons())
+    else:
+        result=build()
     target=args.output or DEFAULT_OUT
     canonical=json.dumps(result,ensure_ascii=False,indent=2)+"\n"
     if args.check:

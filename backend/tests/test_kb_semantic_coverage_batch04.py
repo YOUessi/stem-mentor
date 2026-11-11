@@ -76,6 +76,9 @@ def test_coverage_snapshot_is_stable_and_remains_editorial():
         assert live["curriculum_atom_officially_verified"] is False
         assert live["evidence_status"]==historical["evidence_status"]
     assert len(result["topics"]) == len(snapshot["topics"]) + 17
-    assert result["summary"]["deep_draft_documents"] == snapshot["summary"]["deep_draft_documents"] + 52
+    from app.deep_knowledge import lessons
+    from scripts.kb_frozen_batch24 import frozen_batch24_lessons
+    assert len(frozen_batch24_lessons()) == snapshot["summary"]["deep_draft_documents"] + 52
+    assert result["summary"]["deep_draft_documents"] == len(lessons())
     assert result["summary"]["engineering_topic_denominator"] == snapshot["summary"]["engineering_topic_denominator"] + 17
     assert "CONSERVATIVE" in snapshot["scope"]

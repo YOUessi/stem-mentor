@@ -1,0 +1,18 @@
+PREFLIGHT 136 Python CI check commands
+1/136 exit=0 1.7s python scripts/build_kb_coverage.py --summary
+2/136 exit=0 3.2s python scripts/audit_deep_math_evidence.py --check
+3/136 exit=0 1.2s python scripts/build_semantic_gap_batch05.py --check
+4/136 exit=0 0.3s python scripts/reconcile_kb_batch02.py --check
+5/136 exit=0 0.1s python scripts/build_kb_legacy_bridge.py --check
+6/136 exit=1 0.9s python scripts/build_kb_batch07_audit.py --check
+STDOUT  STDERR Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch07_audit.py", line 235, in <module>
+    main()
+    ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch07_audit.py", line 221, in main
+    artifacts = build()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch07_audit.py", line 68, in build
+    raise ValueError("Batch20 frozen mathematical proof baseline drift")
+ValueError: Batch20 frozen mathematical proof baseline drift
+
+RESULT FAIL [(6, 'python scripts/build_kb_batch07_audit.py --check')]

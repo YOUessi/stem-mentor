@@ -13,7 +13,9 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'backend'))
+sys.path.insert(0,str(ROOT))
 from app.deep_knowledge import curriculum,lessons
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 from app.official_clause_audit import TRACKS
 from app.k00_gap_audit import gap_tickets
 
@@ -39,7 +41,7 @@ def build():
     previous=json.loads(PRIOR.read_text(encoding='utf8'))
     new=json.loads(NEW.read_text(encoding='utf8'))
     course=[x for x in curriculum() if int(x["id"].split("-")[-1])<=173]
-    current={x.id:x for x in lessons() if not x.id.startswith(("math.hs.batch23.","math.hs.batch24."))}
+    current={x.id:x for x in frozen_batch24_lessons() if not x.id.startswith(("math.hs.batch23.","math.hs.batch24."))}
     historical={x['id'] for x in base['lessons']}
     prior_ids={x['lesson_id'] for x in previous['new_proof_review_queue']}
     b21={r['id'] for r in json.loads((ROOT/'knowledge/deep/v1/elective_gap_batch21.json').read_text(encoding='utf8'))}

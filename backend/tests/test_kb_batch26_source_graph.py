@@ -4,6 +4,7 @@ All checks are about source traceability and safe graph proposals, NOT
 teacher approval, official atomization or complete theorem verification.
 """
 from __future__ import annotations
+from scripts.kb_frozen_batch24 import frozen_batch24_lessons
 import copy
 import json
 import sys
@@ -105,7 +106,11 @@ def test_prerequisite_candidates_are_valid_and_teacher_only():
     out=validate_editorial_graph(GRAPH)
     assert out["candidate_edges"]==31
     assert out["lessons_with_candidate_edges"]==31
-    assert out["missing_explicit_edges_in_authoritative_graph"]==133
+    assert out["missing_explicit_edges_in_authoritative_graph"]==sum(
+        not d.prerequisite_lesson_ids for d in lessons())
+    assert validate_editorial_graph(
+        GRAPH, docs=frozen_batch24_lessons()
+    )["missing_explicit_edges_in_authoritative_graph"]==133
     assert out["combined_candidate_graph_acyclic"]
     assert not out["student_graph_changed"]
     assert out["teacher_approved_edges"]==0
@@ -115,7 +120,7 @@ def test_prerequisite_candidates_are_valid_and_teacher_only():
     assert GRAPH["teacher_signature"] is None
     assert all(not x["applied_to_authoritative_lesson_graph"]
                and x["teacher_review"]=="PENDING" for x in GRAPH["items"])
-    assert len(lessons())==287
+    assert len(frozen_batch24_lessons())==287
 
 
 @pytest.mark.parametrize("index",range(31))

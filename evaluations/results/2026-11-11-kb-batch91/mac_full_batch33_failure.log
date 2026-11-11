@@ -1,0 +1,30 @@
+[0/4] Batch24+25 source/P0/math/review guards
+PASS: Batch24 20 original teacher-only REVIEW_PENDING draft lessons
+PASS: 315 source markers, 132 editorial objectives, 23 D/E headings, 28 open gaps; official atomic denominator NULL; repeated text hash groups 22
+PASS: Batch24 20 lesson drafts, 19 unverified proof steps, 538 in all; official denominator NULL
+PASS: 178 engineering topics, 287 REVIEW_PENDING drafts; official knowledge denominator NULL; 0 engineering rows with no lesson
+PASS 61 K00 pages queued, 315 markers, 23 D/E headings; official atoms remain NULL
+PASS 127 P0 step hashes + 10 conflict bounded probes; no full proof or teacher approvals
+PASS 287 draft audit, 538 unverified steps, 0 approved
+PASS source 61 PDF pages / frozen 315 vs pypdf59 317 candidates; official atomic denominator NULL
+PASS 31 editor candidates, 102 unlinked without proposal; 0 teacher-approved
+PASS 35/127 P0 condition proposals; 17 exact-positive+17 negative guards; 0 formal proofs, 0 approvals
+PASS: 48 new P0 step condition profiles + 35 previous = 83/127, 44 remain, 20 exact and 20 negative fixtures, 0 proofs certified
+PASS: 127/127 historical P0 steps have editorial condition reviews (35+48+44), 20 exact valid and 20 illegal-condition fixtures; formally certified=0, teacher-approved=0
+PASS K00 page52 visually checked: rendered 5+3=8 markers, historical 6 omitted 2; 1/61 assistant-viewed, official atoms NULL
+PASS K00 87 original editor candidates on 12 pages; official denominators NULL
+PASS graph {'total_draft_lessons': 287, 'missing_authoritative_graph_edges': 133, 'preexisting_editorial_proposals': 31, 'new_editorial_proposals': 32, 'editorial_proposals_total': 63, 'still_no_editorial_candidate': 70, 'combined_candidate_graph_acyclic': True, 'teacher_approved_proposals': 0, 'authoritative_graph_modified': False, 'student_visible_proposals': 0, 'official_atomic_denominator': None}
+PASS K00 Batch32 130 new editorial candidates, 37 source pages inspected; official syllabus denominators NULL
+PASS K07 Batch32 6 legal exact cases, 6 invalid refusals, zero teacher/theorem certifications
+PASS Batch33 96 elective editorial goals; source pages 61/61 first-pass, official denominator remains null
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch33_draft_crosswalk.py", line 99, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch33_draft_crosswalk.py", line 94, in main
+    doc=build()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch33_draft_crosswalk.py", line 47, in build
+    drafts=lessons()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch33_draft_crosswalk.py", line 33, in lessons
+    raise ValueError("Expected frozen 287 review-pending deep lessons; rebaseline explicitly")
+ValueError: Expected frozen 287 review-pending deep lessons; rebaseline explicitly
