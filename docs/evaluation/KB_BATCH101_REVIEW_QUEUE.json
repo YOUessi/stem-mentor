@@ -1,0 +1,5471 @@
+{
+  "deep_drafts_teacher_pending": 86,
+  "human_atomized_pages": 0,
+  "min_lexical_signal_prerequisite": 0.16,
+  "min_lexical_signal_semantic": 0.12,
+  "official_atom_denominators_by_track": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_curriculum_atom_denominator": null,
+  "page_census": 61,
+  "page_evidence": [
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 17,
+      "printed_page": 13,
+      "project_anchor_count": 0,
+      "source_tracks": [],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 32,
+      "printed_page": 14,
+      "project_anchor_count": 0,
+      "source_tracks": [],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 27,
+      "printed_page": 15,
+      "project_anchor_count": 12,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 29,
+      "printed_page": 16,
+      "project_anchor_count": 11,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 27,
+      "printed_page": 17,
+      "project_anchor_count": 6,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 18,
+      "project_anchor_count": 1,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 27,
+      "printed_page": 19,
+      "project_anchor_count": 10,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 35,
+      "printed_page": 20,
+      "project_anchor_count": 10,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 32,
+      "printed_page": 21,
+      "project_anchor_count": 7,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 31,
+      "printed_page": 22,
+      "project_anchor_count": 11,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 23,
+      "project_anchor_count": 5,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 29,
+      "printed_page": 24,
+      "project_anchor_count": 1,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 25,
+      "printed_page": 25,
+      "project_anchor_count": 5,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 29,
+      "printed_page": 26,
+      "project_anchor_count": 18,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 30,
+      "printed_page": 27,
+      "project_anchor_count": 9,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 29,
+      "printed_page": 28,
+      "project_anchor_count": 5,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 29,
+      "project_anchor_count": 3,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 30,
+      "project_anchor_count": 1,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 26,
+      "printed_page": 31,
+      "project_anchor_count": 9,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 30,
+      "printed_page": 32,
+      "project_anchor_count": 12,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 26,
+      "printed_page": 33,
+      "project_anchor_count": 2,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 22,
+      "printed_page": 34,
+      "project_anchor_count": 2,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 29,
+      "printed_page": 35,
+      "project_anchor_count": 1,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 36,
+      "project_anchor_count": 1,
+      "source_tracks": [
+        "COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 29,
+      "printed_page": 37,
+      "project_anchor_count": 1,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 31,
+      "printed_page": 38,
+      "project_anchor_count": 13,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 33,
+      "printed_page": 39,
+      "project_anchor_count": 12,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 30,
+      "printed_page": 40,
+      "project_anchor_count": 2,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 24,
+      "printed_page": 41,
+      "project_anchor_count": 1,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 29,
+      "printed_page": 42,
+      "project_anchor_count": 15,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 43,
+      "project_anchor_count": 11,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 29,
+      "printed_page": 44,
+      "project_anchor_count": 12,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 45,
+      "project_anchor_count": 1,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 27,
+      "printed_page": 46,
+      "project_anchor_count": 4,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 47,
+      "project_anchor_count": 13,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 48,
+      "project_anchor_count": 12,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 49,
+      "project_anchor_count": 1,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 24,
+      "printed_page": 50,
+      "project_anchor_count": 3,
+      "source_tracks": [
+        "SELECTIVE_COMPULSORY"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 27,
+      "printed_page": 51,
+      "project_anchor_count": 0,
+      "source_tracks": [],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 49,
+      "printed_page": 52,
+      "project_anchor_count": 10,
+      "source_tracks": [
+        "ELECTIVE_A"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 53,
+      "project_anchor_count": 15,
+      "source_tracks": [
+        "ELECTIVE_A"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 27,
+      "printed_page": 54,
+      "project_anchor_count": 11,
+      "source_tracks": [
+        "ELECTIVE_A"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 25,
+      "printed_page": 55,
+      "project_anchor_count": 17,
+      "source_tracks": [
+        "ELECTIVE_A"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 27,
+      "printed_page": 56,
+      "project_anchor_count": 6,
+      "source_tracks": [
+        "ELECTIVE_A"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 23,
+      "printed_page": 57,
+      "project_anchor_count": 10,
+      "source_tracks": [
+        "ELECTIVE_A"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 36,
+      "printed_page": 58,
+      "project_anchor_count": 10,
+      "source_tracks": [
+        "ELECTIVE_B"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 28,
+      "printed_page": 59,
+      "project_anchor_count": 11,
+      "source_tracks": [
+        "ELECTIVE_B"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 27,
+      "printed_page": 60,
+      "project_anchor_count": 16,
+      "source_tracks": [
+        "ELECTIVE_B"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 26,
+      "printed_page": 61,
+      "project_anchor_count": 6,
+      "source_tracks": [
+        "ELECTIVE_B"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 25,
+      "printed_page": 62,
+      "project_anchor_count": 16,
+      "source_tracks": [
+        "ELECTIVE_B"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 23,
+      "printed_page": 63,
+      "project_anchor_count": 6,
+      "source_tracks": [
+        "ELECTIVE_B"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 25,
+      "printed_page": 64,
+      "project_anchor_count": 6,
+      "source_tracks": [
+        "ELECTIVE_B",
+        "ELECTIVE_C"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 24,
+      "printed_page": 65,
+      "project_anchor_count": 4,
+      "source_tracks": [
+        "ELECTIVE_C"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 29,
+      "printed_page": 66,
+      "project_anchor_count": 6,
+      "source_tracks": [
+        "ELECTIVE_C"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 27,
+      "printed_page": 67,
+      "project_anchor_count": 4,
+      "source_tracks": [
+        "ELECTIVE_C"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 24,
+      "printed_page": 68,
+      "project_anchor_count": 12,
+      "source_tracks": [
+        "ELECTIVE_C"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 24,
+      "printed_page": 69,
+      "project_anchor_count": 3,
+      "source_tracks": [
+        "ELECTIVE_C",
+        "ELECTIVE_D"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 26,
+      "printed_page": 70,
+      "project_anchor_count": 4,
+      "source_tracks": [
+        "ELECTIVE_D"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 24,
+      "printed_page": 71,
+      "project_anchor_count": 4,
+      "source_tracks": [
+        "ELECTIVE_D"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 25,
+      "printed_page": 72,
+      "project_anchor_count": 5,
+      "source_tracks": [
+        "ELECTIVE_D"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    },
+    {
+      "full_page_human_atomization": "NOT_PERFORMED",
+      "missing_coverage_reason": "NO_COMPLETE_HUMAN_PAGE_REVIEW",
+      "official_atom_count": null,
+      "pdfkit_line_count": 23,
+      "printed_page": 73,
+      "project_anchor_count": 3,
+      "source_tracks": [
+        "ELECTIVE_D"
+      ],
+      "student_publishable": false,
+      "teacher_approved": 0
+    }
+  ],
+  "prerequisite_manual_search_required": 135,
+  "previously_editorially_paired_theme_census": 166,
+  "provisional_project_theme_census": 300,
+  "recommendation_scoring": "CHARACTER_BIGRAM_JACCARD_HEURISTIC_NOT_MATHEMATICAL_PROOF",
+  "remaining_unpaired_provisional_topics": 134,
+  "schema_version": "kb101-fail-closed-review-workqueue-v1",
+  "semantic_manual_search_required": 101,
+  "semantic_pair_reviewer_queue": [
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A015-L022-C01",
+      "source_line_sha256": "8e884c699d5f08fe68adb3e5138a39ec019c588d01eb398edaec6f9b60bbd0f6",
+      "source_topic": "集合区域图与运算表征",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A020-L021-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.125,
+          "source_line_sha256": "b547879065874e9af65999bae5ee56ce7ac5adf3c11073cfc8b16ae5aaaade12",
+          "topic": "有理指数幂与运算条件",
+          "track": "COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A020-L032-C01",
+      "source_line_sha256": "6bf09af01e478c708a0624cc11c292f2c66ad82bbd3ad1d4e672f4846912b940",
+      "source_topic": "对数运算性质与换底公式",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A022-L002-C01",
+      "source_line_sha256": "d26b96953f83a8fcafc23621c84a6b53a7394d13061b08669e468d8bea6bce23",
+      "source_topic": "正弦型函数的参数与周期",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A020-L026-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.16667,
+          "source_line_sha256": "db598df3a853c88029ea8d00e0be79c02043fea88bf9f1c5155c5c6d95594466",
+          "topic": "指数函数的应用与参数解释",
+          "track": "COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A019-L025-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.125,
+          "source_line_sha256": "f33fb1f7fffce381d06531a2cc55dd338e147bd6ff554a6eeed24ce46c6463be",
+          "topic": "函数周期概念及判定",
+          "track": "COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A022-L029-C01",
+      "source_line_sha256": "0e2783329b4956f2f8806538d7a0bb6e59e7aeb2fd1f436395cc0d9b94b324f1",
+      "source_topic": "连续函数零点存在条件与二分逼近",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A022-L028-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.16667,
+          "source_line_sha256": "aa5f7bcea5d2b608679c40b919d5a2fc75a6cbfb50cc7da59a545b3b4b7525c8",
+          "topic": "函数零点与方程根",
+          "track": "COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A017-L016-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.14286,
+          "source_line_sha256": "aa6b349a9288b6ac13e616bf2fb7f02fca25109765e52eb7db49541be3145f8e",
+          "topic": "二次函数零点与符号区间",
+          "track": "COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A026-L016-C01",
+      "source_line_sha256": "5ccfeaa658abcc3ab44b9bd5a286291e8207333d4623e8443dab3f73cb4f3144",
+      "source_topic": "向量坐标加减与标量乘法",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A026-L015-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.2,
+          "source_line_sha256": "b1149c17d1ad355261d3ef02c0ca98b6d1fdc2c0796f045ab4a681db9490eb71",
+          "topic": "正交分解与向量坐标",
+          "track": "COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A026-L003-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.16667,
+          "source_line_sha256": "a1eabb9e7dd967a09f650abb3e332e68317f6d62f55a8c83d6a1526007c16e7e",
+          "topic": "向量加减与平行四边形法则",
+          "track": "COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A026-L023-C01",
+      "source_line_sha256": "50ebddd71d7dbc8520dc5c55a0fb91434e2ea5b03c561610ea1912c18484737f",
+      "source_topic": "余弦定理与正弦定理的向量推导",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A028-L002-C01",
+      "source_line_sha256": "a7e4c52b8b89beb853613b70373f543df24b6a8ddca15775b9f513e037e1e766",
+      "source_topic": "简单立体图形的斜二测画法与尺度理解",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A028-L005-C01",
+      "source_line_sha256": "b22e9e2a4638a43531ea67864317fd49f61c1536c79344b304ce9d3f25a027f3",
+      "source_topic": "空间点直线平面的关联与共面判定",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A029-L009-C01",
+      "source_line_sha256": "1d9af632b31abd21718cc028b19819553dde22b86253fd3f057723bd66c7af59",
+      "source_topic": "利用空间基本事实证明简单位置关系",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A031-L017-C01",
+      "source_line_sha256": "1ff93c882726cdc1c6ecb4d94f92bcfa9203cc14f8ba22fd5c4fb6fd9eedc58d",
+      "source_topic": "随机试验频率与概率的经验估计",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A033-L001-C01",
+      "source_line_sha256": "c6e734e4dfd5d0debae5253458cda06a43ea24db808d91b4e305c81cf78f7728",
+      "source_topic": "样本百分位数的定义约定与解释",
+      "source_track": "COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A038-L016-C02",
+      "source_line_sha256": "3eb042545b3389e5dccd9cdbe65689d9bc927ef907f0cb0d247f9644486cd1f5",
+      "source_topic": "前n项和与通项的关系",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A038-L016-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.23077,
+          "source_line_sha256": "3eb042545b3389e5dccd9cdbe65689d9bc927ef907f0cb0d247f9644486cd1f5",
+          "topic": "等差数列前n项和",
+          "track": "SELECTIVE_COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A038-L022-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.13333,
+          "source_line_sha256": "9451f2cd01a5c205f2059b0a07010bcfd41c7414333cb8e31a99f3739ef892aa",
+          "topic": "等比数列定义与通项",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A038-L018-C01",
+      "source_line_sha256": "1396d52f7afb7ca849edf167c1c48b839fa3acd7df20f327b8a52517fc1ec67a",
+      "source_topic": "等差关系的情境识别",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A038-L018-C02",
+      "source_line_sha256": "1396d52f7afb7ca849edf167c1c48b839fa3acd7df20f327b8a52517fc1ec67a",
+      "source_topic": "等差数列应用题族",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A038-L015-C02",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.27273,
+          "source_line_sha256": "d9be1642f23a3edfb3df6bfcf5687d4b50671f1d2d54e6c762914e6208f29373",
+          "topic": "等差数列通项公式",
+          "track": "SELECTIVE_COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A038-L016-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.27273,
+          "source_line_sha256": "3eb042545b3389e5dccd9cdbe65689d9bc927ef907f0cb0d247f9644486cd1f5",
+          "topic": "等差数列前n项和",
+          "track": "SELECTIVE_COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A038-L015-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.25,
+          "source_line_sha256": "d9be1642f23a3edfb3df6bfcf5687d4b50671f1d2d54e6c762914e6208f29373",
+          "topic": "等差数列概念与公差",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A038-L023-C02",
+      "source_line_sha256": "a05e0ddbbad1000b9d1e1616218c714df63f56b21590d3eed6fc0cfd6816d9a7",
+      "source_topic": "通项与前缀和关系",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A038-L025-C01",
+      "source_line_sha256": "bd21c2492f60b404f9a2bf9605cbd71ae25bc7c054b0214344e696cba83ad5b6",
+      "source_topic": "等比关系建模识别",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A039-L009-C02",
+      "source_line_sha256": "53076486525878b7702f0b3275df07c0a6801c380ed819bbcf2be12ac605c61f",
+      "source_topic": "差商极限存在性",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A039-L012-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.27273,
+          "source_line_sha256": "0edf7afbc1e6b41e853a24ea6fe0194b7e1820b2474fe59a7d5fb6efe83d0633",
+          "topic": "差商极限的近似过程",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A039-L015-C01",
+      "source_line_sha256": "b71418cd713f384cfb17f5b90c6e25933aaeb9afb2c53eceea065b49e877c113",
+      "source_topic": "常数函数导数",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A039-L015-C02",
+      "source_line_sha256": "b71418cd713f384cfb17f5b90c6e25933aaeb9afb2c53eceea065b49e877c113",
+      "source_topic": "幂函数导数的差商推导",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A039-L030-C01",
+      "source_line_sha256": "df24e8003d680004072786c36d83ce6032d1b6e47a7afa5201c4d6a0ff004987",
+      "source_topic": "极值必要条件",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A042-L014-C01",
+      "source_line_sha256": "8fad869b85f2c454c7a5a65a0660d737497842953efe4a76c676f68e9c9ae56f",
+      "source_topic": "空间直角坐标系与点坐标",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A042-L016-C01",
+      "source_line_sha256": "492a85851b64a960ed6ffeeb714b6daa19356986f35b397230b732b2a91798aa",
+      "source_topic": "长方体顶点空间坐标",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A042-L019-C01",
+      "source_line_sha256": "4051c86c60951a7bc615d6fd4792601605de0b19c0b3740b8830febfec75b1c6",
+      "source_topic": "空间向量概念和零向量",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A042-L025-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.21429,
+          "source_line_sha256": "33e49a07353f98b180194d60ff729262da558df4dfb3166dcf16509928ebf735",
+          "topic": "空间向量数量积与夹角",
+          "track": "SELECTIVE_COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A042-L022-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.2,
+          "source_line_sha256": "7ba8c819e8928a72c52426c0ca7ae9037e479b40992186486e19f4e28a3e9836",
+          "topic": "空间向量基底分解唯一性",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A042-L020-C01",
+      "source_line_sha256": "b48f2e32a3f55c6a2e310704f636b2d61830c4c15029227f4f57fce6cd55ba90",
+      "source_topic": "空间向量线性运算",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A042-L025-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.23077,
+          "source_line_sha256": "33e49a07353f98b180194d60ff729262da558df4dfb3166dcf16509928ebf735",
+          "topic": "空间向量数量积与夹角",
+          "track": "SELECTIVE_COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A042-L022-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.21429,
+          "source_line_sha256": "7ba8c819e8928a72c52426c0ca7ae9037e479b40992186486e19f4e28a3e9836",
+          "topic": "空间向量基底分解唯一性",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A042-L024-C01",
+      "source_line_sha256": "86cd853aaca0173ec9b53562c89ec0b8ae0020ecd7117027fe9fe251dc822a46",
+      "source_topic": "空间向量坐标运算",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A042-L025-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.23077,
+          "source_line_sha256": "33e49a07353f98b180194d60ff729262da558df4dfb3166dcf16509928ebf735",
+          "topic": "空间向量数量积与夹角",
+          "track": "SELECTIVE_COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A042-L022-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.21429,
+          "source_line_sha256": "7ba8c819e8928a72c52426c0ca7ae9037e479b40992186486e19f4e28a3e9836",
+          "topic": "空间向量基底分解唯一性",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A042-L026-C01",
+      "source_line_sha256": "d812f8115a149b4c13efa589212714811a8326a938ea23ca41493892e9c91210",
+      "source_topic": "空间向量投影与方向",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A042-L025-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.21429,
+          "source_line_sha256": "33e49a07353f98b180194d60ff729262da558df4dfb3166dcf16509928ebf735",
+          "topic": "空间向量数量积与夹角",
+          "track": "SELECTIVE_COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A042-L022-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.2,
+          "source_line_sha256": "7ba8c819e8928a72c52426c0ca7ae9037e479b40992186486e19f4e28a3e9836",
+          "topic": "空间向量基底分解唯一性",
+          "track": "SELECTIVE_COMPULSORY"
+        },
+        {
+          "candidate_id": "KB80-A042-L028-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.13333,
+          "source_line_sha256": "416a865c4fc63034b9b367aa629b9b407d99268bfa31c60d502175007a878c47",
+          "topic": "直线方向与平面法向量",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A043-L002-C01",
+      "source_line_sha256": "72c2036338a531eaf94f7ba8908b24767bc3a6a1db5be11fd1738981b2d7abc0",
+      "source_topic": "空间位置关系的向量判定",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A044-L006-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.23529,
+          "source_line_sha256": "4fac8c09aeff0dc4e77593f9e4d82a3142cf56ce2e7cd9b419ee59c6f525aa56",
+          "topic": "直线圆与两圆位置关系判定",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A043-L004-C01",
+      "source_line_sha256": "9f5d7699461048d1f0cbdefb7d7c96eb42646f0a0da6f8874d42d7ab50352e83",
+      "source_topic": "线面平行与垂直向量证明",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A043-L006-C01",
+      "source_line_sha256": "90799eac9f7abe6c712dc2e47834de6b202b9929498583491018109f239ad6cf",
+      "source_topic": "空间点线点面距离",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A043-L020-C01",
+      "source_line_sha256": "7988c3896e061468a3e58ffff64709096694986bec46173d7fdeeda122940fee",
+      "source_topic": "确定直线的几何条件",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A043-L024-C01",
+      "source_line_sha256": "f14e1245865fc0aabf58f9c2b1c6930c3f37c879ef95cf79a5b0295c652e5095",
+      "source_topic": "两直线平行垂直条件",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A043-L027-C01",
+      "source_line_sha256": "44721b796bec4d18cce3b82c7f66e48d64351ce9a67e19b3eaac1a1faaea4d1b",
+      "source_topic": "两直线交点与退化分类",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A043-L028-C01",
+      "source_line_sha256": "9853eabce00988e0a3ec5976a5ed8125b06a1bb7da0ebdb6628d3ec5a238e0b5",
+      "source_topic": "平面点到直线距离",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A042-L028-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.14286,
+          "source_line_sha256": "416a865c4fc63034b9b367aa629b9b407d99268bfa31c60d502175007a878c47",
+          "topic": "直线方向与平面法向量",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A044-L012-C01",
+      "source_line_sha256": "be1c7a9991a0d29f826c1ab4366fbd132694d1270dffd5b186c389fd9180aac8",
+      "source_topic": "椭圆的两焦点定义与标准方程",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A038-L011-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.125,
+          "source_line_sha256": "2a520f0429dead4fcc02b8504a7c317084ac57070b767b58b974b941a8ad7eb7",
+          "topic": "数列定义与表示",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A044-L014-C01",
+      "source_line_sha256": "d61a09f712992f73ac34c1f577a50a4807c2a0a9ce07a392f462dfac81291101",
+      "source_topic": "抛物线与双曲线的轨迹定义",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A046-L021-C01",
+      "source_line_sha256": "13f1980b1d95828c7efb3c22d2933aaca980a820fc8ae0b94828fca9c3248e68",
+      "source_topic": "分类加法与分步乘法计数原理",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A046-L024-C01",
+      "source_line_sha256": "df33268c9a91bf0498005f8b658acb3e33ba737f15c78d5a101a810133f8e617",
+      "source_topic": "排列组合与顺序可辨性",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A047-L001-C01",
+      "source_line_sha256": "1052168f1ca2441f02b931b834a5259fd9b35a974ee02acd16acfe67415a572a",
+      "source_topic": "二项式定理的组合系数解释",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A047-L017-C01",
+      "source_line_sha256": "da8c4a6f5d2a18c15f4d53aab2d4e0e58590e8979761a21a40e6e8d5bdaff2bd",
+      "source_topic": "完备事件划分与全概率公式",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A047-L016-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.125,
+          "source_line_sha256": "d62d0d98b00393e776ed4fe320a264ad3bb725e5dc508b37134356959590ec93",
+          "topic": "条件概率乘法公式",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A047-L021-C01",
+      "source_line_sha256": "5bcfab1e2f4d0aebd2056cbe733602f6959c1cf50cd204762f0fef4f361cb27c",
+      "source_topic": "离散随机变量分布列与均方差",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A047-L023-C01",
+      "source_line_sha256": "18e0d556fa2f26a10e08b83c6403a2283357f3b346985c9492b401f870726bd6",
+      "source_topic": "伯努利试验与二项分布的前提",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A047-L025-C01",
+      "source_line_sha256": "dcd15d1f9997104deb213c104d4e5e5250ba71b41a8f77beb43b9aea6a3b460e",
+      "source_topic": "超几何分布的无放回计数及均值",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A047-L028-C01",
+      "source_line_sha256": "d969a6c703e81a16afe4e275b32f233cd0ee611c1b7415b4d0dd57167d7e91b1",
+      "source_topic": "正态密度模型与标准化概率解释",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A048-L003-C01",
+      "source_line_sha256": "e5c41e69726c7f9440e786654360c0d36d4e59a961076719aecb7b1fbb527010",
+      "source_topic": "正态分布均值和方差的参数含义",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A048-L011-C01",
+      "source_line_sha256": "7860ae9969d4b9f88bc834882eacd6e9c68328f687e58568ff119f77fc8479b5",
+      "source_topic": "样本皮尔逊相关系数的定义及适用条件",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A048-L013-C01",
+      "source_line_sha256": "82d0c67006e55646eaec74f79be6f12f5e2bfe88bfadc8820acadb1523336181",
+      "source_topic": "多组成对数据相关程度的比较",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A048-L018-C01",
+      "source_line_sha256": "e37a7929a04339214937f4e38d5b85dcdf4d1de9cacecfe4692e1a5eddfcf297",
+      "source_topic": "线性回归预测的适用区间及残差检查",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A048-L020-C01",
+      "source_line_sha256": "c2aa7b16e79ea54cb74813cfb0111e535c0ec1578f18f10086c645297af39c2c",
+      "source_topic": "二乘二列联表的频数边际与条件比例",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A048-L021-C01",
+      "source_line_sha256": "86c6c5fd2b83813cd2d60197d76be56f2b5488e2e5ee0ac9fb1d3d11ae5737bb",
+      "source_topic": "二乘二列联表独立性检验的条件",
+      "source_track": "SELECTIVE_COMPULSORY",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A047-L015-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.14286,
+          "source_line_sha256": "d3c0dde97725979c5956f9847baf77282f0e7a37aa7e3cb66dc4f70ca7a6b689",
+          "topic": "随机事件独立性与条件概率",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A052-L010-C01",
+      "source_line_sha256": "8fd71b991f442931b039c7db8de8d879a4c5f8bfe6b9bd7bb6515f148792a5ba",
+      "source_topic": "典型收敛数列的极限",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A052-L021-C02",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.125,
+          "source_line_sha256": "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd",
+          "topic": "有界数列不必收敛的反例",
+          "track": "ELECTIVE_A"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A052-L010-C02",
+      "source_line_sha256": "8fd71b991f442931b039c7db8de8d879a4c5f8bfe6b9bd7bb6515f148792a5ba",
+      "source_topic": "数列收敛的直观过程",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A052-L021-C02",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.2,
+          "source_line_sha256": "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd",
+          "topic": "有界数列不必收敛的反例",
+          "track": "ELECTIVE_A"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A052-L021-C01",
+      "source_line_sha256": "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd",
+      "source_topic": "收敛数列有界定理",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A052-L021-C02",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.21429,
+          "source_line_sha256": "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd",
+          "topic": "有界数列不必收敛的反例",
+          "track": "ELECTIVE_A"
+        },
+        {
+          "candidate_id": "KB80-A052-L022-C02",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.16667,
+          "source_line_sha256": "af525d3296ffcf9bc1ab1a0b25ea4b459fa0c7297847997ad101278915005468",
+          "topic": "单调有界的收敛性",
+          "track": "ELECTIVE_A"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A052-L022-C01",
+      "source_line_sha256": "af525d3296ffcf9bc1ab1a0b25ea4b459fa0c7297847997ad101278915005468",
+      "source_topic": "数列单调性",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A052-L030-C01",
+      "source_line_sha256": "b6294ea47788c632ccf2b3743bb875632a15a1bef7bcbe2f51eb5d428b333553",
+      "source_topic": "数列极限四则运算法则",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A052-L031-C01",
+      "source_line_sha256": "f727011a40ee98dedb14cf1a2518a2378afe972a3d8ee39a60f5aee1976b8e6b",
+      "source_topic": "自然常数e的极限刻画",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A052-L033-C01",
+      "source_line_sha256": "9a61c361d762bac11b1f4bbad896f459be07393e1af7c069c0c84e22c72924f2",
+      "source_topic": "函数趋近点的极限例型",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A052-L039-C01",
+      "source_line_sha256": "f51f98ac7153c421d1ce5d82b1de26ba4a1eab5e86473d5333d23deb9f3b7dc2",
+      "source_topic": "函数极限的四则运算法则",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A052-L041-C01",
+      "source_line_sha256": "a3e46b177d0879541f422824dfdcbb0b56120cbe00cd701133b7cbdef3ad1c2c",
+      "source_topic": "重要初等函数极限与适用条件",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A053-L002-C01",
+      "source_line_sha256": "15501e815a5ac18a882295a0f6a03fde40b14d7e1cbe9ab5fbd953900351e93f",
+      "source_topic": "一点处连续的定义",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A053-L003-C01",
+      "source_line_sha256": "fb51d9d24d6ba62291139d8eb69da240c593e1758d4dda862f3fdf100dd5ec63",
+      "source_topic": "闭区间连续函数有界性",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A053-L003-C02",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.23077,
+          "source_line_sha256": "fb51d9d24d6ba62291139d8eb69da240c593e1758d4dda862f3fdf100dd5ec63",
+          "topic": "连续函数介值性质",
+          "track": "ELECTIVE_A"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A053-L010-C01",
+      "source_line_sha256": "0aa0ec30252ecf43498ea5b0b4edbcac3d39bed7d73112cc6e0eec5265d8c96c",
+      "source_topic": "复合函数链式法则",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A053-L013-C01",
+      "source_line_sha256": "650dd690d59378ece8afe344ee1075bef8f40f13e8ac99283436645944375854",
+      "source_topic": "中值定理估计函数增量",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A053-L011-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.15789,
+          "source_line_sha256": "506444c9ebe7fa7c04990d0336bc9518f6677d80d8a30b2850c50ac7ff56cf83",
+          "topic": "拉格朗日中值定理的条件与结论",
+          "track": "ELECTIVE_A"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A053-L021-C01",
+      "source_line_sha256": "2aeddb761ab7fce7910c27d3a7cdd0e4fcc9a15d99d705c94cbc5bdc7bfea7bf",
+      "source_topic": "定积分与导数的概念联系",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A053-L019-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.13333,
+          "source_line_sha256": "cf051abd63086e8f29c1fe2acf7fcb5f87873dc28565c6d8d72640194a9b176a",
+          "topic": "黎曼和近似定积分",
+          "track": "ELECTIVE_A"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A054-L017-C01",
+      "source_line_sha256": "1eabd83daa8d89a60c32b65372b103fccc8f5dfa628a01d90eeebaae04e22202",
+      "source_topic": "空间向量运算几何意义",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A054-L019-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.21429,
+          "source_line_sha256": "b9c9053046adde88fc444450ab0e3f8dfc56be03c25c64e00e21d02ab105a28b",
+          "topic": "空间向量投影和分解",
+          "track": "ELECTIVE_A"
+        },
+        {
+          "candidate_id": "KB80-A054-L021-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.13333,
+          "source_line_sha256": "d34b25cd424d26459408bbd7820198f031dd37380c7d761580c247c2475bfbf5",
+          "topic": "向量空间和线性子空间",
+          "track": "ELECTIVE_A"
+        },
+        {
+          "candidate_id": "KB80-A055-L012-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.125,
+          "source_line_sha256": "e4c8a9246b2dc1bb34fdf120698715a7ecbf3b00d66eb83f00082eafb2b65791",
+          "topic": "空间平面法向量与方程",
+          "track": "ELECTIVE_A"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A054-L018-C01",
+      "source_line_sha256": "2263dac7ef590b971f7404a4f1c48928cf49164a465a685edd1e3be0755810ea",
+      "source_topic": "向量内积外积及几何解释",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A053-L008-C02",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.17647,
+          "source_line_sha256": "318f24cac2554c46a7e15430946f74f91e112a069972e1c38a7bf6bf26a895aa",
+          "topic": "二阶导数物理与几何解释",
+          "track": "ELECTIVE_A"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A054-L025-C01",
+      "source_line_sha256": "1d84b16c804e9757d869fd0b9c82ba95d90d71c6ca41dc6ee6226f0ba3b94d3c",
+      "source_topic": "正交矩阵及长度保持",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A055-L013-C01",
+      "source_line_sha256": "d74d82f21a6c8973a81bb3f6361b51c69439566e762549d3fff5795c40ebd8b2",
+      "source_topic": "空间直线参数式与交式",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A055-L014-C01",
+      "source_line_sha256": "c929b5ad5386c983d327b7f478380737d39bbf2c6ab50c0db5938abdfb4affa7",
+      "source_topic": "空间点线面位置的代数判定",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A055-L017-C01",
+      "source_line_sha256": "5823b857ea6a14a7b6d2f4c48fe940faf8dc4e827995dab61f96624a711671ea",
+      "source_topic": "平面等距变换与平移旋转反射",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A055-L020-C01",
+      "source_line_sha256": "3ac4ef0692a2bd393866e01b35d4f9ab3f769b8e560c5c7fedc59c0f70e6eadb",
+      "source_topic": "平面等距变换矩阵与正交条件",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A055-L021-C01",
+      "source_line_sha256": "ea5f047cf5e6f8634d39b6cad8c6e46aafbe416bdab47d67ec2bc2d2abd1ac81",
+      "source_topic": "空间等距变换与三维刚体运动",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A055-L024-C01",
+      "source_line_sha256": "c6e449283fc7f60d38ebe6d0e98a430f7a5f32484f6547f0e3225bf71ba94378",
+      "source_topic": "空间等距变换的正交矩阵表达",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A057-L001-C01",
+      "source_line_sha256": "1895b159eabcfb44d84b761d80c1fca92b5fe667f5762f9c9e69693ae5b56355",
+      "source_topic": "二维连续联合密度与相关结构初步",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A056-L015-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.13043,
+          "source_line_sha256": "7b142ca4f4ae93c5631642bce1261dfb4cac2458de622a50e05af7ee04bb61a8",
+          "topic": "连续随机变量密度与区间概率",
+          "track": "ELECTIVE_A"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A057-L007-C01",
+      "source_line_sha256": "8feb3498822747dfc3012515158a010d021bbd312085ffc3401fdf3cf8c529f3",
+      "source_topic": "统计原假设备择假设与两类错误",
+      "source_track": "ELECTIVE_A",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A058-L009-C01",
+      "source_line_sha256": "ddaed56b46bbc545384815fb0e753106c43aa14213795c684584494fa4d0bcbc",
+      "source_topic": "倒数序列趋零",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A058-L009-C02",
+      "source_line_sha256": "ddaed56b46bbc545384815fb0e753106c43aa14213795c684584494fa4d0bcbc",
+      "source_topic": "数列极限过程表示",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A058-L015-C01",
+      "source_line_sha256": "c659a514a41ecd812660e92c6636460e03a4fce4af93f786130b2de34b5c81ce",
+      "source_topic": "函数极限实例",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A058-L015-C02",
+      "source_line_sha256": "c659a514a41ecd812660e92c6636460e03a4fce4af93f786130b2de34b5c81ce",
+      "source_topic": "函数在有限点附近的趋近",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A058-L026-C03",
+      "source_line_sha256": "133df0f567582d5b63a8cf60deb8b1f995611e578b7f8b94e2f8c7f3638b3c3a",
+      "source_topic": "初等函数一二阶导数计算",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A058-L026-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.23077,
+          "source_line_sha256": "133df0f567582d5b63a8cf60deb8b1f995611e578b7f8b94e2f8c7f3638b3c3a",
+          "topic": "二阶导数的定义",
+          "track": "ELECTIVE_B"
+        },
+        {
+          "candidate_id": "KB80-A058-L026-C02",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.17647,
+          "source_line_sha256": "133df0f567582d5b63a8cf60deb8b1f995611e578b7f8b94e2f8c7f3638b3c3a",
+          "topic": "二阶导数的几何物理意义",
+          "track": "ELECTIVE_B"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A058-L033-C01",
+      "source_line_sha256": "413a4731277525b3c47137659d26e60dd4d905dccfb58323481ed025064b4718",
+      "source_topic": "闭区间多项式最值求法",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A059-L002-C02",
+      "source_line_sha256": "2e2ea691838e7a571f158bf3460b30e31eab5ff0811066772ec14dbdf3ba82be",
+      "source_topic": "定积分的有向面积解释",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A059-L009-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.21429,
+          "source_line_sha256": "137e9092c2884758f90aaec206759a3a2f5e1dc40fe2c6a25f86bd1f015597e0",
+          "topic": "定积分计算平面面积",
+          "track": "ELECTIVE_B"
+        },
+        {
+          "candidate_id": "KB80-A059-L002-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.15385,
+          "source_line_sha256": "2e2ea691838e7a571f158bf3460b30e31eab5ff0811066772ec14dbdf3ba82be",
+          "topic": "定积分基本意义",
+          "track": "ELECTIVE_B"
+        },
+        {
+          "candidate_id": "KB80-A059-L004-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.13333,
+          "source_line_sha256": "8c586d24514e98d1e8621e1a08909448e32de0cfe4bb9d81431ee1a31515506b",
+          "topic": "特殊黎曼和与定积分",
+          "track": "ELECTIVE_B"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A059-L012-C01",
+      "source_line_sha256": "53ee3c103614af4361663d2093b30d783a5b1eddac3a081ac1a932cac357e041",
+      "source_topic": "二元函数与定义域实例",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A059-L013-C01",
+      "source_line_sha256": "4e3ebfb6b1e7f429a678136a790b11efddb134dff72f9d84ba56f33eaa370254",
+      "source_topic": "二元函数偏导数定义与计算",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A058-L026-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.13333,
+          "source_line_sha256": "133df0f567582d5b63a8cf60deb8b1f995611e578b7f8b94e2f8c7f3638b3c3a",
+          "topic": "二阶导数的定义",
+          "track": "ELECTIVE_B"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A059-L016-C01",
+      "source_line_sha256": "defb442f48a2a01bad6d43f311c04fdeeb37821a861db0774cf9b300508dc846",
+      "source_topic": "二元函数驻点",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A058-L035-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.15385,
+          "source_line_sha256": "d76ed7329578e4d404d660dc9f58348a7902db3907c55621db924988175acc2e",
+          "topic": "一元函数微分及线性近似",
+          "track": "ELECTIVE_B"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A059-L016-C02",
+      "source_line_sha256": "defb442f48a2a01bad6d43f311c04fdeeb37821a861db0774cf9b300508dc846",
+      "source_topic": "约束域极值比较",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A059-L018-C01",
+      "source_line_sha256": "9790fcc84ca08f3dd59d63723f2ae26417a78f02daf04a543bdf1a039142175e",
+      "source_topic": "线性规划等高线法",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A059-L018-C02",
+      "source_line_sha256": "9790fcc84ca08f3dd59d63723f2ae26417a78f02daf04a543bdf1a039142175e",
+      "source_topic": "多边形极值与端点",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A059-L020-C01",
+      "source_line_sha256": "8f848ba298d303b15597e491ffe642698505aebf33b6dba7384f8a795e1bc52b",
+      "source_topic": "二元二次函数闭域极值",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A060-L005-C01",
+      "source_line_sha256": "1eabd83daa8d89a60c32b65372b103fccc8f5dfa628a01d90eeebaae04e22202",
+      "source_topic": "向量运算的几何直观表示",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A060-L006-C01",
+      "source_line_sha256": "2263dac7ef590b971f7404a4f1c48928cf49164a465a685edd1e3be0755810ea",
+      "source_topic": "空间点积正交关系",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A060-L006-C02",
+      "source_line_sha256": "2263dac7ef590b971f7404a4f1c48928cf49164a465a685edd1e3be0755810ea",
+      "source_topic": "空间叉积及方向",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A060-L011-C01",
+      "source_line_sha256": "173dfb2d0a5b6fd86ef38b58bbaefe15978f699af753b62ee5668e128abb2672",
+      "source_topic": "空间异面直线距离与退化",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A062-L003-C01",
+      "source_line_sha256": "1895b159eabcfb44d84b761d80c1fca92b5fe667f5762f9c9e69693ae5b56355",
+      "source_topic": "二维正态联合分布与相关参数",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A062-L014-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.41176,
+          "source_line_sha256": "18e99e16fa37d481098522656a1eb79d86008fc838c109b413f963c3f421b7b1",
+          "topic": "二维正态分布参数与相关结构",
+          "track": "ELECTIVE_B"
+        },
+        {
+          "candidate_id": "KB80-A061-L023-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.25,
+          "source_line_sha256": "5d41b88a49f9e2a877e5e3afe130a7fbdb3ab5369d1a41a30f93703555da1b4a",
+          "topic": "二维离散变量联合分布与边缘化",
+          "track": "ELECTIVE_B"
+        },
+        {
+          "candidate_id": "KB80-A061-L017-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.15,
+          "source_line_sha256": "59ac2ccf2b2a9df92cf81a915aa9c7ffa925609da0465893f50ede00f503ebcc",
+          "topic": "均匀与正态分布的参数条件",
+          "track": "ELECTIVE_B"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A062-L019-C01",
+      "source_line_sha256": "c0e8b71a1758d0d7ffcef156f2b92304efbbe7a0779569ebc798bf30f6ecf776",
+      "source_topic": "聚类问题距离尺度与无监督分组目标",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A062-L020-C01",
+      "source_line_sha256": "835fb6502b6cdfe03a129cc101ba2a0ae653981a268e1fc0b52e10ba4c4d725d",
+      "source_topic": "层次聚类与中心聚类的目标和局限",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A062-L023-C01",
+      "source_line_sha256": "b5ce4484414d049f9717e5b29d6f1b7c291411e5802f8d68d1bfecad79bdeb32",
+      "source_topic": "正交实验的水平平衡与比较思想",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A062-L024-C01",
+      "source_line_sha256": "1f85ff12b5d7feb4aaa8987364d6c333b03305f82f39db8a2070869390bb6023",
+      "source_topic": "正交表列配置及试验方案构造",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A063-L012-C01",
+      "source_line_sha256": "7cdd8246926ed7cbc22037e3a69374f8c60a4186f87f5778c1962acb9c609778",
+      "source_topic": "二变量平面线性关系与几何解释",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A063-L015-C01",
+      "source_line_sha256": "bae259dcc3b3766fa706dd980fec45003d8ab89e21dd192062c490f4636089a1",
+      "source_topic": "三变量线性模型与投入产出约束",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A063-L010-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.31579,
+          "source_line_sha256": "ab99386ea6139fd00a1caa64fc3ae8ccf578f5b584e9371549c5165caef07ca6",
+          "topic": "单变量线性模型与均匀变化率",
+          "track": "ELECTIVE_B"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A064-L006-C01",
+      "source_line_sha256": "10b5a0a0725a24f5f83bea1fab6bb2abbf1b75cbb54e7d811cf6b478d0fe60b9",
+      "source_topic": "平面抛体参数运动的坐标消元条件",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A064-L007-C01",
+      "source_line_sha256": "abaea1b1d8d7799cbebe8e236297a0bf58c2495669d326d508db7ed36e37c880",
+      "source_topic": "空间螺旋线参数方程与周期轴向运动",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A064-L008-C01",
+      "source_line_sha256": "2a71ae1c82a7401427a01d96c213462b19aaadcb124b932c440118ebb74405ee",
+      "source_topic": "参数方程建模的变量单位与轨迹合法域",
+      "source_track": "ELECTIVE_B",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A064-L021-C01",
+      "source_line_sha256": "de872adbc95f62c0c64453e3f087f30929cfcfebd4ecc994eb2e7799f55131d5",
+      "source_topic": "数学定义的基本方式",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A064-L021-C02",
+      "source_line_sha256": "de872adbc95f62c0c64453e3f087f30929cfcfebd4ecc994eb2e7799f55131d5",
+      "source_topic": "数学命题与推理的表达",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A065-L002-C01",
+      "source_line_sha256": "f361a193c33045d1196eb7a20f29eae104cbc52ea57f0d23804eddfe3d83a868",
+      "source_topic": "同一律",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A065-L002-C02",
+      "source_line_sha256": "f361a193c33045d1196eb7a20f29eae104cbc52ea57f0d23804eddfe3d83a868",
+      "source_topic": "矛盾律",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A065-L006-C01",
+      "source_line_sha256": "6d83328520e1b1e28d9bf671dd760d720b657259937d1c9f923df81ee24ef80d",
+      "source_topic": "演绎推理",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A065-L006-C02",
+      "source_line_sha256": "6d83328520e1b1e28d9bf671dd760d720b657259937d1c9f923df81ee24ef80d",
+      "source_topic": "不完全归纳的局限",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A065-L006-C03",
+      "source_line_sha256": "6d83328520e1b1e28d9bf671dd760d720b657259937d1c9f923df81ee24ef80d",
+      "source_topic": "类比推理",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A065-L011-C02",
+      "source_line_sha256": "98e7b1b5c50a89b79870d855daffd66b0b5bbe766a44972b4e3c6bcdb8a77a4e",
+      "source_topic": "归纳证明条件",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A065-L014-C01",
+      "source_line_sha256": "1e5f07f7c61f5356ac2b8ee1985b4ee1278c4852c7da18d6ea6d5644c5667ba0",
+      "source_topic": "公理体系独立性",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A065-L014-C02",
+      "source_line_sha256": "1e5f07f7c61f5356ac2b8ee1985b4ee1278c4852c7da18d6ea6d5644c5667ba0",
+      "source_topic": "公理体系相容性",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A065-L014-C03",
+      "source_line_sha256": "1e5f07f7c61f5356ac2b8ee1985b4ee1278c4852c7da18d6ea6d5644c5667ba0",
+      "source_topic": "公理体系完备性",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A066-L008-C02",
+      "source_line_sha256": "583bf5a1c73660d33e83c5fda66b1dbedda59a4914b69fdd6e4cbd309cffe36a",
+      "source_topic": "等额本金还款模型",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A066-L012-C01",
+      "source_line_sha256": "0434e8f234a8937cfd5f00ba91263e63ed2d1ac4988709d0def26febeff49563",
+      "source_topic": "投入产出线性模型的可行性",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A066-L021-C01",
+      "source_line_sha256": "575f1df7b4bbb668d77fd582562634ede09fc1ee7a7d7dba3a3e878e3bc27c64",
+      "source_topic": "宏观简化模型与乘数效应",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A066-L025-C01",
+      "source_line_sha256": "ec6ddeb7583ccfb7c5aa84eb82e2bdc65bbc30bca4d4a27f6dd29e2e3dea07ad",
+      "source_topic": "生产函数及对数线性变换",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A067-L008-C01",
+      "source_line_sha256": "2e5c70093b7085dad14183bb11bd42e50eb3b994e1255c46c4b39454bd4f95e5",
+      "source_topic": "指数增长模型的参数与局限",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A066-L008-C01",
+          "cross_track": false,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.23077,
+          "source_line_sha256": "583bf5a1c73660d33e83c5fda66b1dbedda59a4914b69fdd6e4cbd309cffe36a",
+          "topic": "复利增长模型",
+          "track": "ELECTIVE_C"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A067-L012-C01",
+      "source_line_sha256": "8b8992d365f38187b8c216db1b82ce01f2b9c7d1059b263b6275c19131d9fc09",
+      "source_topic": "逻辑回归概率映射与阈值",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A068-L004-C01",
+      "source_line_sha256": "277c255c6058c9b0d07594258c0eae9ae4329228e10cadaae8cfba1a35217bd8",
+      "source_topic": "调查方法使用范围与偏差意识",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A068-L005-C01",
+      "source_line_sha256": "2049bcde8144a9793a6e2bddc17691de0fefa96f0477198c116708e0f7f8cda1",
+      "source_topic": "社会调查流程的阶段与偏差来源",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A068-L008-C01",
+      "source_line_sha256": "5d16c90b67cd4723ccabbd72abb067d661bf6c240dadae370d5886f15433769b",
+      "source_topic": "抽样框与调查目标的匹配",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A068-L010-C01",
+      "source_line_sha256": "307d104bef4e417384a91fbbb62617381ba0e151ef01bc4271a5497718145421",
+      "source_topic": "调查方案可行性与误差来源",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A068-L011-C01",
+      "source_line_sha256": "66a0df31cff454ef4b76d50a496a75dbd82e4cdbfb2429016aec9cc4047e1fa4",
+      "source_topic": "问卷测量误差与题目设计",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A068-L013-C01",
+      "source_line_sha256": "9184d17a0b2422d66b125eaf769182859a90409261e478577a4ca79d806d2161",
+      "source_topic": "调查资料收集方式的选择",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A068-L019-C01",
+      "source_line_sha256": "df99aaa24f7e0f3eabbe516acff054796f3e4bcf3c360cb9e86c5674e3272387",
+      "source_topic": "调查频数表与分组统计",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A068-L023-C01",
+      "source_line_sha256": "b8f78b9f62ff3c3f6303f5f40c0666306c9e6deb72da2ccfead3b8bdf6f77643",
+      "source_topic": "相关与回归的区分",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A068-L023-C02",
+      "source_line_sha256": "b8f78b9f62ff3c3f6303f5f40c0666306c9e6deb72da2ccfead3b8bdf6f77643",
+      "source_topic": "多元统计模型前提",
+      "source_track": "ELECTIVE_C",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A069-L017-C01",
+      "source_line_sha256": "5beb295613e760e527a301c40536081dd67c37d68bd863d8c3fa06530790850d",
+      "source_topic": "圆形结构的简洁性及应用",
+      "source_track": "ELECTIVE_D",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A070-L002-C01",
+      "source_line_sha256": "c5bcf68cf6d86a4c495ba5f2b555e6eef31b0264f3258ce41f9b06f2e25b9bb8",
+      "source_topic": "轴对称与空间反射的实例",
+      "source_track": "ELECTIVE_D",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "LEXICAL_NEIGHBOR_UNVERIFIED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A070-L012-C01",
+      "source_line_sha256": "edf16b6a501d49becce2ace0f578f0b329259f392aa244b673df716744da4e19",
+      "source_topic": "黄金比的数学定义与情境边界",
+      "source_track": "ELECTIVE_D",
+      "student_publishable": false,
+      "suggestions": [
+        {
+          "candidate_id": "KB80-A038-L011-C01",
+          "cross_track": true,
+          "equivalence_status": "UNREVIEWED_NOT_CERTIFIED",
+          "lexical_overlap_score": 0.125,
+          "source_line_sha256": "2a520f0429dead4fcc02b8504a7c317084ac57070b767b58b974b941a8ad7eb7",
+          "topic": "数列定义与表示",
+          "track": "SELECTIVE_COMPULSORY"
+        }
+      ],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A070-L023-C01",
+      "source_line_sha256": "7b6ce0fe135bd561a2be633a49316ceba3cbe3386000aba6150f6b53e005833d",
+      "source_topic": "正弦声波的频率及振幅",
+      "source_track": "ELECTIVE_D",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A070-L023-C02",
+      "source_line_sha256": "7b6ce0fe135bd561a2be633a49316ceba3cbe3386000aba6150f6b53e005833d",
+      "source_topic": "正弦波叠加模型",
+      "source_track": "ELECTIVE_D",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    },
+    {
+      "candidate_signal": "MANUAL_SEARCH_REQUIRED",
+      "human_review_required": true,
+      "math_equivalence_certified": false,
+      "official_atom_id": null,
+      "pairwise_semantic_review": "NOT_PERFORMED",
+      "source_candidate_id": "KB80-A071-L005-C01",
+      "source_line_sha256": "94bd99d2181be3615bf455be3dd3475d4ab3ddd007bbab46f02bd460325fc088",
+      "source_topic": "节拍比例与最小公倍数",
+      "source_track": "ELECTIVE_D",
+      "student_publishable": false,
+      "suggestions": [],
+      "teacher_approved": false
+    }
+  ],
+  "source_anchor_census": 428,
+  "source_snapshots_sha256": {
+    "curriculum/highschool_math/k00_batch61_source_anchor_registry.json": "9e0d2d5ea2796528ee7fcc7ec3cd2a027c9d0836855301295521ebbc1d79fc7e",
+    "docs/evaluation/KB_BATCH89_P0_AND_CANDIDATE_BACKLOG.json": "e4305e377713de664853a3458454ee70e0d7bd27251acb6187ca9e43e30bf235",
+    "docs/evaluation/KB_BATCH92_SOURCE_RELATIONS.json": "f38e75b706592c0acd5d845b1ba0bd9b8fca14397477b420d86c6d623d163ec8",
+    "knowledge/deep/v1/batch100_deep_source_20.json": "57a997171e5c8ad77e478ce6201ed3b3ec498f0830eb255e3a4dcee418144f04",
+    "knowledge/deep/v1/batch94_deep_scope_14.json": "cab60c49b098f4d83c5184ccfddd77bdbc83dc08b2a0d83140a300527a360aab",
+    "knowledge/deep/v1/batch95_deep_scope_16.json": "5e4229dd7ffb0e731e9a11efcb5ef713eaed0f889ffb4b45bc54b43c62327d76",
+    "knowledge/deep/v1/batch96_deep_scope_12.json": "6c70f28cccbcc31403bb6f3fb40aaa76abcb7f28769c8d876cc5a42f288da2d9",
+    "knowledge/deep/v1/batch97_deep_scope_12.json": "01447e808bc7e47500a163e88dfe1c9235b0f782252505ccef9060f88e096c79",
+    "knowledge/deep/v1/batch98_deep_scope_12.json": "3ed3798f56c03914a382bf987bc5952964c138bbab5e15bad53ab22f54dc3946"
+  },
+  "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+  "student_published": 0,
+  "teacher_approved": 0,
+  "text_prerequisite_reviewer_queue": [
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.01",
+      "lesson_title": "不同两点确定直线的唯一性及零方向退化",
+      "queue_id": "math.hs.batch100.01#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.01",
+          "lesson_title": "三维直角坐标系的点与向量坐标",
+          "lexical_overlap_score": 0.28571,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "平面直角坐标系"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.01",
+      "lesson_title": "不同两点确定直线的唯一性及零方向退化",
+      "queue_id": "math.hs.batch100.01#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.02",
+          "lesson_title": "三维向量加减法与同基底坐标表示",
+          "lexical_overlap_score": 0.16667,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "向量减法与非零向量"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.02",
+      "lesson_title": "三维向量加减法与同基底坐标表示",
+      "queue_id": "math.hs.batch100.02#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "二维向量加法"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.02",
+      "lesson_title": "三维向量加减法与同基底坐标表示",
+      "queue_id": "math.hs.batch100.02#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.01",
+          "lesson_title": "三维直角坐标系的点与向量坐标",
+          "lexical_overlap_score": 0.28571,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "空间直角坐标系"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.03",
+      "lesson_title": "空间直线参数式与异面、平行和相交的区别",
+      "queue_id": "math.hs.batch100.03#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.01",
+          "lesson_title": "三维直角坐标系的点与向量坐标",
+          "lexical_overlap_score": 0.2,
+          "mathematical_implication_verified": false
+        },
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.02",
+          "lesson_title": "三维向量加减法与同基底坐标表示",
+          "lexical_overlap_score": 0.17647,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "向量与三维坐标"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.03",
+      "lesson_title": "空间直线参数式与异面、平行和相交的区别",
+      "queue_id": "math.hs.batch100.03#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "解线性方程组"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.04",
+      "lesson_title": "直线与平面：法向量和基点的双条件判定",
+      "queue_id": "math.hs.batch100.04#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "空间数量积"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.04",
+      "lesson_title": "直线与平面：法向量和基点的双条件判定",
+      "queue_id": "math.hs.batch100.04#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "一次方程组"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.05",
+      "lesson_title": "三维等距仿射变换的正交条件与平移",
+      "queue_id": "math.hs.batch100.05#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "矩阵乘法与转置"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.05",
+      "lesson_title": "三维等距仿射变换的正交条件与平移",
+      "queue_id": "math.hs.batch100.05#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.13",
+          "lesson_title": "非零欧氏向量正交与内积零的充要条件",
+          "lexical_overlap_score": 0.16667,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "欧氏向量模长"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.06",
+      "lesson_title": "正交矩阵保持范数且行列式为正负一",
+      "queue_id": "math.hs.batch100.06#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "欧氏内积"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.06",
+      "lesson_title": "正交矩阵保持范数且行列式为正负一",
+      "queue_id": "math.hs.batch100.06#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "行列式与矩阵乘法"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.07",
+      "lesson_title": "数列极限的严格ε–N量词定义",
+      "queue_id": "math.hs.batch100.07#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "绝对值不等式"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.07",
+      "lesson_title": "数列极限的严格ε–N量词定义",
+      "queue_id": "math.hs.batch100.07#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "量词∀与∃的次序"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.08",
+      "lesson_title": "双侧函数极限的ε–δ定义与去心邻域",
+      "queue_id": "math.hs.batch100.08#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "实数绝对值"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.08",
+      "lesson_title": "双侧函数极限的ε–δ定义与去心邻域",
+      "queue_id": "math.hs.batch100.08#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch95.10",
+          "lesson_title": "二元函数定义域与截面观察",
+          "lexical_overlap_score": 0.16667,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "函数的定义域及单侧极限"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.09",
+      "lesson_title": "多项式闭区间极值的端点与驻点完备检查",
+      "queue_id": "math.hs.batch100.09#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "导数与驻点"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.09",
+      "lesson_title": "多项式闭区间极值的端点与驻点完备检查",
+      "queue_id": "math.hs.batch100.09#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch98.06",
+          "lesson_title": "闭区间连续函数有界性与开区间反例",
+          "lexical_overlap_score": 0.3,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "闭区间连续函数的极值存在性"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.10",
+      "lesson_title": "定积分符号面积与非负几何面积的区分",
+      "queue_id": "math.hs.batch100.10#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "原函数及定积分"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.10",
+      "lesson_title": "定积分符号面积与非负几何面积的区分",
+      "queue_id": "math.hs.batch100.10#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "函数符号与零点"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.11",
+      "lesson_title": "有界闭多边形上线性目标的顶点最优性",
+      "queue_id": "math.hs.batch100.11#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平面坐标及不等式"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.11",
+      "lesson_title": "有界闭多边形上线性目标的顶点最优性",
+      "queue_id": "math.hs.batch100.11#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "线性函数与凸组合"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.12",
+      "lesson_title": "二维二次函数闭矩形极值：内部与边界均需检验",
+      "queue_id": "math.hs.batch100.12#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "一元二次函数极值"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.12",
+      "lesson_title": "二维二次函数闭矩形极值：内部与边界均需检验",
+      "queue_id": "math.hs.batch100.12#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "连续函数的紧集最值存在性"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.13",
+      "lesson_title": "非零欧氏向量正交与内积零的充要条件",
+      "queue_id": "math.hs.batch100.13#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "三角函数cos"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.13",
+      "lesson_title": "非零欧氏向量正交与内积零的充要条件",
+      "queue_id": "math.hs.batch100.13#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch94.06",
+          "lesson_title": "空间向量坐标加减与数乘的基底前提",
+          "lexical_overlap_score": 0.33333,
+          "mathematical_implication_verified": false
+        },
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.01",
+          "lesson_title": "三维直角坐标系的点与向量坐标",
+          "lexical_overlap_score": 0.21429,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "空间向量坐标"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.14",
+      "lesson_title": "二水平正交试验列平衡与配对均衡",
+      "queue_id": "math.hs.batch100.14#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "组合计数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.14",
+      "lesson_title": "二水平正交试验列平衡与配对均衡",
+      "queue_id": "math.hs.batch100.14#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "频数表和主效应"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.15",
+      "lesson_title": "投入产出三部门方程的可逆性与非负产出",
+      "queue_id": "math.hs.batch100.15#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "矩阵可逆性"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.15",
+      "lesson_title": "投入产出三部门方程的可逆性与非负产出",
+      "queue_id": "math.hs.batch100.15#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "线性方程组及非负约束"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.16",
+      "lesson_title": "无空气阻力抛体轨迹消参及水平速度零边界",
+      "queue_id": "math.hs.batch100.16#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "二次函数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.16",
+      "lesson_title": "无空气阻力抛体轨迹消参及水平速度零边界",
+      "queue_id": "math.hs.batch100.16#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "匀加速运动的参数方程"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.17",
+      "lesson_title": "命题、谓词与量词否定的区别",
+      "queue_id": "math.hs.batch100.17#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "实数不等式"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.17",
+      "lesson_title": "命题、谓词与量词否定的区别",
+      "queue_id": "math.hs.batch100.17#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "经典逻辑中的否定"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.18",
+      "lesson_title": "有限样例归纳与数学归纳法的证据强度",
+      "queue_id": "math.hs.batch100.18#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "整数乘积与整除"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.18",
+      "lesson_title": "有限样例归纳与数学归纳法的证据强度",
+      "queue_id": "math.hs.batch100.18#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch94.13",
+          "lesson_title": "数学归纳法：归纳起点与归纳步的逻辑衔接",
+          "lexical_overlap_score": 0.26316,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "数学归纳法和逻辑量词"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.19",
+      "lesson_title": "分组频数表的互斥穷尽与相对频率校验",
+      "queue_id": "math.hs.batch100.19#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "集合划分"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.19",
+      "lesson_title": "分组频数表的互斥穷尽与相对频率校验",
+      "queue_id": "math.hs.batch100.19#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "统计频数与比例"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.20",
+      "lesson_title": "最小二乘唯一解的满列秩条件",
+      "queue_id": "math.hs.batch100.20#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "矩阵秩和逆矩阵"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch100.20",
+      "lesson_title": "最小二乘唯一解的满列秩条件",
+      "queue_id": "math.hs.batch100.20#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "二次函数最小化"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.01",
+      "lesson_title": "用区域图检验集合交并补运算",
+      "queue_id": "math.hs.batch94.01#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "集合属于关系"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.01",
+      "lesson_title": "用区域图检验集合交并补运算",
+      "queue_id": "math.hs.batch94.01#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "经典命题逻辑中的且或非"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.02",
+      "lesson_title": "余弦定理的向量内积推导",
+      "queue_id": "math.hs.batch94.02#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.02",
+          "lesson_title": "三维向量加减法与同基底坐标表示",
+          "lexical_overlap_score": 0.1875,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "向量加减运算"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.02",
+      "lesson_title": "余弦定理的向量内积推导",
+      "queue_id": "math.hs.batch94.02#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "欧氏内积与范数平方"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.03",
+      "lesson_title": "等差数列应用中的索引和单位检查",
+      "queue_id": "math.hs.batch94.03#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "整数项号与顺序"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.03",
+      "lesson_title": "等差数列应用中的索引和单位检查",
+      "queue_id": "math.hs.batch94.03#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "常数增量及线性表达式"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.04",
+      "lesson_title": "前缀和恢复通项的首项特例",
+      "queue_id": "math.hs.batch94.04#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "求和定义"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.04",
+      "lesson_title": "前缀和恢复通项的首项特例",
+      "queue_id": "math.hs.batch94.04#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "代数式相减与差分"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.05",
+      "lesson_title": "可导内点极值的必要条件与失效边界",
+      "queue_id": "math.hs.batch94.05#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "局部极值定义"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.05",
+      "lesson_title": "可导内点极值的必要条件与失效边界",
+      "queue_id": "math.hs.batch94.05#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "导数符号与单调性"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.06",
+      "lesson_title": "空间向量坐标加减与数乘的基底前提",
+      "queue_id": "math.hs.batch94.06#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.02",
+          "lesson_title": "三维向量加减法与同基底坐标表示",
+          "lexical_overlap_score": 0.17647,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "向量加法与数乘"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.06",
+      "lesson_title": "空间向量坐标加减与数乘的基底前提",
+      "queue_id": "math.hs.batch94.06#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.01",
+          "lesson_title": "三维直角坐标系的点与向量坐标",
+          "lexical_overlap_score": 0.5,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "三维直角坐标系"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.07",
+      "lesson_title": "点到非退化直线的距离公式",
+      "queue_id": "math.hs.batch94.07#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "欧氏内积与正交投影"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.07",
+      "lesson_title": "点到非退化直线的距离公式",
+      "queue_id": "math.hs.batch94.07#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "向量范数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.08",
+      "lesson_title": "排列组合：顺序是否可辨的严格判别",
+      "queue_id": "math.hs.batch94.08#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch95.05",
+          "lesson_title": "分类加法和分步乘法计数原则",
+          "lexical_overlap_score": 0.30769,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "乘法计数原理"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.08",
+      "lesson_title": "排列组合：顺序是否可辨的严格判别",
+      "queue_id": "math.hs.batch94.08#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "无重复有限集合"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.09",
+      "lesson_title": "二项分布模型建立与前提核验",
+      "queue_id": "math.hs.batch94.09#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "独立事件乘法关系"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.09",
+      "lesson_title": "二项分布模型建立与前提核验",
+      "queue_id": "math.hs.batch94.09#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "排列组合与互补事件"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.10",
+      "lesson_title": "收敛数列加法极限定律的误差分配",
+      "queue_id": "math.hs.batch94.10#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.07",
+          "lesson_title": "数列极限的严格ε–N量词定义",
+          "lexical_overlap_score": 0.23529,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "数列ε–N收敛定义"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.10",
+      "lesson_title": "收敛数列加法极限定律的误差分配",
+      "queue_id": "math.hs.batch94.10#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "绝对值三角不等式"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.11",
+      "lesson_title": "二维正交矩阵的长度与夹角不变量",
+      "queue_id": "math.hs.batch94.11#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "矩阵乘法"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.11",
+      "lesson_title": "二维正交矩阵的长度与夹角不变量",
+      "queue_id": "math.hs.batch94.11#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch94.02",
+          "lesson_title": "余弦定理的向量内积推导",
+          "lexical_overlap_score": 0.23077,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "向量内积与范数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.12",
+      "lesson_title": "二元函数驻点与边界极值的区分",
+      "queue_id": "math.hs.batch94.12#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "一元导数与驻点"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.12",
+      "lesson_title": "二元函数驻点与边界极值的区分",
+      "queue_id": "math.hs.batch94.12#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch95.10",
+          "lesson_title": "二元函数定义域与截面观察",
+          "lexical_overlap_score": 0.42857,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "二元函数定义域及边界"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.13",
+      "lesson_title": "数学归纳法：归纳起点与归纳步的逻辑衔接",
+      "queue_id": "math.hs.batch94.13#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "数学命题与全称量词"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.13",
+      "lesson_title": "数学归纳法：归纳起点与归纳步的逻辑衔接",
+      "queue_id": "math.hs.batch94.13#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "蕴含命题与代数恒等式"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.14",
+      "lesson_title": "黄金比定义与有限近似的区别",
+      "queue_id": "math.hs.batch94.14#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "一元二次方程"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch94.14",
+      "lesson_title": "黄金比定义与有限近似的区别",
+      "queue_id": "math.hs.batch94.14#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "正实数与比例"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.01",
+      "lesson_title": "斜二测画法的方向和长度比例",
+      "queue_id": "math.hs.batch95.01#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.01",
+          "lesson_title": "三维直角坐标系的点与向量坐标",
+          "lexical_overlap_score": 0.28571,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "空间直角坐标系"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.01",
+      "lesson_title": "斜二测画法的方向和长度比例",
+      "queue_id": "math.hs.batch95.01#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平行投影与相似比例"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.02",
+      "lesson_title": "两个相交平面公共点确定交线",
+      "queue_id": "math.hs.batch95.02#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平面基本公理"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.02",
+      "lesson_title": "两个相交平面公共点确定交线",
+      "queue_id": "math.hs.batch95.02#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "三不共线点确定唯一平面"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.03",
+      "lesson_title": "等比增长识别及零初值边界",
+      "queue_id": "math.hs.batch95.03#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "乘方运算"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.03",
+      "lesson_title": "等比增长识别及零初值边界",
+      "queue_id": "math.hs.batch95.03#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "离散递推及增长率"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.04",
+      "lesson_title": "常数函数导数为零的差商证明",
+      "queue_id": "math.hs.batch95.04#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch95.10",
+          "lesson_title": "二元函数定义域与截面观察",
+          "lexical_overlap_score": 0.23077,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "函数及定义域"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.04",
+      "lesson_title": "常数函数导数为零的差商证明",
+      "queue_id": "math.hs.batch95.04#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "极限和差商"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.05",
+      "lesson_title": "分类加法和分步乘法计数原则",
+      "queue_id": "math.hs.batch95.05#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "集合的交并"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.05",
+      "lesson_title": "分类加法和分步乘法计数原则",
+      "queue_id": "math.hs.batch95.05#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "乘法原理与有序对"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.06",
+      "lesson_title": "离散随机变量分布列与期望方差",
+      "queue_id": "math.hs.batch95.06#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "离散样本空间"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.06",
+      "lesson_title": "离散随机变量分布列与期望方差",
+      "queue_id": "math.hs.batch95.06#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "有限加权平均"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.07",
+      "lesson_title": "复合函数链式法则及内外导数",
+      "queue_id": "math.hs.batch95.07#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch95.10",
+          "lesson_title": "二元函数定义域与截面观察",
+          "lexical_overlap_score": 0.16667,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "导数定义"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.07",
+      "lesson_title": "复合函数链式法则及内外导数",
+      "queue_id": "math.hs.batch95.07#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch96.02",
+          "lesson_title": "差商双侧极限与可导性判别",
+          "lexical_overlap_score": 0.2,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "函数复合与可导性"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.08",
+      "lesson_title": "拉格朗日中值定理与变化率界",
+      "queue_id": "math.hs.batch95.08#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "Rolle引理"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.08",
+      "lesson_title": "拉格朗日中值定理与变化率界",
+      "queue_id": "math.hs.batch95.08#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch98.06",
+          "lesson_title": "闭区间连续函数有界性与开区间反例",
+          "lexical_overlap_score": 0.35294,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "闭区间连续与开区间可导"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.09",
+      "lesson_title": "假设检验的两类错误与显著性",
+      "queue_id": "math.hs.batch95.09#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "条件概率"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.09",
+      "lesson_title": "假设检验的两类错误与显著性",
+      "queue_id": "math.hs.batch95.09#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "统计抽样模型"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.10",
+      "lesson_title": "二元函数定义域与截面观察",
+      "queue_id": "math.hs.batch95.10#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "一元函数定义域"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.10",
+      "lesson_title": "二元函数定义域与截面观察",
+      "queue_id": "math.hs.batch95.10#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平面不等式区域"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.11",
+      "lesson_title": "平面线性规划顶点法的有界条件",
+      "queue_id": "math.hs.batch95.11#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "一次不等式"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.11",
+      "lesson_title": "平面线性规划顶点法的有界条件",
+      "queue_id": "math.hs.batch95.11#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "凸多边形与线性函数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.12",
+      "lesson_title": "参数运动消元与时间域合法性",
+      "queue_id": "math.hs.batch95.12#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "函数复合"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.12",
+      "lesson_title": "参数运动消元与时间域合法性",
+      "queue_id": "math.hs.batch95.12#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平面解析几何"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.13",
+      "lesson_title": "演绎推理与前提有效性",
+      "queue_id": "math.hs.batch95.13#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "命题真假表"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.13",
+      "lesson_title": "演绎推理与前提有效性",
+      "queue_id": "math.hs.batch95.13#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch94.05",
+          "lesson_title": "可导内点极值的必要条件与失效边界",
+          "lexical_overlap_score": 0.22222,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "充分条件与必要条件"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.14",
+      "lesson_title": "抽样框覆盖误差与目标总体",
+      "queue_id": "math.hs.batch95.14#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "总体与样本"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.14",
+      "lesson_title": "抽样框覆盖误差与目标总体",
+      "queue_id": "math.hs.batch95.14#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "概率抽样定义"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.15",
+      "lesson_title": "正弦声波频率振幅与单位辨析",
+      "queue_id": "math.hs.batch95.15#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "三角函数周期性"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.15",
+      "lesson_title": "正弦声波频率振幅与单位辨析",
+      "queue_id": "math.hs.batch95.15#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "弧度与角速度"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.16",
+      "lesson_title": "多节拍同步的最小公倍数方法",
+      "queue_id": "math.hs.batch95.16#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "整数整除"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch95.16",
+      "lesson_title": "多节拍同步的最小公倍数方法",
+      "queue_id": "math.hs.batch95.16#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "质因数分解"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.01",
+      "lesson_title": "等差关系情境识别与项号偏移",
+      "queue_id": "math.hs.batch96.01#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "整数项号与代数式"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.01",
+      "lesson_title": "等差关系情境识别与项号偏移",
+      "queue_id": "math.hs.batch96.01#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "相邻项差与线性函数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.02",
+      "lesson_title": "差商双侧极限与可导性判别",
+      "queue_id": "math.hs.batch96.02#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.04",
+          "lesson_title": "有限函数极限的和积商法则",
+          "lexical_overlap_score": 0.27273,
+          "mathematical_implication_verified": false
+        },
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.08",
+          "lesson_title": "双侧函数极限的ε–δ定义与去心邻域",
+          "lexical_overlap_score": 0.1875,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "函数极限"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.02",
+      "lesson_title": "差商双侧极限与可导性判别",
+      "queue_id": "math.hs.batch96.02#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "绝对值与分段函数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.03",
+      "lesson_title": "空间零向量的定义及方向禁区",
+      "queue_id": "math.hs.batch96.03#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch94.06",
+          "lesson_title": "空间向量坐标加减与数乘的基底前提",
+          "lexical_overlap_score": 0.33333,
+          "mathematical_implication_verified": false
+        },
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.01",
+          "lesson_title": "三维直角坐标系的点与向量坐标",
+          "lexical_overlap_score": 0.21429,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "空间向量坐标"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.03",
+      "lesson_title": "空间零向量的定义及方向禁区",
+      "queue_id": "math.hs.batch96.03#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平方根与非零除法"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.04",
+      "lesson_title": "平面直线平行垂直的法向量判定",
+      "queue_id": "math.hs.batch96.04#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.01",
+          "lesson_title": "三维直角坐标系的点与向量坐标",
+          "lexical_overlap_score": 0.21429,
+          "mathematical_implication_verified": false
+        },
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.02",
+          "lesson_title": "三维向量加减法与同基底坐标表示",
+          "lexical_overlap_score": 0.1875,
+          "mathematical_implication_verified": false
+        },
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch94.06",
+          "lesson_title": "空间向量坐标加减与数乘的基底前提",
+          "lexical_overlap_score": 0.17647,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "二维向量坐标"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.04",
+      "lesson_title": "平面直线平行垂直的法向量判定",
+      "queue_id": "math.hs.batch96.04#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "线性相关与垂直"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.05",
+      "lesson_title": "二项式系数的选取证明与适用条件",
+      "queue_id": "math.hs.batch96.05#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch95.05",
+          "lesson_title": "分类加法和分步乘法计数原则",
+          "lexical_overlap_score": 0.21429,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "分步乘法原理"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.05",
+      "lesson_title": "二项式系数的选取证明与适用条件",
+      "queue_id": "math.hs.batch96.05#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "排列与组合"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.06",
+      "lesson_title": "正态分布的标准化与概率解释",
+      "queue_id": "math.hs.batch96.06#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "概率区间事件"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.06",
+      "lesson_title": "正态分布的标准化与概率解释",
+      "queue_id": "math.hs.batch96.06#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "线性变量变换"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.07",
+      "lesson_title": "线性回归预测残差与外推风险",
+      "queue_id": "math.hs.batch96.07#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "坐标与一次函数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.07",
+      "lesson_title": "线性回归预测残差与外推风险",
+      "queue_id": "math.hs.batch96.07#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平均值与平方误差"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.08",
+      "lesson_title": "二乘二列联表的条件比例与边际",
+      "queue_id": "math.hs.batch96.08#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "非负整数计数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.08",
+      "lesson_title": "二乘二列联表的条件比例与边际",
+      "queue_id": "math.hs.batch96.08#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "分数及条件概率"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.09",
+      "lesson_title": "实数单调有界数列的收敛性证明",
+      "queue_id": "math.hs.batch96.09#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "单调与有界"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.09",
+      "lesson_title": "实数单调有界数列的收敛性证明",
+      "queue_id": "math.hs.batch96.09#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "实数上确界性质"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.10",
+      "lesson_title": "空间点积叉积的几何含义及退化",
+      "queue_id": "math.hs.batch96.10#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "空间坐标与内积"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.10",
+      "lesson_title": "空间点积叉积的几何含义及退化",
+      "queue_id": "math.hs.batch96.10#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "三维线性相关"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.11",
+      "lesson_title": "类比推理与证明有效性的边界",
+      "queue_id": "math.hs.batch96.11#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "命题逻辑"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.11",
+      "lesson_title": "类比推理与证明有效性的边界",
+      "queue_id": "math.hs.batch96.11#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "整数整除性质"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.12",
+      "lesson_title": "空间螺旋线参数方程与真实周期",
+      "queue_id": "math.hs.batch96.12#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "三角函数周期性"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch96.12",
+      "lesson_title": "空间螺旋线参数方程与真实周期",
+      "queue_id": "math.hs.batch96.12#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "空间坐标与参数曲线"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.01",
+      "lesson_title": "三维直角坐标系的点与向量坐标",
+      "queue_id": "math.hs.batch97.01#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "二维直角坐标系"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.01",
+      "lesson_title": "三维直角坐标系的点与向量坐标",
+      "queue_id": "math.hs.batch97.01#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "向量减法和勾股定理"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.02",
+      "lesson_title": "空间直线和平面的向量位置判别",
+      "queue_id": "math.hs.batch97.02#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch94.06",
+          "lesson_title": "空间向量坐标加减与数乘的基底前提",
+          "lexical_overlap_score": 0.17647,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "空间向量点积"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.02",
+      "lesson_title": "空间直线和平面的向量位置判别",
+      "queue_id": "math.hs.batch97.02#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.03",
+          "lesson_title": "空间直线参数式与异面、平行和相交的区别",
+          "lexical_overlap_score": 0.2381,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "直线参数式与平面方程"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.03",
+      "lesson_title": "抛物线与双曲线的焦点轨迹定义",
+      "queue_id": "math.hs.batch97.03#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平面点线距离"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.03",
+      "lesson_title": "抛物线与双曲线的焦点轨迹定义",
+      "queue_id": "math.hs.batch97.03#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "三角不等式与轨迹"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.04",
+      "lesson_title": "有限函数极限的和积商法则",
+      "queue_id": "math.hs.batch97.04#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.08",
+          "lesson_title": "双侧函数极限的ε–δ定义与去心邻域",
+          "lexical_overlap_score": 0.23529,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "函数极限定义"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.04",
+      "lesson_title": "有限函数极限的和积商法则",
+      "queue_id": "math.hs.batch97.04#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "三角不等式与有界性"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.05",
+      "lesson_title": "微积分基本定理的变上限积分形式",
+      "queue_id": "math.hs.batch97.05#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch98.06",
+          "lesson_title": "闭区间连续函数有界性与开区间反例",
+          "lexical_overlap_score": 0.16667,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "连续函数与定积分"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.05",
+      "lesson_title": "微积分基本定理的变上限积分形式",
+      "queue_id": "math.hs.batch97.05#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "极限与导数定义"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.06",
+      "lesson_title": "二维连续联合密度和边际概率",
+      "queue_id": "math.hs.batch97.06#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "一元概率密度"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.06",
+      "lesson_title": "二维连续联合密度和边际概率",
+      "queue_id": "math.hs.batch97.06#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "二重积分与区域面积"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.07",
+      "lesson_title": "闭约束域上多元函数的全局极值检查",
+      "queue_id": "math.hs.batch97.07#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch95.10",
+          "lesson_title": "二元函数定义域与截面观察",
+          "lexical_overlap_score": 0.23077,
+          "mathematical_implication_verified": false
+        },
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch94.12",
+          "lesson_title": "二元函数驻点与边界极值的区分",
+          "lexical_overlap_score": 0.2,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "二元函数偏导"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.07",
+      "lesson_title": "闭约束域上多元函数的全局极值检查",
+      "queue_id": "math.hs.batch97.07#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.09",
+          "lesson_title": "多项式闭区间极值的端点与驻点完备检查",
+          "lexical_overlap_score": 0.17391,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "闭区间极值与边界参数化"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.08",
+      "lesson_title": "聚类距离尺度与无监督划分的边界",
+      "queue_id": "math.hs.batch97.08#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平方和与欧氏距离"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.08",
+      "lesson_title": "聚类距离尺度与无监督划分的边界",
+      "queue_id": "math.hs.batch97.08#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "均值和标准差"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.09",
+      "lesson_title": "两水平正交实验的边际平衡和混淆",
+      "queue_id": "math.hs.batch97.09#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "分类计数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.09",
+      "lesson_title": "两水平正交实验的边际平衡和混淆",
+      "queue_id": "math.hs.batch97.09#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "简单实验设计"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.10",
+      "lesson_title": "公理独立性的语义判定与有限模型",
+      "queue_id": "math.hs.batch97.10#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "命题逻辑真值表"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.10",
+      "lesson_title": "公理独立性的语义判定与有限模型",
+      "queue_id": "math.hs.batch97.10#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "全称与存在的区别"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.11",
+      "lesson_title": "抽样框、无应答与选择偏差的区分",
+      "queue_id": "math.hs.batch97.11#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "简单分数与百分比"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.11",
+      "lesson_title": "抽样框、无应答与选择偏差的区分",
+      "queue_id": "math.hs.batch97.11#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "统计抽样和条件概率"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.12",
+      "lesson_title": "三维关于平面的镜像反射公式与保距",
+      "queue_id": "math.hs.batch97.12#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "三维点积与投影"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch97.12",
+      "lesson_title": "三维关于平面的镜像反射公式与保距",
+      "queue_id": "math.hs.batch97.12#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "勾股定理和正交分解"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.01",
+      "lesson_title": "长方体顶点坐标与同一坐标系",
+      "queue_id": "math.hs.batch98.01#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch97.01",
+          "lesson_title": "三维直角坐标系的点与向量坐标",
+          "lexical_overlap_score": 0.2,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "三维正交坐标系"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.01",
+      "lesson_title": "长方体顶点坐标与同一坐标系",
+      "queue_id": "math.hs.batch98.01#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "勾股定理与三维欧氏距离"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.02",
+      "lesson_title": "空间点到直线与点到平面的最短距离",
+      "queue_id": "math.hs.batch98.02#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "向量点积与投影"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.02",
+      "lesson_title": "空间点到直线与点到平面的最短距离",
+      "queue_id": "math.hs.batch98.02#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "一元二次函数配方"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.03",
+      "lesson_title": "正态分布均值方差与尺度参数",
+      "queue_id": "math.hs.batch98.03#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "连续型随机变量与密度"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.03",
+      "lesson_title": "正态分布均值方差与尺度参数",
+      "queue_id": "math.hs.batch98.03#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "线性变量变换"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.04",
+      "lesson_title": "二乘二列联表独立性检验的统计前提",
+      "queue_id": "math.hs.batch98.04#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "随机抽样与分类频数"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.04",
+      "lesson_title": "二乘二列联表独立性检验的统计前提",
+      "queue_id": "math.hs.batch98.04#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "独立事件与条件概率"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.05",
+      "lesson_title": "倒数数列与常数序列极限的严格证明",
+      "queue_id": "math.hs.batch98.05#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "实数绝对值"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.05",
+      "lesson_title": "倒数数列与常数序列极限的严格证明",
+      "queue_id": "math.hs.batch98.05#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "阿基米德性质与整数上取整"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.06",
+      "lesson_title": "闭区间连续函数有界性与开区间反例",
+      "queue_id": "math.hs.batch98.06#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch96.09",
+          "lesson_title": "实数单调有界数列的收敛性证明",
+          "lexical_overlap_score": 0.17647,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "实数数列收敛子列"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.06",
+      "lesson_title": "闭区间连续函数有界性与开区间反例",
+      "queue_id": "math.hs.batch98.06#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "函数连续性与极值"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.07",
+      "lesson_title": "平面平移旋转反射的距离保持条件",
+      "queue_id": "math.hs.batch98.07#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "向量模与矩阵转置"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.07",
+      "lesson_title": "平面平移旋转反射的距离保持条件",
+      "queue_id": "math.hs.batch98.07#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "平面坐标变换"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.08",
+      "lesson_title": "空间异面直线距离的法向三重积公式",
+      "queue_id": "math.hs.batch98.08#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "三维叉积与点积"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.08",
+      "lesson_title": "空间异面直线距离的法向三重积公式",
+      "queue_id": "math.hs.batch98.08#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.03",
+          "lesson_title": "空间直线参数式与异面、平行和相交的区别",
+          "lexical_overlap_score": 0.17391,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "线性方程组与直线参数式"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.09",
+      "lesson_title": "一般非退化二维正态联合密度与相关约束",
+      "queue_id": "math.hs.batch98.09#pre1",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch96.06",
+          "lesson_title": "正态分布的标准化与概率解释",
+          "lexical_overlap_score": 0.21429,
+          "mathematical_implication_verified": false
+        },
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch98.03",
+          "lesson_title": "正态分布均值方差与尺度参数",
+          "lexical_overlap_score": 0.21429,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "一元正态分布"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.09",
+      "lesson_title": "一般非退化二维正态联合密度与相关约束",
+      "queue_id": "math.hs.batch98.09#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "矩阵行列式与正定性"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.10",
+      "lesson_title": "二维线性投入产出模型的可行域",
+      "queue_id": "math.hs.batch98.10#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "线性方程组和矩阵求逆"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.10",
+      "lesson_title": "二维线性投入产出模型的可行域",
+      "queue_id": "math.hs.batch98.10#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "非负约束和经济变量定义"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.11",
+      "lesson_title": "指数增长率、复利步长与失效范围",
+      "queue_id": "math.hs.batch98.11#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "等比数列通项"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.11",
+      "lesson_title": "指数增长率、复利步长与失效范围",
+      "queue_id": "math.hs.batch98.11#pre2",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "指数幂与复利"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.12",
+      "lesson_title": "圆的半径定义及旋转不变性",
+      "queue_id": "math.hs.batch98.12#pre1",
+      "resolution": "MANUAL_DISCOVERY_REQUIRED",
+      "student_graph_eligible": false,
+      "suggestions": [],
+      "teacher_approved": false,
+      "textual_prerequisite": "二维勾股距离"
+    },
+    {
+      "approved_edge_id": null,
+      "lesson_id": "math.hs.batch98.12",
+      "lesson_title": "圆的半径定义及旋转不变性",
+      "queue_id": "math.hs.batch98.12#pre2",
+      "resolution": "EDITORIAL_CANDIDATES_ONLY",
+      "student_graph_eligible": false,
+      "suggestions": [
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch94.11",
+          "lesson_title": "二维正交矩阵的长度与夹角不变量",
+          "lexical_overlap_score": 0.17647,
+          "mathematical_implication_verified": false
+        },
+        {
+          "edge_type": "SUGGESTION_NOT_RESOLVED",
+          "lesson_id": "math.hs.batch100.06",
+          "lesson_title": "正交矩阵保持范数且行列式为正负一",
+          "lexical_overlap_score": 0.16667,
+          "mathematical_implication_verified": false
+        }
+      ],
+      "teacher_approved": false,
+      "textual_prerequisite": "正交矩阵与旋转"
+    }
+  ],
+  "unpaired_by_track": {
+    "COMPULSORY": 11,
+    "ELECTIVE_A": 25,
+    "ELECTIVE_B": 28,
+    "ELECTIVE_C": 26,
+    "ELECTIVE_D": 6,
+    "SELECTIVE_COMPULSORY": 38
+  },
+  "unresolved_textual_prerequisites": 172
+}
