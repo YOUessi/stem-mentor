@@ -1,0 +1,1121 @@
+[
+  {
+    "assumptions": [
+      "必须固定同一原点、相同尺度及三条两两正交的轴",
+      "距离平方公式需使用欧氏正交坐标，不是一般斜交坐标"
+    ],
+    "boundaries": [
+      "改变坐标原点会改变点坐标，但不会改变两物理点之间的真实欧氏距离。"
+    ],
+    "counterexamples": [
+      {
+        "example": "两个长度为1但夹角60°的轴，坐标差(1,1)对应真实长度√3不是√2",
+        "explanation": "公式要求轴正交，斜交需要交叉项。",
+        "false_claim": "任意斜交轴下可直接用三个坐标差平方和求距离"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-072"
+    ],
+    "definition": "选取互相垂直且单位长度一致的有向x、y、z轴，点P=(x,y,z)表示由原点沿三个轴位移到达的位置；向量PQ=(x_Q−x_P,y_Q−y_P,z_Q−z_P)。",
+    "hint_ladder": [
+      "先写清楚哪一个点是起点。",
+      "每个坐标分量都要终点减起点。",
+      "在同一正交坐标系中再使用平方和开根号。"
+    ],
+    "id": "math.hs.batch97.01",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把P=(1,2,3)到Q=(4,6,3)的位移写成(5,8,6)",
+        "repair_question": "先写明箭头起点P与终点Q，再进行向量分量相减。",
+        "why_wrong": "向量PQ应逐分量做Q减P而不是分量相加"
+      }
+    ],
+    "notation": [
+      "P=(x,y,z)：空间点",
+      "PQ：从P到Q的向量",
+      "|PQ|：欧氏距离"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "二维直角坐标系",
+      "向量减法和勾股定理"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "将点坐标理解为相对于固定原点的三个有向位移分量。",
+      "相减得到PQ的三个分量，逐分量运算而非直接相加点标签。",
+      "按勾股定理三次合成，平方后开非负平方根计算长度。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": null,
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "三维直角坐标系的点与向量坐标",
+    "transfer": {
+      "far": "在机器人位置估计中辨析全局坐标与机体系坐标不能直接相减。",
+      "near": "求P=(−2,0,1)到Q=(1,4,13)的距离。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "PQ=(3,4,0)，距离5。",
+        "check": "与直角三角形3–4–5一致。",
+        "question": "在同一正交系中P=(1,2,3)，Q=(4,6,3)，求PQ和距离。",
+        "steps": [
+          "计算终点减起点的差向量(3,4,0)。",
+          "长度为√(3²+4²+0²)。"
+        ]
+      },
+      {
+        "answer": "两点距离7。",
+        "check": "直接沿z轴的位移长度为7。",
+        "question": "A=(2,−1,0)，B=(2,−1,7)，求两点距离。",
+        "steps": [
+          "坐标差为(0,0,7)，两点仅在z方向不同。",
+          "三个分量平方相加并开非负根。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "直线方向d与平面法向量n都须非零",
+      "平行判定必须结合直线上已知点p是否属于平面，不能仅看d·n"
+    ],
+    "boundaries": [
+      "零方向向量不能定义直线；n·d=0不区分平行不交与直线完全在平面内。"
+    ],
+    "counterexamples": [
+      {
+        "example": "平面z=0中直线(t,0,0)有d·n=0但整条都位于平面",
+        "explanation": "再代入直线上任一点检测是否属于平面。",
+        "false_claim": "d·n=0证明直线一定不在平面上"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-073"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认方向向量和法向量不为零。",
+      "在直线参数式里代入平面方程。",
+      "检查t系数与常数项，辨别不交、单交和整条包含。"
+    ],
+    "id": "math.hs.batch97.02",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "凭d·n=0就宣布直线和平面垂直",
+        "repair_question": "垂直需方向与非零法向量同向或反向。",
+        "why_wrong": "点积为零表明方向平行于平面而非垂直平面"
+      }
+    ],
+    "notation": [
+      "d：非零直线方向",
+      "n：非零平面法向量",
+      "t：直线实参数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "空间向量点积",
+      "直线参数式与平面方程"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "取直线上的通点x=p+td并代入平面条件n·(x−a)=0。",
+      "化为n·(p−a)+t(n·d)=0，根据系数是否为零区分一交点与无穷多点。",
+      "当n·d=0时再看常数项；判断垂直时须检验非零d与n成比例。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "直线L用p+td表示，其中d≠0；平面Π用n·(x−a)=0表示，其中法向量n≠0，p为直线上一点，a为平面上一点。\n若d·n≠0，则直线与平面恰有一个交点；若d·n=0，则L要么包含于Π（n·(p−a)=0），要么与Π无交点而平行；直线垂直平面当且仅当d与n线性相关。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "空间直线和平面的向量位置判别",
+    "transfer": {
+      "far": "在CAD模型中区分光线与平面平行、落在面内或穿过面。",
+      "near": "求直线(1,1,1)+t(0,0,−1)与平面z=0交点。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "L与Π平行且不相交。",
+        "check": "代入z=0得到2=0矛盾。",
+        "question": "Π:z=0，L:(t,1,2)是否与平面相交？",
+        "steps": [
+          "法向量(0,0,1)与方向(1,0,0)点积为0。",
+          "L上任一点z=2，不满足平面方程。"
+        ]
+      },
+      {
+        "answer": "整条直线包含在平面中。",
+        "check": "把任意实数t代入直线参数式，z分量始终等于0。",
+        "question": "Π:z=0，L:(t,0,0)与平面是什么关系？",
+        "steps": [
+          "法向量(0,0,1)点积方向(1,0,0)为0，因此参数系数消失。",
+          "基点(0,0,0)也满足z=0。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "抛物线准线不经过焦点，否则距离条件会退化",
+      "双曲线两焦点不同且给定距离差严格小于焦距并且大于零"
+    ],
+    "boundaries": [
+      "双曲线两焦点重合或距离差超过焦距时没有合格非退化轨迹；抛物线焦点位于准线上也会退化。"
+    ],
+    "counterexamples": [
+      {
+        "example": "焦点(−2,0),(2,0)时距离差最大不超过4，设为5不可能",
+        "explanation": "用三角不等式限定距离差。",
+        "false_claim": "双曲线距离差可以取任何正数"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-088"
+    ],
+    "definition": "抛物线是到固定焦点F的距离等于到不过F的固定准线l距离的点集；双曲线是到两不同焦点距离差的绝对值等于正常数2a的点集，其中0<2a<焦距2c。",
+    "hint_ladder": [
+      "先看距离对象究竟是点、直线还是两个焦点。",
+      "检查距离差与焦距大小关系。",
+      "利用三角不等式排除不可能的轨迹参数。"
+    ],
+    "id": "math.hs.batch97.03",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把抛物线焦点-准线相等误写为两个焦点距离之和恒定",
+        "repair_question": "先区分点到直线距离与点到焦点距离。",
+        "why_wrong": "距离和常数描述的是椭圆的焦点性质"
+      }
+    ],
+    "notation": [
+      "F：固定焦点",
+      "l：固定准线",
+      "2a：非退化双曲线的距离差"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "平面点线距离",
+      "三角不等式与轨迹"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先标记移动点P、焦点F或F1,F2与准线并写欧氏距离。",
+      "抛物线使用PF=dist(P,l)；双曲线使用|PF1−PF2|=2a。",
+      "通过三角不等式得到距离差不大于焦距，核查非退化参数0<a<c。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": null,
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "抛物线与双曲线的焦点轨迹定义",
+    "transfer": {
+      "far": "用实际反射器设计解释焦点模型不能忽略设计边界。",
+      "near": "焦点(−5,0),(5,0)且距离差6是否可定义非退化双曲线？"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "点(2,1)在轨迹上。",
+        "check": "与抛物线方程x²=4y一致。",
+        "question": "焦点F=(0,1)，准线y=−1，判断(2,1)是否在抛物线上。",
+        "steps": [
+          "计算移动点(2,1)到焦点(0,1)的欧氏距离，结果为2。",
+          "点到准线y=−1的距离为|1+1|=2。"
+        ]
+      },
+      {
+        "answer": "轨迹为空集。",
+        "check": "取P在x轴任意位置也不能让差超过6。",
+        "question": "两焦点(−3,0),(3,0)，距离差规定为8，轨迹是否存在？",
+        "steps": [
+          "两焦点距离为6，任何P满足|PF1−PF2|≤6。",
+          "规定差8超过焦距，违反三角不等式。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "两个函数在a附近同一去心邻域均有定义并具有有限极限",
+      "商极限时g极限M不等于零；由极限定义可保证足够近时g(x)非零"
+    ],
+    "boundaries": [
+      "无穷极限或M=0的商不能照搬这个有限极限定理；a本身是否定义不影响去心极限。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=x、g(x)=x在x→0时比值恒为1，极限比值0/0无定义",
+        "explanation": "先化简函数表达式或单独分析极限。",
+        "false_claim": "极限分母为0时直接求商得到无穷或0"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-118"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先问每个子极限是否有限存在。",
+      "对商式单独检查分母极限是否为非零。",
+      "遇到0/0不要直接套定律，先化简或换方法。"
+    ],
+    "id": "math.hs.batch97.04",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "把有限极限的乘积法则直接推广到0×∞的不定式",
+        "repair_question": "无穷量需要独立估计，不能用有限乘积法。",
+        "why_wrong": "x→0+时x·(1/x)=1而x²·(1/x)=0"
+      }
+    ],
+    "notation": [
+      "L,M：有限函数极限",
+      "a：趋近点",
+      "ε,δ：极限控制参数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "函数极限定义",
+      "三角不等式与有界性"
+    ],
+    "proof_steps": [
+      {
+        "claim": "两个有限函数极限的和法则成立",
+        "reason": "由|f+g−(L+M)|≤|f−L|+|g−M|，分别用ε/2控制。"
+      },
+      {
+        "claim": "两个有限函数极限的乘法法则成立",
+        "reason": "恒等式fg−LM=(f−L)g+L(g−M)，有限极限保证附近|g|有界。"
+      },
+      {
+        "claim": "分母极限非零时可以合法取商",
+        "reason": "取ε=|M|/2得附近|g|>|M|/2，利用1/g−1/M=(M−g)/(gM)推出商极限。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若f(x)与g(x)在a的去心邻域有定义，且有限极限分别为L、M，则极限和为L+M，积为LM；当M≠0时商的极限为L/M。\n乘积极限定律中的有限性使g在充分靠近a的去心邻域有界；商法则必须有M非零且分母在附近非零，不可对0/0直接做极限之商。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "有限函数极限的和积商法则",
+    "transfer": {
+      "far": "分析数值算法中的近零分母如何破坏计算稳定性。",
+      "near": "求lim_(x→1)(x²+1)/(x+2)。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "极限为4。",
+        "check": "原式在x=2未定义不影响极限。",
+        "question": "求lim_(x→2) [(x²−4)/(x−2)]。",
+        "steps": [
+          "原式x≠2时因式分解为x+2。",
+          "化简后在去心邻域取极限。"
+        ]
+      },
+      {
+        "answer": "所求极限为2。",
+        "check": "对常数函数f=3、g=2检验一致。",
+        "question": "已知lim f=3、lim g=2，求lim(2f−g)/g。",
+        "steps": [
+          "有限极限线性法则给分子极限为2×3−2=4。",
+          "分母极限2非零，满足商法则。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "被积函数f在[a,b]连续，积分取有向区间时注意上限次序",
+      "对内点导数用双侧差商；区间端点只可定义相应单侧导数"
+    ],
+    "boundaries": [
+      "只可积不连续的f未必在每点满足F'=f；使用不定积分公式需保证在整个区间的原函数合法。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(t)=0(t<0)、1(t≥0)在0跳跃，F在0一般不可导",
+        "explanation": "连续性是所述逐点结论的重要前提。",
+        "false_claim": "不连续函数变上限积分的导数在每一点都等于原函数值"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-123"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认被积函数在相关闭区间连续。",
+      "变上限积分求导与求积分值是两个不同任务。",
+      "定积分值使用原函数在上限与下限的差。"
+    ],
+    "id": "math.hs.batch97.05",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "对∫_a^x t²dt求导写成x³/3",
+        "repair_question": "先辨别要求F(x)本身还是F'(x)。",
+        "why_wrong": "x³/3是变上限积分的值，不是其导数"
+      }
+    ],
+    "notation": [
+      "F(x)：变上限积分",
+      "f(t)：被积函数",
+      "G：f的原函数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "连续函数与定积分",
+      "极限与导数定义"
+    ],
+    "proof_steps": [
+      {
+        "claim": "在区间内写出积分增量的准确表达式",
+        "reason": "F(x+h)−F(x)=∫_x^(x+h) f(t)dt，在区间内小h正负均成立。"
+      },
+      {
+        "claim": "用连续性控制平均值与当前函数值",
+        "reason": "积分平均误差的绝对值≤sup_{t在x与x+h间}|f(t)−f(x)|，后者随h→0趋零。"
+      },
+      {
+        "claim": "证明导数并推得端点求值公式",
+        "reason": "差商极限等于f(x)；F与任意原函数G差为常数，因此积分等于G(b)−G(a)。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对于在闭区间[a,b]连续的实值函数f，定义F(x)=∫_a^x f(t)dt，x∈[a,b]；连续性保证定积分存在。\n对每个内点x∈(a,b)有F'(x)=f(x)，端点可在相应单侧意义求导；若G是f的一个原函数，则∫_a^b f(t)dt=G(b)−G(a)。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "微积分基本定理的变上限积分形式",
+    "transfer": {
+      "far": "解释累计路程与瞬时速度的微积分联系及速度非负限制。",
+      "near": "求F(x)=∫_1^x e^t dt的导数并写出F(1)。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "F'(2)=4。",
+        "check": "直接算F(x)=x³/3再求导验证。",
+        "question": "F(x)=∫_0^x t²dt，计算F'(2)。",
+        "steps": [
+          "连续被积函数f(t)=t²满足定理前提。",
+          "F'(x)=x²，在x=2时为4。"
+        ]
+      },
+      {
+        "answer": "定积分为8。",
+        "check": "梯形面积或直接积分检查一致。",
+        "question": "已知连续函数f(t)=2t，计算其在闭区间[1,3]上的定积分。",
+        "steps": [
+          "原函数G(t)=t²且整个区间连续。",
+          "代入边界G(3)−G(1)=9−1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "联合密度非负且全空间积分为1；零测集上可修改密度值而不改分布",
+      "计算边际与区域概率时要尊重实际支持集，不能在支持集外分配正密度"
+    ],
+    "boundaries": [
+      "二维连续分布下单个点的概率为0，联合密度的数值可以超过1且不意味着概率超过1。"
+    ],
+    "counterexamples": [
+      {
+        "example": "在[0,1/2]×[0,1]上的均匀密度为2，但单点概率仍为0",
+        "explanation": "密度是面积积分的被积函数而非单点概率。",
+        "false_claim": "联合密度某点为2意味着该点发生的概率为2"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-164"
+    ],
+    "definition": "二维连续随机向量(X,Y)若存在可积函数f(x,y)≥0且在全平面积分为1，使任意适当可测区域A的概率等于∬_A f(x,y)dxdy，则f为联合概率密度。",
+    "hint_ladder": [
+      "先找支持集的形状与范围。",
+      "问的是点上密度还是一块区域的概率。",
+      "边际密度要消去另一变量并检验规范化。"
+    ],
+    "id": "math.hs.batch97.06",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "仅检查非负便认为它是有效概率密度",
+        "repair_question": "必须再检查全空间积分为1。",
+        "why_wrong": "常数f=1取在整个平面时总积分无穷大"
+      }
+    ],
+    "notation": [
+      "f(x,y)：联合密度",
+      "f_X：X的边际密度",
+      "A：二维可测事件区域"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "一元概率密度",
+      "二重积分与区域面积"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "写明联合密度为正的支持区域并检验非负。",
+      "对支持区域做二重积分，确认总概率正好为1。",
+      "需要边际时积分消去另一变量，需要事件概率时对事件区域积分。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": null,
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二维连续联合密度和边际概率",
+    "transfer": {
+      "far": "在二维合成传感器噪声模型中分析相关性与支持集形状。",
+      "near": "求上述均匀联合分布的P(X+Y<1/2)。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "所求概率为1/4。",
+        "check": "总体矩形面积1/2乘密度2得总概率1。",
+        "question": "设f=2定义在0<x<1/2、0<y<1，其他为0，求P(X<1/4,Y<1/2)。",
+        "steps": [
+          "目标矩形面积为(1/4)(1/2)=1/8。",
+          "联合密度在该区域恒为2，积分为2×1/8。"
+        ]
+      },
+      {
+        "answer": "f_X(x)=2 (0<x<1/2)，否则为0。",
+        "check": "边际积分∫_0^(1/2)2dx=1。",
+        "question": "对上例支持于矩形的常数联合密度，求随机变量X的边际密度。",
+        "steps": [
+          "固定0<x<1/2，在y∈(0,1)对密度2积分。",
+          "其余x值对应联合密度0，边际自然为0。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "约束域非空、闭且有界，目标f在整个约束域连续，才保证极值存在",
+      "内部候选用可微性；边界要逐段处理，角点不能只套内点必要条件"
+    ],
+    "boundaries": [
+      "开集或无界域上连续函数不一定取得全局极值；驻点可能是鞍点。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x,y)=x在[0,1]²无内点驻点，但最值在左右边界",
+        "explanation": "必须分别检查可行域的全部边界段与每一个顶点候选。",
+        "false_claim": "内点驻点解完就得到了所有闭域最值"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-133"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写出可行集合而不是只写约束方程。",
+      "分别列内部点、边上的点和顶点候选。",
+      "全局极值应对比函数值而非只看梯度是否为零。"
+    ],
+    "id": "math.hs.batch97.07",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把局部梯度零等同全局最小",
+        "repair_question": "同时考虑二阶性质与可行域全局比较。",
+        "why_wrong": "f(x,y)=x²−y²在原点梯度零，却是鞍点"
+      }
+    ],
+    "notation": [
+      "K：闭约束域",
+      "∇f：梯度",
+      "argmin：取得最小值的点"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "二元函数偏导",
+      "闭区间极值与边界参数化"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "画出可行域，检验是否为非空紧集并识别所有边界分段。",
+      "在内部求梯度为零的候选，并单独沿每个边界参数化一元函数找候选。",
+      "把所有合法候选点与顶点的函数值一起比较，选出最大和最小。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "连续函数f在非空紧集K上存在最大值和最小值；对有界闭多边形约束，求全局极值要综合内部驻点、光滑边界驻点和顶点。\n若f可微且内部点为局部极值则其梯度为零，但梯度零不是全局最值充分条件；边界极值不能被内部偏导方程遗漏。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "闭约束域上多元函数的全局极值检查",
+    "transfer": {
+      "far": "讨论仓储资源与面积上限共同限制时的目标优化。",
+      "near": "在三角域x≥0、y≥0、x+y≤1上求f=x+y的最值。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "最小值1，在(2,0)取得。",
+        "check": "在紧矩形的四边和角点核查没有更小值。",
+        "question": "K=[0,2]×[0,2]，f=(x−3)²+y²，求全局最小。",
+        "steps": [
+          "在x∈[0,2]，(x−3)²随x增大而减小。",
+          "y²在区间最小为0，所以选x=2、y=0。"
+        ]
+      },
+      {
+        "answer": "最大2在(1,1)，最小0在(0,0)。",
+        "check": "内点无驻点，所有极值在角点。",
+        "question": "K=[0,1]²，f=x+y，求最大和最小。",
+        "steps": [
+          "两个坐标各独立取闭区间[0,1]。",
+          "线性函数各坐标系数为正，最大均取1、最小均取0。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "数据点具有相同维数且特征顺序一致，距离使用同一尺度",
+      "选择标准化的均值与非零标准差需来自允许的训练样本，不可借用未授权测试数据"
+    ],
+    "boundaries": [
+      "距离近并不意味着同一因果类别；不同尺度或不同距离函数会产生不同簇，且无监督目标本身不能证明分类为真。"
+    ],
+    "counterexamples": [
+      {
+        "example": "身高以毫米计比年龄大数千倍，直接欧氏距离可能让身高支配结果",
+        "explanation": "需要按目标判断是否做尺度变换和加权。",
+        "false_claim": "特征值越大就应该在距离中占更大权重"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-158"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先明确各特征的量纲与尺度。",
+      "分别计算距离平方中每项的贡献。",
+      "检查训练集标准差是否为零，再选择变换方式。"
+    ],
+    "id": "math.hs.batch97.08",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "常量特征可以直接用标准差作分母标准化",
+        "repair_question": "先检查σ>0，或删去/固定常量特征。",
+        "why_wrong": "全样本温度恒为20时σ=0，表达式出现0/0"
+      }
+    ],
+    "notation": [
+      "x_i：第i个特征",
+      "d：欧氏距离",
+      "z-score：均值中心化与标准差缩放"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "平方和与欧氏距离",
+      "均值和标准差"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "列出每项特征的单位、量纲与数值范围。",
+      "按既定距离计算不同特征对平方距离的贡献，辨别量纲主导。",
+      "选择是否标准化并保存变换参数，对常量特征做显式处理，再解释簇的含义。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "无监督聚类将未标标签的数据依据指定相似度或距离规则分组；标准欧氏距离d(x,y)=√Σ(x_i−y_i)²受各坐标的物理单位和数值尺度影响。\n在欧氏距离聚类之前可以选择基于训练数据统计量的尺度变换，但必须保留原始单位解释；标准差为0的常量特征不可直接做z-score除法。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "聚类距离尺度与无监督划分的边界",
+    "transfer": {
+      "far": "构造城市聚类前评估人口规模与占地面积尺度对分组的影响。",
+      "near": "对(0,0)与(3,4)计算欧氏距离并说明单位。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "原始距离√101。",
+        "check": "第二特征贡献100而第一特征只贡献1。",
+        "question": "两样本A=(1,1000)、B=(2,1010)，原始欧氏距离是多少？",
+        "steps": [
+          "差向量是(1,10)，平方和为1+100。",
+          "开平方得到距离√101。"
+        ]
+      },
+      {
+        "answer": "不能直接用该公式标准化，应特殊处理常量特征。",
+        "check": "0/0不代表有效的标准化值0。",
+        "question": "三个样本某特征值全为7，能否按z=(x−μ)/σ标准化？",
+        "steps": [
+          "平均数μ=7，三个离差全部0。",
+          "标准差σ=0，除法不合法。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "所有因素水平已明确定义，四行互不省略，不能把缺失观测视为0水平",
+      "讨论效应估计时需区分设计平衡与随机化、无交互或可忽略交互的额外模型假设"
+    ],
+    "boundaries": [
+      "表格平衡并不保证响应无噪声；如果存在未建模交互，主效应估计可能受到混淆。"
+    ],
+    "counterexamples": [
+      {
+        "example": "两列完全相同的0011都有均衡水平，但组合01和10从不出现",
+        "explanation": "必须检查每对列的四个组合等频。",
+        "false_claim": "每列0和1各出现一半就保证任意两列正交"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-167"
+    ],
+    "definition": "两水平因素取0或1。强度2的正交表中任意两列的四个水平组合出现次数相同；平衡是实验设计性质，并不自动证实因素效应具有因果解释。",
+    "hint_ladder": [
+      "先数每列0与1出现多少次。",
+      "再数任意两列四种组合的频次。",
+      "讨论效应估计时单独说明交互与随机化假设。"
+    ],
+    "id": "math.hs.batch97.09",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "正交设计结果必然意味着无交互作用",
+        "repair_question": "效应识别依赖设计与模型假设。",
+        "why_wrong": "三列存在乘积关系时交互效应可与第三列混淆"
+      }
+    ],
+    "notation": [
+      "OA：正交表",
+      "因素：可操纵变量",
+      "水平：因素的预先指定取值"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "分类计数",
+      "简单实验设计"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "把每列看成一个二水平因素，逐列核查0和1出现频次。",
+      "对每对列组成两位组合，分别数00、01、10、11出现次数。",
+      "讨论哪些效应可辨识及哪个交互可能混入主效应，别把平衡当作统计显著性。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": null,
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "两水平正交实验的边际平衡和混淆",
+    "transfer": {
+      "far": "为合成材料试验讨论实验成本、随机化与交互混淆。",
+      "near": "检查四行000、011、101、110中第2与第3列组合。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "第一与第三列正交平衡。",
+        "check": "每列都含两个0和两个1。",
+        "question": "给出四行(000),(011),(101),(110)，检验第一与第三列的正交性。",
+        "steps": [
+          "提取第1、3列的两位组合00、01、10、11。",
+          "四种组合各出现一次，满足强度2的成对平衡。"
+        ]
+      },
+      {
+        "answer": "不能称两列成对正交。",
+        "check": "单列平衡是必要但非充分条件。",
+        "question": "两列都为(0,0,1,1)，能否因为各水平两次而宣称两列成对正交？",
+        "steps": [
+          "逐行组成两列组合得到00、00、11、11。",
+          "01和10都没有出现，四种组合不均衡。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "在经典命题逻辑的真值语义中推理且基础公理Γ一致",
+      "需保持同一组命题变量与逻辑解释；不要把一个例子的独立外推至更强体系"
+    ],
+    "boundaries": [
+      "相对独立依赖所选公理体系；一旦添加公理A，A就不再相对于新体系独立。"
+    ],
+    "counterexamples": [
+      {
+        "example": "Γ={p}、A=p时满足Γ和A的模型存在，但Γ必然推出A",
+        "explanation": "必须同时给出Γ与¬A的模型。",
+        "false_claim": "存在一个满足Γ与A的模型就证明A独立"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-157"
+    ],
+    "definition": "在经典命题逻辑中，对公理集合Γ和待判命题A，若Γ既不能推出A也不能推出¬A，则称A相对于Γ独立；若Γ本身矛盾则所有命题在经典逻辑下均可推出。",
+    "hint_ladder": [
+      "先固定逻辑语言和公理集。",
+      "能否给出A真且A假两种都满足Γ的赋值？",
+      "反例赋值必须满足每一条基础公理。"
+    ],
+    "id": "math.hs.batch97.10",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把形式体系一致性与现实观测事实等同",
+        "repair_question": "数学独立性是形式语义结论，不是经验事实。",
+        "why_wrong": "Γ={q}下p真或假都可满足，却没有说明现实p究竟真假"
+      }
+    ],
+    "notation": [
+      "Γ：基础公理集",
+      "A：待判命题",
+      "⊨：逻辑语义蕴涵"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "命题逻辑真值表",
+      "全称与存在的区别"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先写出基础公理Γ及候选命题A并确认有满足Γ的赋值。",
+      "构造同时满足Γ与A的赋值，说明Γ不能推出¬A。",
+      "构造同时满足Γ与¬A的赋值，说明Γ不能推出A，由此判定独立。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": null,
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "公理独立性的语义判定与有限模型",
+    "transfer": {
+      "far": "比较设计规范的公理体系与现实工程协议的适用范围。",
+      "near": "给定Γ={p∨q}、A=p，检查独立性。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "p相对于{q}独立。",
+        "check": "两种赋值都保持q为真，满足基准公理。",
+        "question": "Γ={q}，A=p，判断p是否相对独立。",
+        "steps": [
+          "取p真q真，满足Γ∧p。",
+          "取p假q真，满足Γ∧¬p。"
+        ]
+      },
+      {
+        "answer": "q不独立于Γ，实际上Γ推出q。",
+        "check": "直接使用肯定前件推出q。",
+        "question": "Γ={p→q,p}，A=q，判断独立性。",
+        "steps": [
+          "任取满足Γ的赋值，p真且p→q真迫使q真。",
+          "不存在Γ∧¬q的满足赋值。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "明确目标总体和抽样单位，抽样框应可核查且不包含未经授权的真实个人数据",
+      "计算应答率需明确邀请人数与实际合格应答人数，二者范围保持一致"
+    ],
+    "boundaries": [
+      "自愿点击的网络调查可获得海量样本却未必代表总体；简单加权需要有可靠外部边际信息与设计依据。"
+    ],
+    "counterexamples": [
+      {
+        "example": "自愿回答可能偏向意见强烈者，系统偏差不会随样本量自动消失",
+        "explanation": "先检查进入样本的机制是否覆盖目标总体。",
+        "false_claim": "网络自愿填表10万人一定比概率抽样1000人可靠"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-159"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先说明问卷要代表哪些人。",
+      "比较目标总体与实际抽样名单。",
+      "区别名单外完全抽不到与名单内抽到后不应答。"
+    ],
+    "id": "math.hs.batch97.11",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "应答率90%说明估计不存在偏差",
+        "repair_question": "报告缺失比例及与结果相关的缺失机制。",
+        "why_wrong": "剩余10%若有系统性不同仍可显著偏移估计"
+      }
+    ],
+    "notation": [
+      "总体：推断目标",
+      "抽样框：可抽取名单",
+      "应答率：合格应答数/有效邀请数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "简单分数与百分比",
+      "统计抽样和条件概率"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先定义希望推断的总体与实际可抽取名单，找出覆盖盲区。",
+      "分别记录抽取、接触、合格应答三阶段人数，计算所对应分母的应答率。",
+      "检查未被覆盖者或未应答者是否可能在测量变量上系统性不同，报告不确定性。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "调查总体是希望推断的目标对象集合；抽样框是有机会被抽取的登记列表。覆盖误差是框与总体不匹配，无应答偏差来自被抽到者的参与行为与所测变量有关。\n样本量大不能自动纠正抽样框漏掉人群或无应答的系统性偏差；对代表性的论断需要说明总体、抽样框、应答率及可能的非应答机制。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "抽样框、无应答与选择偏差的区分",
+    "transfer": {
+      "far": "比较不同城市抽样框中网络用户覆盖率与手机号码缺失。",
+      "near": "某调查邀请120人、收到90份合格问卷，求应答率并列出偏差风险。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "应答率80%。",
+        "check": "剩余100人未应答，不能视作问卷中立。",
+        "question": "向500名名单成员发问卷，收到400份合格回收，求该框内应答率。",
+        "steps": [
+          "分母是500份有效邀请，分子是400份合格答卷。",
+          "用400/500×100%计算框内应答率。"
+        ]
+      },
+      {
+        "answer": "存在严重的抽样框覆盖偏差。",
+        "check": "增加该校样本量不会修复总体覆盖。",
+        "question": "调查全市居民，却只从某校学生名单抽样，存在哪类主要误差？",
+        "steps": [
+          "目标总体是全市居民，抽样框只包含该校学生。",
+          "即使回收率100%，其他居民几乎没有被抽取机会。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "法向量n必须非零且各点位于同一三维欧氏正交坐标系",
+      "若涉及数值计算，点积和分母n·n应采用足够精度，避免近零法向量"
+    ],
+    "boundaries": [
+      "n=0无法定义平面法向及反射公式；一般仿射剪切变换并不是镜像反射也不保证保距。"
+    ],
+    "counterexamples": [
+      {
+        "example": "令n=(0,0,0)时n·n=0造成除零",
+        "explanation": "先检验法向量是否非零，避免n·n等于零。",
+        "false_claim": "反射公式对零法向量仍有意义"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-146"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写平面上一点与非零法向量。",
+      "计算点到平面的向量法向投影。",
+      "沿法向减去两倍投影，最后核对中点在平面。"
+    ],
+    "id": "math.hs.batch97.12",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "镜像反射总能改变点的位置",
+        "repair_question": "先判断点是否就在固定平面上。",
+        "why_wrong": "平面上的点有(p−a)·n=0，反射后不动"
+      }
+    ],
+    "notation": [
+      "Π：镜像平面",
+      "n：非零法向量",
+      "p'：点p的反射像"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "三维点积与投影",
+      "勾股定理和正交分解"
+    ],
+    "proof_steps": [
+      {
+        "claim": "分解点到平面偏移成法向与切向",
+        "reason": "v=p−a，法向投影为[(v·n)/(n·n)]n，余项垂直n。"
+      },
+      {
+        "claim": "镜像反射仅翻转关于平面的法向分量",
+        "reason": "反射后的偏移为切向−法向=v−2法向，得到公式并保证中点在平面。"
+      },
+      {
+        "claim": "反射保持欧氏距离并且是对合映射",
+        "reason": "任意两点差向量的切向部分不变、法向部分变号，两部分正交故长度平方不变；再翻一次恢复。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "给定平面Π={x:n·(x−a)=0}，非零法向量n，空间点p关于Π的镜像点定义为p'=p−2[(p−a)·n/(n·n)]n。\n镜像反射固定平面上所有点，沿法向分量取反、切向分量不变；因此对任意两点p,q保欧氏距离，且反射两次回到原点。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "三维关于平面的镜像反射公式与保距",
+    "transfer": {
+      "far": "在机器人视觉中区分镜像反射和刚体旋转的方向性。",
+      "near": "求p=(1,2,3)关于z=0的镜像坐标。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "镜像点(−2,3,4)。",
+        "check": "两点中点(0,3,4)在反射平面上。",
+        "question": "点p=(2,3,4)关于平面x=0反射后是什么点？",
+        "steps": [
+          "取a=(0,0,0)、n=(1,0,0)，法向投影为(2,0,0)。",
+          "用p减去两倍投影得(−2,3,4)。"
+        ]
+      },
+      {
+        "answer": "镜像点(0,−2,1)。",
+        "check": "代入x+y验证两点相对平面对称。",
+        "question": "点p=(2,0,1)关于平面x+y=0反射后的坐标？",
+        "steps": [
+          "法向n=(1,1,0)，点到平面的法向系数为2/2=1。",
+          "p−2(1,1,0)=(0,−2,1)。"
+        ]
+      }
+    ]
+  }
+]
