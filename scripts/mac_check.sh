@@ -120,6 +120,8 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch98_scope_matrix.py --c
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch99_scope_matrix.py --check
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch99_seven_track_guard.py --check
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch99_prerequisite_gap.py --check
+PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch100_depth.py --check
+PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch100_coverage.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"
