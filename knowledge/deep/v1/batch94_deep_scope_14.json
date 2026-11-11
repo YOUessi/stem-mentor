@@ -1,0 +1,1322 @@
+[
+  {
+    "assumptions": [
+      "全集U必须先明确，补集始终相对于U",
+      "运算数值例题采用有限集合，重复元素不重复计数"
+    ],
+    "boundaries": [
+      "区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中的补集不同。"
+    ],
+    "counterexamples": [
+      {
+        "example": "A={1},U={1,2}时A的补集为{2}；U={1,2,3}时为{2,3}",
+        "explanation": "补集是对已声明全集作差，而不是对所有数作差。",
+        "false_claim": "误认为集合补集Aᶜ不依赖所选全集U"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-002"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先把每个元素放进全集矩形。",
+      "分别问元素是否属于A、是否属于B。",
+      "按且、或、非逐项组合归属条件。"
+    ],
+    "id": "math.hs.batch94.01",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把阴影重叠面积当成概率大小",
+        "repair_question": "问学生：图形面积是否被赋予了一个概率模型？",
+        "why_wrong": "在没有等可能或概率测度时阴影面积与事件概率无关"
+      }
+    ],
+    "notation": [
+      "U：指定全集",
+      "∩：同时属于",
+      "∪：至少属于",
+      "Aᶜ：相对于U的补集"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "集合属于关系",
+      "经典命题逻辑中的且或非"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先将有限全集的每个元素标为是否在A和B中。",
+      "交集保留两个标志都为真的元素，并集保留至少一个为真的元素。",
+      "补集在同一全集下将A成员标志取反，再检查每个元素的归属。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对任意x∈U，x∈A∩B当且仅当x∈A且x∈B；x∈A∪B当且仅当x∈A或x∈B。区域图表达的是元素逻辑，不是几何面积比较。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "用区域图检验集合交并补运算",
+    "transfer": {
+      "far": "将数据库中的两个布尔筛选条件翻译为集合的交并及取反。",
+      "near": "把全集换为{1,2,3,4,5}再比较两种补集结果。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "A∩B={2}；A∪B={1,2,4}。",
+        "check": "逐个检查全集四个元素，3不属于并集。",
+        "question": "U={1,2,3,4}, A={1,2},B={2,4}，求A∩B与A∪B。",
+        "steps": [
+          "同时属于A和B的只有2。",
+          "属于至少一个集合的是1、2、4。"
+        ]
+      },
+      {
+        "answer": "两个结果均是{3}。",
+        "check": "用元素逐项核验德摩根关系；不是用面积猜测。",
+        "question": "同一U下，求(A∪B)ᶜ与Aᶜ∩Bᶜ。",
+        "steps": [
+          "并集为{1,2,4}，补集为{3}。",
+          "Aᶜ={3,4},Bᶜ={1,3}，交集为{3}。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "A、B、C为非共线点，a、b、c>0",
+      "使用欧氏内积与弧度或角度一致的cos A定义"
+    ],
+    "boundaries": [
+      "当三个点共线时三角形退化，公式的向量代数仍可计算，但不能未经说明套用普通三角形内角与面积结论。"
+    ],
+    "counterexamples": [
+      {
+        "example": "a=1,b=1,c=3违反三角不等式，不存在相应非退化三角形",
+        "explanation": "题目给定的三条正长度首先必须满足每边小于另外两边之和。",
+        "false_claim": "误将任意三边代入而不验证组成三角形"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-039"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先选出角A两侧向量。",
+      "将BC写成AC减AB。",
+      "对向量平方展开并将内积转换为边长与cos。"
+    ],
+    "id": "math.hs.batch94.02",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "把夹角当作向量BA与AC的夹角",
+        "repair_question": "回到两条从A出发的AB和AC核查余弦符号。",
+        "why_wrong": "BA与AB方向相反，点积会多出负号"
+      }
+    ],
+    "notation": [
+      "a,b,c：对边长度",
+      "A：AB与AC夹角",
+      "u·v：欧氏内积"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "向量加减运算",
+      "欧氏内积与范数平方"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由三角形顶点关系表示对边向量",
+        "reason": "向量BC=AC−AB，故a²=BC·BC。"
+      },
+      {
+        "claim": "利用向量内积代数展开平方",
+        "reason": "BC·BC=(AC−AB)·(AC−AB)=b²+c²−2 AB·AC；使用内积分配律和对称性。"
+      },
+      {
+        "claim": "将内积换成两边长度和夹角余弦",
+        "reason": "AB·AC=|AB||AC|cos A=bc cos A，因为A是两向量共同起点的夹角。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在欧氏平面任意非退化三角形中，a²=b²+c²−2bc cos A；这是由欧氏内积的平方展开得到，而不是三边长度的偶然关系。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "余弦定理的向量内积推导",
+    "transfer": {
+      "far": "用两点GPS坐标构造平面内积求两段路径的转向角（仅局部平面近似）。",
+      "near": "用已知三边5、5、6求其顶角余弦并检查夹角存在性。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "a=5。",
+        "check": "满足3²+4²=5²和三角不等式。",
+        "question": "b=3,c=4,A=90°，求a。",
+        "steps": [
+          "cos90°=0，混合项消失。",
+          "a²=9+16=25，取正长度。"
+        ]
+      },
+      {
+        "answer": "a=2。",
+        "check": "等边三角形三个角均为60°。",
+        "question": "b=c=2,A=60°，求a。",
+        "steps": [
+          "cos60°=1/2。",
+          "a²=4+4−2·2·2·1/2=4。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "每一次离散更新的增量恒为d，不能把百分比增长误作等差",
+      "起始观测对应n=1，且观测次数为正整数"
+    ],
+    "boundaries": [
+      "增长率恒定导致等比数列，增量恒定才是等差；现实库存还可能不允许负值，外推需检查可行域。"
+    ],
+    "counterexamples": [
+      {
+        "example": "第二年110、第三年121，差分别10与11并非常数",
+        "explanation": "相对增长率固定不是绝对差固定。",
+        "false_claim": "认为初值100且每年增长10%是等差"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-063"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "区分每次增长固定数量还是固定百分比。",
+      "画出第1、2、3期并记录相邻差。",
+      "数清从首期到目标期经历多少次更新。"
+    ],
+    "id": "math.hs.batch94.03",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把第n期写成a₁+nd",
+        "repair_question": "请问第1期发生过几次完整更新？",
+        "why_wrong": "第1期会被误算作a₁+d"
+      }
+    ],
+    "notation": [
+      "a₁：首项",
+      "d：公差",
+      "n：正整数项号"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "整数项号与顺序",
+      "常数增量及线性表达式"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "把前几次变化相减，只有相邻差恒定才进入等差模型。",
+      "从a₁到aₙ总共走了n−1步，故累计变化是(n−1)d。",
+      "将计算的aₙ代回原单位，并检查是否存在现实的下界或时间范围。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "当现实过程恰好是按固定增量离散更新时，使用aₙ=a₁+(n−1)d；先定义起始时间及数量单位，避免把n与n−1混淆。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "等差数列应用中的索引和单位检查",
+    "transfer": {
+      "far": "分析逐层等厚材料的总厚度增长，并注明离散层数与起始层厚。",
+      "near": "首项−4、公差3的第7项是多少，负项有几项？"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "105件。",
+        "check": "核对第2月85件，连续递推到第6月。",
+        "question": "第1月库存80件，每月净增5件，求第6月预计值。",
+        "steps": [
+          "第1月至第6月有5次增量。",
+          "a₆=80+5×5。"
+        ]
+      },
+      {
+        "answer": "23座。",
+        "check": "第1排代回n=1应恰为9座。",
+        "question": "第1排9座，每后一排多2座，第8排多少座？",
+        "steps": [
+          "相邻差是2座，初项为9座。",
+          "第8排经历7次增加，9+7×2。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "Sₙ确实是同一数列前n项的和，不可与别的累加口径混用",
+      "减法差分只在Sₙ₋₁存在时合法；S₀需显式约定为0"
+    ],
+    "boundaries": [
+      "如果题目只给n≥2的Sₙ表达式，不能擅自把它外推到n=1；要另外取得S₁。"
+    ],
+    "counterexamples": [
+      {
+        "example": "若仅n≥1，则a₁=S₁=3，而差分对n≥2给出2n",
+        "explanation": "直接代n=1到差分多项式会错过特例。",
+        "false_claim": "任意给出Sₙ=n²+n+1就令aₙ=2n"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-065"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先问Sₙ是否真的从第1项开始求和。",
+      "对n≥2将Sₙ和Sₙ₋₁并排写出。",
+      "特别检查n=1时S₀是否被定义。"
+    ],
+    "id": "math.hs.batch94.04",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "把单独的aₙ直接当成累计Sₙ",
+        "repair_question": "请写出S₃中到底累加哪三项？",
+        "why_wrong": "aₙ是一项、Sₙ是n项总和，量纲相同但数量不同"
+      }
+    ],
+    "notation": [
+      "Sₙ：前n项和",
+      "aₙ：第n项",
+      "S₀：可约定为0"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "求和定义",
+      "代数式相减与差分"
+    ],
+    "proof_steps": [
+      {
+        "claim": "将前缀和写成从首项起的累加",
+        "reason": "Sₙ=a₁+⋯+aₙ，而Sₙ₋₁=a₁+⋯+aₙ₋₁，后者n≥2时存在。"
+      },
+      {
+        "claim": "对同一数列的前缀和做相邻差分",
+        "reason": "Sₙ−Sₙ₋₁抵消前n−1项，只剩aₙ。"
+      },
+      {
+        "claim": "单独检查首项及人工约定S₀的合法性",
+        "reason": "对n=1原定义给出a₁=S₁；若人为定义S₀=0则a₁=S₁−S₀。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对任何数列，a₁=S₁；n≥2时aₙ=Sₙ−Sₙ₋₁。若明确约定S₀=0则统一写成aₙ=Sₙ−Sₙ₋₁，n≥1。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "前缀和恢复通项的首项特例",
+    "transfer": {
+      "far": "把每日累计访问量的记录差分为每日访问增量，并确认累计记录起始时刻。",
+      "near": "已知Sₙ=3n²−n，求a₁、a₂与一般aₙ。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "a₁=1，a₅=5。",
+        "check": "前5项1+2+3+4+5=15。",
+        "question": "Sₙ=n(n+1)/2，n≥1，求a₁及a₅。",
+        "steps": [
+          "由给定前缀和直接求首项a₁=S₁=1。",
+          "a₅=S₅−S₄=15−10。"
+        ]
+      },
+      {
+        "answer": "a₁=3，a₃=6。",
+        "check": "若套差分多项式到a₁会误得2。",
+        "question": "Sₙ=n²+n+1，n≥1，求a₁和a₃。",
+        "steps": [
+          "首项a₁=S₁=3。",
+          "S₃=13，S₂=7，故a₃=6。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "讨论内点且f在该点可导，极值定义在该点邻域内",
+      "函数可能有不可导尖点，也可能出现导数为零但无极值"
+    ],
+    "boundaries": [
+      "f(x)=x³在x=0导数为0但不取极值；f(x)=|x|在x=0取极小但不可导。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=x³，f'(0)=0但邻域内函数仍严格递增",
+        "explanation": "必要条件不能倒过来当充分条件。",
+        "false_claim": "认为导数为零充分保证极值"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-069"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认点在区间内部并检查可导。",
+      "导数等于零只是候选条件。",
+      "举两个邻近测试值或检查导数符号变化。"
+    ],
+    "id": "math.hs.batch94.05",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "只解f'=0便宣布找到所有闭区间最值",
+        "repair_question": "让学生列出端点、驻点和不可导点三个候选集合。",
+        "why_wrong": "边界上的最大值可能不满足导数零条件"
+      }
+    ],
+    "notation": [
+      "f'(c)：内点导数",
+      "c：候选极值点",
+      "端点：定义域边界"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "局部极值定义",
+      "导数符号与单调性"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先列定义域及候选内点，求解f'(x)=0。",
+      "检查不可导点和闭区间端点，不能由导数方程直接排除。",
+      "逐个比较左右单调性或邻域函数值，确证极大/极小而非仅驻点。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若f在开区间内部点c可导且c是局部极大或极小点，必有f'(c)=0；求极值要回查左右导数符号、函数值及端点。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "可导内点极值的必要条件与失效边界",
+    "transfer": {
+      "far": "检查仓储成本曲线在容量上限端点取得最值的情形。",
+      "near": "分析|x−2|在x=2的极小性以及是否可导。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "0是严格局部极小点。",
+        "check": "检查正负两侧函数值均大于0。",
+        "question": "f(x)=x²，判断x=0是否为极值点。",
+        "steps": [
+          "导数2x仅在0为零。",
+          "x²≥0且f(0)=0。"
+        ]
+      },
+      {
+        "answer": "不是局部极值点。",
+        "check": "左右两侧出现一低一高的函数值。",
+        "question": "f(x)=x³，判断x=0是否为极值点。",
+        "steps": [
+          "导数3x²在0为零。",
+          "取任意小ε>0时f(−ε)<f(0)<f(ε)。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "两向量的坐标表达必须使用同一个轴方向与单位",
+      "空间向量三坐标是相对于固定基底的分量"
+    ],
+    "boundaries": [
+      "来自不同旋转坐标系的向量不能未经坐标变换直接逐项相加；非正交基底长度也不能简单使用三个分量平方和。"
+    ],
+    "counterexamples": [
+      {
+        "example": "第二坐标系的第一轴可能对应原系y轴，两向量并不重合",
+        "explanation": "应先将所有坐标表达变换到共同基底。",
+        "false_claim": "把坐标(1,0,0)和旋转了90°轴系中的(1,0,0)当作同方向"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-072"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "写出共同的坐标轴和单位。",
+      "先逐分量完成数乘。",
+      "再逐分量加减，并用逆运算回查。"
+    ],
+    "id": "math.hs.batch94.06",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "忘记数乘需作用于所有三个分量",
+        "repair_question": "令学生按单位基底展开后再合并。",
+        "why_wrong": "2(1,2,3)不是(2,2,3)"
+      }
+    ],
+    "notation": [
+      "u=(u₁,u₂,u₃)",
+      "λ：实数标量",
+      "eᵢ：正交单位基向量"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "向量加法与数乘",
+      "三维直角坐标系"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "在统一基底写出u和v的三个分量。",
+      "按向量线性组合逐分量合并，不改变轴的方向。",
+      "若要检验长度或夹角，再使用同一正交基底的点积与范数。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "同一正交单位基底下，u+v=(u₁+v₁,u₂+v₂,u₃+v₃)，λu=(λu₁,λu₂,λu₃)；长度需取平方和的平方根。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "空间向量坐标加减与数乘的基底前提",
+    "transfer": {
+      "far": "将两段无人机位移记录统一到同一个世界坐标系后合成。",
+      "near": "给出u=(0,2,−1),v=(−1,2,2)，计算u·v及范数。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "(3,−1,2)。",
+        "check": "第2分量−2+1=−1。",
+        "question": "u=(1,−2,3),v=(2,1,−1)，求u+v。",
+        "steps": [
+          "第一、二、三坐标分别相加。",
+          "得到(3,−1,2)，再核对各分量。"
+        ]
+      },
+      {
+        "answer": "(0,−5,7)。",
+        "check": "把v加回去恢复2u。",
+        "question": "u=(1,−2,3)，求2u−v，其中v=(2,1,−1)。",
+        "steps": [
+          "2u=(2,−4,6)。",
+          "减v得到(0,−5,7)。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "直线方程真实定义一条直线，即(A,B)≠(0,0)",
+      "坐标系为等单位正交的欧氏平面"
+    ],
+    "boundaries": [
+      "A=B=0时若C≠0方程没有点，若C=0则是整个平面，均不是一条直线；不能将分母为0的公式套入。"
+    ],
+    "counterexamples": [
+      {
+        "example": "0x+0y+1=0没有任何解，分母0无法定义距离",
+        "explanation": "判断前先确认法向量不是零向量，才能定义直线。",
+        "false_claim": "把Ax+By+C=0中A=B=0也当作直线"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-083"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先判断这是否真是一条直线。",
+      "找法向量(A,B)及其长度。",
+      "利用点到直线沿法线的投影求非负距离。"
+    ],
+    "id": "math.hs.batch94.07",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "忘记距离必须非负而去掉绝对值",
+        "repair_question": "问距离是否应随直线方程同时乘以−1而改变。",
+        "why_wrong": "点在法向量反方向时有向值为负，但距离不是负数"
+      }
+    ],
+    "notation": [
+      "n=(A,B)：法向量",
+      "P：给定点",
+      "L：非退化直线"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "欧氏内积与正交投影",
+      "向量范数"
+    ],
+    "proof_steps": [
+      {
+        "claim": "确定非零法向量与其单位向量",
+        "reason": "n=(A,B)与L的所有方向向量垂直，所以n/||n||是单位法向量。"
+      },
+      {
+        "claim": "选取直线任意点建立法向投影",
+        "reason": "取任意Q∈L，则A x_Q+B y_Q+C=0，n·(P−Q)=Ax₀+By₀+C。"
+      },
+      {
+        "claim": "由垂直分解得到欧氏最短距离",
+        "reason": "P−Q沿单位法向量的投影长度绝对值即最短距离，除以||n||得到公式。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "点P到L的欧氏最短距离是|Ax₀+By₀+C|/√(A²+B²)，A、B不能同时为0。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "点到非退化直线的距离公式",
+    "transfer": {
+      "far": "利用地图平面投影的墙面法线估算机器人到直线边界的间距。",
+      "near": "求(−2,1)到2x−y+3=0的距离。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "距离2。",
+        "check": "任意将方程整体乘−1仍得2。",
+        "question": "P=(0,0)，L:3x+4y−10=0，求距离。",
+        "steps": [
+          "法向量(3,4)长度5。",
+          "代入分子|−10|=10。"
+        ]
+      },
+      {
+        "answer": "距离0。",
+        "check": "代入直线方程确实为0。",
+        "question": "P=(1,2)，L:x−y+1=0，求距离。",
+        "steps": [
+          "代入分子|1−2+1|=0。",
+          "法向量(1,−1)非零，所以P在线上。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "n和k均为整数且0≤k≤n；对象两两可区分",
+      "若允许重复抽取或重复对象，必须改变模型，不可沿用无放回公式"
+    ],
+    "boundaries": [
+      "允许重复选取时n^k才是有序k次选择的典型计数；有相同对象时除以k!也可能不再合法。"
+    ],
+    "counterexamples": [
+      {
+        "example": "同两个人交换正副职位产生不同任命",
+        "explanation": "职位决定结果时必须计入顺序。",
+        "false_claim": "认为选3人做正副班长不分职位"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-094"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先问交换两个选中对象会不会改变方案。",
+      "检查能否重复选、对象是否有区别。",
+      "用小n手工列举验证除以k!是否恰当。"
+    ],
+    "id": "math.hs.batch94.08",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "不辨顺序一律除以k!",
+        "repair_question": "问每个无序结果是否真的恰好对应k!个有序结果？",
+        "why_wrong": "当对象有重复或限制条件不对称时每组序列数不一定为k!"
+      }
+    ],
+    "notation": [
+      "A(n,k)：排列数",
+      "C(n,k)：组合数",
+      "n!：阶乘"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "乘法计数原理",
+      "无重复有限集合"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先用交换两个选中对象的位置判断结果是否改变。",
+      "顺序重要就逐位置乘可用选项数，不重要就除以k!去掉重复次序。",
+      "列举小规模n,k验证公式与题目计数口径一致。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在0≤k≤n且对象相互可区分的条件下，区分结果是否因交换位置而变化；排列与组合满足A(n,k)=k! C(n,k)。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "排列组合：顺序是否可辨的严格判别",
+    "transfer": {
+      "far": "为数据库去重后的用户小组分配不同角色，核查顺序与角色约束。",
+      "near": "比较6个不同奖项给3人的无放回分配与只选出3人的计数。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "10种。",
+        "check": "手动列举可见每对只算一次。",
+        "question": "5名不同同学选2名参加活动，有多少种选法？",
+        "steps": [
+          "同一二人交换顺序仍是同一组。",
+          "C(5,2)=5×4/2。"
+        ]
+      },
+      {
+        "answer": "20种。",
+        "check": "等于2! C(5,2)。",
+        "question": "5名同学选班长与副班长，有多少种？",
+        "steps": [
+          "职位不同，交换二人产生新方案。",
+          "先选班长5种，再选副班长4种。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "n为非负整数，p是有效概率0≤p≤1",
+      "每次试验成功与失败互补，试验相互独立且概率不随次序改变"
+    ],
+    "boundaries": [
+      "无放回取样通常导致试验间依赖，应用超几何分布而非机械套二项；p=0或1为合法退化分布。"
+    ],
+    "counterexamples": [
+      {
+        "example": "袋中红球减少后后续成功概率改变",
+        "explanation": "题目是否放回决定独立同分布能否成立。",
+        "false_claim": "不放回抽三球仍把每次抽中红球概率当固定"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-099"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认次数固定且只有两个互斥结局。",
+      "独立与同一p这两个条件能否从题目推出？",
+      "选成功位置，再计算任一固定序列概率。"
+    ],
+    "id": "math.hs.batch94.09",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把概率p当成成功次数k",
+        "repair_question": "请先列明随机变量X的取值及单次成功概率。",
+        "why_wrong": "p需在[0,1]而k为0至n的整数"
+      }
+    ],
+    "notation": [
+      "X：成功次数",
+      "n：固定试验次数",
+      "p：单次成功概率"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "独立事件乘法关系",
+      "排列组合与互补事件"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先核实试验是否为固定次数、每次二选一。",
+      "判断各次概率是否相同、事件是否独立。",
+      "对恰有k次成功选位置C(n,k)，各序列概率由独立性相乘。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "P(X=k)=C(n,k)p^k(1−p)^(n−k)，k=0,…,n；计数公式成立的前提是次数固定、只有成功失败、独立且同p。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二项分布模型建立与前提核验",
+    "transfer": {
+      "far": "比较设备故障有共同电源依赖时二项模型为何失效。",
+      "near": "对独立4次成功率1/3的试验求至少1次成功概率。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "3/8。",
+        "check": "列举8个等可能序列，其中3个含两次正面。",
+        "question": "独立抛3枚公平硬币，恰两次正面概率多少？",
+        "steps": [
+          "n=3,p=1/2,k=2。",
+          "C(3,2)(1/2)²(1/2)=3/8。"
+        ]
+      },
+      {
+        "answer": "9/16。",
+        "check": "同时检查k=0,1,2的概率合计1。",
+        "question": "独立测试2次且每次成功率1/4，零次成功概率？",
+        "steps": [
+          "n=2,p=1/4,k=0。",
+          "两次均失败概率(3/4)²。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "两个实数数列分别收敛到有限实数a与b",
+      "对任意ε>0需要一个共同N使所有n≥N满足相应界"
+    ],
+    "boundaries": [
+      "不能在一项不收敛时仍对两项分别套加法律；两个发散数列之和也可能收敛，不能反向推断每项收敛。"
+    ],
+    "counterexamples": [
+      {
+        "example": "aₙ=n,bₙ=−n均发散却有aₙ+bₙ=0",
+        "explanation": "原定理明确以两条数列各自收敛为前提。",
+        "false_claim": "认为任意发散数列求和仍必发散"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-117"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先分别说明两数列收敛。",
+      "把误差ε分成两份。",
+      "选共同N再用三角不等式。"
+    ],
+    "id": "math.hs.batch94.10",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "每条数列各有N却直接用其中较小的N",
+        "repair_question": "令学生写出N=max(N₁,N₂)。",
+        "why_wrong": "较小N不能保证另一条数列同时达到误差要求"
+      }
+    ],
+    "notation": [
+      "aₙ,bₙ：数列",
+      "a,b：极限",
+      "ε,N：精度与项号"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "数列ε–N收敛定义",
+      "绝对值三角不等式"
+    ],
+    "proof_steps": [
+      {
+        "claim": "给第一数列分配误差容差ε的一半",
+        "reason": "给定ε>0，因aₙ→a，存在N₁使n≥N₁时|aₙ−a|<ε/2。"
+      },
+      {
+        "claim": "给第二数列取得共同有效的项号下界",
+        "reason": "因bₙ→b，存在N₂使n≥N₂时|bₙ−b|<ε/2，取N=max(N₁,N₂)。"
+      },
+      {
+        "claim": "用三角不等式合成两个数列误差",
+        "reason": "n≥N时|(aₙ+bₙ)−(a+b)|≤|aₙ−a|+|bₙ−b|<ε，故收敛。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若aₙ→a、bₙ→b，则aₙ+bₙ→a+b。证明必须选择共同的足够大项号，不能单靠有限项代入推断。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "收敛数列加法极限定律的误差分配",
+    "transfer": {
+      "far": "分析两路测量误差随采样次数减小时总和误差界。",
+      "near": "证明收敛数列的差极限为两极限之差。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "3。",
+        "check": "直接代数合并与定理结果一致。",
+        "question": "aₙ=1+1/n,bₙ=2−3/n，求和的极限。",
+        "steps": [
+          "aₙ→1，bₙ→2。",
+          "和为3−2/n，极限3。"
+        ]
+      },
+      {
+        "answer": "3。",
+        "check": "由|1/n|→0精确核查误差。",
+        "question": "aₙ=(−1)/n,bₙ=3+2/n，求和极限。",
+        "steps": [
+          "前者→0，后者→3。",
+          "和为3+1/n，极限为3。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "Q是实2×2矩阵且QᵀQ=I",
+      "坐标均在统一欧氏正交单位基底表示"
+    ],
+    "boundaries": [
+      "仅在某一个向量上保持长度不能推出Q是正交矩阵；不应将det=−1误判为不能保持距离。"
+    ],
+    "counterexamples": [
+      {
+        "example": "Q=diag(−1,1)，QᵀQ=I且det Q=−1",
+        "explanation": "反射改变定向但仍是等距变换。",
+        "false_claim": "误认为镜像反射必然改变向量的长度"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-162"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先计算矩阵转置乘以自身。",
+      "区分保持面积与保持长度。",
+      "用uᵀQᵀQu说明何时对所有向量有效。"
+    ],
+    "id": "math.hs.batch94.11",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "仅以det Q=1断言正交",
+        "repair_question": "必须检查QᵀQ=I而不只看行列式。",
+        "why_wrong": "Q=diag(2,1/2)的行列式是1但不保持长度"
+      }
+    ],
+    "notation": [
+      "Qᵀ：矩阵转置",
+      "I：单位矩阵",
+      "det Q：行列式"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "矩阵乘法",
+      "向量内积与范数"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先直接计算QᵀQ，不仅检验某一个测试向量。",
+      "用(Qu)·(Qv)=uᵀQᵀQv=u·v说明内积保持。",
+      "由u=v推出范数保持，再由长度及内积推出夹角余弦保持。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若QᵀQ=I，则所有内积u·v与欧氏长度均保持；det Q=1表示保向，det Q=−1表示反向，二者都可保持距离。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二维正交矩阵的长度与夹角不变量",
+    "transfer": {
+      "far": "将图像几何镜像变换与缩放变换分别辨认为等距与非等距。",
+      "near": "求坐标反射Q=diag(1,−1)的行列式与保长性。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "(−1,2)，长度不变。",
+        "check": "QᵀQ=I，证明对所有向量成立。",
+        "question": "Q=[[0,−1],[1,0]]，计算Q(2,1)。",
+        "steps": [
+          "矩阵乘法第一坐标−1，第二坐标2。",
+          "原向量长度√5，新向量长度√5。"
+        ]
+      },
+      {
+        "answer": "不保持，也不是正交矩阵。",
+        "check": "QᵀQ=diag(4,1/4)≠I。",
+        "question": "Q=diag(2,1/2)，会保持向量(1,0)长度吗？",
+        "steps": [
+          "Q(1,0)=(2,0)。",
+          "原长1，变换后长2。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "计算梯度的候选点必须处在可微区域内部",
+      "讨论全局最值时需确定可行域以及边界，闭有界域连续性保证极值存在"
+    ],
+    "boundaries": [
+      "f(x,y)=x²−y²在原点梯度为零，但沿x轴增大、沿y轴减小，为鞍点而非极值。"
+    ],
+    "counterexamples": [
+      {
+        "example": "x²−y²在(0,0)的两个方向符号相反",
+        "explanation": "检查不同方向的函数变化而不是只看梯度。",
+        "false_claim": "只因偏导数同时为零就认定极小"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-133"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先把可行域画出来。",
+      "内部驻点只是候选，要查鞍点。",
+      "对每段边界及顶点单独检查。"
+    ],
+    "id": "math.hs.batch94.12",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "优化方形区域却漏掉边界",
+        "repair_question": "请沿每条边分别代入约束并检查端点。",
+        "why_wrong": "连续函数在线段端点可能取得整体最值"
+      }
+    ],
+    "notation": [
+      "∇f：二元梯度",
+      "fₓ,fᵧ：偏导数",
+      "D：可行域"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "一元导数与驻点",
+      "二元函数定义域及边界"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "列出目标函数的可行域、内部和边界。",
+      "求内部驻点∇f=0，同时识别不可微点。",
+      "把边界参数化成一维问题求候选，再比较所有候选的函数值。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在闭有界区域优化连续函数时，既要检查内部驻点和不可微点，也要沿约束边界独立比较，不能只解fₓ=fᵧ=0。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二元函数驻点与边界极值的区分",
+    "transfer": {
+      "far": "在长度宽度有上界的矩形设计问题中检查成本函数边界最优解。",
+      "near": "求f=x²−y²在原点是否为极值。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "全局极小值0，位置(0,0)。",
+        "check": "利用非负性排除其他更小值。",
+        "question": "f=x²+y²在整个平面求极小值。",
+        "steps": [
+          "梯度(2x,2y)=0仅在原点。",
+          "平方和非负，原点取得0。"
+        ]
+      },
+      {
+        "answer": "最大值2，位置(1,1)。",
+        "check": "最大点位于边界顶点，证明漏边界会失败。",
+        "question": "f=x+y在单位方形[0,1]²求最大值。",
+        "steps": [
+          "内部梯度恒为(1,1)无驻点。",
+          "各坐标≤1，所以f≤2，在(1,1)达到。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "论域为从整数n₀开始的全体连续整数",
+      "归纳步必须对任意k≥n₀证明，而非只检验一次具体k"
+    ],
+    "boundaries": [
+      "如果缺少起点，单独的P(k)⇒P(k+1)可能只是空转：例如P(n)为n<0、论域n≥0时每一步蕴含可真但没有真实起点。"
+    ],
+    "counterexamples": [
+      {
+        "example": "命题P(n):n<0对n≥0起点不成立，即便形式上后继蕴含可为真",
+        "explanation": "必须先把最小合法n₀代回检查。",
+        "false_claim": "只做P(k)推出P(k+1)就宣布命题成立"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-111"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确定最小的整数n₀。",
+      "把k替换为k+1，寻找与假设的结构差异。",
+      "写清楚用到了P(k)的哪一部分，而不是直接引用P(k+1)。"
+    ],
+    "id": "math.hs.batch94.13",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "在归纳步中直接假设P(k+1)",
+        "repair_question": "请只写P(k)及其他已知条件推导下一项。",
+        "why_wrong": "这是把结论当作前提的循环证明"
+      }
+    ],
+    "notation": [
+      "P(n)：整数命题",
+      "n₀：归纳起点",
+      "k：任意合法项号"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "数学命题与全称量词",
+      "蕴含命题与代数恒等式"
+    ],
+    "proof_steps": [
+      {
+        "claim": "验证归纳链中的首个整数命题",
+        "reason": "单独证明P(n₀)为真，从而归纳链第一个命题有根据。"
+      },
+      {
+        "claim": "对任意合法项号建立从k到k+1的推导",
+        "reason": "任取k≥n₀，假设P(k)成立，以合法代数推出P(k+1)，并保持k的量词范围。"
+      },
+      {
+        "claim": "用有限次后继推导覆盖任一目标项号",
+        "reason": "对给定n≥n₀，有限次重复归纳步从n₀抵达n，故P(n)成立。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "当起点成立且归纳步对于所有允许的k成立时，可推出所有整数n≥n₀的P(n)；只检验几个例子不构成归纳证明。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "数学归纳法：归纳起点与归纳步的逻辑衔接",
+    "transfer": {
+      "far": "检查递推式正确性时区别有限个单元测试和覆盖所有正整数的归纳证明。",
+      "near": "用归纳法证明奇数前n项和为n²。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "对所有n≥1成立。",
+        "check": "归纳步保留k≥1且不引用待证结论。",
+        "question": "证明1+2+⋯+n=n(n+1)/2，n≥1。",
+        "steps": [
+          "起点n=1两边都为1。",
+          "假设前k项和为k(k+1)/2，再加k+1得到(k+1)(k+2)/2。"
+        ]
+      },
+      {
+        "answer": "对n≥0成立。",
+        "check": "第二次不等式使用k≥0。",
+        "question": "P(n):2^n≥n+1，n≥0，验证归纳步。",
+        "steps": [
+          "n=0时1≥1成立。",
+          "若2^k≥k+1，则2^(k+1)≥2k+2≥k+2，k≥0。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "总长及两段均为正实数，且a>b>0",
+      "方程r²−r−1=0取正且大于1的根；另一根为负"
+    ],
+    "boundaries": [
+      "在设计或艺术中将任意近似1.6的长宽比都断言为严格黄金比，属于无证据的泛化；测量误差应注明。"
+    ],
+    "counterexamples": [
+      {
+        "example": "负根约−0.618，违反r=a/b>1",
+        "explanation": "代数方程根还必须筛选是否满足实际量值范围。",
+        "false_claim": "把负根(1−√5)/2也称作正长度比"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-147"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先标出大段a和小段b。",
+      "把两种比值写成方程。",
+      "正根的筛选须使用a>b>0。"
+    ],
+    "id": "math.hs.batch94.14",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "将有限斐波那契比值直接当作φ",
+        "repair_question": "问学生是否计算过严格的代数等式。",
+        "why_wrong": "5/3不等于(1+√5)/2，有限项比值一般只是近似"
+      }
+    ],
+    "notation": [
+      "φ：黄金比例",
+      "a：大段长度",
+      "b：小段长度"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "一元二次方程",
+      "正实数与比例"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "从全段与大段比等于大段与小段比建立方程。",
+      "设r=a/b，得(r+1)/r=r，即r²−r−1=0。",
+      "求根为(1±√5)/2，仅正根符合r>1；用原比例检验。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若把总长a+b按a>b>0分割且(a+b)/a=a/b，则设r=a/b>1，有r²=r+1，因而r=φ；有限比值的接近不等于恰好相等。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "黄金比定义与有限近似的区别",
+    "transfer": {
+      "far": "区分真实建筑尺寸近似黄金比的经验描述与严格数学等式。",
+      "near": "求满足r²−r−1=0且r>1的唯一实数。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "满足黄金比的严格定义。",
+        "check": "两比值完全相等而非小数近似。",
+        "question": "一段长为1+φ的线分成φ和1，检查黄金比例。",
+        "steps": [
+          "大段/小段为φ/1=φ。",
+          "全段/大段=(φ+1)/φ=φ，因为φ²=φ+1。"
+        ]
+      },
+      {
+        "answer": "不是严格黄金比例。",
+        "check": "3/2与5/3都为有理数，φ是无理数。",
+        "question": "长度分为3与2，是否严格黄金分割？",
+        "steps": [
+          "大段/小段为3/2。",
+          "全段/大段为5/3，两值不同。"
+        ]
+      }
+    ]
+  }
+]

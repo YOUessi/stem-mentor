@@ -149,6 +149,7 @@ jobs:
       - run: PYTHONPATH=backend python scripts/build_kb_batch91_source_lessons.py --check
       - run: PYTHONPATH=backend python scripts/build_kb_batch92_relations.py --check
       - run: PYTHONPATH=backend python scripts/build_kb_batch93_candidate_triage.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch94_deep_scope.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Tests now import both 'app' (backend package root) and the versioned
