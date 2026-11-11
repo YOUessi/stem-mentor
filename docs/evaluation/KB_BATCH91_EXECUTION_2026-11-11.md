@@ -84,6 +84,12 @@
 - 保留失败证据 `mac_full_initial_failed*`、`mac_full_static_snapshot_failure*`、`mac_full_batch26_failure*`、`mac_full_batch33_failure*`、`github_ci_preflight.log`，供反向复盘。
 - **与实时GitHub Actions区别**：以上证明 Mac 上所有最终检查通过；新提交之后的GitHub CI结果必须另行读取，未通过前不得宣布正式远端验收。独立源草案仍需真实教师数学审校，任何有限算例均非全称形式认证。
 
+## GitHub Actions Linux收尾修复（增量验收）
+
+- GitHub Actions运行 `42941771910` 的136项独立来源脚本已经执行至最后的pytest收集阶段，因原工作流以 `cd backend && PYTHONPATH=. pytest -q` 运行，导致 `tests/test_batch11_exact_math.py` 新引入的 `scripts.kb_frozen_batch24` 无法导入；Linux报 `ModuleNotFoundError: No module named 'scripts'`。**本轮真实远端失败，不能标记CI Success**。
+- 修复 `.github/workflows/ci.yml`：保留 `backend` 为 `app` 包根目录，并同时将仓库根目录暴露为 `scripts` 命名空间，使用 `cd backend && PYTHONPATH=.:.. pytest -q`。增加前置导入和冻结287 ID的独立检查，防止回归。
+- 这只改动测试执行路径，不改变教材审稿状态和数学结论。Mac采用项目 `.venv` 并模拟Linux同一 `PYTHONPATH=.:..`，分别验证仓库根目录 `scripts` 与 `backend/app` 双路径导入，并运行三份代表性数学与冻结测试：**1,490 passed，0 failed，退出码0**（`ci_linux_path_simulated.log/.exit`）。上述1490项包含在此前62,060项全量测试中，不能重复累计。最终GitHub CI状态仍须独立跟踪。
+
 ## 下一批
 
 1. K00 将剩余182个未配对临时标签做跨页、跨轨数学语义比对与去重候选，不自动输出虚假官方原子总数；组织七轨官方课标逐页/教师审核协议。
