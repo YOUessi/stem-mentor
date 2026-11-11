@@ -108,6 +108,7 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch87_math_lessons.py --c
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch90_relations.py --check
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch91_source_lessons.py --check
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch92_relations.py --check
+PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch93_candidate_triage.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"

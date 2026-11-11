@@ -22,6 +22,15 @@ AUTHOR = ROOT / "curriculum/highschool_math/kb_batch92_relations_authoring.json"
 OUT = ROOT / "docs/evaluation/KB_BATCH92_SOURCE_RELATIONS.json"
 DOC = ROOT / "docs/evaluation/KB_BATCH92_SOURCE_RELATIONS.md"
 SCHEMA = "kb92-24-math-relation-proposals-v1"
+# Frozen Batch89 provisional source snapshot. A syntactically correct 64-digit
+# hexadecimal field is not evidence of source identity. A future source snapshot
+# migration requires a reviewed checksum update, independent of the input rows.
+BATCH89_SOURCE_CANDIDATES_SHA256 = "56b87b4a9094c2f279fd8103ac5551338db9408c9207f5a8ce971bf295759543"
+
+def candidate_snapshot_sha256(rows):
+    return sha256(json.dumps(rows, sort_keys=True, ensure_ascii=False,
+                            separators=(",",":"), allow_nan=False).encode("utf-8")).hexdigest()
+
 ROOT_KEYS = {"schema_version", "standard_version", "authorship", "authority",
              "teacher_approved", "semantic_equivalence_certified",
              "student_publishable", "relations"}
@@ -83,6 +92,8 @@ def build(raw=None, earlier=None, historical=None):
             "historical scope falsely certified")
     require(type(raw["relations"]) is list and len(raw["relations"]) == 24,
             "all 24 substantial original relation records required")
+    require(candidate_snapshot_sha256(historical["provisional_candidate_backlog"]) ==
+            BATCH89_SOURCE_CANDIDATES_SHA256, "frozen Batch89 source provenance mismatch")
     candidates = {r["candidate_id"]: r
                   for r in historical["provisional_candidate_backlog"]}
     require(len(candidates) == 300, "historical source candidate count")
