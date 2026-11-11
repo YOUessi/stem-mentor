@@ -61,7 +61,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "在同一个三维正交坐标系内，两点间欧氏距离等于三个坐标差平方和的非负平方根；坐标三元组不能不经转换跨不同坐标系比较。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "三维直角坐标系的点与向量坐标",
     "transfer": {
@@ -243,7 +243,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "抛物线的距离相等条件与双曲线的距离差条件不可混用，双曲线要求0<a<c；若2a=2c则轨迹退化为两条焦点外侧的射线，不是非退化双曲线。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "抛物线与双曲线的焦点轨迹定义",
     "transfer": {
@@ -534,7 +534,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "边际密度f_X(x)=∫_{−∞}^∞ f(x,y)dy、f_Y(y)=∫ f(x,y)dx；概率对应面积积分而不是单点密度值，不能把f(x0,y0)当作P(X=x0,Y=y0)。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "二维连续联合密度和边际概率",
     "transfer": {
@@ -807,7 +807,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "四次试验00?的三列设计(000),(011),(101),(110)，任取两列恰覆盖00,01,10,11各一次；然而三列主效应与部分交互作用无法在该饱和设计中全部独立估计。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "两水平正交实验的边际平衡和混淆",
     "transfer": {
@@ -898,7 +898,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "对有限命题逻辑，若Γ∧A和Γ∧¬A各有一个满足赋值，则A独立于Γ；这是逻辑意义的相对独立，不能据此断言现实中的对象是否存在。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "公理独立性的语义判定与有限模型",
     "transfer": {

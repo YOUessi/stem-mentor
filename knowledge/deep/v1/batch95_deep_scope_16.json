@@ -534,7 +534,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "离散分布列不仅列出可能取值，还必须满足非负、总和为1；期望是加权平均，方差衡量围绕均值的平方偏差。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "离散随机变量分布列与期望方差",
     "transfer": {
@@ -825,7 +825,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "显著性水平α是控制第一类错误概率的上限，检验功效为1−β（β为第二类错误概率）；统计显著不等于效应重大，也不等于H0为假的后验概率。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "假设检验的两类错误与显著性",
     "transfer": {
@@ -916,7 +916,7 @@
       "reviewer_id": null,
       "status": "REVIEW_PENDING"
     },
-    "statement": null,
+    "statement": "例如f(x,y)=√(4−x²−y²)的定义域为闭圆盘x²+y²≤4；沿固定y取截面前须检查该y是否有可行x。",
     "teacher_solution_visibility": "TEACHER_ONLY",
     "title": "二元函数定义域与截面观察",
     "transfer": {
