@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
-from app.deep_knowledge import lessons
+from kb_frozen_batch24 import frozen_batch24_lessons
 from app.kb_batch28_condition_oracles import SUPPORTED, evaluate
 
 MANIFEST=ROOT/"knowledge/proof/batch28_p0_condition_profiles.json"
@@ -34,7 +34,7 @@ def build(manifest=None, history=None):
     risk={x["id"]:x for x in history["p0_review_queue"]}
     if len(risk)!=127 or len(history["p0_review_queue"])!=127:
         raise ValueError("Historical 127 P0 baseline changed")
-    indexed={doc.id:doc for doc in lessons()}
+    indexed={doc.id:doc for doc in frozen_batch24_lessons()}
     if len(indexed)!=287:
         raise ValueError("Base Batch26 corpus changed; explicit rebaseline required")
     if len(manifest["profiles"])!=17:

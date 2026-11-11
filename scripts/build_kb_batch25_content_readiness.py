@@ -12,11 +12,12 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
-from app.deep_knowledge import curriculum,lessons
+from app.deep_knowledge import curriculum
+from kb_frozen_batch24 import frozen_batch24_lessons
 
 OUT=ROOT/"docs/evaluation/KB_BATCH25_LESSON_REVIEW_READINESS.json"
 def build():
-    corpus=lessons();rows=curriculum()
+    corpus=frozen_batch24_lessons();rows=curriculum()
     if len(corpus)!=287 or len(rows)!=178:raise ValueError("Unexpected batch24 corpus baseline")
     maps={x["id"]:x for x in rows}
     tracks=Counter();kindcounts=Counter();reasons=Counter();action=defaultdict(list)

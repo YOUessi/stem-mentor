@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
-from app.deep_knowledge import lessons
+from kb_frozen_batch24 import frozen_batch24_lessons
 from app.kb_batch29_exact_witnesses import SUPPORTED,evaluate
 
 MANIFEST=ROOT/"knowledge/proof/batch29_p0_condition_profiles.json"
@@ -36,7 +36,7 @@ def build(manifest=None,history=None,previous=None):
     if len(older)!=35 or len(prev["unresolved_p0_step_ids"])!=92 or older & set(prev["unresolved_p0_step_ids"]) or (older|set(prev["unresolved_p0_step_ids"]))!=set(risk):
         raise ValueError("Prior 35-step editorial review baseline drift")
     if len(m.get("profiles",[]))!=20:raise ValueError("Require 20 independently curated mathematical boundary families")
-    indexed={x.id:x for x in lessons()}
+    indexed={x.id:x for x in frozen_batch24_lessons()}
     if len(indexed)!=287:raise ValueError("287-draft frozen base changed: explicit rebaseline required")
     seen=set();families=Counter();rows=[]
     for p in m["profiles"]:

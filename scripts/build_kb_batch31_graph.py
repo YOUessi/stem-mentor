@@ -8,7 +8,7 @@ from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
-from app.deep_knowledge import lessons
+from kb_frozen_batch24 import frozen_batch24_lessons
 from app.kb_batch26_graph import SCOPE, validate_editorial_graph
 SEED=ROOT/"knowledge/deep/prerequisite_editorial_candidates_batch31.tsv"
 BASE=ROOT/"knowledge/deep/prerequisite_editorial_candidates_batch26.json"
@@ -29,7 +29,7 @@ def parse(text):
     return rows
 
 def build(seed=None,base=None,docs=None):
-    docs=list(lessons() if docs is None else docs)
+    docs=list(frozen_batch24_lessons() if docs is None else docs)
     payload=json.loads(BASE.read_text(encoding="utf-8")) if base is None else base
     if payload["scope"]!=SCOPE or len(payload["items"])!=31:raise ValueError("Old approved-unsafe editorial payload changed")
     new=parse(SEED.read_text(encoding="utf-8") if seed is None else seed)

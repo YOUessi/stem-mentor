@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"backend"))
-from app.deep_knowledge import lessons
+from kb_frozen_batch24 import frozen_batch24_lessons
 from app.kb_batch25_math import evaluate
 
 HISTORY=ROOT/"docs/evaluation/KB_BATCH18_SOURCE_AND_PROOF_RISK_AUDIT.json"
@@ -46,11 +46,11 @@ def build():
     original=read(HISTORY);conflicts=read(CONFLICTS);prior=read(CURRENT)
     if original["summary"]["by_priority"]["P0_GUARD_AND_COUNTEREXAMPLE"]!=127:
         raise ValueError("P0 baseline changed")
-    if (len(original["proof_review_queue"]),len(conflicts["conflicts"]),len(lessons()))!=(451,10,287):
+    if (len(original["proof_review_queue"]),len(conflicts["conflicts"]),len(frozen_batch24_lessons()))!=(451,10,287):
         raise ValueError("Frozen source or corpus counts changed")
     if prior["summary"]["all_unverified_proof_steps"]!=538:
         raise ValueError("Historical proof queue drift")
-    indexed={d.id:d for d in lessons()}
+    indexed={d.id:d for d in frozen_batch24_lessons()}
     risky=[];group_counts=Counter()
     for rec in original["proof_review_queue"]:
         if rec["priority"]!="P0_GUARD_AND_COUNTEREXAMPLE":continue
