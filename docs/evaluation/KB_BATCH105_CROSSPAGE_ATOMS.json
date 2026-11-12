@@ -1,0 +1,731 @@
+{
+  "all_source_pages_full_teacher_reviewed": false,
+  "author_script_sha256": "65155086390e87ecc4d78dd8ec050e7575163c302e4e76d97bae9c507850af0d",
+  "base_standard": "普通高中数学课程标准（2017年版2020年修订）",
+  "base_standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf",
+  "candidates": [
+    {
+      "candidate_id": "KB105-P015-C01",
+      "editorial_interpretation": "对于确定的集合A和对象x，命题x∈A必须能判断真或假；属于是元素与集合的关系，不是集合之间的包含关系。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "membership",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "成员资格与单元素集合不是同一关系"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "CONCEPT",
+      "mathematical_preconditions": "先确定对象和集合的论域以及集合成员判定规则。",
+      "misleading_generalization": "把1∈{1,3}误写为{1}∈{1,3}。",
+      "official_atom_id": null,
+      "pdf_page_index": 22,
+      "printed_page": 15,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch91.01"
+      ],
+      "source_line_end": 11,
+      "source_line_start": 11,
+      "source_page_text_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "集合的属于关系",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB105-P015-C02",
+      "editorial_interpretation": "把自然语言的共同条件翻译为集合描述法时应保留整数/实数等论域，例如{n∈Z:0≤n<6且n为偶数}={0,2,4}。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "set_notation",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "明确整数论域，偶整数不含3"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "METHOD",
+      "mathematical_preconditions": "明确取值论域、上下界以及不等式是否含等号。",
+      "misleading_generalization": "不指定n∈Z便把区间内所有实数也算作偶整数。",
+      "official_atom_id": null,
+      "pdf_page_index": 22,
+      "printed_page": 15,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [],
+      "source_line_end": 13,
+      "source_line_start": 12,
+      "source_page_text_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "集合的符号语言表示",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB105-P015-C03",
+      "editorial_interpretation": "空集不含元素；补集总要相对于固定全集U讨论，U\\∅=U且∅是U的子集。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "empty_universe",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "空集不等于包含0的集合"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "CONCEPT",
+      "mathematical_preconditions": "全集U需先给定，且补集中的集合确为U的子集。",
+      "misleading_generalization": "离开全集直接写绝对补集，或把∅当作含0的集合。",
+      "official_atom_id": null,
+      "pdf_page_index": 22,
+      "printed_page": 15,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch91.01"
+      ],
+      "source_line_end": 14,
+      "source_line_start": 14,
+      "source_page_text_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "全集与空集",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB105-P015-C04",
+      "editorial_interpretation": "A⊆B表示每个A元素也属于B；A=B的充要条件是A⊆B且B⊆A。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "subset_equality",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "严格包含不等于相等"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "CONCEPT",
+      "mathematical_preconditions": "集合的相等由成员完全一致决定，不应以元素排列先后判断。",
+      "misleading_generalization": "仅由A⊆B就推出A=B，忽略严格包含的可能。",
+      "official_atom_id": null,
+      "pdf_page_index": 22,
+      "printed_page": 15,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [],
+      "source_line_end": 16,
+      "source_line_start": 16,
+      "source_page_text_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "包含关系与集合相等",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB105-P015-C05",
+      "editorial_interpretation": "x∈A∪B当且仅当x∈A或x∈B，包括同时属于两集合；并集不是只取公共元素。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "union",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "并集保留至少属于其一的元素"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "CONCEPT",
+      "mathematical_preconditions": "A与B是处于同一明确论域下、成员可判断的集合。",
+      "misleading_generalization": "把A∪B直接误算成A∩B，遗漏仅属于其中一个集合的元素。",
+      "official_atom_id": null,
+      "pdf_page_index": 22,
+      "printed_page": 15,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch94.01"
+      ],
+      "source_line_end": 19,
+      "source_line_start": 18,
+      "source_page_text_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "并集的逐元素定义",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB105-P015-C06",
+      "editorial_interpretation": "x∈A∩B当且仅当x同时属于A与B；交集不同于至少属于一个集合的并集。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "intersection",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "交集需要同时属于两个集合"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "CONCEPT",
+      "mathematical_preconditions": "A与B的元素关系必须处于可比较的共同论域。",
+      "misleading_generalization": "把交集当成两个集合的所有元素。",
+      "official_atom_id": null,
+      "pdf_page_index": 22,
+      "printed_page": 15,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch94.01"
+      ],
+      "source_line_end": 19,
+      "source_line_start": 18,
+      "source_page_text_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "交集的逐元素定义",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB105-P015-C07",
+      "editorial_interpretation": "若A⊆U，则A在U内的补集是U中不属于A的所有元素；改变U可能改变补集。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "complement",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "补集取决于固定全集"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "CONCEPT",
+      "mathematical_preconditions": "必须固定U和A⊆U，符号补集不可脱离U。",
+      "misleading_generalization": "把U={1,2,3}与V={1,2,3,4}下同一A的补集视为相等。",
+      "official_atom_id": null,
+      "pdf_page_index": 22,
+      "printed_page": 15,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch104.01"
+      ],
+      "source_line_end": 21,
+      "source_line_start": 20,
+      "source_page_text_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "相对全集的补集",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB105-P015-C08",
+      "editorial_interpretation": "Venn图的重叠区域代表交集，两个圆内的全部区域代表并集，全集框中圆外区域代表相对补集。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "venn",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "重叠区域与全圆区域不相同"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "METHOD",
+      "mathematical_preconditions": "图形必须包含声明的全集及集合标签；依照元素关系而非圆的大小判断。",
+      "misleading_generalization": "只根据区域面积断言元素数量或集合包含关系。",
+      "official_atom_id": null,
+      "pdf_page_index": 22,
+      "printed_page": 15,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch94.01"
+      ],
+      "source_line_end": 23,
+      "source_line_start": 22,
+      "source_page_text_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "Venn图区分交并补",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate_id": "KB105-P052-C09",
+      "editorial_interpretation": "a_n→L是指对每个ε>0存在正整数N，所有n≥N均满足|a_n-L|<ε；N可依赖ε。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "sequence_eps_n",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "交替数列的奇偶子列极限不同"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "CONCEPT",
+      "mathematical_preconditions": "数列以正整数为索引；量词先后顺序不可颠倒。",
+      "misleading_generalization": "只检查一个大n或把N设成对所有ε固定的常数。",
+      "official_atom_id": null,
+      "pdf_page_index": 59,
+      "printed_page": 52,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch100.07"
+      ],
+      "source_line_end": 20,
+      "source_line_start": 10,
+      "source_page_text_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "数列极限的ε–N量词定义",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB105-P052-C10",
+      "editorial_interpretation": "实数数列若收敛于有限极限，则存在M使全部项的绝对值不超过M；其逆命题一般不成立。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "convergent_bounded",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "有界交替列的两个常值子列不趋同"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "THEOREM",
+      "mathematical_preconditions": "极限必须是有限实数；对有限前缀同样需要检查。",
+      "misleading_generalization": "仅因(-1)^n有界就断言它收敛。",
+      "official_atom_id": null,
+      "pdf_page_index": 59,
+      "printed_page": 52,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch91.11"
+      ],
+      "source_line_end": 21,
+      "source_line_start": 21,
+      "source_page_text_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "收敛数列必有界",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB105-P052-C11",
+      "editorial_interpretation": "实数数列若单调递增且有上界，或单调递减且有下界，则收敛于有限实数极限。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "monotone_bounded",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "n虽单调却无上界"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "THEOREM",
+      "mathematical_preconditions": "要求实数完备性，单调和对应方向有界都不可缺失。",
+      "misleading_generalization": "把无上界的递增数列n认作收敛数列。",
+      "official_atom_id": null,
+      "pdf_page_index": 59,
+      "printed_page": 52,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch96.09"
+      ],
+      "source_line_end": 29,
+      "source_line_start": 22,
+      "source_page_text_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "单调有界数列收敛",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB105-P052-C12",
+      "editorial_interpretation": "当a_n→a且b_n→b时，和差积的极限可逐项运算；商法则额外要求b≠0及分母尾项非零。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "sequence_arithmetic",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "零极限之比不能使用非零分母商法则"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "METHOD",
+      "mathematical_preconditions": "两数列均收敛于有限实数，商的极限分母非零。",
+      "misleading_generalization": "从0/0推导出任意商极限，忽略b=0边界。",
+      "official_atom_id": null,
+      "pdf_page_index": 59,
+      "printed_page": 52,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch94.10"
+      ],
+      "source_line_end": 30,
+      "source_line_start": 30,
+      "source_page_text_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "数列极限四则运算",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB105-P052-C13",
+      "editorial_interpretation": "一种数列极限表征为(1+1/n)^n→e；有限n的数值不等同于常数e。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "e_sequence",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "n=1时数值2只是极限数列的一项"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "CONCEPT",
+      "mathematical_preconditions": "n取正整数，讨论n趋于无穷而非n=0。",
+      "misleading_generalization": "把n=1时的有限项数值2直接写为极限常数e，混淆极限与取值。",
+      "official_atom_id": null,
+      "pdf_page_index": 59,
+      "printed_page": 52,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [],
+      "source_line_end": 31,
+      "source_line_start": 31,
+      "source_page_text_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "自然常数e的典型极限表征",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB105-P052-C14",
+      "editorial_interpretation": "lim(x→a)f(x)=L意指对每个ε>0存在δ>0，使定义域中所有0<|x-a|<δ均有|f(x)-L|<ε。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "function_eps_delta",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "点值可与去心极限不同"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "CONCEPT",
+      "mathematical_preconditions": "a须是定义域的聚点；去心邻域与f(a)可能无定义须分清。",
+      "misleading_generalization": "要求f(a)存在且等于L才承认函数极限。",
+      "official_atom_id": null,
+      "pdf_page_index": 59,
+      "printed_page": 52,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch100.08"
+      ],
+      "source_line_end": 38,
+      "source_line_start": 33,
+      "source_page_text_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "函数极限的ε–δ量词定义",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB105-P052-C15",
+      "editorial_interpretation": "当f与g在同一点趋近具有有限极限，和差积可分别取极限；商需分母函数极限不为零。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "function_arithmetic",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "分母极限0时需单独分析商"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "METHOD",
+      "mathematical_preconditions": "只在定义域的共同去心邻域中运算，商要求尾端分母非零。",
+      "misleading_generalization": "在g(x)→0时不加证明直接把极限相除。",
+      "official_atom_id": null,
+      "pdf_page_index": 59,
+      "printed_page": 52,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [
+        "math.hs.batch97.04"
+      ],
+      "source_line_end": 39,
+      "source_line_start": 39,
+      "source_page_text_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "函数极限的四则运算",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB105-P052-C16",
+      "editorial_interpretation": "当x以弧度计量且趋于0，x≠0时sin(x)/x→1；不表示x=0处原式有定义。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "sinc_limit",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "极限相等不代表函数每一点相等"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "THEOREM",
+      "mathematical_preconditions": "自变量使用弧度制；仅讨论去心邻域内的极限。",
+      "misleading_generalization": "由极限等于1就把sin(π)/π误算成1。",
+      "official_atom_id": null,
+      "pdf_page_index": 59,
+      "printed_page": 52,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [],
+      "source_line_end": 45,
+      "source_line_start": 40,
+      "source_page_text_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "sin x除以x的基本极限",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate_id": "KB105-P052-C17",
+      "editorial_interpretation": "在实数范围内x→0且x>-1、x≠0时，(1+x)^(1/x)趋于e。",
+      "formally_certified": false,
+      "independently_computed_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_LIMIT_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "exp_limit",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "x=1时的函数值2不是极限e"
+      },
+      "is_complete_source_page_atomization": false,
+      "kind": "THEOREM",
+      "mathematical_preconditions": "底数1+x必须为正；指数1/x要求x≠0。",
+      "misleading_generalization": "把x=1时的有限值2写成e，或在x=-2处使用实指数。",
+      "official_atom_id": null,
+      "pdf_page_index": 59,
+      "printed_page": 52,
+      "provenance_class": "OFFICIAL_SOURCE_RANGE_EDITORIAL_PROPOSAL",
+      "publishable_for_student": false,
+      "related_draft_ids": [],
+      "source_line_end": 48,
+      "source_line_start": 46,
+      "source_page_text_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "(1+x)^(1/x)的基本极限",
+      "track": "ELECTIVE_A"
+    }
+  ],
+  "cross_page_bridges": [
+    {
+      "claim_type": "COURSE_CONTEXT_NOT_SEPARATE_MATH_ATOM",
+      "from_lines": [
+        27,
+        31
+      ],
+      "from_page": 14,
+      "from_page_sha256": "ce9fb625a4943a9e2cf8a67fd11cf9ef79f553dff8a7dbedfd803f1ef3c85c86",
+      "interpretation": "必修预备知识目录的过渡说明与第15页集合内容要求相接；不能仅据章节导语计算数学原子。",
+      "teacher_review_status": "REVIEW_PENDING",
+      "to_lines": [
+        1,
+        9
+      ],
+      "to_page": 15,
+      "to_page_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+      "track": "COMPULSORY"
+    },
+    {
+      "claim_type": "COURSE_CONTEXT_NOT_SEPARATE_MATH_ATOM",
+      "from_lines": [
+        24,
+        27
+      ],
+      "from_page": 51,
+      "from_page_sha256": "cf8d0e22ddc895499d3af33c0f3742d84af2d081c14050d01b31d68cce4c7335",
+      "interpretation": "选修A微积分总述跨页续接；第52页随后展开数列与函数极限的具体要求，不能把总述计为另一条定理。",
+      "teacher_review_status": "REVIEW_PENDING",
+      "to_lines": [
+        2,
+        8
+      ],
+      "to_page": 52,
+      "to_page_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+      "track": "ELECTIVE_A"
+    }
+  ],
+  "existing_candidate_deep_lessons": 405,
+  "general_formal_proof_certificates": 0,
+  "historical_math_conflicts_open": 10,
+  "historical_prerequisite_text_unreviewed": 172,
+  "historical_proof_steps_uncertified": 538,
+  "limitations": [
+    "Only selected source requirements on printed pages 15 and 52 are separately proposed; not a complete national syllabus atomization.",
+    "PDFKit text may reorder mathematics fractions and glyphs; mathematical statements are original editorial interpretations, not verbatim transcription.",
+    "Page source SHA does not independently prove a candidate's semantic correctness.",
+    "Symbolic limits and finite examples do not certify arbitrary universal proofs or arbitrary student work.",
+    "Potentially related existing teacher-only drafts are not approved replacements for official curriculum atoms.",
+    "Student tutor must not retrieve teacher-only drafts or expose answers during independent practice."
+  ],
+  "line_count_by_page": {
+    "15": 27,
+    "52": 49
+  },
+  "math_finite_or_symbolic_witnesses": 17,
+  "math_invalid_generalization_rejections": 17,
+  "not_new_complete_deep_lessons": true,
+  "official_seven_track_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "provisional_requirement_candidate_count": 17,
+  "provisional_requirement_count_by_track": {
+    "COMPULSORY": 8,
+    "ELECTIVE_A": 9,
+    "ELECTIVE_B": 0,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "SELECTIVE_COMPULSORY": 0
+  },
+  "schema_version": "kb105-page15-page52-crosspage-editorial-candidates-v1",
+  "source_page_partition_registry_sha256": "0737bbb2fe9e66170c900ab1b05ac36ca84fdf11bdb37798d4e43ea643cace12",
+  "source_page_registry_sha256": "ec26621b7f358f892355d6e6b93622e529df30cfd6067fa1f48d77df48ffc19a",
+  "source_pages_bridge_context": [
+    14,
+    51
+  ],
+  "source_pages_editorially_covered": [
+    15,
+    52
+  ],
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "structural_partition_count": 10,
+  "structural_partitions": [
+    {
+      "end": 3,
+      "page": 15,
+      "start": 1,
+      "type": "CONTENT_INTRO"
+    },
+    {
+      "end": 9,
+      "page": 15,
+      "start": 4,
+      "type": "SETS_OVERVIEW"
+    },
+    {
+      "end": 14,
+      "page": 15,
+      "start": 10,
+      "type": "SETS_MEMBERSHIP_NOTATION"
+    },
+    {
+      "end": 16,
+      "page": 15,
+      "start": 15,
+      "type": "INCLUSION"
+    },
+    {
+      "end": 23,
+      "page": 15,
+      "start": 17,
+      "type": "SET_OPERATIONS"
+    },
+    {
+      "end": 27,
+      "page": 15,
+      "start": 24,
+      "type": "LOGIC_CONTINUES_NEXT_PAGE"
+    },
+    {
+      "end": 8,
+      "page": 52,
+      "start": 1,
+      "type": "ELECTIVE_A_CONTINUED_SCOPE"
+    },
+    {
+      "end": 31,
+      "page": 52,
+      "start": 9,
+      "type": "SEQUENCE_LIMIT_REQUIREMENTS"
+    },
+    {
+      "end": 48,
+      "page": 52,
+      "start": 32,
+      "type": "FUNCTION_LIMIT_REQUIREMENTS"
+    },
+    {
+      "end": 49,
+      "page": 52,
+      "start": 49,
+      "type": "PAGE_FOOTER"
+    }
+  ],
+  "student_authoritative_releases": 0,
+  "teacher_approvals": 0,
+  "teacher_full_page_atomizations": 0
+}
