@@ -6,6 +6,27 @@ if [[ ! -x .venv/bin/python ]]; then
   echo "Missing Mac virtual environment. Set it up using the README instructions." >&2
   exit 2
 fi
+# Rebuild original Mac-only PDFKit evidence when volatile /private/tmp is cleared
+# (e.g. reboot). Never log or commit copyrighted syllabus passages.
+SOURCE_SCRATCH_MISSING=0
+for page in {13..73}; do
+  if [[ ! -s "/private/tmp/kb56_page_${page}.txt" ]]; then
+    SOURCE_SCRATCH_MISSING=1
+    break
+  fi
+done
+if [[ ! -s /private/tmp/kb51_official_page_35.png ]]; then
+  SOURCE_SCRATCH_MISSING=1
+fi
+if [[ "$SOURCE_SCRATCH_MISSING" == 1 ]]; then
+  PDF_SOURCE="${STEM_MATH_OFFICIAL_PDF:-$HOME/Library/Application Support/STEMMentor/sources/official_math_2020.pdf}"
+  if [[ ! -f "$PDF_SOURCE" ]]; then
+    echo "Pinned official PDF missing: $PDF_SOURCE. Set STEM_MATH_OFFICIAL_PDF to a locally authorized copy." >&2
+    exit 12
+  fi
+  swift scripts/kb_mac_restore_pdfkit_source.swift "$PDF_SOURCE" \
+    curriculum/highschool_math/k00_batch51_pdfkit_page_fingerprints.json /private/tmp
+fi
 echo "[0/4] Batch24+25 source/P0/math/review guards"
 .venv/bin/python scripts/author_kb_batch24.py --check
 .venv/bin/python scripts/build_kb_batch24_scope.py --check
