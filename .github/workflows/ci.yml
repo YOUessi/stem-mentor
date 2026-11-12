@@ -182,6 +182,7 @@ jobs:
       - run: PYTHONPATH=backend python scripts/build_kb_batch110_lessons.py --check
       - run: PYTHONPATH=backend python scripts/build_kb_batch110_coverage.py --check
       - run: PYTHONPATH=backend python scripts/build_kb_batch111.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch112.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Fail fast on syntax errors before the long Python/Node/browser suite.
