@@ -1,0 +1,300 @@
+{
+  "all_new_review_status": "REVIEW_PENDING",
+  "batch": "104",
+  "deep_lesson_documents_with_new_drafts": 405,
+  "editorial_source_file_sha256": "6d0a3ea32ffd088c6d736532e5976f5d7a4744bd2f187fb106c904c7423d9102",
+  "engineering_map_counts_by_level": {
+    "必修": 64,
+    "选修拓展": 68,
+    "选择性必修": 46
+  },
+  "engineering_mapping_sha256": "9bf899e866f58e52f019869b82d9e1c8d8b37c32b58d664fa38313c522e24b1c",
+  "existing_and_new_review_states": {
+    "REVIEW_PENDING": 405
+  },
+  "existing_deep_lesson_documents": 393,
+  "existing_project_mapping_count": 178,
+  "general_theorem_certificates": 0,
+  "lesson_to_project_topic": [
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 0,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-002",
+      "engineering_label": "交集并集补集",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch104.01",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 1,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-003",
+      "engineering_label": "充分条件与必要条件",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch104.02",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 2,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-006",
+      "engineering_label": "等式性质与不等式性质",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch104.03",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 3,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [
+        "math.hs.batch104.03"
+      ],
+      "engineering_curriculum_id": "HS-MATH-007",
+      "engineering_label": "一元二次不等式",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch104.04",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 4,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [
+        "math.hs.batch104.01"
+      ],
+      "engineering_curriculum_id": "HS-MATH-011",
+      "engineering_label": "函数映射和定义域",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch104.05",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 5,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [
+        "math.hs.batch104.05"
+      ],
+      "engineering_curriculum_id": "HS-MATH-017",
+      "engineering_label": "分段函数",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch104.06",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 6,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [
+        "math.hs.batch104.05"
+      ],
+      "engineering_curriculum_id": "HS-MATH-022",
+      "engineering_label": "对数函数",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch104.07",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 7,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-038",
+      "engineering_label": "SSA 二解与三角形存在性",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch104.08",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 8,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-034",
+      "engineering_label": "向量数量积",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch104.09",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 9,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [
+        "math.hs.batch104.01"
+      ],
+      "engineering_curriculum_id": "HS-MATH-096",
+      "engineering_label": "条件概率与独立性",
+      "engineering_level": "选择性必修",
+      "lesson_id": "math.hs.batch104.10",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 10,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-098",
+      "engineering_label": "离散型随机变量",
+      "engineering_level": "选择性必修",
+      "lesson_id": "math.hs.batch104.11",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "exact_positive": true,
+        "index": 11,
+        "invalid_case_rejected": true,
+        "scope": "FINITE_EXACT_WITNESS_ONLY",
+        "student_response_verified": false,
+        "teacher_approved": false,
+        "universally_certified": false
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-064",
+      "engineering_label": "等比数列",
+      "engineering_level": "选择性必修",
+      "lesson_id": "math.hs.batch104.12",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    }
+  ],
+  "limitations": [
+    "All 12 curricula references are internal project engineering IDs, not official atoms.",
+    "Finite exact checks cannot establish the universal truth of a theorem.",
+    "Historical textual prerequisite backlog 172 remains pending independent human review.",
+    "Student challenge paths cannot retrieve teacher-only examples, proofs or answers."
+  ],
+  "new_bad_case_rejections": 12,
+  "new_deep_drafts": 12,
+  "new_finite_math_witnesses": 12,
+  "new_hint_levels": 36,
+  "new_theorem_drafts": 5,
+  "new_worked_examples": 24,
+  "official_atom_denominator": null,
+  "official_atom_denominators_by_seven_tracks": {
+    "必修": null,
+    "选修A": null,
+    "选修B": null,
+    "选修C": null,
+    "选修D": null,
+    "选修E": null,
+    "选择性必修": null
+  },
+  "prerequisite_edges_editor_only": 5,
+  "source_kind": "PROJECT_AUTHORED_ORIGINAL_EDITORIAL",
+  "student_authoritative_index_eligible": 0,
+  "teacher_approved": 0,
+  "teacher_solution_visibility": "TEACHER_ONLY",
+  "unresolved_historical_proof_steps": 538,
+  "unresolved_math_conflicts": 10,
+  "unresolved_previous_textual_prerequisites": 172
+}
