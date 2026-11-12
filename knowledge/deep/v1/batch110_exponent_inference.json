@@ -1,0 +1,777 @@
+[
+  {
+    "assumptions": [
+      "默认在实数范围讨论，不默认所有负底数都可以进行任意实数次乘幂。",
+      "对 x^(-1) 必须剔除0，对偶次根须检查被开方数非负。"
+    ],
+    "boundaries": [
+      "默认在实数范围讨论，不默认所有负底数都可以进行任意实数次乘幂。",
+      "对 x^(-1) 必须剔除0，对偶次根须检查被开方数非负。"
+    ],
+    "counterexamples": [
+      {
+        "example": "x=0时1/x没有实数值，而x=-2有定义且函数值为-1/2。",
+        "explanation": "负指数意味着求倒数，零的倒数不存在，不能凭图象延长来补上零点。",
+        "false_claim": "把幂函数 y=1/x 的定义域直接写成全体实数。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-020"
+    ],
+    "definition": "形如 f(x)=x^a（a是固定实数，x取使实数幂有意义的值）称为幂函数。指数不同，实数定义域可能不同：x^3对所有实数有定义，x^(-1)须x≠0，x^(1/2)须x≥0。",
+    "hint_ladder": [
+      "先看指数是整数、负整数还是分数，不先画图。",
+      "哪个公式会产生除以零或负数的实平方根？",
+      "写出合法x的不等式后再用例值检验边界。"
+    ],
+    "id": "math.hs.batch110.01",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把幂函数 y=1/x 的定义域直接写成全体实数。",
+        "repair_question": "请指出该解法遗漏的条件，并通过代入、反例或边界解释如何修正。",
+        "why_wrong": "负指数意味着求倒数，零的倒数不存在，不能凭图象延长来补上零点。"
+      }
+    ],
+    "notation": [
+      "a为预先固定的指数",
+      "D_f表示该规则的实数定义域"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "整数幂与负整数幂",
+      "平方根与数轴区间"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先将幂函数的指数a写成固定参数，不把 x^a 与 a^x 混为一谈。",
+      "依次问实数幂是否定义：负整数次幂不能除0；实数平方根的被开方数不能为负。",
+      "定义域确定后才可描点研究图象；定义域之外的画线不是函数的取值。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "形如 f(x)=x^a（a是固定实数，x取使实数幂有意义的值）称为幂函数。指数不同，实数定义域可能不同：x^3对所有实数有定义，x^(-1)须x≠0，x^(1/2)须x≥0。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "幂函数：先检查指数与定义域，再读图象",
+    "transfer": {
+      "far": "比较速度v(t)=1/t与距离s(t)=t²在t≥0的现实模型定义域，说明数学域和物理域为何不同。",
+      "near": "将指数换成-2、1/3和2分别列出最大实数定义域，并解释偶次根的区别。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "定义域R\\{0}；f(-4)=-1/4。",
+        "check": "检查-4不等于0，(-4)×(-1/4)=1。",
+        "question": "写出 y=x^(-1) 的实数定义域并求 f(-4)。",
+        "steps": [
+          "x^(-1)=1/x，因此要求分母x不为零。",
+          "将x=-4代入，计算1/(-4)。"
+        ]
+      },
+      {
+        "answer": "√x定义域[0,+∞)，x³定义域R。",
+        "check": "例如x=-1时√(-1)非实数而(-1)³=-1。",
+        "question": "比较 y=√x 与 y=x³ 在实数域的定义域。",
+        "steps": [
+          "平方根必须要求x≥0，故第一个定义域为[0,+∞)。",
+          "三次乘方对于任意实数x都可以计算。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a严格大于0，n为正整数，分数m/n需作为有理数理解。",
+      "负指数涉及倒数，因此不能允许a=0；负底数的偶次根不在实数域。"
+    ],
+    "boundaries": [
+      "a严格大于0，n为正整数，分数m/n需作为有理数理解。",
+      "负指数涉及倒数，因此不能允许a=0；负底数的偶次根不在实数域。"
+    ],
+    "counterexamples": [
+      {
+        "example": "实数范围(-16)^(1/2)无意义，而正底数16^(3/4)=(⁴√16)³=8。",
+        "explanation": "实偶次根要求被开方数非负，统一实指数律需要正底数约定。",
+        "false_claim": "不检查底数就写(-16)^(1/2)=4，并按实数指数律继续计算。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-153"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认底数是否严格为正，再决定能否使用统一分数幂法则。",
+      "把分母n解释成开正n次方，分子m解释成乘方。",
+      "指数前的负号意味着哪一步要取倒数？"
+    ],
+    "id": "math.hs.batch110.02",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "不检查底数就写(-16)^(1/2)=4，并按实数指数律继续计算。",
+        "repair_question": "请指出该解法遗漏的条件，并通过代入、反例或边界解释如何修正。",
+        "why_wrong": "实偶次根要求被开方数非负，统一实指数律需要正底数约定。"
+      }
+    ],
+    "notation": [
+      "m∈Z、n∈N且n>0",
+      "a^(m/n)是唯一正的n次根"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch110.01"
+    ],
+    "prerequisites": [
+      "正数的n次根",
+      "正整数幂与指数和法则"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先将m/n约成有理数，再明确a>0保证正n次根存在且唯一。",
+      "求值可先作a的正n次根，再取整数m次幂；使用负m时对正数取倒数是合法的。",
+      "幂律的应用需保留a>0前提，不能盲目搬到无定义的负底数分数幂。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对a>0、整数m与正整数n，定义a^(m/n)为正的n次根(a^m)^(1/n)。这个正底数条件使分数指数与实指数扩展相容，且a^(r+s)=a^r a^s对有理r,s成立。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "正底数分数指数：先化为正根再用幂律",
+    "transfer": {
+      "far": "用复利模型A=P(1+r)^t解释为何通常先要求1+r>0，若r=-1会出现什么数学问题。",
+      "near": "计算81^(3/4)和25^(-3/2)，写出所有开根与取倒数步骤。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "16^(3/4)=8。",
+        "check": "8^4=4096=16^3，且8为正。",
+        "question": "计算16^(3/4)，并写出使用到的约定。",
+        "steps": [
+          "16>0，先计算正四次根为2。",
+          "再求2的三次方得到8。"
+        ]
+      },
+      {
+        "answer": "9^(-1/2)=1/3。",
+        "check": "(1/3)×3=1，且9>0避免零分母。",
+        "question": "求 9^(-1/2)，说明与开平方的关系。",
+        "steps": [
+          "9的正平方根是3。",
+          "指数为负意味着取倒数，故得到1/3。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "指数函数在所有实数上按正底数实指数的标准连续扩展定义。",
+      "比较x<y时差值h=y-x严格为正，且a>0不等于1。"
+    ],
+    "boundaries": [
+      "指数函数在所有实数上按正底数实指数的标准连续扩展定义。",
+      "比较x<y时差值h=y-x严格为正，且a>0不等于1。"
+    ],
+    "counterexamples": [
+      {
+        "example": "0.5^1=1/2而0.5^2=1/4，输入增大时函数值变小。",
+        "explanation": "小于1的正底数可写为大于1底数的倒数，指数方向反转。",
+        "false_claim": "指数底数0.5仍照搬a>1时的递增方向。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-021"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "不要马上去对数，先把底数分为大于1或0到1之间。",
+      "当a>1时指数差h>0会使比值a^h与1怎样比较？",
+      "0<a<1可以改写为b^(-x)，比较方向是否变化？"
+    ],
+    "id": "math.hs.batch110.03",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "指数底数0.5仍照搬a>1时的递增方向。",
+        "repair_question": "请指出该解法遗漏的条件，并通过代入、反例或边界解释如何修正。",
+        "why_wrong": "小于1的正底数可写为大于1底数的倒数，指数方向反转。"
+      }
+    ],
+    "notation": [
+      "a为指数函数底数",
+      "h=y-x>0是指数差"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch110.02"
+    ],
+    "prerequisites": [
+      "有理指数乘法律",
+      "有理数在实数中的稠密性和实指数连续扩展"
+    ],
+    "proof_steps": [
+      {
+        "claim": "当a>1且有理q>0时，a^q>1。",
+        "reason": "由正整数幂大于1、正n次根保序以及有理指数定义，任意正有理指数均使函数值大于1。"
+      },
+      {
+        "claim": "当a>1、h为任意正实数时，a^h>1。",
+        "reason": "选择有理数q满足0<q<h，实指数按有理幂的连续单调扩展定义，故a^h≥a^q>1。"
+      },
+      {
+        "claim": "当a>1且x<y时，a^y=a^x a^(y-x)>a^x。",
+        "reason": "a^x>0且h=y-x>0，利用已证明a^h>1与合法的实指数加法律。"
+      },
+      {
+        "claim": "当0<a<1时，函数在整个实数定义域上严格递减。",
+        "reason": "取b=1/a>1，有a^x=b^(-x)。若x<y则-y<-x，套用b的递增性得到a^y<a^x。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对任意实数x<y和实数a>0且a≠1：若a>1，则a^x<a^y；若0<a<1，则a^x>a^y。底数为1时函数恒为1，因此不能称严格单调。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "指数函数的严格单调性：底数必须分情况",
+    "transfer": {
+      "far": "比较连续衰减模型0.9^t与增长模型1.1^t在t增加时的方向，并说明t的单位。",
+      "near": "判断a=1/5、a=5与a=1时的单调性，并求对应幂不等式的解集。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "2^(1/2)<2^(3/2)。",
+        "check": "二者之比为2^(3/2-1/2)=2>1。",
+        "question": "比较2^(1/2)和2^(3/2)，不必近似取小数。",
+        "steps": [
+          "底数2>1，函数在实数指数上严格递增。",
+          "1/2<3/2，保持指数大小方向。"
+        ]
+      },
+      {
+        "answer": "不等式的完整解集为所有实数x<2。",
+        "check": "例如x=1时1/3>1/9；x=3时1/27<1/9。",
+        "question": "解不等式(1/3)^x>(1/3)^2。",
+        "steps": [
+          "底数1/3严格介于0与1之间，严格递减。",
+          "函数值大于给定值意味着输入指数小于2。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "任何对数的真数必须严格大于0，底数严格大于0且不得等于1。",
+      "换底公式除以log_b a，因此要确保a≠1且b为合法底数。"
+    ],
+    "boundaries": [
+      "任何对数的真数必须严格大于0，底数严格大于0且不得等于1。",
+      "换底公式除以log_b a，因此要确保a≠1且b为合法底数。"
+    ],
+    "counterexamples": [
+      {
+        "example": "左边是log_2 10，而右边1+3=4=log_2 16，两者不相等。",
+        "explanation": "合法的是乘积的对数拆和，不能将加法项错误拆分。",
+        "false_claim": "写log_2(2+8)=log_2 2+log_2 8。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-022"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先检查每一个log的底数与真数，别先化简。",
+      "换底后分母log_b a何时可能等于0？",
+      "拆分的对象是乘积xy还是加法x+y？"
+    ],
+    "id": "math.hs.batch110.04",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "写log_2(2+8)=log_2 2+log_2 8。",
+        "repair_question": "请指出该解法遗漏的条件，并通过代入、反例或边界解释如何修正。",
+        "why_wrong": "合法的是乘积的对数拆和，不能将加法项错误拆分。"
+      }
+    ],
+    "notation": [
+      "log_a x表示以a为底的x的对数",
+      "ln x表示以自然常数e为底的对数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch110.03"
+    ],
+    "prerequisites": [
+      "指数函数可逆性与单调性",
+      "非零分母与指数乘法法则"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先列出a>0、a≠1、x>0及换底b的条件，禁止在不合定义的点变形。",
+      "设y=log_a x，则a^y=x；两边合法取log_b，得y log_b a=log_b x。",
+      "因a≠1使log_b a≠0，除去这个非零因子得到换底公式；积法则来自a^(u+v)=a^u a^v。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对数log_a x定义为满足a^y=x的唯一实数y，其中a>0且a≠1、x>0；若另取b>0且b≠1，则log_a x=log_b x/log_b a。对于x,y>0，log_a(xy)=log_a x+log_a y。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "对数换底与积商法则：真数和分母双重门禁",
+    "transfer": {
+      "far": "用分贝或pH对数刻度说明输入必须正且单位规范，为什么测量值相加不能直接相加对数。",
+      "near": "比较log_5 125与ln125/ln5，并判断log_5(x²-4)的定义域。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "log_2 8=3=ln8/ln2。",
+        "check": "ln8=ln(2³)=3ln2且ln2≠0。",
+        "question": "计算log_2 8并用自然对数表述换底。",
+        "steps": [
+          "寻找指数y使2^y=8，得到y=3。",
+          "取自然对数后写成ln8/ln2。"
+        ]
+      },
+      {
+        "answer": "定义域(1,+∞)。",
+        "check": "x=1真数为零不合法；x=2时log_3 1=0。",
+        "question": "判断log_3(x-1)在实数域的定义域。",
+        "steps": [
+          "底数3符合正且不等于1。",
+          "真数x-1必须大于0，解不等式得x>1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "样本来自指定的分布族；伯努利观测只能为0或1且p∈[0,1]。",
+      "用几个矩能否唯一确定参数取决于模型可识别性，样本矩匹配不自动保证无偏与收敛。"
+    ],
+    "boundaries": [
+      "样本来自指定的分布族；伯努利观测只能为0或1且p∈[0,1]。",
+      "用几个矩能否唯一确定参数取决于模型可识别性，样本矩匹配不自动保证无偏与收敛。"
+    ],
+    "counterexamples": [
+      {
+        "example": "恒等于1的随机变量和在0、2上各半概率的随机变量，都具有均值1但方差不同。",
+        "explanation": "一个矩只约束有限信息，未指定可识别分布族时参数或分布一般不唯一。",
+        "false_claim": "只有样本均值一致就认定两种总体分布完全相同。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-129"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写模型中的E[X]，不要先把公式记成成功次数除以总次数。",
+      "把理论矩与实际样本均值写成一个方程。",
+      "解出参数后检查约束，并区分估计值和真实参数。"
+    ],
+    "id": "math.hs.batch110.05",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "只有样本均值一致就认定两种总体分布完全相同。",
+        "repair_question": "请指出该解法遗漏的条件，并通过代入、反例或边界解释如何修正。",
+        "why_wrong": "一个矩只约束有限信息，未指定可识别分布族时参数或分布一般不唯一。"
+      }
+    ],
+    "notation": [
+      "m1=(1/n)ΣX_i是第一样本原点矩",
+      "p∈[0,1]是伯努利成功概率"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "随机变量期望与样本均值",
+      "方程求解及参数约束"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先确认抽样分布族及待估参数，不能凭一个平均数推断所有分布结构。",
+      "计算模型第一原点矩E[X]，伯努利情形 E[X]=0(1-p)+1·p=p。",
+      "用m1=E[X]解得p_hat=m1，再检查结果在参数域[0,1]中，说明它仅是估计。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "矩估计把样本原点矩与模型理论矩相等以反推参数。例如独立同分布伯努利X_i~Bernoulli(p)的第一原点矩E[X]=p，令样本均值等于p得到矩估计p_hat=样本均值。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "矩估计：由样本矩反推参数与不可识别边界",
+    "transfer": {
+      "far": "比较两组相同均值但方差不同的调查结果，解释为何只报告平均分会损失分布信息。",
+      "near": "对1、1、1、1、0、0求伯努利第一矩估计，并计算对应模型的理论方差。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "p_hat=3/4。",
+        "check": "属于[0,1]，与伯努利成功频率一致。",
+        "question": "独立伯努利样本为1、0、1、1，求第一矩估计。",
+        "steps": [
+          "样本长度n=4，成功次数k=3。",
+          "样本均值为(1+0+1+1)/4=3/4。"
+        ]
+      },
+      {
+        "answer": "p_hat=0；不能据此证明真实p必为0。",
+        "check": "即使真实p=1/2，出现三个0仍有概率1/8。",
+        "question": "样本为0、0、0，求伯努利矩估计并说明是否自动证明p=0。",
+        "steps": [
+          "第一原点矩样本值为0。",
+          "匹配E[X]=p得到估计0，但有限观测不等于总体参数已被证实。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "样本独立且共享同一个未知成功概率p。",
+      "参数空间为闭区间[0,1]；对数求导只允许在p∈(0,1)操作，端点另行核验。"
+    ],
+    "boundaries": [
+      "样本独立且共享同一个未知成功概率p。",
+      "参数空间为闭区间[0,1]；对数求导只允许在p∈(0,1)操作，端点另行核验。"
+    ],
+    "counterexamples": [
+      {
+        "example": "三次独立试验均成功时L(p)=p³，p=1取得最大1；在(0,1)内确实没有驻点。",
+        "explanation": "边界极值不能仅靠内点驻点条件判断，且不能丢掉允许的p=1。",
+        "false_claim": "全成功样本用内点对数导数法求不到驻点，就断言极大似然估计不存在。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-129"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写完整似然而不是只背k/n；数出成功次数k。",
+      "如果k=0或k=n，导数求零在内点会发生什么？",
+      "严格检查参数区间的两个端点是否包含最优解。"
+    ],
+    "id": "math.hs.batch110.06",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "全成功样本用内点对数导数法求不到驻点，就断言极大似然估计不存在。",
+        "repair_question": "请指出该解法遗漏的条件，并通过代入、反例或边界解释如何修正。",
+        "why_wrong": "边界极值不能仅靠内点驻点条件判断，且不能丢掉允许的p=1。"
+      }
+    ],
+    "notation": [
+      "k=Σx_i为成功次数",
+      "L(p)为给定样本的似然"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch110.05"
+    ],
+    "prerequisites": [
+      "有限独立事件概率乘法",
+      "一元函数导数与区间边界极值"
+    ],
+    "proof_steps": [
+      {
+        "claim": "似然在0<p<1时对数形式为k ln p+(n-k)ln(1-p)。",
+        "reason": "独立伯努利联合概率是各次概率乘积，若用p^k(1-p)^(n-k)整理，内点取对数合法。"
+      },
+      {
+        "claim": "0<k<n时导数为k/p-(n-k)/(1-p)，唯一驻点p=k/n。",
+        "reason": "合并分母得到导数(k-np)/(p(1-p))，分母为正且导数从正变负，因此是全局极大点。"
+      },
+      {
+        "claim": "k=0时最大值在p=0；k=n时最大值在p=1。",
+        "reason": "若k=0则L(p)=(1-p)^n在[0,1]递减；若k=n则L(p)=p^n递增，端点直接比较。"
+      },
+      {
+        "claim": "因此所有k=0,...,n均有最大似然估计k/n。",
+        "reason": "内点与两种端点情况已穷尽所有可能成功次数，且每种都属于规定参数空间。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "设n≥1个独立同分布Bernoulli(p)观测x_i∈{0,1}、p∈[0,1]，记k=Σx_i。似然L(p)=p^k(1-p)^(n-k)（端点按原始乘积定义），其全局最大值在p_hat=k/n处取得，包括k=0、k=n两个边界。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "伯努利极大似然：端点也是允许的最优值",
+    "transfer": {
+      "far": "分析零故障的质量抽检样本为何可以得到p_hat=0却不能据此断言产品真实故障率必为0。",
+      "near": "对五次观测0、0、1、0、1求MLE，并画出L(p)在区间上的增减方向。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "p_hat=2/3。",
+        "check": "L(2/3)=4/27，且导数在2/3左正右负。",
+        "question": "三个伯努利样本1、0、1的极大似然估计是什么？",
+        "steps": [
+          "n=3、k=2，似然为p²(1-p)。",
+          "内点导数变号或通式均给出p=k/n。"
+        ]
+      },
+      {
+        "answer": "最大似然估计p_hat=1，属于允许的参数边界。",
+        "check": "任何0≤p<1都有p⁴<1，端点合法。",
+        "question": "四个样本全成功时求MLE，说明为何不靠内点驻点。",
+        "steps": [
+          "L(p)=p⁴随p在[0,1]上增大。",
+          "直接比较边界p=1取得最大1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "必须明确H0、样本的概率模型和极端性方向，才有可解释的p值。",
+      "单侧与双侧p值通常不同；无先验概率和贝叶斯模型不能解读为后验P(H0|数据)。"
+    ],
+    "boundaries": [
+      "必须明确H0、样本的概率模型和极端性方向，才有可解释的p值。",
+      "单侧与双侧p值通常不同；无先验概率和贝叶斯模型不能解读为后验P(H0|数据)。"
+    ],
+    "counterexamples": [
+      {
+        "example": "公平硬币连续抛10次全正面，单侧p=1/1024，但这不是公平假设的后验概率。",
+        "explanation": "概率的条件方向被倒置：计算的是P(极端数据|H0)，不是P(H0|数据)。",
+        "false_claim": "检验输出p=0.01，所以原假设只有1%可能是真的。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-136"
+    ],
+    "definition": "给定原假设H0及检验统计量T和事先声明的单/双侧极端性规则，p值是H0成立时得到与当前观测至少同样极端数据的概率。显著性水平α是事先设计的第一类错误率控制指标，并不等于P(H0为真|数据)。",
+    "hint_ladder": [
+      "先写清条件概率的竖线右边到底是什么假设。",
+      "极端事件是左尾、右尾还是双尾？",
+      "p值大于α时的准确结论是不拒绝还是接受为真？"
+    ],
+    "id": "math.hs.batch110.07",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "检验输出p=0.01，所以原假设只有1%可能是真的。",
+        "repair_question": "请指出该解法遗漏的条件，并通过代入、反例或边界解释如何修正。",
+        "why_wrong": "概率的条件方向被倒置：计算的是P(极端数据|H0)，不是P(H0|数据)。"
+      }
+    ],
+    "notation": [
+      "H0是原假设，H1是备择假设",
+      "α是预设显著性水平；p_obs是按H0计算的尾概率"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "古典概率与条件概率",
+      "二项分布和事件尾部求和"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先用文字写清H0下统计量的分布以及哪些结果算比观测更极端。",
+      "在H0指定的模型下，把极端事件的概率相加得到p值，不使用未知的后验原假设概率。",
+      "将p值和预先确定的α比较，决定是否拒绝H0；不拒绝不意味着H0已经被证明正确。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "给定原假设H0及检验统计量T和事先声明的单/双侧极端性规则，p值是H0成立时得到与当前观测至少同样极端数据的概率。显著性水平α是事先设计的第一类错误率控制指标，并不等于P(H0为真|数据)。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "假设检验中的p值不是原假设为真概率",
+    "transfer": {
+      "far": "解释为何一个研究中看到p<0.05不能自动推出治疗具有实际临床意义或因果效应。",
+      "near": "公平硬币连续8次全正面，求右尾p值并比较α=0.01与0.05的决定。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "单侧p值=1/1024≈0.0009766。",
+        "check": "确认极端尾为X≥10，不能再把另一个尾部随意加进去。",
+        "question": "H0为硬币正面率1/2，独立抛10次全为正面；单侧备择偏大，计算p值。",
+        "steps": [
+          "按H0，X~Binomial(10,1/2)，全正面是X≥10。",
+          "只有X=10一个结果，概率C(10,10)(1/2)^10。"
+        ]
+      },
+      {
+        "answer": "不拒绝H0；没有充分证据按该规则拒绝。",
+        "check": "若直接说原假设正确，则超出检验的证据含义。",
+        "question": "某检验事先设α=0.05且算得p=0.08，该如何措辞？",
+        "steps": [
+          "比较0.08与0.05，p大于α。",
+          "按预定规则不拒绝H0，并说明这不是证明H0正确。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "所有观测坐标均为有限实数，n≥2，采用普通未加权最小二乘含截距模型。",
+      "Sxx>0等价于至少两个自变量不同；若Sxx=0，斜率与截距不能分开唯一识别。"
+    ],
+    "boundaries": [
+      "所有观测坐标均为有限实数，n≥2，采用普通未加权最小二乘含截距模型。",
+      "Sxx>0等价于至少两个自变量不同；若Sxx=0，斜率与截距不能分开唯一识别。"
+    ],
+    "counterexamples": [
+      {
+        "example": "三点(1,2)、(1,4)、(1,6)有Sxx=0，任何满足α+β=4的参数对都最优。",
+        "explanation": "自变量没有变化则设计矩阵列线性相关，不能通过除以零的公式识别斜率。",
+        "false_claim": "所有x相同仍计算β=Sxy/Sxx，得到一个唯一有效回归斜率。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-137"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先问自变量是否真的在样本中变化，计算Sxx。",
+      "中心化后Q关于β是哪种二次式？",
+      "出现Sxx=0时不要套公式，找两组同样最优的参数。"
+    ],
+    "id": "math.hs.batch110.08",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "所有x相同仍计算β=Sxy/Sxx，得到一个唯一有效回归斜率。",
+        "repair_question": "请指出该解法遗漏的条件，并通过代入、反例或边界解释如何修正。",
+        "why_wrong": "自变量没有变化则设计矩阵列线性相关，不能通过除以零的公式识别斜率。"
+      }
+    ],
+    "notation": [
+      "xbar与ybar分别是样本均值",
+      "Sxx是自变量离差平方和，Sxy是两变量离差乘积和"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "二次函数完全平方与极值",
+      "代数求和及中心化恒等式"
+    ],
+    "proof_steps": [
+      {
+        "claim": "固定β时，Q对α的最小值在α=ybar-βxbar取得。",
+        "reason": "令残差均值为零可使关于α的二次项最小；由Σ(y_i-α-βx_i)=0解出该表达式。"
+      },
+      {
+        "claim": "代入α的最优表达式后，Q(β)=Σ[(y_i-ybar)-β(x_i-xbar)]²。",
+        "reason": "中心化消去了截距项，展开后得到常数Syy-2βSxy+β²Sxx。"
+      },
+      {
+        "claim": "Sxx>0时唯一最优斜率为Sxy/Sxx，截距随之唯一。",
+        "reason": "将二次式配方为Sxx(β-Sxy/Sxx)²+Syy-Sxy²/Sxx，正系数保证唯一全局极小。"
+      },
+      {
+        "claim": "若Sxx=0，所有x_i相同，斜率不能被唯一识别。",
+        "reason": "在x_i=c时任意α+βc=ybar均给相同拟合值，存在无穷多组截距斜率取得同一最小值。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "给定n≥2个实数数据点(x_i,y_i)，拟合含截距直线y≈α+βx，最小化Q=Σ(y_i-α-βx_i)²。若Sxx=Σ(x_i-xbar)²>0，唯一最小点为β_hat=Sxy/Sxx，α_hat=ybar-β_hat xbar，Sxy=Σ(x_i-xbar)(y_i-ybar)。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "含截距最小二乘直线唯一性与Sxx非零",
+    "transfer": {
+      "far": "设计一组传感器恒定温度而输出有波动的数据，解释为何无法同时估计温度响应系数与截距。",
+      "near": "拟合(1,2),(2,2),(3,2)，计算Sxy并解释斜率0与不存在唯一斜率的区别。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "拟合直线y=1+2x。",
+        "check": "代回三点残差全为0，且Sxx=2>0保证唯一。",
+        "question": "对(0,1),(1,3),(2,5)拟合含截距最小二乘直线。",
+        "steps": [
+          "xbar=1、ybar=3，Sxx=1+0+1=2。",
+          "Sxy=(-1)(-2)+0+(1)(2)=4，β=2、α=3-2=1。"
+        ]
+      },
+      {
+        "answer": "没有唯一斜率；例如(α,β)=(4,0)或(3,1)都最优。",
+        "check": "二者都给预测值4，误差平方和相同。",
+        "question": "对(1,2),(1,4),(1,6)说明为什么斜率不唯一。",
+        "steps": [
+          "三个x均为1，所以xbar=1，Sxx=0。",
+          "拟合值应为平均响应4，任意α+β=4均可。"
+        ]
+      }
+    ]
+  }
+]

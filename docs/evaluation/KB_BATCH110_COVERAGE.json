@@ -1,0 +1,373 @@
+{
+  "arbitrary_student_solution_verified": 0,
+  "batch": 110,
+  "current_batch_lesson_completeness": [
+    {
+      "field_checks": {
+        "complete_explanations_or_candidate_proof": true,
+        "concrete_failure_example": true,
+        "domain_and_hypotheses": true,
+        "misconception": true,
+        "near_far_transfer": true,
+        "notation": true,
+        "prerequisites": true,
+        "project_license": true,
+        "safe_teacher_visibility": true,
+        "substantive_statement": true,
+        "three_no_answer_hint_levels": true,
+        "two_worked_teacher_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch110.01",
+      "kind": "concept",
+      "machine_structure_completeness": 1.0,
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "complete_explanations_or_candidate_proof": true,
+        "concrete_failure_example": true,
+        "domain_and_hypotheses": true,
+        "misconception": true,
+        "near_far_transfer": true,
+        "notation": true,
+        "prerequisites": true,
+        "project_license": true,
+        "safe_teacher_visibility": true,
+        "substantive_statement": true,
+        "three_no_answer_hint_levels": true,
+        "two_worked_teacher_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch110.02",
+      "kind": "method",
+      "machine_structure_completeness": 1.0,
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "complete_explanations_or_candidate_proof": true,
+        "concrete_failure_example": true,
+        "domain_and_hypotheses": true,
+        "misconception": true,
+        "near_far_transfer": true,
+        "notation": true,
+        "prerequisites": true,
+        "project_license": true,
+        "safe_teacher_visibility": true,
+        "substantive_statement": true,
+        "three_no_answer_hint_levels": true,
+        "two_worked_teacher_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch110.03",
+      "kind": "theorem",
+      "machine_structure_completeness": 1.0,
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "complete_explanations_or_candidate_proof": true,
+        "concrete_failure_example": true,
+        "domain_and_hypotheses": true,
+        "misconception": true,
+        "near_far_transfer": true,
+        "notation": true,
+        "prerequisites": true,
+        "project_license": true,
+        "safe_teacher_visibility": true,
+        "substantive_statement": true,
+        "three_no_answer_hint_levels": true,
+        "two_worked_teacher_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch110.04",
+      "kind": "method",
+      "machine_structure_completeness": 1.0,
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "complete_explanations_or_candidate_proof": true,
+        "concrete_failure_example": true,
+        "domain_and_hypotheses": true,
+        "misconception": true,
+        "near_far_transfer": true,
+        "notation": true,
+        "prerequisites": true,
+        "project_license": true,
+        "safe_teacher_visibility": true,
+        "substantive_statement": true,
+        "three_no_answer_hint_levels": true,
+        "two_worked_teacher_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch110.05",
+      "kind": "method",
+      "machine_structure_completeness": 1.0,
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "complete_explanations_or_candidate_proof": true,
+        "concrete_failure_example": true,
+        "domain_and_hypotheses": true,
+        "misconception": true,
+        "near_far_transfer": true,
+        "notation": true,
+        "prerequisites": true,
+        "project_license": true,
+        "safe_teacher_visibility": true,
+        "substantive_statement": true,
+        "three_no_answer_hint_levels": true,
+        "two_worked_teacher_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch110.06",
+      "kind": "theorem",
+      "machine_structure_completeness": 1.0,
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "complete_explanations_or_candidate_proof": true,
+        "concrete_failure_example": true,
+        "domain_and_hypotheses": true,
+        "misconception": true,
+        "near_far_transfer": true,
+        "notation": true,
+        "prerequisites": true,
+        "project_license": true,
+        "safe_teacher_visibility": true,
+        "substantive_statement": true,
+        "three_no_answer_hint_levels": true,
+        "two_worked_teacher_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch110.07",
+      "kind": "concept",
+      "machine_structure_completeness": 1.0,
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "complete_explanations_or_candidate_proof": true,
+        "concrete_failure_example": true,
+        "domain_and_hypotheses": true,
+        "misconception": true,
+        "near_far_transfer": true,
+        "notation": true,
+        "prerequisites": true,
+        "project_license": true,
+        "safe_teacher_visibility": true,
+        "substantive_statement": true,
+        "three_no_answer_hint_levels": true,
+        "two_worked_teacher_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch110.08",
+      "kind": "theorem",
+      "machine_structure_completeness": 1.0,
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    }
+  ],
+  "editorial_line_partition_coverage": 0.09836065573770492,
+  "editorial_source_structural_partitions": 74,
+  "general_proof_certificates": 0,
+  "legacy_debt": {
+    "uncertified_historical_proof_steps": 538,
+    "unresolved_math_conflicts": 10,
+    "unverified_prerequisite_labels": 172
+  },
+  "limitations": [
+    "6/61 is only the three latest batches' source-line partition coverage, not total historical or teacher-approved page audit.",
+    "The 60 source candidates are not 60 official atoms and do not define a valid curricular denominator.",
+    "All twelve machine field checks are syntax/structure completeness, not mathematical correctness or teacher review.",
+    "All seven official atomic coverage fractions intentionally remain null until authoritative per-track denominators exist."
+  ],
+  "new_lesson_structural_complete": 8,
+  "new_lesson_teacher_approved": 0,
+  "official_atom_coverage_by_track": {
+    "COMPULSORY": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "draft": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_A": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "draft": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_B": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "draft": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_C": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "draft": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_D": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "draft": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_E": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "draft": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "SELECTIVE_COMPULSORY": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "draft": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    }
+  },
+  "official_teacher_full_page_atomizations": 0,
+  "provisional_candidate_counts_by_track": {
+    "COMPULSORY": 26,
+    "ELECTIVE_A": 32,
+    "ELECTIVE_B": 2,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "SELECTIVE_COMPULSORY": 0
+  },
+  "provisional_candidates_in_these_three_batches": 60,
+  "scope": "MACHINE_AUDIT_NO_OFFICIAL_ATOM_DENOMINATOR",
+  "source_pages_not_in_three_batch_comparison": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73
+  ],
+  "source_pages_partially_editorially_partitioned": [
+    {
+      "line_count": 28,
+      "pdf_page_index": 25,
+      "pdfkit_sha256": "47e70ed49820891bc79b6a6e288866958e3207f216d234cb59beec676d07bcf1",
+      "printed_page": 18,
+      "teacher_full_page_review": "PENDING"
+    },
+    {
+      "line_count": 27,
+      "pdf_page_index": 26,
+      "pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "printed_page": 19,
+      "teacher_full_page_review": "PENDING"
+    },
+    {
+      "line_count": 35,
+      "pdf_page_index": 27,
+      "pdfkit_sha256": "2d514ab4854fd9896ab76a6188b2216733461fbab8f630bd0bc9dd20b0eb965f",
+      "printed_page": 20,
+      "teacher_full_page_review": "PENDING"
+    },
+    {
+      "line_count": 25,
+      "pdf_page_index": 62,
+      "pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "printed_page": 55,
+      "teacher_full_page_review": "PENDING"
+    },
+    {
+      "line_count": 27,
+      "pdf_page_index": 63,
+      "pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "printed_page": 56,
+      "teacher_full_page_review": "PENDING"
+    },
+    {
+      "line_count": 23,
+      "pdf_page_index": 64,
+      "pdfkit_sha256": "dca127ce9bc7a223440713495ea73ba89e2654586fda16bab4dcf465d648f2f2",
+      "printed_page": 57,
+      "teacher_full_page_review": "PENDING"
+    }
+  ],
+  "source_pages_with_editorial_line_partitions": 6,
+  "source_pdf_pages_total": 61,
+  "source_registry_sha256": "ec26621b7f358f892355d6e6b93622e529df30cfd6067fa1f48d77df48ffc19a"
+}
