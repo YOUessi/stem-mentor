@@ -1,0 +1,679 @@
+.......................................................................F [ 31%]
+..FF.FFFFF...F.FFFFFFF.................................................. [ 63%]
+........................................................................ [ 95%]
+...........                                                              [100%]
+=================================== FAILURES ===================================
+_____________ test_reject_oracle_key_substitution_by_duplicate[0] ______________
+
+index = 0
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 0
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[3] ______________
+
+index = 3
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 3
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[4] ______________
+
+index = 4
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 4
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[6] ______________
+
+index = 6
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 6
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[7] ______________
+
+index = 7
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 7
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[8] ______________
+
+index = 8
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 8
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[9] ______________
+
+index = 9
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 9
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[10] _____________
+
+index = 10
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 10
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[14] _____________
+
+index = 14
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 14
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[16] _____________
+
+index = 16
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 16
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[17] _____________
+
+index = 17
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 17
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[18] _____________
+
+index = 18
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 18
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[19] _____________
+
+index = 19
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 19
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[20] _____________
+
+index = 20
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 20
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[21] _____________
+
+index = 21
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 21
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+_____________ test_reject_oracle_key_substitution_by_duplicate[22] _____________
+
+index = 22
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+        with pytest.raises(ValueError,match="duplicate oracle"):
+>           B.build(candidates=altered)
+
+tests/test_kb_batch107_source_and_math.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../scripts/build_kb_batch107_source.py:96: in build
+    require((r["page"],r["start"],r["end"])==CLAUSE_LOCK.get(r["oracle_key"]),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, reason = 'candidate/source clause lock mismatch'
+
+    def require(ok, reason):
+>       if not ok:raise ValueError(reason)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: candidate/source clause lock mismatch
+
+../scripts/build_kb_batch107_source.py:41: ValueError
+
+During handling of the above exception, another exception occurred:
+
+index = 22
+
+    @pytest.mark.parametrize("index",range(23))
+    def test_reject_oracle_key_substitution_by_duplicate(index):
+        altered=deepcopy(CANDIDATES)
+        altered[index]["oracle_key"]=CANDIDATES[(index+1)%23]["oracle_key"]
+>       with pytest.raises(ValueError,match="duplicate oracle"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'duplicate oracle'
+E        Input: 'candidate/source clause lock mismatch'
+
+tests/test_kb_batch107_source_and_math.py:83: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[0]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[3]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[4]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[6]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[7]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[8]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[9]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[10]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[14]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[16]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[17]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[18]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[19]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[20]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[21]
+FAILED tests/test_kb_batch107_source_and_math.py::test_reject_oracle_key_substitution_by_duplicate[22]
+16 failed, 211 passed in 7.64s
