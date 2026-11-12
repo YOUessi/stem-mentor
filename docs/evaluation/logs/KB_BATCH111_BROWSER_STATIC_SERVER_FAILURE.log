@@ -1,0 +1,31 @@
+
+==================================== ERRORS ====================================
+____________ ERROR collecting tests/browser/test_ipad_touch_v014.py ____________
+tests/browser/test_ipad_touch_v014.py:12: in <module>
+    page.wait_for_url("**/ipad/study?session=*")
+.venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:21446: in wait_for_url
+    self._sync(
+.venv/lib/python3.13/site-packages/playwright/_impl/_page.py:592: in wait_for_url
+    return await self._main_frame.wait_for_url(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:289: in wait_for_url
+    async with self.expect_navigation(
+.venv/lib/python3.13/site-packages/playwright/_impl/_event_context_manager.py:33: in __aexit__
+    await self._future
+.venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:265: in continuation
+    event = await waiter.result()
+            ^^^^^^^^^^^^^^^^^^^^^
+E   playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+E   =========================== logs ===========================
+E   waiting for navigation to "**/ipad/study?session=*" until 'load'
+E   ============================================================
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR tests/browser/test_ipad_touch_v014.py - playwright._impl._errors.Timeou...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 warning, 1 error in 35.01s
