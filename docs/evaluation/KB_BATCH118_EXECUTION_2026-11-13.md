@@ -45,7 +45,7 @@ JSON: `curriculum/highschool_math/k00_batch118_provisional_marker_ledger.json`�
 
 - 最早构建发现印刷35页PDFKit控制字符导致源行表示哈希不同：修复为双重指纹锁，不跳过或伪造来源校验。首次构建报告顺序受排序影响：改为显式固定七轨顺序，恢复离线严格可重复。初稿数学讲义校验发现2个太短的独立核验说明、1条论证依据不足，逐条补充后生成成功。
 - 专项第一次真实执行：`563 passed`；见 `docs/evaluation/logs/KB_BATCH118_FOCUSED_FIRST.log`。
-- 完整Python/Node、Chrome/Playwright：**以本报告后续补入的实测原始日志及数字退出码为准，不提前宣称通过**。
+- 完整Python/Node与Chrome/Playwright复测已结束；具体退出码、数字、失败对照与日志SHA见本报告末尾「冻结源码最终验收」。
 
 
 ## 独立教学文字复核（首次全量测试之后新增的数学回归）
@@ -57,7 +57,7 @@ JSON: `curriculum/highschool_math/k00_batch118_provisional_marker_ledger.json`�
 3. 六球中两枚红球、不放回取三球，原验证句错误声称红球和其他球占有相同比例；现在用每个固定球入样概率 `3/6`、两枚红球总期望 `1` 正确核查。
 4. Batch118稿件因复用历史Markdown渲染函数误显示Batch117标题；现仅在本批构建输出修正标题，不更改历史Batch117冻结稿。
 
-这些是严格的**编辑性纠错**，并未将教师审核状态变更为APPROVED。新增2项可重现负面回归；修订后专项 `565 passed / 0 failed`。最终冻结源码的全量与浏览器复测必须以独立 `*_FINAL` 日志和数字退出码验收。
+这些是严格的**编辑性纠错**，并未将教师审核状态变更为APPROVED。新增2项可重现负面回归；修订后专项 `565 passed / 0 failed`。最终冻结源码的全量与浏览器复测现在均已由独立 `*_FINAL` 日志和数字退出码验收。
 
 ## 下一批（依赖优先顺序）
 
@@ -65,3 +65,27 @@ JSON: `curriculum/highschool_math/k00_batch118_provisional_marker_ledger.json`�
 2. 深入补齐必修数列、导数、几何与代数，选择性必修概率统计其余正态/回归/列联表、七轨不同学分要求；保持完整原创题族和独立真值验证。
 3. 排查历史172条待审核先修关系、538条历史未认证证明步骤、10项数学冲突，优先修复数学前提缺失以及学生检索/挑战剧透风险。
 4. 真实数学教师逐项审校、法规/版权与RAG生产发布验收未完成之前，PR保持Draft，不合并main、不关闭#17–#27、不将教学Agent转为权威模式。
+
+## 冻结源码最终验收（MacBook Air，2026-11-13）
+
+- 经修订的源码基线为本机 commit `24c177682b9fd2f66f09df057f01a562b34d858a`，Git tree `10fe4c159a036be6d8b1c81ab456ff36b9194e26`；最终测试期间仅生成日志和两份历史评测快照变化，不在受测源码中做运行中编辑。
+- `scripts/mac_check.sh` **exit 0**：Python **66293 passed / 5 skipped / 0 failed / 1 third-party warning**，时长 1151.22s (0:19:11)；Node **111/111**，0 failed。第一份完整日志也曾 exit 0，但其后发现4处文字或检验表述问题，因此以本次冻结修复后的最终复测为准。
+- `scripts/mac_browser_check.sh` **exit 0**：Chrome/Playwright交互与响应式场景通过，pytest浏览器 **2 passed**；iPad笔压是CDP仿真，不是实体Apple Pencil验证。
+- 数学专项首版 **563 passed**；发现并修复四处叙述与跨批标题问题后专项 **565 passed / 0 failed**。与最终全量检查有重叠，不能相加宣称额外覆盖。有限符号真值不替代证明/教师审校。
+- 受测内容仍 **REVIEW_PENDING / TEACHER_ONLY**；正式七轨知识原子分母 UNKNOWN，教师 APPROVED 0，学生权威发布0，学生自由步骤验证不得自动标记通过。
+- 测试生成的两个 `evaluations/results/2026-10-15-*.json` 历史评测快照保持未暂存，不纳入交付。
+
+### 原始日志 SHA-256
+
+| 文件 | SHA-256 |
+|---|---|
+| `docs/evaluation/logs/KB_BATCH118_MAC_CHECK_FINAL.log` | `1e14050e5a907da42ddf29b32de736aacc401c5eb99d404bd24ab2f20818822e` |
+| `docs/evaluation/logs/KB_BATCH118_MAC_CHECK_FINAL_EXIT.txt` | `9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa` |
+| `docs/evaluation/logs/KB_BATCH118_BROWSER_FINAL.log` | `c1edff7f2973915996c2efd711bb25941c1f06db34a85c3d10d9ba8d82aadbcc` |
+| `docs/evaluation/logs/KB_BATCH118_BROWSER_FINAL_EXIT.txt` | `9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa` |
+| `docs/evaluation/logs/KB_BATCH118_MAC_CHECK_FIRST.log` | `3954a0f11aef2733cc522ab033f42a6485c6ff015480d2ee404c121d2ffb8e9e` |
+| `docs/evaluation/logs/KB_BATCH118_MAC_CHECK_FIRST_EXIT.txt` | `9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa` |
+| `docs/evaluation/logs/KB_BATCH118_FOCUSED_FIRST.log` | `2e877daee41984f0c6b6b037e59958a426f6945feb2ee5fec1febcfb1b310ab2` |
+| `docs/evaluation/logs/KB_BATCH118_EDITORIAL_FIX_FOCUSED.log` | `de51f5ac585c2a7b86efb31a16fcd70d53842150692d13db4bdf21faaaeb9e86` |
+
+下一批：把405排版线索逐条按语义拆分、去重并补足公式图片审查，七轨分别统计候审分母且绝不冒充教师认证；先审历史172条先修、538条证明及10项冲突中的P0高风险样本，再扩展成组的数列/导数/统计讲义。
