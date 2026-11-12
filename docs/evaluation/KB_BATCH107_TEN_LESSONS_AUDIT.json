@@ -1,0 +1,277 @@
+{
+  "author_file_sha256": "164cd6928faa6599cd49817585e8f9268fef1555e48868d15b5d01f9a51a8d93",
+  "batch": 107,
+  "engineering_map_sha256": "9bf899e866f58e52f019869b82d9e1c8d8b37c32b58d664fa38313c522e24b1c",
+  "new_bounded_exact_witnesses": 10,
+  "new_counterexamples": 10,
+  "new_invalid_generalization_rejections": 10,
+  "new_lesson_types": {
+    "concept": 3,
+    "method": 3,
+    "theorem": 4
+  },
+  "new_near_and_far_transfers": 20,
+  "new_nonleaking_hint_levels": 30,
+  "new_teacher_draft_prerequisite_edges": 5,
+  "new_teacher_worked_examples": 20,
+  "number_of_new_deep_drafts": 10,
+  "official_seven_track_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "preexisting_deep_lessons": 411,
+  "review_counts": {
+    "REVIEW_PENDING": 421
+  },
+  "scope_notices": [
+    "Source candidate is not an officially certified atom and internal curriculum ID is not a seven-track source crosswalk.",
+    "Proof steps are teacher-pending mathematical arguments, not machine-certified universal proofs.",
+    "Student independent challenge cannot retrieve the full teacher worked example, proof or final answer.",
+    "Historical 172 textual prerequisites are not promoted by this draft dependency graph.",
+    "No artificial REVIEW_PENDING to APPROVED transition is permitted."
+  ],
+  "source": "ORIGINAL_MATH_EDITORIAL_TEACHER_PENDING",
+  "source_to_engineering_crosswalk": [
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "Positive discriminant and two distinct real roots; x²+1 violates.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "quad_two",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [],
+      "editorial_source_candidate_id": "KB107-P017-C02",
+      "engineering_curriculum_id": "HS-MATH-016",
+      "engineering_level": "必修",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.01",
+      "source_key": "quad_two",
+      "source_page": 17,
+      "source_track_hint": "COMPULSORY",
+      "teacher_approved": false
+    },
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "Upward parabola positive outside two roots, negative between.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "quad_positive",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [
+        "math.hs.batch107.01"
+      ],
+      "editorial_source_candidate_id": "KB107-P017-C06",
+      "engineering_curriculum_id": "HS-MATH-007",
+      "engineering_level": "必修",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.02",
+      "source_key": "quad_positive",
+      "source_page": 17,
+      "source_track_hint": "COMPULSORY",
+      "teacher_approved": false
+    },
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "A zero is an x-axis intersection; x²+1 has no zero at 0.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "zero_graph",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [
+        "math.hs.batch107.01"
+      ],
+      "editorial_source_candidate_id": "KB107-P017-C05",
+      "engineering_curriculum_id": "HS-MATH-016",
+      "engineering_level": "必修",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.03",
+      "source_key": "zero_graph",
+      "source_page": 17,
+      "source_track_hint": "COMPULSORY",
+      "teacher_approved": false
+    },
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "Membership of an object is not identity with its singleton set.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "singleton",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [],
+      "editorial_source_candidate_id": "KB107-P017-C11",
+      "engineering_curriculum_id": "HS-MATH-001",
+      "engineering_level": "必修",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.04",
+      "source_key": "singleton",
+      "source_page": 17,
+      "source_track_hint": "COMPULSORY",
+      "teacher_approved": false
+    },
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "Cross product is perpendicular, with zero result on parallel vectors.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "cross_product",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [],
+      "editorial_source_candidate_id": "KB107-P054-C17",
+      "engineering_curriculum_id": "HS-MATH-112",
+      "engineering_level": "选修拓展",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.05",
+      "source_key": "cross_product",
+      "source_page": 54,
+      "source_track_hint": "ELECTIVE_A",
+      "teacher_approved": false
+    },
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "Projection formula requires nonzero target; projection is along target vector.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "projection",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [
+        "math.hs.batch107.05"
+      ],
+      "editorial_source_candidate_id": "KB107-P054-C18",
+      "engineering_curriculum_id": "HS-MATH-035",
+      "engineering_level": "必修",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.06",
+      "source_key": "projection",
+      "source_page": 54,
+      "source_track_hint": "ELECTIVE_A",
+      "teacher_approved": false
+    },
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "Three 3D vectors linearly dependent iff determinant zero.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "linear_dependence",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [
+        "math.hs.batch107.05"
+      ],
+      "editorial_source_candidate_id": "KB107-P054-C19",
+      "engineering_curriculum_id": "HS-MATH-134",
+      "engineering_level": "选修拓展",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.07",
+      "source_key": "linear_dependence",
+      "source_page": 54,
+      "source_track_hint": "ELECTIVE_A",
+      "teacher_approved": false
+    },
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "Orthogonal Q preserves squared length; arbitrary diagonal scaling does not.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "orthogonal",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [],
+      "editorial_source_candidate_id": "KB107-P054-C22",
+      "engineering_curriculum_id": "HS-MATH-163",
+      "engineering_level": "选修拓展",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.08",
+      "source_key": "orthogonal",
+      "source_page": 54,
+      "source_track_hint": "ELECTIVE_A",
+      "teacher_approved": false
+    },
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "Geometric area uses absolute vertical difference; signed area cancels.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "signed_area",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [
+        "math.hs.batch107.02"
+      ],
+      "editorial_source_candidate_id": "KB107-P054-C12",
+      "engineering_curriculum_id": "HS-MATH-141",
+      "engineering_level": "选修拓展",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.09",
+      "source_key": "signed_area",
+      "source_page": 54,
+      "source_track_hint": "ELECTIVE_A",
+      "teacher_approved": false
+    },
+    {
+      "approved_official_atom_id": null,
+      "bounded_math_evidence": {
+        "arbitrary_student_step_verified": false,
+        "computed_explanation": "Matrix multiplication is dimension-sensitive and generally noncommutative.",
+        "finite_exact_positive_passed": true,
+        "invalid_generalization_rejected": true,
+        "oracle_key": "matrix_multiply",
+        "teacher_approved": false,
+        "universal_proof_certified": false
+      },
+      "draft_prerequisite_lesson_ids": [],
+      "editorial_source_candidate_id": "KB107-P054-C21",
+      "engineering_curriculum_id": "HS-MATH-132",
+      "engineering_level": "选修拓展",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch107.10",
+      "source_key": "matrix_multiply",
+      "source_page": 54,
+      "source_track_hint": "ELECTIVE_A",
+      "teacher_approved": false
+    }
+  ],
+  "student_authoritative_releases": 0,
+  "teacher_approvals": 0,
+  "uncertified_prior_proof_steps": 538,
+  "unresolved_prior_conflicts": 10,
+  "unreviewed_prior_prerequisite_labels": 172,
+  "with_new_drafts": 421
+}

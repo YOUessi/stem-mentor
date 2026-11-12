@@ -11,6 +11,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import sys
+import re
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(ROOT/"scripts"),str(ROOT/"backend")]
@@ -97,6 +98,11 @@ def build(atoms=ATOM_CANDIDATES,parts=PAGE_PARTITIONS,bridges=CROSS_PAGE_BRIDGES
     for path in sorted((ROOT/"knowledge/deep/v1").glob("*.json")):
         for doc in json.loads(path.read_text(encoding="utf8")):
             doc_id=doc["id"]
+            # Historical Batch106 snapshot must not inflate when future packs
+            # arrive. Keep pre-106 records while preserving duplicate guards.
+            batch=re.match(r"^math\.hs\.batch([0-9]+)\.",doc_id)
+            if batch and int(batch.group(1))>106:
+                continue
             require(doc_id not in draft_ids,"duplicate existing draft lesson ID")
             draft_ids[doc_id]=doc
     result=[]

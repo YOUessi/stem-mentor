@@ -11,6 +11,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import sys
+import re
 ROOT=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(ROOT/"scripts"),str(ROOT/"backend")]
 from kb_batch106_deep_authoring import UNITS
@@ -92,6 +93,11 @@ def build(units=UNITS, links=LINKS):
     for path in sorted(DEEP_DIR.glob("*.json")):
         if path==PACK:continue
         for doc in json.loads(path.read_text(encoding="utf8")):
+            # Reconstruct as-of Batch106, excluding subsequently authored
+            # drafts; the frozen report must never rewrite its old denominator.
+            match=re.match(r"^math\.hs\.batch([0-9]+)\.",doc["id"])
+            if match and int(match.group(1))>106:
+                continue
             existing.append(doc)
     preexisting={d["id"] for d in existing}
     ours={d["id"] for d in result}
