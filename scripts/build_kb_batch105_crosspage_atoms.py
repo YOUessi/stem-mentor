@@ -9,6 +9,7 @@ import argparse
 from collections import Counter
 from hashlib import sha256
 import json
+import re
 from pathlib import Path
 import sys
 
@@ -78,6 +79,9 @@ def build(atoms=ATOM_CANDIDATES,parts=PAGE_PARTITIONS,bridges=CROSS_PAGE_BRIDGES
     by_track=Counter()
     draft_ids={}
     for path in sorted((ROOT/"knowledge/deep/v1").glob("*.json")):
+        match=re.match(r"batch(\d+)_",path.name)
+        if match is not None and int(match.group(1))>105:
+            continue  # historical PDF review count frozen at batch105
         for doc in json.loads(path.read_text(encoding="utf8")):
             doc_id=doc["id"]
             require(doc_id not in draft_ids,"duplicate existing draft lesson ID")
