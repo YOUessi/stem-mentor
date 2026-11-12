@@ -50,3 +50,21 @@
 2. K01/K07：以10项冲突和538条历史未认证证明步骤为高风险队列，按假设缺失、除零/负根/域限制、伪逆命题、端点与退化条件分别验证。
 3. K02–K06：继续扩展数列和微积分、概率/统计、建模、几何、选修C/D/E，逐项接上题族、反例、完整先修与不同解题提示阶段。
 4. K08/K09：检索证据链和学生RAG拒答必须按冻结且已批准来源测试；没有教师审校绝不放开独立挑战的完整答案。真实API与学习增益测试在可用环境下独立记录。
+
+## 2026-11-12 Mac 终验与原图公式交叉审查补充
+
+- **最终可核实完整命令**：Mac独立工作树执行 bash scripts/mac_check.sh，控制台进程PID 50700的最终输出为 FINAL_MAC_CHECK_EXIT=0，进程自身退出码0，运行1235.71秒。原始日志为 docs/evaluation/logs/KB_BATCH112_MAC_CHECK_FINAL.log。
+- **Python完整测试**：65,554 passed，5 skipped，0 failed，1条第三方警告；pytest用时1093.11秒。**Node**：111 passed，0 failed。Batch112针对性新增测试128 passed，已包含于全量Python统计，不重复计数。
+- **真实浏览器脚本回归**：scripts/mac_browser_check.sh Mac Chrome/Playwright模拟布局、交互、iPad指针仿真、极值与学生数据隔离全部通过，末尾浏览器pytest 2 passed；日志KB_BATCH112_BROWSER_FINAL.log。iPad为浏览器模拟，不宣称真实Apple Pencil硬件测试。
+- **首次命令封装问题可复现留证**：KB_BATCH112_MAC_CHECK_INITIAL_WRAPPER_ERROR.log虽然记录了65,554 Python通过及Node 111/111，但上层命令封装没有提供可靠退出码，因而重新完整执行并记录退出码0。另保留浏览器首次封装错误日志；不将工具包装问题误报为数学回归通过或失败。
+- **K00 PDF原图目视交叉核对**：Mac PDFKit将本地SHA锁定的官方PDF第29、66索引页渲染到临时PNG，确认印刷第22页同角公式的分式布局以及第59页Newton–Leibniz积分上下限；独立记录见 docs/evaluation/KB_BATCH112_FORMULA_VISUAL_REVIEW.md。**这仅是AI辅助目视转写，不属于教师审核或正式数学内容认证**。
+- **新增查明的真实缺口**：课标第59页二元二次函数在闭圆和椭圆上求极值不属于本批已写的“仿射函数在紧凸多边形顶点取极值”定理，仍应在K00/K05保留待建条目，不能错误归并。
+- **源码与发布边界**：Mac已测试Batch112源码树 a91b274805d5ca172cd823d6521ed202bb461b00；GitHub初始源码提交4dfbf5d356a4f53924b9bb6eae89a6c2cb1048d8，对应GitHub Actions 43222395936 的源码检查 completed/success。追加本执行报告和原始证据后必须重新核实远端HEAD及最新CI；PR #137保持Draft，不合并main。
+- **Git Blob/独立SHA-256见证**（以下为Mac原文件，不可用报表数值代替原始日志）：
+  - KB_BATCH112_MAC_CHECK_FINAL.log：Git Blob be3daa9ca71a4004c252328235e7fe31cefe229d；SHA-256 b69454b755458d59d711f8dae40de0550781e8d93bfa6e8421b5100d782ae04b
+  - KB_BATCH112_MAC_CHECK_INITIAL_WRAPPER_ERROR.log：Git Blob f07857d8b7b7dbfc3299acf27a3d87975b693ede；SHA-256 c1542d246e2359332c1e0393261eb160ea8c70848f253eefac0a50942fa9e822
+  - KB_BATCH112_BROWSER_FINAL.log：Git Blob 881158e4a04f77a565daee1966b8895591253e6e；SHA-256 d2fa6eb604e9b618d9a13a689ac9d3b268a3b28385eee1cfc1c5ee9f9a35af33
+  - KB_BATCH112_BROWSER_INITIAL_WRAPPER_ERROR.log：Git Blob 0012b849765c3f80b402e79a3f6444cc791f5cad；SHA-256 ba898953eea7bac23db6a2d43e8e6b6924a485fd7c30fe89e40de9ad8b10bab8
+  - KB_BATCH112_FORMULA_VISUAL_REVIEW.md：Git Blob df0f34134def5b41c3cb317186fe08106f9ad355；SHA-256 81e05efbb76137ca23a2ae2c280cf488f056f227efc6e096bce5d4b21cd1987d
+
+**剩余硬门槛**：官方七轨课程原子总分母仍全部UNKNOWN；61页尚无教师正式完成原子化的记录；172条历史先修关系、538条历史证明步骤、10项数学冲突仍待正式审核；新增12条候审证明步骤也不以有限实例自动升级。教师批准0、学生权威发布0。后续优先23/60页跨页审查、二次闭圆/椭圆极值、完整七轨课程原子分母、危险证明条件/先修图谱、独立教师审核和真实Agent证据检索。
