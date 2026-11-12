@@ -135,7 +135,13 @@ def test_deterministic_pack_complete_markdown_and_review_graph():
     assert len({d["id"] for d in docs})==6
     assert len({d["curriculum_ids"][0] for d in docs})==6
     assert all(d["review"]["status"]=="REVIEW_PENDING" for d in docs)
-    assert len(lookup)==audit["deep_lesson_documents_with_new_drafts"]
+    # As-of Batch106 source snapshot must remain stable after later lesson packs.
+    # Runtime loads all current drafts, so compare only IDs in the historical cohort.
+    import re
+    cohort={key for key in lookup if not (
+        (m:=re.match(r"^math\.hs\.batch([0-9]+)\.",key)) and int(m.group(1))>106)}
+    assert len(cohort)==audit["deep_lesson_documents_with_new_drafts"]
+    assert len(lookup)>=len(cohort)
 
 def test_existing_eng_mappings_not_official_full_atom_denominator():
     rows=curriculum()
