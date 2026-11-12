@@ -1,0 +1,97 @@
+{
+  "batch": 117,
+  "cases": [
+    {
+      "counterexample": "overlapping double counts",
+      "key": "disjoint_add",
+      "negative_exact": true,
+      "positive_exact": true,
+      "positive_witness": "non-overlapping categories",
+      "status": "FINITE_EXACT_INSTANCE_ONLY",
+      "student_free_text_verified": false,
+      "teacher_approved": false,
+      "universal_proof_certified": false
+    },
+    {
+      "counterexample": "nonuniform branch counts",
+      "key": "uniform_product",
+      "negative_exact": true,
+      "positive_exact": true,
+      "positive_witness": "uniform 3x2 branches",
+      "status": "FINITE_EXACT_INSTANCE_ONLY",
+      "student_free_text_verified": false,
+      "teacher_approved": false,
+      "universal_proof_certified": false
+    },
+    {
+      "counterexample": "unranked group overcount",
+      "key": "permutations",
+      "negative_exact": true,
+      "positive_exact": true,
+      "positive_witness": "ordered 5P2",
+      "status": "FINITE_EXACT_INSTANCE_ONLY",
+      "student_free_text_verified": false,
+      "teacher_approved": false,
+      "universal_proof_certified": false
+    },
+    {
+      "counterexample": "order overcount",
+      "key": "combinations",
+      "negative_exact": true,
+      "positive_exact": true,
+      "positive_witness": "unranked 6C3",
+      "status": "FINITE_EXACT_INSTANCE_ONLY",
+      "student_free_text_verified": false,
+      "teacher_approved": false,
+      "universal_proof_certified": false
+    },
+    {
+      "counterexample": "noncommuting matrices",
+      "key": "binomial",
+      "negative_exact": true,
+      "positive_exact": true,
+      "positive_witness": "commutative polynomial",
+      "status": "FINITE_EXACT_INSTANCE_ONLY",
+      "student_free_text_verified": false,
+      "teacher_approved": false,
+      "universal_proof_certified": false
+    },
+    {
+      "counterexample": "direction matters",
+      "key": "conditional",
+      "negative_exact": true,
+      "positive_exact": true,
+      "positive_witness": "intersection divided by conditioning event",
+      "status": "FINITE_EXACT_INSTANCE_ONLY",
+      "student_free_text_verified": false,
+      "teacher_approved": false,
+      "universal_proof_certified": false
+    },
+    {
+      "counterexample": "overlapping nonexhaustive split",
+      "key": "total_probability",
+      "negative_exact": true,
+      "positive_exact": true,
+      "positive_witness": "proper two-branch partition",
+      "status": "FINITE_EXACT_INSTANCE_ONLY",
+      "student_free_text_verified": false,
+      "teacher_approved": false,
+      "universal_proof_certified": false
+    },
+    {
+      "counterexample": "without replacement not binomial",
+      "key": "hypergeometric",
+      "negative_exact": true,
+      "positive_exact": true,
+      "positive_witness": "support sums exactly 1",
+      "status": "FINITE_EXACT_INSTANCE_ONLY",
+      "student_free_text_verified": false,
+      "teacher_approved": false,
+      "universal_proof_certified": false
+    }
+  ],
+  "negative_cases": 8,
+  "positive_cases": 8,
+  "proof_certificates": 0,
+  "teacher_approvals": 0
+}

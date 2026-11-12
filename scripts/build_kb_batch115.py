@@ -108,7 +108,12 @@ def lessons(units=UNITS,scope=None):
     need(len(units)==len(UNITS)==8,"eight substantial lessons required")
     bykey={r["key"]:r for r in scope["candidates"]}
     curr={r["id"]:r for r in curriculum()}
-    history=[r for p in sorted(DEEP_DIR.glob("*.json")) if p!=PACK
+    # Frozen Batch115 evidence must not incorporate future Batch116+ lesson packs.
+    # Preserve all pre-115 files, even if they do not use a numbered batch filename.
+    def is_snapshot_prior(path):
+        m=re.match(r"^batch(\d+)(?:_|$)", path.stem)
+        return path!=PACK and (m is None or int(m.group(1))<115)
+    history=[r for p in sorted(DEEP_DIR.glob("*.json")) if is_snapshot_prior(p)
              for r in json.loads(p.read_text())]
     oldids={z["id"] for z in history}
     need(len(oldids)==len(history),"historical lesson IDs duplicate")
