@@ -120,10 +120,13 @@ def lessons(units=UNITS,scope=None):
     need(len(UNITS)==8 and len(units)==8,"eight original teacher drafts required")
     bykey={r["key"]:r for r in scope["candidates"]}
     curr={r["id"]:r for r in curriculum()}
+    # Count every existing deep-lesson pack, not only batch-prefixed files.
+    # The latter would under-report 287 actual teacher-review-pending drafts.
     historical=[]
-    for path in sorted(DEEP_DIR.glob("batch*.json")):
+    for path in sorted(DEEP_DIR.glob("*.json")):
         m=re.match(r"batch(\d+)",path.name)
-        if m and int(m.group(1))>=114:continue
+        if path == PACK or (m and int(m.group(1))>=114):
+            continue
         historical+=json.loads(path.read_text())
     oldids=[r["id"] for r in historical]
     need(len(set(oldids))==len(oldids),"historical knowledge IDs duplicated")
