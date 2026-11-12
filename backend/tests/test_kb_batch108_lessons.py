@@ -110,7 +110,9 @@ def test_real_artifact_and_audit_consistency(batch):
     assert B.PACK.read_text(encoding="utf8")==B.serialize(docs)
     assert B.AUDIT.read_text(encoding="utf8")==B.serialize(audit)
     assert B.MD.read_text(encoding="utf8")==B.markdown(docs,audit)
-    assert len(lessons())==audit["all_deep_lessons"]
+    assert audit["all_deep_lessons"]==431  # immutable historical Batch108 snapshot
+    assert len(lessons())>=audit["all_deep_lessons"]  # successor drafts may exist
+    assert {x["id"] for x in docs}<={x.id for x in lessons()}
 
 def test_teacher_prerequisite_edges_are_backward_only(batch):
     ids={x["id"]:i for i,x in enumerate(batch[0])}

@@ -1,0 +1,738 @@
+{
+  "authoring_sha256": "3f3493260c57c9398d83c8075d75ca3b711dfe2d7c34b6bd705baacb84ce4c00",
+  "batch": 109,
+  "bounded_exact_witnesses": 15,
+  "candidates": [
+    {
+      "editorial_note": "保留主题结构归属，只作为课程组织索引，不与独立数学概念定义混同。",
+      "end": 5,
+      "id": "KB109-P019-C01",
+      "invalid_generalization": "把主题标题计作一个教师已批准的数学知识原子。",
+      "key": "functions_theme",
+      "kind": "PEDAGOGY",
+      "math_witness": {
+        "finite_exact_positive_passed": false,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": false,
+        "status": "PEDAGOGY_NOT_AUTOMATICALLY_CHECKABLE"
+      },
+      "mathematical_preconditions": "课程主题层说明是对学习领域的描述，不是可独立求证的数学全称命题。",
+      "official_atom_id": null,
+      "page": 19,
+      "pdf_page_index": 26,
+      "source_page_pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 4,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "函数主题在课程中的结构位置",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "此段为教学动机和素养任务，不列入数学定理数量。",
+      "end": 10,
+      "id": "KB109-P019-C02",
+      "invalid_generalization": "无视量纲与数据范围，把拟合关系推广到任何实际场景。",
+      "key": "functions_modeling",
+      "kind": "PEDAGOGY",
+      "math_witness": {
+        "finite_exact_positive_passed": false,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": false,
+        "status": "PEDAGOGY_NOT_AUTOMATICALLY_CHECKABLE"
+      },
+      "mathematical_preconditions": "必须事先指明现实变量、测量单位和所取定义域，模型才可验证。",
+      "official_atom_id": null,
+      "page": 19,
+      "pdf_page_index": 26,
+      "source_page_pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 7,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "函数模型与实际情境的教学意图",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "保留选学标记与页脚说明，不能自动晋升为必考知识原子。",
+      "end": 12,
+      "id": "KB109-P019-C03",
+      "invalid_generalization": "将明确选学内容强制记作必修必考公式。",
+      "key": "optional_history",
+      "kind": "PEDAGOGY",
+      "math_witness": {
+        "finite_exact_positive_passed": false,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": false,
+        "status": "PEDAGOGY_NOT_AUTOMATICALLY_CHECKABLE"
+      },
+      "mathematical_preconditions": "原文以星号标记为选学，不应强制放入所有学生考试必备清单。",
+      "official_atom_id": null,
+      "page": 19,
+      "pdf_page_index": 26,
+      "source_page_pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 12,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "选学的函数形成与发展",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "依据函数概念正文提出细分教学候选，非正式原子裁定。",
+      "end": 17,
+      "id": "KB109-P019-C04",
+      "invalid_generalization": "把一个输入对应两个不同输出的关系称为单值函数。",
+      "key": "function_mapping",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "定义域每个输入必须对应唯一输出，陪域与实际值域未必相同。",
+      "official_atom_id": null,
+      "page": 19,
+      "pdf_page_index": 26,
+      "source_page_pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 14,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "集合间的函数映射、定义域与值域",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "多重表示是一项表达能力，含具体等价判据的教学建议。",
+      "end": 19,
+      "id": "KB109-P019-C05",
+      "invalid_generalization": "只凭画出的相似曲线判定两个不同定义域的函数相同。",
+      "key": "function_representations",
+      "kind": "METHOD",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "对照表示法须使用相同定义域、输入输出规则，图象点满足函数关系。",
+      "official_atom_id": null,
+      "page": 19,
+      "pdf_page_index": 26,
+      "source_page_pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 18,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "函数表格、图象与解析式一致性",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "结合分段应用设计原创求值与非例训练。",
+      "end": 20,
+      "id": "KB109-P019-C06",
+      "invalid_generalization": "把开区间端点偷换为闭区间导致同一输入有两个输出。",
+      "key": "piecewise",
+      "kind": "METHOD",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "每段定义域规则要明确，交界点不能同时给互相矛盾的两个值。",
+      "official_atom_id": null,
+      "page": 19,
+      "pdf_page_index": 26,
+      "source_page_pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 20,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "分段函数的端点归属与求值",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "把性质术语拆为可证明的受限端点命题，注意原文同时含最大最小术语。",
+      "end": 23,
+      "id": "KB109-P019-C07",
+      "invalid_generalization": "只在某个子区间单调就断言函数整个定义域最小值一定在左端。",
+      "key": "monotonic_extrema",
+      "kind": "THEOREM",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "函数在含两个端点的闭区间上定义且严格递增，才能直接比较端点最值。",
+      "official_atom_id": null,
+      "page": 19,
+      "pdf_page_index": 26,
+      "source_page_pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 22,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "区间单调性及端点最值的前提",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "奇函数偶函数性质与其图形轴或原点对称几何意义配对。",
+      "end": 24,
+      "id": "KB109-P019-C08",
+      "invalid_generalization": "只比较正半轴几个值，就声称根号函数是偶函数。",
+      "key": "parity",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "对每个定义域内x必须存在-x且在域内，才可使用f(-x)=±f(x)判定。",
+      "official_atom_id": null,
+      "page": 19,
+      "pdf_page_index": 26,
+      "source_page_pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 24,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "奇偶性要求定义域关于零对称",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "原文借三角函数说明周期性，当前仅保留适用域条件。",
+      "end": 25,
+      "id": "KB109-P019-C09",
+      "invalid_generalization": "仅发现两个不同点的函数值相等，就断言差值是周期。",
+      "key": "periodicity",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "所声称T不等于零且对每个有效x有x+T属于域并满足f(x+T)=f(x)。",
+      "official_atom_id": null,
+      "page": 19,
+      "pdf_page_index": 26,
+      "source_page_pdfkit_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 25,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "周期是全定义域上的非零平移",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "主题说明只作先修与分层教学索引，不冒充可证明知识原子。",
+      "end": 5,
+      "id": "KB109-P056-C10",
+      "invalid_generalization": "认为所有现实随机变量都自动服从正态分布。",
+      "key": "probability_context",
+      "kind": "PEDAGOGY",
+      "math_witness": {
+        "finite_exact_positive_passed": false,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": false,
+        "status": "PEDAGOGY_NOT_AUTOMATICALLY_CHECKABLE"
+      },
+      "mathematical_preconditions": "模型层范围说明不意味着每种连续分布都可以不经前提直接适用。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 3,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "从既有概率模型扩展到连续及二维模型",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "此处是主题总览及教学建议，估计与检验须在后续页继续拆分。",
+      "end": 11,
+      "id": "KB109-P056-C11",
+      "invalid_generalization": "从回归系数非零便无条件认定存在因果效应。",
+      "key": "inference_context",
+      "kind": "PEDAGOGY",
+      "math_witness": {
+        "finite_exact_positive_passed": false,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": false,
+        "status": "PEDAGOGY_NOT_AUTOMATICALLY_CHECKABLE"
+      },
+      "mathematical_preconditions": "观测、抽样机制和模型假设必须单独说明，关联不能自动推出因果。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 6,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "统计推断与回归的应用情境",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "提醒随机变量可能具有混合分布，连续和离散不是覆盖一切情形的二分。",
+      "end": 16,
+      "id": "KB109-P056-C12",
+      "invalid_generalization": "把密度在x处的数值直接当作事件X=x的概率。",
+      "key": "continuous_variable",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "使用概率密度描述时要求密度非负且可积分归一化，单点概率为零。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 15,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "连续随机变量与离散随机变量的区别",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "原文列多种分布，此候选仅研究均匀分布。",
+      "end": 19,
+      "id": "KB109-P056-C13",
+      "invalid_generalization": "在a=b时仍除以b-a计算密度，或把密度数值当区间概率。",
+      "key": "uniform_density",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "连续均匀分布必须a<b，密度在[a,b]上为1/(b-a)，积分为1。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 17,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "区间均匀分布的密度及参数合法性",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "与选修A扩展要求对齐，不将所有其他分布误识别成正态。",
+      "end": 19,
+      "id": "KB109-P056-C14",
+      "invalid_generalization": "在σ=0的退化情形仍除以σ，或把μ解释为标准差。",
+      "key": "normal_standardize",
+      "kind": "METHOD",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "若X服从N(μ,σ²)且σ>0，Z=(X-μ)/σ服从标准正态。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 17,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "正态分布的参数与标准化",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "原文提及此分布，正式积分证明与抽样应用仍需教师审核。",
+      "end": 19,
+      "id": "KB109-P056-C15",
+      "invalid_generalization": "用自由度为负数的参数调用卡方分布，或声称其可以取负值。",
+      "key": "chi_square",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "自由度ν>0，卡方随机变量取非负值，均值ν，方差2ν。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 17,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "卡方分布的自由度及非负支持",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "常用公式只有满足自由度不等式才适用，数值计算不能代替一般证明。",
+      "end": 19,
+      "id": "KB109-P056-C16",
+      "invalid_generalization": "对ν=1的柯西分布使用均值0和方差1的公式。",
+      "key": "student_t",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "t自由度ν>0，ν<=1均值未定义，1<ν<=2时方差不存在。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 17,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "t分布的自由度与矩的存在条件",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "均值与方差条件不能仅由分布名称推定，须检查积分收敛。",
+      "end": 21,
+      "id": "KB109-P056-C17",
+      "invalid_generalization": "有概率密度就断言所有分布必然存在有限方差。",
+      "key": "continuous_moments",
+      "kind": "THEOREM",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "E[X]需要绝对一阶矩可积；方差有限需要二阶矩有限。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 20,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "连续分布均值与方差的定义域条件",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "本页讨论二维离散随机变量，二维连续分布须再取对应章节。",
+      "end": 24,
+      "id": "KB109-P056-C18",
+      "invalid_generalization": "把两个边缘概率直接相乘当成任意联合分布的通式。",
+      "key": "joint_distribution",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "联合概率p(i,j)非负且总和为1，边缘分布对另一维求和。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 23,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "二维离散联合分布及边缘化",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "相关系数无量纲但只在两个方差都大于零时定义。",
+      "end": 25,
+      "id": "KB109-P056-C19",
+      "invalid_generalization": "仅由协方差为零就推断两个变量相互独立。",
+      "key": "covariance",
+      "kind": "METHOD",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "在二阶矩有限且方差正的前提下才有相关系数；协方差可为负或零。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 24,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "协方差与相关系数的定义条件",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "明确区分概率独立与线性不相关，防止错误泛化。",
+      "end": 26,
+      "id": "KB109-P056-C20",
+      "invalid_generalization": "将零协方差错误反推为联合概率等于边缘概率之积。",
+      "key": "independence",
+      "kind": "THEOREM",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_INSTANCE_ONLY"
+      },
+      "mathematical_preconditions": "离散随机变量相互独立且二阶矩有限，可推出协方差为零，逆命题通常为假。",
+      "official_atom_id": null,
+      "page": 56,
+      "pdf_page_index": 63,
+      "source_page_pdfkit_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 25,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "独立性蕴含零协方差的方向性",
+      "track_hint": "ELECTIVE_A"
+    }
+  ],
+  "cross_page_boundary_evidence": [
+    {
+      "continuation_page": 20,
+      "continuation_pdf_page_index": 27,
+      "continuation_pdfkit_sha256": "2d514ab4854fd9896ab76a6188b2216733461fbab8f630bd0bc9dd20b0eb965f",
+      "current_page": 19,
+      "editorial_note": "Page 20 continues starred optional function history; do not count it as compulsory examination mathematics.",
+      "status": "CONTINUATION_REVIEW_REQUIRED"
+    },
+    {
+      "continuation_page": 57,
+      "continuation_pdf_page_index": 64,
+      "continuation_pdfkit_sha256": "dca127ce9bc7a223440713495ea73ba89e2654586fda16bab4dcf465d648f2f2",
+      "current_page": 56,
+      "editorial_note": "Page 57 continues bivariate normal material and introduces inference/regression; no claim of completing this chapter on page 56.",
+      "status": "CONTINUATION_REVIEW_REQUIRED"
+    }
+  ],
+  "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+  "limitations": [
+    "Neither printed-page structural partitioning nor editorial requirements are teacher-certified official atomization.",
+    "Page 19 star-marked function history is optional and must not enter mandatory assessment scope.",
+    "The named t/chi-square laws require valid degrees of freedom and finite-moment assumptions.",
+    "Page 56 ends mid-section; bivariate and inference scope must be revisited on page 57.",
+    "No frozen seven-track curricular denominator; no certified theorem proofs or student releases."
+  ],
+  "line_counts": {
+    "19": 27,
+    "56": 27
+  },
+  "new_editorial_candidates": 20,
+  "official_seven_track_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "pages": [
+    19,
+    56
+  ],
+  "pedagogy_items_not_math_proofs": 5,
+  "scope_kind": "EDITORIAL_SOURCE_CANDIDATES_NOT_OFFICIAL_ATOMS",
+  "source_fingerprint_registry_sha256": "ec26621b7f358f892355d6e6b93622e529df30cfd6067fa1f48d77df48ffc19a",
+  "source_lines_total": 54,
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "structural_partitions": [
+    {
+      "end": 2,
+      "kind": "FUNCTION_THEME_INTRO_CONTINUED",
+      "page": 19,
+      "start": 1
+    },
+    {
+      "end": 3,
+      "kind": "CONTENTS_HEADER",
+      "page": 19,
+      "start": 3
+    },
+    {
+      "end": 5,
+      "kind": "THEME_OVERVIEW",
+      "page": 19,
+      "start": 4
+    },
+    {
+      "end": 6,
+      "kind": "FUNCTION_UNIT_HEADER",
+      "page": 19,
+      "start": 6
+    },
+    {
+      "end": 10,
+      "kind": "LEARNING_INTENT_AND_MODELING",
+      "page": 19,
+      "start": 7
+    },
+    {
+      "end": 12,
+      "kind": "CONTENT_AND_OPTIONAL_HISTORY",
+      "page": 19,
+      "start": 11
+    },
+    {
+      "end": 13,
+      "kind": "CONCEPT_HEADER",
+      "page": 19,
+      "start": 13
+    },
+    {
+      "end": 17,
+      "kind": "MAPPING_AND_DOMAIN",
+      "page": 19,
+      "start": 14
+    },
+    {
+      "end": 19,
+      "kind": "REPRESENTATIONS",
+      "page": 19,
+      "start": 18
+    },
+    {
+      "end": 20,
+      "kind": "PIECEWISE_FUNCTION",
+      "page": 19,
+      "start": 20
+    },
+    {
+      "end": 21,
+      "kind": "PROPERTIES_HEADER",
+      "page": 19,
+      "start": 21
+    },
+    {
+      "end": 23,
+      "kind": "MONOTONICITY_AND_EXTREMA",
+      "page": 19,
+      "start": 22
+    },
+    {
+      "end": 24,
+      "kind": "PARITY",
+      "page": 19,
+      "start": 24
+    },
+    {
+      "end": 25,
+      "kind": "PERIODICITY",
+      "page": 19,
+      "start": 25
+    },
+    {
+      "end": 26,
+      "kind": "FOOTER",
+      "page": 19,
+      "start": 26
+    },
+    {
+      "end": 27,
+      "kind": "OPTIONAL_ITEM_FOOTNOTE",
+      "page": 19,
+      "start": 27
+    },
+    {
+      "end": 1,
+      "kind": "STANDARD_HEADER",
+      "page": 56,
+      "start": 1
+    },
+    {
+      "end": 2,
+      "kind": "PROBABILITY_STATISTICS_HEADER",
+      "page": 56,
+      "start": 2
+    },
+    {
+      "end": 5,
+      "kind": "PROBABILITY_BACKGROUND",
+      "page": 56,
+      "start": 3
+    },
+    {
+      "end": 11,
+      "kind": "INFERENCE_AND_TEACHING_CONTEXT",
+      "page": 56,
+      "start": 6
+    },
+    {
+      "end": 13,
+      "kind": "SCOPE_OVERVIEW",
+      "page": 56,
+      "start": 12
+    },
+    {
+      "end": 14,
+      "kind": "CONTINUOUS_HEADER",
+      "page": 56,
+      "start": 14
+    },
+    {
+      "end": 16,
+      "kind": "CONTINUOUS_CONCEPT",
+      "page": 56,
+      "start": 15
+    },
+    {
+      "end": 19,
+      "kind": "DISTRIBUTION_FAMILIES",
+      "page": 56,
+      "start": 17
+    },
+    {
+      "end": 21,
+      "kind": "MOMENTS_AND_PARAMETER_MEANING",
+      "page": 56,
+      "start": 20
+    },
+    {
+      "end": 22,
+      "kind": "BIVARIATE_HEADER",
+      "page": 56,
+      "start": 22
+    },
+    {
+      "end": 26,
+      "kind": "JOINT_MOMENTS_AND_INDEPENDENCE",
+      "page": 56,
+      "start": 23
+    },
+    {
+      "end": 27,
+      "kind": "FOOTER",
+      "page": 56,
+      "start": 27
+    }
+  ],
+  "student_authoritative_releases": 0,
+  "teacher_approvals": 0,
+  "teacher_full_page_atomizations": 0,
+  "track_hint_counts": {
+    "COMPULSORY": 9,
+    "ELECTIVE_A": 11,
+    "ELECTIVE_B": 0,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "SELECTIVE_COMPULSORY": 0
+  }
+}

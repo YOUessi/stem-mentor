@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Batch108: original theorem/concept/method drafts, guarded evidence crosswalk."""
 from __future__ import annotations
-import argparse,json,sys
+import argparse,json,sys,re
 from collections import Counter
 from hashlib import sha256
 from pathlib import Path
@@ -30,6 +30,10 @@ def build(units=UNITS):
     prior=[]
     for path in sorted(DEEP_DIR.glob("*.json")):
         if path==PACK:continue
+        # A historical delivery must not silently absorb future lesson packs:
+        # its frozen cumulative denominator is a snapshot, not a live count.
+        later=re.match(r"batch(\d+)",path.name)
+        if later and int(later.group(1))>108:continue
         prior.extend(json.loads(path.read_text(encoding="utf8")))
     prior_ids=[r["id"] for r in prior]
     need(len(set(prior_ids))==len(prior_ids),"duplicate historical lesson ID")
