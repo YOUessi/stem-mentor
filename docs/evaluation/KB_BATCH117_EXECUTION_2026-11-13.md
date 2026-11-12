@@ -57,3 +57,23 @@
 - 第一轮失败是冻结的Batch115历史审计将未来知识包算入其2026-11-13之前分母；在构建器中基于批次编号排除未来包，而不是重写冻结审计结果。原失败保存，新增未来Batch118/120回归防止重犯。
 - 11个Issue #17–#27的本批更新评论均实际通过GitHub API写入；保持Open，所有未审校及未认证项目仍列为待办。
 - 已完成Chrome/Playwright完整回归（退出码0），浏览器pytest2/2；这是软件/模拟设备的验证，不是独立真实学生实验、实机iPad验收或数学专家认证。
+
+
+## 最终冻结源码验收与第35页图像追溯（2026-11-13）
+- 第三次冻结源码 Mac 全量执行完成：外层Shell **exit 0**；Python **66,285 passed / 5 skipped / 1第三方警告**；Node **111/111**。独立Chrome/Playwright退出码0，浏览器pytest 2通过。专项237通过。
+- 早期完整回归 **exit 1** 的生成快照漂移日志未删；本轮修复后多次完整运行均成功，不将原始失败改写为通过。
+- 额外实际检视课标原图第35印刷页，确认PDFKit乱码源于一张带“检验不合格→重建模型”回边的建模流程图；只解除内容类型的歧义，**未**将该页升级为教师正式原子审校。详情见 KB_BATCH117_PAGE35_VISUAL_ATTESTATION.md。
+- GitHub正式交付前原始日志SHA-256：
+
+  - KB_BATCH117_MAC_CHECK_FIRST_FAILURE.log：5a3566d94fbeed0597af6a761fbb68562a00d7393de6e4a1a8737e2c25317fe4
+  - KB_BATCH117_MAC_CHECK_FIRST_EXIT.txt：4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865
+  - KB_BATCH117_MAC_CHECK_VERIFIED_FINAL.log：3a7db97522fd4ae1fe9918c3fbc0c980dc5f3e918c1a53a479fe6ce34cf4756e
+  - KB_BATCH117_MAC_CHECK_VERIFIED_EXIT.txt：9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa
+  - KB_BATCH117_MAC_CHECK_RELEASE_FINAL.log：c220c79268c9525c40553b6418cb0eca96dbfef1c8624b67983965e23831fbfd
+  - KB_BATCH117_MAC_CHECK_RELEASE_EXIT.txt：9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa
+  - KB_BATCH117_BROWSER_FINAL.log：911ab485c9ffa142d7494a9e0d476d6c6446306ddd0b0a7bb821f86f1625a8d1
+  - KB_BATCH117_BROWSER_EXIT.txt：9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa
+  - KB_BATCH117_FOCUSED_EXPANDED_FINAL.log：565279c125d1dc17e67b9c6ff45625bb05c69f45a2c4da33dc4eb93f18ed5978
+  - KB_BATCH117_FOCUSED_FINAL.log：5f929367a937555737f0d804a9d08b170074eb0bda19fa741528d2c1568f7d91
+  - KB_BATCH117_FOCUSED_FIRST.log：0c1dd3c5fa9b177c031c25fc3d90d22a938d833b37df1f37f05f7744419d6b6b
+  - KB_BATCH117_EXAMPLE_ORACLES.log：2abafb29e0244d61bca8212b003812e32e9301f743dba4aeedd20a803386527c
