@@ -1,0 +1,23 @@
+........................................................................ [ 53%]
+............................................................F..          [100%]
+=================================== FAILURES ===================================
+_________ test_deep_pack_history_counts_all_json_not_only_batch_prefix _________
+
+    def test_deep_pack_history_counts_all_json_not_only_batch_prefix():
+        from app.deep_knowledge import DEEP_DIR
+        import build_kb_batch114 as B
+        pack = DEEP_DIR / "batch114_functions_statistics.json"
+        historical_paths = sorted(p for p in DEEP_DIR.glob("*.json") if p != pack)
+        history = [item for p in historical_paths for item in json.loads(p.read_text())]
+        current = json.loads(pack.read_text())
+        audit = json.loads((ROOT / "docs/evaluation/KB_BATCH114_AUDIT.json").read_text())
+        assert len(history) > 400  # Detect accidentally counting only batch-prefixed files.
+        assert len({z["id"] for z in history + current}) == len(history + current)
+>       assert audit["prior_deep_drafts"] == len(history)
+E       AssertionError: assert 474 == 482
+E        +  where 482 = len([{'assumptions': ['各次成功与失败二选一、试验之间独立且成功概率恒为 p。'], 'boundaries': ['不放回抽样通常不独立；每次成功概率不同也不满足普通 Bin(n,p) 假设。'], 'counterex...'false_claim': '若线性模型拟合3个点，就一定能预测所有未来输入'}], 'curriculum_ids': ['HS-MATH-059', 'HS-MATH-060', 'HS-MATH-061'], ...}, ...])
+
+tests/test_kb_batch114_independent_examples.py:50: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch114_independent_examples.py::test_deep_pack_history_counts_all_json_not_only_batch_prefix
+1 failed, 134 passed in 3.29s
