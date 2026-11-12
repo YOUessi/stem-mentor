@@ -60,3 +60,13 @@ def test_formal_and_teacher_gates_still_closed():
         assert result["status"] == "NO_APPROVED_EVIDENCE"
         assert not result["teacher_solution_exposed"]
         assert not result.get("citations")
+
+
+def test_density_reversed_endpoints_refused_as_probability():
+    # A true definite integral changes sign if the limits are reversed,
+    # but the event {1 <= X <= 1/2} is empty, with probability zero.
+    backwards=sp.integrate(2*x,(x,1,R(1,2)))
+    assert backwards==-R(3,4) and backwards!=0
+    doc=json.loads((ROOT/"knowledge/deep/v1/batch114_functions_statistics.json").read_text())[4]
+    assert "a≤b" in doc["statement"]
+    assert any("a≤b" in condition for condition in doc["assumptions"])

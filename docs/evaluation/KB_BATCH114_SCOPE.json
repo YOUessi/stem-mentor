@@ -378,7 +378,7 @@
         "positive": true,
         "status": "FINITE_EXACT_INSTANCES_ONLY"
       },
-      "mathematical_preconditions": "密度非负并在全域积分为一，积分区间给概率。",
+      "mathematical_preconditions": "密度非负并在全域积分为一；仅在a≤b时区间概率等于从a到b的密度积分。",
       "official_atom_id": null,
       "page": 61,
       "pdf_page_index": 68,
@@ -574,7 +574,7 @@
     61
   ],
   "scope_kind": "EDITORIAL_CANDIDATES_NOT_OFFICIAL_ATOMS",
-  "source_author_sha256": "37bd3e34ab16dff5c275a379d704c9aae5e4b824a5215dc91f743433b90460bf",
+  "source_author_sha256": "72f6342024a9544249a884bd77995616d5b8cabd43f94c7e49fa03c1a728b097",
   "source_candidate_counts_by_track": {
     "COMPULSORY": 10,
     "ELECTIVE_A": 0,
