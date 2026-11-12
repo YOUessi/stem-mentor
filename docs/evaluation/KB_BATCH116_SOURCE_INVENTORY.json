@@ -100,16 +100,18 @@
     {
       "editorial_group": "art_music_sport_mathematics",
       "first": 70,
-      "last": 73,
+      "last": 72,
       "track_hint": "ELECTIVE_D"
+    },
+    {
+      "editorial_group": "sport_mathematics_to_elective_e_school_defined",
+      "first": 73,
+      "last": 73,
+      "track_hint": "MULTI_TRACK_TRANSITION"
     }
   ],
   "full_original_pdf_physical_pages": 188,
   "full_pdf_fingerprint_manifest_sha256": "541279e39649baf45817d92b446eec926432630d0fd2be740c641c2e27fc04e2",
-  "known_outside_extent": [
-    "ELECTIVE_E_NOT_PRESENT_IN_THIS_61_PAGE_EXCERPT",
-    "DOCUMENT_CONTINUES_BEYOND_PRINTED_PAGE_73"
-  ],
   "pages": [
     {
       "authoritative_student_release": false,
@@ -969,17 +971,18 @@
       "authoritative_student_release": false,
       "complete_teacher_atomization": false,
       "manual_visual_review_flags": [
-        "pdf_excerpt_ends_mid_topic"
+        "elective_track_boundary",
+        "elective_e_school_defined_scope"
       ],
       "official_atom_count": null,
       "pdf_page_index": 80,
       "pdfkit_text_sha256": "59980de5ee6959de6e1f635ff7a17abd29206e852bbdd2bd18b818135773a6a3",
       "printed_page": 73,
       "prior_structure_review_artifact": null,
-      "source_group_hint": "art_music_sport_mathematics",
+      "source_group_hint": "sport_mathematics_to_elective_e_school_defined",
       "structure_review_status": "NOT_REVIEWED",
       "teacher_approval_record": null,
-      "track_hint": "ELECTIVE_D"
+      "track_hint": "MULTI_TRACK_TRANSITION"
     }
   ],
   "pending_review_pages_by_track_hint": {
@@ -987,9 +990,9 @@
     "ELECTIVE_A": 3,
     "ELECTIVE_B": 1,
     "ELECTIVE_C": 4,
-    "ELECTIVE_D": 4,
+    "ELECTIVE_D": 3,
     "ELECTIVE_E": 0,
-    "MULTI_TRACK_TRANSITION": 2,
+    "MULTI_TRACK_TRANSITION": 3,
     "SELECTIVE_COMPULSORY": 14
   },
   "physical_pages_outside_legacy_61_excerpt": 127,
@@ -1018,6 +1021,10 @@
     61,
     62,
     63
+  ],
+  "scope_boundary_notes": [
+    "ELECTIVE_E_SCHOOL_DEFINED_STARTED_ON_PRINTED_PAGE_73",
+    "PDF_HAS_188_PHYSICAL_PAGES_WITH_NON_CURRICULUM_SECTIONS_AFTER_PAGE_73"
   ],
   "seven_track_approved_atom_counts": {
     "COMPULSORY": 0,

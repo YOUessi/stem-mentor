@@ -2,7 +2,7 @@
 
 已在Mac用原PDF的PDFKit读取并哈希锁定整份188个物理PDF页，但此台账的数学课程结构审查只覆盖印刷页13–73（61页）。
 其余127个物理PDF页目前只有来源指纹，不能因此推断它们都是未覆盖知识点。
-选修E在这61页中尚无独立完整条目分母，不能据此当作0。章节分组仅是人工可复核的工程候审提示。
+选修E从印刷页73后半部分开始（学校自主开发或选用课程），只有类别示例，尚无官方统一知识原子数量，不得填0。
 
 前期有证据的结构页：18/61；待结构审查：43/61；
 教师正式逐页原子化：0/61；七轨官方原子分母均UNKNOWN；教师批准0、学生权威发布0。
@@ -25,7 +25,8 @@
 | 58–64 | ELECTIVE_B | advanced_topics_models | 1 | 58,59 |
 | 65–68 | ELECTIVE_C | logic_economic_social_models_survey | 4 | — |
 | 69–69 | MULTI_TRACK_TRANSITION | social_survey_to_art_mathematics | 1 | 69 |
-| 70–73 | ELECTIVE_D | art_music_sport_mathematics | 4 | 73 |
+| 70–72 | ELECTIVE_D | art_music_sport_mathematics | 3 | — |
+| 73–73 | MULTI_TRACK_TRANSITION | sport_mathematics_to_elective_e_school_defined | 1 | 73 |
 
 ## 验收门槛
 
@@ -33,7 +34,7 @@
 2. 每条拟议原子分型为概念、定理、方法、实践能力，核对必要条件、唯一ID、来源区间及归属轨道；跨轨或未证实项保持争议。
 3. 已识别内容与缺口分别登记，七轨分母只有在**整个正式课程范围**完成独立核验才可从UNKNOWN变成数字。
 4. 教师正式审校前不得APPROVED，学生独立解题验证及权威发布仍为0；禁止公开教师完整答案。
-5. PDFKit 失真页35与跨轨页51、69必须看原始页面图像；第73页不是课标终点。
+5. PDFKit 失真页35与跨轨页51、69、73必须看原始页面图像；第73页后段开始选修E，后续第74页进入学业质量章节。
 
 ## 本批优先队列
 

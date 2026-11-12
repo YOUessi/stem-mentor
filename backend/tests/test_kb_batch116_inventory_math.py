@@ -25,7 +25,7 @@ def test_machine_auditable_excerpt_only(inventory):
     assert len(inventory["unreviewed_printed_pages"]) == 43
     assert inventory["teacher_fully_atomized_pages"] == 0
     assert inventory["teacher_approvals"] == inventory["student_authority_releases"] == 0
-    assert inventory["known_outside_extent"]
+    assert inventory["scope_boundary_notes"]
     assert set(inventory["seven_track_official_atom_denominators"]) == set(S.TRACKS)
     assert all(n is None for n in inventory["seven_track_official_atom_denominators"].values())
     assert all(v is None for v in inventory["seven_track_certified_coverage"].values())
@@ -67,8 +67,7 @@ def test_each_source_page_attested_without_fabricated_certification(inventory,p)
 def test_manual_visual_and_track_boundaries(inventory,p):
     row=inventory["pages"][p-13]
     assert len(row["manual_visual_review_flags"])>=1
-    if p in (51,69):assert row["track_hint"]=="MULTI_TRACK_TRANSITION"
-    if p==73:assert row["track_hint"]=="ELECTIVE_D"
+    if p in (51,69,73):assert row["track_hint"]=="MULTI_TRACK_TRANSITION"
 
 def test_local_source_verified_on_mac():
     if not S.PDF.is_file():pytest.skip("SHA-locked licensed source only exists on authorized Mac")
@@ -89,7 +88,7 @@ def test_fake_source_or_approval_rejected(tamper, monkeypatch):
     elif tamper=="forged_review":kwargs["teacher_approvals"]=1
     elif tamper=="track_overlap":groups[1]=(14,18,"COMPULSORY","overlap")
     elif tamper=="track_gap":groups[1]=(16,18,"COMPULSORY","gap")
-    elif tamper=="track_switch":groups[-1]=(70,73,"ELECTIVE_E","false_track")
+    elif tamper=="track_switch":groups[-1]=(73,73,"ELECTIVE_E","false_track")
     elif tamper=="wrong_pdf_sha":
         reg["official_pdf_sha256"]="0"*64
         monkeypatch.setattr(S,"PDF_SHA","0"*64)
