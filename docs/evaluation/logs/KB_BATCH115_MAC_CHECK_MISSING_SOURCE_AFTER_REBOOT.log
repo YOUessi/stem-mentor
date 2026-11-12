@@ -1,0 +1,76 @@
+[0/4] Batch24+25 source/P0/math/review guards
+PASS: Batch24 20 original teacher-only REVIEW_PENDING draft lessons
+PASS: 315 source markers, 132 editorial objectives, 23 D/E headings, 28 open gaps; official atomic denominator NULL; repeated text hash groups 22
+PASS: Batch24 20 lesson drafts, 19 unverified proof steps, 538 in all; official denominator NULL
+PASS: 178 engineering topics, 287 REVIEW_PENDING drafts; official knowledge denominator NULL; 0 engineering rows with no lesson
+PASS 61 K00 pages queued, 315 markers, 23 D/E headings; official atoms remain NULL
+PASS 127 P0 step hashes + 10 conflict bounded probes; no full proof or teacher approvals
+PASS 287 draft audit, 538 unverified steps, 0 approved
+PASS source 61 PDF pages / frozen 315 vs pypdf59 317 candidates; official atomic denominator NULL
+PASS 31 editor candidates, 102 unlinked without proposal; 0 teacher-approved
+PASS 35/127 P0 condition proposals; 17 exact-positive+17 negative guards; 0 formal proofs, 0 approvals
+PASS: 48 new P0 step condition profiles + 35 previous = 83/127, 44 remain, 20 exact and 20 negative fixtures, 0 proofs certified
+PASS: 127/127 historical P0 steps have editorial condition reviews (35+48+44), 20 exact valid and 20 illegal-condition fixtures; formally certified=0, teacher-approved=0
+PASS K00 page52 visually checked: rendered 5+3=8 markers, historical 6 omitted 2; 1/61 assistant-viewed, official atoms NULL
+PASS K00 87 original editor candidates on 12 pages; official denominators NULL
+PASS graph {'total_draft_lessons': 287, 'missing_authoritative_graph_edges': 133, 'preexisting_editorial_proposals': 31, 'new_editorial_proposals': 32, 'editorial_proposals_total': 63, 'still_no_editorial_candidate': 70, 'combined_candidate_graph_acyclic': True, 'teacher_approved_proposals': 0, 'authoritative_graph_modified': False, 'student_visible_proposals': 0, 'official_atomic_denominator': None}
+PASS K00 Batch32 130 new editorial candidates, 37 source pages inspected; official syllabus denominators NULL
+PASS K07 Batch32 6 legal exact cases, 6 invalid refusals, zero teacher/theorem certifications
+PASS Batch33 96 elective editorial goals; source pages 61/61 first-pass, official denominator remains null
+PASS Batch33 47 curated related-draft review pairs; 0 certified equivalences
+PASS Batch33 5 valid finite cases + 5 invalid-premise refusals, no general proof
+PASS Batch34 20 original REVIEW_PENDING manuscripts; 40 finite checks; 29 editorial gaps; APPROVED=0
+PASS Batch35 29 original teacher-only manuscripts, 58 finite arithmetic cases, 12 premise guards; approval 0
+PASS 47/47 distinct scoped legacy-link reviews; 0 syllabus equivalence certifications
+Batch37 all three generated artifacts reproduced; 8 teacher-only manuscripts, 16 examples
+Batch38 CHECK 20 teacher manuscripts 40 examples 7 remaining d28e04b16511017119c3560568d9d22f46af6f8eebc57185ee8bf7773f7e2be1
+Batch39 CHECK 7 manuscripts / 14 teacher examples / zero student releases
+Batch40: 12 clause-scope candidates; 9 original pages; {'CONTEXTUAL_APPLICATION': 1, 'DIRECT_SCOPE': 6, 'LOCAL_ELECTIVE_OPTION': 1, 'PARTIAL_DERIVATION': 1, 'TOPIC_ONLY_NOT_EXPLICIT': 3}; CHECK=True
+PASS {'draft_count': 20, 'by_track': {'COMPULSORY': 10, 'SELECTIVE_COMPULSORY': 10}, 'teacher_examples': 40, 'distinct_counterexamples': 20, 'hint_levels': 60, 'near_far_transfers': 40, 'official_atomic_denominator': None, 'teacher_approved': 0, 'student_published': 0}
+PASS {'project_candidates': 313, 'direct_review_drafts': 133, 'legacy_only': 12, 'missing_editorial_link': 168, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None}
+PASS 24 source rows {'KB31': 12, 'KB32': 12} bytes 33355
+PASS ({'project_candidate_lessons': 24, 'compulsory': 12, 'selective_compulsory': 12, 'teacher_only_examples': 48, 'nonexamples': 24, 'hints': 72, 'near_far': 48, 'bounded_exact_operators': 24, 'official_denominator': None, 'general_theorems_formally_certified': 0, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 157, 'legacy_only': 12, 'missing_editorial_link': 144, 'batch43_new': 24, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+PASS ({'project_candidate_lessons': 20, 'compulsory': 20, 'selective_compulsory': 0, 'teacher_only_examples': 40, 'nonexamples': 20, 'hints': 60, 'near_far': 40, 'exact_bounded_operators': 20, 'official_atom_denominator': None, 'formal_theorems_certified': 0, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 177, 'legacy_only': 12, 'missing_editorial_link': 124, 'batch44_new': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+SOURCE_REPRODUCIBLE 24 /Users/youtang/Documents/文件/stem-mentor-kb-batch115/knowledge/editorial_review/kb_batch45_core_depth.jsonl
+PASS ({'new_review_drafts': 24, 'compulsory': 24, 'selective_compulsory': 0, 'teacher_only_worked_examples': 48, 'nonexamples': 24, 'derivation_steps': 72, 'hints': 72, 'near_far_transfers': 48, 'bounded_finite_math_witnesses': 24, 'math_proofs_formally_certified': 0, 'official_atom_denominator': None, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 201, 'legacy_only': 12, 'missing_editorial_link': 100, 'batch45_new': 24, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH46 ({'new_review_drafts': 20, 'selective_compulsory': 20, 'teacher_only_examples': 40, 'concrete_counterexamples': 20, 'staged_derivation_steps': 60, 'graduated_hints': 60, 'near_far_transfers': 40, 'bounded_math_oracles': 20, 'approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 221, 'legacy_only': 12, 'missing_editorial_link': 80, 'batch46_new': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH47 20 CHECK
+BATCH47 ({'new_review_drafts': 20, 'compulsory': 20, 'teacher_only_examples': 40, 'concrete_counterexamples': 20, 'staged_derivation_steps': 60, 'graduated_hints': 60, 'near_far_transfers': 40, 'bounded_math_oracles': 20, 'approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 241, 'legacy_only': 12, 'missing_editorial_link': 60, 'batch47_new': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH48 CHECK 20
+BATCH48 ({'new_review_drafts': 20, 'selective_compulsory': 20, 'teacher_only_examples': 40, 'concrete_counterexamples': 20, 'staged_derivation_steps': 60, 'graduated_hints': 60, 'near_far_transfers': 40, 'bounded_math_oracles': 20, 'approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 261, 'legacy_only': 12, 'missing_editorial_link': 40, 'batch48_new': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH49 CHECK 20
+BATCH49 ({'new_review_drafts': 20, 'compulsory': 14, 'selective_compulsory': 6, 'teacher_examples': 40, 'explicit_counterexamples': 20, 'reasoning_stages': 60, 'graduated_hints': 60, 'near_far_transfers': 40, 'finite_math_oracles': 17, 'nonnumeric_source_methods': 3, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 281, 'legacy_only': 12, 'missing_editorial_link': 20, 'batch49_new': 20, 'compulsory_remaining': 0, 'selective_compulsory_remaining': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH50 ({'new_drafts': 20, 'selective_compulsory': 20, 'examples': 40, 'counterexamples': 20, 'reasoning_stages': 60, 'graduated_hints': 60, 'transfers': 40, 'finite_exact_oracles': 17, 'research_method_drafts_without_numeric_proof': 3, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 301, 'legacy_only': 12, 'missing_editorial_link': 0, 'batch50_new': 20, 'compulsory_remaining': 0, 'selective_compulsory_remaining': 0, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+K00 Batch51 source evidence: 61 pages; 317 marker occurrences; 23 D/E outlines; 15 blind-spot pages; 12 legacy blocks; official atom denominators: null
+Batch52 crosswalk 28 candidates; 9 with no same-page link; check=True
+Batch53: 35 candidate rows; 9 cross-page recovered; 29 links; 12 legacy pending; check=True
+Batch54 CHECK 12 independent REVIEW_PENDING drafts / 24 teacher examples / 61 source pages tracked / official atoms unresolved
+Batch55: 10 unresolved version conflicts, 20 finite probes, 538 uncertified proof steps
+Batch56 original PDFKit span review: 52 spans, 10 pages, 2 optional-not-exam, official denominators unverified; check= True
+Batch57 checked: 78 new source pointers on 12 pages; unreadable visual gaps=2; official denominators UNVERIFIED; check=True
+Batch58 K00: 28 independent requirements; 0 verified; 28 unmapped
+KB59: 108 nonunique pointers, 42 requirements, 14 pages; seven denominators null
+KB59: 14 teacher-only assessments; 42 competencies remain UNMAPPED, approved=0
+Batch60 source leads 106 partial pages 61 full review 0/61
+61-page anchor audit: 428 candidates; 56 unlinked, 7 official denominators null; check=True
+Batch62 triage {'COMPETENCY_BLOCK': 4, 'CONTENT_BLOCK': 5, 'DIRECT_OBJECTIVE': 4, 'PEDAGOGY_BLOCK': 5, 'SUBSECTION_SCOPE': 27, 'TOPIC_CONTAINER': 11} teacher approvals: 0
+Batch63: 45 attested source windows; 31 substantive scopes; 62 provisional atom hypotheses; 14 uncovered nonatom sections; teacher approvals=0
+Batch63 12 draft manuscripts, 24 worked examples, 36 reasoned steps; zero approvals
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch115/scripts/build_kb_batch64_deep_competency.py", line 212, in <module>
+    main()
+    ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch115/scripts/build_kb_batch64_deep_competency.py", line 199, in main
+    require(C.make_windows()==C.B61.load(C.WINDOWS),"original Mac PDFKit source mismatch")
+            ~~~~~~~~~~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch115/scripts/build_kb_batch63_atom_context.py", line 110, in make_windows
+    rows=source_segments(source_dir)
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch115/scripts/build_kb_batch63_atom_context.py", line 80, in source_segments
+    raw=path.read_bytes()
+  File "/Users/youtang/miniforge3/lib/python3.13/pathlib/_abc.py", line 625, in read_bytes
+    with self.open(mode='rb') as f:
+         ~~~~~~~~~^^^^^^^^^^^
+  File "/Users/youtang/miniforge3/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/private/tmp/kb56_page_15.txt'
