@@ -160,7 +160,7 @@ def coverage(ds,cl):
 def generate():
     docs,cl=convert()
     return {PACK:docs,META:cl,MATH:exact_oracles(),COVER:coverage(docs,cl),
-            MD:lesson_md(docs)}
+            MD:lesson_md(docs).replace("# Batch117｜组合计数与概率·原创教师候审讲义", "# Batch118｜概率统计·原创教师候审讲义", 1)}
 def main():
     p=argparse.ArgumentParser()
     mode=p.add_mutually_exclusive_group(required=True)
