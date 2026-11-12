@@ -1,0 +1,573 @@
+[
+  {
+    "assumptions": [
+      "论域D在否定前后相同，谓词在论域内有确定真值。",
+      "严格不等式的否定要包含等号，复合条件的否定须使用正确逻辑连接词。"
+    ],
+    "boundaries": [
+      "论域D在否定前后相同，谓词在论域内有确定真值。",
+      "严格不等式的否定要包含等号，复合条件的否定须使用正确逻辑连接词。"
+    ],
+    "counterexamples": [
+      {
+        "example": "在实数论域取x=-1即可推翻原命题，但1>0仍成立，故‘全部≤0’不成立。",
+        "explanation": "正确否定是‘存在一个实数x≤0’，不应把全称保留下来。",
+        "false_claim": "把‘任意实数x>0’的否定写成‘任意实数x≤0’。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-004"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先圈出量词和被其控制的完整谓词。",
+      "写出反量词，并求谓词真值的相反条件。",
+      "如果是全称命题的否定，尝试构造一个明确反例；不要直接公开教师例题答案。"
+    ],
+    "id": "math.hs.batch106.01",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把‘任意实数x>0’的否定写成‘任意实数x≤0’。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "正确否定是‘存在一个实数x≤0’，不应把全称保留下来。"
+      }
+    ],
+    "notation": [
+      "∀表示全称量词",
+      "∃表示存在量词",
+      "¬表示命题否定"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "命题真假",
+      "非与蕴含关系"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "全称命题声称没有一个违例，因此否定它只需找到一个属于论域的真实反例。",
+      "存在命题声称至少有一个见证，因此否定它必须说明论域内每个元素都不满足。",
+      "否定一个完整含量词命题时既交换量词又否定谓词；若论域为空，仍按形式语义处理，不凭直观存在性。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "论域D固定时，非(∀x∈D,P(x))当且仅当∃x∈D,非P(x)；非(∃x∈D,P(x))当且仅当∀x∈D,非P(x)。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "量词否定的语义与反例见证",
+    "transfer": {
+      "far": "把‘所有输入都通过校验’与‘存在一个输入失败’写成形式化软件测试命题。",
+      "near": "将‘所有实数x≥2’的否定准确书写并给出反例。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "存在实数x使x²≤0，例如x=0。",
+        "check": "0为实数；0²≤0成立。",
+        "question": "在实数域否定‘任意x都有x²>0’。",
+        "steps": [
+          "外层∀须换成∃，不等式x²>0取反为x²≤0。",
+          "x=0使x²=0≤0，给出具体见证。"
+        ]
+      },
+      {
+        "answer": "任意整数n，n²≠-1。",
+        "check": "n²≥0与-1<0互不相等。",
+        "question": "在整数域否定‘存在n使n²=-1’。",
+        "steps": [
+          "外层∃改成∀，谓词等号否定为不等号。",
+          "整数平方均非负，故对全部整数n，n²≠-1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a,b必须都是非负实数。",
+      "该结论的平方根是非负主值；由a+b固定求ab上界需同时确认非负。"
+    ],
+    "boundaries": [
+      "a,b必须都是非负实数。",
+      "该结论的平方根是非负主值；由a+b固定求ab上界需同时确认非负。"
+    ],
+    "counterexamples": [
+      {
+        "example": "a=-1,b=-4时√(ab)=2，(a+b)/2=-2，与错误结论相矛盾。",
+        "explanation": "a,b≥0是定理成立的必要适用条件，不能仅看乘积ab为正。",
+        "false_claim": "对负数a,b无条件套用√(ab)≤(a+b)/2。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-009"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认两个变量是不是非负实数。",
+      "考察(√a-√b)²≥0能得到什么关于和与积的不等式。",
+      "检查等号成立条件，而不是仅给出上界。"
+    ],
+    "id": "math.hs.batch106.02",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "对负数a,b无条件套用√(ab)≤(a+b)/2。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "a,b≥0是定理成立的必要适用条件，不能仅看乘积ab为正。"
+      }
+    ],
+    "notation": [
+      "a,b为非负实数",
+      "√表示非负平方根"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "实数有序性",
+      "非负平方性质"
+    ],
+    "proof_steps": [
+      {
+        "claim": "因为a,b≥0，故√a和√b为实数，非负平方(√a-√b)²≥0。",
+        "reason": "非负实数的平方非负，平方根主值存在。"
+      },
+      {
+        "claim": "展开得a+b-2√(ab)≥0，移项并除以正数2，得到√(ab)≤(a+b)/2。",
+        "reason": "实数展开、移项与同除正数不改变不等号方向。"
+      },
+      {
+        "claim": "等号成立当且仅当(√a-√b)²=0，即√a=√b，等价于a=b。",
+        "reason": "实数平方为零当且仅当底数为零；非负平方根单射。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若a,b≥0为实数，则√(ab)≤(a+b)/2，等号当且仅当a=b；这是固定非负两数和时研究积的最大值的基础。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "基本不等式的非负域与等号条件",
+    "transfer": {
+      "far": "对固定长度周长的长方形讨论为何正方形面积最大，并标明边长为正的前提。",
+      "near": "给出a+b=12时ab的最优取值和等号条件。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "3<5，严格小于。",
+        "check": "5-3=2>0，与非负基本不等式一致。",
+        "question": "a=1,b=9，验证基本不等式并指出是否取等号。",
+        "steps": [
+          "√(ab)=√9=3。",
+          "(a+b)/2=10/2=5，且1≠9。"
+        ]
+      },
+      {
+        "answer": "最大为25，在a=b=5取得。",
+        "check": "5×5=25且符合a+b=10。",
+        "question": "a,b≥0且a+b=10，求ab的最大值。",
+        "steps": [
+          "应用√(ab)≤(a+b)/2=5。",
+          "两边均非负，可以平方得到ab≤25；a=b=5可取等。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "区间闭且有界，f在整个闭区间连续。",
+      "端点值严格异号；若端点等于零，零点已直接找到无需二分。"
+    ],
+    "boundaries": [
+      "区间闭且有界，f在整个闭区间连续。",
+      "端点值严格异号；若端点等于零，零点已直接找到无需二分。"
+    ],
+    "counterexamples": [
+      {
+        "example": "令f(x)=-1当x<0，f(x)=1当x≥0，在[-1,1]端点异号，但f从不等于0。",
+        "explanation": "该阶跃函数在0不连续，不满足介值定理的核心前提。",
+        "false_claim": "仅凭端点异号就推断任意函数必穿过零。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-119"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先检查区间闭性、整段连续性与两端符号。",
+      "中点是否为零？若不是，选哪一半仍能保持异号？",
+      "用区间长度趋零和连续性解释为何最终必有零点。"
+    ],
+    "id": "math.hs.batch106.03",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "仅凭端点异号就推断任意函数必穿过零。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "该阶跃函数在0不连续，不满足介值定理的核心前提。"
+      }
+    ],
+    "notation": [
+      "f:[a,b]→R",
+      "零点指f(c)=0"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "连续函数定义",
+      "实数完备性与闭区间套"
+    ],
+    "proof_steps": [
+      {
+        "claim": "从[a,b]开始，每轮取中点m；若f(m)=0立即结束，否则保留端点函数值异号的半区间。",
+        "reason": "异号端点之一与非零中点符号相反；区间长度每轮减半。"
+      },
+      {
+        "claim": "得到闭区间套[a_n,b_n]，长度(b-a)/2^n趋0，实数完备性保证存在唯一公共点c，且端点序列均趋于c。",
+        "reason": "闭区间套定理及区间长度趋零；c属于初始闭区间。"
+      },
+      {
+        "claim": "若始终未直接找到零点，由连续性可得f(a_n)→f(c)、f(b_n)→f(c)，但每轮f(a_n)<0<f(b_n)，所以f(c)≤0且f(c)≥0，故f(c)=0。",
+        "reason": "连续性保极限与序列大小关系；严格异号迫使共同极限为零。"
+      },
+      {
+        "claim": "由于原始端点值严格异号，f(a)与f(b)不为0，因此c不是a或b，故c∈(a,b)。",
+        "reason": "端点函数值确定，连续性结论满足内点位置要求。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "设a<b且f:[a,b]→R连续，若f(a)<0<f(b)，则存在c∈(a,b)使f(c)=0；一般介值结论对f(x)-y应用同一证明。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "介值定理的二分构造与连续性前提",
+    "transfer": {
+      "far": "将连续温度变化的过零时刻类比为零点，但说明跳变传感器输出为何不满足定理。",
+      "near": "改用f(x)=x³-x-1，在[1,2]找出含根区间并二分两次。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "存在c∈(1,2)使c²=2。",
+        "check": "根为√2且1<√2<2。",
+        "question": "证明f(x)=x²-2在[1,2]至少有一个零点。",
+        "steps": [
+          "多项式在[1,2]连续。",
+          "f(1)=-1<0，f(2)=2>0，满足端点异号。"
+        ]
+      },
+      {
+        "answer": "新的含根区间是[1,3/2]。",
+        "check": "区间长度从1变为1/2，左右端仍异号。",
+        "question": "用二分法为f(x)=x²-2在[1,2]执行一次迭代。",
+        "steps": [
+          "中点m=(1+2)/2=3/2。",
+          "f(3/2)=9/4-2=1/4>0，与左端1的符号相反。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "f全区间连续，初始a<b且端点异号。",
+      "中点等于零时可提前终止；舍入误差在计算机实现中另需单独分析。"
+    ],
+    "boundaries": [
+      "f全区间连续，初始a<b且端点异号。",
+      "中点等于零时可提前终止；舍入误差在计算机实现中另需单独分析。"
+    ],
+    "counterexamples": [
+      {
+        "example": "对阶跃函数f(x)=(-1若x<0，否则1)，[-1,1]端点异号但没有零点。",
+        "explanation": "该算法的数学收敛保证依赖介值定理和初始端点异号。",
+        "false_claim": "没有验证连续性和异号条件就运行二分法并声称必有根。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-070"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写出初始区间、端点符号与连续性。",
+      "每次迭代都记录哪一个半区间仍然端点异号。",
+      "用初始长度除以2的迭代次数次方，计算误差上界。"
+    ],
+    "id": "math.hs.batch106.04",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "没有验证连续性和异号条件就运行二分法并声称必有根。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "该算法的数学收敛保证依赖介值定理和初始端点异号。"
+      }
+    ],
+    "notation": [
+      "[a_n,b_n]为第n轮保留区间",
+      "m_n=(a_n+b_n)/2"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch106.03"
+    ],
+    "prerequisites": [
+      "介值定理与连续性",
+      "二进制区间缩小"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "初始化时端点异号，因此介值定理保证至少一个零点位于区间内部。",
+      "每轮取中点，用函数值符号保留异号的半边，故零点存在性不变量继续成立。",
+      "n轮后区间长度为初始长度除以2^n；中点距离任意该区间内零点最多为长度的一半。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若f在[a,b]连续且f(a)f(b)<0，每轮选择保持异号端点的半区间，n轮后长度为(b-a)/2^n，任一选定中点到该区间内零点的距离不超过(b-a)/2^(n+1)。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二分法的迭代不变量与误差上界",
+    "transfer": {
+      "far": "设计温度阈值定位算法，解释数据测量噪声为何会破坏理论符号判别。",
+      "near": "计算精度为1/1000且起始宽度1时需要多少轮。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "两轮后区间[5/4,3/2]，长度1/4。",
+        "check": "√2≈1.414在该区间，长度符合1/2²。",
+        "question": "f(x)=x²-2，在[1,2]执行两轮二分。",
+        "steps": [
+          "首轮m=3/2，f(m)=1/4>0，保留[1,3/2]。",
+          "次轮m=5/4，f(m)=25/16-2<0，保留[5/4,3/2]。"
+        ]
+      },
+      {
+        "answer": "至少7轮。",
+        "check": "8/128=1/16，6轮时长度为1/8仍过大。",
+        "question": "初始区间长8，要求二分后长度≤1/16，至少几轮？",
+        "steps": [
+          "解8/2^n≤1/16，得到2^n≥128。",
+          "因为2^7=128，因此最小整数n为7。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "讨论实函数在内点的有限双侧二阶导数。",
+      "一阶导函数在邻域中必须存在，且自身在a处满足差商双侧极限一致。"
+    ],
+    "boundaries": [
+      "讨论实函数在内点的有限双侧二阶导数。",
+      "一阶导函数在邻域中必须存在，且自身在a处满足差商双侧极限一致。"
+    ],
+    "counterexamples": [
+      {
+        "example": "令f(x)=x|x|，可计算f'(0)=0，而x≠0时f'(x)=2|x|；在0附近二阶差商为2|h|/h，左右极限分别为±2。",
+        "explanation": "一阶导函数在0不具备双侧可导性，不能仅由原函数可导升级。",
+        "false_claim": "从f'(0)存在直接推出f''(0)存在。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-140"
+    ],
+    "definition": "若函数f'在a的邻域内有定义且在a可导，则f''(a)=(f')'(a)；f在a可导不保证二阶导数存在。",
+    "hint_ladder": [
+      "先区分一阶导存在与二阶导存在的对象。",
+      "重新对导函数使用差商定义，尤其检查左右方向。",
+      "构造x|x|，看它在0为何一阶可导而二阶不可导。"
+    ],
+    "id": "math.hs.batch106.05",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "从f'(0)存在直接推出f''(0)存在。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "一阶导函数在0不具备双侧可导性，不能仅由原函数可导升级。"
+      }
+    ],
+    "notation": [
+      "f''=(f')'",
+      "二阶导数描述一阶导函数的变化率"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "一元导数定义",
+      "左右极限的判断"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先计算f'(x)并确认这一导函数是否在a邻域有定义。",
+      "再计算[f'(a+h)-f'(a)]/h 的左右极限，只有一致并有限才存在二阶导数。",
+      "若两个单侧极限不同，则f''(a)不存在，即使f'(a)确实存在。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若函数f'在a的邻域内有定义且在a可导，则f''(a)=(f')'(a)；f在a可导不保证二阶导数存在。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二阶导数存在性的左右边界",
+    "transfer": {
+      "far": "比较位移-时间数据里速度可定义与加速度可定义为何不是同一要求。",
+      "near": "验证f(x)=|x|³在0的二阶导数是否存在。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "f''(1)=2。",
+        "check": "导数差商[2(1+h)-2]/h=2。",
+        "question": "f(x)=x²，求f''(1)。",
+        "steps": [
+          "先求f'(x)=2x。",
+          "再求f''(x)=2，对x=1代入。"
+        ]
+      },
+      {
+        "answer": "f''(0)不存在。",
+        "check": "左右极限不同是明确的拒绝证据。",
+        "question": "f(x)=x|x|，判断f''(0)。",
+        "steps": [
+          "先由定义求f'(0)=lim(h|h|/h)=lim|h|=0。",
+          "对h≠0有f'(h)=2|h|，故[f'(h)-f'(0)]/h=2|h|/h，左右分别为-2与2。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a,b为有限实数且a<b；连续性保证黎曼可积。",
+      "若要求普通非负几何面积，应对函数符号分区并采用绝对值或几何分割。"
+    ],
+    "boundaries": [
+      "a,b为有限实数且a<b；连续性保证黎曼可积。",
+      "若要求普通非负几何面积，应对函数符号分区并采用绝对值或几何分割。"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=-1在[0,2]连续，黎曼和各项为-Δx_i，求和恒为-2，故定积分=-2而几何面积=2。",
+        "explanation": "被积函数为负时积分是负的有向面积，普通面积要加绝对值。",
+        "false_claim": "认为任何定积分一定等于正的图形面积。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-141"
+    ],
+    "definition": "连续实函数f在[a,b]上的定积分是细分区间加权取样和的极限；b>a时负值区域贡献负面积，积分结果不一定是几何面积。",
+    "hint_ladder": [
+      "先确定题目要有向积分还是非负几何面积。",
+      "画出函数在x轴上下的区域并分段。",
+      "计算普通面积时对被积函数取绝对值，勿将正负抵消当作零面积。"
+    ],
+    "id": "math.hs.batch106.06",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "认为任何定积分一定等于正的图形面积。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "被积函数为负时积分是负的有向面积，普通面积要加绝对值。"
+      }
+    ],
+    "notation": [
+      "∫表示定积分",
+      "Δx_i为子区间宽度"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "定积分的极限定义",
+      "正负函数图像"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "对区间进行分割并取每一小区间样本点，求和Σf(ξ_i)Δx_i；加细网格后极限定义积分。",
+      "如果f(x)<0，宽度Δx_i>0，乘积为负，所以积分能够为负。",
+      "非负几何面积是∫|f(x)|dx，而不是不问正负就直接使用∫f(x)dx。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "连续实函数f在[a,b]上的定积分是细分区间加权取样和的极限；b>a时负值区域贡献负面积，积分结果不一定是几何面积。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "定积分的有向面积与黎曼和",
+    "transfer": {
+      "far": "解释速度随时间可取负时位移与路程积分为什么不同。",
+      "near": "比较f(x)=x-1在[0,2]的积分与总面积。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "积分=-2，几何面积=2。",
+        "check": "直接积分∫_0^2(-1)dx=-2。",
+        "question": "求f(x)=-1在[0,2]上的定积分及图形面积。",
+        "steps": [
+          "区间长度为2，函数高度恒为-1，黎曼和恒为-2。",
+          "对面积计算高度绝对值1乘以宽2。"
+        ]
+      },
+      {
+        "answer": "有向积分=0，几何面积=1。",
+        "check": "原函数x²/2端点差为0；两个直角三角形总面积为1。",
+        "question": "求f(x)=x在[-1,1]的定积分和x轴夹图形面积。",
+        "steps": [
+          "有向积分对称抵消，∫_-1^1 x dx=0。",
+          "把区间拆为[-1,0]与[0,1]，绝对值积分为1/2+1/2。"
+        ]
+      }
+    ]
+  }
+]

@@ -9,6 +9,7 @@ import argparse
 from collections import Counter
 from hashlib import sha256
 import json
+import re
 from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1]
@@ -88,8 +89,12 @@ def build(units=UNITS, links=LINKS):
              "bounded independent mathematical oracle failed")
         result.append(payload)
     existing=[]
+    # Freeze historical batch104 corpus: future teacher-side additions must not
+    # invalidate versioned execution evidence from the earlier delivery.
     for path in sorted(DEEP_DIR.glob("*.json")):
-        if path==PACK:continue
+        match=re.match(r"batch(\d+)_",path.name)
+        if path==PACK or (match is not None and int(match.group(1))>104):
+            continue
         for doc in json.loads(path.read_text(encoding="utf8")):
             existing.append(doc)
     preexisting={d["id"] for d in existing}

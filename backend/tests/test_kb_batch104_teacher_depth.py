@@ -134,7 +134,8 @@ def test_deterministic_pack_complete_markdown_and_review_graph():
     assert len({d["id"] for d in docs})==12
     assert len({d["curriculum_ids"][0] for d in docs})==12
     assert all(d["review"]["status"]=="REVIEW_PENDING" for d in docs)
-    assert len(lookup)==audit["deep_lesson_documents_with_new_drafts"]
+    assert len(lookup)>=audit["deep_lesson_documents_with_new_drafts"]
+    assert all(d["id"] in lookup for d in docs)
 
 def test_existing_eng_mappings_not_official_full_atom_denominator():
     rows=curriculum()

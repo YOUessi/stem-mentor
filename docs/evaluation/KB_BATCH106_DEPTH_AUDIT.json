@@ -1,0 +1,184 @@
+{
+  "all_new_review_status": "REVIEW_PENDING",
+  "batch": "106",
+  "deep_lesson_documents_with_new_drafts": 411,
+  "editorial_source_file_sha256": "a90c79dda8515fb2e43b4875c38ab61ce8f147c98d7faa7fb42d0a64fa363794",
+  "engineering_map_counts_by_level": {
+    "必修": 64,
+    "选修拓展": 68,
+    "选择性必修": 46
+  },
+  "engineering_mapping_sha256": "9bf899e866f58e52f019869b82d9e1c8d8b37c32b58d664fa38313c522e24b1c",
+  "existing_and_new_review_states": {
+    "REVIEW_PENDING": 411
+  },
+  "existing_deep_lesson_documents": 405,
+  "existing_project_mapping_count": 178,
+  "general_theorem_certificates": 0,
+  "lesson_to_project_topic": [
+    {
+      "bounded_exact_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "not_forall",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "否定全称应换成存在反例"
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-004",
+      "engineering_label": "全称量词与存在量词",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch106.01",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "review_pending_source_candidate_id": "KB106-P016-C06",
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "amgm",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "非负域及等号 a=b 为前提"
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-009",
+      "engineering_label": "基本不等式",
+      "engineering_level": "必修",
+      "lesson_id": "math.hs.batch106.02",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "review_pending_source_candidate_id": "KB106-P016-C10",
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "ivt",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "异号但不连续的阶跃函数可无零点"
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-119",
+      "engineering_label": "介值定理：连续函数跨越中间值",
+      "engineering_level": "选修拓展",
+      "lesson_id": "math.hs.batch106.03",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "review_pending_source_candidate_id": "KB106-P053-C13",
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "bisection",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "无连续性不能保证二分区间含根"
+      },
+      "editor_only_prerequisite_lesson_ids": [
+        "math.hs.batch106.03"
+      ],
+      "engineering_curriculum_id": "HS-MATH-070",
+      "engineering_label": "函数零点和参数讨论",
+      "engineering_level": "选择性必修",
+      "lesson_id": "math.hs.batch106.04",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "review_pending_source_candidate_id": "KB106-P053-C14",
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "second_derivative",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "x|x| 的一阶导存在但二阶不一定存在"
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-140",
+      "engineering_label": "二阶导数与凸性：充分条件、严格情形与反命题边界",
+      "engineering_level": "选修拓展",
+      "lesson_id": "math.hs.batch106.05",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "review_pending_source_candidate_id": "KB106-P053-C16",
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    },
+    {
+      "bounded_exact_witness": {
+        "finite_or_symbolic_witness_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "method": "EXACT_FINITE_OR_SYMPY_SAMPLE_NOT_FORMAL_PROOF",
+        "oracle_key": "riemann",
+        "student_step_verified": false,
+        "teacher_approved": false,
+        "witness_note": "定积分为有向面积，可以为负"
+      },
+      "editor_only_prerequisite_lesson_ids": [],
+      "engineering_curriculum_id": "HS-MATH-141",
+      "engineering_label": "非负连续函数的定积分面积与原函数求值",
+      "engineering_level": "选修拓展",
+      "lesson_id": "math.hs.batch106.06",
+      "math_proof_formally_certified": false,
+      "official_atom_id": null,
+      "review_pending_source_candidate_id": "KB106-P053-C23",
+      "source_clauses_verified": false,
+      "teacher_reviewed": false
+    }
+  ],
+  "limitations": [
+    "All 6 curricula references are internal project engineering IDs, not official atoms.",
+    "Finite exact checks cannot establish the universal truth of a theorem.",
+    "Historical textual prerequisite backlog 172 remains pending independent human review.",
+    "Student challenge paths cannot retrieve teacher-only examples, proofs or answers."
+  ],
+  "new_bad_case_rejections": 6,
+  "new_deep_drafts": 6,
+  "new_finite_math_witnesses": 6,
+  "new_hint_levels": 18,
+  "new_theorem_drafts": 2,
+  "new_worked_examples": 12,
+  "official_atom_denominator": null,
+  "official_atom_denominators_by_seven_tracks": {
+    "必修": null,
+    "选修A": null,
+    "选修B": null,
+    "选修C": null,
+    "选修D": null,
+    "选修E": null,
+    "选择性必修": null
+  },
+  "prerequisite_edges_editor_only": 1,
+  "source_kind": "PROJECT_AUTHORED_ORIGINAL_EDITORIAL",
+  "student_authoritative_index_eligible": 0,
+  "teacher_approved": 0,
+  "teacher_solution_visibility": "TEACHER_ONLY",
+  "unresolved_historical_proof_steps": 538,
+  "unresolved_math_conflicts": 10,
+  "unresolved_previous_textual_prerequisites": 172
+}
