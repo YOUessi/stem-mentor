@@ -1,0 +1,281 @@
+{
+  "batch": 113,
+  "limitations": [
+    "10/61 only source text page review in five most recent batches, not atom coverage.",
+    "Course denominators of all seven official tracks remain UNKNOWN.",
+    "9 structurally complete lesson drafts have zero teacher signoffs and zero formal proof certificates."
+  ],
+  "new_lesson_field_checks": [
+    {
+      "editorial_field_fraction": 1.0,
+      "field_checks": {
+        "assumptions": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "negative_example": true,
+        "notation": true,
+        "prerequisites": true,
+        "reasoning": true,
+        "statement": true,
+        "teacher_only": true,
+        "two_worked_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch113.01",
+      "review_status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "editorial_field_fraction": 1.0,
+      "field_checks": {
+        "assumptions": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "negative_example": true,
+        "notation": true,
+        "prerequisites": true,
+        "reasoning": true,
+        "statement": true,
+        "teacher_only": true,
+        "two_worked_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch113.02",
+      "review_status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "editorial_field_fraction": 1.0,
+      "field_checks": {
+        "assumptions": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "negative_example": true,
+        "notation": true,
+        "prerequisites": true,
+        "reasoning": true,
+        "statement": true,
+        "teacher_only": true,
+        "two_worked_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch113.03",
+      "review_status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "editorial_field_fraction": 1.0,
+      "field_checks": {
+        "assumptions": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "negative_example": true,
+        "notation": true,
+        "prerequisites": true,
+        "reasoning": true,
+        "statement": true,
+        "teacher_only": true,
+        "two_worked_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch113.04",
+      "review_status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "editorial_field_fraction": 1.0,
+      "field_checks": {
+        "assumptions": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "negative_example": true,
+        "notation": true,
+        "prerequisites": true,
+        "reasoning": true,
+        "statement": true,
+        "teacher_only": true,
+        "two_worked_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch113.05",
+      "review_status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "editorial_field_fraction": 1.0,
+      "field_checks": {
+        "assumptions": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "negative_example": true,
+        "notation": true,
+        "prerequisites": true,
+        "reasoning": true,
+        "statement": true,
+        "teacher_only": true,
+        "two_worked_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch113.06",
+      "review_status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "editorial_field_fraction": 1.0,
+      "field_checks": {
+        "assumptions": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "negative_example": true,
+        "notation": true,
+        "prerequisites": true,
+        "reasoning": true,
+        "statement": true,
+        "teacher_only": true,
+        "two_worked_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch113.07",
+      "review_status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "editorial_field_fraction": 1.0,
+      "field_checks": {
+        "assumptions": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "negative_example": true,
+        "notation": true,
+        "prerequisites": true,
+        "reasoning": true,
+        "statement": true,
+        "teacher_only": true,
+        "two_worked_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch113.08",
+      "review_status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "editorial_field_fraction": 1.0,
+      "field_checks": {
+        "assumptions": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "negative_example": true,
+        "notation": true,
+        "prerequisites": true,
+        "reasoning": true,
+        "statement": true,
+        "teacher_only": true,
+        "two_worked_examples": true
+      },
+      "general_proof_certified": false,
+      "id": "math.hs.batch113.09",
+      "review_status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    }
+  ],
+  "official_atom_coverage_by_track": {
+    "COMPULSORY": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_A": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_B": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_C": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_D": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_E": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "SELECTIVE_COMPULSORY": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    }
+  },
+  "official_source_pages": 61,
+  "recent_pages_are_editorial_not_teacher_atomized": true,
+  "recent_source_pages": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "recent_source_pages_fraction": 0.16393442622950818,
+  "source_candidate_counts_by_track": {
+    "COMPULSORY": 11,
+    "ELECTIVE_A": 0,
+    "ELECTIVE_B": 11,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "SELECTIVE_COMPULSORY": 0
+  },
+  "teacher_approved_lessons": 0,
+  "teacher_certified_full_pages": 0,
+  "uncertified_legacy_proof_steps": 538,
+  "unresolved_legacy_math_conflicts": 10,
+  "unreviewed_legacy_prerequisites": 172
+}
