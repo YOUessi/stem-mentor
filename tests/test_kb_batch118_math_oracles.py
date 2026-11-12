@@ -57,3 +57,15 @@ def test_theorem_assumptions_not_machine_proof_certificates():
     assert audit["positive_cases"]==audit["negative_cases"]==8
     assert audit["general_proofs_certified"]==audit["teacher_approved"]==0
     assert all(not c["general_proof_machine_certified"] for c in audit["cases"])
+
+
+def test_edited_narrative_checks_use_same_values_as_validated_answers():
+    # An exact numeric answer is not sufficient if the teacher-facing explanation is false.
+    first=PACK[0]["worked_examples"][0]
+    assert "1/4+1/2+1/4=1" in first["check"]
+    assert "1/5+2/5+2/5" not in first["check"]
+    assert sum((F(1,4), F(1,2), F(1,4))) == 1
+    assert "公平骰子" not in PACK[2]["worked_examples"][0]["question"]
+    hyper=PACK[5]["worked_examples"][1]
+    assert "3/6" in hyper["check"] and "期望1/2" in hyper["check"]
+    assert F(2)*F(3,6) == 1

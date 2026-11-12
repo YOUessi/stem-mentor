@@ -149,3 +149,9 @@ def test_future_draft_cannot_change_batch117_historical_denominator():
     import build_kb_batch117 as prev
     assert not prev.is_frozen_prior_pack(lessons_builder.PACK)
     assert prev.coverage()["total_deep_drafts"]==498
+
+
+def test_editorial_pdf_and_worked_solution_consistency():
+    assert lessons_builder.MD.read_text().startswith("# Batch118｜概率统计")
+    assert "累加1/4+1/2+1/4=1" in lessons_builder.MD.read_text()
+    assert "公平骰子X只取1,3" not in lessons_builder.MD.read_text()
