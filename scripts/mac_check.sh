@@ -27,6 +27,17 @@ if [[ "$SOURCE_SCRATCH_MISSING" == 1 ]]; then
   swift scripts/kb_mac_restore_pdfkit_source.swift "$PDF_SOURCE" \
     curriculum/highschool_math/k00_batch51_pdfkit_page_fingerprints.json /private/tmp
 fi
+# Verify all 188 physical PDF pages against the pinned licensed original, not
+# only the previous 61-page excerpt. No source text is saved or committed.
+KB116_PDF="${STEM_MATH_OFFICIAL_PDF:-$HOME/Library/Caches/stem-mentor-source-review/highschool_math_standard_2020.pdf}"
+KB116_TMP="$(mktemp /private/tmp/stem-kb116-full-XXXXXX)"
+if ! swift scripts/kb_batch116_full_pdf_manifest.swift "$KB116_PDF" "$KB116_TMP" ||
+   ! cmp -s "$KB116_TMP" docs/evaluation/KB_BATCH116_FULL_PDF_FINGERPRINTS.json; then
+  rm -f "$KB116_TMP"
+  echo "Batch116 complete-source PDFKit manifest mismatch or missing licensed original" >&2
+  exit 13
+fi
+rm -f "$KB116_TMP"
 echo "[0/4] Batch24+25 source/P0/math/review guards"
 .venv/bin/python scripts/author_kb_batch24.py --check
 .venv/bin/python scripts/build_kb_batch24_scope.py --check
@@ -166,6 +177,8 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch112.py --check --verif
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch113.py --check --verify-local-source
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch114.py --check --verify-local-source
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch115.py --check --verify-local-source
+.venv/bin/python scripts/build_kb_batch116_inventory.py --check --verify-local-source
+.venv/bin/python scripts/build_kb_batch116_condition_audit.py --check
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch107_lessons.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)
