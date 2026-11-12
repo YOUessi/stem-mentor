@@ -143,6 +143,7 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch110_coverage.py --chec
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch111.py --check --verify-local-source
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch112.py --check --verify-local-source
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch113.py --check --verify-local-source
+PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch114.py --check --verify-local-source
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch107_lessons.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)

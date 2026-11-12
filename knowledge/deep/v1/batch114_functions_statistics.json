@@ -1,0 +1,768 @@
+[
+  {
+    "assumptions": [
+      "底数a严格大于0且不等于1",
+      "对数的真数y严格大于0，所有运算在实数域内"
+    ],
+    "boundaries": [
+      "底数a严格大于0且不等于1",
+      "对数的真数y严格大于0，所有运算在实数域内"
+    ],
+    "counterexamples": [
+      {
+        "example": "log_2(-4)在实数域无定义；1^0=1^3使a=1失去单射性。",
+        "explanation": "指数函数有反函数依赖底数合法及值域限制，不能丢弃正数真数条件。",
+        "false_claim": "任意实数都能作对数真数，且底数a=1也存在唯一反函数"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-022"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先辨认指数与对数的输入、输出范围是否相同。",
+      "先根据底数对指数单调性分类，再确定它是否一一对应。",
+      "交换有序对的横纵坐标，验证两图关于y=x对称。"
+    ],
+    "id": "math.hs.batch114.01",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "任意实数都能作对数真数，且底数a=1也存在唯一反函数",
+        "repair_question": "请确定哪项定义域、独立性或除零前提被遗漏，并构造反例。",
+        "why_wrong": "指数函数有反函数依赖底数合法及值域限制，不能丢弃正数真数条件。"
+      }
+    ],
+    "notation": [
+      "a：固定指数底数",
+      "x：指数的实数自变量；y：正数真数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "指数与对数定义",
+      "单调连续性与反函数定义"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对a>1，指数函数连续严格增且端点极限分别为0和正无穷；对0<a<1，指数函数连续严格减且端点极限互换。",
+        "reason": "两种情况下函数均单射且值域恰为(0,+∞)，存在从正数到实数的反函数。"
+      },
+      {
+        "claim": "将a^x=y按对数定义改写为x=log_a y，仅当y>0并且a合法时成立。",
+        "reason": "反函数构造保证两个复合关系在各自原始定义域成立，不把负数输入对数。"
+      },
+      {
+        "claim": "若点(x,y)在y=a^x上，则(y,x)在y=log_a x上，两个坐标互换即为关于y=x的对称。",
+        "reason": "平面上交换坐标的几何变换固定直线y=x。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "给定实数底数a>0且a≠1，f(x)=a^x把R双射到(0,+∞)，其反函数g(x)=log_a(x)定义在(0,+∞)。图像关于直线y=x对称，且log_a(a^x)=x、a^(log_a y)=y只在各自定义域成立。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "指数函数与对数函数互逆的条件和图像对称",
+    "transfer": {
+      "far": "把人口指数模型求达到目标阈值的时间写成对数，说明目标人数必须大于零。",
+      "near": "给出log_3(x+2)=2的实数解并逐一检查真数的合法性。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "x=9。",
+        "check": "9>1且log_2(9-1)=3，满足原式。",
+        "question": "解实数方程log_2(x-1)=3，并检查全部定义域。",
+        "steps": [
+          "首先x-1>0，即x>1。",
+          "改写为x-1=2^3=8，得x=9。"
+        ]
+      },
+      {
+        "answer": "x=1/4，严格递减。",
+        "check": "(1/2)^2=1/4，逆代满足原式。",
+        "question": "若log_(1/2)(x)=2，求x并指出对数函数方向。",
+        "steps": [
+          "真数x>0，转指数式x=(1/2)^2。",
+          "底数在(0,1)内，对数函数严格递减。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "α、β为同一约定下的实数角",
+      "用同一个正交单位坐标系与通常欧氏内积"
+    ],
+    "boundaries": [
+      "α、β为同一约定下的实数角",
+      "用同一个正交单位坐标系与通常欧氏内积"
+    ],
+    "counterexamples": [
+      {
+        "example": "取α=β=π/4时左端cos0=1，错误公式右端1/2−1/2=0。",
+        "explanation": "减角公式的正弦乘积项是加号，减号对应两角和余弦。",
+        "false_claim": "误把两角差余弦写成cosαcosβ−sinαsinβ"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-030"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先画两个单位圆方向向量，确认向量长度均为1。",
+      "用坐标写出点积，再考虑同时旋转其中一个角到0。",
+      "比较旋转前后同一个点积，检查加号而非减号。"
+    ],
+    "id": "math.hs.batch114.02",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "误把两角差余弦写成cosαcosβ−sinαsinβ",
+        "repair_question": "请确定哪项定义域、独立性或除零前提被遗漏，并构造反例。",
+        "why_wrong": "减角公式的正弦乘积项是加号，减号对应两角和余弦。"
+      }
+    ],
+    "notation": [
+      "u=(cosα,sinα)",
+      "v=(cosβ,sinβ)；α−β表示有向角差"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "单位圆三角函数的定义",
+      "向量点积及旋转不变性"
+    ],
+    "proof_steps": [
+      {
+        "claim": "取单位圆上u=(cosα,sinα)、v=(cosβ,sinβ)，由坐标计算点积为cosαcosβ+sinαsinβ。",
+        "reason": "按照点积的坐标定义计算，由单位圆定义知两向量长度都严格为1。"
+      },
+      {
+        "claim": "将u、v同时旋转−β，其点积不变，旋转后的单位向量分别对应α−β与0。",
+        "reason": "正交旋转保持点积、长度和夹角；把v映到(1,0)。"
+      },
+      {
+        "claim": "旋转后点积为cos(α−β)·1+sin(α−β)·0，从而得到两角差的余弦恒等式。",
+        "reason": "两次得到的是同一对单位向量的点积，旋转不会改变它的实际取值。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对任意实数角α、β，均有cos(α−β)=cosα cosβ+sinα sinβ。单位圆向量的点积与两向量夹角余弦相同，公式没有仅在锐角范围有效的限制。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "两角差的余弦公式：点积推导与弧度角约定",
+    "transfer": {
+      "far": "用旋转矩阵解释机器人姿态角相减，说明为什么不能把弧度值与角度值直接混加。",
+      "near": "用两角差公式推导sin(α+β)的表达式，明确需要哪一个互余关系。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "√3/2。",
+        "check": "α−β=π/6，直接核对cosπ/6=√3/2。",
+        "question": "计算cos(π/3−π/6)的精确值。",
+        "steps": [
+          "先列cosπ/3=1/2、sinπ/3=√3/2。",
+          "代入cosπ/6=√3/2、sinπ/6=1/2并相加。"
+        ]
+      },
+      {
+        "answer": "左右均为1。",
+        "check": "两角差精确等于零，按余弦定义其函数值必然等于1。",
+        "question": "已知α=β=π/4，验证两角差公式。",
+        "steps": [
+          "代入四个三角函数值均为√2/2。",
+          "右端1/2+1/2=1，左端cos0=1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a<b且f在闭区间连续",
+      "端点乘积严格小于0；若要宣称唯一零点还需额外单调性等条件"
+    ],
+    "boundaries": [
+      "a<b且f在闭区间连续",
+      "端点乘积严格小于0；若要宣称唯一零点还需额外单调性等条件"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=1/x在[-1,1]两端异号，但x=0无定义；函数在区间不连续且没有零点。",
+        "explanation": "端点异号在不连续函数上不足以确保根存在。",
+        "false_claim": "没有检查连续性和异号就宣称二分法会收敛到零点"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-016"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先看是否给定整个闭区间上的连续性，而不只看端点值。",
+      "异号只能证明至少一个根，想要唯一还需补充条件。",
+      "写区间长度递推，再将长度的一半换为中点误差上界。"
+    ],
+    "id": "math.hs.batch114.03",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "没有检查连续性和异号就宣称二分法会收敛到零点",
+        "repair_question": "请确定哪项定义域、独立性或除零前提被遗漏，并构造反例。",
+        "why_wrong": "端点异号在不连续函数上不足以确保根存在。"
+      }
+    ],
+    "notation": [
+      "f(a)f(b)<0：端点异号",
+      "n：二分保留次数；区间长度L_n=(b−a)/2^n"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "函数连续性的直观与介值结论",
+      "区间中点、绝对误差及不等式"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "通过描绘函数图像判断可能存在的交点，但画板像素只能启发猜想，不构成零点存在证明。",
+      "计算连续函数端点符号；异号提供至少一个零点，但不保证恰好一个。",
+      "每次选择异号半区间后长度精确减半，对任意保留零点使用中点的最坏误差界。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "将方程f(x)=0看作函数曲线与x轴的交点；若f在[a,b]上连续且f(a)f(b)<0，则至少存在一个零点。二分法在n次保留子区间后长度为(b−a)/2^n，其中点与该区间内任何零点相距不超过长度一半。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "函数图像判别方程零点与二分精度",
+    "transfer": {
+      "far": "使用传感器读数估计阈值穿越时，讨论测量噪声破坏函数连续性后如何重新验证二分条件。",
+      "near": "对f(x)=x³−1在[0,2]上做三次二分，讨论中点恰好是根时的停止规则。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "第2次后的保留区间是[5/4,3/2]。",
+        "check": "两端f(5/4)<0、f(3/2)>0，长度1/4。",
+        "question": "用f(x)=x²−2在[1,2]上进行前两次二分。",
+        "steps": [
+          "中点3/2对应f=1/4>0，保留[1,3/2]。",
+          "中点5/4对应f=−7/16<0，保留[5/4,3/2]。"
+        ]
+      },
+      {
+        "answer": "不超过1/16。",
+        "check": "取区间任一端的极限位置可逼近该上限。",
+        "question": "初始区间长2，做4次二分后中点误差上限是多少？",
+        "steps": [
+          "每次区间长度减半，4次后长2/16=1/8。",
+          "中点到区间内任一根不超过区间长度的一半。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "每种表征需要明确输入集合与输出集合",
+      "从有限观测作插值或外推时另须模型选择假设"
+    ],
+    "boundaries": [
+      "每种表征需要明确输入集合与输出集合",
+      "从有限观测作插值或外推时另须模型选择假设"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=x²与g(x)=x²+x(x−1)(x−2)在0,1,2三点相同，但x=3时g(3)=15而f(3)=9。",
+        "explanation": "有限表格缺少未观察点信息；拟合数据不等于证明函数恒等。",
+        "false_claim": "两个函数通过同样三个采样点就必定在所有实数上相同"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-152"
+    ],
+    "definition": "同一函数可以通过解析式、表格、图像或文字规则表示；判断是否相同必须同时比较自变量集合和每个输入的唯一输出。有限表格及像素图像通常不能唯一确定未观察区间上的函数。",
+    "hint_ladder": [
+      "先分别列出两种表示的定义域，而不是只看表达式。",
+      "对于表格数据，检查它对未采样输入是否给出任何约束。",
+      "构造在已观测点相同而其他点不同的多项式反例。"
+    ],
+    "id": "math.hs.batch114.04",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "两个函数通过同样三个采样点就必定在所有实数上相同",
+        "repair_question": "请确定哪项定义域、独立性或除零前提被遗漏，并构造反例。",
+        "why_wrong": "有限表格缺少未观察点信息；拟合数据不等于证明函数恒等。"
+      }
+    ],
+    "notation": [
+      "D：允许的输入集合",
+      "f:D→R：输入与唯一输出的对应规则"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "函数的单值映射定义",
+      "有序对及坐标图像"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "写出每一种表示方法承载的输入集、输出值和未观测信息。",
+      "对所有定义域内的输入核验是否对应同一个输出，才能断定两种表征代表同一函数。",
+      "有限点值一致通常只能保证这些点相等，不能自动推到整个区间或更远时间。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "同一函数可以通过解析式、表格、图像或文字规则表示；判断是否相同必须同时比较自变量集合和每个输入的唯一输出。有限表格及像素图像通常不能唯一确定未观察区间上的函数。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "函数表征与实际建模的证据层次",
+    "transfer": {
+      "far": "从历史交通流量表预测节假日交通量，解释为什么无额外情境条件不能保证唯一外推模型。",
+      "near": "用函数f=x²和g=|x|²在不同区间判别是否同一个数学函数。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "是同一函数。",
+        "check": "定义域一致，逐输入函数值恒等。",
+        "question": "比较f(x)=x²与g(x)=|x|²在实数定义域上是否为同一函数。",
+        "steps": [
+          "两者定义域均为R。",
+          "对任意实数x有|x|²=x²，所有输入值相同。"
+        ]
+      },
+      {
+        "answer": "不是相同的函数。",
+        "check": "在x=−1时只有f允许输入，域不同。",
+        "question": "比较f(x)=x²（x∈R）与g(x)=x²（x≥0）是否相同。",
+        "steps": [
+          "两者解析式一致。",
+          "定义域分别为R与[0,+∞)，不一致。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "所讨论的分布具有相对于Lebesgue测度的密度",
+      "所有概率由密度的非负积分定义，不能用某处函数值直接当概率",
+      "区间端点需满足a≤b；若a>b则事件为空，不能套用反向定积分"
+    ],
+    "boundaries": [
+      "所讨论的分布具有相对于Lebesgue测度的密度",
+      "所有概率由密度的非负积分定义，不能用某处函数值直接当概率",
+      "区间端点需满足a≤b；若a>b则事件为空，不能套用反向定积分"
+    ],
+    "counterexamples": [
+      {
+        "example": "对于X在(0,1/2)均匀，密度值为2，但P(X=1/4)=0，密度2不能是概率。",
+        "explanation": "密度可超过1，只有区间积分才表示概率。",
+        "false_claim": "把密度函数在x=1处的数值当作P(X=1)"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-164"
+    ],
+    "definition": "实随机变量X的概率密度f满足对几乎处处的x有f(x)≥0、在R上的积分为1，且只有当a≤b时，P(a≤X≤b)=∫_a^b f(x)dx；若a>b事件为空、概率为0，不能把反向定积分当作概率。单点概率P(X=c)=0，但这不代表事件不可能；分布函数F(x)=∫_{−∞}^x f(t)dt。",
+    "hint_ladder": [
+      "先确认密度非负以及对全域积分是否为1。",
+      "画出概率曲线下指定区间的面积，区别纵坐标与面积。",
+      "用定积分直接求概率并检验在[0,1]内。"
+    ],
+    "id": "math.hs.batch114.05",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把密度函数在x=1处的数值当作P(X=1)",
+        "repair_question": "请确定哪项定义域、独立性或除零前提被遗漏，并构造反例。",
+        "why_wrong": "密度可超过1，只有区间积分才表示概率。"
+      }
+    ],
+    "notation": [
+      "f(x)：概率密度，单位为1/[X]",
+      "F(x)：累积分布函数，取值在[0,1]"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "定积分与非负函数",
+      "样本空间与随机事件"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "把小区间概率理解成密度在区间内的面积，而非某点纵坐标本身。",
+      "检验密度非负及全实轴积分为1，定义F后，在a≤b前提下有P(a≤X≤b)=F(b)−F(a)；若a>b概率为0。",
+      "对单点积分宽度为0，概率为0；零概率并不意味着不能取到该值。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "实随机变量X的概率密度f满足对几乎处处的x有f(x)≥0、在R上的积分为1，且只有当a≤b时，P(a≤X≤b)=∫_a^b f(x)dx；若a>b事件为空、概率为0，不能把反向定积分当作概率。单点概率P(X=c)=0，但这不代表事件不可能；分布函数F(x)=∫_{−∞}^x f(t)dt。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "连续型随机变量密度与区间概率的合法条件",
+    "transfer": {
+      "far": "解释仪器测量温度等连续读数为什么单点概率为0，却仍可能观察到四舍五入到固定刻度的值。",
+      "near": "对f(x)=3x²（0≤x≤1）求P(X>1/2)和F(x)的分段表达。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "3/4。",
+        "check": "1−1/4=3/4，且处于[0,1]。",
+        "question": "设f(x)=2x（0≤x≤1），区间外0，求P(1/2≤X≤1)。",
+        "steps": [
+          "验证∫_0^1 2x dx=1。",
+          "在[1/2,1]积分得[x²]_(1/2)^1。"
+        ]
+      },
+      {
+        "answer": "密度2，区间概率1/2。",
+        "check": "全域积分2×1/2=1，合法。",
+        "question": "X在[0,1/2]上均匀，求密度和P(0≤X≤1/4)。",
+        "steps": [
+          "区间长度1/2，所以密度为2。",
+          "对长度1/4的小区间积分2×1/4。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a、b为有限实数且严格a<b",
+      "采用通常连续型均匀分布并依托积分定义矩"
+    ],
+    "boundaries": [
+      "a、b为有限实数且严格a<b",
+      "采用通常连续型均匀分布并依托积分定义矩"
+    ],
+    "counterexamples": [
+      {
+        "example": "当a=b=2时分母为零；若X恒等于2，则其方差为0但不存在该常规连续均匀密度。",
+        "explanation": "退化常量随机变量与连续密度分布是不同情形，不能以未定义分式处理。",
+        "false_claim": "均匀分布密度1/(b−a)对a=b也合法"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-164"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先检验区间端点的大小关系，长度不能为0。",
+      "把均值直接写为x乘密度的定积分，再配方求方差。",
+      "使用区间中心平移使平方积分对称，观察12从何而来。"
+    ],
+    "id": "math.hs.batch114.06",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "均匀分布密度1/(b−a)对a=b也合法",
+        "repair_question": "请确定哪项定义域、独立性或除零前提被遗漏，并构造反例。",
+        "why_wrong": "退化常量随机变量与连续密度分布是不同情形，不能以未定义分式处理。"
+      }
+    ],
+    "notation": [
+      "μ=E[X]：均值",
+      "Var(X)=E[(X−μ)²]：方差"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "定积分的基本公式",
+      "期望、方差定义与非负性"
+    ],
+    "proof_steps": [
+      {
+        "claim": "令d=b−a>0，密度1/d在区间的积分为1；E[X]=(1/d)∫_a^b xdx。",
+        "reason": "积分(b²−a²)/2除以b−a，约分得到(a+b)/2。"
+      },
+      {
+        "claim": "设m=(a+b)/2，方差写成(1/d)∫_a^b (x−m)² dx。",
+        "reason": "移元u=x−m，积分上下限是−d/2到d/2。"
+      },
+      {
+        "claim": "积分(1/d)·[u³/3]_(-d/2)^(d/2)=d²/12，故方差如式。",
+        "reason": "使用偶函数积分和d>0可合法约分；a=b时禁止除以0。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "当实数a<b且X服从连续均匀分布U(a,b)时，其密度在(a,b)为1/(b−a)、别处为0，满足E[X]=(a+b)/2，Var(X)=(b−a)²/12；若a=b则此密度公式不合法，退化常量分布须单独定义。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "均匀分布的均值、方差及区间退化边界",
+    "transfer": {
+      "far": "若时间测量有固定毫秒精度而不是连续无限精度，讨论何时均匀连续分布不再是合适的模型。",
+      "near": "求U(0,6)的均值和方差，解释为什么方差有长度平方单位。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "均值5，方差3。",
+        "check": "用平移后的对称均匀积分可独立复核。",
+        "question": "X服从U(2,8)，求均值及方差。",
+        "steps": [
+          "均值(2+8)/2=5。",
+          "区间长6，方差6²/12=3。"
+        ]
+      },
+      {
+        "answer": "概率1/2，方差1/3。",
+        "check": "关于0对称，均值0，积分x²/2从−1到1确为1/3。",
+        "question": "X服从U(−1,1)，求P(0<X<1)和方差。",
+        "steps": [
+          "全区间长度2，右半区长度1。",
+          "概率1/2，方差2²/12。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "X,Y离散，列出完整联合支持集合",
+      "所有概率非负且对整个支持集合求和为1"
+    ],
+    "boundaries": [
+      "X,Y离散，列出完整联合支持集合",
+      "所有概率非负且对整个支持集合求和为1"
+    ],
+    "counterexamples": [
+      {
+        "example": "令X均匀取−1、0、1，Y=X²；Cov=0，但P(X=0,Y=0)=1/3≠(1/3)(1/3)。",
+        "explanation": "零协方差只控制二阶线性关系，不排除非线性依赖。",
+        "false_claim": "一旦两个离散随机变量协方差等于零就可以断定独立"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-164"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先列出完整联合表并核对总概率等于1。",
+      "对行、列分别求和得边缘概率，注意不能遗漏支持点。",
+      "比较每个格子的联合概率与边缘乘积，给出具体违反格子。"
+    ],
+    "id": "math.hs.batch114.07",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "一旦两个离散随机变量协方差等于零就可以断定独立",
+        "repair_question": "请确定哪项定义域、独立性或除零前提被遗漏，并构造反例。",
+        "why_wrong": "零协方差只控制二阶线性关系，不排除非线性依赖。"
+      }
+    ],
+    "notation": [
+      "p(x,y)：联合概率质量",
+      "p_X,p_Y：各自边缘概率质量"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "条件概率和独立事件",
+      "随机变量期望、协方差"
+    ],
+    "proof_steps": [
+      {
+        "claim": "联合事件{X=x,Y=y}按不相交的Y取值分解，求和即P(X=x)。",
+        "reason": "有限或可数可加性保证边缘化合法，另一个方向类似。"
+      },
+      {
+        "claim": "若X,Y独立，则对任何x,y，有P(X=x,Y=y)=P(X=x)P(Y=y)；反之所有原子事件分解可推出由它们生成的事件独立。",
+        "reason": "离散随机变量的原子事件组成生成集合，利用概率可加性。"
+      },
+      {
+        "claim": "取X在{−1,0,1}均匀，Y=X²；有EX=0、E[XY]=E[X³]=0，因此Cov(X,Y)=0，但Y由X确定所以不独立。",
+        "reason": "对称分布奇次矩为0；P(Y=0|X=0)=1却P(Y=0)=1/3。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对离散随机变量X,Y的联合质量p(x,y)=P(X=x,Y=y)，有p(x,y)≥0、双重求和为1；边缘分布p_X(x)=Σ_y p(x,y)、p_Y(y)=Σ_x p(x,y)。仅在所有支持点p(x,y)=p_X(x)p_Y(y)时二者独立；协方差为零不构成一般充分条件。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二维离散联合分布、边缘分布与独立判别",
+    "transfer": {
+      "far": "在用户行为数据中发现两个指标线性相关系数接近0时，为什么仍需核查非线性依赖和混杂因素？",
+      "near": "构造两枚独立公平硬币的和与第一枚的关系，写联合分布并判断独立性。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "X与Y独立。",
+        "check": "依次对四个联合格子比较边缘乘积，且总和恰为1。",
+        "question": "给联合表p(0,0)=1/4,p(0,1)=1/4,p(1,0)=1/4,p(1,1)=1/4，判断独立。",
+        "steps": [
+          "两个变量各取0,1，其边缘各为1/2。",
+          "四个格子均等于(1/2)·(1/2)=1/4。"
+        ]
+      },
+      {
+        "answer": "P(Y=0)=1/3，二者不独立。",
+        "check": "直接构造一格违反乘积条件，足以否定独立。",
+        "question": "令X在−1,0,1等概率，Y=X²，求P(Y=0)并判断独立。",
+        "steps": [
+          "X=0时Y=0，因此P(Y=0)=1/3。",
+          "P(X=0,Y=0)=1/3，不等于边缘乘积1/9。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "自由度ν为正整数且对应独立标准正态构造",
+      "t构造要求Z与V独立，均值和方差存在性依赖自由度"
+    ],
+    "boundaries": [
+      "自由度ν为正整数且对应独立标准正态构造",
+      "t构造要求Z与V独立，均值和方差存在性依赖自由度"
+    ],
+    "counterexamples": [
+      {
+        "example": "t_2的方差不有限且ν/(ν−2)分母为零，t_1甚至均值不定义。",
+        "explanation": "公式中的自由度前提不能略去，尤其是ν≤2。",
+        "false_claim": "任意正自由度的t分布都有方差ν/(ν−2)"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-165"
+    ],
+    "definition": "若Z_i为ν个相互独立的标准正态随机变量，Σ_i Z_i²服从卡方分布χ²_ν，其均值ν、方差2ν（ν为正整数）；若T=Z/√(V/ν)，其中Z标准正态且独立于V~χ²_ν，则T服从t_ν。t均值只在ν>1存在且为0，方差仅ν>2时存在并等于ν/(ν−2)。",
+    "hint_ladder": [
+      "先写明卡方或t变量的生成条件，而不是只记一个符号。",
+      "明确独立正态平方和对应自由度的含义。",
+      "检查自由度是否超过1或2，再讨论相应矩的数值。"
+    ],
+    "id": "math.hs.batch114.08",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "任意正自由度的t分布都有方差ν/(ν−2)",
+        "repair_question": "请确定哪项定义域、独立性或除零前提被遗漏，并构造反例。",
+        "why_wrong": "公式中的自由度前提不能略去，尤其是ν≤2。"
+      }
+    ],
+    "notation": [
+      "χ²_ν：ν自由度卡方分布",
+      "t_ν：ν自由度Student t分布"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "标准正态变量与独立性",
+      "期望方差与平方求和"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "卡方是独立标准正态平方和，均值按线性性等于ν，独立下方差加成2ν。",
+      "t统计量是标准正态与独立卡方的比例，分母引入尾部更厚的随机波动。",
+      "低自由度t分布可能没有有限均值或方差，统计推断前必须核对ν的范围。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若Z_i为ν个相互独立的标准正态随机变量，Σ_i Z_i²服从卡方分布χ²_ν，其均值ν、方差2ν（ν为正整数）；若T=Z/√(V/ν)，其中Z标准正态且独立于V~χ²_ν，则T服从t_ν。t均值只在ν>1存在且为0，方差仅ν>2时存在并等于ν/(ν−2)。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "卡方与t分布的自由度、矩存在条件",
+    "transfer": {
+      "far": "小样本置信区间使用t分布时，解释自由度误填为什么会影响尾部风险而不仅是均值。",
+      "near": "比较t_3和t_1的均值、方差存在性，并解释为何不能套同一个二阶矩公式。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "V~χ²_3，均值3、方差6。",
+        "check": "每个平方项均值1、方差2，三项独立相加。",
+        "question": "独立Z1,Z2,Z3~N(0,1)，令V为平方和，求V分布及矩。",
+        "steps": [
+          "独立标准正态平方和对应ν=3。",
+          "E(V)=3，Var(V)=2×3=6。"
+        ]
+      },
+      {
+        "answer": "t_4方差2；t_2无有限方差。",
+        "check": "必须先通过自由度大于2的条件核对，才能合法代入方差公式。",
+        "question": "t_4与t_2的方差存在性分别如何？",
+        "steps": [
+          "t_4满足ν>2，方差4/(4−2)=2。",
+          "t_2不满足ν>2，方差不存在。"
+        ]
+      }
+    ]
+  }
+]
