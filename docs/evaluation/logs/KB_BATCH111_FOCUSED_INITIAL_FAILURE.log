@@ -1,0 +1,54 @@
+........................................................................ [ 50%]
+....F..................F...............................................  [100%]
+=================================== FAILURES ===================================
+_____________ test_invalid_lesson_payloads_rejected[fake_approval] _____________
+
+bad = 'fake_approval'
+
+    @pytest.mark.parametrize("bad",["remove","unknown_curriculum","wrong_source","fake_approval",
+        "missing_example","no_counterexample","no_hints","no_reasoning","short_statement",
+        "fake_type","no_transfer","duplicate_source","cross_track","forward_prerequisite"])
+    def test_invalid_lesson_payloads_rejected(bad):
+        units=deepcopy(UNITS)
+        if bad=="remove":units.pop()
+        elif bad=="unknown_curriculum":units[0]["curriculum_id"]="MISSING-ID"
+        elif bad=="wrong_source":units[0]["source_key"]="UNKNOWN-KEY"
+        elif bad=="fake_approval":units[0]["review_status"]="APPROVED"
+        elif bad=="missing_example":units[0]["examples"].pop()
+        elif bad=="no_counterexample":units[0]["negative"]=("a","b","c")
+        elif bad=="no_hints":units[0]["hints"]=[]
+        elif bad=="no_reasoning":units[0]["reasoning"]=[]
+        elif bad=="short_statement":units[0]["statement"]="short"
+        elif bad=="fake_type":units[0]["kind"]="oracle"
+        elif bad=="no_transfer":units[0]["far"]="no"
+        elif bad=="duplicate_source":units[1]["source_key"]=units[0]["source_key"]
+        elif bad=="cross_track":units[0]["source_key"]=units[4]["source_key"]
+        else:
+            orig=B.DEPENDENCIES.copy()
+            try:
+                B.DEPENDENCIES[0]=[5]
+                with pytest.raises((ValueError,ValidationError)):B.lessons(units=units)
+            finally:B.DEPENDENCIES.clear();B.DEPENDENCIES.update(orig)
+            return
+>       with pytest.raises((ValueError,ValidationError)):B.lessons(units=units)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE any of (<class 'ValueError'>, <class 'pydantic_core._pydantic_core.ValidationError'>)
+
+backend/tests/test_kb_batch111_math_source_guard.py:154: Failed
+_______________________ test_inverse_log_exact[a2-8--3] ________________________
+
+a = 1/2, y = 8, x = -3
+
+    @pytest.mark.parametrize("a,y,x",[(2,8,3),(3,27,3),(sp.Rational(1,2),8,-3),(5,125,3)])
+    def test_inverse_log_exact(a,y,x):
+        assert a>0 and a!=1 and y>0
+>       assert sp.log(y,a)==x and sp.simplify(a**x-y)==0
+E       assert (-log(8)/log(2) == -3)
+E        +  where -log(8)/log(2) = log(8, 1/2)
+E        +    where log = sp.log
+
+backend/tests/test_kb_batch111_math_source_guard.py:209: AssertionError
+=========================== short test summary info ============================
+FAILED backend/tests/test_kb_batch111_math_source_guard.py::test_invalid_lesson_payloads_rejected[fake_approval]
+FAILED backend/tests/test_kb_batch111_math_source_guard.py::test_inverse_log_exact[a2-8--3]
+2 failed, 141 passed in 2.52s

@@ -1,0 +1,11 @@
+127.0.0.1 - - [12/Nov/2026 20:06:53] "GET /ipad/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 20:06:56] "GET /ipad HTTP/1.1" 301 -
+127.0.0.1 - - [12/Nov/2026 20:06:56] "GET /ipad/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 20:06:56] code 404, message File not found
+127.0.0.1 - - [12/Nov/2026 20:06:56] "GET /assets/ipad/ink_core.js HTTP/1.1" 404 -
+127.0.0.1 - - [12/Nov/2026 20:06:56] code 404, message File not found
+127.0.0.1 - - [12/Nov/2026 20:06:56] code 404, message File not found
+127.0.0.1 - - [12/Nov/2026 20:06:56] "GET /assets/ipad/storage.js HTTP/1.1" 404 -
+127.0.0.1 - - [12/Nov/2026 20:06:56] code 404, message File not found
+127.0.0.1 - - [12/Nov/2026 20:06:56] "GET /assets/ipad/ipad.css HTTP/1.1" 404 -
+127.0.0.1 - - [12/Nov/2026 20:06:56] "GET /assets/ipad/app.js HTTP/1.1" 404 -

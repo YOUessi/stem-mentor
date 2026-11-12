@@ -1,0 +1,246 @@
+{
+  "batch": 111,
+  "limitations": [
+    "Six pages are only the latest three batches, not total historical page review.",
+    "No seven-track denominator exists; do not treat page count or editorial candidates as atomic curriculum coverage.",
+    "Field completeness and finite witnesses do not substitute teacher approval or general theorem proof."
+  ],
+  "new_lesson_field_checks": [
+    {
+      "field_checks": {
+        "assumptions": true,
+        "counterexample": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "notation": true,
+        "prerequisites": true,
+        "privacy": true,
+        "reasoning": true,
+        "statement": true,
+        "worked_examples": true
+      },
+      "field_completion": 1.0,
+      "id": "math.hs.batch111.01",
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "assumptions": true,
+        "counterexample": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "notation": true,
+        "prerequisites": true,
+        "privacy": true,
+        "reasoning": true,
+        "statement": true,
+        "worked_examples": true
+      },
+      "field_completion": 1.0,
+      "id": "math.hs.batch111.02",
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "assumptions": true,
+        "counterexample": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "notation": true,
+        "prerequisites": true,
+        "privacy": true,
+        "reasoning": true,
+        "statement": true,
+        "worked_examples": true
+      },
+      "field_completion": 1.0,
+      "id": "math.hs.batch111.03",
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "assumptions": true,
+        "counterexample": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "notation": true,
+        "prerequisites": true,
+        "privacy": true,
+        "reasoning": true,
+        "statement": true,
+        "worked_examples": true
+      },
+      "field_completion": 1.0,
+      "id": "math.hs.batch111.04",
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "assumptions": true,
+        "counterexample": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "notation": true,
+        "prerequisites": true,
+        "privacy": true,
+        "reasoning": true,
+        "statement": true,
+        "worked_examples": true
+      },
+      "field_completion": 1.0,
+      "id": "math.hs.batch111.05",
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "assumptions": true,
+        "counterexample": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "notation": true,
+        "prerequisites": true,
+        "privacy": true,
+        "reasoning": true,
+        "statement": true,
+        "worked_examples": true
+      },
+      "field_completion": 1.0,
+      "id": "math.hs.batch111.06",
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "assumptions": true,
+        "counterexample": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "notation": true,
+        "prerequisites": true,
+        "privacy": true,
+        "reasoning": true,
+        "statement": true,
+        "worked_examples": true
+      },
+      "field_completion": 1.0,
+      "id": "math.hs.batch111.07",
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "field_checks": {
+        "assumptions": true,
+        "counterexample": true,
+        "hint_ladder": true,
+        "license": true,
+        "misconception": true,
+        "near_far": true,
+        "notation": true,
+        "prerequisites": true,
+        "privacy": true,
+        "reasoning": true,
+        "statement": true,
+        "worked_examples": true
+      },
+      "field_completion": 1.0,
+      "id": "math.hs.batch111.08",
+      "status": "REVIEW_PENDING",
+      "student_authoritative": false,
+      "teacher_approved": false
+    }
+  ],
+  "official_atom_coverage_by_track": {
+    "COMPULSORY": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_A": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_B": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_C": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_D": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "ELECTIVE_E": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    },
+    "SELECTIVE_COMPULSORY": {
+      "approved": 0,
+      "coverage_fraction": null,
+      "missing_total": "UNKNOWN",
+      "total": null
+    }
+  },
+  "recent_source_page_fraction": 0.09836065573770492,
+  "scoped_pages_in_three_latest_batches": [
+    19,
+    20,
+    21,
+    56,
+    57,
+    58
+  ],
+  "source_candidate_counts_by_track": {
+    "COMPULSORY": 10,
+    "ELECTIVE_A": 0,
+    "ELECTIVE_B": 10,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "SELECTIVE_COMPULSORY": 0
+  },
+  "source_pdf_pages_total": 61,
+  "teacher_approved_lessons": 0,
+  "teacher_certified_full_pages": 0,
+  "uncertified_legacy_proof_steps": 538,
+  "unresolved_legacy_math_conflicts": 10,
+  "unreviewed_legacy_prerequisites": 172
+}
