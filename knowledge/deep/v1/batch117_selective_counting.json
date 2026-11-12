@@ -1,0 +1,787 @@
+[
+  {
+    "assumptions": [
+      "结果集有限，类别的并集是整个待数集合",
+      "任意两个不同类别的交集为空；若不满足必须调整分类"
+    ],
+    "boundaries": [
+      "结果集有限，类别的并集是整个待数集合",
+      "任意两个不同类别的交集为空；若不满足必须调整分类"
+    ],
+    "counterexamples": [
+      {
+        "example": "A={1,2,3},B={3,4}，两集合的并集只有4个元素，3+2=5重复计了3。",
+        "explanation": "加法原理的关键是恰好一次计数，可用容斥式|A∪B|=|A|+|B|−|A∩B|纠正。",
+        "false_claim": "把有交集的两个集合的元素数直接相加"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-092"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先画出类别集合，辨认是否有重复元素。",
+      "检验每个合法结果是否被包含且仅包含一次。",
+      "若存在交集，考虑容斥或重构互斥分类。"
+    ],
+    "id": "math.hs.batch117.01",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把有交集的两个集合的元素数直接相加",
+        "repair_question": "逐项检查结果是否有序、可放回、样本划分是否互斥且完整，找出不成立的数学前提。",
+        "why_wrong": "加法原理的关键是恰好一次计数，可用容斥式|A∪B|=|A|+|B|−|A∩B|纠正。"
+      }
+    ],
+    "notation": [
+      "S是有限结果集合",
+      "A_i是分类后的互不重叠子集，|S|=Σ|A_i|"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "集合并交与有限元素数",
+      "分类讨论与对应关系"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先写出所有合法结果，并指定每一个结果唯一所属的类别。",
+      "由于各类别互斥，每个结果只在一个类别被计数；把每一类数相加就恰好数到每个结果一次。",
+      "若分类有交集，重复结果会计两次；若不覆盖则遗漏结果，所以不能直接相加。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "把一个有限结果集分成互不相交且并起来恰好覆盖全集的若干类时，总数等于各类数量之和。若类别重叠，应先去重或使用容斥；若某些结果没有归类，加法得到的数量会偏小。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "分类加法计数：不重不漏才可相加",
+    "transfer": {
+      "far": "统计不同渠道用户时，同一用户可能来自多个渠道，说明为何直接相加渠道人数会高估。",
+      "near": "在A={a,b,c},B={c,d},C={e,f}中求任选一个元素的不同结果数。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "3种。",
+        "check": "逐个列举得到{2,4,5}，且每个结果只数一次。",
+        "question": "从{1,2,3,4,5}中选一个偶数或选一个大于3的数，有几种结果？",
+        "steps": [
+          "偶数为{2,4}，大于3为{4,5}，两类有交集{4}。",
+          "去重后并集{2,4,5}，共3个；或2+2−1=3。"
+        ]
+      },
+      {
+        "answer": "7种。",
+        "check": "直接列举四本科学和三本文学共七本，没有重复。",
+        "question": "某图书馆把图书按互斥主题分成科学4本、文学3本，任选一本有几种选择？",
+        "steps": [
+          "两类定义互斥且合起来就是允许的7本。",
+          "运用加法计数原理4+3=7。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "第一步的m种选择互不相同",
+      "对每种第一步结果第二步都有恰好n种合法选择；各有序选择对对应不同结果"
+    ],
+    "boundaries": [
+      "第一步的m种选择互不相同",
+      "对每种第一步结果第二步都有恰好n种合法选择；各有序选择对对应不同结果"
+    ],
+    "counterexamples": [
+      {
+        "example": "不放回从{A,B,C}依次选择两项，第一个选择3种、第二个只有2种，不是3×3。",
+        "explanation": "第二步选择取决于先前决策，即便结果数仍统一，也必须把可用选项数重新计数。",
+        "false_claim": "对任何两步选择都可以无条件乘两个表面数字"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-093"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "画出两层树状图，每条完整路径代表一个最终结果。",
+      "检查第二步数量是否真的对所有第一步一样。",
+      "若分支数不均，按完整第一步结果逐一求和。"
+    ],
+    "id": "math.hs.batch117.02",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "对任何两步选择都可以无条件乘两个表面数字",
+        "repair_question": "逐项检查结果是否有序、可放回、样本划分是否互斥且完整，找出不成立的数学前提。",
+        "why_wrong": "第二步选择取决于先前决策，即便结果数仍统一，也必须把可用选项数重新计数。"
+      }
+    ],
+    "notation": [
+      "(u,v)表示两个步骤组成的有序结果",
+      "m为第一步分支数，n为每个分支相同的第二步数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch117.01"
+    ],
+    "prerequisites": [
+      "有限笛卡尔积与计数",
+      "分类加法计数原理"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "把每种第一步结果作为分支节点，从节点列出所有合法的第二步选择。",
+      "若每个分支均有n条边，则m个分支一共有m×n条终端有序路径。",
+      "若存在有的分支2条、有的3条，应改为2+3等逐支相加，禁止用一个并不存在的统一分支数。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若一次合法决策必须连续完成两步，第一步有m种选择且对于每一种第一步结果，第二步都有恰好n种可选，则完整有序流程有mn种。若第二步数目随第一步而变，应按各第一步分支求和，不能强行乘固定n。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "分步乘法计数：等数选择与非等数分支",
+    "transfer": {
+      "far": "规划列车换乘路线时每个车站可换乘线路数不同，说明为何统一乘法计数不适用。",
+      "near": "设计一个第一步有2种而第二步分别有2种、4种选择的例子并求总数。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "6种。",
+        "check": "列举3个外套各对应2条裤子分支，恰好6个唯一搭配。",
+        "question": "从3件不同外套及2件不同裤子中各选一件，有多少种搭配？",
+        "steps": [
+          "任选外套有3种；对每件外套任选裤子都有2种。",
+          "有序搭配数是3×2=6。"
+        ]
+      },
+      {
+        "answer": "6种。",
+        "check": "AB,AC,BA,BC,CA,CB共6种。",
+        "question": "从A、B、C中按顺序不放回选两字母，共有多少种序列？",
+        "steps": [
+          "第一位有3种；选定后第二位只能从余下2个字母选。",
+          "合计3×2=6。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "n为非负整数，r为整数且0≤r≤n",
+      "对象各不相同、位置有先后之分且选择后不放回"
+    ],
+    "boundaries": [
+      "n为非负整数，r为整数且0≤r≤n",
+      "对象各不相同、位置有先后之分且选择后不放回"
+    ],
+    "counterexamples": [
+      {
+        "example": "从五人中选三人组成不分职务的小组，A(5,3)=60把每组的3!种排序重复计算了。",
+        "explanation": "先辨认序列是否有标号位置；无序子集应使用组合数。",
+        "false_claim": "不分先后选择3人时仍应直接使用A(5,3)"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-094"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先看题中是否关心位置或任职顺序。",
+      "每一位置选择后更新剩余对象数，写成连乘。",
+      "检查0≤r≤n，并对r=0空选择另行解释。"
+    ],
+    "id": "math.hs.batch117.03",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "不分先后选择3人时仍应直接使用A(5,3)",
+        "repair_question": "逐项检查结果是否有序、可放回、样本划分是否互斥且完整，找出不成立的数学前提。",
+        "why_wrong": "先辨认序列是否有标号位置；无序子集应使用组合数。"
+      }
+    ],
+    "notation": [
+      "A(n,r)是有序r元序列数",
+      "n!=n(n−1)…1且0!=1"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch117.02"
+    ],
+    "prerequisites": [
+      "分步乘法计数",
+      "有序序列与不放回选择"
+    ],
+    "proof_steps": [
+      {
+        "claim": "第一个位置从n个不同对象中选择，第二个位置从剩余n−1个中选择。",
+        "reason": "由于对象不放回，每次减少一个合法选项，满足分步计数前提。"
+      },
+      {
+        "claim": "依次填写r个位置，可选数列为n,n−1,…,n−r+1，乘积是n!/(n−r)!。",
+        "reason": "分子分母合法，因为0≤r≤n，所有阶乘的自变量都是非负整数且分母非零。"
+      },
+      {
+        "claim": "r=0时不存在需要填写的位置，只有空序列一个，空乘积为1；因此A(n,0)=1。",
+        "reason": "把零长度排列视为一种空选择，与递推及组合恒等式一致。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对n个不同对象按顺序无放回选取r个，n和r为整数且0≤r≤n，排列数A(n,r)=n!/(n−r)!，其中n!是从1乘到n的阶乘，0!=1。r=0时恰有一种空序列，r>n时不在该公式的通常定义域。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "有序无放回排列数：公式和零长度边界",
+    "transfer": {
+      "far": "资源调度的有序执行任务与无序备选任务集合数量不同，辨别两种建模假设。",
+      "near": "四名不同选手排两名不同位置的展示顺序，列出计算式。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "20种。",
+        "check": "A(5,2)=5!/(3!)=20。",
+        "question": "五名同学选队长和副队长，求方案数。",
+        "steps": [
+          "两个职务有先后，队长有5种选法。",
+          "副队长从其余4人选，5×4=20。"
+        ]
+      },
+      {
+        "answer": "24种。",
+        "check": "A(4,3)=4!/(1!)=24。",
+        "question": "从4个不同球中依次取3个不放回，求结果数。",
+        "steps": [
+          "依次选择可选数4、3、2。",
+          "有序结果总数4×3×2=24。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "n为非负整数，r是0至n的整数",
+      "对象相异且最终结果不区分选取次序；同一个子集只算一次"
+    ],
+    "boundaries": [
+      "n为非负整数，r是0至n的整数",
+      "对象相异且最终结果不区分选取次序；同一个子集只算一次"
+    ],
+    "counterexamples": [
+      {
+        "example": "从A,B,C中选两人只有{A,B},{A,C},{B,C}三种，而不是六个排列。",
+        "explanation": "题目没有顺序或不同职务时，每个选中集合不能重复计入。",
+        "false_claim": "选五人中的两人组成无职务小组时一组AB与BA是两组"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-094"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认结果是有序队列还是无序子集。",
+      "先按顺序计数，再判断每个无序结果重复出现了几次。",
+      "考虑r=0与r=n的退化情况并检查计算为1。"
+    ],
+    "id": "math.hs.batch117.04",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "选五人中的两人组成无职务小组时一组AB与BA是两组",
+        "repair_question": "逐项检查结果是否有序、可放回、样本划分是否互斥且完整，找出不成立的数学前提。",
+        "why_wrong": "题目没有顺序或不同职务时，每个选中集合不能重复计入。"
+      }
+    ],
+    "notation": [
+      "C(n,r)表示n选r的无序子集数",
+      "r!是r个相异已选对象的排序数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch117.03"
+    ],
+    "prerequisites": [
+      "排列数的分步计数",
+      "子集与有序序列的区别"
+    ],
+    "proof_steps": [
+      {
+        "claim": "先数所有长度r的无放回有序选择，已知恰有n!/(n−r)!种。",
+        "reason": "把每种先后顺序都暂记为一个结果，保证计数完备。"
+      },
+      {
+        "claim": "任意给定一个r元素子集，其所有r!个内部排序对应同一个无序结果。",
+        "reason": "每个子集的排序数相同且r!≥1，所以可以将所有有序结果按等大类分组。"
+      },
+      {
+        "claim": "有序总数除以r!，得到C(n,r)=n!/[r!(n−r)!]；r=0时空子集唯一。",
+        "reason": "等大互斥分组使用乘法计数的逆过程，边界0!=1确保公式仍有效。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "从n个相异对象中不放回选r个组成不计次序的子集，n和r为整数、0≤r≤n，则组合数C(n,r)=n!/[r!(n−r)!]。对每个选出的r元素子集恰有r!种不同排序，故由排列数除以r!；C(n,0)=C(n,n)=1。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "无序组合数的阶乘推导与重复计数",
+    "transfer": {
+      "far": "抽样时顺序敏感的记录和仅保存样本集合会导致不同的样本空间，说明区别。",
+      "near": "从7个不同实验项目中选4个组成不排序组合，写出精确数目。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "10种。",
+        "check": "C(5,2)=5!/(2!3!)=10。",
+        "question": "五人中选两人组成不分职务小组，有几种？",
+        "steps": [
+          "有序选法是5×4=20。",
+          "每个两人组AB与BA重复2!=2次，20/2=10。"
+        ]
+      },
+      {
+        "answer": "20种。",
+        "check": "20×3!=120=A(6,3)，回乘自检。",
+        "question": "从六种不同书中选三种供展览，有几种选择？",
+        "steps": [
+          "选择顺序不影响最终展览集合。",
+          "C(6,3)=6×5×4/(3×2×1)=20。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "n为非负整数，a,b是实数或交换环中可交换的元素",
+      "展开采用有限个因子的分配律，允许把同类项合并"
+    ],
+    "boundaries": [
+      "n为非负整数，a,b是实数或交换环中可交换的元素",
+      "展开采用有限个因子的分配律，允许把同类项合并"
+    ],
+    "counterexamples": [
+      {
+        "example": "取A=[[1,0],[0,0]], B=[[0,1],[0,0]]，有AB=B而BA=0，所以交叉项AB+BA≠2AB。",
+        "explanation": "二项式系数合并使用了乘法交换性，对矩阵必须先查AB=BA。",
+        "false_claim": "矩阵A和B不交换时仍可直接写(A+B)^2=A²+2AB+B²"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-095"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认指数n是非负整数以及因子可交换。",
+      "指定k个因子取第二项，算出单项式结构。",
+      "数出这些位置的组合数，合并后检验边界k=0,n。"
+    ],
+    "id": "math.hs.batch117.05",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "矩阵A和B不交换时仍可直接写(A+B)^2=A²+2AB+B²",
+        "repair_question": "逐项检查结果是否有序、可放回、样本划分是否互斥且完整，找出不成立的数学前提。",
+        "why_wrong": "二项式系数合并使用了乘法交换性，对矩阵必须先查AB=BA。"
+      }
+    ],
+    "notation": [
+      "C(n,k)=n!/(k!(n−k)!)",
+      "k表示选择b项的因子数量"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch117.04"
+    ],
+    "prerequisites": [
+      "组合数与乘法计数",
+      "多项式分配律和交换律"
+    ],
+    "proof_steps": [
+      {
+        "claim": "将(a+b)^n写成n个(a+b)的乘积，展开的每一项从各因子选a或b一次。",
+        "reason": "分配律给出每个长度为n的a/b选择模式对应一项乘积。"
+      },
+      {
+        "claim": "恰好k个因子取b、其余取a时，乘积是a^{n−k}b^k，与取b的具体位置无关。",
+        "reason": "实数乘法交换律允许同类项合并，不可擅自用于不交换的矩阵。"
+      },
+      {
+        "claim": "这种位置集合有C(n,k)种，故该单项式系数为C(n,k)；对k=0,…,n求和即得公式。",
+        "reason": "不同k对应不同b的个数，全部选择模式被不重不漏分组。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对非负整数n及可交换的实数a,b，(a+b)^n=Σ_{k=0}^n C(n,k)a^{n−k}b^k。证明依据是n个因子中选择恰好k个提供b项的组合数；n=0时空乘积为1，0^0在该多项式约定中视为常数项的空乘积而不是实数一般指数定义。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二项式定理的乘积选择证明",
+    "transfer": {
+      "far": "在概率生成函数中，解释为何二项展开可对应重复独立伯努利试验的计数。",
+      "near": "推导(1+x)^5中x³项的系数，不使用死记系数表。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "x³+6x²+12x+8。",
+        "check": "代入x=1时，原式3的三次方与展开式各项相加，左右均为27。",
+        "question": "展开(x+2)^3。",
+        "steps": [
+          "系数依次C(3,0),C(3,1),C(3,2),C(3,3)=1,3,3,1。",
+          "按选择2的个数合并得x³+6x²+12x+8。"
+        ]
+      },
+      {
+        "answer": "24。",
+        "check": "全部展开中x²项为24x²，符号因−1出现2次为正。",
+        "question": "求(2x−1)^4中x²项系数。",
+        "steps": [
+          "x²要求选择2个因子贡献2x，其余2个因子贡献−1。",
+          "系数C(4,2)·2²·(−1)²=6×4=24。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "P是合法概率测度，A与B是事件",
+      "定义P(A|B)前严格要求P(B)>0，逆向条件概率须重新检查P(A)>0"
+    ],
+    "boundaries": [
+      "P是合法概率测度，A与B是事件",
+      "定义P(A|B)前严格要求P(B)>0，逆向条件概率须重新检查P(A)>0"
+    ],
+    "counterexamples": [
+      {
+        "example": "公平骰子A={1},B={2}互斥，P(A∩B)=0，但P(A)P(B)=1/36>0。",
+        "explanation": "互斥的乘积概率不为0就不能独立，条件概率还需检查分母。",
+        "false_claim": "只要两个事件互斥，它们就必然独立"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-096"
+    ],
+    "definition": "在概率空间中若P(B)>0，事件A在B条件下发生的概率定义为P(A|B)=P(A∩B)/P(B)。它一般不等于P(B|A)，后者还要求P(A)>0。独立性要求P(A∩B)=P(A)P(B)；若事件互斥且二者概率均正，则不可能独立。",
+    "hint_ladder": [
+      "写清楚条件竖线右侧事件是什么。",
+      "先求交集及条件事件的概率，再检查分母是否为正。",
+      "要判断独立，直接比较交集概率与概率乘积。"
+    ],
+    "id": "math.hs.batch117.06",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "只要两个事件互斥，它们就必然独立",
+        "repair_question": "逐项检查结果是否有序、可放回、样本划分是否互斥且完整，找出不成立的数学前提。",
+        "why_wrong": "互斥的乘积概率不为0就不能独立，条件概率还需检查分母。"
+      }
+    ],
+    "notation": [
+      "A∩B表示两事件同时发生",
+      "P(A|B)是以B为新样本条件的比例"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "事件交集与概率公理",
+      "古典概型和独立事件"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "将已知B发生视为只保留B中的可能结果并重新归一化概率。",
+      "在P(B)>0时用P(A∩B)/P(B)计算，不能把条件方向颠倒。",
+      "独立表示知道B不改变A的概率（在P(B)>0时）；互斥表示不能同时发生，正概率时两者相反。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在概率空间中若P(B)>0，事件A在B条件下发生的概率定义为P(A|B)=P(A∩B)/P(B)。它一般不等于P(B|A)，后者还要求P(A)>0。独立性要求P(A∩B)=P(A)P(B)；若事件互斥且二者概率均正，则不可能独立。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "条件概率的分母与独立性判定边界",
+    "transfer": {
+      "far": "医学筛查中P(阳性|患病)与P(患病|阳性)差别巨大，解释为何需基率信息。",
+      "near": "从标准52张牌中已知抽到红牌，求抽到红桃的条件概率。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "2/3。",
+        "check": "在B的三个等可能结果{4,5,6}中有两个属于A。",
+        "question": "公平骰子中A={2,4,6},B={4,5,6}，求P(A|B)。",
+        "steps": [
+          "交集A∩B={4,6}，概率2/6。",
+          "P(B)=3/6，因此(2/6)/(3/6)=2/3。"
+        ]
+      },
+      {
+        "answer": "条件概率0，且不独立。",
+        "check": "交集为空导致概率为0，而两个非零事件的概率乘积为正，所以不独立。",
+        "question": "公平骰子中A={1},B={2}，求P(A|B)，判断是否独立。",
+        "steps": [
+          "P(B)=1/6>0，交集空，P(A|B)=0。",
+          "P(A)P(B)=1/36>0，与交集概率0不同。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "B_i两两互斥且并为整个样本空间",
+      "用于条件概率写法时每个B_i的概率严格正；零概率项须分开处理"
+    ],
+    "boundaries": [
+      "B_i两两互斥且并为整个样本空间",
+      "用于条件概率写法时每个B_i的概率严格正；零概率项须分开处理"
+    ],
+    "counterexamples": [
+      {
+        "example": "公平骰子若B1={1,2},B2={2,3}，它们重叠且未覆盖4,5,6，直接加权将漏掉与重复结果。",
+        "explanation": "全概率的分支必须两两互斥、完整覆盖，且要检查每个条件分母。",
+        "false_claim": "任何两个事件B1,B2都可无条件当作全概率划分"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-097"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先画树状图并列出分支概率。",
+      "逐项确认互斥、完备与正概率条件。",
+      "每条路径乘条件概率，再把互斥的成功路径求和。"
+    ],
+    "id": "math.hs.batch117.07",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "任何两个事件B1,B2都可无条件当作全概率划分",
+        "repair_question": "逐项检查结果是否有序、可放回、样本划分是否互斥且完整，找出不成立的数学前提。",
+        "why_wrong": "全概率的分支必须两两互斥、完整覆盖，且要检查每个条件分母。"
+      }
+    ],
+    "notation": [
+      "B_i是完备划分中的第i个事件",
+      "P(A|B_i)依赖于P(B_i)>0"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch117.06"
+    ],
+    "prerequisites": [
+      "有限概率加法公理",
+      "条件概率的分子分母定义"
+    ],
+    "proof_steps": [
+      {
+        "claim": "因为B_i是互斥完备划分，A是各个A∩B_i互斥并集。",
+        "reason": "A∩(∪B_i)=A且交集保留了两两互斥性。"
+      },
+      {
+        "claim": "根据有限可加性，P(A)=Σ_i P(A∩B_i)。",
+        "reason": "没有任何重叠或遗漏的事件分解才允许直接相加。"
+      },
+      {
+        "claim": "在P(B_i)>0时，P(A∩B_i)=P(A|B_i)P(B_i)，逐项代回即得全概率公式。",
+        "reason": "每一步乘法都根据合法条件概率定义，不存在除以0。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "设B_1,…,B_m构成样本空间的有限个两两互斥且并为全集的事件，并且每个P(B_i)>0。对任意事件A，全概率公式P(A)=Σ_i P(A|B_i)P(B_i)成立。若有零概率分支，该项的交集概率为零，不能把未定义的条件概率随意写成数值。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "全概率公式：完备互斥划分与零概率分支",
+    "transfer": {
+      "far": "用户来自不同渠道但标签重叠时，说明为什么未去重的渠道不构成全概率划分。",
+      "near": "三种原料来源占比1/2、1/3、1/6，不良率分别1/100、2/100、3/100，求总体不良率。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "1/2。",
+        "check": "按四等份等权混合两种盒子概率，结果在[0,1]。",
+        "question": "盒1抽中红球概率3/4、盒2抽中红球概率1/4，等概率选盒，求红球概率。",
+        "steps": [
+          "B1,B2是完备互斥盒子选择事件，各概率1/2。",
+          "P(红)=3/4×1/2+1/4×1/2=1/2。"
+        ]
+      },
+      {
+        "answer": "1.8%。",
+        "check": "0.006+0.012=0.018，混合概率落在1%至3%之间。",
+        "question": "一工厂产品来自A线60%、B线40%，不良率分别为1%、3%，求随机产品不良概率。",
+        "steps": [
+          "生产线选择构成互斥完备划分且比例和为1。",
+          "P(不良)=0.6×0.01+0.4×0.03=0.018。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "N是正整数，0≤K≤N，0≤n≤N，抽取无放回且每个n子集等可能",
+      "k为整数，必须属于给定可行支持集；样本位置相依但抽取的无序子集等可能"
+    ],
+    "boundaries": [
+      "N是正整数，0≤K≤N，0≤n≤N，抽取无放回且每个n子集等可能",
+      "k为整数，必须属于给定可行支持集；样本位置相依但抽取的无序子集等可能"
+    ],
+    "counterexamples": [
+      {
+        "example": "总体N=2、K=1，无放回抽n=2则X必为1，但Binomial(2,1/2)给P(X=2)=1/4。",
+        "explanation": "无放回导致试验条件概率随抽取结果变化，不能假定独立重复伯努利试验。",
+        "false_claim": "从有限总体不放回抽样的成功次数总是Binomial(n,K/N)"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-100"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先判断是否是有限总体、等可能和不放回。",
+      "检查k落在支持集并给出总样本数C(N,n)。",
+      "分成功与失败对象分别组合，最后除以总样本数并检查归一化。"
+    ],
+    "id": "math.hs.batch117.08",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "从有限总体不放回抽样的成功次数总是Binomial(n,K/N)",
+        "repair_question": "逐项检查结果是否有序、可放回、样本划分是否互斥且完整，找出不成立的数学前提。",
+        "why_wrong": "无放回导致试验条件概率随抽取结果变化，不能假定独立重复伯努利试验。"
+      }
+    ],
+    "notation": [
+      "N总体容量，K成功对象数，n抽样数",
+      "C(N,n)>0是等可能n子集总数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch117.04"
+    ],
+    "prerequisites": [
+      "组合数与分步计数",
+      "有限古典概率与线性期望"
+    ],
+    "proof_steps": [
+      {
+        "claim": "所有可能抽样结果是N个对象的n元素子集，共C(N,n)种且等可能。",
+        "reason": "无放回且无序样本定义给出了古典概型的等可能性。"
+      },
+      {
+        "claim": "若X=k，从K个成功对象选k个、从N−K个失败对象选n−k个，两个选择相乘得到C(K,k)C(N−K,n−k)。",
+        "reason": "成功集合与失败集合无交集，每个总体样本唯一分解成这两个部分。"
+      },
+      {
+        "claim": "将有利结果数除以C(N,n)得到概率；每个成功对象被抽中的概率n/N，指标变量求和得E[X]=K×n/N。",
+        "reason": "总数非零且期望线性性不依赖各指标独立；不放回时各指标通常有依赖。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "总体有N个相异对象，其中K个标记为成功，随机等可能无放回抽取n个对象且0≤K,n≤N均为整数。成功个数X=k的概率是C(K,k)C(N−K,n−k)/C(N,n)，有效支持为max(0,n−(N−K))≤k≤min(n,K)，且E[X]=nK/N（N>0）。不可在不放回样本上直接替换成独立二项分布。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "超几何分布：有限总体不放回与支持集",
+    "transfer": {
+      "far": "稀有故障零件抽检与放回抽样的方差不同，解释为什么不能不问样本方案就套二项模型。",
+      "near": "10个不同球中4红6蓝，不放回选3个，求恰两红概率。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "3/5。",
+        "check": "枚举两个红球分别配三蓝球，共6个合法二元集合。",
+        "question": "盒中5球有2红3蓝，不放回抽2球，恰一红概率？",
+        "steps": [
+          "总样本数C(5,2)=10。",
+          "有利样本C(2,1)C(3,1)=2×3=6。"
+        ]
+      },
+      {
+        "answer": "均值1；P(X=2)=1/5。",
+        "check": "概率非负并且k可为0、1、2，支持内各项求和为1。",
+        "question": "总体N=6、K=2，不放回抽n=3，求成功数均值及P(X=2)。",
+        "steps": [
+          "均值nK/N=3×2/6=1。",
+          "P(X=2)=C(2,2)C(4,1)/C(6,3)=4/20=1/5。"
+        ]
+      }
+    ]
+  }
+]

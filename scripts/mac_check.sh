@@ -179,6 +179,10 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch114.py --check --verif
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch115.py --check --verify-local-source
 .venv/bin/python scripts/build_kb_batch116_inventory.py --check --verify-local-source
 .venv/bin/python scripts/build_kb_batch116_condition_audit.py --check
+.venv/bin/python scripts/build_kb_batch117.py --check
+.venv/bin/python -m pytest -q tests/test_kb_batch117.py
+.venv/bin/python scripts/build_kb_batch117_scope_segments.py --check
+.venv/bin/python -m pytest -q tests/test_kb_batch117_example_oracles.py tests/test_kb_batch117_scope_segments.py
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch107_lessons.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)
