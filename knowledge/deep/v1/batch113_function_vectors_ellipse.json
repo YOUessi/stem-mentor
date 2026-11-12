@@ -1,0 +1,850 @@
+[
+  {
+    "assumptions": [
+      "x为正实数且趋于正无穷",
+      "本课固定指数与对数底数2；底数变化须重新检查"
+    ],
+    "boundaries": [
+      "x为正实数且趋于正无穷",
+      "本课固定指数与对数底数2；底数变化须重新检查"
+    ],
+    "counterexamples": [
+      {
+        "example": "x=-1时log₂x在实数域无定义；而x=1/4时log₂x=-2并非某种正量增长趋势。",
+        "explanation": "渐近比较要指出x→正无穷，不能移除对数定义域。",
+        "false_claim": "上述增长次序对所有实数x不检查定义域也成立"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-021"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认x趋向何处以及对数的正数输入要求。",
+      "利用2ⁿ的二项式项为n/2ⁿ构造上界。",
+      "把x夹在两个相邻整数中，再用对数反函数代换。"
+    ],
+    "id": "math.hs.batch113.01",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "上述增长次序对所有实数x不检查定义域也成立",
+        "repair_question": "请指出推导中遗漏的数学假设、定义域或边界条件，并给出有效反例。",
+        "why_wrong": "渐近比较要指出x→正无穷，不能移除对数定义域。"
+      }
+    ],
+    "notation": [
+      "x：无量纲正变量",
+      "2ˣ：指数函数；log₂x：对数函数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "指数函数严格递增与指数律",
+      "对数为指数的反函数及极限含义"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对整数n≥4，由二项式展开2ⁿ=(1+1)ⁿ≥C(n,3)=n(n-1)(n-2)/6，从而n/2ⁿ≤6/((n-1)(n-2))。",
+        "reason": "每项均非负，组合数是其中一项；右端趋零。"
+      },
+      {
+        "claim": "若实数x∈[n,n+1]，有0≤x/2ˣ≤(n+1)/2ⁿ，故x/2ˣ也趋零。",
+        "reason": "2ˣ单调递增；用夹逼法把整数证明推广到所有大实数。"
+      },
+      {
+        "claim": "令t=log₂x，则x=2ᵗ、t→∞，从而log₂x/x=t/2ᵗ→0。",
+        "reason": "对数与指数互逆，使用上一阶段对所有实数t的极限。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "当x→+∞时，log₂x/x→0且x/2ˣ→0，因此对充分大的正x有log₂x<x<2ˣ；结论是渐近关系，不是对任意实数的无条件排序。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "指数、线性、对数的远端增长：严格量化比较",
+    "transfer": {
+      "far": "人口模型中的指数增长无法永远持续，举资源上界说明数学极限与现实长期预测的区别。",
+      "near": "研究底数3时x/3ˣ随x增大的极限，并给出类比整数界。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "4<16<65536。",
+        "check": "幂与对数互逆，三个数均在实数定义域内。",
+        "question": "比较x=16时log₂x、x、2ˣ的具体数值。",
+        "steps": [
+          "由2⁴=16得到log₂16=4。",
+          "2¹⁶=65536，比较4<16<65536。"
+        ]
+      },
+      {
+        "answer": "分别为1/2和1/4。",
+        "check": "两值为非负，且只能说明有限样例，不能代替极限证明。",
+        "question": "比较x=4时函数log₂x/x和x/2ˣ。",
+        "steps": [
+          "log₂4=2，故前者2/4。",
+          "4/2⁴=4/16，比较两个比值。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "所有观测t的时间单位一致",
+      "指数模型要求A>0、q>0并明确数据噪声与适用阶段"
+    ],
+    "boundaries": [
+      "所有观测t的时间单位一致",
+      "指数模型要求A>0、q>0并明确数据噪声与适用阶段"
+    ],
+    "counterexamples": [
+      {
+        "example": "(t,y)为(0,2),(1,4),(2,8)，若从t=3起出现容量上限10，则原模型预测16失效。",
+        "explanation": "短期观测样本吻合不证明未来数据机制稳定，也不证明无界增长的长期假设。",
+        "false_claim": "前3期观测完全落在指数曲线上，未来就一定服从该指数模型"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-060"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先明确输入和输出各自代表什么，特别是时间间隔。",
+      "比较相邻绝对差和相邻比值，提出两个候选模型。",
+      "检查独立数据与现实上界，不把精确拟合当作未来保证。"
+    ],
+    "id": "math.hs.batch113.02",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "前3期观测完全落在指数曲线上，未来就一定服从该指数模型",
+        "repair_question": "请指出推导中遗漏的数学假设、定义域或边界条件，并给出有效反例。",
+        "why_wrong": "短期观测样本吻合不证明未来数据机制稳定，也不证明无界增长的长期假设。"
+      }
+    ],
+    "notation": [
+      "r_i=y_i-ŷ_i：残差",
+      "A：起始规模；q：每单位时间乘数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "一次函数和指数函数",
+      "比例变化与差分数据"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "计算同相邻时间间隔的绝对差与比值，检验近似等差还是等比结构。",
+      "分别写出候选预测，比较留出观测和训练残差；残差较小不说明真实机制已识别。",
+      "对实际非负容量、政策改变或增长饱和作范围检查，说明哪些时间点之外不能保证。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在离散观测(t_i,y_i)上比较线性y=a+bt与指数y=Aqᵗ时，首先检查t的单位与y的正负取值范围；其次比较样本残差及留出数据的误差，最后明确外推条件与潜在结构变化。模型拟合不等于现实因果证明。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "函数模型选择：单位、残差、独立检验与外推失效",
+    "transfer": {
+      "far": "解释为什么疫情增长曲线在防控策略变化后，不能把前两天拟合的指数率无条件外推。",
+      "near": "观测(0,10),(1,15),(2,22.5)，判断相邻比率并描述下一期预测依赖的假设。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "三点上指数模型精确拟合。",
+        "check": "t=0,1,2代入得到2,4,8；对t=3的16仅为假设性预测。",
+        "question": "观测(0,2),(1,4),(2,8)，判断线性或指数模型何者精确覆盖三点。",
+        "steps": [
+          "相邻差为2与4不相等，非一次函数。",
+          "相邻比值均为2，指数模型y=2·2ᵗ精确吻合。"
+        ]
+      },
+      {
+        "answer": "y=3+2t。",
+        "check": "三点逐一代回均正确，未认定外推必然正确。",
+        "question": "数据(0,3),(1,5),(2,7)，判断最简单线性模型。",
+        "steps": [
+          "相邻差恒2，因此候选斜率为2。",
+          "t=0的截距为3，代入验证第三点。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "模型需明确现实输入的测量单位及允许范围",
+      "没有证据时不能把外推值冒充观测事实"
+    ],
+    "boundaries": [
+      "模型需明确现实输入的测量单位及允许范围",
+      "没有证据时不能把外推值冒充观测事实"
+    ],
+    "counterexamples": [
+      {
+        "example": "账户人数若是非负整数，取t=-100或预测人数为0.3人不一定符合计数语义。",
+        "explanation": "公式定义域和模型适用域是两种不同约束，后者取决于现实单位和资料。",
+        "false_claim": "表达式在实数上可求值，现实模型就能无限远预测"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-011"
+    ],
+    "definition": "数学函数定义域是使表达式有意义且单值的输入集合；现实模型的有效输入还必须同时满足变量取值、单位、时间窗口、参数标定与情境假设。两种定义域不一定相同。",
+    "hint_ladder": [
+      "先列出表达式本身对输入自变量的全部数学定义域限制。",
+      "把题目情境中的单位、非负性、整数性和有效时间区间加进去。",
+      "明确说明数学定义域与情境有效域为何不同。"
+    ],
+    "id": "math.hs.batch113.03",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "表达式在实数上可求值，现实模型就能无限远预测",
+        "repair_question": "请指出推导中遗漏的数学假设、定义域或边界条件，并给出有效反例。",
+        "why_wrong": "公式定义域和模型适用域是两种不同约束，后者取决于现实单位和资料。"
+      }
+    ],
+    "notation": [
+      "D_math：表达式的数学定义域",
+      "D_model：情境允许的输入域，通常D_model⊆D_math"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "集合与区间表示",
+      "函数的对应关系与指数表达式"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "数学上y=100·1.05ᵗ对所有实数t有定义。",
+      "若t代表从今年起计的整年且仅使用未来5年的样本，则有效域可规定为{0,1,2,3,4,5}。",
+      "因此某个t使公式可代入不等于现实上可观察或可合理预测，须分别记录两种域。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "数学函数定义域是使表达式有意义且单值的输入集合；现实模型的有效输入还必须同时满足变量取值、单位、时间窗口、参数标定与情境假设。两种定义域不一定相同。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "现实函数模型的有效定义域与数学定义域",
+    "transfer": {
+      "far": "城市交通流量模型遇到节假日结构变化时，为何外推时域应缩小且需要重新验证参数？",
+      "near": "在连续计息模型中比较输入t为任意实数与开户后非负月份整数的两种解释。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "D_math=R，D_model={0,1,2,3}。",
+        "check": "负数t不被语境允许，不等于公式不能计算。",
+        "question": "N(t)=100·2ᵗ，t表示未来3年整数年份，指出两种定义域。",
+        "steps": [
+          "数学指数表达式对所有实数t有定义。",
+          "按情境有效域只取t∈{0,1,2,3}。"
+        ]
+      },
+      {
+        "answer": "实际定义域(0,2]，A(2)=16平方米。",
+        "check": "长度为负不物理可行，公式的实数可代入性不能改变它。",
+        "question": "长度x米，面积A=4x²，若0<x≤2，给出有效域与数值。",
+        "steps": [
+          "代数式在全部实数有定义。",
+          "实际长度及场地上限要求x∈(0,2]，取x=2得16。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "t的单位明确，且指数底数q>0",
+      "时间尺度改变时保留同一物理时刻必须做变量替换"
+    ],
+    "boundaries": [
+      "t的单位明确，且指数底数q>0",
+      "时间尺度改变时保留同一物理时刻必须做变量替换"
+    ],
+    "counterexamples": [
+      {
+        "example": "若每月倍率为1.1，每季度准确倍率是1.1³=1.331，即增长33.1%。",
+        "explanation": "指数复合率随时间尺度乘方，而非保留原倍率。",
+        "false_claim": "每月增长率为10%却声称每季度仍可直接使用完全相同的10%增长率"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-060"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写单位：输入每变化1个单位，输出究竟变化多少。",
+      "建立新旧自变量之间的代数关系，而非直接替换变量名称。",
+      "把时间换算代入模型，利用指数律或一次函数运算整理参数。"
+    ],
+    "id": "math.hs.batch113.04",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "每月增长率为10%却声称每季度仍可直接使用完全相同的10%增长率",
+        "repair_question": "请指出推导中遗漏的数学假设、定义域或边界条件，并给出有效反例。",
+        "why_wrong": "指数复合率随时间尺度乘方，而非保留原倍率。"
+      }
+    ],
+    "notation": [
+      "b：每单位时间的绝对变化率",
+      "q：每单位时间的增长倍率，无量纲"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch113.02"
+    ],
+    "prerequisites": [
+      "函数复合及代换",
+      "指数乘法法则"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "给定y=Aq_old^t，其中t按月计数；若s按季度计数，t=3s。",
+      "代入得y=A(q_old³)^s，因此季度倍率为q_old³，属于严格代数恒等变换。",
+      "同样若y=a+bt，t=3s，则新斜率为3b；忽略单位会造成系统性预测错误。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "线性模型y=a+bt的斜率b量纲为[y]/[t]；指数模型y=Aqᵗ中q是每单位t的倍率。若改用每个新时间单位对应旧单位k倍，则应替换q_new=q_old^k，不可原样复制倍率。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "参数的量纲与时间尺度换算：防止增长率误用",
+    "transfer": {
+      "far": "解释医院新增病例月增长模型若直接改用周采样但不换参数，为什么会出现数量级错误。",
+      "near": "一周相当于7天，每天乘1.01时计算每周精确倍率而非使用1.07近似。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "两个月倍率1.44，增长44%。",
+        "check": "1.2×1.2=1.44，不能直接把20%误当两个月增长率。",
+        "question": "每月倍率1.2，求两个月的倍率和增长率。",
+        "steps": [
+          "连续两期乘数相乘得到1.2²。",
+          "1.44减1得0.44。"
+        ]
+      },
+      {
+        "answer": "每分钟斜率0.05千米/分钟。",
+        "check": "60分钟累计增加3千米，与原单位吻合。",
+        "question": "每小时线性增加3千米，换成每分钟模型斜率。",
+        "steps": [
+          "一分钟为1/60小时，设m为分钟数。",
+          "累计增加3·m/60千米。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "使用标准欧氏内积并明确v≠0",
+      "投影方向的坐标系与长度单位一致"
+    ],
+    "boundaries": [
+      "使用标准欧氏内积并明确v≠0",
+      "投影方向的坐标系与长度单位一致"
+    ],
+    "counterexamples": [
+      {
+        "example": "取u=(1,2,3)、v=(0,0,0)，分子与分母均为0，无合法商。",
+        "explanation": "零向量不定义方向，不能通过0/0的形式给出方向投影。",
+        "false_claim": "投影公式对零向量方向v=0也可以直接计算"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-112"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先从原题条件中检查投影方向是否为非零向量。",
+      "设投影为kv，写出残差与v垂直这一条约束。",
+      "从点积条件解出k，再进行正交性代回核验。"
+    ],
+    "id": "math.hs.batch113.05",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "投影公式对零向量方向v=0也可以直接计算",
+        "repair_question": "请指出推导中遗漏的数学假设、定义域或边界条件，并给出有效反例。",
+        "why_wrong": "零向量不定义方向，不能通过0/0的形式给出方向投影。"
+      }
+    ],
+    "notation": [
+      "u·v：向量点积",
+      "v·v=||v||²：正值分母"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "点积和垂直条件",
+      "向量数乘与向量减法"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "令投影向量为kv并要求残差u-kv垂直于v，于是(u-kv)·v=0。",
+      "求出k=(u·v)/(v·v)，除法合法仅因v非零。",
+      "代回后残差与v点积等于0，说明所求是正交投影。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在欧氏空间R³中给定向量u、非零向量v，投影到v所张成直线的向量为proj_v(u)=(u·v)/(v·v)v；残差u-proj_v(u)与v正交。v=0时投影到方向v的商式无定义。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "正交投影公式及零方向的必要拒绝",
+    "transfer": {
+      "far": "从风向测量的向量分解解释沿航向分量与侧风残差为何必须正交。",
+      "near": "求u=(1,2,3)在v=(0,0,2)上的投影，并明确系数是否取绝对值。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "(3,0,0)。",
+        "check": "残差与v点积为0，投影与残差和为u。",
+        "question": "求u=(3,4,2)在v=(1,0,0)上的正交投影。",
+        "steps": [
+          "u·v=3，v·v=1。",
+          "代入得到3v=(3,0,0)，检查残差为(0,4,2)。"
+        ]
+      },
+      {
+        "answer": "(1,1,0)。",
+        "check": "残差向量为(1,-1,0)，与v=(1,1,0)的内积为1-1=0。",
+        "question": "求u=(2,0,0)在v=(1,1,0)上的投影。",
+        "steps": [
+          "u·v=2，v·v=2，系数为1。",
+          "投影(1,1,0)，残差(1,-1,0)。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "u×v≠0以保证两方向不平行",
+      "p、q是直线上点，所有向量在同一欧氏坐标系"
+    ],
+    "boundaries": [
+      "u×v≠0以保证两方向不平行",
+      "p、q是直线上点，所有向量在同一欧氏坐标系"
+    ],
+    "counterexamples": [
+      {
+        "example": "u=(1,0,0),v=(2,0,0)，有u×v=0，公式成为除以零。",
+        "explanation": "平行是单独分支，距离应按垂线投影计算而不能套用异面分式。",
+        "false_claim": "两直线方向平行时仍可以直接除以外积范数求距离"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-112"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先列出两直线方向向量并计算叉积是否为零。",
+      "非平行时，把两条方向共同垂直的单位法向量写出。",
+      "将两线点差投影到法向并证明其下界可以达到。"
+    ],
+    "id": "math.hs.batch113.06",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "两直线方向平行时仍可以直接除以外积范数求距离",
+        "repair_question": "请指出推导中遗漏的数学假设、定义域或边界条件，并给出有效反例。",
+        "why_wrong": "平行是单独分支，距离应按垂线投影计算而不能套用异面分式。"
+      }
+    ],
+    "notation": [
+      "u×v：叉积法向量",
+      "d：两直线上所有点距离的下确界，实际可取到"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "三维叉积及法向量",
+      "正交投影与勾股不等式"
+    ],
+    "proof_steps": [
+      {
+        "claim": "令n=(u×v)/||u×v||，则n同时垂直于u和v。",
+        "reason": "外积性质和非平行前提保证分母正且单位法向量存在。"
+      },
+      {
+        "claim": "任意两直线点差w=(q+sv)-(p+tu)的法向分量w·n=(q-p)·n固定。",
+        "reason": "u·n=v·n=0，故所有点差的长度至少是绝对法向分量。"
+      },
+      {
+        "claim": "由于u、v线性无关且张成n的正交平面，可选t,s抵消w在该平面内的分量，从而达到下界。",
+        "reason": "二维线性无关向量张成该平面，存在唯一系数组合；最短距离因此取到。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "设L1={p+tu:t∈R}、L2={q+sv:s∈R}，u,v非零且u×v≠0，则两直线的最短欧氏距离为d=|(q-p)·(u×v)|/||u×v||。平行时该分式无定义，需改用点到直线距离。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "空间异面直线的最短距离及平行退化",
+    "transfer": {
+      "far": "两条管线似乎没有相交，若工程图把两条管线当作平行却忽视方向数据，距离公式会怎样失效？",
+      "near": "求L1=(t,0,0),L2=(0,2+s,-4)的距离并写出达到下界的点。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "d=1。",
+        "check": "取t=0,s=-1，两点分别(0,0,0)和(0,0,1)，长度确为1。",
+        "question": "L1=(t,0,0), L2=(0,1+s,1)，求两直线距离。",
+        "steps": [
+          "u=(1,0,0),v=(0,1,0)，叉积为(0,0,1)。",
+          "q-p=(0,1,1)，绝对点积为1且范数为1。"
+        ]
+      },
+      {
+        "answer": "d=3。",
+        "check": "t=0,s=-2时取点(0,0,0)、(0,0,3)，达到下界。",
+        "question": "L1=(t,0,0), L2=(0,2+s,3)，求距离。",
+        "steps": [
+          "两方向仍分别为x、y轴，法向为z轴。",
+          "差向量的z分量为3，法向单位长度为1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "A是三阶实方阵，三列向量属于同一R³",
+      "行列式及矩阵乘法遵守标准实数域定义"
+    ],
+    "boundaries": [
+      "A是三阶实方阵，三列向量属于同一R³",
+      "行列式及矩阵乘法遵守标准实数域定义"
+    ],
+    "counterexamples": [
+      {
+        "example": "A=diag(1,1,0)时det=0，但右端(1,1,0)仍有无穷多解。",
+        "explanation": "奇异仅说明不可能对每个右端都存在唯一解，不能跳过增广矩阵秩判别。",
+        "false_claim": "det(A)=0说明对每一个非零右端b方程Ax=b都无解"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-134"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认矩阵是定义在实数域的三阶方阵而非任意矩阵。",
+      "尝试从某列依赖关系推到行列式有重复列。",
+      "反方向通过列独立的基与可逆映射完成证明。"
+    ],
+    "id": "math.hs.batch113.07",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "det(A)=0说明对每一个非零右端b方程Ax=b都无解",
+        "repair_question": "请指出推导中遗漏的数学假设、定义域或边界条件，并给出有效反例。",
+        "why_wrong": "奇异仅说明不可能对每个右端都存在唯一解，不能跳过增广矩阵秩判别。"
+      }
+    ],
+    "notation": [
+      "det(A)：三阶行列式",
+      "α,β,γ：判断线性相关的系数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "三阶行列式交替多线性定义",
+      "高斯消元可逆行变换"
+    ],
+    "proof_steps": [
+      {
+        "claim": "若列向量相关，某一列可写成其余列线性组合，行列式对该列展开后每项都有重复列，故det(A)=0。",
+        "reason": "行列式多线性和有相同两列则值为零的性质。"
+      },
+      {
+        "claim": "反之若三列独立，则它们组成R³的一组基，每个向量有唯一坐标表示；映射x↦Ax可逆。",
+        "reason": "有限维线性代数基定理：三维空间三独立向量张成整个空间。"
+      },
+      {
+        "claim": "可逆矩阵满足det(A)det(A⁻¹)=det(I)=1，故det(A)≠0，得到逆否命题。",
+        "reason": "使用方阵行列式的乘法性以及三阶单位矩阵的行列式严格等于1。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "设A是实数域上的3×3矩阵，其三列分别是a,b,c，则det(A)=0当且仅当存在不全为零的实数α,β,γ使αa+βb+γc=0；当det(A)≠0时矩阵可逆。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "三阶行列式为零与列向量线性相关的等价性",
+    "transfer": {
+      "far": "将奇异技术矩阵投入产出模型时，说明为什么不能只看行列式为零就断定现实需求无解。",
+      "near": "给定三列(1,0,0),(0,1,0),(1,1,0)，判断行列式并写一组非零相关系数。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "相关。",
+        "check": "非零系数乘零列得到零向量，满足定义。",
+        "question": "判断矩阵diag(1,2,0)的列向量是否相关。",
+        "steps": [
+          "行列式1·2·0=0。",
+          "第三列为零向量，直接构造系数(0,0,1)。"
+        ]
+      },
+      {
+        "answer": "det=6，可逆。",
+        "check": "逆矩阵diag(1,1/2,1/3)，乘法验证为I。",
+        "question": "判断矩阵diag(1,2,3)的可逆性及行列式。",
+        "steps": [
+          "行列式为三对角值乘积1·2·3。",
+          "结果非零，三列独立且矩阵可逆。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "矩阵和右端包含同一实数域的系数",
+      "每次变换必须对增广矩阵整行实施"
+    ],
+    "boundaries": [
+      "矩阵和右端包含同一实数域的系数",
+      "每次变换必须对增广矩阵整行实施"
+    ],
+    "counterexamples": [
+      {
+        "example": "原方程x=1乘0后变为0=0，x=2错误地变成满足新方程。",
+        "explanation": "整行乘零不可逆，还会直接丢失有效方程的约束，因而可能改变原解集。",
+        "false_claim": "把任何一行乘0仍是保持所有解的合法初等行变换"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-126"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "写出增广矩阵，先找非零主元而不是强行除以0。",
+      "每次行变换都说出可逆操作，确保右端同步变化。",
+      "阶梯化后回代，并将答案代入全部原方程检验。"
+    ],
+    "id": "math.hs.batch113.08",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "把任何一行乘0仍是保持所有解的合法初等行变换",
+        "repair_question": "请指出推导中遗漏的数学假设、定义域或边界条件，并给出有效反例。",
+        "why_wrong": "整行乘零不可逆，还会直接丢失有效方程的约束，因而可能改变原解集。"
+      }
+    ],
+    "notation": [
+      "[A|b]：增广矩阵",
+      "pivot：当前主元；零主元可能需要换行"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "一次方程的等价变形",
+      "矩阵初等行变换与逆操作"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "交换增广矩阵的两行只改变两个原方程的排列顺序，不会改变任何变量赋值是否满足原方程组。",
+      "非零行倍乘可由逆系数恢复；加上其他方程的倍数也可反向相减恢复，故解集不变。",
+      "三种操作组成高斯阶梯化；出现0=非零为无解，出现自由变量则可能有无穷多解。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "求解Ax=b可在增广矩阵上依次使用交换两行、把某行乘以非零数、把某行加上另一行的倍数三种可逆变换；若主元为零先交换寻找非零主元，不能把零倍缩放当作等价变换。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "三元高斯消元：可逆行操作与零主元处置",
+    "transfer": {
+      "far": "解释财务平衡约束中把某个方程乘零会怎样无故放宽原有预算条件。",
+      "near": "解方程组2x+y=5, x-y=1，尝试交换行选主元。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "(x,y)=(2,1)。",
+        "check": "代入原式2+1=3与2-1=1均成立。",
+        "question": "用行变换解x+y=3, x-y=1，给出x,y。",
+        "steps": [
+          "第二行减第一行得-2y=-2，因此y=1。",
+          "代回第一行x+1=3得x=2。"
+        ]
+      },
+      {
+        "answer": "(1,2,3)。",
+        "check": "原三式分别为6,5,3，完成逐行回代。",
+        "question": "解x+y+z=6, y+z=5, z=3。",
+        "steps": [
+          "从第三行得z=3，第二行得y=2。",
+          "第一行得x=1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a,b均严格为正，域包含边界且为闭有界集合",
+      "f为实系数二次多项式，边界参数t取完整一周期[0,2π]"
+    ],
+    "boundaries": [
+      "a,b均严格为正，域包含边界且为闭有界集合",
+      "f为实系数二次多项式，边界参数t取完整一周期[0,2π]"
+    ],
+    "counterexamples": [
+      {
+        "example": "f=x²+4y²在单位闭圆域内，内点唯一驻点(0,0)是最小0，但最大4在(0,±1)。",
+        "explanation": "紧域边界极值不能漏掉；顶点法只适用于特定仿射目标的凸多边形。",
+        "false_claim": "只解二元二次函数的梯度为零就一定找到了闭椭圆上的最大最小值"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-133"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先验证目标连续和闭椭圆的紧致性，保证最值存在。",
+      "分内点∇f=0与边界参数化两条路，不能遗漏边界。",
+      "把所有可行候选值作全域比较，检查常数边界或零梯度退化。"
+    ],
+    "id": "math.hs.batch113.09",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "只解二元二次函数的梯度为零就一定找到了闭椭圆上的最大最小值",
+        "repair_question": "请指出推导中遗漏的数学假设、定义域或边界条件，并给出有效反例。",
+        "why_wrong": "紧域边界极值不能漏掉；顶点法只适用于特定仿射目标的凸多边形。"
+      }
+    ],
+    "notation": [
+      "∇f：偏导数组成的梯度",
+      "g(t)=f(a cos t,b sin t)：边界一元周期函数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "连续函数在紧集上取极值",
+      "二元偏导与一元链式求导"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "椭圆域是闭有界非空集合且f连续，依据极值存在定理最大最小值必在域中达到。",
+      "若极值点在内部且f可微，必要条件为∇f=0；驻点包括鞍点，不能仅凭梯度为0就认证最值。",
+      "若极值位于边界，令g(t)=f(a cos t,b sin t)并在整周期求g'(t)=0的候选（或g恒定）；把内点、边界的所有候选值比较，才可认定全局最值。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对a,b>0，闭椭圆E={(x,y):x²/a²+y²/b²≤1}非空紧致。任意二元实二次多项式f在E上连续，故全局最大最小值必存在；求值须同时检查域内驻点与边界参数曲线(x,y)=(a cos t,b sin t)上的驻点，不能只用多边形顶点规则。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "闭圆域和闭椭圆域上的二元二次函数全局极值",
+    "transfer": {
+      "far": "设计受地理范围约束的二元成本函数时，为什么外侧无约束驻点可能不是实际最优方案？",
+      "near": "求闭椭圆x²/9+y²/4≤1上f=x²+y²的最值，解释为什么椭圆边界候选可能不唯一。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "最小0于(0,0)，最大4于(0,±1)。",
+        "check": "0≤x²+4y²≤4(x²+y²)≤4，且两个极值位置确实可行。",
+        "question": "在单位闭圆域x²+y²≤1上求f=x²+4y²的最值。",
+        "steps": [
+          "内点∇f=(2x,8y)=0得(0,0)，值0。",
+          "边界x=cos t,y=sin t，g=1+3sin²t，介于1和4。"
+        ]
+      },
+      {
+        "answer": "最大4于(±2,0)，最小-1于(0,±1)。",
+        "check": "由x²≤4得f≤4；又由f≥-y²≥-1；两端候选均在域内。",
+        "question": "在闭椭圆x²/4+y²≤1上求f=x²-y²的最值。",
+        "steps": [
+          "内点驻点(0,0)得0，不可直接定结论。",
+          "令x=2cos t,y=sin t，边界值4cos²t-sin²t=5cos²t-1，范围[-1,4]。"
+        ]
+      }
+    ]
+  }
+]
