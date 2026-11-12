@@ -41,7 +41,15 @@ def test_deep_pack_history_counts_all_json_not_only_batch_prefix():
     from app.deep_knowledge import DEEP_DIR
     import build_kb_batch114 as B
     pack = DEEP_DIR / "batch114_functions_statistics.json"
-    historical_paths = sorted(p for p in DEEP_DIR.glob("*.json") if p != pack)
+    # The Batch114 snapshot is frozen: later batch packs must not be counted
+    # as part of the already-published historical denominator.
+    import re
+    historical_paths = sorted(
+        p for p in DEEP_DIR.glob("*.json")
+        if p != pack and not (
+            (m := re.match(r"batch(\d+)", p.name)) and int(m.group(1)) >= 115
+        )
+    )
     history = [item for p in historical_paths for item in json.loads(p.read_text())]
     current = json.loads(pack.read_text())
     audit = json.loads((ROOT / "docs/evaluation/KB_BATCH114_AUDIT.json").read_text())

@@ -196,6 +196,10 @@ def coverage(scope=None,ds=None):
     prior={}
     for file in sorted((ROOT/"docs/evaluation").glob("KB_BATCH*_SCOPE.json")):
         if file==SRC:continue
+        # Historical source coverage is a frozen per-batch snapshot, not a
+        # rolling total. Future batch files must not mutate this audit.
+        future = re.match(r"KB_BATCH(\d+)_SCOPE\.json$", file.name)
+        if future and int(future.group(1)) > 114:continue
         try:
             ob=json.loads(file.read_text())
             if ob.get("source_pdf_sha256")!=PDF_SHA or not isinstance(ob.get("line_counts"),dict):continue
