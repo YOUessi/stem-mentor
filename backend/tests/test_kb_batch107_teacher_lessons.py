@@ -143,7 +143,10 @@ def test_complete_artifacts_and_approved_count_zero(output):
     assert B.AUDIT.read_text(encoding="utf8")==B.canonical(audit)
     assert B.MD.read_text(encoding="utf8")==B.markdown(docs,audit)
     assert len({x["id"] for x in docs})==10
-    assert len({x.id for x in lessons()})==audit["with_new_drafts"]
+    # Frozen historical snapshot cannot count later batches, but every Batch107
+    # lesson must remain loadable in the expanded current corpus.
+    assert len({x.id for x in lessons()})>=audit["with_new_drafts"]
+    assert {x["id"] for x in docs} <= {x.id for x in lessons()}
 
 
 def test_valid_teacher_only_prerequisite_graph(output):

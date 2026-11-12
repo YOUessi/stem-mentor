@@ -1,0 +1,9 @@
+Batch108 scope: 20 editorial, 17 exact, 53 source lines; PASS
+Batch108 lessons: 10 full teacher drafts, 20 examples, 24 proof-step candidates; PASS
+Batch107: ten teacher-only complete lessons, twenty checked worked examples, ten bounded oracles; --check True
+........................................................................ [ 27%]
+........................................................................ [ 54%]
+........................................................................ [ 81%]
+.................................................                        [100%]
+265 passed in 5.56s
+FOCUSED_EXIT_CODE=0
