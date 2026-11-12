@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build ten reviewed-only, complete teaching drafts and evidence crosswalk."""
 from __future__ import annotations
-import argparse,json,sys
+import argparse,json,sys,re
 from pathlib import Path
 from hashlib import sha256
 from collections import Counter
@@ -40,6 +40,10 @@ def build(units=UNITS,source_keys=SOURCE_KEYS):
     prior=[]
     for path in sorted(DEEP_DIR.glob("*.json")):
         if path==PACK:continue
+        # Historical Batch107 audit is a frozen snapshot: later lesson packs
+        # must never back-propagate into the earlier batch's denominators.
+        version=re.match(r"batch(\d+)",path.name)
+        if version and int(version.group(1))>107:continue
         prior.extend(json.loads(path.read_text(encoding="utf8")))
     ids=[x["id"] for x in prior]
     need(len(ids)==len(set(ids)), "historical deep IDs already duplicated")
