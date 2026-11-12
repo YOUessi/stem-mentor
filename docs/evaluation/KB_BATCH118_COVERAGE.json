@@ -1,0 +1,24 @@
+{
+  "authoritative_student_releases": 0,
+  "batch": 118,
+  "finite_exact_cases": 16,
+  "new_counterexamples": 8,
+  "new_drafts": 8,
+  "new_hint_levels": 24,
+  "new_teacher_only_examples": 16,
+  "new_transfer_prompts": 16,
+  "new_uncertified_proof_steps": 15,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "prior_drafts": 498,
+  "source_links": 8,
+  "teacher_approved": 0,
+  "total_review_pending_drafts": 506
+}

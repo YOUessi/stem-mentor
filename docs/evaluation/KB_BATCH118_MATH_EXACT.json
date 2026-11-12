@@ -1,0 +1,81 @@
+{
+  "batch": 118,
+  "cases": [
+    {
+      "finite_exact_checks_passed": 2,
+      "general_proof_machine_certified": false,
+      "lesson_key": "discrete_mass",
+      "negative": "invalid sum 7/6",
+      "positive": "mass 1/4+1/2+1/4",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "finite_exact_checks_passed": 2,
+      "general_proof_machine_certified": false,
+      "lesson_key": "expectation_linearity",
+      "negative": "product rule requires more",
+      "positive": "dependent X and Y",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "finite_exact_checks_passed": 2,
+      "general_proof_machine_certified": false,
+      "lesson_key": "variance_affine",
+      "negative": "variance cannot scale negatively",
+      "positive": "E[X²]−E[X]²",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "finite_exact_checks_passed": 2,
+      "general_proof_machine_certified": false,
+      "lesson_key": "binomial_pmf",
+      "negative": "dependent without replacement",
+      "positive": "independent repeated coin",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "finite_exact_checks_passed": 2,
+      "general_proof_machine_certified": false,
+      "lesson_key": "binomial_moments",
+      "negative": "correlated trials variance",
+      "positive": "5 independent Bernoulli trials",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "finite_exact_checks_passed": 2,
+      "general_proof_machine_certified": false,
+      "lesson_key": "hypergeom_mean",
+      "negative": "wrong unqualified half",
+      "positive": "N=10 K=4 n=3",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "finite_exact_checks_passed": 2,
+      "general_proof_machine_certified": false,
+      "lesson_key": "normal_standardization",
+      "negative": "variance is not sigma",
+      "positive": "variance 4 standard deviation 2",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "finite_exact_checks_passed": 2,
+      "general_proof_machine_certified": false,
+      "lesson_key": "sample_correlation",
+      "negative": "zero variance undefined",
+      "positive": "positive centered collinear",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    }
+  ],
+  "general_proofs_certified": 0,
+  "negative_cases": 8,
+  "positive_cases": 8,
+  "teacher_approved": 0
+}
