@@ -77,6 +77,13 @@ def build(candidates=CANDIDATES, partitions=PARTITIONS,verify_local_source=False
                     f"Mac PDFKit text fingerprint mismatch page={p}")
     require(len(candidates)==23, "expected 23 substantive source proposals")
     required_fields=set(CANDIDATES[0])
+    # Validate global key uniqueness before source-clause matching, so every
+    # substituted duplicate deterministically fails the duplicate-key gate.
+    require(all(isinstance(r,dict) and set(r)==required_fields for r in candidates),
+            "candidate schema drift")
+    keys=[r["oracle_key"] for r in candidates]
+    require(all(isinstance(k,str) for k in keys),"invalid oracle key")
+    require(len(set(keys))==len(keys),"duplicate oracle/review key")
     seen=set()
     titles=set()
     rows=[]

@@ -161,3 +161,13 @@ def test_provisional_source_never_claims_official_track_crosswalk(output):
     assert all(x["approved_official_atom_id"] is None for x in audit["source_to_engineering_crosswalk"])
     assert all(x["engineering_curriculum_id"] in {c["id"] for c in curriculum()}
                for x in audit["source_to_engineering_crosswalk"])
+
+
+def test_zero_first_vector_does_not_require_false_scalar_multiple(output):
+    from sympy import Matrix
+    zero=Matrix([0,0,0]); nonzero=Matrix([1,2,3])
+    assert zero.cross(nonzero)==Matrix([0,0,0])
+    proof=output[0][4]["proof_steps"][-1]
+    assert "先处理u=0情形" in proof["claim"]
+    assert "当u=0时不需要将非零v表示为ku" in proof["reason"]
+    assert check("cross_product")["finite_exact_positive_passed"] is True

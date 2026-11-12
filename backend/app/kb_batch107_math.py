@@ -85,7 +85,8 @@ def check(key: str) -> dict:
         detail = "Orthogonal nonzero vectors have dot product zero; a vector with itself does not."
     elif key == "cross_product":
         u,v=Matrix([1,0,0]),Matrix([0,1,0])
-        good = u.cross(v)==Matrix([0,0,1]) and u.cross(v).dot(u)==0
+        good = (u.cross(v)==Matrix([0,0,1]) and u.cross(v).dot(u)==0
+                and Matrix([0,0,0]).cross(Matrix([1,2,3]))==Matrix([0,0,0]))
         bad = u.cross(u)==Matrix([0,0,1])
         detail = "Cross product is perpendicular, with zero result on parallel vectors."
     elif key == "projection":
