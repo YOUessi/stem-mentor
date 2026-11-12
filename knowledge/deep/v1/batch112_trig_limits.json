@@ -1,0 +1,770 @@
+[
+  {
+    "assumptions": [
+      "输入角度必须是弧度，参数ω与自变量量纲互为倒数",
+      "若要求最小正周期必须A≠0且ω≠0"
+    ],
+    "boundaries": [
+      "输入角度必须是弧度，参数ω与自变量量纲互为倒数",
+      "若要求最小正周期必须A≠0且ω≠0"
+    ],
+    "counterexamples": [
+      {
+        "example": "令A=0、ω=2，函数恒为0，任意正数都是周期但不存在最小正周期。",
+        "explanation": "有公式形式不等于满足非退化条件；尤其禁止除以ω=0。",
+        "false_claim": "只要写成A sin(ωx+φ)就有最小正周期2π/|ω|"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-031"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先辨别参数是否退化为常函数，再决定是否能讨论最小正周期。",
+      "区分A的符号与振幅的非负定义，周期由输入相位增长一周获得。",
+      "把周期代回原函数验证平移不变，同时检查零频率和零振幅。"
+    ],
+    "id": "math.hs.batch112.01",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "只要写成A sin(ωx+φ)就有最小正周期2π/|ω|",
+        "repair_question": "请指出这个说法违反了什么定义域、量词或定理前提，并用具体反例修复推理。",
+        "why_wrong": "有公式形式不等于满足非退化条件；尤其禁止除以ω=0。"
+      }
+    ],
+    "notation": [
+      "A：带正负号的幅值参数，|A|为振幅",
+      "ω：角频率，φ：相位，T：最小正周期"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "单位圆与正弦图像",
+      "函数平移伸缩和周期定义"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "对非零A，正弦值域[-1,1]乘以A后值域为[-|A|,|A|]，振幅是非负量|A|。",
+      "保持自变量x增加T时相位增加ωT=±2π，因此周期为2π/|ω|；非零频率时才可除以ω。",
+      "当A=0时输出恒0；当ω=0时输出恒A sinφ，常函数有任意正周期而无最小正周期。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在实变量x、实参数A、ω、φ下，模型y=A sin(ωx+φ)。当A≠0且ω≠0，振幅为|A|、最小正周期T=2π/|ω|；当ω≠0可改写成A sin[ω(x+φ/ω)]。若A=0或ω=0，模型是常函数，不能按通式宣布存在最小正周期。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "参数正弦模型：振幅、周期与退化条件",
+    "transfer": {
+      "far": "一个潮位观测模型有小时为单位的自变量，写出角频率量纲并讨论时间单位由小时变分钟时参数怎样变化。",
+      "near": "比较y=2sin(3x+π/3)与y=-2sin(3x+π/3)的振幅、周期和相位平移。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "振幅3，最小正周期π。",
+        "check": "平移x→x+π，角度增加2π，函数值保持不变。",
+        "question": "对y=-3sin(2x-π/2)求振幅和最小正周期。",
+        "steps": [
+          "核对A=-3与ω=2均非零。",
+          "振幅取|A|=3，周期按2π/|2|计算。"
+        ]
+      },
+      {
+        "answer": "函数恒为5/2，无最小正周期。",
+        "check": "直接代入sinπ/6=1/2，无需除以ω。",
+        "question": "对y=5sin(0·x+π/6)判断是否有最小正周期。",
+        "steps": [
+          "角频率为零，所有x输入相位相同。",
+          "所得常数为5/2，任意正T都是周期但没有最小正值。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "角为实数且用单位圆定义正弦余弦",
+      "由基本恒等式除以cos²x时必须cosx≠0"
+    ],
+    "boundaries": [
+      "角为实数且用单位圆定义正弦余弦",
+      "由基本恒等式除以cos²x时必须cosx≠0"
+    ],
+    "counterexamples": [
+      {
+        "example": "x=π/2时cosx=0，tanx与1/cos²x均无实数定义，不能称作等式成立。",
+        "explanation": "基本平方和恒等式全域成立，不代表除法后等式全域成立。",
+        "false_claim": "对全部实数x都有1+tan²x=1/cos²x这一合法等式"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-026"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先找出哪一个等式只依赖单位圆半径，而不含除法。",
+      "发现需要做同除运算时先检查余弦是否可能为零。",
+      "选择π/2的端点反例并比较两种公式的定义域。"
+    ],
+    "id": "math.hs.batch112.02",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "对全部实数x都有1+tan²x=1/cos²x这一合法等式",
+        "repair_question": "请指出这个说法违反了什么定义域、量词或定理前提，并用具体反例修复推理。",
+        "why_wrong": "基本平方和恒等式全域成立，不代表除法后等式全域成立。"
+      }
+    ],
+    "notation": [
+      "sinx：单位圆终点的纵坐标",
+      "cosx：横坐标；tanx=sinx/cosx仅在非零分母定义"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "单位圆方程和勾股定理",
+      "等式同除非零量的合法条件"
+    ],
+    "proof_steps": [
+      {
+        "claim": "单位圆角终边的交点P=(cosx,sinx)，满足P横纵坐标平方和为1。",
+        "reason": "这是实单位圆x坐标平方加y坐标平方等于半径平方的定义。"
+      },
+      {
+        "claim": "因此cos²x+sin²x=1，任意实角都成立，角旋转不改变单位圆半径。",
+        "reason": "第一式不存在分母，所以没有排除任何实数角。"
+      },
+      {
+        "claim": "若cosx≠0，把第一式逐项除以cos²x，得到1+tan²x=1/cos²x。",
+        "reason": "除法保持等式必须确认分母不为零，x=π/2是明确反例。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对于任意实数弧度角x，有sin²x+cos²x=1。只有cosx≠0时才能合法推出1+tan²x=1/cos²x；不允许把第二式延拓到所有实数。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "同角恒等式：单位圆证明与零分母禁区",
+    "transfer": {
+      "far": "考虑三角函数商式用于地图坡度计算时竖直线出现的零分母问题，解释为何不能给出有限斜率。",
+      "near": "用cosx=-5/13且x在第三象限求sinx和tanx，并给出符号依据。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "cosx=4/5，tanx=3/4。",
+        "check": "9/25+16/25=1且分母4/5不为0。",
+        "question": "给定sinx=3/5且x在第一象限，求cosx及tanx。",
+        "steps": [
+          "利用cos²x=1-9/25=16/25。",
+          "第一象限cosx>0，得4/5，再用正切商。"
+        ]
+      },
+      {
+        "answer": "sin²x+cos²x=1成立，商式不适用。",
+        "check": "只使用定义，避免把无穷大当作实数。",
+        "question": "在x=π/2判断两个平方和/商公式是否适用。",
+        "steps": [
+          "单位圆点(0,1)，代入基本式得1。",
+          "cosx=0使正切和倒数公式均无定义。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "α、β为任意实数弧度角",
+      "在标准欧氏平面使用长度为1的向量及正交旋转"
+    ],
+    "boundaries": [
+      "α、β为任意实数弧度角",
+      "在标准欧氏平面使用长度为1的向量及正交旋转"
+    ],
+    "counterexamples": [
+      {
+        "example": "取α=β=π/4，正确左侧cos0=1，错误右侧cos²π/4-sin²π/4=0。",
+        "explanation": "误将cos(α+β)的符号复制到cos(α-β)，可用同角特例反驳。",
+        "false_claim": "两角差的余弦公式右边错误使用减号而不是应当采用的加号"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-029"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先用单位圆把两个角表示为长度为1的向量。",
+      "写出这两个单位向量的点积，并思考同时旋转是否影响点积。",
+      "把第二向量旋转至(1,0)后比较点积两种表达式。"
+    ],
+    "id": "math.hs.batch112.03",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "两角差的余弦公式右边错误使用减号而不是应当采用的加号",
+        "repair_question": "请指出这个说法违反了什么定义域、量词或定理前提，并用具体反例修复推理。",
+        "why_wrong": "误将cos(α+β)的符号复制到cos(α-β)，可用同角特例反驳。"
+      }
+    ],
+    "notation": [
+      "u(θ)：单位向量(cosθ,sinθ)",
+      "α-β：从角β到角α的有向角差"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch112.02"
+    ],
+    "prerequisites": [
+      "单位圆坐标",
+      "欧氏内积与旋转不改变夹角"
+    ],
+    "proof_steps": [
+      {
+        "claim": "令u=(cosα,sinα)、v=(cosβ,sinβ)，两者长度均为1。",
+        "reason": "由同角平方和恒等式证明向量范数均为1。"
+      },
+      {
+        "claim": "内积展开得u·v=cosα cosβ+sinα sinβ。",
+        "reason": "二维欧氏内积按对应坐标乘积相加定义。"
+      },
+      {
+        "claim": "把两个向量同时逆旋转β角，v变为(1,0)、u变为(cos(α-β),sin(α-β))，内积不变。",
+        "reason": "正交旋转矩阵满足RᵀR=I，不改变内积，故u·v=cos(α-β)。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对任意实数弧度角α、β，cos(α-β)=cosα cosβ+sinα sinβ。它源自单位向量夹角的旋转不变性，符号必须与两角和的余弦公式区别。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "两角差余弦公式：旋转与内积逐步推导",
+    "transfer": {
+      "far": "计算旋转图形两条单位方向向量的夹角余弦，并说明为什么共同转动相机不改变它。",
+      "near": "从cos(α-β)公式推出cos(α+β)公式，明确使用β→-β时奇偶性如何改变。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "cosπ/6=√3/2。",
+        "check": "两个加数各为√3/4，总和√3/2。",
+        "question": "不调用计算器求cos(π/3-π/6)。",
+        "steps": [
+          "代入cosπ/3=1/2、cosπ/6=√3/2。",
+          "加上sinπ/3 sinπ/6=(√3/2)(1/2)。"
+        ]
+      },
+      {
+        "answer": "√3/2。",
+        "check": "通过几何角差先求得30°，与右侧内积结果一致。",
+        "question": "利用两角差公式求cos(75°-45°)。",
+        "steps": [
+          "先确定角差30°，两角差公式仍适用角度制几何角。",
+          "代入cos75°cos45°+sin75°sin45°并等同于cos30°。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "闭区间连续且端点严格异号，若端点已经为零应直接报告零点",
+      "二分误差保证是距离区间内某个零点，不保证零点唯一"
+    ],
+    "boundaries": [
+      "闭区间连续且端点严格异号，若端点已经为零应直接报告零点",
+      "二分误差保证是距离区间内某个零点，不保证零点唯一"
+    ],
+    "counterexamples": [
+      {
+        "example": "令f(x)=-1当x<0而f(x)=1当x≥0，在[-1,1]端点异号却无零点。",
+        "explanation": "介值定理关键前提是整个闭区间连续，不能只检查两端点符号。",
+        "false_claim": "函数两端点函数值异号但不连续，也总能二分保证得到零点"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-016"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先检查连续性以及端点是否严格异号；不要从图形印象推断连续。",
+      "明确每轮保留哪个半区间，写出端点异号这个不变量。",
+      "分别计算整个区间长度和中点误差上界，不要把二者混淆。"
+    ],
+    "id": "math.hs.batch112.04",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "函数两端点函数值异号但不连续，也总能二分保证得到零点",
+        "repair_question": "请指出这个说法违反了什么定义域、量词或定理前提，并用具体反例修复推理。",
+        "why_wrong": "介值定理关键前提是整个闭区间连续，不能只检查两端点符号。"
+      }
+    ],
+    "notation": [
+      "m：当前区间中点",
+      "n：已完成的二分次数，a与b为初始端点"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "介值定理和函数零点",
+      "区间长度和绝对误差"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "连续且严格异号由介值定理保证区间内部至少有一个零点。",
+      "中点若非根，两半区间必有且仅须选一段端点函数值异号区间作为下一轮。",
+      "每步区间长度减半，n步长度(b-a)/2^n，中点与任意包含的根距离不超过半段长度。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对于连续实函数f:[a,b]→R且a<b、f(a)f(b)<0，存在内部零点。每步取m=(a+b)/2；若f(m)=0终止，否则保留端点函数值异号的半区间。第n次二分后区间长度为(b-a)/2^n，中点到该区间内任一零点的距离≤(b-a)/2^(n+1)。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二分法：变号连续性、更新不变量和区间误差",
+    "transfer": {
+      "far": "设计电压阈值零点搜索，说明带噪声的跳跃传感器为什么不能直接套用连续二分保证。",
+      "near": "对连续函数x³-x-1在[1,2]做三轮二分，给出根区间和中点误差界。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "二分两次区间[5/4,3/2]，中点11/8。",
+        "check": "长度1/4，中点到内部零点误差最多1/8。",
+        "question": "对f(x)=x²-2于[1,2]做两次二分。",
+        "steps": [
+          "m1=3/2，f(m1)=1/4>0，保留[1,3/2]。",
+          "m2=5/4，f(m2)=25/16-2<0，保留[5/4,3/2]。"
+        ]
+      },
+      {
+        "answer": "中点误差上界1/4。",
+        "check": "公式8/2^(4+1)=1/4，没有声明零点唯一。",
+        "question": "若初始区间[0,8]连续变号，做4次二分后中点误差上界是多少？",
+        "steps": [
+          "初始长度为8，每次精确减半，四次后长度为8/16。",
+          "中点误差最多为此长度的一半。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "f在紧区间连续从而黎曼可积，n为正整数",
+      "需要分割直径趋于零才能声称黎曼和极限是积分"
+    ],
+    "boundaries": [
+      "f在紧区间连续从而黎曼可积，n为正整数",
+      "需要分割直径趋于零才能声称黎曼和极限是积分"
+    ],
+    "counterexamples": [
+      {
+        "example": "f(x)=x在[0,1]时R_4=(4+1)/(2·4)=5/8，而积分为1/2。",
+        "explanation": "取样方案和网格宽度影响有限和误差；极限才对应定积分。",
+        "false_claim": "固定4等分的右端点和就等于定积分，无须取极限"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-122"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写出均匀分割点而不是直接套积分求值公式。",
+      "保持求和上限n并利用求和恒等式获得关于n的精确分式。",
+      "最后取n→∞，记下固定n与极限的区别。"
+    ],
+    "id": "math.hs.batch112.05",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "固定4等分的右端点和就等于定积分，无须取极限",
+        "repair_question": "请指出这个说法违反了什么定义域、量词或定理前提，并用具体反例修复推理。",
+        "why_wrong": "取样方案和网格宽度影响有限和误差；极限才对应定积分。"
+      }
+    ],
+    "notation": [
+      "R_n：n个子区间右端点求和",
+      "Δx：每个区间的长度；x_k：第k个右端点"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "有限和与等差平方和",
+      "极限的分割逼近思想"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "将[a,b]等分n份，函数值乘以子区间宽度并求和得到R_n。",
+      "对f(x)=x且[a,b]=[0,1]，有R_n=(1/n²)Σk=(n+1)/(2n)，此为精确有限和。",
+      "当n趋于无穷，(n+1)/(2n)→1/2，与图形直角三角形面积相同。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "设f连续于[a,b]且a<b，等分n个小区间、宽度Δx=(b-a)/n，右端点x_k=a+kΔx；右黎曼和R_n=Σ_{k=1}^n f(x_k)Δx，令n→∞收敛到定积分。固定n的R_n一般不是积分精确值。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "黎曼和：右端点分割与精确求和极限",
+    "transfer": {
+      "far": "温度随时间线性升高时，讨论按一天4次与每分钟采样估算累计热量的误差差别。",
+      "near": "用左端点求和再算f(x)=x在[0,1]的极限，并比较有限n时两种取样误差。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "R_n=(n+1)/(2n)，极限1/2。",
+        "check": "n=2得到3/4；精确积分1/2，不混淆有限近似和极限。",
+        "question": "求f(x)=x在[0,1]右端点R_n及其极限。",
+        "steps": [
+          "Δx=1/n，右端点k/n，R_n=Σk/n²。",
+          "使用Σk=n(n+1)/2并让n趋于∞。"
+        ]
+      },
+      {
+        "answer": "R_n=4+4/n，积分极限4。",
+        "check": "几何三角形面积(2·4)/2=4，与极限一致。",
+        "question": "计算f(x)=2x于[0,2]分成n份的右和。",
+        "steps": [
+          "Δx=2/n、x_k=2k/n，乘积每项为8k/n²。",
+          "求和8/n²·n(n+1)/2=4(n+1)/n。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a<b，F在闭区间连续、开区间可导，F'连续延拓到端点",
+      "积分是有向的，交换上下限改变符号"
+    ],
+    "boundaries": [
+      "a<b，F在闭区间连续、开区间可导，F'连续延拓到端点",
+      "积分是有向的，交换上下限改变符号"
+    ],
+    "counterexamples": [
+      {
+        "example": "阶梯跳跃函数F(x)=0(x<0)、1(x≥0)在[-1,1]端点差为1，但除跳点外导数为0；它不满足连续条件。",
+        "explanation": "不连续函数不是本定理允许的F，跳跃点不能被忽略。",
+        "false_claim": "只要写出一个导数符号，无须任何函数连续或可导前提就能积分成端点差"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-141"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先判断是否存在满足条件的原函数以及积分是否有向。",
+      "构造子区间并想一想中值定理如何转化为有限差分。",
+      "使用望远镜求和和连续导数黎曼可积性推导端点差。"
+    ],
+    "id": "math.hs.batch112.06",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "只要写出一个导数符号，无须任何函数连续或可导前提就能积分成端点差",
+        "repair_question": "请指出这个说法违反了什么定义域、量词或定理前提，并用具体反例修复推理。",
+        "why_wrong": "不连续函数不是本定理允许的F，跳跃点不能被忽略。"
+      }
+    ],
+    "notation": [
+      "F：可作为原函数的实值函数",
+      "F'：连续可积的导函数；a,b：积分端点"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch112.05"
+    ],
+    "prerequisites": [
+      "导数的定义和中值定理",
+      "黎曼和与闭区间连续性"
+    ],
+    "proof_steps": [
+      {
+        "claim": "等分[a,b]为x_0<…<x_n，对每段由拉格朗日中值定理得F(x_k)-F(x_(k-1))=F'(ξ_k)Δx。",
+        "reason": "F满足每个闭子区间连续与开子区间可导，ξ_k位于相应子区间。"
+      },
+      {
+        "claim": "把等式对k求和，左侧逐项消去得F(b)-F(a)，右侧成为取样点ξ_k的黎曼和。",
+        "reason": "望远镜求和是有限精确恒等式，与取样点依赖n无关。"
+      },
+      {
+        "claim": "因F'在[a,b]连续，分割直径趋零时所有相应黎曼和收敛为∫_a^b F'(x)dx。",
+        "reason": "连续性保证黎曼可积，极限与端点差等于同一实数。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若实函数F在[a,b]连续、在(a,b)可导，且其导数F'能够在[a,b]上以连续函数延拓，则∫_a^b F'(x)dx=F(b)-F(a)。连续导数是本讲义采用的充分条件，并非所有推广情形的必要条件。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "牛顿—莱布尼茨：连续导数及积分端点差",
+    "transfer": {
+      "far": "用速度连续的直线运动解释位移积分与路程积分的不同，辨别速度变负时为何净位移可为负。",
+      "near": "证明∫_{-1}^2 (3x²-1) dx并核对端点方向与零点的影响。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "积分值为8。",
+        "check": "连续导数保证合法性，直接面积或黎曼和也可核对。",
+        "question": "求∫_1^3 2x dx，并给出原函数前提。",
+        "steps": [
+          "令F(x)=x²，其导数2x在[1,3]连续。",
+          "按端点差F(3)-F(1)=9-1。"
+        ]
+      },
+      {
+        "answer": "积分值为-8。",
+        "check": "积分上下限倒置变号，不是负面积的错误。",
+        "question": "求∫_2^0 3x² dx，并说明方向。",
+        "steps": [
+          "原函数F(x)=x³满足光滑条件。",
+          "计算F(0)-F(2)=0-8。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "定义点有沿坐标方向的小邻域，函数在相关点有定义",
+      "偏导极限在另一变量固定时计算，不能让两变量同时任意变化"
+    ],
+    "boundaries": [
+      "定义点有沿坐标方向的小邻域，函数在相关点有定义",
+      "偏导极限在另一变量固定时计算，不能让两变量同时任意变化"
+    ],
+    "counterexamples": [
+      {
+        "example": "g(x,y)=xy/(x²+y²)(非原点)，g(0,0)=0，两偏导均0，但沿y=x趋1/2。",
+        "explanation": "坐标方向只是二维趋近的少数路径；偏导存在不控制其他路径。",
+        "false_claim": "两个偏导数在一点存在就说明二元函数在此点连续可微"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-127"
+    ],
+    "definition": "设f定义于(a,b)附近二维开域。偏x导数∂_x f(a,b)=lim_{h→0}[f(a+h,b)-f(a,b)]/h，若极限存在；偏y同理，保持x=a不变。偏导存在不保证f在该点连续或全微分存在。",
+    "hint_ladder": [
+      "先说清偏导方向，哪个变量固定是最关键的条件。",
+      "把二元函数沿该方向切成一个一元函数，再按一元导数定义处理。",
+      "若推断连续或可微，应主动找非坐标方向趋近检验是否成立。"
+    ],
+    "id": "math.hs.batch112.07",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "两个偏导数在一点存在就说明二元函数在此点连续可微",
+        "repair_question": "请指出这个说法违反了什么定义域、量词或定理前提，并用具体反例修复推理。",
+        "why_wrong": "坐标方向只是二维趋近的少数路径；偏导存在不控制其他路径。"
+      }
+    ],
+    "notation": [
+      "∂_x f：固定y对x求变化率",
+      "∂_y f：固定x对y求变化率"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "一元函数导数定义",
+      "二元函数与平面定义域"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "固定y=b后把f(x,b)看作一元切片，其x导数即偏x导数。",
+      "对于f(x,y)=x²y+3y²，偏x为2xy，偏y为x²+6y。",
+      "构造g(x,y)=xy/(x²+y²)在非原点、g(0,0)=0，两条坐标轴上恒零故两偏导为0，但沿y=x趋于1/2，不连续。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "设f定义于(a,b)附近二维开域。偏x导数∂_x f(a,b)=lim_{h→0}[f(a+h,b)-f(a,b)]/h，若极限存在；偏y同理，保持x=a不变。偏导存在不保证f在该点连续或全微分存在。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二元偏导：固定另一个变量与可微性边界",
+    "transfer": {
+      "far": "对于一个二元热场，仅测两个坐标方向的瞬时变化率是否足以断定任意方向的连续性？构造反例。",
+      "near": "求f(x,y)=x³+y³+xy在(1,2)的偏导，并指出偏导是沿哪个方向。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "∂_x f(2,1)=4，∂_y f(2,1)=10。",
+        "check": "由差商或分别对两变量求导重复验证。",
+        "question": "求f(x,y)=x²y+3y²在(2,1)的两个偏导。",
+        "steps": [
+          "固定y，求∂_x f=2xy；固定x，求∂_y f=x²+6y。",
+          "分别代入x=2,y=1得4和10。"
+        ]
+      },
+      {
+        "answer": "偏x=-2，偏y=3。",
+        "check": "直接差商[f(3+h,-2)-f(3,-2)]/h=-2。",
+        "question": "求f(x,y)=xy在(3,-2)的偏x、偏y导数。",
+        "steps": [
+          "偏x时将y=-2看作常数，导数为y。",
+          "偏y时将x=3看作常数，导数为x。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "P是非空闭且有界凸多边形，可表示为顶点的有限凸包",
+      "目标是仿射函数，非线性目标一般不能套用只看顶点的方法"
+    ],
+    "boundaries": [
+      "P是非空闭且有界凸多边形，可表示为顶点的有限凸包",
+      "目标是仿射函数，非线性目标一般不能套用只看顶点的方法"
+    ],
+    "counterexamples": [
+      {
+        "example": "单位正方形上f(x,y)=-(x-1/2)²-(y-1/2)²在内部(1/2,1/2)取得唯一最大值。",
+        "explanation": "关键前提是目标仿射，不能用该结论替代一般非线性优化。",
+        "false_claim": "所有连续函数在闭凸多边形上的最大最小值都只需查看顶点"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-133"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确定可行域是非空有界闭凸多边形，再检查目标是否仿射。",
+      "将任意可行点表示成顶点的凸组合，观察目标函数如何作用于凸组合。",
+      "比较顶点值并思考等值边界为何也可能取得同一极值。"
+    ],
+    "id": "math.hs.batch112.08",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "所有连续函数在闭凸多边形上的最大最小值都只需查看顶点",
+        "repair_question": "请指出这个说法违反了什么定义域、量词或定理前提，并用具体反例修复推理。",
+        "why_wrong": "关键前提是目标仿射，不能用该结论替代一般非线性优化。"
+      }
+    ],
+    "notation": [
+      "v_i：区域P的顶点",
+      "λ_i：非负凸组合系数，总和为1"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "平面向量凸组合",
+      "线性与仿射函数的分配律"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对任意p∈P，由凸多边形顶点凸包性质，可写p=Σ_i λ_i v_i，其中λ_i≥0、Σ_i λ_i=1。",
+        "reason": "这里明确把有限顶点凸包性质作为前提，不把任意非凸区域也归入结论。"
+      },
+      {
+        "claim": "由仿射性L(p)=Σ_i λ_i L(v_i)，因为常数c乘系数总和仍为c。",
+        "reason": "按坐标展开并利用Σλ_i=1可严格验证等式。"
+      },
+      {
+        "claim": "有限个顶点函数值的凸组合夹在其最小与最大之间，顶点本身属于P，因此等号可在顶点取得。",
+        "reason": "加权平均不会超过最大或小于最小，顶点取到两个界值。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "设P是平面上非空且有界的闭凸多边形，顶点为v_1,…,v_m，函数L(x,y)=ax+by+c为实线性仿射函数，则max_P L=max_i L(v_i)，min_P L=min_i L(v_i)。可能整条边同时取到极值，不应误读为只有顶点取极值。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "线性目标在紧凸多边形顶点取极值",
+    "transfer": {
+      "far": "规划线性产能模型时说明为何非凸成本、无界可行域或整数约束可能让简单顶点规则需要重新检查。",
+      "near": "在三角形顶点(0,0),(4,0),(0,3)上求目标L=2x+3y的最值，核对可能的等值边。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "最大6于(2,0)，最小-2于(0,1)。",
+        "check": "任意点的目标值为顶点值凸组合，不会越过[-2,6]。",
+        "question": "在矩形[0,2]×[0,1]求L=3x-2y的最大最小值。",
+        "steps": [
+          "列出四个顶点(0,0),(2,0),(0,1),(2,1)。",
+          "对应函数值0,6,-2,4，比较大小。"
+        ]
+      },
+      {
+        "answer": "最大2、最小0。",
+        "check": "加和的坐标边界x,y∈[0,1]可独立检验。",
+        "question": "单位正方形求L=x+y最大值，并解释是否只在顶点取。",
+        "steps": [
+          "四顶点目标值分别0,1,1,2。",
+          "最大2在(1,1)，最小0在(0,0)，且本例两端点唯一。"
+        ]
+      }
+    ]
+  }
+]
