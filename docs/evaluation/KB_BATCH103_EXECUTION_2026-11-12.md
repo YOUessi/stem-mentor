@@ -41,3 +41,20 @@ The pair comparison `样本百分位数的定义约定与解释` explicitly dist
 3. K01/K08: semantically resolve 172 prerequisite notes before any typed student graph edges are published.
 4. K07: risk-prioritize and independently check the 538 uncertified historical proof steps and 10 known math conflicts.
 5. K09: keep all new and legacy content pending real teacher approval; rerun full Mac and independent GitHub CI, maintain student-side fail-closed behavior.
+
+## Final Mac verification and integrity
+
+- Mac-only final `bash scripts/mac_check.sh` command **exit code 0** (terminal parent process PID 61118 reported `FULL_EXIT:0`, runtime 1184.14 seconds).
+- Python **64,058 passed, 5 skipped, 1 warning, 0 failed**; the warning is third-party Starlette/AnyIO deprecation.
+- Node **111/111 passed**, zero failures.
+- New Batch103 focused tests **80 passed**, zero failed (included in Python full test count).
+- Browser Chrome/Playwright script checks passed (29/29 scene renders, responsive widths and interaction tests in browser log); browser pytest **2 passed**. The separate browser log was executed on Mac; do not interpret this as a physical iPad or real model API test.
+- Batch103 frozen-source `--check` **PASS**; `git diff --check` also passed. No automatic teacher approval or authoritative publication.
+- Source code parent commit for this tested batch: `e67056c9e8ed56fc8db6eea9f4c78d8a74a5c6d9`; tested source tree `7d2e78356c5c56d818a96aefd4c97d90b530c227`. Final delivery commit adds only this report and original test logs.
+
+Original Mac log digests:
+- `docs/evaluation/logs/KB_BATCH103_MAC_CHECK_FINAL.log` SHA-256 `a522d9c05d328778a588d55b0765b25e321d3e22972e4c4f53613cd77f99b71a`
+- `docs/evaluation/logs/KB_BATCH103_BROWSER_CHECK.log` SHA-256 `7e54cc3d9f43510f955fb12c87c72038703aa8a1d373db50fca83c729e7d86bf`
+- `docs/evaluation/logs/KB_BATCH103_FOCUSED_INITIAL.log` SHA-256 `8c4b2558a0070047bea41e838e30ca2cfeb27510b863aa5333c3ae4865bb8d3b`
+
+GitHub PR/CI status is separately verified after remote synchronization; do not infer it from local test results.
