@@ -1,0 +1,1403 @@
+{
+  "batch": 133,
+  "by_track_proposals": {
+    "COMPULSORY": 23,
+    "ELECTIVE_A": 7,
+    "ELECTIVE_B": 0,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "SELECTIVE_COMPULSORY": 11
+  },
+  "does_not_reproduce_official_text": true,
+  "full_source_census_complete": false,
+  "inventory_scope": "BOUNDED_CONTENT_REQUIREMENT_TO_ATOM_PROPOSALS_UNREVIEWED",
+  "official_atom_denominator": null,
+  "proposed_count": 41,
+  "records": [
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "数字2属于{2}但通常不把2写作{2}的子集",
+      "formal_proof_certified": false,
+      "hypothesis": "元素类型与集合元素的判定域必须明确",
+      "id": "kb133-proposal-c_set_membership",
+      "knowledge_type": "Concept",
+      "objective": "区分元素属于集合与集合包含关系",
+      "official_atom_id": null,
+      "prerequisite_proposals": [],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 14,
+        "line_sha256": [
+          "4498250c58f78733eaec3be6bf6713a30396cf2ea3fc940014569b528e2f4eab",
+          "93e9e0dbbe63a2d8d571c32520e33e8cadd941605163fc512edb18a4aaa0721e",
+          "a9d757e4e0643189031fa8d2ddad7f326702dfd0df518128254b8b71f19baab6",
+          "9c5dc441ea1ee69fd895f273f2ddb0834e8ba172e1be938fd3cf6f456ba7cf53",
+          "0003e0c06fb4f2d0e560dbf06e0765b5c4d6377262ec2fa541485707f5e0a472"
+        ],
+        "printed_page": 15,
+        "span_sha256": "6100451cff60e8b094efa588e824e30c8d218f62e4614f3a25d87c35eeeb9deb",
+        "start_line": 10
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "{1}属于{{1}}不推出{1}是{{1}}的子集",
+      "formal_proof_certified": false,
+      "hypothesis": "两个对象都必须是集合且量词遍历各自元素",
+      "id": "kb133-proposal-c_set_subset",
+      "knowledge_type": "Concept",
+      "objective": "识别子集与集合相等的充要条件",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_set_membership"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 16,
+        "line_sha256": [
+          "91a4c245e607db614475cc1f5289859bc26cbfb6f7bd1d15a1449f2c158d6e4d",
+          "6f6253c97d518eebf9c3fe9ab4537ff98e9541a398240bb74397d393b246f437"
+        ],
+        "printed_page": 15,
+        "span_sha256": "d6b4659b401e6393815fd5ef18b965677a2d9300521049972d60a7f9b994cefc",
+        "start_line": 15
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "A={1}且B={2}时交集为空而并集非空",
+      "formal_proof_certified": false,
+      "hypothesis": "两集合在同一讨论全集内进行元素判定",
+      "id": "kb133-proposal-c_union_intersection",
+      "knowledge_type": "Method",
+      "objective": "按或和且的逻辑分别计算并集与交集",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_set_membership"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 19,
+        "line_sha256": [
+          "bec52c9e9c364ccaec704c4a032b08dbb75fa25a8272c2546c0e55399e5ad577",
+          "ff5dbf429128bbf700887e0a0264bdd31c9079f577601b71754614acf354d24d",
+          "edee1c4962926cb88cb4404013d05cbec2a4f6bdb84b444d757af805882b03ca"
+        ],
+        "printed_page": 15,
+        "span_sha256": "8992e8855703ff0a2e5b59843c474d161e5cb72619ae61cb4f4f2ac4ee2a6ac3",
+        "start_line": 17
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "若U={1,2}而A={1}则补集为{2}而非全体实数去掉1",
+      "formal_proof_certified": false,
+      "hypothesis": "必须指定全集U且A是U的子集",
+      "id": "kb133-proposal-c_complement",
+      "knowledge_type": "Concept",
+      "objective": "在给定全集中定义补集并用图表示",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_set_subset"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 23,
+        "line_sha256": [
+          "2ef655b14624d06985f8cf103d940e98dadc347a545f519f5ae111d9a2a4e4c4",
+          "b05cf754df0b9f36e5d11ed6943cfdaf6be73b75430eefec367bc459e5cccf1e",
+          "8e884c699d5f08fe68adb3e5138a39ec019c588d01eb398edaec6f9b60bbd0f6",
+          "64bfc81b067bb9fe5a9d64819bd7ce8f234b67a9e9cf89ab80aee3020e7d89ef"
+        ],
+        "printed_page": 15,
+        "span_sha256": "558cfa1874fdb495e431bb37d0428b55b6adbc026e6ccd6f2260d91549721733",
+        "start_line": 20
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "x>2足以推出x>1但x>1不足以推出x>2",
+      "formal_proof_certified": false,
+      "hypothesis": "逻辑蕴涵方向必须固定并区分前后件",
+      "id": "kb133-proposal-c_sufficiency",
+      "knowledge_type": "Concept",
+      "objective": "辨别P为Q的充分条件与必要条件",
+      "official_atom_id": null,
+      "prerequisite_proposals": [],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 11,
+        "line_sha256": [
+          "b4885ca7a81590c162048d87d31fa7c5f375c1a8f0c559b8ddeaae3aa46514e2",
+          "2634c47beec268359cc41f4e0087987a6dc8f98d6ae311f5487180c3396d7c34",
+          "debbab7fa1982b92f3464a423dcb21c65ee07e83c492c801fdc99a7934cc89c1",
+          "05221cfd3966fca303eed59e768e5090840d00c3474e72f8ea2c6a9ca5ecdce4",
+          "1bda6c07828366c03b8cef07cea8cacef75ccfabcef566467e0caa594a9817a3"
+        ],
+        "printed_page": 16,
+        "span_sha256": "2d1443471a662319498ef71e09460aac56ca359375ac903eb0bef3a47f282e0c",
+        "start_line": 7
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "x²=4推出x=2不成立因x=-2也满足",
+      "formal_proof_certified": false,
+      "hypothesis": "两个方向的逻辑蕴涵均须独立证明",
+      "id": "kb133-proposal-c_equivalence",
+      "knowledge_type": "Theorem",
+      "objective": "判断两个性质是否构成充要条件",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_sufficiency"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 13,
+        "line_sha256": [
+          "ec0dd62319f4a37d076327225d2f486934a128eeb6fe153c93d5b78495b504d6",
+          "c2dcb53092649b31a413bee8554824bcbcbac6bcd54811964ff5f621bc56924c"
+        ],
+        "printed_page": 16,
+        "span_sha256": "6c6d6ddbc9ec3e4e5eadb1184b67de7158e51365466d52fc500774ea93125309",
+        "start_line": 12
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "对正实数成立的1/x>0不可扩大为对所有实数成立",
+      "formal_proof_certified": false,
+      "hypothesis": "谓词P(x)必须有确定论域",
+      "id": "kb133-proposal-c_quantifier",
+      "knowledge_type": "Concept",
+      "objective": "识别全称量词与存在量词及论域",
+      "official_atom_id": null,
+      "prerequisite_proposals": [],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 15,
+        "line_sha256": [
+          "fecc925075ce585986b5d171b4bebdc8ca0847b7d946bcd02d5c5c456062f2a8",
+          "6000a5a85146e11ac664c24c06b3bc6bfc01038823100ea90bf2e0d62d9b1112"
+        ],
+        "printed_page": 16,
+        "span_sha256": "f2557f8a064b3e0ff4e327eb6c1d5ce5e6ca50dd9671a4fd8b6716dc62ed9ffe",
+        "start_line": 14
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "并非所有实数平方为正不能写成所有实数平方非正",
+      "formal_proof_certified": false,
+      "hypothesis": "否定必须同时交换量词并否定谓词",
+      "id": "kb133-proposal-c_quantifier_negation",
+      "knowledge_type": "Method",
+      "objective": "对含量词命题逐层进行逻辑否定",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_quantifier"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 18,
+        "line_sha256": [
+          "4ce79f3a2c7b7f09d57e01f552afe5a4a5aa20a6ff3607a12a5ba4573723d597",
+          "99412f64576d15a88fd53422b1ea5a41f848adede7e1b21e8a6cab44dfe8929c",
+          "7e52b53474751c488a86b9c758c4f4b1e8a432056ef0cd59b651b63e47b2d5e3"
+        ],
+        "printed_page": 16,
+        "span_sha256": "9c9d757cb9c798cad309f8b6ef9712a76774d216480be03141ed169c94c01b98",
+        "start_line": 16
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "a=-1时√ab可能无实数意义不能直接使用",
+      "formal_proof_certified": false,
+      "hypothesis": "a和b均非负且等号当且仅当a=b",
+      "id": "kb133-proposal-c_inequality_product",
+      "knowledge_type": "Theorem",
+      "objective": "在非负实数条件下运用均值不等式",
+      "official_atom_id": null,
+      "prerequisite_proposals": [],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 28,
+        "line_sha256": [
+          "0dadc4fd03872509d84bdcd7d17ddd4b1d518dd7a333f4b9c43923ae30b3a7bb",
+          "fc7473d9dc20096f3bf3203c24c941159007236a72898b775de3d5dc07068aca",
+          "8669065b1e2d06012d07534ddddb23e279490d480fa27f0be889fba3006ef1ec",
+          "5f968f22ba26bf95277fdbe5627ba95451c262ab3621af83ef8072bb8833c627",
+          "286744e0cdb53d65a51cb076a2599000531981ad7f533f4dd7334b4cbd21291c"
+        ],
+        "printed_page": 16,
+        "span_sha256": "e7714938a0655109b505c89b5dba4bd41e87646e8c81070d0ab2e549b924f165",
+        "start_line": 24
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": "FUNCTION_ZERO_AND_EQUATION_LINK",
+      "false_inference": "a=0时不能用二次判别式分类",
+      "formal_proof_certified": false,
+      "hypothesis": "二次系数必须非零且系数为实数",
+      "id": "kb133-proposal-c_quadratic_roots",
+      "knowledge_type": "Method",
+      "objective": "由判别式判断实二次方程根的个数",
+      "official_atom_id": null,
+      "prerequisite_proposals": [],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 11,
+        "line_sha256": [
+          "ed06d0509e6e3d89b1f01589e05d3f69596effcbb600532cf45242608328e122",
+          "5b53a0f74e34a7227e11677a8da4be2254b65dbed32e78f93802bf7814141701",
+          "82701447a682b38a2dceb065e4f5663541072ca098cf4d0c85ebac7e2f546bd2"
+        ],
+        "printed_page": 17,
+        "span_sha256": "5f48b23cd0e9ca7896d8a3e3f1700b19a58e065bda24ef7ac2417768b5afec4a",
+        "start_line": 9
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "x²<0在实数域没有解不能误给出区间",
+      "formal_proof_certified": false,
+      "hypothesis": "a不为0且需区别严格与非严格不等号",
+      "id": "kb133-proposal-c_quadratic_sign",
+      "knowledge_type": "Method",
+      "objective": "结合抛物线开口和零点求一元二次不等式解集",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_quadratic_roots"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 17,
+        "line_sha256": [
+          "c20a110c0e8cd1ad51a76231be2c84bd2f78fa502be287e53b80db57405bda90",
+          "6f6cb0afe080f7497a5bdebff2fb8444dd7285e88ec86c376335ade3abb8e937",
+          "11f9232030d0f83b8ce20030111f746026bb957f20530effae9e25fe8b82b91a",
+          "2cab56983f0b50bbdd5cb59224295f0d02289d87c7b27505e27204099128aa38",
+          "aa6b349a9288b6ac13e616bf2fb7f02fca25109765e52eb7db49541be3145f8e",
+          "da63f2b91417ac71729bb5755192175eb970270ef194470568df8bb3fcc78183"
+        ],
+        "printed_page": 17,
+        "span_sha256": "06e97fbbc8ef8cd6a9ace6f6ec0e97d18e09c2c2b910352b928213778b5544ef",
+        "start_line": 12
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "x=1对应正负两个不同y值不构成单值函数",
+      "formal_proof_certified": false,
+      "hypothesis": "每个定义域元素恰有一个对应值",
+      "id": "kb133-proposal-c_function_mapping",
+      "knowledge_type": "Concept",
+      "objective": "用对应规则和定义域描述函数",
+      "official_atom_id": null,
+      "prerequisite_proposals": [],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 17,
+        "line_sha256": [
+          "97b056feef8dabeee243894b2cced7baa623765e5fc30d8a4449e18eeca70157",
+          "8f69593d2cd68e8aca4c99ddfb91b6a57f87c9c57bb7217478885ea0658cf939",
+          "a4fc3c3e6241e51027edd7190478533650ce0374b16e5b18ecdf49465520498f",
+          "db7a9961630e62a0ea26b0f18253ff772b2870a3d9f62c9d6a7102c81f52b7b5",
+          "55c6c10b0ae256b498bf099174806b0f3250c80329c613bbaf544aaf3abb0854"
+        ],
+        "printed_page": 19,
+        "span_sha256": "e7f35b9a5a5b41078e974c5751271f5345857fbe0e5cdb4ce89ffcb8bcb4604e",
+        "start_line": 13
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "x=0若无任何分段适用不能自动代入左式",
+      "formal_proof_certified": false,
+      "hypothesis": "必须检查定义域及交界点是否被覆盖或重复",
+      "id": "kb133-proposal-c_piecewise",
+      "knowledge_type": "Method",
+      "objective": "依据分段条件选择正确解析式",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_function_mapping"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 20,
+        "line_sha256": [
+          "5f38377ec5ea7c88c09b4ce847a77aa9f474aff6fc12ef27c11f47c6df9f711d",
+          "a38eaa15e9f6aa02095c752aabd49cb97258cd47c086def29f688dcc7d14fa00",
+          "ef0dcc75994c88ae3faee11dee718920dfda97e32d36e2b4856314d6674081d4"
+        ],
+        "printed_page": 19,
+        "span_sha256": "4ed2e9bafb00f3e8315868af3b1dceb54c655a6f957ba994eb0b5b765c5c5725",
+        "start_line": 18
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": "MONOTONICITY_DIFFERENT_METHODS",
+      "false_inference": "f=x²在整个实轴不是单调递增",
+      "formal_proof_certified": false,
+      "hypothesis": "必须固定区间并对任意x1<x2比较",
+      "id": "kb133-proposal-c_monotonicity",
+      "knowledge_type": "Concept",
+      "objective": "用量词正确叙述指定区间上的单调性",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_function_mapping"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 23,
+        "line_sha256": [
+          "42dcefecd3cbbebb10a88b48975085a10300f562f0c86d345ae9de0ba3355a33",
+          "4fc888c340a99704cd53ac6214dd08aef22bc011ce2734b456aaf157f2c6a9a5",
+          "4fbe447b7ceb5e88722edaa8199fda9286c0cef93c92870ac4434bfec26c137e"
+        ],
+        "printed_page": 19,
+        "span_sha256": "940732f9eaff61274a00d4f6f09ac292d6d27c66b903b2d9df65999bf0adde7d",
+        "start_line": 21
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "f(x)=x在(0,1)上不能判为奇函数",
+      "formal_proof_certified": false,
+      "hypothesis": "定义域须关于0对称才可全域比较f(-x)",
+      "id": "kb133-proposal-c_parity",
+      "knowledge_type": "Concept",
+      "objective": "区分偶函数奇函数与定义域对称前提",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_function_mapping"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 24,
+        "line_sha256": [
+          "65150f2ffa1696eb67ab2d6c75dea4d1cc073746a376e257646dfad4cff4bcf3"
+        ],
+        "printed_page": 19,
+        "span_sha256": "65150f2ffa1696eb67ab2d6c75dea4d1cc073746a376e257646dfad4cff4bcf3",
+        "start_line": 24
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "f(x)=x没有任何非零周期",
+      "formal_proof_certified": false,
+      "hypothesis": "必须保证平移后的点仍处于定义域且周期非零",
+      "id": "kb133-proposal-c_period",
+      "knowledge_type": "Concept",
+      "objective": "从周期定义检查非零周期平移",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_function_mapping"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 25,
+        "line_sha256": [
+          "f33fb1f7fffce381d06531a2cc55dd338e147bd6ff554a6eeed24ce46c6463be"
+        ],
+        "printed_page": 19,
+        "span_sha256": "f33fb1f7fffce381d06531a2cc55dd338e147bd6ff554a6eeed24ce46c6463be",
+        "start_line": 25
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "a=-2时a^x并非对每个实数x均有实数值",
+      "formal_proof_certified": false,
+      "hypothesis": "指数底数a必须严格大于0且不等于1",
+      "id": "kb133-proposal-c_exponential_exp",
+      "knowledge_type": "Concept",
+      "objective": "区分实数指数函数的底数条件与单调性",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_function_mapping"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 30,
+        "line_sha256": [
+          "920ef717a5e9024a5a7ac0b32f6301db5668e06a8808eba8d7cec6fd9e184a37",
+          "8f41afc96b70652ee55f40680a2195e393231cb8cd79000d3242c833d968262f",
+          "b547879065874e9af65999bae5ee56ce7ac5adf3c11073cfc8b16ae5aaaade12",
+          "06d09af2933bf79762f8333c96a63d5abea326320a0fe0ca57f0214f79fd2fbe",
+          "df3666231e7a116085b8416d4d88ad4d14e2b8260f41acb097e379aad2cd4b70",
+          "d7f16ed6cd40daa9a859d64165ab929daf89d1404e09e04cf876618307910cd6",
+          "4116c0a6afc0d16eed5553a6924c809f0e58fdf2c7141a56210411029fa2abf4",
+          "db598df3a853c88029ea8d00e0be79c02043fea88bf9f1c5155c5c6d95594466",
+          "58110af8933d6ffe9f1609a07a5bed4240cc2b53881d88dd728ab17756023f93",
+          "d32bf401d5793fe9cc92b4a23769dbcc1172a4aa64991173fe2762b8b634152d",
+          "e930c7837461a569746d654a387e16c30b1a4734078ed77a5cba6e0183588255",
+          "fa783caa15a43df11e801b89b02c69edc00798b155979caf74fddd0abb862cc9"
+        ],
+        "printed_page": 20,
+        "span_sha256": "5601c5d060ad72153c4c6df038351f890f81eb4265127d57517deeee4bf2d54e",
+        "start_line": 19
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "log(0)未定义且log(x+y)不能一般拆成两个对数",
+      "formal_proof_certified": false,
+      "hypothesis": "真数>0且底数>0且不等于1",
+      "id": "kb133-proposal-c_logarithm_law",
+      "knowledge_type": "Method",
+      "objective": "在真数严格正的前提下使用对数运算法则和换底",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_exponential_exp"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 33,
+        "line_sha256": [
+          "85de16851cf867ae767a2a4654b13473773af177547669b3300b26fc3ae751b6",
+          "6bf09af01e478c708a0624cc11c292f2c66ad82bbd3ad1d4e672f4846912b940",
+          "c69b41ab40e474716203c82ff438e2db9b2c4a6e290474477202f3a21c1221f4"
+        ],
+        "printed_page": 20,
+        "span_sha256": "48fc34f4702baccbe9482de524d605d94dc2193dcee57f661e991de58ba1f9a2",
+        "start_line": 31
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "当底数a=1时指数不是一一对应故不存在反函数",
+      "formal_proof_certified": false,
+      "hypothesis": "底数>0且不等于1及对数真数>0",
+      "id": "kb133-proposal-c_log_inverse",
+      "knowledge_type": "Theorem",
+      "objective": "论证同底指数与对数互为反函数",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_logarithm_law"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 5,
+        "line_sha256": [
+          "e66df1d0b6667e0b88afc75e25bd1c92efe305f214805f061db113064bfaa2c1",
+          "24ca17eeb399c5945d6adfc61daf335095e9dd205d7e9852579c377208382a4e",
+          "e0cf4c96cfc79d70b06243ce35a30590b95956b4ce536dadec0eaa42dbae6811",
+          "2936697eacaf4c16add1c933465fd280e43a707e66f9b7295f1a1738b7ae2939",
+          "4bc30d2dd1d2956b84e3c2c46c718853608a1d1f3ef547ebbb68185ed2a8f897"
+        ],
+        "printed_page": 21,
+        "span_sha256": "317c6823df36d1f002553a4b1b19d4a36a477daf8f24322f6fb8507da18e8df9",
+        "start_line": 1
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "把90度直接输入要求弧度的sin会得到错误值",
+      "formal_proof_certified": false,
+      "hypothesis": "圆半径必须正且角度弧度单位一致",
+      "id": "kb133-proposal-c_radian",
+      "knowledge_type": "Method",
+      "objective": "通过弧长与半径定义角的弧度并互换度数",
+      "official_atom_id": null,
+      "prerequisite_proposals": [],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 20,
+        "line_sha256": [
+          "879aeab2311ef55f2462549bb1779578908408116c7a5fdf9e4c19815484fe3e",
+          "7bb846af2b3f4276925ba27e0a2d6e394f617276f6fe26bb8da0e3f60081325b",
+          "bfba337c007e5fabc54a5a9ea0681b1c81790b2e5d6a7ecafaad30fc45d65f62"
+        ],
+        "printed_page": 21,
+        "span_sha256": "003cadd2bf9f1632624ab929d78ced30582e7fec51d651fe6c430b1f42077334",
+        "start_line": 18
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "tan(pi/2)在实数范围未定义",
+      "formal_proof_certified": false,
+      "hypothesis": "tan定义为sin/cos时必须cos不为0",
+      "id": "kb133-proposal-c_tangent_domain",
+      "knowledge_type": "Concept",
+      "objective": "用单位圆解释三角函数并排除正切无定义点",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_radian"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 26,
+        "line_sha256": [
+          "24fdd809049cb13c91a4efe1dfb76a45ff8873c9f585d2c668b919038d77dc00",
+          "af93f4d2df9812feae30e8eb042ef2af70770ea6fddab840dbfcdec87e3ee8c8",
+          "ed10e59fa5e131eeaf76b697256ac4264c8b77aabf4ec3c6e03ae0e365b85d98",
+          "2f2595ca3395372e124e17cf3da3d6d6ad080e01cc591d20a246dc40f561e51e",
+          "262d0a0564da73c9c57132c69d64f7e4163d578be689e3520d738c676ab27361",
+          "6b9bba197b012a539b591b9f1f85c64cdbd75a4c0d359fac0ee7db87cd5a375d"
+        ],
+        "printed_page": 21,
+        "span_sha256": "b10d35fc8083b056d411e5cefa5cd4285bdb9c7b5571a8bc271964a80ebd1941",
+        "start_line": 21
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "把cos(a-b)写成cos(a)-cos(b)通常不成立",
+      "formal_proof_certified": false,
+      "hypothesis": "角均采用弧度并正确使用旋转及单位圆",
+      "id": "kb133-proposal-c_cosine_difference",
+      "knowledge_type": "Theorem",
+      "objective": "在单位圆及向量内积下论证两角差余弦公式",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_radian"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 17,
+        "line_sha256": [
+          "8496db266d2298858c723ee98a52494523c0ab628e193126cf6b9b618e81d8b8",
+          "ba449b3cffb1f514e3cffca65dad24497570039aa4f52f7b975c79bbfb105015",
+          "840a85700e346303fbb391352c0802f9ecf2bf9d1db720002b461fe5f2db4c49",
+          "2aa620c3c6dc1db96c6b8994dccbff3494f3afd8f0fde1d31aff05da7224b474",
+          "b370665847fa7deab42f7e1a9c43ec248e6a5ae7142fc8810eb11221f8c53f63",
+          "72269e37a107608e785129bdc7d290a3ab07b0e02a367c348c13ee5fe6ea4f5a"
+        ],
+        "printed_page": 22,
+        "span_sha256": "2597ad23392d57416b33415fedcc5a374cba80c1c17697109bf743adf7571d7c",
+        "start_line": 12
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": "FUNCTION_ZERO_AND_EQUATION_LINK",
+      "false_inference": "f在0跳跃由-1变1却没有取0说明不连续时不能套用",
+      "formal_proof_certified": false,
+      "hypothesis": "f在闭区间连续且f(a)f(b)<0",
+      "id": "kb133-proposal-c_zero_theorem",
+      "knowledge_type": "Theorem",
+      "objective": "在连续性与端点异号前提下确认区间内有零点",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_function_mapping"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 30,
+        "line_sha256": [
+          "8789cb85a67bac523a77d0bf14c275b2bafcc34b3d9f5baf03b6ea52335ade12",
+          "aa5f7bcea5d2b608679c40b919d5a2fc75a6cbfb50cc7da59a545b3b4b7525c8",
+          "0e2783329b4956f2f8806538d7a0bb6e59e7aeb2fd1f436395cc0d9b94b324f1",
+          "ed874096668c6e596fa690187f0b4460f061f123a7b0258ee04ce25261147d55"
+        ],
+        "printed_page": 22,
+        "span_sha256": "7c739c5b9528a95ab7621e06927f0fde1d64001a2d02c3a4a4a9ead3795daef4",
+        "start_line": 27
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "只定义a_1但没给出后继项不能声称已定义全部数列",
+      "formal_proof_certified": false,
+      "hypothesis": "明确下标起点和定义域为正整数或指定子集",
+      "id": "kb133-proposal-sc_sequence_model",
+      "knowledge_type": "Concept",
+      "objective": "将数列看作正整数集上的特殊函数",
+      "official_atom_id": null,
+      "prerequisite_proposals": [],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 13,
+        "line_sha256": [
+          "2a520f0429dead4fcc02b8504a7c317084ac57070b767b58b974b941a8ad7eb7",
+          "d36e876ca0c806039326d472f9648f3344b7e0dcbc5094ae6679df59f42709ef",
+          "eecfb2e74cadff3dba73969c0ed6ca5f7ca98f82d893e2a1cfeccc0ecd804486"
+        ],
+        "printed_page": 38,
+        "span_sha256": "30489f5df9400d10a107aa026a9a5eb807335197f6c9b032bc8e77bad7111684",
+        "start_line": 11
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "1,2,4不是等差数列不能套等差求和",
+      "formal_proof_certified": false,
+      "hypothesis": "有限n为正整数且各相邻差固定",
+      "id": "kb133-proposal-sc_arith_progression",
+      "knowledge_type": "Theorem",
+      "objective": "推导等差数列通项与有限前n项和公式",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_sequence_model"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 20,
+        "line_sha256": [
+          "f01763452b9ea73671b9bfbe335a6bd5f104734baf01ba5420aa3fb9b81685f9",
+          "d9be1642f23a3edfb3df6bfcf5687d4b50671f1d2d54e6c762914e6208f29373",
+          "3eb042545b3389e5dccd9cdbe65689d9bc927ef907f0cb0d247f9644486cd1f5",
+          "dc8739cb4a81e9428464aab6f82986aa7c5e9c050df96deab615f5073c616857",
+          "1396d52f7afb7ca849edf167c1c48b839fa3acd7df20f327b8a52517fc1ec67a",
+          "dc563f4ae478ae5285cc622a1026189179ee2c3fed8e8a4154fb28b010665514",
+          "81ab4ac532f3262896d2a1a6182602eb6941f804355eea13ef6518bfe0409c68"
+        ],
+        "printed_page": 38,
+        "span_sha256": "f1e7745fc598df85fe187767ecf74d41b90fa1648717a5a349b88682e5896f58",
+        "start_line": 14
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "q=1时不能除以1-q且q=0需区别有限幂级数与标准等比定义",
+      "formal_proof_certified": false,
+      "hypothesis": "n正整数且符合所采用的等比数列定义",
+      "id": "kb133-proposal-sc_geom_progression",
+      "knowledge_type": "Theorem",
+      "objective": "通过错位相减证明有限等比和并单独处理q=1",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_sequence_model"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 27,
+        "line_sha256": [
+          "6656c18a7a00cd53b8301e6ee7f0e603a4a7b675979d5660cd4b344cc8a4867e",
+          "9451f2cd01a5c205f2059b0a07010bcfd41c7414333cb8e31a99f3739ef892aa",
+          "a05e0ddbbad1000b9d1e1616218c714df63f56b21590d3eed6fc0cfd6816d9a7",
+          "dc8739cb4a81e9428464aab6f82986aa7c5e9c050df96deab615f5073c616857",
+          "bd21c2492f60b404f9a2bf9605cbd71ae25bc7c054b0214344e696cba83ad5b6",
+          "dc563f4ae478ae5285cc622a1026189179ee2c3fed8e8a4154fb28b010665514",
+          "06e76e0505e56b38d0d1bbeb10512202499bde2b62ee656fa0b1ebd6318c50be"
+        ],
+        "printed_page": 38,
+        "span_sha256": "1d3ad821c0c705117cfe35edce352f47586991126417f89af3d22d0e7f510800",
+        "start_line": 21
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "只证明n=1和n=2不代表已证明全部n",
+      "formal_proof_certified": false,
+      "hypothesis": "必须明确自然数起点且完成两个证明义务",
+      "id": "kb133-proposal-sc_induction_optional",
+      "knowledge_type": "Method",
+      "objective": "以基例和归纳步骤建立数学归纳法证明",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_sequence_model"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 30,
+        "line_sha256": [
+          "494353ca7aa0d120b04cb92cce393932ef8fa9d63e626bc1aa6559fbc0803608",
+          "bf61f6792cc0cfb6ba33e7f95a94d1453a0c262253cce2ccc0e67468840d8755",
+          "acb1c5f990dbb30d13d875135a1f05acdc91da5e7c1f388e71853e8907c39564"
+        ],
+        "printed_page": 38,
+        "span_sha256": "33d95bf2fac9a4c7e2922e727730746feab11873b476a6004dec1163a7cba6f5",
+        "start_line": 28
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "绝对值函数在0处左右导数不一致不可导",
+      "formal_proof_certified": false,
+      "hypothesis": "双侧极限需存在且为有限实数",
+      "id": "kb133-proposal-sc_derivative_def",
+      "knowledge_type": "Concept",
+      "objective": "由差商极限解释瞬时变化率与切线斜率",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_function_mapping"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 13,
+        "line_sha256": [
+          "c65f2dfa88c6cf9bdf4ef681d4f3f1125e74d0f994efa9f796f59c03500d22f7",
+          "53076486525878b7702f0b3275df07c0a6801c380ed819bbcf2be12ac605c61f",
+          "fd86378fb6564e402ca60a94ce9364c17176df0f48be5f0860fe71005e997228",
+          "7ed9fe539d331db6c003a717182819b8354568a490e45d5cb0ad8314de360d06",
+          "0edf7afbc1e6b41e853a24ea6fe0194b7e1820b2474fe59a7d5fb6efe83d0633",
+          "46a95315e936176c8c5e26b4b4621cc67415363a85bbd5e1770bf753aa03b228"
+        ],
+        "printed_page": 39,
+        "span_sha256": "ca66817ca8954254c492c53c78def35a6588d0ac1691d30b37bd646477e16c5e",
+        "start_line": 8
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "d(1/x)/dx不能在x=0处使用",
+      "formal_proof_certified": false,
+      "hypothesis": "除法求导要求分母在点处不为零",
+      "id": "kb133-proposal-sc_derivative_rules",
+      "knowledge_type": "Method",
+      "objective": "对可导函数合法应用四则与简单复合求导",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_derivative_def"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 25,
+        "line_sha256": [
+          "91dc4cdc0e54c30efebf4ece136affc13eba264c0d251dba760333cf9c53b74a",
+          "b71418cd713f384cfb17f5b90c6e25933aaeb9afb2c53eceea065b49e877c113",
+          "99c3aa2de2ee290614776b3841a1d9e21ef5fd7c371c0c28b2cf0bad70654da6",
+          "e58dea3776f5cd0c9c9596434e3da587ba6d51b2029dc24cd0de95edd51926bb",
+          "6a63885ff646a38da480449e6714cbc35a39ad9ae3a7ffae9fcc508ee256b8e7",
+          "58110af8933d6ffe9f1609a07a5bed4240cc2b53881d88dd728ab17756023f93",
+          "6133452a562e6303dabb5b739d13510abe215493b9e63629847d8ec1e89dee78",
+          "ef69bc56e68dc9d4ee58b834ab354b77461a635ffb840a4fd2e0726b0c7f29f4",
+          "4526b7513e3a058b671b54e9da2ab13a868f1dbf105c0782ac0978c5797e6790",
+          "f7c41f09de0603f0d9b41c121c8e0066293bdb1762091e58fc4f95513b66e89e",
+          "8f5d28bd0a090727fc0c7f01f8c8ccfe7167c9ba5e4983f8cdca73186d2777af",
+          "729b325cd2bdff32e1d9ec3b46c2757389abcd3f850b160e0f93a3acf0ee4b55"
+        ],
+        "printed_page": 39,
+        "span_sha256": "8c92570f756a8198e6f11d39598d4eb1723df8b58793b9820c0ec5ae35a9a027",
+        "start_line": 14
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": "MONOTONICITY_DIFFERENT_METHODS",
+      "false_inference": "f'(0)=0不能说明f在0邻域为常数",
+      "formal_proof_certified": false,
+      "hypothesis": "在区间可导且导数符号具有全区间保证",
+      "id": "kb133-proposal-sc_derivative_monotone",
+      "knowledge_type": "Theorem",
+      "objective": "以导数符号作为区间单调性充分条件",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_derivative_rules"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 29,
+        "line_sha256": [
+          "337c3813aa1a74c550a0bd654ee6a1aa6ec749b50627280f658fa3fd955838ee",
+          "7357acc8234f50cf819efa40bdf3887f89bff2078cdd49e2fe4addec26f14206",
+          "3604f61d20a0b48db1cf9eb02ff87bbfc86ffa817138cba5eaa98193cd43cafb",
+          "f13c15b018668e8d1f14eadc959c80650668e688fbfacf751f7b39683b67323c"
+        ],
+        "printed_page": 39,
+        "span_sha256": "7a57dc095e46689e1aff6eeb2653cbb1d822eda35536c67ca833feeab326d5c9",
+        "start_line": 26
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "f=x³在0处导数为0但0不是极值",
+      "formal_proof_certified": false,
+      "hypothesis": "内点导数零仅为可导极值的必要非充分条件",
+      "id": "kb133-proposal-sc_extreme_point",
+      "knowledge_type": "Method",
+      "objective": "比较临界点和闭区间端点判定极值与最值",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_derivative_rules"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 33,
+        "line_sha256": [
+          "df24e8003d680004072786c36d83ce6032d1b6e47a7afa5201c4d6a0ff004987",
+          "fca38ad4cedad58ee20fd4cd4e57edbafbc2fa6d74a72c9108c945b598e9b510",
+          "4e09adfff00f9508f791422a55a65d038cdb43db1c7d256d769371b2238b7677",
+          "cc5d09c695cd3bf55e0ebf016af98fc14c36727389a1d7fed506e5b0967aa50b"
+        ],
+        "printed_page": 39,
+        "span_sha256": "38fb63a485aad49f9d5f4d8fc110a854ccfd0cafc871eed6a7eaf1b49bea6667",
+        "start_line": 30
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "非正交坐标基不能直接按坐标差平方和计算",
+      "formal_proof_certified": false,
+      "hypothesis": "空间坐标轴两两正交且采用同一长度单位",
+      "id": "kb133-proposal-sc_space_distance",
+      "knowledge_type": "Theorem",
+      "objective": "通过坐标差平方和推导三维两点距离",
+      "official_atom_id": null,
+      "prerequisite_proposals": [],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 17,
+        "line_sha256": [
+          "c25f98907eb55559e5c763ea6bbd172907d9dcf4ecc2aeb48a52152f8a3ae1d2",
+          "8fad869b85f2c454c7a5a65a0660d737497842953efe4a76c676f68e9c9ae56f",
+          "8c9c3cd424a62e11e271cdb6cc994909abd3ff7c29f3097acca133c424443402",
+          "492a85851b64a960ed6ffeeb714b6daa19356986f35b397230b732b2a91798aa",
+          "8f4eae635eca01ebae7f2108b82c0a12e42b8aba26458ec81120449421a6db73"
+        ],
+        "printed_page": 42,
+        "span_sha256": "445bb438cf5c26f4f2f4b9bfad794f371bac50a7928dd4d0b3a9106c9222634c",
+        "start_line": 13
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "三个共面向量不能唯一展开所有空间向量",
+      "formal_proof_certified": false,
+      "hypothesis": "必须使用三条线性无关的基向量",
+      "id": "kb133-proposal-sc_space_basis",
+      "knowledge_type": "Theorem",
+      "objective": "在三维正交基下唯一展开空间向量",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_space_distance"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 23,
+        "line_sha256": [
+          "62fcc8b6cb9eb228f1becb565d5665ca0599347d3cf9c76f18b7299ebaed92d8",
+          "7ba8c819e8928a72c52426c0ca7ae9037e479b40992186486e19f4e28a3e9836",
+          "b53fb2f818270684949cf19624a1a9570b36e614448832bdd12537ae66ef0d9b"
+        ],
+        "printed_page": 42,
+        "span_sha256": "3503e15fa5e9e2b4e30d508da79a152d98a501d1022105d033429ae216c0c18a",
+        "start_line": 21
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "向零向量投影会出现除以零",
+      "formal_proof_certified": false,
+      "hypothesis": "投影到指定向量时被投影轴必须非零",
+      "id": "kb133-proposal-sc_space_projection",
+      "knowledge_type": "Method",
+      "objective": "以点积和非零向量定义投影与数量积",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_space_basis"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 26,
+        "line_sha256": [
+          "86cd853aaca0173ec9b53562c89ec0b8ae0020ecd7117027fe9fe251dc822a46",
+          "33e49a07353f98b180194d60ff729262da558df4dfb3166dcf16509928ebf735",
+          "d812f8115a149b4c13efa589212714811a8326a938ea23ca41493892e9c91210"
+        ],
+        "printed_page": 42,
+        "span_sha256": "cd2771c99c1ebc5ea274cca206f644f8aa7c9bd3661abe77bc79ea2009c1bfea",
+        "start_line": 24
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "a_n=(-1)^n有界但不收敛不能反推有界即收敛",
+      "formal_proof_certified": false,
+      "hypothesis": "每个epsilon>0存在阈值N约束全部后续项",
+      "id": "kb133-proposal-a_sequence_limit",
+      "knowledge_type": "Concept",
+      "objective": "由epsilon-N定义序列极限并证明收敛必有界",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_sequence_model"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 21,
+        "line_sha256": [
+          "97f9229c450e302498ff6a2d031afffc74262048ea2612ba1ebda017362c0521",
+          "8fd71b991f442931b039c7db8de8d879a4c5f8bfe6b9bd7bb6515f148792a5ba",
+          "7417c705874d492fe934d5c1d8f07af41c5598354767a2135184b3d4009de3b1",
+          "7e5649d8c1d909cb6a9815d2cf6f3b67268f03ae9dfb44b9a05cd0199e29b6bb",
+          "7b6d6c6d0b4fe00bd7413f17f0633b7335f3ae8d3ef31a6cdb7a451af5b201ce",
+          "7b6d6c6d0b4fe00bd7413f17f0633b7335f3ae8d3ef31a6cdb7a451af5b201ce",
+          "58110af8933d6ffe9f1609a07a5bed4240cc2b53881d88dd728ab17756023f93",
+          "dfce52399f229887951f6f277cdfbf8be1987ac1f55e807363a090d71dbbbee0",
+          "b6fe59cd85453ca176b822589b284233e46fd74b1feba00775719c62fe12ffe4",
+          "61354228370a1adf2eaa092f9f344c571ceec604479461d1b312dd3414507daa",
+          "79cabb1aa50a75a28de959fd339fb7d0267f00343330e8b86f4709153a1a2426",
+          "b9524d99b9ce5e8c21596aae32cf27fc60b95f1a6ce925611e36322f20b8b673",
+          "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd"
+        ],
+        "printed_page": 52,
+        "span_sha256": "625a33b9ba5985da4086892be4f3f09df3abafa9772b696104a5ca125946111f",
+        "start_line": 9
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "a_n=n单调但无上界不收敛",
+      "formal_proof_certified": false,
+      "hypothesis": "须同为单调与有界两个条件",
+      "id": "kb133-proposal-a_monotone_convergence",
+      "knowledge_type": "Theorem",
+      "objective": "理解实数完备性下的单调有界收敛结论",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-a_sequence_limit"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 29,
+        "line_sha256": [
+          "af525d3296ffcf9bc1ab1a0b25ea4b459fa0c7297847997ad101278915005468",
+          "cea8fac6950a06e4b046e036871249e0f9635e36a238d8d5ecdfac4d1f1f3705",
+          "7b6d6c6d0b4fe00bd7413f17f0633b7335f3ae8d3ef31a6cdb7a451af5b201ce",
+          "992511ac9c6282c5df0317532b481cb7d5cd25cfaa1fd50068f4366ed89500d9",
+          "e2b0059d19785f16f69e4707a5a7417661719ed110d12bd737c7f5c97c55a8b6",
+          "58110af8933d6ffe9f1609a07a5bed4240cc2b53881d88dd728ab17756023f93",
+          "bce3c4e77b6d6b49fda98073a8d9a8ae2a53c4dd61c7eb47484086cc7eda8733",
+          "9f7e5c84af4ba9e5de1f6d3b2416aa88da5b89f0ebe5dd696ea9e3bd1c6693e2"
+        ],
+        "printed_page": 52,
+        "span_sha256": "213a9a645ce73d6de941a3ffdb1fb4e5de36d2806885b35667c0f8241a4c931a",
+        "start_line": 22
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "1除以(1/n)所得n发散",
+      "formal_proof_certified": false,
+      "hypothesis": "使用商法则必须确认分母的极限非零",
+      "id": "kb133-proposal-a_limits_quotient",
+      "knowledge_type": "Theorem",
+      "objective": "掌握收敛数列极限四则与商的非零分母条件",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-a_sequence_limit"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 31,
+        "line_sha256": [
+          "b6294ea47788c632ccf2b3743bb875632a15a1bef7bcbe2f51eb5d428b333553",
+          "f727011a40ee98dedb14cf1a2518a2378afe972a3d8ee39a60f5aee1976b8e6b"
+        ],
+        "printed_page": 52,
+        "span_sha256": "7331c304719979c8dd71514e8fe13b8ec4be140ee7f316570b53d7f18ce1f11e",
+        "start_line": 30
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "仅f(a)=L不能证明x趋于a时极限为L",
+      "formal_proof_certified": false,
+      "hypothesis": "考虑极限点的去心邻域且函数在该邻域有定义",
+      "id": "kb133-proposal-a_function_limit",
+      "knowledge_type": "Concept",
+      "objective": "理解函数有限极限epsilon-delta的去心邻域定义",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-c_function_mapping"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 39,
+        "line_sha256": [
+          "4c17dd108b05bb81400266dba1e12d6d811ad42b2c8cbcd94a4b5d22c1f37cea",
+          "9a61c361d762bac11b1f4bbad896f459be07393e1af7c069c0c84e22c72924f2",
+          "35f05e242e734a46bb2569eede6c3ae8da597195dbea47e05b40d23b73d513d5",
+          "65573f0bc552191d01543df981145aa111dee0d9a9caf887f245afb900886a8f",
+          "5c6c8d4dc2fc8dd17ef77813720b73d56810c12b3d680d0dc92d9338590c2b32",
+          "b8b498b7e699a1c413a53801de012ce44b0a86c7aa6d66692c94d4270e54d3c1",
+          "2f420c0ec491f01f24c829a0f282f831d2062d7dc2fdd5ef9e5515156657a1e6",
+          "f51f98ac7153c421d1ce5d82b1de26ba4a1eab5e86473d5333d23deb9f3b7dc2"
+        ],
+        "printed_page": 52,
+        "span_sha256": "63a862a1d5e07381370ee86b31def4d34a3b67fc393eb8170109a86a8fd59ff9",
+        "start_line": 32
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "阶跃函数端点异号却跳过0",
+      "formal_proof_certified": false,
+      "hypothesis": "闭区间连续才能保证介值结论",
+      "id": "kb133-proposal-a_continuity",
+      "knowledge_type": "Theorem",
+      "objective": "将函数连续性与区间介值性质联系",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-a_function_limit"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 4,
+        "line_sha256": [
+          "56022be6cbfd8b100a1e6b28cd134edecf9b3435a42ec08bf8f630de84df97a6",
+          "15501e815a5ac18a882295a0f6a03fde40b14d7e1cbe9ab5fbd953900351e93f",
+          "fb51d9d24d6ba62291139d8eb69da240c593e1758d4dda862f3fdf100dd5ec63",
+          "433823f96fe52f1f3f37a9462a0245aee4c3cdea5422214fb934bb872f507abe"
+        ],
+        "printed_page": 53,
+        "span_sha256": "71a0bbbdf5327da65e069070ff1cc42fc31a1af7498c76cd8a16372a59f0cd62",
+        "start_line": 1
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "绝对值函数跨0不可导无法直接套拉格朗日中值定理",
+      "formal_proof_certified": false,
+      "hypothesis": "a<b且f在[a,b]连续在(a,b)可导",
+      "id": "kb133-proposal-a_mean_value",
+      "knowledge_type": "Theorem",
+      "objective": "利用闭区间连续开区间可导的中值定理讨论不等式",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-sc_derivative_def"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 14,
+        "line_sha256": [
+          "0aa0ec30252ecf43498ea5b0b4edbcac3d39bed7d73112cc6e0eec5265d8c96c",
+          "506444c9ebe7fa7c04990d0336bc9518f6677d80d8a30b2850c50ac7ff56cf83",
+          "0c472779d6112ff609286be5d3cb9681eebfe6a2eb533174dd33c1754af5bd85",
+          "650dd690d59378ece8afe344ee1075bef8f40f13e8ac99283436645944375854",
+          "8d7bc789975731b48d6c16f2ab548008bd6bac966ce96a3eb7eb447f6f7c86e3"
+        ],
+        "printed_page": 53,
+        "span_sha256": "91f14980ff51ebb0e62806cb98ecf806747b3fd7caa81418fa92941e938cd81e",
+        "start_line": 10
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "atomization_review": "REVIEW_PENDING",
+      "cross_page_reuse_group": null,
+      "false_inference": "对f(x)=x在[-1,1]积分为0不等于几何面积1",
+      "formal_proof_certified": false,
+      "hypothesis": "原函数F导数在积分区间为f",
+      "id": "kb133-proposal-a_integral_area",
+      "knowledge_type": "Method",
+      "objective": "由定积分有向符号和原函数公式计算累计变化",
+      "official_atom_id": null,
+      "prerequisite_proposals": [
+        "kb133-proposal-a_continuity"
+      ],
+      "source_evidence_status": "PDFKIT_LINE_REHASHED_SEMANTIC_PENDING",
+      "source_lock": {
+        "end_line": 27,
+        "line_sha256": [
+          "5be516e08f6cb02c7438c1ae4aaa2c7e9c614c1795046aa9679e9d0825dc8312",
+          "cf051abd63086e8f29c1fe2acf7fcb5f87873dc28565c6d8d72640194a9b176a",
+          "564ae2325c9380c2773dd6d7c5ca01542b541b5f0359b7b0975de82da07c87be",
+          "2aeddb761ab7fce7910c27d3a7cdd0e4fcc9a15d99d705c94cbc5bdc7bfea7bf",
+          "f38ee6b34ea3bf909af7583bd44650c94cb6ee926b5a2d8d224e6b7114c1f659",
+          "c8775956d497fdaa2ad92519b2f5e5119f18d247cae4996ce162d81cfafb6e61",
+          "2e7727a9d517b56273b4bdec4c3f99841df892f80bd6ed92a42b64fe9e289995",
+          "eef8df18bda9aae1a272e3bdb3f51fe9c35bac172b0db5fb98c671d73f137011",
+          "08760cc5ba8ece8fb796edba1a857f65309fafc70adcbf61df7f6e96ea4851aa",
+          "96fd3543550c80ce522a592075edb8103beb65bf3b0b76897251b93fe50f606f"
+        ],
+        "printed_page": 53,
+        "span_sha256": "e47ae8dc002dbccc9c4ef9810a73537ea85ccbdc89beddf4672500bbb4ed0e02",
+        "start_line": 18
+      },
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_role": "CURRICULUM_CONTENT_CANDIDATE",
+      "student_authoritative": false,
+      "teacher_approval": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "track": "ELECTIVE_A"
+    }
+  ],
+  "schema_version": "kb133/1",
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "source_spans_count": 41,
+  "student_authoritative_count": 0,
+  "teacher_approved_count": 0,
+  "track_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  }
+}

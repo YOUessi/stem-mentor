@@ -1,0 +1,482 @@
+[
+  {
+    "applicability_and_hypotheses": "明确全集 U 且 A⊆U；进行幂集或Venn图运算时所有集合共用相同全集。",
+    "candidate_id": "kb133-proposal-c_complement",
+    "course_track": "COMPULSORY",
+    "far_transfer": "讨论某班学生选体育/音乐社团时，'未选体育社团'是否等于'选了音乐社团'，要求先确定全集与交叠情况。",
+    "formal_definition_or_theorem": "给定全集 U 与子集 A⊆U，A 相对于 U 的补集定义为 U\\A={x∈U | x∉A}。补集随 U 改变；若 A⊈U 则不能把 U\\A 直接当作通常的相对补集定义题。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb133-deep-c_complement",
+    "knowledge_type": "Concept",
+    "near_transfer": "对 U={-2,-1,0,1,2} 与 A={-2,0,2} 比较 A^c 和 -A。",
+    "nonexample_or_failure": "取 U={1,2,3}、A={1}，补集是{2,3}；不是实数全集的所有非1元素。",
+    "notation_and_domain": "U、A 是集合；x∈U 与 x∈A 为元素关系。'\\' 表示差集，∅为空集；选择有限全集时每个元素只计一次。",
+    "reasoned_steps": [
+      {
+        "justification": "对每个 x∈U 检验 x∈A 与否，此时 U\\A 收纳且仅收纳不属于 A 的 x。",
+        "step": "定义谓词"
+      },
+      {
+        "justification": "如果 x 同时属于 A 与 U\\A，则 x∈A 和 x∉A 矛盾，故交集为空。",
+        "step": "论证互不相交"
+      },
+      {
+        "justification": "任意 x∈U 必满足 x∈A 或 x∉A，故 A∪(U\\A)=U。",
+        "step": "论证覆盖全集"
+      },
+      {
+        "justification": "当 U 改变，候选元素的范围就改变，补集一般随之改变。",
+        "step": "提醒背景变化"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 23,
+      "line_sha256": [
+        "2ef655b14624d06985f8cf103d940e98dadc347a545f519f5ae111d9a2a4e4c4",
+        "b05cf754df0b9f36e5d11ed6943cfdaf6be73b75430eefec367bc459e5cccf1e",
+        "8e884c699d5f08fe68adb3e5138a39ec019c588d01eb398edaec6f9b60bbd0f6",
+        "64bfc81b067bb9fe5a9d64819bd7ce8f234b67a9e9cf89ab80aee3020e7d89ef"
+      ],
+      "printed_page": 15,
+      "span_sha256": "558cfa1874fdb495e431bb37d0428b55b6adbc026e6ccd6f2260d91549721733",
+      "start_line": 20
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确定全集是什么。",
+      "只考虑全集中的元素，判断其是否落入目标集合。",
+      "对每一个未落入集合的全集元素做一次登记，仍不要直接给出答案。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "{1,3,5}",
+        "question": "U={1,2,3,4,5,6}，A={2,4,6}，求 A 在 U 中的补集。",
+        "reasoned_solution": [
+          "确认 A⊆U。",
+          "从 U 中逐一删除2、4、6。",
+          "剩余元素是1、3、5。"
+        ]
+      },
+      {
+        "answer": "{4}",
+        "question": "U={1,2,3,4}，A={2,3}，B={1,2}，求 (A∪B) 的补集。",
+        "reasoned_solution": [
+          "先求 A∪B={1,2,3}。",
+          "全集仍为 U。",
+          "U\\(A∪B)={4}。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "忘记题目给出的全集，直接写 A^c=R\\A。",
+    "version": "2017-2020-editorial-batch133",
+    "why_method_is_legal": "集合外延公理下，两集合元素谓词相同即相等；可逐个检测有限全集。",
+    "why_wrong_and_repair": "补集为相对概念；先写出 U，再从 U 中删去 A 的元素。"
+  },
+  {
+    "applicability_and_hypotheses": "原命题的量词范围明确，且对每个被讨论对象 P(x) 有定义；若定义域变化则不是同一命题的否定。",
+    "candidate_id": "kb133-proposal-c_quantifier_negation",
+    "course_track": "COMPULSORY",
+    "far_transfer": "将“每位学生至少选过一种课程”写成含双重量词语句，再逐层写出否定。",
+    "formal_definition_or_theorem": "在固定论域 D 上，¬(∀x∈D,P(x)) 等价于 ∃x∈D,¬P(x)；¬(∃x∈D,P(x)) 等价于 ∀x∈D,¬P(x)。否定应同时交换量词并否定内部谓词。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb133-deep-c_quantifier_negation",
+    "knowledge_type": "Method",
+    "near_transfer": "否定“对每个正整数n，n²≥n”，注意论域仍为正整数。",
+    "nonexample_or_failure": "“不是所有实数x都满足x²>0”不能写作“所有实数x都满足x²≤0”，因为只需x=0为反例。",
+    "notation_and_domain": "D 为固定论域；P(x) 是在 D 中有确定真值的命题；∀ 为任意，∃ 为至少存在，¬ 为否定。",
+    "reasoned_steps": [
+      {
+        "justification": "∀x P(x) 为真要求没有任何反例。",
+        "step": "理解全称语义"
+      },
+      {
+        "justification": "要使所有对象都满足P不成立，必须存在至少一个反例，即 ∃x ¬P(x)。",
+        "step": "否定全称"
+      },
+      {
+        "justification": "∃x P(x) 为真只需有一个见证对象。",
+        "step": "理解存在语义"
+      },
+      {
+        "justification": "若找不到任何见证，必有每个对象不满足P，即 ∀x ¬P(x)。",
+        "step": "否定存在"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 18,
+      "line_sha256": [
+        "4ce79f3a2c7b7f09d57e01f552afe5a4a5aa20a6ff3607a12a5ba4573723d597",
+        "99412f64576d15a88fd53422b1ea5a41f848adede7e1b21e8a6cab44dfe8929c",
+        "7e52b53474751c488a86b9c758c4f4b1e8a432056ef0cd59b651b63e47b2d5e3"
+      ],
+      "printed_page": 16,
+      "span_sha256": "9c9d757cb9c798cad309f8b6ef9712a76774d216480be03141ed169c94c01b98",
+      "start_line": 16
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先圈出量词与其论域。",
+      "想象反驳原命题最少需要一个对象还是全部对象。",
+      "交换∀与∃，并逐字否定量词后的数学关系。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "存在实数 x 使 x²≤0；真（取 x=0）。",
+        "question": "写出命题“所有实数 x 都有 x²>0”的否定，并判断真假。",
+        "reasoned_solution": [
+          "原论域是实数。",
+          "交换全称为存在，同时把>0否定为≤0。",
+          "选x=0给出有效见证。"
+        ]
+      },
+      {
+        "answer": "所有实数 x 均满足 x²≠-1；真。",
+        "question": "写出“存在实数 x 使 x²=-1”的否定，并判断真假。",
+        "reasoned_solution": [
+          "交换存在为全称。",
+          "把等号否定为不等号。",
+          "实数平方非负，因此所有实数确实不等于-1。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把 ¬∀x P(x) 写成 ∀x ¬P(x)；既保留全称量词又把每一对象都否定。",
+    "version": "2017-2020-editorial-batch133",
+    "why_method_is_legal": "这是量词的真假条件，不依赖于把'所有'口语化为'全部不'。",
+    "why_wrong_and_repair": "否定全称要求一个反例，不要求全部对象都违反原命题。"
+  },
+  {
+    "applicability_and_hypotheses": "二次项系数a非零，√Δ只在Δ≥0时作为实数平方根，分母2a非零。",
+    "candidate_id": "kb133-proposal-c_quadratic_roots",
+    "course_track": "COMPULSORY",
+    "far_transfer": "分析抛物线与水平线 y=k 的交点个数，并说明切点对应哪种判别式。",
+    "formal_definition_or_theorem": "对实系数 a x²+b x+c=0 且 a≠0，令 Δ=b²−4ac：Δ>0时有两个不同实根，Δ=0时有一个二重实根，Δ<0时无实根；Δ≥0时实根为(-b±√Δ)/(2a)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb133-deep-c_quadratic_roots",
+    "knowledge_type": "Method",
+    "near_transfer": "参数方程 (m−1)x²+2x+1=0 何时有两个不同实根？必须分 m=1。",
+    "nonexample_or_failure": "a=0,b=2,c=-4时为线性方程2x−4=0，不允许在求根公式中除以2a。",
+    "notation_and_domain": "a,b,c∈R 且 a≠0；Δ是判别式；只在实数域讨论实根个数；二重根按不同实数根个数只计一次。",
+    "reasoned_steps": [
+      {
+        "justification": "将等式乘4a并移项得 (2ax+b)²=b²−4ac=Δ。",
+        "step": "配方"
+      },
+      {
+        "justification": "若Δ>0则正负两个平方根不同，得到两个实根。",
+        "step": "判别正值"
+      },
+      {
+        "justification": "若Δ=0则 2ax+b=0 只有一个实根。",
+        "step": "判别零值"
+      },
+      {
+        "justification": "实数平方非负，故Δ<0不可能成立；若a=0须先退化为线性或常值方程。",
+        "step": "判别负值"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 11,
+      "line_sha256": [
+        "ed06d0509e6e3d89b1f01589e05d3f69596effcbb600532cf45242608328e122",
+        "5b53a0f74e34a7227e11677a8da4be2254b65dbed32e78f93802bf7814141701",
+        "82701447a682b38a2dceb065e4f5663541072ca098cf4d0c85ebac7e2f546bd2"
+      ],
+      "printed_page": 17,
+      "span_sha256": "5f48b23cd0e9ca7896d8a3e3f1700b19a58e065bda24ef7ac2417768b5afec4a",
+      "start_line": 9
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先查二次项是否真的存在。",
+      "计算b²−4ac并先判断它的符号。",
+      "再选择使用平方根公式或退化方程的规则。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "x=2 或 x=-1/2；两个不同实根。",
+        "question": "求解2x²−3x−2=0并说明实根数。",
+        "reasoned_solution": [
+          "a=2,b=-3,c=-2，Δ=9+16=25。",
+          "代入(-b±√Δ)/(2a)。",
+          "得到(3±5)/4分别为2和-1/2。"
+        ]
+      },
+      {
+        "answer": "x=2（重根），恰好一个不同实根。",
+        "question": "求x²−4x+4=0并说明实根数。",
+        "reasoned_solution": [
+          "Δ=16−16=0。",
+          "代入求根公式得x=4/2=2。",
+          "原式为(x−2)²，验证重根。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "见到Δ=0就写两个不同实根；或者见到Δ<0仍写包含实数平方根的答案。",
+    "version": "2017-2020-editorial-batch133",
+    "why_method_is_legal": "等式变换中乘以4a在a≠0下可逆；平方根分支由Δ符号决定。",
+    "why_wrong_and_repair": "实数二重根仅有一个不同根；先校验a≠0再判别Δ的符号。"
+  },
+  {
+    "applicability_and_hypotheses": "闭区间连续、两端严格异号、端点函数值有定义；二分迭代每次保留异号区间。",
+    "candidate_id": "kb133-proposal-c_zero_theorem",
+    "course_track": "COMPULSORY",
+    "far_transfer": "讨论实际温度测量值在两个时刻一负一正时，何种连续性假设支持中间达到0°C。",
+    "formal_definition_or_theorem": "若 f:[a,b]→R 在[a,b]连续、a<b 且 f(a)f(b)<0，则至少存在 c∈(a,b) 使 f(c)=0。只保证存在，不自动保证唯一或二分法已收敛到精确零点。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb133-deep-c_zero_theorem",
+    "knowledge_type": "Theorem",
+    "near_transfer": "f(x)=x²−1在[-2,2]端点同号，但区间内仍有两个零点。",
+    "nonexample_or_failure": "f(x)在x<0时为-1、x≥0时为1，在[-1,1]端点异号但内部没有零点，因函数不连续。",
+    "notation_and_domain": "a,b 为实数且a<b，c为内部零点；连续是整个闭区间上的条件；<0表示两端函数值严格异号。",
+    "reasoned_steps": [
+      {
+        "justification": "不失一般性设 f(a)<0<f(b)。",
+        "step": "整理端点"
+      },
+      {
+        "justification": "闭区间连续函数会取得端点函数值之间的每个中间值。",
+        "step": "使用介值性"
+      },
+      {
+        "justification": "因为0介于f(a)和f(b)之间，存在c∈[a,b]使f(c)=0。",
+        "step": "选取零值"
+      },
+      {
+        "justification": "端点值严格异号且非零，所以c∈(a,b)，但可能有多个零点。",
+        "step": "排除端点"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 30,
+      "line_sha256": [
+        "8789cb85a67bac523a77d0bf14c275b2bafcc34b3d9f5baf03b6ea52335ade12",
+        "aa5f7bcea5d2b608679c40b919d5a2fc75a6cbfb50cc7da59a545b3b4b7525c8",
+        "0e2783329b4956f2f8806538d7a0bb6e59e7aeb2fd1f436395cc0d9b94b324f1",
+        "ed874096668c6e596fa690187f0b4460f061f123a7b0258ee04ce25261147d55"
+      ],
+      "printed_page": 22,
+      "span_sha256": "7c739c5b9528a95ab7621e06927f0fde1d64001a2d02c3a4a4a9ead3795daef4",
+      "start_line": 27
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "确认函数是否在整个闭区间连续。",
+      "分别计算两个端点函数值的符号。",
+      "如果满足异号，只能提出存在性结论；不要直接推断唯一。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "有至少一个零点。",
+        "question": "f(x)=x³−x−1，在[1,2]中是否一定有零点？",
+        "reasoned_solution": [
+          "多项式在闭区间连续。",
+          "f(1)=-1、f(2)=5，乘积为-5。",
+          "介值定理保证至少一个c∈(1,2)。"
+        ]
+      },
+      {
+        "answer": "先保留[1,3/2]，再保留[5/4,3/2]。",
+        "question": "用二分法对 f(x)=x²−2 在[1,2]进行前两次取中点，写出保留区间。",
+        "reasoned_solution": [
+          "f(1)=-1，f(2)=2。",
+          "第一个中点3/2的函数值为1/4>0，保留左半区间。",
+          "第二个中点5/4的函数值为-7/16<0，保留右半区间。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "看到f(a)f(b)>0就断言区间没有零点，或者端点异号就断言零点唯一。",
+    "version": "2017-2020-editorial-batch133",
+    "why_method_is_legal": "介值定理要求闭区间连续；二分每次使用连续子区间且由异号保留存在性。",
+    "why_wrong_and_repair": "端点同号仍可能有偶数个零点；异号只保证至少一个，唯一性需额外单调性等条件。"
+  },
+  {
+    "applicability_and_hypotheses": "使用错位相减时每项有定义；只有在q≠1时才允许除以1-q；q=1单独计算。",
+    "candidate_id": "kb133-proposal-sc_geom_progression",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "在固定等比增长模型中比较累计增长总量与最后一期单量，说明q接近1时数值计算方式为何需谨慎。",
+    "formal_definition_or_theorem": "若 a_k=a_1 q^(k-1)（k≥1），有限前n项和 S_n=Σ(k=1..n)a_1 q^(k-1)。q≠1时 S_n=a_1(1-q^n)/(1-q)，q=1时 S_n=n a_1。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb133-deep-sc_geom_progression",
+    "knowledge_type": "Theorem",
+    "near_transfer": "首项2、公比-1的数列求前7项和，并讨论奇偶n。",
+    "nonexample_or_failure": "用q=1代入(1-q^n)/(1-q)出现0/0；当q=0时有限幂级数代数式有意义，但若定义要求相邻项比值存在则不能直接称为该定义下的等比数列。",
+    "notation_and_domain": "n为正整数，a_1为实数，q为实数；对采用相邻项比值定义的等比数列，须额外要求每一相邻比值有定义；q=0的有限多项式恒等式不自动等同标准等比数列定义。",
+    "reasoned_steps": [
+      {
+        "justification": "S_n=a_1+a_1q+…+a_1 q^(n−1)。",
+        "step": "写有限和"
+      },
+      {
+        "justification": "qS_n=a_1q+a_1q²+…+a_1 q^n。",
+        "step": "乘以q"
+      },
+      {
+        "justification": "(1−q)S_n=a_1(1−q^n)。",
+        "step": "相减并约去中间项"
+      },
+      {
+        "justification": "q≠1时合法相除；q=1时n项全部等于a_1，故S_n=n a_1。",
+        "step": "分类讨论"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 27,
+      "line_sha256": [
+        "6656c18a7a00cd53b8301e6ee7f0e603a4a7b675979d5660cd4b344cc8a4867e",
+        "9451f2cd01a5c205f2059b0a07010bcfd41c7414333cb8e31a99f3739ef892aa",
+        "a05e0ddbbad1000b9d1e1616218c714df63f56b21590d3eed6fc0cfd6816d9a7",
+        "dc8739cb4a81e9428464aab6f82986aa7c5e9c050df96deab615f5073c616857",
+        "bd21c2492f60b404f9a2bf9605cbd71ae25bc7c054b0214344e696cba83ad5b6",
+        "dc563f4ae478ae5285cc622a1026189179ee2c3fed8e8a4154fb28b010665514",
+        "06e76e0505e56b38d0d1bbeb10512202499bde2b62ee656fa0b1ebd6318c50be"
+      ],
+      "printed_page": 38,
+      "span_sha256": "1d3ad821c0c705117cfe35edce352f47586991126417f89af3d22d0e7f510800",
+      "start_line": 21
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "明确求和项数n与首项、公比。",
+      "比较q与1，考虑是否允许除法。",
+      "尝试把整段求和乘以q，再与原求和相减。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "45",
+        "question": "等比数列首项3，公比2，求前4项和。",
+        "reasoned_solution": [
+          "写3+6+12+24。",
+          "q=2非1。",
+          "用3(1−2⁴)/(1−2)=45。"
+        ]
+      },
+      {
+        "answer": "30",
+        "question": "常数列各项均为5，求前6项和，并说明q=1情况。",
+        "reasoned_solution": [
+          "公比为1且首项非零。",
+          "每项都是5。",
+          "S_6=6×5=30。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "不分类直接使用S_n=a_1(1-q^n)/(1-q)并设置q=1。",
+    "version": "2017-2020-editorial-batch133",
+    "why_method_is_legal": "有限项代数相加、相减合法，除法只在分母非零时合法。",
+    "why_wrong_and_repair": "先检查是否可除以1−q；若q=1直接数项。"
+  },
+  {
+    "applicability_and_hypotheses": "完整闭区间连续、开区间可导及端点不同；不可导点跨越区间时不能直接使用。",
+    "candidate_id": "kb133-proposal-a_mean_value",
+    "course_track": "ELECTIVE_A",
+    "far_transfer": "已知某段实际位移曲线在时间区间连续可导，解释为何存在某瞬时速度等于区间平均速度；测量突跳时为何不能直接断言。",
+    "formal_definition_or_theorem": "拉格朗日中值定理：若 a<b，f 在[a,b]连续且在(a,b)可导，则存在c∈(a,b)满足 f'(c)=(f(b)−f(a))/(b−a)。存在性不蕴涵c唯一。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb133-deep-a_mean_value",
+    "knowledge_type": "Theorem",
+    "near_transfer": "将f(x)=ln x应用于[1,e]并写出c的表达式。",
+    "nonexample_or_failure": "f(x)=|x|在[-1,1]连续但于0不可导，割线斜率0，区间内其余点导数为±1，不存在满足结论的c。",
+    "notation_and_domain": "a,b∈R且a<b；f:[a,b]→R；f'表示内部导数。对复合不等式应用需额外验证导数界。",
+    "reasoned_steps": [
+      {
+        "justification": "令m=(f(b)−f(a))/(b−a)，g(x)=f(x)−m(x−a)。",
+        "step": "作割线辅助函数"
+      },
+      {
+        "justification": "g(a)=f(a)，g(b)=f(b)−(f(b)−f(a))=f(a)。",
+        "step": "验证Rolle端点相等"
+      },
+      {
+        "justification": "g连续且可导；极值定理保证g在闭区间取极值。若非恒定，则至少一个内部极值存在，费马必要条件给出g'(c)=0；恒定时任意内点可取。",
+        "step": "证明Rolle基础条件"
+      },
+      {
+        "justification": "g'(c)=f'(c)−m=0，故f'(c)=m。",
+        "step": "回代导数"
+      },
+      {
+        "justification": "绝对值在含0区间不可导；若只知一侧导数不够，不能使用本定理。",
+        "step": "审核边界"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 14,
+      "line_sha256": [
+        "0aa0ec30252ecf43498ea5b0b4edbcac3d39bed7d73112cc6e0eec5265d8c96c",
+        "506444c9ebe7fa7c04990d0336bc9518f6677d80d8a30b2850c50ac7ff56cf83",
+        "0c472779d6112ff609286be5d3cb9681eebfe6a2eb533174dd33c1754af5bd85",
+        "650dd690d59378ece8afe344ee1075bef8f40f13e8ac99283436645944375854",
+        "8d7bc789975731b48d6c16f2ab548008bd6bac966ce96a3eb7eb447f6f7c86e3"
+      ],
+      "printed_page": 53,
+      "span_sha256": "91f14980ff51ebb0e62806cb98ecf806747b3fd7caa81418fa92941e938cd81e",
+      "start_line": 10
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "检查闭区间连续与内部可导。",
+      "先算割线斜率，不要先猜c。",
+      "令f'(c)等于割线斜率，求候选点后核实落在开区间。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "c=2",
+        "question": "对f(x)=x²在[1,3]求满足中值定理结论的c。",
+        "reasoned_solution": [
+          "多项式连续可导。",
+          "割线斜率(9−1)/(3−1)=4。",
+          "f'(c)=2c=4，得c=2∈(1,3)。"
+        ]
+      },
+      {
+        "answer": "c=2/√3",
+        "question": "对f(x)=x³在[0,2]求满足中值定理结论的正c。",
+        "reasoned_solution": [
+          "多项式满足连续可导。",
+          "割线斜率(8−0)/2=4。",
+          "3c²=4，取c=2/√3∈(0,2)。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "只检查端点存在就使用中值定理，或认为某个中点c=(a+b)/2必满足。",
+    "version": "2017-2020-editorial-batch133",
+    "why_method_is_legal": "减去线性函数不破坏连续或可导条件；Rolle定理在上述假设下使用，最终导数等式经可逆代数移项获得。",
+    "why_wrong_and_repair": "必须验证全区间连续和内部可导；定理只给出至少一个内部点，未指定中点。"
+  }
+]

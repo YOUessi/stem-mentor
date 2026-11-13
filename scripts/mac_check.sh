@@ -243,6 +243,12 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch131_context_
 .venv/bin/python scripts/build_kb_batch132_electives.py --check-offline
 .venv/bin/python scripts/build_kb_batch132_lessons.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch132_electives.py
+# Batch133 independently checks source PDFKit on Mac and bounded official atomization only.
+.venv/bin/python scripts/build_kb_batch133_atomization.py --check-mac
+.venv/bin/python scripts/build_kb_batch133_atomization.py --check-offline
+.venv/bin/python scripts/build_kb_batch133_lessons.py --check
+.venv/bin/python scripts/check_kb_batch133_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch133_atomization.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check

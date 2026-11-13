@@ -1,0 +1,99 @@
+{
+  "batch": 133,
+  "cases": [
+    {
+      "id": "c_complement_example1",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "c_complement_example2",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "c_quantifier_negation_example1",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "c_quantifier_negation_example2",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "c_quadratic_roots_example1",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "c_quadratic_roots_example2",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "c_zero_theorem_example1",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "c_zero_theorem_example2",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "sc_geom_progression_example1",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "sc_geom_progression_example2",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "a_mean_value_example1",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "a_mean_value_example2",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "neg_complement_universe",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "neg_quantifier_all_fail_wrong",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "neg_quadratic_degree_zero",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "neg_ivt_discontinuous",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "neg_geometric_quotient_zero",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    },
+    {
+      "id": "neg_mvt_absolute_value",
+      "outcome": "EXACT_FINITE_WITNESS_PASS",
+      "scope": "FINITE_SYMPY_EXACT_INSTANCE_NOT_GENERAL_THEOREM"
+    }
+  ],
+  "full_theorem_certified": false,
+  "source_scope": "TEACHER_EXAMPLE_EXACT_ORACLES_ONLY",
+  "student_free_steps_verified": false,
+  "teacher_approved": 0
+}
