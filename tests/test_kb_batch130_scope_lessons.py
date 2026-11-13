@@ -103,7 +103,40 @@ def test_student_public_api_does_not_leak_teacher_challenge_answers():
     assert 'KB_BATCH130' not in summary
     assert 'teacher_examples' not in summary
     assert 'reasoned_solution' not in summary
+
+def test_classical_probability_drafts_require_independent_trials():
+    lesson=next(x for x in LESSONS if x['candidate_id'].endswith('123-c411'))
+    assert '独立' in lesson['applicability_and_hypotheses']
+    assert all('独立' in e['question'] for e in lesson['teacher_examples'])
+
+def test_fair_coin_and_dice_marginals_do_not_imply_independence():
+    from fractions import Fraction
+    # Perfectly correlated coins: each marginal is fair, yet a single head never occurs.
+    joint={('H','H'):Fraction(1,2),('T','T'):Fraction(1,2)}
+    assert sum(p for (a,b),p in joint.items() if a=='H') == Fraction(1,2)
+    assert sum(p for (a,b),p in joint.items() if b=='H') == Fraction(1,2)
+    assert sum(p for (a,b),p in joint.items() if (a=='H') != (b=='H')) == 0
+    # Both dice have uniform marginals, but second die is forced to 7-first die.
+    pairs={(i,7-i):Fraction(1,6) for i in range(1,7)}
+    for face in range(1,7):
+        assert sum(p for (a,b),p in pairs.items() if a==face)==Fraction(1,6)
+        assert sum(p for (a,b),p in pairs.items() if b==face)==Fraction(1,6)
+    assert sum(p for (a,b),p in pairs.items() if a+b==7)==1
+    assert 1 != Fraction(1,6)
+
 def test_seven_track_official_denominators_remain_unknown():
     assert set(SCOPE['track_official_atom_denominators'])==set(src.prev.TRACKS)
     assert all(v is None for v in SCOPE['track_official_atom_denominators'].values())
     assert ORACLE['formal_general_theorems_certified']==0
+
+
+def test_ellipse_focal_equation_exact_non_axis_witness():
+    import sympy as sp
+    x,y,a,c=sp.Rational(3),sp.Rational(16,5),sp.Integer(5),sp.Integer(3)
+    b2=a*a-c*c
+    assert x*x/a**2 + y*y/b2 == 1
+    d1=sp.sqrt((x+c)**2+y*y)
+    d2=sp.sqrt((x-c)**2+y*y)
+    assert d1==sp.Rational(34,5) and d2==sp.Rational(16,5)
+    assert d1+d2==2*a
+    assert (sp.sqrt((0+c)**2)+sp.sqrt((0-c)**2)) < 2*a

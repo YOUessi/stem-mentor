@@ -309,7 +309,7 @@
     "why_wrong_and_repair": "按定义先估计答案是3，再计算ln8/ln2；核对指数正逆关系避免倒数错误。"
   },
   {
-    "applicability_and_hypotheses": "每个基本结果具有相同概率且所有基本结果穷尽互斥；必须明确骰子或硬币是否可区分。",
+    "applicability_and_hypotheses": "每个基本结果必须等可能且彼此互斥、穷尽；须明确骰子或硬币是否可区分。各枚单独公平不保证联合等可能，须另给独立性或联合分布。",
     "candidate_id": "hs-semantic-pilot-123-c411",
     "course_track": "COMPULSORY",
     "far_transfer": "把抽签模型推广到按人数比例抽取的分层样本，说明何时不再能对所有人等可能。",
@@ -318,8 +318,8 @@
     "free_student_step_verified": false,
     "id": "kb130-deep-123-c411",
     "knowledge_type": "Concept",
-    "near_transfer": "两枚骰子求和值为2的概率，并与和值为7对比。",
-    "nonexample_or_failure": "两骰子的和2只对应(1,1)，和7对应6个有序对；11种和值并不等可能。",
+    "near_transfer": "两枚相互独立的公平骰子求和值为2的概率，并与和值为7对比。",
+    "nonexample_or_failure": "独立公平骰子的和值2只对应(1,1)，和值7对应6个有序对；11种和值并不等可能。若两骰各自公平但完全相关，则36个有序点对也不等可能。",
     "notation_and_domain": "Ω为有限基本结果集合；A⊆Ω为事件；|·|为集合元素数。",
     "objective": "有限等可能样本空间上的古典概率计数",
     "prerequisite_candidate_ids": [
@@ -360,18 +360,18 @@
     "teacher_examples": [
       {
         "answer": "1/6。",
-        "question": "两枚公平六面骰同时投掷，点数和为7的概率。",
+        "question": "两枚相互独立的公平六面骰同时投掷，点数和为7的概率。",
         "reasoned_solution": [
-          "基本结果为36个有序点对(i,j)。",
+          "两枚骰子各自公平且相互独立，所以36个有序点对(i,j)等可能。",
           "有利结果是(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)，共6个。",
           "按等可能公式得6/36。"
         ]
       },
       {
         "answer": "1/2。",
-        "question": "两枚可区分公平硬币，恰有一枚正面的概率。",
+        "question": "两枚可区分且相互独立的公平硬币，恰有一枚正面的概率。",
         "reasoned_solution": [
-          "等可能空间为HH、HT、TH、TT四种。",
+          "两枚硬币分别公平且相互独立，故HH、HT、TH、TT四种有序结果各为1/4。",
           "有利结果HT和TH两种。",
           "除以四得到2/4。"
         ]
@@ -566,12 +566,12 @@
         "step": "选择正交坐标并写距离和"
       },
       {
-        "justification": "把一个根号移项，平方两边并整理得到一个根号与x的线性关系；合法性需检查右侧非负，之后再平方。",
-        "step": "隔离一根号并平方"
+        "justification": "设r_+=√((x+c)²+y²)、r_-=√((x−c)²+y²)。由r_++r_-=2a、r_+²−r_-²=4cx得r_+−r_-=2cx/a，因此r_+=a+cx/a、r_-=a−cx/a，无需冒险平方增根。",
+        "step": "利用平方差精确求两焦点距离"
       },
       {
-        "justification": "第二次平方后有(a²−c²)x²+a²y²=a²(a²−c²)，因此x²/a²+y²/(a²−c²)=1。再利用a>c检查逆向回代排除增根。",
-        "step": "整理并核对代数等价"
+        "justification": "用r_+²=(a+cx/a)²同(x+c)²+y²比较，消去2cx后得(1−c²/a²)x²+y²=a²−c²，故x²/a²+y²/(a²−c²)=1。逆向若满足标准方程，则|x|≤a，因a>c保证a±cx/a>0，分别平方回代恢复两距离，和必为2a。",
+        "step": "严格推导标准方程并作逆向回代"
       },
       {
         "justification": "b²=a²−c²严格正，焦点在y轴时交换x与y的对应分母。",

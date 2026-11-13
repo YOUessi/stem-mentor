@@ -133,23 +133,23 @@ Far transfer: 在信息压缩的对数刻度中比较换底时单位缩放，解
 Original course context p.31 lines 14-14; SOURCE NOT OFFICIAL ATOM
 Definition/theorem: 有限样本空间Ω的每个基本结果等可能时，P(A)=|A|/|Ω|；这里的等可能针对基本结果，不保证某个多对一变换后的结果类别等可能。
 Symbols and domain: Ω为有限基本结果集合；A⊆Ω为事件；|·|为集合元素数。
-All hypotheses: 每个基本结果具有相同概率且所有基本结果穷尽互斥；必须明确骰子或硬币是否可区分。
+All hypotheses: 每个基本结果必须等可能且彼此互斥、穷尽；须明确骰子或硬币是否可区分。各枚单独公平不保证联合等可能，须另给独立性或联合分布。
 Editorial prerequisites (not teacher certified): hs-semantic-pilot-121-c201, hs-semantic-pilot-122-c312
 ### Justified reasoning
 1. 构造等可能基本空间 — 双骰用有序对(i,j)，共36种，而不是用11种和值。
 2. 从基本结果中筛选事件 — 根据具体事件列举或计数满足条件的结果，每个结果只计一次。
 3. 以基本结果数量归一化 — 将有利结果数除以Ω的总大小；若类别不等可能则此式不合法。
-Failure/nonexample: 两骰子的和2只对应(1,1)，和7对应6个有序对；11种和值并不等可能。
+Failure/nonexample: 独立公平骰子的和值2只对应(1,1)，和值7对应6个有序对；11种和值并不等可能。若两骰各自公平但完全相关，则36个有序点对也不等可能。
 Typical wrong solution: 把和值2到12当作11个等可能样本，声称P(和值7)=1/11。
 Repair: 在36个等可能有序点数对中计数，和值7概率为6/36。
 ### Verified teacher-only worked examples
-**Question:** 两枚公平六面骰同时投掷，点数和为7的概率。
-1. 基本结果为36个有序点对(i,j)。
+**Question:** 两枚相互独立的公平六面骰同时投掷，点数和为7的概率。
+1. 两枚骰子各自公平且相互独立，所以36个有序点对(i,j)等可能。
 2. 有利结果是(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)，共6个。
 3. 按等可能公式得6/36。
 **Teacher-side answer (not for autonomous student challenge):** 1/6。
-**Question:** 两枚可区分公平硬币，恰有一枚正面的概率。
-1. 等可能空间为HH、HT、TH、TT四种。
+**Question:** 两枚可区分且相互独立的公平硬币，恰有一枚正面的概率。
+1. 两枚硬币分别公平且相互独立，故HH、HT、TH、TT四种有序结果各为1/4。
 2. 有利结果HT和TH两种。
 3. 除以四得到2/4。
 **Teacher-side answer (not for autonomous student challenge):** 1/2。
@@ -157,7 +157,7 @@ Repair: 在36个等可能有序点数对中计数，和值7概率为6/36。
 1. 从物理实验出发写出真正等可能的基本结果。
 2. 先确认结果是否有序，是否存在重复计数。
 3. 最后数有利结果与总结果，勿把事件类别等分。
-Near transfer: 两枚骰子求和值为2的概率，并与和值为7对比。
+Near transfer: 两枚相互独立的公平骰子求和值为2的概率，并与和值为7对比。
 Far transfer: 把抽签模型推广到按人数比例抽取的分层样本，说明何时不再能对所有人等可能。
 
 ## 平均变化率到瞬时变化率的极限过渡 (SELECTIVE_COMPULSORY)
@@ -231,8 +231,8 @@ Editorial prerequisites (not teacher certified): hs-semantic-pilot-120-s107, hs-
 ### Justified reasoning
 1. 用三角不等式核对非退化性 — PF1+PF2≥F1F2=2c，若2a<2c无解；2a=2c时只有两焦点之间线段。
 2. 选择正交坐标并写距离和 — 两焦点在(±c,0)，关系√((x+c)²+y²)+√((x−c)²+y²)=2a，且a>c。
-3. 隔离一根号并平方 — 把一个根号移项，平方两边并整理得到一个根号与x的线性关系；合法性需检查右侧非负，之后再平方。
-4. 整理并核对代数等价 — 第二次平方后有(a²−c²)x²+a²y²=a²(a²−c²)，因此x²/a²+y²/(a²−c²)=1。再利用a>c检查逆向回代排除增根。
+3. 利用平方差精确求两焦点距离 — 设r_+=√((x+c)²+y²)、r_-=√((x−c)²+y²)。由r_++r_-=2a、r_+²−r_-²=4cx得r_+−r_-=2cx/a，因此r_+=a+cx/a、r_-=a−cx/a，无需冒险平方增根。
+4. 严格推导标准方程并作逆向回代 — 用r_+²=(a+cx/a)²同(x+c)²+y²比较，消去2cx后得(1−c²/a²)x²+y²=a²−c²，故x²/a²+y²/(a²−c²)=1。逆向若满足标准方程，则|x|≤a，因a>c保证a±cx/a>0，分别平方回代恢复两距离，和必为2a。
 5. 核查焦点方向与参数 — b²=a²−c²严格正，焦点在y轴时交换x与y的对应分母。
 Failure/nonexample: 若2a=2c，点集退化为两焦点间线段；若2a<2c为空集，不能继续写椭圆标准方程。
 Typical wrong solution: 两焦点距离为4，距离和也是4，仍取b²=0画出椭圆。
