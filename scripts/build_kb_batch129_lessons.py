@@ -13,9 +13,10 @@ ORACLES=ROOT/"docs/evaluation/KB_BATCH129_MATH_ORACLES.json"
 def req(c,m):
     if not c: raise ValueError(m)
 def enc(v):return json.dumps(v,ensure_ascii=False,sort_keys=True,indent=2,allow_nan=False)+"\n"
-def build():
+def build(source_snapshot=None):
     _,candidates=source.prior.prior.originals()
-    src,_=source.build()
+    # Published-source mode is for CI ONLY; the Mac default always replays the private PDFKit source.
+    src=source_snapshot if source_snapshot is not None else source.build()[0]
     lineage={v["candidate_id"]:v for v in src["records"]}
     out=[]
     for item in LESSONS:
