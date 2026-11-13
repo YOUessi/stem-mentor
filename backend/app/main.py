@@ -344,3 +344,10 @@ def kb138_review_coverage():
     """Only aggregate review counts. Draft teacher answers stay private."""
     from .kb_batch138_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb139-review-coverage")
+def kb139_review_coverage():
+    """Only seven-track bounded editorial counts; no student or teacher manuscript data."""
+    from .kb_batch139_index import public_coverage
+    return public_coverage()

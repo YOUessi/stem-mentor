@@ -273,6 +273,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch137_closure.
 .venv/bin/python scripts/build_kb_batch138_electives.py --check-mac
 .venv/bin/python scripts/check_kb_batch138_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch138_electives.py
+# Batch139: eight more original core/selective/A teacher drafts, 32 independent finite exact cases,
+# Mac-only source PDFKit re-attestation, fail-closed 57-manuscript editorial search and student privacy.
+.venv/bin/python scripts/build_kb_batch139_core.py --check-mac
+.venv/bin/python scripts/check_kb_batch139_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch139_core.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
