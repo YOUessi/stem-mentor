@@ -214,6 +214,10 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch125_provenan
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch123_scope_depth_math.py
 .venv/bin/python -m pytest -q tests/test_kb_batch120_proof_lessons.py
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch107_lessons.py --check
+# Batch126: 26 source-locked context interpretations, 6 unlinked numbered cues,
+# 12 finite exact witnesses. No auto-certified knowledge or official denominator.
+.venv/bin/python scripts/build_kb_batch126_context_evidence.py --check --verify-local-source
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch126_context_attestation.py
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"
