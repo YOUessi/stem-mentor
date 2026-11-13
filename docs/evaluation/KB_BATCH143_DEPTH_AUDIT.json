@@ -1,0 +1,491 @@
+{
+  "by_track": {
+    "COMPULSORY": 31,
+    "ELECTIVE_A": 10,
+    "ELECTIVE_B": 2,
+    "ELECTIVE_C": 2,
+    "ELECTIVE_D": 3,
+    "ELECTIVE_E": 2,
+    "SELECTIVE_COMPULSORY": 15
+  },
+  "general_proof_certified": 0,
+  "new_hint_stages": 24,
+  "new_near_far_transfer_tasks": 16,
+  "new_original_manuscripts": 8,
+  "new_teacher_examples": 16,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_coverage_rate": null,
+  "prior_finite_manuscripts": 57,
+  "rows": [
+    {
+      "candidate": "hs-semantic-pilot-120-a108",
+      "id": "kb143-deep-120-a108",
+      "review": "REVIEW_PENDING",
+      "source_sha": "ffe5b409aadf394caf6c0b7db228d766f1577e0e5670e7658617faf4eaffb212",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c103",
+      "id": "kb139-deep-120-c103",
+      "review": "REVIEW_PENDING",
+      "source_sha": "4cc4ddce4851f23c5d1de57b5a912abdbc5b0a8d33f5df41fb12f285c6863e8c",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c105",
+      "id": "kb139-deep-120-c105",
+      "review": "REVIEW_PENDING",
+      "source_sha": "639be43646e0be6aeded413fa83e1303c0e0a9d8a7c2b80be7d312ea9cbbfc54",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c108",
+      "id": "kb143-deep-120-c108",
+      "review": "REVIEW_PENDING",
+      "source_sha": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c111",
+      "id": "kb139-deep-120-c111",
+      "review": "REVIEW_PENDING",
+      "source_sha": "27503ff60c180670f3f14f24897095a431dd3323ea9c21d3259fad3ebd501829",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed105",
+      "id": "kb143-deep-120-ed105",
+      "review": "REVIEW_PENDING",
+      "source_sha": "998a6d01313d307c2a5a06b5b16717847dcf57cb19cfde3867d6c68ff5bce73c",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee104",
+      "id": "kb138-deep-120-ee104",
+      "review": "REVIEW_PENDING",
+      "source_sha": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee106",
+      "id": "kb138-deep-120-ee106",
+      "review": "REVIEW_PENDING",
+      "source_sha": "f7459c2367e3f5128b3d4cfc83a92277ddc73504920b1de446db2ccb2770e97c",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s107",
+      "id": "kb143-deep-120-s107",
+      "review": "REVIEW_PENDING",
+      "source_sha": "0ecbe750560f850e58214cdcaf6bbcb08b6e49ee6694cfa5a3fc1af95a00e9c9",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-b203",
+      "id": "kb138-deep-121-b203",
+      "review": "REVIEW_PENDING",
+      "source_sha": "8f848ba298d303b15597e491ffe642698505aebf33b6dba7384f8a795e1bc52b",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-b205",
+      "id": "kb138-deep-121-b205",
+      "review": "REVIEW_PENDING",
+      "source_sha": "9debad935768d20cb0fbe2007ef029501db13ae6b7fc69fb593f7993c9c17c74",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-c203",
+      "id": "kb143-deep-121-c203",
+      "review": "REVIEW_PENDING",
+      "source_sha": "99412f64576d15a88fd53422b1ea5a41f848adede7e1b21e8a6cab44dfe8929c",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-ec202",
+      "id": "kb138-deep-121-ec202",
+      "review": "REVIEW_PENDING",
+      "source_sha": "8b8992d365f38187b8c216db1b82ce01f2b9c7d1059b263b6275c19131d9fc09",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-ec204",
+      "id": "kb138-deep-121-ec204",
+      "review": "REVIEW_PENDING",
+      "source_sha": "66a0df31cff454ef4b76d50a496a75dbd82e4cdbfb2429016aec9cc4047e1fa4",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-ed201",
+      "id": "kb138-deep-121-ed201",
+      "review": "REVIEW_PENDING",
+      "source_sha": "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-ed202",
+      "id": "kb138-deep-121-ed202",
+      "review": "REVIEW_PENDING",
+      "source_sha": "3b3dfa10c8e4b4237a8c5bc9c49a4371ae15b578f36901a7679617ecaec09ea1",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-s203",
+      "id": "kb139-deep-121-s203",
+      "review": "REVIEW_PENDING",
+      "source_sha": "7988c3896e061468a3e58ffff64709096694986bec46173d7fdeeda122940fee",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-s206",
+      "id": "kb139-deep-121-s206",
+      "review": "REVIEW_PENDING",
+      "source_sha": "5bcfab1e2f4d0aebd2056cbe733602f6959c1cf50cd204762f0fef4f361cb27c",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-122-a302",
+      "id": "kb139-deep-122-a302",
+      "review": "REVIEW_PENDING",
+      "source_sha": "2aeddb761ab7fce7910c27d3a7cdd0e4fcc9a15d99d705c94cbc5bdc7bfea7bf",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-122-s305",
+      "id": "kb143-deep-122-s305",
+      "review": "REVIEW_PENDING",
+      "source_sha": "dcd15d1f9997104deb213c104d4e5e5250ba71b41a8f77beb43b9aea6a3b460e",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-123-a405",
+      "id": "kb139-deep-123-a405",
+      "review": "REVIEW_PENDING",
+      "source_sha": "20dc8656616a5c17c46aee396227b7b33dfac4937d811db279890acc6f7c5104",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-123-c404",
+      "id": "kb143-deep-123-c404",
+      "review": "REVIEW_PENDING",
+      "source_sha": "65150f2ffa1696eb67ab2d6c75dea4d1cc073746a376e257646dfad4cff4bcf3",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-124-c521",
+      "id": "kb143-deep-124-c521",
+      "review": "REVIEW_PENDING",
+      "source_sha": "02e9f7cff6de267cb57c0c1d0843c67bce1ed86babf63c47acb42376ded56967",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-124-c524",
+      "id": "kb139-deep-124-c524",
+      "review": "REVIEW_PENDING",
+      "source_sha": "bbc5e0f2eee677cbf5c6759d2e7f7cb38b2bd6ac198fa4d1b77560df54a655f2",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-a_continuity",
+      "id": "kb137-deep-a_continuity",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_function_limit",
+      "id": "kb137-deep-a_function_limit",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_integral_area",
+      "id": "kb134-deep-a_integral_area",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_limits_quotient",
+      "id": "kb135-deep-a_limits_quotient",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_mean_value",
+      "id": "kb133-deep-a_mean_value",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_monotone_convergence",
+      "id": "kb137-deep-a_monotone_convergence",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_sequence_limit",
+      "id": "kb134-deep-a_sequence_limit",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-c_complement",
+      "id": "kb133-deep-c_complement",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_cosine_difference",
+      "id": "kb134-deep-c_cosine_difference",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_equivalence",
+      "id": "kb136-deep-c_equivalence",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_exponential_exp",
+      "id": "kb136-deep-c_exponential_exp",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_function_mapping",
+      "id": "kb136-deep-c_function_mapping",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_inequality_product",
+      "id": "kb134-deep-c_inequality_product",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_log_inverse",
+      "id": "kb134-deep-c_log_inverse",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_logarithm_law",
+      "id": "kb136-deep-c_logarithm_law",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_monotonicity",
+      "id": "kb136-deep-c_monotonicity",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_parity",
+      "id": "kb134-deep-c_parity",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_period",
+      "id": "kb135-deep-c_period",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_piecewise",
+      "id": "kb136-deep-c_piecewise",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_quadratic_roots",
+      "id": "kb133-deep-c_quadratic_roots",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_quadratic_sign",
+      "id": "kb135-deep-c_quadratic_sign",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_quantifier",
+      "id": "kb136-deep-c_quantifier",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_quantifier_negation",
+      "id": "kb133-deep-c_quantifier_negation",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_radian",
+      "id": "kb136-deep-c_radian",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_set_membership",
+      "id": "kb136-deep-c_set_membership",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_set_subset",
+      "id": "kb136-deep-c_set_subset",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_sufficiency",
+      "id": "kb136-deep-c_sufficiency",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_tangent_domain",
+      "id": "kb135-deep-c_tangent_domain",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_union_intersection",
+      "id": "kb135-deep-c_union_intersection",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_zero_theorem",
+      "id": "kb133-deep-c_zero_theorem",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_arith_progression",
+      "id": "kb135-deep-sc_arith_progression",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_derivative_def",
+      "id": "kb136-deep-sc_derivative_def",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_derivative_monotone",
+      "id": "kb134-deep-sc_derivative_monotone",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_derivative_rules",
+      "id": "kb137-deep-sc_derivative_rules",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_extreme_point",
+      "id": "kb135-deep-sc_extreme_point",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_geom_progression",
+      "id": "kb133-deep-sc_geom_progression",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_induction_optional",
+      "id": "kb137-deep-sc_induction_optional",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_sequence_model",
+      "id": "kb137-deep-sc_sequence_model",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_space_basis",
+      "id": "kb137-deep-sc_space_basis",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_space_distance",
+      "id": "kb134-deep-sc_space_distance",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_space_projection",
+      "id": "kb135-deep-sc_space_projection",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    }
+  ],
+  "schema": "kb143-depth-and-risk/1",
+  "source_context_human_approved": false,
+  "student_authoritative": 0,
+  "student_free_text_verified": 0,
+  "teacher_approved": 0,
+  "total_teacher_only_drafts": 65,
+  "unsupported_claim": "65 editor-only manuscripts do not form a complete official syllabus"
+}

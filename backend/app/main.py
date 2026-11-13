@@ -351,3 +351,10 @@ def kb139_review_coverage():
     """Only seven-track bounded editorial counts; no student or teacher manuscript data."""
     from .kb_batch139_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb143-review-coverage")
+def kb143_review_coverage():
+    """Aggregate 65 editor-only drafts; never export unapproved mathematical content."""
+    from .kb_batch143_index import public_coverage
+    return public_coverage()

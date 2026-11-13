@@ -1,0 +1,65 @@
+{
+  "backend_passed": 66293,
+  "backend_skipped": 5,
+  "browser_pytest_passed": 2,
+  "candidate_to_teacher_draft_matched": 24,
+  "candidates_unmatched": 215,
+  "development_device": "AUTHORIZED_MACBOOK_AIR_ONLY",
+  "focused_passed": 508,
+  "formal_general_proofs_certified": 0,
+  "free_student_steps_verified": 0,
+  "github_can_only_rehash_logs_not_read_private_licensed_pdf": true,
+  "historical_uncertified_proof_steps": 538,
+  "independent_finite_exact_math_cases": 32,
+  "invalid_precondition_cases_rejected": 16,
+  "licensed_source_pdf_rehashed_only_on_mac": true,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2442,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH143_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH143_BROWSER.log",
+      "sha256": "6c71abea1b9a391e58b6c950f9a7135592cf6d7062967367870d13bcb424fb46"
+    },
+    "FOCUSED": {
+      "bytes": 1190,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH143_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH143_FOCUSED.log",
+      "sha256": "d9a1e6a260422b63459510c0362d2b6ce4e8645482ef34a61b5903a000595414"
+    },
+    "MAC_FULL": {
+      "bytes": 136066,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH143_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH143_MAC_FULL.log",
+      "sha256": "394282003819871a53a2d24de94dfabfb7366837902a0a460a448a499d4c6509"
+    }
+  },
+  "new_near_far_transfer_tasks": 16,
+  "new_student_hint_stages": 24,
+  "new_teacher_only_math_lessons": 8,
+  "node_passed": 111,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "original_teacher_examples": 16,
+  "positive_cases": 16,
+  "provisional_editorial_candidates": 239,
+  "run_date": "2026-11-14",
+  "schema": "kb143-mac-full-evidence/1",
+  "source_parent_local_sha": "09483bc",
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "teacher_only_lesson_total": 65,
+  "unresolved_math_conflicts": 10
+}

@@ -1,0 +1,341 @@
+{
+  "cases": [
+    {
+      "candidate_id": "hs-semantic-pilot-121-c203",
+      "case_id": "kb143-case-01-1",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "forall negation equals exists counterexample on finite/empty domain",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c203",
+      "case_id": "kb143-case-01-2",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "forall negation equals exists counterexample on finite/empty domain",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c203",
+      "case_id": "kb143-case-01-3",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects incorrect forall-to-forall negation",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c203",
+      "case_id": "kb143-case-01-4",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects keeping weak inequality without logical negation",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c404",
+      "case_id": "kb143-case-02-1",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "x square is even on symmetric integer test domain",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c404",
+      "case_id": "kb143-case-02-2",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "x cubed is odd on symmetric integer test domain",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c404",
+      "case_id": "kb143-case-02-3",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects one-sided square function as even",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c404",
+      "case_id": "kb143-case-02-4",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects x square plus x as even or odd",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c108",
+      "case_id": "kb143-case-03-1",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "3-4-5 triangle circumradius from 90-degree sine",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c108",
+      "case_id": "kb143-case-03-2",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "6-8-10 triangle circumradius from 90-degree sine",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c108",
+      "case_id": "kb143-case-03-3",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "SSA 30-degree 5-to-8 has two interior-angle solutions",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c108",
+      "case_id": "kb143-case-03-4",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects SSA sine greater than one",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c521",
+      "case_id": "kb143-case-04-1",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "dice union via inclusion-exclusion equals 2/3",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c521",
+      "case_id": "kb143-case-04-2",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "second overlapping pair union equals one half",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c521",
+      "case_id": "kb143-case-04-3",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects naive addition of overlapping events",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c521",
+      "case_id": "kb143-case-04-4",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects treating these intersecting dice events as independent",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s107",
+      "case_id": "kb143-case-05-1",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "slope (1,2) to (3,6) equals two",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s107",
+      "case_id": "kb143-case-05-2",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "horizontal slope zero",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s107",
+      "case_id": "kb143-case-05-3",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "vertical x coordinates duplicate: undefined slope",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s107",
+      "case_id": "kb143-case-05-4",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "identical points do not define a unique straight line",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s305",
+      "case_id": "kb143-case-06-1",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "10 population 4 success draw 3 exactly two =3/10",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s305",
+      "case_id": "kb143-case-06-2",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "5 population 2 success draw 2 exactly one =3/5 and normalization",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s305",
+      "case_id": "kb143-case-06-3",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects replacement binomial approximation as exact",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s305",
+      "case_id": "kb143-case-06-4",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects impossible success count",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a108",
+      "case_id": "kb143-case-07-1",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "Cramer first system has (2,1) exact solution",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a108",
+      "case_id": "kb143-case-07-2",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "Cramer second system has (2,1) exact solution",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a108",
+      "case_id": "kb143-case-07-3",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "singular inconsistent system must refuse division",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a108",
+      "case_id": "kb143-case-07-4",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "singular consistent system still has no Cramer unique result",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed105",
+      "case_id": "kb143-case-08-1",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "12 semitones above 440 exactly 880 Hz",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed105",
+      "case_id": "kb143-case-08-2",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "12 semitones below 440 exactly 220 Hz",
+      "outcome": "FINITE_EXACT_WITNESS",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed105",
+      "case_id": "kb143-case-08-3",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "rejects frequency zero as valid reference for ratio",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed105",
+      "case_id": "kb143-case-08-4",
+      "formal_proof_certified": false,
+      "free_student_text_verified": false,
+      "label": "fixed additive Hz increments violate equal ratio",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "teacher_approved": false
+    }
+  ],
+  "negative_precondition_rejections": 16,
+  "nonnegative_exact_witnesses": 16,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "proof_certifications": 0,
+  "schema": "kb143-independent-exact-finite-oracle/1",
+  "scope": "FINITE_WITNESS_NOT_GENERAL_FORMAL_PROOF",
+  "student_step_verifications": 0,
+  "teacher_approvals": 0,
+  "total_cases": 32
+}

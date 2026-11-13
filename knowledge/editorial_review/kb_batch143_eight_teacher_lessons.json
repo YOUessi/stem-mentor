@@ -1,0 +1,647 @@
+[
+  {
+    "applicability_and_hypotheses": "固定同一论域D与经典二值谓词，否定前后不可悄悄把x∈R换成x∈N；不把未绑定变量的开放式当成闭合命题。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在数据库完整性约束“所有记录金额非负”下，构造一条破坏全称约束的记录，解释为什么一条记录足以推翻原结论。",
+    "formal_definition_or_theorem": "对任意确定论域D和具有确定真值的谓词P(x)，命题¬(∀x∈D，P(x))与∃x∈D，使¬P(x)等价。否定一个全称命题必须把“所有”改为“存在”，并否定谓词，而不是仅替换比较符号。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb143-deep-121-c203",
+    "knowledge_type": "Theorem",
+    "near_transfer": "给出“对所有自然数n都有n+2>n”的准确否定，判断其真假并说明原因。",
+    "nonexample_or_failure": "错误边界：把¬(∀x∈R,x²≥0)写成∀x∈R,x²<0，既错改了量词，又把“不存在违反者”说成“所有都是违反者”。",
+    "notation_and_domain": "D为明确的集合；∀是对D内每个元素量化，∃表示至少有一个；¬为逻辑否定，P(x)需在D上可判真伪。允许D为空，但空域上的全称命题恒真、存在命题恒假。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "先将原命题写成∀x∈D,P(x)，使变量的取值集合与谓词分开。",
+        "step": 1
+      },
+      {
+        "justification": "若不存在使P为假的对象，则每一个对象都满足P，从而全称为真；所以全称为假的必要结果是有反例。",
+        "step": 2
+      },
+      {
+        "justification": "若找到x₀∈D并有¬P(x₀)，则原命题要求x₀满足P，与之矛盾，因此原命题为假。",
+        "step": 3
+      },
+      {
+        "justification": "D=∅时不存在反例，存在命题为假；原全称命题为真，二者取否定后仍保持等价。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-c203",
+    "source_end_line": 17,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "99412f64576d15a88fd53422b1ea5a41f848adede7e1b21e8a6cab44dfe8929c"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 16,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "99412f64576d15a88fd53422b1ea5a41f848adede7e1b21e8a6cab44dfe8929c",
+    "source_start_line": 17,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确定量词是“所有”还是“存在”，及x属于哪个集合。",
+      "否定全称时只要找到一个违例，不需要所有元素违例。",
+      "把原来的谓词整体否定，最后检查论域有没有被偷换。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "存在实数x，使x²+1≤0（这个否定命题为假）。",
+        "question": "否定“对所有实数x，都有x²+1>0”。",
+        "reasoned_solution": [
+          "明确论域为全体实数，不改变为整数或正数。",
+          "∀变成∃，而“>0”的否定是“≤0”。",
+          "实数平方非负，原命题真；否定命题无见证，所以为假。"
+        ]
+      },
+      {
+        "answer": "存在整数n，使n²<n；例如n在(0,1)没有整数，故此否定为假。",
+        "question": "否定“每一个整数n都满足n²≥n”。",
+        "reasoned_solution": [
+          "原命题形式为∀n∈Z，n²≥n。",
+          "改量词为∃n∈Z，把≥改为<。",
+          "n(n−1)对整数n总不小于0；因此不存在整数反例。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "全称命题的否定：量词、论域与反例",
+    "typical_wrong_solution": "典型错解：把“任意实数x均满足x²≥0”的否定写作“任意实数x均有x²<0”。",
+    "why_method_is_legal": "逐一核对所有对象的真值：若全称为假，按全称语义至少有一个对象不满足P；反向若发现任意一个反例，则原全称不成立。此双向论证不依赖于是否能穷举无限论域。",
+    "why_wrong_and_repair": "固定论域后先替换∀为∃，再对局部条件取逻辑否定。对≤、≥尤其核对严格号方向；空集情况也要保持量词语义。"
+  },
+  {
+    "applicability_and_hypotheses": "须先核实−x仍在定义域内；不可在只定义于[0,+∞)的函数上直接代入f(−x)。是否连续、是否可导不是判断奇偶性的必要条件。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "传感器只记录t≥0时刻时，即使记录曲线写成t²，也不能直接把负时间的曲线与原数据视为同一个函数。",
+    "formal_definition_or_theorem": "实函数f:D→R称偶函数，当且仅当D关于0对称且任意x∈D有f(−x)=f(x)；称奇函数，当且仅当D关于0对称且任意x∈D有f(−x)=−f(x)。零函数在对称定义域上既奇又偶。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb143-deep-123-c404",
+    "knowledge_type": "Theorem",
+    "near_transfer": "讨论h(x)=|x|/(x²+1)在R上的奇偶性，并说明是否需要连续性前提。",
+    "nonexample_or_failure": "例如f(x)=x²只在D=[0,+∞)定义时，代数表达式看似偶，但作为该定义域上的函数不属于偶函数；也不能擅自把D扩展到R。",
+    "notation_and_domain": "D⊆R为f的全部定义域；关于0对称指x∈D当且仅当−x∈D。奇偶性不是只看解析式的指数，而是对函数的全部定义域检验。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "检查所有x∈D是否都有−x∈D；如果不成立，停止传统奇偶判定。",
+        "step": 1
+      },
+      {
+        "justification": "在合法的每对x与−x上，直接计算f(−x)，与f(x)及−f(x)分别比较。",
+        "step": 2
+      },
+      {
+        "justification": "对偶函数，(x,f(x))与(−x,f(x))成对；对奇函数，(x,f(x))与(−x,−f(x))成对。",
+        "step": 3
+      },
+      {
+        "justification": "常值零函数在任意对称域上同时满足两个等式；若两者都成立，则所有x∈D均有f(x)=0。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-123-c404",
+    "source_end_line": 24,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "65150f2ffa1696eb67ab2d6c75dea4d1cc073746a376e257646dfad4cff4bcf3"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 19,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "65150f2ffa1696eb67ab2d6c75dea4d1cc073746a376e257646dfad4cff4bcf3",
+    "source_start_line": 24,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写完整定义域，检查是否能配对x和−x。",
+      "若论域对称，尝试计算f(−x)并化简。",
+      "比较化简结果分别等于f(x)还是−f(x)，不要只看一两个取值。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "奇函数；对任意实数x都有f(−x)=−f(x)。",
+        "question": "判断f(x)=x³−x在R上的奇偶性。",
+        "reasoned_solution": [
+          "函数定义域R关于0对称。",
+          "计算f(−x)=−x³+x=−(x³−x)。",
+          "全称等式成立，因此为奇函数。"
+        ]
+      },
+      {
+        "answer": "既非偶函数也非奇函数，因为定义域不关于0对称。",
+        "question": "判断g(x)=x²在[0,+∞)上的奇偶性。",
+        "reasoned_solution": [
+          "以函数完整定义域[0,+∞)为准。",
+          "1在定义域内，但−1不在，故不具备反射成对条件。",
+          "奇偶性判据的共同必要条件失败，不能仅凭x²代数形式判偶。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "函数奇偶性与定义域关于原点对称",
+    "typical_wrong_solution": "典型错解：仅看到x²便说f:[0,+∞)→R是偶函数，而没有核对−1是否在定义域。",
+    "why_method_is_legal": "奇偶条件是一对点的函数值关系；若满足偶函数等式，则点(x,f(x))在y轴反射后的点(−x,f(x))也在图像上；奇函数关系对应绕原点旋转180°。反向由图形对称可回推每对点值关系。",
+    "why_wrong_and_repair": "严格使用“函数=对应法则+定义域”而非只看公式；先检查对称域，再代入−x。对零函数讨论奇偶双重属性，不要把奇偶说成互斥。"
+  },
+  {
+    "applicability_and_hypotheses": "非退化三角形、外接圆存在且正弦非零；使用反三角函数从sin B求B时应检查第二象限候选与内角和条件，不能凭计算器主值独断。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在三角测量只有两距离和一非夹角时，用几何作图解释为什么目标可能落在两处不同位置。",
+    "formal_definition_or_theorem": "对任一非退化平面三角形ABC，边长a=|BC|、b=|CA|、c=|AB|与对角A、B、C满足a/sin A=b/sin B=c/sin C=2R，其中R为三角形外接圆半径。SSA仅给两边和其中一边的对角时可能出现0、1或2个解。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb143-deep-120-c108",
+    "knowledge_type": "Theorem",
+    "near_transfer": "已知A=45°、a=4、b=3，判断SSA可行内角B的个数并说明理由。",
+    "nonexample_or_failure": "例：A=30°、a=5、b=8，则sin B=4/5，有B≈53.13°或126.87°，两者均满足A+B<180°，因此确有两个不同三角形。",
+    "notation_and_domain": "a,b,c>0，A,B,C∈(0,π)，A+B+C=π；R>0为外接圆半径；角均以弧度参与三角函数计算，度数例题须明确单位。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-120-c107"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "非共线三顶点确定外接圆，圆心到每个顶点的距离均为R>0。",
+        "step": 1
+      },
+      {
+        "justification": "对圆弦BC，结合圆周角定理或相应圆心角，得到a=2R sin A；同理b=2R sin B，c=2R sin C。",
+        "step": 2
+      },
+      {
+        "justification": "由于三角形每个内角严格在0与π之间，sin A、sin B、sin C均正，因此可合法除去这些正弦项。",
+        "step": 3
+      },
+      {
+        "justification": "遇到SSA，先算sin B=b sin A/a，再同时检查B与π−B能否满足B>0及A+B<π并满足边长条件。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-c108",
+    "source_end_line": 25,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "50ebddd71d7dbc8520dc5c55a0fb91434e2ea5b03c561610ea1912c18484737f",
+      "14112357f965c4296049c96215dcb222c1af27e297606d4e9b4567dfdbb4f45a",
+      "40778fdfb2f26d7bcdee5b3e94a61ea8ce377326ac37c35b66d48e65f2e54e74"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 26,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+    "source_start_line": 23,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先画出边和对角的配对，而不是把a与B错配。",
+      "将已知正弦比代入，检查商是否落在[−1,1]。",
+      "如果是从sin求内角，列出两个象限候选并核对内角和。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "R=5。",
+        "question": "直角三角形两直角边6和8，斜边10，求外接圆半径。",
+        "reasoned_solution": [
+          "直角三角形中斜边对应90°。",
+          "由正弦定理10/sin90°=2R，正弦值为1。",
+          "所以2R=10，R=5，并且外接圆直径等于斜边。"
+        ]
+      },
+      {
+        "answer": "两个合法B：arcsin(4/5)与180°−arcsin(4/5)。",
+        "question": "给A=30°、a=5、b=8，说明B有几个候选。",
+        "reasoned_solution": [
+          "正弦定理得sin B=8×(1/2)/5=4/5。",
+          "在0°到180°内正弦取4/5有两个角，约53.13°与126.87°。",
+          "分别加A=30°后均小于180°，所以两个候选均对应非退化三角形。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "正弦定理及SSA两解边界",
+    "typical_wrong_solution": "典型错解：用arcsin(0.8)只得到53.13°，直接宣称SSA唯一确定三角形。",
+    "why_method_is_legal": "用外接圆上弦长=2R sin(相应圆周角)得到每条边与其对角的关系，再除以正弦（非退化保证非零）；SSA反求角时sin值相同可能对应B与π−B两种内角。",
+    "why_wrong_and_repair": "正弦函数在(0,π)并非一一对应，必须检查补角候选；反之若计算得|sin B|>1则无解，或补角使A+B≥π则删去。"
+  },
+  {
+    "applicability_and_hypotheses": "两个事件必须在同一概率空间中；使用元素数/总数计算概率时需另外具备有限等可能条件；事件独立不等于互斥。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "设备A报警与B报警可能同时发生；估算“至少一台报警”概率时如何避免重复计算同时报警的记录？",
+    "formal_definition_or_theorem": "同一概率空间(Ω,F,P)内的任意两个事件A和B满足P(A∪B)=P(A)+P(B)−P(A∩B)。仅在A∩B为空事件（或交集概率为0）时才可不减交集概率。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb143-deep-124-c521",
+    "knowledge_type": "Theorem",
+    "near_transfer": "在非等可能空间里若P(A)=0.6、P(B)=0.5、P(A∩B)=0.3，计算并集并检查概率合法性。",
+    "nonexample_or_failure": "若A=B且P(A)=0.4，则并集仍为0.4，直接相加错误得到0.8；两个具有正概率且互斥的事件不能独立。",
+    "notation_and_domain": "Ω为共同样本空间，F为事件集合，P为概率测度；∪表示至少一个事件发生，∩表示两者同时发生。有限等可能空间是特殊情形，但并非公式必要条件。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "用集合差将并集分成A\\B、A∩B、B\\A三个两两不交部分。",
+        "step": 1
+      },
+      {
+        "justification": "有限可加性给出P(A∪B)=P(A\\B)+P(A∩B)+P(B\\A)。",
+        "step": 2
+      },
+      {
+        "justification": "类似地P(A)=P(A\\B)+P(A∩B)，P(B)=P(B\\A)+P(A∩B)。",
+        "step": 3
+      },
+      {
+        "justification": "将后二式相加减去P(A∩B)，就恰好得到并集三部分概率之和。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-124-c521",
+    "source_end_line": 16,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "02e9f7cff6de267cb57c0c1d0843c67bce1ed86babf63c47acb42376ded56967"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 31,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "02e9f7cff6de267cb57c0c1d0843c67bce1ed86babf63c47acb42376ded56967",
+    "source_start_line": 16,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先想两个事件是否可能同时发生。",
+      "画出并集被拆成几块，注意交集只该计算一次。",
+      "核对每个事件概率是否来自同一试验、同一分母。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "2/3。",
+        "question": "公平六面骰，A={2,4,6}，B={4,5,6}，求P(A∪B)。",
+        "reasoned_solution": [
+          "列出A∩B={4,6}，有2个基本结果。",
+          "六个结果等可能，P(A)=P(B)=1/2，P(A∩B)=1/3。",
+          "容斥得1/2+1/2−1/3=2/3，直接数并集4个也为4/6。"
+        ]
+      },
+      {
+        "answer": "1/2。",
+        "question": "公平六面骰，C={1,2}、D={2,3}，求并集概率。",
+        "reasoned_solution": [
+          "C∩D={2}，两集合各有2点。",
+          "概率分别2/6、2/6、1/6。",
+          "容斥得2/6+2/6−1/6=3/6=1/2。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "事件并集的容斥公式与重叠计数",
+    "typical_wrong_solution": "典型错解：公平骰子事件A={2,4,6}，B={4,5,6}，直接得到P(A∪B)=3/6+3/6=1。",
+    "why_method_is_legal": "将A∪B拆成互不相交的A\\B、A∩B和B\\A；按有限可加性分别求和，得到并集概率等于A、B概率之和减掉重复计算的一次交集概率。",
+    "why_wrong_and_repair": "交集{4,6}被计了两次，应减2/6，正确并集是{2,4,5,6}概率4/6；别把独立性错误作为免减条件。"
+  },
+  {
+    "applicability_and_hypotheses": "固定同一平面直角坐标系且两点不同；分母x₂−x₁必须非零；竖直直线仍有倾斜角90°，但tan90°无定义而非无穷大实数。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "楼梯坡度与地图图像斜率可相差很多，因为横纵轴的实际单位不同；分析何时斜率有真实几何意义。",
+    "formal_definition_or_theorem": "不同平面点P₁(x₁,y₁)、P₂(x₂,y₂)确定的直线若x₂≠x₁，斜率m=(y₂−y₁)/(x₂−x₁)=tanθ；其中倾斜角θ∈[0,π)且θ≠π/2。若x₂=x₁则为竖直直线，斜率未定义。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb143-deep-120-s107",
+    "knowledge_type": "Method",
+    "near_transfer": "过(−1,1)与(2,−2)的直线斜率为何是负数？它的倾斜角属于锐角还是钝角？",
+    "nonexample_or_failure": "竖直直线x=2通过(2,1)和(2,3)，分母为0，不能把m写成∞并参与普通实数加减；两个点相同则连唯一直线也不能确定。",
+    "notation_and_domain": "P₁与P₂是不同点；θ为从x轴正向逆时针转到直线向上方向的倾斜角（0≤θ<π）；m是无量纲坐标斜率，前提是两个坐标轴单位已明确。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "计算Δx=x₂−x₁和Δy=y₂−y₁，同时确认两个点确实不同。",
+        "step": 1
+      },
+      {
+        "justification": "若Δx=0且Δy≠0，则直线x=x₁竖直，记斜率未定义。",
+        "step": 2
+      },
+      {
+        "justification": "若Δx≠0，则m=Δy/Δx，交换两点顺序两差同时变号，商不变。",
+        "step": 3
+      },
+      {
+        "justification": "求倾斜角时在[0,π)中选取符合tanθ=m的值；尤其负斜率的倾斜角是钝角。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-s107",
+    "source_end_line": 23,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "a65e9daa205329e826b979575a69fa95a8ab68bd531b865622ab83dac93e0501",
+      "3ce7772ebf5796d2e9b961242d5e2ceda9b6ca84bba2ab79ff5902149f023caa"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 43,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "0ecbe750560f850e58214cdcaf6bbcb08b6e49ee6694cfa5a3fc1af95a00e9c9",
+    "source_start_line": 22,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先检查两点是不是同一个点。",
+      "只看横坐标差是否为零即可判断能否求斜率。",
+      "算出Δy/Δx后，再根据角度区间判断倾斜角，而不是只取反正切主值。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "m=2。",
+        "question": "求过(1,2)和(3,6)的直线斜率。",
+        "reasoned_solution": [
+          "两点不同，横坐标之差Δx=2≠0。",
+          "纵坐标之差Δy=4，斜率m=4/2=2。",
+          "交换两点计算得到−4/−2仍为2。"
+        ]
+      },
+      {
+        "answer": "m=0，θ=0°。",
+        "question": "求过(−1,5),(2,5)的斜率和倾斜角。",
+        "reasoned_solution": [
+          "横坐标差为3，不为零。",
+          "纵坐标差为0，所以m=0/3=0。",
+          "倾斜角按0≤θ<180°取0°，对应水平直线。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "直线斜率与倾斜角：竖直退化",
+    "typical_wrong_solution": "典型错解：两点(1,2),(1,5)得到(5−2)/(1−1)=3/0，认为斜率等于0。",
+    "why_method_is_legal": "两点位移向量为(Δx,Δy)。当Δx≠0，方向向量的纵向变化/横向变化给出斜率；把方向向量单位化不改变比值，故对应方向角的正切。竖直情况不能合法相除。",
+    "why_wrong_and_repair": "3/0没有实数意义；水平直线才有m=0。先判Δx是否为零，再计算斜率。"
+  },
+  {
+    "applicability_and_hypotheses": "总体有限且每个n元素子集等可能、抽后不放回；不能直接把每次命中率固定为K/N当作独立伯努利试验。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "质量抽检的总体有限且抽后不放回时，为什么连续抽到不合格品后下一次不合格概率会改变？",
+    "formal_definition_or_theorem": "有限总体有N个可区分对象，其中K个标记成功，不放回地等可能抽取n个对象。设X为抽中的成功数，则P(X=k)=C(K,k)C(N−K,n−k)/C(N,n)，其中max(0,n−(N−K))≤k≤min(n,K)且k取整数。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb143-deep-122-s305",
+    "knowledge_type": "Theorem",
+    "near_transfer": "某班12人中有5人完成任务，随机不放回抽4人，求恰3人完成的概率，并指出合法k范围。",
+    "nonexample_or_failure": "例N=3,K=2,n=3时X必为2，不应让k=0或k=1产生非零概率；有放回抽样通常是二项分布而非此式。",
+    "notation_and_domain": "N、K、n为整数，0≤K≤N，0≤n≤N；组合数C(a,b)=a!/[b!(a−b)!]（0≤b≤a）；X取非负整数值。抽样是从所有大小n的子集均匀抽取。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "确定抽样总子集数C(N,n)，说明顺序不计且各个子集等可能。",
+        "step": 1
+      },
+      {
+        "justification": "若恰有k个成功，需从K个成功对象选k个，同时从N−K个其他对象选n−k个。",
+        "step": 2
+      },
+      {
+        "justification": "由独立的集合选择组合得到有利子集个数C(K,k)C(N−K,n−k)。",
+        "step": 3
+      },
+      {
+        "justification": "将有利子集数除以总子集数，检查k落在合法区间且概率总和为1。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-122-s305",
+    "source_end_line": 25,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "dcd15d1f9997104deb213c104d4e5e5250ba71b41a8f77beb43b9aea6a3b460e"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 47,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "dcd15d1f9997104deb213c104d4e5e5250ba71b41a8f77beb43b9aea6a3b460e",
+    "source_start_line": 25,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先判断每次取出后物体是否放回。",
+      "把抽样结果理解为大小为n的子集，分母选哪些对象？",
+      "若恰k个成功，需要从成功组与失败组分别选多少个？"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "3/10。",
+        "question": "10个球有4红6蓝，不放回抽3个，求恰2红的概率。",
+        "reasoned_solution": [
+          "总抽样子集数C(10,3)=120。",
+          "选2红C(4,2)=6种、选1蓝C(6,1)=6种，共36种。",
+          "概率36/120=3/10，k=2在合法区间。"
+        ]
+      },
+      {
+        "answer": "3/5。",
+        "question": "5个物品中2个标记，随机不放回取2个，恰1个标记概率多少？",
+        "reasoned_solution": [
+          "总可能样本集合C(5,2)=10。",
+          "选1标记有C(2,1)=2种，选1未标记C(3,1)=3种。",
+          "有利6种，概率6/10=3/5。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "超几何分布：有限总体不放回抽样",
+    "typical_wrong_solution": "典型错解：从10个球中有4红球，抽3球不放回，直接按二项式C(3,2)0.4²0.6求恰2红概率。",
+    "why_method_is_legal": "全部大小为n的抽样子集有C(N,n)个；恰含k成功的子集有C(K,k)种选成功、C(N−K,n−k)种选失败，乘法计数得到分子。把所有合法k的互斥情形求和分割全部样本空间。",
+    "why_wrong_and_repair": "抽出红球后总体红球比例改变，独立同分布假设失败；应按组合数计数而不是固定成功概率的独立乘积。"
+  },
+  {
+    "applicability_and_hypotheses": "未知数和方程数相等不够，必须det A非零；奇异系统可能无解或有无穷多解，不能因为分子分母都0便把0/0当成合法值。",
+    "course_track": "ELECTIVE_A",
+    "far_transfer": "机器人关节控制的线性约束矩阵接近奇异时，解释为什么仅仅det≠0还不保证数值解对测量误差稳定。",
+    "formal_definition_or_theorem": "给定n×n实矩阵A及列向量b，若det A≠0，方程组Ax=b有唯一解x，且x_i=det A_i/det A，其中A_i由A的第i列替换为b得到。det A=0时禁止直接套此除法公式。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb143-deep-120-a108",
+    "knowledge_type": "Theorem",
+    "near_transfer": "对参数t的方程组tx+y=1，x+ty=1，讨论哪些t可以直接使用克拉默法则。",
+    "nonexample_or_failure": "例x+y=1和2x+2y=3的系数行列式为0且系统无解；例x+y=1和2x+2y=2同样行列式为0却有无穷多解。",
+    "notation_and_domain": "n为正整数；A∈R^(n×n)，b,x∈R^n；det为行列式，A_i为仅第i列换成b的矩阵；x_i为解的第i个分量。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-120-a105"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "先将方程组整齐写成Ax=b，系数矩阵A与常数列b不能混淆。",
+        "step": 1
+      },
+      {
+        "justification": "计算det A；若为0，停止克拉默法则并改用消元判定相容性。",
+        "step": 2
+      },
+      {
+        "justification": "对每个i只替换第i列，求det A_i，利用列线性和重复列零行列式得det A_i=x_i det A。",
+        "step": 3
+      },
+      {
+        "justification": "在det A≠0前提下除以行列式求x_i，代回原方程组确认每一行成立。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-a108",
+    "source_end_line": 10,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "bb82e38e586ce1203e3b485ffc797777b99d50577509126e61f7d4db6c2965dc",
+      "22c66f611d43c3c366855c4b249f456e0ffab5497cd0b2ade8a1a11c1a6bf4d9"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 55,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "ffe5b409aadf394caf6c0b7db228d766f1577e0e5670e7658617faf4eaffb212",
+    "source_start_line": 9,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先排列未知数与方程常数，计算系数矩阵行列式。",
+      "若分母是0，停止这个方法并判断是否有多解或无解。",
+      "非零时替换一列计算行列式，算完代回全部原方程。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "x=2，y=1。",
+        "question": "解2x+y=5，x−y=1。",
+        "reasoned_solution": [
+          "系数矩阵[[2,1],[1,−1]]行列式−3≠0。",
+          "替换第一列得det[[5,1],[1,−1]]=−6，故x=(−6)/(−3)=2。",
+          "替换第二列得det[[2,5],[1,1]]=−3，故y=1，代入两式均成立。"
+        ]
+      },
+      {
+        "answer": "x=2，y=1。",
+        "question": "解3x+y=7，x+y=3。",
+        "reasoned_solution": [
+          "A=[[3,1],[1,1]]，det A=3−1=2。",
+          "det A₁=det[[7,1],[3,1]]=4，故x=4/2=2。",
+          "det A₂=det[[3,7],[1,3]]=2，故y=2/2=1，代入核验。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "克拉默法则：非奇异方阵的唯一解",
+    "typical_wrong_solution": "典型错解：看到二元一次方程组就直接写x=det A₁/det A，未查det A=0导致0/0或任意除零。",
+    "why_method_is_legal": "det A≠0保证A可逆。由Ax=b有b=∑_j x_j a_j，对A_i行列式按第i列线性展开，除j=i外均出现重复列行列式0，故det A_i=x_i det A，再作合法除法。",
+    "why_wrong_and_repair": "把行列式非零写成显式前提；当奇异时改用秩/消元，不可擅自断言某个公式答案。"
+  },
+  {
+    "applicability_and_hypotheses": "只适用于理想等比调律，实际乐器可能有拉伸调律或音准偏差；频率必须正，参考频率与目标频率应使用同一单位。",
+    "course_track": "ELECTIVE_D",
+    "far_transfer": "制作手机调音器时，解释为什么现实测得的频率比只可能近似等于2^(1/12)，并讨论采样误差对偏差判断的影响。",
+    "formal_definition_or_theorem": "在理想十二平均律中，将一个八度的频率倍比2均分为12个等比间隔：相邻半音频率比r=2^(1/12)>1。给定参考频率f₀>0，第k个半音（k∈Z）频率f_k=f₀·2^(k/12)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb143-deep-120-ed105",
+    "knowledge_type": "Method",
+    "near_transfer": "以220 Hz为参考上移7个半音，写出精确频率表达式并说明不应随意取整。",
+    "nonexample_or_failure": "从440 Hz向上12个半音应为880 Hz，而不是440+12×常数；等频差会在不同八度产生不同的相对间隔。",
+    "notation_and_domain": "f₀、f_k以Hz计且为正；k为有符号整数半音步数；r为无量纲正频率比；“八度”在此是频率乘2的定义，不是时间长度。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-120-ed104"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "把“相邻间隔相等”解释为相同乘法比例r，而不是相同Hz加法差。",
+        "step": 1
+      },
+      {
+        "justification": "写出12次连续乘法f₁₂=f₀r^12，并结合八度关系f₁₂=2f₀。",
+        "step": 2
+      },
+      {
+        "justification": "使用f₀>0约去，求得唯一正比值r=2^(1/12)。",
+        "step": 3
+      },
+      {
+        "justification": "向上k步乘r^k，向下k步乘r^(−k)，每一步检查频率正数与单位Hz。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-ed105",
+    "source_end_line": 4,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "e162b51fe6a20fe2482e697c5aa2db13daf3422ca1727bd817a54c37b222650d",
+      "4f1cf47b9cfaced8b463217b02821357fd4c713073e9ca90fcd3d0a7a7fbc061",
+      "8acf6ca67e4f6cc23746699b19c43711de90d36da39665426123d13f2923868d",
+      "473c02f0e21433a82c70a8ddd998ed0d2bedbafebac09a2ba160889c638091f7"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 71,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "998a6d01313d307c2a5a06b5b16717847dcf57cb19cfde3867d6c68ff5bce73c",
+    "source_start_line": 1,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先分清频率的加法变化还是乘法比例。",
+      "一个八度的频率关系是什么？12次相同比例需要满足什么幂关系？",
+      "反向走半音时指数是负的，数值仍然必须保持正频率。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "880 Hz。",
+        "question": "以440 Hz为参考，上移12个半音后频率是多少？",
+        "reasoned_solution": [
+          "从十二平均律定义r^12=2。",
+          "写f₁₂=440·r^12。",
+          "代入得440×2=880 Hz，正好上升一个八度。"
+        ]
+      },
+      {
+        "answer": "220 Hz。",
+        "question": "以440 Hz为参考，下移12个半音后频率是多少？",
+        "reasoned_solution": [
+          "半音步数k=−12，仍用同一参考频率。",
+          "f_−12=440×2^(−12/12)=440×2^(−1)。",
+          "结果220 Hz，和440 Hz之比为1/2。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "十二平均律的几何数列频率比",
+    "typical_wrong_solution": "典型错解：把半音间隔设为固定20 Hz，导致220 Hz与440 Hz对应八度不是12个恒定比例步长。",
+    "why_method_is_legal": "设每一步频率乘固定r，则走12步得到f₁₂=f₀r^12。理想一个八度要求f₁₂=2f₀；f₀>0可约去，得到r^12=2，再取唯一正根r=2^(1/12)。负向移动用逆比。",
+    "why_wrong_and_repair": "十二平均律的等间隔是对数频率上的等距离，不是物理Hz的等差；要以等比数列处理并记录实际乐器偏差。"
+  }
+]
