@@ -265,6 +265,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch135_integrat
 .venv/bin/python scripts/check_kb_batch136_math.py --check
 .venv/bin/python scripts/build_kb_batch136_coverage.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch136_pilot.py
+# Batch137: complete all seven remaining bounded editorial manuscripts, exact oracle, 41-draft privacy ledger.
+.venv/bin/python scripts/build_kb_batch137_lessons.py --check
+.venv/bin/python scripts/check_kb_batch137_math.py --check
+.venv/bin/python scripts/build_kb_batch137_coverage.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch137_closure.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
