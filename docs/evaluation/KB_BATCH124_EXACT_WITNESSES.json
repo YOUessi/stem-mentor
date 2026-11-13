@@ -1,0 +1,53 @@
+{
+  "batch": 124,
+  "cross_topic_exact_checks_passed": 8,
+  "exact_worked_cases_passed": 16,
+  "general_formal_theorems_proven": 0,
+  "independent_negative_checks_passed": 8,
+  "lesson_count": 8,
+  "per_lesson": {
+    "B501": {
+      "cross_topic": 1,
+      "negative_cases": 1,
+      "worked_examples": 2
+    },
+    "C502": {
+      "cross_topic": 1,
+      "negative_cases": 1,
+      "worked_examples": 2
+    },
+    "C503": {
+      "cross_topic": 1,
+      "negative_cases": 1,
+      "worked_examples": 2
+    },
+    "C506": {
+      "cross_topic": 1,
+      "negative_cases": 1,
+      "worked_examples": 2
+    },
+    "C507": {
+      "cross_topic": 1,
+      "negative_cases": 1,
+      "worked_examples": 2
+    },
+    "C516": {
+      "cross_topic": 1,
+      "negative_cases": 1,
+      "worked_examples": 2
+    },
+    "C521": {
+      "cross_topic": 1,
+      "negative_cases": 1,
+      "worked_examples": 2
+    },
+    "S502": {
+      "cross_topic": 1,
+      "negative_cases": 1,
+      "worked_examples": 2
+    }
+  },
+  "student_authoritative": 0,
+  "student_free_text_steps_certified": 0,
+  "teacher_approved": 0
+}
