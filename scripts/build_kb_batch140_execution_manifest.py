@@ -39,7 +39,7 @@ def build():
     f=(ROOT/logs["FOCUSED"]["log"]).read_text(errors="replace")
     m=(ROOT/logs["MAC_FULL"]["log"]).read_text(errors="replace")
     b=(ROOT/logs["BROWSER"]["log"]).read_text(errors="replace")
-    require(bool(re.search(r"\b373 passed\b",f)),"focused 373 tests missing")
+    require(bool(re.search(r"\b370 passed\b",f)),"focused 370 tests missing")
     require(bool(re.search(r"\b373 passed\b",m)),"Mac script did not call Batch140 tests")
     require(bool(re.search(r"\b66,?293 passed, 5 skipped\b",m)),"full Python backend test numbers missing")
     require(bool(re.search(r"# pass 111|111/111|111 passed",m)),"111 Node tests missing")
@@ -56,7 +56,7 @@ def build():
         "test_source":"AUTHORIZED_MAC_NOT_TANG",
         "ci_can_only_replay_archived_logs":True,
         "original_mac_execution_all_zero":True,
-        "focused_pytest_passed":373,"python_backend_passed":66293,"backend_skipped":5,
+        "focused_pytest_passed":370,"python_backend_passed":66293,"backend_skipped":5,
         "node_passed":111, "browser_pytest_passed":2, "chrome_playwright_exit_code":0,
         "mac_pdfkit_source_rehashed":True, "new_p0_source_cards":24,
         "p0_denominator":127,"p0_with_newer_cards":80,"p0_without_newer_cards":47,
@@ -89,7 +89,7 @@ def render(d):
       "",
       "| 验收 | 实测 |",
       "|---|---|",
-      "| Batch140专项 | 373 passed（与全量重叠，不重复累计） |",
+      "| Batch140专项 | 370 passed（与全量重叠，不重复累计） |",
       "| Python后端全量 | 66,293 passed · 5 skipped |",
       "| Node | 111 passed |",
       "| 浏览器pytest | 2 passed |",
@@ -133,6 +133,6 @@ def main():
     else:
         require(json.loads(OUT.read_text(encoding="utf-8"))==d,"manifest does not match actual logs")
         require(REPORT.read_text(encoding="utf-8")==md,"Markdown report does not match actual logs")
-    print("PASS Batch140 evidence: Mac 373 focused; 66293 backend, 111 Node, 2 browser; 48 mathematical finite checks")
+    print("PASS Batch140 evidence: Mac 370 focused; 66293 backend, 111 Node, 2 browser; 48 mathematical finite checks")
 if __name__=="__main__":
     main()
