@@ -278,6 +278,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch138_elective
 .venv/bin/python scripts/build_kb_batch139_core.py --check-mac
 .venv/bin/python scripts/check_kb_batch139_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch139_core.py
+# Batch140: 24 historical P0 proof-step review cards, source SHA locks and 48 finite exact checks.
+# Original P0 proof steps remain NOT_FORMALLY_VERIFIED and student evidence denied.
+.venv/bin/python scripts/build_kb_batch140_proof_guards.py --check
+.venv/bin/python scripts/check_kb_batch140_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch140_p0_proof_guards.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check

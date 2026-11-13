@@ -1,0 +1,229 @@
+{
+  "cases": [
+    {
+      "historical_step_id": "math.hs.geometry.circle-intersections#3",
+      "invalid_premise_description": "coincident circles produce multiple common points",
+      "invalid_premise_pass": true,
+      "oracle_key": "circle_triangles",
+      "positive_case_description": "radii 2,3 and d4 satisfy exact triangle bounds",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.geometry.circle-intersections#4",
+      "invalid_premise_description": "same center and radius has at least three, not one, intersections",
+      "invalid_premise_pass": true,
+      "oracle_key": "circle_count",
+      "positive_case_description": "two distinct points satisfy both radius-five circles",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.geometry.parabola-focus#3",
+      "invalid_premise_description": "p=0 degeneracy yields all y=0 without nondegenerate parabola",
+      "invalid_premise_pass": true,
+      "oracle_key": "parabola_converse",
+      "positive_case_description": "p=1, x=1, y=2 satisfies equal focus/directrix distances",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.quadratic.discriminant-roots#3",
+      "invalid_premise_description": "a=0 makes division by 2a invalid",
+      "invalid_premise_pass": true,
+      "oracle_key": "quadratic_discriminant",
+      "positive_case_description": "two distinct real roots when a1 delta1",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.vector.pythagorean-dot#3",
+      "invalid_premise_description": "different dimension vectors cannot be added",
+      "invalid_premise_pass": true,
+      "oracle_key": "pythagoras_converse",
+      "positive_case_description": "orthogonality iff norm-square additivity in R2",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.logarithm.product-law#3",
+      "invalid_premise_description": "two negative true factors have positive product but undefined real logs",
+      "invalid_premise_pass": true,
+      "oracle_key": "log_product",
+      "positive_case_description": "log base2 of 2 times4 equals sum of logs",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.geometry.ellipse-parameter#2",
+      "invalid_premise_description": "zero half axis cannot occur in the standard equation",
+      "invalid_premise_pass": true,
+      "oracle_key": "ellipse_param",
+      "positive_case_description": "a3 b2 ellipse maps to unit circle",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.inequality.amgm#3",
+      "invalid_premise_description": "negative operands have no real square roots",
+      "invalid_premise_pass": true,
+      "oracle_key": "amgm_equality",
+      "positive_case_description": "equal positive operands yield equality in AM-GM",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.function.quadratic-vertex#2",
+      "invalid_premise_description": "a=0 invalidates b over a",
+      "invalid_premise_pass": true,
+      "oracle_key": "vertex_completion",
+      "positive_case_description": "symbolic completing square identity a2 b8",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.function.quadratic-vertex#4",
+      "invalid_premise_description": "domain x>=1 excludes unconstrained vertex",
+      "invalid_premise_pass": true,
+      "oracle_key": "vertex_extremum",
+      "positive_case_description": "parabola has global minimum at x0",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.logarithm.inverse#2",
+      "invalid_premise_description": "zero logarithm argument lies outside positive reals",
+      "invalid_premise_pass": true,
+      "oracle_key": "log_inverse",
+      "positive_case_description": "real base2 log8 is3 and exponent undoes it",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.trig.sum-angle#1",
+      "invalid_premise_description": "same coordinate rotation does not preserve physical metric in skew basis",
+      "invalid_premise_pass": true,
+      "oracle_key": "rotation_matrix",
+      "positive_case_description": "pi/2 rotation maps basis e1 to e2 with norm preserved",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.vector.dot-product#4",
+      "invalid_premise_description": "zero vector has norm zero and cannot define angle",
+      "invalid_premise_pass": true,
+      "oracle_key": "dot_angle",
+      "positive_case_description": "nonzero orthogonal pair has zero cosine",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.space.basis-three-unique#2",
+      "invalid_premise_description": "injective 3x2 matrix is not a 3x3 basis",
+      "invalid_premise_pass": true,
+      "oracle_key": "basis_three",
+      "positive_case_description": "full rank 3x3 has trivial nullspace and nonzero determinant",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.calculus.quotient-rule#2",
+      "invalid_premise_description": "v(0)=0 makes reciprocal undefined at zero",
+      "invalid_premise_pass": true,
+      "oracle_key": "reciprocal_derivative",
+      "positive_case_description": "reciprocal x+2 differentiates to -1/4 at zero",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.calculus.fermat-stationary#2",
+      "invalid_premise_description": "boundary maximum on x>=0 need not have stationary derivative",
+      "invalid_premise_pass": true,
+      "oracle_key": "fermat_sign",
+      "positive_case_description": "local maximum minus h squared has correct left/right quotient signs",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.vector.cauchy-schwarz#2",
+      "invalid_premise_description": "indefinite quadratic form can be negative for nonzero vectors",
+      "invalid_premise_pass": true,
+      "oracle_key": "cauchy_expand",
+      "positive_case_description": "inner product yields nonnegative squared norm polynomial",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.vector.cauchy-schwarz#3",
+      "invalid_premise_description": "zero v invalidates inverse squared norm",
+      "invalid_premise_pass": true,
+      "oracle_key": "cauchy_minimize",
+      "positive_case_description": "minimizer t1 produces CS bound",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.vector.cauchy-schwarz#4",
+      "invalid_premise_description": "indefinite form has a nonzero null vector",
+      "invalid_premise_pass": true,
+      "oracle_key": "cauchy_equality",
+      "positive_case_description": "proportional nonzero vectors attain CS equality",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.probability.expectation-linearity#3",
+      "invalid_premise_description": "Cauchy has infinite first absolute moment",
+      "invalid_premise_pass": true,
+      "oracle_key": "expectation_linearity",
+      "positive_case_description": "dependent X,Y still obey expectation linearity",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.elective.linear.rank-vectors#3",
+      "invalid_premise_description": "rectangular 3x2 has no 3x3 determinant",
+      "invalid_premise_pass": true,
+      "oracle_key": "rank_vectors",
+      "positive_case_description": "singular 3x3 matrix has nontrivial kernel",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.elective.statistics.ols-two-parameter#1",
+      "invalid_premise_description": "n=0 empty objective has zero curvature and undefined means",
+      "invalid_premise_pass": true,
+      "oracle_key": "ols_intercept",
+      "positive_case_description": "fixed slope1 and two samples yield unique intercept2",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.elective.model.parametric-circle#3",
+      "invalid_premise_description": "zero-radius path has zero rather than nonzero speed",
+      "invalid_premise_pass": true,
+      "oracle_key": "parametric_circle",
+      "positive_case_description": "r2 radians yields exact speed two",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.elective.sequence.epsilon-n#2",
+      "invalid_premise_description": "epsilon zero admits no positive reciprocal bound",
+      "invalid_premise_pass": true,
+      "oracle_key": "epsilon_n",
+      "positive_case_description": "epsilon one tenth and N11 has correct tested tail bounds",
+      "positive_case_pass": true,
+      "status": "FINITE_EXACT_CASES_NOT_GENERAL_PROOF"
+    }
+  ],
+  "general_proof_certified": 0,
+  "invalid_premise_count": 24,
+  "official_course_denominators": null,
+  "positive_boundary_count": 24,
+  "schema": "kb140-independent-exact-witness/1",
+  "scope": "48_EXACT_FINITE_CASES_NOT_UNIVERSAL_PROOFS",
+  "source_step_count": 24,
+  "student_free_text_verified": 0,
+  "teacher_approved": 0
+}

@@ -269,6 +269,12 @@ jobs:
       - run: python scripts/build_kb_batch139_core.py --check-offline
       - run: python scripts/check_kb_batch139_math.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch139_core.py
+      # Batch140 stores source-locked mathematical obligations, not licensed PDF text.
+      # The independent SymPy finite oracle never promotes general proof or teacher approval.
+      - run: python scripts/build_kb_batch140_proof_guards.py --check
+      - run: python scripts/check_kb_batch140_math.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch140_p0_proof_guards.py
+      - run: python scripts/build_kb_batch140_execution_manifest.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Fail fast on syntax errors before the long Python/Node/browser suite.
