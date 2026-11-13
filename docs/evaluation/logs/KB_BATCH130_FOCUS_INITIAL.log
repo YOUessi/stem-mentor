@@ -1,0 +1,27 @@
+........................................................................ [ 47%]
+........................................................................ [ 94%]
+.....F..                                                                 [100%]
+=================================== FAILURES ===================================
+____________ test_offline_published_evidence_replay_and_exact_math _____________
+
+    def test_offline_published_evidence_replay_and_exact_math():
+>       report=offline.check()
+               ^^^^^^^^^^^^^^^
+
+tests/test_kb_batch130_scope_lessons.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/check_kb_batch130_offline.py:29: in check
+    require(source.REPORT.read_text(encoding='utf-8')==source.render(d),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+b = False, msg = 'source human review report diverged from committed JSON'
+
+    def require(b,msg):
+>       if not b:raise ValueError(msg)
+                 ^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: source human review report diverged from committed JSON
+
+scripts/check_kb_batch130_offline.py:10: ValueError
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch130_scope_lessons.py::test_offline_published_evidence_replay_and_exact_math
+1 failed, 151 passed in 2.13s
