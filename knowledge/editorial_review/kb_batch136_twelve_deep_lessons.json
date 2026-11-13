@@ -1,0 +1,818 @@
+[
+  {
+    "applicability_and_hypotheses": "先辨明命题两侧的类型：∈左侧应为被判定的元素，右侧应为集合；集合可以作为另一集合的元素，但要明确层次。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在程序中区分数字、数组与集合对象时，如何避免类型混淆？",
+    "formal_definition_or_theorem": "元素与集合的属于关系写为a∈A；a∉A表示a不是A的元素。属于是对象与集合之间的关系，不等同于集合之间的包含关系。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_set_membership",
+    "knowledge_type": "Concept",
+    "near_transfer": "比较2∈{{2}}与{2}∈{{2}}并说明差异。",
+    "nonexample_or_failure": "对于A={1,3}，1∈A为真，但{1}∈A为假；不应把元素1和单元素集合{1}混同。",
+    "notation_and_domain": "在讨论域U中a为对象，A⊆U为集合；单元素集合{a}是一个集合，不等于它的元素a。",
+    "reasoned_steps": [
+      {
+        "justification": "定义集合A={1,3}，其元素恰为数字1和3。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "据元素判定可得1∈A且2∉A，判断只依赖元素是否列入集合。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "数字1与集合{1}不是同一数学对象，尽管二者联系紧密。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "若要判断{1}⊆A需比较两个集合的元素，不能将它替换为1∈A。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_set_membership",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "6100451cff60e8b094efa588e824e30c8d218f62e4614f3a25d87c35eeeb9deb",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写出集合内部直接包含哪些对象。",
+      "注意数字1与集合{1}的类型区别。",
+      "只有对象真的在右侧集合中才使用∈。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "真、假。",
+        "question": "若A={2,4}，判断2∈A及{2}∈A。",
+        "reasoned_solution": [
+          "A只含数字2和4。",
+          "数字2属于A。",
+          "单元素集合{2}不是A的一个元素。"
+        ]
+      },
+      {
+        "answer": "真、假。",
+        "question": "若B={{1},2}，判断{1}∈B及1∈B。",
+        "reasoned_solution": [
+          "B有两个元素：集合{1}与数字2。",
+          "{1}恰是B的元素。",
+          "数字1不是B直接列出的元素。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把1∈{1,3}误写成1⊆{1,3}，或把{1}⊆{1,3}误认作{1}∈{1,3}。",
+    "why_method_is_legal": "集合成员资格由集合外延定义，可逐个检查；集合包含需要另一种量词定义。",
+    "why_wrong_and_repair": "先检查左右对象的类型，再判断元素是否属于或一个集合是否完全包含在另一个集合中。"
+  },
+  {
+    "applicability_and_hypotheses": "包含关系是全称条件；证A⊆B需逐一覆盖A中所有元素；反驳只需找到一个x∈A且x∉B。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "用数据库筛选的“所有选课学生都注册学校”关系表达子集判断。",
+    "formal_definition_or_theorem": "A⊆B当且仅当对所有x都有x∈A⇒x∈B；A=B当且仅当A⊆B且B⊆A。空集是任意集合的子集。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_set_subset",
+    "knowledge_type": "Concept",
+    "near_transfer": "比较A={a}和B={a}时⊆与⊊的真假。",
+    "nonexample_or_failure": "A={1,4},B={1,2,3}时，元素4是反例，因此A⊄B；仅看到1属于B不足以证子集。",
+    "notation_and_domain": "A、B为相同讨论范围内的集合；⊆允许相等；真子集A⊊B须A⊆B且A≠B。",
+    "reasoned_steps": [
+      {
+        "justification": "展开A⊆B的定义：每一个A中的元素必须属于B。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "若A=∅，不存在违反蕴含式的元素，故∅⊆B。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "若A⊆B且B⊆A，任一x属于A恰等价于属于B。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "由集合外延公理，两个集合元素相同因而相等。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_set_subset",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "d6b4659b401e6393815fd5ef18b965677a2d9300521049972d60a7f9b994cefc",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "子集不是成员资格，先写全称蕴含。",
+      "寻找B缺少的某个A元素作为反例。",
+      "判断真子集要比子集多检查不相等。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "真子集。",
+        "question": "A={1,2},B={1,2,3}，A是B的什么子集？",
+        "reasoned_solution": [
+          "1和2都属于B。",
+          "所以A⊆B。",
+          "3∈B但不在A，故A≠B。"
+        ]
+      },
+      {
+        "answer": "前者真，后者假。",
+        "question": "判断∅⊆{5}与{5}⊆∅。",
+        "reasoned_solution": [
+          "空集中没有违反包含的元素。",
+          "故∅⊆{5}。",
+          "5∈{5}但5∉∅，否定第二个包含。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把A⊆B理解为只要两个集合有公共元素，或者把等于自身误认为不是子集。",
+    "why_method_is_legal": "用全称量词和集合外延准则证明，空集情况由全称命题空真处理。",
+    "why_wrong_and_repair": "找集合A的所有元素，核查是否都在B中；判断真子集再额外核查不相等。"
+  },
+  {
+    "applicability_and_hypotheses": "判断蕴含必须明确前提和结论，不得将某个特例的相关性当作全称蕴含。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在安全系统中“拥有权限”是执行受限操作的必要条件还是充分条件？需考虑其他约束。",
+    "formal_definition_or_theorem": "命题p是q的充分条件，当且仅当p⇒q恒为真；p是q的必要条件，当且仅当q⇒p恒为真。必要与充分的方向相反。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_sufficiency",
+    "knowledge_type": "Concept",
+    "near_transfer": "判断x=0对x²=0是必要还是充分条件。",
+    "nonexample_or_failure": "对整数n，n是偶数不能推出n是4的倍数；n=2提供逆命题失效见证。",
+    "notation_and_domain": "p、q是在固定论域中取真值的命题或谓词；讨论谓词蕴含时，应对论域中所有对象成立。",
+    "reasoned_steps": [
+      {
+        "justification": "将“p是q的充分条件”写成p⇒q。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "将“p是q的必要条件”写成q⇒p，这是充要条件方向上的逆转。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "以整数n为例，n为4的倍数必为偶数，因此前者是后者的充分条件。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "偶数不必为4的倍数，例如n=2，因此“偶数”不是“4的倍数”的充分条件。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_sufficiency",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "2d1443471a662319498ef71e09460aac56ca359375ac903eb0bef3a47f282e0c",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "用箭头把两个条件连接起来。",
+      "先检查条件成立时结论必然成立吗？",
+      "必要性要反过来检查，并尝试找反例。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "充分但非必要条件。",
+        "question": "在整数中，n为6的倍数是n为3的倍数的什么条件？",
+        "reasoned_solution": [
+          "6k=3(2k)，所以充分。",
+          "n=3满足后者不满足前者。",
+          "因此并非必要。"
+        ]
+      },
+      {
+        "answer": "充分但非必要条件。",
+        "question": "在实数中，x>2是x>0的什么条件？",
+        "reasoned_solution": [
+          "x>2必有x>0。",
+          "例如x=1满足x>0但不满足x>2。",
+          "所以只充分不必要。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把充分条件与必要条件的箭头方向同时写成p⇒q。",
+    "why_method_is_legal": "蕴含的方向由逻辑定义确定；普遍结论要证明，逆向否定只需一个反例。",
+    "why_wrong_and_repair": "用“满足p一定满足q”检验充分；用“不满足p则不能满足q”检验p是否为必要。"
+  },
+  {
+    "applicability_and_hypotheses": "做等价变换时每步都必须可逆，平方、除以变量等操作通常需要额外前提。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在程序优化前后验证逻辑谓词的真值表是否一致。",
+    "formal_definition_or_theorem": "对同一论域的命题p与q，p⇔q当且仅当p⇒q且q⇒p均成立；方程解集等价要求正反两个方向都不丢失或增加解。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_equivalence",
+    "knowledge_type": "Theorem",
+    "near_transfer": "判断√(x²)=x与x≥0的等价关系。",
+    "nonexample_or_failure": "实数范围中x²=4不能等价写为x=2，丢失x=−2的解。",
+    "notation_and_domain": "量词和论域固定，p与q可以含实变量；等价与等式外形相似不同。",
+    "reasoned_steps": [
+      {
+        "justification": "先证明从p出发必能推出q，此为充分性。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "再从q出发推出p，此为必要性。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "两向都成立时才可写⇔，仅有一向只能使用⇒。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "例如x=2⇒x²=4成立，但反向失败，因为x=−2也满足x²=4。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_equivalence",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "6c6d6ddbc9ec3e4e5eadb1184b67de7158e51365466d52fc500774ea93125309",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "分别写出命题p⇒q与q⇒p。",
+      "检查变形能否无条件逆转。",
+      "遇到平方或约分，特别检查潜在反例。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "否，x=−3也是解。",
+        "question": "实数x满足x²=9是否等价于x=3？",
+        "reasoned_solution": [
+          "x=3能推出x²=9。",
+          "x²=9分解为(x−3)(x+3)=0。",
+          "得到x=±3，故非等价。"
+        ]
+      },
+      {
+        "answer": "是。",
+        "question": "实数x满足2x=6是否等价于x=3？",
+        "reasoned_solution": [
+          "从2x=6除以非零常数2得x=3。",
+          "反向乘以2得到2x=6。",
+          "两向均成立。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把等号两端平方后自动使用⇔，或从ab=ac不检查a≠0就消去a。",
+    "why_method_is_legal": "逻辑等价由两条蕴含组成；代数等价必须保留论域与每一步的可逆条件。",
+    "why_wrong_and_repair": "逐步标记⇒或⇔，并把可能引入增根/失根的步骤用代入原式核查。"
+  },
+  {
+    "applicability_and_hypotheses": "证明∀必须覆盖整个域，证明∃只需构造有效见证；反驳∀需反例，反驳∃须证无见证。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "测试属性时为什么有限随机样本不能证明全称正确？",
+    "formal_definition_or_theorem": "全称命题∀x∈D,P(x)意为D内每个x满足P；存在命题∃x∈D,P(x)意为至少有一个x满足P。二者量词与域必须明确。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_quantifier",
+    "knowledge_type": "Concept",
+    "near_transfer": "判断∀n∈N,n²≥n是否成立，注明N是否包含0。",
+    "nonexample_or_failure": "∃整数n使n²=2为假；用某个实数解不能替代整数域的有效见证。",
+    "notation_and_domain": "D为给定集合，P是定义在D上的谓词；“至少一个”不代表“唯一一个”。",
+    "reasoned_steps": [
+      {
+        "justification": "确定D、谓词P(x)，不要省略量词的变量范围。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "例如∀x∈R,x²≥0由实数平方非负成立。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "命题∃x∈R,x²=4由见证x=2成立，也可取x=−2。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "对∀x∈R,x>0，只需给出x=0这个反例即可否定。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_quantifier",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "f2557f8a064b3e0ff4e327eb6c1d5ce5e6ca50dd9671a4fd8b6716dc62ed9ffe",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先标出变量x的论域D。",
+      "想证明存在就寻找一个满足条件的对象。",
+      "要反驳全称只需构造一个确实属于D的反例。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "真。",
+        "question": "∀x∈R,x²+1>0是真是假？",
+        "reasoned_solution": [
+          "任何实数x满足x²≥0。",
+          "因此x²+1≥1>0。",
+          "对整个实数域成立。"
+        ]
+      },
+      {
+        "answer": "假。",
+        "question": "∃整数n使2n=3是真是假？",
+        "reasoned_solution": [
+          "若2n=3则n=3/2。",
+          "3/2不是整数。",
+          "所以整数域内没有见证。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "看到数个成功样本就声称∀成立，或把“存在”错误理解成“只有一个”。",
+    "why_method_is_legal": "全称和存在是逻辑定义；一个具体见证足以证存在，但不足以证明全称。",
+    "why_wrong_and_repair": "写明论域；全称用推导、存在用见证，并用反例与穷尽论证区分各自否定。"
+  },
+  {
+    "applicability_and_hypotheses": "每个定义域元素必须有像且只能有一个像；同一个输入对应两个不同输出就不构成函数。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "机器学习模型的输入批次中，一个输入获得两个冲突预测时怎样界定随机模型与确定函数？",
+    "formal_definition_or_theorem": "函数f:D→Y要求对每一个x∈D恰有一个f(x)∈Y；不同自变量可以有相同函数值，不要求一一对应。值域为{f(x):x∈D}，可能是真子集Y。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_function_mapping",
+    "knowledge_type": "Concept",
+    "near_transfer": "给出D={0,1,2}上一个函数并求它的值域。",
+    "nonexample_or_failure": "关系y²=x在x=4时存在y=2与y=−2，若不加选支规则不能作为实数域的单值函数y(x)。",
+    "notation_and_domain": "D非空讨论为常见高中函数场景，Y为陪域，x为自变量；定义域D、对应法则、陪域需明确。",
+    "reasoned_steps": [
+      {
+        "justification": "设D={1,2,3}，规则f(x)=x²，则f(1)=1,f(2)=4,f(3)=9。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "同一规则对每一个D元素给出唯一输出，满足函数定义。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "若D={−1,1}，x²两个输入都映成1，这仍是合法函数。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "若声称同一个x=1同时映成1与2，则违反唯一性，不能称该对应为函数。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_function_mapping",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "e7f35b9a5a5b41078e974c5751271f5345857fbe0e5cdb4ce89ffcb8bcb4604e",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "逐个检查定义域里的每个x。",
+      "检查是否恰好只有一个对应y。",
+      "不同x对应相同y并不违反定义。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "是。",
+        "question": "f:{−1,1}→{0,1}由f(x)=x²给出，是否为函数？",
+        "reasoned_solution": [
+          "两个输入均有定义。",
+          "f(−1)=f(1)=1，输出属于陪域。",
+          "允许不同输入共用输出。"
+        ]
+      },
+      {
+        "answer": "否。",
+        "question": "在D={1}上规定1↦2和1↦3，是否为函数？",
+        "reasoned_solution": [
+          "同一输入1出现两个不同像。",
+          "违反函数定义的唯一性。",
+          "必须修正规则。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "将“两个输入有相同输出”误判为不是函数，或把一个输入的两个输出混成函数。",
+    "why_method_is_legal": "函数存在唯一性是定义条件，不要求单射或满射；输出必须属于指定陪域。",
+    "why_wrong_and_repair": "列表检查每个x是否有且只有一个像，随后区分陪域与实际值域。"
+  },
+  {
+    "applicability_and_hypotheses": "分段区间覆盖定义域，不得漏掉端点或在重叠端点给出两个不同函数值。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "累进计费模型分段计算要如何避免阈值边界重复计费？",
+    "formal_definition_or_theorem": "分段函数按互不冲突的自变量区域选取相应表达式；求f(x)必须先判断x落在哪个区域。分界处连续性须分别考察左右极限与函数值。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_piecewise",
+    "knowledge_type": "Method",
+    "near_transfer": "把|x−2|写成分段式，求2处函数值与左右极限。",
+    "nonexample_or_failure": "若给x≤0时f(x)=1，x≥0时f(x)=2，则x=0有冲突取值，不是单值函数。",
+    "notation_and_domain": "函数定义域是各分段条件的并集；每一点的适用分支应唯一，除非重叠处数值一致且规则明确。",
+    "reasoned_steps": [
+      {
+        "justification": "设f(x)=x+1(x<0)，x²(x≥0)，两个区域互不相交且覆盖R。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "求f(−2)选x<0支得到−1；求f(2)选x≥0支得到4。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "在x=0有f(0)=0，但左极限为1，右极限为0。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "左右极限不同，故在x=0不连续；函数仍然是良定义的分段函数。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_piecewise",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "4ed2e9bafb00f3e8315868af3b1dceb54c655a6f957ba994eb0b5b765c5c5725",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先在数轴上写出每个表达式适用区间。",
+      "处理分界点要看是否取到等号。",
+      "检查连续要比较左右极限和实际函数值。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "−1、4、0。",
+        "question": "f(x)=x+1(x<0),x²(x≥0)，求f(−2),f(2),f(0)。",
+        "reasoned_solution": [
+          "−2<0故得−1。",
+          "2≥0故得4。",
+          "0归第二支，f(0)=0。"
+        ]
+      },
+      {
+        "answer": "不连续。",
+        "question": "g(x)=2x(x<1),3(x≥1)，判断x=1连续性。",
+        "reasoned_solution": [
+          "左极限lim_{x→1−}2x=2。",
+          "右极限为3，g(1)=3。",
+          "左右极限不等，因此不连续。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "无视x的符号一律套第一个表达式，或认为分段函数必连续。",
+    "why_method_is_legal": "条件分支的判定先于代入，连续性需要左右极限存在相等且与函数值相等。",
+    "why_wrong_and_repair": "先画分段域并标注端点归属，再代入；连续性独立检查左右极限。"
+  },
+  {
+    "applicability_and_hypotheses": "严格递增与非递减不同；如果用导数判定，需满足区间连续及内点可导等相应定理前提。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "以成本曲线为例区分整体单调与局部单调，并解释采样不能证明全域规律。",
+    "formal_definition_or_theorem": "函数f在区间I上严格递增指∀x1,x2∈I且x1<x2时f(x1)<f(x2)；非递减将末尾的<改成≤。严格递减则反向不等。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_monotonicity",
+    "knowledge_type": "Concept",
+    "near_transfer": "验证x³在R上严格递增，注意导数在0为零并不否定严格递增。",
+    "nonexample_or_failure": "f(x)=x²在R上不是单调递增；在x<0区间，x增加时函数反而减小。",
+    "notation_and_domain": "I须包含在f定义域内；比较的是同一区间上任意一对自变量而不是单个样本差值。",
+    "reasoned_steps": [
+      {
+        "justification": "固定区间I和任意x1<x2，严格递增定义要求f(x1)<f(x2)。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "f(x)=2x+1有f(x2)−f(x1)=2(x2−x1)>0，故在R上严格递增。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "f(x)=x²在[0,∞)上，差值(x2−x1)(x1+x2)>0（当0≤x1<x2），所以严格递增。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "在全R上不成立：−2<−1但f(−2)=4>1=f(−1)。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_monotonicity",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "940732f9eaff61274a00d4f6f09ac292d6d27c66b903b2d9df65999bf0adde7d",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先明确讨论的是哪个区间I。",
+      "任取x1<x2并比较f(x2)−f(x1)。",
+      "差值的正负可能随区间改变。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "是。",
+        "question": "f(x)=3x−4在实数上是否严格递增？",
+        "reasoned_solution": [
+          "任取x1<x2。",
+          "f(x2)−f(x1)=3(x2−x1)>0。",
+          "满足严格递增定义。"
+        ]
+      },
+      {
+        "answer": "是。",
+        "question": "f(x)=x²在[−2,0]上是否严格递减？",
+        "reasoned_solution": [
+          "取−2≤x1<x2≤0。",
+          "x1²−x2²=(x1−x2)(x1+x2)>0（端点均合法）。",
+          "故f(x1)>f(x2)。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "抽两个增长样例就声称所有x都递增，或混淆严格递增与含平坦区间的非递减。",
+    "why_method_is_legal": "使用定义比较任意两点，证明中分母与乘法的符号必须合法；不能由局部图像直接推广全域。",
+    "why_wrong_and_repair": "优先用任意x1<x2的差值符号论证，再严格注明所选区间。"
+  },
+  {
+    "applicability_and_hypotheses": "实数指数幂需要正底数；禁止对负底数任意实指数套用这些定理。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "解释指数式复利模型在负增长率时应怎样重新定义合法底数。",
+    "formal_definition_or_theorem": "对实数a>0且a≠1，指数函数f(x)=a^x定义在R上，值域(0,∞)；a>1时严格递增，0<a<1时严格递减。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_exponential_exp",
+    "knowledge_type": "Concept",
+    "near_transfer": "比较3^x与3^{x+1}的大小并证明。",
+    "nonexample_or_failure": "底数a=1时函数恒为1，无严格单调性；底数a=−2时对x=1/2不具备实值。",
+    "notation_and_domain": "a是正实底数且不为1；x∈R；a^x>0。指数律a^{x+y}=a^x a^y在同一合法底数下成立。",
+    "reasoned_steps": [
+      {
+        "justification": "对a>0且a≠1，实指数通过正底数的连续延拓定义且始终为正。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "任意x2>x1时a^{x2}/a^{x1}=a^{x2−x1}。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "若a>1则a^{x2−x1}>1，因此a^{x2}>a^{x1}。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "若0<a<1则a^{x2−x1}<1，因此a^{x2}<a^{x1}；且a^0=1。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_exponential_exp",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "5601c5d060ad72153c4c6df038351f890f81eb4265127d57517deeee4bf2d54e",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先核对底数是否正且不等于1。",
+      "观察指数增加时正比值a^{Δx}大于还是小于1。",
+      "求值时注意负指数意味着倒数。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "1/2、1、4。",
+        "question": "求f(x)=2^x在x=−1,0,2处的值。",
+        "reasoned_solution": [
+          "2^{−1}=1/2。",
+          "2^0=1。",
+          "2²=4，且随x递增。"
+        ]
+      },
+      {
+        "answer": "1、1/2、1/4。",
+        "question": "求f(x)=(1/2)^x在x=0,1,2处的值。",
+        "reasoned_solution": [
+          "(1/2)^0=1。",
+          "(1/2)^1=1/2。",
+          "(1/2)²=1/4，随x递减。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把0<a<1的指数函数错判为递增，或把底数为负也写成对所有实数有定义。",
+    "why_method_is_legal": "指数律及正底数有序性支撑单调性；证明从有理指数延拓到实数指数需连续性构造。",
+    "why_wrong_and_repair": "先确认底数范围，使用指数律比较正比值而不是只画少数点。"
+  },
+  {
+    "applicability_and_hypotheses": "使用对数乘除法则前必须逐项检查真数为正，不能只检查乘积为正。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在连续增长模型取对数线性化数据时，为什么零值与负值需要特殊处理？",
+    "formal_definition_or_theorem": "当a>0,a≠1且M,N>0时，log_a(MN)=log_a M+log_a N，log_a(M/N)=log_a M−log_a N；对t∈R有log_a(M^t)=t log_a M。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_logarithm_law",
+    "knowledge_type": "Method",
+    "near_transfer": "化简log_5(25x)−log_5 x，明确x的范围。",
+    "nonexample_or_failure": "log_2(−2)+log_2(−2)在实数域不存在，虽(−2)(−2)=4>0，却不能直接写成log_2 4。",
+    "notation_and_domain": "对数真数M、N必须严格为正，底数a必须大于0且不为1；对数值本身可为负。",
+    "reasoned_steps": [
+      {
+        "justification": "设u=log_a M,v=log_a N，则M=a^u,N=a^v。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "由正底数指数律MN=a^{u+v}，取对数得到log_a(MN)=u+v。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "又M/N=a^{u−v}且N>0，因此log_a(M/N)=u−v。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "当M>0时M^t=a^{ut}，得到幂法则；所有步骤需保证定义域合法。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_logarithm_law",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "48fc34f4702baccbe9482de524d605d94dc2193dcee57f661e991de58ba1f9a2",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先检查底数与每一个真数合法。",
+      "把每一个对数换成指数方程。",
+      "乘法对应指数相加，除法对应指数相减。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "5。",
+        "question": "计算log_2 8+log_2 4。",
+        "reasoned_solution": [
+          "8=2³所以log_2 8=3。",
+          "4=2²所以log_2 4=2。",
+          "和为5，也等于log_2 32。"
+        ]
+      },
+      {
+        "answer": "1。",
+        "question": "计算log_3 27−log_3 9。",
+        "reasoned_solution": [
+          "27=3³，9=3²，真数均正。",
+          "分别得3与2。",
+          "差为1=log_3 3。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "忽略真数正性，用log(xy)=log x+log y套入两个负数。",
+    "why_method_is_legal": "对数与正指数互逆；指数律、对数唯一性及M,N>0保证推导可逆。",
+    "why_wrong_and_repair": "先写a>0,a≠1,M>0,N>0，再用指数定义证明乘除法则。"
+  },
+  {
+    "applicability_and_hypotheses": "角度和弧度是两种单位，同一公式中必须统一；以度为单位不能直接将数值代入s=rθ。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "机器人航向角用角度或弧度存储时如何防止控制器单位错误？",
+    "formal_definition_or_theorem": "弧度定义：圆心角θ（弧度）的绝对值等于对应弧长s除以半径r（r>0）；整圆2π弧度即360°，扇形弧长s=r|θ|。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-c_radian",
+    "knowledge_type": "Method",
+    "near_transfer": "求半径5、圆心角72°的扇形弧长。",
+    "nonexample_or_failure": "半径r=0时s/r没有定义；90°直接代入s=r×90将与实际四分之一周长不符。",
+    "notation_and_domain": "r>0，s≥0，θ以弧度计；有向角可正可负但几何弧长非负。",
+    "reasoned_steps": [
+      {
+        "justification": "半径为r的整圆周长2πr，对应整圆弧度定义为2π。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "将圆周弧长按比例缩放，中心角对应弧长s=r|θ|。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "因此π弧度=180°，1°=π/180弧度。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "若θ为负表示方向，几何弧长仍取r|θ|，而不是负长度。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_radian",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "003cadd2bf9f1632624ab929d78ced30582e7fec51d651fe6c430b1f42077334",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确认角的数值单位是度还是弧度。",
+      "把角度乘以π/180转换为弧度。",
+      "半径乘弧度绝对值给出几何弧长。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "π。",
+        "question": "半径2，中心角90°，求短弧长。",
+        "reasoned_solution": [
+          "90°=π/2弧度。",
+          "r=2>0。",
+          "s=2×π/2=π。"
+        ]
+      },
+      {
+        "answer": "π。",
+        "question": "半径3，对应有向角−π/3，求几何弧长。",
+        "reasoned_solution": [
+          "有向角为负不影响弧长非负。",
+          "|θ|=π/3。",
+          "s=3×π/3=π。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把90°当作90弧度使用弧长公式，或负有向角产生负的几何弧长。",
+    "why_method_is_legal": "圆弧与圆心角的比例定义在正半径圆上合法；采用一致单位才可代入弧长公式。",
+    "why_wrong_and_repair": "先把角度转换为弧度，再乘正半径并对有向角取绝对值。"
+  },
+  {
+    "applicability_and_hypotheses": "计算差商时不能令h=0；需要从双侧趋近0，左右导数相等才能有普通导数。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "在位移-时间曲线出现尖角时，为什么瞬时速度可能不可定义？",
+    "formal_definition_or_theorem": "函数f在x0处可导指极限f'(x0)=lim_{h→0}[f(x0+h)−f(x0)]/h存在且有限；可导必连续，但连续不一定可导。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb136-deep-sc_derivative_def",
+    "knowledge_type": "Concept",
+    "near_transfer": "用定义求x³在x0=1处的导数。",
+    "nonexample_or_failure": "|x|在0处连续但左、右导数不同，不存在普通导数。",
+    "notation_and_domain": "x0是定义域内的内点，h≠0且x0+h在定义域；在孤立点或端点需另约定单侧导数。",
+    "reasoned_steps": [
+      {
+        "justification": "以f(x)=x²为例，差商=((x0+h)²−x0²)/h=2x0+h，其中约去h前须h≠0。",
+        "step": "步骤1"
+      },
+      {
+        "justification": "当h→0时差商趋于2x0，因此f'(x0)=2x0。",
+        "step": "步骤2"
+      },
+      {
+        "justification": "若导数存在，f(x0+h)−f(x0)=h[(f(x0+h)−f(x0))/h]→0，所以f连续。",
+        "step": "步骤3"
+      },
+      {
+        "justification": "对于g(x)=|x|在0处，右差商为1，左差商为−1，故尽管连续却不可导。",
+        "step": "步骤4"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-sc_derivative_def",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "ca66817ca8954254c492c53c78def35a6588d0ac1691d30b37bd646477e16c5e",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写差商，不要直接代入h=0。",
+      "化简时只能在h≠0的范围内约分。",
+      "左右趋于0的极限一致才存在双侧导数。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "6。",
+        "question": "按定义求f(x)=x²在x0=3处的导数。",
+        "reasoned_solution": [
+          "差商=((3+h)²−9)/h=6+h (h≠0)。",
+          "当h→0时趋于6。",
+          "因此f'(3)=6。"
+        ]
+      },
+      {
+        "answer": "不可导。",
+        "question": "求g(x)=|x|在x0=0处是否可导。",
+        "reasoned_solution": [
+          "h>0时|h|/h=1。",
+          "h<0时|h|/h=−1。",
+          "两个单侧极限不同，故普通导数不存在。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把差商在h=0代入，或者只求右导数就宣布双侧导数存在。",
+    "why_method_is_legal": "通过极限定义直接证明，不在h=0执行除法；可导推出连续是乘积极限。",
+    "why_wrong_and_repair": "固定非零h计算差商并化简，再分别检查双侧趋近0的极限。"
+  }
+]
