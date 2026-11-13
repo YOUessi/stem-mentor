@@ -194,6 +194,10 @@ jobs:
       - run: python scripts/build_kb_batch118_source_atom_ledger.py --check
       - run: PYTHONPATH=backend python scripts/build_kb_batch118_lessons.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch118.py tests/test_kb_batch118_math_oracles.py
+      - run: python scripts/build_kb_batch119_semantic_pilot.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch119_semantic_pilot.py
+      - run: python scripts/build_kb_batch119_proof_reviews.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch119_proof_reviews.py
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Fail fast on syntax errors before the long Python/Node/browser suite.
