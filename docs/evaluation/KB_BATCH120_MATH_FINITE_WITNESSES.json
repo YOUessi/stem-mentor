@@ -1,0 +1,235 @@
+{
+  "batch": 120,
+  "cases": [
+    {
+      "candidate": "hs-semantic-pilot-120-c103",
+      "case_name": "数量积零与非零向量",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c104",
+      "case_name": "正交投影非零分母",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c107",
+      "case_name": "余弦定理与非退化三边",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c108",
+      "case_name": "SSA可能两角",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c111",
+      "case_name": "抽样均值与均方距离",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c112",
+      "case_name": "分层比例的整数配置",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s101",
+      "case_name": "等差递推",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s102",
+      "case_name": "等比有限幂和与q0区别",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s104",
+      "case_name": "平方根正点求导",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s105",
+      "case_name": "三维两点距离",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s108",
+      "case_name": "水平与竖直的法向判定",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s111",
+      "case_name": "椭圆a^2=b^2+c^2",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-a101",
+      "case_name": "外积与平行退化",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-a102",
+      "case_name": "投影的非零分母",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-a103",
+      "case_name": "线性相关秩亏",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-a108",
+      "case_name": "可逆三元线性系统",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-b101",
+      "case_name": "密度归一化",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-b102",
+      "case_name": "t分布方差自由度阈值",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-b104",
+      "case_name": "rho=1奇异",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-b105",
+      "case_name": "伯努利开区间边界似然",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ec104",
+      "case_name": "复利与简单利息差异",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ec105",
+      "case_name": "线性模型负产量不可行",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ec106",
+      "case_name": "权重归一化",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ec107",
+      "case_name": "指数倍率一致与截距",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed104",
+      "case_name": "正弦振幅与频率独立",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed105",
+      "case_name": "十二平均律频率翻倍",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed106",
+      "case_name": "节拍最小公倍数",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed107",
+      "case_name": "线性变换不保长度的例子",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee102",
+      "case_name": "旋转和平移不交换",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee103",
+      "case_name": "球面直角三角形内角和",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee104",
+      "case_name": "Euclid非零整数输入",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee105",
+      "case_name": "名义收益扣除通胀",
+      "exact_negative_passed": true,
+      "exact_positive_passed": true,
+      "general_proof_certified": false
+    }
+  ],
+  "exact_cases_passed": 64,
+  "exact_witness_pairs": 32,
+  "formal_general_proofs_certified": 0,
+  "precision": "SYMPY_EXACT_FINITE_NOT_GENERAL_PROOF",
+  "student_free_text_verified": false,
+  "teacher_approved": false
+}

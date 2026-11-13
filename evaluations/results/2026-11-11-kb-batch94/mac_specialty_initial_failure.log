@@ -1,0 +1,481 @@
+.....................................FFFFFFFFFFFFFF..................... [ 54%]
+...........................................................              [100%]
+=================================== FAILURES ===================================
+_______________ test_student_deep_solution_never_retrievable[0] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 0
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '用区域图检验集合交并补运算', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[1] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 1
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '余弦定理的向量内积推导', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[2] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 2
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '等差数列应用中的索引和单位检查', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[3] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 3
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '前缀和恢复通项的首项特例', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[4] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 4
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '可导内点极值的必要条件与失效边界', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[5] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 5
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '空间向量坐标加减与数乘的基底前提', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[6] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 6
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '点到非退化直线的距离公式', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[7] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 7
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '排列组合：顺序是否可辨的严格判别', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[8] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 8
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '二项分布模型建立与前提核验', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[9] ________________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 9
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '收敛数列加法极限定律的误差分配', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[10] _______________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 10
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '二维正交矩阵的长度与夹角不变量', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[11] _______________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 11
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '二元函数驻点与边界极值的区分', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[12] _______________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 12
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '数学归纳法：归纳起点与归纳步的逻辑衔接', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+_______________ test_student_deep_solution_never_retrievable[13] _______________
+
+pack = ([{'assumptions': ['全集U必须先明确，补集始终相对于U', '运算数值例题采用有限集合，重复元素不重复计数'], 'boundaries': ['区域图的矩形若不明确U，就不能断言A的补集是什么；同一集合在不同全集中...ue, 'oracle': 'BATCH94_FINITE_06', ...}, ...}, ...], 'finite_math_checks': 14, 'fully_teacher_atomized_pages': 0, ...})
+i = 13
+
+    @pytest.mark.parametrize("i",range(14))
+    def test_student_deep_solution_never_retrievable(pack,i):
+        doc=pack[0][i]
+        live=next(x for x in lessons() if x.id==doc["id"])
+        assert live.title==doc["title"]
+>       hits=editor_draft_search(doc["title"],scope="EDITOR_LOCAL",limit=30)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_kb_batch94_deep_scope.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/deep_retrieval.py:141: in editor_draft_search
+    return [hit.__dict__ for hit in _search_metadata(
+backend/app/deep_retrieval.py:88: in _search_metadata
+    _validate_query(query, limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '黄金比定义与有限近似的区别', limit = 30
+
+    def _validate_query(query: str, limit: int):
+        if not isinstance(query, str) or not (1 <= len(query.strip()) <= 160):
+            raise ValueError("Search query must be 1–160 chars")
+        if _UNSAFE.search(query):
+            raise ValueError("Control characters not accepted")
+        if not isinstance(limit, int) or isinstance(limit, bool) or not (1 <= limit <= _MAX_LIMIT):
+>           raise ValueError("limit out of supported range")
+E           ValueError: limit out of supported range
+
+backend/app/deep_retrieval.py:82: ValueError
+=========================== short test summary info ============================
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[0]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[1]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[2]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[3]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[4]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[5]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[6]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[7]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[8]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[9]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[10]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[11]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[12]
+FAILED backend/tests/test_kb_batch94_deep_scope.py::test_student_deep_solution_never_retrievable[13]
+14 failed, 117 passed in 5.97s

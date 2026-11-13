@@ -1,0 +1,113 @@
+{
+  "P0_steps_without_teacher_review": 106,
+  "authoritative_student_retrieval": "FAIL_CLOSED_NO_APPROVED_EVIDENCE",
+  "formal_general_math_theorem_certificates": 0,
+  "human_atomized_pages": "0/61",
+  "new_bounded_exact_oracles": 20,
+  "new_hint_ladder_prompts": 60,
+  "new_lesson_engineering_track_alignment": {
+    "MATCH_EDITORIAL_ONLY": 16,
+    "TRACK_UNRESOLVED": 4
+  },
+  "new_lesson_kinds": {
+    "concept": 5,
+    "method": 11,
+    "theorem": 4
+  },
+  "new_source_locked_ids": [
+    "math.hs.batch100.01",
+    "math.hs.batch100.02",
+    "math.hs.batch100.03",
+    "math.hs.batch100.04",
+    "math.hs.batch100.05",
+    "math.hs.batch100.06",
+    "math.hs.batch100.07",
+    "math.hs.batch100.08",
+    "math.hs.batch100.09",
+    "math.hs.batch100.10",
+    "math.hs.batch100.11",
+    "math.hs.batch100.12",
+    "math.hs.batch100.13",
+    "math.hs.batch100.14",
+    "math.hs.batch100.15",
+    "math.hs.batch100.16",
+    "math.hs.batch100.17",
+    "math.hs.batch100.18",
+    "math.hs.batch100.19",
+    "math.hs.batch100.20"
+  ],
+  "new_teacher_pending_deep_drafts": 20,
+  "new_teacher_worked_examples": 40,
+  "new_theorem_proof_drafts": 4,
+  "new_unresolved_textual_prerequisites": 40,
+  "official_atom_denominator": null,
+  "preexisting_unresolved_textual_prerequisites": 132,
+  "promoted_teacher_approved_prerequisite_edges": 0,
+  "provisional_stage_counts": {
+    "FULL_DEEP_DRAFT_PENDING_TEACHER": 86,
+    "INDIVIDUAL_SCOPE_EDITORIAL_PENDING": 24,
+    "INDIVIDUAL_SCOPE_NOT_ATOMIZED": 24,
+    "PAIR_COMPARISON_NOT_ATOMIZED": 166
+  },
+  "schema_version": "kb100-coverage-and-fail-closed-v1",
+  "source_scope": "PROVISIONAL_EDITORIAL_PROJECT_REGISTRY",
+  "student_authoritative_releases": 0,
+  "teacher_approved": 0,
+  "total_provisional_labels": 300,
+  "total_teacher_pending_source_locked_deep_drafts": 86,
+  "total_unresolved_textual_prerequisites": 172,
+  "tracks": {
+    "COMPULSORY": {
+      "official_verified_atom_denominator": null,
+      "project_provisional_labels_not_official_atoms": 75,
+      "student_authoritative_release": 0,
+      "teacher_approved": 0,
+      "teacher_pending_deep_drafts": 4
+    },
+    "ELECTIVE_A": {
+      "official_verified_atom_denominator": null,
+      "project_provisional_labels_not_official_atoms": 60,
+      "student_authoritative_release": 0,
+      "teacher_approved": 0,
+      "teacher_pending_deep_drafts": 18
+    },
+    "ELECTIVE_B": {
+      "official_verified_atom_denominator": null,
+      "project_provisional_labels_not_official_atoms": 60,
+      "student_authoritative_release": 0,
+      "teacher_approved": 0,
+      "teacher_pending_deep_drafts": 21
+    },
+    "ELECTIVE_C": {
+      "official_verified_atom_denominator": null,
+      "project_provisional_labels_not_official_atoms": 31,
+      "student_authoritative_release": 0,
+      "teacher_approved": 0,
+      "teacher_pending_deep_drafts": 11
+    },
+    "ELECTIVE_D": {
+      "official_verified_atom_denominator": null,
+      "project_provisional_labels_not_official_atoms": 8,
+      "student_authoritative_release": 0,
+      "teacher_approved": 0,
+      "teacher_pending_deep_drafts": 5
+    },
+    "ELECTIVE_E": {
+      "official_verified_atom_denominator": null,
+      "project_provisional_labels_not_official_atoms": 0,
+      "student_authoritative_release": 0,
+      "teacher_approved": 0,
+      "teacher_pending_deep_drafts": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "official_verified_atom_denominator": null,
+      "project_provisional_labels_not_official_atoms": 66,
+      "student_authoritative_release": 0,
+      "teacher_approved": 0,
+      "teacher_pending_deep_drafts": 27
+    }
+  },
+  "uncompared_provisional_labels": 134,
+  "unresolved_historical_proof_steps": 538,
+  "unresolved_math_conflicts": 10
+}

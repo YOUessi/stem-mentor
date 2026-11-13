@@ -1,0 +1,73 @@
+{
+  "newly_editorially_paired": 20,
+  "official_atom_denominators_by_track": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "previous_editorially_paired": 206,
+  "proven_universal_theorems": 0,
+  "provisional_project_label_count": 300,
+  "remaining_unpaired": 74,
+  "schema_version": "kb103-core-source-pairs-v1",
+  "source_sha256": "e4305e377713de664853a3458454ee70e0d7bd27251acb6187ca9e43e30bf235",
+  "student_authoritative_release": 0,
+  "teacher_approved": 0,
+  "teacher_atomized_pages": 0,
+  "total_editorially_paired": 226,
+  "track_matrix": {
+    "COMPULSORY": {
+      "new_comparisons": 1,
+      "official_atom_denominator": null,
+      "previously_compared": 71,
+      "provisional_labels": 75,
+      "still_unpaired": 3
+    },
+    "ELECTIVE_A": {
+      "new_comparisons": 3,
+      "official_atom_denominator": null,
+      "previously_compared": 43,
+      "provisional_labels": 60,
+      "still_unpaired": 14
+    },
+    "ELECTIVE_B": {
+      "new_comparisons": 4,
+      "official_atom_denominator": null,
+      "previously_compared": 35,
+      "provisional_labels": 60,
+      "still_unpaired": 21
+    },
+    "ELECTIVE_C": {
+      "new_comparisons": 0,
+      "official_atom_denominator": null,
+      "previously_compared": 5,
+      "provisional_labels": 31,
+      "still_unpaired": 26
+    },
+    "ELECTIVE_D": {
+      "new_comparisons": 0,
+      "official_atom_denominator": null,
+      "previously_compared": 3,
+      "provisional_labels": 8,
+      "still_unpaired": 5
+    },
+    "ELECTIVE_E": {
+      "new_comparisons": 0,
+      "official_atom_denominator": null,
+      "previously_compared": 0,
+      "provisional_labels": 0,
+      "still_unpaired": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "new_comparisons": 12,
+      "official_atom_denominator": null,
+      "previously_compared": 49,
+      "provisional_labels": 66,
+      "still_unpaired": 5
+    }
+  }
+}

@@ -1,0 +1,791 @@
+[
+  {
+    "assumptions": [
+      "实验有概率空间，X是其上的实值映射，取值集合有限或可数",
+      "所有可能取值的事件{X=x}两两不交且构成整个样本空间；概率总和为1"
+    ],
+    "boundaries": [
+      "实验有概率空间，X是其上的实值映射，取值集合有限或可数",
+      "所有可能取值的事件{X=x}两两不交且构成整个样本空间；概率总和为1"
+    ],
+    "counterexamples": [
+      {
+        "example": "若P(X=0)=1/2、P(X=1)=2/3，则概率和7/6>1，不能作为分布列。",
+        "explanation": "概率列不是评分表，必须逐项检验非负性与整体归一化。",
+        "false_claim": "把任意非负数表都当作合法概率分布"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-098"
+    ],
+    "definition": "离散型随机变量X把试验结果映射为有限或可数个实数。它的概率质量函数p(x)=P(X=x)必须满足各值非负、所有可能值之和为1；不在支持集中的取值概率为0。概率与具体取值的大小没有必然的单调关系。",
+    "hint_ladder": [
+      "先把样本事件与X的数值一一对应。",
+      "逐个数出各取值对应的事件，并检查是否有遗漏或重复。",
+      "最后检查非负、总概率为1、支持集外概率为0。"
+    ],
+    "id": "math.hs.batch118.01",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把任意非负数表都当作合法概率分布",
+        "repair_question": "请列出使用该公式所需的全部条件，找一个不满足条件的案例再做比较。",
+        "why_wrong": "概率列不是评分表，必须逐项检验非负性与整体归一化。"
+      }
+    ],
+    "notation": [
+      "S_X表示X的支持集",
+      "p(x)=P(X=x)，Σ_{x∈S_X}p(x)=1"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "概率公理与互斥事件",
+      "计数与随机变量表示"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先把一次实验的结果映射为明确的数字，不把标签与概率混为一谈。",
+      "各{X=x}事件互斥，全部可能取值事件并起来是整个样本空间。",
+      "因此每项非负且总和为1；对于无限可数取值，还需要使用可列可加性。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "离散型随机变量X把试验结果映射为有限或可数个实数。它的概率质量函数p(x)=P(X=x)必须满足各值非负、所有可能值之和为1；不在支持集中的取值概率为0。概率与具体取值的大小没有必然的单调关系。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "离散随机变量与分布列：非负、归一化与支持集",
+    "transfer": {
+      "far": "在质量检测中，故障等级对应几个非等概率类别，如何确认给定比例表合法？",
+      "near": "一枚公平骰子上的奇偶指标变量，写出它的完整分布列。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "p(0)=1/4,p(1)=1/2,p(2)=1/4。",
+        "check": "三个概率均非负，累加1/4+1/2+1/4=1，满足归一化。",
+        "question": "公平掷两枚硬币，X表示正面个数，列出分布列。",
+        "steps": [
+          "四种等可能结果HH,HT,TH,TT。",
+          "X=0,1,2分别对应1,2,1种情况，概率为1/4,1/2,1/4。"
+        ]
+      },
+      {
+        "answer": "a=2/5。",
+        "check": "三个概率求和1/5+2/5+2/5=1。",
+        "question": "X仅能取1、2、3，概率分别为1/5、2/5、a，求a。",
+        "steps": [
+          "分布列需满足1/5+2/5+a=1。",
+          "解得a=2/5，且属于[0,1]。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "X、Y定义在同一个概率空间且E|X|、E|Y|有限",
+      "a、b为有限实常数，所讨论的线性组合具有可积性"
+    ],
+    "boundaries": [
+      "X、Y定义在同一个概率空间且E|X|、E|Y|有限",
+      "a、b为有限实常数，所讨论的线性组合具有可积性"
+    ],
+    "counterexamples": [
+      {
+        "example": "令Y=X，X是P(X=1)=P(X=0)=1/2的伯努利变量，E[X+Y]=1，而X与Y并不独立。",
+        "explanation": "线性性来自求和分配律，独立性只会影响某些乘积期望和协方差。",
+        "false_claim": "求E[X+Y]前必须证明X、Y独立"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-098"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写出随机变量与常数的线性表达。",
+      "确认对应期望有限，不要不必要地附加独立性假设。",
+      "分别求各期望，按系数相乘后相加，并可枚举联合结果核对。"
+    ],
+    "id": "math.hs.batch118.02",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "求E[X+Y]前必须证明X、Y独立",
+        "repair_question": "请列出使用该公式所需的全部条件，找一个不满足条件的案例再做比较。",
+        "why_wrong": "线性性来自求和分配律，独立性只会影响某些乘积期望和协方差。"
+      }
+    ],
+    "notation": [
+      "E[X]=Σ_x xp_X(x)（离散情形）",
+      "E[aX+bY]是线性组合的平均数，不是独立性表达式"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch118.01"
+    ],
+    "prerequisites": [
+      "离散变量联合分布与加权平均",
+      "求和交换与有限可积条件"
+    ],
+    "proof_steps": [
+      {
+        "claim": "先按联合分布将E[aX+bY]写为对所有(x,y)的(a x+b y)P(X=x,Y=y)求和。",
+        "reason": "对有限支持集合使用分配律；可数情形由绝对可积保证变换合法。"
+      },
+      {
+        "claim": "把求和分成a倍x的项和b倍y的项，分别对不涉及的变量边缘化。",
+        "reason": "边缘概率的定义为p_X(x)=Σ_y p(x,y)，p_Y(y)=Σ_x p(x,y)。"
+      },
+      {
+        "claim": "得到aΣ_x xp_X(x)+bΣ_y yp_Y(y)，即aE[X]+bE[Y]。",
+        "reason": "证明全程未使用p(x,y)=p_X(x)p_Y(y)，故不需要独立性。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若实值离散随机变量X、Y具有有限期望，任意实常数a、b，E[aX+bY]=aE[X]+bE[Y]。此性质不要求X与Y独立；但仅从边缘分布一般不能计算乘积期望E[XY]。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "期望的线性性：不要求随机变量独立",
+    "transfer": {
+      "far": "在传感器数据聚合中，即便两个误差源高度相关，求和的期望仍如何计算？",
+      "near": "非独立X、Y的E[2X−3Y]是否一定等于2E[X]−3E[Y]？说明条件。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "7。",
+        "check": "X+Y恒等于7，直接平均仍为7。",
+        "question": "公平骰子点数X，Y=7−X，求E[X+Y]。",
+        "steps": [
+          "E[X]=(1+2+3+4+5+6)/6=7/2。",
+          "由线性性E[X+7−X]=E[X]+7−E[X]=7。"
+        ]
+      },
+      {
+        "answer": "1/2。",
+        "check": "3X−Y=X恒成立，因此期望1/2。",
+        "question": "一次公平硬币令X=正面指示变量，Y=2X，求E[3X−Y]。",
+        "steps": [
+          "E[X]=1/2，E[Y]=2E[X]=1。",
+          "E[3X−Y]=3/2−1=1/2。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "E[X²]有限且X为实值随机变量",
+      "a,b为有限实数，方差定义使用相同概率空间上的真实中心"
+    ],
+    "boundaries": [
+      "E[X²]有限且X为实值随机变量",
+      "a,b为有限实数，方差定义使用相同概率空间上的真实中心"
+    ],
+    "counterexamples": [
+      {
+        "example": "若Var(X)=1，则Var(−2X+5)=4而不是−2；方差不能为负。",
+        "explanation": "方差衡量平方离差，单位会随尺度因子平方变化。",
+        "false_claim": "数据乘以负二时方差也乘负二"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-098"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认二阶矩存在，找出中心μ。",
+      "使用E[X²]−μ²或列平方离差，不要用E[X²]代替方差。",
+      "仿射变换时，平移不改变方差，尺度系数必须平方。"
+    ],
+    "id": "math.hs.batch118.03",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "数据乘以负二时方差也乘负二",
+        "repair_question": "请列出使用该公式所需的全部条件，找一个不满足条件的案例再做比较。",
+        "why_wrong": "方差衡量平方离差，单位会随尺度因子平方变化。"
+      }
+    ],
+    "notation": [
+      "μ=E[X]",
+      "Var(X)=E[(X−μ)²]≥0"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch118.02"
+    ],
+    "prerequisites": [
+      "期望线性性及乘法分配律",
+      "非负平方与二阶矩存在性"
+    ],
+    "proof_steps": [
+      {
+        "claim": "展开平方(X−μ)²=X²−2μX+μ²并逐项取期望。",
+        "reason": "由于X的二阶矩有限，交叉项与常数项可积，逐项取期望与分配律均合法。"
+      },
+      {
+        "claim": "以E[X]=μ代入，得到E[X²]−2μ²+μ²=E[X²]−μ²。",
+        "reason": "常数μ可以移出期望，且E[1]=1。"
+      },
+      {
+        "claim": "aX+b的中心是aμ+b，相减得a(X−μ)，平方后取期望得到a²Var(X)。",
+        "reason": "平移的常数项完全抵消，缩放必须平方；负a也适用。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "当X具有有限二阶矩时，Var(X)=E[(X−E X)^2]=E[X²]−(E X)²。任意有限实数a,b有Var(aX+b)=a²Var(X)。若X,Y相关，Var(X+Y)一般需要加上2Cov(X,Y)，不能只把方差相加。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "方差恒等式与仿射变换：平移不变、缩放平方",
+    "transfer": {
+      "far": "同一量从米换成厘米时，观测均值和方差的单位如何变化？",
+      "near": "若Var(X)=5，求Var(−3X+10)并解释为什么不能乘−3。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "E[X]=2，Var(X)=1。",
+        "check": "两项平方离差分别是1，平均仍为1。",
+        "question": "随机变量X以相等概率取1、3，求E[X]、Var(X)。",
+        "steps": [
+          "均值μ=(1+3)/2=2，E[X²]=(1+9)/2=5。",
+          "Var(X)=5−2²=1。"
+        ]
+      },
+      {
+        "answer": "9。",
+        "check": "Y分别取−4、2，均值−1，各离差平方为9。",
+        "question": "X以概率1/2取0、2，令Y=3X−4，求Var(Y)。",
+        "steps": [
+          "X均值1，平方离差均为1，所以Var(X)=1。",
+          "Var(Y)=3²Var(X)=9。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "n为非负整数，试验彼此独立且每次只有成功或失败",
+      "每次成功概率恒为p∈[0,1]，计数X为成功的次数"
+    ],
+    "boundaries": [
+      "n为非负整数，试验彼此独立且每次只有成功或失败",
+      "每次成功概率恒为p∈[0,1]，计数X为成功的次数"
+    ],
+    "counterexamples": [
+      {
+        "example": "从袋中1红1蓝不放回连抽2次，恰得1红的概率是1，而Bin(2,1/2)给出的概率只有1/2。",
+        "explanation": "不放回试验之间的条件概率变化，通常不满足独立同参的二项假设。",
+        "false_claim": "只要重复抽样n次，成功次数就必然服从二项分布"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-099"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "确认每次试验是否独立、成功概率是否固定。",
+      "用k确定成功位置的组合数，再乘一条序列的概率。",
+      "检查0≤k≤n且概率非负、总和归一化，p端点单独处理。"
+    ],
+    "id": "math.hs.batch118.04",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "只要重复抽样n次，成功次数就必然服从二项分布",
+        "repair_question": "请列出使用该公式所需的全部条件，找一个不满足条件的案例再做比较。",
+        "why_wrong": "不放回试验之间的条件概率变化，通常不满足独立同参的二项假设。"
+      }
+    ],
+    "notation": [
+      "C(n,k)为n次中成功位置的组合数",
+      "P(X=k)仅在整数0≤k≤n时由公式计算"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch117.04"
+    ],
+    "prerequisites": [
+      "组合数及乘法计数",
+      "独立事件和伯努利试验"
+    ],
+    "proof_steps": [
+      {
+        "claim": "固定一组含k个成功位置、其余失败的结果序列。",
+        "reason": "试验独立且同参，完整序列的概率为p^k(1−p)^(n−k)。"
+      },
+      {
+        "claim": "这样的成功位置集合共有C(n,k)种，且对应的完整结果序列两两互斥。",
+        "reason": "无序成功位置选择与独立序列乘法规则给出同一权重。"
+      },
+      {
+        "claim": "按互斥可加性求和得到二项概率；n=0是唯一空序列，p端点以确定事件理解。",
+        "reason": "组合数计数不重不漏，二项式定理保证归一化。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "进行了n次独立、每次成功概率固定为p的伯努利试验时，成功次数X服从二项分布Bin(n,p)，并且对整数k∈[0,n]有P(X=k)=C(n,k)p^k(1−p)^(n−k)。n为非负整数，p∈[0,1]，零次数时X=0确定成立；端点p=0/1需按确定事件解释，避免把0^0当作任意实数幂。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二项分布的概率公式：独立、同参和次数边界",
+    "transfer": {
+      "far": "质量检测中如果从有限批次不放回抽样，为什么二项模型可能失效？",
+      "near": "四次独立公平投篮试验恰好一次命中的概率是多少？"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "3/8。",
+        "check": "枚举HHT、HTH、THH，三个等可能结果共3/8。",
+        "question": "公平硬币独立抛3次，恰好2次正面的概率？",
+        "steps": [
+          "固定两次成功的位置有C(3,2)=3种。",
+          "各序列概率(1/2)^3=1/8，合计3/8。"
+        ]
+      },
+      {
+        "answer": "9/16。",
+        "check": "两次都失败是独立事件，其概率为(3/4)×(3/4)。",
+        "question": "每次独立成功概率1/4，重复2次，一次也没成功的概率？",
+        "steps": [
+          "失败概率是3/4，0次成功只有一种成功位置集合。",
+          "P(X=0)=C(2,0)(3/4)^2=9/16。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "有n次取值为0或1的伯努利成功指示变量，且每次P(I_i=1)=p",
+      "用于方差公式时，I_i两两独立或至少协方差全为0；二项分布本身满足充分条件"
+    ],
+    "boundaries": [
+      "有n次取值为0或1的伯努利成功指示变量，且每次P(I_i=1)=p",
+      "用于方差公式时，I_i两两独立或至少协方差全为0；二项分布本身满足充分条件"
+    ],
+    "counterexamples": [
+      {
+        "example": "若两次成功指标完全相同且P=1/2，总数X=2I，方差为1，而2×(1/2)×(1/2)=1/2。",
+        "explanation": "相同边缘概率不保证相互独立，协方差项不可遗漏。",
+        "false_claim": "任何n次成功概率均为p的实验，其成功次数方差都等于np(1−p)"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-099"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先确认模型确实是独立同参的二项分布。",
+      "把成功总数写成成功指标之和；均值与方差分别使用什么前提？",
+      "取期望得到np；方差先算每个p(1−p)再检查协方差是否为0。"
+    ],
+    "id": "math.hs.batch118.05",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "任何n次成功概率均为p的实验，其成功次数方差都等于np(1−p)",
+        "repair_question": "请列出使用该公式所需的全部条件，找一个不满足条件的案例再做比较。",
+        "why_wrong": "相同边缘概率不保证相互独立，协方差项不可遗漏。"
+      }
+    ],
+    "notation": [
+      "X=Σ_{i=1}^n I_i，I_i∈{0,1}",
+      "E[I_i]=p，Var(I_i)=p(1−p)"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch118.04",
+      "math.hs.batch118.03"
+    ],
+    "prerequisites": [
+      "期望线性性与方差恒等式",
+      "指示变量及独立性"
+    ],
+    "proof_steps": [
+      {
+        "claim": "把成功总数写成n个指示变量之和，各自期望都是p。",
+        "reason": "不要求独立也可用期望线性性得到E[X]=Σp=np。"
+      },
+      {
+        "claim": "每个指示变量满足I_i²=I_i，因此Var(I_i)=p−p²=p(1−p)。",
+        "reason": "使用平方取值I_i²=I_i和合法二阶矩。"
+      },
+      {
+        "claim": "独立变量之间协方差为0，故总和的方差为各项方差之和np(1−p)。",
+        "reason": "若不独立，必须使用Var(Σ I_i)=Σ Var(I_i)+2Σ_{i<j}Cov(I_i,I_j)。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "当X∼Bin(n,p)且n是非负整数、p∈[0,1]，有E[X]=np、Var(X)=np(1−p)。均值的结论仅需各次成功概率都是p；方差简单相加还需要各次独立，否则必须保留协方差。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二项分布的均值与方差：指示变量证明",
+    "transfer": {
+      "far": "当两次检测结果受共同环境影响时，为什么只知道成功率不足以计算方差？",
+      "near": "一次成功概率p=0.2的独立试验重复10次，计算成功次数的均值方差。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "均值5/2；方差5/4。",
+        "check": "由指示变量计算，5次独立伯努利贡献各1/4方差。",
+        "question": "X∼Bin(5,1/2)，求E[X]与Var(X)。",
+        "steps": [
+          "使用均值公式5×1/2=5/2。",
+          "方差5×1/2×1/2=5/4。"
+        ]
+      },
+      {
+        "answer": "均值1；方差3/4。",
+        "check": "参数在[0,1]且方差不超过n/4=1。",
+        "question": "X∼Bin(4,1/4)，求E[X]与Var(X)。",
+        "steps": [
+          "E[X]=4×1/4=1。",
+          "Var(X)=4×1/4×3/4=3/4。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "N为正整数，0≤K,n≤N且总体每个对象可区分",
+      "不放回均匀抽取n个对象，每个n元素子集等可能"
+    ],
+    "boundaries": [
+      "N为正整数，0≤K,n≤N且总体每个对象可区分",
+      "不放回均匀抽取n个对象，每个n元素子集等可能"
+    ],
+    "counterexamples": [
+      {
+        "example": "总体N=10仅有K=2个成功对象，抽n=5时E[X]=5×2/10=1，而不是2.5。",
+        "explanation": "成功比例取决于K/N，不能假设一半对象成功。",
+        "false_claim": "无放回样本成功次数的均值一定等于n/2"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-100"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先标清N、K、n和是否无放回。",
+      "将成功对象逐个定义是否被选中的指示变量。",
+      "每个固定对象的入样概率是n/N，把K个期望相加。"
+    ],
+    "id": "math.hs.batch118.06",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "无放回样本成功次数的均值一定等于n/2",
+        "repair_question": "请列出使用该公式所需的全部条件，找一个不满足条件的案例再做比较。",
+        "why_wrong": "成功比例取决于K/N，不能假设一半对象成功。"
+      }
+    ],
+    "notation": [
+      "I_j表示第j个成功对象是否在抽样集合中",
+      "X=Σ_{j=1}^K I_j"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch117.08",
+      "math.hs.batch118.02"
+    ],
+    "prerequisites": [
+      "有限无放回均匀抽样",
+      "指标随机变量与期望线性性"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对总体的每一个成功对象j，定义I_j为被抽中的0/1变量。",
+        "reason": "所有成功对象在样本中出现的总数恰等于各指标之和。"
+      },
+      {
+        "claim": "由均匀无放回抽样的对称性，每个特定对象被抽中的概率为n/N。",
+        "reason": "包含某个对象的n子集为C(N−1,n−1)个，除以C(N,n)正好是n/N；n=0时概率为0。"
+      },
+      {
+        "claim": "E[X]=Σ E[I_j]=K(n/N)；整个过程不需这些指标独立。",
+        "reason": "使用有限求和的线性性，避免将不放回样本误当独立伯努利。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "有限总体N个相异对象中有K个成功对象；若不放回等可能选n个且0≤K,n≤N、N>0，成功数X服从超几何分布并满足E[X]=nK/N。各次抽取通常不独立，但均值仍由对称性与期望线性性得到；其方差不能直接套用二项分布公式。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "不放回抽样超几何均值：独立性不是必要条件",
+    "transfer": {
+      "far": "当总体已进行分层非等概率抽样时，为什么公式nK/N不能直接套用？",
+      "near": "20件零件有5件不合格，等可能不放回抽8件，预计抽到多少不合格件？"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "6/5。",
+        "check": "超几何公式nK/N=3×4/10=1.2。",
+        "question": "10件产品中有4件缺陷，不放回抽3件，求缺陷数均值。",
+        "steps": [
+          "每件缺陷品入样概率为3/10。",
+          "4个指标变量求和，E[X]=4×3/10=6/5。"
+        ]
+      },
+      {
+        "answer": "1。",
+        "check": "每个固定球的入样概率均为3/6；两枚红球各贡献期望1/2，合计1。",
+        "question": "6球中2红，不放回取3，求红球数均值。",
+        "steps": [
+          "红球每个被取概率3/6。",
+          "E[X]=2×(3/6)=1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "原始模型确实服从正态分布，不是任意连续分布",
+      "σ>0为标准差，方差是σ²；标准化中的除法分母不能为0"
+    ],
+    "boundaries": [
+      "原始模型确实服从正态分布，不是任意连续分布",
+      "σ>0为标准差，方差是σ²；标准化中的除法分母不能为0"
+    ],
+    "counterexamples": [
+      {
+        "example": "令X以概率1/2取−1和1，它已均值0方差1，但只有两个取值，不是连续的N(0,1)。",
+        "explanation": "标准化只改变均值和方差，不会把离散变量变成正态变量。",
+        "false_claim": "任意随机变量减去均值再除标准差后就自动服从正态分布"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-101"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "找出μ、σ²，并先计算正的σ。",
+      "全部端点按x↦(x−μ)/σ变换，不可漏变换某一端。",
+      "只有模型正态时才能继续用标准正态表；否则需另一种分布方法。"
+    ],
+    "id": "math.hs.batch118.07",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "任意随机变量减去均值再除标准差后就自动服从正态分布",
+        "repair_question": "请列出使用该公式所需的全部条件，找一个不满足条件的案例再做比较。",
+        "why_wrong": "标准化只改变均值和方差，不会把离散变量变成正态变量。"
+      }
+    ],
+    "notation": [
+      "μ=E[X]；σ=√Var(X)>0",
+      "Z=(X−μ)/σ，标准正态记作N(0,1)"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch118.03"
+    ],
+    "prerequisites": [
+      "概率密度与变量线性变换",
+      "均值和方差的单位及非负性"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先确认给出的第二参数是方差σ²还是标准差σ，确保平方根后的σ>0。",
+      "所有观测值与区间端点均先减μ再除σ，除数为正所以不等号方向保持不变。",
+      "经线性变换，新的均值为0、方差为1；仅当原分布正态时才可使用标准正态分布函数。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若X服从均值μ、方差σ²的正态分布N(μ,σ²)，其中σ>0，定义Z=(X−μ)/σ，则Z服从标准正态分布N(0,1)。区间概率需按相同的标准化过程替换端点；σ是标准差而不是方差。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "正态标准化：标准差正值与不等号方向",
+    "transfer": {
+      "far": "某测量误差分布高度偏斜时，即便均值方差已知，为什么不能用正态表计算尾部概率？",
+      "near": "已知X∼N(30,9)，把P(X>33)改写成Z事件。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "z=2。",
+        "check": "X=μ+2σ=14，恰对应两个标准差。",
+        "question": "X∼N(10,4)，求x=14的标准分数。",
+        "steps": [
+          "给出的方差为4，所以σ=2。",
+          "z=(14−10)/2=2。"
+        ]
+      },
+      {
+        "answer": "P(−1≤Z≤2)。",
+        "check": "端点−1、2依序排列，除以正数没有反转不等号。",
+        "question": "X∼N(100,25)，把P(95≤X≤110)改写成标准正态概率。",
+        "steps": [
+          "σ=√25=5；下端点(95−100)/5=−1。",
+          "上端点(110−100)/5=2，保持闭区间端点。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "n≥2，数据成对且为有限实数，两个中心平方和均严格正",
+      "相同样本对用于求均值与协差，不能任意打乱y的配对顺序"
+    ],
+    "boundaries": [
+      "n≥2，数据成对且为有限实数，两个中心平方和均严格正",
+      "相同样本对用于求均值与协差，不能任意打乱y的配对顺序"
+    ],
+    "counterexamples": [
+      {
+        "example": "样本x=(2,2,2)、y=(1,2,3)，Sxx=0，分母为0，r未定义而非0。",
+        "explanation": "数学上未定义与数值为0不同，零方差样本必须报告无法计算。",
+        "false_claim": "当所有x都相等时可以把相关系数定义为零"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-102"
+    ],
+    "definition": "对于n≥2组实数观测(x_i,y_i)，若Sxx=Σ(x_i−x̄)²>0且Syy=Σ(y_i−ȳ)²>0，则Pearson样本相关系数r=Sxy/√(Sxx Syy)，其中Sxy=Σ(x_i−x̄)(y_i−ȳ)。由柯西—施瓦茨不等式−1≤r≤1；r=±1仅反映样本点精确共线，不证明因果。",
+    "hint_ladder": [
+      "先检查两个变量是不是都至少出现两个不同的数值。",
+      "算x̄、ȳ和三个平方/交叉和，观察中心化向量。",
+      "用Sxy/√(SxxSyy)求r，报告符号、范围和不能推出的因果结论。"
+    ],
+    "id": "math.hs.batch118.08",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "当所有x都相等时可以把相关系数定义为零",
+        "repair_question": "请列出使用该公式所需的全部条件，找一个不满足条件的案例再做比较。",
+        "why_wrong": "数学上未定义与数值为0不同，零方差样本必须报告无法计算。"
+      }
+    ],
+    "notation": [
+      "Sxx=Σ(x_i−x̄)²，Syy=Σ(y_i−ȳ)²",
+      "Sxy=Σ(x_i−x̄)(y_i−ȳ)，r=Sxy/√(Sxx Syy)"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch118.03"
+    ],
+    "prerequisites": [
+      "算术平均和向量内积",
+      "柯西—施瓦茨不等式"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "将中心化后的两列数据视作向量u与v，其内积为Sxy，长度分别为√Sxx、√Syy。",
+      "当两个长度均非零时，r是两向量夹角余弦，绝对值至多1。",
+      "若某列数据恒定，长度为0，r不存在；相关性的强弱不提供干预或因果方向证明。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对于n≥2组实数观测(x_i,y_i)，若Sxx=Σ(x_i−x̄)²>0且Syy=Σ(y_i−ȳ)²>0，则Pearson样本相关系数r=Sxy/√(Sxx Syy)，其中Sxy=Σ(x_i−x̄)(y_i−ȳ)。由柯西—施瓦茨不等式−1≤r≤1；r=±1仅反映样本点精确共线，不证明因果。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "样本相关系数：零方差、符号和非因果关系",
+    "transfer": {
+      "far": "某地区冰淇淋销量和溺水人数样本r>0，能否认定前者导致后者？如何寻找混杂变量？",
+      "near": "样本对(0,0),(1,1),(2,2),(3,3)，解释r为何等于1。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "r=1。",
+        "check": "y=2x精确线性同向，故正完全相关。",
+        "question": "数据对(1,2),(2,4),(3,6)，求r。",
+        "steps": [
+          "中心化x=(-1,0,1)，中心化y=(-2,0,2)。",
+          "Sxy=4,Sxx=2,Syy=8，因此r=4/√16=1。"
+        ]
+      },
+      {
+        "answer": "r=−1。",
+        "check": "所有观测点都满足y=4−x，中心化后的两个非零向量精确反向。",
+        "question": "数据对(1,3),(2,2),(3,1)，求r。",
+        "steps": [
+          "中心化x=(-1,0,1)，中心化y=(1,0,-1)。",
+          "Sxy=−2,Sxx=2,Syy=2，因此r=−2/2=−1。"
+        ]
+      }
+    ]
+  }
+]

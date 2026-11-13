@@ -1,0 +1,46 @@
+........................................................................ [ 36%]
+....F................................................................... [ 72%]
+......................................................                   [100%]
+=================================== FAILURES ===================================
+_____________ test_scope_gate_fails_closed[fake_editorial_teacher] _____________
+
+mutation = 'fake_editorial_teacher'
+
+    @pytest.mark.parametrize("mutation",[
+        "delete_legacy","fake_teacher","fake_editorial_teacher","fake_official",
+        "missing_source_page","wrong_source_sha","duplicate_card","fake_old_link",
+        "lost_cross_page_candidate","missing_card","false_page_review"
+    ])
+    def test_scope_gate_fails_closed(mutation):
+        kw={}
+        if mutation=="delete_legacy":
+            x=deepcopy(SOURCE);x["legacy_non_equivalent_rows"].pop();kw["source"]=x
+        if mutation=="fake_teacher":
+            x=deepcopy(SOURCE);x["legacy_non_equivalent_rows"][0]["teacher_review"]="APPROVED";kw["source"]=x
+        if mutation=="fake_editorial_teacher":
+            x=deepcopy(EDITOR);x["rows"][0]["teacher_approved"]=True;kw["overlay"]=x
+        if mutation=="fake_official":
+            x=deepcopy(SOURCE);x["official_atomic_denominator"]["ELECTIVE_A"]=200;kw["source"]=x
+        if mutation=="missing_source_page":
+            x=deepcopy(GATE);x["pages"].pop();kw["gate"]=x
+        if mutation=="wrong_source_sha":
+            x=deepcopy(GATE);x["source_pdf_sha256"]="0"*64;kw["gate"]=x
+        if mutation=="duplicate_card":
+            x=deepcopy(G.CARDS);x[1]["cid"]=x[0]["cid"];kw["cards"]=x
+        if mutation=="fake_old_link":
+            x=deepcopy(EDITOR);target=next(r for r in x["rows"] if r["editorial_id"]==G.CARDS[0]["cid"])
+            target["direct_review_drafts"]=["falsified:approved"];kw["overlay"]=x
+        if mutation=="lost_cross_page_candidate":
+            x=deepcopy(SOURCE);x["source_rows"].pop();kw["source"]=x
+        if mutation=="missing_card":
+            x=deepcopy(G.CARDS);x.pop();kw["cards"]=x
+        if mutation=="false_page_review":
+            x=deepcopy(GATE);x["pages"][10]["full_page_human_review"]="APPROVED";kw["gate"]=x
+>       with pytest.raises(ValueError):G.build(**kw)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch54_legacy_scope.py:86: Failed
+=========================== short test summary info ============================
+FAILED backend/tests/test_kb_batch54_legacy_scope.py::test_scope_gate_fails_closed[fake_editorial_teacher]
+1 failed, 197 passed in 1.58s

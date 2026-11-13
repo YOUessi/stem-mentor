@@ -1,0 +1,121 @@
+{
+  "schema_version": "batch22-k00-provisional-denominators-v1",
+  "scope": "UNVERIFIED_EVIDENCE_AND_ENGINEERING_COUNT_NOT_OFFICIAL_ATOM_COUNT",
+  "source_review_queue_sha256": "0a1efe8f34cb33187635cf7badaae1ea789381cca4405fe84765102d18ed3bfc",
+  "editorial_gap_report_sha256": "c7f28d1bd4d8acfec513f1f2e9ecdfc3c121ce0104ba082528ed909e45e9d7b4",
+  "proof_review_queue_sha256": null,
+  "summary": {
+    "source_review_tasks": 427,
+    "task_denominator_by_kind": {
+      "SOURCE_PAGE_SPLIT": 61,
+      "NUMBERED_MARKER_SPLIT": 315,
+      "UNNUMBERED_DE_HEADING_SPLIT": 23,
+      "EDITORIAL_GAP_DECISION": 28
+    },
+    "engineering_candidate_total": 173,
+    "deep_lesson_draft_total": 247,
+    "editorial_gap_tickets": 28,
+    "editorial_drafts_topic_adjacent": 23,
+    "editorial_gaps_still_open": 28,
+    "official_atomic_denominator": null,
+    "teacher_approved": 0,
+    "student_published": 0,
+    "complete_syllabus_inventory": false
+  },
+  "tracks": [
+    {
+      "track": "COMPULSORY",
+      "engineering_map_candidates": 64,
+      "deep_lesson_course_associations": 118,
+      "open_source_review_tasks": 114,
+      "editor_gap_candidates_with_lesson_adjacency": 0,
+      "verified_official_atomic_denominator": null,
+      "teacher_approved_atoms": 0,
+      "complete_official_coverage_rate": null,
+      "student_published_deep_units": 0
+    },
+    {
+      "track": "SELECTIVE_COMPULSORY",
+      "engineering_map_candidates": 46,
+      "deep_lesson_course_associations": 106,
+      "open_source_review_tasks": 82,
+      "editor_gap_candidates_with_lesson_adjacency": 0,
+      "verified_official_atomic_denominator": null,
+      "teacher_approved_atoms": 0,
+      "complete_official_coverage_rate": null,
+      "student_published_deep_units": 0
+    },
+    {
+      "track": "ELECTIVE_A",
+      "engineering_map_candidates": 21,
+      "deep_lesson_course_associations": 25,
+      "open_source_review_tasks": 61,
+      "editor_gap_candidates_with_lesson_adjacency": 9,
+      "verified_official_atomic_denominator": null,
+      "teacher_approved_atoms": 0,
+      "complete_official_coverage_rate": null,
+      "student_published_deep_units": 0
+    },
+    {
+      "track": "ELECTIVE_B",
+      "engineering_map_candidates": 14,
+      "deep_lesson_course_associations": 18,
+      "open_source_review_tasks": 56,
+      "editor_gap_candidates_with_lesson_adjacency": 5,
+      "verified_official_atomic_denominator": null,
+      "teacher_approved_atoms": 0,
+      "complete_official_coverage_rate": null,
+      "student_published_deep_units": 0
+    },
+    {
+      "track": "ELECTIVE_C",
+      "engineering_map_candidates": 10,
+      "deep_lesson_course_associations": 11,
+      "open_source_review_tasks": 21,
+      "editor_gap_candidates_with_lesson_adjacency": 3,
+      "verified_official_atomic_denominator": null,
+      "teacher_approved_atoms": 0,
+      "complete_official_coverage_rate": null,
+      "student_published_deep_units": 0
+    },
+    {
+      "track": "ELECTIVE_D",
+      "engineering_map_candidates": 7,
+      "deep_lesson_course_associations": 8,
+      "open_source_review_tasks": 22,
+      "editor_gap_candidates_with_lesson_adjacency": 3,
+      "verified_official_atomic_denominator": null,
+      "teacher_approved_atoms": 0,
+      "complete_official_coverage_rate": null,
+      "student_published_deep_units": 0
+    },
+    {
+      "track": "ELECTIVE_E",
+      "engineering_map_candidates": 4,
+      "deep_lesson_course_associations": 5,
+      "open_source_review_tasks": 10,
+      "editor_gap_candidates_with_lesson_adjacency": 3,
+      "verified_official_atomic_denominator": null,
+      "teacher_approved_atoms": 0,
+      "complete_official_coverage_rate": null,
+      "student_published_deep_units": 0
+    },
+    {
+      "track": "ELECTIVE_UNASSIGNED",
+      "engineering_map_candidates": 7,
+      "deep_lesson_course_associations": 7,
+      "open_source_review_tasks": 0,
+      "editor_gap_candidates_with_lesson_adjacency": 0,
+      "verified_official_atomic_denominator": null,
+      "teacher_approved_atoms": 0,
+      "complete_official_coverage_rate": null,
+      "student_published_deep_units": 0
+    }
+  ],
+  "blockers": [
+    "Each numbered source marker may contain multiple requirements, and unnumbered requirements remain.",
+    "61 physical pages, 315 numbered marker candidates, 23 unnumbered D/E headings and 28 editorial gap decisions overlap; never add these as official atoms.",
+    "All official atomic coverage denominators remain null until independent full syllabus decomposition and teacher review.",
+    "Existing 113 catalogue entries are not 113 complete lessons; 173 current engineering candidates include 12 new project-proposed elective candidates."
+  ]
+}

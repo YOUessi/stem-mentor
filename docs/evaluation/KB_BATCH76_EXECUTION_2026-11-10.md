@@ -1,0 +1,79 @@
+# STEM Mentor｜Batch76 跨轨数学语义审查、八篇原创教师稿与真实Mac验收（2026-11-10）
+
+## 版本与事实边界
+
+- 仓库：YOUessi/stem-mentor，GitHub 为唯一远端事实源；本批堆叠在 Batch75 Draft PR #100 的远端源码提交 `c57fd0cfd3a82007dc25e619e99e9235d63a811e`（基线源码树 `3eb5b45eaa2aa1a29aff2a0708b9d9c9104aa363`）。
+- 唯一开发/内容/测试设备：授权 MacBook Air YOUTangdeMacBook-Air.local；隔离工作树 `~/Documents/文件/stem-mentor-kb-batch76`、分支 `feat/kb-batch76-cross-track-equivalence`。未使用 Tang，未改写/合并 main，原 Mac 主仓 11 项未提交修改原样保留。
+- 课程标准版本：《普通高中数学课程标准（2017年版2020年修订）》；上一批固定原 PDF SHA-256 `cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195`；本批仍沿用 Mac PDFKit 原文来源 SHA 的待审引用，不上传原始有版权课标全文或真实学生数据。
+- 本批没有真实教师签核，没有官方数学原子认定，也没有采用模型自我评估。数学一般证明仍未经独立形式认证。
+
+## K00/K01：全 26 项课程编辑知识候选的跨轨语义对照
+
+从 Batch75 26 个知识候选逐一建立对照审查，包括课标页/行父区间、来源 SHA、课程轨道、已有教师稿 ID、明确数学前提差异、失效或区分性反例、候选关系和审核状态。26/26 已生成对应条目：
+
+- 同话题但数学等价**未认证** `SAME_TOPIC_UNCERTIFIED`：5。
+- 部分数学主题重叠 `PARTIAL_TOPIC_OVERLAP`：5。
+- 相关但数学对象、量词、前提或所求结论不同 `RELATED_DISTINCT`：16。
+
+例如“函数极限存在≠函数连续”要求检查点值；“数列收敛≠函数某点极限”需要区分变量域与量词；“一维均匀密度≠二维联合分布”；“三维叉积≠欧氏内积”；“参数曲线斜率”必须满足 x'(t) ≠ 0。仅为项目审查队列，不直接合并、不宣称数学等价认证。已有29条历史跨页主题线索仍须逐条复核。
+
+产物：`scripts/build_kb_batch76_equivalence.py`、`docs/evaluation/KB_BATCH76_CROSS_TRACK_COMPARISON_QUEUE.{json,md}`。来源SHA/无伪证审核/发布门禁全部失败关闭。
+
+## K02–K06：八篇原创教学草案、题族及条件证明
+
+新增8篇明确类型、论域与前提的原创教师侧稿：
+
+1. KB76-M01（选修A）：数列极限的 ε-N 量词顺序、1/n→0 逐步证明与 (-1)^n 有界不收敛反例。
+2. KB76-M02（选修A）：函数去心极限和点值、函数在一点连续的充要检查与可去间断点。
+3. KB76-M03（选修A）：微积分基本定理的连续性和原函数前提、端点差及错误原函数反例。
+4. KB76-M04（选修A）：二维联合概率表、边缘分布归一化、相关/独立性前提与同边缘不同联合分布。
+5. KB76-M05（选修B）：一元最小二乘回归的非零方差、正规方程推导、拟合与因果解释边界。
+6. KB76-M06（选修B）：三维叉积正交、右手系方向、反交换律与平行退化。
+7. KB76-M07（选修B）：参数曲线切线商式与 dx/dt≠0、参数导数退化不自动否定几何切线。
+8. KB76-M08（选修A）：非均匀合法概率密度 f(x)=2x、连续单点零概率与密度可高于1的区别。
+
+每篇含规范数学陈述、前提、推理依据、适用边界、可区分反例、典型错误原因、2道原创教师侧已解题、三级不剧透教学提示、近远迁移、待审核先修主题。合计 **8篇 / 16例 / 至少32条论证步骤 / 8组反例与错因 / 24条提示 / 16项迁移**。全部 `REVIEW_PENDING / TEACHER_ONLY / NOT_FORMALLY_CERTIFIED`；先修 ID 并未伪装已审校。
+
+对应源码 `scripts/build_kb_batch76_eight_lessons.py`，内容 `knowledge/editorial_review/kb_batch76_cross_track_teacher_drafts.json`，教师讲义 `docs/evaluation/KB_BATCH76_EIGHT_MATH_LESSONS.md`。
+
+## K07/K08：精确实例与学生检索隔离
+
+新增8类有限精确 `Fraction` 算例验证：ε-N 非零阈值、点值与极限不一致实例、基本积分有理端点、有限联合分布边缘与独立性、一元最小二乘分母、三维叉积正交、参数曲线斜率、连续三角型密度区间质量。对零分母、错误概率、非法点值、维度错误、无效分布、浮点伪精确或假设退化拒绝。部分对应算例使用 SymPy 独立交叉验算。**精确有限实例绝不等于一般命题形式化证明，学生自由步骤仍不可自动宣称已验证。**
+
+8份新稿的学生检索防泄漏测试使用带非空正式批准知识的离线混合索引，防止未批准稿/教师完整答案进入自主挑战的证据候选。
+
+## K09：诚实可审计的候选覆盖矩阵
+
+新建 `scripts/build_kb_batch76_progress.py` 与 `docs/evaluation/KB_BATCH76_CANDIDATE_COMPLETENESS.{json,md}`。**仅以 Batch75 的26个编辑候选作为项目内局部分母**：已有教师草案关联 **15/26**，无对应稿 **11/26**。八篇新稿每篇 14 个文本/数组字段非空，具有两道题和四步以上推理，但这仅指字段有稿，非数学教师审核完成。
+
+七轨**官方完整知识原子分母仍全部 `null`**；61页完整教师原子化审核 **0/61**；538条历史证明步骤未形式认证；10项历史冲突未正式裁决；真实教师批准0、正式学生深度发布0。零候选的选修E不等于该轨实际课程知识为0，需要学校具体开课范围。
+
+## Mac真实测试与历史失败证据
+
+冻结代码后在授权 Mac 上执行：
+
+- 新增两个 Batch76 测试模块共 **179 passed，0 failed**：原始日志 `evaluations/results/2026-11-10-kb-batch76/specialized_final.log`、退出码 `specialized_final.exit=0`。
+- 源码/生成器一致性和原始 Mac PDFKit 子跨度指纹：`source_final.exit=0`。
+- **Python全量：48,075 passed、5 skipped、0 failed、1条第三方依赖弃用警告**，总计270.85秒（含179项专项测试，不能重复相加）。`mac_check_final.log`。
+- Node **111/111**；Tutor 策略模拟 **33/33**；RAG 困难负例 **40/40**、Top3 **22/22**；Mac全量 `mac_check_final.exit=0`。
+- Chrome/Playwright 15个离线浏览器测试脚本均通过，浏览器pytest **2 passed**；`mac_browser_check.exit=0`。
+- 不使用模型API，未提交学生个人数据。
+
+**真实失败与修复过程**：首次 Mac全量检查有 **1 failed / 48,022 passed / 5 skipped**，原因是测试正在运行时对尚未冻结的生成内容追加先修字段，导致 `test_all_generated_outputs_reproducible` 读取快照不同步。失败原始记录 `mac_check.log`、`mac_check.exit=1` 完整保留；冻结源码与生成JSON后执行源SHA检查、179项专测和整套全量回归，最终全部通过；未通过删除断言或绕过失败修复。另在单稿迭代期间根据真实完整性门禁补齐过短的推理依据和答案字段，最终专项回归验证通过。
+
+## 下一批
+
+1. 针对仍缺教师稿的11个编辑候选复核完整课标上下文及跨页等价，不机械增加重复讲义；
+2. K00官方61页真实逐条教师复核，建立必修/选择性必修/选修A–E的可审计真实分母；
+3. 对选修A/B高难数学概念逐步加强一般性证明验证与定理前提保护，并处理538步/10组遗留债务；
+4. 教研签核后才允许正式多层RAG索引，开展真实API与规则基线的冻结对照。
+
+GitHub独立分支、Draft PR及CI须以最终远端核验为准，不用本地测试代替远端确认。
+
+## GitHub正式源码同步与首次 CI 验收（2026-11-10）
+
+- Mac 实际开发与测试提交：`5a92556c5819136bc41e5486132a6724853f1447`，Git Tree：`660dcd081f4b67c77b50192b9a38ff8a27d370ef`。
+- Mac HTTPS `git push` 原生网络尝试因 `Recv failure: Operation timed out` 失败，未强制推送、没有合并 main；随后经 GitHub 原生 `create_blob` 对 27 个完整文件逐项核对 SHA，再由相同的 base tree 和 mode 生成**完全相同的 Git Tree**，创建以 Batch75 远端HEAD为父节点的提交并非强制更新独立分支。
+- GitHub 同内容源码提交：`2f1356ef996e2f61d51eda74eb0a3b40ad509c3e`；Draft PR #101：<https://github.com/YOUessi/stem-mentor/pull/101>，依赖 Batch75 #100，不合并 main。
+- 首次远端 GitHub Actions #42761262296：<https://github.com/YOUessi/stem-mentor/actions/runs/42761262296>，`completed / success`，test job **132/132 步成功，0 失败、0 跳过**。该结果仅是源码工程CI，不等于数学定理形式验证或教师批准。
+- 本节为验收报告追加，未改变数学内容、生成器、测试和学生/教师审核权限；追加报告形成的新提交与新CI仍需单独核验。

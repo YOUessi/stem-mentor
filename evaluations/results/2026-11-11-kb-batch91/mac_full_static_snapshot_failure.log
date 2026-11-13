@@ -1,0 +1,14 @@
+[0/4] Batch24+25 source/P0/math/review guards
+PASS: Batch24 20 original teacher-only REVIEW_PENDING draft lessons
+PASS: 315 source markers, 132 editorial objectives, 23 D/E headings, 28 open gaps; official atomic denominator NULL; repeated text hash groups 22
+PASS: Batch24 20 lesson drafts, 19 unverified proof steps, 538 in all; official denominator NULL
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch24_progress.py", line 95, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch24_progress.py", line 89, in main
+    body=build()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch24_progress.py", line 25, in build
+    if len(rows)!=178 or len(corpus)!=287:raise ValueError("Unexpected live baseline")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unexpected live baseline

@@ -17,9 +17,9 @@ def test_extrema_catalog_five_fixed_models_without_spoilers(client):
  all_ids={p["id"] for p in data["presets"]}
  assert len(all_ids)>=62
  assert IDS<=all_ids
- assert data["counts"]["total_concepts"]==113
+ assert data["counts"]["total_concepts"]==178
  assert data["counts"]["interactive_foundations"]>=63
- assert data["counts"]["planned_concepts"]<=50
+ assert data["counts"]["planned_concepts"]<=101
  assert data["counts"]["scene_families"]["function_2d"]==22
  assert data["no_llm_api"] is True
  catalog={p["id"]:p for p in data["presets"]}

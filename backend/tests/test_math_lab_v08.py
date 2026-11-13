@@ -21,9 +21,9 @@ def test_curriculum_mapping_is_complete_inventory_not_full_implementation(client
     assert body["no_llm_api"] is True
     assert body["expert_review"]=="PENDING"
     assert "教育部" not in body["claim"]  # Claim is bounded to engineering tool status.
-    assert len(body["topics"])==113
+    assert len(body["topics"])==178
     assert len(body["presets"])>=49
-    assert body["counts"]["total_concepts"]==113
+    assert body["counts"]["total_concepts"]==178
     assert body["counts"]["scene_presets"]>=49
     assert body["counts"]["interactive_foundations"]<body["counts"]["total_concepts"]
     assert "完整教学" not in body["claim"] or "并非" in body["claim"]

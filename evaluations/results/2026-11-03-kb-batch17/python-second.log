@@ -1,0 +1,340 @@
+........................................................................ [  0%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  2%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  5%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  7%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [ 10%]
+........................................................................ [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 12%]
+........................................................................ [ 13%]
+........................................................................ [ 13%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 15%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 17%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 20%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 22%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 25%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+.............................................F.......................... [ 27%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 30%]
+........................................................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 32%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 35%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 37%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 40%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 42%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+......................F................................................. [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 45%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 47%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 50%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 52%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 55%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 58%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 60%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 63%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 65%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 68%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 70%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 73%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 75%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 78%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 80%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 83%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+........................................................................ [ 85%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 88%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 90%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 93%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 95%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 98%]
+........................................................................ [ 99%]
+.......................FF...F..F........................................ [ 99%]
+.........................                                                [100%]
+=================================== FAILURES ===================================
+__________ test_there_is_no_approval_and_electives_are_not_overstated __________
+
+    def test_there_is_no_approval_and_electives_are_not_overstated():
+        c = coverage_report()
+>       assert c["by_level"]["选修拓展"]["engineering_topics"] == 44
+E       assert 51 == 44
+
+backend/tests/test_deep_knowledge_v1.py:84: AssertionError
+_________________ test_whole_proof_status_remains_uncertified __________________
+
+    def test_whole_proof_status_remains_uncertified():
+        r=coverage_report()
+>       assert r["kinds"]["theorem"]==133
+E       assert 136 == 133
+
+backend/tests/test_kb_batch14_elective.py:172: AssertionError
+__________ test_v010_builders_are_deterministic_and_keep_prior_models __________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-81/test_v010_builders_are_determi0')
+
+    def test_v010_builders_are_deterministic_and_keep_prior_models(tmp_path):
+        source=ROOT/'curriculum/highschool_math'
+        assert (source/'extend_v010.py').exists()
+        for file in source.glob('*.py'):shutil.copy2(file,tmp_path/file.name)
+        shutil.copy2(source/'elective_a_b_atomic_candidates_batch14.json',tmp_path/'elective_a_b_atomic_candidates_batch14.json')
+        shutil.copy2(source/'elective_a_b_atomic_candidates_batch15.json',tmp_path/'elective_a_b_atomic_candidates_batch15.json')
+        shutil.copy2(source/'elective_b_c_d_e_atomic_candidates_batch16.json',tmp_path/'elective_b_c_d_e_atomic_candidates_batch16.json')
+        for file in ('build_presets.py','build_curriculum.py'):
+>           subprocess.run([sys.executable,str(tmp_path/file)],cwd=tmp_path,check=True,capture_output=True)
+
+backend/tests/test_v010_catalog.py:97:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = True, timeout = None, check = True
+popenargs = (['/Users/youtang/Documents/文件/stem-mentor-kb-batch17/.venv/bin/python', '/private/tmp/pytest-of-youtang/pytest-81/test_v010_builders_are_determi0/build_curriculum.py'],)
+kwargs = {'cwd': PosixPath('/private/tmp/pytest-of-youtang/pytest-81/test_v010_builders_are_determi0'), 'stderr': -1, 'stdout': -1}
+process = <Popen: returncode: 1 args: ['/Users/youtang/Documents/文件/stem-mentor-kb-bat...>
+stdout = b''
+stderr = b'Traceback (most recent call last):\n  File "/private/tmp/pytest-of-youtang/pytest-81/test_v010_builders_are_determi0...private/tmp/pytest-of-youtang/pytest-81/test_v010_builders_are_determi0/cross_track_atomic_candidates_batch17.json\'\n'
+retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['/Users/youtang/Documents/文件/stem-mentor-kb-batch17/.venv/bin/python', '/private/tmp/pytest-of-youtang/pytest-81/test_v010_builders_are_determi0/build_curriculum.py']' returned non-zero exit status 1.
+
+../../../miniforge3/lib/python3.13/subprocess.py:577: CalledProcessError
+_______________ test_v011_presets_exact_and_previous_49_retained _______________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-youtang/pytest-81/test_v011_presets_exact_and_pr0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x106e2a660>
+
+    def test_v011_presets_exact_and_previous_49_retained(tmp_path,monkeypatch):
+        monkeypatch.setenv("STEM_MENTOR_DB",str(tmp_path/"synthetic.sqlite3"))
+        with TestClient(app) as client:
+            response=client.get("/api/math-lab/catalog")
+            assert response.status_code==200
+            body=response.json()
+            assert body["no_llm_api"] is True
+            assert body["expert_review"]=="PENDING"
+            presets={p["id"]:p for p in body["presets"]}
+            assert len(presets)>=57
+            assert NEW <= set(presets)
+            assert {"fn-linear","3d-plane","sets-operations","interval-single","unit-circle"}<=set(presets)
+            assert body["counts"]["scene_families"]["sequence_2d"]==8
+            assert len(body["counts"]["scene_families"])>=9
+            assert body["counts"]["interactive_foundations"]>=63
+>           assert body["counts"]["planned_concepts"]<=73
+E           assert 84 <= 73
+
+backend/tests/test_v011_sequences.py:26: AssertionError
+___________ test_extrema_catalog_five_fixed_models_without_spoilers ____________
+
+client = <starlette.testclient.TestClient object at 0x1087fd6a0>
+
+    def test_extrema_catalog_five_fixed_models_without_spoilers(client):
+     data=client.get("/api/math-lab/catalog").json()
+     all_ids={p["id"] for p in data["presets"]}
+     assert len(all_ids)>=62
+     assert IDS<=all_ids
+     assert data["counts"]["total_concepts"]==161
+     assert data["counts"]["interactive_foundations"]>=63
+>    assert data["counts"]["planned_concepts"]<=73
+E    assert 84 <= 73
+
+backend/tests/test_v011b_extrema.py:22: AssertionError
+_________ test_scene_catalog_exact_count_and_real_curriculum_evidence __________
+
+client = <starlette.testclient.TestClient object at 0x1087fd260>
+
+    def test_scene_catalog_exact_count_and_real_curriculum_evidence(client):
+     cat=client.get("/api/math-lab/catalog").json()
+     assert len(cat["presets"])==71
+     assert len(cat["counts"]["scene_families"])==11
+     assert len(cat["topics"])==161
+     assert cat["counts"]["interactive_foundations"]==77
+>    assert cat["counts"]["planned_concepts"]==73
+E    assert 84 == 73
+
+backend/tests/test_v012_probability.py:20: AssertionError
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED backend/tests/test_deep_knowledge_v1.py::test_there_is_no_approval_and_electives_are_not_overstated
+FAILED backend/tests/test_kb_batch14_elective.py::test_whole_proof_status_remains_uncertified
+FAILED backend/tests/test_v010_catalog.py::test_v010_builders_are_deterministic_and_keep_prior_models
+FAILED backend/tests/test_v011_sequences.py::test_v011_presets_exact_and_previous_49_retained
+FAILED backend/tests/test_v011b_extrema.py::test_extrema_catalog_five_fixed_models_without_spoilers
+FAILED backend/tests/test_v012_probability.py::test_scene_catalog_exact_count_and_real_curriculum_evidence
+6 failed, 11539 passed, 1 warning in 32.61s

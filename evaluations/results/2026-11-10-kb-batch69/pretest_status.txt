@@ -1,0 +1,11 @@
+Tue Nov 10 04:48:23 CST 2026
+0c403e7c8dcac05714a445096234427cf06d4f5e
+ M .github/workflows/ci.yml
+ M scripts/mac_check.sh
+?? backend/tests/test_kb_batch69_remaining.py
+?? docs/evaluation/KB_BATCH69_ALL62_CANDIDATE_LINEAGE.json
+?? docs/evaluation/KB_BATCH69_TEACHER_REVIEW.md
+?? evaluations/results/2026-11-10-kb-batch69/
+?? knowledge/editorial_review/kb_batch69_remaining_authoring.tsv
+?? knowledge/editorial_review/kb_batch69_remaining_lessons.json
+?? scripts/build_kb_batch69_remaining.py

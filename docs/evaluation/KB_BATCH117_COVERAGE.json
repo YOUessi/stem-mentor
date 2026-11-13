@@ -1,0 +1,90 @@
+{
+  "batch": 117,
+  "candidate_source_links": 8,
+  "lessons": [
+    {
+      "complete_structure": true,
+      "id": "math.hs.batch117.01",
+      "kind": "method",
+      "proof_steps_certified": 0,
+      "review": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "complete_structure": true,
+      "id": "math.hs.batch117.02",
+      "kind": "method",
+      "proof_steps_certified": 0,
+      "review": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "complete_structure": true,
+      "id": "math.hs.batch117.03",
+      "kind": "theorem",
+      "proof_steps_certified": 0,
+      "review": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "complete_structure": true,
+      "id": "math.hs.batch117.04",
+      "kind": "theorem",
+      "proof_steps_certified": 0,
+      "review": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "complete_structure": true,
+      "id": "math.hs.batch117.05",
+      "kind": "theorem",
+      "proof_steps_certified": 0,
+      "review": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "complete_structure": true,
+      "id": "math.hs.batch117.06",
+      "kind": "concept",
+      "proof_steps_certified": 0,
+      "review": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "complete_structure": true,
+      "id": "math.hs.batch117.07",
+      "kind": "theorem",
+      "proof_steps_certified": 0,
+      "review": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "complete_structure": true,
+      "id": "math.hs.batch117.08",
+      "kind": "theorem",
+      "proof_steps_certified": 0,
+      "review": "REVIEW_PENDING",
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  ],
+  "new_counterexamples": 8,
+  "new_deep_drafts": 8,
+  "new_hint_levels": 24,
+  "new_teacher_examples": 16,
+  "new_transfer_prompts": 16,
+  "new_uncertified_proof_steps": 15,
+  "official_atoms_certified": 0,
+  "prior_deep_drafts": 490,
+  "seven_track_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "student_authoritative_releases": 0,
+  "teacher_approvals": 0,
+  "total_deep_drafts": 498
+}

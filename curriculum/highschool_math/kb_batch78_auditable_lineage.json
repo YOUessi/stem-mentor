@@ -1,0 +1,5529 @@
+{
+  "by_track": {
+    "COMPULSORY": {
+      "anchored_line_partition_segments": 164,
+      "heuristic_source_anchors": 142,
+      "high_priority_unresolved_triage": 8,
+      "local_candidate_topics": 4,
+      "local_candidate_topics_with_review_only_drafts": 4,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "status": "CANDIDATE_INVENTORY_NOT_OFFICIAL_COVERAGE",
+      "subspan_editorial_components": 17,
+      "teacher_approved": 0,
+      "track": "COMPULSORY",
+      "unanchored_editorial_triage_segments": 22
+    },
+    "ELECTIVE_A": {
+      "anchored_line_partition_segments": 73,
+      "heuristic_source_anchors": 69,
+      "high_priority_unresolved_triage": 3,
+      "local_candidate_topics": 6,
+      "local_candidate_topics_with_review_only_drafts": 6,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "status": "CANDIDATE_INVENTORY_NOT_OFFICIAL_COVERAGE",
+      "subspan_editorial_components": 10,
+      "teacher_approved": 0,
+      "track": "ELECTIVE_A",
+      "unanchored_editorial_triage_segments": 4
+    },
+    "ELECTIVE_B": {
+      "anchored_line_partition_segments": 77,
+      "heuristic_source_anchors": 70,
+      "high_priority_unresolved_triage": 5,
+      "local_candidate_topics": 11,
+      "local_candidate_topics_with_review_only_drafts": 11,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "status": "CANDIDATE_INVENTORY_NOT_OFFICIAL_COVERAGE",
+      "subspan_editorial_components": 16,
+      "teacher_approved": 0,
+      "track": "ELECTIVE_B",
+      "unanchored_editorial_triage_segments": 7
+    },
+    "ELECTIVE_C": {
+      "anchored_line_partition_segments": 34,
+      "heuristic_source_anchors": 29,
+      "high_priority_unresolved_triage": 3,
+      "local_candidate_topics": 2,
+      "local_candidate_topics_with_review_only_drafts": 2,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "status": "CANDIDATE_INVENTORY_NOT_OFFICIAL_COVERAGE",
+      "subspan_editorial_components": 6,
+      "teacher_approved": 0,
+      "track": "ELECTIVE_C",
+      "unanchored_editorial_triage_segments": 5
+    },
+    "ELECTIVE_D": {
+      "anchored_line_partition_segments": 21,
+      "heuristic_source_anchors": 17,
+      "high_priority_unresolved_triage": 1,
+      "local_candidate_topics": 1,
+      "local_candidate_topics_with_review_only_drafts": 1,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "status": "CANDIDATE_INVENTORY_NOT_OFFICIAL_COVERAGE",
+      "subspan_editorial_components": 3,
+      "teacher_approved": 0,
+      "track": "ELECTIVE_D",
+      "unanchored_editorial_triage_segments": 4
+    },
+    "ELECTIVE_E": {
+      "anchored_line_partition_segments": 1,
+      "heuristic_source_anchors": 0,
+      "high_priority_unresolved_triage": 0,
+      "local_candidate_topics": 0,
+      "local_candidate_topics_with_review_only_drafts": 0,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "status": "CANDIDATE_INVENTORY_NOT_OFFICIAL_COVERAGE",
+      "subspan_editorial_components": 0,
+      "teacher_approved": 0,
+      "track": "ELECTIVE_E",
+      "unanchored_editorial_triage_segments": 1
+    },
+    "SELECTIVE_COMPULSORY": {
+      "anchored_line_partition_segments": 113,
+      "heuristic_source_anchors": 101,
+      "high_priority_unresolved_triage": 3,
+      "local_candidate_topics": 2,
+      "local_candidate_topics_with_review_only_drafts": 2,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "status": "CANDIDATE_INVENTORY_NOT_OFFICIAL_COVERAGE",
+      "subspan_editorial_components": 8,
+      "teacher_approved": 0,
+      "track": "SELECTIVE_COMPULSORY",
+      "unanchored_editorial_triage_segments": 12
+    }
+  },
+  "edges": [
+    {
+      "parent": "SOURCE:KB73-P013-L001-017",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P013-L001-017"
+    },
+    {
+      "parent": "SOURCE:KB73-P014-L001-032",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P014-L001-032"
+    },
+    {
+      "parent": "SOURCE:KB73-P016-L001-006",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P016-L001-006"
+    },
+    {
+      "parent": "SOURCE:KB73-P017-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P017-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P018-L001-015",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P018-L001-015"
+    },
+    {
+      "parent": "SOURCE:KB73-P019-L001-002",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P019-L001-002"
+    },
+    {
+      "parent": "SOURCE:KB73-P020-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P020-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P021-L001-002",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P021-L001-002"
+    },
+    {
+      "parent": "SOURCE:KB73-P022-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P022-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P023-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P023-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P024-L001-018",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P024-L001-018"
+    },
+    {
+      "parent": "SOURCE:KB73-P025-L001-007",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P025-L001-007"
+    },
+    {
+      "parent": "SOURCE:KB73-P026-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P026-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P027-L001-003",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P027-L001-003"
+    },
+    {
+      "parent": "SOURCE:KB73-P028-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P028-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P029-L001-008",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P029-L001-008"
+    },
+    {
+      "parent": "SOURCE:KB73-P030-L001-015",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P030-L001-015"
+    },
+    {
+      "parent": "SOURCE:KB73-P031-L001-002",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P031-L001-002"
+    },
+    {
+      "parent": "SOURCE:KB73-P032-L001-004",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P032-L001-004"
+    },
+    {
+      "parent": "SOURCE:KB73-P034-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P034-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P035-L001-021",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P035-L001-021"
+    },
+    {
+      "parent": "SOURCE:KB73-P036-L001-005",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P036-L001-005"
+    },
+    {
+      "parent": "SOURCE:KB73-P037-L001-027",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P037-L001-027"
+    },
+    {
+      "parent": "SOURCE:KB73-P038-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P038-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P040-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P040-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P041-L001-002",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P041-L001-002"
+    },
+    {
+      "parent": "SOURCE:KB73-P042-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P042-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P043-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P043-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P044-L001-002",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P044-L001-002"
+    },
+    {
+      "parent": "SOURCE:KB73-P045-L001-017",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P045-L001-017"
+    },
+    {
+      "parent": "SOURCE:KB73-P046-L001-013",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P046-L001-013"
+    },
+    {
+      "parent": "SOURCE:KB73-P048-L001-002",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P048-L001-002"
+    },
+    {
+      "parent": "SOURCE:KB73-P049-L001-013",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P049-L001-013"
+    },
+    {
+      "parent": "SOURCE:KB73-P050-L001-004",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P050-L001-004"
+    },
+    {
+      "parent": "SOURCE:KB73-P051-L001-019",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P051-L001-019"
+    },
+    {
+      "parent": "SOURCE:KB73-P051-L020-027",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P051-L020-027"
+    },
+    {
+      "parent": "SOURCE:KB73-P052-L001-008",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P052-L001-008"
+    },
+    {
+      "parent": "SOURCE:KB73-P054-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P054-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P056-L001-013",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P056-L001-013"
+    },
+    {
+      "parent": "SOURCE:KB73-P057-L016-023",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P057-L016-023"
+    },
+    {
+      "parent": "SOURCE:KB73-P058-L001-007",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P058-L001-007"
+    },
+    {
+      "parent": "SOURCE:KB73-P060-L001-003",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P060-L001-003"
+    },
+    {
+      "parent": "SOURCE:KB73-P061-L001-013",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P061-L001-013"
+    },
+    {
+      "parent": "SOURCE:KB73-P062-L001-002",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P062-L001-002"
+    },
+    {
+      "parent": "SOURCE:KB73-P063-L001-008",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P063-L001-008"
+    },
+    {
+      "parent": "SOURCE:KB73-P064-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P064-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P064-L010-020",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P064-L010-020"
+    },
+    {
+      "parent": "SOURCE:KB73-P065-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P065-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P066-L001-006",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P066-L001-006"
+    },
+    {
+      "parent": "SOURCE:KB73-P067-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P067-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P068-L001-002",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P068-L001-002"
+    },
+    {
+      "parent": "SOURCE:KB73-P069-L006-016",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P069-L006-016"
+    },
+    {
+      "parent": "SOURCE:KB73-P070-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P070-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P072-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P072-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P073-L001-001",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P073-L001-001"
+    },
+    {
+      "parent": "SOURCE:KB73-P073-L013-023",
+      "relation": "SOURCE_LINES",
+      "source": "TRIAGE:KB73-P073-L013-023"
+    },
+    {
+      "parent": "TRIAGE:KB73-P013-L001-017",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P013-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P013-L001-017",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P013-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P014-L001-032",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P014-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P014-L001-032",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P014-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P016-L001-006",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P016-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P016-L001-006",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P016-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P016-L001-006",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P016-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P025-L001-007",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P025-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P025-L001-007",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P025-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P027-L001-003",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P027-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P027-L001-003",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P027-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P029-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P029-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P029-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P029-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P029-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P029-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P029-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P029-S04"
+    },
+    {
+      "parent": "TRIAGE:KB73-P032-L001-004",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P032-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P032-L001-004",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P032-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P037-L001-027",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P037-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P037-L001-027",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P037-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P046-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P046-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P046-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P046-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P046-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P046-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P046-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P046-S04"
+    },
+    {
+      "parent": "TRIAGE:KB73-P050-L001-004",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P050-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P050-L001-004",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P050-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P051-L020-027",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P051-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P051-L020-027",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P051-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P052-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P052-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P052-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P052-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P052-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P052-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P052-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P052-S04"
+    },
+    {
+      "parent": "TRIAGE:KB73-P056-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P056-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P056-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P056-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P056-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P056-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P056-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P056-S04"
+    },
+    {
+      "parent": "TRIAGE:KB73-P057-L016-023",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P057-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P057-L016-023",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P057-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P058-L001-007",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P058-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P058-L001-007",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P058-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P058-L001-007",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P058-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P060-L001-003",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P060-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P060-L001-003",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P060-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P060-L001-003",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P060-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P061-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P061-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P061-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P061-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P061-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P061-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P061-L001-013",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P061-S04"
+    },
+    {
+      "parent": "TRIAGE:KB73-P063-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P063-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P063-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P063-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P063-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P063-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P063-L001-008",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P063-S04"
+    },
+    {
+      "parent": "TRIAGE:KB73-P064-L010-020",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P064-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P064-L010-020",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P064-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P064-L010-020",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P064-S03"
+    },
+    {
+      "parent": "TRIAGE:KB73-P066-L001-006",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P066-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P066-L001-006",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P066-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P068-L001-002",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P068-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P069-L006-016",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P069-S01"
+    },
+    {
+      "parent": "TRIAGE:KB73-P069-L006-016",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P069-S02"
+    },
+    {
+      "parent": "TRIAGE:KB73-P069-L006-016",
+      "relation": "EDITORIAL_SPLIT",
+      "source": "SUBSPAN:KB75-P069-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P016-S02",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P016-S02"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P016-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P016-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P027-S01",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P027-S01"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P032-S02",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P032-S02"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P046-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P046-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P046-S04",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P046-S04"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P052-S02",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P052-S02"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P052-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P052-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P052-S04",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P052-S04"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P056-S02",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P056-S02"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P056-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P056-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P056-S04",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P056-S04"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P058-S02",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P058-S02"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P058-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P058-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P060-S01",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P060-S01"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P060-S02",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P060-S02"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P060-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P060-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P061-S02",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P061-S02"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P061-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P061-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P061-S04",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P061-S04"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P063-S02",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P063-S02"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P063-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P063-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P063-S04",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P063-S04"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P064-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P064-S03"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P066-S02",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P066-S02"
+    },
+    {
+      "parent": "SUBSPAN:KB75-P069-S03",
+      "relation": "NOT_OFFICIAL_ATOM",
+      "source": "CANDIDATE:KB75-P069-S03"
+    }
+  ],
+  "general_elective_scope_triage": 1,
+  "general_elective_source_segment_count": 1,
+  "local_candidate_topics_with_review_only_drafts": 26,
+  "nodes": [
+    {
+      "id": "SOURCE:KB73-P013-L001-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 13,
+      "source_segment": "KB73-P013-L001-017",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P014-L001-032",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 14,
+      "source_segment": "KB73-P014-L001-032",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L001-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L001-003",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L004-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L004-009",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L010-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L010-010",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L011-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L011-011",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L012-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L012-013",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L014-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L014-014",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L015-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L015-016",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L017-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L017-017",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L018-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L018-019",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L020-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L020-021",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L022-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L022-023",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P015-L024-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 15,
+      "source_segment": "KB73-P015-L024-027",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L001-006",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L001-006",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L007-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L007-007",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L008-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L008-009",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L010-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L010-011",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L012-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L012-013",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L014-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L014-015",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L016-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L016-016",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L017-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L017-017",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L018-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L018-018",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L019-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L019-023",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L024-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L024-025",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P016-L026-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 16,
+      "source_segment": "KB73-P016-L026-029",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P017-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 17,
+      "source_segment": "KB73-P017-L001-001",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P017-L002-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 17,
+      "source_segment": "KB73-P017-L002-008",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P017-L009-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 17,
+      "source_segment": "KB73-P017-L009-011",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P017-L012-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 17,
+      "source_segment": "KB73-P017-L012-012",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P017-L013-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 17,
+      "source_segment": "KB73-P017-L013-015",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P017-L016-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 17,
+      "source_segment": "KB73-P017-L016-017",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P017-L018-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 17,
+      "source_segment": "KB73-P017-L018-027",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P018-L001-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 18,
+      "source_segment": "KB73-P018-L001-015",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P018-L016-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 18,
+      "source_segment": "KB73-P018-L016-028",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L001-002",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L003-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L003-005",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L006-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L006-012",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L013-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L013-013",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L014-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L014-017",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L018-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L018-019",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L020-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L020-020",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L021-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L021-021",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L022-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L022-023",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L024-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L024-024",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P019-L025-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 19,
+      "source_segment": "KB73-P019-L025-027",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L001-001",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L002-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L002-005",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L006-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L006-012",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L013-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L013-018",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L019-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L019-020",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L021-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L021-025",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L026-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L026-028",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L029-030",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L029-030",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L031-031",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L031-031",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L032-033",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L032-033",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P020-L034-035",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 20,
+      "source_segment": "KB73-P020-L034-035",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P021-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 21,
+      "source_segment": "KB73-P021-L001-002",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P021-L003-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 21,
+      "source_segment": "KB73-P021-L003-005",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P021-L006-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 21,
+      "source_segment": "KB73-P021-L006-007",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P021-L008-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 21,
+      "source_segment": "KB73-P021-L008-017",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P021-L018-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 21,
+      "source_segment": "KB73-P021-L018-020",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P021-L021-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 21,
+      "source_segment": "KB73-P021-L021-021",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P021-L022-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 21,
+      "source_segment": "KB73-P021-L022-026",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P021-L027-032",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 21,
+      "source_segment": "KB73-P021-L027-032",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L001-001",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L002-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L002-004",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L005-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L005-011",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L012-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L012-012",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L013-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L013-013",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L014-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L014-015",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L016-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L016-017",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L018-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L018-020",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L021-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L021-026",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L027-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L027-027",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L028-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L028-028",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P022-L029-031",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 22,
+      "source_segment": "KB73-P022-L029-031",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P023-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 23,
+      "source_segment": "KB73-P023-L001-001",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P023-L002-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 23,
+      "source_segment": "KB73-P023-L002-002",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P023-L003-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 23,
+      "source_segment": "KB73-P023-L003-005",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P023-L006-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 23,
+      "source_segment": "KB73-P023-L006-008",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P023-L009-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 23,
+      "source_segment": "KB73-P023-L009-011",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P023-L012-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 23,
+      "source_segment": "KB73-P023-L012-028",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P024-L001-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 24,
+      "source_segment": "KB73-P024-L001-018",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P024-L019-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 24,
+      "source_segment": "KB73-P024-L019-029",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P025-L001-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 25,
+      "source_segment": "KB73-P025-L001-007",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P025-L008-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 25,
+      "source_segment": "KB73-P025-L008-009",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P025-L010-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 25,
+      "source_segment": "KB73-P025-L010-020",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P025-L021-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 25,
+      "source_segment": "KB73-P025-L021-021",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P025-L022-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 25,
+      "source_segment": "KB73-P025-L022-023",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P025-L024-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 25,
+      "source_segment": "KB73-P025-L024-025",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L001-001",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L002-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L002-002",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L003-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L003-004",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L005-006",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L005-006",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L007-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L007-007",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L008-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L008-009",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L010-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L010-011",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L012-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L012-012",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L013-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L013-013",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L014-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L014-014",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L015-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L015-015",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L016-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L016-016",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L017-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L017-018",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L019-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L019-019",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L020-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L020-020",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L021-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L021-022",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L023-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L023-024",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L025-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L025-025",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P026-L026-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 26,
+      "source_segment": "KB73-P026-L026-029",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L001-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L001-003",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L004-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L004-004",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L005-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L005-005",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L006-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L006-007",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L008-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L008-010",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L011-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L011-014",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L015-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L015-023",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L024-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L024-024",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L025-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L025-027",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P027-L028-030",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 27,
+      "source_segment": "KB73-P027-L028-030",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P028-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 28,
+      "source_segment": "KB73-P028-L001-001",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P028-L002-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 28,
+      "source_segment": "KB73-P028-L002-003",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P028-L004-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 28,
+      "source_segment": "KB73-P028-L004-004",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P028-L005-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 28,
+      "source_segment": "KB73-P028-L005-015",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P028-L016-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 28,
+      "source_segment": "KB73-P028-L016-025",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P028-L026-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 28,
+      "source_segment": "KB73-P028-L026-029",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P029-L001-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 29,
+      "source_segment": "KB73-P029-L001-008",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P029-L009-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 29,
+      "source_segment": "KB73-P029-L009-009",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P029-L010-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 29,
+      "source_segment": "KB73-P029-L010-013",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P029-L014-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 29,
+      "source_segment": "KB73-P029-L014-028",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P030-L001-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 30,
+      "source_segment": "KB73-P030-L001-015",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P030-L016-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 30,
+      "source_segment": "KB73-P030-L016-028",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L001-002",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L003-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L003-004",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L005-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L005-009",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L010-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L010-010",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L011-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L011-013",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L014-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L014-015",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L016-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L016-016",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L017-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L017-017",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L018-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L018-020",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P031-L021-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 31,
+      "source_segment": "KB73-P031-L021-026",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L001-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L001-004",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L005-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L005-005",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L006-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L006-007",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L008-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L008-008",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L009-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L009-009",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L010-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L010-013",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L014-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L014-017",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L018-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L018-020",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L021-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L021-023",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L024-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L024-024",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L025-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L025-026",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L027-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L027-028",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P032-L029-030",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 32,
+      "source_segment": "KB73-P032-L029-030",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P033-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 33,
+      "source_segment": "KB73-P033-L001-002",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P033-L003-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 33,
+      "source_segment": "KB73-P033-L003-026",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P034-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 34,
+      "source_segment": "KB73-P034-L001-001",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P034-L002-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 34,
+      "source_segment": "KB73-P034-L002-013",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P034-L014-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 34,
+      "source_segment": "KB73-P034-L014-022",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P035-L001-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 35,
+      "source_segment": "KB73-P035-L001-021",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P035-L022-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 35,
+      "source_segment": "KB73-P035-L022-029",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P036-L001-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 36,
+      "source_segment": "KB73-P036-L001-005",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P036-L006-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 36,
+      "source_segment": "KB73-P036-L006-028",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P037-L001-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 37,
+      "source_segment": "KB73-P037-L001-027",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P037-L028-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 37,
+      "source_segment": "KB73-P037-L028-029",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L001-001",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L002-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L002-010",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L011-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L011-013",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L014-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L014-014",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L015-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L015-015",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L016-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L016-017",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L018-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L018-019",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L020-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L020-020",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L021-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L021-021",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L022-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L022-022",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L023-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L023-024",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L025-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L025-026",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L027-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L027-027",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P038-L028-031",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 38,
+      "source_segment": "KB73-P038-L028-031",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L001-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L001-007",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L008-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L008-008",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L009-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L009-011",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L012-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L012-012",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L013-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L013-013",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L014-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L014-014",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L015-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L015-021",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L022-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L022-024",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L025-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L025-025",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L026-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L026-026",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L027-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L027-029",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P039-L030-033",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 39,
+      "source_segment": "KB73-P039-L030-033",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P040-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 40,
+      "source_segment": "KB73-P040-L001-001",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P040-L002-006",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 40,
+      "source_segment": "KB73-P040-L002-006",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P040-L007-030",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 40,
+      "source_segment": "KB73-P040-L007-030",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P041-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 41,
+      "source_segment": "KB73-P041-L001-002",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P041-L003-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 41,
+      "source_segment": "KB73-P041-L003-024",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L001-001",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L002-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L002-003",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L004-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L004-012",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L013-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L013-013",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L014-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L014-015",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L016-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L016-017",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L018-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L018-018",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L019-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L019-019",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L020-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L020-020",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L021-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L021-021",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L022-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L022-023",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L024-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L024-024",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L025-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L025-025",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L026-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L026-026",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L027-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L027-027",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P042-L028-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 42,
+      "source_segment": "KB73-P042-L028-029",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L001-001",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L002-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L002-003",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L004-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L004-005",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L006-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L006-009",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L010-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L010-018",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L019-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L019-019",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L020-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L020-021",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L022-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L022-023",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L024-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L024-024",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L025-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L025-026",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L027-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L027-027",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P043-L028-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 43,
+      "source_segment": "KB73-P043-L028-028",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L001-002",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L003-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L003-003",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L004-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L004-005",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L006-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L006-007",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L008-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L008-008",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L009-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L009-009",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L010-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L010-011",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L012-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L012-013",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L014-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L014-015",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L016-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L016-016",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L017-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L017-017",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L018-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L018-021",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P044-L022-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 44,
+      "source_segment": "KB73-P044-L022-029",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P045-L001-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 45,
+      "source_segment": "KB73-P045-L001-017",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P045-L018-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 45,
+      "source_segment": "KB73-P045-L018-028",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P046-L001-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 46,
+      "source_segment": "KB73-P046-L001-013",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P046-L014-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 46,
+      "source_segment": "KB73-P046-L014-015",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P046-L016-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 46,
+      "source_segment": "KB73-P046-L016-020",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P046-L021-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 46,
+      "source_segment": "KB73-P046-L021-023",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P046-L024-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 46,
+      "source_segment": "KB73-P046-L024-027",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L001-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L001-003",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L004-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L004-011",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L012-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L012-012",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L013-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L013-014",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L015-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L015-015",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L016-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L016-016",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L017-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L017-019",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L020-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L020-020",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L021-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L021-022",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L023-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L023-024",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L025-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L025-026",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L027-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L027-027",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P047-L028-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 47,
+      "source_segment": "KB73-P047-L028-028",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L001-002",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L003-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L003-003",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L004-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L004-009",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L010-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L010-010",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L011-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L011-012",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L013-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L013-013",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L014-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L014-014",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L015-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L015-017",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L018-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L018-018",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L019-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L019-019",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L020-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L020-020",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L021-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L021-021",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P048-L022-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 48,
+      "source_segment": "KB73-P048-L022-028",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P049-L001-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 49,
+      "source_segment": "KB73-P049-L001-013",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P049-L014-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 49,
+      "source_segment": "KB73-P049-L014-028",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P050-L001-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 50,
+      "source_segment": "KB73-P050-L001-004",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P050-L005-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 50,
+      "source_segment": "KB73-P050-L005-009",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P050-L010-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 50,
+      "source_segment": "KB73-P050-L010-017",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P050-L018-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 50,
+      "source_segment": "KB73-P050-L018-024",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "SOURCE:KB73-P051-L001-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 51,
+      "source_segment": "KB73-P051-L001-019",
+      "track_hint": "ELECTIVE_GENERAL"
+    },
+    {
+      "id": "SOURCE:KB73-P051-L020-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 51,
+      "source_segment": "KB73-P051-L020-027",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L001-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L001-008",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L009-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L009-009",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L010-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L010-020",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L021-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L021-021",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L022-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L022-029",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L030-030",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L030-030",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L031-031",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L031-031",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L032-032",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L032-032",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L033-038",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L033-038",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L039-040",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L039-040",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P052-L041-049",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 52,
+      "source_segment": "KB73-P052-L041-049",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L001-001",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L002-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L002-002",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L003-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L003-004",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L005-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L005-005",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L006-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L006-007",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L008-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L008-009",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L010-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L010-010",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L011-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L011-012",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L013-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L013-014",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L015-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L015-016",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L017-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L017-017",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L018-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L018-018",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L019-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L019-020",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L021-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L021-025",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P053-L026-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 53,
+      "source_segment": "KB73-P053-L026-028",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L001-001",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L002-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L002-015",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L016-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L016-016",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L017-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L017-017",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L018-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L018-018",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L019-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L019-019",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L020-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L020-020",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L021-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L021-021",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L022-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L022-022",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L023-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L023-024",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L025-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L025-025",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P054-L026-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 54,
+      "source_segment": "KB73-P054-L026-027",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L001-001",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L002-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L002-004",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L005-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L005-005",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L006-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L006-007",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L008-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L008-008",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L009-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L009-010",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L011-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L011-011",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L012-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L012-012",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L013-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L013-013",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L014-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L014-015",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L016-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L016-016",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L017-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L017-018",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L019-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L019-019",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L020-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L020-020",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L021-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L021-022",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L023-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L023-023",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P055-L024-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 55,
+      "source_segment": "KB73-P055-L024-025",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P056-L001-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 56,
+      "source_segment": "KB73-P056-L001-013",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P056-L014-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 56,
+      "source_segment": "KB73-P056-L014-014",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P056-L015-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 56,
+      "source_segment": "KB73-P056-L015-016",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P056-L017-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 56,
+      "source_segment": "KB73-P056-L017-019",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P056-L020-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 56,
+      "source_segment": "KB73-P056-L020-021",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P056-L022-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 56,
+      "source_segment": "KB73-P056-L022-022",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P056-L023-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 56,
+      "source_segment": "KB73-P056-L023-027",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L001-002",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L003-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L003-005",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L006-006",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L006-006",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L007-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L007-007",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L008-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L008-009",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L010-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L010-010",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L011-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L011-011",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L012-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L012-012",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L013-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L013-014",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L015-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L015-015",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "SOURCE:KB73-P057-L016-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 57,
+      "source_segment": "KB73-P057-L016-023",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L001-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L001-007",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L008-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L008-008",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L009-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L009-014",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L015-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L015-024",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L025-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L025-025",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L026-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L026-027",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L028-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L028-028",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L029-030",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L029-030",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L031-032",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L031-032",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L033-034",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L033-034",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P058-L035-036",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 58,
+      "source_segment": "KB73-P058-L035-036",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L001-001",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L002-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L002-003",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L004-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L004-004",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L005-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L005-008",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L009-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L009-010",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L011-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L011-011",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L012-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L012-012",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L013-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L013-015",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L016-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L016-017",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L018-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L018-019",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P059-L020-028",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 59,
+      "source_segment": "KB73-P059-L020-028",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L001-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L001-003",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L004-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L004-004",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L005-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L005-005",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L006-006",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L006-006",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L007-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L007-007",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L008-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L008-008",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L009-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L009-010",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L011-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L011-012",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L013-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L013-013",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L014-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L014-015",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L016-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L016-016",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L017-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L017-017",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L018-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L018-020",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L021-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L021-021",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L022-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L022-023",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L024-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L024-024",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P060-L025-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 60,
+      "source_segment": "KB73-P060-L025-027",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P061-L001-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 61,
+      "source_segment": "KB73-P061-L001-013",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P061-L014-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 61,
+      "source_segment": "KB73-P061-L014-014",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P061-L015-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 61,
+      "source_segment": "KB73-P061-L015-016",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P061-L017-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 61,
+      "source_segment": "KB73-P061-L017-019",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P061-L020-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 61,
+      "source_segment": "KB73-P061-L020-021",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P061-L022-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 61,
+      "source_segment": "KB73-P061-L022-022",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P061-L023-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 61,
+      "source_segment": "KB73-P061-L023-026",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L001-002",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L003-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L003-004",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L005-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L005-007",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L008-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L008-008",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L009-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L009-009",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L010-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L010-011",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L012-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L012-012",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L013-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L013-013",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L014-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L014-014",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L015-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L015-016",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L017-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L017-017",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L018-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L018-018",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L019-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L019-019",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L020-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L020-021",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L022-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L022-022",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L023-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L023-023",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P062-L024-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 62,
+      "source_segment": "KB73-P062-L024-025",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P063-L001-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 63,
+      "source_segment": "KB73-P063-L001-008",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P063-L009-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 63,
+      "source_segment": "KB73-P063-L009-009",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P063-L010-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 63,
+      "source_segment": "KB73-P063-L010-011",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P063-L012-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 63,
+      "source_segment": "KB73-P063-L012-014",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P063-L015-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 63,
+      "source_segment": "KB73-P063-L015-016",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P063-L017-019",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 63,
+      "source_segment": "KB73-P063-L017-019",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P063-L020-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 63,
+      "source_segment": "KB73-P063-L020-023",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P064-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 64,
+      "source_segment": "KB73-P064-L001-001",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P064-L002-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 64,
+      "source_segment": "KB73-P064-L002-004",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P064-L005-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 64,
+      "source_segment": "KB73-P064-L005-005",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P064-L006-006",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 64,
+      "source_segment": "KB73-P064-L006-006",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P064-L007-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 64,
+      "source_segment": "KB73-P064-L007-007",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P064-L008-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 64,
+      "source_segment": "KB73-P064-L008-009",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "SOURCE:KB73-P064-L010-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 64,
+      "source_segment": "KB73-P064-L010-020",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P064-L021-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 64,
+      "source_segment": "KB73-P064-L021-025",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P065-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 65,
+      "source_segment": "KB73-P065-L001-001",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P065-L002-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 65,
+      "source_segment": "KB73-P065-L002-005",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P065-L006-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 65,
+      "source_segment": "KB73-P065-L006-010",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P065-L011-013",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 65,
+      "source_segment": "KB73-P065-L011-013",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P065-L014-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 65,
+      "source_segment": "KB73-P065-L014-024",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P066-L001-006",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 66,
+      "source_segment": "KB73-P066-L001-006",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P066-L007-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 66,
+      "source_segment": "KB73-P066-L007-007",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P066-L008-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 66,
+      "source_segment": "KB73-P066-L008-011",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P066-L012-015",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 66,
+      "source_segment": "KB73-P066-L012-015",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P066-L016-020",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 66,
+      "source_segment": "KB73-P066-L016-020",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P066-L021-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 66,
+      "source_segment": "KB73-P066-L021-024",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P066-L025-029",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 66,
+      "source_segment": "KB73-P066-L025-029",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P067-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 67,
+      "source_segment": "KB73-P067-L001-001",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P067-L002-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 67,
+      "source_segment": "KB73-P067-L002-002",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P067-L003-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 67,
+      "source_segment": "KB73-P067-L003-007",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P067-L008-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 67,
+      "source_segment": "KB73-P067-L008-011",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P067-L012-027",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 67,
+      "source_segment": "KB73-P067-L012-027",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L001-002",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L001-002",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L003-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L003-003",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L004-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L004-004",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L005-006",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L005-006",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L007-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L007-007",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L008-009",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L008-009",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L010-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L010-010",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L011-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L011-012",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L013-014",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L013-014",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L015-017",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L015-017",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L018-018",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L018-018",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L019-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L019-022",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P068-L023-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 68,
+      "source_segment": "KB73-P068-L023-024",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P069-L001-003",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 69,
+      "source_segment": "KB73-P069-L001-003",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P069-L004-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 69,
+      "source_segment": "KB73-P069-L004-005",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "SOURCE:KB73-P069-L006-016",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 69,
+      "source_segment": "KB73-P069-L006-016",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P069-L017-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 69,
+      "source_segment": "KB73-P069-L017-024",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P070-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 70,
+      "source_segment": "KB73-P070-L001-001",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P070-L002-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 70,
+      "source_segment": "KB73-P070-L002-007",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P070-L008-011",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 70,
+      "source_segment": "KB73-P070-L008-011",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P070-L012-022",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 70,
+      "source_segment": "KB73-P070-L012-022",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P070-L023-026",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 70,
+      "source_segment": "KB73-P070-L023-026",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P071-L001-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 71,
+      "source_segment": "KB73-P071-L001-004",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P071-L005-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 71,
+      "source_segment": "KB73-P071-L005-007",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P071-L008-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 71,
+      "source_segment": "KB73-P071-L008-010",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P071-L011-024",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 71,
+      "source_segment": "KB73-P071-L011-024",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P072-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 72,
+      "source_segment": "KB73-P072-L001-001",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P072-L002-004",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 72,
+      "source_segment": "KB73-P072-L002-004",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P072-L005-007",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 72,
+      "source_segment": "KB73-P072-L005-007",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P072-L008-010",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 72,
+      "source_segment": "KB73-P072-L008-010",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P072-L011-021",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 72,
+      "source_segment": "KB73-P072-L011-021",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P072-L022-025",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 72,
+      "source_segment": "KB73-P072-L022-025",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P073-L001-001",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 73,
+      "source_segment": "KB73-P073-L001-001",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P073-L002-005",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 73,
+      "source_segment": "KB73-P073-L002-005",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P073-L006-008",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 73,
+      "source_segment": "KB73-P073-L006-008",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P073-L009-012",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 73,
+      "source_segment": "KB73-P073-L009-012",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "SOURCE:KB73-P073-L013-023",
+      "kind": "PDFKIT_SOURCE_LINE_PARTITION",
+      "printed_page": 73,
+      "source_segment": "KB73-P073-L013-023",
+      "track_hint": "ELECTIVE_E"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P013-L001-017",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 13,
+      "priority": "HIGH",
+      "source_span_sha256": "81eb58d96c63216762c58ffd4eae16a71f0c01262004c0e74932b6703c044e51",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P014-L001-032",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 14,
+      "priority": "HIGH",
+      "source_span_sha256": "ce9fb625a4943a9e2cf8a67fd11cf9ef79f553dff8a7dbedfd803f1ef3c85c86",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P016-L001-006",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 16,
+      "priority": "HIGH",
+      "source_span_sha256": "8f0607aa52016333d68cccdb33b0baa675cbb9fd1d568fdf7af709b3f9968bbb",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P017-L001-001",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 17,
+      "priority": "MEDIUM",
+      "source_span_sha256": "f2d1427e4890096711baa9596f62b0c06c9b602d6396e2aa6c75e50b3540f742",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "MAP_TO_TEACHING_COMPETENCY_EVIDENCE",
+      "id": "TRIAGE:KB73-P018-L001-015",
+      "kind": "PEDAGOGICAL_GUIDANCE",
+      "printed_page": 18,
+      "priority": "MEDIUM",
+      "source_span_sha256": "3c34db173a80b8dd2d845fc667c57cb6f486a541647b26aab3cbd5dbe1dd935c",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P019-L001-002",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 19,
+      "priority": "MEDIUM",
+      "source_span_sha256": "3aae7dd0731efc2c9d5b422b83d383cae1e3274c0245261c33e7c2186658baca",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P020-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 20,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P021-L001-002",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 21,
+      "priority": "MEDIUM",
+      "source_span_sha256": "bf35740fd1dddd58b68f557582ec4c91d759608f7c660808dff0fcc48ec74faf",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P022-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 22,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P023-L001-001",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 23,
+      "priority": "MEDIUM",
+      "source_span_sha256": "e6f5cac8a5161ce4428342bac7cb61fc1b9a609efd48f13c045458dda02eac42",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "MAP_TO_TEACHING_COMPETENCY_EVIDENCE",
+      "id": "TRIAGE:KB73-P024-L001-018",
+      "kind": "PEDAGOGICAL_GUIDANCE",
+      "printed_page": 24,
+      "priority": "MEDIUM",
+      "source_span_sha256": "dab5b65eaef7bba24a3f67715c7f4deb973f125af07c391c5523691b38366944",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P025-L001-007",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 25,
+      "priority": "HIGH",
+      "source_span_sha256": "327d7059045df8ddc952944b483ddc9b9127be4c3e58467c43121617305151fa",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P026-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 26,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P027-L001-003",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 27,
+      "priority": "HIGH",
+      "source_span_sha256": "ec5492e9f0c029e219d515d5b827688d0e53868cdc84b12f0719f9ba9215ddcb",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P028-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 28,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P029-L001-008",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 29,
+      "priority": "HIGH",
+      "source_span_sha256": "7a9c842e54edbae773d8a721fed417ec570d106299d79b81e24a63db19ee69b0",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "MAP_TO_TEACHING_COMPETENCY_EVIDENCE",
+      "id": "TRIAGE:KB73-P030-L001-015",
+      "kind": "PEDAGOGICAL_GUIDANCE",
+      "printed_page": 30,
+      "priority": "MEDIUM",
+      "source_span_sha256": "d3f9a1709993d7b528f2eaa5ae7a5183e12359626bb7e87a6538d8329b55642f",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P031-L001-002",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 31,
+      "priority": "MEDIUM",
+      "source_span_sha256": "7b5f2fc4558a48bf13cd0b55b80b365329776e66149cb710c4837a0596dbac43",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P032-L001-004",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 32,
+      "priority": "HIGH",
+      "source_span_sha256": "41af261ac629d21f6d98fef2d22aa54cc916a2579e2930ab6ac1587e90fee7eb",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P034-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 34,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "TEACHER_REVIEW_OF_VISUAL_PROCESS",
+      "id": "TRIAGE:KB73-P035-L001-021",
+      "kind": "GRAPHIC_VISUAL_INSPECTED_PENDING_TEACHER",
+      "printed_page": 35,
+      "priority": "HIGH",
+      "source_span_sha256": "9ac0fa26dfe5ffe6908bded742bfbcc7a6c0c618cf77e8a68e582916a646542b",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "MAP_TO_TEACHING_COMPETENCY_EVIDENCE",
+      "id": "TRIAGE:KB73-P036-L001-005",
+      "kind": "PEDAGOGICAL_GUIDANCE",
+      "printed_page": 36,
+      "priority": "MEDIUM",
+      "source_span_sha256": "3834ebc21908b0e2cb0000060e3c963a703867870d063030474c3d5e03fef991",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P037-L001-027",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 37,
+      "priority": "HIGH",
+      "source_span_sha256": "f53513bfaedda4bd8115f151d5ed8e83ccd6716d2d0c2b6b5fb95855aa30287e",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P038-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 38,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P040-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 40,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P041-L001-002",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 41,
+      "priority": "MEDIUM",
+      "source_span_sha256": "f91deaa96fe540b5ddc47645d7da6b483743e6a48c58f121248cda097396b733",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P042-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 42,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P043-L001-001",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 43,
+      "priority": "MEDIUM",
+      "source_span_sha256": "0d76d6f9b69d64b3fae89d5b6ed1c79759513ec5aa37859f473007aa2430b975",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P044-L001-002",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 44,
+      "priority": "MEDIUM",
+      "source_span_sha256": "6031c1b536d47fc94d8a5f63936c035ded6a1a46252544a7f58cd77052384a05",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "MAP_TO_TEACHING_COMPETENCY_EVIDENCE",
+      "id": "TRIAGE:KB73-P045-L001-017",
+      "kind": "PEDAGOGICAL_GUIDANCE",
+      "printed_page": 45,
+      "priority": "MEDIUM",
+      "source_span_sha256": "1af3a1d5a9319232595a898bffec0912a84a74b4d22a4850811d5a3ad73e4972",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P046-L001-013",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 46,
+      "priority": "HIGH",
+      "source_span_sha256": "6f9a3e6bee491954ef0419f387f9d355732ac748fe4c47540039d6d1e2110825",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P048-L001-002",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 48,
+      "priority": "MEDIUM",
+      "source_span_sha256": "63fa331f63266bff7fc47815f9586e0b05069474b02aa13c10ed19e7976ecb0b",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "MAP_TO_TEACHING_COMPETENCY_EVIDENCE",
+      "id": "TRIAGE:KB73-P049-L001-013",
+      "kind": "PEDAGOGICAL_GUIDANCE",
+      "printed_page": 49,
+      "priority": "MEDIUM",
+      "source_span_sha256": "6683c783043ea95f025dc93baf275780fd634db21779688c6f0705d7e5fa83e6",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P050-L001-004",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 50,
+      "priority": "HIGH",
+      "source_span_sha256": "8092646e2e7a3b1d6fd8c26d3bf45e9ba1bb349f3fbe8afb7cf3addfb3763bd2",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "editorial_action": "SEPARATE_TRACK_SCOPE_FROM_KNOWLEDGE",
+      "id": "TRIAGE:KB73-P051-L001-019",
+      "kind": "CURRICULUM_OR_TRACK_OVERVIEW",
+      "printed_page": 51,
+      "priority": "HIGH",
+      "source_span_sha256": "7b834e9289c2f49a6fefda28d813ae672e7d09ec2f8665703f1f5b2151664097",
+      "track_hint": "ELECTIVE_GENERAL"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P051-L020-027",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 51,
+      "priority": "HIGH",
+      "source_span_sha256": "fe9f93a17aaa3e6706647574dabec8c4136b7899e6a477805d937d8baad5b79c",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P052-L001-008",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 52,
+      "priority": "HIGH",
+      "source_span_sha256": "de7d9de6ac1eb4ce978026eb6741acbb8808954322352e2d548499918dd01a5c",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P054-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 54,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P056-L001-013",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 56,
+      "priority": "HIGH",
+      "source_span_sha256": "08ddc65c8e41d9e193daca8a2e76704d9344b82becccb22a401b36cdb8b889e0",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P057-L016-023",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 57,
+      "priority": "HIGH",
+      "source_span_sha256": "462ac6060ebab83ec8b9c7b0987f80ba6aacaf25bd06b899e5e49ac8e8cc0dfa",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P058-L001-007",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 58,
+      "priority": "HIGH",
+      "source_span_sha256": "358c66c51fa549b853dbf650093fdc8c99e16563984f5c201096fde3452eea60",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P060-L001-003",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 60,
+      "priority": "HIGH",
+      "source_span_sha256": "97f678a43b5686ca182d8a127c0bfe7cc757bc16f77820fc2c0b870297de3398",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P061-L001-013",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 61,
+      "priority": "HIGH",
+      "source_span_sha256": "64f0e879f5679d752ab963195d86ec7e5924ef3d83695a0af8efac87fd377f0e",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P062-L001-002",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 62,
+      "priority": "MEDIUM",
+      "source_span_sha256": "f4117e867488bb05fe113377d218dd5130aea828b14873cb028bd8017608bea7",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P063-L001-008",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 63,
+      "priority": "HIGH",
+      "source_span_sha256": "9fac7359ecde957316ba4de484521495e472a5f6945623ba722f3acd7feb160d",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P064-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 64,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P064-L010-020",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 64,
+      "priority": "HIGH",
+      "source_span_sha256": "10b226020d6655bc43289945bbda6242e6d5c57c3d855754649d5db75509ced2",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P065-L001-001",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 65,
+      "priority": "MEDIUM",
+      "source_span_sha256": "a3568a07504c07ad7b51e00f6b1d12f051978bc9f35ed8a3c277f1150e43a91f",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P066-L001-006",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 66,
+      "priority": "HIGH",
+      "source_span_sha256": "6d4710d9275d7132f8a9a21ef3b17940eefddd5af3dabe07511045b1607af9e2",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P067-L001-001",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 67,
+      "priority": "MEDIUM",
+      "source_span_sha256": "7ec1c16ac07890be95ff438123f2f346b651a149a3798a6ab893db1116b8614a",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "editorial_action": "PROPOSE_ATOMS_FROM_COMPLETE_CONTEXT",
+      "id": "TRIAGE:KB73-P068-L001-002",
+      "kind": "SUBSTANTIVE_UNNUMBERED",
+      "printed_page": 68,
+      "priority": "HIGH",
+      "source_span_sha256": "640cb4c464d3ee8b673e99084ed2a60a4395ddaa0076f4a4e94d8b627a37566a",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "editorial_action": "SPLIT_TABLE_HEADING_AND_MATH_CLAUSE",
+      "id": "TRIAGE:KB73-P069-L006-016",
+      "kind": "MIXED_REQUIRES_SPLIT",
+      "printed_page": 69,
+      "priority": "HIGH",
+      "source_span_sha256": "ebdbd3cabd04f945e5478e10ad94bf89989b675885bd07eae17f8d1ecbbcfae8",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P070-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 70,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "editorial_action": "EXCLUDE_FROM_ATOM_CANDIDATES_AFTER_PAGE_REVIEW",
+      "id": "TRIAGE:KB73-P072-L001-001",
+      "kind": "PAGE_FURNITURE",
+      "printed_page": 72,
+      "priority": "LOW",
+      "source_span_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "editorial_action": "MERGE_WITH_NEIGHBORING_CONTEXT_BEFORE_ATOMIZATION",
+      "id": "TRIAGE:KB73-P073-L001-001",
+      "kind": "CROSS_PAGE_CONTINUATION",
+      "printed_page": 73,
+      "priority": "MEDIUM",
+      "source_span_sha256": "2fb016cc8faf0e0b2240dbf502c65f95f14fb715a8885ddbdd4c18db804c3229",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "editorial_action": "REQUIRE_SCHOOL_OFFERING_LIST",
+      "id": "TRIAGE:KB73-P073-L013-023",
+      "kind": "SCHOOL_DEFINED_ELECTIVE",
+      "printed_page": 73,
+      "priority": "BLOCKED_LOCAL_SCOPE",
+      "source_span_sha256": "82bdb7818d127b023b865c6ce891b40103c5cf323001f709f57ebfb77140f1ab",
+      "track_hint": "ELECTIVE_E"
+    },
+    {
+      "author_paraphrase": "必修课程主题及学分概览",
+      "id": "SUBSPAN:KB75-P013-S01",
+      "kind": "COURSE_STRUCTURE",
+      "printed_page": 13,
+      "source_segment_id": "KB73-P013-L001-017",
+      "source_span_sha256": "4a2ef4dd19871cad24050417fbda7a8304cdc6013cf0abc55df9bca78f9d0327",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "主题一的建议课时与学习领域表",
+      "id": "SUBSPAN:KB75-P013-S02",
+      "kind": "COURSE_STRUCTURE",
+      "printed_page": 13,
+      "source_segment_id": "KB73-P013-L001-017",
+      "source_span_sha256": "23db6bfceee06f80804da96fa4a61413481d1710dca48875d0679b2144da6e33",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "其余必修主题课时建议表续篇",
+      "id": "SUBSPAN:KB75-P014-S01",
+      "kind": "COURSE_STRUCTURE",
+      "printed_page": 14,
+      "source_segment_id": "KB73-P014-L001-032",
+      "source_span_sha256": "1b7c7bf581c9025793c387fd43e340ecca837d8333cc463e22f942f7b8a43cea",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "初高中数学的学习方法与能力衔接",
+      "id": "SUBSPAN:KB75-P014-S02",
+      "kind": "SKILL_OR_COMPETENCY",
+      "printed_page": 14,
+      "source_segment_id": "KB73-P014-L001-032",
+      "source_span_sha256": "224e1c7473706adff45f317d84f7410201cdd8cde083f022c68e75c25072fb5e",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "使用逻辑符号准确推理论证和交流",
+      "id": "SUBSPAN:KB75-P016-S01",
+      "kind": "SKILL_OR_COMPETENCY",
+      "printed_page": 16,
+      "source_segment_id": "KB73-P016-L001-006",
+      "source_span_sha256": "1c996cdfdce78078eb51d437a4b2351762ff70d244f08f250f1234cc8c9efa77",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "必要充分及充要条件的区别与联系",
+      "id": "SUBSPAN:KB75-P016-S02",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 16,
+      "source_segment_id": "KB73-P016-L001-006",
+      "source_span_sha256": "ad188e8982a4291db7aabcdd84f9929db9d0c41f647325e5738021f02a2f133a",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "量词命题与否定及论域范围",
+      "id": "SUBSPAN:KB75-P016-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 16,
+      "source_segment_id": "KB73-P016-L001-006",
+      "source_span_sha256": "ad188e8982a4291db7aabcdd84f9929db9d0c41f647325e5738021f02a2f133a",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "函数思维的代数求解与综合素养",
+      "id": "SUBSPAN:KB75-P025-S01",
+      "kind": "SKILL_OR_COMPETENCY",
+      "printed_page": 25,
+      "source_segment_id": "KB73-P025-L001-007",
+      "source_span_sha256": "0bf57944c5151a1214a0c7843a4cf3d253160f668ba5786f4c152372cf6ef3ef",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "必修几何代数及形数结合的主题边界",
+      "id": "SUBSPAN:KB75-P025-S02",
+      "kind": "SCOPE",
+      "printed_page": 25,
+      "source_segment_id": "KB73-P025-L001-007",
+      "source_span_sha256": "10ff30ad66d0c377151e65ba3bec7c2f90d7bbeea0c8ba3d93a8382ae2108e4c",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "复数运算和几何意义的连接",
+      "id": "SUBSPAN:KB75-P027-S01",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 27,
+      "source_segment_id": "KB73-P027-L001-003",
+      "source_span_sha256": "44374aeff9c4681121bf16e2ce7279cf8300d9a8f5167edf8ad153d1915f52a6",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "星号复数三角表示是另立层级的选学范围",
+      "id": "SUBSPAN:KB75-P027-S02",
+      "kind": "ADVANCED_FLAG",
+      "printed_page": 27,
+      "source_segment_id": "KB73-P027-L001-003",
+      "source_span_sha256": "b37fbd231173f397cfaa5ee57a8e3540914e169bf09c5d31bd822503ab98067c",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "平面外直线平行平面判定",
+      "id": "SUBSPAN:KB75-P029-S01",
+      "kind": "EXISTING_DRAFT_LINK",
+      "printed_page": 29,
+      "source_segment_id": "KB73-P029-L001-008",
+      "source_span_sha256": "f82eddde9694f45916a68e9057ab1a93ed016a61cba08b2289b7b5c9e9abd632",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "平面内两相交线判定面面平行",
+      "id": "SUBSPAN:KB75-P029-S02",
+      "kind": "EXISTING_DRAFT_LINK",
+      "printed_page": 29,
+      "source_segment_id": "KB73-P029-L001-008",
+      "source_span_sha256": "c4b602e53bdc7bc40d102a3247ca24b106a20535386395f7555f977a5e49c14a",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "平面内两相交线判定线面垂直",
+      "id": "SUBSPAN:KB75-P029-S03",
+      "kind": "EXISTING_DRAFT_LINK",
+      "printed_page": 29,
+      "source_segment_id": "KB73-P029-L001-008",
+      "source_span_sha256": "45bf71e4dc15d920151378e5265cbbb8509aeafab535273293bda08ae20ec4f3",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "平面包含垂线判定面面垂直",
+      "id": "SUBSPAN:KB75-P029-S04",
+      "kind": "EXISTING_DRAFT_LINK",
+      "printed_page": 29,
+      "source_segment_id": "KB73-P029-L001-008",
+      "source_span_sha256": "4d46c5ca1960a147091e3072872adbbc6bb78a52bfad52f049c3962d6cb5ab69",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "数据获取抽样统计图表与样本估计主题",
+      "id": "SUBSPAN:KB75-P032-S01",
+      "kind": "SCOPE",
+      "printed_page": 32,
+      "source_segment_id": "KB73-P032-L001-004",
+      "source_span_sha256": "5ffb8570e646a77dbd37da5db3ddaac01fa54f40838d31a6d03ac649c453c339",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "抽样推断需要代表性与定义总体",
+      "id": "SUBSPAN:KB75-P032-S02",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 32,
+      "source_segment_id": "KB73-P032-L001-004",
+      "source_span_sha256": "f7c618ae8e5ffda431e4616c9b97471b8f5e2b973fbba0112fe894efeb7ba7b2",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "author_paraphrase": "选必各主题课程时数结构和机动课时",
+      "id": "SUBSPAN:KB75-P037-S01",
+      "kind": "COURSE_STRUCTURE",
+      "printed_page": 37,
+      "source_segment_id": "KB73-P037-L001-027",
+      "source_span_sha256": "c5b63853b79ee989fd32c8a71894ee89f30f74eb745c91a970dff320853627ab",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "author_paraphrase": "数列与导数在函数主题的内容定位",
+      "id": "SUBSPAN:KB75-P037-S02",
+      "kind": "SCOPE",
+      "printed_page": 37,
+      "source_segment_id": "KB73-P037-L001-027",
+      "source_span_sha256": "887e1acbf28098d0f58c13a9e6621dde995f59c3e2ec79d73cbbd4db12288067",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "author_paraphrase": "解析几何建模与方程求解能力",
+      "id": "SUBSPAN:KB75-P046-S01",
+      "kind": "SKILL_OR_COMPETENCY",
+      "printed_page": 46,
+      "source_segment_id": "KB73-P046-L001-013",
+      "source_span_sha256": "cb9497d5c7ed4fff0293b3f78f2405152be26e07de44a03d5e01e106e51a7c32",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "author_paraphrase": "选必计数概率统计的学习范围说明",
+      "id": "SUBSPAN:KB75-P046-S02",
+      "kind": "SCOPE",
+      "printed_page": 46,
+      "source_segment_id": "KB73-P046-L001-013",
+      "source_span_sha256": "f6d3e7fd30f3a1766b94ed2d836675364ee67f8d3fe2e1a9f8319314ff9834f8",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "author_paraphrase": "条件概率离散分布正态分布的前提差异",
+      "id": "SUBSPAN:KB75-P046-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 46,
+      "source_segment_id": "KB73-P046-L001-013",
+      "source_span_sha256": "f57f40f85c9a502cc0ed476e1e10e99663fdc7a8ba9f44885a742991b1bfdf38",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "author_paraphrase": "相关回归及列联分析的适用条件",
+      "id": "SUBSPAN:KB75-P046-S04",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 46,
+      "source_segment_id": "KB73-P046-L001-013",
+      "source_span_sha256": "274b06eb4b2933426d3c4a9ab7eb27210c408f81ee0993754b2dcf28bbfa7d1d",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "author_paraphrase": "概率统计主题综合学业素养目标",
+      "id": "SUBSPAN:KB75-P050-S01",
+      "kind": "SKILL_OR_COMPETENCY",
+      "printed_page": 50,
+      "source_segment_id": "KB73-P050-L001-004",
+      "source_span_sha256": "b152b4269d41c93cc5948ef51a147591ddfc44ced33e61b5a2a746c08bea93d3",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "author_paraphrase": "选择性必修建模和数学探究主题入口",
+      "id": "SUBSPAN:KB75-P050-S02",
+      "kind": "SCOPE",
+      "printed_page": 50,
+      "source_segment_id": "KB73-P050-L001-004",
+      "source_span_sha256": "cab2a50684bf46e350730f0d1ed5c413e7ee9591ecc02bcdbdce30adfd35c23d",
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "author_paraphrase": "选修A专题学分安排不是知识原子",
+      "id": "SUBSPAN:KB75-P051-S01",
+      "kind": "COURSE_STRUCTURE",
+      "printed_page": 51,
+      "source_segment_id": "KB73-P051-L020-027",
+      "source_span_sha256": "f0b4b5d97fc506cdf2a447144eefbf3c74238aa33b69e94843cf34e1875de9d2",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "选修A微积分从极限出发的学习路径",
+      "id": "SUBSPAN:KB75-P051-S02",
+      "kind": "SCOPE",
+      "printed_page": 51,
+      "source_segment_id": "KB73-P051-L020-027",
+      "source_span_sha256": "6841adbeade3a0a5e6db2ac06bc9903b5f4b8c9385b65582968d7f340de5b384",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "选修A微积分直观教学与模型范围说明",
+      "id": "SUBSPAN:KB75-P052-S01",
+      "kind": "SCOPE",
+      "printed_page": 52,
+      "source_segment_id": "KB73-P052-L001-008",
+      "source_span_sha256": "456c19f69408e890b43953ddb6297eb1e1da1cba9b1c3f23cb1134cef91710a9",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "数列极限和函数极限定义对象差别",
+      "id": "SUBSPAN:KB75-P052-S02",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 52,
+      "source_segment_id": "KB73-P052-L001-008",
+      "source_span_sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "连续函数的定义前提和失效情形",
+      "id": "SUBSPAN:KB75-P052-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 52,
+      "source_segment_id": "KB73-P052-L001-008",
+      "source_span_sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "导数微分与定积分的联系和区分",
+      "id": "SUBSPAN:KB75-P052-S04",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 52,
+      "source_segment_id": "KB73-P052-L001-008",
+      "source_span_sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "选修A从连续分布走向统计推断的专题",
+      "id": "SUBSPAN:KB75-P056-S01",
+      "kind": "SCOPE",
+      "printed_page": 56,
+      "source_segment_id": "KB73-P056-L001-013",
+      "source_span_sha256": "37f9fb0164d2362b2f3e49fbe7abe051345bb6aa1aee0dda4270fcccb3d90889",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "连续型随机变量与密度区间概率",
+      "id": "SUBSPAN:KB75-P056-S02",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 56,
+      "source_segment_id": "KB73-P056-L001-013",
+      "source_span_sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "二维随机变量联合分布边缘化",
+      "id": "SUBSPAN:KB75-P056-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 56,
+      "source_segment_id": "KB73-P056-L001-013",
+      "source_span_sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "参数估计检验和多元回归的条件",
+      "id": "SUBSPAN:KB75-P056-S04",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 56,
+      "source_segment_id": "KB73-P056-L001-013",
+      "source_span_sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "author_paraphrase": "选修B专题安排与学分结构",
+      "id": "SUBSPAN:KB75-P057-S01",
+      "kind": "COURSE_STRUCTURE",
+      "printed_page": 57,
+      "source_segment_id": "KB73-P057-L016-023",
+      "source_span_sha256": "a2c5e9fec6ca5ba28a90d6120f26d51bac915161945e5a0a6472e1b9ae205fe6",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "选修B微积分与函数极限联系",
+      "id": "SUBSPAN:KB75-P057-S02",
+      "kind": "SCOPE",
+      "printed_page": 57,
+      "source_segment_id": "KB73-P057-L016-023",
+      "source_span_sha256": "fb1cd2453d9a1df34e7015cd6e2b35d525f35ab918b274a295b20045b6f15231",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "选修B微积分和二元函数教学顺序",
+      "id": "SUBSPAN:KB75-P058-S01",
+      "kind": "SCOPE",
+      "printed_page": 58,
+      "source_segment_id": "KB73-P058-L001-007",
+      "source_span_sha256": "145360b960d961b77f106b27b0a0b35e491e8c17a862bfc3a7e75dda4a59f7df",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "二元函数偏导与固定另一自变量",
+      "id": "SUBSPAN:KB75-P058-S02",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 58,
+      "source_segment_id": "KB73-P058-L001-007",
+      "source_span_sha256": "e6f12d7719a399df309ecbec935c4a83b07ba6aa67e2426062cfc9491dff66f2",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "一元极限导数微分和定积分差别",
+      "id": "SUBSPAN:KB75-P058-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 58,
+      "source_segment_id": "KB73-P058-L001-007",
+      "source_span_sha256": "e6f12d7719a399df309ecbec935c4a83b07ba6aa67e2426062cfc9491dff66f2",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "空间向量代数内积外积条件",
+      "id": "SUBSPAN:KB75-P060-S01",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 60,
+      "source_segment_id": "KB73-P060-L001-003",
+      "source_span_sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "三阶矩阵行列式可逆和退化条件",
+      "id": "SUBSPAN:KB75-P060-S02",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 60,
+      "source_segment_id": "KB73-P060-L001-003",
+      "source_span_sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "三元线性方程组解的唯一性条件",
+      "id": "SUBSPAN:KB75-P060-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 60,
+      "source_segment_id": "KB73-P060-L001-003",
+      "source_span_sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "选修B应用统计拓展与场景选择",
+      "id": "SUBSPAN:KB75-P061-S01",
+      "kind": "SCOPE",
+      "printed_page": 61,
+      "source_segment_id": "KB73-P061-L001-013",
+      "source_span_sha256": "4fdb3d69ad294ae11b3a6a12f44d1e5b6ed6a68da00c6d21e7ee0413d5ab0f99",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "连续分布与二维联合分布模型",
+      "id": "SUBSPAN:KB75-P061-S02",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 61,
+      "source_segment_id": "KB73-P061-L001-013",
+      "source_span_sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "估计检验及二元回归的统计条件",
+      "id": "SUBSPAN:KB75-P061-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 61,
+      "source_segment_id": "KB73-P061-L001-013",
+      "source_span_sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "聚类分析正交设计及误用边界",
+      "id": "SUBSPAN:KB75-P061-S04",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 61,
+      "source_segment_id": "KB73-P061-L001-013",
+      "source_span_sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "选修B现实模型的背景假设与适用域",
+      "id": "SUBSPAN:KB75-P063-S01",
+      "kind": "SCOPE",
+      "printed_page": 63,
+      "source_segment_id": "KB73-P063-L001-008",
+      "source_span_sha256": "245aa6ea5cd830fe89adb12db769a710a77fe9c8b1468e4c1bad0e4c83be8a33",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "线性模型和二次曲线模型区别",
+      "id": "SUBSPAN:KB75-P063-S02",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 63,
+      "source_segment_id": "KB73-P063-L001-008",
+      "source_span_sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "指数增长和三角周期模型区别",
+      "id": "SUBSPAN:KB75-P063-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 63,
+      "source_segment_id": "KB73-P063-L001-008",
+      "source_span_sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "参变数模型的参数区间与轨迹",
+      "id": "SUBSPAN:KB75-P063-S04",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 63,
+      "source_segment_id": "KB73-P063-L001-008",
+      "source_span_sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "author_paraphrase": "选修C专题与学分结构",
+      "id": "SUBSPAN:KB75-P064-S01",
+      "kind": "COURSE_STRUCTURE",
+      "printed_page": 64,
+      "source_segment_id": "KB73-P064-L010-020",
+      "source_span_sha256": "7b4614b3281d08bdba5971f343884379326bb9d63dc7d624a4cbeee11571c980",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "author_paraphrase": "逻辑论证与推理表述的学习能力",
+      "id": "SUBSPAN:KB75-P064-S02",
+      "kind": "SKILL_OR_COMPETENCY",
+      "printed_page": 64,
+      "source_segment_id": "KB73-P064-L010-020",
+      "source_span_sha256": "d855dfb27230b351a42bf76cbd314deb9b11163b2c8a23fe50a5cdf264072791",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "author_paraphrase": "数学定义命题与证明方法的区分",
+      "id": "SUBSPAN:KB75-P064-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 64,
+      "source_segment_id": "KB73-P064-L010-020",
+      "source_span_sha256": "0ad99d77bd0341735a49381f8d968287b0112eb5ebdc3e942a2912ea4ba1c21b",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "author_paraphrase": "经济社会模型使用范围及批判意识",
+      "id": "SUBSPAN:KB75-P066-S01",
+      "kind": "SKILL_OR_COMPETENCY",
+      "printed_page": 66,
+      "source_segment_id": "KB73-P066-L001-006",
+      "source_span_sha256": "260deb739dba4103711acdee2fe00285868304e17cb4e911d585dfefc14c3257",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "author_paraphrase": "经济和社会模型的假设与局限",
+      "id": "SUBSPAN:KB75-P066-S02",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 66,
+      "source_segment_id": "KB73-P066-L001-006",
+      "source_span_sha256": "6df1ec50b0cfb1c0c09168756482c7cec2ec605ee3f37b9c5514e379a92a7609",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "author_paraphrase": "社会调查主题仅为跨页片段待合并",
+      "id": "SUBSPAN:KB75-P068-S01",
+      "kind": "SCOPE",
+      "printed_page": 68,
+      "source_segment_id": "KB73-P068-L001-002",
+      "source_span_sha256": "640cb4c464d3ee8b673e99084ed2a60a4395ddaa0076f4a4e94d8b627a37566a",
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "author_paraphrase": "选修D艺术与运动四专题学分结构",
+      "id": "SUBSPAN:KB75-P069-S01",
+      "kind": "COURSE_STRUCTURE",
+      "printed_page": 69,
+      "source_segment_id": "KB73-P069-L006-016",
+      "source_span_sha256": "2cc687be45e08a9a32a2a7119c8a019ff630dedd6d332dfdbfa641d0ff5eb6ff",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "author_paraphrase": "美学主题的数学刻画边界",
+      "id": "SUBSPAN:KB75-P069-S02",
+      "kind": "SCOPE",
+      "printed_page": 69,
+      "source_segment_id": "KB73-P069-L006-016",
+      "source_span_sha256": "1e5b4fb8755a8f1edf57993f513dfec7858497ba5c872da65560b5da8b612205",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "author_paraphrase": "对称周期简洁和谐作为不同数学视角",
+      "id": "SUBSPAN:KB75-P069-S03",
+      "kind": "KNOWLEDGE_CANDIDATE",
+      "printed_page": 69,
+      "source_segment_id": "KB73-P069-L006-016",
+      "source_span_sha256": "16d936d6dc748e7013f723f9b9da577d1391e37599976ee6872b35e9f28b0afb",
+      "track_hint": "ELECTIVE_D"
+    },
+    {
+      "id": "CANDIDATE:KB75-P016-S02",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "ad188e8982a4291db7aabcdd84f9929db9d0c41f647325e5738021f02a2f133a",
+      "teacher_draft_ids": [
+        "KB75-M01"
+      ],
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "CANDIDATE:KB75-P016-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "ad188e8982a4291db7aabcdd84f9929db9d0c41f647325e5738021f02a2f133a",
+      "teacher_draft_ids": [
+        "KB77-M01"
+      ],
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "CANDIDATE:KB75-P027-S01",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "44374aeff9c4681121bf16e2ce7279cf8300d9a8f5167edf8ad153d1915f52a6",
+      "teacher_draft_ids": [
+        "KB77-M02"
+      ],
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "CANDIDATE:KB75-P032-S02",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "f7c618ae8e5ffda431e4616c9b97471b8f5e2b973fbba0112fe894efeb7ba7b2",
+      "teacher_draft_ids": [
+        "KB75-M02"
+      ],
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "id": "CANDIDATE:KB75-P046-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "f57f40f85c9a502cc0ed476e1e10e99663fdc7a8ba9f44885a742991b1bfdf38",
+      "teacher_draft_ids": [
+        "KB75-M03"
+      ],
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "CANDIDATE:KB75-P046-S04",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "274b06eb4b2933426d3c4a9ab7eb27210c408f81ee0993754b2dcf28bbfa7d1d",
+      "teacher_draft_ids": [
+        "KB77-M03"
+      ],
+      "track_hint": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "id": "CANDIDATE:KB75-P052-S02",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "teacher_draft_ids": [
+        "KB76-M01"
+      ],
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "CANDIDATE:KB75-P052-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "teacher_draft_ids": [
+        "KB76-M02"
+      ],
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "CANDIDATE:KB75-P052-S04",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "6acbc211a78ed1ee2c5036221c8a49cd914715e739b791315a0f9f5a51b30c08",
+      "teacher_draft_ids": [
+        "KB76-M03"
+      ],
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "CANDIDATE:KB75-P056-S02",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "teacher_draft_ids": [
+        "KB75-M04",
+        "KB76-M08"
+      ],
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "CANDIDATE:KB75-P056-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "teacher_draft_ids": [
+        "KB76-M04"
+      ],
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "CANDIDATE:KB75-P056-S04",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "5a3d09189cb5588723e47d169ecc84160cc1433a2e4b6daa0f4588e000e42289",
+      "teacher_draft_ids": [
+        "KB77-M04"
+      ],
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "id": "CANDIDATE:KB75-P058-S02",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "e6f12d7719a399df309ecbec935c4a83b07ba6aa67e2426062cfc9491dff66f2",
+      "teacher_draft_ids": [
+        "KB75-M05"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P058-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "e6f12d7719a399df309ecbec935c4a83b07ba6aa67e2426062cfc9491dff66f2",
+      "teacher_draft_ids": [
+        "KB77-M05"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P060-S01",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "teacher_draft_ids": [
+        "KB76-M06"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P060-S02",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "teacher_draft_ids": [
+        "KB75-M06"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P060-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "b404a57404dc74de0a40ba0552db3d653f709c004b155e78335e0ddb087dbf1f",
+      "teacher_draft_ids": [
+        "KB77-M06"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P061-S02",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "teacher_draft_ids": [
+        "KB77-M07"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P061-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "teacher_draft_ids": [
+        "KB76-M05"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P061-S04",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "6546d23ce038e26ff8f2efb3aa739f8229b5f7afe120e0354ffea67d294b3cc2",
+      "teacher_draft_ids": [
+        "KB77-M08"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P063-S02",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "teacher_draft_ids": [
+        "KB77-M09"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P063-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "teacher_draft_ids": [
+        "KB77-M10"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P063-S04",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "cb89de4cecde2842f95adefacf0ee2057b0d74b8fbea94f413847ebec610213b",
+      "teacher_draft_ids": [
+        "KB76-M07"
+      ],
+      "track_hint": "ELECTIVE_B"
+    },
+    {
+      "id": "CANDIDATE:KB75-P064-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "0ad99d77bd0341735a49381f8d968287b0112eb5ebdc3e942a2912ea4ba1c21b",
+      "teacher_draft_ids": [
+        "KB75-M07"
+      ],
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "CANDIDATE:KB75-P066-S02",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "6df1ec50b0cfb1c0c09168756482c7cec2ec605ee3f37b9c5514e379a92a7609",
+      "teacher_draft_ids": [
+        "KB77-M11"
+      ],
+      "track_hint": "ELECTIVE_C"
+    },
+    {
+      "id": "CANDIDATE:KB75-P069-S03",
+      "kind": "LOCAL_MATH_TOPIC_CANDIDATE",
+      "review_status": "REVIEW_PENDING",
+      "source_sha256": "16d936d6dc748e7013f723f9b9da577d1391e37599976ee6872b35e9f28b0afb",
+      "teacher_draft_ids": [
+        "KB75-M08"
+      ],
+      "track_hint": "ELECTIVE_D"
+    }
+  ],
+  "official_full_curriculum_atom_denominator": null,
+  "officially_certified_atom_count": 0,
+  "schema_version": "kb-batch78-seven-track-provenance-v1",
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "sources_sha256": {
+    "draft": "881874e143175094f6e9e161cc68c694551d6b9879766c22e57c4ab7111a7d3b",
+    "partition": "700f9855f6800b08c25460298edec81fdc543e8cdacb4c36079dace0cc7cfd45",
+    "subspan": "7dbacbaa0a863f76352797adefa7013e11de6d6184603258fd54e221465fb75b",
+    "triage": "17280f7833ba51e703f9c6d7bdc140e8ac34cf7866ae32a2c20781a9f08b9931"
+  },
+  "standard_version": "2017年版2020年修订",
+  "student_publishable_count": 0,
+  "teacher_full_page_reviews": 0,
+  "total_local_math_topic_candidates": 26,
+  "total_page_line_partitions": 484,
+  "total_subspan_editorial_components": 60,
+  "total_unanchored_editorial_triage": 56
+}

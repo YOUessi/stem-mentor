@@ -1,0 +1,737 @@
+{
+  "authoring_sha256": "338b5e986d386194ff9851427cee5e9c2fda49b2bc86d69b89e89511fe49bf96",
+  "batch": 108,
+  "bounded_exact_witnesses": 17,
+  "candidates": [
+    {
+      "editorial_note": "承接上一页教学建议，不建立新的数学知识原子。",
+      "end": 3,
+      "id": "KB108-P018-C01",
+      "invalid_generalization": "将学习形式当作单独数学公式或可通过符号程序证明的命题。",
+      "key": "collaborative_guidance",
+      "kind": "PEDAGOGY",
+      "math_witness": {
+        "finite_exact_positive_passed": false,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": false,
+        "status": "NOT_AUTOMATICALLY_CHECKABLE"
+      },
+      "mathematical_preconditions": "教学组织建议，不等同于学生必需证明的一条数学定理。",
+      "official_atom_id": null,
+      "page": 18,
+      "pdf_page_index": 25,
+      "source_page_pdfkit_sha256": "47e70ed49820891bc79b6a6e288866958e3207f216d234cb59beec676d07bcf1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 2,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "自主学习与合作学习的课堂组织",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "源文为教学建议；此处选取原理作原创教学研究候选。",
+      "end": 5,
+      "id": "KB108-P018-C02",
+      "invalid_generalization": "把除以未知数或负数乘除当成无条件保序的等价步骤。",
+      "key": "equality_inequality",
+      "kind": "METHOD",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "乘以负数时不等号反向，等式两边乘同一实数仍可得等式；约去因子需要非零。",
+      "official_atom_id": null,
+      "page": 18,
+      "pdf_page_index": 25,
+      "source_page_pdfkit_sha256": "47e70ed49820891bc79b6a6e288866958e3207f216d234cb59beec676d07bcf1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 4,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "等式变形与不等式变形条件辨析",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "课标此处讨论教学组织，不把函数图像、方程、不等式合并成一个原子。",
+      "end": 11,
+      "id": "KB108-P018-C03",
+      "invalid_generalization": "图象仅相切横轴时仍误认为必有两个不同的实根。",
+      "key": "quadratic_function",
+      "kind": "METHOD",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "二次项系数不为零，按定义域实数上的函数值与横轴位置判断。",
+      "official_atom_id": null,
+      "page": 18,
+      "pdf_page_index": 25,
+      "source_page_pdfkit_sha256": "47e70ed49820891bc79b6a6e288866958e3207f216d234cb59beec676d07bcf1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 6,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "用二次函数图象解释二次方程与不等式",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "仅供教师培训和教学策略检索，非官方数学知识分母。",
+      "end": 15,
+      "id": "KB108-P018-C04",
+      "invalid_generalization": "将学习习惯措辞改写成有形式证明证书的数学定理。",
+      "key": "pedagogy_guidance",
+      "kind": "PEDAGOGY",
+      "math_witness": {
+        "finite_exact_positive_passed": false,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": false,
+        "status": "NOT_AUTOMATICALLY_CHECKABLE"
+      },
+      "mathematical_preconditions": "本条是综合教学指导，不是独立的数学充要条件。",
+      "official_atom_id": null,
+      "page": 18,
+      "pdf_page_index": 25,
+      "source_page_pdfkit_sha256": "47e70ed49820891bc79b6a6e288866958e3207f216d234cb59beec676d07bcf1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 12,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "数学抽象与逻辑推理学习习惯",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "学业要求包含多种能力动词，教师需拆分后再冻结原子。",
+      "end": 20,
+      "id": "KB108-P018-C05",
+      "invalid_generalization": "把集合元素a与单元素集合{a}等同，或把图示当作普遍证明。",
+      "key": "set_language",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "必须先明确全集及成员条件，有限集合可以列举，图形表达不能凭外观判定成员。",
+      "official_atom_id": null,
+      "page": 18,
+      "pdf_page_index": 25,
+      "source_page_pdfkit_sha256": "47e70ed49820891bc79b6a6e288866958e3207f216d234cb59beec676d07bcf1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 17,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "集合成员、集合关系和三种表征的转换",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "学业要求含表达、论证、交流，不能机械合并为一个概念。",
+      "end": 22,
+      "id": "KB108-P018-C06",
+      "invalid_generalization": "将∀x P(x)的否定错误写作∀x 非P(x)。",
+      "key": "logic_quantifier",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "否定全称命题需要转换为存在量词，否定谓词部分也须相应变更。",
+      "official_atom_id": null,
+      "page": 18,
+      "pdf_page_index": 25,
+      "source_page_pdfkit_sha256": "47e70ed49820891bc79b6a6e288866958e3207f216d234cb59beec676d07bcf1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 21,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "常用逻辑用语的命题表达",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "学业要求含性质和联系，候选与前页主题有交叉。",
+      "end": 24,
+      "id": "KB108-P018-C07",
+      "invalid_generalization": "忽略定义域，直接从图的延长线读取无效根。",
+      "key": "function_view",
+      "kind": "METHOD",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "方程f(x)=0的解必须位于函数定义域；不等式的严格端点须单独核对。",
+      "official_atom_id": null,
+      "page": 18,
+      "pdf_page_index": 25,
+      "source_page_pdfkit_sha256": "47e70ed49820891bc79b6a6e288866958e3207f216d234cb59beec676d07bcf1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 23,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "用函数符号联系方程与不等式",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "必须作为元数据跟踪，而非充当课标数学分母。",
+      "end": 25,
+      "id": "KB108-P018-C08",
+      "invalid_generalization": "把综合素养目标算作可批准数学原子或考试单选题型。",
+      "key": "competency_marker",
+      "kind": "PEDAGOGY",
+      "math_witness": {
+        "finite_exact_positive_passed": false,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": false,
+        "status": "NOT_AUTOMATICALLY_CHECKABLE"
+      },
+      "mathematical_preconditions": "素养目标是课程能力描述，并不是学生掌握一条可独立证明的定理。",
+      "official_atom_id": null,
+      "page": 18,
+      "pdf_page_index": 25,
+      "source_page_pdfkit_sha256": "47e70ed49820891bc79b6a6e288866958e3207f216d234cb59beec676d07bcf1",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 25,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "数学抽象、逻辑推理、运算素养目标",
+      "track_hint": "COMPULSORY"
+    },
+    {
+      "editorial_note": "对应选修A三元线性方程组，原创建议按变换合法性拆分。",
+      "end": 4,
+      "id": "KB108-P055-C09",
+      "invalid_generalization": "把某一行乘零仍视为解集不变的可逆变换。",
+      "key": "gaussian_row",
+      "kind": "THEOREM",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "行交换可逆；倍乘操作的倍数必须非零；加倍数的一行到另一行可逆。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 2,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "高斯消元中可逆初等行变换保持解集",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "非零解条件来自线性代数原理，非原文逐字命题。",
+      "end": 5,
+      "id": "KB108-P055-C10",
+      "invalid_generalization": "误以为齐次系统无解，或把detA=0当作只有零解。",
+      "key": "homogeneous_kernel",
+      "kind": "THEOREM",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "仅讨论实数3×3系数矩阵；零解总是存在，非零解条件另判。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 5,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "三元齐次系统非零解与行列式退化",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "采用Rouché–Capelli判据解释学业内容，教师须审核表述难度。",
+      "end": 7,
+      "id": "KB108-P055-C11",
+      "invalid_generalization": "系数矩阵秩小于增广矩阵秩仍声称存在共同解。",
+      "key": "consistency_rank",
+      "kind": "THEOREM",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "系数矩阵为3×3、增广矩阵为3×4，比较实数域上的矩阵秩。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 6,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "三元非齐次方程组的秩相容性",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "与上一行有解判定相关但不应合并为一项。",
+      "end": 8,
+      "id": "KB108-P055-C12",
+      "invalid_generalization": "把任意向量都加在特解上，而不要求属于齐次核空间。",
+      "key": "affine_solution",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "已知一个特解且相同系数矩阵的齐次解集合；系统若不相容则无特解。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 8,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "非齐次线性方程组的一般解结构",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "只能说明可逆情况下唯一解；奇异系统应转消元或秩判定。",
+      "end": 10,
+      "id": "KB108-P055-C13",
+      "invalid_generalization": "行列式为零仍进行detAi/detA除法，造成未定义运算。",
+      "key": "cramer",
+      "kind": "THEOREM",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "实数3×3方阵detA不等于零，替换列的行列式定义明确。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 9,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "三元克拉默法则的非零行列式前提",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "从空间非零法向量表征转换为平面标量方程，注意符号单位。",
+      "end": 12,
+      "id": "KB108-P055-C14",
+      "invalid_generalization": "把零法向量的0x+0y+0z+1=0当作真实平面。",
+      "key": "plane_eq",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "一般式ax+by+cz+d=0中(a,b,c)不同时为零。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 12,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "空间平面方程的法向量条件",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "要区分参数式与两平面交线的方程表达。",
+      "end": 13,
+      "id": "KB108-P055-C15",
+      "invalid_generalization": "方向向量为零时仍声称可以生成一条直线。",
+      "key": "line_eq",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "直线r(t)=p+tv中方向v必须非零；t遍历全体实数。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 13,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "空间直线的点向式与非零方向",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "原文还提到点线距离，当前仅选取平面情形作为完整候选。",
+      "end": 15,
+      "id": "KB108-P055-C16",
+      "invalid_generalization": "遗漏绝对值产生负距离，或在零法向量时除零。",
+      "key": "point_plane_dist",
+      "kind": "THEOREM",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "平面法向量非零，欧氏空间中的距离为绝对值除以法向量长度。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 14,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "三维点到平面的非负距离公式",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "选择简单坐标轴情形避免暗示已覆盖任意轴。",
+      "end": 18,
+      "id": "KB108-P055-C17",
+      "invalid_generalization": "把非等比伸缩(x,2y)误称为轴反射。",
+      "key": "planar_reflection",
+      "kind": "METHOD",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "以x轴为反射轴，点(x,y)映射(x,-y)，在欧氏距离下保距。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 17,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "平面轴反射是距离保持变换",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "形状看似一样和变换前后点集严格相等的区别必须独立说明。",
+      "end": 19,
+      "id": "KB108-P055-C18",
+      "invalid_generalization": "仅仅变换后形状大小相同，就断言原点集逐点不动。",
+      "key": "symmetry_set",
+      "kind": "CONCEPT",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "先确定平面点集S和选定等距变换T，必须满足T(S)=S。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 19,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "图形对称需按集合不变性判定",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "二维旋转角度和列正交条件应有数学证明，有限检验只作回归。",
+      "end": 20,
+      "id": "KB108-P055-C19",
+      "invalid_generalization": "把任意det=1矩阵都认作正交旋转矩阵。",
+      "key": "rotation_matrix",
+      "kind": "THEOREM",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "实平面、绕原点旋转，矩阵列正交且长度为1。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 20,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "平面旋转矩阵保长度和内积",
+      "track_hint": "ELECTIVE_A"
+    },
+    {
+      "editorial_note": "此处仅处理空间等距变换代表类型，不覆盖变换群全课程。",
+      "end": 22,
+      "id": "KB108-P055-C20",
+      "invalid_generalization": "以一般可逆矩阵取代正交矩阵便直接声称保欧氏距离。",
+      "key": "space_isometry",
+      "kind": "METHOD",
+      "math_witness": {
+        "finite_exact_positive_passed": true,
+        "general_proof_certified": false,
+        "invalid_generalization_rejected": true,
+        "status": "FINITE_EXACT_WITNESS_ONLY"
+      },
+      "mathematical_preconditions": "对三维实向量x作Qx+t且QᵀQ=I，平移向量t固定。",
+      "official_atom_id": null,
+      "page": 55,
+      "pdf_page_index": 62,
+      "source_page_pdfkit_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "start": 21,
+      "student_authoritative_release": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "title": "三维平移与正交变换组成的等距变换",
+      "track_hint": "ELECTIVE_A"
+    }
+  ],
+  "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+  "limitations": [
+    "Page 18 includes pedagogy and achievement descriptors, not 8 independently official atoms.",
+    "Page 55 elective A source is not interchangeable with all project elective expansion tags.",
+    "Finite exact cases are not a universal proof, a certified student step or teacher approval.",
+    "No official seven-track mathematical atom denominator has yet been frozen."
+  ],
+  "line_counts": {
+    "18": 28,
+    "55": 25
+  },
+  "new_editorial_candidates": 20,
+  "official_seven_track_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "pages": [
+    18,
+    55
+  ],
+  "pedagogy_items_not_math_proofs": 3,
+  "scope_kind": "EDITORIAL_SOURCE_CANDIDATES_NOT_OFFICIAL_ATOMS",
+  "source_fingerprint_registry_sha256": "ec26621b7f358f892355d6e6b93622e529df30cfd6067fa1f48d77df48ffc19a",
+  "source_lines_total": 53,
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "structural_partitions": [
+    {
+      "end": 1,
+      "kind": "HEADER",
+      "page": 18,
+      "start": 1
+    },
+    {
+      "end": 3,
+      "kind": "PRIOR_PAGE_TEACHING_CONTINUATION",
+      "page": 18,
+      "start": 2
+    },
+    {
+      "end": 5,
+      "kind": "EQUALITY_INEQUALITY_TEACHING",
+      "page": 18,
+      "start": 4
+    },
+    {
+      "end": 11,
+      "kind": "QUADRATIC_GRAPH_TEACHING",
+      "page": 18,
+      "start": 6
+    },
+    {
+      "end": 15,
+      "kind": "GENERAL_PEDAGOGICAL_GUIDANCE",
+      "page": 18,
+      "start": 12
+    },
+    {
+      "end": 16,
+      "kind": "ACADEMIC_REQUIREMENTS_HEADER",
+      "page": 18,
+      "start": 16
+    },
+    {
+      "end": 20,
+      "kind": "SETS_AND_REPRESENTATIONS_ACHIEVEMENT",
+      "page": 18,
+      "start": 17
+    },
+    {
+      "end": 22,
+      "kind": "LOGIC_LANGUAGE_ACHIEVEMENT",
+      "page": 18,
+      "start": 21
+    },
+    {
+      "end": 24,
+      "kind": "FUNCTION_EQUATION_ACHIEVEMENT",
+      "page": 18,
+      "start": 23
+    },
+    {
+      "end": 25,
+      "kind": "COMPETENCY_GUIDANCE",
+      "page": 18,
+      "start": 25
+    },
+    {
+      "end": 26,
+      "kind": "NEXT_THEME_HEADER",
+      "page": 18,
+      "start": 26
+    },
+    {
+      "end": 27,
+      "kind": "NEXT_PAGE_CONTINUATION",
+      "page": 18,
+      "start": 27
+    },
+    {
+      "end": 28,
+      "kind": "FOOTER",
+      "page": 18,
+      "start": 28
+    },
+    {
+      "end": 1,
+      "kind": "SYSTEMS_HEADER",
+      "page": 55,
+      "start": 1
+    },
+    {
+      "end": 4,
+      "kind": "GAUSSIAN_ELIMINATION",
+      "page": 55,
+      "start": 2
+    },
+    {
+      "end": 5,
+      "kind": "HOMOGENEOUS_SYSTEM",
+      "page": 55,
+      "start": 5
+    },
+    {
+      "end": 7,
+      "kind": "NONHOMOGENEOUS_CONSISTENCY",
+      "page": 55,
+      "start": 6
+    },
+    {
+      "end": 8,
+      "kind": "GENERAL_SOLUTION",
+      "page": 55,
+      "start": 8
+    },
+    {
+      "end": 10,
+      "kind": "CRAMER_RULE",
+      "page": 55,
+      "start": 9
+    },
+    {
+      "end": 11,
+      "kind": "GEOMETRY_HEADER",
+      "page": 55,
+      "start": 11
+    },
+    {
+      "end": 12,
+      "kind": "PLANE_EQUATIONS",
+      "page": 55,
+      "start": 12
+    },
+    {
+      "end": 13,
+      "kind": "LINE_EQUATIONS",
+      "page": 55,
+      "start": 13
+    },
+    {
+      "end": 15,
+      "kind": "GEOMETRIC_RELATIONS_AND_DISTANCE",
+      "page": 55,
+      "start": 14
+    },
+    {
+      "end": 16,
+      "kind": "ISOMETRY_HEADER",
+      "page": 55,
+      "start": 16
+    },
+    {
+      "end": 18,
+      "kind": "PLANE_ISOMETRIES",
+      "page": 55,
+      "start": 17
+    },
+    {
+      "end": 19,
+      "kind": "PLANE_SYMMETRIES",
+      "page": 55,
+      "start": 19
+    },
+    {
+      "end": 20,
+      "kind": "PLANE_ISOMETRY_MATRICES",
+      "page": 55,
+      "start": 20
+    },
+    {
+      "end": 22,
+      "kind": "SPACE_ISOMETRIES",
+      "page": 55,
+      "start": 21
+    },
+    {
+      "end": 23,
+      "kind": "SPACE_SYMMETRIES",
+      "page": 55,
+      "start": 23
+    },
+    {
+      "end": 24,
+      "kind": "SPACE_ISOMETRY_MATRICES",
+      "page": 55,
+      "start": 24
+    },
+    {
+      "end": 25,
+      "kind": "FOOTER",
+      "page": 55,
+      "start": 25
+    }
+  ],
+  "student_authoritative_releases": 0,
+  "teacher_approvals": 0,
+  "teacher_full_page_atomizations": 0,
+  "track_hint_counts": {
+    "COMPULSORY": 8,
+    "ELECTIVE_A": 12,
+    "ELECTIVE_B": 0,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "SELECTIVE_COMPULSORY": 0
+  }
+}

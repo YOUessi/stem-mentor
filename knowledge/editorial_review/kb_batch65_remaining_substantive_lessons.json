@@ -1,0 +1,1091 @@
+[
+  {
+    "lesson_id": "KB65-DEEP-01",
+    "loc": [
+      16,
+      14
+    ],
+    "title": "全称与存在量词的论域、真值和见证",
+    "kind": "CONCEPT",
+    "statement": "在给定非空论域D及可判定谓词P下，∀x∈D P(x)断言每个元素均满足P；∃x∈D P(x)断言至少存在一个满足P的元素。",
+    "assumptions": [
+      "论域D被明确指定",
+      "谓词对每个论域元素具有确定真假值"
+    ],
+    "notation": [
+      "∀x∈D",
+      "∃x∈D"
+    ],
+    "prerequisites": [
+      "命题及真假",
+      "集合元素关系"
+    ],
+    "reasoning": [
+      [
+        "首先固定论域D，否则相同P(x)可能产生不同真值。",
+        "量词是带论域的命题构造。"
+      ],
+      [
+        "全称命题为真需要所有论域元素通过条件，反驳只需一个不满足的见证。",
+        "全称语义和反例定义。"
+      ],
+      [
+        "存在命题为真只需一个满足条件的见证，反驳则需排除所有可能。",
+        "存在量词的满足性语义。"
+      ]
+    ],
+    "examples": [
+      [
+        "D={-1,0,1}，判断∀x∈D,x²≤1。",
+        "真。",
+        "三项平方分别为1、0、1。"
+      ],
+      [
+        "D={-1,0,1}，判断∃x∈D,x²=0。",
+        "真，取x=0。",
+        "直接给出见证即可。"
+      ]
+    ],
+    "counterexample": "在实数域说∀x,x²≥x为假（取x=1/2），但在自然数域为真；不能忽略论域。",
+    "wrong": "见到一个满足条件的例子便断言全称命题成立。",
+    "why_wrong": "单个正例只能见证存在命题，不能覆盖所有元素。",
+    "hints": [
+      "先写清变量在哪个集合取值。",
+      "全称用枚举或通用证明，存在可找一个见证。",
+      "尝试对全称命题寻找反例，避免正例冒充证明。"
+    ],
+    "near": "判断对D={1,2,3}是否∀x,x²≥x。",
+    "far": "比较全体整数与全体实数上“x²≥x”的真值差异。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-02",
+    "loc": [
+      16,
+      16
+    ],
+    "title": "否定量词命题时量词交换与谓词取反",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "对固定论域D，¬(∀x∈D P(x)) 等价于 ∃x∈D ¬P(x)；¬(∃x∈D P(x)) 等价于 ∀x∈D ¬P(x)。",
+    "assumptions": [
+      "论域在否定前后保持同一集合",
+      "P(x)对论域内每个对象有确定真假"
+    ],
+    "notation": [
+      "¬∀=∃¬",
+      "¬∃=∀¬"
+    ],
+    "prerequisites": [
+      "全称与存在语义",
+      "命题否定与逻辑等价"
+    ],
+    "reasoning": [
+      [
+        "若非每个元素都满足P，必存在至少一个元素不满足P。",
+        "全称断言的反例语义。"
+      ],
+      [
+        "反过来若找到不满足P的元素，则“每个元素满足P”不可能为真。",
+        "存在见证反驳全称。"
+      ],
+      [
+        "若不存在任何元素满足P，则每个元素均不满足P，反向同理。",
+        "存在命题假和全称否定为真等价。"
+      ]
+    ],
+    "examples": [
+      [
+        "否定“∀x∈R,x²≥0”。",
+        "∃x∈R,x²<0。",
+        "量词改为存在，且≥的否定是<。"
+      ],
+      [
+        "否定“∃n∈Z,n²=2”。",
+        "∀n∈Z,n²≠2。",
+        "论域仍为整数且等式取反。"
+      ]
+    ],
+    "counterexample": "“并非所有实数大于0”不等于“所有实数都不大于0”；0和负数可作为反例。",
+    "wrong": "只将谓词P改为¬P而保留原来量词。",
+    "why_wrong": "¬∀P实际表达存在反例，不等于∀¬P。",
+    "hints": [
+      "先在原命题中标出量词和范围。",
+      "全称与存在互换且保持论域。",
+      "逐个否定不等式或关系谓词，检查是否遗漏等号。"
+    ],
+    "near": "否定“存在正整数能整除6”。",
+    "far": "形式化否定双变量陈述“每个学生都至少选一门课程”。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-03",
+    "loc": [
+      16,
+      24
+    ],
+    "title": "不等式变形的乘数符号与不可逆除法",
+    "kind": "METHOD",
+    "statement": "给实数a<b，同乘正数c仍有ac<bc，同乘负数c必须反向ac>bc；除以变量前必须确认变量非零及符号。",
+    "assumptions": [
+      "a,b,c属于实数",
+      "实施同乘或同除前证明c的符号"
+    ],
+    "notation": [
+      "a<b",
+      "c>0",
+      "c<0"
+    ],
+    "prerequisites": [
+      "实数大小关系",
+      "乘法与除法"
+    ],
+    "reasoning": [
+      [
+        "由b-a>0且c>0得到c(b-a)>0，所以bc-ac>0。",
+        "正数乘积为正，维持不等号。"
+      ],
+      [
+        "若c<0，则c(b-a)<0，故bc-ac<0，从而ac>bc。",
+        "负数与正数乘积为负。"
+      ],
+      [
+        "若c=0，则两边积都为0，原严格不等关系丢失；未知符号需分情况。",
+        "非零及符号是等价变形前提。"
+      ]
+    ],
+    "examples": [
+      [
+        "已知2<5，同乘-3后比较。",
+        "-6>-15。",
+        "乘数为负，方向反转。"
+      ],
+      [
+        "求解x(x-1)>0时能否直接除以x。",
+        "不可，先区分x>0、x<0及x=0。",
+        "除以x会丢掉零点并影响方向。"
+      ]
+    ],
+    "counterexample": "从x²>x直接“除以x”推x>1遗漏x<0情形，例如x=-1也满足原式。",
+    "wrong": "两侧除以未知符号的x仍保留不等号方向。",
+    "why_wrong": "未知符号为负会反向，而该变量为零时除法无定义；必须先分情况讨论。",
+    "hints": [
+      "先找出本步同乘或同除的表达式。",
+      "问自己是否证明它非零且正负已知。",
+      "若符号不明，按正、负、零三类讨论。"
+    ],
+    "near": "比较2a<3a在a不同符号时的含义。",
+    "far": "解释参数变化时“单调比较”为什么不能随意同除一个可能为零的估计系数。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-04",
+    "loc": [
+      17,
+      9
+    ],
+    "title": "一元二次方程判别式的非退化假设",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "当a,b,c为实数且a≠0时，方程ax²+bx+c=0的实根个数由Δ=b²-4ac决定：Δ>0两不同实根，Δ=0一重实根，Δ<0无实根。",
+    "assumptions": [
+      "a,b,c为实数且a≠0",
+      "只讨论实数范围内的方程解"
+    ],
+    "notation": [
+      "Δ=b²-4ac",
+      "x=(-b±√Δ)/(2a)"
+    ],
+    "prerequisites": [
+      "平方配方",
+      "实数平方非负"
+    ],
+    "reasoning": [
+      [
+        "原式乘以4a并整理得(2ax+b)²=b²-4ac。",
+        "利用a≠0的代数恒等变形。"
+      ],
+      [
+        "Δ<0时实数平方不可能等于负值，故无实根。",
+        "任何实数平方都非负。"
+      ],
+      [
+        "Δ≥0时2ax+b=±√Δ，a≠0允许除以2a；Δ为零时两式重合。",
+        "平方根的实数存在性与分母条件。"
+      ]
+    ],
+    "examples": [
+      [
+        "2x²-3x+1=0有几个实根。",
+        "Δ=1>0，两根x=1和1/2。",
+        "b²-4ac=9-8=1。"
+      ],
+      [
+        "x²+2x+1=0有几个不同实根。",
+        "Δ=0，唯一实根x=-1。",
+        "配方为(x+1)²=0。"
+      ]
+    ],
+    "counterexample": "a=0时方程退化为一次或常数方程；比如0x²+2x-2=0不可套2a分母公式。",
+    "wrong": "只算Δ就宣称二次公式适用，忘记先检查a≠0。",
+    "why_wrong": "a=0时判别式与求根公式不再有相同含义。",
+    "hints": [
+      "先检查二次项系数是否真的不为零。",
+      "计算Δ后分别判断正、零、负。",
+      "若需写根，复核2a≠0和平方根有实数意义。"
+    ],
+    "near": "讨论参数m使mx²+2x+1=0有几个实根。",
+    "far": "将斜抛物线与切触x轴的极限情形联系起来，区分退化与重根。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-05",
+    "loc": [
+      17,
+      12
+    ],
+    "title": "二次不等式符号表与严格边界",
+    "kind": "METHOD",
+    "statement": "对实系数a≠0的二次式f(x)=ax²+bx+c，若有实根r₁≤r₂，则f(x)=a(x-r₁)(x-r₂)；区间符号由a与根的位置决定，严格不等式排除根。",
+    "assumptions": [
+      "a,b,c为实数且a≠0",
+      "按判别式区分双根、重根或无实根"
+    ],
+    "notation": [
+      "f(x)=a(x-r₁)(x-r₂)",
+      "f(x)>0"
+    ],
+    "prerequisites": [
+      "因式分解与二次判别式",
+      "乘积符号"
+    ],
+    "reasoning": [
+      [
+        "当Δ>0且r₁<r₂，x位于两根之外时两因子同号，中间时异号。",
+        "有序实数区间乘积符号。"
+      ],
+      [
+        "乘上a>0保持上述正负，a<0反转全部符号。",
+        "乘数符号规则。"
+      ],
+      [
+        "当Δ=0时f(x)=a(x-r)²，除根以外符号由a决定；严格关系必须排除r。",
+        "非负平方和等号边界。"
+      ]
+    ],
+    "examples": [
+      [
+        "解(x-1)(x-3)<0。",
+        "1<x<3。",
+        "两因子仅在两根之间异号。"
+      ],
+      [
+        "解-(x-2)²≥0。",
+        "x=2。",
+        "平方非负，其相反数仅在平方为零时不小于零。"
+      ]
+    ],
+    "counterexample": "将x²+1<0误判为“两根之间”，但Δ=-4，没有实根。",
+    "wrong": "任何二次式都可以实数分解成两个一次因子。",
+    "why_wrong": "当Δ<0时不存在实根，不能构造虚假的实数根区间。",
+    "hints": [
+      "先计算判别式和开口方向。",
+      "存在实根时画出根及区间符号。",
+      "最后单独检查等号是否允许，包括重根。"
+    ],
+    "near": "解(x+1)²>0并写明排除点。",
+    "far": "参数m影响x²+mx+1≥0的全实数成立条件。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-06",
+    "loc": [
+      19,
+      21
+    ],
+    "title": "单调函数定义的区间约束与端点",
+    "kind": "CONCEPT",
+    "statement": "函数f在其定义域内区间I上严格递增是指任意x₁,x₂∈I且x₁<x₂均有f(x₁)<f(x₂)；单调区间需要保持为函数定义域的一段区间。",
+    "assumptions": [
+      "I为定义域的非空区间且含至少两个不同点",
+      "对比较的两点f均有定义"
+    ],
+    "notation": [
+      "x₁<x₂⇒f(x₁)<f(x₂)",
+      "I⊆Dom(f)"
+    ],
+    "prerequisites": [
+      "函数定义域",
+      "量词和大小比较"
+    ],
+    "reasoning": [
+      [
+        "先确定完整定义域，再选择处于定义域内的候选区间I。",
+        "比较性质必须在有定义的自变量上进行。"
+      ],
+      [
+        "对任意有序两点检查函数值的严格顺序才可断言递增。",
+        "严格单调定义带全称量词。"
+      ],
+      [
+        "若定义域断开，不能将两个不相连区间当成同一个区间直接套用导数符号。",
+        "区间连通结构是导数判单调常用假设。"
+      ]
+    ],
+    "examples": [
+      [
+        "f(x)=x²在[0,3]上的单调性。",
+        "严格递增。",
+        "若0≤a<b，则b²-a²=(b-a)(a+b)>0。"
+      ],
+      [
+        "f(x)=1/x在(-∞,0)上的单调性。",
+        "严格递减。",
+        "若a<b<0，则1/a-1/b=(b-a)/(ab)>0。"
+      ]
+    ],
+    "counterexample": "f(x)=1/x在R\\{0}整体不严格递减：取x₁=-1<x₂=1却有f(x₁)=-1<1=f(x₂)。",
+    "wrong": "把(-∞,0)与(0,∞)各自递减合并写“定义域上递减”。",
+    "why_wrong": "跨0的两点不满足递减比较，且定义域不连通。",
+    "hints": [
+      "明确函数定义域和要判断的区间。",
+      "任取区间内x₁<x₂而非只验几个点。",
+      "检查区间是否跨越断点，以及端点是否有定义。"
+    ],
+    "near": "判断f(x)=x³在全实数上的单调性。",
+    "far": "讨论有竖直渐近线的有理函数为何不能直接拼接两段单调性。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-07",
+    "loc": [
+      20,
+      13
+    ],
+    "title": "有理数指数幂的实数定义域与零底数",
+    "kind": "CONCEPT",
+    "statement": "约定最简分数m/n（n>0）时，x^(m/n)的实值定义需要依据实根存在性和负指数分母，不能无条件对任意负底数或零底数套用所有幂运算法则。",
+    "assumptions": [
+      "指数m/n先约成最简分数且n>0",
+      "在实数中讨论根；负指数必须保证结果非零"
+    ],
+    "notation": [
+      "x^(m/n)",
+      "n次实根"
+    ],
+    "prerequisites": [
+      "整数幂",
+      "奇偶次方根"
+    ],
+    "reasoning": [
+      [
+        "若n为偶数，x^(1/n)的实数定义需x≥0；n为奇数时允许负x。",
+        "偶次方非负，奇次方在实数上有唯一实根。"
+      ],
+      [
+        "若m<0，原式涉及相应正指数幂的倒数，必须排除x=0。",
+        "零不能作分母。"
+      ],
+      [
+        "将指数约为最简分数能避免同一有理数不同写法产生的伪域差异。",
+        "有理指数本身是约分后的数，而非原始分数记号。"
+      ]
+    ],
+    "examples": [
+      [
+        "在实数中计算(-8)^(1/3)。",
+        "-2。",
+        "(-2)³=-8，奇次根可取负。"
+      ],
+      [
+        "考察0^(-2/3)是否有定义。",
+        "无定义。",
+        "负指数要求除以0^(2/3)=0。"
+      ]
+    ],
+    "counterexample": "(-4)^(1/2)不存在实值；不能把它当作实数2。",
+    "wrong": "把根式内的负数先取绝对值，宣称偶次根可取任意负底数。",
+    "why_wrong": "绝对值会改写函数，不能等同原来的实数根定义。",
+    "hints": [
+      "将有理指数约到最简分数。",
+      "看分母奇偶以确定负底数是否允许。",
+      "当分子为负时另验底数非零。"
+    ],
+    "near": "确定x^(-1/2)在实数域的定义域。",
+    "far": "解释模型中分数指数幂在边界零输入处为何可能失效。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-08",
+    "loc": [
+      20,
+      34
+    ],
+    "title": "对数函数底数分段与单调方向",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "对a>0且a≠1的固定实数底数，logₐx定义于x>0；当a>1时在正实数上严格递增，0<a<1时严格递减。",
+    "assumptions": [
+      "a>0且a≠1",
+      "x严格为正，指数与对数互为反函数"
+    ],
+    "notation": [
+      "y=logₐx",
+      "x=a^y"
+    ],
+    "prerequisites": [
+      "指数函数单调性",
+      "反函数定义"
+    ],
+    "reasoning": [
+      [
+        "a>1时a^t严格递增，逆映射同样保持两个不同输入的大小顺序。",
+        "严格递增双射的逆映射仍递增。"
+      ],
+      [
+        "0<a<1时a^t严格递减；若x₁<x₂，则对应指数y₁>y₂。",
+        "严格递减逆映射仍递减。"
+      ],
+      [
+        "两种情况下a^t值域为(0,∞)，所以对数真数不能为零或负。",
+        "对数是指数函数的实反函数。"
+      ]
+    ],
+    "examples": [
+      [
+        "比较log₂3与log₂5。",
+        "log₂3<log₂5。",
+        "底数2>1，真数保序。"
+      ],
+      [
+        "比较log_(1/2)2与log_(1/2)4。",
+        "log_(1/2)2>log_(1/2)4。",
+        "底数1/2属于(0,1)，真数逆序。"
+      ]
+    ],
+    "counterexample": "不能写log₁4，因为底数1被排除；也不能写log₂(-1)作为实数。",
+    "wrong": "认为任何对数都是增函数，真数较大对数就较大。",
+    "why_wrong": "当底数处于(0,1)时单调方向相反。",
+    "hints": [
+      "先检查底数是否正且不等于1。",
+      "确认两个真数都大于0且定义域合法。",
+      "用底数所在区间决定比较方向。"
+    ],
+    "near": "不求数值比较log₃7与log₃8。",
+    "far": "说明信息熵中的负对数表达式在概率靠近零时为何具有边界问题。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-09",
+    "loc": [
+      22,
+      12
+    ],
+    "title": "同角平方恒等式与除以三角函数的前提",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "对任意实角θ，有sin²θ+cos²θ=1；但从恒等式化为tan²θ+1=sec²θ时只能在cosθ≠0的角度范围内成立。",
+    "assumptions": [
+      "θ为实数角",
+      "进行除以cos²θ前已证明cosθ≠0"
+    ],
+    "notation": [
+      "sin²θ+cos²θ=1",
+      "tanθ=sinθ/cosθ"
+    ],
+    "prerequisites": [
+      "单位圆坐标",
+      "分式非零分母"
+    ],
+    "reasoning": [
+      [
+        "单位圆上点(cosθ,sinθ)满足横纵坐标平方和为1。",
+        "单位圆方程x²+y²=1。"
+      ],
+      [
+        "若cosθ≠0，整式两端同除以cos²θ得到1+sin²θ/cos²θ=1/cos²θ。",
+        "两边同除非零量保持等式。"
+      ],
+      [
+        "以tanθ替换sinθ/cosθ后得到1+tan²θ=1/cos²θ。",
+        "正切函数在给定定义域内的定义。"
+      ]
+    ],
+    "examples": [
+      [
+        "θ=π/4时检验平方恒等式。",
+        "1/2+1/2=1。",
+        "两项三角函数值均为√2/2。"
+      ],
+      [
+        "θ=π/2时可否写tanθ。",
+        "不可，cosθ=0。",
+        "正切分母是cosθ=0，所以此角度不允许定义正切。"
+      ]
+    ],
+    "counterexample": "由sin²θ=1/4断言sinθ=1/2忽略sinθ=-1/2；平方丢失符号。",
+    "wrong": "平方后直接开根号只保留正号，并把tan恒等式推广到cosθ=0。",
+    "why_wrong": "开平方产生±；除以零无意义，两个边界问题独立。",
+    "hints": [
+      "优先写单位圆平方恒等式。",
+      "检查是否要除以正弦或余弦。",
+      "开平方时分清符号和象限信息。"
+    ],
+    "near": "用cos²θ=3/4判断cosθ的全部候选值。",
+    "far": "说明电路周期信号中cosθ过零点时比值tanθ为何不是连续可观测量。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-10",
+    "loc": [
+      22,
+      27
+    ],
+    "title": "连续函数零点定理与二分法的保证范围",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "若f在闭区间[a,b]连续且f(a)f(b)<0，则存在c∈(a,b)使f(c)=0；二分法可逐步缩小变号区间，但并不由此保证零点唯一。",
+    "assumptions": [
+      "a<b且f在[a,b]连续",
+      "端点函数值严格异号，算法中保存变号区间"
+    ],
+    "notation": [
+      "f(a)f(b)<0",
+      "[aₙ,bₙ]"
+    ],
+    "prerequisites": [
+      "连续函数",
+      "实数区间与符号"
+    ],
+    "reasoning": [
+      [
+        "连续函数在两端取异号值时，介值性质保证其间至少有一处函数值为0。",
+        "连续函数介值定理。"
+      ],
+      [
+        "取中点m，若f(m)=0便终止；否则在异号的一半继续搜索。",
+        "端点符号异号至少在一个子区间保持。"
+      ],
+      [
+        "第n次完整折半后区间长度为(b-a)/2ⁿ，能控制位置误差；唯一性需要额外单调等条件。",
+        "几何级数缩短与存在、唯一性区别。"
+      ]
+    ],
+    "examples": [
+      [
+        "f(x)=x²-2，区间[1,2]能否二分。",
+        "能。",
+        "f(1)=-1，f(2)=2，连续且异号。"
+      ],
+      [
+        "f(x)=x³-x在[-2,2]能否保证唯一零点。",
+        "不能。",
+        "区间内-1、0、1均为根，仍满足两端异号。"
+      ]
+    ],
+    "counterexample": "f(x)=1/x在[-1,1]虽端点异号，却在0不连续且没有任何零点。",
+    "wrong": "只看到端点异号就保证存在零点，忽略连续性。",
+    "why_wrong": "变号和连续性是联合前提，缺一个都不能套定理。",
+    "hints": [
+      "先核查函数在整个闭区间连续。",
+      "再计算两端符号并验证严格异号。",
+      "区分“至少一个零点”和“恰有一个零点”。"
+    ],
+    "near": "用二分法给√3定位到长度≤1/8的区间。",
+    "far": "讨论数值求根中多根及不连续函数时二分法的适用性。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-11",
+    "loc": [
+      26,
+      13
+    ],
+    "title": "非共线向量基底与系数唯一表示",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "平面上两个非零向量u,v不共线时，每个平面向量w都能唯一写为w=αu+βv；若u,v共线，二维表示一般不唯一或不能表示全部向量。",
+    "assumptions": [
+      "u,v为同一二维实向量空间内不共线向量",
+      "讨论线性组合系数属于实数"
+    ],
+    "notation": [
+      "det(u,v)≠0",
+      "w=αu+βv"
+    ],
+    "prerequisites": [
+      "向量坐标",
+      "二元线性方程组"
+    ],
+    "reasoning": [
+      [
+        "把u,v作为2×2矩阵的列，非共线等价于行列式不为零。",
+        "二维向量的线性独立判据。"
+      ],
+      [
+        "系数方程矩阵可逆，因此对任意w有唯一(α,β)。",
+        "可逆线性映射的存在唯一性。"
+      ],
+      [
+        "若两组系数对应同一w，相减得零向量线性组合；线性独立迫使各系数差为零。",
+        "线性独立定义给出唯一性。"
+      ]
+    ],
+    "examples": [
+      [
+        "u=(1,0),v=(0,1),w=(2,-3)求系数。",
+        "α=2，β=-3。",
+        "标准基向量逐坐标比较。"
+      ],
+      [
+        "u=(1,1),v=(1,-1),w=(4,0)。",
+        "α=2，β=2。",
+        "联立α+β=4与α-β=0。"
+      ]
+    ],
+    "counterexample": "u=(1,0),v=(2,0)不能表示w=(0,1)，因为所有线性组合纵坐标都为0。",
+    "wrong": "认为只要有两个非零向量就一定构成平面基底。",
+    "why_wrong": "两个向量可能共线，张成的只有一条直线。",
+    "hints": [
+      "先将两个向量排成列矩阵。",
+      "计算行列式或检查是否共线。",
+      "只有非零行列式才可以保证任意向量的唯一展开。"
+    ],
+    "near": "判断(1,2)与(3,6)能否做基底。",
+    "far": "结合坐标测量解释为什么几乎共线的基向量会导致数值求解不稳定。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-12",
+    "loc": [
+      26,
+      20
+    ],
+    "title": "余弦定理边长三角形条件及SSA歧义",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "在满足三角形三边条件的非退化三角形ABC中，若a,b,c分别对角A,B,C，则c²=a²+b²-2ab cos C；给定两边及一非夹角（SSA）可能存在两个不同三角形。",
+    "assumptions": [
+      "a,b,c>0且满足严格三角不等式",
+      "A,B,C为对应的内角，C为a、b夹角"
+    ],
+    "notation": [
+      "c²=a²+b²-2ab cos C",
+      "SSA"
+    ],
+    "prerequisites": [
+      "点积与向量长度",
+      "正弦定理及正弦多值"
+    ],
+    "reasoning": [
+      [
+        "选夹角C两边的向量p,q，第三边长度为|p-q|。",
+        "三角形边的向量模型。"
+      ],
+      [
+        "|p-q|²=|p|²+|q|²-2p·q且p·q=ab cos C，得到余弦式。",
+        "向量数量积展开。"
+      ],
+      [
+        "若只知SSA，sin A值不能单独确定A：A与π-A可能有相同正弦且与其他角约束同时相容。",
+        "正弦函数在(0,π)并非单射。"
+      ]
+    ],
+    "examples": [
+      [
+        "a=3,b=4,C=π/2，求c。",
+        "c=5。",
+        "夹角余弦为0，c²=9+16。"
+      ],
+      [
+        "若A=30°、a=2、b=3，SSA能否唯一确定三角形。",
+        "不能，有两组可能的B。",
+        "sin B=b sin A/a=3/4，B可为arcsin(3/4)或180°-该角，且两组A+B<180°。"
+      ]
+    ],
+    "counterexample": "边长1、2、4不满足严格三角不等式，不能视为真实三角形套定理。",
+    "wrong": "已知SSA便直接把反正弦主值当作唯一角B。",
+    "why_wrong": "在(0,180°)正弦相同可能对应补角，需要检测角和限制。",
+    "hints": [
+      "先判断边长或角度能否形成非退化三角形。",
+      "区分已知夹角SAS与非夹角SSA。",
+      "对SSA检查反正弦的补角候选是否仍满足内角和。"
+    ],
+    "near": "已知边5、7且夹角60°，求第三边。",
+    "far": "解释机器人测距中两个距离与一个方向角为什么有时存在镜像几何解。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-13",
+    "loc": [
+      27,
+      8
+    ],
+    "title": "复数除法的共轭化分母与零除数",
+    "kind": "METHOD",
+    "statement": "对z=a+bi，w=c+di且w≠0，有z/w=[(ac+bd)+(bc-ad)i]/(c²+d²)；仅当c²+d²>0时这个表达式定义良好。",
+    "assumptions": [
+      "a,b,c,d为实数",
+      "除数w=c+di不为0"
+    ],
+    "notation": [
+      "i²=-1",
+      "|w|²=c²+d²"
+    ],
+    "prerequisites": [
+      "复数乘法",
+      "平方和非负"
+    ],
+    "reasoning": [
+      [
+        "分子分母同乘w的共轭c-di，保持比值不变。",
+        "乘上非零复数的1=conj(w)/conj(w)。"
+      ],
+      [
+        "分母(c+di)(c-di)=c²+d²，非零复数的模平方严格为正。",
+        "i²=-1与平方和非负。"
+      ],
+      [
+        "分子展开(ac+bd)+(bc-ad)i，再除以实正分母。",
+        "分配律和复数标准形式。"
+      ]
+    ],
+    "examples": [
+      [
+        "计算(1+i)/(1-i)。",
+        "i。",
+        "分子同乘1+i，(1+i)²=2i，分母为2。"
+      ],
+      [
+        "计算(3+4i)/i。",
+        "4-3i。",
+        "分子分母同乘-i，1/i=-i。"
+      ]
+    ],
+    "counterexample": "w=0+0i时c²+d²=0，所谓“共轭化消零”无效；复数零不可作除数。",
+    "wrong": "把(c+di)(c-di)写成c²-d²。",
+    "why_wrong": "i²=-1使分母为c²+d²而非差。",
+    "hints": [
+      "先分辨除数的实部和虚部是否同时为0。",
+      "同乘除数的共轭并记住i²=-1。",
+      "最后分别核对实部和虚部系数。"
+    ],
+    "near": "计算(2-i)/(1+i)并写成标准形式。",
+    "far": "讨论复数归一化时模长极小时的数值稳定性及零向量的特殊处理。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-14",
+    "loc": [
+      28,
+      4
+    ],
+    "title": "空间两直线平行、相交、重合与异面关系",
+    "kind": "CONCEPT",
+    "statement": "在三维欧氏空间，两条不同直线若有公共点则相交，若共面且无公共点则平行，若不共面则异面；重合直线不是两条不同的平行线。",
+    "assumptions": [
+      "给定两条三维空间直线",
+      "先区分直线重合与直线不同的情形"
+    ],
+    "notation": [
+      "L₁,L₂⊂R³",
+      "L₁∩L₂"
+    ],
+    "prerequisites": [
+      "空间直线参数式",
+      "平面共面关系"
+    ],
+    "reasoning": [
+      [
+        "直线的方向向量成比例时，进一步检查是否在同一直线上。",
+        "同方向但不同位置与完全重合需要分开。"
+      ],
+      [
+        "方向不平行时，若参数方程存在公共点，则相交且由两线确定平面。",
+        "共同点与两条相交直线共面。"
+      ],
+      [
+        "若既无公共点也不能落在同一平面，则为异面，不能仅由不相交推断平行。",
+        "异面线定义与空间共面条件。"
+      ]
+    ],
+    "examples": [
+      [
+        "L₁={(t,0,0)},L₂={(t,1,0)}。",
+        "两线平行而不重合。",
+        "方向均沿x轴且均位于z=0平面，无交点。"
+      ],
+      [
+        "L₁={(t,0,0)},L₂={(0,s,1)}。",
+        "异面。",
+        "两线不同高度无交点、方向不平行且不共面。"
+      ]
+    ],
+    "counterexample": "两条空间直线没有交点也可能异面；不能照搬平面几何的“不相交即平行”。",
+    "wrong": "把投影图上看起来的交点当作三维公共点。",
+    "why_wrong": "投影不是一一对应，忽略高度坐标会产生假交点。",
+    "hints": [
+      "给两条直线分别写参数表达式。",
+      "解三维坐标是否有同一个公共点。",
+      "无公共点时进一步判断是否共面及方向是否平行。"
+    ],
+    "near": "判断空间x轴与y轴是否相交。",
+    "far": "解释两条道路在地图上交叉为何不能推出立交桥道路实体相交。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-15",
+    "loc": [
+      28,
+      5
+    ],
+    "title": "投影重合不足以证明空间直线相交",
+    "kind": "METHOD",
+    "statement": "正交投影到同一平面后，两条空间直线影像交叉并不能证明原线相交；相交必须存在同一空间点同时属于两条直线。",
+    "assumptions": [
+      "使用确定的三维坐标与投影方向",
+      "判定原始空间直线而非其二维投影"
+    ],
+    "notation": [
+      "π(x,y,z)=(x,y)",
+      "L₁∩L₂≠∅"
+    ],
+    "prerequisites": [
+      "空间点坐标",
+      "投影不保高度"
+    ],
+    "reasoning": [
+      [
+        "投影π丢弃z坐标，因此不同z的空间点可以映为同一个平面点。",
+        "正交投影是多对一映射。"
+      ],
+      [
+        "像平面上的交点仅说明存在不同空间参数使两点的x,y相同。",
+        "二维联立只约束两个坐标。"
+      ],
+      [
+        "要证明原直线相交还必须检查相同参数下z也相同。",
+        "空间相交是三坐标同时相等。"
+      ]
+    ],
+    "examples": [
+      [
+        "L₁=(t,0,0),L₂=(0,s,1)在xy平面投影是否相交。",
+        "投影在(0,0)相交，原线不相交。",
+        "当t=s=0高度分别为0和1。"
+      ],
+      [
+        "L₁=(t,0,0),L₂=(0,s,0)原线是否相交。",
+        "相交于(0,0,0)。",
+        "取t=s=0三坐标完全一致。"
+      ]
+    ],
+    "counterexample": "斜线图片投影发生交叉并不能排除异面线，只有空间坐标同时满足才构成相交。",
+    "wrong": "只求解x,y投影等式便宣布线相交。",
+    "why_wrong": "必须检验所有三维坐标，尤其被投影舍弃的坐标。",
+    "hints": [
+      "先指定投影丢掉了哪个坐标。",
+      "用参数表达两条原直线而不是只看图。",
+      "统一解x,y,z三个坐标相等的方程。"
+    ],
+    "near": "判断z=2平面内一条x方向直线与z=0平面内y轴是否相交。",
+    "far": "说明三维视觉识别需要深度信息来区分“穿过”和“在图像上重叠”。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-16",
+    "loc": [
+      31,
+      10
+    ],
+    "title": "古典概型的有限等可能基本事件",
+    "kind": "CONCEPT",
+    "statement": "古典概型要求样本空间Ω有限且每个基本结果等可能；此时事件A的概率P(A)=|A|/|Ω|。只有有限而不等可能时不能用个数比计算概率。",
+    "assumptions": [
+      "Ω为非空有限集合",
+      "每个基本结果互斥、穷尽且概率都相同"
+    ],
+    "notation": [
+      "P(A)=|A|/|Ω|",
+      "A⊆Ω"
+    ],
+    "prerequisites": [
+      "集合与计数",
+      "概率非负归一"
+    ],
+    "reasoning": [
+      [
+        "有限且等可能意味着存在共同p使所有n个基本结果概率为p。",
+        "等可能定义。"
+      ],
+      [
+        "所有互斥基本结果概率和为1，所以np=1且p=1/n。",
+        "概率规范化和有限可加性。"
+      ],
+      [
+        "A包含k个基本结果，互斥相加得P(A)=kp=k/n。",
+        "事件是基本结果的并。"
+      ]
+    ],
+    "examples": [
+      [
+        "均匀六面骰子掷一次，求偶数概率。",
+        "3/6=1/2。",
+        "六面等可能，偶数为2、4、6。"
+      ],
+      [
+        "均匀掷两枚硬币，恰好一枚正面概率。",
+        "2/4=1/2。",
+        "有序基本结果HH,HT,TH,TT等可能。"
+      ]
+    ],
+    "counterexample": "某偏置硬币P(正面)=3/4，结果只有正反两种却不能用1/2计数概率。",
+    "wrong": "只看到样本空间有限就套有利结果数/总结果数。",
+    "why_wrong": "计数比的关键独立假设是基本结果等可能。",
+    "hints": [
+      "先写出互斥且穷尽的样本结果。",
+      "判断是否真正等可能，注意有序与无序。",
+      "只有等可能时才按结果数量求比例。"
+    ],
+    "near": "均匀抽取1至10中的一整数，求被3整除概率。",
+    "far": "解释为什么随机抽一名学生的年级分布不能按年级数量简单均分。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "lesson_id": "KB65-DEEP-17",
+    "loc": [
+      58,
+      35
+    ],
+    "title": "微分的线性主部与有限增量误差",
+    "kind": "THEOREM_CANDIDATE",
+    "statement": "若实函数f在x₀处可导，微分df=f′(x₀)dx给出增量Δf的线性主部；一般有Δf=f′(x₀)Δx+o(|Δx|)，但有限Δx下微分并不必等于实际增量。",
+    "assumptions": [
+      "x₀为函数定义域内可导点且附近有定义",
+      "dx为自变量增量，极限考虑dx→0"
+    ],
+    "notation": [
+      "df=f′(x₀)dx",
+      "Δf=f(x₀+dx)-f(x₀)"
+    ],
+    "prerequisites": [
+      "导数的极限定义",
+      "小o误差符号"
+    ],
+    "reasoning": [
+      [
+        "可导性定义说明极限[Δf-f′(x₀)dx]/dx=0。",
+        "由导数差商极限直接移项。"
+      ],
+      [
+        "因此存在余项r(dx)，满足r(dx)/|dx|→0，且Δf=f′(x₀)dx+r(dx)。",
+        "用小o对一阶误差形式化。"
+      ],
+      [
+        "只有r(dx)=0的特定情况二者才完全相等，例如仿射函数；一般曲线存在高阶误差。",
+        "线性近似不等于任意有限步长精确等式。"
+      ]
+    ],
+    "examples": [
+      [
+        "f(x)=x²，x₀=2，dx=0.1时比较df与Δf。",
+        "df=0.4，Δf=0.41。",
+        "导数4给df=4×0.1，实际增量4×0.1+0.01。"
+      ],
+      [
+        "f(x)=3x+1任意dx，比较df和Δf。",
+        "两者均为3dx。",
+        "仿射函数不存在非零高阶余项。"
+      ]
+    ],
+    "counterexample": "对x²取dx=1时把df=4与Δf=5写成同一个值；有限步长不能忽略二次项。",
+    "wrong": "把“近似相等”直接写成对所有增量成立的等号。",
+    "why_wrong": "导数给出极限一阶近似，而非每一步精确变化。",
+    "hints": [
+      "先算可导点的导数与对应dx。",
+      "分别按定义算实际Δf和线性df。",
+      "比较差值，并讨论dx趋零时差值相对dx的阶。"
+    ],
+    "near": "用f(x)=x³在x₀=1、dx=0.01估计误差。",
+    "far": "解释传感器标定曲线局部线性化在偏离标定点过远时为何误差增大。",
+    "source_license": "PROJECT_AUTHORED",
+    "teacher_review": "REVIEW_PENDING",
+    "student_publishable": false,
+    "proof_certification": "NOT_FORMALLY_CERTIFIED",
+    "student_answer_verified": false,
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

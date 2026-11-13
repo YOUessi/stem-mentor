@@ -1,0 +1,50 @@
+{
+  "scope": "EDITORIAL_CANDIDATE_TO_FINITE_INSTANCE_ONLY_NOT_OFFICIAL_OR_TEACHER_VERIFIED",
+  "official_atomic_denominator": null,
+  "teacher_approved": false,
+  "student_publishable": false,
+  "fixtures": [
+    {
+      "op": "arithmetic_series",
+      "editorial_id": "KB32-SELE-P038-A005",
+      "math_justification": "Pair first and last terms: 2S=n(2a+(n-1)d), with positive integer n.",
+      "valid": {"first": "3/2", "difference": "-1/2", "n": 7},
+      "invalid": {"first": 3, "difference": 2, "n": 0}
+    },
+    {
+      "op": "conditional_probability_finite",
+      "editorial_id": "KB32-SELE-P047-A003",
+      "math_justification": "In a finite equally likely space, P(A given B)=|A intersection B|/|B| for nonempty B.",
+      "valid": {"universe": [1,2,3,4,5,6], "event_a": [1,3,5], "event_b": [2,3,5]},
+      "invalid": {"universe": [1,2,3], "event_a": [1,2], "event_b": []}
+    },
+    {
+      "op": "hypergeometric_mass",
+      "editorial_id": "KB32-SELE-P047-A012",
+      "math_justification": "Count k successful and n-k unsuccessful selections without replacement, divide by all n-subsets.",
+      "valid": {"population": 10, "successes": 4, "draws": 3, "observed": 2},
+      "invalid": {"population": 10, "successes": 1, "draws": 4, "observed": 3}
+    },
+    {
+      "op": "point_line_distance_squared",
+      "editorial_id": "KB32-SELE-P044-A001",
+      "math_justification": "Square the signed normal component; A and B cannot both vanish for a genuine line.",
+      "valid": {"A": 3, "B": 4, "C": "-5", "x": 2, "y": 3},
+      "invalid": {"A": 0, "B": 0, "C": 1, "x": 2, "y": 3}
+    },
+    {
+      "op": "binomial_choice",
+      "editorial_id": "KB32-SELE-P046-A005",
+      "math_justification": "Unordered k-subsets of n elements number n!/(k!(n-k)!) and obey Pascal recursion.",
+      "valid": {"n": 7, "k": 3},
+      "invalid": {"n": 5, "k": 6}
+    },
+    {
+      "op": "least_squares_line",
+      "editorial_id": "KB32-SELE-P048-A005",
+      "math_justification": "Minimize a quadratic residual sum; with nonconstant x, the stationary normal equations uniquely determine slope and intercept.",
+      "valid": {"x": [0,1,2,3], "y": [1,2,2,4]},
+      "invalid": {"x": [1,1,1], "y": [2,3,5]}
+    }
+  ]
+}

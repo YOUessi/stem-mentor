@@ -1,0 +1,13 @@
+scripts/author_kb_batch17.py => RC=0 | Batch17 11 authored editorial lessons with 12 unverified proof steps; check= True
+scripts/build_kb_batch17_lessons.py => RC=0 | PASS 11 unapproved Batch17 drafts; check= True
+scripts/audit_kb_batch17_content.py => RC=0 | PASS Batch17 editorial audit; 224 drafts; 132/132 only author-proposed; teacher=0
+scripts/build_kb_batch13_proposals.py => RC=0 | PASS batch13 editorial mapping proposal hash guards
+scripts/audit_kb_batch13_proposals.py => RC=0 | PASS Batch13 review queue is draft-only and source-anchored
+scripts/build_kb_batch07_audit.py => RC=0 | CHECKED docs/evaluation/KB_PROOF_OBLIGATIONS_BATCH07.json {'deep_draft_lessons': 224, 'theorems': 136, 'proof_step_obligations_not_formally_verified': 451, 'existing_supporting_oracles_linked': 48, 'theorems_with_whole_proof_certification': 0, 'teacher_approved': 0, 'student_solution_steps_verified': 0}
+scripts/audit_kb_semantic_coverage.py => RC=0 | PASS: semantic coverage snapshot matches project drafts and 23 open, non-approved gaps
+scripts/audit_kb_batch16_content.py => RC=0 | PASS frozen Batch16 source hashes and historical 213/150 snapshot; current totals belong to Batch17
+scripts/audit_kb_batch15_content.py => RC=0 | PASS Batch15 audit 9 drafts
+scripts/audit_kb_batch14_content.py => RC=0 | PASS Batch14 16 new electives, no approvals
+scripts/reconcile_kb_batch02.py => RC=0 | PASS: 39 candidates => 29 imported drafts, 10 held, 0 auto-overwrites
+scripts/audit_deep_math_evidence.py => RC=0 | }
+scripts/audit_kb_batch09_release.py => RC=1 | Batch09 release audit drift

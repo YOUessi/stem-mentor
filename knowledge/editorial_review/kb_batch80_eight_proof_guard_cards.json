@@ -1,0 +1,601 @@
+{
+  "all_review_links_after_batch": 36,
+  "distinct_prior_review_links": 28,
+  "formal_certifications": 0,
+  "official_atom_denominator": null,
+  "original_author_sha256": "bb8b6c11c3bee3f666812c939164a90a5678ecc080e81d269ffbef4effcc4b6d",
+  "original_teacher_cards": 8,
+  "proof_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+  "review_cards": [
+    {
+      "assumptions": [
+        "a为合法实对数底：a>0且a≠1",
+        "x与y分别为正实数，两个右侧对数均有定义"
+      ],
+      "boundary": "当x=y=-2时xy=4>0，但log_a x、log_a y在实数内均未定义；不得通过乘积正值反推各项合法。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "讨论ln[(t-2)(t+1)]与ln(t-2)+ln(t+1)是否具有相同定义域。",
+      "finite_instance_check": "CONDITIONS_ONLY_NOT_GENERAL_PROOF",
+      "finite_invalid_rejection": {
+        "failed_condition": "real_log_base_and_both_individual_log_arguments"
+      },
+      "finite_op": "log_product",
+      "finite_positive_evidence": {
+        "all_real_log_domains_valid": true,
+        "xy": 16
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先列出式子左右每个对数真数所需的正值条件。",
+        "将x、y分别表示为同底指数幂。",
+        "按指数乘法律合并，再使用对数与指数互逆。"
+      ],
+      "id": "KB80-P01",
+      "invalid": {
+        "a": 2,
+        "x": -2,
+        "y": -3
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.logarithm.product-law#1",
+      "near": "把a=3、x=9、y=27代入前先说明各项定义域。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "c1a3042832d48f3143701c702f65e5678c028481f5227f3793917d8e3b856e41",
+      "proof_steps": [
+        "先设u=log_a x、v=log_a y；由真数均正，u与v都是确定的实数，x=a^u、y=a^v。",
+        "使用同底正数指数的乘法性质：xy=a^u a^v=a^(u+v)。",
+        "因为a^t与log_a t互逆且xy>0，双方取log_a可得log_a(xy)=u+v。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.logarithm.product-law#1",
+      "statement": "设a>0且a≠1，x>0，y>0，则log_a(xy)=log_a x+log_a y；实对数中仅要求xy>0不足以保证右侧有定义。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "实对数积法则及真数边界",
+      "valid": {
+        "a": 2,
+        "x": 2,
+        "y": 8
+      },
+      "worked_examples": [
+        {
+          "question": "a=2、x=2、y=8，求log_2(xy)。",
+          "teacher_solution": "先核验2、8均为正；log_2(16)=4，而log_2(2)+log_2(8)=1+3=4。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "x=-2、y=-3时，能否把log_2(xy)拆成两项？",
+          "teacher_solution": "log_2(6)本身有定义，但log_2(-2)与log_2(-3)在实数域均无定义，因此拆分不合法。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "只检查xy>0就拆成log_a x+log_a y，忽视拆开后各真数必须逐个为正。"
+    },
+    {
+      "assumptions": [
+        "a,b,c为实数且a≠0",
+        "必须区分平方项系数a的符号以及顶点对应的值"
+      ],
+      "boundary": "若a=0，表达式变成bx+c，配方公式中的1/a不存在，不得机械套用。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "对参数k分析kx²−2x+3何时有有限全局最小值。",
+      "finite_instance_check": "CONDITIONS_ONLY_NOT_GENERAL_PROOF",
+      "finite_invalid_rejection": {
+        "failed_condition": "coefficient_a_must_be_nonzero"
+      },
+      "finite_op": "quadratic_sign",
+      "finite_positive_evidence": {
+        "completed_square_value": "2",
+        "polynomial_value": "2"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先确认二次项系数是否为零。",
+        "写出顶点式和平方项非负事实。",
+        "结合开口方向与顶点值分别判断恒正、恒负或变号。"
+      ],
+      "id": "KB80-P02",
+      "invalid": {
+        "a": 0,
+        "b": 2,
+        "c": -3,
+        "x": 1
+      },
+      "kind": "METHOD",
+      "linked_historical_step_id": "math.hs.quadratic.sign#2",
+      "near": "讨论x²+4x+5的正负。，并说明最小值为何存在。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "2c808c662d7d309c161f2fdde2f35cd99e8b2e76fed1dcdce5164a11a37057e4",
+      "proof_steps": [
+        "把a从二次与一次项提取：ax²+bx=a[x²+(b/a)x]，此步必须a≠0。",
+        "在方括号内加减(b/(2a))²，得到a(x+b/(2a))²−b²/(4a)。",
+        "再加c并通分得到a(x+b/(2a))²−(b²−4ac)/(4a)，分析平方项与a的符号才可判断全局范围。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.quadratic.sign#2",
+      "statement": "当a≠0且a,b,c为实数时，ax²+bx+c=a(x+b/(2a))²−(b²−4ac)/(4a)，可据a和判别式分析符号；a=0时必须改按一次式处理。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "二次函数配方判断符号的先决条件",
+      "valid": {
+        "a": 1,
+        "b": -2,
+        "c": 2,
+        "x": 0
+      },
+      "worked_examples": [
+        {
+          "question": "证明x²−2x+2>0对所有实数x成立。",
+          "teacher_solution": "配方x²−2x+2=(x−1)²+1≥1>0。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "若a=0,b=2,c=-3，能否用二次配方求最小值？",
+          "teacher_solution": "不能，原式2x−3在实数域无最小值，二次配方所需a≠0不成立。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "看到x²项便宣称函数一定非负；实际上a<0时抛物线开口向下，或顶点低于零。"
+    },
+    {
+      "assumptions": [
+        "u,v是任意两个实数，包含零、同号和异号情况",
+        "若要进一步使用等号，必须补充uv≥0（包含零的情况）"
+      ],
+      "boundary": "u=2,v=-3时|u+v|=1，而|u|+|v|=5；等号明显错误。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "将等号条件推广到二维向量的三角不等式，比较共线同向条件。",
+      "finite_instance_check": "CONDITIONS_ONLY_NOT_GENERAL_PROOF",
+      "finite_invalid_rejection": {
+        "failed_condition": "equality_requires_uv_nonnegative"
+      },
+      "finite_op": "absolute_equality",
+      "finite_positive_evidence": {
+        "equality_condition": true,
+        "triangle_inequality_gap": 0
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先检查等号是否总成立，试取异号实数。",
+        "先将两侧非负表达式平方比较。",
+        "说明等号对应uv=|uv|这一精确条件。"
+      ],
+      "id": "KB80-P03",
+      "invalid": {
+        "u": 2,
+        "v": -3
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.function.abs-triangle#2",
+      "near": "求所有使|x+2|=|x|+2成立的实数x。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "f433ff7a4b37cf6d9cf476a462ee77ff77cea8441a7f4dfe847209b5634afe5d",
+      "proof_steps": [
+        "利用|u+v|²=u²+2uv+v²，以及uv≤|uv|，得到|u+v|²≤u²+2|uv|+v²。",
+        "右端恰等于(|u|+|v|)²，两边都是非负数，所以取非负平方根保留大小关系。",
+        "两边相等当且仅当uv=|uv|，也就是uv≥0；若uv<0则严格小于。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.function.abs-triangle#2",
+      "statement": "对任意实数u,v有|u+v|≤|u|+|v|；等号成立当且仅当uv≥0。不能把不等式普遍改写为等式。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "绝对值三角不等式与等号条件",
+      "valid": {
+        "u": 2,
+        "v": 5
+      },
+      "worked_examples": [
+        {
+          "question": "计算u=2,v=5的等号情况。",
+          "teacher_solution": "uv=10>0，所以|2+5|=7=2+5，等号成立。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "计算u=2,v=-3，检查错误拆分。",
+          "teacher_solution": "|2−3|=1<2+3=5，故不能无条件拆开绝对值。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把|u+v|无条件拆为|u|+|v|，再用这个假等式消除绝对值。"
+    },
+    {
+      "assumptions": [
+        "每个完整结果与唯一一对阶段选择一一对应",
+        "第二阶段合法选择数m与第一阶段选择无关，且n,m为非负整数"
+      ],
+      "boundary": "第一种路线有2个终点、第二种路线有3个终点时总计5条路线，不能误写成2×2或2×3。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "设计长度为3的路径计数问题，其中第三步选择依赖前两步，需要动态递推而非直接乘法。",
+      "finite_instance_check": "CONDITIONS_ONLY_NOT_GENERAL_PROOF",
+      "finite_invalid_rejection": {
+        "failed_condition": "same_number_of_second_stage_choices_for_every_first_stage_branch"
+      },
+      "finite_op": "uniform_stage_count",
+      "finite_positive_evidence": {
+        "count_by_partition": 9,
+        "count_by_product": 9,
+        "first_stage_choices": 3,
+        "second_stage_choices_per_branch": 3
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "画出第一阶段分支的简短树状图。",
+        "每个分支都逐一统计第二阶段选项数。",
+        "若分支数量相同用乘法，否则按分支相加。"
+      ],
+      "id": "KB80-P04",
+      "invalid": {
+        "counts": [
+          2,
+          3
+        ]
+      },
+      "kind": "METHOD",
+      "linked_historical_step_id": "math.hs.counting.product-rule#2",
+      "near": "若有4个入口且每个入口恰有3个出口，核查12的来源。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "98bd853e6328744fbef18d7da249c4de226b96395b1dcbb1e970de1d500c56d4",
+      "proof_steps": [
+        "把每种完整方案表示为有序对(i,j)，其中i是第一阶段选择。",
+        "每个固定i都对应恰好m种j，因此各第一阶段分支是大小为m的互不重叠集合。",
+        "由不重叠集合计数的加法原理，总数是m重复相加n次，即nm。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.counting.product-rule#2",
+      "statement": "有n种第一阶段选择，且无论第一阶段选哪种，第二阶段恰有m种合法选择，则最终有nm种不同有序结果；第二阶段选择数变化时应改用分情况求和。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "分步计数乘法原理中的固定选择数",
+      "valid": {
+        "counts": [
+          3,
+          3,
+          3
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "3款上衣，每款可配2条裤子，衣裤组合有几种？",
+          "teacher_solution": "每个上衣选择均有2种裤子且结果有序可区分，所以3×2=6种。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "两条路线分别有2与3种后续站点，完整行程多少？",
+          "teacher_solution": "第二阶段数依路线不同，总数应为2+3=5，而不是2×3。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把某个分支的第二阶段选择数m当成所有分支都拥有m种选择。"
+    },
+    {
+      "assumptions": [
+        "x₀是函数定义域的内点",
+        "f在x₀处具有有限双侧导数"
+      ],
+      "boundary": "f(x)=|x|在x₀=0处左右导数分别为−1和1，不存在单一有限双侧导数。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "讨论分段函数在连接点何时同时满足连续与左右导数相等。",
+      "finite_instance_check": "CONDITIONS_ONLY_NOT_GENERAL_PROOF",
+      "finite_invalid_rejection": {
+        "failed_condition": "differentiability_at_point_and_nonzero_finite_step"
+      },
+      "finite_op": "parabola_tangent",
+      "finite_positive_evidence": {
+        "second_order_residual": 1,
+        "tangent_slope": 4
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先检查函数在待研究点是否连续及双侧可导。",
+        "写出差商的极限并计算斜率。",
+        "用点斜式写直线，最后检查经过原点/切点。"
+      ],
+      "id": "KB80-P05",
+      "invalid": {
+        "h": 1,
+        "kind": 1,
+        "x0": 0
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.calculus.tangent-line#1",
+      "near": "求x³在x₀=1的切线并检验过点。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "9995429ecfe69a7541b5c727e208661da0aeb1f975dac3da6ea28f646be03e2b",
+      "proof_steps": [
+        "可导的定义是lim_{h→0}[f(x₀+h)−f(x₀)]/h=f'(x₀)存在且有限。",
+        "移项得f(x₀+h)=f(x₀)+f'(x₀)h+o(|h|)，一次项给出局部线性方向。",
+        "经过(x₀,f(x₀))且方向斜率为f'(x₀)的唯一直线就是所列切线方程。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.calculus.tangent-line#1",
+      "statement": "若实函数f在内点x₀处可导，则该点切线的斜率是f'(x₀)，方程为y=f(x₀)+f'(x₀)(x−x₀)；不可导时不能机械求唯一切线斜率。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "切线线性近似要求可导",
+      "valid": {
+        "h": 1,
+        "kind": 0,
+        "x0": 2
+      },
+      "worked_examples": [
+        {
+          "question": "求f(x)=x²在x₀=2处切线。",
+          "teacher_solution": "f(2)=4、f'(2)=4，故y=4+4(x−2)=4x−4。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "f(x)=|x|在0处能直接用y=f(0)+f'(0)x吗？",
+          "teacher_solution": "不能，左右导数不同，f'(0)不存在，公式前提不满足。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "只看左侧或右侧割线斜率便宣称不可导折点存在唯一切线。"
+    },
+    {
+      "assumptions": [
+        "u、v是同维欧氏向量",
+        "u、v各自非零，才能合法除以|u||v|"
+      ],
+      "boundary": "u=(0,0)、v=(1,2)时u·v=0但分母|u||v|=0，不能由0/0确定角度。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "讨论三维空间的投影系数与向量夹角公式是否同样要求非零方向。",
+      "finite_instance_check": "CONDITIONS_ONLY_NOT_GENERAL_PROOF",
+      "finite_invalid_rejection": {
+        "failed_condition": "two_nonzero_vectors_in_the_same_two_dimensional_space"
+      },
+      "finite_op": "vector_angle",
+      "finite_positive_evidence": {
+        "cauchy_gap": 4,
+        "dot": 0,
+        "norm_squared_product": 4
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先分别计算两个向量的平方模长。",
+        "检查分母是否严格正。，确认法向/方向不为零。",
+        "再用内积、模长和余弦定义得到角度。"
+      ],
+      "id": "KB80-P06",
+      "invalid": {
+        "u": [
+          0,
+          0
+        ],
+        "v": [
+          1,
+          2
+        ]
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.vector.dot-product#2",
+      "near": "求u=(1,1),v=(1,-1)的夹角。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "eb798d6d1a1a9ba3cc254ae2cad5373317f53d0ffceff411f4f4906ee21f0a32",
+      "proof_steps": [
+        "由向量差的平方范数恒等式，|u−v|²=|u|²+|v|²−2u·v。",
+        "把以u、v和u−v为边的余弦定理与上式比较，得到u·v=|u||v|cosθ（共线情况亦由定义延拓）。",
+        "因为两向量非零，|u||v|>0可合法除去，得夹角公式。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.vector.dot-product#2",
+      "statement": "对同一实内积平面中的非零向量u,v，cosθ=(u·v)/(|u||v|)且θ∈[0,π]；任一向量为零时通常不定义其方向夹角。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "向量夹角公式中的非零条件",
+      "valid": {
+        "u": [
+          1,
+          0
+        ],
+        "v": [
+          0,
+          2
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "u=(1,0),v=(0,2)，求夹角。",
+          "teacher_solution": "内积0，模长分别1、2，所以cosθ=0，θ=π/2。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "u=(0,0),v=(1,1)时可否套公式？",
+          "teacher_solution": "不可，u无方向，分母为零，夹角定义前提失效。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "将零向量与任意向量都宣称垂直且夹角为90度，忽视角本身未定义。"
+    },
+    {
+      "assumptions": [
+        "各Bᵢ是同一概率空间的事件，构成完整划分",
+        "使用条件概率写法时每个P(Bᵢ)>0"
+      ],
+      "boundary": "若B₁={1,2}、B₂={2,3}，它们重叠，事件2被重复计数，不能直接加两项。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "解释先分类再估计的统计总体中类别重叠如何造成重复计数偏差。",
+      "finite_instance_check": "CONDITIONS_ONLY_NOT_GENERAL_PROOF",
+      "finite_invalid_rejection": {
+        "failed_condition": "pairwise_disjoint_exhaustive_partition"
+      },
+      "finite_op": "total_partition",
+      "finite_positive_evidence": {
+        "event_probability": "1/2",
+        "sum_of_partition_intersections": "1/2"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先写出所有分组是否不交、是否穷尽样本空间。",
+        "把A写成多个不交的A∩Bᵢ之并。",
+        "先相加交事件概率，只有分母正时才能改写条件概率形式。"
+      ],
+      "id": "KB80-P07",
+      "invalid": {
+        "A": [
+          2,
+          3
+        ],
+        "N": 4,
+        "blocks": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ]
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.probability.total#3",
+      "near": "用骰子的奇偶分割计算P(点数≥4)。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "0f2a18dacdeae586429fdd0f215eec4fd3d38be191eef40a7f0f5db5283e023c",
+      "proof_steps": [
+        "因为Ω=∪Bᵢ，所以A=A∩Ω=∪(A∩Bᵢ)。",
+        "Bᵢ两两互斥保证A∩Bᵢ也两两互斥，由有限可加性得P(A)=ΣP(A∩Bᵢ)。",
+        "当每个P(Bᵢ)>0时，按条件概率定义P(A∩Bᵢ)=P(A|Bᵢ)P(Bᵢ)，逐项替换。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.probability.total#3",
+      "statement": "若B₁,…,Bₙ两两互斥且并集为Ω，则P(A)=ΣP(A∩Bᵢ)；若各P(Bᵢ)>0，才可进一步写ΣP(A|Bᵢ)P(Bᵢ)。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "全概率分解依赖互斥且穷尽的分割",
+      "valid": {
+        "A": [
+          2,
+          3
+        ],
+        "N": 4,
+        "blocks": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "worked_examples": [
+        {
+          "question": "等可能Ω={1,2,3,4}，B₁={1,2},B₂={3,4},A={2,3}，求P(A)。",
+          "teacher_solution": "B₁与B₂不交且并为Ω，A与每组交集大小各1，总概率1/4+1/4=1/2。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "同上把B₂改为{2,3,4}还能直接相加吗？",
+          "teacher_solution": "不行，元素2被两组同时包含，相加概率会重复计算该结果。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "只验证各Bᵢ覆盖所有情况就直接相加，忘记检查两两互斥。"
+    },
+    {
+      "assumptions": [
+        "t为实数，三角函数按单位圆定义",
+        "当用cos²t+sin²t=1改写时必须完整保留常数项"
+      ],
+      "boundary": "t=π/2时cosπ=−1，而错误式2cos²(π/2)=0，直接反证漏常数的写法。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "far": "讨论根据cos2t求cos t时为何出现正负分支，不能省略象限约束。",
+      "finite_instance_check": "CONDITIONS_ONLY_NOT_GENERAL_PROOF",
+      "finite_invalid_rejection": {
+        "failed_condition": "unit_circle_cos_sin_parameterization_requires_pythagorean_triple"
+      },
+      "finite_op": "double_angle_unit_circle",
+      "finite_positive_evidence": {
+        "cos_double": "-7/25",
+        "omitted_constant_shortcut_is_not_a_general_identity": true,
+        "sin_double": "24/25"
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hints": [
+        "先从角和公式入手，令两个角相等。",
+        "用sin²t+cos²t=1精确替换一项。",
+        "通过t=π/2检验是否遗漏常数项。"
+      ],
+      "id": "KB80-P08",
+      "invalid": {
+        "p": 1,
+        "q": 1,
+        "r": 1
+      },
+      "kind": "THEOREM",
+      "linked_historical_step_id": "math.hs.trig.double-angle-reduction#2",
+      "near": "用sin t=5/13、cos t=12/13求二倍角三角函数。",
+      "official_curriculum_atom_id": null,
+      "original_step_sha256": "35f0b230a0e407d5a1cba0120f051d5aa1cbf84453dcb0b74f6a487127dbc003",
+      "proof_steps": [
+        "把角和公式sin(α+β)=sinαcosβ+cosαsinβ代入α=β=t，得sin2t=2sin t cos t。",
+        "同样由cos(α+β)=cosαcosβ−sinαsinβ得cos2t=cos²t−sin²t。",
+        "使用sin²t+cos²t=1替换一项，分别得到cos2t=2cos²t−1=1−2sin²t，常数−1不能漏掉。"
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_PROOF_DRAFT",
+      "source_step": "math.hs.trig.double-angle-reduction#2",
+      "statement": "对任意实数t，sin(2t)=2sin t cos t，cos(2t)=cos²t−sin²t=2cos²t−1=1−2sin²t；不得将cos2t误写成2cos²t。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "二倍角公式及易漏常数项",
+      "valid": {
+        "p": 3,
+        "q": 4,
+        "r": 5
+      },
+      "worked_examples": [
+        {
+          "question": "若cos t=3/5且sin t=4/5，求sin2t与cos2t。",
+          "teacher_solution": "sin2t=2·3/5·4/5=24/25；cos2t=9/25−16/25=−7/25。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "取t=π/2，检验cos2t=2cos²t这个错误说法。",
+          "teacher_solution": "左边cosπ=−1，右边2cos²(π/2)=0，因此说法错误，正确式应减1。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ],
+      "wrong_method": "把cos²t−sin²t约成2cos²t，漏掉由sin²t=1−cos²t产生的−1。"
+    }
+  ],
+  "schema_version": "kb80-eight-p0-proof-guard-cards-v1",
+  "standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+  "student_releases": 0,
+  "teacher_approvals": 0
+}

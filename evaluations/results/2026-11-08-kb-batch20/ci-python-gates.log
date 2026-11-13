@@ -1,0 +1,61 @@
+RUN 1/30 python scripts/build_kb_coverage.py --summary
+status= 0 elapsed_s= 3.18
+RUN 2/30 python scripts/audit_deep_math_evidence.py --check
+status= 0 elapsed_s= 14.56
+RUN 3/30 python scripts/build_semantic_gap_batch05.py --check
+status= 0 elapsed_s= 0.67
+RUN 4/30 python scripts/reconcile_kb_batch02.py --check
+status= 0 elapsed_s= 0.93
+RUN 5/30 python scripts/build_kb_legacy_bridge.py --check
+status= 0 elapsed_s= 1.09
+RUN 6/30 python scripts/build_kb_batch07_audit.py --check
+status= 0 elapsed_s= 4.25
+RUN 7/30 python scripts/audit_kb_attested_release.py --check
+status= 0 elapsed_s= 3.8
+RUN 8/30 python scripts/build_kb_batch07_lessons.py --check
+status= 0 elapsed_s= 0.44
+RUN 9/30 python scripts/build_kb_batch09_lessons.py --check
+status= 0 elapsed_s= 0.58
+RUN 10/30 python scripts/build_kb_batch10_lessons.py --check
+status= 0 elapsed_s= 0.51
+RUN 11/30 python scripts/build_kb_batch11_lessons.py --check
+status= 0 elapsed_s= 0.48
+RUN 12/30 python scripts/audit_kb_batch10_release.py --check
+status= 0 elapsed_s= 16.26
+RUN 13/30 python scripts/audit_kb_batch11_release.py --check
+status= 0 elapsed_s= 16.27
+RUN 14/30 python scripts/build_kb_batch12_source_crosswalk.py --check
+status= 0 elapsed_s= 0.45
+RUN 15/30 python scripts/audit_kb_batch12_source_coverage.py --check
+status= 0 elapsed_s= 14.51
+RUN 16/30 python scripts/build_kb_batch13_proposals.py --check
+status= 0 elapsed_s= 3.76
+RUN 17/30 python scripts/audit_kb_batch13_proposals.py --check
+status= 0 elapsed_s= 4.22
+RUN 18/30 python scripts/build_kb_batch14_lessons.py --check
+status= 0 elapsed_s= 0.31
+RUN 19/30 python scripts/audit_kb_batch14_content.py --check
+status= 0 elapsed_s= 3.2
+RUN 20/30 python scripts/build_kb_batch15_lessons.py --check
+status= 0 elapsed_s= 0.28
+RUN 21/30 python scripts/audit_kb_batch15_content.py --check
+status= 0 elapsed_s= 3.13
+RUN 22/30 python scripts/build_kb_batch16_lessons.py --check
+status= 0 elapsed_s= 0.37
+RUN 23/30 python scripts/audit_kb_batch16_content.py --check
+status= 0 elapsed_s= 2.5
+RUN 24/30 python scripts/author_kb_batch17.py --check
+status= 0 elapsed_s= 0.35
+RUN 25/30 python scripts/build_kb_batch17_lessons.py --check
+status= 0 elapsed_s= 1.98
+RUN 26/30 python scripts/audit_kb_batch17_content.py --check
+status= 0 elapsed_s= 3.84
+RUN 27/30 python scripts/audit_kb_batch18_source_proofs.py --check
+status= 0 elapsed_s= 11.62
+RUN 28/30 python scripts/build_kb_batch20_k00_review_queue.py --check
+status= 0 elapsed_s= 0.67
+RUN 29/30 python scripts/audit_kb_batch09_release.py --check
+status= 0 elapsed_s= 21.31
+RUN 30/30 python scripts/audit_kb_semantic_coverage.py --check
+status= 0 elapsed_s= 3.26
+PASS 30/30 GitHub CI Python script gates

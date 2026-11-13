@@ -1,0 +1,60 @@
+# STEM Mentor｜Batch48 Mac 数学知识库开发与审核报告（2026-11-09）
+
+## 执行环境与隔离
+
+- 唯一内容生产、代码修改及测试设备：**YOUTangdeMacBook-Air.local**，项目独立 worktree：`~/Documents/文件/stem-mentor-kb-batch48`，分支 `feat/kb-batch48-selective-geometry`。
+- 父级：Batch47 Draft PR #72 / commit `df73a97a1a285bc65aa82a54405f1ee30b354de9`，没有修改 GitHub main、没有使用 Tang、没有覆盖 Mac 原主仓的 11 项未提交更改。
+- 锁定依据：高中数学课程标准（2017 年版 2020 年修订）PDF 仓库既存 SHA256 `cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195`；对应课程目标仍为项目自编编辑候选，未经教师独立确认不等于官方完整原子条款。
+- 本批原创内容源 `knowledge/editorial_review/kb_batch48_selective_geometry.jsonl` SHA256：`2be2bf07c5a7b7193966f1648a60735373e3b0751b64b0fc77a8efb7b44e532a`。通过 `scripts/author_kb_batch48.py --check` 防篡改及 `app.kb_batch48_review --check` 生成件一致性门禁。
+
+## 新增 20 篇原创、待教师审核的知识单元
+
+本批完成 20 条此前无直接讲义的 **选择性必修**项目编辑目标：三维点到直线正交投影距离、空间无向直线夹角、两点求斜率、一般式平行与垂直判别、点斜式、竖直线一般式、两直线交点的唯一/重合/分离分类、点到一般式直线距离、圆的定距定义、一般式配方与半径正域、两圆位置与同心退化、椭圆焦点距离和、椭圆标准式与长轴、抛物线焦点准线等距、双曲线焦点差、圆锥曲线标准式分型、互斥穷尽分类计数、分步计数的依赖分支、排列与组合、有限等可能条件概率。
+
+每个单元均有独立的明确陈述、适用假设、先修、三阶段附依据论证、具体反例/失效例、典型错因、2 道教师侧例题及完整解题步骤、3 级有数学针对性的提示与近远迁移。合计 **20 篇、40 道教师例题、20 个具体反例、60 个论证阶段、60 条提示、40 道迁移任务**。为避免定理证明或模型内容虚假认证，所有单元仍为 `REVIEW_PENDING / TEACHER_ONLY / NOT_FORMALLY_CERTIFIED`。定义/方法的解释不冒充形式证明。
+
+## K00 审核矩阵及真实完成边界
+
+|轨道|项目自编目标|已有关联待审稿|仅旧非等价关联|缺少直接稿|官方认证原子分母|
+|---|---:|---:|---:|---:|---|
+|COMPULSORY|125|111|0|14|null|
+|SELECTIVE_COMPULSORY|92|66|0|26|null|
+|ELECTIVE_A|28|22|6|0|null|
+|ELECTIVE_B|29|27|2|0|null|
+|ELECTIVE_C|19|17|2|0|null|
+|ELECTIVE_D|16|15|1|0|null|
+|ELECTIVE_E|4|3|1|0|null|
+|**合计**|**313**|**261**|**12**|**40**|**null**|
+
+313 是项目人工编写的**非全量课标候选目标**；261/313 不得作为官方课标覆盖率。每条记录的项目目标、来源印刷页、来源哈希、内容链接及待审核状态在 `KB_BATCH48_PROJECT_SCOPE_OVERLAY.json`；剩余 40 条缺稿逐条见 `KB_BATCH48_PROJECT_SCOPE_GAPS.md`。12 条历史关联仍未认证等价，七轨道正式官方分母未确认。**教师批准0，学生正式发布0。**
+
+## K07 与 K08/K09：受控数学有限实例、回归及防剧透
+
+- `backend/app/kb_batch48_exact.py` 新增 20 类严格字段白名单及有界整数、Fraction 精确算术计算。包括空间投影距离平方、夹角余弦平方、两点斜率、一般式直线关系与交点秩、点线距离平方、圆内外及圆心距离关系、椭圆/双曲线正域焦距、抛物线非退化前提、正圆锥曲线分类、集合交集基数与计数、排列/组合及有条件概率。
+- 关键拒绝边界：零方向向量、竖直线当作有限斜率、零法向量、圆半径非正、两圆同心同半径不能错误记为内切、椭圆 a≤c、双曲线 a≥c、抛物线 p=0、条件事件空集、排列 k>n、越界整数、未知操作、非法字段及注入对象。
+- 返回状态只能是 `FINITE_EXACT_CASE_ONLY`、`CONDITIONS_NOT_ESTABLISHED` 或 `UNSUPPORTED`；`general_theorem_certified=false`、`student_freeform_step_verified=false`、`teacher_approved=false`、`student_publishable=false` 均明确冻结，不将有限校验冒充定理证明或真人审校。
+- 20 个未经批准的知识标题实走已有 `student_evidence_lookup` 与 `draft_next_question` 离线接口：拒绝无批准证据，不外发模型，不泄漏完整教师答案。该测试不构成真实云端模型上线评估。
+- 专项测试包含 313 条课程追溯负面、20 条深度内容 Schema、20 类合法/非法前提、20 类注入/缺字段、教师权限篡改、空间点线距离穷举、直线交点代入与退化、椭圆/双曲线参数、组合数恒等式、所有有限条件概率组合及真实 Tutor 适配器路径。
+
+## 测试原始结果、修复证据与版本
+
+- 首次专项测试 **402 passed / 1 failed**：负面用例误选择本来就没有关联审核稿的 `KB32-S-P043-A004`，因此测试预期拒绝不成立；改为已关联的 `KB32-S-P038-A001`。此处是**测试用例错误**，不是允许假教师审核的漏洞。修复后专项重新执行（结果见日志）。
+- 原始日志归档目录 `evaluations/results/2026-11-09-kb-batch48/`，使用最终源码运行 Mac `scripts/mac_check.sh`（Python、Node、Tutor 策略与 RAG）与 `scripts/mac_browser_check.sh`（Chrome/Playwright 合成数据库）。证据以 `*.exit` 和完整 `*.log` 为准；任何未完成或失败验收均不得声称已通过。
+- 浏览器模拟的 iPad 指针不等于真实设备的压感/触摸验收；无真实学生数据、无外部模型 API 调用。
+
+## 尚未完成与下一批
+
+1. **首要障碍 K00**：逐条阅读原版课标含未编号、星号、自选部分，去重拆分后建立必修/选择性必修/选修A–E全部七轨道官方可审计原子分母；当前仍 null，不能偷换成313。
+2. 剩余40条项目编辑候选缺稿：**14条必修建模、史料与空间推理，26条选择性必修统计/计数与研究活动**；需按来源先核对再编写高质量原创讲义。
+3. 历史538条未形式认证的证明步骤、10个未解决数学冲突，以及12个历史关联的等价性仍需数学专家逐条验证；有限数值测试不能替代证明。
+4. K08/K09仍需真实教师批准（当前0）、冻结独立题评估、真实 API 费用/质量/安全对照和逐章发布；本批没有宣称正式学生端上线。
+
+## 最终 Mac 测试与 GitHub 提交回执（2026-11-09）
+
+- 完整 Mac Python：**41,026 passed / 0 failed / 1 条 Starlette/anyio 第三方弃用警告**，见 `evaluations/results/2026-11-09-kb-batch48/mac_check_full.log`。这包含全部新增 403 项测试，不是 41,026+403 个独立测试。
+- Node：**111 passed / 0 failed**；Tutor 策略：**33/33**；RAG hard negatives：**40/40**、Top3 **22/22**；`mac_check.exit=0`。
+- 本批专项：**403 passed / 0 failed**，见 `selective_geometry_incremental.log`、`incremental.exit=0`。
+- Chrome/Playwright：**15 个脚本检查通过**，browser pytest **2 passed / 0 failed**，`mac_browser.exit=0`，见 `mac_browser_full.log`。全部用合成数据库，iPad pinch/pen 为 Chrome CDP 指针模拟、不是实体硬件验证；无真实学生数据或云端模型调用。
+- Mac 代码提交：`d30984d901feba329fb845e21bbc2dbdbe4dce3c`，源码 tree `c08a4a68ac8ae156ff4fc31db7dd7b6e3071d9f5`；Mac SSH push GitHub feature branch 成功，独立 Draft PR **#73**，base 为 Batch47 PR #72，不合并 main，不强推。
+- 随后本报告及浏览器最终原始日志单独追加到同一功能分支，最终 commit 与 GitHub CI 以远端实际 SHA 及 Workflow 状态为准。
+- 本批期间验证 Github issues #17–#27 均仍 OPEN；本批未伪造官方完整课程分母、历史证明完成、教师签字或学生端发布。

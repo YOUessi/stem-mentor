@@ -1,0 +1,37 @@
+........................................................................ [ 13%]
+........................................................................ [ 26%]
+........................................................................ [ 39%]
+........................................................................ [ 52%]
+........................................................................ [ 66%]
+........................................................................ [ 79%]
+........................................................................ [ 92%]
+.......................F................                                 [100%]
+=================================== FAILURES ===================================
+_______ test_anchor_privilege_and_provenance_forgery_rejected[wrong_sha] _______
+
+mutation = 'wrong_sha'
+
+    @pytest.mark.parametrize("mutation",["approve","publish","certify","full_review","equivalence","wrong_sha",
+                                           "duplicate","wrong_track","wrong_marker","wrong_page_index","extra_field"])
+    def test_anchor_privilege_and_provenance_forgery_rejected(mutation):
+        bad=deepcopy(REG)
+        row=bad["rows"][0]
+        if mutation=="approve":row["teacher_review"]="APPROVED"
+        elif mutation=="publish":row["student_publishable"]=True
+        elif mutation=="certify":row["certified_official_atom"]=True
+        elif mutation=="full_review":row["full_page_review_completed"]=True
+        elif mutation=="equivalence":row["duplicate_equivalence_review"]="MATCH"
+        elif mutation=="wrong_sha":row["source_line_sha256"]="a"*64
+        elif mutation=="duplicate":bad["rows"][1]=deepcopy(row)
+        elif mutation=="wrong_track":row["track_hint"]="ELECTIVE_E"
+        elif mutation=="wrong_marker":row["kind"]="FORMALLY_PROVED"
+        elif mutation=="wrong_page_index":row["pdf_page_index"]=-1
+        elif mutation=="extra_field":row["teacher_signature"]="fabricated"
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+backend/tests/test_kb_batch61_requirement_anchor_audit.py:130: Failed
+=========================== short test summary info ============================
+FAILED backend/tests/test_kb_batch61_requirement_anchor_audit.py::test_anchor_privilege_and_provenance_forgery_rejected[wrong_sha]
+1 failed, 543 passed in 0.68s

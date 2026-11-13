@@ -1,0 +1,13 @@
+mac=YOUTangdeMacBook-Air.local
+baseline_commit=1fbd20bef3ee49121c4f24c94762b5facb406b7e
+baseline_tree=560222d069186e654c9618173feacdb095a44254
+source_sha=796f13f5a8be2d3874971f960a5a2d34135b07fefa49d90ba6dc525a2f8508f2 docs/evaluation/KB_CONFLICT_RISK_BATCH07.json
+pretest_git_status
+ M .github/workflows/ci.yml
+ M scripts/mac_check.sh
+?? backend/tests/test_kb_batch70_conflict_review.py
+?? docs/evaluation/KB_BATCH70_TEN_CONFLICT_PROOF_REVIEW.json
+?? docs/evaluation/KB_BATCH70_TEN_CONFLICT_TEACHER_REVIEW.md
+?? evaluations/results/2026-11-10-kb-batch70/
+?? knowledge/editorial_review/kb_batch70_conflict_math_authoring.json
+?? scripts/build_kb_batch70_conflict_review.py

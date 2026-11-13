@@ -1,0 +1,37 @@
+{
+  "scope": "AUTHOR_DRAFT_MATH_ORACLES_NOT_FORMAL_PROOF_OR_TEACHER_RELEASE",
+  "prior_drafts": 164,
+  "new_theorem_drafts": 12,
+  "total_drafts": 235,
+  "theorem_drafts": 142,
+  "concept_drafts": 71,
+  "method_drafts": 22,
+  "source_sha256": "b5d0032b37ee55e558a8e18ea0245b8d7116533cf3b8b299c996811a97eaf63c",
+  "new_ids": [
+    "math.hs.logarithm.quotient-law",
+    "math.hs.logarithm.change-base",
+    "math.hs.quadratic.discriminant-roots",
+    "math.hs.quadratic.vieta-real",
+    "math.hs.sequence.telescoping",
+    "math.hs.sequence.odd-square-sum",
+    "math.hs.counting.ordered-arrangements",
+    "math.hs.counting.combination-symmetry",
+    "math.hs.vector.pythagorean-dot",
+    "math.hs.probability.union-bound-two",
+    "math.hs.geometry.centroid-median",
+    "math.hs.probability.indicator-linearity"
+  ],
+  "uncertified_proof_step_obligations": 474,
+  "full_formal_proofs_verified": 0,
+  "teacher_approved": 0,
+  "student_deep_knowledge_released": 0,
+  "live_model_api_requests": 0,
+  "official_electives_A_E_atomic_verification": 0,
+  "unresolved_legacy_conflicts": 10,
+  "unresolved_semantic_gaps": 23,
+  "warnings": [
+    "Finite exact independent oracles and 24 authored worked-example answer checks cannot certify all 12 complete proofs.",
+    "Existing 113 engineering topics are not an official atomic curricular denominator.",
+    "Student-only knowledge access is fail-closed without genuine independent teacher approval."
+  ]
+}

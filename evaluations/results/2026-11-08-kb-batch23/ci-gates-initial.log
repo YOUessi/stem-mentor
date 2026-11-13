@@ -1,0 +1,343 @@
+RUN scripts/build_kb_coverage.py --summary
+rriculum_ids": 178,
+    "review_statuses": {
+      "REVIEW_PENDING": 267
+    },
+    "kinds": {
+      "theorem": 155,
+      "concept": 75,
+      "method": 37
+    },
+    "by_level": {
+      "必修": {
+        "engineering_topics": 64,
+        "with_deep_draft": 64,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选择性必修": {
+        "engineering_topics": 46,
+        "with_deep_draft": 46,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选修拓展": {
+        "engineering_topics": 68,
+        "with_deep_draft": 68,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      }
+    },
+    "human_teacher_review_complete": false,
+    "student_math_proofs_verified": false,
+    "direct_student_teaching_enabled": false,
+    "notes": [
+      "Existing topic IDs are project granularity and must be audited against the official curriculum.",
+      "Schema validation cannot prove mathematical truth; a draft is never a teacher-reviewed fact.",
+      "Draft worked examples and proof steps remain TEACHER_ONLY until genuine review."
+    ]
+  }
+}
+
+RUN scripts/audit_deep_math_evidence.py --check
+{
+  "actual_status_counts": {
+    "DERIVATIVE_IDENTITY": 5,
+    "DOMAIN_NOT_ESTABLISHED": 5,
+    "IDENTITY_ON_DECLARED_DOMAIN": 28,
+    "VALID_COUNTEREXAMPLE": 10
+  },
+  "claims": 48,
+  "expected_status_counts": {
+    "DERIVATIVE_IDENTITY": 5,
+    "DOMAIN_NOT_ESTABLISHED": 5,
+    "IDENTITY_ON_DECLARED_DOMAIN": 28,
+    "VALID_COUNTEREXAMPLE": 10
+  },
+  "failures": [],
+  "linked_lesson_count": 14,
+  "math_subclaims_checked": 48,
+  "notes": [
+    "Each result applies to one explicitly authored rational or trig statement only.",
+    "Domain guards are declared assumptions, not premises independently established.",
+    "Finite witnesses disprove only the particular stated false universal claim.",
+    "No derived result may be marked as a reviewed proof of a course theorem."
+  ],
+  "review_state": "REVIEW_PENDING",
+  "scope": "LIMITED_AUTHORED_EXPRESSION_EVIDENCE_NOT_FULL_PROOF",
+  "student_free_text_steps_verified": 0,
+  "teacher_approved": 0,
+  "total_draft_lessons": 267,
+  "whole_theorems_verified": 0
+}
+
+RUN scripts/build_semantic_gap_batch05.py --check
+PASS: 23 independently authored gap drafts match frozen JSON; 0 teacher-approved
+
+RUN scripts/reconcile_kb_batch02.py --check
+Reconciliation drift: docs/evaluation/KB_BATCH02_RECONCILIATION.json
+
+FAIL scripts/reconcile_kb_batch02.py --check exit 1
+RUN scripts/build_kb_legacy_bridge.py --check
+Bridge current: 26 unreviewed legacy cards
+
+RUN scripts/build_kb_batch07_audit.py --check
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch07_audit.py", line 235, in <module>
+    main()
+    ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch07_audit.py", line 221, in main
+    artifacts = build()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch07_audit.py", line 68, in build
+    raise ValueError("Batch20 frozen mathematical proof baseline drift")
+ValueError: Batch20 frozen mathematical proof baseline drift
+
+FAIL scripts/build_kb_batch07_audit.py --check exit 1
+RUN scripts/audit_kb_attested_release.py --check
+{
+  "scope": "EXTERNAL_SIGNED_CONTENT_RELEASE_NOT_REAL_TEACHER_IDENTITY_VERIFICATION",
+  "draft_count": 267,
+  "review_pending_count": 267,
+  "externally_attested_count": 0,
+  "student_release_available": false,
+  "formal_math_proof_review_complete": false,
+  "real_teacher_identities_authenticated_by_this_software": false
+}
+
+RUN scripts/build_kb_batch07_lessons.py --check
+PASS 8 original rigorous theorem draft records
+
+RUN scripts/build_kb_batch09_lessons.py --check
+Batch09 authored lessons: 7, check=True
+
+RUN scripts/build_kb_batch10_lessons.py --check
+Batch10 deterministic source matches 11 theorem lessons
+
+RUN scripts/build_kb_batch11_lessons.py --check
+PASS Batch11 12 original teacher-pending lessons
+
+RUN scripts/audit_kb_batch10_release.py --check
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch10_release.py", line 91, in <module>
+    report=audit()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch10_release.py", line 31, in audit
+    assert len(later)==12 and len(current)==235
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+FAIL scripts/audit_kb_batch10_release.py --check exit 1
+RUN scripts/audit_kb_batch11_release.py --check
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch11_release.py", line 84, in <module>
+    text=json.dumps(audit(),indent=2,ensure_ascii=False)+"\n"
+                    ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch11_release.py", line 28, in audit
+    assert len(later)==12 and len(contents)==235
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+FAIL scripts/audit_kb_batch11_release.py --check exit 1
+RUN scripts/build_kb_batch12_source_crosswalk.py --check
+PASS source-anchored scope checklist 132
+
+RUN scripts/audit_kb_batch12_source_coverage.py --check
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch12_source_coverage.py", line 61, in <module>
+    main()
+    ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch12_source_coverage.py", line 50, in main
+    expected=json.dumps(audit(),ensure_ascii=False,indent=2)+"\n"
+                        ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch12_source_coverage.py", line 19, in audit
+    assert summary["deep_lesson_documents"]==247  # live schema index; historical snapshot remains 235
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+FAIL scripts/audit_kb_batch12_source_coverage.py --check exit 1
+RUN scripts/build_kb_batch13_proposals.py --check
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch13_proposals.py", line 258, in <module>
+    main()
+    ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch13_proposals.py", line 248, in main
+    s=json.dumps(build(),ensure_ascii=False,indent=2)+"\n"
+                 ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch13_proposals.py", line 174, in build
+    deep=historical_batch13_deep()  # Original 235 lesson proposal universe; Batch22 separately reviewed.
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 30, in historical_batch13_deep
+    raise ValueError("Historical review snapshot is not reconcilable with live lessons")
+ValueError: Historical review snapshot is not reconcilable with live lessons
+
+FAIL scripts/build_kb_batch13_proposals.py --check exit 1
+RUN scripts/audit_kb_batch13_proposals.py --check
+atch23/scripts/audit_kb_batch13_proposals.py", line 46, in main
+    val=json.dumps(audit(),ensure_ascii=False,indent=2)+"\n"
+                   ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch13_proposals.py", line 17, in audit
+    counts=internal_review_counts()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 107, in internal_review_counts
+    data=editorial_review_queue()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 104, in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 35, in validate_proposals
+    deep=historical_batch13_deep() if deep is None else deep
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 30, in historical_batch13_deep
+    raise ValueError("Historical review snapshot is not reconcilable with live lessons")
+ValueError: Historical review snapshot is not reconcilable with live lessons
+
+FAIL scripts/audit_kb_batch13_proposals.py --check exit 1
+RUN scripts/build_kb_batch14_lessons.py --check
+Batch14 authored elective proof drafts=16 check= True
+
+RUN scripts/audit_kb_batch14_content.py --check
+/audit_kb_batch14_content.py", line 60, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch14_content.py", line 54, in main
+    s=json.dumps(audit(),ensure_ascii=False,indent=2)+"\n"
+                 ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch14_content.py", line 15, in audit
+    review=editorial_review_queue()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 104, in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 35, in validate_proposals
+    deep=historical_batch13_deep() if deep is None else deep
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 30, in historical_batch13_deep
+    raise ValueError("Historical review snapshot is not reconcilable with live lessons")
+ValueError: Historical review snapshot is not reconcilable with live lessons
+
+FAIL scripts/audit_kb_batch14_content.py --check exit 1
+RUN scripts/build_kb_batch15_lessons.py --check
+PASS Batch15 9 authored lessons True
+
+RUN scripts/audit_kb_batch15_content.py --check
+/audit_kb_batch15_content.py", line 56, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch15_content.py", line 51, in main
+    s=json.dumps(audit(),ensure_ascii=False,indent=2)+"\n"
+                 ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch15_content.py", line 14, in audit
+    review=editorial_review_queue()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 104, in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 35, in validate_proposals
+    deep=historical_batch13_deep() if deep is None else deep
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 30, in historical_batch13_deep
+    raise ValueError("Historical review snapshot is not reconcilable with live lessons")
+ValueError: Historical review snapshot is not reconcilable with live lessons
+
+FAIL scripts/audit_kb_batch15_content.py --check exit 1
+RUN scripts/build_kb_batch16_lessons.py --check
+PASS batch16 12 editorial draft lessons; check= True
+
+RUN scripts/audit_kb_batch16_content.py --check
+PASS frozen Batch16 source hashes and historical 213/150 snapshot; current totals belong to Batch17
+
+RUN scripts/author_kb_batch17.py --check
+Batch17 11 authored editorial lessons with 12 unverified proof steps; check= True
+
+RUN scripts/build_kb_batch17_lessons.py --check
+PASS 11 unapproved Batch17 drafts; check= True
+
+RUN scripts/audit_kb_batch17_content.py --check
+ch17_content.py", line 91, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch17_content.py", line 83, in main
+    report=json.dumps(audit(),ensure_ascii=False,indent=2)+"\n"
+                      ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch17_content.py", line 25, in audit
+    proposals=editorial_review_queue()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 104, in editorial_review_queue
+    return validate_proposals(json.loads(PATH.read_text(encoding="utf-8")))
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 35, in validate_proposals
+    deep=historical_batch13_deep() if deep is None else deep
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/backend/app/objective_proposals.py", line 30, in historical_batch13_deep
+    raise ValueError("Historical review snapshot is not reconcilable with live lessons")
+ValueError: Historical review snapshot is not reconcilable with live lessons
+
+FAIL scripts/audit_kb_batch17_content.py --check exit 1
+RUN scripts/audit_kb_batch18_source_proofs.py --check
+Batch18 source/proof audit PASS: {"proof_obligations": 451, "by_priority": {"P1_THEOREM_PROOF": 118, "P2_REVIEW": 206, "P0_GUARD_AND_COUNTEREXAMPLE": 127}, "by_risk_group": {"PROBABILITY_STATISTICS": 40, "OTHER_MATHEMATICAL_REASONING": 206, "ASSUMPTIONS_DOMAIN": 118, "GEOMETRY_DEGENERACY": 60, "LINEAR_ALGEBRA": 30, "LIMIT_CALCULUS": 53}, "whole_proofs_certified": 0, "student_steps_verified": 0, "conflicting_version_pairs": 10, "versions_resolved": 0, "limited_subclaim_checks": 33, "existing_semantic_gaps_open": 23, "new_source_located_gap_tickets_open": 28, "teacher_approved_lessons": 0}
+
+RUN scripts/build_kb_batch20_k00_review_queue.py --check
+K00 source-review queue PASS: {'SOURCE_PAGE_SPLIT': 61, 'NUMBERED_MARKER_SPLIT': 315, 'UNNUMBERED_DE_HEADING_SPLIT': 23, 'EDITORIAL_GAP_DECISION': 28}
+
+RUN scripts/build_kb_batch21_lessons.py --check
+PASS Batch21: 11 REVIEW_PENDING lessons; 11 editorial overlaps; 28/28 gaps still OPEN
+
+RUN scripts/build_kb_batch21_proof_union.py --check
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch21_proof_union.py", line 109, in <module>
+    main()
+    ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch21_proof_union.py", line 98, in main
+    rendered = json.dumps(build(), ensure_ascii=False, indent=2) + "\n"
+                          ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch21_proof_union.py", line 38, in build
+    raise ValueError("Old + new proof queue must exactly cover current independent draft IDs")
+ValueError: Old + new proof queue must exactly cover current independent draft IDs
+
+FAIL scripts/build_kb_batch21_proof_union.py --check exit 1
+RUN scripts/author_kb_batch22.py --check
+Batch22 author source: 12 mathematical drafts; pending teacher/source review
+
+RUN scripts/build_kb_batch22_lessons.py --check
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch22_lessons.py", line 110, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch22_lessons.py", line 102, in main
+    outputs=list(zip((OUTPUT,REPORT),build()))
+                                     ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch22_lessons.py", line 31, in build
+    assert len(course)==173
+           ^^^^^^^^^^^^^^^^
+AssertionError
+
+FAIL scripts/build_kb_batch22_lessons.py --check exit 1
+RUN scripts/build_kb_batch22_proof_and_scope.py --check
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch22_proof_and_scope.py", line 152, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch22_proof_and_scope.py", line 145, in main
+    for path,txt in zip((PROOFS_OUT,SCOPE_OUT),build()):
+                                               ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/build_kb_batch22_proof_and_scope.py", line 50, in build
+    raise ValueError('Unverified proof source union must equal 247 live drafts')
+ValueError: Unverified proof source union must equal 247 live drafts
+
+FAIL scripts/build_kb_batch22_proof_and_scope.py --check exit 1
+RUN scripts/author_kb_batch23.py --check
+PASS: 20 original Batch23 REVIEW_PENDING lessons, 5 optional editorial candidates + 15 core subskills
+
+RUN scripts/build_kb_batch23_integrity.py --check
+PASS: 20 new lessons, 5 editorial-near gaps still open; official denominator NULL
+
+RUN scripts/audit_kb_batch09_release.py --check
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch09_release.py", line 83, in <module>
+    main()
+    ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch09_release.py", line 71, in main
+    result=audit()
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch23/scripts/audit_kb_batch09_release.py", line 24, in audit
+    assert len(later)==12 and len(existing)==235
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+FAIL scripts/audit_kb_batch09_release.py --check exit 1
+RUN scripts/audit_kb_semantic_coverage.py --check
+FAIL: semantic coverage snapshot missing or out of date
+
+FAIL scripts/audit_kb_semantic_coverage.py --check exit 1
+TOTAL PASSED 22 of 37

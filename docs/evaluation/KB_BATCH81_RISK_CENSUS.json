@@ -1,0 +1,2687 @@
+{
+  "all_p0_steps": 182,
+  "all_p0_unlinked": 134,
+  "by_risk": {
+    "P0_GUARD_AND_COUNTEREXAMPLE": {
+      "formally_certified": 0,
+      "teacher_approved": 0,
+      "teacher_drafts_linked": 48,
+      "total": 127,
+      "without_teacher_drafts": 79
+    },
+    "P0_HUMAN_ATTENTION": {
+      "formally_certified": 0,
+      "teacher_approved": 0,
+      "teacher_drafts_linked": 0,
+      "total": 14,
+      "without_teacher_drafts": 14
+    },
+    "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING": {
+      "formally_certified": 0,
+      "teacher_approved": 0,
+      "teacher_drafts_linked": 0,
+      "total": 22,
+      "without_teacher_drafts": 22
+    },
+    "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK": {
+      "formally_certified": 0,
+      "teacher_approved": 0,
+      "teacher_drafts_linked": 0,
+      "total": 19,
+      "without_teacher_drafts": 19
+    },
+    "P1_HUMAN_ATTENTION": {
+      "formally_certified": 0,
+      "teacher_approved": 0,
+      "teacher_drafts_linked": 0,
+      "total": 9,
+      "without_teacher_drafts": 9
+    },
+    "P1_THEOREM_PROOF": {
+      "formally_certified": 0,
+      "teacher_approved": 0,
+      "teacher_drafts_linked": 0,
+      "total": 118,
+      "without_teacher_drafts": 118
+    },
+    "P1_UNVERIFIED": {
+      "formally_certified": 0,
+      "teacher_approved": 0,
+      "teacher_drafts_linked": 0,
+      "total": 23,
+      "without_teacher_drafts": 23
+    },
+    "P2_REVIEW": {
+      "formally_certified": 0,
+      "teacher_approved": 0,
+      "teacher_drafts_linked": 0,
+      "total": 206,
+      "without_teacher_drafts": 206
+    }
+  },
+  "formally_certified": 0,
+  "guard_subclass_p0_steps": 127,
+  "guard_subclass_p0_unlinked": 79,
+  "historical_proof_denominator": 538,
+  "linked_teacher_drafts": 48,
+  "new_p0_teacher_drafts": 12,
+  "other_p0_steps": 55,
+  "p0_review_queue": [
+    {
+      "conflict_id": "math.hs.probability.hypergeometric",
+      "formal_math_verification": false,
+      "historical_step_sha256": "82964db4ae2745346d85e46b940f82ae6591652bf8cefbe1426a34366e94eeb4",
+      "id": "math.hs.probability.hypergeometric#1",
+      "next_action": "INDEPENDENT_CONFLICT_ADJUDICATION",
+      "review_card_id": "KB78-P04",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6dad090c005d4e0b015f7af09a301c70ff36c655d74e137d2a955a3392a4b167",
+      "id": "math.hs.space.coordinate-distance#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P01",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "2e758bfe674ccd0631fe1da5280a56bf238f31648591b4ce8240884a362ca6d6",
+      "id": "math.hs.space.line-plane-normal#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P08",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "390062f36e9ea7e05992f538c695162310e3130fe43030cc9d40b2f42bdbec5c",
+      "id": "math.hs.space.line-plane-normal#3",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P02",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "961ce8fa031c7b2f86fa4469daa89a4e62fa87f655f9bf363cfbb3cb10579103",
+      "id": "math.hs.space.angle-distance#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P16",
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "8a5bd38695865065466bb95f91da53e5105ede61d66f92b6f3d3c88c74c913bf",
+      "id": "math.hs.space.angle-distance#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "24f66ef6b3d587509f12b5432cd4ea763b10b914d8ade6e066617df654d1af0f",
+      "id": "math.hs.geometry.circle-intersections#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P15",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "d90abd1594e2f935a35f3841316518c15ef30b9641a6d9ab5963b31804f92b84",
+      "id": "math.hs.geometry.circle-intersections#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "ed7c89d7b27327bf1748752ee00db456b8a11aea8b8000c7dfb2434e3186d0ed",
+      "id": "math.hs.geometry.circle-intersections#3",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P03",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "19988bb9e5e4cb63d6eb5fea029bf6f4f13d277505b31f2b78f950c376788d9b",
+      "id": "math.hs.geometry.circle-intersections#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "879fc25353c0bc3f95942f5e836bb51632c81b2e9a6435959ef34476491d957d",
+      "id": "math.hs.geometry.parabola-focus#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P07",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "bba9bff646f1c07d50feb0d030c379d96ed8b70ef0c5402e35f56458d331ce81",
+      "id": "math.hs.geometry.parabola-focus#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P04",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "18734b19734c82ec85030cd3fa74c26bd7c3b18991858e29b13fe1d633f7c0a6",
+      "id": "math.hs.geometry.parabola-focus#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6ef8b802126280193e1cd4e0e9c16e983d38b0e22cc043b692be51f40dd09d67",
+      "id": "math.hs.geometry.ellipse-tangent#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P07",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "443ac6f37a1400f09adbfb3531dbc6b02de29f251636aacf5a5b9b6bbf63c2b9",
+      "id": "math.hs.geometry.ellipse-tangent#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P05",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "f4967d620a23cb38ce08adbebea9d89c948fec54395a7c74a467bfc26337d4f1",
+      "id": "math.hs.proof.induction#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "47c5da6dfc498d175cb14e31be5872bca4ffd4ae04df2a8c7c805c53f3fb2177",
+      "id": "math.hs.logarithm.quotient-law#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P01",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c1ee45dbd39b231b8aec3afbe28c8503d5bfb28f7bbee15316682f8ae9ae40d5",
+      "id": "math.hs.logarithm.quotient-law#3",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P06",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "d2431b9379af49afb5841ece82bc3cff7e1bbc1a5a43788f9f5e1f7211bc7218",
+      "id": "math.hs.logarithm.change-base#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P02",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "e6e193fbf4b65a2bf45fd317119989e3da21781462a985173b84024790c5e355",
+      "id": "math.hs.logarithm.change-base#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "d17029142dd0c70624a03925eba0991246ea73ac8f557f19b11cfe8015509256",
+      "id": "math.hs.quadratic.discriminant-roots#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P03",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "5b715bf35232fe5c15537cd264dd13c7791b97791a5a0b6a84f6362a1a400eae",
+      "id": "math.hs.quadratic.discriminant-roots#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P07",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "b8e51299bb0bd8b9677f3f00768f9efd2ef8f3f8c15c7599ce9075cc933cda4d",
+      "id": "math.hs.quadratic.discriminant-roots#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "29ae1a7d3404263f30632b9ff82a3f7cb317cd49b2ac3979524ca6e7b84ee2a2",
+      "id": "math.hs.sequence.odd-square-sum#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "0fe9ac83fab9a47e95fdfb06e1474fe8a82c6eba91b0754f081d995d76b585e2",
+      "id": "math.hs.vector.pythagorean-dot#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P08",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "78c281116957ee3448cdcdc5b4a93a8784df9bbccc5f14e434eeee6140bb2d9a",
+      "id": "math.hs.vector.pythagorean-dot#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6ccc5319207953d107e30e568bdde23df76e8a156d2ee58ff7f64fad5890b484",
+      "id": "math.hs.probability.union-bound-two#3",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P09",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c1a3042832d48f3143701c702f65e5678c028481f5227f3793917d8e3b856e41",
+      "id": "math.hs.logarithm.product-law#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB80-P01",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "b9fd40f7691c411d52b93c4c4e9379ebc21ff78558ca3ed3b70e13cb20162a2d",
+      "id": "math.hs.logarithm.product-law#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "4493e259c85eb86971446c4805035321895ee3cbf1afb994575902049dd0aa4b",
+      "id": "math.hs.logarithm.product-law#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "4057d163895e6ae3f0191458ded207b8ff77d92f3aa55a21ddb5d8a8574aece3",
+      "id": "math.hs.sequence.square-sum#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "180cb657d4bbb7f92b5ed2e9c578e8fec0f1269fb968f3bdd43b738f4177adf3",
+      "id": "math.hs.vector.parallelogram#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "a3b4da758ef2c3a46722b5fbba424f21ac8d6561c713238b2dd47ca50a1a546f",
+      "id": "math.hs.probability.variance-covariance#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P10",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "edf4fb84f7a1a0f8bdb9653c2a82bf571eb6a5b96813cd43033c22876e1c3ab6",
+      "id": "math.hs.probability.complement-independence#4",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P14",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "12bf2c8bd2be2c1e45485bd93f52d4c77b4507b1eae8328de65e29dd617db4df",
+      "id": "math.hs.geometry.circle-complete-square#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P12",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "a3527499a49fb353344abc821ca0f70d250453b3756403a6cb462bc4d5cab916",
+      "id": "math.hs.geometry.circle-complete-square#3",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P09",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "2796d506f645c2d43b2e03f678e194e3117b86c0aeefa58fe12db08101deab42",
+      "id": "math.hs.geometry.ellipse-parameter#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB81-P11",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "ffa825951ead8dc0d8e5817e3b53b90036dc11d5e70324b5447b647b8d377bb8",
+      "id": "math.hs.geometry.ellipse-parameter#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "2c808c662d7d309c161f2fdde2f35cd99e8b2e76fed1dcdce5164a11a37057e4",
+      "id": "math.hs.quadratic.sign#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB80-P02",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "89283cfb1b6061c3e21defa8f89494c13884502ed127bafd75ad47120b9d31cc",
+      "id": "math.hs.inequality.amgm#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P01",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c870676b102d80db79a5e15ebd316f39f75876444ac2e736e4180487b1474982",
+      "id": "math.hs.inequality.amgm#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "e0bc5b3829912231c78160ae6d08e2cafc3100bda71452a50b2d1c1dbee9fba3",
+      "id": "math.hs.inequality.amgm#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "4be6d7a1cbc175f64b55e1a0e2b8adb5c7abdd74c2abf7cb90947d9fbcc072d4",
+      "id": "math.hs.function.quadratic-vertex#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "e6c416e26a19436114b257b35dd80e8bb755e133c23acadc8675f41c8bab4abf",
+      "id": "math.hs.function.quadratic-vertex#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "41b2828120226d56edf2f97aa09a0dfdf758751aaa107bb7d85499c84fcac4cf",
+      "id": "math.hs.logarithm.inverse#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "ea393eb80f2828c0c2ee1158a20e17b195f6a701902c56c64204581c259f4caf",
+      "id": "math.hs.trig.sum-angle#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "eb798d6d1a1a9ba3cc254ae2cad5373317f53d0ffceff411f4f4906ee21f0a32",
+      "id": "math.hs.vector.dot-product#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB80-P06",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6ac2a4d5681faf932f4f8ea4569bc55db876beca0e6e048104700ef9d5d18ec6",
+      "id": "math.hs.vector.dot-product#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "dc20e769169e0dbd2b5acd1837f4fb2d598076c72c061f35c1e6917a80ccb58d",
+      "id": "math.hs.space.basis-three-unique#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "dc6a64e54b87aab163a8357cb69bddc76768222f5bcbb97f93b2bdeaf74d27b6",
+      "id": "math.hs.calculus.quotient-rule#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P05",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "68893ea2edf43c35a78788acd400a574b2cfa301a37def704ad17bdbe9c9e164",
+      "id": "math.hs.calculus.quotient-rule#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "3ca552a8f402f02791b1540c3fe9c8418f221bf5b9fb7d8d7e3c9c02a23799be",
+      "id": "math.hs.calculus.fermat-stationary#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "49424aa65510af64439845b736e1e59bf3388bfa2d40c36308d8ca5310f4d1ff",
+      "id": "math.hs.vector.cauchy-schwarz#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P02",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "9272449b59eabc68eb8b55b647ba78b9990dbc8acfb391267c51cec01a33c5bf",
+      "id": "math.hs.vector.cauchy-schwarz#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "550a05fd0c8eeff2940a8638a8e64138dfbc2a7a3b02f17dc46c72f13116d02a",
+      "id": "math.hs.vector.cauchy-schwarz#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "38b2cc37573f32b5248ab10f8039f2a8a6808ddd5e152d82c24fd27439bbb124",
+      "id": "math.hs.vector.cauchy-schwarz#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "e100b327c6aad6752dafa0063597d3de45aab00e5f0aca556f3422d52a6f3b45",
+      "id": "math.hs.probability.expectation-linearity#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "7ad2ee52ce128a3cbe4acc0b8ca7687dd158ad5fa248c0fd7943ce35f0509134",
+      "id": "math.hs.function.bisection-root#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P06",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c80adf9207635563fcddfad4a7204d1d71f874970fd751ac3755425e98e7e945",
+      "id": "math.hs.elective.calculus.monotonicity-mvt#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P06",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "4fc0495c345ae6ddef3499e3b2e341e13dc4096d2c11e62e6401db31c1afb932",
+      "id": "math.hs.elective.linear.rank-vectors#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "955c635a146beb62f1cc69a121ead54bd12a0af6cbd2f0f488f187056fd57ee1",
+      "id": "math.hs.elective.linear.cramer-three#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P11",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "91d956e441597d3b16e51f04a724a6b08ab22931f8ef31fb1ab1c646799fe96e",
+      "id": "math.hs.elective.statistics.ols-two-parameter#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "50413e60ad3285f272cb4c330300ade308590c0e7efce6bfae584892b986d745",
+      "id": "math.hs.elective.statistics.ols-two-parameter#3",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P10",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "8c4cd3930764b87844685c233f57a3aa0e9745270f8e65e2dffd4b438f1d07d9",
+      "id": "math.hs.elective.model.parametric-circle#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6bfd9f0c0211d1ed97e95fe7a2e242b5bb3c3b9384854b61065931ea4f1d3973",
+      "id": "math.hs.elective.sequence.epsilon-n#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "19c0423859af8ab752125b4fc7470915b0cc12d2ed1aa3e2c8680545fcb24168",
+      "id": "math.hs.elective.function.epsilon-delta-square#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "9bdd828d6eca6152b1af69dc0e9f21477c1b44ce85355ef33de419e58a99a60c",
+      "id": "math.hs.elective.calculus.differentiable-continuous#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "18fe75a5c048f26a8cf3936347670779d085cacc31e8671247d5289414d4281e",
+      "id": "math.hs.elective.matrix.inverse-two-by-two#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P10",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c98427f511176e2fd71550b111afe600dedb7a3af3343295c0c4d8b72d333efa",
+      "id": "math.hs.elective.matrix.inverse-two-by-two#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "5115a6a4bde020dfdfadec0baba36e3d07e8df673659775e48d8bbae6dc0c217",
+      "id": "math.hs.elective.matrix.gaussian-row-equivalence#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "5984a38901d29abb238ff018c6e59a58fba62c2a8964952ab61f8e68f8cec3f3",
+      "id": "math.hs.elective.multivariable.partial-polynomial#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "43d27ba1841d143d69eff5f4e7d6ba821764b3f2c8e623f11befd64d2f75e9dd",
+      "id": "math.hs.elective.statistics.bernoulli-mle#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "34248c565d5c75caccac1cf9cf61a4bd7ad828a2bf26384037f079adc9c8ba8b",
+      "id": "math.hs.elective.statistics.bernoulli-mle#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "06b77362b65510ae1fd60eab47363f35c16cc076b81132c664df05a32b88a323",
+      "id": "math.hs.elective.calculus.second-derivative-convexity#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "749eaa77e98964bb993d337fbf62e6e7d62978e98446f678147973e8c6fd301c",
+      "id": "math.hs.elective.model.time-rescaling#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "95a10cff5b8347a8fb13c7fa801cf493105779e58298765c580879dc2d21a3dc",
+      "id": "math.hs.elective.model.input-output-triangular#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6d31db6e3c4960cc35f560bfc0829a33ed5b0ea0bb69bb174147aad591d7c555",
+      "id": "math.hs.elective.geometry.euclidean-isometries#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "60b1997fa9bccad83c890bef93361cf814fdaa5ad55e4fc08709f3795699a229",
+      "id": "math.hs.elective.geometry.euclidean-isometries#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "e0c08cc8ea53f9777a767c2b2bedd7da0f676b4e03bcbe06c4bf376ed6d2f975",
+      "id": "math.hs.elective.sequence.fibonacci-golden-ratio#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "4137d5386349e888d1707ad29cb98c5be76b14e36856f80936215145116f0820",
+      "id": "math.hs.elective.finance.annuity-present-value#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "57d10a3d5abe2a8976b5e033e276dac8059ef28e9f355ea26aa1d0b55a2c59b8",
+      "id": "math.hs.extension.circle-polar#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "af740ecae546c1997e0c23671265bcee41c61f7032d54f33149a53b4d57b715e",
+      "id": "math.hs.extension.circle-polar#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "3a2d6fcb70cfc880852126eeb9a07d342cb151d95bb87fa8fa1d65e8ae06b960",
+      "id": "math.hs.extension.cross-product#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "f433ff7a4b37cf6d9cf476a462ee77ff77cea8441a7f4dfe847209b5634afe5d",
+      "id": "math.hs.function.abs-triangle#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB80-P03",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": "math.hs.function.composition-domain",
+      "formal_math_verification": false,
+      "historical_step_sha256": "11925f3b1b58cadf03d1a6c8aaed8f7cf30ca493f8dbc2222b3140e42b6f1c25",
+      "id": "math.hs.function.composition-domain#1",
+      "next_action": "INDEPENDENT_CONFLICT_ADJUDICATION",
+      "review_card_id": "KB79-P04",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": "math.hs.function.composition-domain",
+      "formal_math_verification": false,
+      "historical_step_sha256": "1d987f5a601370c4f6ed7af7c68669369afb8a9e0f9f12ae00798063818881b9",
+      "id": "math.hs.function.composition-domain#3",
+      "next_action": "INDEPENDENT_CONFLICT_ADJUDICATION",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": "math.hs.vector.linear-operations",
+      "formal_math_verification": false,
+      "historical_step_sha256": "fa2f16a81a81780583fe3300a83ee8a6f6e5272305f0162ae52533ba31f63ed1",
+      "id": "math.hs.vector.linear-operations#1",
+      "next_action": "INDEPENDENT_CONFLICT_ADJUDICATION",
+      "review_card_id": null,
+      "risk_groups": [
+        "LIMIT_CALCULUS",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "d7a70ddbcc1411a682bc30238a90b6ec54b55d5a2b71ecf40494d30e88a7f420",
+      "id": "math.hs.geometry.space-dot#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6cf4215be9fd74bf7c7780e7384d5a08868c3668f1c56658f94c14d9398ddd4f",
+      "id": "math.hs.geometry.space-dot#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "4ebbf9d0ae09722bdecd5688243898537b0a8082631a365b364c31ad2d267d4c",
+      "id": "math.hs.geometry.space-dot#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "7fbae69e34c96bf05bfbf194a45cf7c216f70756eb0688434c3c4989263d3cd8",
+      "id": "math.hs.geometry.line-general#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "f1fda80e41f0411fa6b94a3a99aa6225d665d7a797d8aaeee2e67a26731ff094",
+      "id": "math.hs.geometry.line-general#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c8f6c9996900306967d7baa5a43cbc6831c59ecd1634009aebe84e4bb8c7ec0e",
+      "id": "math.hs.geometry.line-general#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "aae41cbc1a755da3f2631f648502da33ec3f31ebafd6b0a901adc00dcd705c72",
+      "id": "math.hs.geometry.line-circle#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "7b124a60d5e58c7d4d99cb919dbe88e4a0d49a32d7a5ff9cb169528d15a043bc",
+      "id": "math.hs.triangle.sine-law#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6355593cf29608e87c8798e4f6b7f3196a64335cfb8986523d5c0e2593b54208",
+      "id": "math.hs.triangle.cosine-law#4",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P12",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "425123bed79bac84ec7886890e4f85d9dd0ed005f002e2ecc323da11328e44ed",
+      "id": "math.hs.sequence.arithmetic-sum#4",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P08",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "0a73b2674588476438a19b841104a43be95a687684eb8b3038f9b91082b936fb",
+      "id": "math.hs.sequence.geometric-sum#4",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P03",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "98bd853e6328744fbef18d7da249c4de226b96395b1dcbb1e970de1d500c56d4",
+      "id": "math.hs.counting.product-rule#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB80-P04",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "0f2a18dacdeae586429fdd0f215eec4fd3d38be191eef40a7f0f5db5283e023c",
+      "id": "math.hs.probability.total#3",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB80-P07",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "b7541fc18f50da3183c0898cade2420db051055287439fe9487bd34a40b4ea1b",
+      "id": "math.hs.geometry.line-equation#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "15f182b323195a927e9e1459327e1a37639b4e781116a77093c039b317ba2ee3",
+      "id": "math.hs.geometry.line-equation#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "144b774d9f21d1e0e1b459cf875b896b7ae525e6612500f3ddb4b25887c2b80a",
+      "id": "math.hs.geometry.line-relations#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "b2cdf7e2a1b4c82eabbab17d51aa5707fe9937ea9a48468dbb8b37d10c0b6d03",
+      "id": "math.hs.geometry.line-relations#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "2afddbcdd24eafe305337757337e04dd84324da54712dd635ceba09e45fb1e90",
+      "id": "math.hs.geometry.line-relations#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": "math.hs.geometry.point-line-distance",
+      "formal_math_verification": false,
+      "historical_step_sha256": "10f3eebb727cc0eefd6963e7d8c1670d4531bb9728c41e9f218564fdbfa01779",
+      "id": "math.hs.geometry.point-line-distance#2",
+      "next_action": "INDEPENDENT_CONFLICT_ADJUDICATION",
+      "review_card_id": "KB78-P09",
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": "math.hs.geometry.point-line-distance",
+      "formal_math_verification": false,
+      "historical_step_sha256": "89491fe984cd7b7d919220eb301cd39f283718373587ef150f3771d1cfdc6e86",
+      "id": "math.hs.geometry.point-line-distance#3",
+      "next_action": "INDEPENDENT_CONFLICT_ADJUDICATION",
+      "review_card_id": null,
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "d96947fa06ca45d795ecea2d13ce52ae69a2d78b59e1a7c18d85d4b8a9eb8ad2",
+      "id": "math.hs.statistics.variance-affine#3",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P11",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "628ea06485d4165f1540edc362675292d9d427a1f593287862ea7812f25bc1db",
+      "id": "math.hs.probability.bayes-partition#3",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB79-P05",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "35f0b230a0e407d5a1cba0120f051d5aa1cbf84453dcb0b74f6a487127dbc003",
+      "id": "math.hs.trig.double-angle-reduction#2",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB80-P08",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "90e73b04d50c7222425f4246f42ada05e787b8950770b0d604737ea4d39809c5",
+      "id": "math.hs.trig.double-angle-reduction#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "691ffa19971891dd71d4f83e0989e66ce912854df23f1b797248a083ac41eba9",
+      "id": "math.hs.vector.projection#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P12",
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "cbc9cca4f8cceb36718566cc2b7c35029784348ed36dfd6bb1cc8e654e74c876",
+      "id": "math.hs.vector.projection#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "ec8f5b7ba6d3de1097dc510c0587911ab5ad6251a012a2a88123824cfdb0c4f3",
+      "id": "math.hs.complex.operations#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "b55367f3d234011f6726b7bd09575d923b749649ce6e3c3f364f7dda676cad10",
+      "id": "math.hs.complex.operations#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "2850c8e5642bb20d395fa42e4dff820e056729d17597109ceabc56c9f826a29a",
+      "id": "math.hs.space.parallel-perpendicular-criteria#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "60bc1c31bb8243539183cf273da1027e3423d8c987cdf4fd95845938a9ca381d",
+      "id": "math.hs.probability.multiplication#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB78-P13",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "1d683653c5ab1c5b877a135235863474e6bb22b8b61362f5f981d35e3b86db46",
+      "id": "math.hs.probability.multiplication#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "9995429ecfe69a7541b5c727e208661da0aeb1f975dac3da6ea28f646be03e2b",
+      "id": "math.hs.calculus.tangent-line#1",
+      "next_action": "TEACHER_REVIEW_OF_EXISTING_DRAFT",
+      "review_card_id": "KB80-P05",
+      "risk_groups": [
+        "LIMIT_CALCULUS",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "22515d6f53186a912efbe626afaefb4a866bd83ce608b2ee1ade88c701eaf488",
+      "id": "math.hs.calculus.tangent-line#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "LIMIT_CALCULUS",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "f9d49638115d85be2403d7900420e51abfe2501a54485de4f58c7cad314674df",
+      "id": "math.hs.space.perpendicular-plane#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "28b35866e0af519cb84498e9167d65a2df5764d479f7bf7d99dee94dd672d6e4",
+      "id": "math.hs.space.perpendicular-plane#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "f2bf19336c31643c3f40c9c674c76edb3636e45781c5d79d9d037727d788aaac",
+      "id": "math.hs.space.perpendicular-plane#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "LIMIT_CALCULUS",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "92e8951aed98a2705bb895480699fb039ea2462443de179dc27660c2ba930501",
+      "id": "math.hs.space.point-line-distance#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "fc3139e78c40dfd01e4ab475880037d6f9d8c9747293576703849c2ade649c08",
+      "id": "math.hs.space.solid-volumes#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "d747891bdbd96eed3b287f0919a46fdc1cd65921dd54a69a2a64a5772051b4fd",
+      "id": "math.hs.space.solid-volumes#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "9d398feb47b9900c75ae16b56602b57b8dc4c8485fa67634e287eb8faa81f7f9",
+      "id": "math.hs.space.solid-volumes#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "risk_priority": "P0_GUARD_AND_COUNTEREXAMPLE",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "4a743524fc24e66dfd9970e4ba5dd3f44ecb5830de1a51ce5df0a28c09aa71be",
+      "id": "math.hs.elective.geometry.plane-isometry-composition#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "DENOMINATOR_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "7460ba0dc843dca08d82762f5655bf2318935d360940fdccb33737dd74adb417",
+      "id": "math.hs.elective.geometry.space-isometry-orientation#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "DENOMINATOR_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "9cde23c328515fcfb005304db9dbac7aa7d62a45ff339031d796bc97cfb7e620",
+      "id": "math.hs.elective.geometry.space-isometry-orientation#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "DENOMINATOR_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "90c0a9ae824e9fd663991e78614d29e817039f410094ad19e3aa7df25e5a0b4d",
+      "id": "math.hs.elective.geometry.space-isometry-orientation#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "dc8aa84122265c34fc52eea29080c87626785dbd0c4a26401ca9f0c8f6fd8aaa",
+      "id": "math.hs.elective.statistics.triangular-density-moments#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "53b6794b10a4ce18a176a74cdef156c41c66b52cc42601cd4fc233c63acc6c5b",
+      "id": "math.hs.elective.models.keynes-affine-stability#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "DENOMINATOR_DOMAIN"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "32e2a1cabc7cfbb4590c9fe0307c29cce69e769857bea23f5e06b71f07239b14",
+      "id": "math.hs.elective.models.keynes-affine-stability#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "DENOMINATOR_DOMAIN"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "8977863218244125d190cf15be10bde9d31f1636183012a38b2f5a133d8b9a68",
+      "id": "math.hs.elective.music.transformations-noncommute#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "f7e00b65314e687b9853340ef6cd2a579d1eca49d918afe40f7341aabebefabd",
+      "id": "math.hs.elective.music.transformations-noncommute#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "f112ed61b019bd226cbe50d909e7f94ec2a612181219ab43334b3cea6744e86d",
+      "id": "math.hs.elective.music.transformations-noncommute#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "969551f62958404dd571de252c64b80fddaaf50419911e198a86ac99153d3882",
+      "id": "math.hs.elective.statistics.normal-sampling-mean#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "DENOMINATOR_DOMAIN",
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6645636523e33bc5b51be8bb05bd3258b1a264150429034bfc57d37cc7c8e148",
+      "id": "math.hs.elective.statistics.normal-sampling-mean#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c86b62e0d00cffd18c6f18930e4f4b4bc0b4ecf608bfa22573ff0c5aeec69e7e",
+      "id": "math.hs.elective.statistics.normal-sampling-mean#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "DENOMINATOR_DOMAIN",
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "5ee71a4581fc94af7d26a2ba43835f180b8c727dc97aba972339850ce8eb7cf1",
+      "id": "math.hs.elective.statistics.normal-sampling-mean#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "DENOMINATOR_DOMAIN",
+        "CONDITIONAL_INDEPENDENCE"
+      ],
+      "risk_priority": "P0_HUMAN_ATTENTION",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "edd0e2960319aae365553efd9de519851e862954d4dd96b870a00719ef8ea9f1",
+      "id": "math.hs.batch23.core013#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "26ef06aac5fc1080bb54e51c81326a53b5285dc63048cbb0ef501405305dff10",
+      "id": "math.hs.batch23.core013#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "d35f6c054c20ba486e9c145651e173070f9f50f7fa6c9630bdee30534e896ca2",
+      "id": "math.hs.batch23.core013#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "ecf03d95d2d2945c58ff517f83c21c790bb3df147ac7566632d8af3a7aeb66e7",
+      "id": "math.hs.batch23.core044#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "e3562b8daefe3a1288e40eea4a8a13b242aa9df89addbbf0e3df9e4d405db316",
+      "id": "math.hs.batch23.core044#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "250cb826c3403f00dc5bda0dd9936dbe49649595a07d8f407d89200dd3edb1e0",
+      "id": "math.hs.batch23.core044#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "50369890936e324c57c9003457c7e32ee803ad100d4ce6558665f3f3032f41a8",
+      "id": "math.hs.batch23.core053#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "148d21f0888dd9bf963776030e833805db2924a13370ddf89f47f27fbacc778f",
+      "id": "math.hs.batch23.core053#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "334f038cdfd755014f135d26a4bb9d030e9381b747a16928e6ec31fb68f3385e",
+      "id": "math.hs.batch23.core053#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c7ee0d40c17d06ec89297a38787004125fc7d407cd5e89e34f00fada823ad312",
+      "id": "math.hs.batch23.core065#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "22bdd4f36f5b7e408b6deb50160bbba30d49f70839f4d8c91b268f1c90f93408",
+      "id": "math.hs.batch23.core065#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6060417eb623610b2858f6fcc31aa98b763fbc2b32d324639b15bffa65e7c977",
+      "id": "math.hs.batch23.core065#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "cadb9530745188866dd4da6e6183409bbb5988be5608a7e2b3b8dc069f82d621",
+      "id": "math.hs.batch23.core068#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6fde4eb9706240080aa90ee318d7d930d5ce73ed458ea771bdbe558ae7200b17",
+      "id": "math.hs.batch23.core068#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "f36555cfa7f2956d3fbf007c1aaa75d9cf29131cac25b49d557bda3a3c0e3e69",
+      "id": "math.hs.batch23.core068#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "d04a18e8caa0dc33cbc329714037a64837978702f8695c09aa86cb088f3a59af",
+      "id": "math.hs.batch23.core096#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "6754c3df3d554457fbbf85b2d000563cddfbbbcbbe9f895480ff6461698021d3",
+      "id": "math.hs.batch23.core096#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "156a65401612e6ae537ba1bac7362f77eb85ef266459615e9863cb26eb8194cd",
+      "id": "math.hs.batch23.core096#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c683e0c77d931d2f58a879270648d4bba9e55746ea52bf772a3cd03c2cccc014",
+      "id": "math.hs.batch23.core099#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "5dec5ec420c02fcfee713b0f92ce9f417a57c8fe702d6494458f59018bf8ac63",
+      "id": "math.hs.batch23.core099#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "0c4efae4b9c4e30aa5e9eeb8ecac73a6939beb207450e93a4e5df98bc6561a0b",
+      "id": "math.hs.batch23.core099#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "c95ed1353b206d4b27a68ba7742e2e64f76ec937b6df5b84b9f4cae24bc14baf",
+      "id": "math.hs.batch23.core099#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "0bce5b9eed5b581cb130f0464bed8ed5f9bc261c4a6168c1b6bcf1fbf2f199e9",
+      "id": "math.hs.batch24.q004#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "76b84e4c88c51a592edd28b94fc0b6b611fc372c75ae41506744d175295e11e7",
+      "id": "math.hs.batch24.q004#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "1213da336b983076b41cbef90e31ae2210e16ecc0cca5e4e15add68b4fb019ec",
+      "id": "math.hs.batch24.q004#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "87eaba53e10ad84405d25f2769aa18fad4f48740359fc142ad50f5395544e218",
+      "id": "math.hs.batch24.am009#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "2e43ed3cb10e2b7f5ea284d09695d7402b6384b5db6fefc9262fae1fea1627d0",
+      "id": "math.hs.batch24.am009#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "e51e41e8e4bd4a72daffd579a0ecf40919f1a1fede8f2036b81a21a427df53c3",
+      "id": "math.hs.batch24.am009#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "2280f21b7fec6fd5c9214fd5c08bb742c23cd5f896eae51bee41a8d18f0ca44c",
+      "id": "math.hs.batch24.tr028#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "d70d2ad809dbab85fd654e33a44b9645ebd63d394c2095362ace4f1391889042",
+      "id": "math.hs.batch24.tr028#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "2dbddee6a4e0fb07ad9b4103196676cdcfc9f9ded1b9a44e260f80e20bff3791",
+      "id": "math.hs.batch24.tr028#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "04cc086ef6f41bbb844b11e1f809b3f81a91b1a449695f5528a89d2f5ef00d70",
+      "id": "math.hs.batch24.add029#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "07b0deba1fdd49d862f6dca8ad4d0ee3e7b22f7d127dd573755dce53285beb6b",
+      "id": "math.hs.batch24.add029#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "95ae35798fdcf5602fd6ee97492cc0a4bb43e359775f9da7f416741ac06c23d7",
+      "id": "math.hs.batch24.add029#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "68d1b23b8996a65c5dab378a829507e2058592f9643a2ad800dc3b79508409f7",
+      "id": "math.hs.batch24.sin036#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "8a55494a0a0710f02fa13a91e7b5266e95f9d593e9d34a5acbb8f974d9cc783c",
+      "id": "math.hs.batch24.sin036#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "3c58c2b404797c161dc93283d81a7cb45594e16efa33776bf306051bdd1d1d01",
+      "id": "math.hs.batch24.sin036#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "1f5d54730d946a6f67fdfb1c4a037e4ab862230300ac6ee5e08df792769636b5",
+      "id": "math.hs.batch24.sin036#4",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "349ca861c9c420851f81c0ee9645d8dcb6d114ff06ae853c0f031581e1ef7ca1",
+      "id": "math.hs.batch24.g064#1",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "cdf51c576f3e13f30a38b5fea38db0b087b2cc38413fd2f0e7da583337435a7f",
+      "id": "math.hs.batch24.g064#2",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    },
+    {
+      "conflict_id": null,
+      "formal_math_verification": false,
+      "historical_step_sha256": "999010f73f48ade4ef2129dd3db72afad865234097bf0ec530e8f8eae8d41c3c",
+      "id": "math.hs.batch24.g064#3",
+      "next_action": "DRAFT_CONDITION_GUARD_AND_COUNTEREXAMPLE",
+      "review_card_id": null,
+      "risk_groups": [
+        "HUMAN_MATH_REVIEW"
+      ],
+      "risk_priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "student_publishable": false,
+      "teacher_approved": false
+    }
+  ],
+  "prior_batch80_all_p0_unlinked": 146,
+  "schema_version": "kb81-complete-p0-risk-population-v1",
+  "source_input_sha256": "339ceb2ecb0b60116f38093f5a7a52a3e60c7b738fe5a4fc2021a06695232c01",
+  "student_published": 0,
+  "teacher_approved": 0,
+  "unresolved_conflicts": 10
+}

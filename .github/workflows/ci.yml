@@ -12,7 +12,211 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r backend/requirements.txt
-      - run: cd backend && PYTHONPATH=. pytest -q
+      - run: python scripts/build_kb_coverage.py --summary
+      - run: python scripts/audit_deep_math_evidence.py --check
+      - run: python scripts/build_semantic_gap_batch05.py --check
+      - run: python scripts/reconcile_kb_batch02.py --check
+      - run: python scripts/build_kb_legacy_bridge.py --check
+      - run: python scripts/build_kb_batch07_audit.py --check
+      - run: python scripts/audit_kb_attested_release.py --check
+      - run: python scripts/build_kb_batch07_lessons.py --check
+      - run: python scripts/build_kb_batch09_lessons.py --check
+      - run: python scripts/build_kb_batch10_lessons.py --check
+      - run: python scripts/build_kb_batch11_lessons.py --check
+      - run: python scripts/audit_kb_batch10_release.py --check
+      - run: python scripts/audit_kb_batch11_release.py --check
+      - run: python scripts/build_kb_batch12_source_crosswalk.py --check
+      - run: python scripts/audit_kb_batch12_source_coverage.py --check
+      - run: python scripts/build_kb_batch13_proposals.py --check
+      - run: python scripts/audit_kb_batch13_proposals.py --check
+      - run: python scripts/build_kb_batch14_lessons.py --check
+      - run: python scripts/audit_kb_batch14_content.py --check
+      - run: python scripts/build_kb_batch15_lessons.py --check
+      - run: python scripts/audit_kb_batch15_content.py --check
+      - run: python scripts/build_kb_batch16_lessons.py --check
+      - run: python scripts/audit_kb_batch16_content.py --check
+      - run: python scripts/author_kb_batch17.py --check
+      - run: python scripts/build_kb_batch17_lessons.py --check
+      - run: python scripts/audit_kb_batch17_content.py --check
+      - run: python scripts/audit_kb_batch18_source_proofs.py --check
+      - run: python scripts/build_kb_batch20_k00_review_queue.py --check
+      - run: python scripts/build_kb_batch21_lessons.py --check
+      - run: python scripts/build_kb_batch21_proof_union.py --check
+      - run: python scripts/author_kb_batch22.py --check
+      - run: python scripts/build_kb_batch22_lessons.py --check
+      - run: python scripts/build_kb_batch22_proof_and_scope.py --check
+      - run: python scripts/author_kb_batch23.py --check
+      - run: python scripts/build_kb_batch23_integrity.py --check
+      - run: python scripts/author_kb_batch24.py --check
+      - run: python scripts/build_kb_batch24_scope.py --check
+      - run: python scripts/build_kb_batch24_integrity.py --check
+      - run: python scripts/build_kb_batch24_progress.py --check
+      - run: python scripts/build_kb_batch25_scope_queue.py --check
+      - run: python scripts/build_kb_batch25_risk_triage.py --check
+      - run: python scripts/build_kb_batch25_content_readiness.py --check
+      - run: python scripts/build_kb_batch26_source_reextract.py --check
+      - run: python scripts/build_kb_batch26_graph_progress.py --check
+      - run: python scripts/build_kb_batch28_p0_evidence.py --check
+      - run: python scripts/build_kb_batch29_p0_evidence.py --check
+      - run: python scripts/build_kb_batch30_p0_audit.py --check
+      - run: python scripts/build_kb_batch30_k00_page52.py --check
+      - run: python scripts/build_kb_batch31_atomic_core.py --check
+      - run: python scripts/build_kb_batch31_graph.py --check
+      - run: python scripts/build_kb_batch32_source_atoms.py --check
+      - run: python scripts/build_kb_batch32_math_links.py --check
+      - run: python scripts/build_kb_batch33_elective_scope.py --check
+      - run: python scripts/build_kb_batch33_draft_crosswalk.py --check
+      - run: python scripts/build_kb_batch33_math_finite_audit.py --check
+      - run: python scripts/build_kb_batch34_editorial_review.py --check
+      - run: python scripts/build_kb_batch35_editorial_review.py --check
+      - run: python scripts/build_kb_batch36_legacy_scope_review.py --check
+      - run: python scripts/author_kb_batch37_scope.py --check
+      - run: python scripts/author_kb_batch38_partial.py --check
+      - run: python scripts/author_kb_batch39_remaining.py --check
+      - run: python scripts/build_kb_batch40_official_clauses.py --check
+      - run: PYTHONPATH=backend python -m app.kb_batch41_core_review --check
+      - run: PYTHONPATH=backend python -m app.kb_batch42_review --check
+      - run: PYTHONPATH=backend python -m app.kb_batch42_coverage --check
+      - run: python scripts/build_kb_batch43_seed.py --check
+      - run: PYTHONPATH=backend python -m app.kb_batch43_review --check
+      - run: PYTHONPATH=backend python -m app.kb_batch44_review --check
+      - run: python scripts/author_kb_batch45.py --check
+      - run: PYTHONPATH=backend python -m app.kb_batch45_review --check
+      - run: PYTHONPATH=backend python -m app.kb_batch46_review --check
+      - run: python scripts/author_kb_batch47.py --check
+      - run: PYTHONPATH=backend python -m app.kb_batch47_review --check
+      - run: python scripts/author_kb_batch48.py --check
+      - run: PYTHONPATH=backend python -m app.kb_batch48_review --check
+      - run: python scripts/author_kb_batch49.py --check
+      - run: PYTHONPATH=backend python -m app.kb_batch49_review --check
+      - run: PYTHONPATH=backend python -m app.kb_batch50_review --check
+      - run: python scripts/build_kb_batch51_official_source_gate.py --check
+      - run: python scripts/build_kb_batch52_critical_requirement_crosswalk.py --check
+      - run: python scripts/build_kb_batch53_cross_page_review.py --check
+      - run: python scripts/author_kb_batch54_legacy_scope.py --check
+      - run: python scripts/build_kb_batch55_conflict_review.py --check
+      - run: python scripts/build_kb_batch56_source_span_review.py --check
+      - run: python scripts/build_kb_batch57_source_review.py --check
+      - run: python scripts/build_kb_batch58_competency_coverage.py --check
+      - run: python scripts/build_kb_batch59_selective_source_review.py --check
+      - run: python scripts/author_kb_batch59_selective_assessments.py --check
+      - run: python scripts/build_kb_batch60_elective_source_review.py --check
+      - run: python scripts/build_kb_batch61_requirement_anchors.py --check
+      - run: python scripts/build_kb_batch62_anchor_triage.py --check
+      - run: python scripts/build_kb_batch63_atom_context.py --check
+      - run: python scripts/validate_kb_batch63_risk_lessons.py --check
+      - run: python scripts/build_kb_batch64_deep_competency.py --check
+      - run: python scripts/build_kb_batch65_substantive_lessons.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch66_competency_evidence.py --check
+      - run: python scripts/build_kb_batch67_clause_review.py --check
+      - run: python scripts/build_kb_batch68_counterparts.py --check
+      - run: python scripts/build_kb_batch69_remaining.py --check
+      - run: python scripts/build_kb_batch70_conflict_review.py --check
+      - run: python scripts/build_kb_batch71_modelling.py --check
+      - run: python scripts/build_kb_batch72_independent_evidence.py --check
+      - run: python scripts/build_kb_batch73_page_partition.py --check
+      - run: python scripts/build_kb_batch74_unmarked_review.py --check
+      - run: python scripts/build_kb_batch74_geometry_theorems.py --check
+      - run: python scripts/build_kb_batch74_page35_visual.py --check
+      - run: python scripts/build_kb_batch75_clause_splits.py --check
+      - run: python scripts/build_kb_batch75_lessons.py --check
+      - run: python scripts/build_kb_batch76_equivalence.py --check
+      - run: python scripts/build_kb_batch76_eight_lessons.py --check
+      - run: python scripts/build_kb_batch76_progress.py --check
+      - run: python scripts/build_kb_batch77_missing_lessons.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch78_proof_review.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch78_scope_graph.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch79_proof_conditions.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch80_eight_cards.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch80_review_queue.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch81_twelve_cards.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch81_risk_census.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch81_semantic_triage.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch82_conflict_evidence.py --check
+      - run: python scripts/build_kb_batch83_semantic_coverage.py --check
+      - run: python scripts/build_kb_batch84_semantic_review.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch84_math_cards.py --check
+      - run: python scripts/build_kb_batch85_semantic_review.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch85_p0_history.py --check
+      - run: python scripts/build_kb_batch86_semantic_review.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch86_p0_reviews.py --check
+      - run: python scripts/build_kb_batch87_semantic_review.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch87_math_lessons.py --check
+      - run: python scripts/build_kb_batch87_candidate_census.py --check
+      - run: python scripts/build_kb_batch88_relations.py --check
+      - run: python scripts/build_kb_batch89_proofs_and_scope.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch90_relations.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch91_source_lessons.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch92_relations.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch93_candidate_triage.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch94_deep_scope.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch95_depth.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch96_depth.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch96_candidate_matrix.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch97_depth.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch97_candidate_matrix.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch98_depth.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch98_scope_matrix.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch99_scope_matrix.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch99_seven_track_guard.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch99_prerequisite_gap.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch100_depth.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch100_coverage.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch101_review_queue.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch101_math_pairs.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch101_coverage.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch102_math_pairs.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch103_math_pairs.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch104_deep.py --check
+      - run: python scripts/build_kb_batch104_source_structure.py --check
+      - run: python scripts/build_kb_batch105_crosspage_atoms.py --check
+      - run: python scripts/build_kb_batch106_scope_conditions.py --check
+      - run: python scripts/build_kb_batch106_deep.py --check
+      - run: python scripts/build_kb_batch107_source.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch107_lessons.py --check
+      - run: python scripts/build_kb_batch108_scope.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch108_lessons.py --check
+      - run: python scripts/build_kb_batch109_scope.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch109_lessons.py --check
+      - run: python scripts/build_kb_batch110_scope.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch110_lessons.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch110_coverage.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch111.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch112.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch113.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch114.py --check
+      - run: python scripts/build_kb_batch116_inventory.py --check
+      - run: python scripts/build_kb_batch116_condition_audit.py --check
+      - run: python scripts/build_kb_batch117.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch117.py
+      - run: python scripts/build_kb_batch117_scope_segments.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch117_example_oracles.py tests/test_kb_batch117_scope_segments.py
+      - run: python scripts/build_kb_batch118_source_atom_ledger.py --check
+      - run: PYTHONPATH=backend python scripts/build_kb_batch118_lessons.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch118.py tests/test_kb_batch118_math_oracles.py
+      - run: python scripts/build_kb_batch119_semantic_pilot.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch119_semantic_pilot.py
+      - run: python scripts/build_kb_batch119_proof_reviews.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch119_proof_reviews.py
+      - run: python scripts/build_kb_batch120_semantic_expansion.py --check
+      - run: python scripts/build_kb_batch120_math_oracles.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch120_semantic_expansion.py
+      - run: python scripts/build_kb_batch120_proof_lessons.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch120_proof_lessons.py
+      - run: python scripts/build_kb_batch121_editorial_scope.py --check
+      - run: python scripts/build_kb_batch121_deep_lessons.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch121_scope_and_lessons.py
+      - run: python scripts/build_kb_batch122_semantic_census.py --check
+      - run: python scripts/build_kb_batch122_depth.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch122_scope_depth_math.py
+      - run: python scripts/audit_kb_batch09_release.py --check
+      - run: python scripts/audit_kb_semantic_coverage.py --check
+      # Fail fast on syntax errors before the long Python/Node/browser suite.
+      - run: bash -n scripts/mac_check.sh scripts/mac_browser_check.sh
+      # Tests now import both 'app' (backend package root) and the versioned
+      # 'scripts' audit namespace (repository root). Keep both import roots.
+      - run: cd backend && PYTHONPATH=.:.. python -c "from app.deep_knowledge import lessons; from scripts.kb_frozen_batch24 import frozen_batch24_lessons; assert len(frozen_batch24_lessons()) == 287"
+      - run: cd backend && PYTHONPATH=.:.. pytest -q
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

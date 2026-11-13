@@ -1,0 +1,75 @@
+{
+  "legacy_engineering_topics": 113,
+  "per_track": {
+    "COMPULSORY": 61,
+    "SELECTIVE_COMPULSORY": 45,
+    "ELECTIVE_A": 0,
+    "ELECTIVE_B": 0,
+    "ELECTIVE_C": 0,
+    "ELECTIVE_D": 0,
+    "ELECTIVE_E": 0,
+    "ELECTIVE_UNASSIGNED": 7
+  },
+  "engineering_topic_levels": {
+    "必修": 61,
+    "选择性必修": 45,
+    "选修拓展": 7
+  },
+  "unassigned_elective_atoms": [
+    "HS-MATH-107",
+    "HS-MATH-108",
+    "HS-MATH-109",
+    "HS-MATH-110",
+    "HS-MATH-111",
+    "HS-MATH-112",
+    "HS-MATH-113"
+  ],
+  "official_explicit_elective_tracks_with_atom_mapping": 0,
+  "official_elective_track_count": 5,
+  "unreviewed_legacy_atoms": 113,
+  "deep_knowledge": {
+    "scope": "PROJECT_ENGINEERING_MAP_NOT_OFFICIAL_ATOMIC_SYLLABUS",
+    "curriculum_topic_total": 113,
+    "deep_lesson_documents": 153,
+    "mapped_curriculum_ids": 113,
+    "review_statuses": {
+      "REVIEW_PENDING": 153
+    },
+    "kinds": {
+      "theorem": 73,
+      "concept": 66,
+      "method": 14
+    },
+    "by_level": {
+      "必修": {
+        "engineering_topics": 61,
+        "with_deep_draft": 61,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选择性必修": {
+        "engineering_topics": 45,
+        "with_deep_draft": 45,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      },
+      "选修拓展": {
+        "engineering_topics": 7,
+        "with_deep_draft": 7,
+        "without_deep_draft": 0,
+        "teacher_approved": 0,
+        "missing_topic_ids": []
+      }
+    },
+    "human_teacher_review_complete": false,
+    "student_math_proofs_verified": false,
+    "direct_student_teaching_enabled": false,
+    "notes": [
+      "Existing topic IDs are project granularity and must be audited against the official curriculum.",
+      "Schema validation cannot prove mathematical truth; a draft is never a teacher-reviewed fact.",
+      "Draft worked examples and proof steps remain TEACHER_ONLY until genuine review."
+    ]
+  }
+}

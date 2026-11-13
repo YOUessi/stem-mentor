@@ -1,0 +1,42 @@
+........................................................................ [ 14%]
+........................................................................ [ 29%]
+........................................................................ [ 44%]
+........................................................................ [ 58%]
+........................................................................ [ 73%]
+........................................................................ [ 88%]
+..................................................E.F....                [100%]
+==================================== ERRORS ====================================
+_ ERROR at setup of test_provisional_cross_track_editorials_never_enter_attested_student_rag _
+file /Users/youtang/Documents/文件/stem-mentor-kb-batch88/backend/tests/test_kb_batch88_relations.py, line 184
+  def test_provisional_cross_track_editorials_never_enter_attested_student_rag(
+E       fixture 'offline_reviewer_fixture' not found
+>       available fixtures: _asyncio_loop_factory, _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _session_scoped_runner, anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, event_loop_policy, free_tcp_port, free_tcp_port_factory, free_udp_port, free_udp_port_factory, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/Users/youtang/Documents/文件/stem-mentor-kb-batch88/backend/tests/test_kb_batch88_relations.py:184
+=================================== FAILURES ===================================
+_____________ test_external_sympy_cross_checks_finite_examples[1] ______________
+
+case = 1
+
+    @pytest.mark.parametrize("case", range(6))
+    def test_external_sympy_cross_checks_finite_examples(case):
+        """Independently recompute six exact examples, not a general theorem proof."""
+        import sympy as sp
+        x = sp.symbols("x", real=True)
+        if case == 0:
+            assert sp.diff(x**2, x).subs(x, 2) == (3**2 - 1**2) / sp.Integer(3-1)
+        elif case == 1:
+            n = sp.symbols("n", integer=True, positive=True)
+>           assert sp.summation(sp.Symbol("k"), (sp.Symbol("k"), 1, n)) / n**2 == (n+1)/(2*n)
+E           AssertionError: assert (n**2/2 + n/2 / (n ** 2)) == ((n + 1) / (2 * n))
+E            +  where n**2/2 + n/2 = <function summation at 0x108005a80>(k, (k, 1, n))
+E            +    where <function summation at 0x108005a80> = <module 'sympy' from '/Users/youtang/Documents/文件/stem-mentor-kb-batch88/.venv/lib/python3.13/site-packages/sympy/__init__.py'>.summation
+E            +    and   k = <class 'sympy.core.symbol.Symbol'>('k')
+E            +      where <class 'sympy.core.symbol.Symbol'> = <module 'sympy' from '/Users/youtang/Documents/文件/stem-mentor-kb-batch88/.venv/lib/python3.13/site-packages/sympy/__init__.py'>.Symbol
+
+backend/tests/test_kb_batch88_relations.py:215: AssertionError
+=========================== short test summary info ============================
+FAILED backend/tests/test_kb_batch88_relations.py::test_external_sympy_cross_checks_finite_examples[1]
+ERROR backend/tests/test_kb_batch88_relations.py::test_provisional_cross_track_editorials_never_enter_attested_student_rag
+1 failed, 487 passed, 1 error in 2.21s

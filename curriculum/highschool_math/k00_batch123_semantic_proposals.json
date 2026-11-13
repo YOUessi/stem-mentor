@@ -1,0 +1,1139 @@
+{
+  "candidates": [
+    {
+      "applicability": "同一个全集内讨论两个集合，图内每一位置表示确定的成员判据，阴影同时满足相应逻辑运算规则",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c401",
+      "invalid_use": "交集只取同时属于两者的元素；误把A或B中的所有位置涂成交集会造成多算",
+      "kind": "method",
+      "local_key": "C401",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [
+        "hs-semantic-pilot-121-c202"
+      ],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "使用韦恩图核对集合交并补的成员关系",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 22,
+        "frozen_page_sha256": "286abb489565e274a34a6fc3d1b231051170e9b97d34a40d00d397dbf3813aa4",
+        "matching_layout_cues": [
+          "syllabus-cue-b609acb6a876d589b411"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 22,
+        "printed_page": 15,
+        "source_span_sha256": "8e884c699d5f08fe68adb3e5138a39ec019c588d01eb398edaec6f9b60bbd0f6",
+        "start_line": 22,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "量词在已固定的非空论域内解释，否定任意x均满足P(x)等价于存在x不满足P(x)",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c402",
+      "invalid_use": "把全称否定写成所有x均不满足P会强化命题；仅举例验证不能证明全称陈述",
+      "kind": "method",
+      "local_key": "C402",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "全称命题的否定由存在反例表达",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 18,
+        "frozen_page_sha256": "63f0e487c0dc93a634bc23ef8e5c11b5dd9eb332256f95c192b530a6b0ea8b9f",
+        "matching_layout_cues": [
+          "syllabus-cue-babb0280190928b14965"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 23,
+        "printed_page": 16,
+        "source_span_sha256": "7e52b53474751c488a86b9c758c4f4b1e8a432056ef0cd59b651b63e47b2d5e3",
+        "start_line": 18,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "实系数二次式ax²+bx+c中a≠0，解不等式要按判别式及开口方向区别并保留端点取等条件",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c403",
+      "invalid_use": "判别式负时不能凭空画出两个实根；二次项系数为负时不能套用向上开口的符号表",
+      "kind": "method",
+      "local_key": "C403",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "二次函数符号图解一元二次不等式",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 13,
+        "frozen_page_sha256": "4e01f2cad35b684e5e027342dc4f42985e974a5944f10be9b79854b427b25e98",
+        "matching_layout_cues": [
+          "syllabus-cue-0d844116c2c226b62084"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 24,
+        "printed_page": 17,
+        "source_span_sha256": "6f6cb0afe080f7497a5bdebff2fb8444dd7285e88ec86c376335ade3abb8e937",
+        "start_line": 13,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "实函数定义域D满足x∈D当且仅当−x∈D，偶函数要求f(−x)=f(x)，奇函数要求f(−x)=−f(x)",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c404",
+      "invalid_use": "仅在x≥0定义的函数不应未经扩展就称为奇函数；f(0)存在的奇函数必满足f(0)=0",
+      "kind": "concept",
+      "local_key": "C404",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "函数奇偶性须在关于原点对称的定义域上判断",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 24,
+        "frozen_page_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+        "matching_layout_cues": [
+          "syllabus-cue-5b3d63105f4354c64dc2"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 26,
+        "printed_page": 19,
+        "source_span_sha256": "65150f2ffa1696eb67ab2d6c75dea4d1cc073746a376e257646dfad4cff4bcf3",
+        "start_line": 24,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "实函数f在定义域D上的周期T必须非零且每个允许x满足x+T仍在D和f(x+T)=f(x)",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c405",
+      "invalid_use": "常数函数任意正数均可作周期，但不存在最小正周期；局部重复不足以证明全域周期性",
+      "kind": "concept",
+      "local_key": "C405",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "周期函数的非零周期与最小正周期区别",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 25,
+        "frozen_page_sha256": "2ce08622a0b8b60c74a33c85bdaaa149c32bbfd2ee22462ec35d84f1b73d5ef1",
+        "matching_layout_cues": [
+          "syllabus-cue-dcc10cba526c74efe733"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 26,
+        "printed_page": 19,
+        "source_span_sha256": "f33fb1f7fffce381d06531a2cc55dd338e147bd6ff554a6eeed24ce46c6463be",
+        "start_line": 25,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "通常a>0时定义a^(m/n)为正n次根的m次幂，其中m为整数且n为正整数；零与负底数另行审查",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c406",
+      "invalid_use": "不允许将负数的偶次实根视为实数；a=0时负指数无定义，不能直接使用正底数通式",
+      "kind": "method",
+      "local_key": "C406",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "实数范围有理数指数幂的底数和根式条件",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 21,
+        "frozen_page_sha256": "2d514ab4854fd9896ab76a6188b2216733461fbab8f630bd0bc9dd20b0eb965f",
+        "matching_layout_cues": [
+          "syllabus-cue-049a758b6e0c5652c15d"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 27,
+        "printed_page": 20,
+        "source_span_sha256": "b547879065874e9af65999bae5ee56ce7ac5adf3c11073cfc8b16ae5aaaade12",
+        "start_line": 21,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "对数log_a(x)的实数定义要求a>0且a≠1、x>0；换底底数b也要求b>0且b≠1",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c407",
+      "invalid_use": "对x≤0取实对数无意义；把log_a(x)误写为log_b(x)log_b(a)属于倒置换底",
+      "kind": "method",
+      "local_key": "C407",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "对数换底公式的底数合法性核验",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 32,
+        "frozen_page_sha256": "2d514ab4854fd9896ab76a6188b2216733461fbab8f630bd0bc9dd20b0eb965f",
+        "matching_layout_cues": [
+          "syllabus-cue-2d9c6ca1339363507fcf"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 27,
+        "printed_page": 20,
+        "source_span_sha256": "6bf09af01e478c708a0624cc11c292f2c66ad82bbd3ad1d4e672f4846912b940",
+        "start_line": 32,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "半径r>0的圆中圆心角θ以弧度计时有有向弧长s=rθ，计算非有向弧长应取|rθ|",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c408",
+      "invalid_use": "把角度值90直接代入弧度公式会得到错误弧长；零半径无法定义该圆上的中心角",
+      "kind": "concept",
+      "local_key": "C408",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "弧度制下弧长与角度的量纲约定",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 18,
+        "frozen_page_sha256": "32b37e16374f4ebfdc8b219ac4b2251bb5e385fe9726168f38aa31b041c2d271",
+        "matching_layout_cues": [
+          "syllabus-cue-3d07ee7e6e3b45d6a670"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 28,
+        "printed_page": 21,
+        "source_span_sha256": "879aeab2311ef55f2462549bb1779578908408116c7a5fdf9e4c19815484fe3e",
+        "start_line": 18,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "角α、β均为实数，正弦与余弦加减公式对所有实数角成立；推导时不需要对cosα或cosβ做除法",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c409",
+      "invalid_use": "从含正切的公式推导时必须另行排除分母为零情形；不得把sin(α+β)写为sinα+sinβ",
+      "kind": "theorem",
+      "local_key": "C409",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "两角和差三角函数公式的推导与全实数角适用范围",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 14,
+        "frozen_page_sha256": "8f34c0fb06986f8c83379257772a7a08768d872224307c439571691b25115253",
+        "matching_layout_cues": [
+          "syllabus-cue-0de312382fcc89f01cf8"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 29,
+        "printed_page": 22,
+        "source_span_sha256": "840a85700e346303fbb391352c0802f9ecf2bf9d1db720002b461fe5f2db4c49",
+        "start_line": 14,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "实函数在[a,b]连续且f(a)f(b)<0，每轮取中点并保留仍异号的闭半区间，误差界随区间长度减半",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c410",
+      "invalid_use": "若函数存在跳跃不连续，则异号不能保证区间内有零点；不应把数值近似当作唯一根的证明",
+      "kind": "method",
+      "local_key": "C410",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [
+        "hs-semantic-pilot-122-c311"
+      ],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "二分法保留异号端点的近似零点算法",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 27,
+        "frozen_page_sha256": "8f34c0fb06986f8c83379257772a7a08768d872224307c439571691b25115253",
+        "matching_layout_cues": [
+          "syllabus-cue-3d0b1d754484b1f2b4f7"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 29,
+        "printed_page": 22,
+        "source_span_sha256": "8789cb85a67bac523a77d0bf14c275b2bafcc34b3d9f5baf03b6ea52335ade12",
+        "start_line": 27,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "样本空间有限且各基本结果概率相同，事件A概率为有利结果数除以总体基本结果数",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c411",
+      "invalid_use": "不等可能结果不能只用数量之比；事件样本点必须不重不漏，不能遗漏有序性或重复计数",
+      "kind": "method",
+      "local_key": "C411",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "有限等可能样本空间上的古典概率计数",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 14,
+        "frozen_page_sha256": "ddc3ece205c0269433ed41a771096e141e54fb10f4f452bd76615abae40de5f8",
+        "matching_layout_cues": [
+          "syllabus-cue-b13ae54a7b1f4d09d596"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 38,
+        "printed_page": 31,
+        "source_span_sha256": "9e6831927016d1439752d5c35ef0a0b9a8fee417a0cbbdaa76a16f7e69b435a2",
+        "start_line": 14,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "随机样本与目标总体对应且数据测量方式一致，均值、中位数与众数分别描述不同位置特征",
+      "course_track": "COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-c412",
+      "invalid_use": "重尾或离群值可使均值与中位数偏离；样本统计量不等于未知总体参数的精确值",
+      "kind": "method",
+      "local_key": "C412",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "样本均值中位数众数估计总体位置的限制",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 25,
+        "frozen_page_sha256": "abe78b98d11dc60d9ac22fa8fe60c8171fb24d02b20a36aa7cd434a5a21a8fab",
+        "matching_layout_cues": [
+          "syllabus-cue-edb4ad8a0cea08155316"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 39,
+        "printed_page": 32,
+        "source_span_sha256": "e00c3adccaa4753ec397145e28d1e1486905d4ba7f9fb8ad6cc5ee3c8750c6dc",
+        "start_line": 25,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "空间中三个不共面的向量组成一组基，任一空间向量可唯一写成这三个向量的实系数线性组合",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-s401",
+      "invalid_use": "若三个向量共面或有一个为零则不构成基，系数可能不唯一也可能不能表示目标向量",
+      "kind": "theorem",
+      "local_key": "S401",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "空间三线性无关向量的坐标唯一分解",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 21,
+        "frozen_page_sha256": "6c429e184659d90d001bc2fd3c6796eeef521a3e4dad6d010aebf2a8fe8518f2",
+        "matching_layout_cues": [
+          "syllabus-cue-c7f2c37cf28494428290"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 49,
+        "printed_page": 42,
+        "source_span_sha256": "62fcc8b6cb9eb228f1becb565d5665ca0599347d3cf9c76f18b7299ebaed92d8",
+        "start_line": 21,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "圆心(x0,y0)、半径r>0，直线Ax+By+C=0须有(A,B)≠(0,0)；比较d=|Ax0+By0+C|/√(A²+B²)与r",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-s402",
+      "invalid_use": "当A=B=0时不是直线，距离公式分母为零；d=r只表明切线，交点计算仍需满足两方程",
+      "kind": "method",
+      "local_key": "S402",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "直线圆位置判断的圆心到直线距离法",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 8,
+        "frozen_page_sha256": "afed8d69b6b9569413bd4e6d642490096ec4717cb381b4ab7caff88e522de933",
+        "matching_layout_cues": [
+          "syllabus-cue-5a0a24796121f3a5f78a"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 51,
+        "printed_page": 44,
+        "source_span_sha256": "f53cb775e336fcc7f245bd3eb37d77b29ba5d5b50520a9e231af198bb02301a4",
+        "start_line": 8,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "离散随机变量的所有可取值概率pk≥0，所有可取值覆盖完整样本空间且Σpk=1",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-s403",
+      "invalid_use": "遗漏取值导致概率和小于1时不是完整分布列；把密度直接当作某点概率会混淆离散与连续",
+      "kind": "concept",
+      "local_key": "S403",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "离散型随机变量分布列的归一与非负性",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 20,
+        "frozen_page_sha256": "065f9961bde333d41342d9a72bf4a649957da7cc164036286848553ff8abda15",
+        "matching_layout_cues": [
+          "syllabus-cue-03abb0483f9f09e65ce1"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 54,
+        "printed_page": 47,
+        "source_span_sha256": "42241581a7bb6217244fd851b002b95ef5ea5e92efdab219a45bab6d2aa27c10",
+        "start_line": 20,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "X∼N(μ,σ²)要求σ>0，均值μ为对称中心，方差σ²表示波动尺度而非每次偏离的固定距离",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-s404",
+      "invalid_use": "任意同均值方差变量不必服从正态；σ=0时退化成常量，不可继续使用标准正态密度公式",
+      "kind": "concept",
+      "local_key": "S404",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "正态分布均值与方差的参数意义",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "NUMBERED_REQUIREMENT_CUE"
+        ],
+        "end_line": 3,
+        "frozen_page_sha256": "224ebcf2165b5b659e8a3da26d48701656ae2e83b533708c3bccc314295e3aad",
+        "matching_layout_cues": [
+          "syllabus-cue-da12a60a7e6a5ac56893"
+        ],
+        "numbered_requirement_anchor": true,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 55,
+        "printed_page": 48,
+        "source_span_sha256": "e5c41e69726c7f9440e786654360c0d36d4e59a961076719aecb7b1fbb527010",
+        "start_line": 3,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "数据以(x_i,y_i)成对采集并保持同一对象配对，可通过散点图和相关系数探索线性关联",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-s405",
+      "invalid_use": "孤立异常点可显著改变Pearson系数；相关系数接近零并不能排除显著的非线性关系",
+      "kind": "method",
+      "local_key": "S405",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "成对数据线性相关性与异常值影响",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 10,
+        "frozen_page_sha256": "224ebcf2165b5b659e8a3da26d48701656ae2e83b533708c3bccc314295e3aad",
+        "matching_layout_cues": [
+          "syllabus-cue-478c2f0accc5a2b8064b"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 55,
+        "printed_page": 48,
+        "source_span_sha256": "c7abc03ccf8e84342aff52be704031aefc752edf5791d4c88059cef5147358bb",
+        "start_line": 10,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "已知X服从N(μ,σ²)且σ>0时，事件a≤X≤b可换算到标准正态区间，其中先确保a≤b",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-s406",
+      "invalid_use": "若区间端点反序则概率为零；没有正态假设时不能仅依均值方差查标准正态表",
+      "kind": "method",
+      "local_key": "S406",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "正态概率区间换元使用标准差非零前提",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 27,
+        "frozen_page_sha256": "065f9961bde333d41342d9a72bf4a649957da7cc164036286848553ff8abda15",
+        "matching_layout_cues": [
+          "syllabus-cue-5e3b53ed70d9212e00ef"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 54,
+        "printed_page": 47,
+        "source_span_sha256": "f7fb6d46862d4203f5ab8066d32a4b59d82be9822bd5fc16cc6284019d7b25b2",
+        "start_line": 27,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "x趋近同一极限点时f、g分别具有有限极限L、M，加减乘成立；商法则另需M≠0",
+      "course_track": "ELECTIVE_A",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-a401",
+      "invalid_use": "若分母极限为零则不能直接使用商法则；无穷极限与不存在极限不能套作有限四则",
+      "kind": "theorem",
+      "local_key": "A401",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "函数极限四则运算须有各项有限极限",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 39,
+        "frozen_page_sha256": "80d2633ed69158a2bd4de8ab2a22c0eae71f3960473df9a88a522d028b2d585f",
+        "matching_layout_cues": [
+          "syllabus-cue-e42c54053cb14dc185bb"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 59,
+        "printed_page": 52,
+        "source_span_sha256": "f51f98ac7153c421d1ce5d82b1de26ba4a1eab5e86473d5333d23deb9f3b7dc2",
+        "start_line": 39,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "函数在紧区间连续且在内部可导时，全局极值候选包括导数为零或不可导的内点及两个端点",
+      "course_track": "ELECTIVE_A",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-a402",
+      "invalid_use": "导数等于零不保证极大极小；忽略端点会漏掉严格单调函数的全局极值",
+      "kind": "method",
+      "local_key": "A402",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "导数驻点和区间边界共同确定全局最值",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 15,
+        "frozen_page_sha256": "ae9e0d41b2c8f7ac33b967ff6c40ae2a875322373c7e8470ddce25838b929d3b",
+        "matching_layout_cues": [
+          "syllabus-cue-6f2cf447531232a34b2b"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 60,
+        "printed_page": 53,
+        "source_span_sha256": "3329689b36d9f99346010005cfbedf6e9b085f05ed7b556d1233a946eb263180",
+        "start_line": 15,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "直线P+t v中v≠0，平面n·(X−Q)=0中n≠0；若n·v≠0则唯一交点，等于零需再检验P是否在面上",
+      "course_track": "ELECTIVE_A",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-a403",
+      "invalid_use": "n·v=0仅说明直线与平面平行方向，不能断言无交点；可能整条直线就在平面内",
+      "kind": "method",
+      "local_key": "A403",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "三维直线和平面相交平行重合的代数判别",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 14,
+        "frozen_page_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+        "matching_layout_cues": [
+          "syllabus-cue-2d6007726523d1f9aebe"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 62,
+        "printed_page": 55,
+        "source_span_sha256": "c929b5ad5386c983d327b7f478380737d39bbf2c6ab50c0db5938abdfb4affa7",
+        "start_line": 14,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "连续随机变量概率来自密度对区间的积分；均匀分布要求b>a且区间内密度1/(b−a)",
+      "course_track": "ELECTIVE_A",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-a404",
+      "invalid_use": "连续随机变量单点概率为零，不能把密度值当单点概率；若a=b均匀密度分母无定义",
+      "kind": "concept",
+      "local_key": "A404",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "连续均匀分布和正态分布的密度与概率区别",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 17,
+        "frozen_page_sha256": "2c3f24cab964ee1d79c58e1feb6f21f5bc5867a124934f7e5858cf0cc026f93b",
+        "matching_layout_cues": [
+          "syllabus-cue-06cfa4d01d30afbdd20e"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 63,
+        "printed_page": 56,
+        "source_span_sha256": "59ac2ccf2b2a9df92cf81a915aa9c7ffa925609da0465893f50ede00f503ebcc",
+        "start_line": 17,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "成对数据n≥2且Σ(x_i−x̄)²>0时最小二乘斜率为Sxy/Sxx，截距为ȳ−b x̄",
+      "course_track": "ELECTIVE_A",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-a405",
+      "invalid_use": "所有自变量相同时斜率不可辨识；回归相关关系不是因果解释且外推需额外检验",
+      "kind": "method",
+      "local_key": "A405",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "带截距简单线性回归的非退化最小二乘解",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 13,
+        "frozen_page_sha256": "dca127ce9bc7a223440713495ea73ba89e2654586fda16bab4dcf465d648f2f2",
+        "matching_layout_cues": [
+          "syllabus-cue-bc8e9976d6e4d9b363e9"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 64,
+        "printed_page": 57,
+        "source_span_sha256": "20dc8656616a5c17c46aee396227b7b33dfac4937d811db279890acc6f7c5104",
+        "start_line": 13,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "两连续函数在[a,b]上有序且a≤b，区域面积为∫(上函数−下函数)dx，若上下关系改变需分段",
+      "course_track": "ELECTIVE_B",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-b401",
+      "invalid_use": "不分段直接积分两曲线差可能正负抵消，得到错误非负几何面积",
+      "kind": "method",
+      "local_key": "B401",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "定积分计算面积须区分有向积分和几何面积",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 9,
+        "frozen_page_sha256": "25cef7034650de2cdafb41e1b4bfdd895acb37c33cab7c939bfb57d7c84416dd",
+        "matching_layout_cues": [
+          "syllabus-cue-f64e601199bb8e00c6da"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 66,
+        "printed_page": 59,
+        "source_span_sha256": "137e9092c2884758f90aaec206759a3a2f5e1dc40fe2c6a25f86bd1f015597e0",
+        "start_line": 9,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "P为非空有界闭凸多边形、f(x,y)=ax+by+c为线性函数，则最大最小值至少在一个顶点取得",
+      "course_track": "ELECTIVE_B",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-b402",
+      "invalid_use": "对圆盘、椭圆或非线性目标不可仅检查多边形顶点；无界区域可能没有有限极值",
+      "kind": "theorem",
+      "local_key": "B402",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "线性目标在紧凸多边形顶点取得最值",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 18,
+        "frozen_page_sha256": "25cef7034650de2cdafb41e1b4bfdd895acb37c33cab7c939bfb57d7c84416dd",
+        "matching_layout_cues": [
+          "syllabus-cue-d8932d74bb0a52d6bc8f"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 66,
+        "printed_page": 59,
+        "source_span_sha256": "9790fcc84ca08f3dd59d63723f2ae26417a78f02daf04a543bdf1a039142175e",
+        "start_line": 18,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "空间两直线方向u、v均非零且不平行，分别过P、Q，距离为|(Q−P)·(u×v)|/|u×v|",
+      "course_track": "ELECTIVE_B",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-b403",
+      "invalid_use": "当两方向平行时叉积为零，公式不可用；两线不相交并不自动保证方向不平行",
+      "kind": "method",
+      "local_key": "B403",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "异面直线距离的混合积公式与方向条件",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 11,
+        "frozen_page_sha256": "d353bd34002755a1ce77049c025851ef8af082fc5b4448e3c2725b3aaceffecf",
+        "matching_layout_cues": [
+          "syllabus-cue-063a7c3866d4cabef41a"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 67,
+        "printed_page": 60,
+        "source_span_sha256": "173dfb2d0a5b6fd86ef38b58bbaefe15978f699af753b62ee5668e128abb2672",
+        "start_line": 11,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "三阶实矩阵的行列式非零当且仅当列向量构成R³的一组基；为零时存在非零齐次解",
+      "course_track": "ELECTIVE_B",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-b404",
+      "invalid_use": "行列式为零不能据此断言方程无解，非齐次系统可能有无穷多解或无解",
+      "kind": "theorem",
+      "local_key": "B404",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "三阶行列式零值等价列向量线性相关",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 16,
+        "frozen_page_sha256": "d353bd34002755a1ce77049c025851ef8af082fc5b4448e3c2725b3aaceffecf",
+        "matching_layout_cues": [
+          "syllabus-cue-621d1c4c2ac38c71065e"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 67,
+        "printed_page": 60,
+        "source_span_sha256": "343d43463ab422f32a3d41b76f8bd09cd9e2b5cf47d9b1a74e15e8cd711f566d",
+        "start_line": 16,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "三元线性系统Ax=b的系数矩阵A为3×3且det(A)≠0时，唯一解xi=det(A_i)/det(A)",
+      "course_track": "ELECTIVE_B",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-b405",
+      "invalid_use": "det(A)=0时不能做除法；这不等于一定无解，可能无解或无穷多解",
+      "kind": "method",
+      "local_key": "B405",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "三元克拉默法则只能用于系数矩阵非奇异时",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 25,
+        "frozen_page_sha256": "d353bd34002755a1ce77049c025851ef8af082fc5b4448e3c2725b3aaceffecf",
+        "matching_layout_cues": [
+          "syllabus-cue-eb17551060ceb50f605a"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 67,
+        "printed_page": 60,
+        "source_span_sha256": "bb82e38e586ce1203e3b485ffc797777b99d50577509126e61f7d4db6c2965dc",
+        "start_line": 25,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "仅对产出和投入均严格为正的数据可取对数，若Q=A K^α L^β，需A>0、K>0、L>0再做对数线性化",
+      "course_track": "ELECTIVE_C",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-ec401",
+      "invalid_use": "投入为零或负时实对数无定义；参数拟合出负预测不等于现实数据可取负产出",
+      "kind": "method",
+      "local_key": "EC401",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "对数线性生产函数模型的正值与弹性条件",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 25,
+        "frozen_page_sha256": "61e51f81f6e99f1d29b4a38a373e9ef30c4f29846fc5d5f06abb1fd63a6cfbcb",
+        "matching_layout_cues": [
+          "syllabus-cue-70857c18770bb4fe0d0d"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 73,
+        "printed_page": 66,
+        "source_span_sha256": "ec6ddeb7583ccfb7c5aa84eb82e2bdc65bbc30bca4d4a27f6dd29e2e3dea07ad",
+        "start_line": 25,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "研究设计需要定义总体、变量与数据采集条件，相关回归描述观测关联而不自动识别干预因果效应",
+      "course_track": "ELECTIVE_C",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-ec402",
+      "invalid_use": "样本选择偏差、共同原因和逆向因果会造成虚假因果解释，不能因回归系数显著就推断政策有效",
+      "kind": "method",
+      "local_key": "EC402",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "调查相关回归分析须区分样本相关与因果识别",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "SUBTOPIC_CUE"
+        ],
+        "end_line": 23,
+        "frozen_page_sha256": "0991c86f2c3a6ff73b865092ce216abc8179ebb608b85130e44ea3960b02788c",
+        "matching_layout_cues": [
+          "syllabus-cue-e6bfe618357c2b847bdb"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 75,
+        "printed_page": 68,
+        "source_span_sha256": "b8f78b9f62ff3c3f6303f5f40c0666306c9e6deb72da2ccfead3b8bdf6f77643",
+        "start_line": 23,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "在近地面短程抛体且忽略空气阻力、加速度g近似常量时可按水平匀速、竖直匀变速分解",
+      "course_track": "ELECTIVE_D",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-ed401",
+      "invalid_use": "有明显空气阻力、碰撞或推进力时不能照搬理想抛物线；模型只适用于明确时间区间",
+      "kind": "method",
+      "local_key": "ED401",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "运动轨迹中分解速度与加速度的物理模型条件",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "TOPIC_CUE"
+        ],
+        "end_line": 22,
+        "frozen_page_sha256": "9c0f82350e1e496246c4d631cb4714e7cfb0e20338e90b2fe9d2b84e1f1e5179",
+        "matching_layout_cues": [
+          "syllabus-cue-ad08946574dceee08d50"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 79,
+        "printed_page": 72,
+        "source_span_sha256": "758990630f0a0abbc6e0c98a8aa68bb08b76c757adf5e60afb68d0bd94662d86",
+        "start_line": 22,
+        "visual_formula_recheck": "NOT_FLAGGED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    },
+    {
+      "applicability": "测量明确单位、参考长度及几何形状假设后，用比例尺和三角几何推导场地布局参数",
+      "course_track": "ELECTIVE_D",
+      "elective_e_optional_example": false,
+      "id": "hs-semantic-pilot-123-ed402",
+      "invalid_use": "图像像素比例未标定不可直接当真实长度；将平面面积缩放倍数误写为长度倍数属于量纲错误",
+      "kind": "concept",
+      "local_key": "ED402",
+      "official_atom_certified": false,
+      "official_atom_id": null,
+      "prerequisite_candidate_ids": [],
+      "proof_verification": "UNVERIFIED",
+      "proposed_objective": "体育设施中的长度角度面积与尺度换算",
+      "review_status": "REVIEW_PENDING",
+      "source": {
+        "cue_kinds": [
+          "TOPIC_CUE"
+        ],
+        "end_line": 9,
+        "frozen_page_sha256": "59980de5ee6959de6e1f635ff7a17abd29206e852bbdd2bd18b818135773a6a3",
+        "matching_layout_cues": [
+          "syllabus-cue-c4c68c5b46a4d5b3245f"
+        ],
+        "numbered_requirement_anchor": false,
+        "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+        "physical_page_index": 80,
+        "printed_page": 73,
+        "source_span_sha256": "c7d24be54aeb877d037b004a7ac13cde4f67c6c86cc939d5a0a5369275dab9d7",
+        "start_line": 9,
+        "visual_formula_recheck": "REQUIRED"
+      },
+      "student_authoritative": false,
+      "teacher_evidence": null,
+      "teacher_solution_visibility": "TEACHER_ONLY"
+    }
+  ],
+  "cumulative_editorial_candidate_count": 207,
+  "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+  "new_candidate_count": 32,
+  "official_atom_census_complete": false,
+  "official_atom_total_denominator": null,
+  "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "schema_version": "kb123-source-anchored-editorials-v1",
+  "semantic_candidates_not_official_atoms": true,
+  "source_text_committed": false,
+  "student_authoritative_count": 0,
+  "teacher_approved_count": 0
+}

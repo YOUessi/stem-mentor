@@ -1,0 +1,80 @@
+{
+  "status": "BATCH16_EDITORIAL_DRAFT_NOT_OFFICIALLY_CERTIFIED",
+  "authored_source_sha256": "925804f30368389d2beba59792adc6d60334095bacff568ff4b44f749fa24dc0",
+  "mapping_sha256": "cbc7b3656622e9eddab3d6d715b4dabf258c17120c0cf73c7c975c508766a5e1",
+  "new_deep_lessons": 12,
+  "by_elective_track": {
+    "ELECTIVE_B": 4,
+    "ELECTIVE_C": 3,
+    "ELECTIVE_D": 3,
+    "ELECTIVE_E": 2
+  },
+  "deep_lessons_total": 213,
+  "engineering_topics_total": 150,
+  "source_objective_candidates": 132,
+  "objectives_with_editorial_proposals": 119,
+  "editorial_proposal_edges": 141,
+  "unmatched_source_candidates": 13,
+  "by_track": {
+    "COMPULSORY": {
+      "objective_candidates": 38,
+      "has_unreviewed_suggestion": 35,
+      "without_suggestion": 3,
+      "suggestion_edges": 48,
+      "independently_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "objective_candidates": 32,
+      "has_unreviewed_suggestion": 31,
+      "without_suggestion": 1,
+      "suggestion_edges": 36,
+      "independently_approved": 0
+    },
+    "ELECTIVE_A": {
+      "objective_candidates": 18,
+      "has_unreviewed_suggestion": 18,
+      "without_suggestion": 0,
+      "suggestion_edges": 20,
+      "independently_approved": 0
+    },
+    "ELECTIVE_B": {
+      "objective_candidates": 15,
+      "has_unreviewed_suggestion": 14,
+      "without_suggestion": 1,
+      "suggestion_edges": 16,
+      "independently_approved": 0
+    },
+    "ELECTIVE_C": {
+      "objective_candidates": 11,
+      "has_unreviewed_suggestion": 6,
+      "without_suggestion": 5,
+      "suggestion_edges": 6,
+      "independently_approved": 0
+    },
+    "ELECTIVE_D": {
+      "objective_candidates": 10,
+      "has_unreviewed_suggestion": 8,
+      "without_suggestion": 2,
+      "suggestion_edges": 8,
+      "independently_approved": 0
+    },
+    "ELECTIVE_E": {
+      "objective_candidates": 8,
+      "has_unreviewed_suggestion": 7,
+      "without_suggestion": 1,
+      "suggestion_edges": 7,
+      "independently_approved": 0
+    }
+  },
+  "official_atomic_denominator": null,
+  "official_atomic_coverage_percent": null,
+  "teacher_approved_lessons": 0,
+  "formal_whole_proofs_verified": 0,
+  "student_published_lessons": 0,
+  "claims_warning": [
+    "The 132 source-page candidates are an incomplete project-authored sample; official atom denominator remains unknown.",
+    "A lesson-objective association is an editorial review proposal, NOT a teacher-certified curricular coverage claim.",
+    "Bounded arithmetic/symbolic oracles do not certify full natural-language mathematical proofs.",
+    "Unreviewed teacher examples remain TEACHER_ONLY; actual external API calls not executed."
+  ]
+}

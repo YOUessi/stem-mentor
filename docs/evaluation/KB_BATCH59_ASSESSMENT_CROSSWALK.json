@@ -1,0 +1,237 @@
+{
+  "bounded_witnesses_are_not_full_rubric_certificates": true,
+  "live_student_attempts": 0,
+  "mathematical_general_proofs_certified": 0,
+  "official_atomic_denominator": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "rows": [
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-01",
+      "bounded_exact_witness_families": [
+        "arithmetic_partial_sum"
+      ],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P041-S002",
+      "source_span_id": "P041-L003-008",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-02",
+      "bounded_exact_witness_families": [
+        "affine_square_derivative"
+      ],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P041-S003",
+      "source_span_id": "P041-L009-014",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-03",
+      "bounded_exact_witness_families": [],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P041-S004",
+      "source_span_id": "P041-L015-016",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-04",
+      "bounded_exact_witness_families": [
+        "space_basis_coordinates"
+      ],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P045-S005",
+      "source_span_id": "P045-L018-022",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-05",
+      "bounded_exact_witness_families": [],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P045-S006",
+      "source_span_id": "P045-L023-027",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-06",
+      "bounded_exact_witness_families": [
+        "ellipse_focal_parameters"
+      ],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P046-S001",
+      "source_span_id": "P046-L002-005",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-07",
+      "bounded_exact_witness_families": [],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P046-S002",
+      "source_span_id": "P046-L006-007",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-08",
+      "bounded_exact_witness_families": [],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P049-S004",
+      "source_span_id": "P049-L014-016",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-09",
+      "bounded_exact_witness_families": [
+        "binomial_coefficient"
+      ],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P049-S005",
+      "source_span_id": "P049-L017-020",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-10",
+      "bounded_exact_witness_families": [
+        "hypergeometric_probability",
+        "binomial_coefficient"
+      ],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P049-S006",
+      "source_span_id": "P049-L021-024",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-11",
+      "bounded_exact_witness_families": [
+        "pearson_squared",
+        "least_squares",
+        "two_by_two_chi_square"
+      ],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P049-S007",
+      "source_span_id": "P049-L025-027",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-12",
+      "bounded_exact_witness_families": [
+        "least_squares"
+      ],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P050-S001",
+      "source_span_id": "P050-L002-003",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-13",
+      "bounded_exact_witness_families": [],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P050-S002",
+      "source_span_id": "P050-L004-009",
+      "student_publishable": false,
+      "target_kind": "ACTIVITY_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    },
+    {
+      "approval_state": "REVIEW_PENDING",
+      "assessment_id": "KB59-ASSESS-14",
+      "bounded_exact_witness_families": [],
+      "curriculum_competency_achieved": false,
+      "independent_teacher_rubric_verified": false,
+      "real_student_response_evaluated": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_requirement_id": "KB59-C-P050-S005",
+      "source_span_id": "P050-L018-019",
+      "student_publishable": false,
+      "target_kind": "ACHIEVEMENT_REQUIREMENT",
+      "teacher_assessment_draft_present": true
+    }
+  ],
+  "schema_version": "kb59-original-assessment-review-v1",
+  "source_passages_or_pdf_committed": false,
+  "source_requirements": 14,
+  "teacher_only_review_drafts": 14,
+  "teacher_verified_assessments": 0,
+  "total_distinct_noncontent_requirements_unmapped": 42
+}

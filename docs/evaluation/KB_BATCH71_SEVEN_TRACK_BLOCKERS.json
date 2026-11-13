@@ -1,0 +1,29 @@
+{
+  "heuristic_anchor_leads_not_atom_denominator": 428,
+  "historical_unverified_proof_steps": 538,
+  "next_blockers": [
+    "全量逐页核对课标原文与跨页条款，七轨去重后才建立真实知识原子分母。",
+    "教师核验第35页流程图与项目内7项拆分的官方语义范围。",
+    "将14项未编号内容/教学要求分别评估可观察指标与真实证据。",
+    "独立审查538历史证明步骤及10组数学冲突，开放签核前不发布。"
+  ],
+  "official_atom_denominator": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_missing_atom_count": null,
+  "page35_modelling_editorial_drafts": 7,
+  "page35_teacher_approved": 0,
+  "provisional_split_hypotheses_not_atom_denominator": 62,
+  "schema_version": "kb71-seven-track-open-blockers-v1",
+  "student_published": 0,
+  "teacher_full_page_reviews": 0,
+  "unknown_not_zero": true,
+  "unmapped_unnumbered_objectives": 14,
+  "unresolved_math_conflicts": 10
+}

@@ -1,0 +1,9 @@
+Mac source verification: 2026-11-08
+official PDF kept outside Git
+cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195  /tmp/stemmentor-official-batch26/standard.pdf
+PASS source 61 PDF pages / frozen 315 vs pypdf59 317 candidates; official atomic denominator NULL
+pypdf5.9-versus-6.5-equal-extraction-exit=0
+frozen pages= 61 marker_occurrences= 315 official_atom_denominator= None
+pypdf==5.9.0 pages= 61 marker_occurrences= 317 official_atom_denominator= None
+pypdf==6.5.0 pages= 61 marker_occurrences= 317 official_atom_denominator= None
+pypdf==3.17.4 pages= 61 marker_occurrences= 121 official_atom_denominator= None

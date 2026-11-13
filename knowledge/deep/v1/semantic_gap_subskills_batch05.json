@@ -1,0 +1,2146 @@
+[
+  {
+    "id": "math.hs.sets.representations",
+    "curriculum_ids": [
+      "HS-MATH-001"
+    ],
+    "kind": "concept",
+    "title": "集合的列举、描述与实区间表示",
+    "version": "1.0.0",
+    "notation": [
+      "x∈A",
+      "A⊆B",
+      "{x∈R | x²<4}",
+      "(-2,2)"
+    ],
+    "prerequisites": [
+      "实数及不等式",
+      "逻辑且或与成员判断"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "集合可由满足确定判定条件的元素组成：列举法 A={a,b,...} 给出元素，描述法 A={x∈D | P(x)} 给出论域 D 和谓词 P；实区间 [a,b] 表示 a≤x≤b，(a,b) 表示 a<x<b（a<b）。元素关系 x∈A 与集合包含 A⊆B 是不同类型的命题。",
+    "statement": null,
+    "assumptions": [
+      "描述法必须给出明确论域；区间端点的开闭必须由不等号是否取等确定。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "将条件 -2<x<2 的全体实数列为区间 (-2,2)，两端都不满足严格不等式。",
+      "x∈A 判断单个对象是否为元素，A⊆B 判断 A 的任一元素是否都在 B 中；二者量词不同。"
+    ],
+    "boundaries": [
+      "无限集合不可能靠列举所有元素完成；列举法适合有限或有清晰规律的离散集合。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要列出 1 和 2 就能表示所有满足 x²<4 的实数",
+        "example": "x=0 与 x=1/2 也满足 x²<4，但不在 {1,2} 中。",
+        "explanation": "条件描述的集合是 (-2,2)，不能与有限列举的 {1,2} 混淆。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "在实数域写出满足 x²<9 的集合与区间表示。",
+        "steps": [
+          "x²<9 等价于 -3<x<3（实数域）。",
+          "使用两端不取等的开区间写出同一集合。"
+        ],
+        "answer": "{x∈R | -3<x<3}=(-3,3)",
+        "check": "端点 x=±3 不满足严格小于，x=0 满足。"
+      },
+      {
+        "question": "A={1,3,5}，B={1,2,3,4,5}，判断 3∈A 和 A⊆B。",
+        "steps": [
+          "检查 3 确实列在 A 内，所以 3∈A。",
+          "核对 A 中每个元素 1、3、5 都属于 B。"
+        ],
+        "answer": "3∈A 为真；A⊆B 为真",
+        "check": "A⊆B 是对 A 全体元素的检查，不能误写成 A∈B。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把区间与整数列举混用，或者把 ∈ 写成 ⊆",
+        "why_wrong": "区间包含连续实数；元素与集合是不同层次的数学对象。",
+        "repair_question": "你当前判断的是一个数的隶属，还是集合对集合的包含？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确论域是 R、Z 还是其它集合。",
+      "根据条件求满足它的所有元素。",
+      "端点能否取到？用小括号或中括号核对。"
+    ],
+    "transfer": {
+      "near": "将 1≤x<5 的集合写成描述法与区间表示，并核对端点。",
+      "far": "将概率事件“结果为偶数”描述为离散样本空间的子集。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.logic.truth-negation",
+    "curriculum_ids": [
+      "HS-MATH-005"
+    ],
+    "kind": "concept",
+    "title": "全称与存在命题的否定、真值及逆否",
+    "version": "1.0.0",
+    "notation": [
+      "∀x∈D",
+      "∃x∈D",
+      "¬P",
+      "P⇒Q",
+      "¬Q⇒¬P"
+    ],
+    "prerequisites": [
+      "命题与真假",
+      "集合论域"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "在固定论域 D 内，全称命题 ∀x∈D,P(x) 的否定为 ∃x∈D,¬P(x)；存在命题 ∃x∈D,P(x) 的否定为 ∀x∈D,¬P(x)。对命题 P⇒Q，逆否命题 ¬Q⇒¬P 与原命题等价，而逆命题 Q⇒P 一般不等价。",
+    "statement": null,
+    "assumptions": [
+      "必须区分自然语言中的“所有”“存在”和逻辑否定，固定讨论论域。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "否定“所有 x 都满足 P”，只需找到一个使 P 不成立的反例，因此量词由 ∀ 改为 ∃。",
+      "否定“存在一个满足 P 的 x”，意味着每个 x 都不满足 P，因此 ∃ 改为 ∀。",
+      "若 P 为真且 Q 为假则 P⇒Q 为假；逆否式 ¬Q⇒¬P 在且仅在同一情形为假。"
+    ],
+    "boundaries": [
+      "¬(x>0) 等价 x≤0（实数），不是 x<0；否定通常保留原论域。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "命题“∀x∈R，x²≥0”的否定是“∀x∈R，x²<0”",
+        "example": "真正的否定是“∃x∈R，x²<0”，该存在命题仍然为假。",
+        "explanation": "否定量词同时必须翻转全称与存在，而非只否定谓词。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "否定：对任意实数 x 都有 x²>1。",
+        "steps": [
+          "先否定全称量词，改为存在实数 x。",
+          "再将谓词 x²>1 否定为 x²≤1。"
+        ],
+        "answer": "∃x∈R，使 x²≤1",
+        "check": "取 x=0 可作为原命题的反例，因此原命题为假。"
+      },
+      {
+        "question": "命题“若 x=2，则 x²=4”，写出逆否命题。",
+        "steps": [
+          "原命题设 P：x=2，Q：x²=4。",
+          "逆否命题为 ¬Q⇒¬P，必须保留论域实数。"
+        ],
+        "answer": "若 x²≠4，则 x≠2",
+        "check": "逆命题 x²=4⇒x=2 在 x=-2 失败，但逆否命题仍成立。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "将逆命题误认作原命题的等价形式",
+        "why_wrong": "只有逆否命题与原命题在经典逻辑下等价；逆命题须单独证明。",
+        "repair_question": "请写出原命题为假时 P 和 Q 的真假情况。"
+      }
+    ],
+    "hint_ladder": [
+      "圈出“任意”“存在”“若…则”等逻辑词。",
+      "将量词取反并否定性质。",
+      "想证明不等价，寻找逆向成立而正向不成立的对象。"
+    ],
+    "transfer": {
+      "near": "否定“存在正整数 n 使 n²=2”，并判断原命题真假。",
+      "far": "把数学定理的前置条件转为条件门禁，尝试反驳不满足条件的应用。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.inequality.transformation-obligations",
+    "curriculum_ids": [
+      "HS-MATH-010"
+    ],
+    "kind": "method",
+    "title": "不等式等价变形的非零、符号与平方义务",
+    "version": "1.0.0",
+    "notation": [
+      "a>0",
+      "a<0",
+      "a=0",
+      "P⇔Q"
+    ],
+    "prerequisites": [
+      "实数有序性",
+      "绝对值和分式定义域"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "不等式变形前须逐步记录原定义域、待乘除因子的符号和变形可逆性：同乘正数保持方向，同乘负数反向，乘未知符号先分类；平方及去分母等操作须排除引入的新根或无法逆向恢复的条件。",
+    "assumptions": [
+      "a、x 等变量属于实数；原式每个分母及函数式必须有定义。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先计算原问题的允许值域，并记录需要非零的分母或根式条件。",
+      "将同乘或除的因子分为正、负、零三种情况，依序翻转、不翻转或禁止除法。",
+      "对平方、取倒数等非双射变换，回代原式检查候选并写明等价还是单向蕴含。"
+    ],
+    "boundaries": [
+      "由 x²=4 得出 x=2 遗漏 x=-2；未经证明 x,y≥0 时，从 x²>y² 不能直接推出 x>y。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "由 a x>1 统一得到 x>1/a",
+        "example": "取 a=-2，正确为 x<-1/2；取 a=0 时无解且 1/a 未定义。",
+        "explanation": "负数除法反向，零除法不合法；未知符号必须分类。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "对实参数 a 求解 ax≥2。",
+        "steps": [
+          "若 a>0，同除 a 得 x≥2/a；若 a<0，同除 a 需反向 x≤2/a。",
+          "当 a=0，0≥2 为假，因此无解。"
+        ],
+        "answer": "a>0:x≥2/a；a<0:x≤2/a；a=0:∅",
+        "check": "分别取 a=2、-2、0 代入原式，检查方向和空集。"
+      },
+      {
+        "question": "解 x²=9，并解释从平方方程开方的必要分类。",
+        "steps": [
+          "因 x²−9=(x−3)(x+3)=0，得到 x=3 或 x=-3。",
+          "每个候选代入原式，平方都等于 9。"
+        ],
+        "answer": "解集 {-3,3}",
+        "check": "只保留正根 x=3 不是等价变形。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不分参数符号直接除或把单向平方当等价",
+        "why_wrong": "有序域的负数乘法反向，平方映射在实数域不单射。",
+        "repair_question": "这一步到底是等价变形还是只证明了一个方向？"
+      }
+    ],
+    "hint_ladder": [
+      "先列出可能为零的分母或因子。",
+      "按正、负、零分类后再动不等号。",
+      "对每个候选代回原始条件，不只是代回变形后的条件。"
+    ],
+    "transfer": {
+      "near": "求解 (t−3)x<6 并完整讨论 t 的取值。",
+      "far": "检查几何距离方程平方消根号后的增根与遗漏分支。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.trig.radians-unit-circle",
+    "curriculum_ids": [
+      "HS-MATH-025"
+    ],
+    "kind": "concept",
+    "title": "弧度制、单位圆与任意角三角函数",
+    "version": "1.0.0",
+    "notation": [
+      "180°=π rad",
+      "(cos α,sin α)",
+      "s=r|α|"
+    ],
+    "prerequisites": [
+      "圆的弧长",
+      "平面直角坐标",
+      "实数与角度"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "在以 O 为圆心、半径 r>0 的圆上，圆心角的弧度绝对值为弧长除以半径；角 α 对应单位圆终边点 (cos α,sin α)。180°=π 弧度，因此角度 θ° 对应 θπ/180 弧度，弧长 s=r|α|。",
+    "statement": null,
+    "assumptions": [
+      "讨论定向角时需定义起始射线和旋转正向；弧长是非负量。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "同一个中心角的弧长与半径成正比，选单位圆时数值等于弧度绝对值。",
+      "半周弧长为 πr，除以 r 得到 π 弧度，从而 180° 与 π 相等。",
+      "角度终边与单位圆交点坐标分别定义余弦和正弦，允许负角与超一周角。"
+    ],
+    "boundaries": [
+      "旋转方向由角的正负决定，但通常弧长 s 非负；同终边角相差 2kπ。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "角为 -π/2 时弧长 s=-πr/2",
+        "example": "弧长按长度定义不能为负，即 s=πr/2；定向角为负表示顺时针旋转。",
+        "explanation": "不能把定向弧度 α 直接当作非负弧长。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "把 150° 换成弧度，并求单位圆终点坐标。",
+        "steps": [
+          "使用 150π/180=5π/6。",
+          "第二象限余弦为负、正弦为正。"
+        ],
+        "answer": "5π/6；(-√3/2,1/2)",
+        "check": "坐标模长平方为 3/4+1/4=1。"
+      },
+      {
+        "question": "半径为 3 的圆上，中心角 60° 对应的短弧长是多少？",
+        "steps": [
+          "把 60° 转为 π/3 弧度。",
+          "弧长使用 s=r|α|=3×π/3。"
+        ],
+        "answer": "π",
+        "check": "单位为长度单位，不能误用 60 直接乘半径。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "将角度数字直接当弧度，或把负角当负长度",
+        "why_wrong": "弧度是弧长与半径比，长度不能为负。",
+        "repair_question": "公式 s=rα 中 α 是弧度还是角度？是否要求有向弧长？"
+      }
+    ],
+    "hint_ladder": [
+      "先明确单位是度还是弧度。",
+      "把角换算为 π 的倍数。",
+      "使用单位圆象限判断正负号。"
+    ],
+    "transfer": {
+      "near": "将 -210° 转成弧度并写出同终边的最小非负角。",
+      "far": "用弧度制验证切线斜率和正弦导数的极限公式。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.trig.sine-cosine-graphs",
+    "curriculum_ids": [
+      "HS-MATH-026"
+    ],
+    "kind": "concept",
+    "title": "正弦余弦函数图像的振幅、周期与平移",
+    "version": "1.0.0",
+    "notation": [
+      "y=A sin(ωx+φ)+b",
+      "T=2π/|ω|",
+      "|A|"
+    ],
+    "prerequisites": [
+      "单位圆",
+      "正弦和余弦图像",
+      "函数平移和伸缩"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "对 y=A sin(ωx+φ)+b（A≠0，ω≠0）有振幅 |A|、最小正周期 T=2π/|ω|、值域 [b−|A|,b+|A|]；相位令 ωx+φ=ω(x+φ/ω)，因此对应水平平移 -φ/ω，负 A 还会作纵向翻折。余弦同理。",
+    "statement": null,
+    "assumptions": [
+      "参数 A、ω 非零，x 为实数；讨论最小正周期时排除常值函数。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "单位圆定义给出 -1≤sin t≤1，乘 A 再加 b 得到值域 [b−|A|,b+|A|]。",
+      "把自变量相位 t=ωx+φ 加 2π，x 增量为 2π/|ω| 的绝对正值。",
+      "将 ωx+φ 写成 ω(x+φ/ω)，明确平移取决于 -φ/ω 而不是直接照抄 φ。"
+    ],
+    "boundaries": [
+      "当 A=0 或 ω=0 时函数为常数，没有最小正周期；负角频率需取绝对值。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "y=sin(2x+π) 的图像向右平移 π",
+        "example": "化为 sin(2(x+π/2))，与 sin(2x) 比较向左平移 π/2。",
+        "explanation": "必须先把频率系数 ω 提出，移动量是 -φ/ω。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "分析 y=2sin(3x−π)+1 的振幅、最小正周期、值域和平移。",
+        "steps": [
+          "A=2、ω=3、b=1 给出振幅2、周期2π/3、值域[-1,3]。",
+          "3x−π=3(x−π/3)，相对 2sin(3x)+1 向右平移 π/3。"
+        ],
+        "answer": "振幅2；T=2π/3；值域[-1,3]；右移π/3",
+        "check": "把 x=π/2 代入可得 y=2sin(π/2)+1=3 达上界。"
+      },
+      {
+        "question": "函数 y=−3cos(2x)+4 的值域与最小正周期是什么？",
+        "steps": [
+          "余弦介于 -1 与1，乘 -3 再加4得到值域[1,7]。",
+          "频率系数为2，周期 2π/2=π。"
+        ],
+        "answer": "值域[1,7]；T=π",
+        "check": "x=0 时 y=1，x=π/2 时 y=7，两个端值都可取。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "忽略频率系数的平移尺度及负振幅",
+        "why_wrong": "图像平移针对 x 的系数归一化后的相位；振幅永远是非负大小。",
+        "repair_question": "你能将 ωx+φ 配方写成 ω(x-c) 吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先把表达式与 A sin(ωx+φ)+b 对应。",
+      "分别读取振幅、频率、基线。",
+      "把相位写成 ω(x−c) 来确定左右平移。"
+    ],
+    "transfer": {
+      "near": "分析 y=−2sin(4x+π/2)−1 的周期、振幅和值域。",
+      "far": "从一段周期信号模型中识别频率、相位滞后和直流偏置。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.trig.double-angle-reduction",
+    "curriculum_ids": [
+      "HS-MATH-030"
+    ],
+    "kind": "theorem",
+    "title": "二倍角公式与降幂恒等式的合法推导",
+    "version": "1.0.0",
+    "notation": [
+      "sin(2x)=2sin x cos x",
+      "cos(2x)=1−2sin²x",
+      "cos²x=(1+cos2x)/2"
+    ],
+    "prerequisites": [
+      "三角函数和角公式",
+      "平方恒等式 sin²x+cos²x=1"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对于任意实数 x，有 sin(2x)=2sin x cos x，cos(2x)=cos²x−sin²x=1−2sin²x=2cos²x−1。故 sin²x=(1−cos2x)/2、cos²x=(1+cos2x)/2；各式是无除零问题的恒等变形。",
+    "assumptions": [
+      "x 是任意实数角，所有三角函数按弧度定义，使用和角公式。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "令两角都为 x，代入 sin(a+b)=sin a cos b+cos a sin b 得 sin2x=2sin x cos x。",
+        "reason": "和角公式对全部实数角成立，a=b=x 是合法特例。"
+      },
+      {
+        "claim": "令两角都为 x，代入 cos(a+b)=cos a cos b−sin a sin b，得到 cos2x=cos²x−sin²x。",
+        "reason": "余弦和角公式按项相乘并相减，没有引入定义域限制。"
+      },
+      {
+        "claim": "再使用 sin²x+cos²x=1，可得 cos2x=1−2sin²x=2cos²x−1，并移项得到降幂公式。",
+        "reason": "基本平方关系为恒等式，除数仅为常数 2，故每步全域合法。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "sin2x=2sinx cosx 不能约掉 sinx 得 2cosx 等式，除非已证明 sinx≠0。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "由 sin(2x)=0 能直接约去 sin x 得 cos x=0",
+        "example": "取 x=0，则 sin2x=0 但 cos0=1，并不为零。",
+        "explanation": "因子 sinx 可能为0，消去会丢失解。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 sin(π/3)cos(π/3) 的值，并用二倍角检查。",
+        "steps": [
+          "代入正弦与余弦的准确值 √3/2 和 1/2。",
+          "亦可用 sin(2π/3)=2sin(π/3)cos(π/3)。"
+        ],
+        "answer": "√3/4",
+        "check": "二倍角右边是 2×√3/4=√3/2，和 sin(2π/3) 一致。"
+      },
+      {
+        "question": "利用降幂公式计算 cos²(π/6)。",
+        "steps": [
+          "写成 (1+cos(π/3))/2。",
+          "cos(π/3)=1/2，得到 (1+1/2)/2。"
+        ],
+        "answer": "3/4",
+        "check": "直接 (√3/2)²=3/4，与降幂结果一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把二倍角公式误写成 sin(2x)=2sinx，或随意约去三角函数因子",
+        "why_wrong": "正弦二倍角必须包含 cosx；约零因子会丢掉合法根。",
+        "repair_question": "原等式两边你想除的三角因子会不会等于 0？"
+      }
+    ],
+    "hint_ladder": [
+      "从 sin(a+b)、cos(a+b) 取 a=b 开始。",
+      "用 sin²x+cos²x=1 消去一个平方项。",
+      "任何除以三角函数的步骤都先列出非零条件。"
+    ],
+    "transfer": {
+      "near": "用二倍角公式化简 1−cos2x 和 sinx cosx。",
+      "far": "分析多谐波周期信号中的二次项为何产生两倍频分量。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.vector.projection",
+    "curriculum_ids": [
+      "HS-MATH-035"
+    ],
+    "kind": "theorem",
+    "title": "非零方向向量上的正交投影及数量积推导",
+    "version": "1.0.0",
+    "notation": [
+      "proj_b(a)=(a·b)/(b·b)·b",
+      "a·b",
+      "b≠0"
+    ],
+    "prerequisites": [
+      "平面向量数量积",
+      "正交与向量分解"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "给定欧氏平面非零向量 b 与任意向量 a，a 在 b 所张成直线上的向量投影是 proj_b(a)=((a·b)/(b·b))b；其有向数量投影为 a·b/|b|，而投影向量长度为 |a·b|/|b|。该表达要求 b≠0。",
+    "assumptions": [
+      "a、b 属于实数欧氏内积空间且 b≠0，内积满足正定性。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "设候选投影 p=tb，则残差 a−p 与 b 正交的条件为 (a−tb)·b=0。",
+        "reason": "正交投影定义为沿给定子空间取分量，使剩余向量与该子空间垂直。"
+      },
+      {
+        "claim": "展开得到 a·b−t(b·b)=0；由于 b≠0，b·b=|b|²>0。",
+        "reason": "数量积双线性与正定性保证分母非零，可以合法求 t=(a·b)/(b·b)。"
+      },
+      {
+        "claim": "因此 proj_b(a)=((a·b)/(b·b))b；其长度等于 |a·b|/|b|。",
+        "reason": "把求得的唯一 t 代回；投影长度等于 |t|·|b|，符号信息由有向投影另行保留。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不能将有向投影 a·b/|b| 当成总为非负；b 为零向量时不存在指定方向。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何向量都可以投影到零向量方向上",
+        "example": "取 b=(0,0)，公式分母 b·b=0，方向本身未定义。",
+        "explanation": "零向量没有唯一张成的方向线，不能使用投影长度公式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "a=(3,4)、b=(1,0)，求 a 在 b 方向上的投影向量。",
+        "steps": [
+          "a·b=3，b·b=1，系数为3。",
+          "乘 b=(1,0) 得投影向量 (3,0)。"
+        ],
+        "answer": "proj_b(a)=(3,0)",
+        "check": "残差 (0,4) 与 b 数量积为0。"
+      },
+      {
+        "question": "a=(1,2)、b=(1,1)，求投影向量。",
+        "steps": [
+          "数量积 a·b=3，b·b=2。",
+          "投影向量为 (3/2)(1,1)。"
+        ],
+        "answer": "proj_b(a)=(3/2,3/2)",
+        "check": "残差 (-1/2,1/2) 与 (1,1) 内积为0。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "用 |a|cosθ 直接当成非负的投影长度",
+        "why_wrong": "有向数量投影可负，投影向量的长度需取绝对值。",
+        "repair_question": "你正在求的是沿方向的带符号分量，还是长度？"
+      }
+    ],
+    "hint_ladder": [
+      "把投影向量假设为 tb。",
+      "残差 a−tb 必须与 b 正交。",
+      "解 t 前先检查 b·b 是否为零。"
+    ],
+    "transfer": {
+      "near": "计算 (2,-2) 在 (1,1) 上的投影并解释结果为零。",
+      "far": "用梯度在约束直线的切方向上求投影，理解一维最小二乘。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.complex.algebraic-basics",
+    "curriculum_ids": [
+      "HS-MATH-040"
+    ],
+    "kind": "concept",
+    "title": "复数的代数形式、虚数单位与相等判据",
+    "version": "1.0.0",
+    "notation": [
+      "z=a+bi",
+      "i²=−1",
+      "Re z",
+      "Im z"
+    ],
+    "prerequisites": [
+      "实数运算与有序数对",
+      "代数恒等式"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "复数 z=a+bi 由有序实数对 (a,b) 表示，其中 i²=−1，a=Re z，b=Im z；两复数 a+bi 与 c+di 相等当且仅当 a=c 且 b=d。实数是虚部为零的复数，而纯虚数要求实部为零且虚部非零。",
+    "statement": null,
+    "assumptions": [
+      "a、b、c、d 都是实数，按复数标准代数结构计算。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "将复数 a+bi 与 b 的实系数配对，可表示为平面有序对 (a,b)。",
+      "有序对相等必须两个坐标分别相同，因此等式 a+bi=c+di 强制 a=c 和 b=d。",
+      "i²=−1 是复数扩展的代数规则，但 i 不属于实数域，不能按实数大小比较。"
+    ],
+    "boundaries": [
+      "虚部 Im(z)=b 是实数 b，而不是 bi；i²=−1 不意味着 i 是实数。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "复数 z=3+2i 的虚部是 2i",
+        "example": "按定义 Re(z)=3，Im(z)=2，虚部是实数2。",
+        "explanation": "将系数 b 与虚数项 bi 混同会影响复数相等判断。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "若 a+2i=3+bi，a、b 为实数，求 a、b。",
+        "steps": [
+          "比较等式两边实部得 a=3。",
+          "比较等式两边虚部系数得 b=2。"
+        ],
+        "answer": "a=3，b=2",
+        "check": "代回得到相同的 3+2i。"
+      },
+      {
+        "question": "计算 i⁴+i²+1。",
+        "steps": [
+          "先用 i²=−1 得 i⁴=(i²)²=1。",
+          "代入计算 1+(−1)+1。"
+        ],
+        "answer": "1",
+        "check": "i 的偶次幂按周期 4 循环。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "将虚部误写为带 i 的项，或把虚数单位当实数",
+        "why_wrong": "复数代数的有序对模型中虚部是实坐标而非复项。",
+        "repair_question": "如果虚部是2i，那么等式 z=a+bi 中 b 是什么类型？"
+      }
+    ],
+    "hint_ladder": [
+      "将复数写成 a+bi 的标准形。",
+      "分别比较实部与虚部的实系数。",
+      "运算出现 i² 时一律替换成 −1。"
+    ],
+    "transfer": {
+      "near": "判断 z=5i 是否为纯虚数并写出其实部、虚部。",
+      "far": "用复平面的横纵坐标解释一条复数等式等价于两条实数方程。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.complex.argument",
+    "curriculum_ids": [
+      "HS-MATH-041"
+    ],
+    "kind": "concept",
+    "title": "非零复数辐角的多值性与主辐角",
+    "version": "1.0.0",
+    "notation": [
+      "arg z=θ₀+2kπ",
+      "Arg z∈(−π,π]",
+      "z≠0"
+    ],
+    "prerequisites": [
+      "复平面",
+      "任意角三角函数",
+      "复数的模"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "对于非零复数 z=a+bi，模 r=√(a²+b²)>0，可写 z=r(cosθ+i sinθ)。所有满足此式的 θ 构成辐角集合 θ₀+2kπ（k∈Z）。若约定主辐角 Arg z∈(−π,π]，其值唯一；零复数没有确定方向，故不定义辐角。",
+    "statement": null,
+    "assumptions": [
+      "必须先约定主辐角所在区间；只对 z≠0 的复数谈辐角。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "用 a=r cosθ、b=r sinθ 表示非零平面向量，因 r>0 可确定方向角。",
+      "角 θ 与 θ+2kπ 在单位圆同终边，因此辐角一般是无穷多个等价角。",
+      "把角规约到 (−π,π] 可以选出一个代表值；零向量没有唯一方向。"
+    ],
+    "boundaries": [
+      "不同教材可能使用 [0,2π) 作为主值区间，必须明示约定，不能混用。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "零复数 z=0 的主辐角是0",
+        "example": "0=r(cosθ+i sinθ) 对 r=0 时任意 θ 都成立，无法确定唯一方向。",
+        "explanation": "辐角要求非零复数的方向，而零复数没有方向。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 z=−1 的所有辐角与主辐角（区间 (−π,π]）。",
+        "steps": [
+          "对应复平面负实轴，基准方向角为 π。",
+          "所有同终边角为 π+2kπ，区间内选择 π。"
+        ],
+        "answer": "arg(−1)=π+2kπ；Arg(−1)=π",
+        "check": "−π 与 π 同终边，但左开右闭约定选取 π。"
+      },
+      {
+        "question": "求 z=1+i 的主辐角。",
+        "steps": [
+          "点 (1,1) 在第一象限，tanθ=1 且 0<θ<π/2。",
+          "因此唯一主辐角为 π/4。"
+        ],
+        "answer": "Arg(1+i)=π/4",
+        "check": "模为 √2，√2(cosπ/4+i sinπ/4)=1+i。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把 arctan(b/a) 不分象限直接作为主辐角",
+        "why_wrong": "反正切比值无法单独识别象限，并在 a=0 时无定义。",
+        "repair_question": "给定实部和虚部的正负，复数所在象限是什么？"
+      }
+    ],
+    "hint_ladder": [
+      "先判定 z 是否为零。",
+      "观察点 (a,b) 所在象限再选择方向角。",
+      "最后把角规约到约定主值区间。"
+    ],
+    "transfer": {
+      "near": "求 z=−1−i 的主辐角，解释它与 5π/4 的关系。",
+      "far": "计算两非零复数乘积的辐角时说明只能模 2π 相加。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.complex.operations",
+    "curriculum_ids": [
+      "HS-MATH-042"
+    ],
+    "kind": "theorem",
+    "title": "复数四则运算、共轭及合法除法",
+    "version": "1.0.0",
+    "notation": [
+      "z+w",
+      "zw",
+      "z̅",
+      "z/w",
+      "w≠0"
+    ],
+    "prerequisites": [
+      "虚数单位 i²=−1",
+      "实数分式与配方"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对 z=a+bi、w=c+di（a,b,c,d∈R），有 z+w=(a+c)+(b+d)i，zw=(ac−bd)+(ad+bc)i，共轭 z̅=a−bi 与 z z̅=a²+b²。若 w≠0，则 z/w=((ac+bd)+(bc−ad)i)/(c²+d²)。",
+    "assumptions": [
+      "所有系数为实数；除法需检验分母复数 w≠0，即 c²+d²>0。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "按分配律展开 (a+bi)(c+di)=ac+adi+bci+bd i²，结合 i²=−1 得乘积实虚部。",
+        "reason": "复数乘法遵守实系数分配律与 i²=−1 的定义关系。"
+      },
+      {
+        "claim": "(a+bi)(a−bi)=a²−(bi)²=a²+b²，且它是非负实数。",
+        "reason": "使用平方差公式并把 i² 替换为 −1。"
+      },
+      {
+        "claim": "若 w=c+di≠0，则 c²+d²>0，可用共轭 c−di 约去分母得到给定商式。",
+        "reason": "分子分母同乘非零的 w̅，不改变商；再展开乘积整理。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "w=0 时不能除法；|z+w| 通常不等于 |z|+|w|；共轭乘积非负但不等于 z²。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何复数都能除以 1+i²，就像除以 1−i² 一样",
+        "example": "因为 1−i²=1−(−1)=2 可以；但除以 1+i²=0 不合法。",
+        "explanation": "含 i² 的分母必须先计算并确认非零。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 (1+2i)(3−i)。",
+        "steps": [
+          "按分配律得 3−i+6i−2i²。",
+          "使用 i²=−1，合并得实部5、虚部5。"
+        ],
+        "answer": "5+5i",
+        "check": "直接乘积 ac−bd=3−(2×−1)=5，ad+bc=−1+6=5。"
+      },
+      {
+        "question": "计算 (2+i)/(1−i)。",
+        "steps": [
+          "分母的共轭为 1+i，分母积 (1−i)(1+i)=2。",
+          "分子 (2+i)(1+i)=1+3i，因此除以2。"
+        ],
+        "answer": "1/2+(3/2)i",
+        "check": "回乘 (1−i)(1/2+3i/2)=2+i。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "在复数除法中不检查分母是否为零或忘记共轭乘法",
+        "why_wrong": "复数除法必须同乘共轭得到实数正分母，零复数不可作为除数。",
+        "repair_question": "分母的模平方 c²+d² 是否严格大于零？"
+      }
+    ],
+    "hint_ladder": [
+      "先写出实部、虚部和 i²=−1。",
+      "乘法逐项分配，除法优先考虑分母共轭。",
+      "计算商前证明分母模平方非零。"
+    ],
+    "transfer": {
+      "near": "计算 (3−2i)/(1+i)，并用回乘验证。",
+      "far": "推导非零复数模的乘法性 |zw|=|z||w|，理解平面旋转伸缩。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.space.parallel-perpendicular-criteria",
+    "curriculum_ids": [
+      "HS-MATH-044"
+    ],
+    "kind": "theorem",
+    "title": "线面平行与平面垂直的向量判定和前提",
+    "version": "1.0.0",
+    "notation": [
+      "n·v=0",
+      "l∥Π",
+      "n₁·n₂=0"
+    ],
+    "prerequisites": [
+      "三维点积与法向量",
+      "直线与平面的参数方程"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "在三维欧氏空间中，给定平面 Π={X|n·(X−P)=0}、n≠0，直线 l={Q+t v}、v≠0。若 n·v=0 且 n·(Q−P)≠0，则 l∥Π 且不相交；若 n·v=0 且 n·(Q−P)=0，则 l⊂Π。两个非零法向量 n₁、n₂ 所定义的平面垂直当且仅当 n₁·n₂=0。",
+    "assumptions": [
+      "法向量 n、方向向量 v 均非零，所有对象处于同一欧氏三维空间。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "沿直线 X=Q+t v 代入平面方程得 n·(Q−P)+t(n·v)=0。",
+        "reason": "平面点的定义直接给出所有直线点满足条件的代数判定。"
+      },
+      {
+        "claim": "若 n·v=0，方程与 t 无关；常数不为0则没有交点，常数为0则全部直线点位于平面。",
+        "reason": "对线性方程按系数和常数是否为0分类，分别得到平行或包含。"
+      },
+      {
+        "claim": "若两个平面的非零法向量正交，则其夹角为直角，两个平面的二面角也为直角，故两平面垂直。",
+        "reason": "平面间角由法向量夹角的锐角代表确定，点积为0等价法向量夹角90°。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "n·v=0 不能直接判定直线与平面不相交；还必须检查直线是否包含于平面。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "直线方向 v 与平面法向量 n 垂直就一定与平面无交点",
+        "example": "取 Π:z=0，l={(t,0,0)}，v=(1,0,0)、n=(0,0,1)，n·v=0 但 l⊂Π。",
+        "explanation": "位置分类须另外检查线上一点是否位于平面。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "直线 l=(t,1,2)，平面 z=0 的位置关系是什么？",
+        "steps": [
+          "v=(1,0,0)，n=(0,0,1)，数量积 n·v=0。",
+          "直线上所有点 z=2，不在 z=0，故无交点。"
+        ],
+        "answer": "l∥平面 z=0（不包含）",
+        "check": "距离为2且与参数 t 无关。"
+      },
+      {
+        "question": "平面 x=0 与 y=0 是否垂直？",
+        "steps": [
+          "两个平面法向量分别为 (1,0,0) 与 (0,1,0)。",
+          "数量积为0，故法向量正交。"
+        ],
+        "answer": "两个平面垂直",
+        "check": "二者交线为 z 轴，沿交线的二面角为直角。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "只检查方向向量与法向量垂直就宣布线面平行不相交",
+        "why_wrong": "直线可能完全位于平面内，需取一个点检查归属。",
+        "repair_question": "你检查过直线上一个固定点是否落在平面上吗？"
+      }
+    ],
+    "hint_ladder": [
+      "写出直线方向向量和平面法向量。",
+      "先比较 n·v 是否为零。",
+      "若为零，再代入一个点区分包含与平行。"
+    ],
+    "transfer": {
+      "near": "判断 l=(t,2,0) 与 z=0 的位置关系并比较前题。",
+      "far": "用线面夹角与平面法向量的数量积计算三维光线的入射方向。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.space.line-plane-distance",
+    "curriculum_ids": [
+      "HS-MATH-045"
+    ],
+    "kind": "concept",
+    "title": "空间直线与平面的最短距离及相交分类",
+    "version": "1.0.0",
+    "notation": [
+      "d(l,Π)",
+      "|n·(Q−P)|/|n|",
+      "n·v=0"
+    ],
+    "prerequisites": [
+      "三维点到平面距离",
+      "线面位置关系"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "直线 l 与平面 Π 的距离定义为 inf{|X−Y|:X∈l,Y∈Π}。若 l 与 Π 相交或 l⊂Π，距离为0；若 l={Q+t v} 平行且不包含于 Π={X|n·(X−P)=0}、n≠0、n·v=0，则距离为 |n·(Q−P)|/|n|，与参数 t 无关。",
+    "statement": null,
+    "assumptions": [
+      "直线与平面必须为三维欧氏空间内的非空几何对象，n 为非零法向量。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "若直线与平面共有一点 R，则取 X=Y=R 使距离为0，非负距离的下确界即为0。",
+      "若直线平行平面，其每个点 Q+t v 到平面的点距中，法向分子 n·(Q+t v−P) 与 t 无关。",
+      "因此平行时任取直线上一点的点面距离就是线面距离；若直线包含于平面，数值同为0。"
+    ],
+    "boundaries": [
+      "点到直线的距离公式与线到平面的距离公式不同；倾斜相交直线没有正的最短距离。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "直线与平面不平行时可以直接用一个点到平面的距离代表线面距离",
+        "example": "取 l={(0,0,t)}、Π:z=0；点 (0,0,2) 到平面距离2，但直线在 t=0 处相交，线面距离0。",
+        "explanation": "必须先证明直线与平面平行且不相交，才可以用任意线上一点的点面距离代替两集合最短距离。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "直线 l={(t,1,5)} 与平面 z=1 的最短距离。",
+        "steps": [
+          "方向 (1,0,0) 与法向 (0,0,1) 点积0，且线上点 z=5≠1。",
+          "平行线面距为 |5−1|。"
+        ],
+        "answer": "d(l,Π)=4",
+        "check": "对任意 t 取垂足 (t,1,1)，距离恒为4。"
+      },
+      {
+        "question": "直线 l={(0,0,t)} 与平面 z=3 的最短距离。",
+        "steps": [
+          "当 t=3 时点 (0,0,3) 属于直线和平面。",
+          "两集合有公共点，距离定义的下界为0并达到。"
+        ],
+        "answer": "d(l,Π)=0",
+        "check": "不能用直线上 t=0 的点距3冒充整体最短距。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把任一点到平面的距离当成相交直线到平面的距离",
+        "why_wrong": "线面距离是两个集合间的下确界，相交时为零。",
+        "repair_question": "你能否找出一个同时在直线和平面内的点？"
+      }
+    ],
+    "hint_ladder": [
+      "先判断直线是否与平面相交。",
+      "若方向与法向点积为零，检查包含还是不相交。",
+      "仅在平行不相交时，使用任一点的点面距离。"
+    ],
+    "transfer": {
+      "near": "求 l={(t,0,−2)} 与 z=4 的距离并解释为何与 t 无关。",
+      "far": "计算无人机的水平路径与地面平面的最小安全高度。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.space.surface-areas",
+    "curriculum_ids": [
+      "HS-MATH-048"
+    ],
+    "kind": "concept",
+    "title": "柱体锥体的侧面积与表面积、截面和展开图",
+    "version": "1.0.0",
+    "notation": [
+      "S柱侧=2πrh",
+      "S圆锥侧=πrl",
+      "S圆柱表=2πrh+2πr²"
+    ],
+    "prerequisites": [
+      "圆的周长和面积",
+      "勾股定理",
+      "几何展开图"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "直圆柱底面半径 r>0、高 h>0，侧面积 2πrh、总表面积 2πrh+2πr²；直圆锥半径 r>0、母线 l≥r、侧面积 πrl、总表面积 πrl+πr²（h²+r²=l²）。棱柱与棱锥的面积应按各面形状逐片求和，截面面积不等于立体表面积。",
+    "statement": null,
+    "assumptions": [
+      "此处圆柱与圆锥均为直圆柱、直圆锥；锥体的母线是斜高而非竖直高度。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "沿直圆柱母线展开侧面成为宽为底面周长 2πr、高为 h 的矩形，因此侧面积为 2πrh。",
+      "圆锥侧面展开为半径 l、弧长等于底圆周长 2πr 的扇形；由扇形面积=弧长×半径/2，得到 πrl。",
+      "总表面积还必须加上底面：完整圆柱加两个底圆，圆锥加一个底圆；截面是另外的二维切面。"
+    ],
+    "boundaries": [
+      "斜圆锥和斜圆柱不能机械套用直立体展开公式；只计算侧面积不等于闭合表面积。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "圆锥侧面积等于 πrh，其中 h 是垂直高",
+        "example": "当 r=3、h=4 时母线 l=5，侧面积为 15π 而不是 12π。",
+        "explanation": "展开后的圆锥侧面是扇形，它的半径等于圆锥母线 l，而不是圆锥竖直高度 h。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "半径2、高3的直圆柱，其侧面积及总表面积各为多少？",
+        "steps": [
+          "侧面展开矩形宽4π、高3，面积12π。",
+          "两个底圆面积共 2×4π=8π。"
+        ],
+        "answer": "侧面积12π；总表面积20π",
+        "check": "单位为面积单位平方，与体积 πr²h=12π 的数值巧合不能混淆量纲。"
+      },
+      {
+        "question": "直圆锥半径3、垂直高4，求侧面积和总表面积。",
+        "steps": [
+          "用勾股定理母线 l=√(3²+4²)=5。",
+          "侧面积 π×3×5=15π，再加底圆 9π。"
+        ],
+        "answer": "侧面积15π；总表面积24π",
+        "check": "注意直角三角形中斜边母线为5而非高度4。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "圆锥侧面积误用垂直高度，或把截面当作表面的一部分直接相加",
+        "why_wrong": "展开图侧面扇形半径是母线；内部切面通常不是原立体外边界。",
+        "repair_question": "圆锥展开图中的扇形半径，对应空间里哪一条线段？"
+      }
+    ],
+    "hint_ladder": [
+      "先分清侧面积、全表面积和截面面积。",
+      "选择适合的展开图并标注长度。",
+      "是否需要加底面？圆锥斜高与垂直高一样吗？"
+    ],
+    "transfer": {
+      "near": "求 r=1、h=√3 的直圆锥侧面积、表面积。",
+      "far": "给相同体积的不同包装设计，比较外包装的材料面积成本。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.sample-space-event",
+    "curriculum_ids": [
+      "HS-MATH-050"
+    ],
+    "kind": "concept",
+    "title": "随机试验、样本空间与事件集合的严格含义",
+    "version": "1.0.0",
+    "notation": [
+      "Ω",
+      "ω∈Ω",
+      "A⊆Ω",
+      "Aᶜ"
+    ],
+    "prerequisites": [
+      "集合与元素隶属",
+      "基本统计频率"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "随机试验是结果不确定但每次有明确定义的可能结果的过程；样本空间 Ω 为该试验所有可能基本结果的集合，样本点 ω∈Ω，事件 A⊆Ω。事件 A 发生当且仅当实际结果 ω∈A。若有限样本空间的样本点并非等可能，就不能仅凭有利样本点数除以总数求概率。",
+    "statement": null,
+    "assumptions": [
+      "每个试验的结果描述粒度确定；可列举 Ω 不表示样本点必然等可能。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先选定试验观察的基本结果；同一实验若记录细度不同，其 Ω 与事件表示也不同。",
+      "事件用 Ω 的子集表示，交事件 A∩B 表示同时发生，并事件 A∪B 表示至少一件发生。",
+      "概率测度给事件赋值，但列举 Ω 只是事件代数结构，不足以推定均匀概率。"
+    ],
+    "boundaries": [
+      "连续样本空间不能用有限均匀计数公式；某个样本点可能概率为0仍是可能结果。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "骰子投掷只要有六个面就一定每面概率 1/6",
+        "example": "一个被人为加重的骰子仍有 Ω={1,...,6}，但各面概率可以不相等。",
+        "explanation": "经典概型的均匀性是一项额外假设，不由样本空间元素个数推出。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "抛掷一枚硬币一次，记录正反面，写样本空间和“正面”事件。",
+        "steps": [
+          "定义基础结果为 H（正面）与 T（反面），Ω={H,T}。",
+          "事件 A={H} 是 Ω 的子集。"
+        ],
+        "answer": "Ω={H,T}；A={H}",
+        "check": "即使硬币不均匀，事件集合仍可写为 {H}。"
+      },
+      {
+        "question": "掷骰子一次，记录点数，写“点数大于4”的事件。",
+        "steps": [
+          "样本空间为 {1,2,3,4,5,6}。",
+          "按条件取满足点数>4 的样本点5、6。"
+        ],
+        "answer": "A={5,6}",
+        "check": "事件包含的结果不含4，且 A⊆Ω。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "误以为列举出了有限样本空间就自动满足等可能假设",
+        "why_wrong": "事件的集合结构不决定概率测度；均匀性需来自物理假设或题目给定。",
+        "repair_question": "题目是否明确说明每种结果等可能？"
+      }
+    ],
+    "hint_ladder": [
+      "先问每次试验到底记录什么。",
+      "把所有结果作为 Ω 的元素写清楚。",
+      "事件是 Ω 的哪个子集？概率权重是否已知？"
+    ],
+    "transfer": {
+      "near": "两次独立抛硬币时写出有序结果 Ω 及“恰有一次正面”事件。",
+      "far": "给检测设备的阳性/阴性事件建模，区分样本空间与误报概率。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.multiplication",
+    "curriculum_ids": [
+      "HS-MATH-053"
+    ],
+    "kind": "theorem",
+    "title": "条件概率乘法公式与独立事件特例",
+    "version": "1.0.0",
+    "notation": [
+      "P(A∩B)",
+      "P(B|A)",
+      "P(A)>0"
+    ],
+    "prerequisites": [
+      "样本空间与事件",
+      "条件概率的定义"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "对同一概率空间中的事件 A、B，若 P(A)>0，则 P(A∩B)=P(A)P(B|A)。若 P(B)>0，也有 P(A∩B)=P(B)P(A|B)。当 A、B 独立时，乘法特化为 P(A∩B)=P(A)P(B)，无须对零概率条件事件定义条件概率。",
+    "assumptions": [
+      "条件概率 P(B|A) 的定义需要 P(A)>0，除概率为0的退化条件外不可直接约去 P(A)。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "按条件概率的定义，P(B|A)=P(A∩B)/P(A)，条件是 P(A)>0。",
+        "reason": "条件样本空间归一化以 P(A) 为分母，故必须明确非零。"
+      },
+      {
+        "claim": "将等式两侧同乘正数 P(A)，得到 P(A∩B)=P(A)P(B|A)。",
+        "reason": "前置条件 P(A)>0 已满足，合法地消去分母。"
+      },
+      {
+        "claim": "若已知 A、B 独立，则 P(A∩B)=P(A)P(B) 为定义；当 P(A)>0 时亦可得 P(B|A)=P(B)。",
+        "reason": "独立性是额外事件关系，不能从两个概率的数值未知时凭空推断。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "条件概率式 P(B|A) 在 P(A)=0 时标准有限情形下未定义，虽然独立事件定义仍有意义。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任意事件满足 P(A∩B)=P(A)P(B)",
+        "example": "公平骰子取 A={2,4,6}、B={4,5,6}，P(A∩B)=2/6=1/3，P(A)P(B)=1/4。",
+        "explanation": "没有独立性就不能把条件概率替换为 P(B)。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "盒中 3 红2 蓝，不放回取两次，求两次皆红概率。",
+        "steps": [
+          "第一次红球概率 3/5；若第一次红，则第二次红概率 2/4。",
+          "使用条件概率乘法 P(R1∩R2)=3/5×2/4。"
+        ],
+        "answer": "3/10",
+        "check": "直接有利有序取法 3×2 / (5×4)=6/20=3/10。"
+      },
+      {
+        "question": "独立事件 A、B 概率分别为 1/2、1/3，求同时发生概率。",
+        "steps": [
+          "题目明确给出独立性，允许用特例公式。",
+          "相乘 (1/2)(1/3)。"
+        ],
+        "answer": "1/6",
+        "check": "结果不大于 min(1/2,1/3)，并满足独立事件定义。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不区分条件乘法与独立事件乘法",
+        "why_wrong": "条件乘法通用但需要非零条件概率分母；简化为无条件乘积必须独立。",
+        "repair_question": "条件是“已发生 A”，还是题目已经证明 A、B 独立？"
+      }
+    ],
+    "hint_ladder": [
+      "先识别求的是交事件还是并事件。",
+      "若在给定 A 后求 B，使用条件概率乘法。",
+      "只有独立性给定或已证时才简化为概率相乘。"
+    ],
+    "transfer": {
+      "near": "不放回抽球，一红一蓝的两种取出顺序概率如何相加？",
+      "far": "两步故障传播模型中的条件依赖为何不能直接使用独立乘法？"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.statistics.median-mode",
+    "curriculum_ids": [
+      "HS-MATH-056"
+    ],
+    "kind": "concept",
+    "title": "中位数、众数、离群值与均值的稳健性比较",
+    "version": "1.0.0",
+    "notation": [
+      "median",
+      "mode",
+      "x̄=Σxᵢ/n",
+      "IQR=Q3−Q1"
+    ],
+    "prerequisites": [
+      "有限样本排序",
+      "平均数",
+      "频数统计"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "给定 n≥1 个实数样本并排序 x(1)≤...≤x(n)，中位数 n 为奇数时取 x((n+1)/2)，n 为偶数时取 (x(n/2)+x(n/2+1))/2；众数为出现频数最大的取值，可能多于一个；均值为样本总和除以 n，容易受极端值影响。离群值的判定必须先指定规则。",
+    "statement": null,
+    "assumptions": [
+      "原始样本非空且可排序；分位数与离群值规则有多种约定，比较时必须固定一种。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "中位数先排序，只看中间位置一个或两个观测，故受少量极端值影响通常小于均值。",
+      "众数比较每个取值的出现频数，不需要排序但可能存在多众数或所有值并列。",
+      "均值由所有观测累加得到，单个数增加 M 会令均值增加 M/n；离群值应明确阈值规则。"
+    ],
+    "boundaries": [
+      "中位数并不总为样本实际观测值（偶数时可为两个数的平均）；并列众数不能擅自只报一个。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "含极端值的样本中均值与中位数必然相同",
+        "example": "数据 [1,2,2,3,100] 均值 108/5=21.6，而中位数为2。",
+        "explanation": "均值受 100 强烈影响，中位数依赖中间排序位置。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 [1,2,2,3,100] 的中位数、众数和均值。",
+        "steps": [
+          "数据已排序，第三项为2；数值2出现最多共两次。",
+          "求和 1+2+2+3+100=108，除以5。"
+        ],
+        "answer": "中位数2；众数2；均值21.6",
+        "check": "若将100改为1000，中位数和众数仍不变，但均值变化。"
+      },
+      {
+        "question": "求 [1,2,4,7] 的中位数和众数情况。",
+        "steps": [
+          "样本量4为偶数，取中间的2、4平均。",
+          "四个数字都只出现一次，因此没有唯一众数。"
+        ],
+        "answer": "中位数3；无唯一众数",
+        "check": "中位数3不必是样本中的实际观测值。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不先排序就求中位数，或把众数规定成必定唯一",
+        "why_wrong": "位置统计量依赖排序；频数最高值可能并列。",
+        "repair_question": "样本量为偶数时你选的是排序后的哪两个位置？"
+      }
+    ],
+    "hint_ladder": [
+      "先对样本排序并计数。",
+      "奇数取中央一个，偶数取中央两个的均值。",
+      "观察是否存在极端值，并比较均值与中位数。"
+    ],
+    "transfer": {
+      "near": "将100改为10000，计算均值增量而不重新计算中位数。",
+      "far": "对偏态收入分布解释为什么用中位数比均值更能代表典型收入。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.modeling.collaborative-inquiry",
+    "curriculum_ids": [
+      "HS-MATH-061"
+    ],
+    "kind": "method",
+    "title": "数学探究的协作建模、证据记录与复盘流程",
+    "version": "1.0.0",
+    "notation": [
+      "y=f(x;θ)",
+      "residual=y−ŷ",
+      "unit consistency"
+    ],
+    "prerequisites": [
+      "一次函数与比例",
+      "误差与数值验证",
+      "基本统计"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "数学建模探究需要按提出可检验问题→定义变量和单位→声明模型假设→建立关系→收集并清洗数据→解算与验证→分工互审→陈述限制与反思的闭环执行。组员意见不等于事实证据，拟合成功也不等于模型具有域外预测能力。",
+    "assumptions": [
+      "问题明确观察量和可获取的证据；组内每个假设、数据来源和修改记录可追溯。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先写清目标、变量、量纲和有效的建模前提，并把哪些量已观测、哪些是假设分开标记。",
+      "按照不同小组角色开展数据审查、模型求解与独立复算；把可重复的原始记录与派生结论分开保存。",
+      "使用未参与拟合的数据与极端边界检验模型，报告失败样例、误差、限制和成员分工。"
+    ],
+    "boundaries": [
+      "通过训练数据点不意味着模型对新环境有效；只对零样本或无单位的结论不能评价误差。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "一条直线能精确通过两个点就证明该物理关系永远线性",
+        "example": "观测 t=1 时 y=2、t=2 时 y=4，线性模型 y=2t 拟合完美；真实过程可能是 y=t²−t+2，在 t=1、2 时同样通过两点，而 t=3 时得到8而非6。",
+        "explanation": "有限训练点的零误差不能证明未来或域外的函数形式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "三小时走 180 km，假定匀速，求速度并写明模型边界。",
+        "steps": [
+          "令 t 为小时、s 为公里，匀速假设下 s=vt。",
+          "由 s=180、t=3 得 v=60 km/h。"
+        ],
+        "answer": "v=60 km/h；模型 s=60t",
+        "check": "如发生停车或加速，恒定速度模型不适用，需记录假设。"
+      },
+      {
+        "question": "训练点 (1,3)、(2,5) 用 y=ax+b 拟合，再验证 (3,7)。",
+        "steps": [
+          "由两点解线性方程得到 a=2、b=1。",
+          "独立验证 x=3 时预测 2×3+1=7。"
+        ],
+        "answer": "ŷ=2x+1；验证点预测7",
+        "check": "验证点不是拟合点，但单个验证样本仍不足以证明普适有效。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把协作中未经核验的共识当成模型定理",
+        "why_wrong": "小组意见必须由数据与数学推导支持，预测范围也需限定。",
+        "repair_question": "有哪些证据可以让另一名组员独立复算你的结论？"
+      }
+    ],
+    "hint_ladder": [
+      "先为变量和数据单位建立表格。",
+      "逐项区分观察、假设与推导。",
+      "保留一组未参与建模的验证数据并记录误差。"
+    ],
+    "transfer": {
+      "near": "为学校食堂客流建立按小时计数的线性趋势模型，列出假设。",
+      "far": "提出共享单车需求预测的模型失效场景与协作复核工作流。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.calculus.derivative-definition",
+    "curriculum_ids": [
+      "HS-MATH-066"
+    ],
+    "kind": "concept",
+    "title": "导数的极限定义与割线斜率趋于切线",
+    "version": "1.0.0",
+    "notation": [
+      "f'(x₀)",
+      "lim_(h→0) Δf/Δx",
+      "h≠0"
+    ],
+    "prerequisites": [
+      "函数与极限直观",
+      "直线斜率"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "对实函数 f，若 x₀ 是定义域内点并允许双侧极限，导数 f'(x₀)=lim_{h→0}[f(x₀+h)−f(x₀)]/h（h≠0）存在且有限，则称 f 在 x₀ 可导。差商是连接 (x₀,f(x₀)) 与 (x₀+h,f(x₀+h)) 的割线斜率；有限极限表示割线斜率趋于切线斜率。",
+    "statement": null,
+    "assumptions": [
+      "x₀ 是函数定义域的内点；差商沿两侧定义域点趋于零，极限为有限实数。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "取不同于零的增量 h，先形成斜率 [f(x₀+h)−f(x₀)]/h，不能在差商未处理时直接代 h=0。",
+      "若两个方向的差商趋于同一有限数 L，则定义导数为 L；左、右极限不同则不可导。",
+      "由 f(x₀+h)=f(x₀)+Lh+o(h) 可以把 L 解释为一阶局部变化率。"
+    ],
+    "boundaries": [
+      "定义域端点可另定义单侧导数，不能混作内点双侧导数；竖直切线对应无有限导数。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "f(x)=|x| 在原点的差商极限存在且等于0",
+        "example": "当 h>0 时差商为1，h<0 时差商为−1，左右极限不同。",
+        "explanation": "割线从左右接近时斜率不一致，故 f 在 0 不可导。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "用定义求 f(x)=x² 在 x₀=3 处的导数。",
+        "steps": [
+          "差商 [(3+h)²−9]/h=(6h+h²)/h=6+h（h≠0）。",
+          "令 h→0，得到极限6。"
+        ],
+        "answer": "f'(3)=6",
+        "check": "也与一般求导规则 f'(x)=2x 在 x=3 时一致。"
+      },
+      {
+        "question": "判断 f(x)=|x| 在 x₀=0 是否可导。",
+        "steps": [
+          "h>0 差商 |h|/h=1。",
+          "h<0 差商 |h|/h=−1，左右极限不相等。"
+        ],
+        "answer": "f'(0) 不存在",
+        "check": "两侧差商均有限但极限值不相同，因此不满足可导定义。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "将 h=0 直接代入差商出现0/0就认为导数不存在",
+        "why_wrong": "导数是 h 趋近0的极限，差商本身仅在 h≠0 处计算。",
+        "repair_question": "先代数化简，再求 h→0 的极限，结果是否仍无定义？"
+      }
+    ],
+    "hint_ladder": [
+      "写出完整差商并保留 h≠0。",
+      "先展开、约分，再考虑极限。",
+      "检查双侧差商是否趋向同一个有限数。"
+    ],
+    "transfer": {
+      "near": "用导数定义求 f(x)=x² 在 x₀=−2 处的斜率。",
+      "far": "用有限差分近似瞬时速度，比较步长变小与测量噪声的影响。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.calculus.tangent-line",
+    "curriculum_ids": [
+      "HS-MATH-067"
+    ],
+    "kind": "theorem",
+    "title": "函数可导点切线方程与局部线性近似",
+    "version": "1.0.0",
+    "notation": [
+      "y−f(x₀)=f'(x₀)(x−x₀)",
+      "f(x₀+h)=f(x₀)+mh+o(h)"
+    ],
+    "prerequisites": [
+      "导数的极限定义",
+      "点斜式直线方程",
+      "函数局部近似"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "若实函数 f 在内点 x₀ 可导且导数 m=f'(x₀) 有限，则函数图像在该点具有斜率为 m 的非竖直切线，其方程为 y−f(x₀)=m(x−x₀)，并有 f(x₀+h)=f(x₀)+mh+o(h)（h→0）。若导数不存在或无穷大，不能直接套有限斜率公式。",
+    "assumptions": [
+      "x₀ 是定义域内点，f'(x₀) 是有限实数，讨论通常单值函数图像。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由导数定义，差商 [f(x₀+h)−f(x₀)]/h 趋于有限实数 m。",
+        "reason": "可导的定义保证割线斜率收敛并给出非竖直切线的斜率。"
+      },
+      {
+        "claim": "将差商误差记为 ε(h)→0，则 f(x₀+h)−f(x₀)=mh+h ε(h)=mh+o(h)。",
+        "reason": "极限定义等价于误差系数收敛到0的局部展开。"
+      },
+      {
+        "claim": "过点 (x₀,f(x₀)) 且斜率 m 的直线满足 y−f(x₀)=m(x−x₀)。",
+        "reason": "直线点斜式与可导点的切线斜率定义结合。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "函数可导点的切线斜率可能为0；切线可以穿过函数图像，不能凭切触图形判断恒定符号。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何函数图像在任何点都可写 y−f(x₀)=f'(x₀)(x−x₀)",
+        "example": "f(x)=√|x| 在 x₀=0 处差商从右趋于 +∞、从左趋于 −∞，没有有限 f'(0)。",
+        "explanation": "有限斜率切线公式必须先确认导数存在且有限。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 y=x² 在 x₀=2 处的切线方程。",
+        "steps": [
+          "f(2)=4，f'(x)=2x，因此 m=4。",
+          "用点斜式 y−4=4(x−2)。"
+        ],
+        "answer": "y=4x−4",
+        "check": "代入 x=2 得 y=4，斜率与导数一致。"
+      },
+      {
+        "question": "求 y=x³ 在 x₀=0 处切线，并给出一阶近似。",
+        "steps": [
+          "f(0)=0，f'(x)=3x²，所以 f'(0)=0。",
+          "切线 y=0；局部一阶近似在0附近为0。"
+        ],
+        "answer": "切线 y=0；f(h)=o(h)",
+        "check": "因为 h³/h=h²→0，一阶余项符合小 o 定义。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把过曲线上一点且与图像相交的任意直线认作切线",
+        "why_wrong": "可导点的切线斜率由极限唯一决定，不能靠视觉判断。",
+        "repair_question": "你的候选直线斜率等于该点的导数吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先求点 (x₀,f(x₀))。",
+      "核实 f 在该点可导且导数有限。",
+      "再使用点斜式写出切线。"
+    ],
+    "transfer": {
+      "near": "求 y=x² 在 x₀=−1 处的切线方程。",
+      "far": "用局部线性近似估算 √(4.04) 并讨论误差。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.calculus.extrema",
+    "curriculum_ids": [
+      "HS-MATH-069"
+    ],
+    "kind": "method",
+    "title": "局部极值、闭区间最值与候选点的正确筛选",
+    "version": "1.0.0",
+    "notation": [
+      "f'(x₀)=0",
+      "[a,b]",
+      "局部极值",
+      "全局最值"
+    ],
+    "prerequisites": [
+      "导数定义",
+      "函数单调性与连续性",
+      "闭区间"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "连续函数 f 在闭区间 [a,b] 上有最大最小值。若 f 在区间内点 x₀ 取得局部极值且在该点可导，则必要条件 f'(x₀)=0，但反向不成立。求有限个驻点及不可导点的分段光滑函数全局最值时，要同时比较全部候选点与两端点的函数值；不能只看 f'=0。",
+    "assumptions": [
+      "闭区间上连续保证极值存在；有穷候选法还需内点除可枚举候选外可导且导数无零点。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先明确考察的是开区间局部极值还是闭区间全局最值；端点在后者中必须列出。",
+      "列出区间内所有 f'=0 的驻点以及不可导点；驻点只是候选，必须用符号或邻域比较确认。",
+      "计算端点和候选点的函数值并比较；若存在无穷多个驻点或其它复杂情况，改用单调分段/结构分析。"
+    ],
+    "boundaries": [
+      "f'(x₀)=0 非充分极值条件，例如 x³ 在0处导数为0但没有极值。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "闭区间最值只可能出现在 f'(x)=0 的点",
+        "example": "f(x)=x 在 [0,1] 上导数恒为1，最大值在右端点1、最小值在左端点0。",
+        "explanation": "端点不能遗漏，且极值必要条件仅用于可导内点。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 f(x)=x² 在 [-1,2] 上的最大与最小值。",
+        "steps": [
+          "内点驻点 f'(x)=2x=0 得 x=0；端点为 -1、2。",
+          "比较 f(-1)=1、f(0)=0、f(2)=4。"
+        ],
+        "answer": "最小值0（x=0）；最大值4（x=2）",
+        "check": "最大值来自端点而非驻点。"
+      },
+      {
+        "question": "判断 f(x)=x³ 在0是否取得局部极值。",
+        "steps": [
+          "f'(0)=0，因此0是驻点候选。",
+          "在0两侧函数严格递增，负侧负、正侧正，不构成局部最大或最小。"
+        ],
+        "answer": "x=0 不是极值点",
+        "check": "导数为0不充分，需检查导数符号或函数邻域。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把驻点等同于极值点，或忘记端点与不可导点",
+        "why_wrong": "Fermat 定理只提供内点极值的必要条件而不是充分条件。",
+        "repair_question": "可否给出一个导数为0但继续单调的函数？"
+      }
+    ],
+    "hint_ladder": [
+      "先确认区间是否闭合与是否连续。",
+      "列端点、驻点和不可导候选。",
+      "用符号或实际函数值比较，别只看导数方程。"
+    ],
+    "transfer": {
+      "near": "求 |x| 在 [-2,1] 上最大最小值，解释0不可导。",
+      "far": "在约束优化中区分内点驻点与可行域边界最优解。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.conic-focal-directrix",
+    "curriculum_ids": [
+      "HS-MATH-089"
+    ],
+    "kind": "concept",
+    "title": "圆锥曲线焦点准线离心率的统一距离比",
+    "version": "1.0.0",
+    "notation": [
+      "|PF|=e d(P,l)",
+      "e=c/a",
+      "0<e<1",
+      "e=1",
+      "e>1"
+    ],
+    "prerequisites": [
+      "点到直线距离",
+      "椭圆和双曲线焦点定义",
+      "圆锥曲线标准方程"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "在平面中给定定点 F 和不经过 F 的定直线 l，满足 |PF|/d(P,l)=e（e>0）的动点轨迹是以 F 为焦点、l 为准线、e 为离心率的焦点准线圆锥曲线：0<e<1 为椭圆，e=1 为抛物线，e>1 为双曲线。标准中心在原点的水平椭圆与双曲线有 e=c/a，焦准线位置 x=±a/e。",
+    "statement": null,
+    "assumptions": [
+      "e 为严格正实数，准线不能经过焦点；水平标准椭圆/双曲线参数 a,c>0。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "固定焦点 F 与准线 l 后，点 P 的两个距离都非负，距离比 e>0 描述一个几何轨迹。",
+      "中心椭圆中 c²=a²−b² 且 c<a，故 e=c/a∈(0,1)；双曲线 c²=a²+b² 故 e>1。",
+      "当距离比为1时可推得抛物线焦点与准线的等距条件；不能将圆的离心率0强行对应有限准线。"
+    ],
+    "boundaries": [
+      "焦点准线定义的 e>0；圆 e=0 可视作椭圆特殊情形，但没有同样有限的准线。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "圆与任意椭圆一样拥有一条有限准线使 e=0 距离比成立",
+        "example": "若 e=0 则 |PF|=0 强制 P=F，仅为一个点，不是圆。",
+        "explanation": "圆的 e=0 不能直接代入焦准线距离比得到完整圆周。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "水平椭圆 x²/25+y²/16=1，求离心率及右准线。",
+        "steps": [
+          "a=5、b=4，由 c=√(a²−b²)=3。",
+          "e=c/a=3/5，右准线 x=a/e=25/3。"
+        ],
+        "answer": "e=3/5；右准线 x=25/3",
+        "check": "顶点 (5,0) 到右焦点 (3,0) 距离2，距右准线10/3，比值3/5。"
+      },
+      {
+        "question": "水平双曲线 x²/9−y²/16=1，求离心率和右准线。",
+        "steps": [
+          "a=3、b=4，由 c=√(a²+b²)=5。",
+          "e=c/a=5/3，右准线 x=a/e=9/5。"
+        ],
+        "answer": "e=5/3；右准线 x=9/5",
+        "check": "顶点 (3,0) 到右焦点(5,0)距离2，距右准线6/5，比值5/3。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "椭圆、双曲线都用 c²=a²−b² 或把 e=0 的圆套有限准线",
+        "why_wrong": "双曲线焦距满足加法关系，圆的有限准线比值定义不适用。",
+        "repair_question": "从标准方程出发，你先检查的是 c²=a²−b² 还是 c²=a²+b²？"
+      }
+    ],
+    "hint_ladder": [
+      "先分辨椭圆、双曲线或抛物线类型。",
+      "写出焦点到中心的距离 c 与长/实半轴 a。",
+      "求 e=c/a，再检查对应准线的距离比。"
+    ],
+    "transfer": {
+      "near": "研究椭圆 x²/16+y²/7=1 的离心率与右准线。",
+      "far": "用焦点准线距离比推导一个焦点在原点的抛物线方程。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.geometry.conic-tangent-normal",
+    "curriculum_ids": [
+      "HS-MATH-091"
+    ],
+    "kind": "method",
+    "title": "圆锥曲线正则点隐式切线和法线",
+    "version": "1.0.0",
+    "notation": [
+      "F(x,y)=0",
+      "∇F(P)≠0",
+      "∇F(P)·((x,y)−P)=0"
+    ],
+    "prerequisites": [
+      "隐函数求导",
+      "法向量与数量积",
+      "圆锥曲线标准方程"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": null,
+    "statement": "设光滑曲线由 F(x,y)=0 给出，F 在点 P=(x₀,y₀) 的邻域连续可微且 F(P)=0、∇F(P)≠0，则在正则点 P 的切线为 F_x(P)(x−x₀)+F_y(P)(y−y₀)=0，法线以 ∇F(P) 为方向。F_x 与 F_y 必须同时计算，不能只套特定椭圆的半代入技巧。",
+    "assumptions": [
+      "F 是 P 邻域 C¹ 函数，P 在零水平集上且梯度非零，讨论局部正则曲线。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "先把二次曲线写成 F(x,y)=0，带入 P 确认 F(P)=0，再计算梯度 ∇F(P)。",
+      "若梯度非零，沿曲线上可微运动轨迹的导数满足 F_x(P)dx+F_y(P)dy=0，因此切向量与梯度正交。",
+      "用以梯度为法向量的过 P 直线给出切线；过 P 沿梯度方向的直线是法线。"
+    ],
+    "boundaries": [
+      "梯度为零的奇点不能用该正规切线公式推断唯一切线；点不在曲线上更不能称为该点的切线。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "点 Q=(0,0) 对圆 x²+y²=1 可按半代入直接得一条切线",
+        "example": "Q 不在圆上，因为 0²+0²−1=−1≠0。",
+        "explanation": "切线是曲线在其正则点处的局部方向；曲线外给定点不能套用曲线上一点的切线计算公式。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "椭圆 x²/9+y²/4=1 在 P=(0,2) 的切线与法线。",
+        "steps": [
+          "取 F=x²/9+y²/4−1；P 满足 F(P)=0，∇F(P)=(0,1)。",
+          "切线 (0,1)·((x,y)−(0,2))=0 即 y=2；法线沿(0,1)过 P。"
+        ],
+        "answer": "切线 y=2；法线 x=0",
+        "check": "代入椭圆 y=2 得 x=0 唯一接触点；法向量垂直水平切线。"
+      },
+      {
+        "question": "双曲线 x²/4−y²/9=1 在 P=(2,0) 的切线与法线。",
+        "steps": [
+          "F=x²/4−y²/9−1，P 在曲线上且 ∇F(P)=(1,0)。",
+          "切线 x−2=0；法线沿水平方向 y=0。"
+        ],
+        "answer": "切线 x=2；法线 y=0",
+        "check": "x=2 代回双曲线得到 y=0，与局部相切相符。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "不检查曲线上点和梯度正则性就套现成切线公式",
+        "why_wrong": "切线需有存在与唯一的局部正则依据，奇点或曲线外点不适用。",
+        "repair_question": "你已经同时验证 F(P)=0 和 ∇F(P)≠0 了吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先写 F(x,y)=0 并检查 P 是否在曲线上。",
+      "求 Fx(P)、Fy(P)，判断梯度是否非零。",
+      "用梯度作切线法向量，再写法线方向方程。"
+    ],
+    "transfer": {
+      "near": "椭圆 x²/16+y²/9=1 在 (4,0) 的切线与法线。",
+      "far": "讨论由 F(x,y)=xy=0 定义的交叉直线在原点为何不能应用正则点公式。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.probability.independence",
+    "curriculum_ids": [
+      "HS-MATH-096"
+    ],
+    "kind": "concept",
+    "title": "事件独立性与互斥的本质区别及零概率边界",
+    "version": "1.0.0",
+    "notation": [
+      "P(A∩B)=P(A)P(B)",
+      "A∩B=∅",
+      "P(A)=0"
+    ],
+    "prerequisites": [
+      "交事件与并事件",
+      "条件概率乘法"
+    ],
+    "prerequisite_lesson_ids": [],
+    "definition": "同一概率空间中 A、B 独立当且仅当 P(A∩B)=P(A)P(B)。互斥是 A∩B=∅，故若 A、B 都有正概率，互斥必不独立；当某个事件概率为0时，独立的乘积条件可能成立。零概率条件事件上的 P(B|A) 不自动有定义。",
+    "statement": null,
+    "assumptions": [
+      "A、B 属于同一概率空间，P 为合法的概率测度；不能由日常语言中的“无关”直接推断独立。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "独立性的检验直接比较交事件概率与两个边际概率的乘积，必须使用同一概率测度。",
+      "互斥只意味着交事件为空、交概率为0；若两个边际概率都正，则乘积为正，独立性等式失败。",
+      "当 P(A)=0 时，P(A∩B)≤P(A)=0，故对任意 B 满足乘积等式；但 P(B|A) 的普通比值定义无效。"
+    ],
+    "boundaries": [
+      "两个事件独立不意味着它们互斥；两两独立不自动推出三个事件相互独立。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "两个不可能同时发生的正概率事件一定独立",
+        "example": "公平骰子 A={1}、B={2}，P(A∩B)=0，但 P(A)P(B)=1/36>0。",
+        "explanation": "互斥的正概率事件不满足独立性乘积条件。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "公平骰子 A={2,4,6}、B={3,6} 是否独立？",
+        "steps": [
+          "P(A)=3/6=1/2，P(B)=2/6=1/3。",
+          "交事件 {6} 的概率为1/6，等于边际概率乘积。"
+        ],
+        "answer": "A、B 独立",
+        "check": "A、B 并不互斥，因为点数6属于二者。"
+      },
+      {
+        "question": "公平骰子 A={1}、B={2} 是否独立？",
+        "steps": [
+          "两个事件互斥，交概率为0。",
+          "各自概率1/6，乘积1/36≠0。"
+        ],
+        "answer": "A、B 不独立",
+        "check": "条件是概率正且互斥，不可说“不同时发生所以互不影响”。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把“互斥”与“独立”视为同义词，或对零概率事件强行求条件概率",
+        "why_wrong": "互斥是集合相交为空；独立是概率相乘的量化等式。",
+        "repair_question": "你能分别计算 P(A∩B) 与 P(A)P(B) 吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先列出交事件 A∩B。",
+      "分别算出两个边际概率和交事件概率。",
+      "比较乘积，再另外判断是否互斥。"
+    ],
+    "transfer": {
+      "near": "两次独立抛硬币中第一次正面和第二次正面是否独立且是否互斥？",
+      "far": "解释为什么两两独立的三事件可能不满足三者共同独立。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

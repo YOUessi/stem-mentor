@@ -1,0 +1,73 @@
+..FF....F                                                                [100%]
+=================================== FAILURES ===================================
+__________________ test_reproducible_reports_and_full_schema ___________________
+
+    def test_reproducible_reports_and_full_schema():
+        result = subprocess.run([sys.executable, "scripts/build_kb_batch07_audit.py", "--check"],
+            cwd=ROOT, capture_output=True, text=True)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: Traceback (most recent call last):
+E           File "/Users/youtang/Documents/文件/stem-mentor-kb-batch24/scripts/build_kb_batch07_audit.py", line 235, in <module>
+E             main()
+E             ~~~~^^
+E           File "/Users/youtang/Documents/文件/stem-mentor-kb-batch24/scripts/build_kb_batch07_audit.py", line 221, in main
+E             artifacts = build()
+E           File "/Users/youtang/Documents/文件/stem-mentor-kb-batch24/scripts/build_kb_batch07_audit.py", line 68, in build
+E             raise ValueError("Batch20 frozen mathematical proof baseline drift")
+E         ValueError: Batch20 frozen mathematical proof baseline drift
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/Users/youtang/Documents/文件/stem-mentor-kb-batch24/backend/../.venv/bin/python', 'scripts/buil...r("Batch20 frozen mathematical proof baseline drift")\nValueError: Batch20 frozen mathematical proof baseline drift\n').returncode
+
+tests/test_kb_batch07_audits.py:28: AssertionError
+______ test_all_current_drafts_have_explicit_unverified_step_obligations _______
+
+    def test_all_current_drafts_have_explicit_unverified_step_obligations():
+        s = PROOFS["summary"]
+        from app.deep_knowledge import lessons
+        docs=lessons()
+        # Historical 451 unverified obligations belong to 224 frozen drafts.
+        # New Batch21 proof steps are independently versioned in the 474-step union.
+        from scripts.build_kb_batch21_proof_union import build as build_proof_union
+>       union = build_proof_union()
+                ^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch07_audits.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def build():
+        base = json.loads(BASE.read_text(encoding="utf-8"))
+        new = json.loads(NEW.read_text(encoding="utf-8"))
+        old_rows = {x["id"]: x for x in base["lessons"]}
+        current = {x.id: x for x in lessons()}
+        fresh_ids = {x["id"] for x in new}
+        if (len(old_rows) != 224 or len(new) != 11
+                or set(old_rows) & fresh_ids or not (set(old_rows) | fresh_ids <= set(current))
+                or len(set(current) - set(old_rows) - fresh_ids) != 32):
+>           raise ValueError("Old + new proof queue must exactly cover current independent draft IDs")
+E           ValueError: Old + new proof queue must exactly cover current independent draft IDs
+
+../scripts/build_kb_batch21_proof_union.py:38: ValueError
+____________ test_coverage_snapshot_is_stable_and_remains_editorial ____________
+
+    def test_coverage_snapshot_is_stable_and_remains_editorial():
+        snapshot=json.loads((ROOT/"docs/evaluation/KB_SEMANTIC_COVERAGE_BATCH07.json").read_text(encoding="utf-8"))
+        result=build()
+        # Historical Batch07 snapshot is immutable; additional Batch23 deep subskills
+        # append review-pending links to existing required-course IDs without approval.
+        for live,historical in zip(result["topics"],snapshot["topics"]):
+            assert live["engineering_topic_id"]==historical["engineering_topic_id"]
+            assert set(historical["deep_lesson_ids"]).issubset(set(live["deep_lesson_ids"]))
+            assert live["teacher_approved_lesson_ids"]==[]
+            assert live["curriculum_atom_officially_verified"] is False
+            assert live["evidence_status"]==historical["evidence_status"]
+        assert len(result["topics"]) == len(snapshot["topics"]) + 17
+>       assert result["summary"]["deep_draft_documents"] == snapshot["summary"]["deep_draft_documents"] + 32
+E       assert 287 == (235 + 32)
+
+tests/test_kb_semantic_coverage_batch04.py:79: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch07_audits.py::test_reproducible_reports_and_full_schema
+FAILED tests/test_kb_batch07_audits.py::test_all_current_drafts_have_explicit_unverified_step_obligations
+FAILED tests/test_kb_semantic_coverage_batch04.py::test_coverage_snapshot_is_stable_and_remains_editorial
+3 failed, 6 passed in 4.53s

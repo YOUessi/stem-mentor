@@ -1,0 +1,15 @@
+........................................................................ [ 33%]
+........................................................................ [ 67%]
+....................................................................E    [100%]
+==================================== ERRORS ====================================
+_ ERROR at setup of test_new_teacher_manuscripts_remain_outside_student_signed_index _
+file /Users/youtang/Documents/文件/stem-mentor-kb-batch63/backend/tests/test_kb_batch63_atom_context_lessons.py, line 270
+  def test_new_teacher_manuscripts_remain_outside_student_signed_index(offline_reviewer_fixture):
+E       fixture 'offline_reviewer_fixture' not found
+>       available fixtures: _asyncio_loop_factory, _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _session_scoped_runner, anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, event_loop_policy, free_tcp_port, free_tcp_port_factory, free_udp_port, free_udp_port_factory, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/Users/youtang/Documents/文件/stem-mentor-kb-batch63/backend/tests/test_kb_batch63_atom_context_lessons.py:270
+=========================== short test summary info ============================
+ERROR backend/tests/test_kb_batch63_atom_context_lessons.py::test_new_teacher_manuscripts_remain_outside_student_signed_index
+212 passed, 1 error in 4.44s

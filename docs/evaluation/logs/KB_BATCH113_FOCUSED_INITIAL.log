@@ -1,0 +1,19 @@
+........................................................................ [ 70%]
+........................F.....                                           [100%]
+=================================== FAILURES ===================================
+______________ test_projection_residual_and_zero_vector_rejection ______________
+
+    def test_projection_residual_and_zero_vector_rejection():
+        u=sp.Matrix([2,0,0]);v=sp.Matrix([1,1,0])
+        proj=(u.dot(v)/v.dot(v))*v
+        assert proj==sp.Matrix([1,1,0])
+        assert (u-proj).dot(v)==0
+        zero=sp.zeros(3,1);assert zero.dot(zero)==0
+>       with pytest.raises(ZeroDivisionError):_=(u.dot(zero)/zero.dot(zero))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ZeroDivisionError'>
+
+backend/tests/test_kb_batch113_full_guard.py:175: Failed
+=========================== short test summary info ============================
+FAILED backend/tests/test_kb_batch113_full_guard.py::test_projection_residual_and_zero_vector_rejection
+1 failed, 101 passed in 1.78s

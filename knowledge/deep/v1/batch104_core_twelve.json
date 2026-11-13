@@ -1,0 +1,1147 @@
+[
+  {
+    "assumptions": [
+      "必须事先固定同一个全集 U，且 A、B 都是 U 的子集。",
+      "补集符号的结果取决于全集，不存在不指定 U 的绝对补集。"
+    ],
+    "boundaries": [
+      "必须事先固定同一个全集 U，且 A、B 都是 U 的子集。",
+      "补集符号的结果取决于全集，不存在不指定 U 的绝对补集。"
+    ],
+    "counterexamples": [
+      {
+        "example": "U={1,2,3}, A={1}, B={2} 时左侧={3}，错误右侧={1,2,3}。",
+        "explanation": "两个补集取交集才同时排除 A 和 B；全集必须相同。",
+        "false_claim": "错误地把并集的补集写为两个补集的并集。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-002"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写清楚全集，并明确哪个运算在括号内部。",
+      "把元素是否属于并集写为一个或命题，再取否定。",
+      "分别计算左右集合进行核验，不要凭视觉交换∩和∪。"
+    ],
+    "id": "math.hs.batch104.01",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "错误地把并集的补集写为两个补集的并集。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "两个补集取交集才同时排除 A 和 B；全集必须相同。"
+      }
+    ],
+    "notation": [
+      "U 为固定全集",
+      "A∩B 与 A∪B 分别为交并集"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "集合的元素关系",
+      "逻辑中的且或非"
+    ],
+    "proof_steps": [
+      {
+        "claim": "任取 x∈U\\(A∪B)，由并集定义知 x∈U 且 x∉A、x∉B，所以属于两个补集的交集。",
+        "reason": "补集、并集以及交集定义逐次作等价改写。"
+      },
+      {
+        "claim": "反向若 x 同时属于 U\\A 与 U\\B，则 x∈U 且不属于 A 或 B，因此不属于 A∪B。",
+        "reason": "由且与或的否定关系得到反方向包含。"
+      },
+      {
+        "claim": "将属于 A∩B 的条件‘属于 A 且属于 B’取否定，就得到‘不属于 A 或不属于 B’，第二式双向成立。",
+        "reason": "以任意元素逐一判定集合相等，运用命题德摩根律。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "设全集为 U，A、B 均为 U 的子集，则 U\\(A∪B)=(U\\A)∩(U\\B)，且 U\\(A∩B)=(U\\A)∪(U\\B)。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "有限全集下的德摩根律与补集范围",
+    "transfer": {
+      "far": "把集合等式翻译为布尔过滤器的非、与、或运算，解释筛选顺序。",
+      "near": "改用U={a,b,c,d}验证两个恒等式。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "{4}",
+        "check": "(U\\A)∩(U\\B)={3,4}∩{1,4}={4}。",
+        "question": "U={1,2,3,4}, A={1,2}, B={2,3}，求(A∪B)的U内补集。",
+        "steps": [
+          "先得 A∪B={1,2,3}。",
+          "从 U 删除这些元素，仅余 4。"
+        ]
+      },
+      {
+        "answer": "{0,2,3}",
+        "check": "(U\\A)∪(U\\B)={2,3}∪{0,3}={0,2,3}。",
+        "question": "U={0,1,2,3},A={0,1},B={1,2}，求(A∩B)的补集。",
+        "steps": [
+          "A∩B={1}。",
+          "在 U 中除去 1，得到三个元素。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "P、Q 均应是有真值的命题，量词与共同论域不可隐去。",
+      "单个样例中 P 与 Q 同时为真，不足以证明蕴涵普遍成立。"
+    ],
+    "boundaries": [
+      "P、Q 均应是有真值的命题，量词与共同论域不可隐去。",
+      "单个样例中 P 与 Q 同时为真，不足以证明蕴涵普遍成立。"
+    ],
+    "counterexamples": [
+      {
+        "example": "n=2 是偶数，但不被4整除。",
+        "explanation": "4|n 是 2|n 的充分不必要条件；逆向存在反例。",
+        "false_claim": "把 4 整除整数 n 与 n 为偶数误判为充要。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-003"
+    ],
+    "definition": "对命题 P、Q：若 P⇒Q 恒成立，则 P 是 Q 的充分条件，Q 是 P 的必要条件；只有两方向均成立才称 P 与 Q 充要等价。",
+    "hint_ladder": [
+      "先固定变量的论域与量词。",
+      "先证明题目所说的正向箭头，再寻找逆向反例。",
+      "若逆向也成立，才可写双向等价符号。"
+    ],
+    "id": "math.hs.batch104.02",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把 4 整除整数 n 与 n 为偶数误判为充要。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "4|n 是 2|n 的充分不必要条件；逆向存在反例。"
+      }
+    ],
+    "notation": [
+      "P⇒Q 读作 P 蕴涵 Q",
+      "P⇔Q 表示双向蕴涵"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "全称命题与反例"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "充分性要逐一证明每个满足 P 的对象满足 Q；不能只看个别对象。",
+      "必要性等价于排除 Q 不成立而 P 成立的情形，它描述 P 成立不可缺少的前提。",
+      "若要宣布充要条件，必须另证逆命题 Q⇒P；一条反例就能否定逆向。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对命题 P、Q：若 P⇒Q 恒成立，则 P 是 Q 的充分条件，Q 是 P 的必要条件；只有两方向均成立才称 P 与 Q 充要等价。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "充分条件与必要条件的单向推理",
+    "transfer": {
+      "far": "用程序前置条件与输出约束解释充分性和必要性。",
+      "near": "将4|n换成6|n并重新讨论奇偶关系。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "P充分不必要；Q必要不充分",
+        "check": "量词限定整数，反例2在论域内。",
+        "question": "对整数 n，判定 P:4|n 与 Q:2|n 的关系。",
+        "steps": [
+          "若 n=4k，则 n=2(2k)，所以 P⇒Q。",
+          "取 n=2 使 Q 真而 P 假，否定逆向。"
+        ]
+      },
+      {
+        "answer": "充分不必要条件",
+        "check": "反方向的反例存在，不能称为充要。",
+        "question": "对实数 x，判定 x>3 是否为 x>1 的充分条件。",
+        "steps": [
+          "x>3 蕴涵 x>1，正向成立。",
+          "取 x=2 满足 x>1 但不满足 x>3。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "a、b、c 均为实数，原不等式严格成立。",
+      "未知符号的参数不可未经分类就直接同乘并保留原不等号。"
+    ],
+    "boundaries": [
+      "a、b、c 均为实数，原不等式严格成立。",
+      "未知符号的参数不可未经分类就直接同乘并保留原不等号。"
+    ],
+    "counterexamples": [
+      {
+        "example": "代入数字可得6与-3，实际上6>-3。",
+        "explanation": "乘负数时必须翻转大小符号；c=0时严格性丧失。",
+        "false_claim": "忽略乘数符号把 -2<1 乘以 -3 写成 6<-3。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-006"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先观察乘数是否已知为正、负、零。",
+      "负数乘法转变为对差的符号判断。",
+      "用一组具体数字核查不等号方向。"
+    ],
+    "id": "math.hs.batch104.03",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "忽略乘数符号把 -2<1 乘以 -3 写成 6<-3。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "乘负数时必须翻转大小符号；c=0时严格性丧失。"
+      }
+    ],
+    "notation": [
+      "a<b 代表 b-a>0",
+      "c 的正负决定不等号方向"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "实数数轴",
+      "差的符号"
+    ],
+    "proof_steps": [
+      {
+        "claim": "由 a<b 可得 b-a>0，这是比较两实数大小的定义性判据。",
+        "reason": "实数有序域中差为正与严格小于等价。"
+      },
+      {
+        "claim": "当 c>0 时 c(b-a)>0，因此 bc-ac>0，得到 ac<bc。",
+        "reason": "两个正数的乘积仍为正，分配律合法。"
+      },
+      {
+        "claim": "当 c<0 时 -c>0，有(-c)(b-a)>0，因此 bc-ac<0；若 c=0 两端同为0。",
+        "reason": "负数乘以正数得负数，零数乘积恒为零。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对于实数 a<b 和实数 c，若 c>0 则 ac<bc；若 c<0 则 ac>bc；c=0 时 ac=bc，不能继续保持严格不等号。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "不等式乘以负数必须反向",
+    "transfer": {
+      "far": "在未知单价差的收益不等式里说明为何要区分汇率参数正负。",
+      "near": "比较同乘 -1/2 与同乘 0 的区别。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "6>-3",
+        "check": "6-(-3)=9>0。",
+        "question": "从 -2<1 同乘 -3，写正确结果。",
+        "steps": [
+          "乘数 -3 为负，应翻转 <。",
+          "两端积为6和-3。"
+        ]
+      },
+      {
+        "answer": "t>0:tx<2t；t<0:tx>2t；t=0:0=0",
+        "check": "t=-1,x=1 时 -1>-2；t=0 两端均为0。",
+        "question": "由 x<2 同乘参数 t，讨论所得不等式。",
+        "steps": [
+          "先分 t>0、t<0、t=0 三种情况。",
+          "分别利用乘法保序、反序、零乘积性质。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "必须 a≠0，否则退化为一次或常数不等式。",
+      "端点根是否纳入取决于 >、≥、<、≤，不能混用。"
+    ],
+    "boundaries": [
+      "必须 a≠0，否则退化为一次或常数不等式。",
+      "端点根是否纳入取决于 >、≥、<、≤，不能混用。"
+    ],
+    "counterexamples": [
+      {
+        "example": "实际 x=0 时值为4>0，根外x=3时值-5<0。",
+        "explanation": "a<0 开口向下，正值位于两根之间。",
+        "false_claim": "对 -x²+4>0 误用‘根外为正’。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-007"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先检查是否真是二次式，以及不等号是否严格。",
+      "计算Δ并按首项符号画符号表。",
+      "检查至少一个内点、外点和端点。"
+    ],
+    "id": "math.hs.batch104.04",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "对 -x²+4>0 误用‘根外为正’。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "a<0 开口向下，正值位于两根之间。"
+      }
+    ],
+    "notation": [
+      "Δ=b²-4ac",
+      "a 是非零二次项系数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch104.03"
+    ],
+    "prerequisites": [
+      "乘负数不等号反向",
+      "二次函数与实根"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "二次函数图像开口由首项系数 a 的符号确定，不能只记‘两根之间为负’。",
+      "Δ>0 时按升序求出两实根，a>0 时两根外函数正、根内负；a<0 相反。",
+      "Δ=0 的二重根不能当作两个不同端点；Δ<0 时式子全程与 a 同号。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对实系数二次式 ax²+bx+c（a≠0），先由判别式 Δ=b²-4ac 判断实根个数，再结合 a 的正负和根外根内区域确定严格不等式解集。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "一元二次不等式的首项符号与判别式",
+    "transfer": {
+      "far": "解释抛物线高度表示某模型的资源安全约束时为何要关注端点取等。",
+      "near": "讨论参数k使x²-2kx+1>0对所有实数成立。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "x<1 或 x>3",
+        "check": "代入x=0得3>0，代入x=2得-1<0。",
+        "question": "解 x²-4x+3>0。",
+        "steps": [
+          "因式分解为(x-1)(x-3)，两实根1、3，a=1>0。",
+          "根外乘积为正，排除两个根。"
+        ]
+      },
+      {
+        "answer": "[-2,2]",
+        "check": "端点取0，x=0取4，x=3取-5。",
+        "question": "解 -x²+4≥0。",
+        "steps": [
+          "变为 x²≤4，注意乘以-1时反向。",
+          "等价于 -2≤x≤2，含零点。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "两个函数被称为同一个函数时必须明确其定义域及映射法则。",
+      "图像不必能覆盖整个陪域，但不能对同一个合法输入给出两个不同输出。"
+    ],
+    "boundaries": [
+      "两个函数被称为同一个函数时必须明确其定义域及映射法则。",
+      "图像不必能覆盖整个陪域，但不能对同一个合法输入给出两个不同输出。"
+    ],
+    "counterexamples": [
+      {
+        "example": "x=4 时 y=2 和 y=-2，存在两个输出。",
+        "explanation": "未限定 y≥0 或 y≤0 就不能写 y=f(x) 单值映射。",
+        "false_claim": "把关系 x=y² 在整条抛物线上的 y 看作 x≥0 的单值函数。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-011"
+    ],
+    "definition": "给定非空集合 D、集合 C，函数 f:D→C 对每一个 x∈D 指定且只指定一个 f(x)∈C；其值域 f(D) 是 C 的子集，不必等于 C。",
+    "hint_ladder": [
+      "写出所有允许的输入组成定义域D。",
+      "检查每个输入是否恰好对应一个输出。",
+      "再讨论值域是否覆盖陪域，不要把两者混为一谈。"
+    ],
+    "id": "math.hs.batch104.05",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把关系 x=y² 在整条抛物线上的 y 看作 x≥0 的单值函数。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "未限定 y≥0 或 y≤0 就不能写 y=f(x) 单值映射。"
+      }
+    ],
+    "notation": [
+      "f:D→C 的箭头指定函数",
+      "f(D) 为实际取到的值域"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch104.01"
+    ],
+    "prerequisites": [
+      "集合、映射与有序对"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "单值性约束的是一个输入只能对应一个输出，不要求不同输入的输出不同。",
+      "图像上的每个横坐标只能对应一个纵坐标；竖直直线与图像交点超过一个则不是该D上的函数。",
+      "定义域发生变化即使公式相同，也可能成为不同函数；值域与陪域也不能混同。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "给定非空集合 D、集合 C，函数 f:D→C 对每一个 x∈D 指定且只指定一个 f(x)∈C；其值域 f(D) 是 C 的子集，不必等于 C。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "函数是从定义域到陪域的单值映射",
+    "transfer": {
+      "far": "解释数据库键到唯一记录的映射和一对多关系的区别。",
+      "near": "比较f(x)=x²在D=R与D=[0,+∞)上的区别。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "是函数，值域{2,4}",
+        "check": "D的每个元素仅出现一次作为第一坐标。",
+        "question": "判断集合关系 {(1,2),(2,2),(3,4)} 是否定义 D={1,2,3} 上的函数。",
+        "steps": [
+          "逐个检查D内输入是否都有像。",
+          "各输入恰有一个输出，允许1和2映到同一值。"
+        ]
+      },
+      {
+        "answer": "不是函数",
+        "check": "输出2与3都对应x=1，无法确定唯一f(1)。",
+        "question": "判断关系 {(1,2),(1,3),(2,4)} 是否为D={1,2}上的函数。",
+        "steps": [
+          "输入1在关系中出现两次且对应不同输出。",
+          "违反单值性，即使输入2有唯一像也不成立。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "接点 a 必须在定义域内，并且左右各有可趋近的定义域点。",
+      "若仅一侧是定义域的聚点，应改用该侧的相对连续性，不得要求不存在的另一侧极限。"
+    ],
+    "boundaries": [
+      "接点 a 必须在定义域内，并且左右各有可趋近的定义域点。",
+      "若仅一侧是定义域的聚点，应改用该侧的相对连续性，不得要求不存在的另一侧极限。"
+    ],
+    "counterexamples": [
+      {
+        "example": "左右极限均为1，却与f(1)=7不相等。",
+        "explanation": "缺少对接点函数值的核对，属于可去间断。",
+        "false_claim": "两侧趋近值都为1就断言接点连续，但设f(1)=7。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-017"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "分别写出左侧、右侧、接点三个数。",
+      "识别接点在哪个分支里定义。",
+      "必须三个数都存在且相等才判连续。"
+    ],
+    "id": "math.hs.batch104.06",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "两侧趋近值都为1就断言接点连续，但设f(1)=7。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "缺少对接点函数值的核对，属于可去间断。"
+      }
+    ],
+    "notation": [
+      "lim(x→a-)f 与 lim(x→a+)f 分别表示单侧极限",
+      "f(a) 为接点的实际定义值"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch104.05"
+    ],
+    "prerequisites": [
+      "函数定义域与函数值",
+      "极限的直观含义"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "先分别按照 x<a、x>a 对应分支求单侧极限，不能以接点值代替极限。",
+      "两侧极限相等才有双侧极限，但这仍不能单独保证接点处的连续性。",
+      "最后确认函数在接点取值存在且等于共同极限；若只给一侧定义，改用单侧连续性。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "若分段函数在 x=a 左右各有定义域内趋近点，f 在 a 连续当且仅当左极限、右极限及函数值 f(a) 三者存在且相等。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "分段函数接点连续性要求三项一致",
+    "transfer": {
+      "far": "用收费分段模型讨论阈值附近的价格跳跃。",
+      "near": "调整右分支2x+c使接点处连续，求c。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "在x=1连续",
+        "check": "取x=0.9与1.1，函数值分别0.81、1.2，趋近1。",
+        "question": "f(x)=x² (x≤1)，2x-1 (x>1)，判定在1的连续性。",
+        "steps": [
+          "左极限=1且f(1)=1。",
+          "右极限为2·1-1=1，三项相等。"
+        ]
+      },
+      {
+        "answer": "x=0为跳跃间断点",
+        "check": "g(0)=2只能匹配右极限，不能改变左极限。",
+        "question": "g(x)=x (x<0)，x+2 (x≥0)，判断x=0的连续性。",
+        "steps": [
+          "左极限为0，右极限为2。",
+          "左右极限不等，因此双侧不连续。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "底数与真数条件均需在变形前检查。",
+      "若底数为含参表达式，必须对参数区间分类，不能直接取 a=1 或负底数。"
+    ],
+    "boundaries": [
+      "底数与真数条件均需在变形前检查。",
+      "若底数为含参表达式，必须对参数区间分类，不能直接取 a=1 或负底数。"
+    ],
+    "counterexamples": [
+      {
+        "example": "底数1的指数函数恒为1并非一一映射，log_1没有实对数定义。",
+        "explanation": "不可忽略a≠1条件，指数等式不是无条件定义。",
+        "false_claim": "错误地说log_1(8)=3，因为1³=1。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-022"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "写出对数底数及真数的合法区间。",
+      "合法时把对数等式转成指数等式。",
+      "代回原式逐项核查真数条件。"
+    ],
+    "id": "math.hs.batch104.07",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "错误地说log_1(8)=3，因为1³=1。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "不可忽略a≠1条件，指数等式不是无条件定义。"
+      }
+    ],
+    "notation": [
+      "log_a(x) 为以a为底的实对数",
+      "a>0且a≠1且x>0"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch104.05"
+    ],
+    "prerequisites": [
+      "指数函数与函数定义域"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "对数是正底非1的指数函数的反函数，指数映射在实数上严格单调且值域为正实数。",
+      "将log_a(x)=b转为a^b=x之前先记录a>0、a≠1、x>0这三项。",
+      "解得候选根后代回原始方程；通过平方或约分得到的候选可能破坏真数条件。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在实数对数中，底数 a 必须满足 a>0 且 a≠1，真数 x 必须 x>0；在这些条件下 log_a(x)=b 等价于 a^b=x。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "对数方程换底与等价变换的定义域门禁",
+    "transfer": {
+      "far": "解释指数增长实验中对数尺度为什么不能使用非正的测量值。",
+      "near": "令底数变为参数m，分析m=0、1、2时是否有意义。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "x=9",
+        "check": "代回原式log₂8=3且x-1>0。",
+        "question": "求解log₂(x-1)=3。",
+        "steps": [
+          "真数条件x-1>0，因此x>1。",
+          "转为x-1=2³=8，解x=9。"
+        ]
+      },
+      {
+        "answer": "x=7",
+        "check": "真数9为正，原式为log₃9=2。",
+        "question": "求解log₃(x+2)=2。",
+        "steps": [
+          "先要求x+2>0。",
+          "转化为x+2=3²=9，得到x=7。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "A以弧度计算或在全程一致换成角度，已知边长严格为正。",
+      "若候选sin B大于1则无解；等于1则B为直角一个候选；小于1仍需检查角和限制。"
+    ],
+    "boundaries": [
+      "A以弧度计算或在全程一致换成角度，已知边长严格为正。",
+      "若候选sin B大于1则无解；等于1则B为直角一个候选；小于1仍需检查角和限制。"
+    ],
+    "counterexamples": [
+      {
+        "example": "sinB=0.8，另一候选为126.87°且与A之和156.87°<180°。",
+        "explanation": "已知SSA不是SSS或SAS，反正弦会遗漏补角。",
+        "false_claim": "A=30°,a=5,b=8时只取B≈53.13°而漏掉第二解。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-038"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "明确哪些是已知角及其对边。",
+      "算出sinB并判断是否落在[0,1]。",
+      "列出补角候选，逐一核查A+B<180°。"
+    ],
+    "id": "math.hs.batch104.08",
+    "kind": "method",
+    "misconceptions": [
+      {
+        "error": "A=30°,a=5,b=8时只取B≈53.13°而漏掉第二解。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "已知SSA不是SSS或SAS，反正弦会遗漏补角。"
+      }
+    ],
+    "notation": [
+      "sinB=b sinA/a",
+      "需先判0<B<π和A+B<π"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "正弦定理",
+      "三角形内角和"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "正弦定理要求一条已知角的对边与另一条已知边对应，比例不能写反。",
+      "0<sinB<1 的一般方程在(0,π)内有B₁与π-B₁两个候选，不能只调用反正弦主值。",
+      "对每个B再检验A+B<π，随后第三角C=π-A-B>0才是有效三角形。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "已知三角形角 A、对边 a 与另一边 b 且 0<A<π、a,b>0，由正弦定理 sin B=b sin A/a 求候选B；仅保留 0<B<π 且 A+B<π 的角，可能有0、1或2个三角形。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "SSA 已知两边及非夹角时的零一两解",
+    "transfer": {
+      "far": "在地图三角测量中解释为何两条长度与一个非夹角可能定位出两个目标。",
+      "near": "取A=30°,a=8,b=5，判断两个角候选哪个有效。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "有两个三角形",
+        "check": "两候选的第三角分别约96.87°与23.13°，皆大于0。",
+        "question": "A=30°,a=5,b=8，求三角形个数。",
+        "steps": [
+          "计算sinB=8sin30°/5=4/5。",
+          "两候选B≈53.13°、126.87°均满足A+B<180°。"
+        ]
+      },
+      {
+        "answer": "无三角形",
+        "check": "高度b sinA=4.5 已超过对边a=4，故无法闭合。",
+        "question": "A=30°,a=4,b=9，判断是否存在三角形。",
+        "steps": [
+          "sinB=9sin30°/4=9/8>1。",
+          "任何实际角的正弦不大于1，因此无候选B。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "只讨论欧氏空间内两个非零向量的夹角，夹角θ∈[0,π]。",
+      "零向量虽与任何向量数量积均为0，但不能由此说存在90°夹角。"
+    ],
+    "boundaries": [
+      "只讨论欧氏空间内两个非零向量的夹角，夹角θ∈[0,π]。",
+      "零向量虽与任何向量数量积均为0，但不能由此说存在90°夹角。"
+    ],
+    "counterexamples": [
+      {
+        "example": "零向量的长度0，其方向不唯一，夹角没有按通常定义给出。",
+        "explanation": "必须在推论前明确两个向量非零。",
+        "false_claim": "对零向量u=(0,0)与v=(1,0)使用u·v=0断言夹角90°。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-034"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先计算每个向量的长度是否为零。",
+      "再求数量积及其符号。",
+      "只有双非零时才能由数量积零推断直角。"
+    ],
+    "id": "math.hs.batch104.09",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "对零向量u=(0,0)与v=(1,0)使用u·v=0断言夹角90°。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "必须在推论前明确两个向量非零。"
+      }
+    ],
+    "notation": [
+      "u·v 为数量积",
+      "θ 表示两个非零向量夹角"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "平面向量数量积",
+      "欧氏模长与余弦"
+    ],
+    "proof_steps": [
+      {
+        "claim": "对两个非零向量，按数量积与夹角定义有u·v=|u||v|cosθ。",
+        "reason": "欧氏数量积的几何定义与模长正性。"
+      },
+      {
+        "claim": "因为|u||v|>0，u·v=0等价于cosθ=0。",
+        "reason": "除以严格正的数不改变等价性。"
+      },
+      {
+        "claim": "由于夹角位于[0,π]，cosθ=0的唯一解为θ=π/2。",
+        "reason": "余弦函数在该闭区间仅在直角处为零。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在欧氏平面中对两个非零向量u、v，有 u·v=|u||v|cosθ；因此u·v=0当且仅当两向量夹角θ=90°。若任一向量为零，通常夹角不定义。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "数量积为零与非零向量垂直的充要性",
+    "transfer": {
+      "far": "解释传感器的零位移向量为何不能当作设备的朝向。",
+      "near": "检验u=(2,3),v=(3,-2)的夹角。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "两向量垂直",
+        "check": "|u|=√5，|v|=√5，乘积正且cosθ=0。",
+        "question": "u=(1,2),v=(2,-1)，判断是否正交。",
+        "steps": [
+          "数量积为1·2+2·(-1)=0。",
+          "两向量均非零，因此夹角为90°。"
+        ]
+      },
+      {
+        "answer": "不能判为夹角90°",
+        "check": "结论需要双非零假设，数量积零只是代数恒等事实。",
+        "question": "u=(0,0),v=(3,4)，能否因u·v=0判直角？",
+        "steps": [
+          "计算数量积确为0。",
+          "但u是零向量，夹角定义不成立。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "条件概率分母P(B)须严格为正。",
+      "独立不意味着事件互斥；两个正概率互斥事件不可能独立。"
+    ],
+    "boundaries": [
+      "条件概率分母P(B)须严格为正。",
+      "独立不意味着事件互斥；两个正概率互斥事件不可能独立。"
+    ],
+    "counterexamples": [
+      {
+        "example": "掷公平骰子，A={1}、B={2}互斥，但P(A∩B)=0≠1/36。",
+        "explanation": "互斥使同时发生不可能，独立则保持联合概率为乘积。",
+        "false_claim": "把正概率互斥事件误认作独立事件。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-096"
+    ],
+    "definition": "在样本空间Ω中，若P(B)>0，条件概率P(A|B)=P(A∩B)/P(B)；若P(A∩B)=P(A)P(B)，则称A与B独立。互斥只表示A∩B为空。",
+    "hint_ladder": [
+      "明确样本空间及每个事件所含结果。",
+      "先检查条件事件概率是否为0。",
+      "比较交集概率和两个边际概率的乘积。"
+    ],
+    "id": "math.hs.batch104.10",
+    "kind": "concept",
+    "misconceptions": [
+      {
+        "error": "把正概率互斥事件误认作独立事件。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "互斥使同时发生不可能，独立则保持联合概率为乘积。"
+      }
+    ],
+    "notation": [
+      "P(A|B) 条件概率",
+      "P(A∩B) 交事件概率"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.batch104.01"
+    ],
+    "prerequisites": [
+      "事件及样本空间",
+      "古典概型计数"
+    ],
+    "proof_steps": [],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [
+      "条件概率将可能结果限制在B发生的情形，对有限等可能样本可用条件后计数。",
+      "独立要求条件化不改变A发生的概率（P(B)>0时），而互斥要求两者不能同时发生。",
+      "当P(A),P(B)>0且互斥，则P(A∩B)=0却有P(A)P(B)>0，故不独立。"
+    ],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在样本空间Ω中，若P(B)>0，条件概率P(A|B)=P(A∩B)/P(B)；若P(A∩B)=P(A)P(B)，则称A与B独立。互斥只表示A∩B为空。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "条件概率、独立与互斥的区别",
+    "transfer": {
+      "far": "讨论独立设备故障与不能同时发生的排他故障有何不同。",
+      "near": "让B={2,4,6}, A={1,3,5}再次判断。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "P(A|B)=2/3",
+        "check": "2/3不等于P(A)=1/2，所以A与B不独立。",
+        "question": "掷公平骰子，A={4,5,6}, B={2,4,6}，求P(A|B)。",
+        "steps": [
+          "B共有3个等可能结果，A∩B={4,6}有2个。",
+          "条件概率=2/3，等价于(2/6)/(3/6)。"
+        ]
+      },
+      {
+        "answer": "互斥但不独立",
+        "check": "正概率互斥事件不满足乘法独立条件。",
+        "question": "掷公平骰子，A={1}, B={2}，判断独立与互斥。",
+        "steps": [
+          "交集为空，故两事件互斥。",
+          "P(A)P(B)=1/36>0，但交概率0。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "定义在相同有限样本空间且概率非负、总和为1。",
+      "本命题是期望线性性，不代表E(XY)=E(X)E(Y)对任意变量成立。"
+    ],
+    "boundaries": [
+      "定义在相同有限样本空间且概率非负、总和为1。",
+      "本命题是期望线性性，不代表E(XY)=E(X)E(Y)对任意变量成立。"
+    ],
+    "counterexamples": [
+      {
+        "example": "公平硬币X=正面指示量，Y=1-X，完全负相关但E(X+Y)=1。",
+        "explanation": "期望线性由有限求和直接推出，与变量相关性无关。",
+        "false_claim": "因为X与Y相关就断言E(X+Y)≠E(X)+E(Y)。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-098"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先写随机变量的每个可能结果和概率。",
+      "把线性组合逐结果求和，不急于套独立公式。",
+      "用直接枚举验证计算，注意不要把乘积期望也当线性。"
+    ],
+    "id": "math.hs.batch104.11",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "因为X与Y相关就断言E(X+Y)≠E(X)+E(Y)。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "期望线性由有限求和直接推出，与变量相关性无关。"
+      }
+    ],
+    "notation": [
+      "E(X) 是数学期望",
+      "a、b 为常数"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "有限样本空间",
+      "分配律和有限和"
+    ],
+    "proof_steps": [
+      {
+        "claim": "按有限样本期望定义，E(aX+bY)=ΣωP(ω)[aX(ω)+bY(ω)]。",
+        "reason": "随机变量线性组合的定义及有限期望求和公式。"
+      },
+      {
+        "claim": "将方括号拆开并把常数移出求和，得到aΣωP(ω)X(ω)+bΣωP(ω)Y(ω)。",
+        "reason": "有限和的分配律与常数因子的提取。"
+      },
+      {
+        "claim": "两项求和分别就是E(X)与E(Y)，整个推理未使用独立性。",
+        "reason": "代回数学期望定义，检查证明只假定概率合法。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "在有限样本空间上，若随机变量X、Y取实数值，a、b为实常数，则E(aX+bY)=aE(X)+bE(Y)；X与Y是否独立不影响该恒等式。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "离散随机变量期望的线性性不需要独立",
+    "transfer": {
+      "far": "说明高度相关的两项成本加总为什么仍可分别计算平均成本。",
+      "near": "对同一变量X计算E(2X+3)。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "E(X+Y)=1",
+        "check": "X、Y不独立，但线性性成立。",
+        "question": "公平硬币X取1表示正面，Y=1-X，求E(X+Y)。",
+        "steps": [
+          "任何结果X+Y=1，所以期望为1。",
+          "分别E(X)=1/2，E(Y)=1/2，和也为1。"
+        ]
+      },
+      {
+        "answer": "2",
+        "check": "直接枚举3X-1取-1或5，均值(-1+5)/2=2。",
+        "question": "X在0、2中等概率取值，求E(3X-1)。",
+        "steps": [
+          "先求E(X)=(0+2)/2=1。",
+          "根据线性性E(3X-1)=3·1-1。"
+        ]
+      }
+    ]
+  },
+  {
+    "assumptions": [
+      "n为正整数；公式只涉及有限项，不需要 |q|<1。",
+      "q=1 时分母1-q为0，必须使用独立分支，不可代入分式。"
+    ],
+    "boundaries": [
+      "n为正整数；公式只涉及有限项，不需要 |q|<1。",
+      "q=1 时分母1-q为0，必须使用独立分支，不可代入分式。"
+    ],
+    "counterexamples": [
+      {
+        "example": "a₁=2,n=4,q=1时真实和为8，但分式无定义。",
+        "explanation": "0/0不表示8，必须另按每项相同求和。",
+        "false_claim": "在q=1时套公式a₁(1-qⁿ)/(1-q)，写为0/0。"
+      }
+    ],
+    "curriculum_ids": [
+      "HS-MATH-064"
+    ],
+    "definition": null,
+    "hint_ladder": [
+      "先检查项数n是不是正整数。",
+      "判断q=1还是q≠1。",
+      "用2到4项的直接加和核验公式与端点。"
+    ],
+    "id": "math.hs.batch104.12",
+    "kind": "theorem",
+    "misconceptions": [
+      {
+        "error": "在q=1时套公式a₁(1-qⁿ)/(1-q)，写为0/0。",
+        "repair_question": "请明确指出反例中的哪一项原命题前提失效，并尝试改正推理。",
+        "why_wrong": "0/0不表示8，必须另按每项相同求和。"
+      }
+    ],
+    "notation": [
+      "Sₙ 为前n项和",
+      "q 为公比",
+      "n∈Z且n≥1"
+    ],
+    "prerequisite_lesson_ids": [],
+    "prerequisites": [
+      "数列与递推",
+      "有限和的代数运算"
+    ],
+    "proof_steps": [
+      {
+        "claim": "写Sₙ=a₁+a₁q+…+a₁q^(n-1)，再写qSₙ=a₁q+…+a₁qⁿ。",
+        "reason": "有限等比数列的逐项定义，乘以q不改变项数。"
+      },
+      {
+        "claim": "相减消去中间项得(1-q)Sₙ=a₁(1-qⁿ)。",
+        "reason": "有限和可逐项相减及分配律。"
+      },
+      {
+        "claim": "若q≠1则除以非零1-q；若q=1则每项均为a₁，直接有Sₙ=na₁。",
+        "reason": "除法需要非零分母；退化分支由常数项求和得到。"
+      }
+    ],
+    "provenance": {
+      "author_role": "PROJECT_AUTHOR",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "standard_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517519489596282.pdf"
+    },
+    "rationale_steps": [],
+    "review": {
+      "review_record": null,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "status": "REVIEW_PENDING"
+    },
+    "statement": "对正整数n和实数a₁、q，定义第k项a₁q^(k-1)，前n项和Sₙ。当q≠1时Sₙ=a₁(1-qⁿ)/(1-q)，当q=1时Sₙ=na₁。",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "有限等比数列求和的q=1退化分支",
+    "transfer": {
+      "far": "解释按固定比例迭代的预算模型为何只需有限和而不要求比例小于1。",
+      "near": "计算a₁=-3,q=-2,n=3的前3项和。"
+    },
+    "version": "1.0.0",
+    "worked_examples": [
+      {
+        "answer": "80",
+        "check": "直接逐项求和与公式一致。",
+        "question": "a₁=2，q=3，n=4，求前四项和。",
+        "steps": [
+          "逐项为2、6、18、54，总和80。",
+          "通式2(1-3⁴)/(1-3)=2(-80)/(-2)=80。"
+        ]
+      },
+      {
+        "answer": "8",
+        "check": "2+2+2+2=8，不能代入分母为0的公式。",
+        "question": "a₁=2，q=1，n=4，求前四项和。",
+        "steps": [
+          "因为q=1，所以四项全部等于2。",
+          "使用Sₙ=na₁得到4·2。"
+        ]
+      }
+    ]
+  }
+]

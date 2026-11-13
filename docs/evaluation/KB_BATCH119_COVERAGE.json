@@ -1,0 +1,27 @@
+{
+  "batch": 119,
+  "finite_exact_cases": 15,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "per_track_pilot": {
+    "COMPULSORY": 9,
+    "ELECTIVE_A": 6,
+    "ELECTIVE_B": 4,
+    "ELECTIVE_C": 6,
+    "ELECTIVE_D": 4,
+    "ELECTIVE_E": 4,
+    "SELECTIVE_COMPULSORY": 16
+  },
+  "semantic_pilot_candidates": 49,
+  "source_cues": 405,
+  "student_authoritative_releases": 0,
+  "teacher_approved": 0,
+  "whole_curriculum_completed": false
+}

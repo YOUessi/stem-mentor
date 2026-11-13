@@ -1,0 +1,687 @@
+{
+  "schema_version": "batch23-unverified-source-and-math-v1",
+  "scope": "ENGINEERING_DRAFT_NOT_VERIFIED_OFFICIAL_COVERAGE_OR_MATHEMATICS",
+  "frozen_source": {
+    "batch22_proof_sha256": "406604e01daa0a16cc9ae11ea7cd5cb629ed0bdf9eedfcada23ebfb2a28daeb4",
+    "batch22_k00_sha256": "865f2ebda86cc761c2d2083a28093b86158beec63ff0171dc7b7ceb86adb7664",
+    "author_sha256": "70293381c9460c5c56252455de06accc8b2bad57a6f67cdf2cf24df85f419393",
+    "curriculum_map_sha256": "9bf899e866f58e52f019869b82d9e1c8d8b37c32b58d664fa38313c522e24b1c",
+    "k00_review_queue_sha256": "0a1efe8f34cb33187635cf7badaae1ea789381cca4405fe84765102d18ed3bfc"
+  },
+  "summary": {
+    "schema_version": "batch23-scope-v1",
+    "source_audit_tasks": 427,
+    "source_review_kinds": {
+      "SOURCE_PAGE_SPLIT": 61,
+      "NUMBERED_MARKER_SPLIT": 315,
+      "UNNUMBERED_DE_HEADING_SPLIT": 23,
+      "EDITORIAL_GAP_DECISION": 28
+    },
+    "engineering_candidate_total": 178,
+    "required_core_subskills_added": 15,
+    "elective_editorial_candidates_added": 5,
+    "deep_lesson_drafts_expected": 267,
+    "existing_deep_lesson_drafts": 247,
+    "editorial_gap_candidates": 28,
+    "draft_nearby_gap_candidates": 28,
+    "editorial_gap_tickets_still_open": 28,
+    "full_official_atom_inventory": false,
+    "official_atomic_denominator": null,
+    "approved_teacher_knowledge": 0,
+    "official_coverage_rate": null,
+    "student_deep_lessons_released": 0
+  },
+  "new_by_type": {
+    "concept": 3,
+    "method": 10,
+    "theorem": 7
+  },
+  "new_by_course_level": {
+    "必修": 9,
+    "选修拓展": 5,
+    "选择性必修": 6
+  },
+  "engineering_candidates_by_track": {
+    "COMPULSORY": 64,
+    "ELECTIVE_A": 21,
+    "ELECTIVE_B": 14,
+    "ELECTIVE_C": 12,
+    "ELECTIVE_D": 9,
+    "ELECTIVE_E": 5,
+    "ELECTIVE_UNASSIGNED": 7,
+    "SELECTIVE_COMPULSORY": 46
+  },
+  "new_core_existing_course_ids": [
+    "HS-MATH-003",
+    "HS-MATH-010",
+    "HS-MATH-013",
+    "HS-MATH-017",
+    "HS-MATH-027",
+    "HS-MATH-038",
+    "HS-MATH-042",
+    "HS-MATH-044",
+    "HS-MATH-053",
+    "HS-MATH-065",
+    "HS-MATH-068",
+    "HS-MATH-090",
+    "HS-MATH-096",
+    "HS-MATH-099",
+    "HS-MATH-102"
+  ],
+  "new_elective_ticket_ids": [
+    18,
+    19,
+    23,
+    24,
+    26
+  ],
+  "new_teacher_only_example_count": 40,
+  "new_proof_unverified": 22,
+  "historical_unverified_proof_steps": 497,
+  "current_unverified_proof_steps": 519,
+  "certified_whole_proofs": 0,
+  "teacher_approved": 0,
+  "source_review_tasks_preserved": 427,
+  "new_proof_review_queue": [
+    {
+      "id": "math.hs.batch23.core013#1",
+      "content_sha256": "edd0e2960319aae365553efd9de519851e862954d4dd96b870a00719ef8ea9f1",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core013#2",
+      "content_sha256": "26ef06aac5fc1080bb54e51c81326a53b5285dc63048cbb0ef501405305dff10",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core013#3",
+      "content_sha256": "d35f6c054c20ba486e9c145651e173070f9f50f7fa6c9630bdee30534e896ca2",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core044#1",
+      "content_sha256": "ecf03d95d2d2945c58ff517f83c21c790bb3df147ac7566632d8af3a7aeb66e7",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core044#2",
+      "content_sha256": "e3562b8daefe3a1288e40eea4a8a13b242aa9df89addbbf0e3df9e4d405db316",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core044#3",
+      "content_sha256": "250cb826c3403f00dc5bda0dd9936dbe49649595a07d8f407d89200dd3edb1e0",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core053#1",
+      "content_sha256": "50369890936e324c57c9003457c7e32ee803ad100d4ce6558665f3f3032f41a8",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core053#2",
+      "content_sha256": "148d21f0888dd9bf963776030e833805db2924a13370ddf89f47f27fbacc778f",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core053#3",
+      "content_sha256": "334f038cdfd755014f135d26a4bb9d030e9381b747a16928e6ec31fb68f3385e",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core065#1",
+      "content_sha256": "c7ee0d40c17d06ec89297a38787004125fc7d407cd5e89e34f00fada823ad312",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core065#2",
+      "content_sha256": "22bdd4f36f5b7e408b6deb50160bbba30d49f70839f4d8c91b268f1c90f93408",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core065#3",
+      "content_sha256": "6060417eb623610b2858f6fcc31aa98b763fbc2b32d324639b15bffa65e7c977",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core068#1",
+      "content_sha256": "cadb9530745188866dd4da6e6183409bbb5988be5608a7e2b3b8dc069f82d621",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core068#2",
+      "content_sha256": "6fde4eb9706240080aa90ee318d7d930d5ce73ed458ea771bdbe558ae7200b17",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core068#3",
+      "content_sha256": "f36555cfa7f2956d3fbf007c1aaa75d9cf29131cac25b49d557bda3a3c0e3e69",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core096#1",
+      "content_sha256": "d04a18e8caa0dc33cbc329714037a64837978702f8695c09aa86cb088f3a59af",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core096#2",
+      "content_sha256": "6754c3df3d554457fbbf85b2d000563cddfbbbcbbe9f895480ff6461698021d3",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core096#3",
+      "content_sha256": "156a65401612e6ae537ba1bac7362f77eb85ef266459615e9863cb26eb8194cd",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core099#1",
+      "content_sha256": "c683e0c77d931d2f58a879270648d4bba9e55746ea52bf772a3cd03c2cccc014",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core099#2",
+      "content_sha256": "5dec5ec420c02fcfee713b0f92ce9f417a57c8fe702d6494458f59018bf8ac63",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core099#3",
+      "content_sha256": "0c4efae4b9c4e30aa5e9eeb8ecac73a6939beb207450e93a4e5df98bc6561a0b",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch23.core099#4",
+      "content_sha256": "c95ed1353b206d4b27a68ba7742e2e64f76ec937b6df5b84b9f4cae24bc14baf",
+      "review_priority": "P0_REVIEW_IF_DOMAIN_OR_EQUIVALENCE_MISSING",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "human_teacher_review": "PENDING",
+      "student_publishable": false
+    }
+  ],
+  "editorial_ticket_review": [
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-001",
+      "track": "ELECTIVE_A",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-002",
+      "track": "ELECTIVE_A",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-003",
+      "track": "ELECTIVE_A",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-004",
+      "track": "ELECTIVE_A",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-005",
+      "track": "ELECTIVE_A",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-006",
+      "track": "ELECTIVE_A",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-007",
+      "track": "ELECTIVE_A",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-008",
+      "track": "ELECTIVE_A",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-009",
+      "track": "ELECTIVE_A",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-010",
+      "track": "ELECTIVE_B",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-011",
+      "track": "ELECTIVE_B",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-012",
+      "track": "ELECTIVE_B",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-013",
+      "track": "ELECTIVE_B",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-014",
+      "track": "ELECTIVE_B",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-015",
+      "track": "ELECTIVE_C",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-016",
+      "track": "ELECTIVE_C",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-017",
+      "track": "ELECTIVE_C",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-018",
+      "track": "ELECTIVE_C",
+      "prior_draft_topic_adjacency": false,
+      "new_lesson_id": "math.hs.batch23.c18",
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-019",
+      "track": "ELECTIVE_C",
+      "prior_draft_topic_adjacency": false,
+      "new_lesson_id": "math.hs.batch23.c19",
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-020",
+      "track": "ELECTIVE_D",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-021",
+      "track": "ELECTIVE_D",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-022",
+      "track": "ELECTIVE_D",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-023",
+      "track": "ELECTIVE_D",
+      "prior_draft_topic_adjacency": false,
+      "new_lesson_id": "math.hs.batch23.d23",
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-024",
+      "track": "ELECTIVE_D",
+      "prior_draft_topic_adjacency": false,
+      "new_lesson_id": "math.hs.batch23.d24",
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-025",
+      "track": "ELECTIVE_E",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-026",
+      "track": "ELECTIVE_E",
+      "prior_draft_topic_adjacency": false,
+      "new_lesson_id": "math.hs.batch23.e26",
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-027",
+      "track": "ELECTIVE_E",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    },
+    {
+      "ticket_id": "STD2020-EDITORIAL-GAP-028",
+      "track": "ELECTIVE_E",
+      "prior_draft_topic_adjacency": true,
+      "new_lesson_id": null,
+      "has_any_project_draft": true,
+      "ticket_status": "OPEN_EDITORIAL_CANDIDATE_NOT_PROVEN_MISSING",
+      "verified_official_clause_equivalence": false,
+      "teacher_review": "PENDING",
+      "official_atom": false,
+      "student_publishable": false
+    }
+  ],
+  "official_tracks": [
+    {
+      "track": "COMPULSORY",
+      "project_engineering_candidate_count": 64,
+      "verified_official_atomic_denominator": null,
+      "verified_official_coverage_rate": null,
+      "review_status": "PENDING"
+    },
+    {
+      "track": "SELECTIVE_COMPULSORY",
+      "project_engineering_candidate_count": 46,
+      "verified_official_atomic_denominator": null,
+      "verified_official_coverage_rate": null,
+      "review_status": "PENDING"
+    },
+    {
+      "track": "ELECTIVE_A",
+      "project_engineering_candidate_count": 21,
+      "verified_official_atomic_denominator": null,
+      "verified_official_coverage_rate": null,
+      "review_status": "PENDING"
+    },
+    {
+      "track": "ELECTIVE_B",
+      "project_engineering_candidate_count": 14,
+      "verified_official_atomic_denominator": null,
+      "verified_official_coverage_rate": null,
+      "review_status": "PENDING"
+    },
+    {
+      "track": "ELECTIVE_C",
+      "project_engineering_candidate_count": 12,
+      "verified_official_atomic_denominator": null,
+      "verified_official_coverage_rate": null,
+      "review_status": "PENDING"
+    },
+    {
+      "track": "ELECTIVE_D",
+      "project_engineering_candidate_count": 9,
+      "verified_official_atomic_denominator": null,
+      "verified_official_coverage_rate": null,
+      "review_status": "PENDING"
+    },
+    {
+      "track": "ELECTIVE_E",
+      "project_engineering_candidate_count": 5,
+      "verified_official_atomic_denominator": null,
+      "verified_official_coverage_rate": null,
+      "review_status": "PENDING"
+    },
+    {
+      "track": "ELECTIVE_UNASSIGNED",
+      "project_engineering_candidate_count": 7,
+      "verified_official_atomic_denominator": null,
+      "verified_official_coverage_rate": null,
+      "review_status": "PENDING"
+    }
+  ],
+  "warnings": [
+    "All 28 ticket-adjacent drafts remain OPEN; topic adjacency never constitutes evidence of curriculum coverage.",
+    "The 427 page/marker/heading/editorial tasks overlap; this is NOT an official atom denominator.",
+    "A proof step claim/reason hash preserves provenance; it does NOT certify mathematical validity.",
+    "Teacher approval and free-text student validation remain disabled; only teacher-only drafts are indexed."
+  ]
+}

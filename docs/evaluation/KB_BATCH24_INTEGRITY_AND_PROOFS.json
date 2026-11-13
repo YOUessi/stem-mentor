@@ -1,0 +1,266 @@
+{
+  "schema_version": "batch24-k01-k07-audit-v1",
+  "scope": "MACHINE_SCHEMA_AND_FINITE_PROOF_TEXT_INTEGRITY_NOT_TEACHER_MATH_CERTIFICATION",
+  "frozen_sha256": {
+    "batch23_proofs": "09f14a0ebce19ecd0623c2d6d6efb8e3375597a5eacbf4128d0bda38d5ca8e48",
+    "source_crosswalk": "fcf374eaa745f49b1efee0a1cb018db23b77a2ac1b8789460fb8481faf5ecb1f",
+    "authored_source": "7e970906a38345c52e93eaaa6c3b0dcda8948b1df847b395e0953d59e44c898b",
+    "materialized_lesson_corpus": "461712d04429146c775675c75773e0bfe46199dfb6d7abd3ce5ba10d9ad8590c"
+  },
+  "summary": {
+    "current_draft_lessons": 287,
+    "new_required_core_lessons": 20,
+    "new_teacher_side_examples": 40,
+    "new_by_kind": {
+      "concept": 5,
+      "method": 9,
+      "theorem": 6
+    },
+    "new_required_by_track": {
+      "COMPULSORY": 13,
+      "SELECTIVE_COMPULSORY": 7
+    },
+    "frozen_history_unverified_proof_steps": 519,
+    "new_unverified_proof_steps": 19,
+    "all_unverified_proof_steps": 538,
+    "historical_p0_pending": 127,
+    "historical_conflict_pairs_pending": 10,
+    "unresolved_official_k00_review_tasks": 427,
+    "verified_official_atomic_denominator": null,
+    "verified_official_coverage_rate": null,
+    "approved_teacher_lessons": 0,
+    "student_published_deep_lessons": 0,
+    "whole_proofs_certified": 0,
+    "student_freetext_steps_verified": 0
+  },
+  "new_unverified_proof_review_queue": [
+    {
+      "id": "math.hs.batch24.q004#1",
+      "claim_reason_sha256": "0bce5b9eed5b581cb130f0464bed8ed5f9bc261c4a6168c1b6bcf1fbf2f199e9",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.q004#2",
+      "claim_reason_sha256": "76b84e4c88c51a592edd28b94fc0b6b611fc372c75ae41506744d175295e11e7",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.q004#3",
+      "claim_reason_sha256": "1213da336b983076b41cbef90e31ae2210e16ecc0cca5e4e15add68b4fb019ec",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.am009#1",
+      "claim_reason_sha256": "87eaba53e10ad84405d25f2769aa18fad4f48740359fc142ad50f5395544e218",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.am009#2",
+      "claim_reason_sha256": "2e43ed3cb10e2b7f5ea284d09695d7402b6384b5db6fefc9262fae1fea1627d0",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.am009#3",
+      "claim_reason_sha256": "e51e41e8e4bd4a72daffd579a0ecf40919f1a1fede8f2036b81a21a427df53c3",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.tr028#1",
+      "claim_reason_sha256": "2280f21b7fec6fd5c9214fd5c08bb742c23cd5f896eae51bee41a8d18f0ca44c",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.tr028#2",
+      "claim_reason_sha256": "d70d2ad809dbab85fd654e33a44b9645ebd63d394c2095362ace4f1391889042",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.tr028#3",
+      "claim_reason_sha256": "2dbddee6a4e0fb07ad9b4103196676cdcfc9f9ded1b9a44e260f80e20bff3791",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.add029#1",
+      "claim_reason_sha256": "04cc086ef6f41bbb844b11e1f809b3f81a91b1a449695f5528a89d2f5ef00d70",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.add029#2",
+      "claim_reason_sha256": "07b0deba1fdd49d862f6dca8ad4d0ee3e7b22f7d127dd573755dce53285beb6b",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.add029#3",
+      "claim_reason_sha256": "95ae35798fdcf5602fd6ee97492cc0a4bb43e359775f9da7f416741ac06c23d7",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.sin036#1",
+      "claim_reason_sha256": "68d1b23b8996a65c5dab378a829507e2058592f9643a2ad800dc3b79508409f7",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.sin036#2",
+      "claim_reason_sha256": "8a55494a0a0710f02fa13a91e7b5266e95f9d593e9d34a5acbb8f974d9cc783c",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.sin036#3",
+      "claim_reason_sha256": "3c58c2b404797c161dc93283d81a7cb45594e16efa33776bf306051bdd1d1d01",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.sin036#4",
+      "claim_reason_sha256": "1f5d54730d946a6f67fdfb1c4a037e4ab862230300ac6ee5e08df792769636b5",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.g064#1",
+      "claim_reason_sha256": "349ca861c9c420851f81c0ee9645d8dcb6d114ff06ae853c0f031581e1ef7ca1",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.g064#2",
+      "claim_reason_sha256": "cdf51c576f3e13f30a38b5fea38db0b087b2cc38413fd2f0e7da583337435a7f",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.batch24.g064#3",
+      "claim_reason_sha256": "999010f73f48ade4ef2129dd3db72afad865234097bf0ec530e8f8eae8d41c3c",
+      "priority": "P0_UNVERIFIED_STEP_REQUIRES_DOMAIN_CHECK",
+      "status": "NOT_FORMALLY_VERIFIED",
+      "whole_theorem_certified": false,
+      "teacher_review": "PENDING",
+      "student_publishable": false
+    }
+  ],
+  "official_tracks": [
+    {
+      "track": "COMPULSORY",
+      "source_numbered_marker_candidates": 114,
+      "editorial_objective_candidates": 38,
+      "official_verified_atom_denominator": null,
+      "official_coverage_rate": null
+    },
+    {
+      "track": "SELECTIVE_COMPULSORY",
+      "source_numbered_marker_candidates": 82,
+      "editorial_objective_candidates": 32,
+      "official_verified_atom_denominator": null,
+      "official_coverage_rate": null
+    },
+    {
+      "track": "ELECTIVE_A",
+      "source_numbered_marker_candidates": 52,
+      "editorial_objective_candidates": 18,
+      "official_verified_atom_denominator": null,
+      "official_coverage_rate": null
+    },
+    {
+      "track": "ELECTIVE_B",
+      "source_numbered_marker_candidates": 51,
+      "editorial_objective_candidates": 15,
+      "official_verified_atom_denominator": null,
+      "official_coverage_rate": null
+    },
+    {
+      "track": "ELECTIVE_C",
+      "source_numbered_marker_candidates": 16,
+      "editorial_objective_candidates": 11,
+      "official_verified_atom_denominator": null,
+      "official_coverage_rate": null
+    },
+    {
+      "track": "ELECTIVE_D",
+      "source_numbered_marker_candidates": 0,
+      "editorial_objective_candidates": 10,
+      "official_verified_atom_denominator": null,
+      "official_coverage_rate": null
+    },
+    {
+      "track": "ELECTIVE_E",
+      "source_numbered_marker_candidates": 0,
+      "editorial_objective_candidates": 8,
+      "official_verified_atom_denominator": null,
+      "official_coverage_rate": null
+    }
+  ],
+  "warnings": [
+    "Added proof text hashes only prove no drift of claim and reason, never soundness of a proof.",
+    "The 315 marker and 132 editorial ledgers overlap; page proximity cannot certify clause correspondence.",
+    "All 20 teacher-only problem answers are excluded from student RAG; unapproved lessons remain REVIEW_PENDING.",
+    "Historical P0 proof review and ten conflicts remain unresolved; full teacher audit is mandatory."
+  ]
+}

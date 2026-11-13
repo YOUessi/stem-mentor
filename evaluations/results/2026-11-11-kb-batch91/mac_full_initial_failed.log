@@ -1,0 +1,13 @@
+[0/4] Batch24+25 source/P0/math/review guards
+PASS: Batch24 20 original teacher-only REVIEW_PENDING draft lessons
+PASS: 315 source markers, 132 editorial objectives, 23 D/E headings, 28 open gaps; official atomic denominator NULL; repeated text hash groups 22
+Traceback (most recent call last):
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch24_integrity.py", line 105, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch24_integrity.py", line 99, in main
+    args=p.parse_args();body=build()
+                             ~~~~~^^
+  File "/Users/youtang/Documents/文件/stem-mentor-kb-batch91/scripts/build_kb_batch24_integrity.py", line 36, in build
+    raise ValueError("Live corpus and engineering map totals mismatched")
+ValueError: Live corpus and engineering map totals mismatched

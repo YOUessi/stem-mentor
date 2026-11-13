@@ -1,0 +1,73 @@
+{
+  "status": "AUTHOR_DRAFT_UNVERIFIED",
+  "source_sha256": "f0532c1f781d1d308073bfe4d9014cc80433d65b71b3736639459224152f5a89",
+  "batch15_lessons": 9,
+  "deep_drafts_total": 201,
+  "engineering_topics": 138,
+  "editorial_source_candidate_objectives": 132,
+  "objectives_with_unreviewed_suggestions": 107,
+  "editorial_suggestion_edges": 129,
+  "no_suggestion_count": 25,
+  "by_track": {
+    "COMPULSORY": {
+      "objective_candidates": 38,
+      "has_unreviewed_suggestion": 35,
+      "without_suggestion": 3,
+      "suggestion_edges": 48,
+      "independently_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "objective_candidates": 32,
+      "has_unreviewed_suggestion": 31,
+      "without_suggestion": 1,
+      "suggestion_edges": 36,
+      "independently_approved": 0
+    },
+    "ELECTIVE_A": {
+      "objective_candidates": 18,
+      "has_unreviewed_suggestion": 18,
+      "without_suggestion": 0,
+      "suggestion_edges": 20,
+      "independently_approved": 0
+    },
+    "ELECTIVE_B": {
+      "objective_candidates": 15,
+      "has_unreviewed_suggestion": 10,
+      "without_suggestion": 5,
+      "suggestion_edges": 12,
+      "independently_approved": 0
+    },
+    "ELECTIVE_C": {
+      "objective_candidates": 11,
+      "has_unreviewed_suggestion": 3,
+      "without_suggestion": 8,
+      "suggestion_edges": 3,
+      "independently_approved": 0
+    },
+    "ELECTIVE_D": {
+      "objective_candidates": 10,
+      "has_unreviewed_suggestion": 5,
+      "without_suggestion": 5,
+      "suggestion_edges": 5,
+      "independently_approved": 0
+    },
+    "ELECTIVE_E": {
+      "objective_candidates": 8,
+      "has_unreviewed_suggestion": 5,
+      "without_suggestion": 3,
+      "suggestion_edges": 5,
+      "independently_approved": 0
+    }
+  },
+  "teacher_approved": 0,
+  "formal_whole_proofs_verified": 0,
+  "student_evidence_published": 0,
+  "official_atomic_denominator": null,
+  "official_coverage_percent": null,
+  "math_truth_status": "BOUNDED_EXACT_SUBCLAIMS_ONLY",
+  "warnings": [
+    "All authored content requires independent mathematical review and real teacher signatures.",
+    "Matching editorial objectives is NOT proof of official curriculum coverage.",
+    "Current 10 legacy content conflicts and pre-existing proof obligations remain unresolved."
+  ]
+}

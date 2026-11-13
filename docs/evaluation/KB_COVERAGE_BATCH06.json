@@ -1,0 +1,2467 @@
+{
+  "warning": "NOT THE OFFICIAL ATOMIC SYLLABUS; HUMAN MAPPING REVIEW REQUIRED",
+  "source": {
+    "document": "普通高中数学课程标准（2017年版2020年修订）",
+    "url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+    "status": "PROJECT_HIGH_LEVEL_SCOPE_AUDIT_REVIEW_PENDING"
+  },
+  "totals": {
+    "legacy_engineering_topics": 113,
+    "per_track": {
+      "COMPULSORY": 61,
+      "SELECTIVE_COMPULSORY": 45,
+      "ELECTIVE_A": 0,
+      "ELECTIVE_B": 0,
+      "ELECTIVE_C": 0,
+      "ELECTIVE_D": 0,
+      "ELECTIVE_E": 0,
+      "ELECTIVE_UNASSIGNED": 7
+    },
+    "engineering_topic_levels": {
+      "必修": 61,
+      "选择性必修": 45,
+      "选修拓展": 7
+    },
+    "unassigned_elective_atoms": [
+      "HS-MATH-107",
+      "HS-MATH-108",
+      "HS-MATH-109",
+      "HS-MATH-110",
+      "HS-MATH-111",
+      "HS-MATH-112",
+      "HS-MATH-113"
+    ],
+    "official_explicit_elective_tracks_with_atom_mapping": 0,
+    "official_elective_track_count": 5,
+    "unreviewed_legacy_atoms": 113,
+    "deep_knowledge": {
+      "scope": "PROJECT_ENGINEERING_MAP_NOT_OFFICIAL_ATOMIC_SYLLABUS",
+      "curriculum_topic_total": 113,
+      "deep_lesson_documents": 138,
+      "mapped_curriculum_ids": 113,
+      "review_statuses": {
+        "REVIEW_PENDING": 138
+      },
+      "kinds": {
+        "theorem": 58,
+        "concept": 66,
+        "method": 14
+      },
+      "by_level": {
+        "必修": {
+          "engineering_topics": 61,
+          "with_deep_draft": 61,
+          "without_deep_draft": 0,
+          "teacher_approved": 0,
+          "missing_topic_ids": []
+        },
+        "选择性必修": {
+          "engineering_topics": 45,
+          "with_deep_draft": 45,
+          "without_deep_draft": 0,
+          "teacher_approved": 0,
+          "missing_topic_ids": []
+        },
+        "选修拓展": {
+          "engineering_topics": 7,
+          "with_deep_draft": 7,
+          "without_deep_draft": 0,
+          "teacher_approved": 0,
+          "missing_topic_ids": []
+        }
+      },
+      "human_teacher_review_complete": false,
+      "student_math_proofs_verified": false,
+      "direct_student_teaching_enabled": false,
+      "notes": [
+        "Existing topic IDs are project granularity and must be audited against the official curriculum.",
+        "Schema validation cannot prove mathematical truth; a draft is never a teacher-reviewed fact.",
+        "Draft worked examples and proof steps remain TEACHER_ONLY until genuine review."
+      ]
+    }
+  },
+  "curriculum": [
+    {
+      "curriculum_id": "HS-MATH-001",
+      "engineering_concept": "集合及其表示",
+      "engineering_unit": "集合与常用逻辑用语",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.sets.union-intersection",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.sets.representations",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-002",
+      "engineering_concept": "交集并集补集",
+      "engineering_unit": "集合与常用逻辑用语",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.sets.union-intersection",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-003",
+      "engineering_concept": "充分条件与必要条件",
+      "engineering_unit": "集合与常用逻辑用语",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.logic.implication",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-004",
+      "engineering_concept": "全称量词与存在量词",
+      "engineering_unit": "集合与常用逻辑用语",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.logic.quantifier",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-005",
+      "engineering_concept": "命题真假与逻辑关系",
+      "engineering_unit": "集合与常用逻辑用语",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.logic.implication",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.logic.truth-negation",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-006",
+      "engineering_concept": "等式性质与不等式性质",
+      "engineering_unit": "不等式与代数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.inequality.sign-multiplication",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-007",
+      "engineering_concept": "一元二次不等式",
+      "engineering_unit": "不等式与代数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.quadratic.sign",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-008",
+      "engineering_concept": "含参数不等式",
+      "engineering_unit": "不等式与代数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.inequality.parameter-cases",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-009",
+      "engineering_concept": "基本不等式",
+      "engineering_unit": "不等式与代数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.inequality.amgm",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-010",
+      "engineering_concept": "不等式等价变换和定义域",
+      "engineering_unit": "不等式与代数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "预备知识",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.inequality.sign-multiplication",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.inequality.transformation-obligations",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-011",
+      "engineering_concept": "函数映射和定义域",
+      "engineering_unit": "函数基本概念与性质",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.domain",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-012",
+      "engineering_concept": "函数值域",
+      "engineering_unit": "函数基本概念与性质",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.range",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-013",
+      "engineering_concept": "单调性",
+      "engineering_unit": "函数基本概念与性质",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.monotonicity",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-014",
+      "engineering_concept": "奇偶性",
+      "engineering_unit": "函数基本概念与性质",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.parity",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-015",
+      "engineering_concept": "周期性",
+      "engineering_unit": "函数基本概念与性质",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.periodicity",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.function.period",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-016",
+      "engineering_concept": "零点与方程",
+      "engineering_unit": "函数基本概念与性质",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.zero-ivt",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-017",
+      "engineering_concept": "分段函数",
+      "engineering_unit": "函数基本概念与性质",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.piecewise",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-018",
+      "engineering_concept": "一次函数",
+      "engineering_unit": "基本初等函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.linear-slope",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-019",
+      "engineering_concept": "二次函数",
+      "engineering_unit": "基本初等函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.quadratic-vertex",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-020",
+      "engineering_concept": "幂函数",
+      "engineering_unit": "基本初等函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.power-domain",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-021",
+      "engineering_concept": "指数函数",
+      "engineering_unit": "基本初等函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.exponent.product",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-022",
+      "engineering_concept": "对数函数",
+      "engineering_unit": "基本初等函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.logarithm.inverse",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-023",
+      "engineering_concept": "绝对值函数",
+      "engineering_unit": "基本初等函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.abs-triangle",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.function.absolute",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-024",
+      "engineering_concept": "函数变换与复合",
+      "engineering_unit": "基本初等函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.function.composition-domain",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-025",
+      "engineering_concept": "弧度制和单位圆",
+      "engineering_unit": "三角函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.trig.pythagorean",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.trig.radians-unit-circle",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-026",
+      "engineering_concept": "正弦余弦函数图像",
+      "engineering_unit": "三角函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.trig.pythagorean",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.trig.sine-cosine-graphs",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-027",
+      "engineering_concept": "正切函数",
+      "engineering_unit": "三角函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.trig.tangent",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.trig.tangent-domain",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-028",
+      "engineering_concept": "诱导公式",
+      "engineering_unit": "三角函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.trig.reduction",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-029",
+      "engineering_concept": "和差与倍角公式",
+      "engineering_unit": "三角函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.trig.sum-angle",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-030",
+      "engineering_concept": "三角恒等变换",
+      "engineering_unit": "三角函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.trig.sum-angle",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.trig.double-angle-reduction",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-031",
+      "engineering_concept": "三角函数图像变换",
+      "engineering_unit": "三角函数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.trig.phase-transform",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.trig.wave-transformation",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-032",
+      "engineering_concept": "平面向量的表示",
+      "engineering_unit": "平面向量与解三角形",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.vector.free-coordinates",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.vector.representation",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-033",
+      "engineering_concept": "向量加减与数乘",
+      "engineering_unit": "平面向量与解三角形",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.vector.linear-operations",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-034",
+      "engineering_concept": "向量数量积",
+      "engineering_unit": "平面向量与解三角形",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.vector.dot-product",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-035",
+      "engineering_concept": "向量投影与夹角",
+      "engineering_unit": "平面向量与解三角形",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.vector.dot-product",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.vector.projection",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-036",
+      "engineering_concept": "正弦定理",
+      "engineering_unit": "平面向量与解三角形",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.triangle.sine-law",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-037",
+      "engineering_concept": "余弦定理",
+      "engineering_unit": "平面向量与解三角形",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.triangle.cosine-law",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-038",
+      "engineering_concept": "SSA 二解与三角形存在性",
+      "engineering_unit": "平面向量与解三角形",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.triangle.ssa-ambiguity",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        },
+        {
+          "id": "math.hs.triangle.ssa-two-solutions",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-039",
+      "engineering_concept": "三角形面积与几何关系",
+      "engineering_unit": "平面向量与解三角形",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.triangle.area-sine",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-040",
+      "engineering_concept": "复数与复平面",
+      "engineering_unit": "复数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.complex.modulus",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.complex.algebraic-basics",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-041",
+      "engineering_concept": "复数模与辐角",
+      "engineering_unit": "复数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.complex.modulus",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.complex.argument",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-042",
+      "engineering_concept": "复数加减乘除及几何意义",
+      "engineering_unit": "复数",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.complex.modulus",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.complex.operations",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-043",
+      "engineering_concept": "空间点线面位置关系",
+      "engineering_unit": "立体几何初步",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.space-incidence",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.space.incidence",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-044",
+      "engineering_concept": "平行与垂直的判定",
+      "engineering_unit": "立体几何初步",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.line-plane-parallel",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.space.parallel-perpendicular-criteria",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.space.perpendicular-plane",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-045",
+      "engineering_concept": "直线与平面距离",
+      "engineering_unit": "立体几何初步",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.line-plane-distance",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.space.point-line-distance",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-046",
+      "engineering_concept": "棱柱棱锥与棱台",
+      "engineering_unit": "立体几何初步",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.polyhedron-types",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-047",
+      "engineering_concept": "圆柱圆锥球",
+      "engineering_unit": "立体几何初步",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.solids-revolution",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-048",
+      "engineering_concept": "表面积与体积",
+      "engineering_unit": "立体几何初步",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.surface-areas",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.space.solid-volumes",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-049",
+      "engineering_concept": "空间截面与展开图",
+      "engineering_unit": "立体几何初步",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.cross-sections",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-050",
+      "engineering_concept": "样本空间与随机事件",
+      "engineering_unit": "概率基础",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.laplace",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.probability.sample-space-event",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-051",
+      "engineering_concept": "互斥和对立事件",
+      "engineering_unit": "概率基础",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.event-addition",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.probability.exclusive-complement",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-052",
+      "engineering_concept": "古典概型",
+      "engineering_unit": "概率基础",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.laplace",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-053",
+      "engineering_concept": "概率加法与乘法基本关系",
+      "engineering_unit": "概率基础",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.event-addition",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.probability.union-addition",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.probability.multiplication",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-054",
+      "engineering_concept": "数据的收集与抽样",
+      "engineering_unit": "数据与统计",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.statistics.sampling",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.statistics.simple-random-sampling",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-055",
+      "engineering_concept": "频数分布与直方图",
+      "engineering_unit": "数据与统计",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.statistics.histogram",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.statistics.histogram-density",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-056",
+      "engineering_concept": "均值中位数众数",
+      "engineering_unit": "数据与统计",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.statistics.variance",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.statistics.median-mode",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-057",
+      "engineering_concept": "方差标准差",
+      "engineering_unit": "数据与统计",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.statistics.variance",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-058",
+      "engineering_concept": "百分位数与样本估计",
+      "engineering_unit": "数据与统计",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.statistics.percentiles",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.statistics.empirical-quantile",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-059",
+      "engineering_concept": "数学建模流程",
+      "engineering_unit": "综合应用",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "数学建模活动与数学探究活动",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.modeling.workflow",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.modeling.question-to-model",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-060",
+      "engineering_concept": "数据模型与检验",
+      "engineering_unit": "综合应用",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "数学建模活动与数学探究活动",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.modeling.workflow",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.modeling.residual-validation",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-061",
+      "engineering_concept": "问题提出与合作探究",
+      "engineering_unit": "综合应用",
+      "official_track_candidate": "COMPULSORY",
+      "theme_high_level_match": "数学建模活动与数学探究活动",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.modeling.workflow",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.modeling.inquiry-claim",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        },
+        {
+          "id": "math.hs.modeling.collaborative-inquiry",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-062",
+      "engineering_concept": "数列概念与递推",
+      "engineering_unit": "数列与导数",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.sequence.recurrence",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.sequence.recurrence-initial",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-063",
+      "engineering_concept": "等差数列",
+      "engineering_unit": "数列与导数",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.sequence.arithmetic-sum",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-064",
+      "engineering_concept": "等比数列",
+      "engineering_unit": "数列与导数",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.sequence.geometric-sum",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-065",
+      "engineering_concept": "数列求和与数列模型",
+      "engineering_unit": "数列与导数",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.sequence.arithmetic-sum",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.sequence.geometric-sum",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-066",
+      "engineering_concept": "导数的几何意义",
+      "engineering_unit": "数列与导数",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.calculus.power-rule",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.calculus.derivative-definition",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-067",
+      "engineering_concept": "导数与切线",
+      "engineering_unit": "数列与导数",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.calculus.power-rule",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.calculus.tangent-line",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-068",
+      "engineering_concept": "导数判断单调性",
+      "engineering_unit": "数列与导数",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.calculus.derivative-monotonicity",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-069",
+      "engineering_concept": "极值与最值",
+      "engineering_unit": "数列与导数",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.calculus.derivative-monotonicity",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.calculus.extrema",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-070",
+      "engineering_concept": "函数零点和参数讨论",
+      "engineering_unit": "数列与导数",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "函数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.calculus.parameter-zeros",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-071",
+      "engineering_concept": "空间直角坐标系",
+      "engineering_unit": "空间向量与立体几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.coordinate-distance",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.geometry.space-coordinate",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-072",
+      "engineering_concept": "空间向量与坐标运算",
+      "engineering_unit": "空间向量与立体几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.coordinate-distance",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.geometry.space-dot",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-073",
+      "engineering_concept": "空间向量数量积",
+      "engineering_unit": "空间向量与立体几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.coordinate-distance",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.geometry.space-dot",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-074",
+      "engineering_concept": "直线方向向量",
+      "engineering_unit": "空间向量与立体几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.line-plane-normal",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-075",
+      "engineering_concept": "平面法向量",
+      "engineering_unit": "空间向量与立体几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.line-plane-normal",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-076",
+      "engineering_concept": "直线平面夹角",
+      "engineering_unit": "空间向量与立体几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.angle-distance",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-077",
+      "engineering_concept": "二面角",
+      "engineering_unit": "空间向量与立体几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.angle-distance",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-078",
+      "engineering_concept": "空间距离计算",
+      "engineering_unit": "空间向量与立体几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.angle-distance",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-079",
+      "engineering_concept": "空间多面体与投影",
+      "engineering_unit": "空间向量与立体几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.space.polyhedron-projection",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-080",
+      "engineering_concept": "倾斜角与直线斜率",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.line-slope",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.geometry.line-equation",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-081",
+      "engineering_concept": "直线方程",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.line-general",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.geometry.line-equation",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-082",
+      "engineering_concept": "两直线的位置关系",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.line-relations",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-083",
+      "engineering_concept": "点到直线距离",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.point-line-distance",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-084",
+      "engineering_concept": "直线与圆的位置关系",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.circle-intersections",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.geometry.line-circle",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-085",
+      "engineering_concept": "圆与圆的位置关系",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.circle-intersections",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-086",
+      "engineering_concept": "椭圆定义及几何性质",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.ellipse-focus",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-087",
+      "engineering_concept": "双曲线定义及几何性质",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.hyperbola-foci",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-088",
+      "engineering_concept": "抛物线定义及几何性质",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.parabola-focus",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-089",
+      "engineering_concept": "圆锥曲线焦点与准线",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.parabola-focus",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.geometry.conic-focal-directrix",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-090",
+      "engineering_concept": "圆锥曲线与直线联立",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.conic-line-elimination",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-091",
+      "engineering_concept": "圆锥曲线的切线与法线",
+      "engineering_unit": "平面解析几何",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "几何与代数",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.geometry.ellipse-tangent",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.geometry.conic-tangent-normal",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-092",
+      "engineering_concept": "分类加法计数原理",
+      "engineering_unit": "计数原理",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.counting.product-rule",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-093",
+      "engineering_concept": "分步乘法计数原理",
+      "engineering_unit": "计数原理",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.counting.product-rule",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-094",
+      "engineering_concept": "排列与组合",
+      "engineering_unit": "计数原理",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.counting.permutation-combination",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        },
+        {
+          "id": "math.hs.counting.permutations-combinations",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-095",
+      "engineering_concept": "二项式定理",
+      "engineering_unit": "计数原理",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.counting.binomial",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-096",
+      "engineering_concept": "条件概率与独立性",
+      "engineering_unit": "概率分布与统计推断",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.conditioning",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.probability.independence",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-097",
+      "engineering_concept": "全概率公式",
+      "engineering_unit": "概率分布与统计推断",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.total",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-098",
+      "engineering_concept": "离散型随机变量",
+      "engineering_unit": "概率分布与统计推断",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.discrete-variable",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.probability.discrete-random-variable",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-099",
+      "engineering_concept": "二项分布",
+      "engineering_unit": "概率分布与统计推断",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.binomial-distribution",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-100",
+      "engineering_concept": "超几何分布",
+      "engineering_unit": "概率分布与统计推断",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.hypergeometric",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-101",
+      "engineering_concept": "正态分布",
+      "engineering_unit": "概率分布与统计推断",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.probability.normal-density",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.probability.normal-distribution",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-102",
+      "engineering_concept": "回归分析与相关性",
+      "engineering_unit": "概率分布与统计推断",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "INTERACTIVE_FOUNDATION",
+      "deep_docs": [
+        {
+          "id": "math.hs.statistics.correlation-regression",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-103",
+      "engineering_concept": "独立性检验",
+      "engineering_unit": "概率分布与统计推断",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "概率与统计",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.statistics.chi-square",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.statistics.independence-hypothesis",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-104",
+      "engineering_concept": "数学探究活动",
+      "engineering_unit": "综合应用",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "数学建模活动与数学探究活动",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.modeling.validation",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.modeling.experimental-inquiry",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-105",
+      "engineering_concept": "数据驱动的建模",
+      "engineering_unit": "综合应用",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "数学建模活动与数学探究活动",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.modeling.validation",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.modeling.data-driven",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-106",
+      "engineering_concept": "对模型进行验证与评价",
+      "engineering_unit": "综合应用",
+      "official_track_candidate": "SELECTIVE_COMPULSORY",
+      "theme_high_level_match": "数学建模活动与数学探究活动",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.modeling.validation",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        },
+        {
+          "id": "math.hs.modeling.model-validation",
+          "review": "REVIEW_PENDING",
+          "kind": "method"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-107",
+      "engineering_concept": "三角形五心与综合几何",
+      "engineering_unit": "竞赛或专题延伸",
+      "official_track_candidate": "ELECTIVE_UNASSIGNED",
+      "theme_high_level_match": "数学拓展",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.extension.triangle-centers",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-108",
+      "engineering_concept": "圆锥曲线极线与换一半法则",
+      "engineering_unit": "竞赛或专题延伸",
+      "official_track_candidate": "ELECTIVE_UNASSIGNED",
+      "theme_high_level_match": "数学拓展",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.extension.circle-polar",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-109",
+      "engineering_concept": "参数方程与极坐标",
+      "engineering_unit": "竞赛或专题延伸",
+      "official_track_candidate": "ELECTIVE_UNASSIGNED",
+      "theme_high_level_match": "数学拓展",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.extension.polar-parameter",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-110",
+      "engineering_concept": "更一般的二次曲面",
+      "engineering_unit": "竞赛或专题延伸",
+      "official_track_candidate": "ELECTIVE_UNASSIGNED",
+      "theme_high_level_match": "数学拓展",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.extension.quadratic-surfaces",
+          "review": "REVIEW_PENDING",
+          "kind": "concept"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-111",
+      "engineering_concept": "数学归纳法",
+      "engineering_unit": "竞赛或专题延伸",
+      "official_track_candidate": "ELECTIVE_UNASSIGNED",
+      "theme_high_level_match": "数学拓展",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.proof.induction",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-112",
+      "engineering_concept": "向量外积",
+      "engineering_unit": "竞赛或专题延伸",
+      "official_track_candidate": "ELECTIVE_UNASSIGNED",
+      "theme_high_level_match": "数学拓展",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.extension.cross-product",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    },
+    {
+      "curriculum_id": "HS-MATH-113",
+      "engineering_concept": "算法与数学证明",
+      "engineering_unit": "竞赛或专题延伸",
+      "official_track_candidate": "ELECTIVE_UNASSIGNED",
+      "theme_high_level_match": "数学拓展",
+      "existing_tool_status": "PLANNED",
+      "deep_docs": [
+        {
+          "id": "math.hs.extension.algorithm-invariant",
+          "review": "REVIEW_PENDING",
+          "kind": "theorem"
+        }
+      ],
+      "teacher_review": "PENDING",
+      "official_atom_mapping_review": "PENDING",
+      "not_officially_verified_atom": true
+    }
+  ],
+  "official_tracks": [
+    {
+      "id": "COMPULSORY",
+      "label": "必修",
+      "themes": [
+        "预备知识",
+        "函数",
+        "几何与代数",
+        "概率与统计",
+        "数学建模活动与数学探究活动"
+      ],
+      "status": "HIGH_LEVEL_MATCH"
+    },
+    {
+      "id": "SELECTIVE_COMPULSORY",
+      "label": "选择性必修",
+      "themes": [
+        "函数",
+        "几何与代数",
+        "概率与统计",
+        "数学建模活动与数学探究活动"
+      ],
+      "status": "HIGH_LEVEL_MATCH"
+    },
+    {
+      "id": "ELECTIVE_A",
+      "label": "选修 A",
+      "themes": [
+        "微积分",
+        "空间向量与代数",
+        "概率与统计"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    },
+    {
+      "id": "ELECTIVE_B",
+      "label": "选修 B",
+      "themes": [
+        "微积分",
+        "空间向量与代数",
+        "应用统计",
+        "模型"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    },
+    {
+      "id": "ELECTIVE_C",
+      "label": "选修 C",
+      "themes": [
+        "逻辑推理初步",
+        "数学模型",
+        "社会调查与数据分析"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    },
+    {
+      "id": "ELECTIVE_D",
+      "label": "选修 D",
+      "themes": [
+        "美与数学",
+        "音乐中的数学",
+        "美术中的数学",
+        "体育运动中的数学"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    },
+    {
+      "id": "ELECTIVE_E",
+      "label": "选修 E",
+      "themes": [
+        "拓展视野",
+        "日常生活",
+        "地方特色",
+        "大学数学先修（微积分、解析几何与线性代数、概率论与数理统计）"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    }
+  ]
+}

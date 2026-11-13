@@ -1,0 +1,749 @@
+{
+  "items": [
+    {
+      "bounded_math_example": "(3/2)²−3(3/2)+2=−1/4；x=0时值2；x=1时值0。",
+      "error_reason": "零点是符号变化边界，严格不等式不能把零点包含进去。",
+      "far_transfer": "反转开口并说明解集改变。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-01",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "把抛物线改为(x−2)(x−5)，复核端点。",
+      "observable_anonymized_evidence": "提交符号数轴、三个代入点及端点开闭说明。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB56-C-P018-S001",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "比较y=x²−3x+2的零点和三段符号，然后写严格不等式解集。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：比较y=x²−3x+2的零点和三段符号，然后写严格不等式解集。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：(3/2)²−3(3/2)+2=−1/4；x=0时值2；x=1时值0。",
+        "反思错误推断及适用边界：零点是符号变化边界，严格不等式不能把零点包含进去。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "二次不等式图数互证",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "有两个零点，所以严格正值的解集是[1,2]。"
+    },
+    {
+      "bounded_math_example": "L1=(t,0,0)，L2=(0,s,1)；投影相交但z恒不同。",
+      "error_reason": "投影丢失高度维度，必须检验三维坐标是否同时成立。",
+      "far_transfer": "构造一组真正相交与一组异面直线。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-02",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "将第二条直线移至z=2再判断。",
+      "observable_anonymized_evidence": "交付三维参数表达式、投影图及z坐标矛盾。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P028-S011",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "比较不同高度空间直线的xy投影和真实交点。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：比较不同高度空间直线的xy投影和真实交点。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：L1=(t,0,0)，L2=(0,s,1)；投影相交但z恒不同。",
+        "反思错误推断及适用边界：投影丢失高度维度，必须检验三维坐标是否同时成立。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "三维交点与投影",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "只要在透视图出现交点，三维直线就一定相交。"
+    },
+    {
+      "bounded_math_example": "w=−u+3v，而u·v=1并非零。",
+      "error_reason": "非共线保证基底但不代表正交，投影公式不能无条件套用。",
+      "far_transfer": "分析共线向量为何不能生成平面。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-03",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "换w=(4,5)继续表示。",
+      "observable_anonymized_evidence": "学生给出非共线判断、线性组合和系数核对。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P029-S006",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "以u=(1,0)，v=(1,1)，w=(2,3)解释非正交分解。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：以u=(1,0)，v=(1,1)，w=(2,3)解释非正交分解。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：w=−u+3v，而u·v=1并非零。",
+        "反思错误推断及适用边界：非共线保证基底但不代表正交，投影公式不能无条件套用。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "非正交平面基底",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "用正交投影系数直接展开任何一组非正交基。"
+    },
+    {
+      "bounded_math_example": "|3+4i|²=9+16=25，模为5，不是实部。",
+      "error_reason": "复平面坐标、模长和拓展三角表示的教学层级不同。",
+      "far_transfer": "解释共轭复数在复平面中的反射。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-04",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "将实部改成−3再比较模。",
+      "observable_anonymized_evidence": "交坐标图、模长平方计算及共轭几何解释。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P029-S007",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "让学生在复平面定位3+4i并解释其几何模长。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：让学生在复平面定位3+4i并解释其几何模长。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：|3+4i|²=9+16=25，模为5，不是实部。",
+        "反思错误推断及适用边界：复平面坐标、模长和拓展三角表示的教学层级不同。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "复数表征与模长",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "复数模长5，所以这个复数的实部等于5。"
+    },
+    {
+      "bounded_math_example": "(t,0,0)与(0,s,1)无法同时满足z坐标相同。",
+      "error_reason": "在三维空间还存在既不平行也不相交的异面直线。",
+      "far_transfer": "自行构造平行而不重合的空间直线。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-05",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "第二条线改z=0重新判断。",
+      "observable_anonymized_evidence": "写出方向向量和联立方程，说明无法相交。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P029-S008",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "将空间两条不同高度且不平行直线作图后提出交点检验。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：将空间两条不同高度且不平行直线作图后提出交点检验。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：(t,0,0)与(0,s,1)无法同时满足z坐标相同。",
+        "反思错误推断及适用边界：在三维空间还存在既不平行也不相交的异面直线。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "异面直线的严格区分",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "由于这两条直线方向向量不平行，所以一定存在真实三维交点。"
+    },
+    {
+      "bounded_math_example": "(1,0,0)同时垂直(0,1,0)、(0,0,1)两独立方向。",
+      "error_reason": "仅一条线不足以满足线面垂直判定的完整假设。",
+      "far_transfer": "找出垂直一条线而不垂直平面的反例。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-06",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "更换第二方向复核。",
+      "observable_anonymized_evidence": "学生指出两条相交的平面内方向及垂直证据。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P030-S001",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "用纸模型先猜线面垂直，再核对两个方向判据。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：用纸模型先猜线面垂直，再核对两个方向判据。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：(1,0,0)同时垂直(0,1,0)、(0,0,1)两独立方向。",
+        "反思错误推断及适用边界：仅一条线不足以满足线面垂直判定的完整假设。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "几何直观与演绎前提",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "图上直线垂直平面里一条线，必定垂直整个平面。"
+    },
+    {
+      "bounded_math_example": "三个观测的均值为3；加入100后的总体均值为109/4。",
+      "error_reason": "抽样机制未知时不能从有限样本认证总体事实。",
+      "far_transfer": "比较便利抽样与随机抽样的推断条件。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-07",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "换成1、2、6讨论同均值不同分布。",
+      "observable_anonymized_evidence": "记录合成数据来源、样本计算、两种可行总体。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P030-S002",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "用合成数据1、1、7讨论采集方式、均值及推断条件。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：用合成数据1、1、7讨论采集方式、均值及推断条件。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：三个观测的均值为3；加入100后的总体均值为109/4。",
+        "反思错误推断及适用边界：抽样机制未知时不能从有限样本认证总体事实。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "样本描述不等于总体",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "样本均值3就说明总体均值也严格等于3。"
+    },
+    {
+      "bounded_math_example": "P(H)=1/4，P(T)=3/4，样本点虽只有2个但不等可能。",
+      "error_reason": "古典概型必须另外证明等可能，有限性不足以推出。",
+      "far_transfer": "设计一个不等权抽奖并解释概率。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-08",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "换成公平硬币重复计算。",
+      "observable_anonymized_evidence": "列出样本点、权重及古典概率能否适用。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P031-S006",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "用权重1/4和3/4的二元随机试验区分数量与概率。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：用权重1/4和3/4的二元随机试验区分数量与概率。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：P(H)=1/4，P(T)=3/4，样本点虽只有2个但不等可能。",
+        "反思错误推断及适用边界：古典概型必须另外证明等可能，有限性不足以推出。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "有限样本点与等可能",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "样本空间有两个元素，所以每个元素概率必为1/2。"
+    },
+    {
+      "bounded_math_example": "只观察1、2、3得到均值2；四数总体均值为53/2。",
+      "error_reason": "抽样框和机会机制影响代表性，便利样本不可无条件推广。",
+      "far_transfer": "设计有两个层的加权抽样方案。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-09",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "从四个数中均匀抽一项对比期望。",
+      "observable_anonymized_evidence": "学生提交完整抽样方案、样本所覆盖的抽样框，以及反例总体的数值核验。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P033-S002",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "比较只观察1、2、3和总体另含100的情境。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：比较只观察1、2、3和总体另含100的情境。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：只观察1、2、3得到均值2；四数总体均值为53/2。",
+        "反思错误推断及适用边界：抽样框和机会机制影响代表性，便利样本不可无条件推广。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "抽样框与代表性",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "任何三个学生的分数平均都能代表全年级。"
+    },
+    {
+      "bounded_math_example": "H在4次记录中的频率为3/4，但这不证明下一次概率等于3/4。",
+      "error_reason": "随机波动及模型独立性未定时不能把频率当作已认证概率。",
+      "far_transfer": "讨论非独立试验的频率解释风险。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-10",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "改用T,T,T,H比较频率。",
+      "observable_anonymized_evidence": "保留试验次数、生成机制、频率和推断限度。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P033-S003",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "用四次合成试验H,H,H,T区分统计频率与概率参数。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：用四次合成试验H,H,H,T区分统计频率与概率参数。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：H在4次记录中的频率为3/4，但这不证明下一次概率等于3/4。",
+        "反思错误推断及适用边界：随机波动及模型独立性未定时不能把频率当作已认证概率。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "频率波动不是概率证明",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "四次得到三次H，便严格确定总体P(H)=3/4。"
+    },
+    {
+      "bounded_math_example": "利润为3n−30，非负整数n时最小不亏销量10。",
+      "error_reason": "固定成本、单价、整数销量和时间范围是模型假设。",
+      "far_transfer": "讨论价格随销量变化时模型失效。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-11",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "把单位变动成本改成6再求解。",
+      "observable_anonymized_evidence": "交变量与单位、假设、求解、n=9反例及现实解释。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P033-S004",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "使用单价8、变动成本5、固定成本30的自编经营模型。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：使用单价8、变动成本5、固定成本30的自编经营模型。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：利润为3n−30，非负整数n时最小不亏销量10。",
+        "反思错误推断及适用边界：固定成本、单价、整数销量和时间范围是模型假设。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "建模闭环与现实约束",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "算出n=10就代表真实所有商店都有同一盈亏平衡点。"
+    },
+    {
+      "bounded_math_example": "n=41时得1763=41×43，因此为合数。",
+      "error_reason": "有限正例不能认证全称命题；一个合法反例足以否定。",
+      "far_transfer": "设计一个量词范围明确的修正猜想。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-12",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "核查n=0、1、2的数值。",
+      "observable_anonymized_evidence": "交猜想量词、反例分解、计算核对、反思过程。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P035-S004",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "组织n²+n+41素数猜想，指导从试验转向反例检索。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：组织n²+n+41素数猜想，指导从试验转向反例检索。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：n=41时得1763=41×43，因此为合数。",
+        "反思错误推断及适用边界：有限正例不能认证全称命题；一个合法反例足以否定。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "猜想与可复核反例",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "很多小n是素数，所以所有非负整数都成立。"
+    },
+    {
+      "bounded_math_example": "12 km/h行驶20分钟对应4 km，需换算时间单位。",
+      "error_reason": "课题要求来源、假设、实施记录、反证与交流过程。",
+      "far_transfer": "讨论带噪声观测的单位和误差来源。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-13",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "改25分钟检查路程。",
+      "observable_anonymized_evidence": "只用匿名合成表记录阶段目标、模型、局限和汇报。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P036-S001",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "组织合成速度数据的小课题，保留选题、计划、测量、解释和汇报。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：组织合成速度数据的小课题，保留选题、计划、测量、解释和汇报。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：12 km/h行驶20分钟对应4 km，需换算时间单位。",
+        "反思错误推断及适用边界：课题要求来源、假设、实施记录、反证与交流过程。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "研究课题过程证据",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "一次速度乘时间的计算就等于完整研究课题。"
+    },
+    {
+      "bounded_math_example": "8n−(30+5n)=3n−30，n=10时模型收支相抵。",
+      "error_reason": "可复现计算、真实来源、模型解释及教师签核是不同概念。",
+      "far_transfer": "说明真实数据采集需额外知情同意与最小化。",
+      "general_proof_certified": false,
+      "id": "KB72-TEACH-14",
+      "math_verification": "FINITE_EXACT_CASE_ONLY",
+      "near_transfer": "换n=11检查利润。",
+      "observable_anonymized_evidence": "教师审查合成来源声明、假设、证据链和空白反馈表。",
+      "observation_form": {
+        "student_identifier": null,
+        "student_response": null,
+        "synthetic_only": true,
+        "teacher_observation": null,
+        "teacher_signoff": null
+      },
+      "rubric": [
+        {
+          "criterion": "识别任务对象、条件和证据来源",
+          "points": 2
+        },
+        {
+          "criterion": "使用数学条件和反例核查推理",
+          "points": 2
+        },
+        {
+          "criterion": "明确适用边界并提供可复核观察",
+          "points": 2
+        }
+      ],
+      "score_total": 6,
+      "source_candidate_id": "KB57-C-P036-S002",
+      "source_license": "PROJECT_AUTHORED",
+      "student_publishable": false,
+      "student_task_proposal": "为虚拟盈亏平衡模型设计不含真人数据的结题模板。",
+      "teacher_procedure": [
+        "提问、对象与已知条件辨识：为虚拟盈亏平衡模型设计不含真人数据的结题模板。",
+        "让学生独立记录推测及所用数学条件。",
+        "结合精确有限实例核验条件：8n−(30+5n)=3n−30，n=10时模型收支相抵。",
+        "反思错误推断及适用边界：可复现计算、真实来源、模型解释及教师签核是不同概念。"
+      ],
+      "teacher_review": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "three_stage_hints": [
+        "先识别问题目标和给定对象，不直接揭晓结果。",
+        "列出需要满足的定义域、结构和模型前提。",
+        "尝试边界反例，教师侧再进行完整解析。"
+      ],
+      "title": "科研诚信与数字演示边界",
+      "type": "TEACHING_ACTION",
+      "typical_wrong_claim": "用模拟数据就可以声称真实商家已被实地验证。"
+    }
+  ],
+  "schema_version": "kb72-teacher-guidance-v1",
+  "source_license": "PROJECT_AUTHORED",
+  "student_data_included": false
+}

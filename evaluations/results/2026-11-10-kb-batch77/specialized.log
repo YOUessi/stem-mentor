@@ -1,0 +1,34 @@
+........................................................................ [ 61%]
+.................F...........................                            [100%]
+=================================== FAILURES ===================================
+__ test_exact_witness_malformed_domain_or_arithmetic_rejected[7-points-bad24] __
+
+idx = 7, key = 'points', bad = [[0, 0], [0, 1], [0, 0], [0, 1]]
+pack = {'by_track': {'COMPULSORY': {'local_candidates': 4, 'official_denominator': None, 'with_review_only_drafts': 4}, 'ELEC...': '26/26 only measures this editorial candidate pool, NOT course completeness.', 'formal_math_certifications': 0, ...}
+
+    @pytest.mark.parametrize("idx,key,bad",[
+     (0,"truths",[True,True,True]),(0,"forall",True),(0,"exists_not",False),
+     (1,"reflected",[2,3]),(1,"rotated",[-2,3]),(1,"x",2.0),
+     (2,"positive",[2,1,0]),(2,"negative",[0,1,2]),(2,"x",[0,0,0]),
+     (3,"sigma",0),(3,"sigma",2.0),(3,"z",2),(3,"data",[1,1,3]),
+     (4,"power",-1),(4,"point",1),(4,"integral",[1,2]),
+     (5,"A",[[1,0],[2,0],[3,0]]),(5,"b",[2,3,6]),
+     (5,"inconsistent_b",[2,3,5]),(5,"x",[3,2]),
+     (6,"top",[5,4]),(6,"expected",[1,4]),(6,"left",0.5),
+     (7,"assignments",[0,0,0,0]),(7,"points",[[0,0],[0,1],[0,0],[0,1]]),
+     (7,"expected",2),(7,"assignments",[0,0,1,1.0]),
+     (8,"xs",[0,0,2]),(8,"k",0),(8,"q",9),(8,"query",1),
+     (9,"base",1),(9,"T",0),(9,"shifted",1),(9,"base",2.0),
+     (10,"units",["元","元/件","元","件"]),(10,"quantity",9),
+     (10,"price",5),(10,"below_profit",0),(10,"fixed",30.0)])
+    def test_exact_witness_malformed_domain_or_arithmetic_rejected(idx,key,bad,pack):
+        invalid=deepcopy(pack["teacher_drafts"][idx]["finite_case"])
+        invalid[key]=bad
+>       with pytest.raises((AssertionError,ValueError,TypeError,ZeroDivisionError,IndexError)):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE any of (<class 'AssertionError'>, <class 'ValueError'>, <class 'TypeError'>, <class 'ZeroDivisionError'>, <class 'IndexError'>)
+
+tests/test_kb_batch77_unlinked_candidate_lessons.py:99: Failed
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch77_unlinked_candidate_lessons.py::test_exact_witness_malformed_domain_or_arithmetic_rejected[7-points-bad24]
+1 failed, 116 passed in 12.91s

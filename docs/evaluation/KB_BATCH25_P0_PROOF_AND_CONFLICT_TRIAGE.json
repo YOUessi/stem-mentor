@@ -1,0 +1,3440 @@
+{
+  "schema_version": "kb-batch25-p0-conflict-v1",
+  "scope": "STEP_HASH_AND_BOUNDED_EXACT_WITNESSES_NOT_FULL_PROOFS",
+  "input_sha256": {
+    "batch18_451_step_risk_ledger": "ae0cf50deb70ff01d82dbd943111dc13561bec175719ee5be0bb9565bf833286",
+    "batch07_10_conflicts": "796f13f5a8be2d3874971f960a5a2d34135b07fefa49d90ba6dc525a2f8508f2",
+    "batch24_proof_union": "6035dd8d9776906645377ffe331c6e98ab9be3b9e9c13b4197951bbd1c7da793"
+  },
+  "summary": {
+    "historical_proof_obligations": 451,
+    "all_current_unverified_proof_steps": 538,
+    "p0_historical_steps_attested": 127,
+    "p0_text_mismatches": 0,
+    "p0_by_risk_group": {
+      "ASSUMPTIONS_DOMAIN": 118,
+      "GEOMETRY_DEGENERACY": 36,
+      "LIMIT_CALCULUS": 9,
+      "LINEAR_ALGEBRA": 13,
+      "PROBABILITY_STATISTICS": 7
+    },
+    "conflicting_versions_reviewed_as_finite_instances": 10,
+    "finite_checks_by_status": {
+      "CONDITIONS_NOT_ESTABLISHED": 2,
+      "VERIFIED_FINITE_INSTANCE": 8
+    },
+    "mathematical_proofs_formally_certified": 0,
+    "teacher_approved": 0,
+    "conflicts_resolved": 0,
+    "student_steps_verified": 0,
+    "verified_official_atomic_denominator": null
+  },
+  "p0_review_queue": [
+    {
+      "id": "math.hs.probability.hypergeometric#1",
+      "lesson_id": "math.hs.probability.hypergeometric",
+      "index": 1,
+      "verified_original_step_sha256": "82964db4ae2745346d85e46b940f82ae6591652bf8cefbe1426a34366e94eeb4",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对样本空间、独立与否、参数合法区间、支撑集和极端概率。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.coordinate-distance#2",
+      "lesson_id": "math.hs.space.coordinate-distance",
+      "index": 2,
+      "verified_original_step_sha256": "6dad090c005d4e0b015f7af09a301c70ff36c655d74e137d2a955a3392a4b167",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.line-plane-normal#1",
+      "lesson_id": "math.hs.space.line-plane-normal",
+      "index": 1,
+      "verified_original_step_sha256": "2e758bfe674ccd0631fe1da5280a56bf238f31648591b4ce8240884a362ca6d6",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.line-plane-normal#3",
+      "lesson_id": "math.hs.space.line-plane-normal",
+      "index": 3,
+      "verified_original_step_sha256": "390062f36e9ea7e05992f538c695162310e3130fe43030cc9d40b2f42bdbec5c",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.angle-distance#1",
+      "lesson_id": "math.hs.space.angle-distance",
+      "index": 1,
+      "verified_original_step_sha256": "961ce8fa031c7b2f86fa4469daa89a4e62fa87f655f9bf363cfbb3cb10579103",
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.angle-distance#2",
+      "lesson_id": "math.hs.space.angle-distance",
+      "index": 2,
+      "verified_original_step_sha256": "8a5bd38695865065466bb95f91da53e5105ede61d66f92b6f3d3c88c74c913bf",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.circle-intersections#1",
+      "lesson_id": "math.hs.geometry.circle-intersections",
+      "index": 1,
+      "verified_original_step_sha256": "24f66ef6b3d587509f12b5432cd4ea763b10b914d8ade6e066617df654d1af0f",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.circle-intersections#2",
+      "lesson_id": "math.hs.geometry.circle-intersections",
+      "index": 2,
+      "verified_original_step_sha256": "d90abd1594e2f935a35f3841316518c15ef30b9641a6d9ab5963b31804f92b84",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.circle-intersections#3",
+      "lesson_id": "math.hs.geometry.circle-intersections",
+      "index": 3,
+      "verified_original_step_sha256": "ed7c89d7b27327bf1748752ee00db456b8a11aea8b8000c7dfb2434e3186d0ed",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.circle-intersections#4",
+      "lesson_id": "math.hs.geometry.circle-intersections",
+      "index": 4,
+      "verified_original_step_sha256": "19988bb9e5e4cb63d6eb5fea029bf6f4f13d277505b31f2b78f950c376788d9b",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.parabola-focus#1",
+      "lesson_id": "math.hs.geometry.parabola-focus",
+      "index": 1,
+      "verified_original_step_sha256": "879fc25353c0bc3f95942f5e836bb51632c81b2e9a6435959ef34476491d957d",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.parabola-focus#2",
+      "lesson_id": "math.hs.geometry.parabola-focus",
+      "index": 2,
+      "verified_original_step_sha256": "bba9bff646f1c07d50feb0d030c379d96ed8b70ef0c5402e35f56458d331ce81",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.parabola-focus#3",
+      "lesson_id": "math.hs.geometry.parabola-focus",
+      "index": 3,
+      "verified_original_step_sha256": "18734b19734c82ec85030cd3fa74c26bd7c3b18991858e29b13fe1d633f7c0a6",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.ellipse-tangent#1",
+      "lesson_id": "math.hs.geometry.ellipse-tangent",
+      "index": 1,
+      "verified_original_step_sha256": "6ef8b802126280193e1cd4e0e9c16e983d38b0e22cc043b692be51f40dd09d67",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.ellipse-tangent#2",
+      "lesson_id": "math.hs.geometry.ellipse-tangent",
+      "index": 2,
+      "verified_original_step_sha256": "443ac6f37a1400f09adbfb3531dbc6b02de29f251636aacf5a5b9b6bbf63c2b9",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.proof.induction#3",
+      "lesson_id": "math.hs.proof.induction",
+      "index": 3,
+      "verified_original_step_sha256": "f4967d620a23cb38ce08adbebea9d89c948fec54395a7c74a467bfc26337d4f1",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.logarithm.quotient-law#1",
+      "lesson_id": "math.hs.logarithm.quotient-law",
+      "index": 1,
+      "verified_original_step_sha256": "47c5da6dfc498d175cb14e31be5872bca4ffd4ae04df2a8c7c805c53f3fb2177",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.logarithm.quotient-law#3",
+      "lesson_id": "math.hs.logarithm.quotient-law",
+      "index": 3,
+      "verified_original_step_sha256": "c1ee45dbd39b231b8aec3afbe28c8503d5bfb28f7bbee15316682f8ae9ae40d5",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.logarithm.change-base#1",
+      "lesson_id": "math.hs.logarithm.change-base",
+      "index": 1,
+      "verified_original_step_sha256": "d2431b9379af49afb5841ece82bc3cff7e1bbc1a5a43788f9f5e1f7211bc7218",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.logarithm.change-base#2",
+      "lesson_id": "math.hs.logarithm.change-base",
+      "index": 2,
+      "verified_original_step_sha256": "e6e193fbf4b65a2bf45fd317119989e3da21781462a985173b84024790c5e355",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.quadratic.discriminant-roots#1",
+      "lesson_id": "math.hs.quadratic.discriminant-roots",
+      "index": 1,
+      "verified_original_step_sha256": "d17029142dd0c70624a03925eba0991246ea73ac8f557f19b11cfe8015509256",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.quadratic.discriminant-roots#2",
+      "lesson_id": "math.hs.quadratic.discriminant-roots",
+      "index": 2,
+      "verified_original_step_sha256": "5b715bf35232fe5c15537cd264dd13c7791b97791a5a0b6a84f6362a1a400eae",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.quadratic.discriminant-roots#3",
+      "lesson_id": "math.hs.quadratic.discriminant-roots",
+      "index": 3,
+      "verified_original_step_sha256": "b8e51299bb0bd8b9677f3f00768f9efd2ef8f3f8c15c7599ce9075cc933cda4d",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.sequence.odd-square-sum#3",
+      "lesson_id": "math.hs.sequence.odd-square-sum",
+      "index": 3,
+      "verified_original_step_sha256": "29ae1a7d3404263f30632b9ff82a3f7cb317cd49b2ac3979524ca6e7b84ee2a2",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.pythagorean-dot#2",
+      "lesson_id": "math.hs.vector.pythagorean-dot",
+      "index": 2,
+      "verified_original_step_sha256": "0fe9ac83fab9a47e95fdfb06e1474fe8a82c6eba91b0754f081d995d76b585e2",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.pythagorean-dot#3",
+      "lesson_id": "math.hs.vector.pythagorean-dot",
+      "index": 3,
+      "verified_original_step_sha256": "78c281116957ee3448cdcdc5b4a93a8784df9bbccc5f14e434eeee6140bb2d9a",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.probability.union-bound-two#3",
+      "lesson_id": "math.hs.probability.union-bound-two",
+      "index": 3,
+      "verified_original_step_sha256": "6ccc5319207953d107e30e568bdde23df76e8a156d2ee58ff7f64fad5890b484",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对样本空间、独立与否、参数合法区间、支撑集和极端概率。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.logarithm.product-law#1",
+      "lesson_id": "math.hs.logarithm.product-law",
+      "index": 1,
+      "verified_original_step_sha256": "c1a3042832d48f3143701c702f65e5678c028481f5227f3793917d8e3b856e41",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.logarithm.product-law#2",
+      "lesson_id": "math.hs.logarithm.product-law",
+      "index": 2,
+      "verified_original_step_sha256": "b9fd40f7691c411d52b93c4c4e9379ebc21ff78558ca3ed3b70e13cb20162a2d",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.logarithm.product-law#3",
+      "lesson_id": "math.hs.logarithm.product-law",
+      "index": 3,
+      "verified_original_step_sha256": "4493e259c85eb86971446c4805035321895ee3cbf1afb994575902049dd0aa4b",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.sequence.square-sum#2",
+      "lesson_id": "math.hs.sequence.square-sum",
+      "index": 2,
+      "verified_original_step_sha256": "4057d163895e6ae3f0191458ded207b8ff77d92f3aa55a21ddb5d8a8574aece3",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.parallelogram#3",
+      "lesson_id": "math.hs.vector.parallelogram",
+      "index": 3,
+      "verified_original_step_sha256": "180cb657d4bbb7f92b5ed2e9c578e8fec0f1269fb968f3bdd43b738f4177adf3",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.probability.variance-covariance#2",
+      "lesson_id": "math.hs.probability.variance-covariance",
+      "index": 2,
+      "verified_original_step_sha256": "a3b4da758ef2c3a46722b5fbba424f21ac8d6561c713238b2dd47ca50a1a546f",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.probability.complement-independence#4",
+      "lesson_id": "math.hs.probability.complement-independence",
+      "index": 4,
+      "verified_original_step_sha256": "edf4fb84f7a1a0f8bdb9653c2a82bf571eb6a5b96813cd43033c22876e1c3ab6",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对样本空间、独立与否、参数合法区间、支撑集和极端概率。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.circle-complete-square#1",
+      "lesson_id": "math.hs.geometry.circle-complete-square",
+      "index": 1,
+      "verified_original_step_sha256": "12bf2c8bd2be2c1e45485bd93f52d4c77b4507b1eae8328de65e29dd617db4df",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.circle-complete-square#3",
+      "lesson_id": "math.hs.geometry.circle-complete-square",
+      "index": 3,
+      "verified_original_step_sha256": "a3527499a49fb353344abc821ca0f70d250453b3756403a6cb462bc4d5cab916",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.ellipse-parameter#1",
+      "lesson_id": "math.hs.geometry.ellipse-parameter",
+      "index": 1,
+      "verified_original_step_sha256": "2796d506f645c2d43b2e03f678e194e3117b86c0aeefa58fe12db08101deab42",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.ellipse-parameter#2",
+      "lesson_id": "math.hs.geometry.ellipse-parameter",
+      "index": 2,
+      "verified_original_step_sha256": "ffa825951ead8dc0d8e5817e3b53b90036dc11d5e70324b5447b647b8d377bb8",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.quadratic.sign#2",
+      "lesson_id": "math.hs.quadratic.sign",
+      "index": 2,
+      "verified_original_step_sha256": "2c808c662d7d309c161f2fdde2f35cd99e8b2e76fed1dcdce5164a11a37057e4",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.inequality.amgm#1",
+      "lesson_id": "math.hs.inequality.amgm",
+      "index": 1,
+      "verified_original_step_sha256": "89283cfb1b6061c3e21defa8f89494c13884502ed127bafd75ad47120b9d31cc",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.inequality.amgm#2",
+      "lesson_id": "math.hs.inequality.amgm",
+      "index": 2,
+      "verified_original_step_sha256": "c870676b102d80db79a5e15ebd316f39f75876444ac2e736e4180487b1474982",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.inequality.amgm#3",
+      "lesson_id": "math.hs.inequality.amgm",
+      "index": 3,
+      "verified_original_step_sha256": "e0bc5b3829912231c78160ae6d08e2cafc3100bda71452a50b2d1c1dbee9fba3",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.function.quadratic-vertex#2",
+      "lesson_id": "math.hs.function.quadratic-vertex",
+      "index": 2,
+      "verified_original_step_sha256": "4be6d7a1cbc175f64b55e1a0e2b8adb5c7abdd74c2abf7cb90947d9fbcc072d4",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.function.quadratic-vertex#4",
+      "lesson_id": "math.hs.function.quadratic-vertex",
+      "index": 4,
+      "verified_original_step_sha256": "e6c416e26a19436114b257b35dd80e8bb755e133c23acadc8675f41c8bab4abf",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.logarithm.inverse#2",
+      "lesson_id": "math.hs.logarithm.inverse",
+      "index": 2,
+      "verified_original_step_sha256": "41b2828120226d56edf2f97aa09a0dfdf758751aaa107bb7d85499c84fcac4cf",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.trig.sum-angle#1",
+      "lesson_id": "math.hs.trig.sum-angle",
+      "index": 1,
+      "verified_original_step_sha256": "ea393eb80f2828c0c2ee1158a20e17b195f6a701902c56c64204581c259f4caf",
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.dot-product#2",
+      "lesson_id": "math.hs.vector.dot-product",
+      "index": 2,
+      "verified_original_step_sha256": "eb798d6d1a1a9ba3cc254ae2cad5373317f53d0ffceff411f4f4906ee21f0a32",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.dot-product#4",
+      "lesson_id": "math.hs.vector.dot-product",
+      "index": 4,
+      "verified_original_step_sha256": "6ac2a4d5681faf932f4f8ea4569bc55db876beca0e6e048104700ef9d5d18ec6",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.basis-three-unique#2",
+      "lesson_id": "math.hs.space.basis-three-unique",
+      "index": 2,
+      "verified_original_step_sha256": "dc20e769169e0dbd2b5acd1837f4fb2d598076c72c061f35c1e6917a80ccb58d",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.calculus.quotient-rule#1",
+      "lesson_id": "math.hs.calculus.quotient-rule",
+      "index": 1,
+      "verified_original_step_sha256": "dc6a64e54b87aab163a8357cb69bddc76768222f5bcbb97f93b2bdeaf74d27b6",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.calculus.quotient-rule#2",
+      "lesson_id": "math.hs.calculus.quotient-rule",
+      "index": 2,
+      "verified_original_step_sha256": "68893ea2edf43c35a78788acd400a574b2cfa301a37def704ad17bdbe9c9e164",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对极限存在、连续可导前提与区间边界，不能逆推定理结论。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.calculus.fermat-stationary#2",
+      "lesson_id": "math.hs.calculus.fermat-stationary",
+      "index": 2,
+      "verified_original_step_sha256": "3ca552a8f402f02791b1540c3fe9c8418f221bf5b9fb7d8d7e3c9c02a23799be",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对极限存在、连续可导前提与区间边界，不能逆推定理结论。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.cauchy-schwarz#1",
+      "lesson_id": "math.hs.vector.cauchy-schwarz",
+      "index": 1,
+      "verified_original_step_sha256": "49424aa65510af64439845b736e1e59bf3388bfa2d40c36308d8ca5310f4d1ff",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.cauchy-schwarz#2",
+      "lesson_id": "math.hs.vector.cauchy-schwarz",
+      "index": 2,
+      "verified_original_step_sha256": "9272449b59eabc68eb8b55b647ba78b9990dbc8acfb391267c51cec01a33c5bf",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.cauchy-schwarz#3",
+      "lesson_id": "math.hs.vector.cauchy-schwarz",
+      "index": 3,
+      "verified_original_step_sha256": "550a05fd0c8eeff2940a8638a8e64138dfbc2a7a3b02f17dc46c72f13116d02a",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.cauchy-schwarz#4",
+      "lesson_id": "math.hs.vector.cauchy-schwarz",
+      "index": 4,
+      "verified_original_step_sha256": "38b2cc37573f32b5248ab10f8039f2a8a6808ddd5e152d82c24fd27439bbb124",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.probability.expectation-linearity#3",
+      "lesson_id": "math.hs.probability.expectation-linearity",
+      "index": 3,
+      "verified_original_step_sha256": "e100b327c6aad6752dafa0063597d3de45aab00e5f0aca556f3422d52a6f3b45",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对样本空间、独立与否、参数合法区间、支撑集和极端概率。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.function.bisection-root#2",
+      "lesson_id": "math.hs.function.bisection-root",
+      "index": 2,
+      "verified_original_step_sha256": "7ad2ee52ce128a3cbe4acc0b8ca7687dd158ad5fa248c0fd7943ce35f0509134",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.calculus.monotonicity-mvt#1",
+      "lesson_id": "math.hs.elective.calculus.monotonicity-mvt",
+      "index": 1,
+      "verified_original_step_sha256": "c80adf9207635563fcddfad4a7204d1d71f874970fd751ac3755425e98e7e945",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对极限存在、连续可导前提与区间边界，不能逆推定理结论。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.linear.rank-vectors#3",
+      "lesson_id": "math.hs.elective.linear.rank-vectors",
+      "index": 3,
+      "verified_original_step_sha256": "4fc0495c345ae6ddef3499e3b2e341e13dc4096d2c11e62e6401db31c1afb932",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.linear.cramer-three#1",
+      "lesson_id": "math.hs.elective.linear.cramer-three",
+      "index": 1,
+      "verified_original_step_sha256": "955c635a146beb62f1cc69a121ead54bd12a0af6cbd2f0f488f187056fd57ee1",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.ols-two-parameter#1",
+      "lesson_id": "math.hs.elective.statistics.ols-two-parameter",
+      "index": 1,
+      "verified_original_step_sha256": "91d956e441597d3b16e51f04a724a6b08ab22931f8ef31fb1ab1c646799fe96e",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.ols-two-parameter#3",
+      "lesson_id": "math.hs.elective.statistics.ols-two-parameter",
+      "index": 3,
+      "verified_original_step_sha256": "50413e60ad3285f272cb4c330300ade308590c0e7efce6bfae584892b986d745",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.model.parametric-circle#3",
+      "lesson_id": "math.hs.elective.model.parametric-circle",
+      "index": 3,
+      "verified_original_step_sha256": "8c4cd3930764b87844685c233f57a3aa0e9745270f8e65e2dffd4b438f1d07d9",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.sequence.epsilon-n#2",
+      "lesson_id": "math.hs.elective.sequence.epsilon-n",
+      "index": 2,
+      "verified_original_step_sha256": "6bfd9f0c0211d1ed97e95fe7a2e242b5bb3c3b9384854b61065931ea4f1d3973",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.function.epsilon-delta-square#2",
+      "lesson_id": "math.hs.elective.function.epsilon-delta-square",
+      "index": 2,
+      "verified_original_step_sha256": "19c0423859af8ab752125b4fc7470915b0cc12d2ed1aa3e2c8680545fcb24168",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.calculus.differentiable-continuous#1",
+      "lesson_id": "math.hs.elective.calculus.differentiable-continuous",
+      "index": 1,
+      "verified_original_step_sha256": "9bdd828d6eca6152b1af69dc0e9f21477c1b44ce85355ef33de419e58a99a60c",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.matrix.inverse-two-by-two#2",
+      "lesson_id": "math.hs.elective.matrix.inverse-two-by-two",
+      "index": 2,
+      "verified_original_step_sha256": "18fe75a5c048f26a8cf3936347670779d085cacc31e8671247d5289414d4281e",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.matrix.inverse-two-by-two#3",
+      "lesson_id": "math.hs.elective.matrix.inverse-two-by-two",
+      "index": 3,
+      "verified_original_step_sha256": "c98427f511176e2fd71550b111afe600dedb7a3af3343295c0c4d8b72d333efa",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.matrix.gaussian-row-equivalence#2",
+      "lesson_id": "math.hs.elective.matrix.gaussian-row-equivalence",
+      "index": 2,
+      "verified_original_step_sha256": "5115a6a4bde020dfdfadec0baba36e3d07e8df673659775e48d8bbae6dc0c217",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.multivariable.partial-polynomial#3",
+      "lesson_id": "math.hs.elective.multivariable.partial-polynomial",
+      "index": 3,
+      "verified_original_step_sha256": "5984a38901d29abb238ff018c6e59a58fba62c2a8964952ab61f8e68f8cec3f3",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.bernoulli-mle#2",
+      "lesson_id": "math.hs.elective.statistics.bernoulli-mle",
+      "index": 2,
+      "verified_original_step_sha256": "43d27ba1841d143d69eff5f4e7d6ba821764b3f2c8e623f11befd64d2f75e9dd",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.statistics.bernoulli-mle#3",
+      "lesson_id": "math.hs.elective.statistics.bernoulli-mle",
+      "index": 3,
+      "verified_original_step_sha256": "34248c565d5c75caccac1cf9cf61a4bd7ad828a2bf26384037f079adc9c8ba8b",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对极限存在、连续可导前提与区间边界，不能逆推定理结论。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.calculus.second-derivative-convexity#3",
+      "lesson_id": "math.hs.elective.calculus.second-derivative-convexity",
+      "index": 3,
+      "verified_original_step_sha256": "06b77362b65510ae1fd60eab47363f35c16cc076b81132c664df05a32b88a323",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.model.time-rescaling#4",
+      "lesson_id": "math.hs.elective.model.time-rescaling",
+      "index": 4,
+      "verified_original_step_sha256": "749eaa77e98964bb993d337fbf62e6e7d62978e98446f678147973e8c6fd301c",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.model.input-output-triangular#2",
+      "lesson_id": "math.hs.elective.model.input-output-triangular",
+      "index": 2,
+      "verified_original_step_sha256": "95a10cff5b8347a8fb13c7fa801cf493105779e58298765c580879dc2d21a3dc",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.euclidean-isometries#2",
+      "lesson_id": "math.hs.elective.geometry.euclidean-isometries",
+      "index": 2,
+      "verified_original_step_sha256": "6d31db6e3c4960cc35f560bfc0829a33ed5b0ea0bb69bb174147aad591d7c555",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.geometry.euclidean-isometries#3",
+      "lesson_id": "math.hs.elective.geometry.euclidean-isometries",
+      "index": 3,
+      "verified_original_step_sha256": "60b1997fa9bccad83c890bef93361cf814fdaa5ad55e4fc08709f3795699a229",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.sequence.fibonacci-golden-ratio#3",
+      "lesson_id": "math.hs.elective.sequence.fibonacci-golden-ratio",
+      "index": 3,
+      "verified_original_step_sha256": "e0c08cc8ea53f9777a767c2b2bedd7da0f676b4e03bcbe06c4bf376ed6d2f975",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.elective.finance.annuity-present-value#3",
+      "lesson_id": "math.hs.elective.finance.annuity-present-value",
+      "index": 3,
+      "verified_original_step_sha256": "4137d5386349e888d1707ad29cb98c5be76b14e36856f80936215145116f0820",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.extension.circle-polar#1",
+      "lesson_id": "math.hs.extension.circle-polar",
+      "index": 1,
+      "verified_original_step_sha256": "57d10a3d5abe2a8976b5e033e276dac8059ef28e9f355ea26aa1d0b55a2c59b8",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.extension.circle-polar#3",
+      "lesson_id": "math.hs.extension.circle-polar",
+      "index": 3,
+      "verified_original_step_sha256": "af740ecae546c1997e0c23671265bcee41c61f7032d54f33149a53b4d57b715e",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.extension.cross-product#3",
+      "lesson_id": "math.hs.extension.cross-product",
+      "index": 3,
+      "verified_original_step_sha256": "3a2d6fcb70cfc880852126eeb9a07d342cb151d95bb87fa8fa1d65e8ae06b960",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.function.abs-triangle#2",
+      "lesson_id": "math.hs.function.abs-triangle",
+      "index": 2,
+      "verified_original_step_sha256": "f433ff7a4b37cf6d9cf476a462ee77ff77cea8441a7f4dfe847209b5634afe5d",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.function.composition-domain#1",
+      "lesson_id": "math.hs.function.composition-domain",
+      "index": 1,
+      "verified_original_step_sha256": "11925f3b1b58cadf03d1a6c8aaed8f7cf30ca493f8dbc2222b3140e42b6f1c25",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.function.composition-domain#3",
+      "lesson_id": "math.hs.function.composition-domain",
+      "index": 3,
+      "verified_original_step_sha256": "1d987f5a601370c4f6ed7af7c68669369afb8a9e0f9f12ae00798063818881b9",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.linear-operations#1",
+      "lesson_id": "math.hs.vector.linear-operations",
+      "index": 1,
+      "verified_original_step_sha256": "fa2f16a81a81780583fe3300a83ee8a6f6e5272305f0162ae52533ba31f63ed1",
+      "risk_groups": [
+        "LIMIT_CALCULUS",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对极限存在、连续可导前提与区间边界，不能逆推定理结论。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.space-dot#1",
+      "lesson_id": "math.hs.geometry.space-dot",
+      "index": 1,
+      "verified_original_step_sha256": "d7a70ddbcc1411a682bc30238a90b6ec54b55d5a2b71ecf40494d30e88a7f420",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.space-dot#2",
+      "lesson_id": "math.hs.geometry.space-dot",
+      "index": 2,
+      "verified_original_step_sha256": "6cf4215be9fd74bf7c7780e7384d5a08868c3668f1c56658f94c14d9398ddd4f",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.space-dot#3",
+      "lesson_id": "math.hs.geometry.space-dot",
+      "index": 3,
+      "verified_original_step_sha256": "4ebbf9d0ae09722bdecd5688243898537b0a8082631a365b364c31ad2d267d4c",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.line-general#1",
+      "lesson_id": "math.hs.geometry.line-general",
+      "index": 1,
+      "verified_original_step_sha256": "7fbae69e34c96bf05bfbf194a45cf7c216f70756eb0688434c3c4989263d3cd8",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.line-general#2",
+      "lesson_id": "math.hs.geometry.line-general",
+      "index": 2,
+      "verified_original_step_sha256": "f1fda80e41f0411fa6b94a3a99aa6225d665d7a797d8aaeee2e67a26731ff094",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.line-general#3",
+      "lesson_id": "math.hs.geometry.line-general",
+      "index": 3,
+      "verified_original_step_sha256": "c8f6c9996900306967d7baa5a43cbc6831c59ecd1634009aebe84e4bb8c7ec0e",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.line-circle#3",
+      "lesson_id": "math.hs.geometry.line-circle",
+      "index": 3,
+      "verified_original_step_sha256": "aae41cbc1a755da3f2631f648502da33ec3f31ebafd6b0a901adc00dcd705c72",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.triangle.sine-law#3",
+      "lesson_id": "math.hs.triangle.sine-law",
+      "index": 3,
+      "verified_original_step_sha256": "7b124a60d5e58c7d4d99cb919dbe88e4a0d49a32d7a5ff9cb169528d15a043bc",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.triangle.cosine-law#4",
+      "lesson_id": "math.hs.triangle.cosine-law",
+      "index": 4,
+      "verified_original_step_sha256": "6355593cf29608e87c8798e4f6b7f3196a64335cfb8986523d5c0e2593b54208",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.sequence.arithmetic-sum#4",
+      "lesson_id": "math.hs.sequence.arithmetic-sum",
+      "index": 4,
+      "verified_original_step_sha256": "425123bed79bac84ec7886890e4f85d9dd0ed005f002e2ecc323da11328e44ed",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.sequence.geometric-sum#4",
+      "lesson_id": "math.hs.sequence.geometric-sum",
+      "index": 4,
+      "verified_original_step_sha256": "0a73b2674588476438a19b841104a43be95a687684eb8b3038f9b91082b936fb",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.counting.product-rule#2",
+      "lesson_id": "math.hs.counting.product-rule",
+      "index": 2,
+      "verified_original_step_sha256": "98bd853e6328744fbef18d7da249c4de226b96395b1dcbb1e970de1d500c56d4",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.probability.total#3",
+      "lesson_id": "math.hs.probability.total",
+      "index": 3,
+      "verified_original_step_sha256": "0f2a18dacdeae586429fdd0f215eec4fd3d38be191eef40a7f0f5db5283e023c",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对样本空间、独立与否、参数合法区间、支撑集和极端概率。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.line-equation#2",
+      "lesson_id": "math.hs.geometry.line-equation",
+      "index": 2,
+      "verified_original_step_sha256": "b7541fc18f50da3183c0898cade2420db051055287439fe9487bd34a40b4ea1b",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.line-equation#3",
+      "lesson_id": "math.hs.geometry.line-equation",
+      "index": 3,
+      "verified_original_step_sha256": "15f182b323195a927e9e1459327e1a37639b4e781116a77093c039b317ba2ee3",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.line-relations#1",
+      "lesson_id": "math.hs.geometry.line-relations",
+      "index": 1,
+      "verified_original_step_sha256": "144b774d9f21d1e0e1b459cf875b896b7ae525e6612500f3ddb4b25887c2b80a",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.line-relations#2",
+      "lesson_id": "math.hs.geometry.line-relations",
+      "index": 2,
+      "verified_original_step_sha256": "b2cdf7e2a1b4c82eabbab17d51aa5707fe9937ea9a48468dbb8b37d10c0b6d03",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.line-relations#3",
+      "lesson_id": "math.hs.geometry.line-relations",
+      "index": 3,
+      "verified_original_step_sha256": "2afddbcdd24eafe305337757337e04dd84324da54712dd635ceba09e45fb1e90",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.point-line-distance#2",
+      "lesson_id": "math.hs.geometry.point-line-distance",
+      "index": 2,
+      "verified_original_step_sha256": "10f3eebb727cc0eefd6963e7d8c1670d4531bb9728c41e9f218564fdbfa01779",
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.geometry.point-line-distance#3",
+      "lesson_id": "math.hs.geometry.point-line-distance",
+      "index": 3,
+      "verified_original_step_sha256": "89491fe984cd7b7d919220eb301cd39f283718373587ef150f3771d1cfdc6e86",
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.statistics.variance-affine#3",
+      "lesson_id": "math.hs.statistics.variance-affine",
+      "index": 3,
+      "verified_original_step_sha256": "d96947fa06ca45d795ecea2d13ce52ae69a2d78b59e1a7c18d85d4b8a9eb8ad2",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.probability.bayes-partition#3",
+      "lesson_id": "math.hs.probability.bayes-partition",
+      "index": 3,
+      "verified_original_step_sha256": "628ea06485d4165f1540edc362675292d9d427a1f593287862ea7812f25bc1db",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.trig.double-angle-reduction#2",
+      "lesson_id": "math.hs.trig.double-angle-reduction",
+      "index": 2,
+      "verified_original_step_sha256": "35f0b230a0e407d5a1cba0120f051d5aa1cbf84453dcb0b74f6a487127dbc003",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.trig.double-angle-reduction#3",
+      "lesson_id": "math.hs.trig.double-angle-reduction",
+      "index": 3,
+      "verified_original_step_sha256": "90e73b04d50c7222425f4246f42ada05e787b8950770b0d604737ea4d39809c5",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.projection#1",
+      "lesson_id": "math.hs.vector.projection",
+      "index": 1,
+      "verified_original_step_sha256": "691ffa19971891dd71d4f83e0989e66ce912854df23f1b797248a083ac41eba9",
+      "risk_groups": [
+        "GEOMETRY_DEGENERACY",
+        "LINEAR_ALGEBRA"
+      ],
+      "required_human_review": [
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。",
+        "核对向量维度、可逆性、秩或非零条件，禁止把有限数值样本当通用证明。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.vector.projection#2",
+      "lesson_id": "math.hs.vector.projection",
+      "index": 2,
+      "verified_original_step_sha256": "cbc9cca4f8cceb36718566cc2b7c35029784348ed36dfd6bb1cc8e654e74c876",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.complex.operations#2",
+      "lesson_id": "math.hs.complex.operations",
+      "index": 2,
+      "verified_original_step_sha256": "ec8f5b7ba6d3de1097dc510c0587911ab5ad6251a012a2a88123824cfdb0c4f3",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对样本空间、独立与否、参数合法区间、支撑集和极端概率。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.complex.operations#3",
+      "lesson_id": "math.hs.complex.operations",
+      "index": 3,
+      "verified_original_step_sha256": "b55367f3d234011f6726b7bd09575d923b749649ce6e3c3f364f7dda676cad10",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.parallel-perpendicular-criteria#3",
+      "lesson_id": "math.hs.space.parallel-perpendicular-criteria",
+      "index": 3,
+      "verified_original_step_sha256": "2850c8e5642bb20d395fa42e4dff820e056729d17597109ceabc56c9f826a29a",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.probability.multiplication#1",
+      "lesson_id": "math.hs.probability.multiplication",
+      "index": 1,
+      "verified_original_step_sha256": "60bc1c31bb8243539183cf273da1027e3423d8c987cdf4fd95845938a9ca381d",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "PROBABILITY_STATISTICS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对样本空间、独立与否、参数合法区间、支撑集和极端概率。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.probability.multiplication#2",
+      "lesson_id": "math.hs.probability.multiplication",
+      "index": 2,
+      "verified_original_step_sha256": "1d683653c5ab1c5b877a135235863474e6bb22b8b61362f5f981d35e3b86db46",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.calculus.tangent-line#1",
+      "lesson_id": "math.hs.calculus.tangent-line",
+      "index": 1,
+      "verified_original_step_sha256": "9995429ecfe69a7541b5c727e208661da0aeb1f975dac3da6ea28f646be03e2b",
+      "risk_groups": [
+        "LIMIT_CALCULUS",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对极限存在、连续可导前提与区间边界，不能逆推定理结论。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.calculus.tangent-line#3",
+      "lesson_id": "math.hs.calculus.tangent-line",
+      "index": 3,
+      "verified_original_step_sha256": "22515d6f53186a912efbe626afaefb4a866bd83ce608b2ee1ade88c701eaf488",
+      "risk_groups": [
+        "LIMIT_CALCULUS",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对极限存在、连续可导前提与区间边界，不能逆推定理结论。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.perpendicular-plane#1",
+      "lesson_id": "math.hs.space.perpendicular-plane",
+      "index": 1,
+      "verified_original_step_sha256": "f9d49638115d85be2403d7900420e51abfe2501a54485de4f58c7cad314674df",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.perpendicular-plane#2",
+      "lesson_id": "math.hs.space.perpendicular-plane",
+      "index": 2,
+      "verified_original_step_sha256": "28b35866e0af519cb84498e9167d65a2df5764d479f7bf7d99dee94dd672d6e4",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.perpendicular-plane#3",
+      "lesson_id": "math.hs.space.perpendicular-plane",
+      "index": 3,
+      "verified_original_step_sha256": "f2bf19336c31643c3f40c9c674c76edb3636e45781c5d79d9d037727d788aaac",
+      "risk_groups": [
+        "LIMIT_CALCULUS",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对极限存在、连续可导前提与区间边界，不能逆推定理结论。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.point-line-distance#3",
+      "lesson_id": "math.hs.space.point-line-distance",
+      "index": 3,
+      "verified_original_step_sha256": "92e8951aed98a2705bb895480699fb039ea2462443de179dc27660c2ba930501",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.solid-volumes#1",
+      "lesson_id": "math.hs.space.solid-volumes",
+      "index": 1,
+      "verified_original_step_sha256": "fc3139e78c40dfd01e4ab475880037d6f9d8c9747293576703849c2ade649c08",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.solid-volumes#2",
+      "lesson_id": "math.hs.space.solid-volumes",
+      "index": 2,
+      "verified_original_step_sha256": "d747891bdbd96eed3b287f0919a46fdc1cd65921dd54a69a2a64a5772051b4fd",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "GEOMETRY_DEGENERACY"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对非退化、长度和向量非零、平行/共线边界；不能依赖示意图。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    },
+    {
+      "id": "math.hs.space.solid-volumes#3",
+      "lesson_id": "math.hs.space.solid-volumes",
+      "index": 3,
+      "verified_original_step_sha256": "9d398feb47b9900c75ae16b56602b57b8dc4c8485fa67634e287eb8faa81f7f9",
+      "risk_groups": [
+        "ASSUMPTIONS_DOMAIN",
+        "LIMIT_CALCULUS"
+      ],
+      "required_human_review": [
+        "核对原定义域、非零分母与代入/变形是否双向合法；必须给出排除点。",
+        "核对极限存在、连续可导前提与区间边界，不能逆推定理结论。"
+      ],
+      "evidence_needed": [
+        "theorem assumptions",
+        "checked claim and reason",
+        "counterexample or edge-case",
+        "independent mathematical reviewer"
+      ],
+      "finite_instance_certificate": false,
+      "proof_status": "NOT_FORMALLY_VERIFIED",
+      "teacher_review": "PENDING",
+      "student_step_verified": false,
+      "student_publishable": false
+    }
+  ],
+  "conflict_finite_evidence": [
+    {
+      "id": "math.hs.function.composition-domain",
+      "candidate_sha256": "0a9eba9335bd48642d1bee6df94f9e391060c06d6d6492b61dbf9100b5a6e8f9",
+      "active_sha256": "8f4ca2c9ffe46431847027164f7eca2ecb203272cb3057f2e6eaedb3e4c3ab26",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "restricted_oracle": "composition_reciprocal",
+      "operand_fixture": {
+        "x": 2,
+        "shift": -2
+      },
+      "finite_check_result": {
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "explanation": "inner result zero: original reciprocal undefined",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    },
+    {
+      "id": "math.hs.function.parity",
+      "candidate_sha256": "dfbfc8ec6b1fb25484c4f6b5c49a56fd893a99559da77416a533d1f380b669c3",
+      "active_sha256": "557000e248fa20439817d7c1f36d08490dfc57156a96ae40a2971bcf659e8575",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "definition"
+      ],
+      "restricted_oracle": "parity_polynomial_at_point",
+      "operand_fixture": {
+        "coefficients": [
+          0,
+          0,
+          1
+        ],
+        "x": 2
+      },
+      "finite_check_result": {
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "witness": {
+          "f_x": "4",
+          "f_minus_x": "4",
+          "even_at_point": true,
+          "odd_at_point": false,
+          "global_parity_certified": false
+        },
+        "explanation": "Only supplied exact operands/conditions checked; no whole-proof certification",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    },
+    {
+      "id": "math.hs.function.piecewise",
+      "candidate_sha256": "b7cd6eeb5feaeca859c90061d20359b23d3c76edf2b89ab1df599a1a2f1f1116",
+      "active_sha256": "d2398e513adc2e80ef2de3fdf604960c48f90907d50e1cc44354008b1a5fe30c",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "definition"
+      ],
+      "restricted_oracle": "piecewise_endpoint",
+      "operand_fixture": {
+        "x": 1,
+        "threshold": 1
+      },
+      "finite_check_result": {
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "witness": {
+          "branch": "RIGHT_GE",
+          "output": "2",
+          "boundary_owned_by_right": true
+        },
+        "explanation": "Only supplied exact operands/conditions checked; no whole-proof certification",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    },
+    {
+      "id": "math.hs.function.zero-ivt",
+      "candidate_sha256": "5b2775f2eac0269a11e2bfe96e6b3e729d31978a2800d79f9299f473082e472e",
+      "active_sha256": "a711b76c4db2777645835732e23494aa378ed3a123ea1b8cc86d96dd7a3e247c",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "restricted_oracle": "ivt_polynomial_endpoints",
+      "operand_fixture": {
+        "a": 0,
+        "b": 2,
+        "k": 1
+      },
+      "finite_check_result": {
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "witness": {
+          "f_a": "-1",
+          "f_b": "3",
+          "strict_opposite_sign": true,
+          "uniqueness_established": false,
+          "continuity_assumed_for_polynomial": true
+        },
+        "explanation": "Only supplied exact operands/conditions checked; no whole-proof certification",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    },
+    {
+      "id": "math.hs.geometry.point-line-distance",
+      "candidate_sha256": "fe6966d4605d4097363eb1a7ad94d3c8a156d11177fecbaf4a1e411818be8b47",
+      "active_sha256": "dac0d1540d6b01096ffa722c34f4c548181d6f02d8de3d3c2117981beda5838e",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "restricted_oracle": "point_line_distance_squared",
+      "operand_fixture": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "x": 2,
+        "y": 3
+      },
+      "finite_check_result": {
+        "status": "CONDITIONS_NOT_ESTABLISHED",
+        "explanation": "zero normal vector: not a line",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    },
+    {
+      "id": "math.hs.probability.binomial-distribution",
+      "candidate_sha256": "2f19452fc3bfb0c0f595365e7c2b1580c9e7b0b242a6f07df9d866a5e494d0d0",
+      "active_sha256": "699a78f5f5518ded8f9277535f670acb28a4cfd15bbddc20930a0d014276e3ae",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "restricted_oracle": "binomial_point_mass",
+      "operand_fixture": {
+        "n": 4,
+        "k": 2,
+        "p": "1/2"
+      },
+      "finite_check_result": {
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "witness": {
+          "probability": "3/8"
+        },
+        "explanation": "Only supplied exact operands/conditions checked; no whole-proof certification",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    },
+    {
+      "id": "math.hs.probability.hypergeometric",
+      "candidate_sha256": "32e19775af8d600e9ed132c6154a1fbc871fd014fa229fbff8a3ab43415347f6",
+      "active_sha256": "8b241b93c47cef3f88d5e601c6e5481b1168c57cd5cebadb915f8f1d4b81a69a",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "restricted_oracle": "hypergeometric_point_mass",
+      "operand_fixture": {
+        "N": 7,
+        "K": 3,
+        "n": 2,
+        "k": 1
+      },
+      "finite_check_result": {
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "witness": {
+          "probability": "4/7"
+        },
+        "explanation": "Only supplied exact operands/conditions checked; no whole-proof certification",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    },
+    {
+      "id": "math.hs.statistics.correlation-regression",
+      "candidate_sha256": "acc74aacbf1fa0c20eff89a29f73bd94d745214cc614545b9c75df78e42ce1da",
+      "active_sha256": "9b1444a77b709f2e8fc4cb7cbe23cba08d1580ab920a31d3bb6d6b52d9e22e09",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "definition"
+      ],
+      "restricted_oracle": "regression_slope",
+      "operand_fixture": {
+        "xs": [
+          1,
+          2,
+          3
+        ],
+        "ys": [
+          2,
+          4,
+          6
+        ]
+      },
+      "finite_check_result": {
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "witness": {
+          "slope": "2",
+          "intercept": "0",
+          "causation_certified": false
+        },
+        "explanation": "Only supplied exact operands/conditions checked; no whole-proof certification",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    },
+    {
+      "id": "math.hs.triangle.area-sine",
+      "candidate_sha256": "65f0f943e5c9568894a150f757a9065920564f6e019e60f84112394c77633007",
+      "active_sha256": "feca569a56b1d149b0e6bb391b9dfd6af6e6d96b32cb64bac55da5b2256fc360",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "proof_steps",
+        "statement"
+      ],
+      "restricted_oracle": "triangle_double_area",
+      "operand_fixture": {
+        "P": [
+          0,
+          0
+        ],
+        "Q": [
+          2,
+          0
+        ],
+        "R": [
+          0,
+          3
+        ]
+      },
+      "finite_check_result": {
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "witness": {
+          "double_area": "6",
+          "orientation": 1
+        },
+        "explanation": "Only supplied exact operands/conditions checked; no whole-proof certification",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    },
+    {
+      "id": "math.hs.vector.linear-operations",
+      "candidate_sha256": "a8977ba555d84ed6fd84d7ce38b0e8834d8386b13cc42a93d17b940d4d397fc1",
+      "active_sha256": "ce4d8f75e4ccb20a695f299c041b2ec84157a885466fbc70b5dbe90e253923e6",
+      "mathematical_risk_fields": [
+        "assumptions",
+        "boundaries",
+        "counterexamples",
+        "definition",
+        "kind",
+        "proof_steps",
+        "statement"
+      ],
+      "restricted_oracle": "vector_linear_combination",
+      "operand_fixture": {
+        "u": [
+          1,
+          2
+        ],
+        "v": [
+          3,
+          4
+        ],
+        "a": 2,
+        "b": -1
+      },
+      "finite_check_result": {
+        "status": "VERIFIED_FINITE_INSTANCE",
+        "witness": {
+          "result": [
+            "-1",
+            "0"
+          ]
+        },
+        "explanation": "Only supplied exact operands/conditions checked; no whole-proof certification",
+        "student_step_verified": false,
+        "complete_theorem_certified": false,
+        "teacher_approved": false,
+        "official_curriculum_atom_verified": false
+      },
+      "independent_math_adjudication": false,
+      "version_winner": null,
+      "disposition": "HOLD_BOTH_UNTIL_MATH_AND_EDITORIAL_REVIEW",
+      "teacher_review": "PENDING"
+    }
+  ],
+  "warnings": [
+    "The checked P0 SHA only attests that prose matches the frozen review baseline.",
+    "Ten finite oracle probes test concrete cases, not the truth of full conflict versions.",
+    "Zero formal proof certificates, zero teacher approvals, all conflicts remain OPEN."
+  ]
+}

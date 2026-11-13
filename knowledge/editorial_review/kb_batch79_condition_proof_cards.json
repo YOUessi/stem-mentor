@@ -1,0 +1,916 @@
+{
+  "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+  "existing_batch78_guard_cards": 16,
+  "formally_certified_proofs": 0,
+  "historical_step_count": 538,
+  "new_batch79_guard_cards": 12,
+  "official_atom_denominator": null,
+  "parent_batch78_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+  "review_cards": [
+    {
+      "assumptions": [
+        "a>0",
+        "b>0",
+        "实数范围"
+      ],
+      "common_wrong_method": "忽略非负开方定义域，或声称所有实数均满足。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "用于两项非负代价优化时，先核实变量符号再调用。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "a": -2,
+        "b": 8
+      },
+      "finite_op": "amgm",
+      "finite_valid": {
+        "a": 2,
+        "b": 8
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "先检查a、b是否允许在实数中开平方。",
+        "把√a与√b的差平方，寻找一个始终非负的表达式。",
+        "考察差的平方何时为零，用它判断等号条件而非直接代值。"
+      ],
+      "id": "KB79-P01",
+      "invalid_boundary": "a=-2,b=8时√(ab)在实数无定义，不能引用正数版定理。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.inequality.amgm#1",
+      "near_transfer": "检验a=5,b=5为何等号成立。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "89283cfb1b6061c3e21defa8f89494c13884502ed127bafd75ad47120b9d31cc",
+      "proof_steps": [
+        {
+          "claim_and_reason": "a,b正保证√a、√b及√ab在实数中存在。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "平方(√a−√b)²≥0得到a+b≥2√ab，除以正数2保持不等号。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "等号成立当且仅当√a=√b，等价于a=b；不把这个结论逆向套给负数。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "对任意正实数a,b，有(a+b)/2≥√(ab)，且等号仅当a=b。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "正数算术几何平均不等式",
+      "worked_examples": [
+        {
+          "question": "a=2,b=8时比较均值。",
+          "teacher_solution": "(2+8)/2=5，√16=4，所以5≥4；两值不同，严格不等。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "a=-2,b=8时√(ab)在实数无定义，不能引用正数版定理。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "u,v同属R²",
+        "分量均为实数"
+      ],
+      "common_wrong_method": "把u·v当作任意异维向量的运算，或错误要求向量都非零。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "推广到R³时应换用相应恒等式，不能照搬二维交叉项。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "a": [
+          1,
+          2
+        ],
+        "b": [
+          3,
+          4,
+          5
+        ]
+      },
+      "finite_op": "cauchy2",
+      "finite_valid": {
+        "a": [
+          1,
+          2
+        ],
+        "b": [
+          3,
+          4
+        ]
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "检查两个内积是否发生在同一个二维实向量空间。",
+        "尝试展开两个平方范数的积与内积平方之差。",
+        "识别行列式型平方项，并检查零向量情形的等号。"
+      ],
+      "id": "KB79-P02",
+      "invalid_boundary": "u属于R²而v属于R³时内积未在同一空间中定义。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.vector.cauchy-schwarz#1",
+      "near_transfer": "取u=(1,2),v=(2,4)说明等号。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "49424aa65510af64439845b736e1e59bf3388bfa2d40c36308d8ca5310f4d1ff",
+      "proof_steps": [
+        {
+          "claim_and_reason": "直接展开(u·u)(v·v)−(u·v)²。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "配方得到(u₁v₂−u₂v₁)²≥0，此步对任意实数成立且没有除法。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "把非负平方移项得到不等式；等号当且仅当两个向量线性相关（零向量亦满足）。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "对任意u=(u₁,u₂),v=(v₁,v₂)∈R²，有(u·v)²≤(u·u)(v·v)。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "二维柯西—施瓦茨不等式",
+      "worked_examples": [
+        {
+          "question": "u=(1,2),v=(3,4)检验不等式。",
+          "teacher_solution": "u·v=11，平方121；||u||²||v||²=5×25=125；差4=(1×4−2×3)²。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "u属于R²而v属于R³时内积未在同一空间中定义。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "n为正整数",
+        "q≠1",
+        "a,q为实数"
+      ],
+      "common_wrong_method": "把有限公式误写成无穷级数，或忘记q=1分支。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "迁移到贷款现金流求和前先说明每期折现率和有限期数。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "a": 3,
+        "n": 4,
+        "q": 1
+      },
+      "finite_op": "geometric_sum",
+      "finite_valid": {
+        "a": 3,
+        "n": 4,
+        "q": 2
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "分别写下n项原和S与同样n项的qS。",
+        "逐项抵消两个有限和，保留首项与末项。",
+        "在除以1−q之前检查是否等于零；若等于零改用常数和。"
+      ],
+      "id": "KB79-P03",
+      "invalid_boundary": "取q=1,n=4,a=3时原和12存在，但分式出现0/0。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.sequence.geometric-sum#4",
+      "near_transfer": "考察q=0和n=1的边界。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "0a73b2674588476438a19b841104a43be95a687684eb8b3038f9b91082b936fb",
+      "proof_steps": [
+        {
+          "claim_and_reason": "把有限和写为S=a+aq+⋯+aq^(n−1)，再写qS=aq+⋯+aqⁿ。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "逐项相减严格得到(1−q)S=a(1−qⁿ)，没有使用无穷级数极限。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "q≠1确保除法合法；若q=1单独计算S=na，不能套零分母形式。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "对n≥1整数、首项a和公比q≠1，有Σₖ₌₀ⁿ⁻¹a qᵏ=a(1−qⁿ)/(1−q)。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "有限等比数列求和的q≠1分支",
+      "worked_examples": [
+        {
+          "question": "a=3,q=2,n=4求和。",
+          "teacher_solution": "直接3+6+12+24=45；分式3(1−16)/(1−2)=45，逐步一致。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "取q=1,n=4,a=3时原和12存在，但分式出现0/0。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "f的定义域t≠0",
+        "g对所有实数x有定义",
+        "g(x)须属于f的定义域"
+      ],
+      "common_wrong_method": "只取g的定义域，而遗漏g(x)∈D_f。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "若外函数改为√t，还需要新的非负实数输入约束。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "x": 2
+      },
+      "finite_op": "composition",
+      "finite_valid": {
+        "x": 3
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "先区分内函数的定义域与外函数允许的输入。",
+        "找出g(x)什么时候让分母成为零，而不是只看g本身。",
+        "用排除后的自变量测试复合表达式，并重核外层是否有定义。"
+      ],
+      "id": "KB79-P04",
+      "invalid_boundary": "x=2在g的定义域内但g(2)=0，f(0)无定义。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.function.composition-domain#1",
+      "near_transfer": "把g改为x²−4，写出应排除的点。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "11925f3b1b58cadf03d1a6c8aaed8f7cf30ca493f8dbc2222b3140e42b6f1c25",
+      "proof_steps": [
+        {
+          "claim_and_reason": "先检查内函数g(x)=x−2的定义域为R。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "外函数仅接受非零输入，故必须解x−2≠0。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "得到x≠2且(f∘g)(x)=1/(x−2)；不能只检查内层的定义域。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "f(t)=1/t、g(x)=x−2时，f∘g的实数定义域为R∖{2}。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "复合函数定义域的双层约束",
+      "worked_examples": [
+        {
+          "question": "x=3时计算f(g(x))。",
+          "teacher_solution": "g(3)=1，f(1)=1，符合x≠2。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "x=2在g的定义域内但g(2)=0，f(0)无定义。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "样本空间有限非空且等可能",
+        "A,B合法事件",
+        "P(A)>0",
+        "P(B)>0"
+      ],
+      "common_wrong_method": "把P(A|B)与P(B|A)混淆，或遗漏条件事件非零。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "将事件先验变更带入诊断概率，检查是否错误认为条件概率可交换。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "A": [
+          1,
+          2,
+          3
+        ],
+        "B": [],
+        "N": 6
+      },
+      "finite_op": "bayes",
+      "finite_valid": {
+        "A": [
+          1,
+          2,
+          3
+        ],
+        "B": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "N": 6
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "把A与B作为同一样本空间的事件，找出两个条件概率的分母。",
+        "先将两种条件概率各自写成交集概率除以条件事件概率。",
+        "检查分母为正后再进行代数整理，别把两个条件的方向交换。"
+      ],
+      "id": "KB79-P05",
+      "invalid_boundary": "B=空集时P(A|B)无定义，即使交集概率为0也不可除以0。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.probability.bayes-partition#3",
+      "near_transfer": "令A与B不相交但都非空，验证结果为零。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "628ea06485d4165f1540edc362675292d9d427a1f593287862ea7812f25bc1db",
+      "proof_steps": [
+        {
+          "claim_and_reason": "按条件概率定义P(A|B)=P(A∩B)/P(B)。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "同理P(B|A)=P(A∩B)/P(A)，因此P(B|A)P(A)=P(A∩B)。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "由于P(B)>0，合法除以P(B)得到结论；条件事件为零概率时两种写法不能照用。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "同一有限等可能样本空间中P(A)>0且P(B)>0时，P(A|B)=P(B|A)P(A)/P(B)。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "有限等可能样本空间中的贝叶斯公式",
+      "worked_examples": [
+        {
+          "question": "六等可能结果A={1,2,3},B={1,2,3,4}求P(A|B)。",
+          "teacher_solution": "交集大小3、B大小4，所以P(A|B)=3/4；Bayes右侧(3/3)(3/6)/(4/6)=3/4。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "B=空集时P(A|B)无定义，即使交集概率为0也不可除以0。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "c>0",
+        "a<b",
+        "f为连续多项式",
+        "f(a)f(b)<0"
+      ],
+      "common_wrong_method": "不检查连续性或端点符号，或把存在性冒充唯一性。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "比较f=x²−1在[-2,2]的多根情况，解释介值定理不证明唯一性。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "a": 2,
+        "b": 3,
+        "c": 2
+      },
+      "finite_op": "bisection",
+      "finite_valid": {
+        "a": 1,
+        "b": 2,
+        "c": 2
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "检查f的连续性以及区间端点是否严格异号。",
+        "使用介值定理先证明至少存在一个零点，不要直接断言唯一。",
+        "在中点求f值后决定应保留哪对异号端点；中点为根则停止。"
+      ],
+      "id": "KB79-P06",
+      "invalid_boundary": "f=x²−2在[2,3]两端均正，不能以异号介值定理保证根。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.function.bisection-root#2",
+      "near_transfer": "讨论f(a)=0时为何无需再断言开区间有根。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "7ad2ee52ce128a3cbe4acc0b8ca7687dd158ad5fa248c0fd7943ce35f0509134",
+      "proof_steps": [
+        {
+          "claim_and_reason": "多项式在实数闭区间[a,b]连续，因此可调用介值定理。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "端点函数值严格异号，0严格处于两值之间，于是存在ξ∈(a,b)使f(ξ)=0。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "二分时在包含异号端点的半区间继续，不能把异号条件误说成任意区间均有根，也不能据此声称根唯一。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "连续f(x)=x²−c(c>0)若a<b且f(a)f(b)<0，则(a,b)存在零点。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "介值定理与二分法的严格异号门槛",
+      "worked_examples": [
+        {
+          "question": "f=x²−2在[1,2]执行首次二分。",
+          "teacher_solution": "f(1)=-1、f(2)=2；中点3/2，f(3/2)=1/4>0，新的异号括区为[1,3/2]。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "f=x²−2在[2,3]两端均正，不能以异号介值定理保证根。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "p>0",
+        "P=(x,y)实坐标",
+        "y²=4px"
+      ],
+      "common_wrong_method": "把任何满足y=0的直线点当作p=0的抛物线点。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "把焦点定义推广到旋转抛物线时先给出旋转坐标与准线。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "p": 0,
+        "x": 0,
+        "y": 0
+      },
+      "finite_op": "parabola",
+      "finite_valid": {
+        "p": 2,
+        "x": 2,
+        "y": 4
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "写出点到焦点与点到竖直准线的两个距离。",
+        "先比较距离的平方，并将曲线方程代入消去y²。",
+        "把平方相等转回距离相等时确认两边都是非负的。"
+      ],
+      "id": "KB79-P07",
+      "invalid_boundary": "p=0时方程退化为直线y=0，焦点—准线重合，不能当作非退化抛物线。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.geometry.parabola-focus#1",
+      "near_transfer": "改变p与合法整数点验证平方距离恒等。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "879fc25353c0bc3f95942f5e836bb51632c81b2e9a6435959ef34476491d957d",
+      "proof_steps": [
+        {
+          "claim_and_reason": "点P到焦点距离平方为(x−p)²+y²。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "利用曲线条件y²=4px变换为(x+p)²，且p>0保证曲线点x≥0从而x+p>0。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "至准线x=−p的距离为|x+p|，两种非负距离平方相等，故距离相等。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "对p>0，曲线y²=4px上任一点P到F=(p,0)与准线x=−p距离相等。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "抛物线焦点—准线距离定义",
+      "worked_examples": [
+        {
+          "question": "p=2、P=(2,4)验算。",
+          "teacher_solution": "4²=4×2×2=16；到焦点(2,0)距离4；到直线x=-2距离4。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "p=0时方程退化为直线y=0，焦点—准线重合，不能当作非退化抛物线。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "n≥1且为整数",
+        "a,d为实数"
+      ],
+      "common_wrong_method": "以为d必须非零或把n−1误写为n。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "迁移到梯形面积公式时区分连续几何长度和离散整数项数。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "a": 2,
+        "d": 3,
+        "n": 0
+      },
+      "finite_op": "arithmetic_sum",
+      "finite_valid": {
+        "a": 2,
+        "d": 3,
+        "n": 5
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "把首项到第n项顺序写成一个有限和。",
+        "逆序写第二遍，将两式逐列配对。",
+        "清楚数出配对数并检查n的整数范围，不强加d非零。"
+      ],
+      "id": "KB79-P08",
+      "invalid_boundary": "n=0不属于此处“前n项”的正整数叙述；不能以空项作为本命题示例。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.sequence.arithmetic-sum#4",
+      "near_transfer": "取d=0核对常数数列。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "425123bed79bac84ec7886890e4f85d9dd0ed005f002e2ecc323da11328e44ed",
+      "proof_steps": [
+        {
+          "claim_and_reason": "把首n项顺序相加写成S_n。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "逆序再写一遍，配对每一列均得2a+(n−1)d，一共有n列。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "将两行相加后除以常数2得到公式，n只需为正整数，无需额外要求d≠0。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "n为正整数，首项a、公差d时S_n=n(2a+(n−1)d)/2。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "有限等差数列前n项和",
+      "worked_examples": [
+        {
+          "question": "a=2,d=3,n=5求和。",
+          "teacher_solution": "2+5+8+11+14=40；公式5(4+12)/2=40。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "n=0不属于此处“前n项”的正整数叙述；不能以空项作为本命题示例。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "D,E,F为实数",
+        "二次项均为x²+y²且系数为1"
+      ],
+      "common_wrong_method": "只找出圆心就默认半径存在，或忽略r²=0的单点退化。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "从一般二次曲线判别中解释为何必须有等系数且无xy项。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "D": 2,
+        "E": 0,
+        "F": 4
+      },
+      "finite_op": "circle_square",
+      "finite_valid": {
+        "D": -2,
+        "E": -4,
+        "F": -4
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "分别对x与y完成平方，别漏掉移动到右侧的常数。",
+        "把所得右端记为半径的平方并判断符号。",
+        "单独分析正数、零和负数三种情形是否真的给出一个圆。"
+      ],
+      "id": "KB79-P09",
+      "invalid_boundary": "D=2,E=0,F=4时r²=1−4=−3，无实点。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.geometry.circle-complete-square#3",
+      "near_transfer": "构造r²=0的单点退化方程。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "a3527499a49fb353344abc821ca0f70d250453b3756403a6cb462bc4d5cab916",
+      "proof_steps": [
+        {
+          "claim_and_reason": "分别配平方得到(x+D/2)²+(y+E/2)²=(D²+E²)/4−F。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "记右端r²；若r²>0则为中心(-D/2,-E/2)、半径√r²的非退化圆。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "r²=0只有单点、r²<0无实点，因此不能将它们发布为正常半径的圆。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "x²+y²+Dx+Ey+F=0表示非退化实圆当且仅当(D²+E²)/4−F>0。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "圆的一般方程配平方与非退化半径",
+      "worked_examples": [
+        {
+          "question": "x²+y²−2x−4y−4=0配平方。",
+          "teacher_solution": "化为(x−1)²+(y−2)²=9，圆心(1,2)、半径3。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "D=2,E=0,F=4时r²=1−4=−3，无实点。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "n≥2",
+        "所有x_i,y_i实数",
+        "S_xx>0",
+        "目标为残差平方和"
+      ],
+      "common_wrong_method": "把二点拟合或相关性当作因果证明，忽略自变量无变异。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "迁移到带多特征回归时要改为矩阵列秩条件，不能沿用标量分母。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "xs": [
+          1,
+          1,
+          1
+        ],
+        "ys": [
+          1,
+          3,
+          5
+        ]
+      },
+      "finite_op": "ols",
+      "finite_valid": {
+        "xs": [
+          0,
+          1,
+          2
+        ],
+        "ys": [
+          1,
+          3,
+          5
+        ]
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "先写出残差平方和，明确有截距和斜率两个未知数。",
+        "对两个参数写正常方程，再将自变量中心化。",
+        "检查Sxx为何必须大于零，才能保证斜率唯一而不是除以零。"
+      ],
+      "id": "KB79-P10",
+      "invalid_boundary": "所有x_i都相同则S_xx=0，有斜率无法唯一确定，不得除以S_xx。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.elective.statistics.ols-two-parameter#3",
+      "near_transfer": "把所有y_i改成常数并比较斜率。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "50413e60ad3285f272cb4c330300ade308590c0e7efce6bfae584892b986d745",
+      "proof_steps": [
+        {
+          "claim_and_reason": "对Q(α,β)=Σ(y_i−α−βx_i)²分别求偏导，得到Σ残差=0、Σx_i残差=0。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "第一式得α=ȳ−βx̄，代入第二式得到βS_xx=S_xy。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "S_xx>0意味着目标函数在斜率方向严格凸，故这一解是唯一极小值；不能以相关系数替代因果结论。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "给定n≥2个实观测，若S_xx=Σ(x_i−x̄)²>0，最小二乘直线唯一且斜率S_xy/S_xx，截距ȳ−斜率×x̄。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "一元带截距最小二乘的唯一性条件",
+      "worked_examples": [
+        {
+          "question": "点(0,1),(1,3),(2,5)拟合。",
+          "teacher_solution": "x̄=1、ȳ=3，S_xx=2、S_xy=4；β=2,α=1；三个残差都为0。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "所有x_i都相同则S_xx=0，有斜率无法唯一确定，不得除以S_xx。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "n≥2整数",
+        "数据为有限实数",
+        "a,b为实数",
+        "分母使用n而非n−1"
+      ],
+      "common_wrong_method": "把a²误写为a，或者误将n分母的方差与n−1版本直接混用。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "比较总体型方差与不偏样本方差在同样尺度变换下的规则。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "a": 2,
+        "b": 7,
+        "xs": []
+      },
+      "finite_op": "variance_affine",
+      "finite_valid": {
+        "a": 2,
+        "b": 7,
+        "xs": [
+          1,
+          3,
+          5
+        ]
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "计算线性变换后的样本均值，别急着求方差。",
+        "把每一项的新离差与旧离差比较，注意平移项怎样消去。",
+        "平方后看系数是a还是a²，并解释a=0时是否仍成立。"
+      ],
+      "id": "KB79-P11",
+      "invalid_boundary": "空样本n=0时均值和除以n的经验方差均无定义。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.statistics.variance-affine#3",
+      "near_transfer": "取a=0观察方差归零。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "d96947fa06ca45d795ecea2d13ce52ae69a2d78b59e1a7c18d85d4b8a9eb8ad2",
+      "proof_steps": [
+        {
+          "claim_and_reason": "变换后的样本均值为a x̄+b，故每个中心化离差变成a(x_i−x̄)。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "平方并求和得Σ(a(x_i−x̄))²=a²Σ(x_i−x̄)²。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "除以同一个正整数n得到恒等式；a=0也合法，方差成为0，但不应因此强加a≠0。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "非空有限样本的经验总体方差Var_n(X)=n⁻¹Σ(x_i−x̄)²满足Var_n(aX+b)=a² Var_n(X)。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "总体型经验方差的仿射变换",
+      "worked_examples": [
+        {
+          "question": "数据[1,3,5]经y=2x+7变换。",
+          "teacher_solution": "原均值3，方差((−2)²+0+2²)/3=8/3；新数据[9,13,17]方差32/3=4×8/3。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "空样本n=0时均值和除以n的经验方差均无定义。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "a,b,c>0",
+        "严格三角形不等式",
+        "a,b为夹角的邻边"
+      ],
+      "common_wrong_method": "只检查余弦公式的代数值，却没有判断三条边能否构成非退化三角形。",
+      "copyright_origin": "ORIGINAL_PROJECT_AUTHORED",
+      "curriculum_standard_version": "普通高中数学课程标准（2017年版2020年修订）",
+      "curriculum_track_hint": "UNDETERMINED_PENDING_OFFICIAL_ATOMIZATION",
+      "far_transfer": "迁移到三维向量求夹角时检查非零向量和角的取值范围。",
+      "finite_instance_status": "VERIFIED_FINITE_INSTANCE_ONLY",
+      "finite_invalid": {
+        "a": 1,
+        "b": 1,
+        "c": 3
+      },
+      "finite_op": "cosine_law",
+      "finite_valid": {
+        "a": 3,
+        "b": 4,
+        "c": 5
+      },
+      "formal_math_certification": "NOT_FORMALLY_VERIFIED",
+      "hint_ladder": [
+        "先验证三边能组成严格非退化的三角形。",
+        "把夹角两边看作向量，利用对边等于它们的差。",
+        "展开差向量的平方范数后检查能否合法除以2ab。"
+      ],
+      "id": "KB79-P12",
+      "invalid_boundary": "边长1,1,3违反三角形不等式，代公式得到越界余弦值，不能称三角形内角。",
+      "kind": "THEOREM_OR_METHOD_REVIEW",
+      "linked_historical_step_id": "math.hs.triangle.cosine-law#4",
+      "near_transfer": "构造等边三角形验证cos60°。",
+      "official_curriculum_atom_id": null,
+      "original_ledger_sha256": "da5fec7f7da73c3c9d602e9cf8b29c2ec3c943f3929196eea768d0bb3c4215d5",
+      "original_step_sha256": "6355593cf29608e87c8798e4f6b7f3196a64335cfb8986523d5c0e2593b54208",
+      "proof_steps": [
+        {
+          "claim_and_reason": "在角C的两条邻边上取向量u,v，长度分别为a,b，夹角C。",
+          "index": 1
+        },
+        {
+          "claim_and_reason": "对边向量为u−v，故c²=||u−v||²=a²+b²−2u·v。",
+          "index": 2
+        },
+        {
+          "claim_and_reason": "u·v=ab cos C且ab>0，合法移项并除2ab，得到公式；退化边长不得套用内角定义。",
+          "index": 3
+        }
+      ],
+      "review_status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "source_kind": "PROJECT_HISTORICAL_DRAFT_NOT_OFFICIAL_ATOM",
+      "statement": "在非退化三角形中，夹角C对应对边c、邻边a,b时cos C=(a²+b²−c²)/(2ab)。",
+      "student_free_text_verified": false,
+      "student_publishable": false,
+      "teacher_solution_visibility": "TEACHER_ONLY",
+      "title": "三角形余弦定理及退化边界",
+      "worked_examples": [
+        {
+          "question": "a=3,b=4,c=5时求C。",
+          "teacher_solution": "cos C=(9+16−25)/(2×3×4)=0，所以C=90°。",
+          "visibility": "TEACHER_ONLY"
+        },
+        {
+          "question": "检验本命题的一个失败前提，说明为什么结论不能照用。",
+          "teacher_solution": "边长1,1,3违反三角形不等式，代公式得到越界余弦值，不能称三角形内角。",
+          "visibility": "TEACHER_ONLY"
+        }
+      ]
+    }
+  ],
+  "schema_version": "kb79-guarded-proof-review-v1",
+  "student_published": 0,
+  "teacher_approvals": 0,
+  "total_distinct_high_risk_review_card_links": 28
+}

@@ -1,0 +1,24 @@
+{
+  "case_names": [
+    "q1_sum",
+    "geometric_sum",
+    "cubic_stationary_not_extremum",
+    "closed_interval_endpoint",
+    "nonindependent_conditional_p0",
+    "least_squares_sxx_zero",
+    "alternating_subsequences",
+    "point_value_vs_limit",
+    "log_domain",
+    "hypergeom_mean",
+    "total_probability",
+    "periodic_sine",
+    "compound_nominal_vs_effective",
+    "partial_not_differentiable_diagonal",
+    "equal_probability_required"
+  ],
+  "finite_exact_case_count": 15,
+  "formal_general_proofs_certified": 0,
+  "scope": "SELECTED_FINITE_EXACT_CHECKS_NOT_GENERAL_PROOFS",
+  "student_free_text_verified": false,
+  "teacher_approved": 0
+}

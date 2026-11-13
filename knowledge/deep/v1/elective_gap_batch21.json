@@ -1,0 +1,1111 @@
+[
+  {
+    "id": "math.hs.elective.sequence.e-series-bounds",
+    "curriculum_ids": [
+      "HS-MATH-116"
+    ],
+    "kind": "theorem",
+    "title": "自然常数 e 的级数定义、部分和上界与单调收敛",
+    "version": "1.0.0",
+    "notation": [
+      "S_n=Σ_{k=0}^n 1/k!",
+      "e=lim S_n",
+      "n!"
+    ],
+    "prerequisites": [
+      "正整数阶乘",
+      "等比数列与单调有界收敛定理"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.sequence.monotone-bounded"
+    ],
+    "definition": null,
+    "statement": "设 n≥0 为整数，S_n=Σ_{k=0}^n 1/k!。则 S_n 严格递增且有上界 3，因而极限 e 存在，并且 2<e<3；这里 e 采用该无穷级数极限作为定义。",
+    "assumptions": [
+      "n 是非负整数，0!=1，所有阶乘分母严格正。",
+      "使用实数完备性中的单调有界收敛定理；本课不凭数值近似证明极限性质。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "S_{n+1}-S_n=1/(n+1)!>0，因此所有部分和严格递增。",
+        "reason": "逐项相减后仅剩新增一项，阶乘非零。"
+      },
+      {
+        "claim": "对 k≥1，k!≥2^{k-1}，所以 1/k!≤2^{1-k}；故 S_n≤1+Σ_{k=1}^n 2^{1-k}<3。",
+        "reason": "从 k=1 归纳阶乘下界，再用正项有限等比和。"
+      },
+      {
+        "claim": "严格递增且有上界的实数列有极限 e；S_2=5/2>2 且 k=3 开始存在严格不等，故 e<3。",
+        "reason": "对 k≥3，k!≥6·2^{k-3}，故从 k=3 开始的无穷尾和≤(1/6)Σ_{j=0}∞2^{-j}=1/3，推出 e≤1+1+1/2+1/3=17/6<3。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "不能把有限的 S_n 直接写成 e；定义是 n→∞ 的极限。",
+      "粗上界 3 不是 e 的精确值；积分或指数函数的其他定义需要另行证明等价。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "S_2 已等于自然常数 e",
+        "example": "S_2=1+1+1/2=2.5，但 S_3=S_2+1/6>2.5。",
+        "explanation": "每一项正值保证有限部分和与极限不同。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "计算 S_3 并说明它与 e 的关系。",
+        "steps": [
+          "按 k=0,1,2,3 展开阶乘分母。",
+          "计算 1+1+1/2+1/6=8/3，并利用后续正项确定严格小于 e。"
+        ],
+        "answer": "S_3=8/3<e",
+        "check": "S_4=65/24>S_3，可验证仍增长。"
+      },
+      {
+        "question": "给出 S_4 的有理值和小于 3 的说明。",
+        "steps": [
+          "计算 S_4=S_3+1/24=65/24。",
+          "与 3=72/24 比较，并使用所有部分和上界证明。"
+        ],
+        "answer": "S_4=65/24<3",
+        "check": "S_4≈2.7083，不能以小数近似代替全体 n 的上界证明。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "用前几项小于 3 推出所有 n 都小于 3",
+        "why_wrong": "检查有限个样本并不能证明无穷多项；需要统一的阶乘-几何级数界。",
+        "repair_question": "怎样由 k!≥2^{k-1} 得到任意 n 的统一上界？"
+      }
+    ],
+    "hint_ladder": [
+      "先比较相邻两个部分和的差。",
+      "寻找可求和的几何级数去控制阶乘倒数。",
+      "得到单调与有界后才引用收敛定理。"
+    ],
+    "transfer": {
+      "near": "证明 S_5>S_4 并写成两个有理分数。",
+      "far": "用收敛级数的尾项上界设计 e 的有理近似精度，但不把近似值当作精确值。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.calculus.differential-remainder",
+    "curriculum_ids": [
+      "HS-MATH-120"
+    ],
+    "kind": "method",
+    "title": "一阶微分 dy 与有限增量 Δy：线性近似与余项",
+    "version": "1.0.0",
+    "notation": [
+      "dy=f'(x₀)h",
+      "Δy=f(x₀+h)-f(x₀)",
+      "o(h)"
+    ],
+    "prerequisites": [
+      "函数在 x₀ 处可导",
+      "极限与误差量级"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.calculus.derivative-definition"
+    ],
+    "definition": null,
+    "statement": "若 f 在 x₀ 处可导，且 x₀+h 属于定义域，则 Δy=f'(x₀)h+r(h)，其中 r(h)/h→0（h→0，h≠0）；定义微分 dy=f'(x₀)h。只有在可控制的 h 区间内，dy 才适合作 Δy 的近似。",
+    "assumptions": [
+      "x₀ 是定义域内点，双侧导数存在；若仅单侧定义域则相应采用单侧条件。",
+      "余项 o(h) 是 h→0 的局部结论，不自动给定任意 h 的绝对误差。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "导数定义给出 [f(x₀+h)-f(x₀)]/h→f'(x₀)。",
+      "两边乘 h，令 r(h)=Δy-f'(x₀)h，便有 r(h)/h→0。",
+      "求数值近似前检查 x₀+h 属于定义域；如需数值误差界，应另外证明对 |h| 的具体约束。"
+    ],
+    "boundaries": [
+      "f 只连续但不可导时，不能凭直观画切线断言 dy 存在。",
+      "全局大步长不享有局部 o(h) 的保证。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "对任何 h，函数增量 Δy 必须等于微分 dy",
+        "example": "f(x)=x²，x₀=2，h=1，则 Δy=5 而 dy=4。",
+        "explanation": "忽略了二次余项 h²，仅当 h→0 时其相对 h 的比趋于 0。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "用微分近似 2.01²-2² 并算精确误差。",
+        "steps": [
+          "取 x₀=2、h=1/100、f'(2)=4，得 dy=1/25。",
+          "精确 Δy=(2+h)²-4=4h+h²=401/10000。"
+        ],
+        "answer": "近似 0.04；精确 0.0401，误差 0.0001。",
+        "check": "Δy-dy=h²=1/10000，r(h)/h=h→0。"
+      },
+      {
+        "question": "对 f(x)=√x，在 x₀=0 能否使用双侧微分？",
+        "steps": [
+          "定义域 x≥0，0 不是内点。",
+          "右侧差商 (√h-0)/h=1/√h 无有限极限。"
+        ],
+        "answer": "不能在 x₀=0 使用有限的一阶导数线性化。",
+        "check": "h>0 趋零时差商发散，不能把形式 f'(0) 当有限值。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把导数公式当作任意跨度的严格增量公式",
+        "why_wrong": "线性近似只保留一阶项；平方函数一阶以外还有 h²。",
+        "repair_question": "f(x)=x² 时 r(h)/h 等于多少？"
+      }
+    ],
+    "hint_ladder": [
+      "从导数的差商极限开始。",
+      "令余项为精确增量减去导数乘步长。",
+      "对例题把微分和真实增量分别算出后比较。"
+    ],
+    "transfer": {
+      "near": "验证 f(x)=x³ 在 x₀=1 的余项是 3h²+h³。",
+      "far": "对实验测量单位发生变化的情形比较微分的单位与原函数的单位。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.matrix.orthogonal-isometry",
+    "curriculum_ids": [
+      "HS-MATH-132"
+    ],
+    "kind": "theorem",
+    "title": "实正交矩阵的转置逆、内积和长度不变量",
+    "version": "1.0.0",
+    "notation": [
+      "QᵀQ=I",
+      "Q^{-1}=Qᵀ",
+      "⟨Qx,Qy⟩"
+    ],
+    "prerequisites": [
+      "矩阵乘法与转置",
+      "实向量内积"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.matrix.product-dimensions"
+    ],
+    "definition": null,
+    "statement": "对实数 n×n 方阵 Q，若 QᵀQ=I，则 Q 可逆且 Q^{-1}=Qᵀ；任意 x,y∈Rⁿ 满足 (Qx)ᵀ(Qy)=xᵀy，特别地 ||Qx||₂=||x||₂。对实方阵，保留全部向量长度也可推出 QᵀQ=I。",
+    "assumptions": [
+      "Q 为实数域方阵，矩阵乘法和欧氏内积定义合法。",
+      "反向长度保持量词必须覆盖所有 x∈Rⁿ，不能仅验证某一向量。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "QᵀQ=I 表明若 Qv=0 则 ||v||²=vᵀQᵀQv=0，只能 v=0。",
+        "reason": "实数平方和为零仅当所有分量为零，故方阵 Q 单射。"
+      },
+      {
+        "claim": "实有限维同维方阵单射即可逆，左逆 Qᵀ 因而也是逆矩阵。",
+        "reason": "线性代数有限维秩零核定理与矩阵逆唯一性。"
+      },
+      {
+        "claim": "(Qx)ᵀ(Qy)=xᵀQᵀQy=xᵀy；取 y=x 得到长度平方守恒。",
+        "reason": "转置乘法规则与正交条件代入。"
+      },
+      {
+        "claim": "若 ||Qx||²=||x||² 对所有 x 成立，则标准基 e_i 给出列长 1，e_i+e_j 给出不同列内积 0，遂 QᵀQ=I。",
+        "reason": "对角元与非对角元分别由平方展开识别。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "非方阵的 QᵀQ=I 仅表示等距嵌入，不必具有双侧逆。",
+      "只检验单个测试向量长度不变，不能证明矩阵正交。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "行列式绝对值为 1 的矩阵一定正交",
+        "example": "Q=diag(2,1/2)，det Q=1，但把 (1,0) 的长度 1 变为 2。",
+        "explanation": "体积保持并不意味着角度和所有长度保持。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "检查 Q=[[0,-1],[1,0]] 的正交性和对 (3,4) 的作用。",
+        "steps": [
+          "计算 QᵀQ=I₂，故 Q^{-1}=Qᵀ。",
+          "Q(3,4)ᵀ=(-4,3)ᵀ，两向量范数都是 5。"
+        ],
+        "answer": "Q 是逆时针旋转 90° 的正交矩阵。",
+        "check": "输入长度平方 25、输出长度平方也为 25。"
+      },
+      {
+        "question": "对 Q=diag(2,1/2) 检查长度是否保持。",
+        "steps": [
+          "取 e₁=(1,0)ᵀ，Qe₁=(2,0)ᵀ。",
+          "比较平方范数 1 与 4，并计算 QᵀQ=diag(4,1/4)。"
+        ],
+        "answer": "Q 不正交。",
+        "check": "虽然 det Q=1，仍不满足 QᵀQ=I₂。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把转置与逆矩阵在任意方阵上混同",
+        "why_wrong": "只有满足 QᵀQ=I 的方阵才可直接写 Q^{-1}=Qᵀ。",
+        "repair_question": "Q=diag(2,1/2) 的逆和转置相同吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先从 QᵀQ=I 乘上任意向量。",
+      "用 xᵀQᵀQy 检查内积。",
+      "对反方向用标准基及两基向量和恢复各矩阵元素。"
+    ],
+    "transfer": {
+      "near": "验证二维反射矩阵 diag(1,-1) 的正交性。",
+      "far": "解释为何旋转和反射可以作为距离不变的图像几何增强，非等比拉伸不行。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.linear.ranks-consistency",
+    "curriculum_ids": [
+      "HS-MATH-126"
+    ],
+    "kind": "theorem",
+    "title": "三元非齐次线性方程组的相容性、秩与唯一性",
+    "version": "1.0.0",
+    "notation": [
+      "Ax=b",
+      "rank(A)",
+      "rank([A|b])"
+    ],
+    "prerequisites": [
+      "高斯消元",
+      "线性无关与秩"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.matrix.gaussian-row-equivalence"
+    ],
+    "definition": null,
+    "statement": "设 A∈R^{m×3}、b∈R^m。Ax=b 有解当且仅当 rank(A)=rank([A|b])；有解时 rank(A)=3 恰好唯一解，rank(A)<3 则解集无限。若两秩不同则无解；不得仅凭 det(A)=0 就断言无解。",
+    "assumptions": [
+      "A 的元素为实数且恰有三个未知量；m 可以不等于 3。",
+      "秩为精确线性代数秩，不可把浮点容差分类当作定理。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "Ax=b 有解意味着 b 是 A 的列向量线性组合，所以增广列不会增加秩。",
+        "reason": "按列空间定义得两个秩相等。"
+      },
+      {
+        "claim": "若增广列未增加秩，则 b 属于 A 的列空间，存在 x 满足 Ax=b。",
+        "reason": "秩等于列空间维数，新增列线性依赖于原列。"
+      },
+      {
+        "claim": "固定一特解 x₀，所有解是 x₀+ker A；零空间维数为 3-rank(A)。",
+        "reason": "相减得到齐次方程；用秩-零度定理。"
+      },
+      {
+        "claim": "rank(A)=3 时零空间只有 0，故唯一；若 rank(A)<3，则可沿任意非零核向量取连续多组不同的解。",
+        "reason": "实数域允许任意实标量放大核向量。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "rank(A)=rank([A|b])<3 表示无穷多解，不是唯一解。",
+      "m=3 时 det(A)=0 不足以区分无解与无限解。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "系数矩阵行列式为零，所以原方程组一定无解",
+        "example": "A=diag(1,1,0), b=(1,2,0)ᵀ 有无穷多解 (1,2,t)ᵀ。",
+        "explanation": "行列式为零只排除唯一解；仍需核对增广秩。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "求 diag(1,1,0)x=(2,3,0)ᵀ 的解集。",
+        "steps": [
+          "A 的秩 2，增广秩仍是 2，故相容。",
+          "前两式固定 x₁=2、x₂=3，第三个未知量可任取。"
+        ],
+        "answer": "解集 {(2,3,t):t∈R}。",
+        "check": "代回每一行恒成立，解无限。"
+      },
+      {
+        "question": "求 diag(1,1,0)x=(2,3,1)ᵀ 的解。",
+        "steps": [
+          "第三行化为 0=1，出现矛盾。",
+          "rank A=2 而增广矩阵 rank=3。"
+        ],
+        "answer": "无解。",
+        "check": "任意 x 左边第三分量均为 0，不可能等于 1。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把零行列式直接解释为无解",
+        "why_wrong": "行列式只给方阵可逆性，增广秩才决定非齐次系统是否相容。",
+        "repair_question": "同一系数矩阵换右侧 0 与 1 会有什么变化？"
+      }
+    ],
+    "hint_ladder": [
+      "先将增广矩阵一起进行行变换。",
+      "比较系数秩和增广秩。",
+      "若相容，用 3-rank(A) 判断自由变量维度。"
+    ],
+    "transfer": {
+      "near": "处理 A=diag(1,0,0)，b=(1,0,0)ᵀ 的两维自由解集。",
+      "far": "把摄像头标定中相互重复的线性观测抽象为欠定方程组，讨论信息缺失。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.optimization.polytope-vertices",
+    "curriculum_ids": [
+      "HS-MATH-133"
+    ],
+    "kind": "theorem",
+    "title": "非空紧凸多边形上仿射目标的顶点最优性",
+    "version": "1.0.0",
+    "notation": [
+      "f(x)=cᵀx+d",
+      "P=conv(v₁,…,v_k)",
+      "argmax"
+    ],
+    "prerequisites": [
+      "线性目标函数",
+      "凸组合和有限平面多边形"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.multivariable.stationary-boundary"
+    ],
+    "definition": null,
+    "statement": "若 P⊂R² 是非空紧凸多边形，且 v₁,…,v_k 是其全部顶点，f(x)=cᵀx+d 为仿射函数，则 max_{x∈P}f(x)=max_i f(v_i)，min 同理；最优点未必唯一，整条边也可能最优。",
+    "assumptions": [
+      "P 非空且有界、闭合，可以由有限顶点的凸包表示。",
+      "目标确实仿射；不能把严格凸二次函数的内部最小值直接套顶点法。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "多边形任意 x∈P 可写成 x=Σ_i λ_i v_i，λ_i≥0 且 Σ_i λ_i=1。",
+        "reason": "有限凸多边形的凸包定义。"
+      },
+      {
+        "claim": "f(x)=Σ_i λ_i f(v_i)，因为常数 d 的加权和仍为 d。",
+        "reason": "对仿射函数使用保留凸组合的恒等关系，逐项展开得到相同的加权平均结果。"
+      },
+      {
+        "claim": "每项 f(v_i) 不超过顶点最大值 M，因此 f(x)≤Σ_iλ_i M=M，某一顶点达到 M。",
+        "reason": "非负权重与总权重为 1。"
+      },
+      {
+        "claim": "对 -f 应用同样论证得到最小值；若若干最优顶点相邻，连接线段上的值也相同。",
+        "reason": "取反目标的最大值等价于原目标最小值，仿射性保持线段值。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "区域无界时可能没有有限最大值，如半平面 x≥0 上最大化 x。",
+      "非仿射目标不保证顶点最优；例如 [0,2] 上 -(x-1)² 的最大值在内部。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "任何函数在闭凸多边形上最大值都能在顶点找到",
+        "example": "在正方形 [0,2]² 上 g(x,y)=-(x-1)²-(y-1)²，最大值 0 在内部 (1,1)。",
+        "explanation": "顶点最优性要求目标是仿射，不能仅凭可行域凸。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "在 P=[0,2]×[0,3] 上最大化 x+2y。",
+        "steps": [
+          "枚举顶点 (0,0),(2,0),(0,3),(2,3)。",
+          "分别计算目标值 0,2,6,8。"
+        ],
+        "answer": "最大值 8，在 (2,3) 取得。",
+        "check": "任意凸组合的值都不超过顶点最大值 8。"
+      },
+      {
+        "question": "在同一区域上最大化 f(x,y)=x，最优点唯一吗？",
+        "steps": [
+          "四顶点上的 f 分别为 0,2,0,2。",
+          "固定 x=2 时，y∈[0,3] 都在可行域。"
+        ],
+        "answer": "最大值 2，整条边 {(2,y):0≤y≤3} 都最优。",
+        "check": "说明顶点能达到最优，但不代表只有顶点最优。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "顶点法推出最优解一定唯一",
+        "why_wrong": "同一支持直线可能沿多边形整条边重合，出现无穷多最优解。",
+        "repair_question": "目标仅为 x 时，为什么右边界全部取同值？"
+      }
+    ],
+    "hint_ladder": [
+      "先确认目标函数是否仿射且区域是否紧凸。",
+      "把任一点写成顶点的凸组合。",
+      "利用目标对凸组合的保值性质上界。"
+    ],
+    "transfer": {
+      "near": "求三角形顶点 (0,0),(2,0),(0,2) 上 x+y 的最大值及全部最优点。",
+      "far": "解释线性规划中的敏感性：轻微旋转目标系数时，整条最优边可能变成单个顶点。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.geometry.skew-lines-distance",
+    "curriculum_ids": [
+      "HS-MATH-134"
+    ],
+    "kind": "theorem",
+    "title": "非平行空间直线的最短距离与公共垂线的唯一性",
+    "version": "1.0.0",
+    "notation": [
+      "L₁=p+tu",
+      "L₂=q+sv",
+      "w=u×v"
+    ],
+    "prerequisites": [
+      "空间向量外积",
+      "向量内积与正交投影"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.extension.cross-product"
+    ],
+    "definition": null,
+    "statement": "对两条方向 u,v∈R³ 的非零、互不平行直线 L₁:p+tu 与 L₂:q+sv，w=u×v≠0，最短距离为 |(q-p)·w|/||w||。存在唯一一对对应点，其连接向量同时垂直 u 和 v；若分子为 0，则两直线相交且距离为 0。",
+    "assumptions": [
+      "p,q 是直线上固定点；u,v 均非零且不平行。",
+      "本公式不适用于 u×v=0 的平行直线情形。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "任意对应点之差 z=(q-p)+sv-tu，其沿 w 方向的投影恒为 ((q-p)·w/||w||²)w。",
+        "reason": "因为 w 与 u,v 同时正交，沿 w 的分量不能通过改 t,s 消去。"
+      },
+      {
+        "claim": "将 q-p 分解为沿 w 的分量和在 span(u,v) 内的分量。",
+        "reason": "非平行 u,v 的张成平面恰是 w 的正交补。"
+      },
+      {
+        "claim": "由于 u,v 线性无关，存在唯一的参数 (t,s) 使 z 的平面分量为 0。",
+        "reason": "二维线性方程组的系数向量线性无关，故唯一可解。"
+      },
+      {
+        "claim": "此时 z 仅有沿 w 的分量，达到所有距离的投影下界，长度为 |(q-p)·w|/||w||。",
+        "reason": "勾股分解给 ||z||≥沿 w 投影长度，且等号已构造。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 u×v=0，该公式出现 0 分母，应改用平行线点到线距离。",
+      "非平行但共面相交也满足前提，分子为 0，公共垂线段退化为交点的零长度线段。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "两直线平行时也能把 u×v 代入分母算距离",
+        "example": "u=v=(1,0,0) 时 u×v=0，但两条相距 1 的平行直线仍有正距离。",
+        "explanation": "本定理要求两方向线性无关，平行时需要另一种投影。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "L₁=(t,0,0)，L₂=(0,s,2)，求两直线距离。",
+        "steps": [
+          "u=(1,0,0), v=(0,1,0), q-p=(0,0,2)。",
+          "u×v=(0,0,1)，故距离 |2|/1=2。"
+        ],
+        "answer": "最短距离为 2。",
+        "check": "对应 t=s=0，连接向量 (0,0,2) 同时垂直两方向。"
+      },
+      {
+        "question": "L₁=(t,0,0)，L₂=(0,s,0)，求距离并说明交点。",
+        "steps": [
+          "方向仍互不平行，但 q-p=(0,0,0)。",
+          "沿公共法线投影分量为 0。"
+        ],
+        "answer": "距离为 0，两直线在原点相交。",
+        "check": "t=s=0 产生同一点，不应将非平行误认为一定异面。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把非平行直线等同于异面直线",
+        "why_wrong": "空间中非平行直线还可能相交，异面需另外排除共面相交。",
+        "repair_question": "平面 xOy 的两条坐标轴是否平行？是否异面？"
+      }
+    ],
+    "hint_ladder": [
+      "先检查两个方向向量的外积是否非零。",
+      "投影到两个方向都垂直的法线向量上。",
+      "确定能消去法线之外的平面分量，从而达到下界。"
+    ],
+    "transfer": {
+      "near": "将第二条直线整体上移高度 h，验证距离为 |h|。",
+      "far": "用于三维机械轴线校准，区分相交轴、平行轴和真正异面轴的测量条件。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.cluster.kmeans-conditions",
+    "curriculum_ids": [
+      "HS-MATH-137"
+    ],
+    "kind": "method",
+    "title": "有限样本 k-means 平方损失、尺度与局部最优的边界",
+    "version": "1.0.0",
+    "notation": [
+      "J=Σ_i ||x_i-μ_{z_i}||²",
+      "z_i∈{1,…,k}",
+      "μ_j"
+    ],
+    "prerequisites": [
+      "实向量平方距离",
+      "有限数据均值与方差"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.statistics.variance"
+    ],
+    "definition": null,
+    "statement": "给定 Rᵈ 中 n 个有限样本、1≤k≤n、非空簇，k-means 以簇内平方欧氏距离和 J 最小为目标；固定中心时按最近中心分配，固定非空簇成员时用算术平均数更新中心会使 J 不增，但交替迭代一般仅保证到局部固定点，不保证全局最优。",
+    "assumptions": [
+      "每个 x_i 所有坐标有限，距离度量为欧氏距离；归一化方式必须明确。",
+      "更新中心时各簇非空；出现空簇必须采用明确的重置或退出策略，不能除以零。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "对于固定中心，每个样本对目标的贡献只来自它被分配的中心，因此逐点选择最近中心可避免该项变大。",
+      "对固定非空簇 C，Σ_{i∈C}||x_i-μ||²=Σ||x_i-x̄_C||²+|C|·||μ-x̄_C||²，最优中心为均值。",
+      "交替步骤均不增 J；但联合分配与中心问题不是凸优化，局部不变不能推出全局最优。",
+      "不同物理单位或量纲尺度改变距离，拟合与结论要检查标准化和异常值影响。"
+    ],
+    "boundaries": [
+      "当 k>n 时不可能构成 k 个均非空的簇；无效输入必须拒绝。",
+      "归一化和中心初始化会改变结果；不能把簇编号当作真实因果类别。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "k-means 每次迭代下降损失，因此最后一定取得全局最优",
+        "example": "多个初始化可能收敛到不同分簇；单调不增只证明算法不会沿该步增大目标。",
+        "explanation": "局部坐标下降不足以证明联合优化全局最优。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "数据 {0,1,9,10} 分两簇 {0,1} 与 {9,10}，求中心及平方损失。",
+        "steps": [
+          "分别计算中心 μ₁=(0+1)/2=1/2，μ₂=(9+10)/2=19/2。",
+          "四个平方偏差均为 1/4，累加得 J=1。"
+        ],
+        "answer": "中心为 0.5、9.5；J=1。",
+        "check": "每簇两个点的偏差平方和均为 1/2。"
+      },
+      {
+        "question": "数据 {0,2,4} 仅设一簇，求最优均值和损失。",
+        "steps": [
+          "非空簇最优中心是均值 (0+2+4)/3=2。",
+          "平方误差为 4+0+4。"
+        ],
+        "answer": "中心 μ=2，J=8。",
+        "check": "若中心偏离 2 达 δ，损失变为 8+3δ²≥8。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把局部单调改善当成全局最优证明",
+        "why_wrong": "目标中离散分类和连续中心联立，非凸性允许不同局部固定点。",
+        "repair_question": "仅凭每一步 J 不增，能排除另一种分簇 J 更小吗？"
+      }
+    ],
+    "hint_ladder": [
+      "先写每个点到中心的平方距离。",
+      "固定簇，用配平方推导中心应该是均值。",
+      "分配与均值更新各自降损失，但对全局最优保持保留。"
+    ],
+    "transfer": {
+      "near": "对四个一维点 {0,2,8,10} 计算两簇均值和 J。",
+      "far": "在收入与年龄不同量纲的样本上分析未标准化 k-means 距离偏差。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.model.dimension-guard",
+    "curriculum_ids": [
+      "HS-MATH-142"
+    ],
+    "kind": "method",
+    "title": "三变量线性量纲模型的单位约束与时间尺度换算",
+    "version": "1.0.0",
+    "notation": [
+      "y=αx+βt+γ",
+      "[y]",
+      "[α]=[y]/[x]"
+    ],
+    "prerequisites": [
+      "一元线性关系",
+      "单位换算与量纲代数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.elective.model.time-rescaling"
+    ],
+    "definition": null,
+    "statement": "对物理量模型 y=αx+βt+γ，只有当各可加项 αx、βt、γ 与 y 具有相同物理量纲时，加法才有意义；若将时间数值从秒 t_s 改用分 t_m=t_s/60，则相同模型的系数 β_m=60β_s，不能沿用数值不变的 β。",
+    "assumptions": [
+      "x 与 t 是有明确定义的物理量，α、β、γ 带必要单位而不只是无单位实数。",
+      "模型假定适用于该观测范围，量纲一致是必要非充分条件，不保证因果或预测正确。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "物理量相加必须有相同量纲，所以 [αx]=[βt]=[γ]=[y]，分别约束系数单位。",
+      "以 t_s=60t_m 代入 β_s t_s 得 (60β_s)t_m，故分钟制下数值系数乘 60。",
+      "换单位时应同换输入数值与系数，避免 60 倍尺度错误；验证真实残差仍需要独立数据。"
+    ],
+    "boundaries": [
+      "量纲检查能发现部分错误，但不能证明函数形式、线性假设与外推成立。",
+      "若变量本身已无量纲，应说明归一化常数及参考单位。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "时间从秒改为分钟只需替换自变量数值，原斜率不变",
+        "example": "若 v=2 m/s、t=3 min，直接算 2×3 得 6 但真实距离是 360m。",
+        "explanation": "系数 2 m/s 在分钟数值下必须变成 120 m/min。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "速度 2 m/s、时间 3 min，正确的距离是多少？",
+        "steps": [
+          "先换算 3 min=180 s。",
+          "距离 2 m/s×180 s=360 m。"
+        ],
+        "answer": "距离为 360 m。",
+        "check": "改以分钟计算，应使用速度 120 m/min×3 min 仍得 360m。"
+      },
+      {
+        "question": "y(m)=3(m/s)·t(s)+2(m)，把 t 以分钟表示。",
+        "steps": [
+          "令 t_s=60 t_m。",
+          "代入 y=3×60 t_m+2。"
+        ],
+        "answer": "y(m)=180(m/min)·t_m(min)+2(m)。",
+        "check": "t_m=1 时 y=182m，与 t_s=60 时 3×60+2 一致。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "认为单位只标在图轴上，代数系数可以不变",
+        "why_wrong": "物理模型每一项是带单位的量，输入计量单位变化时系数需要协同变换。",
+        "repair_question": "把秒换分钟后系数的单位变为什么？"
+      }
+    ],
+    "hint_ladder": [
+      "先在每一项后写出量纲。",
+      "将新单位的自变量代回旧模型。",
+      "对同一个物理场景计算两种单位制，比较结果是否相等。"
+    ],
+    "transfer": {
+      "near": "将 5 km/h 乘 2 小时求距离，再改用 m/s 表示。",
+      "far": "检查机器学习特征从摄氏温度转成华氏温度后，线性模型截距和斜率需要如何联动。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.survey.ordinal-mean",
+    "curriculum_ids": [
+      "HS-MATH-158"
+    ],
+    "kind": "concept",
+    "title": "等级量表的次序不变量与均值解释的尺度假设",
+    "version": "1.0.0",
+    "notation": [
+      "x₁≤x₂≤⋯≤x_n",
+      "g 严格递增",
+      "median(x)"
+    ],
+    "prerequisites": [
+      "算术均值与中位数",
+      "函数严格单调性"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.statistics.median-mode"
+    ],
+    "definition": "序数量表只保证不同等级的先后次序，不预先规定相邻等级的差值具有同一测量单位。允许严格递增的重新编码 g 保持等级顺序；经验中位等级随编码变成 g(原中位等级)，但算术均值一般不满足 mean(g(x))=g(mean(x))。",
+    "statement": null,
+    "assumptions": [
+      "等级编码代表有序类别；若要解释均值差距，需额外假定近似等距的区间尺度。",
+      "严格递增的重新编码只保留排序，不意味着保留数值加法或距离。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "严格递增函数对任意两个等级保持 x_i<x_j 当且仅当 g(x_i)<g(x_j)，所以中间顺序位置不变。",
+      "求和平均不与一般非线性重编码交换：g(Σx_i/n) 不必等于 Σg(x_i)/n。",
+      "对等级信息优先报告各等级频数/比例及明确约定的中位类别；若使用均值必须说明尺度假设与敏感性。"
+    ],
+    "boundaries": [
+      "偶数样本的数值中位数若取两中间值的平均，非线性编码下不再严格保持；应使用顺序类别的中位区间。",
+      "编码严格单调且不同等级有序的结论不意味着不同学校测量尺度可比较。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要把满意度等级编号 1 到 5，均值差 1 就具有客观的等距含义",
+        "example": "同样的排序可用 (1,2,4) 或重编码 (1,2,100)，其均值分别为 7/3 和 103/3。",
+        "explanation": "有序信息没有唯一的间距；平均值对重编码敏感。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "样本满意度类别编码 (1,2,4)，求中位等级与均值。",
+        "steps": [
+          "排序已经是 1<2<4，中间等级为 2。",
+          "算术均值是 (1+2+4)/3=7/3。"
+        ],
+        "answer": "中位类别 2；均值 7/3（需区间尺度假设解释）。",
+        "check": "重新编码 4→100 后中间类别依然为 2，均值却变为 103/3。"
+      },
+      {
+        "question": "五条等级为 (1,1,2,4,4)，报告合适的排序统计。",
+        "steps": [
+          "排序后第三个位置是等级 2。",
+          "各等级频数：1 有 2 人、2 有 1 人、4 有 2 人。"
+        ],
+        "answer": "中位等级 2；频数为 {1:2,2:1,4:2}。",
+        "check": "非线性递增重编码后中位等级的顺序位置不变。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "等级整数标签可以无条件视为实数间的等距测量",
+        "why_wrong": "数字只是类别编码；数据给出顺序不自动给出等距加法结构。",
+        "repair_question": "把 4 编成 100 为什么不改变排序却改变均值？"
+      }
+    ],
+    "hint_ladder": [
+      "先确定数据记录的是次序还是可度量的距离。",
+      "寻找保持排序但改变间距的重编码。",
+      "检查你的统计量在该重编码下是否保持同一解释。"
+    ],
+    "transfer": {
+      "near": "对于 (1,2,2,5,5) 分别求中位等级和频数。",
+      "far": "设计学生满意度调查报告，同时给出频数条形图和均值对非线性编码的敏感性说明。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.music.harmonic-period",
+    "curriculum_ids": [
+      "HS-MATH-148"
+    ],
+    "kind": "method",
+    "title": "整数泛音叠加的公共周期、最小周期与采样边界",
+    "version": "1.0.0",
+    "notation": [
+      "f₀>0",
+      "s(t)=Σ_j A_j cos(2π k_j f₀ t+φ_j)",
+      "T=1/f₀"
+    ],
+    "prerequisites": [
+      "余弦函数的周期",
+      "正整数最大公因数"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.trig.sine-cosine-graphs"
+    ],
+    "definition": null,
+    "statement": "在 f₀>0、所有 k_j 为正整数的有限泛音模型中，各非零振幅余弦项都有公共周期 T₀=1/f₀。若合并相同频率后每个有效谐波系数非零且频率指数集合为 K，则最小正周期为 1/(gcd(K)f₀)；采样的离散图像不能单独证明连续信号频率没有混叠。",
+    "assumptions": [
+      "这里只处理有限个频率为正整数倍 f₀ 的纯余弦波；忽略阻尼、相位漂移及非整数泛音。",
+      "相同频率需要先合并为有效正弦余弦系数，已完全抵消的谐波不得参与 gcd。"
+    ],
+    "proof_steps": [],
+    "rationale_steps": [
+      "对每一项 t→t+1/f₀，角度增加 2πk_j，因此函数值不变，和也不变。",
+      "每个有效谐波要求相位周期 k_j f₀ T 为整数；所有指数的最小共同整数约束由最大公因数给出。",
+      "若采样频率 f_s 太低，频率 f 和 f+m f_s 的样本在等间隔时刻有相同相位差，无法仅凭采样值判定真实频率。"
+    ],
+    "boundaries": [
+      "不是所有信号都具有最小正周期，如所有振幅为 0 得到常值函数，其正周期没有最小值。",
+      "有非整数或无理频率比时一般不保证共同正周期。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "两个泛音叠加后的最小周期一定为 1/f₀",
+        "example": "只含 2f₀ 与 4f₀ 的非零谐波时，最小周期为 1/(2f₀)，比 T₀ 小一半。",
+        "explanation": "1/f₀ 总是公共周期，但不必是最小周期。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "频率 200Hz 和 400Hz（以 100Hz 为基频），求共同和最小周期。",
+        "steps": [
+          "指数集合为 K={2,4}，最大公因数 2。",
+          "最小周期为 1/(2×100)=0.005 秒。"
+        ],
+        "answer": "最小正周期 5ms；10ms 也是周期。",
+        "check": "对 5ms 位移，200Hz 走 1 周，400Hz 走 2 周。"
+      },
+      {
+        "question": "频率 300Hz 和 500Hz，以 100Hz 为基频，求最小周期。",
+        "steps": [
+          "指数集合 K={3,5}，gcd(3,5)=1。",
+          "最小周期 1/(1×100)=0.01 秒。"
+        ],
+        "answer": "最小正周期 10ms。",
+        "check": "300Hz 在 10ms 完成 3 周，500Hz 完成 5 周。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "共同周期和基本周期是同一个概念",
+        "why_wrong": "公共周期可以是基本周期的正整数倍；最小周期需合并有效频率后判断。",
+        "repair_question": "对仅含偶数倍泛音的信号，为什么 T₀/2 也可能是周期？"
+      }
+    ],
+    "hint_ladder": [
+      "先列出全部有效频率的整数倍系数。",
+      "检验增加 T 后每项角度是否变化 2π 的整数倍。",
+      "用 gcd 找可能更短的共同正周期，同时检查信号是否恒为零。"
+    ],
+    "transfer": {
+      "near": "求谐波 6f₀ 和 9f₀ 的最小正周期。",
+      "far": "解释数字音频采样为什么需要足够高的采样率和适当抗混叠滤波。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  },
+  {
+    "id": "math.hs.elective.difference.affine-fixed-point",
+    "curriculum_ids": [
+      "HS-MATH-150"
+    ],
+    "kind": "theorem",
+    "title": "仿射一阶差分方程的不动点、显式解与收敛条件",
+    "version": "1.0.0",
+    "notation": [
+      "x_{n+1}=a x_n+b",
+      "x*=b/(1-a)",
+      "|a|<1"
+    ],
+    "prerequisites": [
+      "等比数列通项",
+      "极限与绝对值"
+    ],
+    "prerequisite_lesson_ids": [
+      "math.hs.sequence.recurrence"
+    ],
+    "definition": null,
+    "statement": "对实系数 a,b 和初值 x₀，若 a≠1，令 x*=b/(1-a)，则唯一序列解为 x_n=x*+aⁿ(x₀-x*)。当 |a|<1 时任意初值收敛到 x*；当 |a|>1 且 x₀≠x* 时绝对偏差发散；a=-1 且 x₀≠x* 时两点振荡。若 a=1，则 x_n=x₀+nb。",
+    "assumptions": [
+      "n 为非负整数，a,b,x₀ 为有限实数；a=1 必须单独分支。",
+      "关于收敛的结论是精确数学模型，不自动代表现实人口或资本模型的有效性。"
+    ],
+    "proof_steps": [
+      {
+        "claim": "a≠1 时解不动点方程 x*=ax*+b 得 x*=b/(1-a)。",
+        "reason": "将不动点方程移项，确保分母不为 0。"
+      },
+      {
+        "claim": "令 y_n=x_n-x*，则 y_{n+1}=a y_n，归纳得 y_n=aⁿ(x₀-x*)。",
+        "reason": "代入不动点等式抵消常数 b，应用等比递推。"
+      },
+      {
+        "claim": "对 |a|<1，aⁿ→0，故 x_n→x*；若 |a|>1 且初始偏差非零，则 |aⁿ(x₀-x*)|→∞。",
+        "reason": "等比数列的极限结论及偏差非零条件。"
+      },
+      {
+        "claim": "当 a=-1，y_n=(-1)ⁿy₀ 交替；当 a=1，逐步累加相同增量 b 得 x_n=x₀+nb。",
+        "reason": "奇偶性和恒定差分的求和。"
+      }
+    ],
+    "rationale_steps": [],
+    "boundaries": [
+      "若 |a|>1 但初值恰为不动点，序列仍恒等于 x*，不能宣称所有初值都发散。",
+      "a=1、b=0 时每个点都是不动点；a=1、b≠0 时没有不动点。"
+    ],
+    "counterexamples": [
+      {
+        "false_claim": "只要 |a|≥1，就不可能存在收敛解",
+        "example": "当 a=2、b=1、x₀=-1 时不动点为 -1，递推序列恒为 -1。",
+        "explanation": "发散结论必须排除恰好处于不动点的特殊初值。"
+      }
+    ],
+    "worked_examples": [
+      {
+        "question": "x_{n+1}=x_n/2+3，x₀=0，求通项和极限。",
+        "steps": [
+          "a=1/2，x*=3/(1-1/2)=6。",
+          "x_n=6+(1/2)^n(0-6)=6(1-2^{-n})。"
+        ],
+        "answer": "x_n=6(1-2^{-n})，极限 6。",
+        "check": "n=0 时为 0；n=1 时为 3，满足递推。"
+      },
+      {
+        "question": "x_{n+1}=-x_n+4，x₀=1，是否收敛？",
+        "steps": [
+          "a=-1，x*=4/(1+1)=2。",
+          "偏差初值 -1，每步变号，序列 1,3,1,3,…。"
+        ],
+        "answer": "不收敛，在 1 与 3 之间振荡。",
+        "check": "递推验证 1→3→1，注意 |a|=1 的边界。"
+      }
+    ],
+    "misconceptions": [
+      {
+        "error": "把稳定收敛条件误写为 |a|≤1",
+        "why_wrong": "a=-1 可周期震荡；a=1、b≠0 可线性漂移，边界需单列。",
+        "repair_question": "a=-1 时偏差 aⁿ(x₀-x*) 是否趋于零？"
+      }
+    ],
+    "hint_ladder": [
+      "先解 x=ax+b，注意分母是否为零。",
+      "让递推式减去不动点，化为等比数列。",
+      "按 |a|<1、=1、>1 分类，再检查特殊初值。"
+    ],
+    "transfer": {
+      "near": "判断 a=3/4、b=2、x₀=-2 的极限。",
+      "far": "在等额年金或库存回补系统中检查线性更新的数值稳定性与非负状态约束。"
+    },
+    "provenance": {
+      "kind": "PROJECT_AUTHORED",
+      "permission": "PROJECT_AUTHORED",
+      "curriculum_standard": "普通高中数学课程标准（2017年版2020年修订）",
+      "standard_url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+      "author_role": "PROJECT_AUTHOR"
+    },
+    "review": {
+      "status": "REVIEW_PENDING",
+      "reviewer_id": null,
+      "reviewed_at": null,
+      "review_record": null
+    },
+    "teacher_solution_visibility": "TEACHER_ONLY"
+  }
+]

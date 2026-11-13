@@ -1,0 +1,76 @@
+{
+  "candidate_splits_total": 62,
+  "confirmed_full_page_teacher_reviews": 0,
+  "legacy_113_entries_not_a_curriculum_denominator": true,
+  "missing_official_atoms_count": null,
+  "official_denominator_known": 0,
+  "schema_version": "kb67-conservative-tracks-v1",
+  "source_leads_total": 428,
+  "teacher_approved_total": 0,
+  "tracks": {
+    "COMPULSORY": {
+      "coverage_fraction": null,
+      "fully_verified_official_clauses": 0,
+      "heuristic_source_leads": 142,
+      "internal_provisional_atom_splits": 60,
+      "official_atom_denominator": null,
+      "student_publishable": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_A": {
+      "coverage_fraction": null,
+      "fully_verified_official_clauses": 0,
+      "heuristic_source_leads": 69,
+      "internal_provisional_atom_splits": 0,
+      "official_atom_denominator": null,
+      "student_publishable": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_B": {
+      "coverage_fraction": null,
+      "fully_verified_official_clauses": 0,
+      "heuristic_source_leads": 70,
+      "internal_provisional_atom_splits": 2,
+      "official_atom_denominator": null,
+      "student_publishable": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_C": {
+      "coverage_fraction": null,
+      "fully_verified_official_clauses": 0,
+      "heuristic_source_leads": 29,
+      "internal_provisional_atom_splits": 0,
+      "official_atom_denominator": null,
+      "student_publishable": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_D": {
+      "coverage_fraction": null,
+      "fully_verified_official_clauses": 0,
+      "heuristic_source_leads": 17,
+      "internal_provisional_atom_splits": 0,
+      "official_atom_denominator": null,
+      "student_publishable": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_E": {
+      "coverage_fraction": null,
+      "fully_verified_official_clauses": 0,
+      "heuristic_source_leads": 0,
+      "internal_provisional_atom_splits": 0,
+      "official_atom_denominator": null,
+      "student_publishable": 0,
+      "teacher_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "coverage_fraction": null,
+      "fully_verified_official_clauses": 0,
+      "heuristic_source_leads": 101,
+      "internal_provisional_atom_splits": 0,
+      "official_atom_denominator": null,
+      "student_publishable": 0,
+      "teacher_approved": 0
+    }
+  },
+  "unknown_scope_not_equivalent_to_zero": true
+}

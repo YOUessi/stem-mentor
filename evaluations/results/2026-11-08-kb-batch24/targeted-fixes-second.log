@@ -1,0 +1,25 @@
+F..                                                                      [100%]
+=================================== FAILURES ===================================
+__________________ test_reproducible_reports_and_full_schema ___________________
+
+    def test_reproducible_reports_and_full_schema():
+        result = subprocess.run([sys.executable, "scripts/build_kb_batch07_audit.py", "--check"],
+            cwd=ROOT, capture_output=True, text=True)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: Traceback (most recent call last):
+E           File "/Users/youtang/Documents/文件/stem-mentor-kb-batch24/scripts/build_kb_batch07_audit.py", line 235, in <module>
+E             main()
+E             ~~~~^^
+E           File "/Users/youtang/Documents/文件/stem-mentor-kb-batch24/scripts/build_kb_batch07_audit.py", line 221, in main
+E             artifacts = build()
+E           File "/Users/youtang/Documents/文件/stem-mentor-kb-batch24/scripts/build_kb_batch07_audit.py", line 68, in build
+E             raise ValueError("Batch20 frozen mathematical proof baseline drift")
+E         ValueError: Batch20 frozen mathematical proof baseline drift
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/Users/youtang/Documents/文件/stem-mentor-kb-batch24/backend/../.venv/bin/python', 'scripts/buil...r("Batch20 frozen mathematical proof baseline drift")\nValueError: Batch20 frozen mathematical proof baseline drift\n').returncode
+
+tests/test_kb_batch07_audits.py:28: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch07_audits.py::test_reproducible_reports_and_full_schema
+1 failed, 2 passed in 1.26s

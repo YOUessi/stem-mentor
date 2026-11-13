@@ -1,0 +1,185 @@
+{
+  "author_sha256": "4fa2473923f9176bd45c278f5a71e412b76a8865f4303c089f9b156c57ee318d",
+  "batch": 115,
+  "formal_proof_certificates": 0,
+  "lesson_completeness": [
+    {
+      "counterexample_count": 1,
+      "example_count": 2,
+      "hint_count": 3,
+      "id": "math.hs.batch115.01",
+      "proof_steps_machine_certified": 0,
+      "required_structural_fields_present": true,
+      "review_status": "REVIEW_PENDING",
+      "teacher_reviewed": false
+    },
+    {
+      "counterexample_count": 1,
+      "example_count": 2,
+      "hint_count": 3,
+      "id": "math.hs.batch115.02",
+      "proof_steps_machine_certified": 0,
+      "required_structural_fields_present": true,
+      "review_status": "REVIEW_PENDING",
+      "teacher_reviewed": false
+    },
+    {
+      "counterexample_count": 1,
+      "example_count": 2,
+      "hint_count": 3,
+      "id": "math.hs.batch115.03",
+      "proof_steps_machine_certified": 0,
+      "required_structural_fields_present": true,
+      "review_status": "REVIEW_PENDING",
+      "teacher_reviewed": false
+    },
+    {
+      "counterexample_count": 1,
+      "example_count": 2,
+      "hint_count": 3,
+      "id": "math.hs.batch115.04",
+      "proof_steps_machine_certified": 0,
+      "required_structural_fields_present": true,
+      "review_status": "REVIEW_PENDING",
+      "teacher_reviewed": false
+    },
+    {
+      "counterexample_count": 1,
+      "example_count": 2,
+      "hint_count": 3,
+      "id": "math.hs.batch115.05",
+      "proof_steps_machine_certified": 0,
+      "required_structural_fields_present": true,
+      "review_status": "REVIEW_PENDING",
+      "teacher_reviewed": false
+    },
+    {
+      "counterexample_count": 1,
+      "example_count": 2,
+      "hint_count": 3,
+      "id": "math.hs.batch115.06",
+      "proof_steps_machine_certified": 0,
+      "required_structural_fields_present": true,
+      "review_status": "REVIEW_PENDING",
+      "teacher_reviewed": false
+    },
+    {
+      "counterexample_count": 1,
+      "example_count": 2,
+      "hint_count": 3,
+      "id": "math.hs.batch115.07",
+      "proof_steps_machine_certified": 0,
+      "required_structural_fields_present": true,
+      "review_status": "REVIEW_PENDING",
+      "teacher_reviewed": false
+    },
+    {
+      "counterexample_count": 1,
+      "example_count": 2,
+      "hint_count": 3,
+      "id": "math.hs.batch115.08",
+      "proof_steps_machine_certified": 0,
+      "required_structural_fields_present": true,
+      "review_status": "REVIEW_PENDING",
+      "teacher_reviewed": false
+    }
+  ],
+  "lesson_kind_counts": {
+    "concept": 2,
+    "method": 3,
+    "theorem": 3
+  },
+  "new_counterexamples": 8,
+  "new_deep_drafts": 8,
+  "new_hint_levels": 24,
+  "new_teacher_worked_examples": 16,
+  "new_transfer_tasks": 16,
+  "new_uncertified_proof_steps": 9,
+  "prior_deep_drafts": 482,
+  "source_links": [
+    {
+      "candidate_id": "KB115-P025-C03",
+      "engineering_curriculum_id": "HS-MATH-032",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch115.01",
+      "official_atom_id": null,
+      "source_printed_page": 25,
+      "source_track_hint": "COMPULSORY",
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "KB115-P026-C05",
+      "engineering_curriculum_id": "HS-MATH-033",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch115.02",
+      "official_atom_id": null,
+      "source_printed_page": 26,
+      "source_track_hint": "COMPULSORY",
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "KB115-P026-C07",
+      "engineering_curriculum_id": "HS-MATH-034",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch115.03",
+      "official_atom_id": null,
+      "source_printed_page": 26,
+      "source_track_hint": "COMPULSORY",
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "KB115-P026-C09",
+      "engineering_curriculum_id": "HS-MATH-034",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch115.04",
+      "official_atom_id": null,
+      "source_printed_page": 26,
+      "source_track_hint": "COMPULSORY",
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "KB115-P062-C15",
+      "engineering_curriculum_id": "HS-MATH-129",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch115.05",
+      "official_atom_id": null,
+      "source_printed_page": 62,
+      "source_track_hint": "ELECTIVE_B",
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "KB115-P062-C16",
+      "engineering_curriculum_id": "HS-MATH-136",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch115.06",
+      "official_atom_id": null,
+      "source_printed_page": 62,
+      "source_track_hint": "ELECTIVE_B",
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "KB115-P062-C17",
+      "engineering_curriculum_id": "HS-MATH-137",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch115.07",
+      "official_atom_id": null,
+      "source_printed_page": 62,
+      "source_track_hint": "ELECTIVE_B",
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "KB115-P063-C24",
+      "engineering_curriculum_id": "HS-MATH-142",
+      "general_proof_certified": false,
+      "lesson_id": "math.hs.batch115.08",
+      "official_atom_id": null,
+      "source_printed_page": 63,
+      "source_track_hint": "ELECTIVE_B",
+      "teacher_approved": false
+    }
+  ],
+  "student_authoritative_releases": 0,
+  "student_free_text_proof_certificates": 0,
+  "teacher_approvals": 0,
+  "total_deep_drafts": 490
+}

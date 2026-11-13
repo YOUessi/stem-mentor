@@ -1,0 +1,101 @@
+{
+  "version": "0.1.0",
+  "status": "PROJECT_HIGH_LEVEL_SCOPE_AUDIT_REVIEW_PENDING",
+  "basis": "普通高中数学课程标准（2017年版2020年修订）",
+  "url": "https://jyj.changdu.gov.cn/cdsjyj/c101476/202205/764ee1914e3c45aaba8e372f1b628a34/files/75676dfa9af0442db1457404a884a69f.pdf",
+  "scope_note": "This is an independently authored high-level crosswalk, not a verbatim official syllabus, teacher-approved itemization, or evidence that the existing 113 project atoms exhaust the official standard.",
+  "structure_coverage": "课程结构章节（页9–13），课程内容章节（必修页13起、选择性必修页36起、选修页50起）；页码为纸质标准页码。",
+  "tracks": [
+    {
+      "id": "COMPULSORY",
+      "label": "必修",
+      "themes": [
+        "预备知识",
+        "函数",
+        "几何与代数",
+        "概率与统计",
+        "数学建模活动与数学探究活动"
+      ],
+      "status": "HIGH_LEVEL_MATCH"
+    },
+    {
+      "id": "SELECTIVE_COMPULSORY",
+      "label": "选择性必修",
+      "themes": [
+        "函数",
+        "几何与代数",
+        "概率与统计",
+        "数学建模活动与数学探究活动"
+      ],
+      "status": "HIGH_LEVEL_MATCH"
+    },
+    {
+      "id": "ELECTIVE_A",
+      "label": "选修 A",
+      "themes": [
+        "微积分",
+        "空间向量与代数",
+        "概率与统计"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    },
+    {
+      "id": "ELECTIVE_B",
+      "label": "选修 B",
+      "themes": [
+        "微积分",
+        "空间向量与代数",
+        "应用统计",
+        "模型"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    },
+    {
+      "id": "ELECTIVE_C",
+      "label": "选修 C",
+      "themes": [
+        "逻辑推理初步",
+        "数学模型",
+        "社会调查与数据分析"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    },
+    {
+      "id": "ELECTIVE_D",
+      "label": "选修 D",
+      "themes": [
+        "美与数学",
+        "音乐中的数学",
+        "美术中的数学",
+        "体育运动中的数学"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    },
+    {
+      "id": "ELECTIVE_E",
+      "label": "选修 E",
+      "themes": [
+        "拓展视野",
+        "日常生活",
+        "地方特色",
+        "大学数学先修（微积分、解析几何与线性代数、概率论与数理统计）"
+      ],
+      "status": "MISSING_EXPLICIT_PROJECT_TOPIC_MAPPING"
+    }
+  ],
+  "legacy_theme_normalization": {
+    "数学建模与探究": "数学建模活动与数学探究活动"
+  },
+  "legacy_level_normalization": {
+    "必修": "COMPULSORY",
+    "选择性必修": "SELECTIVE_COMPULSORY",
+    "选修拓展": "ELECTIVE_UNASSIGNED"
+  },
+  "review_status": "PENDING",
+  "notes": [
+    "113 project concepts are not the official course atom count; mapping must remain provisional.",
+    "7 legacy 选修拓展 topics must not be silently equated to the full A/B/C/D/E electives.",
+    "Official mathematics culture is integrated across tracks, not a separate complete unit.",
+    "Keep source copyright intact; this file includes a short project-authored crosswalk only."
+  ]
+}
