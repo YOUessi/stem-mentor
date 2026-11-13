@@ -1,0 +1,56 @@
+{
+  "course_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "formal_general_proofs": 0,
+  "generated_at_mac": "2026-11-14T03:14:57+08:00",
+  "math_exact_cases": 32,
+  "math_invalid_preconditions": 8,
+  "runs": {
+    "KB_BATCH139_BROWSER": {
+      "bytes": 2443,
+      "exit": 0,
+      "sha256": "f66d9d1091afe84b9713e399ed64b14f10f4f06625e4521a92567d9a4c1f313a",
+      "stats": [
+        "9 passed",
+        "2 passed"
+      ]
+    },
+    "KB_BATCH139_FOCUSED": {
+      "bytes": 871,
+      "exit": 0,
+      "sha256": "6b587b4c7a5964b4c0c6b1f1007097ad89a591c826ceb241853c26fe4bd63456",
+      "stats": [
+        "230 passed, 1 warning"
+      ]
+    },
+    "KB_BATCH139_MAC_FULL": {
+      "bytes": 132177,
+      "exit": 0,
+      "sha256": "e76cbd5e0b9d04a315f1c3fbe78cb564376fe284454e720350302d8b8cba25be",
+      "stats": [
+        "584 passed",
+        "275 passed",
+        "239 passed, 1 warning",
+        "258 passed, 1 warning",
+        "188 passed, 1 warning",
+        "201 passed, 1 warning",
+        "230 passed, 1 warning",
+        "110 passed",
+        "66293 passed, 5 skipped, 1 warning"
+      ]
+    }
+  },
+  "schema": "kb139-real-run-test-manifest/1",
+  "source_commit": "6d434dff0327bcd35c58c2fec6af9637901bcaf8",
+  "source_only_ci_status": "SUCCESS verified for GitHub 0c586aff87c32c4d2bcfb5309f70a49fe88de69d",
+  "source_tree": "847a27fbbc88723946828d9d6bdc525662d180c9",
+  "student_authoritative": 0,
+  "teacher_approved": 0
+}
