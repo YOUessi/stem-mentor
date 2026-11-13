@@ -1,0 +1,91 @@
+{
+  "all_seven_official_coverage_ratio": null,
+  "curriculum_source_semantic_verification": "UNFINISHED",
+  "existing_teacher_only_draft_manuscripts": 57,
+  "free_student_steps_verified": 0,
+  "general_formal_proof_certificates": 0,
+  "historical_engineering_map_is_not_denominator": 113,
+  "historical_formally_uncertified_proof_steps": 538,
+  "historical_p0_proof_step_denominator": 127,
+  "human_teacher_approvals": 0,
+  "independent_exact_kb141_invalid_preconditions": 47,
+  "independent_exact_kb141_positive_cases": 47,
+  "independently_checked_kb141_steps_added_batch142": 35,
+  "independently_checked_kb141_steps_before_batch142": 12,
+  "independently_checked_kb141_steps_now": 47,
+  "kb141_subset_without_exact_witness": 0,
+  "newly_source_locked_legacy_cards_in_kb141": 47,
+  "official_course_atom_census_complete": false,
+  "official_denominators_known": false,
+  "p0_source_locked_cards": 127,
+  "per_track": {
+    "COMPULSORY": {
+      "official_atom_denominator": null,
+      "official_atoms_audited_as_complete": null,
+      "official_coverage_ratio": null,
+      "provisional_teacher_manuscripts": 27,
+      "student_authoritative": 0,
+      "teacher_approved": 0,
+      "track_publishable": false
+    },
+    "ELECTIVE_A": {
+      "official_atom_denominator": null,
+      "official_atoms_audited_as_complete": null,
+      "official_coverage_ratio": null,
+      "provisional_teacher_manuscripts": 9,
+      "student_authoritative": 0,
+      "teacher_approved": 0,
+      "track_publishable": false
+    },
+    "ELECTIVE_B": {
+      "official_atom_denominator": null,
+      "official_atoms_audited_as_complete": null,
+      "official_coverage_ratio": null,
+      "provisional_teacher_manuscripts": 2,
+      "student_authoritative": 0,
+      "teacher_approved": 0,
+      "track_publishable": false
+    },
+    "ELECTIVE_C": {
+      "official_atom_denominator": null,
+      "official_atoms_audited_as_complete": null,
+      "official_coverage_ratio": null,
+      "provisional_teacher_manuscripts": 2,
+      "student_authoritative": 0,
+      "teacher_approved": 0,
+      "track_publishable": false
+    },
+    "ELECTIVE_D": {
+      "official_atom_denominator": null,
+      "official_atoms_audited_as_complete": null,
+      "official_coverage_ratio": null,
+      "provisional_teacher_manuscripts": 2,
+      "student_authoritative": 0,
+      "teacher_approved": 0,
+      "track_publishable": false
+    },
+    "ELECTIVE_E": {
+      "official_atom_denominator": null,
+      "official_atoms_audited_as_complete": null,
+      "official_coverage_ratio": null,
+      "provisional_teacher_manuscripts": 2,
+      "student_authoritative": 0,
+      "teacher_approved": 0,
+      "track_publishable": false
+    },
+    "SELECTIVE_COMPULSORY": {
+      "official_atom_denominator": null,
+      "official_atoms_audited_as_complete": null,
+      "official_coverage_ratio": null,
+      "provisional_teacher_manuscripts": 13,
+      "student_authoritative": 0,
+      "teacher_approved": 0,
+      "track_publishable": false
+    }
+  },
+  "schema": "kb142-seven-track-editorial-and-proofs-risk-ledger/1",
+  "scope_warning": "127 P0 source-cards != 127 universal proofs; 47 finite-case audits are only a subset, 57 manuscripts != official syllabus coverage",
+  "standard_reference": "China general senior high school mathematics 2017 edition 2020 revision",
+  "student_authoritative_releases": 0,
+  "unresolved_math_conflicts": 10
+}

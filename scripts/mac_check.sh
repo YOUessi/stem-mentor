@@ -288,6 +288,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch140_p0_proof
 .venv/bin/python scripts/build_kb_batch141_lineage.py --check
 .venv/bin/python scripts/check_kb_batch141_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch141_p0_lineage.py
+# Batch142: finish 35 remaining KB141 source-locked P0 finite math obligations,
+# expose seven-track UNKNOWN denominator accounting and student fail-closed guards.
+.venv/bin/python scripts/check_kb_batch142_remaining_oracles.py --check
+.venv/bin/python scripts/build_kb_batch142_ledger.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch142_p0_exact_scope.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
