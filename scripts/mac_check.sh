@@ -218,6 +218,10 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch107_lessons.py --check
 # 12 finite exact witnesses. No auto-certified knowledge or official denominator.
 .venv/bin/python scripts/build_kb_batch126_context_evidence.py --check --verify-local-source
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch126_context_attestation.py
+# Batch127: 28 seven-track source dossiers, eight full pending lessons, 32 finite oracles.
+.venv/bin/python scripts/build_kb_batch127_source_review.py --check
+.venv/bin/python scripts/build_kb_batch127_deep_lessons.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch127_source_lessons.py
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"

@@ -1,0 +1,54 @@
+{
+  "batch": 127,
+  "cross_topic_checks": 8,
+  "exact_worked_examples": 16,
+  "general_theorems_formally_certified": 0,
+  "independent_negative_cases": 8,
+  "mathematical_witnesses_not_general_proofs": true,
+  "per_lesson": {
+    "119-a01": {
+      "cross": 1,
+      "negative": 1,
+      "worked_exact": 2
+    },
+    "119-b04": {
+      "cross": 1,
+      "negative": 1,
+      "worked_exact": 2
+    },
+    "119-c01": {
+      "cross": 1,
+      "negative": 1,
+      "worked_exact": 2
+    },
+    "119-c06": {
+      "cross": 1,
+      "negative": 1,
+      "worked_exact": 2
+    },
+    "119-ec03": {
+      "cross": 1,
+      "negative": 1,
+      "worked_exact": 2
+    },
+    "119-ed03": {
+      "cross": 1,
+      "negative": 1,
+      "worked_exact": 2
+    },
+    "119-s02": {
+      "cross": 1,
+      "negative": 1,
+      "worked_exact": 2
+    },
+    "119-s04": {
+      "cross": 1,
+      "negative": 1,
+      "worked_exact": 2
+    }
+  },
+  "student_authoritative": 0,
+  "student_free_steps_certified": 0,
+  "teacher_approved": 0,
+  "teacher_review_status": "REVIEW_PENDING"
+}
