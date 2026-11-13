@@ -293,6 +293,12 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch141_p0_linea
 .venv/bin/python scripts/check_kb_batch142_remaining_oracles.py --check
 .venv/bin/python scripts/build_kb_batch142_ledger.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch142_p0_exact_scope.py
+# Batch143: eight original cross-domain teacher-only full manuscripts; Mac-only original PDF line replay,
+# exact finite oracle, seven-track truthful denominator, gated FTS and API leak regression.
+.venv/bin/python scripts/build_kb_batch143_lessons.py --check-mac
+.venv/bin/python scripts/check_kb_batch143_math.py --check
+.venv/bin/python scripts/build_kb_batch143_source_gap.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch143_eight_math_integrity.py tests/test_kb_batch143_source_to_depth_gaps.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
