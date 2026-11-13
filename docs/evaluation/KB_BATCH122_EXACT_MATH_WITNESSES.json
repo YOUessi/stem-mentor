@@ -1,0 +1,53 @@
+{
+  "batch": 122,
+  "boundary_case_names": [
+    "BINOMIAL_P_ZERO",
+    "BINOMIAL_P_ONE",
+    "HYPERGEOM_SUPPORT",
+    "NORMAL_SCALE_NONZERO",
+    "FULL_RANK_UNIQUE",
+    "SADDLE_NOT_EXTREMUM",
+    "EQUIVALENCE_DIRECTION",
+    "GAUSSIAN_ZERO_STD_NOT_FINITE"
+  ],
+  "cross_topic_exact_boundary_checks_passed": 8,
+  "details_by_lesson": {
+    "B303": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "C303": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "C306": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "C307": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "C311": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "S304": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "S305": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "S307": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    }
+  },
+  "exact_worked_cases_passed": 16,
+  "free_text_student_steps_verified": false,
+  "general_formal_theorems_proven": 0,
+  "lesson_boundary_negative_checks_passed": 8,
+  "teacher_approved": 0
+}
