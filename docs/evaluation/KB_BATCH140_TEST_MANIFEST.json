@@ -1,0 +1,65 @@
+{
+  "backend_skipped": 5,
+  "browser_pytest_passed": 2,
+  "chrome_playwright_exit_code": 0,
+  "ci_can_only_replay_archived_logs": true,
+  "focused_pytest_passed": 370,
+  "general_proof_certifications": 0,
+  "historical_unverified_steps": 538,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2442,
+      "exit": "docs/evaluation/logs/KB_BATCH140_BROWSER.exit",
+      "exit_code": 0,
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log": "docs/evaluation/logs/KB_BATCH140_BROWSER.log",
+      "sha256": "6d3c1e9b722a316672a1b341a43a0ffbaf6fde8c5d5a99a71be479ecee524b2e"
+    },
+    "FOCUSED": {
+      "bytes": 500,
+      "exit": "docs/evaluation/logs/KB_BATCH140_FOCUSED.exit",
+      "exit_code": 0,
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log": "docs/evaluation/logs/KB_BATCH140_FOCUSED.log",
+      "sha256": "5e5cec609d88662424eaf3bcfc36d011cdcabcfbad6936262ea04d1ea9c4157c"
+    },
+    "MAC_FULL": {
+      "bytes": 132861,
+      "exit": "docs/evaluation/logs/KB_BATCH140_MAC_FULL.exit",
+      "exit_code": 0,
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log": "docs/evaluation/logs/KB_BATCH140_MAC_FULL.log",
+      "sha256": "6be566b8606583b6900ce686fa185e2a1918a10b2d959ec02adf289275e15a36"
+    }
+  },
+  "mac_pdfkit_source_rehashed": true,
+  "math_conflicts_unresolved": 10,
+  "math_finite_cases": 48,
+  "math_invalid_premises": 24,
+  "math_valid_cases": 24,
+  "new_complete_teacher_manuscripts": 0,
+  "new_p0_source_cards": 24,
+  "node_passed": 111,
+  "official_track_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "original_mac_execution_all_zero": true,
+  "p0_denominator": 127,
+  "p0_with_earlier_editorial_reviews": 127,
+  "p0_with_newer_cards": 80,
+  "p0_without_newer_cards": 47,
+  "previous_bounded_teacher_manuscripts": 57,
+  "python_backend_passed": 66293,
+  "run_date": "2026-11-14",
+  "schema": "kb140-mac-evidence/1",
+  "source_parent_remote_sha": "9df4209a4467385fb4ddf7e89e775716c98cd7e3",
+  "student_authoritative_releases": 0,
+  "teacher_approvals": 0,
+  "test_source": "AUTHORIZED_MAC_NOT_TANG"
+}
