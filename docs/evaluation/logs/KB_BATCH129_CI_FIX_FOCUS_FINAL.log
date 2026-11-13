@@ -1,0 +1,27 @@
+Batch127 28 source dossiers across 7 tracks; 48 cumulative context cases; 191 unreviewed
+Batch128: 28 source-locked cases, 56 provisional subtargets, 76/239 context-reviewed, 163 left; NO official atoms.
+Batch129: 28 new verified contexts, 104/239 reviewed; 135 remain; 7 official denominators UNKNOWN
+Batch129: nine seven-track teacher manuscripts, 18 verified examples + 9 negatives + 9 cross checks
+{
+  "all_committed_source_records": 84,
+  "batch_127_committed_editorial_records": 28,
+  "batch_128_committed_editorial_records": 28,
+  "batch_129_committed_editorial_records": 28,
+  "official_atoms_certified": 0,
+  "source_hashes_recomputed_in_ci": false,
+  "source_pdf_recomputed_in_ci": false,
+  "teacher_approvals": 0
+}
+PASS: committed-artifact-only gate. Source-PDF replay still REQUIRED on the authorised Mac.
+{
+  "cross_topic_tests": 9,
+  "independent_examples": 18,
+  "invalid_condition_tests": 9,
+  "pending_teacher_lessons": 9,
+  "source_pdf_revalidated": false,
+  "teacher_approved": 0
+}
+PASS: offline math replay + negative gates; source PDF must be replayed separately on Mac.
+........................................................................ [ 55%]
+.........................................................                [100%]
+129 passed in 11.52s

@@ -214,12 +214,13 @@ jobs:
       - run: python scripts/build_kb_batch124_scope.py --check
       - run: python scripts/build_kb_batch124_depth.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch124_scope_depth_math.py
-      - run: python scripts/build_kb_batch127_source_review.py --check
       - run: python scripts/build_kb_batch127_deep_lessons.py --check
-      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch127_source_lessons.py
-      - run: python scripts/build_kb_batch128_source_ledger.py --check
       - run: python scripts/build_kb_batch128_p0_proof_guards.py --check
-      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch128_source_proof.py
+      # The licensed source PDF and its private PDFKit extraction exist ONLY on the authorised Mac.
+      # GitHub CI checks published hashes, provenance and review gates but CANNOT re-open that PDF.
+      - run: python scripts/check_kb_batch127_129_offline.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch129_offline_ci_evidence.py
+      - run: python scripts/check_kb_batch129_offline_lessons.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Fail fast on syntax errors before the long Python/Node/browser suite.
