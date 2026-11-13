@@ -246,6 +246,11 @@ jobs:
       - run: python scripts/build_kb_batch134_lessons.py --check
       - run: python scripts/check_kb_batch134_math.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch134_proof_graph.py
+      # Batch135: teacher-only originals, exact witnesses and student-exposure contract.
+      - run: python scripts/build_kb_batch135_lessons.py --check
+      - run: python scripts/check_kb_batch135_math.py --check
+      - run: python scripts/build_kb_batch135_coverage.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch135_integrated.py tests/test_kb_batch135_coverage.py
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Fail fast on syntax errors before the long Python/Node/browser suite.

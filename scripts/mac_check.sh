@@ -255,6 +255,12 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch133_atomizat
 .venv/bin/python scripts/build_kb_batch134_lessons.py --check
 .venv/bin/python scripts/check_kb_batch134_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch134_proof_graph.py
+# Batch135: eight additional original teacher drafts, 24 finite and four symbolic
+# subclaim checks, and a 22-document review-only FTS/API exposure contract.
+.venv/bin/python scripts/build_kb_batch135_lessons.py --check
+.venv/bin/python scripts/check_kb_batch135_math.py --check
+.venv/bin/python scripts/build_kb_batch135_coverage.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch135_integrated.py tests/test_kb_batch135_coverage.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
