@@ -1,0 +1,62 @@
+{
+  "backend_passed": 66293,
+  "backend_skipped": 5,
+  "browser_mac_exit": 0,
+  "browser_pytest_passed": 2,
+  "date": "2026-11-14",
+  "focused_passed": 197,
+  "free_student_steps_verified": 0,
+  "full_mac_exit": 0,
+  "general_formal_proofs_certified": 0,
+  "github_ci_can_only_rehash_committed_logs": true,
+  "historical_uncertified_proof_steps": 538,
+  "host": "AUTHORIZED_MACBOOK_AIR_ONLY",
+  "kb141_subset_covered_by_finite_cases": 47,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2442,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH142_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH142_BROWSER.log",
+      "sha256": "bce0ebac3bbf0779d0081a1aa74520fbea4c6e59eafb6e753a7edd026139b473"
+    },
+    "FOCUSED": {
+      "bytes": 451,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH142_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH142_FOCUSED.log",
+      "sha256": "11f50891af3db9c07b287e1f78103aacf9281fcb64469a05b5b26834d3f3d937"
+    },
+    "MAC_FULL": {
+      "bytes": 134546,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH142_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH142_MAC_FULL.log",
+      "sha256": "78e254b95ad58f142d6bb70df04573f7433bbc80004c19af03cd3f67cc6baff8"
+    }
+  },
+  "mac_original_pdfkit_rehash": true,
+  "new_exact_math_negative": 35,
+  "new_exact_math_positive": 35,
+  "new_original_deep_manuscripts": 0,
+  "node_passed": 111,
+  "official_course_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "p0_source_card_denominator": 127,
+  "prior_teacher_manuscripts": 57,
+  "remote_pr167_base_sha": "c34a7ef999b0a35668509b4fa731edf90b4d1ca8",
+  "schema": "kb142-real-mac-test-exit-hash-evidence/1",
+  "student_authoritative_releases": 0,
+  "teacher_approvals": 0,
+  "unresolved_math_conflicts": 10
+}
