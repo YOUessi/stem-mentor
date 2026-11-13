@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-13",
+  "batch": 125,
+  "browser_exit": 0,
+  "browser_pytest_passed": 2,
+  "device": "YOUTangdeMacBook-Air.local",
+  "full_exit": 0,
+  "log_files": {
+    "KB_BATCH125_BROWSER_EXIT.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_bytes": 2
+    },
+    "KB_BATCH125_BROWSER_FINAL.log": {
+      "sha256": "711c80640b9bc637fb53831006e8437a8eb41f2e3783b6c9c02d39a62e6f60c2",
+      "size_bytes": 2442
+    },
+    "KB_BATCH125_MAC_CHECK_EXIT.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_bytes": 2
+    },
+    "KB_BATCH125_MAC_CHECK_FINAL.log": {
+      "sha256": "c7dd9329657769786216508f98e15b3fc884e3d35927eb8173142dab8765a26a",
+      "size_bytes": 122238
+    },
+    "KB_BATCH125_TARGETED_EXIT.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_bytes": 2
+    },
+    "KB_BATCH125_TARGETED_FINAL.log": {
+      "sha256": "6949fb3b683e3fbc534560afece0826d5ba9da6bb1d520094c3ceec392cc88d5",
+      "size_bytes": 580
+    }
+  },
+  "node_passed": 111,
+  "official_atom_denominator": null,
+  "python_passed": 66293,
+  "python_skipped": 5,
+  "python_warnings": 1,
+  "source_git_tree": "9057c2f8c452f814fd5d3847d029132754d1ba6b",
+  "source_github_sha": "2564b975c9b3d10f166a970af498fa31e67afa96",
+  "source_local_sha": "55be39ce059dd2be038b202c9d838f1ad0067a01",
+  "student_authoritative": 0,
+  "targeted_passed": 451,
+  "teacher_approved": 0
+}
