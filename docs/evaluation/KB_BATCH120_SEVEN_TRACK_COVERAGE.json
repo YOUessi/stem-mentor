@@ -1,0 +1,80 @@
+{
+  "all_official_atom_denominators_known": false,
+  "batch": 120,
+  "cumulative_editorial_candidates": 113,
+  "new_editorial_candidates": 64,
+  "official_atom_denominator": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "per_track": {
+    "COMPULSORY": {
+      "cumulative_editorial_candidates": 21,
+      "new": 12,
+      "official_atom_denominator": null,
+      "previous": 9,
+      "teacher_approved": 0,
+      "whole_track_complete": false
+    },
+    "ELECTIVE_A": {
+      "cumulative_editorial_candidates": 14,
+      "new": 8,
+      "official_atom_denominator": null,
+      "previous": 6,
+      "teacher_approved": 0,
+      "whole_track_complete": false
+    },
+    "ELECTIVE_B": {
+      "cumulative_editorial_candidates": 12,
+      "new": 8,
+      "official_atom_denominator": null,
+      "previous": 4,
+      "teacher_approved": 0,
+      "whole_track_complete": false
+    },
+    "ELECTIVE_C": {
+      "cumulative_editorial_candidates": 14,
+      "new": 8,
+      "official_atom_denominator": null,
+      "previous": 6,
+      "teacher_approved": 0,
+      "whole_track_complete": false
+    },
+    "ELECTIVE_D": {
+      "cumulative_editorial_candidates": 12,
+      "new": 8,
+      "official_atom_denominator": null,
+      "previous": 4,
+      "teacher_approved": 0,
+      "whole_track_complete": false
+    },
+    "ELECTIVE_E": {
+      "cumulative_editorial_candidates": 12,
+      "new": 8,
+      "official_atom_denominator": null,
+      "previous": 4,
+      "teacher_approved": 0,
+      "whole_track_complete": false
+    },
+    "SELECTIVE_COMPULSORY": {
+      "cumulative_editorial_candidates": 28,
+      "new": 12,
+      "official_atom_denominator": null,
+      "previous": 16,
+      "teacher_approved": 0,
+      "whole_track_complete": false
+    }
+  },
+  "previous_editorial_candidates": 49,
+  "source_cues_linked_cumulative": 144,
+  "source_cues_unlinked": 261,
+  "source_layout_cues": 405,
+  "student_authoritative_releases": 0,
+  "teacher_approved": 0,
+  "whole_curriculum_completed": false
+}
