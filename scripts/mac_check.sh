@@ -261,6 +261,10 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch134_proof_gr
 .venv/bin/python scripts/check_kb_batch135_math.py --check
 .venv/bin/python scripts/build_kb_batch135_coverage.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch135_integrated.py tests/test_kb_batch135_coverage.py
+.venv/bin/python scripts/build_kb_batch136_lessons.py --check
+.venv/bin/python scripts/check_kb_batch136_math.py --check
+.venv/bin/python scripts/build_kb_batch136_coverage.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch136_pilot.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check

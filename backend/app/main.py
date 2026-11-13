@@ -324,3 +324,10 @@ def kb135_review_coverage():
     """Non-authoritative counts only. No public access to unapproved manuscripts."""
     from .kb_batch135_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb136-review-coverage")
+def kb136_review_coverage():
+    """Aggregate draft review status only; NEVER send manuscripts or teacher solutions."""
+    from .kb_batch136_index import public_coverage
+    return public_coverage()
