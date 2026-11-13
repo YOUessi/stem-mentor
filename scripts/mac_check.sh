@@ -227,6 +227,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch127_source_l
 .venv/bin/python scripts/build_kb_batch128_source_ledger.py --check
 .venv/bin/python scripts/build_kb_batch128_p0_proof_guards.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch128_source_proof.py
+# Batch130: original private PDF line replay + 53 contextual cases + eight teacher manuscripts.
+.venv/bin/python scripts/build_kb_batch130_core_source.py --check
+.venv/bin/python scripts/build_kb_batch130_deep_lessons.py --check
+.venv/bin/python scripts/check_kb_batch130_offline.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch130_scope_lessons.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check

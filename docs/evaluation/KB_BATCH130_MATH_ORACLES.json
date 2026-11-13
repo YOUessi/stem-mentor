@@ -1,0 +1,54 @@
+{
+  "batch": 130,
+  "boundary_counterexamples": 8,
+  "counterexample_results": {
+    "120-s103": true,
+    "120-s107": true,
+    "120-s111": true,
+    "121-c201": true,
+    "122-c306": true,
+    "122-c311": true,
+    "123-c407": true,
+    "123-c411": true
+  },
+  "example_results": {
+    "120-s103": [
+      true,
+      true
+    ],
+    "120-s107": [
+      true,
+      true
+    ],
+    "120-s111": [
+      true,
+      true
+    ],
+    "121-c201": [
+      true,
+      true
+    ],
+    "122-c306": [
+      true,
+      true
+    ],
+    "122-c311": [
+      true,
+      true
+    ],
+    "123-c407": [
+      true,
+      true
+    ],
+    "123-c411": [
+      true,
+      true
+    ]
+  },
+  "finite_cases_only": true,
+  "formal_general_theorems_certified": 0,
+  "free_student_steps_verified": 0,
+  "independently_checked_teacher_examples": 16,
+  "student_authoritative": 0,
+  "teacher_approved": 0
+}

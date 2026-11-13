@@ -1,0 +1,626 @@
+[
+  {
+    "applicability_and_hypotheses": "明确U和A、B的元素类型；集合不计重复元素、顺序无关。允许集合本身充当另一个集合的元素，但不能省略层级。",
+    "candidate_id": "hs-semantic-pilot-121-c201",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在分层标签集合中，讨论“一个标签”和“只含该标签的标签集”的查询语义差别。",
+    "formal_definition_or_theorem": "设U为研究论域、A为U内集合；记x∈A表示x是A的一个元素，x∉A表示不是。记A⊆B表示每个x∈A都属于B。元素属于与集合包含是两个不同类型的关系。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb130-deep-121-c201",
+    "knowledge_type": "Concept",
+    "near_transfer": "把A={-1,0}、B={0,1}的交并集算出并用判据说明。",
+    "nonexample_or_failure": "如A={1,2}，1∈A且{1}⊆A，但{1}∈A通常为假；把⊆误写成∈是类型错误。",
+    "notation_and_domain": "符号∈为对象与集合之间的关系；⊆为集合与集合之间的关系；∅表示空集。U的选取影响元素资格。",
+    "objective": "集合的元素属于关系与对象判定",
+    "prerequisite_candidate_ids": [],
+    "reasoned_steps": [
+      {
+        "justification": "若元素是整数，{1}是集合而非整数1，必须先辨识对象层级。",
+        "step": "明确研究论域及元素类型"
+      },
+      {
+        "justification": "只需判定指定对象是否列在集合中，或满足其描述性质。",
+        "step": "按定义检查x∈A"
+      },
+      {
+        "justification": "必须证明全称命题；找出一个A中而不在B中的元素就足以否定包含。",
+        "step": "检查A⊆B时遍历每个A内元素"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 11,
+      "line_sha256": [
+        "93e9e0dbbe63a2d8d571c32520e33e8cadd941605163fc512edb18a4aaa0721e"
+      ],
+      "page": 15,
+      "span_sha256": "93e9e0dbbe63a2d8d571c32520e33e8cadd941605163fc512edb18a4aaa0721e",
+      "start_line": 11
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "EDITORIAL_ORIGINAL_LINE_CHECKED_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先说明元素是整数还是集合。",
+      "写出每个命题左右的对象类型。",
+      "分别代入∈和⊆的形式定义，不凭外观判断。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "A∩B={3}，A∪B={1,2,3}；3属于交集。",
+        "question": "A={1,3},B={2,3}，求交集与并集，并说明元素3的归属。",
+        "reasoned_solution": [
+          "分别列出满足两集合都包含的元素，得3。",
+          "列出至少属于其中一个集合的元素，去重得1,2,3。",
+          "核查3∈A且3∈B。"
+        ]
+      },
+      {
+        "answer": "{1}∈C为真，1∈C为假，{1}⊆C为假。",
+        "question": "C={{1},2}，判断{1}∈C、1∈C和{1}⊆C。",
+        "reasoned_solution": [
+          "注意C的第一个元素本身是集合{1}。",
+          "对象{1}作为元素属于C；整数1不属于C。",
+          "要判断{1}⊆C需核对整数1∈C，结果为假。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "因1∈{1,2}，就声称{1}∈{1,2}。",
+    "version": "2017-2020-editorial-batch130",
+    "why_wrong_and_repair": "第二句的对象是集合{1}，与数字1不同；重写为{1}⊆{1,2}才成立。"
+  },
+  {
+    "applicability_and_hypotheses": "两命题论域一致。涉及平方、除法、开方时须单独检查变换可逆性和被除式非零。",
+    "candidate_id": "hs-semantic-pilot-122-c306",
+    "course_track": "COMPULSORY",
+    "far_transfer": "把数据筛选条件“年龄至少18”与“出生年份早于某年”之间的时间边界写成严格的充要条件。",
+    "formal_definition_or_theorem": "对定义于同一论域D的命题P(x)、Q(x)，P是Q的充要条件，当且仅当对所有x∈D有P(x)⇒Q(x)并且Q(x)⇒P(x)；即两命题真值在D上等价。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb130-deep-122-c306",
+    "knowledge_type": "Theorem",
+    "near_transfer": "检查“x>1”与“x²>1”在D=R以及D=[0,∞)上的充要性差异。",
+    "nonexample_or_failure": "实数x²=9只保证x=±3，不等价于x=3；平方可消去符号。",
+    "notation_and_domain": "P⇒Q是P充分；Q⇒P是P必要；P⇔Q同时要求两个方向；量词范围均为D。",
+    "objective": "充要条件的双向蕴含核验",
+    "prerequisite_candidate_ids": [
+      "hs-semantic-pilot-122-c304",
+      "hs-semantic-pilot-122-c305"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "任取D中满足P的x，根据前提推导Q，不可只用一个例子说明。",
+        "step": "证明充分性方向"
+      },
+      {
+        "justification": "任取满足Q的x反推P，必要时因式分解或考虑多值。",
+        "step": "证明必要性方向"
+      },
+      {
+        "justification": "只有两边均成立才能使用⇔；如果一边失败，给出域内反例。",
+        "step": "合并两个全称蕴含"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 12,
+      "line_sha256": [
+        "ec0dd62319f4a37d076327225d2f486934a128eeb6fe153c93d5b78495b504d6"
+      ],
+      "page": 16,
+      "span_sha256": "ec0dd62319f4a37d076327225d2f486934a128eeb6fe153c93d5b78495b504d6",
+      "start_line": 12
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "EDITORIAL_ORIGINAL_LINE_CHECKED_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先分别列出P与Q的解集。",
+      "检查每个方向可能存在的反例。",
+      "对二次方程先做因式分解，再把两个方向写全。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "两命题在实数域等价。",
+        "question": "实数域中证明x²=9与“x=3或x=-3”充要。",
+        "reasoned_solution": [
+          "由x²=9得(x-3)(x+3)=0。",
+          "零因子定律给出x=3或-3。",
+          "反代任一分支均得平方为9。"
+        ]
+      },
+      {
+        "answer": "等价，包含边界x=0。",
+        "question": "实数域中判断|x|=x是否等价于x≥0。",
+        "reasoned_solution": [
+          "若x≥0，绝对值定义给出|x|=x。",
+          "若|x|=x且x<0，左侧=-x>0而右侧<0矛盾。",
+          "故成立时x≥0，两个方向完备。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "从x²=9取正平方根得x=3，于是写成x²=9 ⇔ x=3。",
+    "version": "2017-2020-editorial-batch130",
+    "why_wrong_and_repair": "从x²=9分解(x-3)(x+3)=0，须保留x=-3，或把原域改为x≥0才可得到该等价。"
+  },
+  {
+    "applicability_and_hypotheses": "函数在含端点的整个闭区间连续；a<b；f(a)与f(b)均非零且异号。",
+    "candidate_id": "hs-semantic-pilot-122-c311",
+    "course_track": "COMPULSORY",
+    "far_transfer": "传感器高度信号在两时刻跨越警戒线，阐明为何离散采样不能自行保证物理信号连续。",
+    "formal_definition_or_theorem": "介值零点定理：若实函数f在闭区间[a,b]连续，a<b，且f(a)f(b)<0，则存在c∈(a,b)使f(c)=0；结论仅保证存在而非唯一。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb130-deep-122-c311",
+    "knowledge_type": "Theorem",
+    "near_transfer": "将f(x)=x³-3x在[-2,2]检查异号条件及零点数量的区别。",
+    "nonexample_or_failure": "f(x)=1/x在[-1,1]端点异号但0处未定义，不能套用连续函数零点定理。",
+    "notation_and_domain": "a,b为闭区间端点；c为内部零点；连续性是在整个[a,b]上；端点异号严格小于零。",
+    "objective": "连续函数异号端点的零点存在性",
+    "prerequisite_candidate_ids": [
+      "hs-semantic-pilot-121-c205",
+      "hs-semantic-pilot-124-c509"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "若f(a)>0>f(b)则考虑连续函数−f；下文不妨设f(a)<0<f(b)。",
+        "step": "消除端点符号顺序"
+      },
+      {
+        "justification": "取中点m。若f(m)=0直接结束，否则保留左右端点异号的那一半；重复得到闭区间[a_n,b_n]，各端点函数值一负一正。",
+        "step": "逐次二分构造保号套区间"
+      },
+      {
+        "justification": "区间套逐层包含，长度(b−a)/2^n趋于0；由实数区间套定理有唯一公共点c，且a_n与b_n均收敛于c。",
+        "step": "用实数完备性得到极限点"
+      },
+      {
+        "justification": "由f(a_n)<0与f(b_n)>0、连续性得f(c)≤0和f(c)≥0，故f(c)=0。若某步中点已为零也满足结论。",
+        "step": "用连续性将符号传到极限"
+      },
+      {
+        "justification": "f(a)、f(b)严格非零，故c在(a,b)内部。此证明不保证只有一个根，唯一性需另证。",
+        "step": "排除端点并声明非唯一"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 29,
+      "line_sha256": [
+        "0e2783329b4956f2f8806538d7a0bb6e59e7aeb2fd1f436395cc0d9b94b324f1"
+      ],
+      "page": 22,
+      "span_sha256": "0e2783329b4956f2f8806538d7a0bb6e59e7aeb2fd1f436395cc0d9b94b324f1",
+      "start_line": 29
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "EDITORIAL_ORIGINAL_LINE_CHECKED_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先给出函数在整个闭区间连续的理由。",
+      "分别代入两个端点计算确切符号。",
+      "只得存在性；思考唯一性还需要什么独立条件。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "在(1,2)至少存在一个实根。",
+        "question": "证明x³-x-1=0在(1,2)有实根。",
+        "reasoned_solution": [
+          "令f(x)=x³-x-1，它是多项式，处处连续。",
+          "计算f(1)=-1、f(2)=5，乘积负。",
+          "套用闭区间零点存在定理得到内部根。"
+        ]
+      },
+      {
+        "answer": "至少一根在(1,2)；具体为√2。",
+        "question": "证明x²-2=0在(1,2)至少有一个零点。",
+        "reasoned_solution": [
+          "f(x)=x²-2连续于[1,2]。",
+          "f(1)=-1，f(2)=2，符号相反。",
+          "由介值性存在c∈(1,2)，f(c)=0。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "只检查f(a)<0<f(b)便宣布有根；或宣布由定理得唯一根。",
+    "version": "2017-2020-editorial-batch130",
+    "why_wrong_and_repair": "先逐点检查[a,b]连续，再用异号给存在性。唯一性另需严格单调等额外前提。"
+  },
+  {
+    "applicability_and_hypotheses": "实对数范围：x>0；a,b>0且不等于1。由log_b(a)≠0保证合法相除。",
+    "candidate_id": "hs-semantic-pilot-123-c407",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在信息压缩的对数刻度中比较换底时单位缩放，解释为何对数底不允许1。",
+    "formal_definition_or_theorem": "若a>0、a≠1、b>0、b≠1且x>0，则log_a(x)=log_b(x)/log_b(a)；真数域及两个底数条件缺一不可。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb130-deep-123-c407",
+    "knowledge_type": "Method",
+    "near_transfer": "计算log_9(3)，比较使用底3或自然底的表达。",
+    "nonexample_or_failure": "a=1或b=1时对数函数无定义；x≤0时实对数不存在。",
+    "notation_and_domain": "a为旧底，b为新底，x为真数；log_b(a)是非零分母。",
+    "objective": "对数换底公式的底数合法性核验",
+    "prerequisite_candidate_ids": [
+      "hs-semantic-pilot-124-c503",
+      "hs-semantic-pilot-124-c504"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "根据对数定义，a^y=x，合法底数保证一一对应。",
+        "step": "设y=log_a(x)"
+      },
+      {
+        "justification": "y·log_b(a)=log_b(x)，使用指数对数恒等式。",
+        "step": "两边以b为底取对数"
+      },
+      {
+        "justification": "a≠1保证log_b(a)≠0，因此可以解出y并得到换底公式。",
+        "step": "除以非零量"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 32,
+      "line_sha256": [
+        "6bf09af01e478c708a0624cc11c292f2c66ad82bbd3ad1d4e672f4846912b940"
+      ],
+      "page": 20,
+      "span_sha256": "6bf09af01e478c708a0624cc11c292f2c66ad82bbd3ad1d4e672f4846912b940",
+      "start_line": 32
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "EDITORIAL_ORIGINAL_LINE_CHECKED_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先检查真数是否正及两个底数的限制。",
+      "把对数转换为幂指数等式。",
+      "用ln x / ln a求值，再代回原指数式核对。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "3。",
+        "question": "用换底及指数定义分别求log_2(8)。",
+        "reasoned_solution": [
+          "x=8>0、底2合法，选择自然对数作为新底。",
+          "得到ln8/ln2。",
+          "因为8=2³，该比值等于3。"
+        ]
+      },
+      {
+        "answer": "-2。",
+        "question": "求log_(1/4)(16)，并说明答案符号。",
+        "reasoned_solution": [
+          "底1/4介于0与1之间，满足合法条件但对数函数递减。",
+          "(1/4)^(-2)=16。",
+          "由一一对应，原对数为-2。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把log_2(8)写成ln(2)/ln(8)，倒置换底公式分子分母。",
+    "version": "2017-2020-editorial-batch130",
+    "why_wrong_and_repair": "按定义先估计答案是3，再计算ln8/ln2；核对指数正逆关系避免倒数错误。"
+  },
+  {
+    "applicability_and_hypotheses": "每个基本结果具有相同概率且所有基本结果穷尽互斥；必须明确骰子或硬币是否可区分。",
+    "candidate_id": "hs-semantic-pilot-123-c411",
+    "course_track": "COMPULSORY",
+    "far_transfer": "把抽签模型推广到按人数比例抽取的分层样本，说明何时不再能对所有人等可能。",
+    "formal_definition_or_theorem": "有限样本空间Ω的每个基本结果等可能时，P(A)=|A|/|Ω|；这里的等可能针对基本结果，不保证某个多对一变换后的结果类别等可能。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb130-deep-123-c411",
+    "knowledge_type": "Concept",
+    "near_transfer": "两枚骰子求和值为2的概率，并与和值为7对比。",
+    "nonexample_or_failure": "两骰子的和2只对应(1,1)，和7对应6个有序对；11种和值并不等可能。",
+    "notation_and_domain": "Ω为有限基本结果集合；A⊆Ω为事件；|·|为集合元素数。",
+    "objective": "有限等可能样本空间上的古典概率计数",
+    "prerequisite_candidate_ids": [
+      "hs-semantic-pilot-121-c201",
+      "hs-semantic-pilot-122-c312"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "双骰用有序对(i,j)，共36种，而不是用11种和值。",
+        "step": "构造等可能基本空间"
+      },
+      {
+        "justification": "根据具体事件列举或计数满足条件的结果，每个结果只计一次。",
+        "step": "从基本结果中筛选事件"
+      },
+      {
+        "justification": "将有利结果数除以Ω的总大小；若类别不等可能则此式不合法。",
+        "step": "以基本结果数量归一化"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 14,
+      "line_sha256": [
+        "9e6831927016d1439752d5c35ef0a0b9a8fee417a0cbbdaa76a16f7e69b435a2"
+      ],
+      "page": 31,
+      "span_sha256": "9e6831927016d1439752d5c35ef0a0b9a8fee417a0cbbdaa76a16f7e69b435a2",
+      "start_line": 14
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "EDITORIAL_ORIGINAL_LINE_CHECKED_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "从物理实验出发写出真正等可能的基本结果。",
+      "先确认结果是否有序，是否存在重复计数。",
+      "最后数有利结果与总结果，勿把事件类别等分。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "1/6。",
+        "question": "两枚公平六面骰同时投掷，点数和为7的概率。",
+        "reasoned_solution": [
+          "基本结果为36个有序点对(i,j)。",
+          "有利结果是(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)，共6个。",
+          "按等可能公式得6/36。"
+        ]
+      },
+      {
+        "answer": "1/2。",
+        "question": "两枚可区分公平硬币，恰有一枚正面的概率。",
+        "reasoned_solution": [
+          "等可能空间为HH、HT、TH、TT四种。",
+          "有利结果HT和TH两种。",
+          "除以四得到2/4。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把和值2到12当作11个等可能样本，声称P(和值7)=1/11。",
+    "version": "2017-2020-editorial-batch130",
+    "why_wrong_and_repair": "在36个等可能有序点数对中计数，和值7概率为6/36。"
+  },
+  {
+    "applicability_and_hypotheses": "必须有x0双侧邻域（或明确单侧导数的不同概念）且函数取值合法；不可把一侧导数当作双侧导数。",
+    "candidate_id": "hs-semantic-pilot-120-s103",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "速度记录是位置对时间差商的极限；说明为何离散测量的有限差分只是估计。",
+    "formal_definition_or_theorem": "导数定义：f在x0附近有定义且极限lim_(h→0)[f(x0+h)-f(x0)]/h存在为有限实数时，f在x0可导，导数f′(x0)等于该极限；h≠0。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb130-deep-120-s103",
+    "knowledge_type": "Concept",
+    "near_transfer": "用定义计算f(x)=x³在x0=1的导数。",
+    "nonexample_or_failure": "|x|在0左右差商分别为1与-1，故f′(0)不存在；图上尖点不能硬套一个斜率。",
+    "notation_and_domain": "x0是求导点；h为非零增量趋向0；商为平均变化率；极限是瞬时变化率。",
+    "objective": "平均变化率到瞬时变化率的极限过渡",
+    "prerequisite_candidate_ids": [
+      "hs-semantic-pilot-121-c205",
+      "hs-semantic-pilot-122-c308"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "由两个函数值的变化量除以输入变化量定义平均变化率。",
+        "step": "列差商并明确h≠0"
+      },
+      {
+        "justification": "能约分h是因为求极限时h不等于0；再核对左右极限。",
+        "step": "化简后取双侧极限"
+      },
+      {
+        "justification": "极限有限且相同才有瞬时变化率与切线斜率。",
+        "step": "极限存在才定义导数"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 13,
+      "line_sha256": [
+        "53076486525878b7702f0b3275df07c0a6801c380ed819bbcf2be12ac605c61f",
+        "fd86378fb6564e402ca60a94ce9364c17176df0f48be5f0860fe71005e997228",
+        "7ed9fe539d331db6c003a717182819b8354568a490e45d5cb0ad8314de360d06",
+        "0edf7afbc1e6b41e853a24ea6fe0194b7e1820b2474fe59a7d5fb6efe83d0633",
+        "46a95315e936176c8c5e26b4b4621cc67415363a85bbd5e1770bf753aa03b228"
+      ],
+      "page": 39,
+      "span_sha256": "7a1a8fb4fb139e830d749f72e55295a298510858cdc0b6d96b75bb6b34812eb0",
+      "start_line": 9
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "EDITORIAL_ORIGINAL_LINE_CHECKED_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先把x0代入，写出完整差商而非立刻套公式。",
+      "只在h≠0时进行代数约分。",
+      "做双侧极限检查，尤其关注尖点和定义域边界。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "f′(3)=6。",
+        "question": "使用定义求f(x)=x²在x0=3的导数。",
+        "reasoned_solution": [
+          "差商=((3+h)²-9)/h。",
+          "h≠0时展开并化简为6+h。",
+          "取h→0，极限是6。"
+        ]
+      },
+      {
+        "answer": "f′(2)=-1/4。",
+        "question": "用差商求f(x)=1/x在x0=2的导数。",
+        "reasoned_solution": [
+          "先要求h≠0且2+h≠0。",
+          "差商=[1/(2+h)-1/2]/h=-1/[2(2+h)]。",
+          "令h→0得到-1/4。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "认为|x|的值在0为0，因此导数也为0；或只取右侧极限。",
+    "version": "2017-2020-editorial-batch130",
+    "why_wrong_and_repair": "函数值与变化率不同；直接计算左右差商，若不相等判不可导。"
+  },
+  {
+    "applicability_and_hypotheses": "两点必须不同；若x2=x1时垂直于x轴，不能使用斜率公式分母。",
+    "candidate_id": "hs-semantic-pilot-120-s107",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "在地图中用经纬度点求所谓斜率前，解释坐标系与经纬单位为何会影响方向判断。",
+    "formal_definition_or_theorem": "对过两不同点(x1,y1),(x2,y2)的非竖直直线，斜率k=(y2-y1)/(x2-x1)。竖直直线的倾斜角是π/2，但斜率不存在。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb130-deep-120-s107",
+    "knowledge_type": "Concept",
+    "near_transfer": "比较直线x=-1与y=-1的倾斜角及斜率。",
+    "nonexample_or_failure": "点(2,1),(2,5)确定直线x=2，Δx=0，不允许k=4/0。",
+    "notation_and_domain": "k是纵坐标变化量除以横坐标变化量；倾斜角α∈[0,π)且k=tanα仅在α≠π/2有效。",
+    "objective": "直线倾斜角与斜率的定义域",
+    "prerequisite_candidate_ids": [],
+    "reasoned_steps": [
+      {
+        "justification": "过两点的水平位移为Δx、竖直位移为Δy。",
+        "step": "由直角三角形确定水平与竖直变化"
+      },
+      {
+        "justification": "Δy/Δx是tanα，交换两点两差同时反号，商不变。",
+        "step": "仅在Δx≠0时求比值"
+      },
+      {
+        "justification": "此时方程x=x1仍定义直线，但不能得到有限斜率。",
+        "step": "处理Δx=0的合法竖直直线"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 23,
+      "line_sha256": [
+        "a65e9daa205329e826b979575a69fa95a8ab68bd531b865622ab83dac93e0501",
+        "3ce7772ebf5796d2e9b961242d5e2ceda9b6ca84bba2ab79ff5902149f023caa"
+      ],
+      "page": 43,
+      "span_sha256": "0ecbe750560f850e58214cdcaf6bbcb08b6e49ee6694cfa5a3fc1af95a00e9c9",
+      "start_line": 22
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "EDITORIAL_ORIGINAL_LINE_CHECKED_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先查看两个点是否相同。",
+      "再核对横坐标是否相同，避免除零。",
+      "若允许求斜率再代值；否则写直线的竖直方程。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "斜率2；直线y=2x。",
+        "question": "求经过(1,2)和(3,6)的斜率、点斜式。",
+        "reasoned_solution": [
+          "两点不同且Δx=3-1=2非零。",
+          "Δy=6-2=4，故k=4/2=2。",
+          "代入点(1,2)，得y-2=2(x-1)。"
+        ]
+      },
+      {
+        "answer": "斜率0；一般式y-3=0。",
+        "question": "求过(0,3)和(2,3)直线的斜率、一般方程。",
+        "reasoned_solution": [
+          "Δx=2非零、Δy=0。",
+          "所以k=0，直线水平。",
+          "代入过点关系，得y=3，即y-3=0。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "因竖直直线“无限陡”，把k写成∞并代入y=kx+b。",
+    "version": "2017-2020-editorial-batch130",
+    "why_wrong_and_repair": "∞不是真实数斜率；改用x=2或一般式Ax+By+C=0。"
+  },
+  {
+    "applicability_and_hypotheses": "两焦点不同、常数大于焦距；坐标轴与焦点方向一致；a>c>0。若c=0则为圆的特殊情况。",
+    "candidate_id": "hs-semantic-pilot-120-s111",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "在定位系统中用两个基站到目标距离之和固定的轨迹，讨论测量误差如何改变椭圆边界。",
+    "formal_definition_or_theorem": "焦点F1,F2间距2c>0，若常数2a>2c，则满足PF1+PF2=2a的平面点集为非退化椭圆。中心放原点、焦点在x轴时x²/a²+y²/b²=1，其中b²=a²-c²>0。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb130-deep-120-s111",
+    "knowledge_type": "Concept",
+    "near_transfer": "两个焦点(±4,0)、距离和10，求椭圆方程并检验顶点。",
+    "nonexample_or_failure": "若2a=2c，点集退化为两焦点间线段；若2a<2c为空集，不能继续写椭圆标准方程。",
+    "notation_and_domain": "a为长半轴、c为焦距的一半、b为短半轴；长轴方向决定标准方程分母位置。",
+    "objective": "椭圆作为两焦点距离和为定长的点集",
+    "prerequisite_candidate_ids": [
+      "hs-semantic-pilot-120-s107",
+      "hs-semantic-pilot-120-s109"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "PF1+PF2≥F1F2=2c，若2a<2c无解；2a=2c时只有两焦点之间线段。",
+        "step": "用三角不等式核对非退化性"
+      },
+      {
+        "justification": "两焦点在(±c,0)，关系√((x+c)²+y²)+√((x−c)²+y²)=2a，且a>c。",
+        "step": "选择正交坐标并写距离和"
+      },
+      {
+        "justification": "把一个根号移项，平方两边并整理得到一个根号与x的线性关系；合法性需检查右侧非负，之后再平方。",
+        "step": "隔离一根号并平方"
+      },
+      {
+        "justification": "第二次平方后有(a²−c²)x²+a²y²=a²(a²−c²)，因此x²/a²+y²/(a²−c²)=1。再利用a>c检查逆向回代排除增根。",
+        "step": "整理并核对代数等价"
+      },
+      {
+        "justification": "b²=a²−c²严格正，焦点在y轴时交换x与y的对应分母。",
+        "step": "核查焦点方向与参数"
+      }
+    ],
+    "source_line_lock": {
+      "end_line": 13,
+      "line_sha256": [
+        "be1c7a9991a0d29f826c1ab4366fbd132694d1270dffd5b186c389fd9180aac8",
+        "1c6078f9329389a2d0471d84d2a5b665de8752c2bf186442ba359e0d45c4a6c0"
+      ],
+      "page": 44,
+      "span_sha256": "afefccad2872a0a11279e7454e66c5ace300348d8c3e85a1d6ae37851480f0b7",
+      "start_line": 12
+    },
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_status": "EDITORIAL_ORIGINAL_LINE_CHECKED_NOT_OFFICIAL_ATOM",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先检查距离和是否严格大于焦点距离。",
+      "计算a、c和b²，并标出焦点在哪条轴。",
+      "注意椭圆的长轴方向决定较大分母对应哪一个坐标。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "x²/9+y²/5=1。",
+        "question": "焦点(-2,0),(2,0)，距离和6，求椭圆方程。",
+        "reasoned_solution": [
+          "由焦点得c=2，距离和6得a=3>c。",
+          "b²=a²-c²=9-4=5>0。",
+          "焦点在x轴，写x²/9+y²/5=1。"
+        ]
+      },
+      {
+        "answer": "x²/16+y²/25=1。",
+        "question": "焦点(0,-3),(0,3)，距离和10，求标准方程。",
+        "reasoned_solution": [
+          "c=3，a=5；a>c。",
+          "b²=25-9=16。",
+          "焦点在y轴，长半轴分母25应落在y²下。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "两焦点距离为4，距离和也是4，仍取b²=0画出椭圆。",
+    "version": "2017-2020-editorial-batch130",
+    "why_wrong_and_repair": "先比大小而不是仅套公式；b²=0不满足非退化椭圆的定义。"
+  }
+]
