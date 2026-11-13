@@ -264,6 +264,11 @@ jobs:
       - run: python scripts/build_kb_batch138_electives.py --check-offline
       - run: python scripts/check_kb_batch138_math.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch138_electives.py
+      # Batch139 GitHub runner has no licensed local PDF; only previously committed source locks are replayed.
+      # Mac mac_check.sh separately uses --check-mac and rehashes the real protected PDFKit lines.
+      - run: python scripts/build_kb_batch139_core.py --check-offline
+      - run: python scripts/check_kb_batch139_math.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch139_core.py
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Fail fast on syntax errors before the long Python/Node/browser suite.

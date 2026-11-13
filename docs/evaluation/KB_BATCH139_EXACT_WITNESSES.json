@@ -1,0 +1,341 @@
+{
+  "cases": [
+    {
+      "candidate_id": "hs-semantic-pilot-120-c103",
+      "case_id": "hs-semantic-pilot-120-c103-w1",
+      "description": "3,4 dot 1,-2 equals negative five",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c103",
+      "case_id": "hs-semantic-pilot-120-c103-w2",
+      "description": "nonzero vectors imply cosine negative inverse sqrt five",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c103",
+      "case_id": "hs-semantic-pilot-120-c103-w3",
+      "description": "orthogonal nonzero exact witness",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c103",
+      "case_id": "hs-semantic-pilot-120-c103-w4",
+      "description": "zero vector has undefined angle despite zero dot product",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "REJECT_INVALID_PRECONDITION",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c105",
+      "case_id": "hs-semantic-pilot-120-c105-w1",
+      "description": "unique reconstruction 3u+v equals (4,2)",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c105",
+      "case_id": "hs-semantic-pilot-120-c105-w2",
+      "description": "diagonal nonzero determinant yields unique (2,2)",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c105",
+      "case_id": "hs-semantic-pilot-120-c105-w3",
+      "description": "singular basis has null direction",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "REJECT_INVALID_PRECONDITION",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c105",
+      "case_id": "hs-semantic-pilot-120-c105-w4",
+      "description": "Cramer 2x2 symbolic inverse identity",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c111",
+      "case_id": "hs-semantic-pilot-120-c111-w1",
+      "description": "10 equally likely two-person combinations",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c111",
+      "case_id": "hs-semantic-pilot-120-c111-w2",
+      "description": "marginal inclusion probability 2 over 5",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c111",
+      "case_id": "hs-semantic-pilot-120-c111-w3",
+      "description": "joint inclusion differs from independent square",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c111",
+      "case_id": "hs-semantic-pilot-120-c111-w4",
+      "description": "equal marginal does not imply all subsets equally likely",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "REJECT_INVALID_PRECONDITION",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c524",
+      "case_id": "hs-semantic-pilot-124-c524-w1",
+      "description": "n3 descriptive 8/3 and unbiased 4",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c524",
+      "case_id": "hs-semantic-pilot-124-c524-w2",
+      "description": "n2 descriptive 1 and unbiased 2",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c524",
+      "case_id": "hs-semantic-pilot-124-c524-w3",
+      "description": "exact iid Bernoulli2 sample variance expectation equals quarter",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c524",
+      "case_id": "hs-semantic-pilot-124-c524-w4",
+      "description": "n=1 denominator is zero and no unbiased sample variance",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "REJECT_INVALID_PRECONDITION",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s203",
+      "case_id": "hs-semantic-pilot-121-s203-w1",
+      "description": "two points yield 2x-y=0",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s203",
+      "case_id": "hs-semantic-pilot-121-s203-w2",
+      "description": "second example x+y-2",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s203",
+      "case_id": "hs-semantic-pilot-121-s203-w3",
+      "description": "vertical line exists without slope",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s203",
+      "case_id": "hs-semantic-pilot-121-s203-w4",
+      "description": "coincident points give zero normal invalid line",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "REJECT_INVALID_PRECONDITION",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s206",
+      "case_id": "hs-semantic-pilot-121-s206-w1",
+      "description": "complete valid probability mass function",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s206",
+      "case_id": "hs-semantic-pilot-121-s206-w2",
+      "description": "event X greater or equal one equals three quarters",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s206",
+      "case_id": "hs-semantic-pilot-121-s206-w3",
+      "description": "Bernoulli complement is three fifths",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s206",
+      "case_id": "hs-semantic-pilot-121-s206-w4",
+      "description": "unnormalized mass exceeding one rejected",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "REJECT_INVALID_PRECONDITION",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-a302",
+      "case_id": "hs-semantic-pilot-122-a302-w1",
+      "description": "integral polynomial zero to two equals twelve",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-a302",
+      "case_id": "hs-semantic-pilot-122-a302-w2",
+      "description": "integral 2x one to three equals eight",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-a302",
+      "case_id": "hs-semantic-pilot-122-a302-w3",
+      "description": "derivative of integral from zero to variable recovers integrand",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-a302",
+      "case_id": "hs-semantic-pilot-122-a302-w4",
+      "description": "1/x has singularity inside closed interval, not FTC preconditions",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "REJECT_INVALID_PRECONDITION",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-a405",
+      "case_id": "hs-semantic-pilot-123-a405-w1",
+      "description": "perfect line fitted intercept one slope two",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-a405",
+      "case_id": "hs-semantic-pilot-123-a405-w2",
+      "description": "imperfect line fitted intercept two thirds slope half",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-a405",
+      "case_id": "hs-semantic-pilot-123-a405-w3",
+      "description": "constant predictor has singular normal equation matrix",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "REJECT_INVALID_PRECONDITION",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-a405",
+      "case_id": "hs-semantic-pilot-123-a405-w4",
+      "description": "OLS quadratic Hessian positive definite",
+      "general_proof_certified": false,
+      "passed": true,
+      "result": "FINITE_EXACT_WITNESS",
+      "student_free_text_verified": false,
+      "teacher_approved": false
+    }
+  ],
+  "exact_cases": 32,
+  "general_proofs_certified": 0,
+  "negative_condition_rejections": 8,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "schema": "kb139-independent-finite-math-oracle/1",
+  "scope": "32_EXACT_FINITE_CASES_NOT_GENERAL_FORMAL_PROOFS",
+  "student_free_text_verified": 0,
+  "successful_or_edge_witnesses": 24,
+  "teacher_approved": 0
+}

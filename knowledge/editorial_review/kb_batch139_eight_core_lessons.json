@@ -1,0 +1,645 @@
+[
+  {
+    "applicability_and_hypotheses": "同一正交单位坐标系、采用通常欧氏内积；由点积为零判垂直时须核验两向量非零，不把纯代数的零积直接说成两个方向垂直。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "对二维机器人位移方向与作用力，解释功的数量积为何可为负，并标明物理单位。",
+    "formal_definition_or_theorem": "在固定的二维欧氏直角坐标系中，u=(u₁,u₂)、v=(v₁,v₂)的数量积定义为u·v=u₁v₁+u₂v₂。若u、v均非零，它同时满足u·v=|u||v|cosθ（θ为两向量夹角）。对两个非零向量，u·v=0当且仅当它们垂直。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb139-deep-120-c103",
+    "knowledge_type": "Theorem",
+    "missing_prerequisite_gap": "平面向量的模和坐标运算未在有审校证据的先修图中闭环",
+    "near_transfer": "比较u=(2,1)和v=(−1,2)的点积，并在非零条件下判断夹角。",
+    "nonexample_or_failure": "u=(0,0)与v=(1,0)满足u·v=0，但u没有方向，两向量夹角不存在，不可称它们构成90°角。",
+    "notation_and_domain": "u,v∈R²；长度|u|=√(u₁²+u₂²)；当两向量均非零时θ∈[0,π]；若任一向量为0，点积仍定义，但向量夹角及方向未定义。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "从u的两个正交坐标分量与v的相应分量分别相乘相加，得到内积u₁v₁+u₂v₂。",
+        "step": 1
+      },
+      {
+        "justification": "计算|u−v|²=(u−v)·(u−v)=|u|²+|v|²−2u·v。",
+        "step": 2
+      },
+      {
+        "justification": "以u、v和u−v为三角形三边使用余弦定理，|u−v|²=|u|²+|v|²−2|u||v|cosθ；比较两式获得内积的几何形式。",
+        "step": 3
+      },
+      {
+        "justification": "两向量非零时|u||v|>0，所以u·v=0等价于cosθ=0，进而θ=π/2；零向量情况下不能反推夹角。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-c103",
+    "source_end_line": 9,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "6d1411c0658a2c3e685a573919db8d96870bbcc0af86297412b0fba1163c9f3f",
+      "50bd912039e69d29de6933dbc1c5ce13e8c7774d2a8bb66b339316a5801484c2"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 26,
+    "source_span_sha256": "4cc4ddce4851f23c5d1de57b5a912abdbc5b0a8d33f5df41fb12f285c6863e8c",
+    "source_start_line": 8,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写出每个向量的坐标与模，不要急于判角。",
+      "数量积由对应分量乘积相加求出；什么时候才能除以两模之积？",
+      "讨论点积为零时，必须把任一向量为零的情况单独排除。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "u·v=−5，cosθ=−1/√5。",
+        "question": "已知u=(3,4),v=(1,−2)，求u·v与夹角余弦。",
+        "reasoned_solution": [
+          "按坐标计算3×1+4×(−2)=−5。",
+          "求模|u|=5，|v|=√5，均非零。",
+          "由u·v=|u||v|cosθ得cosθ=−5/(5√5)=−1/√5。"
+        ]
+      },
+      {
+        "answer": "是，两向量非零且点积为0。",
+        "question": "u=(1,2)、v=(2,−1)是否互相垂直？",
+        "reasoned_solution": [
+          "两向量的模分别为√5和√5，非零。",
+          "计算数量积1×2+2×(−1)=0。",
+          "据非零向量的点积垂直判据，两向量垂直。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "平面向量数量积：坐标、夹角与零向量边界",
+    "typical_wrong_solution": "只要数量积为零便断言夹角是直角，甚至在u=(0,0)时计算cosθ=(u·v)/(|u||v|)。",
+    "why_method_is_legal": "代数定义对任意R²向量都成立；用三角形余弦定理连接几何解释，必须保留非零性和欧氏正交坐标前提。",
+    "why_wrong_and_repair": "先分别计算两向量的模；若任一模为零，只报告点积为零而不赋予角度；非零时才可除以模的乘积。"
+  },
+  {
+    "applicability_and_hypotheses": "先判断基向量线性无关；不得从“有两条箭头”推出它们是平面基，也不得在D=0时使用矩阵逆。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "两只只能沿固定方向输出力的执行器，讨论其两个控制方向共线会怎样限制平面施力能力。",
+    "formal_definition_or_theorem": "给定R²中的u=(u₁,u₂)、v=(v₁,v₂)，当且仅当行列式D=u₁v₂−u₂v₁≠0时，每个p∈R²都能唯一写成p=αu+βv，α、β∈R。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb139-deep-120-c105",
+    "knowledge_type": "Theorem",
+    "missing_prerequisite_gap": "二维向量线性运算与线性无关仍缺正式课程ID",
+    "near_transfer": "使用u=(1,0),v=(1,1)表示p=(2,3)，检验分解唯一性。",
+    "nonexample_or_failure": "u=(1,2)、v=(2,4)共线，p=(0,1)无法由其线性组合表示；零向量则可被无穷多组系数表示。",
+    "notation_and_domain": "所有向量处于同一二维实向量空间，允许p为零向量；两基向量须非零且不共线，即2×2列矩阵可逆。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "把p=αu+βv写为M(α,β)ᵀ=p，其中M的两列为u与v。",
+        "step": 1
+      },
+      {
+        "justification": "若D≠0，二阶方阵M可逆，取(α,β)ᵀ=M⁻¹p，故对任意p存在表示。",
+        "step": 2
+      },
+      {
+        "justification": "若存在两组表示，作差得M(δα,δβ)ᵀ=0；M可逆意味着差向量为零，所以表示唯一。",
+        "step": 3
+      },
+      {
+        "justification": "若D=0，两列相关，存在非零系数使αu+βv=0；对零向量已有多组表示，唯一性失败，且整个R²也不能由两列张成。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-c105",
+    "source_end_line": 16,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "62fcc8b6cb9eb228f1becb565d5665ca0599347d3cf9c76f18b7299ebaed92d8",
+      "f39374b34db09fe070d076b88df1d8b0b8aa5c872372cd25ccdc9f144234b9ff",
+      "b1149c17d1ad355261d3ef02c0ca98b6d1fdc2c0796f045ab4a681db9490eb71",
+      "5ccfeaa658abcc3ab44b9bd5a286291e8207333d4623e8443dab3f73cb4f3144"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 26,
+    "source_span_sha256": "639be43646e0be6aeded413fa83e1303c0e0a9d8a7c2b80be7d312ea9cbbfc54",
+    "source_start_line": 13,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "目标向量p和两方向向量在同一坐标系下吗？",
+      "先核对两列行列式是否为零，再写坐标方程。",
+      "求出系数后做向量加法回代，而不是只核验一个坐标。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "p=3u+1v。",
+        "question": "u=(1,1)，v=(1,−1)，将p=(4,2)唯一表示为两者的线性组合。",
+        "reasoned_solution": [
+          "D=1×(−1)−1×1=−2，非零，故解唯一。",
+          "由α+β=4及α−β=2求得α=3、β=1。",
+          "反代3(1,1)+(1,−1)=(4,2)。"
+        ]
+      },
+      {
+        "answer": "α=2，β=2。",
+        "question": "u=(2,0)，v=(0,3)，p=(4,6)，求表示系数。",
+        "reasoned_solution": [
+          "计算D=6≠0，存在唯一表示。",
+          "逐坐标解2α=4，3β=6，得α=2、β=2。",
+          "回代2(2,0)+2(0,3)=(4,6)。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "平面两不共线向量的基底与唯一线性分解",
+    "typical_wrong_solution": "看见u,v都不为零就称之为基，忽略它们平行；或在D=0时直接套克拉默公式。",
+    "why_method_is_legal": "二维实方阵可逆性与非零行列式等价；存在性与唯一性要分别论证，而不能只举一个目标向量。",
+    "why_wrong_and_repair": "先算D并确认不为0；再解方程组并反代检查目标向量是否重构成功。"
+  },
+  {
+    "applicability_and_hypotheses": "必须给出具体抽样机制使C(N,n)种组合等可能；单凭“每个个体的入样边际概率相等”不能推断所有大小为n的样本等可能。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "校园随机问卷设计中，讨论没有学生名册的志愿报名样本为何可能与简单随机抽样不同。",
+    "formal_definition_or_theorem": "从具有N个可区分单位的有限总体中不放回抽取n个单位，若每个大小为n的无序子集的抽中概率都等于1/C(N,n)，则称为固定样本量的简单随机抽样（SRSWOR）。每个个体的一阶入样概率均为n/N，但入样事件一般不独立。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb139-deep-120-c111",
+    "knowledge_type": "Concept",
+    "missing_prerequisite_gap": "有限样本空间及组合计数的先修审查未闭环",
+    "near_transfer": "在N=6,n=3时计算一人入样概率与两人同时入样概率，比较独立乘积。",
+    "nonexample_or_failure": "从4人中总是抽{1,2}或{3,4}且各一半，人人入样概率都为1/2，却有4种其他二人组合概率为0，因此不是简单随机抽样。",
+    "notation_and_domain": "N,n为整数，N≥1且1≤n≤N；个体编号相互区别。这里的简单随机样本是无序、不放回的子集，不与独立有放回抽样混淆。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "总共有C(N,n)个大小为n的不同无序子集；简单随机抽样定义每一种抽中事件概率相等。",
+        "step": 1
+      },
+      {
+        "justification": "由互斥且穷尽的组合集合，概率之和为1，所以每种组合概率为1/C(N,n)。",
+        "step": 2
+      },
+      {
+        "justification": "固定个体i的入样组合数为C(N−1,n−1)，因此入样概率为C(N−1,n−1)/C(N,n)=n/N。",
+        "step": 3
+      },
+      {
+        "justification": "虽然每个人边际概率相同，但不放回条件下第二人的入样概率依赖于第一人是否入样；n介于1与N之间时一般不是独立伯努利试验。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-c111",
+    "source_end_line": 13,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "a2b5da7cf263934db184cdd546fc904c7cfbc7fa595d63eac07801eb2c8aacc3",
+      "b008ed2e8e14252b5de70e4ee8113cadeccd0c85cc629605d77cc584c3af2973",
+      "7fd2dfd83b75ad8a7525585d2cefea3e98212b6e6867e419599885b0b6e2c2d7",
+      "571ee1e390c2bfbe6bb89bea83899e7b19d50d883f4e2fc4104bf1ce22e95ab1"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 32,
+    "source_span_sha256": "27503ff60c180670f3f14f24897095a431dd3323ea9c21d3259fad3ebd501829",
+    "source_start_line": 10,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先判断题目是否是不放回、固定样本量的无序组合。",
+      "如何数全部可能的样本组合？指定一个体必入样时如何数？",
+      "将两个组合数相除后化简，检查是否等于n/N。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "特定组合1/10；某人入样2/5。",
+        "question": "5人中按无序二人组合等可能抽2人，任意特定组合概率和某一人入样概率是多少？",
+        "reasoned_solution": [
+          "计算组合数C(5,2)=10。",
+          "每种组合具有相同概率，故每种概率等于1/10。",
+          "固定一人的入样组合C(4,1)=4，故入样概率4/10=2/5。"
+        ]
+      },
+      {
+        "answer": "1/4。",
+        "question": "8个样本单位中随机等可能选2人，不放回；某指定人被选概率是多少？",
+        "reasoned_solution": [
+          "样本组合总数C(8,2)=28。",
+          "指定人的入样组合数为C(7,1)=7。",
+          "故概率为7/28=1/4，等于n/N。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "有限总体简单随机抽样：等可能样本组合与入样概率",
+    "typical_wrong_solution": "看到每人被抽概率相同就推出样本是简单随机；或者把无放回抽样当成相互独立以使用二项分布。",
+    "why_method_is_legal": "结论依赖组合等可能，而不依赖给定某种抽签顺序；若抽样框遗漏部分单位，则这不是覆盖原总体的SRS。",
+    "why_wrong_and_repair": "对给定样本量先列出所有C(N,n)组合并核对每种组合等可能；再区分边际入样概率与联合概率。"
+  },
+  {
+    "applicability_and_hypotheses": "必须先分清是在描述这n个观测的离散程度，还是在iid总体模型下估计总体方差；没有抽样模型就不能称分母n−1一定无偏。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "传感器连续时间采样呈自相关时，讨论为什么不能套用iid的n−1无偏性证明。",
+    "formal_definition_or_theorem": "对n≥1个实数x_i，描述性样本方差v_n=(1/n)Σ(x_i−x̄)²。若X₁,…,X_n独立同分布、具有共同有限均值μ和有限方差σ²，且n≥2，则s²=(1/(n−1))Σ(X_i−X̄)²满足E[s²]=σ²；这不意味着每次s²都恰好等于总体方差。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb139-deep-124-c524",
+    "knowledge_type": "Theorem",
+    "missing_prerequisite_gap": "均值、期望、独立同分布的先修审查未闭环",
+    "near_transfer": "对数据0,2,2,4求两种样本方差，并说明各自的统计含义。",
+    "nonexample_or_failure": "n=1时n−1=0，s²未定义；有相关观测时Var(X̄)不必等于σ²/n，因此无偏推导不直接成立。",
+    "notation_and_domain": "n∈N+、x̄=Σx_i/n；无偏推论需n≥2、独立同分布与有限二阶矩。描述性方差与推断性无偏估计的分母不可混用。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "用恒等式Σ(X_i−X̄)²=Σ(X_i−μ)²−n(X̄−μ)²分解总体中心与样本中心的离差。",
+        "step": 1
+      },
+      {
+        "justification": "在iid有限方差条件下，前一项期望为nσ²；样本均值方差Var(X̄)=σ²/n，且E[X̄]=μ。",
+        "step": 2
+      },
+      {
+        "justification": "因此离差平方和的期望是nσ²−n·σ²/n=(n−1)σ²。",
+        "step": 3
+      },
+      {
+        "justification": "n≥2时除以n−1得到E[s²]=σ²；若除以n则期望为(n−1)σ²/n，是有偏但作为描述性量仍合法。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-124-c524",
+    "source_end_line": 27,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "bbc5e0f2eee677cbf5c6759d2e7f7cb38b2bd6ac198fa4d1b77560df54a655f2"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 32,
+    "source_span_sha256": "bbc5e0f2eee677cbf5c6759d2e7f7cb38b2bd6ac198fa4d1b77560df54a655f2",
+    "source_start_line": 27,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先计算样本均值和总离差平方和。",
+      "检查分母到底是n还是n−1，当前目标是描述还是总体推断？",
+      "需要无偏性时，先确认独立同分布和有限方差，而不是只看算术结果。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "描述性方差8/3；样本方差4。",
+        "question": "数据2,4,6的描述性方差与分母n−1的样本方差分别是多少？",
+        "reasoned_solution": [
+          "平均值为4；离差为−2,0,2。",
+          "离差平方和=4+0+4=8。",
+          "分别除以n=3和n−1=2，得8/3与4。"
+        ]
+      },
+      {
+        "answer": "描述性方差1；分母n−1方差2。",
+        "question": "观测1,3的两种方差各是多少？",
+        "reasoned_solution": [
+          "均值为2；平方离差为1和1。",
+          "将1与1两个离差平方相加，总平方离差为2。",
+          "描述性除以2得1；无偏估计表达式除以1得2，是否可称无偏仍取决于抽样假设。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "样本方差：描述性分母n与无偏估计分母n−1",
+    "typical_wrong_solution": "把n−1方差称作每份观测数据的唯一正确定义；或在n=1时报告0/(1−1)=0。",
+    "why_method_is_legal": "期望证明以独立性、同分布、有限方差为必要模型条件；样本方差的数值分母依统计目的不同而不同。",
+    "why_wrong_and_repair": "先写明n、数据与抽样假设，确认描述任务或推断任务；当n≥2且iid才援用无偏性结论。"
+  },
+  {
+    "applicability_and_hypotheses": "坐标系固定、两点不重合；当x₁=x₂时斜率(y₂−y₁)/(x₂−x₁)不可定义，但直线仍存在。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "平面GPS两次定位恰好相同而系统要求估计行进方向时，指出模型不可辨识的原因。",
+    "formal_definition_or_theorem": "在二维直角坐标系中，给定不同两点P=(x₁,y₁)、Q=(x₂,y₂)，通过两点的唯一直线方程可写为(y₁−y₂)x+(x₂−x₁)y+x₁y₂−x₂y₁=0。若两点重合，这个表达式退化为0=0，不能唯一确定直线。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb139-deep-121-s203",
+    "knowledge_type": "Theorem",
+    "missing_prerequisite_gap": "平面点向量及法向量的先修审查未闭环",
+    "near_transfer": "推导过(2,1)、(2,5)的竖直直线一般式，解释斜率形式为何失效。",
+    "nonexample_or_failure": "P=Q时法向量为零，方程退化0=0，表示整个平面而非一条确定直线。",
+    "notation_and_domain": "x₁,y₁,x₂,y₂为实数，P≠Q。一般式Ax+By+C=0应满足A²+B²>0；竖直直线允许，故不可一概使用斜率公式。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "取非零方向d=Q−P=(x₂−x₁,y₂−y₁)，构造法向量n=(y₁−y₂,x₂−x₁)，则n·d=0。",
+        "step": 1
+      },
+      {
+        "justification": "直线上任意X=(x,y)满足n·(X−P)=0，展开即得到所给一般式。",
+        "step": 2
+      },
+      {
+        "justification": "因P≠Q，方向d非零，因此法向n也非零，一般式确实代表一条直线且包含P、Q。",
+        "step": 3
+      },
+      {
+        "justification": "如果还有另一条直线同时含不同两点，其方向必须与Q−P平行；两点非重合唯一确定一个仿射一维集合。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-s203",
+    "source_end_line": 20,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "7988c3896e061468a3e58ffff64709096694986bec46173d7fdeeda122940fee"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 43,
+    "source_span_sha256": "7988c3896e061468a3e58ffff64709096694986bec46173d7fdeeda122940fee",
+    "source_start_line": 20,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "两点是否重合？若重合不能确定唯一一条直线。",
+      "求差向量，再取与之正交的法向量。",
+      "建立n·(X−P)=0，化为Ax+By+C=0并代入两点检查。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "2x−y=0。",
+        "question": "经过(1,2)和(3,6)的直线一般式是什么？",
+        "reasoned_solution": [
+          "方向向量d=(2,4)，法向可取(−4,2)。",
+          "得−4(x−1)+2(y−2)=0。",
+          "化简为−4x+2y=0，等价于2x−y=0。"
+        ]
+      },
+      {
+        "answer": "x+y−2=0。",
+        "question": "经过(0,2)与(2,0)的直线一般式是什么？",
+        "reasoned_solution": [
+          "d=(2,−2)，法向可取(2,2)。",
+          "由n·(X−(0,2))=0得2x+2(y−2)=0。",
+          "化简为x+y−2=0，代入两点均成立。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "两点确定平面直线：非重合条件与一般式",
+    "typical_wrong_solution": "两点横坐标相同仍使用斜率除以x₂−x₁，或把A=B=0的所谓一般式当作直线。",
+    "why_method_is_legal": "使用法向量法避免斜率为无穷或分母为零；直线一般式的A、B不能同时为零。",
+    "why_wrong_and_repair": "先比较两点；若不同，使用零法向量风险受控的一般式；竖直线直接写x=常数。"
+  },
+  {
+    "applicability_and_hypotheses": "各取值对应事件彼此互斥并穷尽X的全部可能取值；不得漏列剩余概率质量；期望或方差存在需要另行检查可求和性。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "模型输出三个类别概率之和只有0.92时，讨论能否直接将其当作完整概率分布发布。",
+    "formal_definition_or_theorem": "离散实值随机变量X的概率质量函数p(x)=P(X=x)，在可数支持集S上必须满足对任意x∈S有p(x)≥0、Σ_{x∈S}p(x)=1。任意集合A的事件概率为Σ_{x∈A∩S}p(x)。反过来满足这些条件的质量分配可定义离散分布。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb139-deep-121-s206",
+    "knowledge_type": "Concept",
+    "missing_prerequisite_gap": "概率公理与可数可加性的先修审查未闭环",
+    "near_transfer": "给出p(0)=a,p(1)=2a,p(2)=a，求a并计算P(X≤1)。",
+    "nonexample_or_failure": "若列p(0)=1/2,p(1)=3/4，总和为5/4>1，不是合法分布；若遗漏其他可能取值，总和小于1亦不能作为完整分布列。",
+    "notation_and_domain": "S为有限或可数取值集合；概率为实数且在[0,1]之间。样本观察频数归一化为经验频率，不自动构成真实总体的精确概率。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "不同取值x对应的事件{X=x}互斥，它们的并集为整个样本空间（忽略零概率之外的未列支持）。",
+        "step": 1
+      },
+      {
+        "justification": "概率公理给每项p(x)非负，所有互斥事件概率之和为1。",
+        "step": 2
+      },
+      {
+        "justification": "任意事件{X∈A}可拆成{X=x}的可数不交并，因此概率等于对应质量之和。",
+        "step": 3
+      },
+      {
+        "justification": "对非负且总和为1的质量序列，可在支持集S上构造概率空间并令X取对应的值，故条件也是充分的。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-s206",
+    "source_end_line": 21,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "5bcfab1e2f4d0aebd2056cbe733602f6959c1cf50cd204762f0fef4f361cb27c"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 47,
+    "source_span_sha256": "5bcfab1e2f4d0aebd2056cbe733602f6959c1cf50cd204762f0fef4f361cb27c",
+    "source_start_line": 21,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确定随机变量可取的所有值。",
+      "检查非负与归一化，再确定目标事件包含哪些取值。",
+      "对互斥取值的概率求和，不要把概率与观察频数混用。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "3/4。",
+        "question": "X取0,1,2的概率分别为1/4,1/2,1/4，求P(X≥1)。",
+        "reasoned_solution": [
+          "核对各概率非负且和为1，分布合法。",
+          "事件X≥1包括取值1和2。",
+          "互斥概率相加1/2+1/4=3/4。"
+        ]
+      },
+      {
+        "answer": "3/5。",
+        "question": "伯努利变量P(X=1)=2/5，另一取值为0，求P(X=0)。",
+        "reasoned_solution": [
+          "X只可取0或1，总概率必须为1。",
+          "已知P(X=1)=2/5。",
+          "因此P(X=0)=1−2/5=3/5。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "离散随机变量分布列：非负性、归一化与事件概率",
+    "typical_wrong_solution": "只检查每个单项≤1而不检查总和，或把1/4+1/2+1/4误认为只是样本比例所以不能求事件概率。",
+    "why_method_is_legal": "分布列的规范性由概率公理推出；统计频数表的归一化仅说明经验分布形式合法，不证明真实模型概率。",
+    "why_wrong_and_repair": "先逐项验证非负和总和恰为1，再根据目标事件包含哪些互斥取值求和。"
+  },
+  {
+    "applicability_and_hypotheses": "不能只看某个形式原函数便忽略被积函数区间的定义性和可积性；对于不连续或奇点跨越的情形需要额外积分理论。",
+    "course_track": "ELECTIVE_A",
+    "far_transfer": "速度随时间连续变化时解释路程与有向位移积分的区别，以及何时不能直接套速度积分为路程。",
+    "formal_definition_or_theorem": "若实函数f在[a,b]连续且a<b，定义G(x)=∫_a^x f(t)dt，则G在(a,b)可导且G'(x)=f(x)。若F是f在[a,b]上的一个原函数，则∫_a^b f(x)dx=F(b)−F(a)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb139-deep-122-a302",
+    "knowledge_type": "Theorem",
+    "missing_prerequisite_gap": "原函数与黎曼可积性的先修审查未闭环",
+    "near_transfer": "计算∫₀¹(4x³−2x)dx并用端点差验证，进一步说明原函数常数为何相消。",
+    "nonexample_or_failure": "被积函数1/x在[−1,1]有奇点，不能把原函数ln|x|的端点差简单当作跨0的常规定积分。",
+    "notation_and_domain": "a,b∈R且a<b，f连续于闭区间；积分为黎曼定积分；F为内部可导且满足F'=f的函数并在闭区间连续。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "kb133-proposal-a_continuity"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "由连续性，f在闭区间有界并黎曼可积，故G(x)=∫_a^x f(t)dt有定义。",
+        "step": 1
+      },
+      {
+        "justification": "对内部x与足够小h，差商[G(x+h)−G(x)]/h=(1/h)∫_x^{x+h}f(t)dt；因f在x连续，该区间内f值与f(x)的差统一趋于零。",
+        "step": 2
+      },
+      {
+        "justification": "取h→0得到G'(x)=f(x)，说明G是f的一种原函数。",
+        "step": 3
+      },
+      {
+        "justification": "若F'也等于f，则(F−G)'=0，在区间上为常数；G(a)=0，所以G(b)=F(b)−F(a)，得到端点差公式。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-122-a302",
+    "source_end_line": 21,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "2aeddb761ab7fce7910c27d3a7cdd0e4fcc9a15d99d705c94cbc5bdc7bfea7bf"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 53,
+    "source_span_sha256": "2aeddb761ab7fce7910c27d3a7cdd0e4fcc9a15d99d705c94cbc5bdc7bfea7bf",
+    "source_start_line": 21,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "被积函数在整个积分区间有定义且连续吗？",
+      "寻找原函数时验证求导是否回到被积函数。",
+      "定积分取上端点原函数值减下端点值，并留意奇点和方向。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "12。",
+        "question": "计算∫₀²(3x²+2x)dx。",
+        "reasoned_solution": [
+          "多项式在[0,2]连续，可使用基本定理。",
+          "取原函数F(x)=x³+x²。",
+          "F(2)−F(0)=8+4=12。"
+        ]
+      },
+      {
+        "answer": "8。",
+        "question": "计算∫₁³2x dx。",
+        "reasoned_solution": [
+          "f(x)=2x在[1,3]连续。",
+          "原函数可取F(x)=x²。",
+          "计算F(3)−F(1)=9−1=8。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "微积分基本定理：连续性条件与原函数端点差",
+    "typical_wrong_solution": "在积分区间含函数无定义点时仍套牛顿—莱布尼茨公式；或把定积分记成还需加+C。",
+    "why_method_is_legal": "差商趋于被积函数点值的关键条件是连续性；原函数的端点差公式依赖区间一致和有定义的导数/积分。",
+    "why_wrong_and_repair": "先核对f在整个积分区间的连续性与原函数可用区间；定积分端点值相减无需加任意常数。"
+  },
+  {
+    "applicability_and_hypotheses": "所有x不能相同；若Sxx=0，斜率不能单独识别。作为统计推断还需额外模型假设，拟合本身不要求残差正态。",
+    "course_track": "ELECTIVE_A",
+    "far_transfer": "广告投放与销售的观测回归出现正斜率时，说明为何不能直接认定广告投入造成销售增长。",
+    "formal_definition_or_theorem": "给定n≥2个实数样本对(x_i,y_i)，若Sxx=Σ(x_i−x̄)²>0，则使Σ[y_i−(β₀+β₁x_i)]²最小的回归参数唯一，且β₁=Sxy/Sxx、β₀=ȳ−β₁x̄，其中Sxy=Σ(x_i−x̄)(y_i−ȳ)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb139-deep-123-a405",
+    "knowledge_type": "Theorem",
+    "missing_prerequisite_gap": "有限样本平方误差与统计因果边界的先修审查未闭环",
+    "near_transfer": "对(0,2),(1,4),(2,6)求最小二乘直线，并比较与插值之间的关系。",
+    "nonexample_or_failure": "若所有x_i=2，Sxx=0，截距与斜率可互相补偿，同一预测值有无穷多组参数；斜率公式除以零。",
+    "notation_and_domain": "x_i,y_i∈R，样本数n≥2；这是有限样本带截距的欧氏平方误差最小化，不自动成立因果性、正态性或外推可靠性。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "kb133-proposal-c_function_mapping"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "对平方损失J(β₀,β₁)分别求偏导并令为0，得到Σ(y_i−β₀−β₁x_i)=0及Σx_i(y_i−β₀−β₁x_i)=0。",
+        "step": 1
+      },
+      {
+        "justification": "由第一式得β₀=ȳ−β₁x̄，把它代入第二式并中心化，得到Sxy−β₁Sxx=0。",
+        "step": 2
+      },
+      {
+        "justification": "因为Sxx>0，β₁=Sxy/Sxx唯一，并由第一式唯一确定β₀。",
+        "step": 3
+      },
+      {
+        "justification": "平方损失的二次型Hessian为2[[n,Σx_i],[Σx_i,Σx_i²]]，其行列式4nSxx>0且首主子式为2n>0，所以严格凸，驻点是唯一全局最小。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-123-a405",
+    "source_end_line": 13,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "20dc8656616a5c17c46aee396227b7b33dfac4937d811db279890acc6f7c5104"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 57,
+    "source_span_sha256": "20dc8656616a5c17c46aee396227b7b33dfac4937d811db279890acc6f7c5104",
+    "source_start_line": 13,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "带截距回归首先检查x值是否存在变异。",
+      "计算x̄、ȳ、Sxx、Sxy并确认分母非零。",
+      "根据斜率与截距公式求值，再检查残差总和是否为零。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "ŷ=1+2x。",
+        "question": "样本(0,1),(1,3),(2,5)的带截距最小二乘直线是什么？",
+        "reasoned_solution": [
+          "x̄=1，ȳ=3；Sxx=(−1)²+0²+1²=2。",
+          "Sxy=(−1)(−2)+0+1×2=4，斜率β₁=4/2=2。",
+          "截距β₀=3−2×1=1，数据各点恰好在该直线上。"
+        ]
+      },
+      {
+        "answer": "β₁=1/2，β₀=2/3。",
+        "question": "样本(1,1),(2,2),(3,2)的最小二乘斜率与截距是多少？",
+        "reasoned_solution": [
+          "均值x̄=2，ȳ=5/3。",
+          "Sxx=2，Sxy=(−1)(−2/3)+(1)(1/3)=1。",
+          "斜率1/2，截距5/3−(1/2)×2=2/3。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "带截距一元最小二乘回归：非退化斜率与正规方程",
+    "typical_wrong_solution": "在全部x相同情况下仍宣称唯一斜率；或将拟合系数解释为自变量造成因变量变化的因果效应。",
+    "why_method_is_legal": "最小二乘闭式解只在自变量有非零变异且包含截距时成立；拟合相关不能推导干预因果关系。",
+    "why_wrong_and_repair": "先检查n与Sxx，再计算均值和中心化平方和；将预测解释限定为样本拟合，必要时讨论数据收集偏差。"
+  }
+]
