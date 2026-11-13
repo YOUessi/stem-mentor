@@ -283,6 +283,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch139_core.py
 .venv/bin/python scripts/build_kb_batch140_proof_guards.py --check
 .venv/bin/python scripts/check_kb_batch140_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch140_p0_proof_guards.py
+# Batch141: migrate all 47 remaining P0 to source-fingerprinted teacher-pending cards.
+# 12 selected mathematical obligations receive 24 independent finite SymPy cases.
+.venv/bin/python scripts/build_kb_batch141_lineage.py --check
+.venv/bin/python scripts/check_kb_batch141_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch141_p0_lineage.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
