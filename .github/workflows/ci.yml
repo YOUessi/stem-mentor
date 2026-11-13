@@ -225,6 +225,10 @@ jobs:
       # the original licensed PDF remains exclusively on Mac.
       - run: python scripts/check_kb_batch130_offline.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch130_scope_lessons.py
+      # Batch131 source hashes replay on Mac only; GitHub checks offline evidence plus SymPy witnesses.
+      - run: python scripts/build_kb_batch131_contexts.py --check-offline
+      - run: python scripts/check_kb_batch131_exact_cases.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch131_context_math.py
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Fail fast on syntax errors before the long Python/Node/browser suite.

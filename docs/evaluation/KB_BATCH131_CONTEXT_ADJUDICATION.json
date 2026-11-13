@@ -1,0 +1,1112 @@
+{
+  "batch": 131,
+  "context_reviewed_total": 200,
+  "counts_by_track": {
+    "COMPULSORY": {
+      "context_checked": 75,
+      "historical_editorial_candidates": 75,
+      "not_checked": 0,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_A": {
+      "context_checked": 17,
+      "historical_editorial_candidates": 30,
+      "not_checked": 13,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_B": {
+      "context_checked": 16,
+      "historical_editorial_candidates": 30,
+      "not_checked": 14,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_C": {
+      "context_checked": 16,
+      "historical_editorial_candidates": 24,
+      "not_checked": 8,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_D": {
+      "context_checked": 13,
+      "historical_editorial_candidates": 17,
+      "not_checked": 4,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_E": {
+      "context_checked": 12,
+      "historical_editorial_candidates": 12,
+      "not_checked": 0,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "context_checked": 51,
+      "historical_editorial_candidates": 51,
+      "not_checked": 0,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    }
+  },
+  "curriculum_layout_cues": 405,
+  "historical_editorial_candidates": 239,
+  "new_context_reviews": 43,
+  "official_atom_denominator": null,
+  "records": [
+    {
+      "boundary_or_counterexample": "沿两条平行方向不能唯一分解任意平面向量；位移与力不能因坐标都为二元组而直接相加。",
+      "candidate_id": "hs-semantic-pilot-124-c514",
+      "contextual_interpretation": "向量分解解几何或力学问题时，应先选择正交或其他确实线性无关的方向，并在力学模型内保留物理量单位。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "向量分解法解平面几何与简单力学问题",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 21,
+        "line_sha256": [
+          "025464fd8796edaba5f5203dfe1f63392e482c1a5f2971cfa1f2a019353d41d7"
+        ],
+        "page": 26,
+        "span_sha256": "025464fd8796edaba5f5203dfe1f63392e482c1a5f2971cfa1f2a019353d41d7",
+        "start_line": 21
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "斜视图中的圆看似椭圆，但这不意味着原立体的圆形底面实际变成椭圆。",
+      "candidate_id": "hs-semantic-pilot-124-c515",
+      "contextual_interpretation": "辨认柱锥台球先依据底面、母线及截面等定义，透视效果只能辅助识别，不能替代几何性质。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "柱锥台球基本立体图形的条件化识别",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 25,
+        "line_sha256": [
+          "04996f4b88ce8b9704db84186fb94ea425445e27dbfbd1c497dae2c64e1c514f"
+        ],
+        "page": 27,
+        "span_sha256": "04996f4b88ce8b9704db84186fb94ea425445e27dbfbd1c497dae2c64e1c514f",
+        "start_line": 25
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "半径为2、高为3的圆锥体积是4π，不是与同底同高圆柱相等的12π。",
+      "candidate_id": "hs-semantic-pilot-124-c516",
+      "contextual_interpretation": "柱锥台和球的体积与表面积公式都应核对对应体型、正高度、半径与单位，不能跨模型套用。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "基本几何体体积公式的高度与半径前提",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 28,
+        "line_sha256": [
+          "5e0574a0e0c318112ead14b5f81a631feb6649e559f7e9e27fcb80ca9e0b3572"
+        ],
+        "page": 27,
+        "span_sha256": "5e0574a0e0c318112ead14b5f81a631feb6649e559f7e9e27fcb80ca9e0b3572",
+        "start_line": 28
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "斜二测图上的45度并不能直接证明原空间两条棱的真实夹角也是45度。",
+      "candidate_id": "hs-semantic-pilot-124-c517",
+      "contextual_interpretation": "斜二测绘制空间直观图采用特定倾角和坐标方向的比例规则，投影图不保存所有真实长度和角度。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "斜二测法绘制空间图形的比例失真",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 2,
+        "line_sha256": [
+          "a7e4c52b8b89beb853613b70373f543df24b6a8ddca15775b9f513e037e1e766"
+        ],
+        "page": 28,
+        "span_sha256": "a7e4c52b8b89beb853613b70373f543df24b6a8ddca15775b9f513e037e1e766",
+        "start_line": 2
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "一条直线的投影落在平面内，不足以证明空间中该直线本身属于该平面。",
+      "candidate_id": "hs-semantic-pilot-124-c518",
+      "contextual_interpretation": "点线面基本位置关系应使用几何定义及可引用的基本事实推理，长方体只提供直观参照而非逻辑证据。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "空间点线面关系须从几何定义或公理出发",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 5,
+        "line_sha256": [
+          "b22e9e2a4638a43531ea67864317fd49f61c1536c79344b304ce9d3f25a027f3"
+        ],
+        "page": 28,
+        "span_sha256": "b22e9e2a4638a43531ea67864317fd49f61c1536c79344b304ce9d3f25a027f3",
+        "start_line": 5
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "同一平面内两条平行直线不应据此判定其中一条与该平面严格平行。",
+      "candidate_id": "hs-semantic-pilot-124-c519",
+      "contextual_interpretation": "判定线面平行需检查平面内的参照直线与原直线确实平行且原直线不在该平面内，避免偷换定义。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "直线与平面平行判定的充分条件",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 16,
+        "line_sha256": [
+          "56e111c3839f12c9710ee2a8bbfeaf24e407046188456c4c07a06121d5bd5604"
+        ],
+        "page": 28,
+        "span_sha256": "56e111c3839f12c9710ee2a8bbfeaf24e407046188456c4c07a06121d5bd5604",
+        "start_line": 16
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "两个平面在透视图里交线看似成直角，不足以证明这两个平面垂直。",
+      "candidate_id": "hs-semantic-pilot-124-c520",
+      "contextual_interpretation": "线面垂直与面面垂直判定须给出被包含在相应平面内的直线及其垂直条件，不能由图上直角直接推出。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "两平面垂直判定中的包含垂线条件",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 26,
+        "line_sha256": [
+          "e27d6fc66712b49fd53367ea084a1e39ee42a73f771a492bf2739a7b0686c471"
+        ],
+        "page": 28,
+        "span_sha256": "e27d6fc66712b49fd53367ea084a1e39ee42a73f771a492bf2739a7b0686c471",
+        "start_line": 26
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "P(A)=0.6、P(B)=0.5且P(A∩B)=0.3时P(A∪B)=0.8而非1.1。",
+      "candidate_id": "hs-semantic-pilot-124-c521",
+      "contextual_interpretation": "事件的并交补概率必须相对同一样本空间和同一个概率测度解释；并集采用容斥而非无条件相加。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "同一样本空间事件并集概率的容斥关系",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 16,
+        "line_sha256": [
+          "02e9f7cff6de267cb57c0c1d0843c67bce1ed86babf63c47acb42376ded56967"
+        ],
+        "page": 31,
+        "span_sha256": "02e9f7cff6de267cb57c0c1d0843c67bce1ed86babf63c47acb42376ded56967",
+        "start_line": 16
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "只在某校自愿参与者中调查，不能不做偏差分析就推论所有全国高中生。",
+      "candidate_id": "hs-semantic-pilot-124-c522",
+      "contextual_interpretation": "说明数据来源应明确统计总体、时间窗口、采集途径、合法授权与抽样偏差，不把便利获取的数据当随机样本。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "抽样前明确总体和合法的数据来源",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 6,
+        "line_sha256": [
+          "7b160b0845d65f1c7e7c1193eba68b60be2c2028d0a4ad31bb7a0847df4d3120"
+        ],
+        "page": 32,
+        "span_sha256": "7b160b0845d65f1c7e7c1193eba68b60be2c2028d0a4ad31bb7a0847df4d3120",
+        "start_line": 6
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "有序排列的独立随机样本仍然来自随机抽样；把数据打乱不使方便样本成为随机样本。",
+      "candidate_id": "hs-semantic-pilot-124-c523",
+      "contextual_interpretation": "总体、样本与样本量是不同概念，样本的随机性来自采样机制而不是仅凭观测值大小无序。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "总体样本样本量及样本随机性的区别",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 8,
+        "line_sha256": [
+          "3e17eb67d435f246adb4874585161abd1e0c806e372f932d61d9526bda615c4e"
+        ],
+        "page": 32,
+        "span_sha256": "3e17eb67d435f246adb4874585161abd1e0c806e372f932d61d9526bda615c4e",
+        "start_line": 8
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "样本{1,3}的均值2，分母2方差为1，分母1方差为2；不能两个数混报为同一统计量。",
+      "candidate_id": "hs-semantic-pilot-124-c524",
+      "contextual_interpretation": "样本方差可按描述型分母n或无偏估计型分母n−1定义，标准差应与选定定义配套并说明单位。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "样本标准差衡量离散程度的两种分母",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 27,
+        "line_sha256": [
+          "bbc5e0f2eee677cbf5c6759d2e7f7cb38b2bd6ac198fa4d1b77560df54a655f2"
+        ],
+        "page": 32,
+        "span_sha256": "bbc5e0f2eee677cbf5c6759d2e7f7cb38b2bd6ac198fa4d1b77560df54a655f2",
+        "start_line": 27
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "样本{1,2,10,11}的中间百分位可因定义不同而不同，未指明规则不能声称唯一定值。",
+      "candidate_id": "hs-semantic-pilot-124-c525",
+      "contextual_interpretation": "经验百分位数依排序结果、百分位点定义和插值约定而定；不同约定可产生不同估计值。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "经验百分位数在排序和插值规则下的定义",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 1,
+        "line_sha256": [
+          "c6e734e4dfd5d0debae5253458cda06a43ea24db808d91b4e305c81cf78f7728"
+        ],
+        "page": 33,
+        "span_sha256": "c6e734e4dfd5d0debae5253458cda06a43ea24db808d91b4e305c81cf78f7728",
+        "start_line": 1
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "对f(x)=ln(x²)在x≠0求导得2/x，不是1/x；在x=0函数根本未定义。",
+      "candidate_id": "hs-semantic-pilot-121-s201",
+      "contextual_interpretation": "使用导数公式表之前必须逐个检查函数定义域、组合结构、内函数可导及求导区间，不可抹去链式法则。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "基本导数公式表的定义域与使用门槛",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 25,
+        "line_sha256": [
+          "729b325cd2bdff32e1d9ec3b46c2757389abcd3f850b160e0f93a3acf0ee4b55"
+        ],
+        "page": 39,
+        "span_sha256": "729b325cd2bdff32e1d9ec3b46c2757389abcd3f850b160e0f93a3acf0ee4b55",
+        "start_line": 25
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "向量(1,2,3)+(2,0,-1)=(3,2,2)，不是平面截断计算得到的(3,2,3)。",
+      "candidate_id": "hs-semantic-pilot-121-s202",
+      "contextual_interpretation": "空间向量坐标运算按分量进行，与平面向量同样满足加法和数乘规律，但不能遗漏第三个坐标。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "空间向量加减数乘的坐标运算",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 20,
+        "line_sha256": [
+          "b48f2e32a3f55c6a2e310704f636b2d61830c4c15029227f4f57fce6cd55ba90"
+        ],
+        "page": 42,
+        "span_sha256": "b48f2e32a3f55c6a2e310704f636b2d61830c4c15029227f4f57fce6cd55ba90",
+        "start_line": 20
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "两点(2,0)、(2,3)确定x=2，但斜率分母为零，不能强写成y=kx+b。",
+      "candidate_id": "hs-semantic-pilot-121-s203",
+      "contextual_interpretation": "不同两点才能唯一确定直线；斜率式不覆盖竖直直线，须保留一般式的合法系数条件。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "两点确定直线的一般式方程",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 20,
+        "line_sha256": [
+          "7988c3896e061468a3e58ffff64709096694986bec46173d7fdeeda122940fee"
+        ],
+        "page": 43,
+        "span_sha256": "7988c3896e061468a3e58ffff64709096694986bec46173d7fdeeda122940fee",
+        "start_line": 20
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "x²+y²+1=0在实平面无点，不能将其视为半径1的圆。",
+      "candidate_id": "hs-semantic-pilot-121-s204",
+      "contextual_interpretation": "圆的圆心与半径须通过方程完成平方识别，半径平方必须严格为正才能得到非退化实圆。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "平面圆的圆心半径和方程判据",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 4,
+        "line_sha256": [
+          "08f933e51d1b199250c085eec1e933ad0fc27a9ed9ef7aba406cb1641132d5a0"
+        ],
+        "page": 44,
+        "span_sha256": "08f933e51d1b199250c085eec1e933ad0fc27a9ed9ef7aba406cb1641132d5a0",
+        "start_line": 4
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "圆心距等于两半径之和时两圆外切，不能因为两个圆半径都正就判为相交两点。",
+      "candidate_id": "hs-semantic-pilot-121-s205",
+      "contextual_interpretation": "直线与圆位置可用圆心到直线距离比较半径；若讨论圆与圆还需两圆心距及半径和差。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "直线与圆相交相切相离的距离判别",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 6,
+        "line_sha256": [
+          "4fac8c09aeff0dc4e77593f9e4d82a3142cf56ce2e7cd9b419ee59c6f525aa56"
+        ],
+        "page": 44,
+        "span_sha256": "4fac8c09aeff0dc4e77593f9e4d82a3142cf56ce2e7cd9b419ee59c6f525aa56",
+        "start_line": 6
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "随机变量取0和1而概率分别为0.7和0.4时总和1.1，不能构成合法分布列。",
+      "candidate_id": "hs-semantic-pilot-121-s206",
+      "contextual_interpretation": "离散随机变量的取值集必须清楚且各概率非负并总和为一；取值名称不等于事件互不相交的证明。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "离散随机变量分布列的规范性",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 21,
+        "line_sha256": [
+          "5bcfab1e2f4d0aebd2056cbe733602f6959c1cf50cd204762f0fef4f361cb27c"
+        ],
+        "page": 47,
+        "span_sha256": "5bcfab1e2f4d0aebd2056cbe733602f6959c1cf50cd204762f0fef4f361cb27c",
+        "start_line": 21
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "把向量(1,2,0)投影到零向量时分母为零，不能人为约定投影长度为2。",
+      "candidate_id": "hs-semantic-pilot-121-s207",
+      "contextual_interpretation": "空间向量投影到非零方向使用内积与方向范数平方；目标为零向量时该投影公式不合法。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "空间向量的正交投影定义与零向量边界",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 26,
+        "line_sha256": [
+          "d812f8115a149b4c13efa589212714811a8326a938ea23ca41493892e9c91210"
+        ],
+        "page": 42,
+        "span_sha256": "d812f8115a149b4c13efa589212714811a8326a938ea23ca41493892e9c91210",
+        "start_line": 26
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "两个向量前三个坐标中前两项相同，并不保证空间向量相等；第三分量也必须相等。",
+      "candidate_id": "hs-semantic-pilot-122-s301",
+      "contextual_interpretation": "空间向量推广保持加法、数乘和数量积的代数结构，但空间向量方向需用三维分量或空间基标识。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "空间向量与平面向量分量推广",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 19,
+        "line_sha256": [
+          "4051c86c60951a7bc615d6fd4792601605de0b19c0b3740b8830febfec75b1c6"
+        ],
+        "page": 42,
+        "span_sha256": "4051c86c60951a7bc615d6fd4792601605de0b19c0b3740b8830febfec75b1c6",
+        "start_line": 19
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "法向量(0,0,0)不能定义唯一平面，不能用零内积直接推任何直线与其垂直。",
+      "candidate_id": "hs-semantic-pilot-122-s302",
+      "contextual_interpretation": "空间直线的方向向量和平面的法向量必须非零，平行垂直关系由合法内积或参数约束判断。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "方向向量与法向量对直线和平面的约束",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 28,
+        "line_sha256": [
+          "416a865c4fc63034b9b367aa629b9b407d99268bfa31c60d502175007a878c47"
+        ],
+        "page": 42,
+        "span_sha256": "416a865c4fc63034b9b367aa629b9b407d99268bfa31c60d502175007a878c47",
+        "start_line": 28
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "把x²/a²−y²/b²=1的a设为0会造成分母为零，不构成双曲线方程。",
+      "candidate_id": "hs-semantic-pilot-122-s303",
+      "contextual_interpretation": "抛物线和双曲线标准方程均有独立定义条件和参数范围，先确认焦距等量再讨论开口或分支。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "抛物线与双曲线标准方程的参数边界",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 14,
+        "line_sha256": [
+          "d61a09f712992f73ac34c1f577a50a4807c2a0a9ce07a392f462dfac81291101"
+        ],
+        "page": 44,
+        "span_sha256": "d61a09f712992f73ac34c1f577a50a4807c2a0a9ce07a392f462dfac81291101",
+        "start_line": 14
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "不放回抽取两个球时第二次成功率可能改变，故一般不满足同参数独立伯努利试验。",
+      "candidate_id": "hs-semantic-pilot-122-s304",
+      "contextual_interpretation": "二项分布需要固定次数、每次只有成败两类、概率不变且各次独立；不能把超几何抽样直接套二项。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "伯努利试验的二项分布建模条件",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 23,
+        "line_sha256": [
+          "18e0d556fa2f26a10e08b83c6403a2283357f3b346985c9492b401f870726bd6"
+        ],
+        "page": 47,
+        "span_sha256": "18e0d556fa2f26a10e08b83c6403a2283357f3b346985c9492b401f870726bd6",
+        "start_line": 23
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "总共5个球且只有1红球，不放回抽2个不可能出现2个红球；不能按独立二项分布计算。",
+      "candidate_id": "hs-semantic-pilot-122-s305",
+      "contextual_interpretation": "超几何分布以有限总体N、成功数K、无放回抽取n建立，k的上下限须随参数同步约束。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "超几何分布的不放回抽样概率",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 25,
+        "line_sha256": [
+          "dcd15d1f9997104deb213c104d4e5e5250ba71b41a8f77beb43b9aea6a3b460e"
+        ],
+        "page": 47,
+        "span_sha256": "dcd15d1f9997104deb213c104d4e5e5250ba71b41a8f77beb43b9aea6a3b460e",
+        "start_line": 25
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "当σ=0时公式除零，不能把常量变量代入标准正态分布表。",
+      "candidate_id": "hs-semantic-pilot-122-s306",
+      "contextual_interpretation": "正态标准化Z=(X−μ)/σ需要σ>0，方差为零属于退化常量而不是可直接使用的标准正态。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "正态变量标准化与标准差非零条件",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 28,
+        "line_sha256": [
+          "d969a6c703e81a16afe4e275b32f233cd0ee611c1b7415b4d0dd57167d7e91b1"
+        ],
+        "page": 47,
+        "span_sha256": "d969a6c703e81a16afe4e275b32f233cd0ee611c1b7415b4d0dd57167d7e91b1",
+        "start_line": 28
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "若所有x均为5，则样本x离差平方和为0，Pearson相关系数不可定义而不是等于0。",
+      "candidate_id": "hs-semantic-pilot-122-s307",
+      "contextual_interpretation": "Pearson样本相关系数须双方样本方差非零且成对观测，数值范围为[-1,1]而非因果强度。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "Pearson样本相关系数的定义域和范围",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 11,
+        "line_sha256": [
+          "7860ae9969d4b9f88bc834882eacd6e9c68328f687e58568ff119f77fc8479b5"
+        ],
+        "page": 48,
+        "span_sha256": "7860ae9969d4b9f88bc834882eacd6e9c68328f687e58568ff119f77fc8479b5",
+        "start_line": 11
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "r=-0.9的线性相关强度高于r=0.2，不能用有符号数的大小给强度排序。",
+      "candidate_id": "hs-semantic-pilot-122-s308",
+      "contextual_interpretation": "比较相关系数的方向与线性强度应区分符号和绝对值，并检查各组样本范围、异常值与可比性。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "比较相关系数须区分关系方向与强度",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 13,
+        "line_sha256": [
+          "82d0c67006e55646eaec74f79be6f12f5e2bfe88bfadc8820acadb1523336181"
+        ],
+        "page": 48,
+        "span_sha256": "82d0c67006e55646eaec74f79be6f12f5e2bfe88bfadc8820acadb1523336181",
+        "start_line": 13
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "A=B=0的式子0x+0y+1=0不是直线，距离公式分母为零不能继续计算。",
+      "candidate_id": "hs-semantic-pilot-123-s402",
+      "contextual_interpretation": "用圆心到直线距离解决位置问题先检查直线一般式中(A,B)非零且圆半径合法。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "直线圆位置判断的圆心到直线距离法",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 8,
+        "line_sha256": [
+          "f53cb775e336fcc7f245bd3eb37d77b29ba5d5b50520a9e231af198bb02301a4"
+        ],
+        "page": 44,
+        "span_sha256": "f53cb775e336fcc7f245bd3eb37d77b29ba5d5b50520a9e231af198bb02301a4",
+        "start_line": 8
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "方差4对应标准差2，不是标准差4；负方差没有合法概率解释。",
+      "candidate_id": "hs-semantic-pilot-123-s404",
+      "contextual_interpretation": "正态分布的均值决定中心、方差决定离散程度；参数标准差必须正而不能等于负数。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "正态分布均值与方差的参数意义",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 3,
+        "line_sha256": [
+          "e5c41e69726c7f9440e786654360c0d36d4e59a961076719aecb7b1fbb527010"
+        ],
+        "page": 48,
+        "span_sha256": "e5c41e69726c7f9440e786654360c0d36d4e59a961076719aecb7b1fbb527010",
+        "start_line": 3
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "x²+y²=0仅表示原点，不是具有正半径的圆或普通非退化二次曲线。",
+      "candidate_id": "hs-semantic-pilot-124-s501",
+      "contextual_interpretation": "圆锥曲线几何定义与相应二次方程之间需严格匹配参数约束，退化方程不能沿用非退化焦点性质。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "圆锥曲线定义与二次方程退化风险",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 10,
+        "line_sha256": [
+          "5889c2d437bf2440be284ab1841a11c5e69b6e47b68dbdf410e489f33fd04ae2"
+        ],
+        "page": 44,
+        "span_sha256": "5889c2d437bf2440be284ab1841a11c5e69b6e47b68dbdf410e489f33fd04ae2",
+        "start_line": 10
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "焦点与准线距离为零时轨迹可能退化，不能直接套用p>0标准抛物线焦点参数公式。",
+      "candidate_id": "hs-semantic-pilot-124-s502",
+      "contextual_interpretation": "抛物线距离应用应明确点到焦点与点到准线的等距条件、焦点不在准线上，避免错误取绝对距离。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "用抛物线焦点准线定义解决距离应用",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 17,
+        "line_sha256": [
+          "0688c27f47d75e83421e0ed58c93298aef6dc621f6276c38009be6f2be01fe44"
+        ],
+        "page": 44,
+        "span_sha256": "0688c27f47d75e83421e0ed58c93298aef6dc621f6276c38009be6f2be01fe44",
+        "start_line": 17
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "boundary_or_counterexample": "系数矩阵为零而常数向量非零的非齐次系统无解，并非一定存在自由变量解。",
+      "candidate_id": "hs-semantic-pilot-120-a107",
+      "contextual_interpretation": "三元线性系统应以系数矩阵秩及增广矩阵秩判断有解性，并用自由变量描述齐次解空间。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "三元齐次和非齐次线性系统的解空间",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 8,
+        "line_sha256": [
+          "7fa298404dedf64ea5429090a68e9fcfd2ae8af2f9f8775cc64e5f15d9196a78",
+          "9debad935768d20cb0fbe2007ef029501db13ae6b7fc69fb593f7993c9c17c74",
+          "748c8d517fb7c9f312e5b6f1f4f98f995386878863227dfa30d0f9c20cdf286a",
+          "ecd6cf4b1fdd9d4e8336ae8886f6f959e0ceb5bdd77878466b4ff69a7fc500ad"
+        ],
+        "page": 55,
+        "span_sha256": "9e3e9a0f5ace7ff81eeab524a934fb36261df088bc656a5dbb808c830046c22b",
+        "start_line": 5
+      },
+      "source_may_be_partial_line": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "boundary_or_counterexample": "两行完全相同的三阶系数矩阵行列式为0，克拉默分式分母为0，不能用它求解。",
+      "candidate_id": "hs-semantic-pilot-120-a108",
+      "contextual_interpretation": "三元克拉默法则要求三阶系数行列式不为零，否则即使有解也不能通过除以行列式求出唯一解。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "克拉默法则的可逆条件",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 10,
+        "line_sha256": [
+          "bb82e38e586ce1203e3b485ffc797777b99d50577509126e61f7d4db6c2965dc",
+          "22c66f611d43c3c366855c4b249f456e0ffab5497cd0b2ade8a1a11c1a6bf4d9"
+        ],
+        "page": 55,
+        "span_sha256": "ffe5b409aadf394caf6c0b7db228d766f1577e0e5670e7658617faf4eaffb212",
+        "start_line": 9
+      },
+      "source_may_be_partial_line": false,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "boundary_or_counterexample": "若a_n=1，b_n=1/n，则a_n/b_n=n发散，不能写成1/0的合法极限值。",
+      "candidate_id": "hs-semantic-pilot-121-a201",
+      "contextual_interpretation": "数列有限极限的和积可按极限运算，商式还需分母极限非零；每项操作必须声明收敛前提。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "数列极限和积商的运算法则及除法条件",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 30,
+        "line_sha256": [
+          "b6294ea47788c632ccf2b3743bb875632a15a1bef7bcbe2f51eb5d428b333553"
+        ],
+        "page": 52,
+        "span_sha256": "b6294ea47788c632ccf2b3743bb875632a15a1bef7bcbe2f51eb5d428b333553",
+        "start_line": 30
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "boundary_or_counterexample": "仅计算(1+1/n)^n在n=1,2,3的值不足以证明其极限存在或等于e。",
+      "candidate_id": "hs-semantic-pilot-121-a202",
+      "contextual_interpretation": "自然常数e可通过经典收敛数列近似引入，但数值前几项不是对极限存在性的完整证明。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "自然常数e的数列极限近似背景",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 31,
+        "line_sha256": [
+          "f727011a40ee98dedb14cf1a2518a2378afe972a3d8ee39a60f5aee1976b8e6b"
+        ],
+        "page": 52,
+        "span_sha256": "f727011a40ee98dedb14cf1a2518a2378afe972a3d8ee39a60f5aee1976b8e6b",
+        "start_line": 31
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "boundary_or_counterexample": "f(x)=|x|在x=0不可微，不能在那里写dy=f′(0)dx。",
+      "candidate_id": "hs-semantic-pilot-121-a203",
+      "contextual_interpretation": "微分dy=f′(x)dx是一阶线性主部，须以函数在该点可微为前提，并区分有限增量与微分。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "函数微分作为局部线性变化的定义",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 17,
+        "line_sha256": [
+          "e348dd1a40e387960550686302ec3025c5b40862fd4709ff6ba90a18fded56eb"
+        ],
+        "page": 53,
+        "span_sha256": "e348dd1a40e387960550686302ec3025c5b40862fd4709ff6ba90a18fded56eb",
+        "start_line": 17
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "boundary_or_counterexample": "f(x)=|x|在[-1,1]最小值位于不可导点0，单找f′=0会漏掉。",
+      "candidate_id": "hs-semantic-pilot-121-b201",
+      "contextual_interpretation": "连续函数在闭区间取最值，可比较驻点、不可导内点和端点；导数算法只生成候选而非自动答案。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "连续函数闭区间全局极值的候选比较",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 33,
+        "line_sha256": [
+          "413a4731277525b3c47137659d26e60dd4d905dccfb58323481ed025064b4718"
+        ],
+        "page": 58,
+        "span_sha256": "413a4731277525b3c47137659d26e60dd4d905dccfb58323481ed025064b4718",
+        "start_line": 33
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_B"
+    },
+    {
+      "boundary_or_counterexample": "把∑_{k=1}^n k/n当成积分近似而不乘网格宽1/n会得到发散数量级。",
+      "candidate_id": "hs-semantic-pilot-121-b202",
+      "contextual_interpretation": "特殊黎曼和的等分区间求值要写出网格宽度及取样点，并确认被积函数可积。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "特殊黎曼和的等分区间转定积分",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 4,
+        "line_sha256": [
+          "8c586d24514e98d1e8621e1a08909448e32de0cfe4bb9d81431ee1a31515506b"
+        ],
+        "page": 59,
+        "span_sha256": "8c586d24514e98d1e8621e1a08909448e32de0cfe4bb9d81431ee1a31515506b",
+        "start_line": 4
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_B"
+    },
+    {
+      "boundary_or_counterexample": "f(x,y)=x在闭单位圆盘上最大值1发生在边界而不是内部驻点。",
+      "candidate_id": "hs-semantic-pilot-121-b203",
+      "contextual_interpretation": "闭圆与闭椭圆是紧集，连续二次函数能取最值；内部驻点及受约束边界须分别求解。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "闭圆与闭椭圆上二次函数的全局极值",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 20,
+        "line_sha256": [
+          "8f848ba298d303b15597e491ffe642698505aebf33b6dba7384f8a795e1bc52b"
+        ],
+        "page": 59,
+        "span_sha256": "8f848ba298d303b15597e491ffe642698505aebf33b6dba7384f8a795e1bc52b",
+        "start_line": 20
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_B"
+    },
+    {
+      "boundary_or_counterexample": "任意向量组都存在全零系数组合，这不能证明所有向量组线性相关。",
+      "candidate_id": "hs-semantic-pilot-121-b204",
+      "contextual_interpretation": "线性相关指存在不全为零的系数使向量线性组合为零，不能把所有系数为零的平凡组合当证据。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "向量组线性相关的非平凡系数判据",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 8,
+        "line_sha256": [
+          "5a49093380989b30ac03efe575e3446112aa4127a39decf6c7aa4cf9363f96ec"
+        ],
+        "page": 60,
+        "span_sha256": "5a49093380989b30ac03efe575e3446112aa4127a39decf6c7aa4cf9363f96ec",
+        "start_line": 8
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_B"
+    },
+    {
+      "boundary_or_counterexample": "仅两期数据拟合出上升直线，不能据此认定政策干预导致了增长。",
+      "candidate_id": "hs-semantic-pilot-121-ec201",
+      "contextual_interpretation": "经济增长的简单线性回归需给出成对样本、残差、变量单位及外推边界；回归显著不自动证明因果。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "社会经济数据简单线性回归的残差分析",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 16,
+        "line_sha256": [
+          "582de2078fe2bd4d1c427bbb03a54c59c03abaa9245952bef435ce79f34560fc"
+        ],
+        "page": 66,
+        "span_sha256": "582de2078fe2bd4d1c427bbb03a54c59c03abaa9245952bef435ce79f34560fc",
+        "start_line": 16
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_C"
+    },
+    {
+      "boundary_or_counterexample": "线性预测得分3不是概率3；应经sigmoid变换后再解释为概率。",
+      "candidate_id": "hs-semantic-pilot-121-ec202",
+      "contextual_interpretation": "二分类Logistic模型的预测是0到1之间概率，通过对数几率建立线性关系；系数不是概率本身。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "二分类Logistic模型概率与对数几率",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 12,
+        "line_sha256": [
+          "8b8992d365f38187b8c216db1b82ce01f2b9c7d1059b263b6275c19131d9fc09"
+        ],
+        "page": 67,
+        "span_sha256": "8b8992d365f38187b8c216db1b82ce01f2b9c7d1059b263b6275c19131d9fc09",
+        "start_line": 12
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_C"
+    },
+    {
+      "boundary_or_counterexample": "一段含噪录音有强峰值，不足以证明乐器发声是严格单频纯正弦波。",
+      "candidate_id": "hs-semantic-pilot-121-ed201",
+      "contextual_interpretation": "乐器周期性振动模型可用频率f=1/T联系周期与音高，但实测波形可能含谐波和非周期噪声。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "proposed_objective": "乐器发声周期与频率的测量模型",
+      "source_evidence_status": "ORIGINAL_LINE_HASH_CHECKED_EDITORIAL_INTERPRETATION_PENDING",
+      "source_lock": {
+        "end_line": 8,
+        "line_sha256": [
+          "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f"
+        ],
+        "page": 71,
+        "span_sha256": "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f",
+        "start_line": 8
+      },
+      "source_may_be_partial_line": true,
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_review_status": "REVIEW_PENDING",
+      "teacher_signature": null,
+      "track": "ELECTIVE_D"
+    }
+  ],
+  "remaining_context_reviews": 39,
+  "reviewed_before": 157,
+  "source_pdf_text_embedded": false,
+  "standard_version": "2017 edition, 2020 revision",
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "track_official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  }
+}

@@ -232,6 +232,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch128_source_p
 .venv/bin/python scripts/build_kb_batch130_deep_lessons.py --check
 .venv/bin/python scripts/check_kb_batch130_offline.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch130_scope_lessons.py
+# Batch131: rehash original 43 PDFKit spans on Mac, replay offline trust boundary and exact math.
+.venv/bin/python scripts/build_kb_batch131_contexts.py --check-mac
+.venv/bin/python scripts/build_kb_batch131_contexts.py --check-offline
+.venv/bin/python scripts/check_kb_batch131_exact_cases.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch131_context_math.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
