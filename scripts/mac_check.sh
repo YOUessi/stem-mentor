@@ -190,6 +190,11 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch115.py --check --verif
 .venv/bin/python -m pytest -q tests/test_kb_batch119_semantic_pilot.py
 .venv/bin/python scripts/build_kb_batch119_proof_reviews.py --check
 .venv/bin/python -m pytest -q tests/test_kb_batch119_proof_reviews.py
+.venv/bin/python scripts/build_kb_batch120_semantic_expansion.py --check --verify-local-source
+.venv/bin/python scripts/build_kb_batch120_math_oracles.py --check
+.venv/bin/python -m pytest -q tests/test_kb_batch120_semantic_expansion.py
+.venv/bin/python scripts/build_kb_batch120_proof_lessons.py --check
+.venv/bin/python -m pytest -q tests/test_kb_batch120_proof_lessons.py
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch107_lessons.py --check
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)

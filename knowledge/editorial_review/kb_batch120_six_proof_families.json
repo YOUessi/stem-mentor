@@ -1,0 +1,469 @@
+[
+  {
+    "boundary": "两向量线性相关时，不能保证任意w可表示，更不能保证唯一表示。",
+    "candidate_id": "hs-semantic-pilot-120-c105",
+    "claim": "存在唯一实数α,β使w=αu+βv。",
+    "counterexample": "u=(1,0),v=(2,0)时w=(0,1)不可表达；w=(1,0)又有(α,β)=(1,0)和(-1,1)两种分解。",
+    "course_track": "COMPULSORY",
+    "general_formal_proof_certified": false,
+    "hint_ladder": [
+      "先检查基向量是否真的不共线。",
+      "把未知系数写成二元线性方程组，核对行列式。",
+      "求出一组系数后，使用可逆性证明它唯一。"
+    ],
+    "hypotheses": [
+      "u,v是同一实二维向量空间中的两个向量，且det[u v]≠0",
+      "w是同一实二维向量空间的任意向量；标量系数在实数域"
+    ],
+    "proof_steps": [
+      {
+        "claim": "建立坐标矩阵",
+        "justification": "以u,v为列建立2×2矩阵A；行列式不为零，故A有逆矩阵。"
+      },
+      {
+        "claim": "构造分解",
+        "justification": "取列向量(α,β)^T=A^{-1}w，则A(α,β)^T=w，即存在分解。"
+      },
+      {
+        "claim": "证明唯一",
+        "justification": "若另有一组α',β'，两式相减得A(α-α',β-β')^T=0；左乘A^{-1}知两差皆为零。"
+      }
+    ],
+    "review_id": "kb120-proof-family-c105",
+    "review_status": "REVIEW_PENDING",
+    "source": {
+      "end_line": 16,
+      "frozen_page_sha256": "22f38c120e641e56e118d765e03dcd6a1891bc35e08de8b7663501acbaa4c761",
+      "matching_layout_cues": [
+        "syllabus-cue-9be34337cac708d0b868",
+        "syllabus-cue-906b1bd86201837418ba",
+        "syllabus-cue-7bf55e1141035b85ba7f",
+        "syllabus-cue-b350304361c0ab306e02"
+      ],
+      "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "physical_page_index": 33,
+      "printed_page": 26,
+      "source_span_sha256": "639be43646e0be6aeded413fa83e1303c0e0a9d8a7c2b80be7d312ea9cbbfc54",
+      "start_line": 13,
+      "visual_formula_recheck": "NOT_FLAGGED"
+    },
+    "student_authoritative": false,
+    "teacher_evidence": null,
+    "teacher_examples": [
+      {
+        "answer": "(3,-2)",
+        "check": "3(1,0)-2(0,1)=(3,-2)。",
+        "question": "u=(1,0),v=(0,1),w=(3,-2)，求分解系数。",
+        "steps": [
+          "矩阵A为单位阵，故A^{-1}w=w。",
+          "分别得到α=3,β=-2。"
+        ]
+      },
+      {
+        "answer": "(2,2)",
+        "check": "2(1,1)+2(1,-1)=(4,0)。",
+        "question": "u=(1,1),v=(1,-1),w=(4,0)，求分解系数。",
+        "steps": [
+          "列出α+β=4，α-β=0。",
+          "两式相加得2α=4，继而β=2。"
+        ]
+      }
+    ],
+    "title": "平面两独立向量唯一分解",
+    "transfer": {
+      "far": "在二维屏幕坐标变换中，若两个轴方向几乎平行，虽不完全相同，计算会有什么数值稳定性问题？",
+      "near": "改变w为(2,6)，在u=(1,1),v=(1,-1)的同一基下求系数。"
+    },
+    "visibility": "TEACHER_ONLY"
+  },
+  {
+    "boundary": "边长无法组成非退化三角形时不能使用三角形内角解释该式；A必须是两条从A出发边的夹角。",
+    "candidate_id": "hs-semantic-pilot-120-c107",
+    "claim": "a²=b²+c²−2bc cos A。",
+    "counterexample": "a=5,b=1,c=2不满足三角形不等式，不能把由代数倒推的余弦值当作真实三角形内角。",
+    "course_track": "COMPULSORY",
+    "general_formal_proof_certified": false,
+    "hint_ladder": [
+      "先确定所求边的对角，不要把邻角错配。",
+      "用两条从同一顶点出发的向量表示第三边。",
+      "平方展开并代入点积定义，最后检查长度非负。"
+    ],
+    "hypotheses": [
+      "ABC为非退化的欧氏平面三角形，三边a=|BC|、b=|CA|、c=|AB|均正",
+      "A为边b和c的夹角，0<A<π；数量积及向量模长使用欧氏度量"
+    ],
+    "proof_steps": [
+      {
+        "claim": "构造同起点向量",
+        "justification": "从A点出发置u=向量AB，v=向量AC，其模长分别为c和b，夹角为A。"
+      },
+      {
+        "claim": "表达对边",
+        "justification": "向量BC=v-u，故a²=|v-u|²=(v-u)·(v-u)。"
+      },
+      {
+        "claim": "展开数量积",
+        "justification": "双线性、对称性给出|v-u|²=|v|²+|u|²−2u·v。"
+      },
+      {
+        "claim": "代入角度",
+        "justification": "u·v=bc cos A，得到a²=b²+c²−2bc cos A。"
+      }
+    ],
+    "review_id": "kb120-proof-family-c107",
+    "review_status": "REVIEW_PENDING",
+    "source": {
+      "end_line": 25,
+      "frozen_page_sha256": "22f38c120e641e56e118d765e03dcd6a1891bc35e08de8b7663501acbaa4c761",
+      "matching_layout_cues": [
+        "syllabus-cue-5108839858ee70ba07b9",
+        "syllabus-cue-2eb73d08362febfeae68"
+      ],
+      "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "physical_page_index": 33,
+      "printed_page": 26,
+      "source_span_sha256": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+      "start_line": 23,
+      "visual_formula_recheck": "NOT_FLAGGED"
+    },
+    "student_authoritative": false,
+    "teacher_evidence": null,
+    "teacher_examples": [
+      {
+        "answer": "5",
+        "check": "正交两边构成3-4-5直角三角形。",
+        "question": "b=3,c=4,A=π/2，求a。",
+        "steps": [
+          "代入cos(π/2)=0。",
+          "a²=3²+4²=25，a取正值得5。"
+        ]
+      },
+      {
+        "answer": "12",
+        "check": "构成的三角形非退化且a=2sqrt(3)满足三角形不等式。",
+        "question": "b=2,c=2,A=2π/3，求a²。",
+        "steps": [
+          "cos(2π/3)=-1/2。",
+          "a²=4+4−8(-1/2)=12。"
+        ]
+      }
+    ],
+    "title": "余弦定理的向量证明",
+    "transfer": {
+      "far": "机器人两条连杆末端间距可由夹角计算，但若坐标中混用弧度与角度会产生什么错误？",
+      "near": "已知b=4,c=5,A=π/3，求a并检查三角形不等式。"
+    },
+    "visibility": "TEACHER_ONLY"
+  },
+  {
+    "boundary": "在斜交坐标或各轴单位尺度不同的情况下，平方和一般不是物理距离平方。",
+    "candidate_id": "hs-semantic-pilot-120-s105",
+    "claim": "|PQ|=sqrt((x_Q-x_P)²+(y_Q-y_P)²+(z_Q-z_P)²)。",
+    "counterexample": "若横轴一坐标单位代表2米，P=(0,0,0)、Q=(1,0,0)，实际距离2米而直接平方和给1。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "general_formal_proof_certified": false,
+    "hint_ladder": [
+      "先确保两个点位于同一正交坐标系。",
+      "逐轴作坐标差，不能错把坐标相加。",
+      "平方求和后取非负平方根，检验单位。"
+    ],
+    "hypotheses": [
+      "空间两点P,Q的坐标属于同一正交直角坐标系",
+      "三个坐标轴单位长度一致，坐标差Δx,Δy,Δz均为实数"
+    ],
+    "proof_steps": [
+      {
+        "claim": "确定位移",
+        "justification": "同一坐标系下的差向量为Q-P=(Δx,Δy,Δz)。"
+      },
+      {
+        "claim": "利用正交性",
+        "justification": "位移的平方模长是点积(Q-P)·(Q-P)=Δx²+Δy²+Δz²。"
+      },
+      {
+        "claim": "取非负平方根",
+        "justification": "欧氏距离按定义非负，因此取平方和的非负平方根作为距离。"
+      }
+    ],
+    "review_id": "kb120-proof-family-s105",
+    "review_status": "REVIEW_PENDING",
+    "source": {
+      "end_line": 17,
+      "frozen_page_sha256": "6c429e184659d90d001bc2fd3c6796eeef521a3e4dad6d010aebf2a8fe8518f2",
+      "matching_layout_cues": [
+        "syllabus-cue-cb0a2ef55ca612f45597",
+        "syllabus-cue-45ba24612e4c7e680536"
+      ],
+      "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "physical_page_index": 49,
+      "printed_page": 42,
+      "source_span_sha256": "2df559aa7a85d6b1d546f88be6409cf42797a3d6a3feed24cdf25225e8a4f23c",
+      "start_line": 14,
+      "visual_formula_recheck": "NOT_FLAGGED"
+    },
+    "student_authoritative": false,
+    "teacher_evidence": null,
+    "teacher_examples": [
+      {
+        "answer": "13",
+        "check": "13²=3²+4²+12²=169。",
+        "question": "P=(1,2,3),Q=(4,6,15)，求PQ。",
+        "steps": [
+          "坐标差为(3,4,12)。",
+          "距离sqrt(9+16+144)=13。"
+        ]
+      },
+      {
+        "answer": "3",
+        "check": "3²=1²+2²+2²。",
+        "question": "P=(0,0,0),Q=(1,2,2)，求PQ。",
+        "steps": [
+          "位移向量(1,2,2)。",
+          "距离sqrt(1+4+4)=3。"
+        ]
+      }
+    ],
+    "title": "空间两点距离公式",
+    "transfer": {
+      "far": "无人机地理定位经纬度是球面角度，为什么不能直接把角度差代入三维米制距离公式？",
+      "near": "计算P=(-2,1,1)与Q=(2,4,13)的欧氏距离。"
+    },
+    "visibility": "TEACHER_ONLY"
+  },
+  {
+    "boundary": "在非单位正交基下投影系数要除以|ei|²；在非正交基下直接套点积系数是错误的。",
+    "candidate_id": "hs-semantic-pilot-120-s106",
+    "claim": "v=(v·e1)e1+(v·e2)e2+(v·e3)e3，而且这三个系数唯一。",
+    "counterexample": "取e1=(2,0,0),e2=(0,1,0),e3=(0,0,1)，v=(2,0,0)时v·e1=4，直接乘e1得到(8,0,0)而非v。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "general_formal_proof_certified": false,
+    "hint_ladder": [
+      "检查正交、单位、维度和是否为基。",
+      "对每个基向量求点积得到对应坐标。",
+      "代回线性组合验证，不可在非正交基直接使用该方法。"
+    ],
+    "hypotheses": [
+      "e1,e2,e3是R³上的正交单位基，彼此内积δij",
+      "v是同一个带欧氏内积的三维实向量"
+    ],
+    "proof_steps": [
+      {
+        "claim": "正交投影系数",
+        "justification": "设v=Σ c_i e_i，对等式点乘e_j，正交单位条件使v·e_j=c_j。"
+      },
+      {
+        "claim": "说明分解存在",
+        "justification": "三条两两正交的非零向量在三维空间线性无关，因此构成R³一组基，任意v可分解。"
+      },
+      {
+        "claim": "代回得明确形式",
+        "justification": "将c_i=v·e_i代回得到所列正交分解公式。"
+      },
+      {
+        "claim": "唯一性",
+        "justification": "若还有另一组系数，同一向量对每个e_j点乘所得结果不变，故两组坐标相等。"
+      }
+    ],
+    "review_id": "kb120-proof-family-s106",
+    "review_status": "REVIEW_PENDING",
+    "source": {
+      "end_line": 25,
+      "frozen_page_sha256": "6c429e184659d90d001bc2fd3c6796eeef521a3e4dad6d010aebf2a8fe8518f2",
+      "matching_layout_cues": [
+        "syllabus-cue-9b1fb4fac1850164e8a4",
+        "syllabus-cue-d5d6ebf55f5202194711",
+        "syllabus-cue-c2733b8ba72ea24adefc"
+      ],
+      "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "physical_page_index": 49,
+      "printed_page": 42,
+      "source_span_sha256": "33e576842508af009b742c40d4ef97510c3d06e67d09d53636e0c8c928a7ab7b",
+      "start_line": 22,
+      "visual_formula_recheck": "NOT_FLAGGED"
+    },
+    "student_authoritative": false,
+    "teacher_evidence": null,
+    "teacher_examples": [
+      {
+        "answer": "(2,-3,4)",
+        "check": "按坐标分量逐项相加，最终所得向量仍为v。",
+        "question": "标准基下v=(2,-3,4)，写成ei之和。",
+        "steps": [
+          "标准正交基的点积坐标就是2,-3,4。",
+          "v=2e1-3e2+4e3。"
+        ]
+      },
+      {
+        "answer": "(2,-3,-1)",
+        "check": "旋转的正交基保持点积和长度。",
+        "question": "e1=(0,1,0),e2=(-1,0,0),e3=(0,0,1)，v=(3,2,-1)，求系数。",
+        "steps": [
+          "点积得v·e1=2，v·e2=-3，v·e3=-1。",
+          "代回2e1-3e2-e3=(3,2,-1)。"
+        ]
+      }
+    ],
+    "title": "三维标准正交基坐标分解",
+    "transfer": {
+      "far": "惯导传感器坐标旋转后仍为正交基，但如果标定矩阵含缩放，坐标公式需要怎样修正？",
+      "near": "标准正交基下v=(1,2,2)的坐标与长度分别是多少？"
+    },
+    "visibility": "TEACHER_ONLY"
+  },
+  {
+    "boundary": "当D=0时不能直接计算商；线性系统可能无解或有无穷解，需要增广矩阵秩判别。",
+    "candidate_id": "hs-semantic-pilot-120-a108",
+    "claim": "方程Ax=b存在唯一解，且x_i=det(A_i)/D。",
+    "counterexample": "A=diag(1,1,0)，b=(0,0,1)时系统无解；b=(0,0,0)时存在无穷多解，均不能用克拉默分式。",
+    "course_track": "ELECTIVE_A",
+    "general_formal_proof_certified": false,
+    "hint_ladder": [
+      "核实系数矩阵必须是方阵且D不为零。",
+      "用b替换要找的未知量对应列，不是对应行。",
+      "求每个det(Ai)/D后代回原方程，若D=0改用秩分析。"
+    ],
+    "hypotheses": [
+      "A为实3×3方阵，b属于R³，D=det(A)≠0",
+      "A_i表示用b替换A的第i列得到的方阵，i=1,2,3"
+    ],
+    "proof_steps": [
+      {
+        "claim": "先确认可逆",
+        "justification": "D不为0保证A可逆，故存在唯一解x=A^{-1}b。"
+      },
+      {
+        "claim": "用列线性组合",
+        "justification": "因为b=Σ_j x_j a_j（a_j为A第j列），将它代入A_i的第i列。"
+      },
+      {
+        "claim": "利用行列式多线性",
+        "justification": "det(A_i)=Σ_j x_j det(a1,…,a_j,…,a3)；其中j≠i时有相同的两列，行列式为零。"
+      },
+      {
+        "claim": "保留唯一非零项",
+        "justification": "只余j=i的项，得det(A_i)=x_i det(A)=x_iD；D≠0，合法相除即得公式。"
+      }
+    ],
+    "review_id": "kb120-proof-family-a108",
+    "review_status": "REVIEW_PENDING",
+    "source": {
+      "end_line": 10,
+      "frozen_page_sha256": "b5aa0c8af2feebe5502df4e06ffc98719dd5b4eb2af270798f7431d68b5db5d0",
+      "matching_layout_cues": [
+        "syllabus-cue-c4d5790504d3840592be"
+      ],
+      "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "physical_page_index": 62,
+      "printed_page": 55,
+      "source_span_sha256": "ffe5b409aadf394caf6c0b7db228d766f1577e0e5670e7658617faf4eaffb212",
+      "start_line": 9,
+      "visual_formula_recheck": "NOT_FLAGGED"
+    },
+    "student_authoritative": false,
+    "teacher_evidence": null,
+    "teacher_examples": [
+      {
+        "answer": "(2,2,2)",
+        "check": "Ax=(4,6,8)，也与克拉默列替换的detAi/D一致。",
+        "question": "A=diag(2,3,4),b=(4,6,8)，求x。",
+        "steps": [
+          "D=24≠0，系统唯一可解。",
+          "逐行得到2x1=4，3x2=6，4x3=8。"
+        ]
+      },
+      {
+        "answer": "(3,2,2)",
+        "check": "代回Ax=(3,4,10)，符合唯一解条件。",
+        "question": "A=diag(1,2,5),b=(3,4,10)，求x。",
+        "steps": [
+          "D=10≠0。",
+          "分别得到x1=3,x2=2,x3=2。"
+        ]
+      }
+    ],
+    "title": "三阶克拉默法则及分母条件",
+    "transfer": {
+      "far": "三元数据拟合中系数矩阵高度接近奇异，即使D非零，数值计算仍可能不稳定，为什么？",
+      "near": "已知A=diag(3,2,1),b=(9,4,-2)，用克拉默法求x。"
+    },
+    "visibility": "TEACHER_ONLY"
+  },
+  {
+    "boundary": "该结论依赖十二等分和每步相同频率比；不等同于每步加相同Hz，也不能直接套到不同调律系统。",
+    "candidate_id": "hs-semantic-pilot-120-ed105",
+    "claim": "唯一正倍率r=2^(1/12)，因此第k级频率为f_k=f0·2^(k/12)，k为整数。",
+    "counterexample": "从440Hz到880Hz若每步加440/12Hz，虽然末端仍是880Hz，但相邻频率比逐步改变，不满足十二平均律。",
+    "course_track": "ELECTIVE_D",
+    "general_formal_proof_certified": false,
+    "hint_ladder": [
+      "先区分等比频率与等差Hz。",
+      "根据12次相同倍率后翻倍建立r^12=2。",
+      "取正根并连乘次数，检查指数与频率单位。"
+    ],
+    "hypotheses": [
+      "一个八度被分成12个等频率比的半音级，基础频率f0>0",
+      "每一级的倍率r为正实数，十二级后的频率规定是2f0"
+    ],
+    "proof_steps": [
+      {
+        "claim": "把相同倍率转成递推",
+        "justification": "相邻级满足f_{k+1}=r f_k，反复应用得f_{12}=f0 r^12。"
+      },
+      {
+        "claim": "使用八度条件",
+        "justification": "依据f12=2f0并且f0>0，约去f0得r^12=2。"
+      },
+      {
+        "claim": "唯一正解",
+        "justification": "r>0时函数r↦r^12严格递增，因此正解唯一为2^(1/12)。"
+      },
+      {
+        "claim": "导出通项",
+        "justification": "从f0出发连乘k次得到f_k=f0·2^(k/12)，负k由反向倍率同理成立。"
+      }
+    ],
+    "review_id": "kb120-proof-family-ed105",
+    "review_status": "REVIEW_PENDING",
+    "source": {
+      "end_line": 4,
+      "frozen_page_sha256": "43917c317055b7ccca0233d3ad366b72d2a102879d312b6ef3f0ea15d88f08b8",
+      "matching_layout_cues": [
+        "syllabus-cue-0f9734adcc3f7b588b12"
+      ],
+      "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "physical_page_index": 78,
+      "printed_page": 71,
+      "source_span_sha256": "998a6d01313d307c2a5a06b5b16717847dcf57cb19cfde3867d6c68ff5bce73c",
+      "start_line": 1,
+      "visual_formula_recheck": "NOT_FLAGGED"
+    },
+    "student_authoritative": false,
+    "teacher_evidence": null,
+    "teacher_examples": [
+      {
+        "answer": "880",
+        "check": "(2^(1/12))^12=2。",
+        "question": "基频440Hz，升12个半音是多少Hz？",
+        "steps": [
+          "每一级频率乘2^(1/12)。",
+          "十二次连乘恰为2，故440×2=880Hz。"
+        ]
+      },
+      {
+        "answer": "880",
+        "check": "两次八度倍频220→440→880。",
+        "question": "基频220Hz，升24个半音是多少Hz？",
+        "steps": [
+          "24半音是两个八度，倍率为2^(24/12)=4。",
+          "220×4=880Hz。"
+        ]
+      }
+    ],
+    "title": "十二平均律的等比频率比",
+    "transfer": {
+      "far": "若某音阶有19等分八度，频率比的公式需要怎样重新推导？",
+      "near": "基频330Hz，降12个半音的频率是多少？"
+    },
+    "visibility": "TEACHER_ONLY"
+  }
+]

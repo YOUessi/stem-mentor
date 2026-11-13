@@ -1,0 +1,24 @@
+{
+  "algebraic_finite_sum": {
+    "definition": "a*sum(q**k for k=0..n-1), q**0=1 including q=0",
+    "domain": "n>=1 integer, a and q real",
+    "q_one": "n*a",
+    "q_other": "a*(1-q**n)/(1-q) for q != 1",
+    "q_zero": "n>=1 -> a"
+  },
+  "general_proof_machine_certified": false,
+  "historical_reference": "hs-semantic-pilot-119-s04 / hs-semantic-pilot-119-s05",
+  "negative_examples": [
+    "q=1 gives 0/0 if formula with 1-q is used",
+    "q=0 causes later adjacent ratio 0/0 and cannot be treated as a conventional geometric progression",
+    "a1=0 makes all later adjacent ratios undefined"
+  ],
+  "source_usage": "editorial mathematical clarification, teacher review required",
+  "standard_geometric_sequence": {
+    "domain": "nonzero a1, nonzero q, positive-integer n under adjacent nonzero ratios",
+    "q_zero_or_a1_zero": "does not meet nonzero-ratio definition, despite algebraic series existence"
+  },
+  "status": "REVIEW_PENDING",
+  "student_authoritative": false,
+  "teacher_evidence": null
+}

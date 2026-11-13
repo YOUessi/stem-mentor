@@ -1,0 +1,14 @@
+{
+  "batch": 120,
+  "exact_teacher_example_checks": 12,
+  "examples_by_candidate": {
+    "A108": 2,
+    "C105": 2,
+    "C107": 2,
+    "ED105": 2,
+    "S105": 2,
+    "S106": 2
+  },
+  "general_formal_proofs_certified": 0,
+  "teacher_approved": 0
+}
