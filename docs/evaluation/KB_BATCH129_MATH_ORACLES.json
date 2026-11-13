@@ -1,0 +1,72 @@
+{
+  "all_finite_exact_cases_passed": true,
+  "batch": 129,
+  "claims_are_narrow_independent_finite_checks": true,
+  "cross_check_results": {
+    "119-s13": true,
+    "119-s14": true,
+    "120-a106": true,
+    "120-b105": true,
+    "120-c107": true,
+    "120-c112": true,
+    "120-ec107": true,
+    "120-ed106": true,
+    "120-ee105": true
+  },
+  "cross_topic_independent_checks": 9,
+  "exact_worked_example_checks": 18,
+  "general_theorem_proofs_formally_certified": 0,
+  "invalid_check_results": {
+    "119-s13": true,
+    "119-s14": true,
+    "120-a106": true,
+    "120-b105": true,
+    "120-c107": true,
+    "120-c112": true,
+    "120-ec107": true,
+    "120-ed106": true,
+    "120-ee105": true
+  },
+  "invalid_condition_checks": 9,
+  "student_authoritative": 0,
+  "student_free_steps_verified": 0,
+  "teacher_approved": 0,
+  "worked_checks": {
+    "119-s13": [
+      true,
+      true
+    ],
+    "119-s14": [
+      true,
+      true
+    ],
+    "120-a106": [
+      true,
+      true
+    ],
+    "120-b105": [
+      true,
+      true
+    ],
+    "120-c107": [
+      true,
+      true
+    ],
+    "120-c112": [
+      true,
+      true
+    ],
+    "120-ec107": [
+      true,
+      true
+    ],
+    "120-ed106": [
+      true,
+      true
+    ],
+    "120-ee105": [
+      true,
+      true
+    ]
+  }
+}

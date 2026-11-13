@@ -1,0 +1,1217 @@
+{
+  "batch": 129,
+  "context_checked_before": 76,
+  "counts_by_track": {
+    "COMPULSORY": 4,
+    "ELECTIVE_A": 4,
+    "ELECTIVE_B": 4,
+    "ELECTIVE_C": 4,
+    "ELECTIVE_D": 4,
+    "ELECTIVE_E": 4,
+    "SELECTIVE_COMPULSORY": 4
+  },
+  "historical_candidates": 239,
+  "licensed_version": "2017 edition, 2020 revision",
+  "new_context_checked": 28,
+  "not_context_checked": 135,
+  "official_atom_denominator": null,
+  "per_track_editorial_census": {
+    "COMPULSORY": {
+      "historical_editorial_candidates": 75,
+      "official_atom_denominator": null,
+      "source_context_checked": 23,
+      "source_context_unchecked": 52,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_A": {
+      "historical_editorial_candidates": 30,
+      "official_atom_denominator": null,
+      "source_context_checked": 12,
+      "source_context_unchecked": 18,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_B": {
+      "historical_editorial_candidates": 30,
+      "official_atom_denominator": null,
+      "source_context_checked": 12,
+      "source_context_unchecked": 18,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_C": {
+      "historical_editorial_candidates": 24,
+      "official_atom_denominator": null,
+      "source_context_checked": 14,
+      "source_context_unchecked": 10,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_D": {
+      "historical_editorial_candidates": 17,
+      "official_atom_denominator": null,
+      "source_context_checked": 12,
+      "source_context_unchecked": 5,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_E": {
+      "historical_editorial_candidates": 12,
+      "official_atom_denominator": null,
+      "source_context_checked": 12,
+      "source_context_unchecked": 0,
+      "teacher_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "historical_editorial_candidates": 51,
+      "official_atom_denominator": null,
+      "source_context_checked": 19,
+      "source_context_unchecked": 32,
+      "teacher_approved": 0
+    }
+  },
+  "per_track_official_atom_denominator": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "provisional_teaching_targets": 56,
+  "records": [
+    {
+      "candidate_id": "hs-semantic-pilot-120-c107",
+      "course_track": "COMPULSORY",
+      "editorial_interpretation": "原文把借助向量探索三角形边角关系与掌握余弦定理并列；计算边长及反求角度可作不同的候审能力。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "三角形三边须为正且满足严格三角不等式；边长为零或不构成三角形时不能使用角度公式。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-c107-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "余弦定理的边长求解"
+        },
+        {
+          "id": "kb129-provisional-120-c107-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "反求角度的余弦条件"
+        }
+      ],
+      "source": {
+        "end_line": 25,
+        "line_sha256": [
+          "50ebddd71d7dbc8520dc5c55a0fb91434e2ea5b03c561610ea1912c18484737f",
+          "14112357f965c4296049c96215dcb222c1af27e297606d4e9b4567dfdbb4f45a",
+          "40778fdfb2f26d7bcdee5b3e94a61ea8ce377326ac37c35b66d48e65f2e54e74"
+        ],
+        "page": 26,
+        "span_sha256": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+        "start_line": 23
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c108",
+      "course_track": "COMPULSORY",
+      "editorial_interpretation": "同一编号课程要求同时覆盖正弦定理和余弦定理；正弦定理的比值关系应与余弦定理区分。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "正弦定理的除法形式须有非零角的正弦值；SSA条件可能出现两个三角形，不能忽略多解。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-c108-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "正弦定理与外接圆"
+        },
+        {
+          "id": "kb129-provisional-120-c108-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "正弦条件的解的个数"
+        }
+      ],
+      "source": {
+        "end_line": 25,
+        "line_sha256": [
+          "50ebddd71d7dbc8520dc5c55a0fb91434e2ea5b03c561610ea1912c18484737f",
+          "14112357f965c4296049c96215dcb222c1af27e297606d4e9b4567dfdbb4f45a",
+          "40778fdfb2f26d7bcdee5b3e94a61ea8ce377326ac37c35b66d48e65f2e54e74"
+        ],
+        "page": 26,
+        "span_sha256": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+        "start_line": 23
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c111",
+      "course_track": "COMPULSORY",
+      "editorial_interpretation": "简单随机抽样段落同时提到抽签法与随机数法，以及样本均值和样本方差；应拆分抽样过程与统计量。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "每个大小为n的子集等概率是有限总体不放回简单随机抽样条件；样本方差分母n与n−1须区分。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-c111-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "有限总体不放回抽样"
+        },
+        {
+          "id": "kb129-provisional-120-c111-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "样本均值与方差约定"
+        }
+      ],
+      "source": {
+        "end_line": 13,
+        "line_sha256": [
+          "a2b5da7cf263934db184cdd546fc904c7cfbc7fa595d63eac07801eb2c8aacc3",
+          "b008ed2e8e14252b5de70e4ee8113cadeccd0c85cc629605d77cc584c3af2973",
+          "7fd2dfd83b75ad8a7525585d2cefea3e98212b6e6867e419599885b0b6e2c2d7",
+          "571ee1e390c2bfbe6bb89bea83899e7b19d50d883f4e2fc4104bf1ce22e95ab1"
+        ],
+        "page": 32,
+        "span_sha256": "27503ff60c180670f3f14f24897095a431dd3323ea9c21d3259fad3ebd501829",
+        "start_line": 10
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c112",
+      "course_track": "COMPULSORY",
+      "editorial_interpretation": "分层抽样段落要求按层比例分配样本量及计算样本统计量，分层识别与层权重统计不能混同。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "分层必须覆盖总体且各层不重叠；按比例抽样存在整数舍入和样本量不足的边界。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-c112-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "互斥分层与比例分配"
+        },
+        {
+          "id": "kb129-provisional-120-c112-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "按总体层权重合并均值"
+        }
+      ],
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "54fb7373c3366bfa66fc2cf00b8ff2616cb20f07f758a12813c1f91f3b865453",
+          "f594afdbe73860ee982b4328af49f6a762abaa5e21ed9e935a8afdde1a52cb51",
+          "1ed72ea44814a85d66e137610f5e32534dbc7c326b2a0d984b8e1351994340da",
+          "cd91385a630d614caa3f5533d88baadfaf8b89272229e25ce7dabd06c2d2be31"
+        ],
+        "page": 32,
+        "span_sha256": "2371729eedae4ab0cd3b6bbe79e3dcc7ce3015fdfc8cd5d350c3e241c197828d",
+        "start_line": 14
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s11",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "editorial_interpretation": "空间向量段落同时涉及夹角、平行及垂直等位置关系；必须按向量类型和对象区分判别条件。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "方向向量和法向量不能为零；直线与平面平行判定需排除直线位于平面内的情形。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-119-s11-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "非零方向与法向量"
+        },
+        {
+          "id": "kb129-provisional-119-s11-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "直线平面位置向量判别"
+        }
+      ],
+      "source": {
+        "end_line": 5,
+        "line_sha256": [
+          "72c2036338a531eaf94f7ba8908b24767bc3a6a1db5be11fd1738981b2d7abc0",
+          "a5de783be1c5a2706b151bebb9005ee9fb535855f1a1d998ec82764be209ec1a",
+          "9f5d7699461048d1f0cbdefb7d7c96eb42646f0a0da6f8874d42d7ab50352e83",
+          "d60fefe08d62c8e8832d72e6edcb0198aa5648e3dc280150348ba0c86d69fb86"
+        ],
+        "page": 43,
+        "span_sha256": "8f44e49ffee43a25df2a94dc9b760427607f5cefa2561c881d3303ba2553feb6",
+        "start_line": 2
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s12",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "editorial_interpretation": "源段提出点到线、点到面及平行对象之间距离；应把距离定义与正交投影计算分开。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "平面方程的法向量必须非零，距离分母不可为零；平行直线或平面之间距离另需验证相互平行。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-119-s12-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "点到平面的正交距离"
+        },
+        {
+          "id": "kb129-provisional-119-s12-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "平行对象的距离条件"
+        }
+      ],
+      "source": {
+        "end_line": 8,
+        "line_sha256": [
+          "90799eac9f7abe6c712dc2e47834de6b202b9929498583491018109f239ad6cf",
+          "91003b0c1d245cbafac1c33a7aa7eec085cff5847d56d92cf39b9d3c2b73ce8e",
+          "6319d29d9440857fcb67d413f638e81c0ca4fbf03595e7c1f87346ec73f1cae3"
+        ],
+        "page": 43,
+        "span_sha256": "25963aa4de28dffaaefb9c816c9bd2163580d196191146c20d365fcd606684b1",
+        "start_line": 6
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s13",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "editorial_interpretation": "源段明确要求条件概率及其与独立性的联系，两者分别是归一化条件和乘积判据。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "条件概率分母P(B)>0；独立不是互斥，若两个事件的概率均大于零则互斥不能独立。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-119-s13-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "条件概率的样本空间限制"
+        },
+        {
+          "id": "kb129-provisional-119-s13-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "事件独立的乘积判据"
+        }
+      ],
+      "source": {
+        "end_line": 16,
+        "line_sha256": [
+          "82b224b7822e85161ac3d3c3479df1e069899990fa6370181fe34d011e3f7409",
+          "5d7b1d7bfaf6a094b0a40126aeb06ea594d49458b92113db7618746de9940441",
+          "9013d7b7657d0e3c75b04ffe8f84dac62a060127512de1c5374f1d57e65338c1",
+          "d3c0dde97725979c5956f9847baf77282f0e7a37aa7e3cb66dc4f70ca7a6b689",
+          "d62d0d98b00393e776ed4fe320a264ad3bb725e5dc508b37134356959590ec93"
+        ],
+        "page": 47,
+        "span_sha256": "26bdc81c2d0b1c858906dbfa6c32031955b162eb6c0f6809afc4bc6ec31e1951",
+        "start_line": 12
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s14",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "editorial_interpretation": "全概率公式直接列在课程要求中，贝叶斯公式另为了解内容；应先教分割求和再审查后验归一化。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "全概率需要互斥且完备的划分；贝叶斯公式观察证据的总概率必须严格为正。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-119-s14-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "全概率的互斥完备划分"
+        },
+        {
+          "id": "kb129-provisional-119-s14-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "贝叶斯归一化及零证据"
+        }
+      ],
+      "source": {
+        "end_line": 19,
+        "line_sha256": [
+          "d62d0d98b00393e776ed4fe320a264ad3bb725e5dc508b37134356959590ec93",
+          "da8c4a6f5d2a18c15f4d53aab2d4e0e58590e8979761a21a40e6e8d5bdaff2bd",
+          "9b6578ef7084371d85cdfdf1ff856f434a94a46653a94dc6782382f5fb88b604",
+          "0c50eeec977e206d9b1ece48948cd1954b93a1cba531e4f768113188c440b542"
+        ],
+        "page": 47,
+        "span_sha256": "5ccab2f8a2b612a9555aa283ef976220be2b3ed5a5e8f4572438edb236cc03b2",
+        "start_line": 16
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a103",
+      "course_track": "ELECTIVE_A",
+      "editorial_interpretation": "选修A对向量组线性相关性有明确要求，存在非平凡零组合与行列式判据不能无条件混同。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "只有向量数与维数满足方阵条件时可用行列式检验；零向量导致相关但不等于所有向量相等。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-a103-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "非平凡线性组合"
+        },
+        {
+          "id": "kb129-provisional-120-a103-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "有限维向量组秩检验"
+        }
+      ],
+      "source": {
+        "end_line": 20,
+        "line_sha256": [
+          "5a49093380989b30ac03efe575e3446112aa4127a39decf6c7aa4cf9363f96ec"
+        ],
+        "page": 54,
+        "span_sha256": "5a49093380989b30ac03efe575e3446112aa4127a39decf6c7aa4cf9363f96ec",
+        "start_line": 20
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a104",
+      "course_track": "ELECTIVE_A",
+      "editorial_interpretation": "向量空间和子空间在同一要求中出现，应将线性组合封闭性和子空间三个条件独立讲解。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "候选子集必须含零向量并对加法和数乘封闭；非空曲线或仿射平面通常不是线性子空间。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-a104-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "向量空间线性公理"
+        },
+        {
+          "id": "kb129-provisional-120-a104-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "子空间封闭性和零向量"
+        }
+      ],
+      "source": {
+        "end_line": 21,
+        "line_sha256": [
+          "d34b25cd424d26459408bbd7820198f031dd37380c7d761580c247c2475bfbf5"
+        ],
+        "page": 54,
+        "span_sha256": "d34b25cd424d26459408bbd7820198f031dd37380c7d761580c247c2475bfbf5",
+        "start_line": 21
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a105",
+      "course_track": "ELECTIVE_A",
+      "editorial_interpretation": "源段包含三阶矩阵运算、正交矩阵和行列式，三者的定义及证明条件不可简化为一个概念。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "行列式为零表示方阵奇异，但非方阵不定义普通行列式；正交矩阵满足QᵀQ=I。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-a105-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "三阶行列式与可逆性"
+        },
+        {
+          "id": "kb129-provisional-120-a105-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "正交矩阵保距条件"
+        }
+      ],
+      "source": {
+        "end_line": 26,
+        "line_sha256": [
+          "2903924da0b9884a5b443a49ca1d16e8c178c3bbd957b01409d4c9e2d1c9182d",
+          "1a0c3f534ce72f11ef3a145c015646ea1417b3326a6d677140cb774a58dd74e5",
+          "1d84b16c804e9757d869fd0b9c82ba95d90d71c6ca41dc6ee6226f0ba3b94d3c",
+          "cd6bfb0297b37030075d7326979554c133ec3bb413ab6fa1227f92c82a64fd74"
+        ],
+        "page": 54,
+        "span_sha256": "137178d11e60da2e5ead9c1d3a7c2430287d89593b8bac95113e222310e31d18",
+        "start_line": 23
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a106",
+      "course_track": "ELECTIVE_A",
+      "editorial_interpretation": "三元线性方程组要求掌握高斯消元并用矩阵表示，行初等变换与解集保持应单列。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "仅允许交换行、乘非零数及加倍数行；乘零会丢失等价信息；无解和无穷多解都可能。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-a106-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "增广矩阵的行操作"
+        },
+        {
+          "id": "kb129-provisional-120-a106-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "高斯消元的秩分类"
+        }
+      ],
+      "source": {
+        "end_line": 4,
+        "line_sha256": [
+          "3d8766f85f95ca2ce5b8fac481453a8b2e167afa80477d779fe7e8fda369f03f",
+          "02477008039397c356c11a946371302fd8d80de33370860e0dba6413cdd177a7",
+          "fb64c9ecfc63d044c8556a37a445fd7784b659f9f5c638716d5aa5fe8ae03312"
+        ],
+        "page": 55,
+        "span_sha256": "bf9b5ad11c6fcc3b4e25794a93de158e993f3e3b104082a17fa79ebcaa0cc542",
+        "start_line": 2
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b105",
+      "course_track": "ELECTIVE_B",
+      "editorial_interpretation": "参数估计段落提出矩估计与极大似然估计，应分别处理估计量及参数约束的含义。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "极大似然须基于实际分布及可行参数空间；有边界时最大值可能落在端点，不能只求导数为零。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-b105-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "矩估计的样本矩"
+        },
+        {
+          "id": "kb129-provisional-120-b105-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "似然函数与边界最优"
+        }
+      ],
+      "source": {
+        "end_line": 7,
+        "line_sha256": [
+          "f1ceeebaed9f760ddafd65cd3ec400acba5c1bd77cc34edab3cf744bb56965f5",
+          "e25358bbb7edef07b1735b23f07c6843bd2fa3f7a6629c6a2959552ccd4ebed4",
+          "9f05009080e3f50bd94fe6b76e331f21fe48c9b768342d289e061ca2b3bb63a5"
+        ],
+        "page": 62,
+        "span_sha256": "a0ebd071e498baf71b7328e79e66502530bd881a66ca728898af733897ba84dd",
+        "start_line": 5
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b106",
+      "course_track": "ELECTIVE_B",
+      "editorial_interpretation": "假设检验段列出正态均值方差与两总体比较；检验前提和错误类型先于公式选用。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "正态假设、样本独立性、方差已知或未知及显著性水平都影响检验选择；拒绝原假设不等于证明备择绝对真。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-b106-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "原假设与一类错误"
+        },
+        {
+          "id": "kb129-provisional-120-b106-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "正态总体检验的假设前提"
+        }
+      ],
+      "source": {
+        "end_line": 12,
+        "line_sha256": [
+          "8feb3498822747dfc3012515158a010d021bbd312085ffc3401fdf3cf8c529f3",
+          "b45983bff53ca144a67e446c4f22327e63342c70dc9f87adacc74cd9265b72e1",
+          "05bfd06efb8180ef2ae6110717f51f45603b97acd353d846de10b99482c7ab97",
+          "2e7b06f16960d7a769d1e212d5144b04400a6430f785f6c2dc582bd790989276"
+        ],
+        "page": 62,
+        "span_sha256": "d2fe4ff72022931f5a505a5025b39d3be45fb13b69513ed4f9764f0c651a40f9",
+        "start_line": 9
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b107",
+      "course_track": "ELECTIVE_B",
+      "editorial_interpretation": "聚类分析作为独立专题要求理解意义与方法；距离定义和变量尺度对聚类结果有决定影响。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "无监督聚类标签不是客观真值；欧氏距离受单位和标准化影响，不能据此证明因果关系。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-b107-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "聚类距离与归一化"
+        },
+        {
+          "id": "kb129-provisional-120-b107-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "簇数选择与稳定性"
+        }
+      ],
+      "source": {
+        "end_line": 21,
+        "line_sha256": [
+          "92cd3784d1a1ddf4295df8fe4a59ba1562ebf8c663db298c44210a46ae8c01ce",
+          "c0e8b71a1758d0d7ffcef156f2b92304efbbe7a0779569ebc798bf30f6ecf776",
+          "835fb6502b6cdfe03a129cc101ba2a0ae653981a268e1fc0b52e10ba4c4d725d",
+          "289e091d291cc2635c0a880389379e9c441bc4fd2ca7ddaaecebc3477c63ac08"
+        ],
+        "page": 62,
+        "span_sha256": "4cacff34c210277876feb1c290f389f984b17b09709b07c54ddb5363255c2843",
+        "start_line": 18
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b108",
+      "course_track": "ELECTIVE_B",
+      "editorial_interpretation": "线性模型段包含一维、二维和三维建模实例，变量及矩阵维度与现实单位需要逐项审查。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "从一次函数的均匀变化推广到矩阵映射须核实维数一致；投入产出模型解应满足非负性约束。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-b108-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "一维仿射与线性映射区别"
+        },
+        {
+          "id": "kb129-provisional-120-b108-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "多维矩阵模型单位审计"
+        }
+      ],
+      "source": {
+        "end_line": 16,
+        "line_sha256": [
+          "65402158182d3923502770b46af2e4d3df3d678a722a78760a23b017202afa9a",
+          "ab99386ea6139fd00a1caa64fc3ae8ccf578f5b584e9371549c5165caef07ca6",
+          "4a789ffb5d5f93b62dec2653156e48936bf8179356138b64f6b6b9ef944057f4",
+          "7cdd8246926ed7cbc22037e3a69374f8c60a4186f87f5778c1962acb9c609778",
+          "58120ba3fc9b55cdcb0f51e43e2cf13d6e363e813001ae79ade05beb7b4ae45d",
+          "56d580900945992977a267d99c1ca3025e9a253b016fdb1ad771251f998f0400",
+          "bae259dcc3b3766fa706dd980fec45003d8ab89e21dd192062c490f4636089a1",
+          "c6821c16a6984a7e35263386330d9527342e982f8229bd973fbc8357fa377f56"
+        ],
+        "page": 63,
+        "span_sha256": "5cc8a99986208a03adba1c56fe4836ad7602fa0259890da92b80a4b1aacd9ac6",
+        "start_line": 9
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec105",
+      "course_track": "ELECTIVE_C",
+      "editorial_interpretation": "投入产出模型专题说明系数与解约束生产计划，数学可解与现实非负可行是两层不同判断。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "投入产出矩阵若不满足可逆条件则不能直接求唯一解；解含负产出时数学解不是合法生产计划。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ec105-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "投入产出平衡线性方程"
+        },
+        {
+          "id": "kb129-provisional-120-ec105-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "非负产出与可行约束"
+        }
+      ],
+      "source": {
+        "end_line": 15,
+        "line_sha256": [
+          "0434e8f234a8937cfd5f00ba91263e63ed2d1ac4988709d0def26febeff49563",
+          "49160d48516d299c5ac81f83bffa3ba6b8a43a3f6d0db6cf032f090c0268fd05",
+          "5511b56fee30f00054c2994304164022023520bd2836fa02334fc3b4607ff0b1",
+          "1229b059841e10b4e62db166f8c99fce77d81dbeeff80e228dcc4b905f76fa38"
+        ],
+        "page": 66,
+        "span_sha256": "58abcfa5da8c110b22b7a48d8aab88e4f1a616bffb4d6c4e083d3fa4fecb420e",
+        "start_line": 12
+      },
+      "source_class": "THEMATIC_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec106",
+      "course_track": "ELECTIVE_C",
+      "editorial_interpretation": "等级评价模型列出加权、调和与稳健平均，需区分评分权重和异常值影响而非宣称一个唯一最优平均。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "调和平均需分母和正数据满足约束；权重须非负并正归一化，异常值处理需要事先约定。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ec106-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "加权平均的权重约束"
+        },
+        {
+          "id": "kb129-provisional-120-ec106-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "调和与稳健评价的边界"
+        }
+      ],
+      "source": {
+        "end_line": 7,
+        "line_sha256": [
+          "c67a5c53d07a320045159d70790051ff5825b9d170150abc6c99554bf864f460",
+          "332212ee4c9294b4c981636d2b8f12e1b1142a9be5311546e535257bc99472d5",
+          "acc3c0cac6200b5c70a1b66fac3711d3f8a8e62dba1d5ce05353ae56c4289f10",
+          "084b8b29d106ca0ac3a385b1a51d7d40db1c2b56a8f4cc496e83d31d5fc8c15b",
+          "8c63ca31c83444634726f29f411f803c004686fe771b38335dc0a1edd22063f9"
+        ],
+        "page": 67,
+        "span_sha256": "10f85af89ead8703e888ad805496332445d5a0983dd6d2605ebc225f47644dd6",
+        "start_line": 3
+      },
+      "source_class": "THEMATIC_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec107",
+      "course_track": "ELECTIVE_C",
+      "editorial_interpretation": "人口增长模型段要求理解指数模型参数、拟合与有效性；拟合和外推须分成不同的审查任务。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "模型r>0持续增长的现实假设可能失效，有限样本拟合良好不保证无限时间外推可靠。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ec107-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "指数增长率参数解释"
+        },
+        {
+          "id": "kb129-provisional-120-ec107-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "人口拟合残差及外推"
+        }
+      ],
+      "source": {
+        "end_line": 11,
+        "line_sha256": [
+          "2e5c70093b7085dad14183bb11bd42e50eb3b994e1255c46c4b39454bd4f95e5",
+          "b87dd1e5a8c4787ace8aae9938f8b51e1ec5d413fac1e6355c7f097812ea19a7",
+          "1184052a37ea67ef47a784278c7b2fc81eb9af33995e1cd0443165d45495f920",
+          "07b378786678e2f60c5f2cd825cbe28eb2822f2db590433c7335b5a0aa9649e4"
+        ],
+        "page": 67,
+        "span_sha256": "a045a5ab051a5edcf3d6c625f67aca96c4430722d8f760976a8ca31068b0cd1e",
+        "start_line": 8
+      },
+      "source_class": "THEMATIC_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec108",
+      "course_track": "ELECTIVE_C",
+      "editorial_interpretation": "源段明确提出二阶多阶抽样，应与必修简单随机抽样和分层抽样区别，先后抽样概率需分层计算。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "簇内样本相关时不应把所有个体视为独立简单随机样本；抽中概率与权重需按阶段核对。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ec108-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "多阶段抽样入样概率"
+        },
+        {
+          "id": "kb129-provisional-120-ec108-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "簇相关与有效样本量"
+        }
+      ],
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "c3d32acde3d5e91001eb5ccb0cc0853f5c976622df5628eadb4c379012f9348c",
+          "8efc14030f94df507098abd6efd85856bfa2680b63fef6c59b26009889430486",
+          "988fc4b8d63fbfc15eb963ab34b0eb7b07613de20092579a5687101f18afd8fe"
+        ],
+        "page": 68,
+        "span_sha256": "486937c48512c10959eb0ccebf99068273fa35c7b6e84e087eadc449f5849336",
+        "start_line": 15
+      },
+      "source_class": "THEMATIC_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed105",
+      "course_track": "ELECTIVE_D",
+      "editorial_interpretation": "律制专题举不同音阶与频率比，十二平均律可编写理想等比频率模型但不是所有音律的唯一形式。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "十二平均律的相邻半音比为2^(1/12)而非固定整数；频率和弦长的关系依赖物理边界条件。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ed105-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "十二平均律等比频率"
+        },
+        {
+          "id": "kb129-provisional-120-ed105-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "不同律制与理想假设"
+        }
+      ],
+      "source": {
+        "end_line": 4,
+        "line_sha256": [
+          "e162b51fe6a20fe2482e697c5aa2db13daf3422ca1727bd817a54c37b222650d",
+          "4f1cf47b9cfaced8b463217b02821357fd4c713073e9ca90fcd3d0a7a7fbc061",
+          "8acf6ca67e4f6cc23746699b19c43711de90d36da39665426123d13f2923868d",
+          "473c02f0e21433a82c70a8ddd998ed0d2bedbafebac09a2ba160889c638091f7"
+        ],
+        "page": 71,
+        "span_sha256": "998a6d01313d307c2a5a06b5b16717847dcf57cb19cfde3867d6c68ff5bce73c",
+        "start_line": 1
+      },
+      "source_class": "THEMATIC_ILLUSTRATION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed106",
+      "course_track": "ELECTIVE_D",
+      "editorial_interpretation": "节拍与分数、合奏同步与最小公倍数是选修D应用场景，不等于课标指定一套统一音符算法。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "计算同步时两节拍必须有共同时间单位且周期可公度；无理数周期比时不存在有限正同步周期。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ed106-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "整比节拍的最小公倍数"
+        },
+        {
+          "id": "kb129-provisional-120-ed106-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "非公度节拍的同步边界"
+        }
+      ],
+      "source": {
+        "end_line": 7,
+        "line_sha256": [
+          "94bd99d2181be3615bf455be3dd3475d4ab3ddd007bbab46f02bd460325fc088",
+          "916d48dcb250bab7b412bf0380046320c788b792320128fc1e05610ef5a55a89",
+          "731686b3c6cda8cb1e2490f8ffd393afc37ecaf25bcdd3e4a97e3072692e0c8f"
+        ],
+        "page": 71,
+        "span_sha256": "bab1331dcacbd163a30ef8477a74734aac2ce27a15d6d80d253d3a9b4f216e48",
+        "start_line": 5
+      },
+      "source_class": "THEMATIC_ILLUSTRATION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed107",
+      "course_track": "ELECTIVE_D",
+      "editorial_interpretation": "绘画专题明确列透视几何为例；可将透视投影与平面仿射变换并列，但不得误作强制证明定理。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "透视投影需视点及深度信息；深度为零的投影分母无定义，通常不保平行和长度。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ed107-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "透视投影的深度分母"
+        },
+        {
+          "id": "kb129-provisional-120-ed107-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "仿射变换与透视差异"
+        }
+      ],
+      "source": {
+        "end_line": 4,
+        "line_sha256": [
+          "74c6e842c898c388dbfc4fccd5ae9f09733e2aef9c4623a8813880b9dadb8b81",
+          "d557660a55730534f3aaadd28199be409802c7581dd5283ccee70447ad5396a9",
+          "416301e37172f71c3ce4dbcfd85074e9187f5581d81f43399e9add0c086bd5f5"
+        ],
+        "page": 72,
+        "span_sha256": "1fb3dfea386e7f3025569565e19de8277d698f3790e5e7fe79dfd02b88ac456f",
+        "start_line": 2
+      },
+      "source_class": "THEMATIC_ILLUSTRATION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed108",
+      "course_track": "ELECTIVE_D",
+      "editorial_interpretation": "体育赛事的图论与运筹为应用主题，赛程建模需要明确场次场地和队伍冲突，非固定全国知识公式。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "单循环赛程每对队伍只赛一次时有n(n−1)/2场；赛程时间或资源限制可能使理想排程不可行。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ed108-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "单循环赛场次数量"
+        },
+        {
+          "id": "kb129-provisional-120-ed108-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "赛事排程约束与轮转"
+        }
+      ],
+      "source": {
+        "end_line": 8,
+        "line_sha256": [
+          "cfb442a98f5f58caae2f7451188b1ffd1bbdf495d5363d2780f77d148d825590",
+          "2cf366807186e5757df7164f5e7e7413b8893b4a03af0ce0832c040c8723f91a",
+          "c3a572abd82c2064f514b314e3cbed27d5f584eb818d9222c3f280bbdc3987f1"
+        ],
+        "page": 73,
+        "span_sha256": "68b7f041747c4c459cfa510cffc54a352578be5ce5d4226d72cbd5f57ff6a181",
+        "start_line": 6
+      },
+      "source_class": "THEMATIC_ILLUSTRATION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee105",
+      "course_track": "ELECTIVE_E",
+      "editorial_interpretation": "家庭理财列为选修E学校自选示例，可原创构建复利及通胀模型但不能提升为全国统一必修。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "复利周期数必须与利率单位一致；通胀调整与名义收益不是同一量，现实税费会破坏理想公式。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ee105-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "学校可选理财模型"
+        },
+        {
+          "id": "kb129-provisional-120-ee105-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "利率周期及物价单位"
+        }
+      ],
+      "source": {
+        "end_line": 18,
+        "line_sha256": [
+          "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53"
+        ],
+        "page": 73,
+        "span_sha256": "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53",
+        "start_line": 18
+      },
+      "source_class": "LOCAL_SCHOOL_OPTION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee106",
+      "course_track": "ELECTIVE_E",
+      "editorial_interpretation": "地方建筑与数学只作学校选用示例；相似测量可供自主编写，必须保留地理情境和非必修地位。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "相似三角形需要角条件及相应边比例；地面不平或测量角错误会破坏建筑高度估计。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ee106-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "地方建筑几何测量实例"
+        },
+        {
+          "id": "kb129-provisional-120-ee106-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "相似测高的角度假设"
+        }
+      ],
+      "source": {
+        "end_line": 20,
+        "line_sha256": [
+          "ac9167496e0cf1fea46a477fd36a8793268f879a025af230a43a4271d4e29bc8",
+          "6a45896a3c53d4848c09b5b335e3987385d32b6329af65fb7405aa811ea431f6"
+        ],
+        "page": 73,
+        "span_sha256": "f7459c2367e3f5128b3d4cfc83a92277ddc73504920b1de446db2ccb2770e97c",
+        "start_line": 19
+      },
+      "source_class": "LOCAL_SCHOOL_OPTION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee107",
+      "course_track": "ELECTIVE_E",
+      "editorial_interpretation": "大学先修课程包含微积分等方向但未规定具体极限知识原子；不可把自编定义视作全国高中必修。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "ε-δ等严谨定义可以作为选校可选内容，其证明前提不能从课程标题自动推定已获得教师认证。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ee107-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "大学先修微积分选题"
+        },
+        {
+          "id": "kb129-provisional-120-ee107-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "局部连续与极限的拓展"
+        }
+      ],
+      "source": {
+        "end_line": 22,
+        "line_sha256": [
+          "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+          "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+        ],
+        "page": 73,
+        "span_sha256": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+        "start_line": 21
+      },
+      "source_class": "LOCAL_SCHOOL_OPTION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee108",
+      "course_track": "ELECTIVE_E",
+      "editorial_interpretation": "大学概率统计先修是独立可选方向；样本与分布教学内容须由学校方案进一步细化而非官方固定清单。",
+      "mathematics_formally_certified": false,
+      "official_atom_id": null,
+      "outstanding_risk": "高阶分布推断要核对独立同分布和参数假设；不能用选修E示例提高全国必修知识点分母。",
+      "proposed_teaching_targets": [
+        {
+          "id": "kb129-provisional-120-ee108-01",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "大学先修概率统计选题"
+        },
+        {
+          "id": "kb129-provisional-120-ee108-02",
+          "official_atom_id": null,
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "样本分布假设与适用域"
+        }
+      ],
+      "source": {
+        "end_line": 22,
+        "line_sha256": [
+          "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+          "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+        ],
+        "page": 73,
+        "span_sha256": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+        "start_line": 21
+      },
+      "source_class": "LOCAL_SCHOOL_OPTION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING"
+    }
+  ],
+  "source_layout_cues": 405,
+  "source_text_embedded": false,
+  "student_authoritative": 0,
+  "subtargets_are_not_official_atoms": true,
+  "teacher_approved": 0,
+  "total_context_checked": 104
+}
