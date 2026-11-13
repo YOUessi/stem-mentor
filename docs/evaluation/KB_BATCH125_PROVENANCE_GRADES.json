@@ -1,0 +1,4211 @@
+{
+  "batch": 125,
+  "candidate_evidence_grades": {
+    "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE": 109,
+    "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW": 10,
+    "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED": 108,
+    "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM": 12
+  },
+  "candidates": 239,
+  "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "layout_cues": 405,
+  "linked_cues": 270,
+  "official_atom_denominator": null,
+  "official_census_complete": false,
+  "per_track": {
+    "COMPULSORY": {
+      "editorial_proposals": 75,
+      "official_atom_denominator": null,
+      "residual_headings": 13,
+      "residual_numbered_requirements": 5,
+      "residual_subtopics": 33,
+      "teacher_approved": 0,
+      "with_numbered_anchor": 64,
+      "without_numbered_anchor": 11
+    },
+    "ELECTIVE_A": {
+      "editorial_proposals": 30,
+      "official_atom_denominator": null,
+      "residual_headings": 12,
+      "residual_numbered_requirements": 0,
+      "residual_subtopics": 16,
+      "teacher_approved": 0,
+      "with_numbered_anchor": 0,
+      "without_numbered_anchor": 30
+    },
+    "ELECTIVE_B": {
+      "editorial_proposals": 30,
+      "official_atom_denominator": null,
+      "residual_headings": 11,
+      "residual_numbered_requirements": 0,
+      "residual_subtopics": 16,
+      "teacher_approved": 0,
+      "with_numbered_anchor": 0,
+      "without_numbered_anchor": 30
+    },
+    "ELECTIVE_C": {
+      "editorial_proposals": 24,
+      "official_atom_denominator": null,
+      "residual_headings": 7,
+      "residual_numbered_requirements": 0,
+      "residual_subtopics": 2,
+      "teacher_approved": 0,
+      "with_numbered_anchor": 0,
+      "without_numbered_anchor": 24
+    },
+    "ELECTIVE_D": {
+      "editorial_proposals": 17,
+      "official_atom_denominator": null,
+      "residual_headings": 3,
+      "residual_numbered_requirements": 0,
+      "residual_subtopics": 0,
+      "teacher_approved": 0,
+      "with_numbered_anchor": 0,
+      "without_numbered_anchor": 17
+    },
+    "ELECTIVE_E": {
+      "editorial_proposals": 12,
+      "official_atom_denominator": null,
+      "residual_headings": 0,
+      "residual_numbered_requirements": 0,
+      "residual_subtopics": 0,
+      "teacher_approved": 0,
+      "with_numbered_anchor": 0,
+      "without_numbered_anchor": 12
+    },
+    "SELECTIVE_COMPULSORY": {
+      "editorial_proposals": 51,
+      "official_atom_denominator": null,
+      "residual_headings": 7,
+      "residual_numbered_requirements": 1,
+      "residual_subtopics": 9,
+      "teacher_approved": 0,
+      "with_numbered_anchor": 44,
+      "without_numbered_anchor": 7
+    }
+  },
+  "prior_nonatom_proposals_unadjudicated": 3,
+  "provenance_only_not_math_certification": true,
+  "records": [
+    {
+      "candidate_id": "hs-semantic-pilot-119-c01",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-06a65bd668fc5d29b219",
+        "syllabus-cue-46ad5883b3e2784cc588",
+        "syllabus-cue-605938645ff9ed8f71e1"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 27,
+      "span_sha256": "e447b6fdfb0697bf99db3c87b6b80b29c98ec862d1ad246ba1d251541ab27e5a",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c02",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-d3668d2834176a518a28"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 27,
+      "span_sha256": "aaab1d33fc00dd1a0c23b8a29744315f295d60661b941674ba559e5e7128c5e6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c03",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 28,
+      "span_sha256": "632d87342d667f950c7b934d5c7f3d36a244840df39307641b35020dfa9d9654",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c04",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 28,
+      "span_sha256": "087c56a89669cd05f02621a768e416eff8ea582a3af52ea1c831d00209656693",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c05",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 28,
+      "span_sha256": "d66fe38d5a996c42d82dc8ba9aadc61b33f017fa1158175a05b46a8200889e2d",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c06",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-59470e9a64bc0ac11304",
+        "syllabus-cue-60e43ab981f638fd7b0a"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 31,
+      "span_sha256": "43a1d42a3b7619a9d38f9c7bf37284854fc0134be4587830b599d4644e2e7c4b",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c07",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 31,
+      "span_sha256": "c21d84ab4846bac30a27f88ba73e2ad3560cef2d3a931d926285b5e01151036c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c08",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 33,
+      "span_sha256": "496f6779b5a3333f0b1612cd5dac242f93ffae71cb547ca553ecbe6de924a173",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c09",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 35,
+      "span_sha256": "992897284b5c55cfe761dbb015ac2818c4a5dabab39d5626bed128f9e52e18a3",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s01",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-edefbff7d85ddf61bda7"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 38,
+      "span_sha256": "30489f5df9400d10a107aa026a9a5eb807335197f6c9b032bc8e77bad7111684",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s02",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-b304226a26fbc7be761c",
+        "syllabus-cue-b1007babe1c4857b1964"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 38,
+      "span_sha256": "0c28fd120248fee273675889b62eba746555ea49bc591f5e7e0f5c04c3e88484",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s03",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-03d8e49916ee5024d899"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 38,
+      "span_sha256": "0ce1d451c3f80615ffa07aa29a3bf781ee0ffb29160f87644c5c414708ef36d1",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s04",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-975ffa847ea30f8de8bb",
+        "syllabus-cue-01d940341bf922574f29"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 38,
+      "span_sha256": "1990124d0fb9081f94b3f90df71adb24c8bc680485691c58a8ccc862090d0112",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s05",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-bef86ce0d57cf608dbef"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 38,
+      "span_sha256": "2d0bc6ce731820e37bb9efa3cbf69dc14935448830ed62ca1e8e5403e1e09147",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s06",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-c43771b2ee8bb51e38d1"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 38,
+      "span_sha256": "33d95bf2fac9a4c7e2922e727730746feab11873b476a6004dec1163a7cba6f5",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s07",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-a02f8122a6622448fb09",
+        "syllabus-cue-09a2f1e0ee9e8431810b",
+        "syllabus-cue-b63b998f7b086de94b18",
+        "syllabus-cue-7ea1685b95291d3c0b43"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 39,
+      "span_sha256": "ca66817ca8954254c492c53c78def35a6588d0ac1691d30b37bd646477e16c5e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s08",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-62cc6b6b5988a5836536",
+        "syllabus-cue-6c8570056a6c13096ddc",
+        "syllabus-cue-6697897d76c4236458a7"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 39,
+      "span_sha256": "b03469911acff37292e51af159f5c68d9f6b4e43aeaa72daa90a681bea6c5638",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s09",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-306778dd031d5e39a70e",
+        "syllabus-cue-63bd694305f31a497eec"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 39,
+      "span_sha256": "7a57dc095e46689e1aff6eeb2653cbb1d822eda35536c67ca833feeab326d5c9",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s10",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-40ad2aa5c7909c4ffa6d"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 39,
+      "span_sha256": "38fb63a485aad49f9d5f4d8fc110a854ccfd0cafc871eed6a7eaf1b49bea6667",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s11",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-062c6af02e9e82c84b9f",
+        "syllabus-cue-cbf82c1eaa82dc6eeb6c"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 43,
+      "span_sha256": "8f44e49ffee43a25df2a94dc9b760427607f5cefa2561c881d3303ba2553feb6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s12",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-6314c9d48bf325fc6f76"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 43,
+      "span_sha256": "25963aa4de28dffaaefb9c816c9bd2163580d196191146c20d365fcd606684b1",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s13",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-1c08d1e2571c417c63aa",
+        "syllabus-cue-0bd82a501964cac052e2",
+        "syllabus-cue-95489fd48dda1d4213f7",
+        "syllabus-cue-eb94b966b6fe07fc61e9"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 47,
+      "span_sha256": "26bdc81c2d0b1c858906dbfa6c32031955b162eb6c0f6809afc4bc6ec31e1951",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s14",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-eb94b966b6fe07fc61e9",
+        "syllabus-cue-5fd9d1803ece0caeef47"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 47,
+      "span_sha256": "5ccab2f8a2b612a9555aa283ef976220be2b3ed5a5e8f4572438edb236cc03b2",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s15",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-1b638805e5e5cbad62bd",
+        "syllabus-cue-7571d27f7788496cbbfc",
+        "syllabus-cue-3a81e9a7e70d5093f0ae"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 48,
+      "span_sha256": "511baee1a725b1c7a54a131bf78e8b209085a65edacda8b97ceeb22327e1967c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s16",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-48dabeedb773ec856ae2",
+        "syllabus-cue-6f0cad00d5b545d6fa57",
+        "syllabus-cue-8de121fa43dc4422c69e"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 48,
+      "span_sha256": "c9b8973fd5a0e97a1e4250f0f0e53608c4afec0e15cb26971090dc280e90ba22",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a01",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-255bf73957a0c546e81e",
+        "syllabus-cue-9064a0dba86b31e1d54b"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE",
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 52,
+      "span_sha256": "89f80424707f780fd5301b655bbf4d6fdfd3d6bd03731c8f35181d3d0752f993",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a02",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-a65d21f34736322b930a"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 52,
+      "span_sha256": "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a03",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-c56b4e42f481608befc0"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 52,
+      "span_sha256": "213a9a645ce73d6de941a3ffdb1fb4e5de36d2806885b35667c0f8241a4c931a",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a04",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-ef36730cddb693fc78c2",
+        "syllabus-cue-84a57ec80694803f7287"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE",
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 52,
+      "span_sha256": "91c8c30aa3dfc054455fcd867d51c8924875d68b722a37ae467cb34cc9f7576e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a05",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-7a3ff66c74e5fa7d106b",
+        "syllabus-cue-c031cb4415f82cbf26ae",
+        "syllabus-cue-c72320275743e69212c8"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE",
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 53,
+      "span_sha256": "71a0bbbdf5327da65e069070ff1cc42fc31a1af7498c76cd8a16372a59f0cd62",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a06",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-f1eda7095b44583bd571",
+        "syllabus-cue-a35716bf68edf5f6e95f",
+        "syllabus-cue-569b5537ec7fd1545e2c"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 53,
+      "span_sha256": "91f14980ff51ebb0e62806cb98ecf806747b3fd7caa81418fa92941e938cd81e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b01",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-b08347484d5a1a042e1d",
+        "syllabus-cue-0ae0b7ef74279c8b2591"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE",
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 58,
+      "span_sha256": "9949e4f3085242c68f1d534544451317bab1d8ffee88b0858911fdce7de57caf",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b02",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-f7dbd309b0704afa664f",
+        "syllabus-cue-0a6ce740b54733bad82b"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 58,
+      "span_sha256": "0c1ab4eecd21408397ffc0609e5242ebae9a7b860110002650cf7c8b462f1002",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b03",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-815bb89e005991bdc59a",
+        "syllabus-cue-28d839a131f442dcce42",
+        "syllabus-cue-922f5f085c4bfa785a5e"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE",
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 59,
+      "span_sha256": "1cc930b55b90c9201dcda53f818184243b26f3cccac366cc69720793954a97e6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b04",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-28d839a131f442dcce42",
+        "syllabus-cue-922f5f085c4bfa785a5e"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 59,
+      "span_sha256": "bdb1cc1a91fd817a0ff8bfff800f9eb4c77ee0d5ae111a3716b0579d21fce933",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec01",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-d4c037c5802f17c424e2"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 64,
+      "span_sha256": "c20855ad22bbae44336d305109763fe297b829298900c2cef6941d8a83c23278",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec02",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 65,
+      "span_sha256": "a3568a07504c07ad7b51e00f6b1d12f051978bc9f35ed8a3c277f1150e43a91f",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec03",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-3dccdb52c6ace9cf8487"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 65,
+      "span_sha256": "e7991d380d57f35644fba732460da4adcbd7e4f2a56ce6d6eaa9d2f3f65e1be0",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec04",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-40399cea0d2266d69052"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 65,
+      "span_sha256": "9329b673756794e4dbf188506cac3aadf7bdf9374f2eb950b67ff18279ce84bc",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec05",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-165b49ab9f2b6da6cd5f"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 65,
+      "span_sha256": "2795b6d7e85c7472a3c5e50f7be967fad7d5b7bf94d20de701167f0f9a86ce15",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec06",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 65,
+      "span_sha256": "a25521dba5d73860280000e7e9174f1d9fc87c2bcb9ee83e410e379c74499e7c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed01",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-3bbec0e29ff2286c77a0"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 69,
+      "span_sha256": "9b2f785d8afeb1243200675dac59cfa56b4c315c3bd4902bbc8370f7d0d5f495",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed02",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-db855917530c6226ece1"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 70,
+      "span_sha256": "72bb616409f81438d558f0a86336f65cd03226f314946570df02cd37e94d9500",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed03",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-35df9a21920a2bc63743"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 70,
+      "span_sha256": "bc7438f44a9bef9bd885ea47ba2b0c83f10178d5579c57ace329a7e78820d58d",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed04",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-35df9a21920a2bc63743"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 70,
+      "span_sha256": "bc7438f44a9bef9bd885ea47ba2b0c83f10178d5579c57ace329a7e78820d58d",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee01",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-5710b1b83211f1cb3296"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee02",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-5710b1b83211f1cb3296"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee03",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-48f2ad3bb448747778b6",
+        "syllabus-cue-650db2c864a56bf635f4"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "9f3ef6b315af895288f00efd86da6b3f90cae7f49a6d06deb5783947689c0cd3",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee04",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-7fd3161194a8b2e4b32b"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c101",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-3bbcf9b57d18c06936cd"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 26,
+      "span_sha256": "a636fc3d162f5e98129e6b893b33c3b0c83087371d45cbb49a5a779100d2afc4",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c102",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-0912990572530b7b2f85",
+        "syllabus-cue-16278189288388f0747f"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 26,
+      "span_sha256": "acbe66064fb3bbf8f6ee9b771d66d5e37af3e2b0f3a4fb29fc691aadb212a0b1",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c103",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-f7777438d51a0a7f1644"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 26,
+      "span_sha256": "4cc4ddce4851f23c5d1de57b5a912abdbc5b0a8d33f5df41fb12f285c6863e8c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c104",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-87ab73b900122ae78afe",
+        "syllabus-cue-942b1bcda8ace6f2f034"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 26,
+      "span_sha256": "05221c0af7ea1801671c8753cd0350c2c388a77f008871e691ce765b97abdb17",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c105",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-9be34337cac708d0b868",
+        "syllabus-cue-906b1bd86201837418ba",
+        "syllabus-cue-7bf55e1141035b85ba7f",
+        "syllabus-cue-b350304361c0ab306e02"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE",
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 26,
+      "span_sha256": "639be43646e0be6aeded413fa83e1303c0e0a9d8a7c2b80be7d312ea9cbbfc54",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c106",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-bfe2db5539cac802edb3",
+        "syllabus-cue-ea5b80abd62ae5e6d941"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 26,
+      "span_sha256": "5b85a03860e99495bf7249e770b10aa965c0e5b997a373c42d1b81d22bbc2008",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c107",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-5108839858ee70ba07b9",
+        "syllabus-cue-2eb73d08362febfeae68"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 26,
+      "span_sha256": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c108",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-5108839858ee70ba07b9",
+        "syllabus-cue-2eb73d08362febfeae68"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 26,
+      "span_sha256": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c109",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 28,
+      "span_sha256": "767f3a859e2c1597ec131214916881ee35bad9f054173ed6995d308ef0d1af55",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c110",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW",
+      "marker_ids": [],
+      "marker_kinds": [],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 28,
+      "span_sha256": "a0a031a530c54cfff8d3ae033ef150b34637c41c54ec1c53c2f1522e8b29b601",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c111",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-a657c3d3466abc75fd42"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 32,
+      "span_sha256": "27503ff60c180670f3f14f24897095a431dd3323ea9c21d3259fad3ebd501829",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c112",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-0bf6aacc188973af24c3"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 32,
+      "span_sha256": "2371729eedae4ab0cd3b6bbe79e3dcc7ce3015fdfc8cd5d350c3e241c197828d",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s101",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-a4dc0630e3ea06f615f7",
+        "syllabus-cue-cf5723c39dbdfe3881ba"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 38,
+      "span_sha256": "216bea8f5d7341aa38e5ea06aeb71fa13ad5b36f022d4551b39b734f8ab2e3f9",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s102",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-ad848c7b22a810c15934",
+        "syllabus-cue-dfe6f5216bc0383dba75"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 38,
+      "span_sha256": "500a38f9dfafa177fe2693ac124a4d28fdd454dd97f2104c32cbe722cb8b441e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s103",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-09a2f1e0ee9e8431810b",
+        "syllabus-cue-b63b998f7b086de94b18",
+        "syllabus-cue-7ea1685b95291d3c0b43"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 39,
+      "span_sha256": "7a1a8fb4fb139e830d749f72e55295a298510858cdc0b6d96b75bb6b34812eb0",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s104",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-6c8570056a6c13096ddc"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 39,
+      "span_sha256": "fed20d84ccb916026aaf00653d35b7f2f9578433a52a68e22619910b83e2a904",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s105",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-cb0a2ef55ca612f45597",
+        "syllabus-cue-45ba24612e4c7e680536"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 42,
+      "span_sha256": "2df559aa7a85d6b1d546f88be6409cf42797a3d6a3feed24cdf25225e8a4f23c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s106",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-9b1fb4fac1850164e8a4",
+        "syllabus-cue-d5d6ebf55f5202194711",
+        "syllabus-cue-c2733b8ba72ea24adefc"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 42,
+      "span_sha256": "33e576842508af009b742c40d4ef97510c3d06e67d09d53636e0c8c928a7ab7b",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s107",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-2be0b5f283974049a031"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 43,
+      "span_sha256": "0ecbe750560f850e58214cdcaf6bbcb08b6e49ee6694cfa5a3fc1af95a00e9c9",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s108",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-587f25f0e9220c5890bc"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 43,
+      "span_sha256": "f14e1245865fc0aabf58f9c2b1c6930c3f37c879ef95cf79a5b0295c652e5095",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s109",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-30af57e502c0c7bda75d"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 43,
+      "span_sha256": "1fb94ea18e785fd1c29271e4e7d486f450af5e9e38e5da00dfb49c310dc4b32a",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s110",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-380f28019c21f7f25f4e",
+        "syllabus-cue-d830a7e21712e9c9b69b"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 43,
+      "span_sha256": "a527785553949d95ebafa64de626ce5e8b2e67d80e50f2eb9c7d8cc619153d94",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s111",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-36ad6f8fc562d90d458a"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 44,
+      "span_sha256": "afefccad2872a0a11279e7454e66c5ace300348d8c3e85a1d6ae37851480f0b7",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s112",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-275710e08469fa92b53c",
+        "syllabus-cue-25339966b4a30f085aea"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 46,
+      "span_sha256": "d2552df0590736eaa6d7844eef9850d7c566fb5a56e14d5da75f9246f4640a67",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a101",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-293078bea86ac38f5a3c",
+        "syllabus-cue-30fcfe0d7b775e5e9c57"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 54,
+      "span_sha256": "fe3c5b3ece5caa60224663ba0ef00106049a0a742fda994bc8375667421b4543",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a102",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-c9c996fafc9545ffafda"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 54,
+      "span_sha256": "b9c9053046adde88fc444450ab0e3f8dfc56be03c25c64e00e21d02ab105a28b",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a103",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-a56b15c5a3305539e925"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 54,
+      "span_sha256": "5a49093380989b30ac03efe575e3446112aa4127a39decf6c7aa4cf9363f96ec",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a104",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-934934490a18889432d4"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 54,
+      "span_sha256": "d34b25cd424d26459408bbd7820198f031dd37380c7d761580c247c2475bfbf5",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a105",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-ff32b72da93f54a67bca",
+        "syllabus-cue-0d1608d981c91bf145ea",
+        "syllabus-cue-c02b0cbb63f3fa24cd4e"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 54,
+      "span_sha256": "137178d11e60da2e5ead9c1d3a7c2430287d89593b8bac95113e222310e31d18",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a106",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-00a48a016de6cdfbdac4"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 55,
+      "span_sha256": "bf9b5ad11c6fcc3b4e25794a93de158e993f3e3b104082a17fa79ebcaa0cc542",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a107",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-68494c0a8e9d90a34c81",
+        "syllabus-cue-ca632d89ee58f273a2ae",
+        "syllabus-cue-3b12fec060f29a995ee2"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 55,
+      "span_sha256": "9e3e9a0f5ace7ff81eeab524a934fb36261df088bc656a5dbb808c830046c22b",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a108",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-c4d5790504d3840592be"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 55,
+      "span_sha256": "ffe5b409aadf394caf6c0b7db228d766f1577e0e5670e7658617faf4eaffb212",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b101",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-bce23ee84c92f69b3f50",
+        "syllabus-cue-5a7c1a8ee9ac04b3e0df"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE",
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 61,
+      "span_sha256": "5d3e97af0d1a2944bb65895b267cd390cad29065ae737b2fa791cec058534902",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b102",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-892a135c9c2cda5eb2b1",
+        "syllabus-cue-5711d9f884c0ebaca3ad"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 61,
+      "span_sha256": "98bb2ebd825757d97159ddcc71f8e77dd3489f2cd25664b21b3aea360cf140d0",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b103",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-abab52028a82349dea7a",
+        "syllabus-cue-46965eaf45f6f2273bf0"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE",
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 61,
+      "span_sha256": "3e4d5e919a64ba00526be6ba5d04ebf8a82d2f325890f8993eb71da1c1e9013a",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b104",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-396fa24ae67e0f09d378"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 62,
+      "span_sha256": "5b1af62af3a560643d4c6afb2367fd9c4715aa6b4b73340d8c2616a968eb1b66",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b105",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-e862e3154122aba252e9"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 62,
+      "span_sha256": "a0ebd071e498baf71b7328e79e66502530bd881a66ca728898af733897ba84dd",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b106",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-8b322123ec2f9e00838e",
+        "syllabus-cue-5a5084a9e574f05040f2",
+        "syllabus-cue-a381e94ae12833646a69"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 62,
+      "span_sha256": "d2fe4ff72022931f5a505a5025b39d3be45fb13b69513ed4f9764f0c651a40f9",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b107",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-7c51e72799b43336fa0a",
+        "syllabus-cue-4e6e88d831e020b166e5",
+        "syllabus-cue-ec1f3ed81b75cb4a85c1"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE",
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 62,
+      "span_sha256": "4cacff34c210277876feb1c290f389f984b17b09709b07c54ddb5363255c2843",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b108",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-8b78a95770b0cd177948",
+        "syllabus-cue-ceef5281a7d1a16e0992",
+        "syllabus-cue-51cedafa610415cfed0f",
+        "syllabus-cue-e4d5c8938f06ac99d34f"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE",
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 63,
+      "span_sha256": "5cc8a99986208a03adba1c56fe4836ad7602fa0259890da92b80a4b1aacd9ac6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec101",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-40399cea0d2266d69052"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 65,
+      "span_sha256": "9329b673756794e4dbf188506cac3aadf7bdf9374f2eb950b67ff18279ce84bc",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec102",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-165b49ab9f2b6da6cd5f"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 65,
+      "span_sha256": "2795b6d7e85c7472a3c5e50f7be967fad7d5b7bf94d20de701167f0f9a86ce15",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec103",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-42e5104c9df6d7dc6d18"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 65,
+      "span_sha256": "da0989ec9df6c9e4a7c0bfbd390da1a86154f0f30866fb4ac467eb68cfcbd419",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec104",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-02bf3bc4168b7d8515ea"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 66,
+      "span_sha256": "c45b8aeb6a717311f56729b9bccbcf7c372bf394b0f747379dbc5c0a1fce8a6f",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec105",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-1659606a0f6a87948d1b"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 66,
+      "span_sha256": "58abcfa5da8c110b22b7a48d8aab88e4f1a616bffb4d6c4e083d3fa4fecb420e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec106",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-1e642d1a4c5897727942"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 67,
+      "span_sha256": "10f85af89ead8703e888ad805496332445d5a0983dd6d2605ebc225f47644dd6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec107",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-bea729c1ac87f5c1f60b"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 67,
+      "span_sha256": "a045a5ab051a5edcf3d6c625f67aca96c4430722d8f760976a8ca31068b0cd1e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec108",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-dff8ce243b828919cb0f"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 68,
+      "span_sha256": "486937c48512c10959eb0ccebf99068273fa35c7b6e84e087eadc449f5849336",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed101",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-db855917530c6226ece1"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 70,
+      "span_sha256": "72bb616409f81438d558f0a86336f65cd03226f314946570df02cd37e94d9500",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed102",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-35df9a21920a2bc63743"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 70,
+      "span_sha256": "bc7438f44a9bef9bd885ea47ba2b0c83f10178d5579c57ace329a7e78820d58d",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed103",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-ae1d11080ba491f1e2ff"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 70,
+      "span_sha256": "2153013a4fd73fe18aeeaea1184f7f944dae2d73bf477e73676ff67cd6b99979",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed104",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-58a8bdddb82d9bec3ecd"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 70,
+      "span_sha256": "8fcde65d075d5928107ec082eb38ef1e3f7a13fb37901608a0a9fc129b248641",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed105",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-0f9734adcc3f7b588b12"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 71,
+      "span_sha256": "998a6d01313d307c2a5a06b5b16717847dcf57cb19cfde3867d6c68ff5bce73c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed106",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-04cadf8d00da2e88ba5a"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 71,
+      "span_sha256": "bab1331dcacbd163a30ef8477a74734aac2ce27a15d6d80d253d3a9b4f216e48",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed107",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-1b702d488d8cd719e6d0"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 72,
+      "span_sha256": "1fb3dfea386e7f3025569565e19de8277d698f3790e5e7fe79dfd02b88ac456f",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed108",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-2a16e6ceb45b13cfa86b"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "68b7f041747c4c459cfa510cffc54a352578be5ce5d4226d72cbd5f57ff6a181",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee101",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-5710b1b83211f1cb3296"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "80f251b90bd5449456521def3c721f638ca16f74fd35814cb532bd7f3268760e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee102",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-5710b1b83211f1cb3296"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee103",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-5710b1b83211f1cb3296"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee104",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-5710b1b83211f1cb3296"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee105",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-48f2ad3bb448747778b6"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee106",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-650db2c864a56bf635f4"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "f7459c2367e3f5128b3d4cfc83a92277ddc73504920b1de446db2ccb2770e97c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee107",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-7fd3161194a8b2e4b32b"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee108",
+      "course_track": "ELECTIVE_E",
+      "evidence_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "marker_ids": [
+        "syllabus-cue-7fd3161194a8b2e4b32b"
+      ],
+      "marker_kinds": [
+        "OPEN_ELECTIVE_EXAMPLE_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c201",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-a2a86f1d5fbc353dbfa2"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 15,
+      "span_sha256": "93e9e0dbbe63a2d8d571c32520e33e8cadd941605163fc512edb18a4aaa0721e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c202",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-bb324c7f5d4bc9bceaf2"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 15,
+      "span_sha256": "ff5dbf429128bbf700887e0a0264bdd31c9079f577601b71754614acf354d24d",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c203",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-e1c459b44c11d6ecf35e"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 16,
+      "span_sha256": "99412f64576d15a88fd53422b1ea5a41f848adede7e1b21e8a6cab44dfe8929c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c204",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-d1c24bfd8f7e5f584444"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 17,
+      "span_sha256": "aa6b349a9288b6ac13e616bf2fb7f02fca25109765e52eb7db49541be3145f8e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c205",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-42509e934b6578159903"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 19,
+      "span_sha256": "8f69593d2cd68e8aca4c99ddfb91b6a57f87c9c57bb7217478885ea0658cf939",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s201",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-f5dbd7afef4f0301eec1"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 39,
+      "span_sha256": "729b325cd2bdff32e1d9ec3b46c2757389abcd3f850b160e0f93a3acf0ee4b55",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s202",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-e255076d2163f824ea92"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 42,
+      "span_sha256": "b48f2e32a3f55c6a2e310704f636b2d61830c4c15029227f4f57fce6cd55ba90",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s203",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-44d75dfde3cacef789ed"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 43,
+      "span_sha256": "7988c3896e061468a3e58ffff64709096694986bec46173d7fdeeda122940fee",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s204",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-050fd2dab423450ae3a8"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 44,
+      "span_sha256": "08f933e51d1b199250c085eec1e933ad0fc27a9ed9ef7aba406cb1641132d5a0",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s205",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-241eb0f3f26c064664c4"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 44,
+      "span_sha256": "4fac8c09aeff0dc4e77593f9e4d82a3142cf56ce2e7cd9b419ee59c6f525aa56",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s206",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-67787a41e8eab9458659"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 47,
+      "span_sha256": "5bcfab1e2f4d0aebd2056cbe733602f6959c1cf50cd204762f0fef4f361cb27c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s207",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-ff573b84168bf839aa39"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 42,
+      "span_sha256": "d812f8115a149b4c13efa589212714811a8326a938ea23ca41493892e9c91210",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-a201",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-8c2456ab0b358c0974fd"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 52,
+      "span_sha256": "b6294ea47788c632ccf2b3743bb875632a15a1bef7bcbe2f51eb5d428b333553",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-a202",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-7aeca5f58a2823da29f2"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 52,
+      "span_sha256": "f727011a40ee98dedb14cf1a2518a2378afe972a3d8ee39a60f5aee1976b8e6b",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-a203",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-2010888758bb8e094ab3"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 53,
+      "span_sha256": "e348dd1a40e387960550686302ec3025c5b40862fd4709ff6ba90a18fded56eb",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-a204",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-44f03d81441d8daaf385"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 55,
+      "span_sha256": "e4c8a9246b2dc1bb34fdf120698715a7ecbf3b00d66eb83f00082eafb2b65791",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-a205",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-9bab703319631e157baf"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 55,
+      "span_sha256": "3ac4ef0692a2bd393866e01b35d4f9ab3f769b8e560c5c7fedc59c0f70e6eadb",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-b201",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-9e767440f88093d5b4e5"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 58,
+      "span_sha256": "413a4731277525b3c47137659d26e60dd4d905dccfb58323481ed025064b4718",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-b202",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-75df953ff2f7505fc0e3"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 59,
+      "span_sha256": "8c586d24514e98d1e8621e1a08909448e32de0cfe4bb9d81431ee1a31515506b",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-b203",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-870befb4f34832ce129a"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 59,
+      "span_sha256": "8f848ba298d303b15597e491ffe642698505aebf33b6dba7384f8a795e1bc52b",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-b204",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-8742e4a71b8196c36b4e"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 60,
+      "span_sha256": "5a49093380989b30ac03efe575e3446112aa4127a39decf6c7aa4cf9363f96ec",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-b205",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-9e25ba3855c23979e99d"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 60,
+      "span_sha256": "9debad935768d20cb0fbe2007ef029501db13ae6b7fc69fb593f7993c9c17c74",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-ec201",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-fc4843efbf78f90c62a9"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 66,
+      "span_sha256": "582de2078fe2bd4d1c427bbb03a54c59c03abaa9245952bef435ce79f34560fc",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-ec202",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-a8a5ca8a2fa0cca8f3d6"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 67,
+      "span_sha256": "8b8992d365f38187b8c216db1b82ce01f2b9c7d1059b263b6275c19131d9fc09",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-ec203",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-1b93b49faf5128a4275d"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 68,
+      "span_sha256": "2049bcde8144a9793a6e2bddc17691de0fefa96f0477198c116708e0f7f8cda1",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-ec204",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-8ab3f3c0e223b97dcde8"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 68,
+      "span_sha256": "66a0df31cff454ef4b76d50a496a75dbd82e4cdbfb2429016aec9cc4047e1fa4",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-ec205",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-45099f3dd14f95f97156"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 68,
+      "span_sha256": "df99aaa24f7e0f3eabbe516acff054796f3e4bcf3c360cb9e86c5674e3272387",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-ed201",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-d7325b13560e496b055a"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 71,
+      "span_sha256": "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-ed202",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-24332bffc9682f1b42b6"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 72,
+      "span_sha256": "3b3dfa10c8e4b4237a8c5bc9c49a4371ae15b578f36901a7679617ecaec09ea1",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-ed203",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-a334cb1da25b0c996ea1"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "030f1797fef04f8a75719fdb142725f2ae9f83deb1dc141fed1702517196b238",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c301",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-5a382901b7f8d07552ab"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 15,
+      "span_sha256": "a9d757e4e0643189031fa8d2ddad7f326702dfd0df518128254b8b71f19baab6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c302",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-ad0b56896e76084af252"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 15,
+      "span_sha256": "0003e0c06fb4f2d0e560dbf06e0765b5c4d6377262ec2fa541485707f5e0a472",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c303",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-cec11635389999595d13"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 15,
+      "span_sha256": "2ef655b14624d06985f8cf103d940e98dadc347a545f519f5ae111d9a2a4e4c4",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c304",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-614188b0d5ef3337c77e"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 16,
+      "span_sha256": "2634c47beec268359cc41f4e0087987a6dc8f98d6ae311f5487180c3396d7c34",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c305",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-01a506d38348b59ffd3b"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 16,
+      "span_sha256": "05221cfd3966fca303eed59e768e5090840d00c3474e72f8ea2c6a9ca5ecdce4",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c306",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-964eb7596b273b0f5e38"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 16,
+      "span_sha256": "ec0dd62319f4a37d076327225d2f486934a128eeb6fe153c93d5b78495b504d6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c307",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-cc1accad660880fc4a2c"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 19,
+      "span_sha256": "ef0dcc75994c88ae3faee11dee718920dfda97e32d36e2b4856314d6674081d4",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c308",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-8c25568d2120af7d1d96"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 19,
+      "span_sha256": "4fc888c340a99704cd53ac6214dd08aef22bc011ce2734b456aaf157f2c6a9a5",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c309",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-645e339191f0d087dc75"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 20,
+      "span_sha256": "db598df3a853c88029ea8d00e0be79c02043fea88bf9f1c5155c5c6d95594466",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c310",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-b0bb6eb5e64b237a73ee"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 21,
+      "span_sha256": "af93f4d2df9812feae30e8eb042ef2af70770ea6fddab840dbfcdec87e3ee8c8",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c311",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-93052a6c59eb5c53bc4f"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 22,
+      "span_sha256": "0e2783329b4956f2f8806538d7a0bb6e59e7aeb2fd1f436395cc0d9b94b324f1",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-c312",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-a6a3c5a8a3078aea4746"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 31,
+      "span_sha256": "1ff93c882726cdc1c6ecb4d94f92bcfa9203cc14f8ba22fd5c4fb6fd9eedc58d",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s301",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-cd2a808474e360d8eebb"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 42,
+      "span_sha256": "4051c86c60951a7bc615d6fd4792601605de0b19c0b3740b8830febfec75b1c6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s302",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-9117ea9c77fd99c0655a"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 42,
+      "span_sha256": "416a865c4fc63034b9b367aa629b9b407d99268bfa31c60d502175007a878c47",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s303",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-b7c4e3944546d0fa402a"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 44,
+      "span_sha256": "d61a09f712992f73ac34c1f577a50a4807c2a0a9ce07a392f462dfac81291101",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s304",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-cb2426b8c7098f5c58a6"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 47,
+      "span_sha256": "18e0d556fa2f26a10e08b83c6403a2283357f3b346985c9492b401f870726bd6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s305",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-ce13a2f9436b9844f698"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 47,
+      "span_sha256": "dcd15d1f9997104deb213c104d4e5e5250ba71b41a8f77beb43b9aea6a3b460e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s306",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-910e99b87b521a50e00b"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 47,
+      "span_sha256": "d969a6c703e81a16afe4e275b32f233cd0ee611c1b7415b4d0dd57167d7e91b1",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s307",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-f58dc7ffd4a8a9f465bb"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 48,
+      "span_sha256": "7860ae9969d4b9f88bc834882eacd6e9c68328f687e58568ff119f77fc8479b5",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-s308",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-954b6f07b145f720e14d"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 48,
+      "span_sha256": "82d0c67006e55646eaec74f79be6f12f5e2bfe88bfadc8820acadb1523336181",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-a301",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-f42f0ba5d54e9a6a4185"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 53,
+      "span_sha256": "318f24cac2554c46a7e15430946f74f91e112a069972e1c38a7bf6bf26a895aa",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-a302",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-bcf93c3116e2eea16242"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 53,
+      "span_sha256": "2aeddb761ab7fce7910c27d3a7cdd0e4fcc9a15d99d705c94cbc5bdc7bfea7bf",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-a303",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-1653e4fe88fe16240381"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 55,
+      "span_sha256": "d74d82f21a6c8973a81bb3f6361b51c69439566e762549d3fff5795c40ebd8b2",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-b301",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-6abfe902dc60ce0a71bf"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 59,
+      "span_sha256": "2e2ea691838e7a571f158bf3460b30e31eab5ff0811066772ec14dbdf3ba82be",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-b302",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-35d68770663cb384112f"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 59,
+      "span_sha256": "defb442f48a2a01bad6d43f311c04fdeeb37821a861db0774cf9b300508dc846",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-b303",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-e1b43cfcddc3f4ee7236"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 60,
+      "span_sha256": "7fa298404dedf64ea5429090a68e9fcfd2ae8af2f9f8775cc64e5f15d9196a78",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-ec301",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-699f9941608baffa85b2"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 63,
+      "span_sha256": "70cdd71f08b8a46ee2afc364a22602c7307324431a000b92098005cc573f33d8",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-ec302",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-8c865895157dd0241d60"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 64,
+      "span_sha256": "10b5a0a0725a24f5f83bea1fab6bb2abbf1b75cbb54e7d811cf6b478d0fe60b9",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-ec303",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-c6da2a0321a52a226853"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 64,
+      "span_sha256": "abaea1b1d8d7799cbebe8e236297a0bf58c2495669d326d508db7ed36e37c880",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-ed301",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-59db792120e2c45a1730"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 68,
+      "span_sha256": "5d16c90b67cd4723ccabbd72abb067d661bf6c240dadae370d5886f15433769b",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-ed302",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-b24d5a9c4d42df250c24"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 68,
+      "span_sha256": "307d104bef4e417384a91fbbb62617381ba0e151ef01bc4271a5497718145421",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-122-ed303",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-59349f872a602cf9247e"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 68,
+      "span_sha256": "9184d17a0b2422d66b125eaf769182859a90409261e478577a4ca79d806d2161",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c401",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-b609acb6a876d589b411"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 15,
+      "span_sha256": "8e884c699d5f08fe68adb3e5138a39ec019c588d01eb398edaec6f9b60bbd0f6",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c402",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-babb0280190928b14965"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 16,
+      "span_sha256": "7e52b53474751c488a86b9c758c4f4b1e8a432056ef0cd59b651b63e47b2d5e3",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c403",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-0d844116c2c226b62084"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 17,
+      "span_sha256": "6f6cb0afe080f7497a5bdebff2fb8444dd7285e88ec86c376335ade3abb8e937",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c404",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-5b3d63105f4354c64dc2"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 19,
+      "span_sha256": "65150f2ffa1696eb67ab2d6c75dea4d1cc073746a376e257646dfad4cff4bcf3",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c405",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-dcc10cba526c74efe733"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 19,
+      "span_sha256": "f33fb1f7fffce381d06531a2cc55dd338e147bd6ff554a6eeed24ce46c6463be",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c406",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-049a758b6e0c5652c15d"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 20,
+      "span_sha256": "b547879065874e9af65999bae5ee56ce7ac5adf3c11073cfc8b16ae5aaaade12",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c407",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-2d9c6ca1339363507fcf"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 20,
+      "span_sha256": "6bf09af01e478c708a0624cc11c292f2c66ad82bbd3ad1d4e672f4846912b940",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c408",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-3d07ee7e6e3b45d6a670"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 21,
+      "span_sha256": "879aeab2311ef55f2462549bb1779578908408116c7a5fdf9e4c19815484fe3e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c409",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-0de312382fcc89f01cf8"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 22,
+      "span_sha256": "840a85700e346303fbb391352c0802f9ecf2bf9d1db720002b461fe5f2db4c49",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c410",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-3d0b1d754484b1f2b4f7"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 22,
+      "span_sha256": "8789cb85a67bac523a77d0bf14c275b2bafcc34b3d9f5baf03b6ea52335ade12",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c411",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-b13ae54a7b1f4d09d596"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 31,
+      "span_sha256": "9e6831927016d1439752d5c35ef0a0b9a8fee417a0cbbdaa76a16f7e69b435a2",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c412",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-edb4ad8a0cea08155316"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 32,
+      "span_sha256": "e00c3adccaa4753ec397145e28d1e1486905d4ba7f9fb8ad6cc5ee3c8750c6dc",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-s401",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-c7f2c37cf28494428290"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 42,
+      "span_sha256": "62fcc8b6cb9eb228f1becb565d5665ca0599347d3cf9c76f18b7299ebaed92d8",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-s402",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-5a0a24796121f3a5f78a"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 44,
+      "span_sha256": "f53cb775e336fcc7f245bd3eb37d77b29ba5d5b50520a9e231af198bb02301a4",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-s403",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-03abb0483f9f09e65ce1"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 47,
+      "span_sha256": "42241581a7bb6217244fd851b002b95ef5ea5e92efdab219a45bab6d2aa27c10",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-s404",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-da12a60a7e6a5ac56893"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 48,
+      "span_sha256": "e5c41e69726c7f9440e786654360c0d36d4e59a961076719aecb7b1fbb527010",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-s405",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-478c2f0accc5a2b8064b"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 48,
+      "span_sha256": "c7abc03ccf8e84342aff52be704031aefc752edf5791d4c88059cef5147358bb",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-s406",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-5e3b53ed70d9212e00ef"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 47,
+      "span_sha256": "f7fb6d46862d4203f5ab8066d32a4b59d82be9822bd5fc16cc6284019d7b25b2",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-a401",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-e42c54053cb14dc185bb"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 52,
+      "span_sha256": "f51f98ac7153c421d1ce5d82b1de26ba4a1eab5e86473d5333d23deb9f3b7dc2",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-a402",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-6f2cf447531232a34b2b"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 53,
+      "span_sha256": "3329689b36d9f99346010005cfbedf6e9b085f05ed7b556d1233a946eb263180",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-a403",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-2d6007726523d1f9aebe"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 55,
+      "span_sha256": "c929b5ad5386c983d327b7f478380737d39bbf2c6ab50c0db5938abdfb4affa7",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-a404",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-06cfa4d01d30afbdd20e"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 56,
+      "span_sha256": "59ac2ccf2b2a9df92cf81a915aa9c7ffa925609da0465893f50ede00f503ebcc",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-a405",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-bc8e9976d6e4d9b363e9"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 57,
+      "span_sha256": "20dc8656616a5c17c46aee396227b7b33dfac4937d811db279890acc6f7c5104",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-b401",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-f64e601199bb8e00c6da"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 59,
+      "span_sha256": "137e9092c2884758f90aaec206759a3a2f5e1dc40fe2c6a25f86bd1f015597e0",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-b402",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-d8932d74bb0a52d6bc8f"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 59,
+      "span_sha256": "9790fcc84ca08f3dd59d63723f2ae26417a78f02daf04a543bdf1a039142175e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-b403",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-063a7c3866d4cabef41a"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 60,
+      "span_sha256": "173dfb2d0a5b6fd86ef38b58bbaefe15978f699af753b62ee5668e128abb2672",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-b404",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-621d1c4c2ac38c71065e"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 60,
+      "span_sha256": "343d43463ab422f32a3d41b76f8bd09cd9e2b5cf47d9b1a74e15e8cd711f566d",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-b405",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-eb17551060ceb50f605a"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 60,
+      "span_sha256": "bb82e38e586ce1203e3b485ffc797777b99d50577509126e61f7d4db6c2965dc",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-ec401",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-70857c18770bb4fe0d0d"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 66,
+      "span_sha256": "ec6ddeb7583ccfb7c5aa84eb82e2bdc65bbc30bca4d4a27f6dd29e2e3dea07ad",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-ec402",
+      "course_track": "ELECTIVE_C",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-e6bfe618357c2b847bdb"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 68,
+      "span_sha256": "b8f78b9f62ff3c3f6303f5f40c0666306c9e6deb72da2ccfead3b8bdf6f77643",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-ed401",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-ad08946574dceee08d50"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 72,
+      "span_sha256": "758990630f0a0abbc6e0c98a8aa68bb08b76c757adf5e60afb68d0bd94662d86",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-ed402",
+      "course_track": "ELECTIVE_D",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-c4c68c5b46a4d5b3245f"
+      ],
+      "marker_kinds": [
+        "TOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 73,
+      "span_sha256": "c7d24be54aeb877d037b004a7ac13cde4f67c6c86cc939d5a0a5369275dab9d7",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c501",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-e94f6884b805ec5bf18e"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 19,
+      "span_sha256": "5f38377ec5ea7c88c09b4ce847a77aa9f474aff6fc12ef27c11f47c6df9f711d",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c502",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-b187dcfad423f0d51c83"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 20,
+      "span_sha256": "e930c7837461a569746d654a387e16c30b1a4734078ed77a5cba6e0183588255",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c503",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-9d34b6d69cf322152f3f"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 20,
+      "span_sha256": "4e2e9721f626c9ed37532262546d4c23a80a5bf5150308517daff4e49ede9e2c",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c504",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-0cf2aafcc9e15487f0e5"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 21,
+      "span_sha256": "e0cf4c96cfc79d70b06243ce35a30590b95956b4ce536dadec0eaa42dbae6811",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c505",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-06726cec8b81afcebed8"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 21,
+      "span_sha256": "229741b5852a46cc94929debbd2878ead4add5e1b50e94c26d2f2bb2d2fa9235",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c506",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-2d153beb7139a644044f"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 22,
+      "span_sha256": "d26b96953f83a8fcafc23621c84a6b53a7394d13061b08669e468d8bea6bce23",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c507",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-35c494b4e223353d8609"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 22,
+      "span_sha256": "ba449b3cffb1f514e3cffca65dad24497570039aa4f52f7b975c79bbfb105015",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c508",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-f7746d4c70d8ec9687bf"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 22,
+      "span_sha256": "b370665847fa7deab42f7e1a9c43ec248e6a5ae7142fc8810eb11221f8c53f63",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c509",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-03b4aeed36d1c829b48d"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 22,
+      "span_sha256": "aa5f7bcea5d2b608679c40b919d5a2fc75a6cbfb50cc7da59a545b3b4b7525c8",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c510",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-f09d067d638cefcad8a1"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 23,
+      "span_sha256": "211c94267074ab8d0539cf182f3ad7cb5cc82ea84ff5e920de2e327fdc5feba4",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c511",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-8dbf9724e69716c326f7"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 23,
+      "span_sha256": "1bbbe93269832a299e2292f76faa556eb7d594aa4a9a6b1f8d61901b5de35296",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c512",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-86057987977fffba4783"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 25,
+      "span_sha256": "5f76bf9943cd13d30a7590f52c41583e92bc9ac4f5768e37cd8c137e5ea67e95",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c513",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-84e7ce58f6d2ca9f4711"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 25,
+      "span_sha256": "5e61e5b1154a31e10c0c903d03140f640e95dd7ff8c1ccbc6992693986ebdf74",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c514",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-c009dc8fa8d84d3915aa"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 26,
+      "span_sha256": "025464fd8796edaba5f5203dfe1f63392e482c1a5f2971cfa1f2a019353d41d7",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c515",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-8362fb20af2bd4b6e54d"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 27,
+      "span_sha256": "04996f4b88ce8b9704db84186fb94ea425445e27dbfbd1c497dae2c64e1c514f",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c516",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-460da80d01447c2aac9d"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 27,
+      "span_sha256": "5e0574a0e0c318112ead14b5f81a631feb6649e559f7e9e27fcb80ca9e0b3572",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c517",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-df1bd50d89f91e808af1"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 28,
+      "span_sha256": "a7e4c52b8b89beb853613b70373f543df24b6a8ddca15775b9f513e037e1e766",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c518",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-9fab757f7394e0d66a46"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 28,
+      "span_sha256": "b22e9e2a4638a43531ea67864317fd49f61c1536c79344b304ce9d3f25a027f3",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c519",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-083a0c36609dd393160a"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 28,
+      "span_sha256": "56e111c3839f12c9710ee2a8bbfeaf24e407046188456c4c07a06121d5bd5604",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c520",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-b1ec18b1fcec5255a663"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 28,
+      "span_sha256": "e27d6fc66712b49fd53367ea084a1e39ee42a73f771a492bf2739a7b0686c471",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c521",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-843b317432ea3a88d82f"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 31,
+      "span_sha256": "02e9f7cff6de267cb57c0c1d0843c67bce1ed86babf63c47acb42376ded56967",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c522",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-78b6573e95096d9b92e6"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 32,
+      "span_sha256": "7b160b0845d65f1c7e7c1193eba68b60be2c2028d0a4ad31bb7a0847df4d3120",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c523",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-052052124e60e7a5990a"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 32,
+      "span_sha256": "3e17eb67d435f246adb4874585161abd1e0c806e372f932d61d9526bda615c4e",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c524",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-c059e31ad272455297e3"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 32,
+      "span_sha256": "bbc5e0f2eee677cbf5c6759d2e7f7cb38b2bd6ac198fa4d1b77560df54a655f2",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c525",
+      "course_track": "COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-8bd74709b7363f8d0db6"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 33,
+      "span_sha256": "c6e734e4dfd5d0debae5253458cda06a43ea24db808d91b4e305c81cf78f7728",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-s501",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-6e4cecfa334f79ad2404"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 44,
+      "span_sha256": "5889c2d437bf2440be284ab1841a11c5e69b6e47b68dbdf410e489f33fd04ae2",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-s502",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "evidence_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "marker_ids": [
+        "syllabus-cue-34850361103c7373d98d"
+      ],
+      "marker_kinds": [
+        "NUMBERED_REQUIREMENT_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 44,
+      "span_sha256": "0688c27f47d75e83421e0ed58c93298aef6dc621f6276c38009be6f2be01fe44",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-a501",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-94b19d11f19d11975fd7"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 53,
+      "span_sha256": "3199f479919f7e438db8c1b69238189142e8e413aa077005a82de29b4b8fbbf1",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-a502",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-20d85b4c4b1fb457648c"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 55,
+      "span_sha256": "5823b857ea6a14a7b6d2f4c48fe940faf8dc4e827995dab61f96624a711671ea",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-a503",
+      "course_track": "ELECTIVE_A",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-1212ff549b6f4927b5c7"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 57,
+      "span_sha256": "8feb3498822747dfc3012515158a010d021bbd312085ffc3401fdf3cf8c529f3",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-b501",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-5f79c5e83aa40e9cf288"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 60,
+      "span_sha256": "2263dac7ef590b971f7404a4f1c48928cf49164a465a685edd1e3be0755810ea",
+      "student_authoritative": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-b502",
+      "course_track": "ELECTIVE_B",
+      "evidence_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "marker_ids": [
+        "syllabus-cue-833398d49826cf63300e"
+      ],
+      "marker_kinds": [
+        "SUBTOPIC_CUE"
+      ],
+      "needs_human_semantic_check": true,
+      "official_atom_id": null,
+      "printed_page": 62,
+      "span_sha256": "b5ce4484414d049f9717e5b29d6f1b7c291411e5802f8d68d1bfecad79bdeb32",
+      "student_authoritative": false,
+      "teacher_approved": false
+    }
+  ],
+  "residual_cue_kinds": {
+    "NUMBERED_REQUIREMENT_CUE": 6,
+    "SUBTOPIC_CUE": 76,
+    "TOPIC_CUE": 53
+  },
+  "source_artifact_sha256": {
+    "coverage_124": "005dc83d829df2f63da6a7828d3fd0f475c82cce7843bb23da4e6bc308914b50",
+    "editorial_124": "e1722f1442204ef42cfaf2af12375a59d71305c3b8016ac16eae21c45581bea4",
+    "layout_124": "9038b9f4e060a9931ace6aaa7ab498c6f9f0099e9770e37f335a93fb35f5d7e6"
+  },
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "unlinked_cues": 135
+}
