@@ -1,0 +1,101 @@
+{
+  "batch": 123,
+  "cues_linked": 238,
+  "cues_unlinked": 167,
+  "cumulative_editorial_candidates": 207,
+  "new_editorial_candidates": 32,
+  "official_atom_census_complete": false,
+  "official_atom_total_denominator": null,
+  "per_track": {
+    "COMPULSORY": {
+      "cumulative_editorial_candidates": 50,
+      "layout_cues": 127,
+      "linked_cues": 51,
+      "new_editorial_candidates": 12,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "teacher_approved": 0,
+      "unlinked_cues": 76
+    },
+    "ELECTIVE_A": {
+      "cumulative_editorial_candidates": 27,
+      "layout_cues": 69,
+      "linked_cues": 38,
+      "new_editorial_candidates": 5,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "teacher_approved": 0,
+      "unlinked_cues": 31
+    },
+    "ELECTIVE_B": {
+      "cumulative_editorial_candidates": 28,
+      "layout_cues": 70,
+      "linked_cues": 41,
+      "new_editorial_candidates": 5,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "teacher_approved": 0,
+      "unlinked_cues": 29
+    },
+    "ELECTIVE_C": {
+      "cumulative_editorial_candidates": 24,
+      "layout_cues": 29,
+      "linked_cues": 20,
+      "new_editorial_candidates": 2,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "teacher_approved": 0,
+      "unlinked_cues": 9
+    },
+    "ELECTIVE_D": {
+      "cumulative_editorial_candidates": 17,
+      "layout_cues": 17,
+      "linked_cues": 14,
+      "new_editorial_candidates": 2,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "teacher_approved": 0,
+      "unlinked_cues": 3
+    },
+    "ELECTIVE_E": {
+      "cumulative_editorial_candidates": 12,
+      "layout_cues": 4,
+      "linked_cues": 4,
+      "new_editorial_candidates": 0,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "teacher_approved": 0,
+      "unlinked_cues": 0
+    },
+    "ELECTIVE_UNASSIGNED": {
+      "cumulative_editorial_candidates": 0,
+      "layout_cues": 0,
+      "linked_cues": 0,
+      "new_editorial_candidates": 0,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "teacher_approved": 0,
+      "unlinked_cues": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "cumulative_editorial_candidates": 49,
+      "layout_cues": 89,
+      "linked_cues": 70,
+      "new_editorial_candidates": 6,
+      "official_atom_denominator": null,
+      "official_coverage": null,
+      "teacher_approved": 0,
+      "unlinked_cues": 19
+    }
+  },
+  "source_cue_dispositions": {
+    "NUMBERED_REQUIREMENT_AWAITING_EDITORIAL_ATOMIZATION": 33,
+    "SOURCE_LINKED_EDITORIAL_CANDIDATE": 238,
+    "SUBTOPIC_CUE_PENDING_CLAUSE_REVIEW": 81,
+    "TOPIC_HEADING_NEEDS_CHILD_SCOPE_REVIEW": 53
+  },
+  "student_authoritative_count": 0,
+  "teacher_approved_count": 0,
+  "total_layout_cues": 405,
+  "total_source_pages": 61
+}

@@ -1,0 +1,53 @@
+{
+  "batch": 123,
+  "boundary_case_names": [
+    "ZERO_VECTOR_INVALID_ANGLE",
+    "ODD_ZERO_NOT_SUFFICIENT",
+    "LOG_BASE_NOT_ONE",
+    "CIRCLE_B_ZERO_STILL_LINE",
+    "BISECTION_INTERVAL_LENGTH",
+    "LIMIT_DENOM_ZERO_REQUIRES_OTHER_METHOD",
+    "LINE_PLANE_UNIQUE_T",
+    "SINGULAR_NONHOMOGENOUS_INCONSISTENT"
+  ],
+  "cross_topic_exact_boundary_checks_passed": 8,
+  "details_by_lesson": {
+    "A401": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "A403": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "B403": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "B404": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "C404": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "C407": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "C410": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    },
+    "S402": {
+      "exact_worked_examples": 2,
+      "independent_negative_cases": 1
+    }
+  },
+  "exact_worked_cases_passed": 16,
+  "free_text_student_steps_verified": false,
+  "general_formal_theorems_proven": 0,
+  "lesson_boundary_negative_checks_passed": 8,
+  "teacher_approved": 0
+}
