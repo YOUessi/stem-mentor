@@ -237,6 +237,12 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch130_scope_le
 .venv/bin/python scripts/build_kb_batch131_contexts.py --check-offline
 .venv/bin/python scripts/check_kb_batch131_exact_cases.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch131_context_math.py
+# Batch132: all 39 remaining elective historic context reviews (Mac original PDF),
+# eight full elective manuscripts, 16 exact teacher examples and eight negative cases.
+.venv/bin/python scripts/build_kb_batch132_electives.py --check-mac
+.venv/bin/python scripts/build_kb_batch132_electives.py --check-offline
+.venv/bin/python scripts/build_kb_batch132_lessons.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch132_electives.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
