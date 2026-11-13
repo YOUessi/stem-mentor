@@ -299,6 +299,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch142_p0_exact
 .venv/bin/python scripts/check_kb_batch143_math.py --check
 .venv/bin/python scripts/build_kb_batch143_source_gap.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch143_eight_math_integrity.py tests/test_kb_batch143_source_to_depth_gaps.py
+# Batch144: ten source-locked, seven-track teacher-only manuscripts and independent math guards.
+.venv/bin/python scripts/build_kb_batch144_lessons.py --check-mac
+.venv/bin/python scripts/check_kb_batch144_math.py --check
+.venv/bin/python scripts/build_kb_batch144_crosswalk.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch144_seven_track.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check

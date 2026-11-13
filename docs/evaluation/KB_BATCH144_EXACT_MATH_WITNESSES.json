@@ -1,0 +1,421 @@
+{
+  "cases": [
+    {
+      "candidate_id": "hs-semantic-pilot-120-c101",
+      "case_id": "kb144-01-1",
+      "formal_general_proof_certified": false,
+      "label": "coordinate telescoping identity",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c101",
+      "case_id": "kb144-01-2",
+      "formal_general_proof_certified": false,
+      "label": "3-4-5 composed displacement",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c101",
+      "case_id": "kb144-01-3",
+      "formal_general_proof_certified": false,
+      "label": "reject endpoints added as vector sum",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c101",
+      "case_id": "kb144-01-4",
+      "formal_general_proof_certified": false,
+      "label": "reject wrong directed segment",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c201",
+      "case_id": "kb144-02-1",
+      "formal_general_proof_certified": false,
+      "label": "integer belongs to set",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c201",
+      "case_id": "kb144-02-2",
+      "formal_general_proof_certified": false,
+      "label": "singleton is subset of parent set",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c201",
+      "case_id": "kb144-02-3",
+      "formal_general_proof_certified": false,
+      "label": "singleton not an element of integer set",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c201",
+      "case_id": "kb144-02-4",
+      "formal_general_proof_certified": false,
+      "label": "integer not directly present in nested set",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c405",
+      "case_id": "kb144-03-1",
+      "formal_general_proof_certified": false,
+      "label": "sine 2x has pi period",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c405",
+      "case_id": "kb144-03-2",
+      "formal_general_proof_certified": false,
+      "label": "constant maps preserve every real translation",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c405",
+      "case_id": "kb144-03-3",
+      "formal_general_proof_certified": false,
+      "label": "zero translation excluded by formal periodicity definition",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c405",
+      "case_id": "kb144-03-4",
+      "formal_general_proof_certified": false,
+      "label": "constant positive period cannot be minimum: T/2 smaller",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s101",
+      "case_id": "kb144-04-1",
+      "formal_general_proof_certified": false,
+      "label": "symbolic consecutive differences equals d",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s101",
+      "case_id": "kb144-04-2",
+      "formal_general_proof_certified": false,
+      "label": "first term boundary preserved",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s101",
+      "case_id": "kb144-04-3",
+      "formal_general_proof_certified": false,
+      "label": "reject off-by-one formula a+n*d",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s101",
+      "case_id": "kb144-04-4",
+      "formal_general_proof_certified": false,
+      "label": "reject irregular sequence as arithmetic",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s204",
+      "case_id": "kb144-05-1",
+      "formal_general_proof_certified": false,
+      "label": "point on positive radius five circle",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s204",
+      "case_id": "kb144-05-2",
+      "formal_general_proof_certified": false,
+      "label": "negative constant circle equation has no real roots",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s204",
+      "case_id": "kb144-05-3",
+      "formal_general_proof_certified": false,
+      "label": "zero radius is point not ordinary positive circle",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-s204",
+      "case_id": "kb144-05-4",
+      "formal_general_proof_certified": false,
+      "label": "negative radius square rejects real point",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a104",
+      "case_id": "kb144-06-1",
+      "formal_general_proof_certified": false,
+      "label": "homogeneous diagonal additive closure",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a104",
+      "case_id": "kb144-06-2",
+      "formal_general_proof_certified": false,
+      "label": "homogeneous diagonal scalar closure",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a104",
+      "case_id": "kb144-06-3",
+      "formal_general_proof_certified": false,
+      "label": "affine x+y=1 excludes zero",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a104",
+      "case_id": "kb144-06-4",
+      "formal_general_proof_certified": false,
+      "label": "affine point not closed under doubling",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-b204",
+      "case_id": "kb144-07-1",
+      "formal_general_proof_certified": false,
+      "label": "nontrivial null vector gives dependence",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-b204",
+      "case_id": "kb144-07-2",
+      "formal_general_proof_certified": false,
+      "label": "independent basis rank two",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-b204",
+      "case_id": "kb144-07-3",
+      "formal_general_proof_certified": false,
+      "label": "all-zero coefficients do not prove dependence",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-b204",
+      "case_id": "kb144-07-4",
+      "formal_general_proof_certified": false,
+      "label": "zero column forces dependence",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec104",
+      "case_id": "kb144-08-1",
+      "formal_general_proof_certified": false,
+      "label": "two annual 10-percent compound years",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec104",
+      "case_id": "kb144-08-2",
+      "formal_general_proof_certified": false,
+      "label": "after monthly interest then repayment",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec104",
+      "case_id": "kb144-08-3",
+      "formal_general_proof_certified": false,
+      "label": "12-percent annual effective is not 12-percent monthly",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec104",
+      "case_id": "kb144-08-4",
+      "formal_general_proof_certified": false,
+      "label": "monthly 12-percent violates annual-nominal 12-percent convention",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed104",
+      "case_id": "kb144-09-1",
+      "formal_general_proof_certified": false,
+      "label": "100pi angular frequency means 50 Hz",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed104",
+      "case_id": "kb144-09-2",
+      "formal_general_proof_certified": false,
+      "label": "nonzero 50 Hz period exactly 1/50 s",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed104",
+      "case_id": "kb144-09-3",
+      "formal_general_proof_certified": false,
+      "label": "doubling amplitude does not double angular frequency",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed104",
+      "case_id": "kb144-09-4",
+      "formal_general_proof_certified": false,
+      "label": "zero signal lacks observable positive minimum",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee102",
+      "case_id": "kb144-10-1",
+      "formal_general_proof_certified": false,
+      "label": "rotation orthogonal determinant one",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee102",
+      "case_id": "kb144-10-2",
+      "formal_general_proof_certified": false,
+      "label": "rotate then translate gives (1,1)",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee102",
+      "case_id": "kb144-10-3",
+      "formal_general_proof_certified": false,
+      "label": "translate then rotate gives (0,2), not (1,1)",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee102",
+      "case_id": "kb144-10-4",
+      "formal_general_proof_certified": false,
+      "label": "reference frame translation cannot be naively interchanged",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_answer_verified": false,
+      "teacher_approved": false
+    }
+  ],
+  "formal_general_proof_certifications": 0,
+  "invalid_precondition_rejections": 20,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "schema": "kb144-independent-exact-finite-math/1",
+  "scope": "FINITE_EXACT_WITNESS_NOT_GENERAL_FORMAL_PROOF",
+  "student_free_text_verifications": 0,
+  "teacher_approvals": 0,
+  "total_cases": 40,
+  "valid_or_boundary_cases": 20
+}

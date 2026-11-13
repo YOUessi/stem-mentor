@@ -358,3 +358,9 @@ def kb143_review_coverage():
     """Aggregate 65 editor-only drafts; never export unapproved mathematical content."""
     from .kb_batch143_index import public_coverage
     return public_coverage()
+
+@app.get("/api/knowledge/kb144-review-coverage")
+def kb144_review_coverage():
+    """Aggregate seven-track editor inventory only; no unpublished lessons or answers."""
+    from .kb_batch144_index import public_coverage
+    return public_coverage()
