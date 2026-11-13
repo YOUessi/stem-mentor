@@ -1,0 +1,65 @@
+{
+  "backend_passed": 66293,
+  "backend_skipped": 5,
+  "browser_mac_exit": 0,
+  "browser_pytest_passed": 2,
+  "earlier_bounded_teacher_lessons": 57,
+  "formal_general_proof_certifications": 0,
+  "full_mac_exit": 0,
+  "gitHub_runner_can_only_replay_logs_and_source_locks": true,
+  "historical_p0_denominator": 127,
+  "historical_proof_steps_unverified": 538,
+  "human_teacher_approvals": 0,
+  "independent_math_negative": 12,
+  "independent_math_positive": 12,
+  "logs": {
+    "BROWSER": {
+      "actual_exit_code": 0,
+      "byte_count": 2442,
+      "exit_path": "docs/evaluation/logs/KB_BATCH141_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH141_BROWSER.log",
+      "sha256": "b88533d9affa2c9f24009ef72606317225d81257ef9fec83e01ddaa16af0170a"
+    },
+    "FOCUSED": {
+      "actual_exit_code": 0,
+      "byte_count": 1061,
+      "exit_path": "docs/evaluation/logs/KB_BATCH141_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH141_FOCUSED.log",
+      "sha256": "04a17a420f3fe4dd0e9cc1c246bcadaa41fd09a9bacb8fdc530308b8283425fd"
+    },
+    "MAC_FULL": {
+      "actual_exit_code": 0,
+      "byte_count": 134114,
+      "exit_path": "docs/evaluation/logs/KB_BATCH141_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH141_MAC_FULL.log",
+      "sha256": "7fe353af38362957f642f60615cbed97a9e57df910030f7ccef4f38e37117677"
+    }
+  },
+  "mac_private_pdfkit_rehashed": true,
+  "math_conflicts_still_open": 10,
+  "new_complete_teacher_lessons": 0,
+  "new_format_p0_coverage": 127,
+  "new_review_lineage_cards": 47,
+  "no_new_math_oracle_steps": 35,
+  "node_passed": 111,
+  "official_course_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "remote_base_sha": "81cf8958ab41b31ddf747fbe4c7a5de52d1a57e6",
+  "remote_source_sha": "81709068e0f2768791d51bdc7d738fd161bb7c76",
+  "run_date": "2026-11-14",
+  "schema": "kb141-mac-logged-evidence/1",
+  "standalone_focused_passed": 934,
+  "student_authoritative_releases": 0,
+  "student_free_form_steps_verified": 0,
+  "test_host": "AUTHORIZED_MACBOOK_AIR_ONLY"
+}

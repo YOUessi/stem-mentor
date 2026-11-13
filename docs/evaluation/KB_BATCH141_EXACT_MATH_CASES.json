@@ -1,0 +1,134 @@
+{
+  "cases": [
+    {
+      "historical_step_id": "math.hs.calculus.tangent-line#3",
+      "invalid_case": "f(x)=|x| 在0处左右差商不等，不能用有限导数构造该切线",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "f(x)=x² 在x=2切点(2,4)，导数4，切线y=4x−4；逐项代入准确",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.complex.operations#2",
+      "invalid_case": "w=0时w·conj(w)=0，实数/复数求逆与共轭分母均不可用",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "(1+i)/(1−i)=i，共轭分母为2，允许除法",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.elective.geometry.euclidean-isometries#2",
+      "invalid_case": "非等距T=diag(2,1)使e₁长度平方从1变为4",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "直角旋转QᵀQ=I，对向量(1,0)严格保范数",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.elective.matrix.inverse-two-by-two#3",
+      "invalid_case": "行列式0时非零(-2,1)属于核，不能构造逆",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "行列式−1的2×2矩阵双侧逆乘积均为单位阵",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.function.composition-domain#3",
+      "invalid_case": "x=0属于g的输入域，g(0)=1却不属于f的输入域",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "在有界整数候选集上，g(x)=x+1和Df={0,2}的复合域恰为{-1,1}",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.geometry.line-general#2",
+      "invalid_case": "A=B=C=0的方程对每个点都真，不能唯一刻画直线",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "2x−y+3=0含(0,3),(1,5)，法向量(2,−1)非零",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.geometry.line-relations#2",
+      "invalid_case": "仅法向行列式为0不能区分重合与两条不同的平行直线",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "x+y=1与2x+2y=1方向相同却无共同点（两个常数归一化不同）",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.geometry.point-line-distance#3",
+      "invalid_case": "A=B=0导致距离分母√(A²+B²)=0，未定义点到直线距离",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "原点到3x+4y−5=0距离为1；垂足(3/5,4/5)在线上且距离平方为1",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.probability.multiplication#2",
+      "invalid_case": "A=空事件时P(A)=0，P(B|A)=P(A∩B)/P(A)的分母为0",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "四个等可能结果：P(A∩B)=1/4=P(A)P(B|A)，A={1,2}, B={2,3}",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.space.perpendicular-plane#2",
+      "invalid_case": "若两条所谓相交方向其实平行，存在与它们均正交、但不垂直所在平面的向量",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "u=e₃同时垂直平面内两条相交且独立方向e₁,e₂，从而垂直其张成平面",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.elective.statistics.bernoulli-mle#3",
+      "invalid_case": "k=0时边界p=0取最大值；只解内部对数导数会漏掉该解",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "n=5,k=2的内部MLE为p=2/5，精确导数为0、二阶负且优于1/2",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    },
+    {
+      "historical_step_id": "math.hs.space.solid-volumes#3",
+      "invalid_case": "同一锥体不能误用柱体Bh=27；若h=0，推导中的1/h²未定义",
+      "invalid_precondition_case_pass": true,
+      "legal_case": "底面积9高3的相似锥体，精确切片积分=9=Bh/3",
+      "legal_exact_case_pass": true,
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "verdict": "TWO_FINITE_CASES_NOT_A_GENERAL_PROOF"
+    }
+  ],
+  "formal_proofs_certified": 0,
+  "historical_p0_denominator": 127,
+  "invalid_premise_cases": 12,
+  "official_course_denominators": null,
+  "positive_or_boundary_cases": 12,
+  "schema": "kb141-independent-exact-cases/1",
+  "scope": "24_EXACT_FINITE_CASES_NO_GENERAL_PROOFS",
+  "student_steps_verified": 0,
+  "teacher_approvals": 0,
+  "tested_step_count": 12
+}
