@@ -331,3 +331,9 @@ def kb136_review_coverage():
     """Aggregate draft review status only; NEVER send manuscripts or teacher solutions."""
     from .kb_batch136_index import public_coverage
     return public_coverage()
+
+@app.get("/api/knowledge/kb137-review-coverage")
+def kb137_review_coverage():
+    """Only bounded aggregate counts; no teacher answers or unpublished evidence."""
+    from .kb_batch137_index import public_coverage
+    return public_coverage()
