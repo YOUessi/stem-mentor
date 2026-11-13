@@ -249,6 +249,12 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch132_elective
 .venv/bin/python scripts/build_kb_batch133_lessons.py --check
 .venv/bin/python scripts/check_kb_batch133_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch133_atomization.py
+# Batch134: Mac original PDF verification remains in Batch133 upstream replay.
+# These new checks enforce source-locked DAG, teacher-only eight lessons and math oracle.
+.venv/bin/python scripts/build_kb_batch134_graph.py --check
+.venv/bin/python scripts/build_kb_batch134_lessons.py --check
+.venv/bin/python scripts/check_kb_batch134_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch134_proof_graph.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check

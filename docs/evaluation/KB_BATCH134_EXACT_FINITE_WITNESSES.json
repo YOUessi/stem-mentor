@@ -1,0 +1,251 @@
+{
+  "cases": [
+    {
+      "actual": "1/2",
+      "expected": "1/2",
+      "id": "kb134-c_inequality_product-POS-mean_4_9",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-c_inequality_product",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "25",
+      "expected": "25",
+      "id": "kb134-c_inequality_product-POS-fixed_sum_equal",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-c_inequality_product",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "-9/2",
+      "expected": "-9/2",
+      "id": "kb134-c_inequality_product-NEG-negative_pair",
+      "kind": "NEG",
+      "lesson_id": "kb134-deep-c_inequality_product",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "id": "kb134-c_parity-POS-even_square",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-c_parity",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "id": "kb134-c_parity-POS-odd_cube",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-c_parity",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "1",
+      "expected": "1",
+      "id": "kb134-c_parity-NEG-nonsymmetric_domain",
+      "kind": "NEG",
+      "lesson_id": "kb134-deep-c_parity",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "3",
+      "expected": "3",
+      "id": "kb134-c_log_inverse-POS-log8",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-c_log_inverse",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "-2",
+      "expected": "-2",
+      "id": "kb134-c_log_inverse-POS-logquarter",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-c_log_inverse",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "id": "kb134-c_log_inverse-NEG-base_one_noninjective",
+      "kind": "NEG",
+      "lesson_id": "kb134-deep-c_log_inverse",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "sqrt(3)/2",
+      "expected": "sqrt(3)/2",
+      "id": "kb134-c_cosine_difference-POS-pi_six",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-c_cosine_difference",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "id": "kb134-c_cosine_difference-POS-pi_half",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-c_cosine_difference",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "1",
+      "expected": "1",
+      "id": "kb134-c_cosine_difference-NEG-not_linear",
+      "kind": "NEG",
+      "lesson_id": "kb134-deep-c_cosine_difference",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "9",
+      "expected": "9",
+      "id": "kb134-sc_derivative_monotone-POS-cube_order",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-sc_derivative_monotone",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "4",
+      "expected": "4",
+      "id": "kb134-sc_derivative_monotone-POS-square_interval",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-sc_derivative_monotone",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "id": "kb134-sc_derivative_monotone-NEG-one_point_zero",
+      "kind": "NEG",
+      "lesson_id": "kb134-deep-sc_derivative_monotone",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "5",
+      "expected": "5",
+      "id": "kb134-sc_space_distance-POS-345",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-sc_space_distance",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "13",
+      "expected": "13",
+      "id": "kb134-sc_space_distance-POS-3412",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-sc_space_distance",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "-sqrt(2) + sqrt(5)",
+      "expected": "-sqrt(2) + sqrt(5)",
+      "id": "kb134-sc_space_distance-NEG-skew_metric",
+      "kind": "NEG",
+      "lesson_id": "kb134-deep-sc_space_distance",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "id": "kb134-a_sequence_limit-POS-one_over_n",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-a_sequence_limit",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "2",
+      "expected": "2",
+      "id": "kb134-a_sequence_limit-POS-two_plus_ninv",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-a_sequence_limit",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "2",
+      "expected": "2",
+      "id": "kb134-a_sequence_limit-NEG-oscillation",
+      "kind": "NEG",
+      "lesson_id": "kb134-deep-a_sequence_limit",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "1",
+      "expected": "1",
+      "id": "kb134-a_integral_area-POS-signed_vs_area",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-a_integral_area",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "1",
+      "expected": "1",
+      "id": "kb134-a_integral_area-POS-shifted_area",
+      "kind": "POS",
+      "lesson_id": "kb134-deep-a_integral_area",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "id": "kb134-a_integral_area-NEG-signed_cancellation",
+      "kind": "NEG",
+      "lesson_id": "kb134-deep-a_integral_area",
+      "scope": "EXACT_FINITE_INSTANCE_NOT_GENERAL_THEOREM",
+      "status": "EXACT_PASS",
+      "teacher_approval": false
+    }
+  ],
+  "finite_negative_cases": 8,
+  "finite_positive_cases": 16,
+  "schema": "kb134-math/1",
+  "student_authoritative_count": 0,
+  "student_free_text_verified": false,
+  "teacher_approved_count": 0,
+  "theorem_general_proof_certified": false
+}

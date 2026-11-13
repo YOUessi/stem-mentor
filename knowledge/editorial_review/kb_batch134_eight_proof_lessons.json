@@ -1,0 +1,546 @@
+[
+  {
+    "applicability_and_hypotheses": "a≥0、b≥0；所有平方根在实数域定义，且不能将不等式直接扩大到任意实数对。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "将周长固定的矩形面积最大化转换为两条非负边长的均值不等式问题。",
+    "formal_definition_or_theorem": "算术-几何平均值不等式：实数a,b≥0时 (a+b)/2≥√(ab)，且等号成立当且仅当a=b。不可遗漏非负假设。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb134-deep-c_inequality_product",
+    "knowledge_type": "Theorem",
+    "near_transfer": "在a,b>0且ab=16的条件下求a+b下界，并说明何时取等号。",
+    "nonexample_or_failure": "令a=-1、b=-4时√(ab)=2，而(a+b)/2=-2.5，结论反向；不能把非负条件删去。",
+    "notation_and_domain": "a,b为非负实数；√(ab)是非负实数平方根；(a+b)/2为算术平均数。",
+    "reasoned_steps": [
+      {
+        "justification": "(√a−√b)²≥0，非负平方根合法，因为a、b均非负。",
+        "step": "从平方非负出发"
+      },
+      {
+        "justification": "a+b−2√(ab)≥0，由恒等变形得a+b≥2√(ab)。",
+        "step": "展开并移项"
+      },
+      {
+        "justification": "两边同除以2得到(a+b)/2≥√(ab)，不会改变不等号。",
+        "step": "除以正数"
+      },
+      {
+        "justification": "平方等于0当且仅当√a=√b，等价于a=b。",
+        "step": "判断等号"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_inequality_product",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "e7714938a0655109b505c89b5dba4bd41e87646e8c81070d0ab2e549b924f165",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先检查两个变量各自的符号与根式定义域。",
+      "考虑(√a−√b)²≥0能给出什么关系。",
+      "最后核对等号成立条件，不要直接代入负数。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "13/2≥6，严格大于。",
+        "question": "取a=4,b=9，验证均值不等式并判断等号。",
+        "reasoned_solution": [
+          "4、9均非负，符合条件。",
+          "(4+9)/2=13/2，√36=6。",
+          "13/2>6，故不取等号。"
+        ]
+      },
+      {
+        "answer": "25，在a=b=5时取到。",
+        "question": "已知a,b≥0且a+b=10，求ab的最大值。",
+        "reasoned_solution": [
+          "均值不等式给出√(ab)≤(a+b)/2=5。",
+          "两边是非负数，可以平方得ab≤25。",
+          "a=b=5满足和为10且取等号。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "只见乘积ab≥0就套用均值不等式，忽略两个数分别非负。",
+    "why_method_is_legal": "非负根式可定义，平方非负与等价移项保持真假；若要应用乘积最值还需固定a+b。",
+    "why_wrong_and_repair": "先分别核对a≥0、b≥0，而不是仅检查ab≥0；等号必须单独核查。"
+  },
+  {
+    "applicability_and_hypotheses": "首先逐项检查定义域关于原点对称，再比较全部成对自变量的函数值；只算某一个样本点不能证明全域。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "一个测量信号在时间t与-t的记录区域不对称，能否只凭波形外观判为奇信号？",
+    "formal_definition_or_theorem": "函数f:D→R为偶函数当且仅当D关于0对称且对全部x∈D有f(-x)=f(x)；为奇函数当且仅当D关于0对称且f(-x)=-f(x)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb134-deep-c_parity",
+    "knowledge_type": "Concept",
+    "near_transfer": "函数f(x)=x²定义在[0,2]上，讨论其是否是偶函数。",
+    "nonexample_or_failure": "f(x)=x定义在(0,1)时，虽然形式代数满足f(-x)=-f(x)，但-x不在定义域，函数既不能按此定义称奇也不能称偶。",
+    "notation_and_domain": "D⊆R是函数定义域；检验任意x∈D时必须有-x∈D。奇偶性定义于函数整体的定义域。",
+    "reasoned_steps": [
+      {
+        "justification": "先证明x∈D推出-x∈D，才有在全部定义域上比较f(-x)的可能。",
+        "step": "验证定义域"
+      },
+      {
+        "justification": "对任意x∈D直接求f(-x)，再与f(x)比较，不能只验证几个样本点。",
+        "step": "检验偶性"
+      },
+      {
+        "justification": "对任意x∈D求f(-x)并与-f(x)比较，两者恒等才符合奇函数定义。",
+        "step": "检验奇性"
+      },
+      {
+        "justification": "偶函数图像关于y轴对称；奇函数图像关于原点中心对称，反之同样须有相应定义域。",
+        "step": "解释几何对称"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_parity",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "65150f2ffa1696eb67ab2d6c75dea4d1cc073746a376e257646dfad4cff4bcf3",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先完整写出函数的定义域。",
+      "检查对每个x是否也能合法代入-x。",
+      "代数比较f(-x)与f(x)、-f(x)，要对所有x成立。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "偶函数。",
+        "question": "f(x)=x²在[-2,2]上是奇函数还是偶函数？",
+        "reasoned_solution": [
+          "定义域[-2,2]关于0对称。",
+          "对任意x，f(-x)=(-x)²=x²=f(x)。",
+          "故f是偶函数，不是非零域上的奇函数。"
+        ]
+      },
+      {
+        "answer": "奇函数。",
+        "question": "f(x)=x³在[-1,1]上是奇函数还是偶函数？",
+        "reasoned_solution": [
+          "定义域关于0对称。",
+          "f(-x)=(-x)³=-x³=-f(x)。",
+          "在此域上是奇函数，图像关于原点对称。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "只因解析式出现奇数次幂就直接判定奇函数，完全不看定义域。",
+    "why_method_is_legal": "两个判别式是定义层面的全称命题，必须在同一函数域内严格验证。",
+    "why_wrong_and_repair": "写出精确域D并核验D=-D，再用任意x的函数值相等式。"
+  },
+  {
+    "applicability_and_hypotheses": "底数正且不等于1；互逆组合时每一步的自变量必须处于对应函数的定义域。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "推导指数衰减半衰期t在正比值R(t)/R0下的对数表达，并解释正值前提。",
+    "formal_definition_or_theorem": "对实数a>0且a≠1，指数函数f(x)=a^x在R上严格单调且取值(0,∞)，因此有反函数log_a:(0,∞)→R；a^(log_a y)=y (y>0)，log_a(a^x)=x。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb134-deep-c_log_inverse",
+    "knowledge_type": "Theorem",
+    "near_transfer": "证明log_(1/2)4=-2，并解释对数函数单调性为何为递减。",
+    "nonexample_or_failure": "a=1时1^x=1不是单射，没有全R上的反函数；log_2(-3)在实数域没有定义。",
+    "notation_and_domain": "a>0且a≠1，x∈R，y>0；log_a y是真数正的实对数；若a∈(0,1)则两函数递减。",
+    "reasoned_steps": [
+      {
+        "justification": "a>1时a^x严格递增；0<a<1时严格递减，任意两个不同x不会映到同一值。",
+        "step": "核实单射"
+      },
+      {
+        "justification": "连续指数函数的输出严格为正且向两端变化覆盖所有正实数。",
+        "step": "核实值域"
+      },
+      {
+        "justification": "对于任意y>0，存在唯一x使a^x=y，把该x记作log_a y。",
+        "step": "定义对数"
+      },
+      {
+        "justification": "由唯一性和定义得到a^(log_a y)=y，以及log_a(a^x)=x，两者条件不同。",
+        "step": "验证互逆"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_log_inverse",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "317c6823df36d1f002553a4b1b19d4a36a477daf8f24322f6fb8507da18e8df9",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写清底数与真数限制。",
+      "把对数等式改写成指数等式。",
+      "检验结果是否使原指数恰好等于真数。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "3。",
+        "question": "求log_2 8并验证指数对数互逆。",
+        "reasoned_solution": [
+          "2>0且2≠1、8>0。",
+          "因2³=8，按对数定义log_2 8=3。",
+          "验证2^(log_2 8)=2³=8。"
+        ]
+      },
+      {
+        "answer": "-2。",
+        "question": "求log_2(1/4)并验证结果。",
+        "reasoned_solution": [
+          "真数1/4>0，底数2合法。",
+          "2^(-2)=1/4，因此log_2(1/4)=-2。",
+          "代回指数等式确认值。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把log_a y视为对所有实数y存在，并认为底数a=1时仍可换底。",
+    "why_method_is_legal": "反函数的构造需要原函数在其指定定义域内一一对应到指定值域；不只是符号运算。",
+    "why_wrong_and_repair": "先逐项核验a>0、a≠1、y>0，写出定义域和值域后再使用互逆关系。"
+  },
+  {
+    "applicability_and_hypotheses": "两向量均为单位向量，使用正交旋转保持内积；此恒等式对全部实角成立，无需把α−β限制为锐角。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "说明两个归一化二维传感器方向向量点积如何提供相对方向的余弦。",
+    "formal_definition_or_theorem": "实角α,β满足cos(α−β)=cosα cosβ+sinα sinβ。此恒等式可由平面单位圆向量的欧氏内积和旋转不变性推出。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb134-deep-c_cosine_difference",
+    "knowledge_type": "Theorem",
+    "near_transfer": "用差角公式计算cos(75°)，说明角度转成弧度后计算等价。",
+    "nonexample_or_failure": "令α=β=π/3，则cos(α−β)=1，然而cosα−cosβ=0；不能把差角余弦写成余弦的差。",
+    "notation_and_domain": "α、β是实角，三角函数按弧度解释；单位圆向量u=(cosα,sinα)、v=(cosβ,sinβ)。",
+    "reasoned_steps": [
+      {
+        "justification": "令u=(cosα,sinα)，v=(cosβ,sinβ)，其长度都为1。",
+        "step": "构造单位向量"
+      },
+      {
+        "justification": "把u、v同时旋转-β，内积保持，v变为(1,0)。",
+        "step": "利用正交旋转"
+      },
+      {
+        "justification": "旋转后的u=(cos(α−β),sin(α−β))，与(1,0)内积等于cos(α−β)。",
+        "step": "写出旋转后的内积"
+      },
+      {
+        "justification": "原坐标u·v=cosα cosβ+sinα sinβ，与旋转后相同，故恒等式成立。",
+        "step": "用原始内积表达"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_cosine_difference",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "2597ad23392d57416b33415fedcc5a374cba80c1c17697109bf743adf7571d7c",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "尝试把两个角表示为单位圆上的两个单位向量。",
+      "考虑同时旋转后两向量的夹角与内积是否变化。",
+      "用坐标点积与单位圆表达式连接，不要直接拆成两项差。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "√3/2。",
+        "question": "计算cos(π/3−π/6)。",
+        "reasoned_solution": [
+          "两个角对应三角函数值分别为1/2、√3/2和√3/2、1/2。",
+          "差角余弦为(1/2)(√3/2)+(√3/2)(1/2)=√3/2。",
+          "直接角差为π/6，复核同值。"
+        ]
+      },
+      {
+        "answer": "0。",
+        "question": "计算cos(π/4−(-π/4))。",
+        "reasoned_solution": [
+          "cos(π/4)=cos(-π/4)=√2/2。",
+          "sin(π/4)=√2/2，sin(-π/4)=-√2/2。",
+          "代入得1/2−1/2=0，也等于cos(π/2)。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "错误地将cos(α−β)拆成cosα−cosβ，混淆了差角恒等式和线性关系。",
+    "why_method_is_legal": "二维旋转矩阵正交，保持点积；坐标点积定义提供右侧两项而非两余弦相减。",
+    "why_wrong_and_repair": "从单位圆向量内积推导；必要时用α=β这样的简单反例快速检验。"
+  },
+  {
+    "applicability_and_hypotheses": "对I内部所有点导数存在并具有指定符号；区间任两点之间可合法应用拉格朗日中值定理。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "为有噪声的增长测量拟合可导曲线时，区分样本导数估计为正与数学上的全区间单调保证。",
+    "formal_definition_or_theorem": "若f在区间I连续且在其内部可导，并且内部任意x都有f'(x)≥0，则f在I非减；若处处f'(x)>0，则严格递增。只在单点f'(x)≥0不足以判定区间单调。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb134-deep-sc_derivative_monotone",
+    "knowledge_type": "Theorem",
+    "near_transfer": "讨论f(x)=x³在R上导数等于0的点与严格单调之间的关系。",
+    "nonexample_or_failure": "f(x)=x³在x=0导数为0，但仍严格递增；f(x)=−x³在x=0同样导数0，却严格递减；单点零导数不决定单调性。",
+    "notation_and_domain": "I为实区间；若含端点在端点连续；f'(x)只在内部点要求存在；非减允许部分函数值相等。",
+    "reasoned_steps": [
+      {
+        "justification": "从I任取x1<x2并固定闭子区间[x1,x2]。",
+        "step": "任取两点"
+      },
+      {
+        "justification": "由给定连续与可导条件，f在该子区间闭合连续、内部可导。",
+        "step": "核验中值前提"
+      },
+      {
+        "justification": "存在c∈(x1,x2)使f(x2)−f(x1)=f'(c)(x2−x1)。",
+        "step": "套拉格朗日中值定理"
+      },
+      {
+        "justification": "x2−x1>0；导数≥0得函数值差≥0，处处>0得函数值差>0。",
+        "step": "由符号得单调"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-sc_derivative_monotone",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "7a57dc095e46689e1aff6eeb2653cbb1d822eda35536c67ca833feeab326d5c9",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "确定研究区间，不是仅在某个点计算导数。",
+      "检查闭区间连续与开区间可导是否满足。",
+      "任取x1<x2，考虑用中值定理解释f(x2)−f(x1)的符号。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "严格递增；但f'(0)=0不能用处处>0判据。",
+        "question": "证明f(x)=x³在R上严格递增，能否只凭f'(0)>0？",
+        "reasoned_solution": [
+          "f'(x)=3x²≥0对全部实数成立。",
+          "中值定理先得f非减。",
+          "若x2>x1则x2³−x1³=(x2−x1)(x1²+x1x2+x2²)>0，因此严格递增。"
+        ]
+      },
+      {
+        "answer": "在[0,2]严格递增。",
+        "question": "判定f(x)=x²在[0,2]的单调性。",
+        "reasoned_solution": [
+          "f在[0,2]连续、(0,2)可导。",
+          "f'(x)=2x>0对所有内部x成立。",
+          "中值定理推出在整个闭区间严格递增。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "发现f'(0)=0就认为该点附近函数恒定或出现极值。",
+    "why_method_is_legal": "中值定理连接有限增量与某点导数，故是区间全称的结论而非局部样本外推。",
+    "why_wrong_and_repair": "单调性要考察整段区间导数符号；驻点只作为分类线索，还需比较两侧变化。"
+  },
+  {
+    "applicability_and_hypotheses": "坐标基正交归一，三个坐标分量使用同一长度单位；任意两点包括重合点。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "机器人传感器在斜轴坐标下的距离计算为什么必须先校准变换或引入度量矩阵。",
+    "formal_definition_or_theorem": "在三维正交归一坐标系中，P=(x1,y1,z1)，Q=(x2,y2,z2) 的欧氏距离为√((x2−x1)²+(y2−y1)²+(z2−z1)²)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb134-deep-sc_space_distance",
+    "knowledge_type": "Theorem",
+    "near_transfer": "改变空间中两点的相同z坐标，解释为何距离公式退化为平面距离。",
+    "nonexample_or_failure": "基e1=(1,0)，e2=(1,1)非正交时坐标差(1,1)表示位移(2,1)，长度√5而非√2。",
+    "notation_and_domain": "P,Q是三维欧氏空间中点；三个坐标轴两两垂直、单位等长；距离为非负实数。",
+    "reasoned_steps": [
+      {
+        "justification": "连接P到Q的向量为v=(x2−x1,y2−y1,z2−z1)。",
+        "step": "写出位移向量"
+      },
+      {
+        "justification": "若e1,e2,e3正交归一，则v·v=Σ_i(Δi)²，交叉项因e_i·e_j=0消失。",
+        "step": "展开正交基点积"
+      },
+      {
+        "justification": "距离为位移向量长度||v||=√(v·v)，取非负平方根。",
+        "step": "定义距离"
+      },
+      {
+        "justification": "P=Q时三分量差均为0，距离也为0，公式仍合法。",
+        "step": "退化检查"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-sc_space_distance",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "445bb438cf5c26f4f2f4b9bfad794f371bac50a7928dd4d0b3a9106c9222634c",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确认是否为三维正交坐标系。",
+      "分别减去对应坐标获得位移三个分量。",
+      "把分量平方求和后再取非负平方根。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "5。",
+        "question": "P=(1,2,3)，Q=(4,6,3)，求PQ。",
+        "reasoned_solution": [
+          "位移分量是(3,4,0)。",
+          "长度平方为9+16+0=25。",
+          "取非负根得5。"
+        ]
+      },
+      {
+        "answer": "13。",
+        "question": "P=(-1,0,2)，Q=(2,4,14)，求PQ。",
+        "reasoned_solution": [
+          "位移为(3,4,12)。",
+          "距离平方9+16+144=169。",
+          "开方得13。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "在任意非正交坐标系直接平方坐标差相加，忘记基向量的内积交叉项。",
+    "why_method_is_legal": "毕达哥拉斯在正交归一基下恰与欧氏内积范数等价；斜坐标基需使用Gram矩阵。",
+    "why_wrong_and_repair": "检查坐标基是否正交归一；否则计算位移向量实际坐标或用Gram矩阵。"
+  },
+  {
+    "applicability_and_hypotheses": "数列的每一项均定义；证明极限必须处理任意ε，不能只验某个容差或有限样本。",
+    "course_track": "ELECTIVE_A",
+    "far_transfer": "说明算法误差上界1/n为何可用于任意指定精度的最终收敛保证，而有限次样本不能代替证明。",
+    "formal_definition_or_theorem": "数列a_n收敛于L∈R，指对任意ε>0存在正整数N，使所有n≥N满足|a_n−L|<ε。每个实数收敛数列必有界，反之不成立。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb134-deep-a_sequence_limit",
+    "knowledge_type": "Concept",
+    "near_transfer": "写出a_n=3+2/n趋于3的完整ε-N论证。",
+    "nonexample_or_failure": "a_n=(-1)^n有界却不收敛；只看第1到第100项无法证明全部尾项满足定义。",
+    "notation_and_domain": "n为正整数；ε为任意正实数；N可随ε改变且只要求最终尾部；L为有限实数。",
+    "reasoned_steps": [
+      {
+        "justification": "任取ε>0，由收敛定义可选N≥2使所有n≥N时|a_n−L|<min(ε,1)，必要时增大N。",
+        "step": "给定ε"
+      },
+      {
+        "justification": "由三角不等式|a_n|≤|L|+|a_n−L|<|L|+1，对所有n≥N成立。",
+        "step": "证明尾部有界"
+      },
+      {
+        "justification": "有限项a1…a_(N−1)有最大绝对值M0，令M=max(M0,|L|+1)，全数列有界。",
+        "step": "合并有限前缀"
+      },
+      {
+        "justification": "a_n=(-1)^n保持|a_n|=1，但奇偶子列分别取1和−1，不存在共同极限。",
+        "step": "反例否定逆命题"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-a_sequence_limit",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "625a33b9ba5985da4086892be4f3f09df3abafa9772b696104a5ca125946111f",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "任取任意ε>0，不要把它固定为小数。",
+      "把|a_n−L|化成可以与n比较的表达式。",
+      "选N(ε)使所有更大的n都符合严格小于关系。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "极限为0。",
+        "question": "严格证明a_n=1/n收敛到0。",
+        "reasoned_solution": [
+          "任意ε>0，取正整数N>1/ε。",
+          "当n≥N时|1/n−0|=1/n≤1/N<ε。",
+          "满足ε-N定义。"
+        ]
+      },
+      {
+        "answer": "2；可取N>1/ε。",
+        "question": "求a_n=(2n+1)/n的极限并给出N条件。",
+        "reasoned_solution": [
+          "a_n−2=1/n。",
+          "任取ε>0，取N>1/ε。",
+          "n≥N时|a_n−2|=1/n<ε。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "取ε=0.1验证若干项后宣称数列收敛，或由有界直接推得收敛。",
+    "why_method_is_legal": "全称ε、尾部以及有限前缀是收敛定义的准确量词结构；有限前缀最大值存在。",
+    "why_wrong_and_repair": "为任意ε给出N(ε)并检查全部n≥N；有界不等于收敛。"
+  },
+  {
+    "applicability_and_hypotheses": "所讨论函数连续从而积分存在；解释几何面积须比较曲线与x轴位置并处理符号切换。",
+    "course_track": "ELECTIVE_A",
+    "far_transfer": "比较往返路程的净位移积分与总路程积分，解释速度符号与距离的区别。",
+    "formal_definition_or_theorem": "定积分∫_a^b f(x)dx是有向累计量。连续f的曲线与x轴在[a,b]围成的几何面积为∫_a^b |f(x)|dx；当f跨零点时必须按符号分段。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb134-deep-a_integral_area",
+    "knowledge_type": "Method",
+    "near_transfer": "求f(x)=2x在[-1,1]与x轴围成的几何面积并比较有向积分。",
+    "nonexample_or_failure": "f(x)=x在[-1,1]上∫f=0但∫|f|=1；将净积分0称为面积0是错误的。",
+    "notation_and_domain": "a<b实数，f在[a,b]连续（或更一般可积且绝对值可积）；面积用非负单位，符号积分可正负相消。",
+    "reasoned_steps": [
+      {
+        "justification": "有向定积分按函数正负累计，而几何面积只计非负高度。",
+        "step": "区分两个对象"
+      },
+      {
+        "justification": "先求或识别函数零点，将[a,b]划为正负性不变的子区间。",
+        "step": "确定符号区间"
+      },
+      {
+        "justification": "f≥0时面积段等于∫f；f≤0时面积段等于−∫f，对每段结果非负。",
+        "step": "分别积分"
+      },
+      {
+        "justification": "各段相加等价于∫_a^b |f(x)|dx；除非f不改变符号，不能直接取|∫f|代替∫|f|。",
+        "step": "合并为绝对值积分"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-a_integral_area",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "e47ae8dc002dbccc9c4ef9810a73537ea85ccbdc89beddf4672500bbb4ed0e02",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先想清楚题目要求有向累计量还是无符号几何面积。",
+      "寻找函数与x轴的交点并逐段判断正负。",
+      "遇到负函数段时用绝对值而不是把面积记成负数。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "1（有向积分为0）。",
+        "question": "求y=x在[-1,1]与x轴围成的几何面积。",
+        "reasoned_solution": [
+          "零点x=0把区间分为两段。",
+          "面积为-∫_-1^0 xdx+∫_0^1 xdx。",
+          "两段各1/2，总面积1。"
+        ]
+      },
+      {
+        "answer": "1（有向积分为0）。",
+        "question": "求y=x−1在[0,2]与x轴的几何面积。",
+        "reasoned_solution": [
+          "零点x=1，函数左负右正。",
+          "面积=-∫_0^1(x−1)dx+∫_1^2(x−1)dx。",
+          "每段1/2，总和1。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "在含正负区间直接计算积分并把抵消后的结果当作图形面积。",
+    "why_method_is_legal": "连续函数可积；积分可加性与|f|非负性允许逐段构造面积。",
+    "why_wrong_and_repair": "先找函数与x轴交点，再分段计算绝对值积分；明确面积单位与符号差异。"
+  }
+]
