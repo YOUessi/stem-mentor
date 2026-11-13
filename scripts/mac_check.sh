@@ -205,6 +205,12 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch122_scope_de
 .venv/bin/python scripts/build_kb_batch124_scope.py --check --verify-local-source
 .venv/bin/python scripts/build_kb_batch124_depth.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch124_scope_depth_math.py
+# Batch125: entire historical provenance grade, six unlinked numbered
+# clauses, and all ten unresolved mathematical conflicts. Never approve here.
+.venv/bin/python scripts/build_kb_batch125_provenance.py --check
+.venv/bin/python scripts/build_kb_batch125_math_risk.py --check
+.venv/bin/python scripts/build_kb_batch125_six_requirements.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch125_provenance_math.py tests/test_kb_batch125_six_clauses.py
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch123_scope_depth_math.py
 .venv/bin/python -m pytest -q tests/test_kb_batch120_proof_lessons.py
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch107_lessons.py --check
