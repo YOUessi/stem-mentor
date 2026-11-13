@@ -317,3 +317,10 @@ def knowledge_quality_report():
 def limited_proof_coverage():
     from .proof_obligations import coverage
     return coverage()
+
+
+@app.get("/api/knowledge/kb135-review-coverage")
+def kb135_review_coverage():
+    """Non-authoritative counts only. No public access to unapproved manuscripts."""
+    from .kb_batch135_index import public_coverage
+    return public_coverage()

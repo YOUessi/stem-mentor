@@ -1,0 +1,546 @@
+[
+  {
+    "applicability_and_hypotheses": "集合成员资格明确；分配律在任意集合上成立，不要求互斥，不能把逻辑“或”当作异或。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "设计学生同时报名两门社团的名单筛选，解释为何不能重复计数。",
+    "formal_definition_or_theorem": "A∪B={x|x∈A或x∈B}，A∩B={x|x∈A且x∈B}。对同一全集内的A、B、C，有A∩(B∪C)=(A∩B)∪(A∩C)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb135-deep-c_union_intersection",
+    "knowledge_type": "Method",
+    "near_transfer": "对A={1,2}, B={2}, C=∅核对分配律。",
+    "nonexample_or_failure": "若A={1},B={1},C={1}，交集两个分支都含1；并集仍只有元素1，不能按1+1=2计算集合元素数。",
+    "notation_and_domain": "A、B、C是同一讨论范围U中的集合；∪表示至少在一个集合中，∩表示同时属于；元素的重复不改变集合。",
+    "reasoned_steps": [
+      {
+        "justification": "令x属于A∩(B∪C)，则x∈A且x∈B∪C。",
+        "step": "任取元素"
+      },
+      {
+        "justification": "x∈B∪C等价于x∈B或x∈C，连同x∈A得(x∈A且x∈B)或(x∈A且x∈C)。",
+        "step": "展开并集条件"
+      },
+      {
+        "justification": "上一步恰是x∈(A∩B)∪(A∩C)，因此左集合包含于右集合。",
+        "step": "证明左包含于右"
+      },
+      {
+        "justification": "从右集合成员出发反向用相同逻辑得到x∈A∩(B∪C)，两向包含故集合相等。",
+        "step": "逆向蕴含"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_union_intersection",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "8992e8855703ff0a2e5b59843c474d161e5cb72619ae61cb4f4f2ac4ee2a6ac3",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "首先写出∩和∪各自的成员逻辑。",
+      "任取一个元素，展开两个括号，辨别且与或。",
+      "证明两个集合相等要证明正反两个方向的包含。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "{1,2}",
+        "question": "A={1,2,3},B={2,4},C={1,4}，求A∩(B∪C)。",
+        "reasoned_solution": [
+          "B∪C={1,2,4}。",
+          "与A交得到{1,2}。",
+          "检查右侧(A∩B)∪(A∩C)={2}∪{1}相同。"
+        ]
+      },
+      {
+        "answer": "{1}",
+        "question": "A={0,1},B={1,2},C={1,3}，求(A∩B)∪(A∩C)。",
+        "reasoned_solution": [
+          "A∩B={1}。",
+          "A∩C={1}。",
+          "并集去重后仍为{1}。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把集合并集误作无重复检查的数目相加，或把“或”误当互斥导致交叠元素被删除。",
+    "why_method_is_legal": "成员谓词的命题分配律及集合外延相等准则使证明合法，与集合基数无关。",
+    "why_wrong_and_repair": "用任一元素x的属于关系而非集合大小证明恒等式，元素在集合中只出现一次。"
+  },
+  {
+    "applicability_and_hypotheses": "必须确认a非零、判别式符号，讨论Δ>0时方可引入两个严格有序实根。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "用抛物线与横轴位置解释利润模型何时为正并识别参数退化。",
+    "formal_definition_or_theorem": "当a≠0，p(x)=ax²+bx+c且判别式Δ>0、两实根r1<r2时，p(x)在根外与a同号、根间与a异号；Δ=0时除重根外与a同号；Δ<0时所有实数点与a同号。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb135-deep-c_quadratic_sign",
+    "knowledge_type": "Method",
+    "near_transfer": "分类求(m−1)x²−1<0，需要先考虑m=1。",
+    "nonexample_or_failure": "a=0时实际是线性或常值函数；对x²+1因Δ<0而硬画两个实根区间是非法操作。",
+    "notation_and_domain": "a,b,c,x∈R，a≠0；r1<r2是严格有序的实根；严格/非严格不等号需分别包含或排除零点。",
+    "reasoned_steps": [
+      {
+        "justification": "Δ>0时按因式定理写p(x)=a(x-r1)(x-r2)。",
+        "step": "处理两个实根"
+      },
+      {
+        "justification": "当x<r1时两个括号均负，当x>r2时均正，乘积为正，故p与a同号。",
+        "step": "根外符号"
+      },
+      {
+        "justification": "r1<x<r2时两括号一正一负，乘积为负，故p与a异号。",
+        "step": "根间符号"
+      },
+      {
+        "justification": "Δ=0时p=a(x-r)²；Δ<0时配方p=a[(x+b/(2a))²+(-Δ)/(4a²)]，括号严格为正。",
+        "step": "判别式退化"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_quadratic_sign",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "06e97fbbc8ef8cd6a9ace6f6ec0e97d18e09c2c2b910352b928213778b5544ef",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先检查二次项系数和判别式。",
+      "若有两根，按从小到大排列并画符号区间。",
+      "最后检查题目是严格不等式还是带等号。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "x<−1/2或x>2。",
+        "question": "求解2x²−3x−2>0。",
+        "reasoned_solution": [
+          "a=2>0且Δ=25>0。",
+          "因式分解为(2x+1)(x−2)，实根−1/2与2。",
+          "根外同a号且为严格正，故不含根。"
+        ]
+      },
+      {
+        "answer": "无实数解。",
+        "question": "求解x²+1≤0。",
+        "reasoned_solution": [
+          "a=1>0，Δ=−4<0。",
+          "对任意实数x均有x²+1>0。",
+          "≤0无解，不能虚构复根区间。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "看到两个解就总写“两根之间小于0”，忘记a<0时符号反转；或者对≥0漏掉根。",
+    "why_method_is_legal": "多项式实数因式分解和平方非负性保留符号信息；零点处p=0不能称严格正或负。",
+    "why_wrong_and_repair": "先确定a的符号及Δ，列三个区间，并单独核对零点是否包含。"
+  },
+  {
+    "applicability_and_hypotheses": "必须检查对每一个x成立，不能仅检查若干采样点；不能把一个已发现周期自动认定最小。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "讨论按固定时间采样可能让不同真实周期信号产生相同观测的混叠风险。",
+    "formal_definition_or_theorem": "函数f:R→R的正数T若满足对所有x∈R都有f(x+T)=f(x)，则T为正周期；若所有正周期中存在最小者，称为最小正周期。常数函数有任意正周期而无最小正周期。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb135-deep-c_period",
+    "knowledge_type": "Concept",
+    "near_transfer": "求cos(3x)的最小正周期，必须证明任何更小的正数均不满足全称周期定义。",
+    "nonexample_or_failure": "f(x)=5对任意T>0都周期，却没有最小正周期；只观察两个图像波峰相隔T也不足以证明全称周期。",
+    "notation_and_domain": "函数的定义域取全体实数以避免平移定义域歧义；周期T>0；若一般定义域D需另行要求对平移闭合。",
+    "reasoned_steps": [
+      {
+        "justification": "任意x都应有f(x+T)=f(x)，此处T不能为0。",
+        "step": "固定周期定义"
+      },
+      {
+        "justification": "设f(x)=sin(2x)，由sin(2x+2π)=sin(2x)，T=π确为周期。",
+        "step": "验证正弦周期"
+      },
+      {
+        "justification": "若任意x都满足sin(2x+2T)=sin(2x)，则将x=0和x=π/4分别代入，得sin2T=0且cos2T=1，因此2T是2π的整数倍。",
+        "step": "证明正弦最小正周期"
+      },
+      {
+        "justification": "若f恒为c，每个T>0都满足定义，但任何正T都有更小的T/2，故不存在最小正周期。",
+        "step": "讨论常数函数"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_period",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "f33fb1f7fffce381d06531a2cc55dd338e147bd6ff554a6eeed24ce46c6463be",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "把周期写成对所有x成立的等式。",
+      "寻找正周期后还要排除更小周期。",
+      "考虑常数函数会不会存在最小正周期。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "π。",
+        "question": "求f(x)=sin(2x)的最小正周期。",
+        "reasoned_solution": [
+          "sin(2(x+π))=sin(2x+2π)=sin(2x)。",
+          "如证明步骤所示，所有正周期均为π的正整数倍。",
+          "故最小正周期为π。"
+        ]
+      },
+      {
+        "answer": "没有。",
+        "question": "g(x)=7有没有最小正周期？",
+        "reasoned_solution": [
+          "每个T>0均有g(x+T)=7=g(x)。",
+          "若T为周期，则T/2也为更小的正周期。",
+          "不存在最小的正T。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "将0当作最小正周期，或在找到任一正周期后不论大小直接称基本周期。",
+    "why_method_is_legal": "正弦加法与周期定义支持全称恒等；对特定函数证明最小值需排除更小的正周期。",
+    "why_wrong_and_repair": "先用全称恒等式验证一个正周期，再单独证明不存在更小正周期。"
+  },
+  {
+    "applicability_and_hypotheses": "在求比值和约分之前严格检查cosx非零，绝不将无定义点当作无穷大实值。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在运动控制角度传感中使用tan表示斜率时，为什么垂直方向要单独处理？",
+    "formal_definition_or_theorem": "对实角x，当cosx≠0时tanx=sinx/cosx。其实数定义域是R去掉全部π/2+kπ(k∈Z)，且对所有定义点tan(x+π)=tanx。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb135-deep-c_tangent_domain",
+    "knowledge_type": "Concept",
+    "near_transfer": "写出tan(3x)在[0,2π]内的全部无定义点。",
+    "nonexample_or_failure": "x=π/2时分母cosx=0，tanx不是实数，不能把它写成tanx=∞并在实数域计算。",
+    "notation_and_domain": "x为弧度，k∈Z；cosx=0时tanx不定义；每个合法点平移π后仍合法。",
+    "reasoned_steps": [
+      {
+        "justification": "tanx是正弦除以余弦，商有定义必须要求cosx≠0。",
+        "step": "定义正切"
+      },
+      {
+        "justification": "单位圆给出cosx=0当且仅当x=π/2+kπ，k为整数。",
+        "step": "识别零点"
+      },
+      {
+        "justification": "sin(x+π)=−sinx且cos(x+π)=−cosx；二者同时变号，商相等。",
+        "step": "检查平移"
+      },
+      {
+        "justification": "若cosx≠0则cos(x+π)=−cosx≠0，故等式两边都有定义。",
+        "step": "检查合法性"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-c_tangent_domain",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "b10d35fc8083b056d411e5cefa5cd4285bdb9c7b5571a8bc271964a80ebd1941",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "写出正切的商定义。",
+      "分母等于零时能否计算？",
+      "用正余弦的π平移变号关系验证周期。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "两者都为1。",
+        "question": "求tan(π/4)与tan(5π/4)。",
+        "reasoned_solution": [
+          "cos(π/4)=√2/2不为零。",
+          "tan(π/4)=1。",
+          "5π/4=π/4+π，因此正切仍为1。"
+        ]
+      },
+      {
+        "answer": "无定义。",
+        "question": "tan(π/2)在实数域有什么值？",
+        "reasoned_solution": [
+          "sin(π/2)=1而cos(π/2)=0。",
+          "正切所需的分母为零。",
+          "因此不能赋予实数值。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "写tanx=sinx/cosx后无条件把cosx约去，在x=π/2仍声称计算成立。",
+    "why_method_is_legal": "正切为非零分母的实数商，且三角函数平移恒等式均成立。",
+    "why_wrong_and_repair": "先排除x=π/2+kπ，再进行商与周期变换；使用弧度单位。"
+  },
+  {
+    "applicability_and_hypotheses": "所有相邻项差均相同，且从n=1开始计数；若从0起需另改索引。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "固定每秒增加相同距离的理想线性运动模型如何累计8个离散时段的位置值？",
+    "formal_definition_or_theorem": "等差数列满足a_{n+1}−a_n=d常数(n≥1)，通项a_n=a_1+(n−1)d；前n项和S_n=n(a_1+a_n)/2=n[2a_1+(n−1)d]/2。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb135-deep-sc_arith_progression",
+    "knowledge_type": "Theorem",
+    "near_transfer": "若a3=7,a8=22，求等差数列公差与前8项和。",
+    "nonexample_or_failure": "1,2,4的相邻差为1和2，不是等差数列；不能套用上面的通项/求和结论。",
+    "notation_and_domain": "n为正整数，a_1、d为实数；有限项和无穷项求和不同，不得把S_n延展为无穷和。",
+    "reasoned_steps": [
+      {
+        "justification": "把n−1个相邻差a_{k+1}−a_k=d相加，中间项消去得到a_n−a_1=(n−1)d。",
+        "step": "通项推导"
+      },
+      {
+        "justification": "S_n=a_1+a_2+…+a_n。",
+        "step": "顺序写和"
+      },
+      {
+        "justification": "S_n=a_n+a_{n−1}+…+a_1；逐列相加每列均为a_1+a_n。",
+        "step": "逆序配对"
+      },
+      {
+        "justification": "于是2S_n=n(a_1+a_n)，得到S_n=n(a_1+a_n)/2，并代入通项。",
+        "step": "除以正数"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-sc_arith_progression",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "f1e7745fc598df85fe187767ecf74d41b90fa1648717a5a349b88682e5896f58",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先核对相邻两项之差是否为同一个常数。",
+      "写出a1、d、项数n，并找末项。",
+      "把同一和正写一次反写一次进行配对。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "35。",
+        "question": "等差数列首项3、公差2，求前5项和。",
+        "reasoned_solution": [
+          "末项a5=3+4×2=11。",
+          "前5项为3,5,7,9,11。",
+          "S5=5(3+11)/2=35。"
+        ]
+      },
+      {
+        "answer": "20。",
+        "question": "首项10、公差−3，求前5项和。",
+        "reasoned_solution": [
+          "a5=10−12=−2。",
+          "逆序配对的每对和为10+(−2)=8。",
+          "S5=5×8/2=20。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把项数n混同末项编号n−1，或者对不恒定的相邻差直接乘平均数。",
+    "why_method_is_legal": "差分望远镜求和和有限配对对所有正整数n合法，包含n=1，无需假设d正。",
+    "why_wrong_and_repair": "先至少证明相邻差恒定，再写首项、末项和n个项的计数。"
+  },
+  {
+    "applicability_and_hypotheses": "极值点的费马必要条件需该点在区间内部且可导；最值比较需要完整处理所有临界点及端点。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "有限行程的能耗曲线存在控制饱和点时，为什么不能只搜索光滑驻点？",
+    "formal_definition_or_theorem": "若f在闭区间[a,b]连续，则一定取得全局最大最小值；要找最值须比较端点、区间内导数为零点以及内点不可导点。内点可导极值点有f'=0只是必要条件而非充分条件。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb135-deep-sc_extreme_point",
+    "knowledge_type": "Method",
+    "near_transfer": "求f=x²在[-3,1]上的最大最小值，说明为何端点值也必须参与最终比较。",
+    "nonexample_or_failure": "f(x)=x³在[-1,1]中f'(0)=0，0不是极值；f(x)=|x|在0处取得最小值却不可导。",
+    "notation_and_domain": "实函数f:[a,b]→R连续，a<b；可导性允许在有限候选点失败；候选集合列出后必须比较函数值。",
+    "reasoned_steps": [
+      {
+        "justification": "连续函数在紧闭区间上由极值定理取得最大最小值。",
+        "step": "确认存在性"
+      },
+      {
+        "justification": "若内点c有局部极值且f在c可导，则费马定理给出f'(c)=0；不可导点需另检。",
+        "step": "内点分类"
+      },
+      {
+        "justification": "全局极值也可在a或b取得，端点不要求双侧导数等于0。",
+        "step": "覆盖端点"
+      },
+      {
+        "justification": "在所有候选处实际代入并比较函数值；f'=0本身并不能证明取得极值。",
+        "step": "比较函数值"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-sc_extreme_point",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "38fb63a485aad49f9d5f4d8fc110a854ccfd0cafc871eed6a7eaf1b49bea6667",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确认是否为闭区间连续函数。",
+      "端点与不可导点不能被求导零点筛掉。",
+      "在全部候选处比较函数值而不是只看导数。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "最小0、最大3。",
+        "question": "求|x|在[-2,3]上的全局最大和最小值。",
+        "reasoned_solution": [
+          "函数在闭区间连续。",
+          "内点x=0不可导，端点为−2、3。",
+          "值为0,2,3，因此最小0最大3。"
+        ]
+      },
+      {
+        "answer": "最大2、最小−2。",
+        "question": "求f=x³−3x在[-2,2]的最大最小值。",
+        "reasoned_solution": [
+          "f'=3x²−3，在内部x=±1为0。",
+          "计算f(−2)=−2,f(−1)=2,f(1)=−2,f(2)=2。",
+          "比较得最大2、最小−2。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "只解f'(x)=0并选取其中一点当全局最值，遗漏端点和不可导尖点。",
+    "why_method_is_legal": "闭区间连续保证最值存在；费马定理只提供内点可导极值的必要候选条件。",
+    "why_wrong_and_repair": "先确认连续区间，列出导数为零、导数不存在的内点以及两个端点，逐项比较。"
+  },
+  {
+    "applicability_and_hypotheses": "必须指定正交内积且投影轴向量非零；投影是向量，标量投影不是同一个对象。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "机器人观测向量在一个非单位传感器朝向上提取分量时为什么需要归一化？",
+    "formal_definition_or_theorem": "在欧氏内积空间中，若u≠0，v在u方向的正交投影为proj_u(v)=(v·u)/(u·u)u；残差v−proj_u(v)与u正交。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb135-deep-sc_space_projection",
+    "knowledge_type": "Method",
+    "near_transfer": "将v=(1,2,3)投影到u=(0,0,2)方向并与投影到单位向量比较。",
+    "nonexample_or_failure": "u=0时公式分母为0，不能定义朝零向量的方向性正交投影。",
+    "notation_and_domain": "u,v为空间实向量（二维或三维均可）；点积为欧氏点积；u·u>0当且仅当u≠0。",
+    "reasoned_steps": [
+      {
+        "justification": "设沿u的投影为pu，其中p为待求实数。",
+        "step": "设候选投影"
+      },
+      {
+        "justification": "要求残差v−pu与u点积为零，得到(v−pu)·u=0。",
+        "step": "施加正交条件"
+      },
+      {
+        "justification": "由v·u−p(u·u)=0且u·u>0，故p=(v·u)/(u·u)。",
+        "step": "解出系数"
+      },
+      {
+        "justification": "非零u使p唯一，代回验证残差与u正交。",
+        "step": "说明唯一性"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-sc_space_projection",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "cd2771c99c1ebc5ea274cca206f644f8aa7c9bd3661abe77bc79ea2009c1bfea",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "投影向量一定是u的标量倍数。",
+      "令残差与u点积为零。",
+      "解标量系数时检查u·u是否非零。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "(3,0,0)。",
+        "question": "v=(3,4,0),u=(1,0,0)，求投影。",
+        "reasoned_solution": [
+          "v·u=3，u·u=1。",
+          "系数p=3。",
+          "投影pu=(3,0,0)，残差(0,4,0)与u垂直。"
+        ]
+      },
+      {
+        "answer": "(2,2,0)。",
+        "question": "v=(2,2,1),u=(1,1,0)，求投影。",
+        "reasoned_solution": [
+          "v·u=4，u·u=2。",
+          "系数p=2。",
+          "投影为(2,2,0)，残差(0,0,1)点积u=0。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把(v·u)u当投影忘记除以u·u，只有u为单位向量时才碰巧正确。",
+    "why_method_is_legal": "投影轴非零时u·u严格正，可合法除法；由欧氏点积的线性性质得到唯一系数。",
+    "why_wrong_and_repair": "首先检查u≠0；使用投影系数前写出正交条件，明确归一化分母。"
+  },
+  {
+    "applicability_and_hypotheses": "两个数列都收敛到有限值，分母数列的极限b非零；早期有限项可能为0但极限只需尾部商有定义。",
+    "course_track": "ELECTIVE_A",
+    "far_transfer": "若分式模型的校准分母趋于0，解释为何可能放大噪声且商极限法则失效。",
+    "formal_definition_or_theorem": "若实数数列a_n→a，b_n→b且b≠0，则b_n最终非零，且a_n/b_n→a/b。不能删除极限分母b≠0的条件。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb135-deep-a_limits_quotient",
+    "knowledge_type": "Theorem",
+    "near_transfer": "讨论(3+1/n)/(n/(n+1))的极限并写明分母条件。",
+    "nonexample_or_failure": "a_n=1、b_n=1/n均收敛，但b=0时a_n/b_n=n发散，商法则不能使用。",
+    "notation_and_domain": "a_n,b_n为充分大n时定义的实数数列，a,b为有限实数；b≠0且n为正整数。",
+    "reasoned_steps": [
+      {
+        "justification": "取ε=|b|/2，存在N1使n≥N1时|b_n−b|<|b|/2，故|b_n|>|b|/2>0。",
+        "step": "由极限保护分母"
+      },
+      {
+        "justification": "a_n/b_n−a/b = [b(a_n−a)−a(b_n−b)]/(b b_n)，这只在尾部合法。",
+        "step": "计算代数差"
+      },
+      {
+        "justification": "对n≥N1，由三角不等式得到绝对误差≤(2/|b|)|a_n−a|+(2|a|/|b|²)|b_n−b|。",
+        "step": "建立估计"
+      },
+      {
+        "justification": "任给ε>0，分别选取两个收敛数列的尾阈值，使两个非负项各小于ε/2；取三个阈值最大值即得目标。",
+        "step": "完成全称ε证明"
+      }
+    ],
+    "source_candidate_id": "kb133-proposal-a_limits_quotient",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_span_sha256": "7331c304719979c8dd71514e8fe13b8ec4be140ee7f316570b53d7f18ce1f11e",
+    "source_status": "PROVISIONAL_PDFKIT_SOURCE_PROPOSAL_NOT_OFFICIAL_ATOM",
+    "standard_version": "2017-2020-editorial-bounded",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "分别计算分子与分母的极限。",
+      "分母的极限可以为零吗？",
+      "若不为零，先解释为什么分母最终也不为零。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "2。",
+        "question": "求a_n=(2+1/n)/(1−1/(2n))的极限。",
+        "reasoned_solution": [
+          "分子趋于2，分母趋于1≠0。",
+          "对所有正整数n，分母≥1/2>0。",
+          "由商法则极限为2/1=2。"
+        ]
+      },
+      {
+        "answer": "1/3。",
+        "question": "求a_n=(1+1/n)/(3+2/n)的极限。",
+        "reasoned_solution": [
+          "分子趋于1。",
+          "分母趋于3≠0，所有正整数n分母为正。",
+          "商法则得1/3。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "typical_wrong_solution": "把1/lim b_n在lim b_n=0时当作无限大的数并继续当成有限极限运算。",
+    "why_method_is_legal": "尾部非零界使商的代数变形与误差估计合法，两个收敛误差分别趋零。",
+    "why_wrong_and_repair": "先验证分母极限非零，再证明最终分母非零，并给出误差估计。"
+  }
+]
