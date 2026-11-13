@@ -1,0 +1,1292 @@
+{
+  "batch": 128,
+  "counts_by_track": {
+    "COMPULSORY": 4,
+    "ELECTIVE_A": 4,
+    "ELECTIVE_B": 4,
+    "ELECTIVE_C": 4,
+    "ELECTIVE_D": 4,
+    "ELECTIVE_E": 4,
+    "SELECTIVE_COMPULSORY": 4
+  },
+  "historic_candidates": 239,
+  "licensed_version": "2017 edition, 2020 revision",
+  "official_atom_denominator": null,
+  "per_track_editorial_census": {
+    "COMPULSORY": {
+      "context_not_reviewed": 56,
+      "context_reviewed": 19,
+      "historical_editorial_candidates": 75,
+      "new_provisional_subtargets": 8,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_A": {
+      "context_not_reviewed": 22,
+      "context_reviewed": 8,
+      "historical_editorial_candidates": 30,
+      "new_provisional_subtargets": 8,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_B": {
+      "context_not_reviewed": 22,
+      "context_reviewed": 8,
+      "historical_editorial_candidates": 30,
+      "new_provisional_subtargets": 8,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_C": {
+      "context_not_reviewed": 14,
+      "context_reviewed": 10,
+      "historical_editorial_candidates": 24,
+      "new_provisional_subtargets": 8,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_D": {
+      "context_not_reviewed": 9,
+      "context_reviewed": 8,
+      "historical_editorial_candidates": 17,
+      "new_provisional_subtargets": 8,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_E": {
+      "context_not_reviewed": 4,
+      "context_reviewed": 8,
+      "historical_editorial_candidates": 12,
+      "new_provisional_subtargets": 8,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "context_not_reviewed": 36,
+      "context_reviewed": 15,
+      "historical_editorial_candidates": 51,
+      "new_provisional_subtargets": 8,
+      "official_atom_denominator": null,
+      "teacher_approved": 0
+    }
+  },
+  "per_track_official_atom_denominator": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "provisional_editorial_subtargets": 56,
+  "records": [
+    {
+      "candidate_id": "hs-semantic-pilot-120-c103",
+      "classification_is_human_pending": true,
+      "course_track": "COMPULSORY",
+      "editorial_interpretation": "课程以物理功引入数量积的概念和计算要求，应分别教学几何定义与代数计算。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "夹角的定义需要非零向量；零向量的数量积仍可计算，不得据此定义零向量夹角。",
+      "source": {
+        "end_line": 9,
+        "line_sha256": [
+          "6d1411c0658a2c3e685a573919db8d96870bbcc0af86297412b0fba1163c9f3f",
+          "50bd912039e69d29de6933dbc1c5ce13e8c7774d2a8bb66b339316a5801484c2"
+        ],
+        "page": 26,
+        "span_sha256": "4cc4ddce4851f23c5d1de57b5a912abdbc5b0a8d33f5df41fb12f285c6863e8c",
+        "start_line": 8
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-c103-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "数量积的几何定义"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-c103-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "数量积的坐标计算"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c104",
+      "classification_is_human_pending": true,
+      "course_track": "COMPULSORY",
+      "editorial_interpretation": "投影向量的意义与使用数量积判断平面向量垂直是相邻但不同的课程要求。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "投影目标方向不可取零向量；内积为零推垂直时应澄清零向量的角度无定义。",
+      "source": {
+        "end_line": 12,
+        "line_sha256": [
+          "ceeb0c10138e7caf056e34bb7a3541ac8f6412f5e17ebdd79462f5a993655a37",
+          "c2ad69536bcf3489a47be82ef040e8df7701b6a9fb7a291e3a97fad24288b975",
+          "b87cb4b528e099521ebbe47d3e892ab9a8057a8d284dc007e965c9f5df7cde4c"
+        ],
+        "page": 26,
+        "span_sha256": "05221c0af7ea1801671c8753cd0350c2c388a77f008871e691ce765b97abdb17",
+        "start_line": 10
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-c104-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "非零方向的正交投影"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-c104-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "数量积为零与垂直"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c105",
+      "classification_is_human_pending": true,
+      "course_track": "COMPULSORY",
+      "editorial_interpretation": "平面向量基本定理的独立性条件与正交坐标表示需要拆开审查。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "两个基向量必须不共线才有唯一分解；正交坐标系是特殊基而不是所有基。",
+      "source": {
+        "end_line": 16,
+        "line_sha256": [
+          "62fcc8b6cb9eb228f1becb565d5665ca0599347d3cf9c76f18b7299ebaed92d8",
+          "f39374b34db09fe070d076b88df1d8b0b8aa5c872372cd25ccdc9f144234b9ff",
+          "b1149c17d1ad355261d3ef02c0ca98b6d1fdc2c0796f045ab4a681db9490eb71",
+          "5ccfeaa658abcc3ab44b9bd5a286291e8207333d4623e8443dab3f73cb4f3144"
+        ],
+        "page": 26,
+        "span_sha256": "639be43646e0be6aeded413fa83e1303c0e0a9d8a7c2b80be7d312ea9cbbfc54",
+        "start_line": 13
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-c105-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "不共线基向量的唯一分解"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-c105-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "直角坐标系的正交分量"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c106",
+      "classification_is_human_pending": true,
+      "course_track": "COMPULSORY",
+      "editorial_interpretation": "坐标数量积与基于坐标的共线或垂直判定宜作为不同教学目标。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "判定两非零向量夹角需分母非零；二维行列式为零与零向量共线术语要分清。",
+      "source": {
+        "end_line": 19,
+        "line_sha256": [
+          "113127ca3739b9312eb582c7f9bd6d302437f9bef6fe0d9a695b405629aac46d",
+          "f965133193225a6dda4db72dde5e27cfa38c91ebeb59a98812da710c7aca3046",
+          "5bd779bcc158bb62efe40507af10e29e3514388572a62c88f870dfcb3d0f2716"
+        ],
+        "page": 26,
+        "span_sha256": "5b85a03860e99495bf7249e770b10aa965c0e5b997a373c42d1b81d22bbc2008",
+        "start_line": 17
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-c106-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "坐标数量积与夹角"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-c106-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "坐标平行垂直判据"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s07",
+      "classification_is_human_pending": true,
+      "course_track": "SELECTIVE_COMPULSORY",
+      "editorial_interpretation": "本段从平均变化率到瞬时变化率，再到切线几何意义，是有明确先修链的复合课程要求。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "差商极限未必存在；点处导数与左右差商极限的条件不能混同。",
+      "source": {
+        "end_line": 13,
+        "line_sha256": [
+          "c65f2dfa88c6cf9bdf4ef681d4f3f1125e74d0f994efa9f796f59c03500d22f7",
+          "53076486525878b7702f0b3275df07c0a6801c380ed819bbcf2be12ac605c61f",
+          "fd86378fb6564e402ca60a94ce9364c17176df0f48be5f0860fe71005e997228",
+          "7ed9fe539d331db6c003a717182819b8354568a490e45d5cb0ad8314de360d06",
+          "0edf7afbc1e6b41e853a24ea6fe0194b7e1820b2474fe59a7d5fb6efe83d0633",
+          "46a95315e936176c8c5e26b4b4621cc67415363a85bbd5e1770bf753aa03b228"
+        ],
+        "page": 39,
+        "span_sha256": "ca66817ca8954254c492c53c78def35a6588d0ac1691d30b37bd646477e16c5e",
+        "start_line": 8
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-s07-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "导数的差商极限定义"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-s07-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "切线斜率的几何解释"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s08",
+      "classification_is_human_pending": true,
+      "course_track": "SELECTIVE_COMPULSORY",
+      "editorial_interpretation": "基本初等导数与仿射复合形式的求导要求应分开；不能自动推广至任意复合链式法则。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "根号与倒数函数必须限制定义域；所列复合仅限 f(ax+b) 不可无证扩张到所有复合。",
+      "source": {
+        "end_line": 24,
+        "line_sha256": [
+          "91dc4cdc0e54c30efebf4ece136affc13eba264c0d251dba760333cf9c53b74a",
+          "b71418cd713f384cfb17f5b90c6e25933aaeb9afb2c53eceea065b49e877c113",
+          "99c3aa2de2ee290614776b3841a1d9e21ef5fd7c371c0c28b2cf0bad70654da6",
+          "e58dea3776f5cd0c9c9596434e3da587ba6d51b2029dc24cd0de95edd51926bb",
+          "6a63885ff646a38da480449e6714cbc35a39ad9ae3a7ffae9fcc508ee256b8e7",
+          "58110af8933d6ffe9f1609a07a5bed4240cc2b53881d88dd728ab17756023f93",
+          "6133452a562e6303dabb5b739d13510abe215493b9e63629847d8ec1e89dee78",
+          "ef69bc56e68dc9d4ee58b834ab354b77461a635ffb840a4fd2e0726b0c7f29f4",
+          "4526b7513e3a058b671b54e9da2ab13a868f1dbf105c0782ac0978c5797e6790",
+          "f7c41f09de0603f0d9b41c121c8e0066293bdb1762091e58fc4f95513b66e89e",
+          "8f5d28bd0a090727fc0c7f01f8c8ccfe7167c9ba5e4983f8cdca73186d2777af"
+        ],
+        "page": 39,
+        "span_sha256": "b03469911acff37292e51af159f5c68d9f6b4e43aeaa72daa90a681bea6c5638",
+        "start_line": 14
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-s08-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "常见函数导数与定义域"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-s08-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "仿射复合函数求导"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s09",
+      "classification_is_human_pending": true,
+      "course_track": "SELECTIVE_COMPULSORY",
+      "editorial_interpretation": "利用导数研究单调性是编号要求，对不超过三次多项式的计算范围有明确限定。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "单点导数符号不证明整个区间严格单调；导数零点必须分区间分析。",
+      "source": {
+        "end_line": 29,
+        "line_sha256": [
+          "337c3813aa1a74c550a0bd654ee6a1aa6ec749b50627280f658fa3fd955838ee",
+          "7357acc8234f50cf819efa40bdf3887f89bff2078cdd49e2fe4addec26f14206",
+          "3604f61d20a0b48db1cf9eb02ff87bbfc86ffa817138cba5eaa98193cd43cafb",
+          "f13c15b018668e8d1f14eadc959c80650668e688fbfacf751f7b39683b67323c"
+        ],
+        "page": 39,
+        "span_sha256": "7a57dc095e46689e1aff6eeb2653cbb1d822eda35536c67ca833feeab326d5c9",
+        "start_line": 26
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-s09-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "导数符号与单调区间"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-s09-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "三次以内多项式单调分析"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s10",
+      "classification_is_human_pending": true,
+      "course_track": "SELECTIVE_COMPULSORY",
+      "editorial_interpretation": "极值必要充分条件和闭区间端点比较是两项不同的导数应用能力。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "局部驻点不一定是极值，闭区间全局最大最小值必须同时考虑端点。",
+      "source": {
+        "end_line": 33,
+        "line_sha256": [
+          "df24e8003d680004072786c36d83ce6032d1b6e47a7afa5201c4d6a0ff004987",
+          "fca38ad4cedad58ee20fd4cd4e57edbafbc2fa6d74a72c9108c945b598e9b510",
+          "4e09adfff00f9508f791422a55a65d038cdb43db1c7d256d769371b2238b7677",
+          "cc5d09c695cd3bf55e0ebf016af98fc14c36727389a1d7fed506e5b0967aa50b"
+        ],
+        "page": 39,
+        "span_sha256": "38fb63a485aad49f9d5f4d8fc110a854ccfd0cafc871eed6a7eaf1b49bea6667",
+        "start_line": 30
+      },
+      "source_class": "DIRECT_NUMBERED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-s10-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "驻点与局部极值判定"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-s10-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "闭区间端点与全局最值"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a05",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_A",
+      "editorial_interpretation": "选修A列出连续定义和闭区间有界、介值性质，可构造概念及定理两类候审对象。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "连续性必须在定义域和区间上陈述；介值结论需要闭区间连续，不能仅由端点异号推出。",
+      "source": {
+        "end_line": 4,
+        "line_sha256": [
+          "56022be6cbfd8b100a1e6b28cd134edecf9b3435a42ec08bf8f630de84df97a6",
+          "15501e815a5ac18a882295a0f6a03fde40b14d7e1cbe9ab5fbd953900351e93f",
+          "fb51d9d24d6ba62291139d8eb69da240c593e1758d4dda862f3fdf100dd5ec63",
+          "433823f96fe52f1f3f37a9462a0245aee4c3cdea5422214fb934bb872f507abe"
+        ],
+        "page": 53,
+        "span_sha256": "71a0bbbdf5327da65e069070ff1cc42fc31a1af7498c76cd8a16372a59f0cd62",
+        "start_line": 1
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-a05-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "点与区间上的连续性"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-a05-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "介值性质及二分应用"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a06",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_A",
+      "editorial_interpretation": "选修A明确提出理解并证明拉格朗日中值定理，复合求导与证明应用可拆开。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "中值定理要求闭区间连续和开区间可导；不能用不满足前提的函数证明不等式。",
+      "source": {
+        "end_line": 14,
+        "line_sha256": [
+          "0aa0ec30252ecf43498ea5b0b4edbcac3d39bed7d73112cc6e0eec5265d8c96c",
+          "506444c9ebe7fa7c04990d0336bc9518f6677d80d8a30b2850c50ac7ff56cf83",
+          "0c472779d6112ff609286be5d3cb9681eebfe6a2eb533174dd33c1754af5bd85",
+          "650dd690d59378ece8afe344ee1075bef8f40f13e8ac99283436645944375854",
+          "8d7bc789975731b48d6c16f2ab548008bd6bac966ce96a3eb7eb447f6f7c86e3"
+        ],
+        "page": 53,
+        "span_sha256": "91f14980ff51ebb0e62806cb98ecf806747b3fd7caa81418fa92941e938cd81e",
+        "start_line": 10
+      },
+      "source_class": "EXPLICIT_PROOF_REQUIRED",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-a06-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "拉格朗日中值定理的证明"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-119-a06-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "中值定理用于单调与不等式"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a101",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_A",
+      "editorial_interpretation": "选修A分别提出空间内积与外积的几何意义，正交性与有向面积不应混成一种运算。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "叉积的取向依赖空间方向与顺序，内积是标量；不得把向量值外积当标量。",
+      "source": {
+        "end_line": 18,
+        "line_sha256": [
+          "1eabd83daa8d89a60c32b65372b103fccc8f5dfa628a01d90eeebaae04e22202",
+          "2263dac7ef590b971f7404a4f1c48928cf49164a465a685edd1e3be0755810ea"
+        ],
+        "page": 54,
+        "span_sha256": "fe3c5b3ece5caa60224663ba0ef00106049a0a742fda994bc8375667421b4543",
+        "start_line": 17
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-a101-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "空间内积与夹角"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-a101-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "空间外积与方向"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-a102",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_A",
+      "editorial_interpretation": "该条包含空间向量投影和分解，可以分为唯一投影与一般线性分解问题。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "投影的分母依赖非零目标向量；一般分解的唯一性需要独立基或正交条件。",
+      "source": {
+        "end_line": 19,
+        "line_sha256": [
+          "b9c9053046adde88fc444450ab0e3f8dfc56be03c25c64e00e21d02ab105a28b"
+        ],
+        "page": 54,
+        "span_sha256": "b9c9053046adde88fc444450ab0e3f8dfc56be03c25c64e00e21d02ab105a28b",
+        "start_line": 19
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-a102-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "三维正交投影"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-a102-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "空间基向量分解"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b101",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_B",
+      "editorial_interpretation": "选修B确实要求了解连续随机变量及其分布，但密度积分是可能的教材细化而非整段原文强制公式。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "离散概率质量与连续密度不能互换；点概率零不意味着事件不可能。",
+      "source": {
+        "end_line": 16,
+        "line_sha256": [
+          "d6395ba6581a77fa6c9e6f38ce93165d6684f22c8f8f8ea36f3c82df012bb475",
+          "7b142ca4f4ae93c5631642bce1261dfb4cac2458de622a50e05af7ee04bb61a8",
+          "dce723af71a640529c9ddcccefd2cb790fa335d08c5d7c925d2cecb4d982fe05"
+        ],
+        "page": 61,
+        "span_sha256": "5d3e97af0d1a2944bb65895b267cd390cad29065ae737b2fa791cec058534902",
+        "start_line": 14
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-b101-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "连续型随机变量的分布"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-b101-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "密度与区间概率的候审扩展"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b102",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_B",
+      "editorial_interpretation": "本段列出均匀、正态、卡方与t分布及数字特征，可拆参数约束和矩存在性两类。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "t分布自由度不足时均值或方差不存在，不能无条件套用全部均值方差公式。",
+      "source": {
+        "end_line": 21,
+        "line_sha256": [
+          "59ac2ccf2b2a9df92cf81a915aa9c7ffa925609da0465893f50ede00f503ebcc",
+          "555c21a035a96bcb5c7f1c192dae26ac484ed39ab310166e5acdc77362b7c7ff",
+          "4a7ba55bade66c893a11a2f755711c2b85eca3d3ec3513ee8001f3589d7395dd",
+          "74c2a76bf628787ee19c616479afe4aefa44cf3704a88f9b60d990d56e9cea27",
+          "9fd8351d114dc869c267a05211bcecb519cea5960ef57ea97758ec7ad6298384"
+        ],
+        "page": 61,
+        "span_sha256": "98bb2ebd825757d97159ddcc71f8e77dd3489f2cd25664b21b3aea360cf140d0",
+        "start_line": 17
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-b102-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "常见连续分布参数"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-b102-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "不同自由度的矩存在条件"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b103",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_B",
+      "editorial_interpretation": "选修B关于二维离散随机变量和数字特征的叙述跨页，必须核对下一页才能冻结整段归属。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "本页末尾在独立性处截断；联立分布不能仅凭边缘分布唯一恢复，缺失内容不得推测。",
+      "source": {
+        "end_line": 25,
+        "line_sha256": [
+          "a069ffc0cee9071ddf233aedc30f6af6c47f0da0239bee56d4d3703d5f1659d6",
+          "5d41b88a49f9e2a877e5e3afe130a7fbdb3ab5369d1a41a30f93703555da1b4a",
+          "8785a8c681c76dd65efd042c1bd3d6d86682500b28b180bb7d4bc523fbc16974",
+          "7589b4deabac2c7afb82752b16932c795b2fec12d102cd33e6667677b7ac75d8"
+        ],
+        "page": 61,
+        "span_sha256": "3e4d5e919a64ba00526be6ba5d04ebf8a82d2f325890f8993eb71da1c1e9013a",
+        "start_line": 22
+      },
+      "source_class": "CROSS_PAGE_PENDING",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-b103-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "二维离散联合分布"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-b103-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "协方差相关系数与依赖"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b104",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_B",
+      "editorial_interpretation": "选修B明确要求了解二维正态的联合分布及参数意义，公式细节属于候审扩写。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "相关系数绝对值为1时联合分布奇异，常规二维密度公式不适用。",
+      "source": {
+        "end_line": 4,
+        "line_sha256": [
+          "1895b159eabcfb44d84b761d80c1fca92b5fe667f5762f9c9e69693ae5b56355",
+          "ddb7deb7a58cbe24c9c91b3973e45cd11f08a0f23ba512ac61a461fa6be3b30a"
+        ],
+        "page": 62,
+        "span_sha256": "5b1af62af3a560643d4c6afb2367fd9c4715aa6b4b73340d8c2616a968eb1b66",
+        "start_line": 3
+      },
+      "source_class": "DIRECT_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-b104-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "二维正态联合分布参数"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-b104-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "相关参数与退化边界"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec101",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_C",
+      "editorial_interpretation": "选修C的推理专题明确并列演绎、归纳、类比及必然与或然推理，宜分形式与证据级别。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "有限举例不能证明全称命题；演绎规则有效也不保证未证前提为真。",
+      "source": {
+        "end_line": 10,
+        "line_sha256": [
+          "6d83328520e1b1e28d9bf671dd760d720b657259937d1c9f923df81ee24ef80d",
+          "011dc89f5ad7fe71ef597cf4df69a8bac28650859ea20b67c7d17f8053a77ae1",
+          "4ded68c54ef09727c01d35f0a142ad5321bca0896c4d1703dd69bda8ae3ca0c0",
+          "4a56e847186e73a11011c450287e2219eaf88c1b47a50e2bd2c3e7db0a81866b",
+          "c585a702559932cdb1d933d703b5371bfb2cef064f092c2e581c91ff309b676a"
+        ],
+        "page": 65,
+        "span_sha256": "9329b673756794e4dbf188506cac3aadf7bdf9374f2eb950b67ff18279ce84bc",
+        "start_line": 6
+      },
+      "source_class": "THEMATIC_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ec101-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "演绎推理的有效性"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ec101-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "归纳类比的或然性"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec102",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_C",
+      "editorial_interpretation": "本段要求认识常见证明方法，但并未给出唯一固定方法名清单。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "不能据此把反证法或逆否命题法作为全国固定清单，也不能循环论证。",
+      "source": {
+        "end_line": 13,
+        "line_sha256": [
+          "98e7b1b5c50a89b79870d855daffd66b0b5bbe766a44972b4e3c6bcdb8a77a4e",
+          "8396761ffb9a0886ce698f028c1f2fb5db8e09cd91100a8f10698bad8b8de27b",
+          "b23bd73c49289abc8a0196c1c1f8e539805e2542bda296e6a12802bcd6e7aeb7"
+        ],
+        "page": 65,
+        "span_sha256": "2795b6d7e85c7472a3c5e50f7be967fad7d5b7bf94d20de701167f0f9a86ce15",
+        "start_line": 11
+      },
+      "source_class": "THEMATIC_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ec102-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "直接证明的前提链"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ec102-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "反证法作为可选教学展开"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec103",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_C",
+      "editorial_interpretation": "选修C公理化专题提到独立性相容性完备性，教学应分别解释不同元性质。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "一致性和完备性并非同义；跨系统讨论必须声明形式系统和语言。",
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "1e5f07f7c61f5356ac2b8ee1985b4ee1278c4852c7da18d6ea6d5644c5667ba0",
+          "57ed7b94a7cc87cde526296be414171aae0fc7383d179ad06ecd96d4b8a8f4d2",
+          "9b42747859ffc3844e2252af03cf952ecbc5421134ff7a6188ce7e5fd4b2cbf3",
+          "82c61721ce4d672d0a37c716aa8303d50741b5cc4d8bd95288fdd8fd094aa332"
+        ],
+        "page": 65,
+        "span_sha256": "da0989ec9df6c9e4a7c0bfbd390da1a86154f0f30866fb4ac467eb68cfcbd419",
+        "start_line": 14
+      },
+      "source_class": "THEMATIC_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ec103-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "公理体系相容性"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ec103-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "独立性与完备性区别"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec104",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_C",
+      "editorial_interpretation": "存贷款情境对应指数复利与等额本金两个独立模型，均涉及现实参数假设。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "真实贷款常有费用利率变动与提前还款；等额本金不是等额本息。",
+      "source": {
+        "end_line": 11,
+        "line_sha256": [
+          "583bf5a1c73660d33e83c5fda66b1dbedda59a4914b69fdd6e4cbd309cffe36a",
+          "259dd5a1e4f6af846a61a8fe054fc925e25ab8479a1ef70937710f5af8dc76ed",
+          "3da390e339853cdbfe99725902ef3703a3382c7f4320fb21c4765da4dc867943",
+          "d24cb47498212c3b0730720eb6937123a7c865b0771a74894623803b8c810ae8"
+        ],
+        "page": 66,
+        "span_sha256": "c45b8aeb6a717311f56729b9bccbcf7c372bf394b0f747379dbc5c0a1fce8a6f",
+        "start_line": 8
+      },
+      "source_class": "THEMATIC_ELECTIVE_REQUIREMENT",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ec104-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "复利指数增长模型"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ec104-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "等额本金还款模型"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed101",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_D",
+      "editorial_interpretation": "选修D以建筑与艺术呈现不同几何对称，可做变换性质的活动题但不证明现实对象严格对称。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "镜像轴对称、中心对称、平移对称不可互换；视觉近似不能当精确变换恒等。",
+      "source": {
+        "end_line": 7,
+        "line_sha256": [
+          "c5bcf68cf6d86a4c495ba5f2b555e6eef31b0264f3258ce41f9b06f2e25b9bb8",
+          "bfe613f07d15d267bb61f51211697cf11acbe1215e5ca1c08e7a8d5fa042bdfa",
+          "1d0c8e6e9c78c0a596372bb962221d7e13e36e725acd25e69b42f5c0ca54d77c",
+          "e7faf44a2b0364d7297d7b9c085d41822d34d471fe85666c5d4af6e339f40e42",
+          "dde613fef061383db70050f05025318d69dcf9d3274a542f55b98c8746e3a3f4",
+          "bfd9bc0c1556eb663be342173e2701dbff25af44c3fc1b07f0dfea0be7a995db"
+        ],
+        "page": 70,
+        "span_sha256": "72bb616409f81438d558f0a86336f65cd03226f314946570df02cd37e94d9500",
+        "start_line": 2
+      },
+      "source_class": "THEMATIC_ILLUSTRATION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ed101-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "轴对称变换实例"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ed101-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "中心对称与平移对称比较"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed102",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_D",
+      "editorial_interpretation": "选修D以自然周期和艺术图案作示例，不提供每个现实过程的严格周期函数证明。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "有限重复片段不能证明所有实数时刻具有同一周期；观测趋势可能只是准周期。",
+      "source": {
+        "end_line": 11,
+        "line_sha256": [
+          "0426e1fb8776d5de54174abe60e64cbfa59c39048b1c4d2ebd5a6d36a104c461",
+          "b01885253446cfc1dd915e1528e35256375fa717322de881fc1614e858b42ff4",
+          "64e9f2f3a152257932146b714f57462d8cc2aac244af239aa113e3776141c8f5",
+          "c54d536d91b347d1347fd78ec6c519f28cf6294b9f4a35f2c137ce28cf62ce56"
+        ],
+        "page": 70,
+        "span_sha256": "bc7438f44a9bef9bd885ea47ba2b0c83f10178d5579c57ace329a7e78820d58d",
+        "start_line": 8
+      },
+      "source_class": "THEMATIC_ILLUSTRATION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ed102-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "周期函数严格定义"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ed102-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "现实周期近似建模"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed103",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_D",
+      "editorial_interpretation": "黄金分割和斐波那契数列在此属于和谐美的联系示例，并非对自然形态的普适定理。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "不得宣称全部建筑物或向日葵均满足精确黄金比例；需要量化测量误差。",
+      "source": {
+        "end_line": 15,
+        "line_sha256": [
+          "edf16b6a501d49becce2ace0f578f0b329259f392aa244b673df716744da4e19",
+          "336029b0b4c6c12d1955d99a26de6498995d4f4d7ec0ce458bc2434e18364bc7",
+          "4f603fda68c259f1e2ce35e10e8bc204c7b400aa2087fbdf2c29bf3cb2960178",
+          "71235567dc2dd4207bb979bea32802bb93519d94a3ca5d1940c5c64029befe7d"
+        ],
+        "page": 70,
+        "span_sha256": "2153013a4fd73fe18aeeaea1184f7f944dae2d73bf477e73676ff67cd6b99979",
+        "start_line": 12
+      },
+      "source_class": "THEMATIC_ILLUSTRATION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ed103-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "黄金分割比例"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ed103-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "斐波那契比值的极限联系"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed104",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_D",
+      "editorial_interpretation": "选修D用纯音和正弦函数介绍振幅频率及信号叠加，可形成理想化模型。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "现实音色由谱组成且含噪声；响度不是振幅的简单线性测量值。",
+      "source": {
+        "end_line": 25,
+        "line_sha256": [
+          "7b6ce0fe135bd561a2be633a49316ceba3cbe3386000aba6150f6b53e005833d",
+          "02b3e4c3f1ffadc6f31da97e7df635e569d45bd42e3927011de9661ef24c6683",
+          "7497379ec37cc2eccd33abcd987dda011b5bc0cedf78210a8abc31a191d73908"
+        ],
+        "page": 70,
+        "span_sha256": "8fcde65d075d5928107ec082eb38ef1e3f7a13fb37901608a0a9fc129b248641",
+        "start_line": 23
+      },
+      "source_class": "THEMATIC_ILLUSTRATION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ed104-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "纯正弦信号频率"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ed104-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "振幅与声音测量假设"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee101",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_E",
+      "editorial_interpretation": "课标明确选修E由学校按需求开发或选用，因此示例主题不能成为全国统一必学原子。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "必须保留学校自行选用和学生适用范围，不得借此减少或增加全国必修课程分母。",
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "ffe80db0e7fd7f6a32036c4c94474a91835efc8a699f95fd841c71d42b49a655",
+          "0a6ca83de26b1a7c6dbd8c3ccbdd9ff5712190bf6f3a79aeeb0d892433b82711",
+          "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+          "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+        ],
+        "page": 73,
+        "span_sha256": "80f251b90bd5449456521def3c721f638ca16f74fd35814cb532bd7f3268760e",
+        "start_line": 14
+      },
+      "source_class": "LOCAL_SCHOOL_OPTION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ee101-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "学校自选课程分类"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ee101-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "地方选修与全国必修边界"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee102",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_E",
+      "editorial_interpretation": "机器人与数学只是选修E拓展视野示例，可开发坐标系教学但需独立作者设定目标。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "机器人具体运动学公式未由这条示例逐项规定，不能标记为全国必学知识。",
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+          "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+        ],
+        "page": 73,
+        "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+        "start_line": 16
+      },
+      "source_class": "LOCAL_SCHOOL_OPTION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ee102-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "机器人坐标系建模示例"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ee102-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "刚体坐标变换候审扩展"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee103",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_E",
+      "editorial_interpretation": "球面几何仅作为选修E示例主题，球面大圆距离属于可能的自编扩展。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "球面两点最短路径可能非唯一，不能把平面欧氏直线直接替代球面测地线。",
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+          "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+        ],
+        "page": 73,
+        "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+        "start_line": 16
+      },
+      "source_class": "LOCAL_SCHOOL_OPTION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ee103-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "球面几何自选主题"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ee103-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "大圆最短路径示例"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee104",
+      "classification_is_human_pending": true,
+      "course_track": "ELECTIVE_E",
+      "editorial_interpretation": "初等数论属于选修E示例方向，欧几里得算法须作为原创可选教学内容单独归类。",
+      "official_atom_id": null,
+      "outstanding_mathematical_or_scope_risk": "除法算法依赖正模或除数非零；模零、负模约定与停止条件必须明确。",
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+          "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+        ],
+        "page": 73,
+        "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+        "start_line": 16
+      },
+      "source_class": "LOCAL_SCHOOL_OPTION",
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "student_authoritative": false,
+      "subtargets": [
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ee104-01",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "整除和最大公约数示例"
+        },
+        {
+          "kind": "EDITORIAL_TEACHING_SUBTARGET",
+          "official_atom_id": null,
+          "provisional_id": "kb128-proposed-120-ee104-02",
+          "student_authoritative": false,
+          "teacher_status": "REVIEW_PENDING",
+          "title": "欧几里得算法示例"
+        }
+      ],
+      "teacher_evidence": null,
+      "teacher_status": "REVIEW_PENDING"
+    }
+  ],
+  "reviewed_historical_candidates_new": 28,
+  "reviewed_historical_candidates_prior": 48,
+  "reviewed_historical_candidates_total": 76,
+  "source_layout_cues": 405,
+  "source_text_embedded": false,
+  "still_not_context_reviewed": 163,
+  "student_authoritative": 0,
+  "subtargets_are_not_official_atoms": true,
+  "teacher_approved": 0
+}

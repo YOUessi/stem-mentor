@@ -222,6 +222,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch126_context_
 .venv/bin/python scripts/build_kb_batch127_source_review.py --check
 .venv/bin/python scripts/build_kb_batch127_deep_lessons.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch127_source_lessons.py
+# Batch128: 28 additional exact-source semantic interpretations / 56 provisional splits;
+# 20 new P0 historical proof guard cards (40 finite exact checks). No auto approval.
+.venv/bin/python scripts/build_kb_batch128_source_ledger.py --check
+.venv/bin/python scripts/build_kb_batch128_p0_proof_guards.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch128_source_proof.py
 echo "[1/4] Backend regression tests"
 (cd backend && PYTHONPATH=.:.. ../.venv/bin/python -m pytest -q)
 echo "[2/4] Simulated tutor policy"
