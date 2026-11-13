@@ -1,0 +1,103 @@
+{
+  "batch": 121,
+  "cues_linked": 174,
+  "cues_unresolved": 231,
+  "cumulative_editorial_candidates": 143,
+  "formal_official_atom_denominators_known": false,
+  "new_editorial_candidates": 30,
+  "official_atom_census_complete": false,
+  "per_track": {
+    "COMPULSORY": {
+      "cumulative_editorial_candidates": 26,
+      "new_editorial_candidates": 5,
+      "official_atom_denominator": null,
+      "official_coverage_fraction": null,
+      "source_cues_linked": 27,
+      "source_cues_unresolved": 100,
+      "source_layout_cues": 127,
+      "student_authoritative": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_A": {
+      "cumulative_editorial_candidates": 19,
+      "new_editorial_candidates": 5,
+      "official_atom_denominator": null,
+      "official_coverage_fraction": null,
+      "source_cues_linked": 30,
+      "source_cues_unresolved": 39,
+      "source_layout_cues": 69,
+      "student_authoritative": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_B": {
+      "cumulative_editorial_candidates": 17,
+      "new_editorial_candidates": 5,
+      "official_atom_denominator": null,
+      "official_coverage_fraction": null,
+      "source_cues_linked": 30,
+      "source_cues_unresolved": 40,
+      "source_layout_cues": 70,
+      "student_authoritative": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_C": {
+      "cumulative_editorial_candidates": 19,
+      "new_editorial_candidates": 5,
+      "official_atom_denominator": null,
+      "official_coverage_fraction": null,
+      "source_cues_linked": 15,
+      "source_cues_unresolved": 14,
+      "source_layout_cues": 29,
+      "student_authoritative": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_D": {
+      "cumulative_editorial_candidates": 15,
+      "new_editorial_candidates": 3,
+      "official_atom_denominator": null,
+      "official_coverage_fraction": null,
+      "source_cues_linked": 12,
+      "source_cues_unresolved": 5,
+      "source_layout_cues": 17,
+      "student_authoritative": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_E": {
+      "cumulative_editorial_candidates": 12,
+      "new_editorial_candidates": 0,
+      "official_atom_denominator": null,
+      "official_coverage_fraction": null,
+      "source_cues_linked": 4,
+      "source_cues_unresolved": 0,
+      "source_layout_cues": 4,
+      "student_authoritative": 0,
+      "teacher_approved": 0
+    },
+    "ELECTIVE_UNASSIGNED": {
+      "cumulative_editorial_candidates": 0,
+      "new_editorial_candidates": 0,
+      "official_atom_denominator": null,
+      "official_coverage_fraction": null,
+      "source_cues_linked": 0,
+      "source_cues_unresolved": 0,
+      "source_layout_cues": 0,
+      "student_authoritative": 0,
+      "teacher_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "cumulative_editorial_candidates": 35,
+      "new_editorial_candidates": 7,
+      "official_atom_denominator": null,
+      "official_coverage_fraction": null,
+      "source_cues_linked": 56,
+      "source_cues_unresolved": 33,
+      "source_layout_cues": 89,
+      "student_authoritative": 0,
+      "teacher_approved": 0
+    }
+  },
+  "scope": "61 printed syllabus pages / seven national tracks and elective preamble",
+  "student_authoritative_releases": 0,
+  "teacher_approved": 0,
+  "total_layout_cues": 405
+}

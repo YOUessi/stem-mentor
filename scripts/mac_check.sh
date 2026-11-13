@@ -194,6 +194,9 @@ PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch115.py --check --verif
 .venv/bin/python scripts/build_kb_batch120_math_oracles.py --check
 .venv/bin/python -m pytest -q tests/test_kb_batch120_semantic_expansion.py
 .venv/bin/python scripts/build_kb_batch120_proof_lessons.py --check
+.venv/bin/python scripts/build_kb_batch121_editorial_scope.py --check --verify-local-source
+.venv/bin/python scripts/build_kb_batch121_deep_lessons.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch121_scope_and_lessons.py
 .venv/bin/python -m pytest -q tests/test_kb_batch120_proof_lessons.py
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch107_lessons.py --check
 echo "[1/4] Backend regression tests"

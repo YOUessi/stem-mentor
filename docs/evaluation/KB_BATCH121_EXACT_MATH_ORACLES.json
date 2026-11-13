@@ -1,0 +1,43 @@
+{
+  "batch": 121,
+  "boundary_negative_checks_passed": 8,
+  "details_by_candidate": {
+    "A201": {
+      "exact_negative_cases": 1,
+      "exact_worked_cases": 2
+    },
+    "B203": {
+      "exact_negative_cases": 1,
+      "exact_worked_cases": 2
+    },
+    "C203": {
+      "exact_negative_cases": 1,
+      "exact_worked_cases": 2
+    },
+    "C204": {
+      "exact_negative_cases": 1,
+      "exact_worked_cases": 2
+    },
+    "EC202": {
+      "exact_negative_cases": 1,
+      "exact_worked_cases": 2
+    },
+    "ED201": {
+      "exact_negative_cases": 1,
+      "exact_worked_cases": 2
+    },
+    "S205": {
+      "exact_negative_cases": 1,
+      "exact_worked_cases": 2
+    },
+    "S206": {
+      "exact_negative_cases": 1,
+      "exact_worked_cases": 2
+    }
+  },
+  "exact_worked_example_checks_passed": 16,
+  "general_formal_proofs_certified": 0,
+  "student_free_text_verified": false,
+  "teacher_approved": 0,
+  "worked_example_cases": 16
+}
