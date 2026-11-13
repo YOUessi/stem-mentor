@@ -1,0 +1,625 @@
+[
+  {
+    "applicability_and_hypotheses": "初等行变换对增广方程同时进行且可逆；不允许只对A变换而不对b做同一操作；判断唯一性必须知道未知数个数n。",
+    "course_track": "ELECTIVE_B",
+    "far_transfer": "在传感器标定中三个未知参数仅有两条独立约束时，讨论是否存在唯一标定值及需要什么新观测。",
+    "formal_definition_or_theorem": "设 A 为实数域 m×n 矩阵，b∈R^m，则 Ax=b 有解当且仅当 rank(A)=rank([A|b])。在有解的前提下，解唯一当且仅当 rank(A)=n；若秩小于 n，则存在无穷多个实数解。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb138-deep-121-b205",
+    "knowledge_type": "Theorem",
+    "missing_prerequisite_gap": null,
+    "near_transfer": "把右端改成(2,5)，判断第二个方程组是否还相容，并构造矛盾行。",
+    "nonexample_or_failure": "A=[0],b=[1]时rank(A)=0<rank([A|b])=1，无解。A=[0],b=[0]秩相等却所有x都可取，不唯一。",
+    "notation_and_domain": "m,n∈正整数；A∈R^{m×n}, x∈R^n, b∈R^m；[A|b]是增广矩阵。零行和非方阵必须保留；这里讨论实数域。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "kb133-proposal-sc_space_basis"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "把增广矩阵经有限次合法初等行变换化为阶梯形，所有变换都对方程组解集保持等价。",
+        "step": 1
+      },
+      {
+        "justification": "当增广列提供系数列所无的新主元时，阶梯形出现0=非零常数，从而无解；没有此矛盾行时可以回代构造一个解。",
+        "step": 2
+      },
+      {
+        "justification": "若可解且rank(A)=n，每列都是主元列，没有自由变量，回代唯一确定x。",
+        "step": 3
+      },
+      {
+        "justification": "若可解但rank(A)<n，至少有一个自由变量；由于在实数域取值连续且无穷多，产生无穷多组解。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-b205",
+    "source_end_line": 22,
+    "source_evidence_status": "HISTORICAL_PDFKIT_LINE_HASHED_EDITORIAL_INTERPRETATION",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 60,
+    "source_span_sha256": "9debad935768d20cb0fbe2007ef029501db13ae6b7fc69fb593f7993c9c17c74",
+    "source_start_line": 22,
+    "standard_version": "2017-edition-2020-revision-editorial-elective",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先给出系数矩阵和增广矩阵，不急着除主元。",
+      "消元后查看有无0=非零的矛盾行。",
+      "若可解，比较主元数与未知数个数判断解空间。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "x=2，y=1；唯一解。",
+        "question": "求解 x+y=3，x−y=1，并判定唯一性。",
+        "reasoned_solution": [
+          "系数矩阵[[1,1],[1,-1]]行列式−2不为零，rank(A)=2。",
+          "增广矩阵也为秩2，所以有解且无自由变量。",
+          "两式相加得2x=4，x=2，代入得y=1；反代两式成立。"
+        ]
+      },
+      {
+        "answer": "无穷多解，(x,y)=(t,2−t)，t∈R。",
+        "question": "方程 x+y=2，2x+2y=4 有多少解？",
+        "reasoned_solution": [
+          "第二行等于第一行的两倍，rank(A)=rank([A|b])=1。",
+          "未知数个数n=2大于秩1，有一个自由变量。",
+          "取x=t、y=2−t，每个实数t都满足两式，故解无穷多。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "非齐次线性方程组：存在性、唯一性与秩",
+    "typical_wrong_solution": "把rank(A)=rank([A|b])误认为Ax=b恰有一个解，或因det(A)=0就判定一定无解。",
+    "why_method_is_legal": "该判别来自初等行变换的等价性与主元/自由变量个数；秩相等仅保证相容，不能跳过唯一性条件。",
+    "why_wrong_and_repair": "先分别核查两种秩，再与未知数个数n比较；行列式只用于方阵且非奇异时直接判唯一。"
+  },
+  {
+    "applicability_and_hypotheses": "D非空有界闭合；f连续；把内部点和全部边界纳入比较。不可把只求∇f=0当作全局最值算法。",
+    "course_track": "ELECTIVE_B",
+    "far_transfer": "为二维设备运动误差的二次代价函数加入速度限幅，解释为什么不可忽略可行域边界。",
+    "formal_definition_or_theorem": "对非空闭圆盘 D={(x,y):x²+y²≤1}，连续函数 f(x,y)=x²+2y² 的全局最小值为0（原点），最大值为2（(0,±1)）。这是明确的带约束例题，不推广为任意二次函数结论。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb138-deep-121-b203",
+    "knowledge_type": "Method",
+    "missing_prerequisite_gap": null,
+    "near_transfer": "在椭圆x²+9y²≤9上求x²+y²最大值，展示边界取等点。",
+    "nonexample_or_failure": "若把D改为开圆盘 x²+y²<1，f仍有上确界2，但不在可行域取到最大值；只检查内部驻点得不到原闭盘的最大值。",
+    "notation_and_domain": "x,y∈R；可行域为闭圆盘且边界包含在内。极值是相对于D而非整个R²的极值。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "kb133-proposal-sc_extreme_point"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "由x²,y²≥0知f≥0；原点属于D且f(0,0)=0，得到全局最小值。",
+        "step": 1
+      },
+      {
+        "justification": "写出f=x²+2y²=(x²+y²)+y²，利用约束x²+y²≤1及y²≤1得f≤2。",
+        "step": 2
+      },
+      {
+        "justification": "点(0,1)与(0,−1)均在边界且f=2，上界可达到，所以最大值恰为2。",
+        "step": 3
+      },
+      {
+        "justification": "证明覆盖可行域内的每一点，不只是内部驻点；闭合有界与连续保证一般存在性，此处另给出明确达到点。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-b203",
+    "source_end_line": 20,
+    "source_evidence_status": "HISTORICAL_PDFKIT_LINE_HASHED_EDITORIAL_INTERPRETATION",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 59,
+    "source_span_sha256": "8f848ba298d303b15597e491ffe642698505aebf33b6dba7384f8a795e1bc52b",
+    "source_start_line": 20,
+    "standard_version": "2017-edition-2020-revision-editorial-elective",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "画出可行域并明确边界是否包含。",
+      "从目标表达式与约束式寻找非负上界。",
+      "找到达到上界、下界的具体可行点才完成全局结论。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "最大2，最小0。",
+        "question": "在x²+y²≤1上求x²+2y²的最大、最小值。",
+        "reasoned_solution": [
+          "任意可行点满足0≤x²+2y²≤(x²+y²)+y²≤2。",
+          "原点可行且函数值0。",
+          "点(0,±1)可行且函数值2，因此两界均被达到。"
+        ]
+      },
+      {
+        "answer": "最大4，最小0。",
+        "question": "在x²+4y²≤4上求x²+y²的全局最大、最小值。",
+        "reasoned_solution": [
+          "由x²+4y²≤4且y²≥0，有x²+y²≤x²+4y²≤4。",
+          "原点满足约束，值为0。",
+          "(±2,0)位于边界，函数值4，因此取到全局最大值。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "闭圆盘上的二次函数全局极值与边界",
+    "typical_wrong_solution": "求偏导得到x=y=0，便宣布这个唯一驻点同时是最大和最小值；完全漏掉边界。",
+    "why_method_is_legal": "通过非负性与约束上界建立整个D上的全局夹逼，再展示取等点；对于任意二次型不能机械复制2这个数值。",
+    "why_wrong_and_repair": "先核对定义域的闭/开和有界性，再逐项比较内点、边界与退化情形；也可直接给出全域上下界和取等点。"
+  },
+  {
+    "applicability_and_hypotheses": "只在事件被明确定义为二分类、变量取值与训练适用范围匹配时讨论预测概率；p/(1−p)的对数要求0<p<1。",
+    "course_track": "ELECTIVE_C",
+    "far_transfer": "对是否佩戴头盔与运动风险建立预测模型，说明混杂因素会如何妨碍因果解释。",
+    "formal_definition_or_theorem": "定义 σ(z)=1/(1+e^{−z})。对任意实数z有0<σ(z)<1；若z=β₀+β₁x，则log(p/(1−p))=z且p=σ(z)。该模型给出条件概率形式，不能仅由拟合推出因果效应。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb138-deep-121-ec202",
+    "knowledge_type": "Method",
+    "missing_prerequisite_gap": null,
+    "near_transfer": "比较z=ln2和z=−ln2对应的概率，并验证其和为1。",
+    "nonexample_or_failure": "当p=0或p=1时对数几率不是有限实数；把样本中的回归斜率直接解释为因果效应需要额外实验或识别假设。",
+    "notation_and_domain": "z,β₀,β₁,x∈R；e^{−z}>0；p∈(0,1)。概率含义依赖观测定义、抽样及模型校准。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "kb133-proposal-c_exponential_exp",
+      "kb133-proposal-c_logarithm_law"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "由e^{−z}>0得1+e^{−z}>1，因此σ(z)严格介于0与1之间。",
+        "step": 1
+      },
+      {
+        "justification": "计算p/(1−p)=[1/(1+e^{−z})]/[e^{−z}/(1+e^{−z})]=e^z。",
+        "step": 2
+      },
+      {
+        "justification": "对正的几率取自然对数得到log(p/(1−p))=z；所以z是对数几率而非直接概率。",
+        "step": 3
+      },
+      {
+        "justification": "求导σ′(z)=e^{−z}/(1+e^{−z})²=p(1−p)>0；说明概率随z单调增加，但β₁的符号与现实因果无直接等价。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-ec202",
+    "source_end_line": 12,
+    "source_evidence_status": "HISTORICAL_PDFKIT_LINE_HASHED_EDITORIAL_INTERPRETATION",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 67,
+    "source_span_sha256": "8b8992d365f38187b8c216db1b82ce01f2b9c7d1059b263b6275c19131d9fc09",
+    "source_start_line": 12,
+    "standard_version": "2017-edition-2020-revision-editorial-elective",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先计算线性部分z，再计算p。",
+      "把p/(1−p)视为几率，明确它不是概率。",
+      "对数几率的线性变化不能直接视为概率的常量变化或因果效应。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "p=3/4。",
+        "question": "模型给出的对数几率z=ln3，预测概率p是多少？",
+        "reasoned_solution": [
+          "几率exp(z)=3。",
+          "由p/(1−p)=3解得p=3−3p，故4p=3。",
+          "p=3/4处于(0,1)，反算对数几率为ln3。"
+        ]
+      },
+      {
+        "answer": "p=1/2。",
+        "question": "给定β₀=−1、β₁=1、x=1，Logistic预测概率是多少？",
+        "reasoned_solution": [
+          "线性预测量z=−1+1×1=0。",
+          "σ(0)=1/(1+exp(0))=1/2。",
+          "这只是条件概率模型的预测，不意味着现实观测中恰有半数是正类。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "Logistic概率模型与对数几率",
+    "typical_wrong_solution": "把β₁=2说成x每增加1使概率增加2，或在模型输出为1时直接计算log(1/0)。",
+    "why_method_is_legal": "严格正的指数项使几率和对数有意义；求导依据复合函数链式法则。有限样本校准必须另外评估。",
+    "why_wrong_and_repair": "在对数几率尺度解释β₁；在概率尺度使用σ转换并检查取值；因果主张需独立设计证据。"
+  },
+  {
+    "applicability_and_hypotheses": "所有有效观测唯一落在一个类别中，分类规则在数据收集前定义；样本频率不自动等于目标总体概率。",
+    "course_track": "ELECTIVE_C",
+    "far_transfer": "在匿名校园调查中解释为何仅在自愿提交的样本上频率总和为1仍不能说明总体代表性。",
+    "formal_definition_or_theorem": "对于单选分类，类别集合应两两不交且并集覆盖被研究的合法取值域；若有n个有效观测，类别k的样本频率定义为n_k/n，且在完整互斥穷尽分类下Σn_k=n、Σ(n_k/n)=1。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb138-deep-121-ec204",
+    "knowledge_type": "Method",
+    "missing_prerequisite_gap": null,
+    "near_transfer": "把[0,10]与[10,20]改写为不重叠的整数年龄分组，并说明20以上如何处理。",
+    "nonexample_or_failure": "选项10—20岁、20—30岁在20岁重叠；若20人填写仅18份有效，按20作分母会使有效分类频率之和不等于1。",
+    "notation_and_domain": "n∈正整数且为有效答卷数；n_k∈非负整数。类别边界必须精确定义，例如[10,20)、[20,30)；缺失与无效样本单列。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "kb133-proposal-c_set_subset",
+      "kb133-proposal-c_union_intersection"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "为研究对象建立合法总体取值集合U，再为每个单选选项定义C_k⊆U。",
+        "step": 1
+      },
+      {
+        "justification": "检查两两C_i∩C_j=∅，避免同一个取值被重复计数；特别要检查区间端点。",
+        "step": 2
+      },
+      {
+        "justification": "检查并集∪C_k=U以保证有效值被覆盖；对无法回答、缺失和其他类别设明确规则。",
+        "step": 3
+      },
+      {
+        "justification": "在有效且唯一归类的n份记录中计数Σn_k=n，除以n得频率总和1；该恒等式不能证明抽样代表性。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-ec204",
+    "source_end_line": 11,
+    "source_evidence_status": "HISTORICAL_PDFKIT_LINE_HASHED_EDITORIAL_INTERPRETATION",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 68,
+    "source_span_sha256": "66a0df31cff454ef4b76d50a496a75dbd82e4cdbfb2429016aec9cc4047e1fa4",
+    "source_start_line": 11,
+    "standard_version": "2017-edition-2020-revision-editorial-elective",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写清类别的集合和端点开闭。",
+      "区分发放、回收、有效观测量，并找合法分母。",
+      "核对频数之和是否等于有效样本量；再讨论样本代表性。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "第二类[20,30)。",
+        "question": "将年龄分为[10,20)、[20,30)、[30,40)，年龄20应归哪类？",
+        "reasoned_solution": [
+          "第一个区间右端点20不包含。",
+          "第二个区间左端点20包含。",
+          "所以20恰好落在第二类，无重复计数。"
+        ]
+      },
+      {
+        "answer": "1/4、1/3、5/12，总和为1。",
+        "question": "30份问卷只有24份有效，有效类别频数为6、8、10，计算有效频率。",
+        "reasoned_solution": [
+          "有效分母n=24而不是发放量30。",
+          "计算6/24=1/4、8/24=1/3、10/24=5/12。",
+          "验证6+8+10=24且1/4+1/3+5/12=1。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "社会调查互斥选项、穷尽性与频率分母",
+    "typical_wrong_solution": "把重叠选项的频数直接相加导致超过有效样本量，或把自愿样本中频率当成总体无偏估计。",
+    "why_method_is_legal": "分类分割的集合性质保证频数一致；频率分母来自真实有效记录而非所有发放问卷。",
+    "why_wrong_and_repair": "先明示半开区间或其他互斥分类，再核对有效答卷、漏答及抽样框。"
+  },
+  {
+    "applicability_and_hypotheses": "被研究的是理想单一正弦纯音，频率恒定；需要明确采样间隔Δt、采样率f_s=1/Δt，非纯音信号不能直接等同一个频率。",
+    "course_track": "ELECTIVE_D",
+    "far_transfer": "手机以每秒15帧拍摄高速转轮时，讨论转动看似倒退与采样混叠的关系。",
+    "formal_definition_or_theorem": "若信号s(t)=A sin(2πft+φ)，A≠0且f>0（t以秒计），其一个最小正周期为T=1/f，频率单位为Hz。仅凭离散采样点无法不加限制地唯一确定连续信号频率。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb138-deep-121-ed201",
+    "knowledge_type": "Method",
+    "missing_prerequisite_gap": null,
+    "near_transfer": "比较频率3Hz、6Hz正弦波在同一1秒内的完成周期数，并计算各周期。",
+    "nonexample_or_failure": "A=0时恒为0，所有正T都是周期而不存在最小正周期；采样率10Hz时1Hz与11Hz在整数采样点给出相同的正弦值。",
+    "notation_and_domain": "A∈R\\{0}，f∈R且f>0，φ∈R，t为连续秒数；角度参数2πft+φ按弧度解释。对A=0常值信号不存在最小正周期。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "kb133-proposal-c_period",
+      "kb133-proposal-c_radian"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "sin(θ+2π)=sinθ，故令t增加T=1/f时，相位增加2π且信号保持不变。",
+        "step": 1
+      },
+      {
+        "justification": "A≠0时正弦函数的最小正基本相位周期为2π，因此该表达式最小正时间周期为1/f。",
+        "step": 2
+      },
+      {
+        "justification": "采样时间t_k=kΔt下，sin(2π(f+m f_s)t_k+φ)=sin(2πf t_k+φ)，其中m为整数；说明整倍采样率频移产生相同样本。",
+        "step": 3
+      },
+      {
+        "justification": "要从采样恢复频率，必须明确采样率以及频带假设；该信号模型不能自动证明音色、乐器来源或真实测量无噪声。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-ed201",
+    "source_end_line": 8,
+    "source_evidence_status": "HISTORICAL_PDFKIT_LINE_HASHED_EDITORIAL_INTERPRETATION",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 71,
+    "source_span_sha256": "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f",
+    "source_start_line": 8,
+    "standard_version": "2017-edition-2020-revision-editorial-elective",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "把相位整理成2πft+φ。",
+      "核对f为正，振幅A不为零时再谈最小正周期。",
+      "如果问题来自离散样本，还要知道采样率和频带假设。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "振幅2；频率3Hz；周期1/3秒。",
+        "question": "s(t)=2sin(6πt)的振幅、频率和最小正周期分别为多少？",
+        "reasoned_solution": [
+          "将相位6πt写成2π·3t。",
+          "对应A=2，f=3Hz。",
+          "T=1/f=1/3秒，A非零故为最小正周期。"
+        ]
+      },
+      {
+        "answer": "2Hz，1/2秒。",
+        "question": "s(t)=sin(4πt+π/2)的频率和周期是多少？",
+        "reasoned_solution": [
+          "相位中的t系数4π=2π·2。",
+          "频率为2Hz，相位初值π/2只改变时间起点不改变基本周期。",
+          "T=1/2秒。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "纯音振动的频率、周期与时间采样",
+    "typical_wrong_solution": "将f=5Hz直接说成T=5秒，或不核查采样率便从十几个样本点宣称频率唯一。",
+    "why_method_is_legal": "基于正弦严格周期恒等式与采样时刻代入；保持Hz和秒的单位一致，采样歧义是精确相位周期结果。",
+    "why_wrong_and_repair": "通过相位增加2π推导T=1/f；采样分析额外明确f_s和可能的混叠。"
+  },
+  {
+    "applicability_and_hypotheses": "使用直角正交坐标与欧氏距离；讨论所有点对，而不是只核验一对点。平移一般不是线性映射，除非b=0。",
+    "course_track": "ELECTIVE_D",
+    "far_transfer": "图像拼接中比较相机透视变换、刚性旋转与各向异性拉伸是否允许直接使用欧氏测距。",
+    "formal_definition_or_theorem": "在二维欧氏空间中，仿射映射T(p)=Qp+b保持任意两点间欧氏距离当且仅当Q^TQ=I；其中b是任意固定平移向量。缩放T(p)=sp（实数s）把长度乘|s|，s=0时坍缩到一点。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb138-deep-121-ed202",
+    "knowledge_type": "Theorem",
+    "missing_prerequisite_gap": null,
+    "near_transfer": "判断关于x轴反射(x,y)→(x,−y)是否等距，并计算det(Q)。",
+    "nonexample_or_failure": "Q=diag(2,1)使(0,0)和(1,0)距离由1变2，不等距；T(p)=p+(1,2)有T(0)≠0，不是线性映射。",
+    "notation_and_domain": "p∈R²，Q为实2×2矩阵，b∈R²；“等距”指所有点对距离保持；旋转矩阵还要求det(Q)=1，反射则可能det(Q)=−1。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "kb133-proposal-c_radian"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "任取p,q，计算T(p)−T(q)=Q(p−q)，平移向量b严格抵消。",
+        "step": 1
+      },
+      {
+        "justification": "平方距离为(p−q)^T Q^TQ (p−q)；当Q^TQ=I时得到原距离平方，充分性成立。",
+        "step": 2
+      },
+      {
+        "justification": "反过来若任意p,q距离都保持，则对任意向量v都有v^T(Q^TQ−I)v=0；由于该矩阵对称，代入标准基与基之和可逐项推出矩阵为零。",
+        "step": 3
+      },
+      {
+        "justification": "对于T(p)=sp，差向量变成s(p−q)，距离乘|s|；非|s|=1的缩放不能是普遍等距变换。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-ed202",
+    "source_end_line": 8,
+    "source_evidence_status": "HISTORICAL_PDFKIT_LINE_HASHED_EDITORIAL_INTERPRETATION",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 72,
+    "source_span_sha256": "3b3dfa10c8e4b4237a8c5bc9c49a4371ae15b578f36901a7679617ecaec09ea1",
+    "source_start_line": 8,
+    "standard_version": "2017-edition-2020-revision-editorial-elective",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "用矩阵Q和向量b写出仿射式。",
+      "研究两个点的差时，平移项会抵消。",
+      "通过Q^TQ判断是否所有距离都保持；T(0)判断是否可能线性。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "保持距离，但不是线性映射。",
+        "question": "T(x,y)=(−y+1,x+2)是否保持距离？是否是线性映射？",
+        "reasoned_solution": [
+          "矩阵Q=[[0,−1],[1,0]]，故Q^TQ=I。",
+          "平移项b=(1,2)，任意两点的差都不受b影响。",
+          "T(0,0)=(1,2)不为零，因此T不是线性映射。"
+        ]
+      },
+      {
+        "answer": "从5变为10；不等距。",
+        "question": "缩放S(x,y)=(2x,2y)将点(0,0)、(3,4)的距离变为多少？",
+        "reasoned_solution": [
+          "原距离sqrt(3²+4²)=5。",
+          "缩放后两点成为(0,0)和(6,8)。",
+          "距离sqrt(36+64)=10=2×5，因此不保持距离。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "平面旋转、平移、缩放及等距判定",
+    "typical_wrong_solution": "称所有旋转、平移、缩放都是线性等距变换；把图形平移的位移向量直接当成角度加到坐标。",
+    "why_method_is_legal": "欧氏距离由向量内积决定；对称二次型对所有v为零推出矩阵为零，故给出双向条件。",
+    "why_wrong_and_repair": "先检查是否存在平移项b，再计算Q^TQ；对缩放独立核对|s|。"
+  },
+  {
+    "applicability_and_hypotheses": "每一步的除数不为零，整数商和余数满足等式；余数严格小于除数绝对值以保证终止。",
+    "course_track": "ELECTIVE_E",
+    "far_transfer": "设计两个循环周期事件的同步步数时，解释最大公因数和最小公倍数如何影响重复频率。",
+    "formal_definition_or_theorem": "对整数a,b，若b≠0，带余除法a=bq+r蕴含gcd(a,b)=gcd(b,r)，其中gcd取非负最大公因数。对非全零整数对反复作带余除法，余数绝对值严格下降，最终得到非零末余数绝对值作为最大公因数。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb138-deep-120-ee104",
+    "knowledge_type": "Theorem",
+    "missing_prerequisite_gap": "整数整除和带余除法先修原子不在已闭环的41条项目候选内",
+    "near_transfer": "计算gcd(144,54)，写出全部带余除法并标注不变量。",
+    "nonexample_or_failure": "对(0,0)不能用“最后一个非零余数”法；使用不保证余数严格下降的随意商可能无法给出有限终止论证。",
+    "notation_and_domain": "a,b∈Z，至少一个不为零；对非负整数用0≤r<|b|的标准带余除法，若b为负可先取绝对值。gcd(0,0)在此教学约定下不定义。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "a=bq+r成立时，任何同时整除a和b的正整数也整除r=a−bq；反向任何同时整除b与r的正整数也整除a=bq+r。",
+        "step": 1
+      },
+      {
+        "justification": "所以(a,b)与(b,r)的公共正因数集合相等，它们的最大公因数相同。",
+        "step": 2
+      },
+      {
+        "justification": "余数非负且严格小于前一非零除数，形成严格下降的非负整数序列，因此有限步后余数为0。",
+        "step": 3
+      },
+      {
+        "justification": "终止时剩余非零除数d满足gcd(d,0)=|d|；逆用每步不变量便得到gcd(a,b)=|d|。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-ee104",
+    "source_end_line": 17,
+    "source_evidence_status": "HISTORICAL_PDFKIT_LINE_HASHED_EDITORIAL_INTERPRETATION",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 73,
+    "source_span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+    "source_start_line": 16,
+    "standard_version": "2017-edition-2020-revision-editorial-elective",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先检查除数是否为0。",
+      "每次把前一余数作为新除数，明确商和余数。",
+      "终止时取最后一个非零余数，而不是最后的0。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "6。",
+        "question": "用辗转相除法计算gcd(84,30)。",
+        "reasoned_solution": [
+          "84=30×2+24。",
+          "30=24×1+6。",
+          "24=6×4+0，最后非零余数6，故gcd=6。"
+        ]
+      },
+      {
+        "answer": "1。",
+        "question": "用辗转相除法计算gcd(101,37)。",
+        "reasoned_solution": [
+          "101=37×2+27，37=27×1+10。",
+          "27=10×2+7，10=7×1+3。",
+          "7=3×2+1，3=1×3+0，最后非零余数1，故两数互素。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "欧几里得算法：最大公因数与余数不变量",
+    "typical_wrong_solution": "把每次余数直接取商作为下一除数，或在最后一步得到余数0就宣布gcd=0。",
+    "why_method_is_legal": "整除关系对整数线性组合封闭，并用良序原理证明算法有限终止，而非仅凭某几组数的例子。",
+    "why_wrong_and_repair": "写出a=bq+r并检查0≤r<|b|；下一对是(b,r)，结果取最后一个非零除数。"
+  },
+  {
+    "applicability_and_hypotheses": "确定对应角和对应边，不允许拿不对应的边长求比例；必须已知实际图纸为相似缩放而不是中心透视摄影。",
+    "course_track": "ELECTIVE_E",
+    "far_transfer": "用手机广角照片估计不同距离建筑尺寸时，为什么同一像素长度不能直接乘固定换算系数？",
+    "formal_definition_or_theorem": "在欧氏平面中，相似三角形对应边长有相同比例k>0，对应角相等，面积比为k²。图纸比例尺1:m（m>0）表示实际长度=图纸长度×m，同量纲下面积比例为m²；透视照片一般不满足整幅图统一尺度。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb138-deep-120-ee106",
+    "knowledge_type": "Method",
+    "missing_prerequisite_gap": "三角形相似判定先修原子不在已闭环的41条项目候选内",
+    "near_transfer": "1:200地图上一个5厘米×4厘米矩形，对应实际面积多少平方米？",
+    "nonexample_or_failure": "图纸放大2倍时几何面积放大4倍而不是2倍；不同深度物体在透视照片上有不同缩放，无法直接用单一比例尺。",
+    "notation_and_domain": "两三角形须非退化且有确定对应关系；k>0；图纸与实地单位转换先统一，面积按平方单位计算。模型是无透视、局部不畸变的比例尺假设。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "相似变换将对应每条边按正比例k伸缩，并保持角度，因此可借对应边求未知长度。",
+        "step": 1
+      },
+      {
+        "justification": "取一条边为底，高由于保持夹角与所有长度同比例也乘k。",
+        "step": 2
+      },
+      {
+        "justification": "由面积=(底×高)/2，面积比严格等于(k底×k高)/(底×高)=k²。",
+        "step": 3
+      },
+      {
+        "justification": "比例尺1:m时先把图纸长度乘m得到同单位实际长度，再做厘米→米等换算；不能把线性比例m误用于面积。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-ee106",
+    "source_end_line": 20,
+    "source_evidence_status": "HISTORICAL_PDFKIT_LINE_HASHED_EDITORIAL_INTERPRETATION",
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 73,
+    "source_span_sha256": "f7459c2367e3f5128b3d4cfc83a92277ddc73504920b1de446db2ccb2770e97c",
+    "source_start_line": 19,
+    "standard_version": "2017-edition-2020-revision-editorial-elective",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确认题目中的图是比例尺测绘，不是透视摄影。",
+      "所有长度都先乘尺度系数并统一单位。",
+      "面积由两条长度相乘，需按比例系数的平方变化。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "15米。",
+        "question": "1:500建筑平面图上墙长3厘米，实际长度多少米？",
+        "reasoned_solution": [
+          "图纸比例1:500，实际厘米数为3×500=1500厘米。",
+          "1500厘米除以100得到15米。",
+          "本计算只适用于长度方向的等比例测绘。"
+        ]
+      },
+      {
+        "answer": "6平方米。",
+        "question": "1:100图纸上矩形长2厘米宽3厘米，实际面积多少平方米？",
+        "reasoned_solution": [
+          "实际长2×100厘米=2米。",
+          "实际宽3×100厘米=3米。",
+          "实际面积2×3=6平方米，对应图纸面积6平方厘米乘100²=60000平方厘米=6平方米。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "相似三角形与建筑测量的比例尺审计",
+    "typical_wrong_solution": "1:500图上3厘米直接说实际3×500米，漏掉厘米到米；或者把面积直接乘500而非500²。",
+    "why_method_is_legal": "相似性是统一尺度的前提；面积指数来自两个独立长度维度同时伸缩。",
+    "why_wrong_and_repair": "明确比例尺代表哪种量纲，先统一单位，并验证图形是相似缩放而不是透视投影。"
+  }
+]
