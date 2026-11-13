@@ -1,0 +1,171 @@
+{
+  "batch": 131,
+  "cases": [
+    {
+      "case": "cone_cylinder",
+      "checked_assumption": "圆锥半径2高3且高度为正",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "混同圆锥与同底同高圆柱体积",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "two_event_union",
+      "checked_assumption": "共同概率空间内交集概率为3/10",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "忘记交集导致并集概率超过1",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "variance_denominator",
+      "checked_assumption": "样本为(1,3)且n=2",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "将描述方差与n−1无偏样本方差混用",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "vertical_line",
+      "checked_assumption": "过(2,0)与(2,3)的直线为x=2",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "竖直直线不能表示为有限斜率函数",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "circle_tangent",
+      "checked_assumption": "圆x²+y²=25和直线y=5",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "无效直线系数全零会令距离分母为零",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "ellipse_focal_sum",
+      "checked_assumption": "a=5,c=3,b=4,椭圆右顶点(5,0)",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "距离和等于焦距时不是非退化椭圆",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "binomial_three_trials",
+      "checked_assumption": "三个独立成功率1/2伯努利试验",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "不放回抽球不能自动假定联合独立",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "hypergeometric_impossible",
+      "checked_assumption": "N=5,K=1,n=2无放回",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "不可能抽出两个成功对象",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "normal_std_zero",
+      "checked_assumption": "μ=3,σ=2,x=7",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "σ=0不能进行正态标准化",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "pearson_constant",
+      "checked_assumption": "x=(1,2,3),y=(2,4,6)",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "常量x的离差平方和为零，相关系数未定义",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "log_composition",
+      "checked_assumption": "f(x)=ln(x²),x>0",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "链式求导缺失因子或在x=0求值",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "vector_projection",
+      "checked_assumption": "投影目标u非零",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "目标方向零向量导致范数平方为零",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "linear_rank_consistency",
+      "checked_assumption": "线性系统Ax=b需比较秩",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "同样系数矩阵可能有解或无解",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "differentiability_at_point",
+      "checked_assumption": "x²在2点可导",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "|x|在0的左右导数不相同",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "riemann_mesh_weight",
+      "checked_assumption": "右端点网格宽度为1/n",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "漏乘网格宽时和式不收敛到有限面积",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    },
+    {
+      "case": "bisection_preconditions",
+      "checked_assumption": "连续多项式x²−2在[1,2]端点异号",
+      "exact_invalid_witness_rejected": true,
+      "exact_valid_witness_passed": true,
+      "invalid_boundary": "异号但不连续的1/x不能调用零点定理",
+      "student_step_verified": false,
+      "teacher_approved": false,
+      "universally_proved": false
+    }
+  ],
+  "invalid_boundary_checks": 16,
+  "positive_exact_checks": 16,
+  "proofs_formally_certified": 0,
+  "student_free_text_steps_verified": 0,
+  "teacher_approvals": 0,
+  "verification_type": "FINITE_EXACT_SYMPY_WITNESSES_NOT_GENERAL_PROOF"
+}
