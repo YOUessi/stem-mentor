@@ -1,0 +1,800 @@
+{
+  "batch": 127,
+  "cases": 28,
+  "context_reviewed_prior_batch": 20,
+  "counts_by_relation": {
+    "EXPLICIT_NUMBERED_REQUIREMENT": 12,
+    "EXPLICIT_PROOF_REQUIREMENT": 1,
+    "EXPLICIT_THEME_PARAGRAPH": 4,
+    "FORMAL_DEFINITION_REQUIRED": 2,
+    "LOCAL_OPTIONAL_EXAMPLE": 4,
+    "MATHEMATICAL_FACT_AND_EXAMPLES": 1,
+    "THEMATIC_APPLICATION_NOT_FIXED_ATOM": 4
+  },
+  "counts_by_track": {
+    "COMPULSORY": 4,
+    "ELECTIVE_A": 4,
+    "ELECTIVE_B": 4,
+    "ELECTIVE_C": 4,
+    "ELECTIVE_D": 4,
+    "ELECTIVE_E": 4,
+    "SELECTIVE_COMPULSORY": 4
+  },
+  "distinct_context_reviewed_total": 48,
+  "new_context_reviewed": 28,
+  "official_atom_per_track": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_atom_total_denominator": null,
+  "previous_editorial_candidates": 239,
+  "records": [
+    {
+      "candidate_objective": "复数的代数形式与相等判据",
+      "course_track": "COMPULSORY",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "本段是复数的概念、代数表示及相等含义的课程要求，代数式的实虚部相等判据属于可教学内容。",
+      "id": "hs-semantic-pilot-119-c01",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 7,
+        "line_sha256": [
+          "5cfcf84529d63f7c9d34d1435953a43dc9e4cf42d991b099f09f87c7fce6bb68",
+          "dccef597e8cbf8978982a6635cf7ce60555f1bbb2c921cb875334feb2ca3346b",
+          "68f8d0ad23e31eaaee0e5b654ea215b5013f24198049940278741eb10ab9d537",
+          "07a9e29711b1daddfe6a45fbe027487758a01329cb87b33595e58f1c09c5e459"
+        ],
+        "page": 27,
+        "span_sha256": "e447b6fdfb0697bf99db3c87b6b80b29c98ec862d1ad246ba1d251541ab27e5a",
+        "start_line": 4
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "须在学生练习中限定i²=-1与实部虚部分别为实数；这里不等于自动批准任意复数计算证明。"
+    },
+    {
+      "candidate_objective": "有限样本空间及事件集合运算",
+      "course_track": "COMPULSORY",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "该要求同时涉及有限样本空间、样本点、事件以及并交互斥的运算，不能合成一个原子。",
+      "id": "hs-semantic-pilot-119-c06",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 13,
+        "line_sha256": [
+          "c3335968d214918d79b50c23736483662f36ed8b597d1104ff0eb98265c44a83",
+          "ad12ae6bf9ad84f2305a1953e3f7be5f2072cb29f42cd1496b7c2c9f1c114e20",
+          "e5640adcffec7b2cb3bd5623bd9e4bcbc28b1be0bd23486ca98570dbe8686021",
+          "c0fc87d1a94d12e5a8968068f9fb4997d5f019c4d49a654b7a04e65ff0eb451f"
+        ],
+        "page": 31,
+        "span_sha256": "43a1d42a3b7619a9d38f9c7bf37284854fc0134be4587830b599d4644e2e7c4b",
+        "start_line": 10
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "有限样本点的定义与古典概型的等可能假设不能混淆，样本空间的结果应不重不漏。"
+    },
+    {
+      "candidate_objective": "向量加法的三角形法则",
+      "course_track": "COMPULSORY",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "向量加减的几何表示及运算法则有直接课程要求，三角形法则是可拆分的具体教学方法。",
+      "id": "hs-semantic-pilot-120-c101",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 4,
+        "line_sha256": [
+          "a1eabb9e7dd967a09f650abb3e332e68317f6d62f55a8c83d6a1526007c16e7e",
+          "31ea1415450c90f79a9f3ab66ddc9bfe94d6fa08ba80515814f106ce35f3dd44"
+        ],
+        "page": 26,
+        "span_sha256": "a636fc3d162f5e98129e6b893b33c3b0c83087371d45cbb49a5a779100d2afc4",
+        "start_line": 3
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "箭头的首尾连接、坐标分量相加及零向量方向的表述仍需独立校验。"
+    },
+    {
+      "candidate_objective": "数乘与平面向量共线判别",
+      "course_track": "COMPULSORY",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "数乘的几何意义及向量共线均有要求，线性运算性质应独立分拆而非作为数乘定义的一部分。",
+      "id": "hs-semantic-pilot-120-c102",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 7,
+        "line_sha256": [
+          "9098298e31a016b3235291814a12f37e7b74e0ef5d9bbbf7563de055e25e9b60",
+          "ab2f14aa3bf7c533ddbda1af57ce15598d64512a3a3ea29054b60bacce6df5af",
+          "ec82c2b58291e7ac487e33b62cb3e27a9e5a5dbfa7aabc9fba38500319c6dad0"
+        ],
+        "page": 26,
+        "span_sha256": "acbe66064fb3bbf8f6ee9b771d66d5e37af3e2b0f3a4fb29fc691aadb212a0b1",
+        "start_line": 5
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "共线判据u=λv若用v为方向基准必须注明v≠0，零向量不能给出唯一方向。"
+    },
+    {
+      "candidate_objective": "等差数列与公差",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "数列的等差概念与通项公式出现在编号要求中，公差由相邻差恒定确定。",
+      "id": "hs-semantic-pilot-119-s02",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 15,
+        "line_sha256": [
+          "f01763452b9ea73671b9bfbe335a6bd5f104734baf01ba5420aa3fb9b81685f9",
+          "d9be1642f23a3edfb3df6bfcf5687d4b50671f1d2d54e6c762914e6208f29373"
+        ],
+        "page": 38,
+        "span_sha256": "0c28fd120248fee273675889b62eba746555ea49bc591f5e7e0f5c04c3e88484",
+        "start_line": 14
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "数列首项和起始下标须统一，有限等差数列的最后一项不能要求不存在的下一项。"
+    },
+    {
+      "candidate_objective": "等差数列前n项和公式",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "该段明确要求掌握等差数列前n项和及与通项的关系，可以拆成公式与差分关系两个对象。",
+      "id": "hs-semantic-pilot-119-s03",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "3eb042545b3389e5dccd9cdbe65689d9bc927ef907f0cb0d247f9644486cd1f5",
+          "dc8739cb4a81e9428464aab6f82986aa7c5e9c050df96deab615f5073c616857"
+        ],
+        "page": 38,
+        "span_sha256": "0ce1d451c3f80615ffa07aa29a3bf781ee0ffb29160f87644c5c414708ef36d1",
+        "start_line": 16
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "必须限定n为实际项数且n≥1，误把末项当首项会使求和数值错误。"
+    },
+    {
+      "candidate_objective": "等比数列与公比条件",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "等比数列的概念和通项公式有课程要求，但当前段落没有完整固定公比取值范围。",
+      "id": "hs-semantic-pilot-119-s04",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 22,
+        "line_sha256": [
+          "6656c18a7a00cd53b8301e6ee7f0e603a4a7b675979d5660cd4b344cc8a4867e",
+          "9451f2cd01a5c205f2059b0a07010bcfd41c7414333cb8e31a99f3739ef892aa"
+        ],
+        "page": 38,
+        "span_sha256": "1990124d0fb9081f94b3f90df71adb24c8bc680485691c58a8ccc862090d0112",
+        "start_line": 21
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "初项为零、q为零以及比值法对零项不可定义的歧义必须保留待专家确认。"
+    },
+    {
+      "candidate_objective": "等比数列有限求和的分段公式",
+      "course_track": "SELECTIVE_COMPULSORY",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "编号要求明确探索等比前n项和以及它和通项的联系，应区分q=1分支。",
+      "id": "hs-semantic-pilot-119-s05",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 24,
+        "line_sha256": [
+          "a05e0ddbbad1000b9d1e1616218c714df63f56b21590d3eed6fc0cfd6816d9a7",
+          "dc8739cb4a81e9428464aab6f82986aa7c5e9c050df96deab615f5073c616857"
+        ],
+        "page": 38,
+        "span_sha256": "2d0bc6ce731820e37bb9efa3cbf69dc14935448830ed62ca1e8e5403e1e09147",
+        "start_line": 23
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "有限几何求和式可代数扩展到q=0，不能据此断言该零公比情形自动满足选用的等比数列定义。"
+    },
+    {
+      "candidate_objective": "数列极限的ε-N量词定义",
+      "course_track": "ELECTIVE_A",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "选修A的数列极限段落包含ε-N形式量词以及若干收敛示例，需单列正式定义。",
+      "id": "hs-semantic-pilot-119-a01",
+      "interpretation_class": "FORMAL_DEFINITION_REQUIRED",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 20,
+        "line_sha256": [
+          "97f9229c450e302498ff6a2d031afffc74262048ea2612ba1ebda017362c0521",
+          "8fd71b991f442931b039c7db8de8d879a4c5f8bfe6b9bd7bb6515f148792a5ba",
+          "7417c705874d492fe934d5c1d8f07af41c5598354767a2135184b3d4009de3b1",
+          "7e5649d8c1d909cb6a9815d2cf6f3b67268f03ae9dfb44b9a05cd0199e29b6bb",
+          "7b6d6c6d0b4fe00bd7413f17f0633b7335f3ae8d3ef31a6cdb7a451af5b201ce",
+          "7b6d6c6d0b4fe00bd7413f17f0633b7335f3ae8d3ef31a6cdb7a451af5b201ce",
+          "58110af8933d6ffe9f1609a07a5bed4240cc2b53881d88dd728ab17756023f93",
+          "dfce52399f229887951f6f277cdfbf8be1987ac1f55e807363a090d71dbbbee0",
+          "b6fe59cd85453ca176b822589b284233e46fd74b1feba00775719c62fe12ffe4",
+          "61354228370a1adf2eaa092f9f344c571ceec604479461d1b312dd3414507daa",
+          "79cabb1aa50a75a28de959fd339fb7d0267f00343330e8b86f4709153a1a2426",
+          "b9524d99b9ce5e8c21596aae32cf27fc60b95f1a6ce925611e36322f20b8b673"
+        ],
+        "page": 52,
+        "span_sha256": "89f80424707f780fd5301b655bbf4d6fdfd3d6bd03731c8f35181d3d0752f993",
+        "start_line": 9
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "应写∀ε>0存在N使所有n≥N满足不等式；数字试验不是全称证明，PDFKit公式存在排版损失。"
+    },
+    {
+      "candidate_objective": "收敛数列有界性",
+      "course_track": "ELECTIVE_A",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "独立段落要求探索并证明收敛数列有界，因此属于需要完整证明前提的定理教学。",
+      "id": "hs-semantic-pilot-119-a02",
+      "interpretation_class": "EXPLICIT_PROOF_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 21,
+        "line_sha256": [
+          "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd"
+        ],
+        "page": 52,
+        "span_sha256": "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd",
+        "start_line": 21
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "证明必须把有限前缀上界与N以后的尾项界结合，不能用极限值直接作为所有项上界。"
+    },
+    {
+      "candidate_objective": "实数单调有界数列必收敛",
+      "course_track": "ELECTIVE_A",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "该段以多个单调有界示例引入单调收敛事实；示例不能替代对所有实数序列的论证。",
+      "id": "hs-semantic-pilot-119-a03",
+      "interpretation_class": "MATHEMATICAL_FACT_AND_EXAMPLES",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 29,
+        "line_sha256": [
+          "af525d3296ffcf9bc1ab1a0b25ea4b459fa0c7297847997ad101278915005468",
+          "cea8fac6950a06e4b046e036871249e0f9635e36a238d8d5ecdfac4d1f1f3705",
+          "7b6d6c6d0b4fe00bd7413f17f0633b7335f3ae8d3ef31a6cdb7a451af5b201ce",
+          "992511ac9c6282c5df0317532b481cb7d5cd25cfaa1fd50068f4366ed89500d9",
+          "e2b0059d19785f16f69e4707a5a7417661719ed110d12bd737c7f5c97c55a8b6",
+          "58110af8933d6ffe9f1609a07a5bed4240cc2b53881d88dd728ab17756023f93",
+          "bce3c4e77b6d6b49fda98073a8d9a8ae2a53c4dd61c7eb47484086cc7eda8733",
+          "9f7e5c84af4ba9e5de1f6d3b2416aa88da5b89f0ebe5dd696ea9e3bd1c6693e2"
+        ],
+        "page": 52,
+        "span_sha256": "213a9a645ce73d6de941a3ffdb1fb4e5de36d2806885b35667c0f8241a4c931a",
+        "start_line": 22
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "数列必须在实数系且同时单调、有界；若只单调无界则可能发散。"
+    },
+    {
+      "candidate_objective": "函数极限的ε-δ定义",
+      "course_track": "ELECTIVE_A",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "函数极限段落包含ε-δ定义与典型示例，概念依赖去心邻域与接近点的定义域。",
+      "id": "hs-semantic-pilot-119-a04",
+      "interpretation_class": "FORMAL_DEFINITION_REQUIRED",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 38,
+        "line_sha256": [
+          "4c17dd108b05bb81400266dba1e12d6d811ad42b2c8cbcd94a4b5d22c1f37cea",
+          "9a61c361d762bac11b1f4bbad896f459be07393e1af7c069c0c84e22c72924f2",
+          "35f05e242e734a46bb2569eede6c3ae8da597195dbea47e05b40d23b73d513d5",
+          "65573f0bc552191d01543df981145aa111dee0d9a9caf887f245afb900886a8f",
+          "5c6c8d4dc2fc8dd17ef77813720b73d56810c12b3d680d0dc92d9338590c2b32",
+          "b8b498b7e699a1c413a53801de012ce44b0a86c7aa6d66692c94d4270e54d3c1",
+          "2f420c0ec491f01f24c829a0f282f831d2062d7dc2fdd5ef9e5515156657a1e6"
+        ],
+        "page": 52,
+        "span_sha256": "91c8c30aa3dfc054455fcd867d51c8924875d68b722a37ae467cb34cc9f7576e",
+        "start_line": 32
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "要明确0<|x-a|<δ而非只含x=a；公式抽取有乱码，需原始PDF图像审查。"
+    },
+    {
+      "candidate_objective": "一阶与二阶导数的物理和几何解释",
+      "course_track": "ELECTIVE_B",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "导数与微分下的具体要求同时包含二阶导数的概念、意义和常见函数求导。",
+      "id": "hs-semantic-pilot-119-b01",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 27,
+        "line_sha256": [
+          "4843ad24ab9cee9f1ac75bd1da52c28ab154f68178ad89b868f5f0688d6819dc",
+          "133df0f567582d5b63a8cf60deb8b1f995611e578b7f8b94e2f8c7f3638b3c3a",
+          "39f9e8794bfb38cfb4eb13b28ad53b23df2267e2b21bca6c5df093053714b73a"
+        ],
+        "page": 58,
+        "span_sha256": "9949e4f3085242c68f1d534544451317bab1d8ffee88b0858911fdce7de57caf",
+        "start_line": 25
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "二阶导数需要一阶导数在邻域内可微，不能在不可导点机械地再求导。"
+    },
+    {
+      "candidate_objective": "用中值定理判断单调并证明不等式",
+      "course_track": "ELECTIVE_B",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "中值定理应用要求涉及单调分析与不等式证明，并非单条公式的复制练习。",
+      "id": "hs-semantic-pilot-119-b02",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 30,
+        "line_sha256": [
+          "18a6205b99a216d8849c7a6d06da4d5b21accf7bb742e2f593699e4a1b5364d7",
+          "7a4a43bee200d56edd5c15fc410b958d3c23c23ac7bce276ed330744b5f1bdda",
+          "35f019c4be47a0f2f8494de911c3c5c16c38adb4bc84254fbcc961926137c9b9"
+        ],
+        "page": 58,
+        "span_sha256": "0c1ab4eecd21408397ffc0609e5242ebae9a7b860110002650cf7c8b462f1002",
+        "start_line": 28
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "中值定理要求闭区间连续和开区间可导，导数符号需在整个目标区间可靠成立。"
+    },
+    {
+      "candidate_objective": "二元函数及其定义域",
+      "course_track": "ELECTIVE_B",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "二元函数以具体情境建立概念和定义域，下一要求再引入偏导数；应拆成两条原子。",
+      "id": "hs-semantic-pilot-119-b03",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 13,
+        "line_sha256": [
+          "fe2d5beaf1ea1e54234b587495d9e59d5fc878326e854b6c4cea70500ebefff0",
+          "53ee3c103614af4361663d2093b30d783a5b1eddac3a081ac1a932cac357e041",
+          "4e3ebfb6b1e7f429a678136a790b11efddb134dff72f9d84ba56f33eaa370254"
+        ],
+        "page": 59,
+        "span_sha256": "1cc930b55b90c9201dcda53f818184243b26f3cccac366cc69720793954a97e6",
+        "start_line": 11
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "二元定义域是R²子集，某点可代入不代表对所有方向都可微。"
+    },
+    {
+      "candidate_objective": "简单二元函数的偏导数计算",
+      "course_track": "ELECTIVE_B",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "偏导数的定义与简单求导示例具直接依据，固定其他变量后计算一维差商。",
+      "id": "hs-semantic-pilot-119-b04",
+      "interpretation_class": "EXPLICIT_NUMBERED_REQUIREMENT",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 13,
+        "line_sha256": [
+          "53ee3c103614af4361663d2093b30d783a5b1eddac3a081ac1a932cac357e041",
+          "4e3ebfb6b1e7f429a678136a790b11efddb134dff72f9d84ba56f33eaa370254"
+        ],
+        "page": 59,
+        "span_sha256": "bdb1cc1a91fd817a0ff8bfff800f9eb4c77ee0d5ae111a3716b0579d21fce933",
+        "start_line": 12
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "偏导存在并不足以证明总可微；零分母以及被固定变量的定义域边界需检查。"
+    },
+    {
+      "candidate_objective": "数学命题的条件结论及其形式",
+      "course_track": "ELECTIVE_C",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "数学定义、命题与推理及前提结论在专题正文中阐明，但该段跨页继续，须结合下一页。",
+      "id": "hs-semantic-pilot-119-ec01",
+      "interpretation_class": "EXPLICIT_THEME_PARAGRAPH",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 25,
+        "line_sha256": [
+          "de872adbc95f62c0c64453e3f087f30929cfcfebd4ecc994eb2e7799f55131d5",
+          "e8f7cd255125e243cd5400a546953a9189b467e0978e1abfe653285e12825208",
+          "5e5a9cf92d61920fa42a606e182be1c0273d3da8e4be9b51cd7353989bc175d5",
+          "6de896c8ceb3c22d5b6f519e251181c2696ea364eff153449b032187b630805f",
+          "72da82d9685084b90041354b78699bd36acad791757d4302fbf61ce9ca5f6f33"
+        ],
+        "page": 64,
+        "span_sha256": "c20855ad22bbae44336d305109763fe297b829298900c2cef6941d8a83c23278",
+        "start_line": 21
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "应将定义与可判真假命题区别，前提真假与蕴含真值不可混为一谈。"
+    },
+    {
+      "candidate_objective": "矛盾律与排中律的区别",
+      "course_track": "ELECTIVE_C",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "专题正文要求理解矛盾律、排中律及其推理作用，列举了两种逻辑原则的辨析。",
+      "id": "hs-semantic-pilot-119-ec03",
+      "interpretation_class": "EXPLICIT_THEME_PARAGRAPH",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 5,
+        "line_sha256": [
+          "f361a193c33045d1196eb7a20f29eae104cbc52ea57f0d23804eddfe3d83a868",
+          "176cc359e8ad94858e4a5db838183f86fcbf263fa1b7125a3b68f232d03a9634",
+          "20d3be71ffdc1fa950ddf9b0000ecc1e12f445cbe392c4af0b34e71c4e73e368",
+          "6e7798a7178d79262022551cf88b9f9d64f52a2885366c2a9333ee09dddbd63e"
+        ],
+        "page": 65,
+        "span_sha256": "e7991d380d57f35644fba732460da4adcbd7e4f2a56ce6d6eaa9d2f3f65e1be0",
+        "start_line": 2
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "不能把P∨¬P与¬(P∧¬P)当作同一个语法式；所讨论经典逻辑前提要说明。"
+    },
+    {
+      "candidate_objective": "演绎、归纳与类比推理的证据力度",
+      "course_track": "ELECTIVE_C",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "该段覆盖演绎、归纳、类比及必然与或然推理，应拆分成推理模式与证据强度。",
+      "id": "hs-semantic-pilot-119-ec04",
+      "interpretation_class": "EXPLICIT_THEME_PARAGRAPH",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 10,
+        "line_sha256": [
+          "6d83328520e1b1e28d9bf671dd760d720b657259937d1c9f923df81ee24ef80d",
+          "011dc89f5ad7fe71ef597cf4df69a8bac28650859ea20b67c7d17f8053a77ae1",
+          "4ded68c54ef09727c01d35f0a142ad5321bca0896c4d1703dd69bda8ae3ca0c0",
+          "4a56e847186e73a11011c450287e2219eaf88c1b47a50e2bd2c3e7db0a81866b",
+          "c585a702559932cdb1d933d703b5371bfb2cef064f092c2e581c91ff309b676a"
+        ],
+        "page": 65,
+        "span_sha256": "9329b673756794e4dbf188506cac3aadf7bdf9374f2eb950b67ff18279ce84bc",
+        "start_line": 6
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "从有限归纳实例得出的经验猜想不能自动推为全称定理，演绎规则须保证前提可靠。"
+    },
+    {
+      "candidate_objective": "直接证明与反证法的合法性",
+      "course_track": "ELECTIVE_C",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "专题要求认识常用证明方法，直接证法和反证法是候选教材细化示例而非课标列出的唯一方法。",
+      "id": "hs-semantic-pilot-119-ec05",
+      "interpretation_class": "EXPLICIT_THEME_PARAGRAPH",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 13,
+        "line_sha256": [
+          "98e7b1b5c50a89b79870d855daffd66b0b5bbe766a44972b4e3c6bcdb8a77a4e",
+          "8396761ffb9a0886ce698f028c1f2fb5db8e09cd91100a8f10698bad8b8de27b",
+          "b23bd73c49289abc8a0196c1c1f8e539805e2542bda296e6a12802bcd6e7aeb7"
+        ],
+        "page": 65,
+        "span_sha256": "2795b6d7e85c7472a3c5e50f7be967fad7d5b7bf94d20de701167f0f9a86ce15",
+        "start_line": 11
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "反证法依赖反设到矛盾的合法步骤，不能用结论本身作隐含前提。"
+    },
+    {
+      "candidate_objective": "数学形态与审美的客观描述区别",
+      "course_track": "ELECTIVE_D",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "选修D将简洁、对称、周期等数学表达作为审美主题，正文举例只是可能的教学情境。",
+      "id": "hs-semantic-pilot-119-ed01",
+      "interpretation_class": "THEMATIC_APPLICATION_NOT_FIXED_ATOM",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 20,
+        "line_sha256": [
+          "85ed264584a443f1111b1548715878ea9129dfc334d64e4a51a02cfd3f0f8ba0",
+          "cfb03e4a87b794376e40f7f1394f196483bec6c010bcc27c5366869d7e3ce0eb",
+          "28c8c295261f55eb2970b6be1c2f74aed78fb92b9f9480fe564f2406c15aa41a",
+          "fc80ef8423e0595f1d9c7ab30958dbea20229b7f8b89cd9545854c0395b3301c",
+          "bf99cdb89905618536b713b6d9a49cd1970d245927767d6cd330d89ec74d7d60",
+          "a368052bd6207ec380459b3c78d30cc43353048e3a54929a4ae27db492999929",
+          "404b550c74d14b1b599733a335cfba73566e9756e7cb68d190c9ae5fd6a2634a",
+          "fe659f820f8bed780fe1a83f9e4f9442260faca498757b63ed0d2e4f2c995f9d",
+          "5beb295613e760e527a301c40536081dd67c37d68bd863d8c3fa06530790850d",
+          "43bb0461250c7f27b3b4ff2cbc3264d08b1eab3c881c52b786cde2ff721d6b22",
+          "b9bc1895f33cca536bbfac31b006f4326ccbd04af213f8c545ead252406f616f",
+          "2d669b3680b19fb35f46cc53636d0032a986627c3ecb14bc974c59e15cdbe607"
+        ],
+        "page": 69,
+        "span_sha256": "9b2f785d8afeb1243200675dac59cfa56b4c315c3bd4902bbc8370f7d0d5f495",
+        "start_line": 9
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "不能从美感描述推出唯一形式数学命题；轨迹的现实近似与理想数学曲线需分开。"
+    },
+    {
+      "candidate_objective": "轴对称、中心对称与平移对称",
+      "course_track": "ELECTIVE_D",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "数学审美专题列举对称对象，允许设计几何变换判别题，不足以固定全部对称定理。",
+      "id": "hs-semantic-pilot-119-ed02",
+      "interpretation_class": "THEMATIC_APPLICATION_NOT_FIXED_ATOM",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 7,
+        "line_sha256": [
+          "c5bcf68cf6d86a4c495ba5f2b555e6eef31b0264f3258ce41f9b06f2e25b9bb8",
+          "bfe613f07d15d267bb61f51211697cf11acbe1215e5ca1c08e7a8d5fa042bdfa",
+          "1d0c8e6e9c78c0a596372bb962221d7e13e36e725acd25e69b42f5c0ca54d77c",
+          "e7faf44a2b0364d7297d7b9c085d41822d34d471fe85666c5d4af6e339f40e42",
+          "dde613fef061383db70050f05025318d69dcf9d3274a542f55b98c8746e3a3f4",
+          "bfd9bc0c1556eb663be342173e2701dbff25af44c3fc1b07f0dfea0be7a995db"
+        ],
+        "page": 70,
+        "span_sha256": "72bb616409f81438d558f0a86336f65cd03226f314946570df02cd37e94d9500",
+        "start_line": 2
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "轴对称、中心对称、平移对称是不同变换；自然或建筑形体未必严格对称。"
+    },
+    {
+      "candidate_objective": "周期模型的重复条件",
+      "course_track": "ELECTIVE_D",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "周期美的段落用昼夜、海浪和图案等示例开展数学表征，但不直接认证严格周期模型。",
+      "id": "hs-semantic-pilot-119-ed03",
+      "interpretation_class": "THEMATIC_APPLICATION_NOT_FIXED_ATOM",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 11,
+        "line_sha256": [
+          "0426e1fb8776d5de54174abe60e64cbfa59c39048b1c4d2ebd5a6d36a104c461",
+          "b01885253446cfc1dd915e1528e35256375fa717322de881fc1614e858b42ff4",
+          "64e9f2f3a152257932146b714f57462d8cc2aac244af239aa113e3776141c8f5",
+          "c54d536d91b347d1347fd78ec6c519f28cf6294b9f4a35f2c137ce28cf62ce56"
+        ],
+        "page": 70,
+        "span_sha256": "bc7438f44a9bef9bd885ea47ba2b0c83f10178d5579c57ace329a7e78820d58d",
+        "start_line": 8
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "有限观测或季节变化不证明f(t+T)=f(t)对所有t成立；须区分近似和严格周期。"
+    },
+    {
+      "candidate_objective": "音乐图案周期性与采样周期的区分",
+      "course_track": "ELECTIVE_D",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "同一周期段落可用于音乐和图案的建模活动，不提供采样周期的独立数学定义。",
+      "id": "hs-semantic-pilot-119-ed04",
+      "interpretation_class": "THEMATIC_APPLICATION_NOT_FIXED_ATOM",
+      "official_atom_id": null,
+      "prior_grade": "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 11,
+        "line_sha256": [
+          "0426e1fb8776d5de54174abe60e64cbfa59c39048b1c4d2ebd5a6d36a104c461",
+          "b01885253446cfc1dd915e1528e35256375fa717322de881fc1614e858b42ff4",
+          "64e9f2f3a152257932146b714f57462d8cc2aac244af239aa113e3776141c8f5",
+          "c54d536d91b347d1347fd78ec6c519f28cf6294b9f4a35f2c137ce28cf62ce56"
+        ],
+        "page": 70,
+        "span_sha256": "bc7438f44a9bef9bd885ea47ba2b0c83f10178d5579c57ace329a7e78820d58d",
+        "start_line": 8
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "时间采样别名和实际信号周期不能等同，不能把文字举例误归为单独全国标准知识点。"
+    },
+    {
+      "candidate_objective": "机器人运动中的坐标与变换作为选修示例",
+      "course_track": "ELECTIVE_E",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "选修E是学校开设的示例方向，其中机器人与数学仅是可选专题之一。",
+      "id": "hs-semantic-pilot-119-ee01",
+      "interpretation_class": "LOCAL_OPTIONAL_EXAMPLE",
+      "official_atom_id": null,
+      "prior_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+          "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+        ],
+        "page": 73,
+        "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+        "start_line": 16
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "不能把机器人坐标变换列为全国必修，更不能把示例等同全国统一内容分母。"
+    },
+    {
+      "candidate_objective": "初等数论同余作为选修示例",
+      "course_track": "ELECTIVE_E",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "初等数论是选修E拓展视野的示例主题，没有确定同余运算的官方固定教学颗粒度。",
+      "id": "hs-semantic-pilot-119-ee02",
+      "interpretation_class": "LOCAL_OPTIONAL_EXAMPLE",
+      "official_atom_id": null,
+      "prior_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 17,
+        "line_sha256": [
+          "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+          "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+        ],
+        "page": 73,
+        "span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+        "start_line": 16
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "若开发同余课程，定义、模非零与等价关系需作者单独建构，并标记学校自选。"
+    },
+    {
+      "candidate_objective": "家庭复利与现实成本建模作为选修示例",
+      "course_track": "ELECTIVE_E",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "家庭理财作为选修E日常生活主题示例，可开展复利和实际利率建模，而非强制核心公式。",
+      "id": "hs-semantic-pilot-119-ee03",
+      "interpretation_class": "LOCAL_OPTIONAL_EXAMPLE",
+      "official_atom_id": null,
+      "prior_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 20,
+        "line_sha256": [
+          "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53",
+          "ac9167496e0cf1fea46a477fd36a8793268f879a025af230a43a4271d4e29bc8",
+          "6a45896a3c53d4848c09b5b335e3987385d32b6329af65fb7405aa811ea431f6"
+        ],
+        "page": 73,
+        "span_sha256": "9f3ef6b315af895288f00efd86da6b3f90cae7f49a6d06deb5783947689c0cd3",
+        "start_line": 18
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "现实利率模型须注明计息周期、税费与通胀；理想模型不能被宣称为现实精确预测。"
+    },
+    {
+      "candidate_objective": "大学先修概率统计的拓展边界",
+      "course_track": "ELECTIVE_E",
+      "curriculum_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "editorial_interpretation": "大学先修概率统计位列选修E大学先修主题，并非每名高中生都必须完成的课程知识原子。",
+      "id": "hs-semantic-pilot-119-ee04",
+      "interpretation_class": "LOCAL_OPTIONAL_EXAMPLE",
+      "official_atom_id": null,
+      "prior_grade": "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM",
+      "proof_machine_certified": false,
+      "source": {
+        "end_line": 22,
+        "line_sha256": [
+          "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+          "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+        ],
+        "page": 73,
+        "span_sha256": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+        "start_line": 21
+      },
+      "student_authoritative": false,
+      "teacher_signature": null,
+      "teacher_status": "REVIEW_PENDING",
+      "unresolved_risk": "要在学校自选计划中明确具体目标，不能让高阶内容覆盖高中必修概率统计。"
+    }
+  ],
+  "review_is_not_formal_math_proof": true,
+  "source_marker_total": 405,
+  "source_text_embedded": false,
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "unreviewed_editorial_candidates": 191
+}
