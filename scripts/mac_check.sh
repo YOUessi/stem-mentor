@@ -202,6 +202,9 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch121_scope_an
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch122_scope_depth_math.py
 .venv/bin/python scripts/build_kb_batch123_semantic_census.py --check --verify-local-source
 .venv/bin/python scripts/build_kb_batch123_depth.py --check
+.venv/bin/python scripts/build_kb_batch124_scope.py --check --verify-local-source
+.venv/bin/python scripts/build_kb_batch124_depth.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch124_scope_depth_math.py
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch123_scope_depth_math.py
 .venv/bin/python -m pytest -q tests/test_kb_batch120_proof_lessons.py
 PYTHONPATH=backend .venv/bin/python scripts/build_kb_batch107_lessons.py --check
