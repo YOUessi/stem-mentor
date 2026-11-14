@@ -377,6 +377,10 @@ jobs:
       - run: python scripts/build_kb_batch153_crosswalk.py --check
       - run: python scripts/check_kb_batch153_math.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch153_integrity.py
+      # Mac-only execution proof: replay actual archived stdout, exit bytes and SHA-256.
+      # No private licensed syllabus PDF or student material is included.
+      - run: python scripts/build_kb_batch153_execution_manifest.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch153_archived_evidence.py
       # Fail fast on syntax errors before the long Python/Node/browser suite.
       - run: bash -n scripts/mac_check.sh scripts/mac_browser_check.sh
       # Tests now import both 'app' (backend package root) and the versioned

@@ -1,0 +1,74 @@
+{
+  "added_drafts": 10,
+  "arbitrary_student_steps_certified": 0,
+  "authorized_device": "MACBOOK_AIR_ONLY",
+  "browser_pytest_passed": 2,
+  "chrome_checks_passed": 9,
+  "date": "2026-11-14",
+  "exact_finite_witnesses": 40,
+  "focused_passed": 262,
+  "formal_general_proofs": 0,
+  "full_backend_passed": 66293,
+  "full_backend_skipped": 5,
+  "historical_editorial_candidates": 239,
+  "historical_proof_steps_unverified": 538,
+  "invalid_premise_or_false_generalization_witnesses": 20,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH153_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH153_BROWSER.log",
+      "sha256": "b84c654afd268232feeb0a4562def5d8d37eff1abecd75e620f7865f52867700"
+    },
+    "FOCUSED": {
+      "bytes": 870,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH153_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH153_FOCUSED.log",
+      "sha256": "b2fc0ae07e9e8c40b03cb8cbf9eab7f473830f636db9dc83cb0905d5c4729ddd"
+    },
+    "MAC_FULL": {
+      "bytes": 147308,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH153_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH153_MAC_FULL.log",
+      "sha256": "a385176ab8d676b7085bf5f3e6ba6427cfc1f945b8aa4ff951ec0a4975b08b7b"
+    },
+    "NODE": {
+      "bytes": 20930,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH153_NODE.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH153_NODE.log",
+      "sha256": "1257a9b77d079681253e3cee1199c9bbffc440e167d23d13962cd73342c0cdc5"
+    }
+  },
+  "mathematical_conflicts_pending": 10,
+  "near_far_transfer_tasks": 20,
+  "node_passed": 111,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_completion_rate": null,
+  "original_teacher_examples": 20,
+  "schema": "kb153-real-mac-evidence/1",
+  "source_commit": "04ed86e0f0b27accc5400cf5e641f0200b069388",
+  "source_gaps": 145,
+  "source_links": 94,
+  "source_pdfkit_private_rehash": true,
+  "student_authoritative": 0,
+  "student_hint_levels": 30,
+  "teacher_approved": 0,
+  "teacher_only_pending_drafts": 135,
+  "warning": "Finite cases do not certify universal proofs; draft count is not national syllabus coverage."
+}
