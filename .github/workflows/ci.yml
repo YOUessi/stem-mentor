@@ -418,6 +418,14 @@ jobs:
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch157_math_depth.py
       - run: python scripts/build_kb_batch157_execution_manifest.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch157_archived_evidence.py
+      - run: python scripts/author_kb_batch158_data.py --check
+      - run: python scripts/build_kb_batch158_lessons.py --check
+      - run: python scripts/check_kb_batch158_math.py --check
+      - run: python scripts/build_kb_batch158_scope_ledger.py --check
+      - run: python scripts/build_kb_batch158_page_triage.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch158_math_depth.py tests/test_kb_batch158_page_triage.py
+      - run: python scripts/check_kb_batch158_teacher_examples.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch158_teacher_examples.py
       # Fail fast on syntax errors before the long Python/Node/browser suite.
       - run: bash -n scripts/mac_check.sh scripts/mac_browser_check.sh
       # Tests now import both 'app' (backend package root) and the versioned

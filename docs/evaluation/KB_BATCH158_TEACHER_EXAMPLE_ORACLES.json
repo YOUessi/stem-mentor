@@ -1,0 +1,169 @@
+{
+  "cases": [
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-123-c406",
+      "oracle_reason": "16 positive rational exponent",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-123-c406",
+      "oracle_reason": "positive-base exponent product",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-123-c409",
+      "oracle_reason": "exact sine addition",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-123-c409",
+      "oracle_reason": "exact cosine difference",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-123-c412",
+      "oracle_reason": "mean and median",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-123-c412",
+      "oracle_reason": "two modes",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-120-s105",
+      "oracle_reason": "3D distance 3 4 0",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-120-s105",
+      "oracle_reason": "3D distance 3 0 4",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-122-s307",
+      "oracle_reason": "Pearson r=1",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-122-s307",
+      "oracle_reason": "zero variance undefined",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-119-a04",
+      "oracle_reason": "epsilon-delta admissible constructive epsilon",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-119-a04",
+      "oracle_reason": "removable singularity limit",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-120-b103",
+      "oracle_reason": "joint marginalization",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-120-b103",
+      "oracle_reason": "diagonal joint dependence",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-123-ec402",
+      "oracle_reason": "observational correlation noncausal countermodel",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-123-ec402",
+      "oracle_reason": "r1 is insufficient for causation",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-120-ed101",
+      "oracle_reason": "x-axis reflection",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-120-ed101",
+      "oracle_reason": "central reflection",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 1,
+      "manuscript_id": "kb158-deep-119-ee04",
+      "oracle_reason": "continuous uniform probability",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    },
+    {
+      "exact_case_passed": true,
+      "example_number": 2,
+      "manuscript_id": "kb158-deep-119-ee04",
+      "oracle_reason": "discrete probability sum",
+      "scope": "BOUNDED_EXACT_CASE_NOT_GENERAL_PROOF",
+      "student_answer_exposed": false
+    }
+  ],
+  "schema": "kb158-independent-worked-examples-v1",
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "unproved_general_claims": 0,
+  "worked_examples_checked": 20
+}

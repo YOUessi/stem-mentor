@@ -1,0 +1,371 @@
+{
+  "cases": [
+    {
+      "assertion_is_true": true,
+      "basis": "正底数16的四次正根是2，再立方为8",
+      "case": "rational-power-16",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c406"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "在正底数4上同底数指数相加",
+      "case": "same-positive-base-add",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c406"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "负底数偶次实根不存在",
+      "case": "negative-base-sqrt-real",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c406"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "零的负幂不是有限实数",
+      "case": "zero-negative-power-finite",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c406"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "使用全实角三角恒等式精确化简",
+      "case": "cos-difference-general-identity",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c409"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "单位圆旋转分量完全相等",
+      "case": "sin-addition-general-identity",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c409"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "cos差角不能拆作余弦的差",
+      "case": "cos-distributes-over-subtraction",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c409"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "sin和角不能拆作两个正弦之和",
+      "case": "sin-distributes-over-addition",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c409"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "样本算术均值为106/4",
+      "case": "outlier-mean",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c412"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "排序后中间两个数取平均",
+      "case": "even-sample-median",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c412"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "均值受极大值影响",
+      "case": "outlier-does-not-change-mean",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c412"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "重复最多的值可以不唯一",
+      "case": "unique-mode-in-tie",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-c412"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "直角坐标差向量长度为5",
+      "case": "orthonormal-distance",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-s105"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "距离与方向无关",
+      "case": "opposite-displacements-same-length",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-s105"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "斜基坐标向量(1,1)真实长度不是√2",
+      "case": "oblique-basis-incorrect-norm",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-s105"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "距离必须非负",
+      "case": "negative-euclidean-distance",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-s105"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "非零中心化向量相同方向",
+      "case": "positive-perfect-correlation",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s307"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "非零中心化向量相反方向",
+      "case": "negative-perfect-correlation",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s307"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "X无方差则Pearson系数未定义而不是0",
+      "case": "constant-x-correlation-is-zero",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s307"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "Cauchy–Schwarz界保证|r|≤1",
+      "case": "perfect-correlation-exceeds-one",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s307"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "任取ε=1/100、δ=ε/3，再取满足0<|x−2|<δ的具体点",
+      "case": "linear-epsilon-delta-instance",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-a04"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "去心极限可存在而函数原点无定义",
+      "case": "removable-singularity-limit",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-a04"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "跳跃函数左右极限不一致",
+      "case": "jump-left-right-equal",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-a04"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "极限定义要求任给正ε而非ε=0",
+      "case": "epsilon-is-zero-allowed",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-a04"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "联合质量全非负且总和为1",
+      "case": "joint-probability-normalized",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-b103"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "固定Y=1对X边缘化",
+      "case": "y-one-marginal",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-b103"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "均匀边缘且非对角概率零不代表独立",
+      "case": "diagonal-joint-is-independent",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-b103"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "合法联合质量不应只有3/4",
+      "case": "joint-probability-total-not-one",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-b103"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "样本上观察到r=1说明三点正共线",
+      "case": "observed-perfect-linear",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-ec402"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "三个观测点完全满足y=2x",
+      "case": "linear-fit-exact-three-points",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-ec402"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "两种结构模型X=Z,Y=2X与X=Z,Y=2Z有相同观察数据，但干预do(X=5),Z=1时Y分别为10和2",
+      "case": "association-derives-intervention",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-ec402"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "观察相关不能排除共同原因",
+      "case": "common-cause-ruled-out-by-correlation",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-123-ec402"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "反射矩阵正交",
+      "case": "reflection-preserves-length",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-ed101"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "中心点是原点和像点中点",
+      "case": "central-midpoint",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-ed101"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "二维镜像反射会翻转取向",
+      "case": "reflection-has-positive-determinant",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-ed101"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "中心对称只固定中心点",
+      "case": "half-turn-fixes-all-points",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-ed101"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "密度2在长度1/4区间上的概率为1/2",
+      "case": "uniform-interval-integral",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ee04"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "离散概率质量总和为1",
+      "case": "discrete-mass-normalization",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ee04"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "连续概率密度可大于1",
+      "case": "density-must-be-at-most-one",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ee04"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "连续分布单点积分为0，不等于密度值",
+      "case": "single-point-probability-is-density",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ee04"
+    }
+  ],
+  "formal_general_proofs_certified": 0,
+  "invalid_premise_rejected": 20,
+  "legal_or_boundary_true": 20,
+  "schema": "kb158-independent-finite-exact-witness/1",
+  "student_free_steps_verified": 0,
+  "teacher_approved": 0,
+  "verified_bounded_cases": 40
+}
