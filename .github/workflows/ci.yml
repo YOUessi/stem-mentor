@@ -301,6 +301,8 @@ jobs:
       - run: python scripts/check_kb_batch144_math.py --check
       - run: python scripts/build_kb_batch144_crosswalk.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch144_seven_track.py
+      # Byte-only revalidation of archived real authorized Mac runs, not an original-PDF replay.
+      - run: python scripts/build_kb_batch144_execution_manifest.py --check
       - run: python scripts/audit_kb_batch09_release.py --check
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Fail fast on syntax errors before the long Python/Node/browser suite.
