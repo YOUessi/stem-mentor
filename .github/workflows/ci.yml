@@ -377,6 +377,14 @@ jobs:
       - run: python scripts/build_kb_batch153_crosswalk.py --check
       - run: python scripts/check_kb_batch153_math.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch153_integrity.py
+      - run: python scripts/author_kb_batch154_data.py --check
+      - run: python scripts/build_kb_batch154_lessons.py --check
+      - run: python scripts/build_kb_batch154_crosswalk.py --check
+      - run: python scripts/check_kb_batch154_math.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch154_math_depth.py
+      # KB154: 61-page source provenance, 315 anchors, 122 CDE lines, unapproved API.
+      - run: python scripts/build_kb_batch154_scope_graph.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch154_scope_graph.py
       # Mac-only execution proof: replay actual archived stdout, exit bytes and SHA-256.
       # No private licensed syllabus PDF or student material is included.
       - run: python scripts/build_kb_batch153_execution_manifest.py --check

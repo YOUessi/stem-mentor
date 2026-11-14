@@ -419,3 +419,15 @@ def kb153_review_coverage():
     """Aggregate-only review coverage: never teacher solutions or unapproved sources."""
     from .kb_batch153_index import public_coverage
     return public_coverage()
+
+@app.get("/api/knowledge/kb154-source-scope-status")
+def kb154_source_scope_status():
+    """Source graph aggregate status: zero approved knowledge, no syllabus text."""
+    from .kb_batch154_scope_status import public_status
+    return public_status()
+
+@app.get("/api/knowledge/kb154-review-coverage")
+def kb154_review_coverage():
+    """145 pending manuscripts; aggregate-only and not officially approved."""
+    from .kb_batch154_index import public_coverage
+    return public_coverage()
