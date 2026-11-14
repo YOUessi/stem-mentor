@@ -415,3 +415,8 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch155_draft_re
 .venv/bin/python scripts/build_kb_batch156_lessons.py --check-mac
 .venv/bin/python scripts/check_kb_batch156_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch156_math_depth.py
+.venv/bin/python scripts/author_kb_batch157_data.py --check
+.venv/bin/python scripts/build_kb_batch157_lessons.py --check-mac
+.venv/bin/python scripts/check_kb_batch157_math.py --check
+.venv/bin/python scripts/build_kb_batch157_scope_ledger.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch157_math_depth.py

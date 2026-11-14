@@ -444,3 +444,10 @@ def kb156_review_coverage():
     """Only non-authoritative coverage metadata; no draft body or teacher answer."""
     from .kb_batch156_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb157-review-coverage")
+def kb157_review_coverage():
+    """Only editor-proof aggregate provenance; no teacher full solution or draft text."""
+    from .kb_batch157_index import public_coverage
+    return public_coverage()

@@ -1,0 +1,92 @@
+[
+  {
+    "course_track": "COMPULSORY",
+    "id": "kb157-deep-122-c301",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-122-c301",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "有限集合的列举法与描述法的等价条件"
+  },
+  {
+    "course_track": "COMPULSORY",
+    "id": "kb157-deep-122-c309",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-122-c309",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "指数模型的底数约束与时间尺度"
+  },
+  {
+    "course_track": "COMPULSORY",
+    "id": "kb157-deep-122-c312",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-122-c312",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "样本频率、经验概率与随机抽样的前提"
+  },
+  {
+    "course_track": "SELECTIVE_COMPULSORY",
+    "id": "kb157-deep-122-s303",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-122-s303",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "抛物线双曲线标准式的参数非退化前提"
+  },
+  {
+    "course_track": "SELECTIVE_COMPULSORY",
+    "id": "kb157-deep-122-s306",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-122-s306",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "正态变量标准化与零方差拒绝条件"
+  },
+  {
+    "course_track": "ELECTIVE_A",
+    "id": "kb157-deep-121-a202",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-121-a202",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "自然常数e的数列近似与有限项不等于极限"
+  },
+  {
+    "course_track": "ELECTIVE_B",
+    "id": "kb157-deep-121-b201",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-121-b201",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "闭区间极值候选与导数为零的限制"
+  },
+  {
+    "course_track": "ELECTIVE_C",
+    "id": "kb157-deep-119-ec04",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-119-ec04",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "演绎证明与归纳推测的证据层级"
+  },
+  {
+    "course_track": "ELECTIVE_D",
+    "id": "kb157-deep-119-ed03",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-119-ed03",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "周期函数模型的重复条件与最小周期"
+  },
+  {
+    "course_track": "ELECTIVE_E",
+    "id": "kb157-deep-119-ee03",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-119-ee03",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "学校选修示例：家庭复利与现实成本建模"
+  }
+]
