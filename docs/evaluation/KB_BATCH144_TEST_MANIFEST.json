@@ -1,0 +1,68 @@
+{
+  "backend_python_passed": 66293,
+  "backend_python_skipped": 5,
+  "browser_pytest_passed": 2,
+  "candidate_draft_gaps": 205,
+  "development_device": "AUTHORIZED_MACBOOK_AIR_ONLY",
+  "first_focused_run_failed": 11,
+  "first_focused_run_failed_cause": "Legacy manuscripts missing title key in new editor FTS, and overly broad leak test matched a safe boolean key name",
+  "first_focused_run_fixed": true,
+  "focused_tests_passed": 227,
+  "general_formal_proof_certified": 0,
+  "github_does_not_reopen_licensed_pdf": true,
+  "historical_editorial_candidate_count": 239,
+  "historical_uncertified_proof_steps": 538,
+  "independent_exact_finite_math_cases": 40,
+  "linked_candidate_drafts": 34,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH144_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH144_BROWSER.log",
+      "sha256": "a645ca74eecc561c0619c4620be876bea0877faf6d771a4551cfd848d5728e46"
+    },
+    "FOCUSED": {
+      "bytes": 870,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH144_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH144_FOCUSED.log",
+      "sha256": "d125ebc11c196915f0984ce54ec26a52e8a085b6f3d3a8da23c405004c346c6b"
+    },
+    "MAC_FULL": {
+      "bytes": 137301,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH144_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH144_MAC_FULL.log",
+      "sha256": "5dad7dfcdce34e4c96e9409e389c7f599b8cbc569cee6494c03dcca197e0ac27"
+    }
+  },
+  "mac_source_text_uploaded": false,
+  "mathematical_negative_preconditions_rejected": 20,
+  "new_deep_teacher_manuscripts": 10,
+  "new_near_far_transfer_tasks": 20,
+  "new_student_safe_hint_steps": 30,
+  "new_teacher_worked_examples": 20,
+  "node_tests_passed": 111,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "original_pdfkit_lines_rehashed_locally": true,
+  "run_date": "2026-11-14",
+  "schema": "kb144-real-mac-evidence/1",
+  "source_parent_remote_commit": "95d8ea9b1a65d2b05281e97e2be27c113e1908b2",
+  "student_authoritative": 0,
+  "student_free_text_step_verified": 0,
+  "teacher_approved": 0,
+  "teacher_manuscripts_total": 75,
+  "unresolved_math_conflicts": 10
+}
