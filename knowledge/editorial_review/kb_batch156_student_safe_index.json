@@ -1,0 +1,92 @@
+[
+  {
+    "course_track": "COMPULSORY",
+    "id": "kb156-deep-121-c202",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-121-c202",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "集合并与交的严格元素判据"
+  },
+  {
+    "course_track": "COMPULSORY",
+    "id": "kb156-deep-122-c302",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-122-c302",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "全集与空集依赖研究论域的集合语义"
+  },
+  {
+    "course_track": "COMPULSORY",
+    "id": "kb156-deep-122-c304",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-122-c304",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "必要条件与充分条件的箭头方向"
+  },
+  {
+    "course_track": "COMPULSORY",
+    "id": "kb156-deep-122-c310",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-122-c310",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "单位圆上三角函数的坐标定义与正切边界"
+  },
+  {
+    "course_track": "SELECTIVE_COMPULSORY",
+    "id": "kb156-deep-119-s05",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-119-s05",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "等比数列有限前n项和与公比等于一的分支"
+  },
+  {
+    "course_track": "SELECTIVE_COMPULSORY",
+    "id": "kb156-deep-119-s08",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-119-s08",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "仿射内函数的复合求导法则及常数内函数特例"
+  },
+  {
+    "course_track": "SELECTIVE_COMPULSORY",
+    "id": "kb156-deep-119-s11",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-119-s11",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "空间平面法向量方程与方向向量的区别"
+  },
+  {
+    "course_track": "ELECTIVE_A",
+    "id": "kb156-deep-120-a102",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-120-a102",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "非零投影方向的向量正交投影公式"
+  },
+  {
+    "course_track": "ELECTIVE_B",
+    "id": "kb156-deep-120-b104",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-120-b104",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "协方差矩阵的半正定性与非退化边界"
+  },
+  {
+    "course_track": "ELECTIVE_C",
+    "id": "kb156-deep-120-ec102",
+    "review_status": "REVIEW_PENDING",
+    "source_candidate_id": "hs-semantic-pilot-120-ec102",
+    "student_authoritative": false,
+    "teacher_solution_exposed": false,
+    "title": "反证法的逻辑前提与有效矛盾来源"
+  }
+]

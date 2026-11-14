@@ -1,0 +1,90 @@
+{
+  "added_teacher_only_manuscripts": 10,
+  "backend_passed": 66293,
+  "backend_skipped": 5,
+  "browser_pytest_passed": 2,
+  "browser_simulation_green_v07_passed": 9,
+  "date": "2026-11-14",
+  "editorial_with_teacher_draft": 114,
+  "editorial_without_teacher_draft": 125,
+  "environment": "AUTHORIZED_MACBOOK_AIR_ONLY",
+  "false_premise_rejections": 20,
+  "focused_passed": 273,
+  "formal_general_proof_certifications": 0,
+  "independent_bounded_sympy_cases": 40,
+  "initial_focused_failed": 10,
+  "initial_focused_passed": 263,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH156_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH156_BROWSER.log",
+      "sha256": "6c809ee27bac677884c423fd68990cd10cb86432538e027bc1a2903e63175a3f"
+    },
+    "FOCUSED": {
+      "bytes": 870,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH156_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH156_FOCUSED.log",
+      "sha256": "9be67cebf0a58ba5df280303caf9b54da154413ca26a0bf64653cf2b539e7952"
+    },
+    "FOCUSED_INITIAL": {
+      "bytes": 14321,
+      "exit_code": 1,
+      "exit_path": "docs/evaluation/logs/KB_BATCH156_FOCUSED_INITIAL.exit",
+      "exit_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "path": "docs/evaluation/logs/KB_BATCH156_FOCUSED_INITIAL.log",
+      "sha256": "0fff66504fcc38ba7eee94864648a4a08f21e6c48b9021514a0d75e6f1f6d426"
+    },
+    "MAC_FULL": {
+      "bytes": 153279,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH156_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH156_MAC_FULL.log",
+      "sha256": "5f2802ff8dc878b28a778ebb7f4a2d17c276dcfa8f360349b0fc25eea0c23447"
+    },
+    "NODE": {
+      "bytes": 20934,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH156_NODE.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH156_NODE.log",
+      "sha256": "eee7beea63c28083eeec143346e11b3ac1c5961e13d3cc3f796f31caadb7f3cb"
+    }
+  },
+  "mac_full_exit": 0,
+  "near_far_transfers": 20,
+  "node_passed": 111,
+  "numbered_syllabus_layout_markers_not_atomic_denominators": 315,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_course_completion_rate": null,
+  "old_unapproved_editorial_candidates": 239,
+  "original_teacher_examples": 20,
+  "positive_bounded_cases": 20,
+  "real_teacher_approved": 0,
+  "schema": "kb156-verified-mac-original-log-byte-evidence/1",
+  "source_commit": "f8f6bb41c8b4f7dce68b7dd3a15f2619596f287c",
+  "student_authoritative_releases": 0,
+  "student_free_steps_certified": 0,
+  "student_safe_hint_steps": 30,
+  "total_teacher_only_manuscripts": 155,
+  "warnings": [
+    "Historical source markers and 155 drafts do not determine official course atoms",
+    "Bounded symbolic witnesses do not certify theorems for all inputs",
+    "No teacher approval, no authoritative student retrieval",
+    "Teacher examples and raw licensed PDF source are not exposed through public API",
+    "Initial test failure preserved rather than erased"
+  ]
+}

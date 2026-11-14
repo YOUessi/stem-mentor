@@ -410,3 +410,8 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch155_scope_ma
 .venv/bin/python scripts/build_kb_batch155_eight_line_locks.py --check-mac
 PYTHONPATH=backend .venv/bin/python scripts/audit_kb_batch155_draft_readiness.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch155_draft_readiness.py
+
+# Batch156: ten original Mac source-locked manuscripts + 40 bounded exact guards.
+.venv/bin/python scripts/build_kb_batch156_lessons.py --check-mac
+.venv/bin/python scripts/check_kb_batch156_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch156_math_depth.py

@@ -1,0 +1,371 @@
+{
+  "cases": [
+    {
+      "assertion_is_true": true,
+      "basis": "并集的或是包含性析取，公共元素2必须保留",
+      "case": "union-retains-intersection",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-c202"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "交集仅含在两个集合中同时出现的2",
+      "case": "intersection-only-shared",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-c202"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "异或丢掉公共元素2，不能当作并集",
+      "case": "exclusive-or-is-not-union",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-c202"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "元素1仅在A中，不属于交集",
+      "case": "intersection-not-all-of-A",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-c202"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "空集中没有成员，交集为空",
+      "case": "empty-intersection",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c302"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "空集对并集是恒等元",
+      "case": "empty-union",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c302"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "空集与含零的单元素集合不同",
+      "case": "empty-not-singleton",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c302"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "有限全集之外的100不能算作补集",
+      "case": "complement-no-outside-U",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c302"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "x=2充分保证x平方为4",
+      "case": "forward-implication-at-2",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c304"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "x=-2满足后件但不满足前件",
+      "case": "reverse-counterexample-at-minus2",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c304"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "真实论域中后件x平方为4还包括x=-2，因此反向不成立",
+      "case": "reverse-claim-is-false",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c304"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "反例x=-2排除两命题同解集",
+      "case": "equivalence-is-false",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c304"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "单位圆π/6的纵坐标为1/2",
+      "case": "unit-circle-sine",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c310"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "第二象限正切为负且余弦非零",
+      "case": "unit-circle-tangent",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c310"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "π/2余弦为0，不允许实数除法",
+      "case": "zero-cosine-forbids-tangent",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c310"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "在π/6正切不等于正弦，不能读取同一个坐标",
+      "case": "tangent-not-sine",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c310"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "2+6+18+54=80",
+      "case": "finite-q3",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s05"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "q=1直接n倍首项",
+      "case": "finite-q1",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s05"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "q=1时有限和分式的分母严格为0",
+      "case": "q1-denominator-illegal",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s05"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "|q|>1时无限和公式不适用且不等于有限求和",
+      "case": "infinite-q3-not-finite",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s05"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "f(u)=u立方与u=2x-1复合，导数需乘2",
+      "case": "affine-chain-rule",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s08"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "a=0时g(x)=0即使外函数在0不可导",
+      "case": "zero-affine-factor",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s08"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "漏掉链式法则的内函数导数会得3而非6",
+      "case": "omitted-inner-factor",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s08"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "|x|在0处左右差商分别为1和-1",
+      "case": "absolute-cusp-not-differentiable",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s08"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "给定点代入点法式结果为0",
+      "case": "point-on-plane",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s11"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "方向与法向量正交才能与平面方向平行",
+      "case": "tangent-direction-orthogonal",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s11"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "零法向量使点法式恒为0，不能定义唯一平面",
+      "case": "zero-normal-must-be-nonzero",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s11"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "z=3方向水平的直线不会因此属于z=2的平面",
+      "case": "parallel-line-not-necessarily-contained",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-s11"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "正交投影到水平轴保留水平分量",
+      "case": "projection-on-x-axis",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-a102"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "投影系数为3/2且需乘以投影方向向量",
+      "case": "projection-oblique",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-a102"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "零向量不允许作投影公式分母",
+      "case": "zero-direction-forbidden",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-a102"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "投影向量不能用单个标量系数替代",
+      "case": "scalar-not-vector",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-a102"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "退化协方差矩阵二次型恰是非负平方",
+      "case": "psd-quadratic-identity",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-b104"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "半正定允许零特征值且仍必须对称",
+      "case": "symmetric-singular-psd",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-b104"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "行列式为-3无法满足二维半正定条件",
+      "case": "negative-determinant-forbidden",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-b104"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "行列式0的半正定矩阵不允许使用通常逆矩阵密度公式",
+      "case": "singular-matrix-not-invertible",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-b104"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "每个整数都有比它大1的整数，否定最大整数假设",
+      "case": "integer-successor",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-ec102"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "奇整数平方仍能写成2k+1",
+      "case": "odd-square-remains-odd",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-ec102"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "只在1至3检查通过，不能断言1至10也全成立",
+      "case": "finite-check-not-universal",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-ec102"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "若原前提自相矛盾，不能作为现实数学事实的独立认证",
+      "case": "inconsistent-hypotheses-cannot-certify",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-120-ec102"
+    }
+  ],
+  "general_theorems_formally_proven": 0,
+  "invalid_premise_or_false_generalization_rejected": 20,
+  "legal_or_boundary_true": 20,
+  "schema": "kb156-bounded-exact-independent-oracle/1",
+  "student_free_steps_verified": 0,
+  "teacher_approved": 0,
+  "verified_bounded_cases": 40
+}

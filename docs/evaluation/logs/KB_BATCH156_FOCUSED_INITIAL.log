@@ -1,0 +1,293 @@
+........................................................................ [ 26%]
+........................................................................ [ 52%]
+........................................................................ [ 79%]
+...................................FFFFFFFFFF............                [100%]
+=================================== FAILURES ===================================
+____ test_editor_only_index_never_leaks_teacher_answer[\u96c6\u5408\u5e76] _____
+
+q = '集合并'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '集合并', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+_______ test_editor_only_index_never_leaks_teacher_answer[\u7a7a\u96c6] ________
+
+q = '空集'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '空集', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+_ test_editor_only_index_never_leaks_teacher_answer[\u5fc5\u8981\u6761\u4ef6] __
+
+q = '必要条件'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '必要条件', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+_ test_editor_only_index_never_leaks_teacher_answer[\u4e09\u89d2\u51fd\u6570] __
+
+q = '三角函数'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '三角函数', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+_ test_editor_only_index_never_leaks_teacher_answer[\u7b49\u6bd4\u6570\u5217] __
+
+q = '等比数列'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '等比数列', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+_ test_editor_only_index_never_leaks_teacher_answer[\u590d\u5408\u6c42\u5bfc] __
+
+q = '复合求导'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '复合求导', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+____ test_editor_only_index_never_leaks_teacher_answer[\u6cd5\u5411\u91cf] _____
+
+q = '法向量'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '法向量', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+_ test_editor_only_index_never_leaks_teacher_answer[\u6b63\u4ea4\u6295\u5f71] __
+
+q = '正交投影'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '正交投影', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+____ test_editor_only_index_never_leaks_teacher_answer[\u534f\u65b9\u5dee] _____
+
+q = '协方差'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '协方差', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+____ test_editor_only_index_never_leaks_teacher_answer[\u53cd\u8bc1\u6cd5] _____
+
+q = '反证法'
+
+    @pytest.mark.parametrize("q",[
+     "集合并","空集","必要条件","三角函数","等比数列","复合求导",
+     "法向量","正交投影","协方差","反证法"])
+    def test_editor_only_index_never_leaks_teacher_answer(q):
+>       hits=index.editor_preview_search(q,scope="EDITOR_LOCAL",limit=50)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch156_math_depth.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+backend/app/kb_batch156_index.py:46: in editor_preview_search
+    validate_query(query,limit)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+query = '反证法', limit = 50
+
+    def validate_query(query,limit):
+        if not isinstance(query,str) or not 1<=len(query.strip())<=160 or BAD.search(query):
+            raise ValueError("invalid search input")
+        if type(limit) is not int or not 1<=limit<=20:
+>           raise ValueError("invalid search limit")
+E           ValueError: invalid search limit
+
+backend/app/kb_batch147_index.py:49: ValueError
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u96c6\u5408\u5e76]
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u7a7a\u96c6]
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u5fc5\u8981\u6761\u4ef6]
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u4e09\u89d2\u51fd\u6570]
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u7b49\u6bd4\u6570\u5217]
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u590d\u5408\u6c42\u5bfc]
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u6cd5\u5411\u91cf]
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u6b63\u4ea4\u6295\u5f71]
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u534f\u65b9\u5dee]
+FAILED tests/test_kb_batch156_math_depth.py::test_editor_only_index_never_leaks_teacher_answer[\u53cd\u8bc1\u6cd5]
+10 failed, 263 passed, 1 warning in 3.96s
