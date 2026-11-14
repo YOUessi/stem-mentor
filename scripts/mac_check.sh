@@ -310,6 +310,13 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch144_seven_tr
 .venv/bin/python scripts/check_kb_batch146_math.py --check
 .venv/bin/python scripts/build_kb_batch146_crosswalk.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch146_math_depth.py
+# Batch147: ten source-hashed original math lessons, exact finite oracles and privacy guard.
+.venv/bin/python scripts/build_kb_batch147_lessons.py --check-mac
+.venv/bin/python scripts/check_kb_batch147_math.py --check
+.venv/bin/python scripts/build_kb_batch147_crosswalk.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch147_math_depth.py
+.venv/bin/python scripts/audit_kb_batch147_source_edges.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch147_source_edges.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
