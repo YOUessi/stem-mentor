@@ -1,0 +1,147 @@
+{
+  "locks": [
+    {
+      "course_track": "ELECTIVE_E",
+      "draft_id": "kb138-deep-120-ee104",
+      "end_line": 17,
+      "evidence_status": "MAC_PDFKIT_REHASHED_EDITORIAL_SEMANTICS_PENDING",
+      "formal_general_proof_certified": false,
+      "printed_page": 73,
+      "source_candidate_id": "hs-semantic-pilot-120-ee104",
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "start_line": 16,
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "draft_id": "kb138-deep-120-ee106",
+      "end_line": 20,
+      "evidence_status": "MAC_PDFKIT_REHASHED_EDITORIAL_SEMANTICS_PENDING",
+      "formal_general_proof_certified": false,
+      "printed_page": 73,
+      "source_candidate_id": "hs-semantic-pilot-120-ee106",
+      "source_line_sha256": [
+        "ac9167496e0cf1fea46a477fd36a8793268f879a025af230a43a4271d4e29bc8",
+        "6a45896a3c53d4848c09b5b335e3987385d32b6329af65fb7405aa811ea431f6"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_span_sha256": "f7459c2367e3f5128b3d4cfc83a92277ddc73504920b1de446db2ccb2770e97c",
+      "start_line": 19,
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_B",
+      "draft_id": "kb138-deep-121-b203",
+      "end_line": 20,
+      "evidence_status": "MAC_PDFKIT_REHASHED_EDITORIAL_SEMANTICS_PENDING",
+      "formal_general_proof_certified": false,
+      "printed_page": 59,
+      "source_candidate_id": "hs-semantic-pilot-121-b203",
+      "source_line_sha256": [
+        "8f848ba298d303b15597e491ffe642698505aebf33b6dba7384f8a795e1bc52b"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_span_sha256": "8f848ba298d303b15597e491ffe642698505aebf33b6dba7384f8a795e1bc52b",
+      "start_line": 20,
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_B",
+      "draft_id": "kb138-deep-121-b205",
+      "end_line": 22,
+      "evidence_status": "MAC_PDFKIT_REHASHED_EDITORIAL_SEMANTICS_PENDING",
+      "formal_general_proof_certified": false,
+      "printed_page": 60,
+      "source_candidate_id": "hs-semantic-pilot-121-b205",
+      "source_line_sha256": [
+        "9debad935768d20cb0fbe2007ef029501db13ae6b7fc69fb593f7993c9c17c74"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_span_sha256": "9debad935768d20cb0fbe2007ef029501db13ae6b7fc69fb593f7993c9c17c74",
+      "start_line": 22,
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_C",
+      "draft_id": "kb138-deep-121-ec202",
+      "end_line": 12,
+      "evidence_status": "MAC_PDFKIT_REHASHED_EDITORIAL_SEMANTICS_PENDING",
+      "formal_general_proof_certified": false,
+      "printed_page": 67,
+      "source_candidate_id": "hs-semantic-pilot-121-ec202",
+      "source_line_sha256": [
+        "8b8992d365f38187b8c216db1b82ce01f2b9c7d1059b263b6275c19131d9fc09"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_span_sha256": "8b8992d365f38187b8c216db1b82ce01f2b9c7d1059b263b6275c19131d9fc09",
+      "start_line": 12,
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_C",
+      "draft_id": "kb138-deep-121-ec204",
+      "end_line": 11,
+      "evidence_status": "MAC_PDFKIT_REHASHED_EDITORIAL_SEMANTICS_PENDING",
+      "formal_general_proof_certified": false,
+      "printed_page": 68,
+      "source_candidate_id": "hs-semantic-pilot-121-ec204",
+      "source_line_sha256": [
+        "66a0df31cff454ef4b76d50a496a75dbd82e4cdbfb2429016aec9cc4047e1fa4"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_span_sha256": "66a0df31cff454ef4b76d50a496a75dbd82e4cdbfb2429016aec9cc4047e1fa4",
+      "start_line": 11,
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "draft_id": "kb138-deep-121-ed201",
+      "end_line": 8,
+      "evidence_status": "MAC_PDFKIT_REHASHED_EDITORIAL_SEMANTICS_PENDING",
+      "formal_general_proof_certified": false,
+      "printed_page": 71,
+      "source_candidate_id": "hs-semantic-pilot-121-ed201",
+      "source_line_sha256": [
+        "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_span_sha256": "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f",
+      "start_line": 8,
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "draft_id": "kb138-deep-121-ed202",
+      "end_line": 8,
+      "evidence_status": "MAC_PDFKIT_REHASHED_EDITORIAL_SEMANTICS_PENDING",
+      "formal_general_proof_certified": false,
+      "printed_page": 72,
+      "source_candidate_id": "hs-semantic-pilot-121-ed202",
+      "source_line_sha256": [
+        "3b3dfa10c8e4b4237a8c5bc9c49a4371ae15b578f36901a7679617ecaec09ea1"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_span_sha256": "3b3dfa10c8e4b4237a8c5bc9c49a4371ae15b578f36901a7679617ecaec09ea1",
+      "start_line": 8,
+      "student_authoritative": false,
+      "teacher_review": "REVIEW_PENDING"
+    }
+  ],
+  "official_atom_denominator": null,
+  "original_mac_rehash_complete": true,
+  "schema": "kb155-eight-historical-line-lock-reconciliation/1",
+  "student_authoritative": 0,
+  "teacher_approved": 0
+}

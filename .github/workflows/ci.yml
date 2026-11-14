@@ -393,6 +393,14 @@ jobs:
       # fail closed on forged approvals, missing evidence and fake pass claims.
       - run: python scripts/build_kb_batch154_execution_manifest.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch154_archived_evidence.py
+      # KB155: reproducible offline 61-page source review matrix and 15 exact
+      # independent math/counterexample pairs; never certify pending material.
+      - run: python scripts/build_kb_batch155_review_matrix.py --check
+      - run: python scripts/check_kb_batch155_exact_cases.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch155_scope_math_integrity.py
+      - run: python scripts/build_kb_batch155_eight_line_locks.py --check
+      - run: PYTHONPATH=backend python scripts/audit_kb_batch155_draft_readiness.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch155_draft_readiness.py
       # Fail fast on syntax errors before the long Python/Node/browser suite.
       - run: bash -n scripts/mac_check.sh scripts/mac_browser_check.sh
       # Tests now import both 'app' (backend package root) and the versioned

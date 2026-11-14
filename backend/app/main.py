@@ -431,3 +431,10 @@ def kb154_review_coverage():
     """145 pending manuscripts; aggregate-only and not officially approved."""
     from .kb_batch154_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb155-source-readiness")
+def kb155_source_readiness():
+    """Metadata-only K00 source obligations; never publish pending lessons."""
+    from .kb_batch155_review_status import public_status
+    return public_status()
