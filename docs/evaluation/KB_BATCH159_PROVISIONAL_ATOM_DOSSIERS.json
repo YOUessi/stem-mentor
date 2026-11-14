@@ -1,0 +1,272 @@
+{
+  "candidate_dossiers": 10,
+  "dossiers": [
+    {
+      "candidate_id": "hs-semantic-pilot-124-c501",
+      "counterexample_review": "表格仅列(0,0)、(1,1)时，f(x)=x与g(x)=x²在观测点一致，但在x=2分别取2和4，因此不能从这两点认定曲线唯一。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "不同表示之间的等价只在同一个定义域和同一取值规则下成立；从有限采样反推解析式必须附加模型类别等假设，不能宣称唯一。",
+      "module_prerequisites": [],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [],
+      "proposed_kind": "Method",
+      "proposed_math_objective": "函数f:D→R须对每个x∈D指定唯一f(x)。解析式是定义规则的一种写法；表格记录所列点的对应值；图像是满足y=f(x)的全体有序数对组成的集合，有限表格本身不能唯一决定整个函数。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "5f38377ec5ea7c88c09b4ce847a77aa9f474aff6fc12ef27c11f47c6df9f711d"
+      ],
+      "source_printed_page": 19,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "5f38377ec5ea7c88c09b4ce847a77aa9f474aff6fc12ef27c11f47c6df9f711d",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c502",
+      "counterexample_review": "a=1时f(x)=1，对任意x₂>x₁都有f(x₂)=f(x₁)，不得声称严格递增；a=-2不允许对x=1/2取实数幂。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "单调性证明依赖正底数实指数的构造、a^h>1(h>0,a>1)以及对0<a<1的倒数关系；仅凭有限描点不能证明全域。",
+      "module_prerequisites": [],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [],
+      "proposed_kind": "Theorem",
+      "proposed_math_objective": "设a>0且a≠1，f(x)=a^x在R上正值且连续；若a>1则严格递增，若0<a<1则严格递减，值域(0,+∞)，通过(0,1)。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "e930c7837461a569746d654a387e16c30b1a4734078ed77a5cba6e0183588255"
+      ],
+      "source_printed_page": 20,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "e930c7837461a569746d654a387e16c30b1a4734078ed77a5cba6e0183588255",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c503",
+      "counterexample_review": "log_2(-4)在实数域无定义；log_(1/2) 4=-2，不能沿用底数>1的递增关系。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "使用log_a(xy)=log_a x+log_a y必须同时保证x>0,y>0；乘积正不等于每个因子合法。",
+      "module_prerequisites": [
+        "hs-semantic-pilot-124-c502"
+      ],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [
+        "hs-semantic-pilot-124-c504"
+      ],
+      "proposed_kind": "Concept",
+      "proposed_math_objective": "给定a>0、a≠1，log_a x定义为满足a^y=x的唯一实数y；其定义域x>0、值域R，且a>1时递增、0<a<1时递减。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "4e2e9721f626c9ed37532262546d4c23a80a5bf5150308517daff4e49ede9e2c"
+      ],
+      "source_printed_page": 20,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "4e2e9721f626c9ed37532262546d4c23a80a5bf5150308517daff4e49ede9e2c",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c504",
+      "counterexample_review": "a=1时E_a(0)=E_a(1)=1非单射；y=−2时log_2 y没有实值，故2^(log_2(−2))无实数意义。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "指数函数严格单调且值域正实数，才得到单射与满射；a=1时值恒为1不单射，不能构造整个(0,∞)上的反函数。",
+      "module_prerequisites": [
+        "hs-semantic-pilot-124-c502",
+        "hs-semantic-pilot-124-c503"
+      ],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [
+        "hs-semantic-pilot-124-c503"
+      ],
+      "proposed_kind": "Theorem",
+      "proposed_math_objective": "对a>0且a≠1，E_a:R→(0,∞),E_a(x)=a^x为双射；L_a:(0,∞)→R,L_a(y)=log_a y为其逆映射。故L_a(E_a(x))=x对x∈R成立，而E_a(L_a(y))=y仅对y>0成立。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "e0cf4c96cfc79d70b06243ce35a30590b95956b4ce536dadec0eaa42dbae6811"
+      ],
+      "source_printed_page": 21,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "e0cf4c96cfc79d70b06243ce35a30590b95956b4ce536dadec0eaa42dbae6811",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c505",
+      "counterexample_review": "tan(π/2)无定义，也不能因为tan(0)=tan(π)=0便说tan在[0,π]连续；中间存在极点。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "单调区间与零点依据单位圆及连续性；tan的分母不得为零，不能跨越极点宣称正切连续。",
+      "module_prerequisites": [
+        "hs-semantic-pilot-124-c501"
+      ],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [],
+      "proposed_kind": "Method",
+      "proposed_math_objective": "正弦与余弦是R上的连续2π周期函数；正弦零点kπ、余弦零点π/2+kπ。正切tan x=sin x/cos x只在x≠π/2+kπ有定义，其最小正周期是π。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "229741b5852a46cc94929debbd2878ead4add5e1b50e94c26d2f2bb2d2fa9235"
+      ],
+      "source_printed_page": 21,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "229741b5852a46cc94929debbd2878ead4add5e1b50e94c26d2f2bb2d2fa9235",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c506",
+      "counterexample_review": "A=0或ω=0时y是常函数，任意T>0都满足周期关系，但没有最小正周期；不能计算2π/0。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "模型须是单频非退化正弦；多频之和可能无共同最小周期，频率参数与测量单位必须匹配。",
+      "module_prerequisites": [
+        "hs-semantic-pilot-124-c505"
+      ],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [],
+      "proposed_kind": "Method",
+      "proposed_math_objective": "y(x)=A sin(ωx+φ)+b，当A≠0且ω≠0时，振幅|A|、最小正周期T=2π/|ω|、中线y=b；水平相位平移量为−φ/ω（需说明选定相位分支）。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "d26b96953f83a8fcafc23621c84a6b53a7394d13061b08669e468d8bea6bce23"
+      ],
+      "source_printed_page": 22,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "d26b96953f83a8fcafc23621c84a6b53a7394d13061b08669e468d8bea6bce23",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c507",
+      "counterexample_review": "把cos(α−β)误作cosα−cosβ，令α=β=π/3左边为1、右边为0。公式自身在cosβ=0仍成立。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "二维刚性旋转保持向量长度与点积，单位圆的参数角差定义须与旋转方向一致；不允许借用需要除以cos的正切变形而丢失极点。",
+      "module_prerequisites": [
+        "hs-semantic-pilot-124-c505"
+      ],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [
+        "hs-semantic-pilot-123-c409"
+      ],
+      "proposed_kind": "Theorem",
+      "proposed_math_objective": "对任意实数α、β，cos(α−β)=cosα cosβ+sinα sinβ；公式由二维旋转保内积得到，不要求cosα、cosβ、sinα、sinβ非零。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "ba449b3cffb1f514e3cffca65dad24497570039aa4f52f7b975c79bbfb105015"
+      ],
+      "source_printed_page": 22,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "ba449b3cffb1f514e3cffca65dad24497570039aa4f52f7b975c79bbfb105015",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c508",
+      "counterexample_review": "α=β=π/2时sinα+sinβ=2，而错误公式sin(α+β)=sinπ=0；未含因子2和半角的替换不成立。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "依赖已经证明的正弦和角、差角恒等式，不可把sinαsinβ当作sin(αβ)；不使用限制tan定义域的分式。",
+      "module_prerequisites": [
+        "hs-semantic-pilot-124-c507"
+      ],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [],
+      "proposed_kind": "Method",
+      "proposed_math_objective": "对任意实角u,v，sin(u+v)+sin(u−v)=2sin u cos v；sin(u+v)−sin(u−v)=2cos u sin v。令u=(α+β)/2、v=(α−β)/2，可得sinα+sinβ=2sin((α+β)/2)cos((α−β)/2)。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "b370665847fa7deab42f7e1a9c43ec248e6a5ae7142fc8810eb11221f8c53f63"
+      ],
+      "source_printed_page": 22,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "b370665847fa7deab42f7e1a9c43ec248e6a5ae7142fc8810eb11221f8c53f63",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c509",
+      "counterexample_review": "f(x)=x²在0处有零点但两侧函数值均非负，故不穿过x轴；f(x)=1/(x−1)在x=1处根本不定义。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "“函数图像交x轴”是集合意义的相交，包括切触；对任意实函数定义零点不需要连续性。使用介值定理判根则另需区间连续与异号条件。",
+      "module_prerequisites": [
+        "hs-semantic-pilot-124-c501"
+      ],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [],
+      "proposed_kind": "Concept",
+      "proposed_math_objective": "对实函数f:D→R，x₀为零点当且仅当x₀∈D并且f(x₀)=0；这等价于x₀是方程f(x)=0在D内的根，并等价于图像包含点(x₀,0)，不要求图像穿过坐标轴。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "aa5f7bcea5d2b608679c40b919d5a2fc75a6cbfb50cc7da59a545b3b4b7525c8"
+      ],
+      "source_printed_page": 22,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "aa5f7bcea5d2b608679c40b919d5a2fc75a6cbfb50cc7da59a545b3b4b7525c8",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-124-c510",
+      "counterexample_review": "速度60 km/h乘时间30 min若直接算60×30=1800 km则单位错；30 min应换为0.5 h，路程为30 km。",
+      "course_track": "COMPULSORY",
+      "domain_condition_review": "模型的参数估计依赖采样方案与噪声假设；时间线性模型只在恒定速度、单位匹配且不超出适用区间等条件下成立。",
+      "module_prerequisites": [
+        "hs-semantic-pilot-124-c501",
+        "hs-semantic-pilot-124-c506"
+      ],
+      "official_atom_count_contribution": null,
+      "official_atom_id": null,
+      "potential_semantic_overlap_ids": [],
+      "proposed_kind": "Method",
+      "proposed_math_objective": "建立应用函数模型须定义可测输入x及单位U、输出y及单位V、适用域D和模型f:D→V，并检验关系量纲一致、参数可辨识、残差与外推风险；计算拟合不能直接证明因果。",
+      "proposed_prerequisites": [],
+      "source_line_sha256": [
+        "211c94267074ab8d0539cf182f3ad7cb5cc82ea84ff5e920de2e327fdc5feba4"
+      ],
+      "source_printed_page": 23,
+      "source_requirement_human_approval": "PENDING",
+      "source_span_sha256": "211c94267074ab8d0539cf182f3ad7cb5cc82ea84ff5e920de2e327fdc5feba4",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "uniqueness_human_decision": "PENDING"
+    }
+  ],
+  "national_coverage_rate": null,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "overlapping_editorial_dossiers": 3,
+  "review_pages": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "schema": "kb159-provisional-atom-dossiers-not-official/1",
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "unique_official_atoms": null
+}

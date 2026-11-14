@@ -428,3 +428,10 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch157_math_dep
 .venv/bin/python scripts/build_kb_batch158_scope_ledger.py --check
 .venv/bin/python scripts/build_kb_batch158_page_triage.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch158_math_depth.py tests/test_kb_batch158_page_triage.py
+
+
+# KB159: ten coherent compulsory-function deep manuscripts, original PDFKit SHA
+# replay, provisional K00 semantic dossiers and exact independent math guards.
+.venv/bin/python scripts/build_kb_batch159_functions.py --check-mac
+.venv/bin/python scripts/check_kb_batch159_math.py --check
+PYTHONPATH=backend:. .venv/bin/python -m pytest -q backend/tests/test_kb_batch159_functions.py
