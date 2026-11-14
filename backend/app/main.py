@@ -438,3 +438,9 @@ def kb155_source_readiness():
     """Metadata-only K00 source obligations; never publish pending lessons."""
     from .kb_batch155_review_status import public_status
     return public_status()
+
+@app.get("/api/knowledge/kb156-review-coverage")
+def kb156_review_coverage():
+    """Only non-authoritative coverage metadata; no draft body or teacher answer."""
+    from .kb_batch156_index import public_coverage
+    return public_coverage()
