@@ -1,0 +1,24 @@
+KB155 PASS: 61 source pages / 315 numbered markers / 32 CDE proposals / 239 leads / 145 drafts; official denominators UNKNOWN
+KB155: eight missing source-line locks reconciled; source semantics/teacher review pending.
+KB155 exact finite: 30/30; general proof 0
+KB155: 145 editor-only manuscripts structurally readable; no theorem certification, teacher approval, or official completion.
+........................................................................ [  7%]
+........................................................................ [ 15%]
+........................................................................ [ 23%]
+........................................................................ [ 31%]
+........................................................................ [ 39%]
+........................................................................ [ 47%]
+........................................................................ [ 54%]
+........................................................................ [ 62%]
+........................................................................ [ 70%]
+........................................................................ [ 78%]
+........................................................................ [ 86%]
+........................................................................ [ 94%]
+.....................................................                    [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+917 passed, 1 warning in 7.44s

@@ -1,0 +1,89 @@
+{
+  "browser_pytest_passed": 2,
+  "chrome_simulated_checks": 9,
+  "current_math_conflicts_pending": 10,
+  "date": "2026-11-14",
+  "drafts_without_direct_line_sha_before_reconciliation": 43,
+  "editorial_source_leads": 239,
+  "environment": "AUTHORIZED_MACBOOK_AIR_ONLY",
+  "focused_passed": 917,
+  "free_text_student_steps_certified": 0,
+  "general_formal_theorem_certificates": 0,
+  "historical_drafts_reconciled_to_existing_source_locks": 41,
+  "historical_proof_steps_without_general_certification": 538,
+  "historical_review_audit_null_source_sha": 41,
+  "independently_checked_exact_math_cases": 30,
+  "invalid_premise_cases": 15,
+  "known_limits": [
+    "30 exact finite cases do not constitute general theorem proofs",
+    "No new complete manuscripts this iteration: 145 previous drafts remain teacher-only",
+    "Real teacher official knowledge atom denominators still unresolved",
+    "Full Mac source replay available only locally; CI verifies immutable hashes",
+    "Physical iPad is not tested by simulated Chrome interactions",
+    "Initial test expectation failed for 41 old null source_sha fields; reconciled and re-tested; initial failed console output not archived"
+  ],
+  "legal_cases": 15,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH155_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH155_BROWSER.log",
+      "sha256": "a11788756bc66eb4d736c3ed5a03a6c0f67f5fbbfb11ac92e5f728fe92488c85"
+    },
+    "FOCUSED": {
+      "bytes": 1977,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH155_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH155_FOCUSED.log",
+      "sha256": "a2af3f4401c804f9afc5096e8bf5cffa837a947f78a1302f360cdf9b8417040c"
+    },
+    "MAC_FULL": {
+      "bytes": 152225,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH155_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH155_MAC_FULL.log",
+      "sha256": "57cd6dd402f14968e71c1be6a0aff55f2b51684ec267ba3e58a8be28d2388482"
+    },
+    "NODE": {
+      "bytes": 20929,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH155_NODE.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH155_NODE.log",
+      "sha256": "f5393e1eaf699e5238321313036f0c1cf75f1b3ccc9e710febe39bb580037ad8"
+    }
+  },
+  "mac_backend_passed": 66293,
+  "mac_backend_skipped": 5,
+  "matched_pending_drafts": 104,
+  "missing_pending_drafts": 135,
+  "new_mac_rehashed_draft_source_locks": 8,
+  "new_teacher_drafts_this_batch": 0,
+  "node_passed": 111,
+  "numbered_source_markers_not_atoms": 315,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_course_completion_rate": null,
+  "official_source_pdf_pages": 188,
+  "old_proposal_drafts_with_inherited_line_sha": 35,
+  "provisional_41_atom_proposals": 41,
+  "schema": "kb155-authentic-mac-test-and-provenance-record/1",
+  "source_commit": "4fa4737503e3092c0980e8f2881671b11ba92927",
+  "source_pages_indexed": 61,
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "teacher_only_drafts": 145,
+  "teacher_solution_exposed_to_students": false,
+  "unnumbered_CDE_proposals_not_atoms": 32
+}

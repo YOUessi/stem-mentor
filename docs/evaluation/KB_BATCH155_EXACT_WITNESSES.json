@@ -1,0 +1,312 @@
+{
+  "arbitrary_student_steps_verified": 0,
+  "case_pairs": 15,
+  "exact_finite_checks": 30,
+  "formal_general_proofs_certified": 0,
+  "invalid_premise_witnesses": 15,
+  "legal_witnesses": 15,
+  "schema": "kb155-finite-independent-math-counterexamples/1",
+  "teacher_approved": 0,
+  "witnesses": [
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "logarithm_change_of_base",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "8=2^3, so change of base with both positive non-unit bases gives 3.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "logarithm_change_of_base",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Base 1 is forbidden: logarithms to base 1 are not invertible.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "IVT_zero_existence_not_uniqueness",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Polynomial is continuous and exactly opposite signed at 1/2,3/4.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "IVT_zero_existence_not_uniqueness",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "1/x has opposite endpoint signs but a pole at 0 and no zero.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "squaring_extraneous_root",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "x=3 satisfies the original radical equation.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "squaring_extraneous_root",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "x=0 satisfies the squared equation but violates the original sign requirement.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "quotient_derivative_denominator",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Derivative evaluated at 2 with a nonzero quotient denominator equals -1.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "quotient_derivative_denominator",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "At x=1 the original quotient is undefined; no derivative at that point.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "quadratic_formula_nonzero_a",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Nonzero quadratic leading coefficient and exact factorization yield roots 1,2.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "quadratic_formula_nonzero_a",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "When a=0 the expression is linear: dividing by 2a is illegal.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "OLS_intercept_positive_Sxx",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "With intercept and nonzero centered x variance, b1=Sxy/Sxx=2.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "OLS_intercept_positive_Sxx",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Constant predictors give Sxx=0, hence slope is not uniquely identified.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "conditional_probability_positive_denominator",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "P(A|B)=P(A∩B)/P(B)=1/2 when P(B)=1/2.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "conditional_probability_positive_denominator",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "P(B)=0 has undefined conditional probability under the ratio definition.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "binomial_parameter_bounds",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Var(X)=np(1-p) gives 4/3 for n=6,p=1/3.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "binomial_parameter_bounds",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "p=4/3 is outside [0,1] and cannot parameterize a binomial trial.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "invertible_matrix_nonzero_determinant",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "The invertible 2x2 example has determinant -1 and exact identity check.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "invertible_matrix_nonzero_determinant",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Singular matrix has determinant zero, so inverse formula is invalid.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "geometric_sum_q_one_branch",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "1+2+4+8=15, agreeing with the finite geometric sum for q=2.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "geometric_sum_q_one_branch",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "At q=1 the quotient formula becomes 0/0; sum is n times first term.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "probability_inclusion_exclusion",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Overlapping equally likely events have union probability 3/4.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "probability_inclusion_exclusion",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Blindly adding P(A)+P(B) ignores the nonempty intersection.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "arithmetic_sequence_constant_difference",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Five-term progression 2,5,8,11,14 has fixed difference 3 and sum 40.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "arithmetic_sequence_constant_difference",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Sequence 2,5,9 has differences 3 and 4 and is not arithmetic.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "circle_radius_and_geometry",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Point (5,-1) lies exactly on the circle centered at (2,-1), radius 3.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "circle_radius_and_geometry",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "A radius of -3 is inadmissible even though squaring would produce 9.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "multiply_inequality_by_negative",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "For x=-1, -2x<4 agrees with x>-2, after reversing inequality.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "multiply_inequality_by_negative",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "For x=-3, false original inequality refutes failure to reverse sign.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "angle_between_nonzero_vectors",
+      "condition_class": "EXACT_FINITE_WITNESS",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "Two nonzero vectors with zero dot product have right angle.",
+      "sample_limited": true,
+      "teacher_approved": false
+    },
+    {
+      "arbitrary_student_step_verified": false,
+      "case_id": "angle_between_nonzero_vectors",
+      "condition_class": "INVALID_PRECONDITION_REJECTED",
+      "exact_check": true,
+      "formal_general_proof_certified": false,
+      "original_independent_rationale": "The zero vector has no defined angle: denominator of cosine formula is zero.",
+      "sample_limited": true,
+      "teacher_approved": false
+    }
+  ]
+}

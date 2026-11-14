@@ -398,3 +398,15 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch154_math_dep
 # Batch154: replay archived real Mac stdout+exit SHA and reject evidence forgery.
 .venv/bin/python scripts/build_kb_batch154_execution_manifest.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch154_archived_evidence.py
+
+# Batch155: 315 layout marker + 32 unnumbered CDE obligations across 61 pages,
+# 239 editorial leads/145 pending drafts; fail-closed review and 30 exact guards.
+.venv/bin/python scripts/build_kb_batch155_review_matrix.py --check
+.venv/bin/python scripts/check_kb_batch155_exact_cases.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch155_scope_math_integrity.py
+
+# Batch155: 8 previously source-line-unlocked candidates rehashed against Mac original,
+# reconcile 145 manuscript schema/provenance fields without certifying math or teacher approval.
+.venv/bin/python scripts/build_kb_batch155_eight_line_locks.py --check-mac
+PYTHONPATH=backend .venv/bin/python scripts/audit_kb_batch155_draft_readiness.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch155_draft_readiness.py
