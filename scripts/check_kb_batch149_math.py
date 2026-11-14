@@ -51,7 +51,7 @@ def oracle():
     put(3,"positive-probability mutual exclusion cannot imply independence",
         S.Rational(0)!=S.Rational(1,2)*S.Rational(1,2),True)
     put(3,"conditional probability on zero probability impossible",
-        S.Rational(0)==0,True)
+        S.Rational(0,0) is S.nan,True)
     # 4, Bayes partitions, true denominators, invalid overlaps.
     pos=S.Rational(1,100)*S.Rational(9,10)+S.Rational(99,100)*S.Rational(1,10)
     put(4,"screening posterior is 1/12",
@@ -61,7 +61,8 @@ def oracle():
         S.simplify((S.Rational(3,5)*S.Rational(1,10))/pos2)==S.Rational(3,4))
     put(4,"overlapping branches double-count sample",
         len({1,2}|{2,3})!=len({1,2})+len({2,3}),True)
-    put(4,"zero-evidence denominator forbids posterior division",pos>0 and S.Integer(0)==0,True)
+    put(4,"zero-evidence denominator forbids posterior division",
+        S.Rational(0,0) is S.nan,True)
     # 5, convergence boundedness; finite witnesses cannot certify general proof.
     put(5,"reciprocals after N are below epsilon tenth",
         all(S.Rational(1,n)<S.Rational(1,10) for n in range(11,100)))
