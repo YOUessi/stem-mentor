@@ -394,3 +394,7 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch154_scope_gr
 .venv/bin/python scripts/build_kb_batch154_crosswalk.py --check
 .venv/bin/python scripts/check_kb_batch154_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch154_math_depth.py
+
+# Batch154: replay archived real Mac stdout+exit SHA and reject evidence forgery.
+.venv/bin/python scripts/build_kb_batch154_execution_manifest.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch154_archived_evidence.py

@@ -77,7 +77,13 @@ def run():
     put(8,'six of eight valid answers equals 75 percent',Fraction(6,8)==Fraction(3,4))
     put(8,'frequency categories sum 1',sum(Fraction(z,10) for z in (3,5,2))==1)
     put(8,'including two nonresponses changes frequency denominator',Fraction(6,8)!=Fraction(6,10),True)
-    put(8,'empty valid response frequency undefined',0==sum(()),True)
+    # An empty survey has a zero denominator; a 0/0 fraction must be rejected.
+    try:
+        Fraction(0, 0)
+        empty_denominator_rejected = False
+    except ZeroDivisionError:
+        empty_denominator_rejected = True
+    put(8,'empty valid response frequency undefined',empty_denominator_rejected,True)
     # 10. Affine vs perspective image; exact algebra domain.
     u,v=S.symbols('u v',real=True)
     put(9,'affine image y1 to y1 and y2 to y4',3*1-2==1 and 3*2-2==4)
