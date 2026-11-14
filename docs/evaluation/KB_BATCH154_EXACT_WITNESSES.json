@@ -1,0 +1,411 @@
+{
+  "formal_general_proofs_certified": 0,
+  "free_student_steps_verified": 0,
+  "legal_or_boundary": 20,
+  "n": 40,
+  "negative": 20,
+  "schema": "kb154-exact-finite-math-evidence/1",
+  "teacher_approved": 0,
+  "witnesses": [
+    {
+      "case": "piecewise strict endpoint f1",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-122-c307",
+      "teacher_approved": false,
+      "witness_id": "kb154-01-1"
+    },
+    {
+      "case": "piecewise interior f0",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-122-c307",
+      "teacher_approved": false,
+      "witness_id": "kb154-01-2"
+    },
+    {
+      "case": "piecewise one-sided jump at zero",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-122-c307",
+      "teacher_approved": false,
+      "witness_id": "kb154-01-3"
+    },
+    {
+      "case": "wrong branch at endpoint must reject",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-122-c307",
+      "teacher_approved": false,
+      "witness_id": "kb154-01-4"
+    },
+    {
+      "case": "polynomial endpoint signs and root existence",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-122-c311",
+      "teacher_approved": false,
+      "witness_id": "kb154-02-1"
+    },
+    {
+      "case": "IVT not uniqueness: cubic with three zeros",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-122-c311",
+      "teacher_approved": false,
+      "witness_id": "kb154-02-2"
+    },
+    {
+      "case": "discontinuous 1/x has no zero despite endpoint sign",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-122-c311",
+      "teacher_approved": false,
+      "witness_id": "kb154-02-3"
+    },
+    {
+      "case": "endpoint zero fails strict opposite signs",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-122-c311",
+      "teacher_approved": false,
+      "witness_id": "kb154-02-4"
+    },
+    {
+      "case": "log2 of8 equals exact3",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-123-c407",
+      "teacher_approved": false,
+      "witness_id": "kb154-03-1"
+    },
+    {
+      "case": "natural-base change yields log4 of 1/8 = -3/2",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-123-c407",
+      "teacher_approved": false,
+      "witness_id": "kb154-03-2"
+    },
+    {
+      "case": "base1 logarithm is invalid",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-123-c407",
+      "teacher_approved": false,
+      "witness_id": "kb154-03-3"
+    },
+    {
+      "case": "argument0 logarithm not finite real",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-123-c407",
+      "teacher_approved": false,
+      "witness_id": "kb154-03-4"
+    },
+    {
+      "case": "two fair dice have 36 equiprobable outcomes",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-123-c411",
+      "teacher_approved": false,
+      "witness_id": "kb154-04-1"
+    },
+    {
+      "case": "sum7 has six ordered pairs",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-123-c411",
+      "teacher_approved": false,
+      "witness_id": "kb154-04-2"
+    },
+    {
+      "case": "eleven sums do not have equal multiplicity",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-123-c411",
+      "teacher_approved": false,
+      "witness_id": "kb154-04-3"
+    },
+    {
+      "case": "3 red1 blue counts not two equiprobable color labels",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-123-c411",
+      "teacher_approved": false,
+      "witness_id": "kb154-04-4"
+    },
+    {
+      "case": "derivative x2 at3 exact 6",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-119-s07",
+      "teacher_approved": false,
+      "witness_id": "kb154-05-1"
+    },
+    {
+      "case": "derivative 1/x at 1 is minus 1",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-119-s07",
+      "teacher_approved": false,
+      "witness_id": "kb154-05-2"
+    },
+    {
+      "case": "absolute value cusp has unequal directional quotients",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-119-s07",
+      "teacher_approved": false,
+      "witness_id": "kb154-05-3"
+    },
+    {
+      "case": "differentiating 1/x at zero not in real domain",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-119-s07",
+      "teacher_approved": false,
+      "witness_id": "kb154-05-4"
+    },
+    {
+      "case": "sxx centered equals 2",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-119-s15",
+      "teacher_approved": false,
+      "witness_id": "kb154-06-1"
+    },
+    {
+      "case": "slope2 intercept1 and zero residual",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-119-s15",
+      "teacher_approved": false,
+      "witness_id": "kb154-06-2"
+    },
+    {
+      "case": "constant x has zero Sxx cannot divide",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-119-s15",
+      "teacher_approved": false,
+      "witness_id": "kb154-06-3"
+    },
+    {
+      "case": "forced through-origin slope differs from intercept slope",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-119-s15",
+      "teacher_approved": false,
+      "witness_id": "kb154-06-4"
+    },
+    {
+      "case": "convergent finite product limit 2",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-121-a201",
+      "teacher_approved": false,
+      "witness_id": "kb154-07-1"
+    },
+    {
+      "case": "nonzero denominator convergent quotient limit half",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-121-a201",
+      "teacher_approved": false,
+      "witness_id": "kb154-07-2"
+    },
+    {
+      "case": "0/0 form has finite nonzero quotient",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-121-a201",
+      "teacher_approved": false,
+      "witness_id": "kb154-07-3"
+    },
+    {
+      "case": "a vanishing denominator can generate unbounded quotient",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-121-a201",
+      "teacher_approved": false,
+      "witness_id": "kb154-07-4"
+    },
+    {
+      "case": "right-endpoint Riemann sum exact limit",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-122-b301",
+      "teacher_approved": false,
+      "witness_id": "kb154-08-1"
+    },
+    {
+      "case": "integral of 2x from 0 to 1 equals 1",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-122-b301",
+      "teacher_approved": false,
+      "witness_id": "kb154-08-2"
+    },
+    {
+      "case": "signed integral x over symmetric interval vanishes despite nonzero area",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-122-b301",
+      "teacher_approved": false,
+      "witness_id": "kb154-08-3"
+    },
+    {
+      "case": "signed negative subinterval cannot be treated as positive",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-122-b301",
+      "teacher_approved": false,
+      "witness_id": "kb154-08-4"
+    },
+    {
+      "case": "six of eight valid answers equals 75 percent",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-121-ec205",
+      "teacher_approved": false,
+      "witness_id": "kb154-09-1"
+    },
+    {
+      "case": "frequency categories sum 1",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-121-ec205",
+      "teacher_approved": false,
+      "witness_id": "kb154-09-2"
+    },
+    {
+      "case": "including two nonresponses changes frequency denominator",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-121-ec205",
+      "teacher_approved": false,
+      "witness_id": "kb154-09-3"
+    },
+    {
+      "case": "empty valid response frequency undefined",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-121-ec205",
+      "teacher_approved": false,
+      "witness_id": "kb154-09-4"
+    },
+    {
+      "case": "affine image y1 to y1 and y2 to y4",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-ed107",
+      "teacher_approved": false,
+      "witness_id": "kb154-10-1"
+    },
+    {
+      "case": "perspective horizontal families meet at vanishing point",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-ed107",
+      "teacher_approved": false,
+      "witness_id": "kb154-10-2"
+    },
+    {
+      "case": "perspective map has pole at x minus1",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-ed107",
+      "teacher_approved": false,
+      "witness_id": "kb154-10-3"
+    },
+    {
+      "case": "singular affine matrix collapses entire lines",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-ed107",
+      "teacher_approved": false,
+      "witness_id": "kb154-10-4"
+    }
+  ]
+}

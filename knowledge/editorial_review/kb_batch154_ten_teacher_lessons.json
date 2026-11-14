@@ -1,0 +1,815 @@
+[
+  {
+    "applicability_and_hypotheses": "检查分支覆盖整个D，且交界点不会产生两个不同的指定值；不同分支表达式可以在交界点不连续。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "为订单阶梯定价设计无重叠且全覆盖的区间规则，验证每个金额只对应一个收费标准。",
+    "formal_definition_or_theorem": "分段函数以互不矛盾且覆盖指定定义域的输入条件规定唯一输出。求f(x₀)应先判定x₀满足哪个分支的条件，再代入该分支表达式；左右极限要分别从相应一侧使用函数值公式。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-122-c307",
+    "knowledge_type": "Method",
+    "near_transfer": "把条件改为x≤1与x>1，再评价在x=1处分支和连续性是否改变。",
+    "nonexample_or_failure": "定义f(x)=x+1当x<0，f(x)=x²当x≥0；f(0)=0，左极限是1，不能把左极限当作f(0)。",
+    "notation_and_domain": "x属于明确给定的实数定义域D；每个分支表达式在它所负责的子域内必须有定义；端点的<、≤、>、≥不能模糊。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "先把定义域按题目中的不等号分解，单独圈出各分段端点。",
+        "step": 1
+      },
+      {
+        "justification": "检查代入的自变量属于哪个分段条件，边界点严格按是否含等号处理。",
+        "step": 2
+      },
+      {
+        "justification": "只用命中的分段公式计算函数值，不要把两个公式的数值再取最大最小。",
+        "step": 3
+      },
+      {
+        "justification": "若分析连续性或左右极限，则独立计算两侧趋近值并与该点已定义函数值比较。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-122-c307",
+    "source_end_line": 20,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "ef0dcc75994c88ae3faee11dee718920dfda97e32d36e2b4856314d6674081d4"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 19,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "ef0dcc75994c88ae3faee11dee718920dfda97e32d36e2b4856314d6674081d4",
+    "source_start_line": 20,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先把各分支区间写成集合，不要直接计算表达式。",
+      "单独判断目标输入是否等于边界，观察哪一个条件带等号。",
+      "若需要判断连续，另外检查左右极限与函数值是否相等。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "f(1)=1，f(0)=2",
+        "question": "f(x)=x+2（x<1），x²（x≥1），求f(1)与f(0)。",
+        "reasoned_solution": [
+          "输入1满足≥1的条件，因此取平方分支。",
+          "1²=1；输入0满足<1条件。",
+          "0+2=2，不允许对输入1沿用线性分支。"
+        ]
+      },
+      {
+        "answer": "f(0)=0；左右极限分别0和3",
+        "question": "f(x)=2x（x≤0），x+3（x>0），求f(0)及左、右极限。",
+        "reasoned_solution": [
+          "x=0包含在第一个分支，故函数值是0。",
+          "当x从负侧趋近0时2x趋近0。",
+          "当x从正侧趋近0时x+3趋近3，函数在0不连续。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "分段函数按输入条件唯一选择分支",
+    "typical_wrong_solution": "将x=0代入x+1因为它看起来更简单；或者把f(0)取成两侧值的平均数。",
+    "why_method_is_legal": "分段写法是集合上的单值函数拼接；选择分支由输入所属集合决定，与输出值大小无关。",
+    "why_wrong_and_repair": "先处理输入条件和端点等号，再区分该点函数值、左极限、右极限三个不同概念。"
+  },
+  {
+    "applicability_and_hypotheses": "两端点函数值严格异号、区间内无间断；如果端点恰等于零只能直接取得端点零点，不能援引严格异号结论。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "分析数值求根算法二分法为什么必须先找连续的异号括区间及其失败情形。",
+    "formal_definition_or_theorem": "若实函数f在闭区间[a,b]连续，a<b且f(a)f(b)<0，则存在c∈(a,b)使f(c)=0；这里只保证至少一个零点，不保证唯一零点。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-122-c311",
+    "knowledge_type": "Theorem",
+    "near_transfer": "检验f(x)=x³−3x在[-2,2]既端点异号又有多个零点。",
+    "nonexample_or_failure": "f(x)=1/x在[-1,1]端点异号，但区间内x=0无定义，不满足连续性，因而没有零点。",
+    "notation_and_domain": "a,b属于实数且a<b；连续性必须在整个闭区间成立，包括端点的相应单侧连续；函数值为实数。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "先核对a<b以及f在[a,b]上连续；必要时以−f替换f，使f(a)<0<f(b)，零点位置不受符号变换影响。",
+        "step": 1
+      },
+      {
+        "justification": "若中点函数值非零，则在左右半区间中选择仍有严格异号端点的一半；不断二分得到闭区间[aₙ,bₙ]相互套叠，长度(b−a)/2ⁿ趋零。",
+        "step": 2
+      },
+      {
+        "justification": "由闭区间套定理存在唯一c属于全部区间；端点aₙ,bₙ趋c。连续性使f(aₙ),f(bₙ)都趋f(c)，同时前者始终为负、后者始终为正，故f(c)=0。",
+        "step": 3
+      },
+      {
+        "justification": "原端点函数值都非零，所以c不能是a或b；只能证明存在，不证明唯一。若要求唯一还需另证严格单调等条件。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-122-c311",
+    "source_end_line": 29,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "0e2783329b4956f2f8806538d7a0bb6e59e7aeb2fd1f436395cc0d9b94b324f1"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 22,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "0e2783329b4956f2f8806538d7a0bb6e59e7aeb2fd1f436395cc0d9b94b324f1",
+    "source_start_line": 29,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先检查函数定义域是否覆盖整个闭区间，不要直接乘端点数值。",
+      "求两端点函数值并核对是否异号，再列出连续性所用定理。",
+      "若问题问唯一根，请另外寻找单调性的证据，而非把存在性当成唯一性。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "存在c∈(0,1)",
+        "question": "证明x³+x−1=0在(0,1)至少有一个实根。",
+        "reasoned_solution": [
+          "多项式在闭区间[0,1]连续。",
+          "f(0)=−1，f(1)=1，二者严格异号。",
+          "由介值定理有一个区间内实根；本题导数3x²+1>0还说明唯一。"
+        ]
+      },
+      {
+        "answer": "不能",
+        "question": "端点异号能否保证f(x)=1/x在(−1,1)有零点？",
+        "reasoned_solution": [
+          "端点函数值分别为−1和1。",
+          "但f在x=0处没有定义，非整个闭区间上的连续函数。",
+          "因此不能使用零点存在定理，且1/x从不等于0。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "连续函数异号端点的零点存在定理",
+    "typical_wrong_solution": "只靠f(a)f(b)<0就认定必有零点；或者错误声称两端异号意味着恰好一个零点。",
+    "why_method_is_legal": "介值定理保证介于f(a)与f(b)之间的所有实数值都被取到，特别是0；也可通过套区间构造证明。",
+    "why_wrong_and_repair": "先检查定义域和连续条件；唯一性要另用严格单调或其他单独论证。"
+  },
+  {
+    "applicability_and_hypotheses": "先保证所有对数有定义、换底公式的分母非零；更换底数后仍必须满足上述限制。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "解释计算器为什么通常只提供自然对数或常用对数仍可计算任意合法底数对数。",
+    "formal_definition_or_theorem": "对于a>0、a≠1、b>0、b≠1及x>0，有log_a(x)=log_b(x)/log_b(a)。分母log_b(a)非零是公式合法的关键。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-123-c407",
+    "knowledge_type": "Theorem",
+    "near_transfer": "用e为底将log₄(1/8)化为自然对数之商，并给出精确结果。",
+    "nonexample_or_failure": "a=1时log_1(x)无定义；b=1也非法；x=0时log_a(x)无实值，不能套公式。",
+    "notation_and_domain": "仅讨论实数对数；底数a、b必须严格为正且不等于1；真数x严格为正。不能将对数法则跨越负真数。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "验证a、b都是正且不等于1的实数，验证真数x严格为正。",
+        "step": 1
+      },
+      {
+        "justification": "设t=log_a(x)，通过指数与对数的互逆定义写出a^t=x。",
+        "step": 2
+      },
+      {
+        "justification": "以b为底对等式两边取对数，利用指数的合法对数运算得t·log_b(a)=log_b(x)。",
+        "step": 3
+      },
+      {
+        "justification": "因为a≠1，所以log_b(a)≠0，可除并得到换底式；再检查没有引入非法输入。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-123-c407",
+    "source_end_line": 32,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "6bf09af01e478c708a0624cc11c292f2c66ad82bbd3ad1d4e672f4846912b940"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 20,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "6bf09af01e478c708a0624cc11c292f2c66ad82bbd3ad1d4e672f4846912b940",
+    "source_start_line": 32,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写出两个底数和真数各自的合法区间。",
+      "从a的指数表达式出发，通过另一个底数取对数建立方程。",
+      "最后检查被除掉的log_b(a)确实不是零，核实分子分母顺序。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "精确结果是3",
+        "question": "计算log₂(8)，用10为底换底验算。",
+        "reasoned_solution": [
+          "底数2和10合法，真数8>0。",
+          "换底式得到lg8/lg2。",
+          "因为8=2³，所以lg8=3lg2，结果为3。"
+        ]
+      },
+      {
+        "answer": "不能",
+        "question": "a=1、b=2、x=4时能否计算换底式？",
+        "reasoned_solution": [
+          "以1为底的对数本来没有定义。",
+          "右式分母log₂1=0。",
+          "不得因式子看似有两个对数就忽略零分母。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "对数换底公式及其所有实数合法条件",
+    "typical_wrong_solution": "记忆成log_a(x)=log_b(a)/log_b(x)，颠倒分子分母并可能造成除零。",
+    "why_method_is_legal": "设t=log_a(x)，则a^t=x；对两边取合法的b底对数，得t log_b(a)=log_b(x)，再由a≠1保证可除。",
+    "why_wrong_and_repair": "把变换追溯到a^t=x，再按待求t解一次线性等式，并核对真数与底数。"
+  },
+  {
+    "applicability_and_hypotheses": "若抽样不等概率、重复计数或遗漏结果，不能用简单计数比；样本空间的基本结果应取相同精细程度。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "分析现实抽奖中票重不同或抽取机制偏差为何使看似相同的标签不再等可能。",
+    "formal_definition_or_theorem": "当非空有限样本空间Ω的每个基本结果发生概率都为1/|Ω|时，任意事件A⊆Ω满足P(A)=|A|/|Ω|；“等可能”是试验模型前提，不是把结果任意分组后的性质。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-123-c411",
+    "knowledge_type": "Concept",
+    "near_transfer": "若改为两枚有先后顺序且不放回的不同颜色球，重新确定样本空间和概率。",
+    "nonexample_or_failure": "掷两枚公平骰子，和为2只有(1,1)一种，而和为7有六种；11种可能和并非等概率。",
+    "notation_and_domain": "样本空间Ω必须非空且有限；基本结果相互排斥且完备；每个基本结果由随机机制保证等可能。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "先明确试验步骤和一个基本结果的记录格式，列全Ω且确保无重叠。",
+        "step": 1
+      },
+      {
+        "justification": "由随机机制而非想象确认每个基本结果同概率；若不等可能，应改用加权求和。",
+        "step": 2
+      },
+      {
+        "justification": "将事件A表达为基本结果的子集，逐个计数，不能将复合事件当基本结果。",
+        "step": 3
+      },
+      {
+        "justification": "由概率公理与等可能前提得到P(A)=|A|/|Ω|，检查数值在0与1之间。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-123-c411",
+    "source_end_line": 14,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "9e6831927016d1439752d5c35ef0a0b9a8fee417a0cbbdaa76a16f7e69b435a2"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 31,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "9e6831927016d1439752d5c35ef0a0b9a8fee417a0cbbdaa76a16f7e69b435a2",
+    "source_start_line": 14,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先列出真正等可能的基本结果，注意记录抽取顺序和抽样机制。",
+      "将所求事件转成基本结果集合，不要直接把聚合后的标签当结果。",
+      "核对分子事件结果数、分母总结果数以及是否存在遗漏或重复。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "1/6",
+        "question": "掷两枚独立公平骰子，点数和为7的概率。",
+        "reasoned_solution": [
+          "36个有序点数对是等可能基本结果。",
+          "和为7的有(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)六对。",
+          "概率=6/36=1/6。"
+        ]
+      },
+      {
+        "answer": "3/4",
+        "question": "一只装3红1蓝的袋子随机抽一球，抽红概率。",
+        "reasoned_solution": [
+          "四个物理球在公平抽取中是四个等可能基本结果。",
+          "其中3个球颜色为红，1个为蓝。",
+          "红色是3个基本结果组成的事件，故概率3/4。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "有限等可能样本空间的古典概率计数",
+    "typical_wrong_solution": "把“骰子点数和为2到12共11种”视为等概率，求和为7概率为1/11。",
+    "why_method_is_legal": "概率可加性给出P(A)=Σ_{ω∈A}P({ω})，在所有基本事件概率相等时每项为1/|Ω|。",
+    "why_wrong_and_repair": "将基本结果定义为有序点数对，总共36个等可能结果；事件求和的大小需要再数。"
+  },
+  {
+    "applicability_and_hypotheses": "差商的分母h不为零、被代入的x₀+h应在定义域内；先化简再取极限，不能直接把h=0代入原差商。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "观察速度位移曲线的割线速度在时间窗口缩小时如何近似瞬时速度，并说明采样噪声影响。",
+    "formal_definition_or_theorem": "若实函数f在x₀邻域内有定义（允许去掉x₀以外的点）且极限lim_{h→0}[f(x₀+h)−f(x₀)]/h存在并有限，则f在x₀可导且导数为该极限。若x₀是曲线的光滑内点，导数给出切线斜率。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-119-s07",
+    "knowledge_type": "Concept",
+    "near_transfer": "用定义计算f(x)=1/x在x₀=1处导数，并说明x₀=0不允许。",
+    "nonexample_or_failure": "f(x)=|x|在x₀=0处左右差商分别为−1和1，函数连续却不可导。",
+    "notation_and_domain": "x₀属于函数定义域且是能从两侧任意趋近的内点；计算差商时h≠0；一侧边界导数须另作约定。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "从曲线上(x₀,f(x₀))和(x₀+h,f(x₀+h))两点构造割线，约定h≠0。",
+        "step": 1
+      },
+      {
+        "justification": "将割线斜率写成[f(x₀+h)−f(x₀)]/h，并先检查两点都在函数定义域内。",
+        "step": 2
+      },
+      {
+        "justification": "代数化简并计算h从两侧趋向0的极限，若两侧不等或极限无穷则不可导。",
+        "step": 3
+      },
+      {
+        "justification": "若得到有限极限，用它作为导数；可以写出切线方程y−f(x₀)=f′(x₀)(x−x₀)。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-s07",
+    "source_end_line": 13,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "c65f2dfa88c6cf9bdf4ef681d4f3f1125e74d0f994efa9f796f59c03500d22f7",
+      "53076486525878b7702f0b3275df07c0a6801c380ed819bbcf2be12ac605c61f",
+      "fd86378fb6564e402ca60a94ce9364c17176df0f48be5f0860fe71005e997228",
+      "7ed9fe539d331db6c003a717182819b8354568a490e45d5cb0ad8314de360d06",
+      "0edf7afbc1e6b41e853a24ea6fe0194b7e1820b2474fe59a7d5fb6efe83d0633",
+      "46a95315e936176c8c5e26b4b4621cc67415363a85bbd5e1770bf753aa03b228"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 39,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "ca66817ca8954254c492c53c78def35a6588d0ac1691d30b37bd646477e16c5e",
+    "source_start_line": 8,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写出差商的两个函数值，明确h不能等于零。",
+      "展开、因式分解或约分是在h非零条件下进行的，化简后再取极限。",
+      "检查双侧斜率是否一致，再据点与斜率书写切线方程。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "导数6，切线y=6x−9",
+        "question": "用定义求f(x)=x²在x₀=3的导数及切线。",
+        "reasoned_solution": [
+          "差商=[(3+h)²−9]/h=6+h（h≠0）。",
+          "由极限h→0可严格得到斜率6。",
+          "f(3)=9，切线y−9=6(x−3)，即y=6x−9。"
+        ]
+      },
+      {
+        "answer": "不可导",
+        "question": "判断f(x)=|x|在x₀=0是否可导。",
+        "reasoned_solution": [
+          "右侧差商|h|/h=1。",
+          "左侧差商|h|/h=−1。",
+          "左右极限不一致，双侧导数不存在。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "导数作为差商极限与切线斜率",
+    "typical_wrong_solution": "将h直接置零做成0/0，或认为函数连续就一定存在切线的有限斜率。",
+    "why_method_is_legal": "割线斜率等于两个函数值之差除以输入差；若两侧割线斜率趋向同一有限值，便定义切线斜率。",
+    "why_wrong_and_repair": "先分离差商中h≠0的代数化简，再检查双侧极限是否一致且有限。"
+  },
+  {
+    "applicability_and_hypotheses": "计算斜率前必须检查各xᵢ不全相同，Sxx严格正；回归系数表示样本拟合，不自动表达因果。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "解释不同学生群体回归中遗漏变量、非随机抽样会如何限制政策因果推断。",
+    "formal_definition_or_theorem": "给定n≥2对实数观测(xᵢ,yᵢ)，以残差平方和S(α,β)=Σ[yᵢ−α−βxᵢ]²拟合直线。若Sxx=Σ(xᵢ−x̄)²>0，则唯一最小二乘斜率β̂=Sxy/Sxx，截距α̂=ȳ−β̂x̄；Sxx=0时斜率不可识别。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-119-s15",
+    "knowledge_type": "Method",
+    "near_transfer": "对点(1,1),(2,2),(3,2)计算最小二乘直线与残差平方和。",
+    "nonexample_or_failure": "两个观测(2,1)和(2,5)的x全相同，Sxx=0，任何斜率都可配合截距给相同预测均值3，不能报告唯一斜率。",
+    "notation_and_domain": "所有数据是有限实数且n≥2；有截距模型；Sxy=Σ(xᵢ−x̄)(yᵢ−ȳ)，参数不额外施加非负等约束。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "先确定有截距的一元线性回归而不是强制过原点的模型，计算x̄和ȳ。",
+        "step": 1
+      },
+      {
+        "justification": "求Sxx=Σ(xᵢ−x̄)²，如果等于零必须停止斜率除法并报告不可识别。",
+        "step": 2
+      },
+      {
+        "justification": "计算Sxy=Σ(xᵢ−x̄)(yᵢ−ȳ)，由严格凸的二次残差函数取得β̂=Sxy/Sxx。",
+        "step": 3
+      },
+      {
+        "justification": "以α̂=ȳ−β̂x̄恢复截距，并逐个代回求残差；预测解释限制在模型假设与数据范围内。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-s15",
+    "source_end_line": 18,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "f6bd75f6930f63d5bb78c48d1981212d5151fd7866da2945c2d9400de588f1eb",
+      "fb35562549c81ed8283b001d0bcd2c421ad6db2a3a398f01ca33ce46369ad049",
+      "79a76f314cb8b3ef04e8dfc753ede35e3b28f7f6884249d3f097d935ac3a4335",
+      "15c7d2b87f685626cc228372f79df8c7517be1aa402743c81bd965bb09f52b1a",
+      "e37a7929a04339214937f4e38d5b85dcdf4d1de9cacecfe4692e1a5eddfcf297"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 48,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "511baee1a725b1c7a54a131bf78e8b209085a65edacda8b97ceeb22327e1967c",
+    "source_start_line": 14,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写出回归是否包含截距，计算x的样本均值。",
+      "检查中心化x的平方和是否为0，确认斜率可识别。",
+      "斜率确定后再计算截距和残差，不把样本相关等同因果。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "ŷ=1+2x",
+        "question": "三点(0,1),(1,3),(2,5)，求带截距OLS直线。",
+        "reasoned_solution": [
+          "x̄=1，ȳ=3，Sxx=2。",
+          "Sxy=(−1)(−2)+0+(1)(2)=4，故斜率2。",
+          "截距3−2×1=1，三个残差都是0。"
+        ]
+      },
+      {
+        "answer": "不能",
+        "question": "点(2,1),(2,5)是否可以给出唯一带截距OLS斜率？",
+        "reasoned_solution": [
+          "两个x都等于2，故x̄=2。",
+          "Sxx=(2−2)²+(2−2)²=0。",
+          "对任意斜率β取截距α=3−2β都有相同拟合，斜率不唯一。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "带截距最小二乘直线的存在性与退化条件",
+    "typical_wrong_solution": "用Σxᵢyᵢ/Σxᵢ²当作带截距拟合斜率；或Sxx为零时仍分母相除。",
+    "why_method_is_legal": "对截距偏导等于零得α=ȳ−βx̄；代回残差和成为Σ[(yᵢ−ȳ)−β(xᵢ−x̄)]²，对β求导得−2Sxy+2βSxx=0，Sxx>0保证唯一极小。",
+    "why_wrong_and_repair": "明确模型是否包含截距，先检验Sxx>0，再使用中心化协方差和方差公式。"
+  },
+  {
+    "applicability_and_hypotheses": "和积法则只对有限极限断言；不能直接从0/0型推断商极限不存在或等于A/B。",
+    "course_track": "ELECTIVE_A",
+    "elective_e_optional_example": false,
+    "far_transfer": "说明数值计算中分母趋于很小会放大测量误差，数学极限成立与计算稳定并非相同命题。",
+    "formal_definition_or_theorem": "若实数数列aₙ→A与bₙ→B且极限均有限，则aₙ±bₙ→A±B、aₙbₙ→AB；若B≠0且bₙ最终非零，则aₙ/bₙ→A/B。这里最终非零可由bₙ→B≠0推出。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-121-a201",
+    "knowledge_type": "Theorem",
+    "near_transfer": "令aₙ=2+1/n，bₙ=−3+1/n，给出其和、积、商的极限。",
+    "nonexample_or_failure": "aₙ=bₙ=1/n均趋于0，但aₙ/bₙ=1始终为1；不能把商极限当作0/0或套用B≠0时的公式。",
+    "notation_and_domain": "极限变量n趋向正无穷；每一数列在充分大的自然数n上有定义；商法则的极限分母B必须严格非零。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "利用收敛定义，对任意ε>0选择足够大的n使两条序列偏差分别足够小。",
+        "step": 1
+      },
+      {
+        "justification": "和差情形以三角不等式控制误差；乘积情形展开误差并使用收敛序列最终有界性。",
+        "step": 2
+      },
+      {
+        "justification": "商式先利用B≠0得充分大n时|bₙ|≥|B|/2，从而合法写出分式。",
+        "step": 3
+      },
+      {
+        "justification": "再估计|aₙ/bₙ−A/B|≤|aₙ−A|/|bₙ|+|A|·|bₙ−B|/(|bₙ||B|)，两项趋0。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-a201",
+    "source_end_line": 30,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "b6294ea47788c632ccf2b3743bb875632a15a1bef7bcbe2f51eb5d428b333553"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 52,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "b6294ea47788c632ccf2b3743bb875632a15a1bef7bcbe2f51eb5d428b333553",
+    "source_start_line": 30,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "首先明确两个序列的极限是否为有限实数。",
+      "若表达式包含除法，先看极限分母是否等于零。",
+      "零分母极限意味着商法则失效，尝试先化简原式或者其他方法。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "乘积2，商1/2",
+        "question": "aₙ=1+1/n，bₙ=2−1/n，求乘积与商的极限。",
+        "reasoned_solution": [
+          "两个序列分别趋于1与2。",
+          "乘积按有限极限运算趋1×2=2。",
+          "商的极限分母2≠0，故商趋1/2。"
+        ]
+      },
+      {
+        "answer": "商恒为1，不能套商法则",
+        "question": "aₙ=bₙ=1/n，求商极限，能否使用通常商法则？",
+        "reasoned_solution": [
+          "当n≥1，分子分母均为1/n且非零。",
+          "商恒等于1，所以极限为1。",
+          "分母极限B=0，通常的B≠0商法则不适用。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "有限实数极限的四则运算与商法则非零前提",
+    "typical_wrong_solution": "只看到两数列都收敛就直接把商的极限算成分子极限除以0。",
+    "why_method_is_legal": "和式由三角不等式；积式aₙbₙ−AB=(aₙ−A)(bₙ−B)+A(bₙ−B)+B(aₙ−A)及收敛序列有界性证明；商式先使|bₙ|>|B|/2再估计倒数差。",
+    "why_wrong_and_repair": "先核对极限是否有限，商法则额外核验分母极限严格不为零，不满足则另行分析。"
+  },
+  {
+    "applicability_and_hypotheses": "有向积分可以出现负值或者正负抵消；不能直接将积分等同于全部几何面积；换元及初等计算仍需核对连续与分段条件。",
+    "course_track": "ELECTIVE_B",
+    "elective_e_optional_example": false,
+    "far_transfer": "把定积分解释为变化的流量累积量，讨论流量允许负向时净流量与总流量为何不同。",
+    "formal_definition_or_theorem": "若实函数f在[a,b]黎曼可积，则定积分∫ₐᵇ f(x)dx是分割最大网格长度趋零时Σf(ξᵢ)Δxᵢ的共同极限；积分是带符号的累积量，几何面积通常要对|f|积分。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-122-b301",
+    "knowledge_type": "Concept",
+    "near_transfer": "对f(x)=1−2x在[0,1]同时求有向积分与几何面积。",
+    "nonexample_or_failure": "∫₋₁¹ x dx=0，但|x|和x轴围成的两侧几何总面积是1，不能以0报告总面积。",
+    "notation_and_domain": "a,b为有限实数且a<b；f有界并黎曼可积；采样点ξᵢ位于各子区间。连续函数在闭区间上满足可积性。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "用[a,b]的分割a=x₀<x₁<⋯<xₙ=b，把每段宽度记为Δxᵢ>0。",
+        "step": 1
+      },
+      {
+        "justification": "在第i段选样本点ξᵢ并形成黎曼和Σf(ξᵢ)Δxᵢ，考察最大段长趋零。",
+        "step": 2
+      },
+      {
+        "justification": "如果所有允许分割与样本点得到共同有限极限，就把该值定义为定积分；连续性给出可积的充分条件。",
+        "step": 3
+      },
+      {
+        "justification": "解释f<0区域贡献负的累积量；若求几何面积，应分段积分|f(x)|，并注意量纲是函数值×自变量单位。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-122-b301",
+    "source_end_line": 2,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "2e2ea691838e7a571f158bf3460b30e31eab5ff0811066772ec14dbdf3ba82be"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 59,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "2e2ea691838e7a571f158bf3460b30e31eab5ff0811066772ec14dbdf3ba82be",
+    "source_start_line": 2,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确认题目要有向累积量，还是曲线与轴的几何总面积。",
+      "如果函数在区间变号，按照零点拆分而不能把负面积忽略。",
+      "用越来越细分割的黎曼和说明积分是极限，并保留Δx对应的单位。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "定积分等于1",
+        "question": "求∫₀¹ 2x dx，并用等分区间右端点黎曼和验证。",
+        "reasoned_solution": [
+          "等分n段，右端采样xᵢ=i/n，Δx=1/n。",
+          "右端黎曼和Σ2(i/n)(1/n)=n(n+1)/n²=1+1/n。",
+          "n→∞，黎曼和趋1，与原函数x²在端点之差一致。"
+        ]
+      },
+      {
+        "answer": "积分0，几何总面积1",
+        "question": "计算∫₋₁¹ x dx和对应图形总面积。",
+        "reasoned_solution": [
+          "x在[-1,0]为负，在[0,1]为正，积分彼此抵消。",
+          "由原函数x²/2得有向积分0。",
+          "对|x|积分，两侧各贡献1/2，故总面积1。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "定积分作为黎曼和极限与有向面积",
+    "typical_wrong_solution": "把任何定积分都画成非负面积，或只取端点高度乘整个区间宽度作为精确值。",
+    "why_method_is_legal": "如果f在区间为非负，则积分可解释为曲线与轴之间面积；若变号，则由可加性将各子区间正负贡献相加。",
+    "why_wrong_and_repair": "先确定求有向累积还是无符号几何面积，积分的正负与分区必须保留。"
+  },
+  {
+    "applicability_and_hypotheses": "不能拿总体人数N代替当前有效样本量n_valid；若类别重叠，直接加总频率会超过1；零有效观测不可作归一化。",
+    "course_track": "ELECTIVE_C",
+    "elective_e_optional_example": false,
+    "far_transfer": "设计一个城市调查质量报告，解释不同社区非响应率为何让未加权百分比产生系统偏差。",
+    "formal_definition_or_theorem": "在实际抽样方案确定且事件类别互斥完整的条件下，类别j的频数nⱼ为该类别有效观测的计数，相对频率p̂ⱼ=nⱼ/n_valid，其中n_valid>0且Σnⱼ=n_valid。分组柱状图、频数图和百分比必须说明分母与未答比例。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-121-ec205",
+    "knowledge_type": "Method",
+    "near_transfer": "若三个类别计数为1、1、0而另有2人失访，分别给出有效与所有联系者中的占比。",
+    "nonexample_or_failure": "10个受访者中2人未回答，已回答的8人有6人选A；A在有效回答中的占比6/8=75%，而在所有接触者中为6/10=60%，分母不同。",
+    "notation_and_domain": "统计对象为合法有效观测记录；样本框、问卷缺失、重复记录、分组边界和无回答均需记录；所有类别的计数是非负整数。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "先确定总体、抽样方法和实际得到的记录，去重并单列失访或缺失记录。",
+        "step": 1
+      },
+      {
+        "justification": "明确所有类别的分组边界，保证每个有效记录恰好落入一个类别。",
+        "step": 2
+      },
+      {
+        "justification": "逐类计数并求有效样本量n_valid；分母必须严格大于零才可计算相对频率。",
+        "step": 3
+      },
+      {
+        "justification": "把频率转为百分比后核对总和为100%；报告失访人数，勿把样本描述直接推广到总体结论。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-ec205",
+    "source_end_line": 19,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "df99aaa24f7e0f3eabbe516acff054796f3e4bcf3c360cb9e86c5674e3272387"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 68,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "df99aaa24f7e0f3eabbe516acff054796f3e4bcf3c360cb9e86c5674e3272387",
+    "source_start_line": 19,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先数清谁被联系、谁回答、谁被纳入有效分析。",
+      "把互斥类别的频数加总，明确作比例时要用哪个分母。",
+      "检查频率总和与缺失记录，区分样本比例与目标总体概率。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "6/8=75%",
+        "question": "问卷10人中2人未答、6人选A、2人选B，求有效样本中A频率。",
+        "reasoned_solution": [
+          "有回答记录数8，缺失2不能算作A或B。",
+          "A频数6，使用有效样本量8作分母。",
+          "A占比6/8=0.75；若以10为分母得到的是全体受访者中的比例。"
+        ]
+      },
+      {
+        "answer": "30%、50%、20%",
+        "question": "有效记录类别频数3、5、2，计算百分比并核验。",
+        "reasoned_solution": [
+          "有效样本量为3+5+2=10。",
+          "逐类除以10得到0.3、0.5、0.2。",
+          "三类百分比之和100%，说明分组完整且不重叠。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "社会调查频数、相对频率与样本分母",
+    "typical_wrong_solution": "把有效回答百分比称为全体抽样对象百分比，却隐去缺失记录；类别重复计入导致总和高于100%。",
+    "why_method_is_legal": "对互斥完备分类，每条有效记录恰计入一组；总频数等于有效记录数，归一化后Σp̂ⱼ=1。",
+    "why_wrong_and_repair": "先界定统计分母和目标总体，另外列出缺失比例和不同人群的响应率。"
+  },
+  {
+    "applicability_and_hypotheses": "若A奇异，非退化直线可能坍缩成点或不同线合并；透视投影需要明确相机模型、成像平面及定义域。",
+    "course_track": "ELECTIVE_D",
+    "elective_e_optional_example": false,
+    "far_transfer": "解释摄影透视中铁路轨道看似交汇，为什么不能据图像判断现实中轨道不平行。",
+    "formal_definition_or_theorem": "平面仿射映射T(x)=Ax+b将直线参数x=p+tv映为T(p)+tAv；在A可逆时不同平行直线仍映为不同平行直线。一般中心透视投影的有理分母依赖位置，可使原平行线影像在消失点相交。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb154-deep-120-ed107",
+    "knowledge_type": "Method",
+    "near_transfer": "对A=diag(1,−1)和b=(3,0)说明仿射变换如何反射平行的两直线。",
+    "nonexample_or_failure": "当A为零矩阵，任意不同平行线像都坍缩在同一点，不再是两条不同平行直线；x=−1不在示例透视映射定义域。",
+    "notation_and_domain": "在二维实坐标平面讨论；仿射A是2×2实矩阵且可逆才保证非退化直线与不同平行线关系；中心透视项目分母不得为零。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-120-ed101"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "写出线的参数方程p+tv及仿射变换Ax+b，确认A可逆以避免方向退化。",
+        "step": 1
+      },
+      {
+        "justification": "对参数方程作代换得Ap+b+tAv，因此两条方向同为v的直线仍有共同像方向Av。",
+        "step": 2
+      },
+      {
+        "justification": "再对位置相关的透视有理映射逐点代入，必须排除分母1+x=0，并消去原坐标得到像线方程。",
+        "step": 3
+      },
+      {
+        "justification": "比较像线的方向是否一致，说明有限观测区域可能只出现向消失点收敛的视觉效果，不能把透视当等距或仿射。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-ed107",
+    "source_end_line": 4,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "74c6e842c898c388dbfc4fccd5ae9f09733e2aef9c4623a8813880b9dadb8b81",
+      "d557660a55730534f3aaadd28199be409802c7581dd5283ccee70447ad5396a9",
+      "416301e37172f71c3ce4dbcfd85074e9187f5581d81f43399e9add0c086bd5f5"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 72,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "1fb3dfea386e7f3025569565e19de8277d698f3790e5e7fe79dfd02b88ac456f",
+    "source_start_line": 2,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先分清仿射变换与透视投影的表达式有无位置相关的分母。",
+      "判断是否必须要求矩阵可逆，检查直线会不会坍缩。",
+      "参数化两条平行线并消去原坐标，比较它们的像方向与交点。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "是，像分别为y′=1与y′=4",
+        "question": "T(x,y)=(2x+1,3y−2)下直线y=1与y=2是否仍平行？",
+        "reasoned_solution": [
+          "A=diag(2,3)可逆。",
+          "y=1映成y′=3−2=1；y=2映成y′=6−2=4。",
+          "两像均为水平直线且不重合，故仍平行。"
+        ]
+      },
+      {
+        "answer": "在(1,0)相交",
+        "question": "透视T(x,y)=(x/(1+x),y/(1+x))下y=1与y=2的像线延长线相交吗？",
+        "reasoned_solution": [
+          "令u=x/(1+x)，可得1/(1+x)=1−u。",
+          "原y=1的像线为v=1−u，原y=2的像线为v=2(1−u)。",
+          "两像线延长线在u=1、v=0相交，该点为原x趋无穷的消失点，并非有限原点的像。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "透视投影与仿射变换的平行线保留条件",
+    "typical_wrong_solution": "把所有摄影中的直线变换都当成保持平行、长度与角度的仿射变换。",
+    "why_method_is_legal": "仿射T(p+tv)=Ap+b+tAv，因此方向只由Av决定且非零；对透视映射T(x,y)=(x/(1+x),y/(1+x))，原不同水平直线y=1、y=2分别变成y′=1−x′与y′=2(1−x′)，在像平面延长线相交。",
+    "why_wrong_and_repair": "先确认几何变换类别和是否可逆，再分析它实际保持的性质，平行性与长度性是不同要求。"
+  }
+]

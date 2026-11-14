@@ -377,10 +377,22 @@ jobs:
       - run: python scripts/build_kb_batch153_crosswalk.py --check
       - run: python scripts/check_kb_batch153_math.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch153_integrity.py
+      - run: python scripts/author_kb_batch154_data.py --check
+      - run: python scripts/build_kb_batch154_lessons.py --check
+      - run: python scripts/build_kb_batch154_crosswalk.py --check
+      - run: python scripts/check_kb_batch154_math.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch154_math_depth.py
+      # KB154: 61-page source provenance, 315 anchors, 122 CDE lines, unapproved API.
+      - run: python scripts/build_kb_batch154_scope_graph.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch154_scope_graph.py
       # Mac-only execution proof: replay actual archived stdout, exit bytes and SHA-256.
       # No private licensed syllabus PDF or student material is included.
       - run: python scripts/build_kb_batch153_execution_manifest.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch153_archived_evidence.py
+      # Batch154: replay four authentic Mac stdout/exit SHA-256 pairs and
+      # fail closed on forged approvals, missing evidence and fake pass claims.
+      - run: python scripts/build_kb_batch154_execution_manifest.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch154_archived_evidence.py
       # Fail fast on syntax errors before the long Python/Node/browser suite.
       - run: bash -n scripts/mac_check.sh scripts/mac_browser_check.sh
       # Tests now import both 'app' (backend package root) and the versioned

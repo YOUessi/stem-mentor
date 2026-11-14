@@ -384,3 +384,17 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch152_integrat
 .venv/bin/python scripts/build_kb_batch153_crosswalk.py --check
 .venv/bin/python scripts/check_kb_batch153_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch153_integrity.py
+
+# Batch154: all 61 source pages / 315 markers / 122 CDE lines / 32 proposals.
+.venv/bin/python scripts/build_kb_batch154_scope_graph.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch154_scope_graph.py
+# Batch154: 10 original Mac source-lock teacher drafts and independent 40 exact math guards.
+.venv/bin/python scripts/author_kb_batch154_data.py --check
+.venv/bin/python scripts/build_kb_batch154_lessons.py --check-mac
+.venv/bin/python scripts/build_kb_batch154_crosswalk.py --check
+.venv/bin/python scripts/check_kb_batch154_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch154_math_depth.py
+
+# Batch154: replay archived real Mac stdout+exit SHA and reject evidence forgery.
+.venv/bin/python scripts/build_kb_batch154_execution_manifest.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch154_archived_evidence.py

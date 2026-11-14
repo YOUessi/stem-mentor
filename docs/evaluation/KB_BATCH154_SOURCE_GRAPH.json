@@ -1,0 +1,2735 @@
+{
+  "automatically_merged_source_clauses": 0,
+  "by_track": {
+    "COMPULSORY": {
+      "draft_linked_editorial_leads": 33,
+      "draft_missing_editorial_leads": 42,
+      "historic_editorial_leads": 75,
+      "nonnumbered_cde_editorial_proposals": 0,
+      "numbered_markers_without_existing_line_overlap": 44,
+      "official_approved": 0,
+      "official_atomic_denominator": null,
+      "provisional_41_atom_proposals": 23,
+      "source_numbered_markers": 114,
+      "student_authoritative": 0,
+      "unpublished_teacher_manuscripts": 56
+    },
+    "ELECTIVE_A": {
+      "draft_linked_editorial_leads": 11,
+      "draft_missing_editorial_leads": 19,
+      "historic_editorial_leads": 30,
+      "nonnumbered_cde_editorial_proposals": 0,
+      "numbered_markers_without_existing_line_overlap": 16,
+      "official_approved": 0,
+      "official_atomic_denominator": null,
+      "provisional_41_atom_proposals": 7,
+      "source_numbered_markers": 52,
+      "student_authoritative": 0,
+      "unpublished_teacher_manuscripts": 18
+    },
+    "ELECTIVE_B": {
+      "draft_linked_editorial_leads": 10,
+      "draft_missing_editorial_leads": 20,
+      "historic_editorial_leads": 30,
+      "nonnumbered_cde_editorial_proposals": 0,
+      "numbered_markers_without_existing_line_overlap": 29,
+      "official_approved": 0,
+      "official_atomic_denominator": null,
+      "provisional_41_atom_proposals": 0,
+      "source_numbered_markers": 51,
+      "student_authoritative": 0,
+      "unpublished_teacher_manuscripts": 10
+    },
+    "ELECTIVE_C": {
+      "draft_linked_editorial_leads": 10,
+      "draft_missing_editorial_leads": 14,
+      "historic_editorial_leads": 24,
+      "nonnumbered_cde_editorial_proposals": 2,
+      "numbered_markers_without_existing_line_overlap": 10,
+      "official_approved": 0,
+      "official_atomic_denominator": null,
+      "provisional_41_atom_proposals": 0,
+      "source_numbered_markers": 16,
+      "student_authoritative": 0,
+      "unpublished_teacher_manuscripts": 10
+    },
+    "ELECTIVE_D": {
+      "draft_linked_editorial_leads": 11,
+      "draft_missing_editorial_leads": 6,
+      "historic_editorial_leads": 17,
+      "nonnumbered_cde_editorial_proposals": 17,
+      "numbered_markers_without_existing_line_overlap": 0,
+      "official_approved": 0,
+      "official_atomic_denominator": null,
+      "provisional_41_atom_proposals": 0,
+      "source_numbered_markers": 0,
+      "student_authoritative": 0,
+      "unpublished_teacher_manuscripts": 11
+    },
+    "ELECTIVE_E": {
+      "draft_linked_editorial_leads": 9,
+      "draft_missing_editorial_leads": 3,
+      "historic_editorial_leads": 12,
+      "nonnumbered_cde_editorial_proposals": 13,
+      "numbered_markers_without_existing_line_overlap": 0,
+      "official_approved": 0,
+      "official_atomic_denominator": null,
+      "provisional_41_atom_proposals": 0,
+      "source_numbered_markers": 0,
+      "student_authoritative": 0,
+      "unpublished_teacher_manuscripts": 9
+    },
+    "SELECTIVE_COMPULSORY": {
+      "draft_linked_editorial_leads": 20,
+      "draft_missing_editorial_leads": 31,
+      "historic_editorial_leads": 51,
+      "nonnumbered_cde_editorial_proposals": 0,
+      "numbered_markers_without_existing_line_overlap": 25,
+      "official_approved": 0,
+      "official_atomic_denominator": null,
+      "provisional_41_atom_proposals": 11,
+      "source_numbered_markers": 82,
+      "student_authoritative": 0,
+      "unpublished_teacher_manuscripts": 31
+    }
+  },
+  "cde_proposals_from_unnumbered_sources": 32,
+  "cde_unnumbered_proposal_junction": [
+    {
+      "course_track": "ELECTIVE_C",
+      "is_school_elective_example": false,
+      "kind": "Method",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "数据调查的结果报告",
+      "pages": [
+        69
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-001",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P69-L001",
+        "STD2020-SOURCELINE-P69-L002",
+        "STD2020-SOURCELINE-P69-L003"
+      ],
+      "source_line_sha256": [
+        "13b3c2bed1080cb9123b2d3db98c7356932147264dd4f22dc4a404ca7413ec48",
+        "129b327a80c9d7413ccfd32e198e418c7b6bab0e53264e0ef3e6a15fbe990c10",
+        "6e1b31d1cd9b7ae449644c7d300ccfea0e995ba035325ffd0741906977e3a3e1"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_C",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "典型社会调查案例的意义",
+      "pages": [
+        69
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-002",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P69-L004",
+        "STD2020-SOURCELINE-P69-L005"
+      ],
+      "source_line_sha256": [
+        "fa0331b51ef5d295218898870c7d7749096b4b154fade47c581f1bbb5977b362",
+        "4f43da1a4e497eaa9e0a9841ae751b4053860e026a728f56e54200dad36e278e"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "曲线与曲面所体现的形状特征",
+      "pages": [
+        69
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-003",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P69-L017",
+        "STD2020-SOURCELINE-P69-L018",
+        "STD2020-SOURCELINE-P69-L019",
+        "STD2020-SOURCELINE-P69-L020",
+        "STD2020-SOURCELINE-P69-L021",
+        "STD2020-SOURCELINE-P69-L022",
+        "STD2020-SOURCELINE-P69-L023"
+      ],
+      "source_line_sha256": [
+        "5beb295613e760e527a301c40536081dd67c37d68bd863d8c3fa06530790850d",
+        "43bb0461250c7f27b3b4ff2cbc3264d08b1eab3c881c52b786cde2ff721d6b22",
+        "b9bc1895f33cca536bbfac31b006f4326ccbd04af213f8c545ead252406f616f",
+        "2d669b3680b19fb35f46cc53636d0032a986627c3ecb14bc974c59e15cdbe607",
+        "75020f9da390e2c2b511c6d04d304acb85949bf6abf5dfe3aee1d36512faaa87",
+        "a05cee994ab269dd58498cad919d25b83d8c9515f6a5b8c91b26c36b606ab1cf",
+        "ba80dc18a307d5339686d2a51a407eb1916e90d8b99c409a282851146f0ffb75"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Concept",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "反射、旋转和位移的对称结构",
+      "pages": [
+        70
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-004",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P70-L002",
+        "STD2020-SOURCELINE-P70-L003",
+        "STD2020-SOURCELINE-P70-L004",
+        "STD2020-SOURCELINE-P70-L005",
+        "STD2020-SOURCELINE-P70-L006",
+        "STD2020-SOURCELINE-P70-L007"
+      ],
+      "source_line_sha256": [
+        "c5bcf68cf6d86a4c495ba5f2b555e6eef31b0264f3258ce41f9b06f2e25b9bb8",
+        "bfe613f07d15d267bb61f51211697cf11acbe1215e5ca1c08e7a8d5fa042bdfa",
+        "1d0c8e6e9c78c0a596372bb962221d7e13e36e725acd25e69b42f5c0ca54d77c",
+        "e7faf44a2b0364d7297d7b9c085d41822d34d471fe85666c5d4af6e339f40e42",
+        "dde613fef061383db70050f05025318d69dcf9d3274a542f55b98c8746e3a3f4",
+        "bfd9bc0c1556eb663be342173e2701dbff25af44c3fc1b07f0dfea0be7a995db"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "自然及艺术中重复变化的周期性",
+      "pages": [
+        70
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-005",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P70-L008",
+        "STD2020-SOURCELINE-P70-L009",
+        "STD2020-SOURCELINE-P70-L010",
+        "STD2020-SOURCELINE-P70-L011"
+      ],
+      "source_line_sha256": [
+        "0426e1fb8776d5de54174abe60e64cbfa59c39048b1c4d2ebd5a6d36a104c461",
+        "b01885253446cfc1dd915e1528e35256375fa717322de881fc1614e858b42ff4",
+        "64e9f2f3a152257932146b714f57462d8cc2aac244af239aa113e3776141c8f5",
+        "c54d536d91b347d1347fd78ec6c519f28cf6294b9f4a35f2c137ce28cf62ce56"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "黄金比例和递推数列的模型适用边界",
+      "pages": [
+        70
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-006",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P70-L012",
+        "STD2020-SOURCELINE-P70-L013",
+        "STD2020-SOURCELINE-P70-L014",
+        "STD2020-SOURCELINE-P70-L015"
+      ],
+      "source_line_sha256": [
+        "edf16b6a501d49becce2ace0f578f0b329259f392aa244b673df716744da4e19",
+        "336029b0b4c6c12d1955d99a26de6498995d4f4d7ec0ce458bc2434e18364bc7",
+        "4f603fda68c259f1e2ce35e10e8bc204c7b400aa2087fbdf2c29bf3cb2960178",
+        "71235567dc2dd4207bb979bea32802bb93519d94a3ca5d1940c5c64029befe7d"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Concept",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "正弦波频率、振幅及叠加",
+      "pages": [
+        70
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-007",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P70-L023",
+        "STD2020-SOURCELINE-P70-L024",
+        "STD2020-SOURCELINE-P70-L025"
+      ],
+      "source_line_sha256": [
+        "7b6ce0fe135bd561a2be633a49316ceba3cbe3386000aba6150f6b53e005833d",
+        "02b3e4c3f1ffadc6f31da97e7df635e569d45bd42e3927011de9661ef24c6683",
+        "7497379ec37cc2eccd33abcd987dda011b5bc0cedf78210a8abc31a191d73908"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "音律的频率比与等比数列",
+      "pages": [
+        71
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-008",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P71-L001",
+        "STD2020-SOURCELINE-P71-L002",
+        "STD2020-SOURCELINE-P71-L003",
+        "STD2020-SOURCELINE-P71-L004"
+      ],
+      "source_line_sha256": [
+        "e162b51fe6a20fe2482e697c5aa2db13daf3422ca1727bd817a54c37b222650d",
+        "4f1cf47b9cfaced8b463217b02821357fd4c713073e9ca90fcd3d0a7a7fbc061",
+        "8acf6ca67e4f6cc23746699b19c43711de90d36da39665426123d13f2923868d",
+        "473c02f0e21433a82c70a8ddd998ed0d2bedbafebac09a2ba160889c638091f7"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Method",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "节拍分数、同步及最小公倍数",
+      "pages": [
+        71
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-009",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P71-L005",
+        "STD2020-SOURCELINE-P71-L006",
+        "STD2020-SOURCELINE-P71-L007"
+      ],
+      "source_line_sha256": [
+        "94bd99d2181be3615bf455be3dd3475d4ab3ddd007bbab46f02bd460325fc088",
+        "916d48dcb250bab7b412bf0380046320c788b792320128fc1e05610ef5a55a89",
+        "731686b3c6cda8cb1e2490f8ffd393afc37ecaf25bcdd3e4a97e3072692e0c8f"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "乐器振动与共鸣的模型",
+      "pages": [
+        71
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-010",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P71-L008",
+        "STD2020-SOURCELINE-P71-L009",
+        "STD2020-SOURCELINE-P71-L010"
+      ],
+      "source_line_sha256": [
+        "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f",
+        "5d00646cbd6b46173edcadc2e41576b2fabbd9b0e80e9461fe95878a33862d3a",
+        "71dc09d69b72cdfefb3fd761c3d009f2f57854b37ae47ea4327e898750cf1438"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "作品节奏、平移及组合变换",
+      "pages": [
+        71
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-011",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P71-L011",
+        "STD2020-SOURCELINE-P71-L012",
+        "STD2020-SOURCELINE-P71-L013"
+      ],
+      "source_line_sha256": [
+        "acbfc74acbd5dbf118f4711c9d6cf172bc3d08a08a95e87ba3015e4e83e24e9f",
+        "cbba3978080038993e9a8bf40c3b0c2b0ecb4043d0e917ec9f6ff2bfe47dac4a",
+        "3e97536fb075a5e741bcd5c51957a64c5076cd15ed00f65a6ab42ef030cdbf65"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "平面绘画的透视与几何变换",
+      "pages": [
+        72
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-012",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L002",
+        "STD2020-SOURCELINE-P72-L003",
+        "STD2020-SOURCELINE-P72-L004"
+      ],
+      "source_line_sha256": [
+        "74c6e842c898c388dbfc4fccd5ae9f09733e2aef9c4623a8813880b9dadb8b81",
+        "d557660a55730534f3aaadd28199be409802c7581dd5283ccee70447ad5396a9",
+        "416301e37172f71c3ce4dbcfd85074e9187f5581d81f43399e9add0c086bd5f5"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "工艺、建筑和字体中的几何关系",
+      "pages": [
+        72
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-013",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L005",
+        "STD2020-SOURCELINE-P72-L006",
+        "STD2020-SOURCELINE-P72-L007"
+      ],
+      "source_line_sha256": [
+        "b57588c605ca8bd5c6f889228f5643f11181d9f6e7ee5587164769a2274b3efb",
+        "b8185ee8c48207d91ca1421deb860f1940a379faac4c5e900e07d92d272ca42f",
+        "f2f6bfca317a1b005f40aeec9e0541f6a0ef5ceb0ad84808597b801565970c4f"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "计算机绘图的数学与工具",
+      "pages": [
+        72
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-014",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L008",
+        "STD2020-SOURCELINE-P72-L009",
+        "STD2020-SOURCELINE-P72-L010"
+      ],
+      "source_line_sha256": [
+        "3b3dfa10c8e4b4237a8c5bc9c49a4371ae15b578f36901a7679617ecaec09ea1",
+        "aa0ed30fb25b3bbd7359143c2720de8af6c2cdd0c87819b92ee02c1cb56c3ee8",
+        "11872cdcdf779a6840c7ea1558126185d8a54f8f4183d0cb065e6f72dc392a13"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "艺术创作中的数学观念",
+      "pages": [
+        72
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-015",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L011",
+        "STD2020-SOURCELINE-P72-L012"
+      ],
+      "source_line_sha256": [
+        "87e4191d759db70a8eabbe7879817d267e3b081d320bded040750738b8639437",
+        "57a33d468cfeea384e69f019bfa4aac334580c1e6d4480cd0eb10defa3e8af6c"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Method",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "投掷跳跃中的向量分解与运动模型",
+      "pages": [
+        72,
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-016",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L022",
+        "STD2020-SOURCELINE-P72-L023",
+        "STD2020-SOURCELINE-P72-L024",
+        "STD2020-SOURCELINE-P73-L001"
+      ],
+      "source_line_sha256": [
+        "758990630f0a0abbc6e0c98a8aa68bb08b76c757adf5e60afb68d0bd94662d86",
+        "48d1c5f4433ba0b77d08e3fde6b8c33619ca817d501db53bcbd34fc9f82dc2ce",
+        "72cd343b4f1b8412277f359777e80f0861ae2004d07ba7fde61138e632bc84de",
+        "2fb016cc8faf0e0b2240dbf502c65f95f14fb715a8885ddbdd4c18db804c3229"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Method",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "运动指标数据的统计解释",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-017",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L002",
+        "STD2020-SOURCELINE-P73-L003",
+        "STD2020-SOURCELINE-P73-L004",
+        "STD2020-SOURCELINE-P73-L005"
+      ],
+      "source_line_sha256": [
+        "030f1797fef04f8a75719fdb142725f2ae9f83deb1dc141fed1702517196b238",
+        "3e4f23701ebd89e6d24d7c3052161107ae4b359f586c4c35cf7a47a10df88312",
+        "67761e4d7578254b0d532772ba03bea9f6891ba5d731f8d8be5d1cb5f4eb783a",
+        "f57fd3ca8f95bb5829d26f6749a49a7b3bba7e57b1be368087a9860d4d8cc63e"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "赛事排程与图论、优化建模",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-018",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L006",
+        "STD2020-SOURCELINE-P73-L007",
+        "STD2020-SOURCELINE-P73-L008"
+      ],
+      "source_line_sha256": [
+        "cfb442a98f5f58caae2f7451188b1ffd1bbdf495d5363d2780f77d148d825590",
+        "2cf366807186e5757df7164f5e7e7413b8893b4a03af0ce0832c040c8723f91a",
+        "c3a572abd82c2064f514b314e3cbed27d5f584eb818d9222c3f280bbdc3987f1"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_D",
+      "is_school_elective_example": false,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "运动设备和场馆的曲面几何",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-019",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L009",
+        "STD2020-SOURCELINE-P73-L010",
+        "STD2020-SOURCELINE-P73-L011",
+        "STD2020-SOURCELINE-P73-L012"
+      ],
+      "source_line_sha256": [
+        "c7d24be54aeb877d037b004a7ac13cde4f67c6c86cc939d5a0a5369275dab9d7",
+        "49426ba05c4c1012203015c1b36346b4a28acad6a607ff027c68e9aa2958c0e5",
+        "bc9fac44eab0ba593008f0ae1530e5c9258b3fa792b5f14d1a2cf4ecbd4612ab",
+        "43ea1698ff806ba0ee5b0913badf8090df7184e5333262f8c7ac35b0c6843e1f"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "机器人坐标与运动几何",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-020",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "群作用与对称性入门",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-021",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "球面几何的角与距离",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-022",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "多面体拓扑不变量的直观",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-023",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "数列差分及离散变化",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-024",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "初等数论的整除与同余",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-025",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "数量与决策的生活数学实例",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-026",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L018"
+      ],
+      "source_line_sha256": [
+        "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "复利、预算及家庭财务模型",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-027",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L018"
+      ],
+      "source_line_sha256": [
+        "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "地方建筑的几何数据研究",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-028",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L019",
+        "STD2020-SOURCELINE-P73-L020"
+      ],
+      "source_line_sha256": [
+        "ac9167496e0cf1fea46a477fd36a8793268f879a025af230a43a4271d4e29bc8",
+        "6a45896a3c53d4848c09b5b335e3987385d32b6329af65fb7405aa811ea431f6"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "地区经济调查与统计分析",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-029",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L019",
+        "STD2020-SOURCELINE-P73-L020"
+      ],
+      "source_line_sha256": [
+        "ac9167496e0cf1fea46a477fd36a8793268f879a025af230a43a4271d4e29bc8",
+        "6a45896a3c53d4848c09b5b335e3987385d32b6329af65fb7405aa811ea431f6"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "微积分基础的先修主题",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-030",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L021",
+        "STD2020-SOURCELINE-P73-L022"
+      ],
+      "source_line_sha256": [
+        "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+        "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "线性代数和解析几何先修主题",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-031",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L021",
+        "STD2020-SOURCELINE-P73-L022"
+      ],
+      "source_line_sha256": [
+        "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+        "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "course_track": "ELECTIVE_E",
+      "is_school_elective_example": true,
+      "kind": "Exploration",
+      "linked_approved_lesson_ids": [],
+      "official_atom_id": null,
+      "officially_certified": false,
+      "original_paraphrase": "概率与数理统计先修主题",
+      "pages": [
+        73
+      ],
+      "proposal_id": "STD2020-EDITORIAL-PROP150-032",
+      "semantic_duplicate_with_any_other_proposal": "UNDETERMINED",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L021",
+        "STD2020-SOURCELINE-P73-L022"
+      ],
+      "source_line_sha256": [
+        "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+        "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+      ],
+      "teacher_review": "REVIEW_PENDING"
+    }
+  ],
+  "cross_page_semantic_dedup_human_review_complete": false,
+  "historical_editorial_leads": 239,
+  "linked_editorial_leads": 104,
+  "missing_editorial_leads": 135,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_standard": "2017-edition-2020-revision",
+  "original_cde_lines_classified": 122,
+  "pages": [
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 20,
+      "pdf_text_sha256": "19b695aac224998ed4d048779a9039d2543d2cd94126b93d92de0cf37c00326b",
+      "printed_page": 13,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 21,
+      "pdf_text_sha256": "ed2e0d399b101e74b694295f1ff0b1d804e1ec275158208221352799ee5a3922",
+      "printed_page": 14,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P15-L010",
+        "STD2020-P15-L011",
+        "STD2020-P15-L012",
+        "STD2020-P15-L014",
+        "STD2020-P15-L015",
+        "STD2020-P15-L017",
+        "STD2020-P15-L018",
+        "STD2020-P15-L020",
+        "STD2020-P15-L022"
+      ],
+      "numbered_source_markers": 9,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 22,
+      "pdf_text_sha256": "0e5ec94265c06120b46cfa8f12f488eb93e2cc1c6ff068210a125dc96bb90a2b",
+      "printed_page": 15,
+      "risk_flags": [],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P16-L006",
+        "STD2020-P16-L007",
+        "STD2020-P16-L009",
+        "STD2020-P16-L011",
+        "STD2020-P16-L013",
+        "STD2020-P16-L015",
+        "STD2020-P16-L016",
+        "STD2020-P16-L017",
+        "STD2020-P16-L023",
+        "STD2020-P16-L025"
+      ],
+      "numbered_source_markers": 10,
+      "numbered_without_existing_proposal_or_lead": 2,
+      "original_cde_lines": 0,
+      "pdf_page_index": 23,
+      "pdf_text_sha256": "cfcf6a22f14539a72bc9ddabeec7106cc41aa362e67631dd29c4aeed962d4bec",
+      "printed_page": 16,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P17-L009",
+        "STD2020-P17-L012",
+        "STD2020-P17-L013",
+        "STD2020-P17-L016"
+      ],
+      "numbered_source_markers": 4,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 24,
+      "pdf_text_sha256": "4e39d8735ac14cc7eb67381057d6ebdc30baf89cf8d31c610d0ef7dcdb4b77dd",
+      "printed_page": 17,
+      "risk_flags": [],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 25,
+      "pdf_text_sha256": "6e07b044858ad885cb065479878d4000805987f9eba8837dd82a0e2dec1eca2e",
+      "printed_page": 18,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P19-L012",
+        "STD2020-P19-L013",
+        "STD2020-P19-L017",
+        "STD2020-P19-L019",
+        "STD2020-P19-L020",
+        "STD2020-P19-L021",
+        "STD2020-P19-L023",
+        "STD2020-P19-L024"
+      ],
+      "numbered_source_markers": 8,
+      "numbered_without_existing_proposal_or_lead": 1,
+      "original_cde_lines": 0,
+      "pdf_page_index": 26,
+      "pdf_text_sha256": "a2db9e39eb721baaff1a94ce8643748a2d55ef5115277162b163da9cd57a14a6",
+      "printed_page": 19,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P20-L001",
+        "STD2020-P20-L012",
+        "STD2020-P20-L015",
+        "STD2020-P20-L016",
+        "STD2020-P20-L020",
+        "STD2020-P20-L022",
+        "STD2020-P20-L024",
+        "STD2020-P20-L025",
+        "STD2020-P20-L027"
+      ],
+      "numbered_source_markers": 9,
+      "numbered_without_existing_proposal_or_lead": 4,
+      "original_cde_lines": 0,
+      "pdf_page_index": 27,
+      "pdf_text_sha256": "252b5be1fd659871f9cdd5c8a0405018e83c57fb659c151c8aff10ff650ddad3",
+      "printed_page": 20,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P21-L003",
+        "STD2020-P21-L005",
+        "STD2020-P21-L016",
+        "STD2020-P21-L019",
+        "STD2020-P21-L020",
+        "STD2020-P21-L024"
+      ],
+      "numbered_source_markers": 6,
+      "numbered_without_existing_proposal_or_lead": 1,
+      "original_cde_lines": 0,
+      "pdf_page_index": 28,
+      "pdf_text_sha256": "8f667164a293da6bea06b1c59bd5cb46094699bc103faa2af29d247740772162",
+      "printed_page": 21,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P22-L001",
+        "STD2020-P22-L004",
+        "STD2020-P22-L007",
+        "STD2020-P22-L008",
+        "STD2020-P22-L010",
+        "STD2020-P22-L012",
+        "STD2020-P22-L014",
+        "STD2020-P22-L023",
+        "STD2020-P22-L024",
+        "STD2020-P22-L025"
+      ],
+      "numbered_source_markers": 10,
+      "numbered_without_existing_proposal_or_lead": 8,
+      "original_cde_lines": 0,
+      "pdf_page_index": 29,
+      "pdf_text_sha256": "755e9421ce6db4e72285ac2d52e2ca277908f6e19f8230fb3683206a75daac20",
+      "printed_page": 22,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P23-L002",
+        "STD2020-P23-L003",
+        "STD2020-P23-L006",
+        "STD2020-P23-L009"
+      ],
+      "numbered_source_markers": 4,
+      "numbered_without_existing_proposal_or_lead": 2,
+      "original_cde_lines": 0,
+      "pdf_page_index": 30,
+      "pdf_text_sha256": "76896760cc9cb2c96d22713765bab0f1e0ce8f812e77dee5172bb103d7175676",
+      "printed_page": 23,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 31,
+      "pdf_text_sha256": "1669b57cb99c55dfa5fb248a254f4ea99fd4549e305fe143fdcbde52c6b0a793",
+      "printed_page": 24,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P25-L021",
+        "STD2020-P25-L022",
+        "STD2020-P25-L024"
+      ],
+      "numbered_source_markers": 3,
+      "numbered_without_existing_proposal_or_lead": 1,
+      "original_cde_lines": 0,
+      "pdf_page_index": 32,
+      "pdf_text_sha256": "e9c6b1ec72f1bf97d655b55b088cd20f489aefd947b3d26bff3d241e016c2d8d",
+      "printed_page": 25,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P26-L001",
+        "STD2020-P26-L002",
+        "STD2020-P26-L004",
+        "STD2020-P26-L006",
+        "STD2020-P26-L007",
+        "STD2020-P26-L009",
+        "STD2020-P26-L011",
+        "STD2020-P26-L012",
+        "STD2020-P26-L013",
+        "STD2020-P26-L014",
+        "STD2020-P26-L015",
+        "STD2020-P26-L016",
+        "STD2020-P26-L018",
+        "STD2020-P26-L019",
+        "STD2020-P26-L020",
+        "STD2020-P26-L022",
+        "STD2020-P26-L024"
+      ],
+      "numbered_source_markers": 17,
+      "numbered_without_existing_proposal_or_lead": 4,
+      "original_cde_lines": 0,
+      "pdf_page_index": 33,
+      "pdf_text_sha256": "cc1af637e3d26389f6a296ad55fa0bc274c86f06b6f4a5cae39f0016c16d5bc7",
+      "printed_page": 26,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P27-L003",
+        "STD2020-P27-L004",
+        "STD2020-P27-L005",
+        "STD2020-P27-L007",
+        "STD2020-P27-L010",
+        "STD2020-P27-L022",
+        "STD2020-P27-L023",
+        "STD2020-P27-L026"
+      ],
+      "numbered_source_markers": 8,
+      "numbered_without_existing_proposal_or_lead": 4,
+      "original_cde_lines": 0,
+      "pdf_page_index": 34,
+      "pdf_text_sha256": "338e0935daa6a387822c31e1ccdd17a6f280338041bb43361852494674595870",
+      "printed_page": 27,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P28-L001",
+        "STD2020-P28-L003",
+        "STD2020-P28-L004",
+        "STD2020-P28-L015",
+        "STD2020-P28-L025"
+      ],
+      "numbered_source_markers": 5,
+      "numbered_without_existing_proposal_or_lead": 5,
+      "original_cde_lines": 0,
+      "pdf_page_index": 35,
+      "pdf_text_sha256": "20dd294a300dccfd185f028db0921c9621513e61a7f203cad1064251ef6fe69d",
+      "printed_page": 28,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P29-L009",
+        "STD2020-P29-L010"
+      ],
+      "numbered_source_markers": 2,
+      "numbered_without_existing_proposal_or_lead": 2,
+      "original_cde_lines": 0,
+      "pdf_page_index": 36,
+      "pdf_text_sha256": "ea9f4aaf4e87f595ab5518739a6052782d51337858bcb4a54fe7834e4d2da1c4",
+      "printed_page": 29,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 37,
+      "pdf_text_sha256": "9a448d83f88b1df097b1596559df014cb628fcaa662c6be0ba1a3250c35731e2",
+      "printed_page": 30,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P31-L010",
+        "STD2020-P31-L011",
+        "STD2020-P31-L014",
+        "STD2020-P31-L016",
+        "STD2020-P31-L017",
+        "STD2020-P31-L018"
+      ],
+      "numbered_source_markers": 6,
+      "numbered_without_existing_proposal_or_lead": 1,
+      "original_cde_lines": 0,
+      "pdf_page_index": 38,
+      "pdf_text_sha256": "f7d1da36443309494a7c09adf1d9c7e8eebdd25ef428397836ec916063132315",
+      "printed_page": 31,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P32-L004",
+        "STD2020-P32-L005",
+        "STD2020-P32-L007",
+        "STD2020-P32-L008",
+        "STD2020-P32-L009",
+        "STD2020-P32-L013",
+        "STD2020-P32-L017",
+        "STD2020-P32-L020",
+        "STD2020-P32-L023",
+        "STD2020-P32-L024",
+        "STD2020-P32-L026",
+        "STD2020-P32-L028"
+      ],
+      "numbered_source_markers": 12,
+      "numbered_without_existing_proposal_or_lead": 9,
+      "original_cde_lines": 0,
+      "pdf_page_index": 39,
+      "pdf_text_sha256": "216d0c3c700d0654138b69448f3d9363e8dc9113ff47c986cf9e223e0e573f68",
+      "printed_page": 32,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P33-L001"
+      ],
+      "numbered_source_markers": 1,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 40,
+      "pdf_text_sha256": "66b1b7f5bf5082e323abfe56ef4a92a123a8b0d3db7c3a2b2064f0d7848437c2",
+      "printed_page": 33,
+      "risk_flags": [],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 41,
+      "pdf_text_sha256": "1c4650eeda02ad618bd9135c6fbafad85a8926de06ad03a8871691269c0a923e",
+      "printed_page": 34,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 42,
+      "pdf_text_sha256": "9bed449952b7fb1ab9a798cd9860b35129cf64f732730db581d3ece3110b6888",
+      "printed_page": 35,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 43,
+      "pdf_text_sha256": "f64bdc57b9dace9fd6cd272bd7d65ce927dfcaf3978cc94e391c7a2b42057627",
+      "printed_page": 36,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 44,
+      "pdf_text_sha256": "fbf64087c09ef84be8338c26b03212cf91481be7d877815564cef2b32276cf82",
+      "printed_page": 37,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P38-L009",
+        "STD2020-P38-L012",
+        "STD2020-P38-L013",
+        "STD2020-P38-L014",
+        "STD2020-P38-L016",
+        "STD2020-P38-L018",
+        "STD2020-P38-L019",
+        "STD2020-P38-L020",
+        "STD2020-P38-L021",
+        "STD2020-P38-L023",
+        "STD2020-P38-L025",
+        "STD2020-P38-L026"
+      ],
+      "numbered_source_markers": 12,
+      "numbered_without_existing_proposal_or_lead": 1,
+      "original_cde_lines": 0,
+      "pdf_page_index": 45,
+      "pdf_text_sha256": "fb8588bb1b2f13586c3700cf2ea071d1afae006e73957cd487c35881b196e9a6",
+      "printed_page": 38,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P39-L007",
+        "STD2020-P39-L008",
+        "STD2020-P39-L011",
+        "STD2020-P39-L012",
+        "STD2020-P39-L013",
+        "STD2020-P39-L014",
+        "STD2020-P39-L016",
+        "STD2020-P39-L019",
+        "STD2020-P39-L020",
+        "STD2020-P39-L021",
+        "STD2020-P39-L024"
+      ],
+      "numbered_source_markers": 11,
+      "numbered_without_existing_proposal_or_lead": 1,
+      "original_cde_lines": 0,
+      "pdf_page_index": 46,
+      "pdf_text_sha256": "fcae97ee654b6ca91889b0fd403c0e46a08ef5f5b4399abdc9ac770680fae2e0",
+      "printed_page": 39,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P40-L001"
+      ],
+      "numbered_source_markers": 1,
+      "numbered_without_existing_proposal_or_lead": 1,
+      "original_cde_lines": 0,
+      "pdf_page_index": 47,
+      "pdf_text_sha256": "655ceff05655905fc8953f4307345c94a38cf74fc8600f856c58f54d959f7af3",
+      "printed_page": 40,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 48,
+      "pdf_text_sha256": "a0017d0516bd9a11e8aaa774f7c658d0bd9e3d738550602ac1f31196c1212195",
+      "printed_page": 41,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P42-L012",
+        "STD2020-P42-L013",
+        "STD2020-P42-L015",
+        "STD2020-P42-L017",
+        "STD2020-P42-L018",
+        "STD2020-P42-L019",
+        "STD2020-P42-L020",
+        "STD2020-P42-L021",
+        "STD2020-P42-L023",
+        "STD2020-P42-L024",
+        "STD2020-P42-L025",
+        "STD2020-P42-L026",
+        "STD2020-P42-L027"
+      ],
+      "numbered_source_markers": 13,
+      "numbered_without_existing_proposal_or_lead": 3,
+      "original_cde_lines": 0,
+      "pdf_page_index": 49,
+      "pdf_text_sha256": "0085df3e17dde75009817ee095794ca1149358a62261cd0de70c1c40d3e50b28",
+      "printed_page": 42,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P43-L002",
+        "STD2020-P43-L004",
+        "STD2020-P43-L006",
+        "STD2020-P43-L018",
+        "STD2020-P43-L019",
+        "STD2020-P43-L021",
+        "STD2020-P43-L023",
+        "STD2020-P43-L024",
+        "STD2020-P43-L026",
+        "STD2020-P43-L027"
+      ],
+      "numbered_source_markers": 10,
+      "numbered_without_existing_proposal_or_lead": 3,
+      "original_cde_lines": 0,
+      "pdf_page_index": 50,
+      "pdf_text_sha256": "b6d5197823259320743edc396b85129a2fa23a357f258bc2cf76257f7e7550af",
+      "printed_page": 43,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P44-L002",
+        "STD2020-P44-L003",
+        "STD2020-P44-L005",
+        "STD2020-P44-L007",
+        "STD2020-P44-L008",
+        "STD2020-P44-L009",
+        "STD2020-P44-L011",
+        "STD2020-P44-L013",
+        "STD2020-P44-L015",
+        "STD2020-P44-L016",
+        "STD2020-P44-L017"
+      ],
+      "numbered_source_markers": 11,
+      "numbered_without_existing_proposal_or_lead": 8,
+      "original_cde_lines": 0,
+      "pdf_page_index": 51,
+      "pdf_text_sha256": "43c9ad294e10ea189ae8a52cfda6f4e0f4027489cb115e9ea58e919fb35fe3e6",
+      "printed_page": 44,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 52,
+      "pdf_text_sha256": "15eca672c008ff9ccb742b4455778d18d170d5be301eb41bba946bb6f490b040",
+      "printed_page": 45,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P46-L020",
+        "STD2020-P46-L023"
+      ],
+      "numbered_source_markers": 2,
+      "numbered_without_existing_proposal_or_lead": 1,
+      "original_cde_lines": 0,
+      "pdf_page_index": 53,
+      "pdf_text_sha256": "7cb47c507f73eec94f398f03c99ecefab6e97989cf615690c78151c0e7245f84",
+      "printed_page": 46,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P47-L001",
+        "STD2020-P47-L012",
+        "STD2020-P47-L013",
+        "STD2020-P47-L015",
+        "STD2020-P47-L016",
+        "STD2020-P47-L017",
+        "STD2020-P47-L019",
+        "STD2020-P47-L020",
+        "STD2020-P47-L022",
+        "STD2020-P47-L024",
+        "STD2020-P47-L026",
+        "STD2020-P47-L027"
+      ],
+      "numbered_source_markers": 12,
+      "numbered_without_existing_proposal_or_lead": 4,
+      "original_cde_lines": 0,
+      "pdf_page_index": 54,
+      "pdf_text_sha256": "23ac8f41db9faa355ea9ff8b24d308807da2553fb88c8c22b0a26810cf3d0057",
+      "printed_page": 47,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P48-L002",
+        "STD2020-P48-L009",
+        "STD2020-P48-L010",
+        "STD2020-P48-L012",
+        "STD2020-P48-L013",
+        "STD2020-P48-L014",
+        "STD2020-P48-L017",
+        "STD2020-P48-L018",
+        "STD2020-P48-L019",
+        "STD2020-P48-L020"
+      ],
+      "numbered_source_markers": 10,
+      "numbered_without_existing_proposal_or_lead": 3,
+      "original_cde_lines": 0,
+      "pdf_page_index": 55,
+      "pdf_text_sha256": "9d9f99d4570b3cf81fd244e1c1fc457de807ed5e759032d58efb49b7cf9927af",
+      "printed_page": 48,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 56,
+      "pdf_text_sha256": "406e05fd93472a3574c11612c1f2ba7f9d1140c6fd066c74dfacb26f9de34400",
+      "printed_page": 49,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 57,
+      "pdf_text_sha256": "2d40705b359d57699cd44f5d7f3b3f621a25d450d77ab790cda3d6d82398370d",
+      "printed_page": 50,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 58,
+      "pdf_text_sha256": "673c2f1f684127a94f3b80d333f7b24ba5743e236dfada6ef5b8990772a0ccd8",
+      "printed_page": 51,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P52-L009",
+        "STD2020-P52-L012",
+        "STD2020-P52-L015",
+        "STD2020-P52-L017",
+        "STD2020-P52-L020",
+        "STD2020-P52-L021"
+      ],
+      "numbered_source_markers": 6,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 59,
+      "pdf_text_sha256": "6c0a3b0c23072aa895a6e63e0f4a7b8de988d8343b5798121c10732960619a37",
+      "printed_page": 52,
+      "risk_flags": [],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P53-L002",
+        "STD2020-P53-L003",
+        "STD2020-P53-L006",
+        "STD2020-P53-L008",
+        "STD2020-P53-L010",
+        "STD2020-P53-L011",
+        "STD2020-P53-L013",
+        "STD2020-P53-L015",
+        "STD2020-P53-L017",
+        "STD2020-P53-L019",
+        "STD2020-P53-L021",
+        "STD2020-P53-L026"
+      ],
+      "numbered_source_markers": 12,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 60,
+      "pdf_text_sha256": "1e2853184489d53bf9d4fd219e432eb9998fef7e33209d607b04b9b80f16cc3c",
+      "printed_page": 53,
+      "risk_flags": [],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P54-L001",
+        "STD2020-P54-L016",
+        "STD2020-P54-L017",
+        "STD2020-P54-L018",
+        "STD2020-P54-L019",
+        "STD2020-P54-L020",
+        "STD2020-P54-L022",
+        "STD2020-P54-L024",
+        "STD2020-P54-L025"
+      ],
+      "numbered_source_markers": 9,
+      "numbered_without_existing_proposal_or_lead": 3,
+      "original_cde_lines": 0,
+      "pdf_page_index": 61,
+      "pdf_text_sha256": "dc1f5bf68e8206d20651ce99b9ba3400206faf4beadb6d708b863203f04b79eb",
+      "printed_page": 54,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P55-L002",
+        "STD2020-P55-L005",
+        "STD2020-P55-L006",
+        "STD2020-P55-L008",
+        "STD2020-P55-L009",
+        "STD2020-P55-L012",
+        "STD2020-P55-L013",
+        "STD2020-P55-L014",
+        "STD2020-P55-L017",
+        "STD2020-P55-L019",
+        "STD2020-P55-L020",
+        "STD2020-P55-L021",
+        "STD2020-P55-L023",
+        "STD2020-P55-L024"
+      ],
+      "numbered_source_markers": 14,
+      "numbered_without_existing_proposal_or_lead": 4,
+      "original_cde_lines": 0,
+      "pdf_page_index": 62,
+      "pdf_text_sha256": "91738424d6a1dbd83646b08167da7d461bb192c28c3a86cc40e540fa5ba43d8b",
+      "printed_page": 55,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P56-L014",
+        "STD2020-P56-L016",
+        "STD2020-P56-L019",
+        "STD2020-P56-L022"
+      ],
+      "numbered_source_markers": 4,
+      "numbered_without_existing_proposal_or_lead": 4,
+      "original_cde_lines": 0,
+      "pdf_page_index": 63,
+      "pdf_text_sha256": "b9e7b4d1323e872f902de19c07cb4ba23dbfce554fcc8e56ce49547340606718",
+      "printed_page": 56,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P57-L001",
+        "STD2020-P57-L007",
+        "STD2020-P57-L008",
+        "STD2020-P57-L010",
+        "STD2020-P57-L012",
+        "STD2020-P57-L013",
+        "STD2020-P57-L015"
+      ],
+      "numbered_source_markers": 7,
+      "numbered_without_existing_proposal_or_lead": 5,
+      "original_cde_lines": 0,
+      "pdf_page_index": 64,
+      "pdf_text_sha256": "b06b9e379b4d7fcc2afbbb1626b51d06efe9468d4af5ece8e6b0bbe1565d6a50",
+      "printed_page": 57,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P58-L008",
+        "STD2020-P58-L010",
+        "STD2020-P58-L014",
+        "STD2020-P58-L016",
+        "STD2020-P58-L017",
+        "STD2020-P58-L019",
+        "STD2020-P58-L021",
+        "STD2020-P58-L023"
+      ],
+      "numbered_source_markers": 8,
+      "numbered_without_existing_proposal_or_lead": 8,
+      "original_cde_lines": 0,
+      "pdf_page_index": 65,
+      "pdf_text_sha256": "2c2e65b4550d1fefc8dac46850455c050fa2154fd63bb596f8d6c80acc6c2310",
+      "printed_page": 58,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P59-L002",
+        "STD2020-P59-L004",
+        "STD2020-P59-L005",
+        "STD2020-P59-L007",
+        "STD2020-P59-L010",
+        "STD2020-P59-L011",
+        "STD2020-P59-L014",
+        "STD2020-P59-L016",
+        "STD2020-P59-L018"
+      ],
+      "numbered_source_markers": 9,
+      "numbered_without_existing_proposal_or_lead": 4,
+      "original_cde_lines": 0,
+      "pdf_page_index": 66,
+      "pdf_text_sha256": "2d16df3d9e8012981aab16d43fd9e578a7edfe2ef97a9b3f01b0d9e790c7e5a8",
+      "printed_page": 59,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P60-L004",
+        "STD2020-P60-L005",
+        "STD2020-P60-L006",
+        "STD2020-P60-L007",
+        "STD2020-P60-L008",
+        "STD2020-P60-L010",
+        "STD2020-P60-L013",
+        "STD2020-P60-L015",
+        "STD2020-P60-L017",
+        "STD2020-P60-L020",
+        "STD2020-P60-L021",
+        "STD2020-P60-L023",
+        "STD2020-P60-L024"
+      ],
+      "numbered_source_markers": 13,
+      "numbered_without_existing_proposal_or_lead": 10,
+      "original_cde_lines": 0,
+      "pdf_page_index": 67,
+      "pdf_text_sha256": "3ae2aa6779c79a24f12986c6f46d339d8ffe8256266b4965f224daabced54e18",
+      "printed_page": 60,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P61-L015",
+        "STD2020-P61-L017",
+        "STD2020-P61-L020",
+        "STD2020-P61-L023"
+      ],
+      "numbered_source_markers": 4,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 68,
+      "pdf_text_sha256": "71f27de6458e7e89785d89c73f08c59f2ba023e951d6f054fe91d8afe133861b",
+      "printed_page": 61,
+      "risk_flags": [],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P62-L002",
+        "STD2020-P62-L008",
+        "STD2020-P62-L009",
+        "STD2020-P62-L011",
+        "STD2020-P62-L013",
+        "STD2020-P62-L014",
+        "STD2020-P62-L016",
+        "STD2020-P62-L018",
+        "STD2020-P62-L019",
+        "STD2020-P62-L022",
+        "STD2020-P62-L023"
+      ],
+      "numbered_source_markers": 11,
+      "numbered_without_existing_proposal_or_lead": 6,
+      "original_cde_lines": 0,
+      "pdf_page_index": 69,
+      "pdf_text_sha256": "3f1e8d22a1dc7f2695a0827cfc57ef84d68bac1b9605038354a7e2a19a02b970",
+      "printed_page": 62,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P63-L010",
+        "STD2020-P63-L012",
+        "STD2020-P63-L015"
+      ],
+      "numbered_source_markers": 3,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 70,
+      "pdf_text_sha256": "ead7dcc985361342359d7e934c512172d48443530f356a54dab25f5056cd7b43",
+      "printed_page": 63,
+      "risk_flags": [],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P64-L005",
+        "STD2020-P64-L006",
+        "STD2020-P64-L007"
+      ],
+      "numbered_source_markers": 3,
+      "numbered_without_existing_proposal_or_lead": 1,
+      "original_cde_lines": 0,
+      "pdf_page_index": 71,
+      "pdf_text_sha256": "6c6024839de3549b758869f740fb9ee4d13b010eb0d036d045167da5ebde01d4",
+      "printed_page": 64,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 72,
+      "pdf_text_sha256": "96e36db408e0825c6c9fcaed6a389d4df7b156385ddf2e8da676986a91d4acd9",
+      "printed_page": 65,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P66-L007",
+        "STD2020-P66-L011",
+        "STD2020-P66-L015",
+        "STD2020-P66-L020",
+        "STD2020-P66-L024"
+      ],
+      "numbered_source_markers": 5,
+      "numbered_without_existing_proposal_or_lead": 3,
+      "original_cde_lines": 0,
+      "pdf_page_index": 73,
+      "pdf_text_sha256": "25bff84e35329b3343b247358a63c1de34d9c733bf6890a892246e54d600f42a",
+      "printed_page": 66,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P67-L003",
+        "STD2020-P67-L008",
+        "STD2020-P67-L012"
+      ],
+      "numbered_source_markers": 3,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 0,
+      "pdf_page_index": 74,
+      "pdf_text_sha256": "8faac327ab8c4a704dea8719e47a82d7db5d8daa6f8df8272470547c8d2009bd",
+      "printed_page": 67,
+      "risk_flags": [],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {},
+      "cde_semantic_proposal_ids": [],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [
+        "STD2020-P68-L003",
+        "STD2020-P68-L004",
+        "STD2020-P68-L007",
+        "STD2020-P68-L009",
+        "STD2020-P68-L010",
+        "STD2020-P68-L012",
+        "STD2020-P68-L018",
+        "STD2020-P68-L022"
+      ],
+      "numbered_source_markers": 8,
+      "numbered_without_existing_proposal_or_lead": 7,
+      "original_cde_lines": 0,
+      "pdf_page_index": 75,
+      "pdf_text_sha256": "b70377674a1b146d7920ba5ee27dc3e294d3e4d4491f447827f0e0cffe89b0a5",
+      "printed_page": 68,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {
+        "ELECTIVE_C": 5,
+        "ELECTIVE_D": 18,
+        "PARATEXT": 1
+      },
+      "cde_semantic_proposal_ids": [
+        "STD2020-EDITORIAL-PROP150-001",
+        "STD2020-EDITORIAL-PROP150-002",
+        "STD2020-EDITORIAL-PROP150-003"
+      ],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 24,
+      "pdf_page_index": 76,
+      "pdf_text_sha256": "8bec09fda584458da11be2eb63f119162d9565a82e4edac6761b3cecd3cea41c",
+      "printed_page": 69,
+      "risk_flags": [
+        "MIDPAGE_TRACK_TRANSITION",
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {
+        "ELECTIVE_D": 24,
+        "PARATEXT": 2
+      },
+      "cde_semantic_proposal_ids": [
+        "STD2020-EDITORIAL-PROP150-004",
+        "STD2020-EDITORIAL-PROP150-005",
+        "STD2020-EDITORIAL-PROP150-006",
+        "STD2020-EDITORIAL-PROP150-007"
+      ],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 26,
+      "pdf_page_index": 77,
+      "pdf_text_sha256": "bee45a8d1a661ac86a67c2f571a7122fb3f0defc2577a458d6e20c5c2f6b4124",
+      "printed_page": 70,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {
+        "ELECTIVE_D": 23,
+        "PARATEXT": 1
+      },
+      "cde_semantic_proposal_ids": [
+        "STD2020-EDITORIAL-PROP150-008",
+        "STD2020-EDITORIAL-PROP150-009",
+        "STD2020-EDITORIAL-PROP150-010",
+        "STD2020-EDITORIAL-PROP150-011"
+      ],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 24,
+      "pdf_page_index": 78,
+      "pdf_text_sha256": "68e6330baba8f9a9ada9c8dcfd02afb940ef898ca3d8f2c52ff0b59121ab16a7",
+      "printed_page": 71,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {
+        "ELECTIVE_D": 23,
+        "PARATEXT": 2
+      },
+      "cde_semantic_proposal_ids": [
+        "STD2020-EDITORIAL-PROP150-012",
+        "STD2020-EDITORIAL-PROP150-013",
+        "STD2020-EDITORIAL-PROP150-014",
+        "STD2020-EDITORIAL-PROP150-015",
+        "STD2020-EDITORIAL-PROP150-016"
+      ],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 25,
+      "pdf_page_index": 79,
+      "pdf_text_sha256": "36959126d90e768a65b202f2da62cf00c84f94e99b059a49df41af2fe1667443",
+      "printed_page": 72,
+      "risk_flags": [
+        "CROSSPAGE_ELECTIVE_D_CONTINUATION",
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    },
+    {
+      "cde_original_line_classifications": {
+        "ELECTIVE_D": 12,
+        "ELECTIVE_E": 10,
+        "PARATEXT": 1
+      },
+      "cde_semantic_proposal_ids": [
+        "STD2020-EDITORIAL-PROP150-016",
+        "STD2020-EDITORIAL-PROP150-017",
+        "STD2020-EDITORIAL-PROP150-018",
+        "STD2020-EDITORIAL-PROP150-019",
+        "STD2020-EDITORIAL-PROP150-020",
+        "STD2020-EDITORIAL-PROP150-021",
+        "STD2020-EDITORIAL-PROP150-022",
+        "STD2020-EDITORIAL-PROP150-023",
+        "STD2020-EDITORIAL-PROP150-024",
+        "STD2020-EDITORIAL-PROP150-025",
+        "STD2020-EDITORIAL-PROP150-026",
+        "STD2020-EDITORIAL-PROP150-027",
+        "STD2020-EDITORIAL-PROP150-028",
+        "STD2020-EDITORIAL-PROP150-029",
+        "STD2020-EDITORIAL-PROP150-030",
+        "STD2020-EDITORIAL-PROP150-031",
+        "STD2020-EDITORIAL-PROP150-032"
+      ],
+      "content_requirements_in_unenumerated_lines": "UNKNOWN",
+      "numbered_marker_ids": [],
+      "numbered_source_markers": 0,
+      "numbered_without_existing_proposal_or_lead": 0,
+      "original_cde_lines": 23,
+      "pdf_page_index": 80,
+      "pdf_text_sha256": "04eecc184ebde477d84aca24b3a4933c1c1887c6a2901c1dbbbc04a3842e34de",
+      "printed_page": 73,
+      "risk_flags": [
+        "CROSSPAGE_ELECTIVE_D_CONTINUATION",
+        "MIDPAGE_TRACK_TRANSITION",
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ],
+      "semantic_atom_count": "UNKNOWN",
+      "teacher_scope_review": "REVIEW_PENDING"
+    }
+  ],
+  "pending_teacher_manuscripts": 145,
+  "prioritized_review_pages": [
+    {
+      "markers_unpaired": 0,
+      "printed_page": 73,
+      "risk_flags": [
+        "CROSSPAGE_ELECTIVE_D_CONTINUATION",
+        "MIDPAGE_TRACK_TRANSITION",
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 69,
+      "risk_flags": [
+        "MIDPAGE_TRACK_TRANSITION",
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 72,
+      "risk_flags": [
+        "CROSSPAGE_ELECTIVE_D_CONTINUATION",
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 10,
+      "printed_page": 60,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 9,
+      "printed_page": 32,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 8,
+      "printed_page": 22,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 8,
+      "printed_page": 44,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 8,
+      "printed_page": 58,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 7,
+      "printed_page": 68,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 6,
+      "printed_page": 62,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 5,
+      "printed_page": 28,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 5,
+      "printed_page": 57,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 4,
+      "printed_page": 20,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 4,
+      "printed_page": 26,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 4,
+      "printed_page": 27,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 4,
+      "printed_page": 47,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 4,
+      "printed_page": 55,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 4,
+      "printed_page": 56,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 4,
+      "printed_page": 59,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 3,
+      "printed_page": 42,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 3,
+      "printed_page": 43,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 3,
+      "printed_page": 48,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 3,
+      "printed_page": 54,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 3,
+      "printed_page": 66,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 2,
+      "printed_page": 16,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 2,
+      "printed_page": 23,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 2,
+      "printed_page": 29,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 1,
+      "printed_page": 19,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 1,
+      "printed_page": 21,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 1,
+      "printed_page": 25,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 1,
+      "printed_page": 31,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 1,
+      "printed_page": 38,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 1,
+      "printed_page": 39,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 1,
+      "printed_page": 40,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 1,
+      "printed_page": 46,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 1,
+      "printed_page": 64,
+      "risk_flags": [
+        "NUMBERED_NO_ATOM_OR_LEAD_LINE_OVERLAP"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 13,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 14,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 18,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 24,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 30,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 34,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 35,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 36,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 37,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 41,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 45,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 49,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 50,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 51,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 65,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 70,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    },
+    {
+      "markers_unpaired": 0,
+      "printed_page": 71,
+      "risk_flags": [
+        "ZERO_NUMBERED_MARKERS_NOT_ZERO_REQUIREMENTS"
+      ]
+    }
+  ],
+  "provisional_41_semantic_proposals": 41,
+  "real_teacher_approved": 0,
+  "risk_pages": 53,
+  "schema": "kb154-full-61-page-source-line-census-review-graph/1",
+  "seven_track_official_census_complete": false,
+  "source_numbered_markers": 315,
+  "source_pages_scanned": 61,
+  "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "source_pdf_total_pages": 188,
+  "student_authoritative": 0,
+  "unnumbered_source_requirements_human_split_complete": false,
+  "warning": "315 numbered source markers, 32 unnumbered CDE proposals, 41 proposals, 239 leads, and 145 drafts are NOT additive, not official knowledge atoms or coverage rates."
+}
