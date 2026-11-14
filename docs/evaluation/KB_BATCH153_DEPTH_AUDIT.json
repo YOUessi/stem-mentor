@@ -1,0 +1,980 @@
+{
+  "added_original_manuscripts": 10,
+  "by_track": {
+    "COMPULSORY": 52,
+    "ELECTIVE_A": 17,
+    "ELECTIVE_B": 9,
+    "ELECTIVE_C": 9,
+    "ELECTIVE_D": 10,
+    "ELECTIVE_E": 9,
+    "SELECTIVE_COMPULSORY": 29
+  },
+  "formal_general_proofs_certified": 0,
+  "free_student_steps_verified": 0,
+  "near_far_tasks": 20,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_coverage_rate": null,
+  "original_teacher_examples": 20,
+  "prior_teacher_pending_manuscripts": 125,
+  "rows": [
+    {
+      "candidate": "hs-semantic-pilot-119-a01",
+      "id": "kb147-deep-119-a01",
+      "review": "REVIEW_PENDING",
+      "source_sha": "89f80424707f780fd5301b655bbf4d6fdfd3d6bd03731c8f35181d3d0752f993",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-a02",
+      "id": "kb149-deep-119-a02",
+      "review": "REVIEW_PENDING",
+      "source_sha": "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-a03",
+      "id": "kb152-deep-119-a03",
+      "review": "REVIEW_PENDING",
+      "source_sha": "213a9a645ce73d6de941a3ffdb1fb4e5de36d2806885b35667c0f8241a4c931a",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-a05",
+      "id": "kb151-deep-119-a05",
+      "review": "REVIEW_PENDING",
+      "source_sha": "71a0bbbdf5327da65e069070ff1cc42fc31a1af7498c76cd8a16372a59f0cd62",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-a06",
+      "id": "kb146-deep-119-a06",
+      "review": "REVIEW_PENDING",
+      "source_sha": "91f14980ff51ebb0e62806cb98ecf806747b3fd7caa81418fa92941e938cd81e",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-b01",
+      "id": "kb147-deep-119-b01",
+      "review": "REVIEW_PENDING",
+      "source_sha": "9949e4f3085242c68f1d534544451317bab1d8ffee88b0858911fdce7de57caf",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-b02",
+      "id": "kb152-deep-119-b02",
+      "review": "REVIEW_PENDING",
+      "source_sha": "0c1ab4eecd21408397ffc0609e5242ebae9a7b860110002650cf7c8b462f1002",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-b03",
+      "id": "kb149-deep-119-b03",
+      "review": "REVIEW_PENDING",
+      "source_sha": "1cc930b55b90c9201dcda53f818184243b26f3cccac366cc69720793954a97e6",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-b04",
+      "id": "kb151-deep-119-b04",
+      "review": "REVIEW_PENDING",
+      "source_sha": "bdb1cc1a91fd817a0ff8bfff800f9eb4c77ee0d5ae111a3716b0579d21fce933",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-c01",
+      "id": "kb146-deep-119-c01",
+      "review": "REVIEW_PENDING",
+      "source_sha": "e447b6fdfb0697bf99db3c87b6b80b29c98ec862d1ad246ba1d251541ab27e5a",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-c02",
+      "id": "kb147-deep-119-c02",
+      "review": "REVIEW_PENDING",
+      "source_sha": "aaab1d33fc00dd1a0c23b8a29744315f295d60661b941674ba559e5e7128c5e6",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-c03",
+      "id": "kb147-deep-119-c03",
+      "review": "REVIEW_PENDING",
+      "source_sha": "632d87342d667f950c7b934d5c7f3d36a244840df39307641b35020dfa9d9654",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-c04",
+      "id": "kb152-deep-119-c04",
+      "review": "REVIEW_PENDING",
+      "source_sha": "087c56a89669cd05f02621a768e416eff8ea582a3af52ea1c831d00209656693",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-c05",
+      "id": "kb152-deep-119-c05",
+      "review": "REVIEW_PENDING",
+      "source_sha": "d66fe38d5a996c42d82dc8ba9aadc61b33f017fa1158175a05b46a8200889e2d",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-c06",
+      "id": "kb147-deep-119-c06",
+      "review": "REVIEW_PENDING",
+      "source_sha": "43a1d42a3b7619a9d38f9c7bf37284854fc0134be4587830b599d4644e2e7c4b",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-c07",
+      "id": "kb149-deep-119-c07",
+      "review": "REVIEW_PENDING",
+      "source_sha": "c21d84ab4846bac30a27f88ba73e2ad3560cef2d3a931d926285b5e01151036c",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-c08",
+      "id": "kb151-deep-119-c08",
+      "review": "REVIEW_PENDING",
+      "source_sha": "496f6779b5a3333f0b1612cd5dac242f93ffae71cb547ca553ecbe6de924a173",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-c09",
+      "id": "kb152-deep-119-c09",
+      "review": "REVIEW_PENDING",
+      "source_sha": "992897284b5c55cfe761dbb015ac2818c4a5dabab39d5626bed128f9e52e18a3",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-ec01",
+      "id": "kb147-deep-119-ec01",
+      "review": "REVIEW_PENDING",
+      "source_sha": "c20855ad22bbae44336d305109763fe297b829298900c2cef6941d8a83c23278",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-ec02",
+      "id": "kb151-deep-119-ec02",
+      "review": "REVIEW_PENDING",
+      "source_sha": "a3568a07504c07ad7b51e00f6b1d12f051978bc9f35ed8a3c277f1150e43a91f",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-ec03",
+      "id": "kb152-deep-119-ec03",
+      "review": "REVIEW_PENDING",
+      "source_sha": "e7991d380d57f35644fba732460da4adcbd7e4f2a56ce6d6eaa9d2f3f65e1be0",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-ec05",
+      "id": "kb149-deep-119-ec05",
+      "review": "REVIEW_PENDING",
+      "source_sha": "2795b6d7e85c7472a3c5e50f7be967fad7d5b7bf94d20de701167f0f9a86ce15",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-ed01",
+      "id": "kb147-deep-119-ed01",
+      "review": "REVIEW_PENDING",
+      "source_sha": "9b2f785d8afeb1243200675dac59cfa56b4c315c3bd4902bbc8370f7d0d5f495",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-ed02",
+      "id": "kb149-deep-119-ed02",
+      "review": "REVIEW_PENDING",
+      "source_sha": "72bb616409f81438d558f0a86336f65cd03226f314946570df02cd37e94d9500",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-ed04",
+      "id": "kb152-deep-119-ed04",
+      "review": "REVIEW_PENDING",
+      "source_sha": "bc7438f44a9bef9bd885ea47ba2b0c83f10178d5579c57ace329a7e78820d58d",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-ee01",
+      "id": "kb147-deep-119-ee01",
+      "review": "REVIEW_PENDING",
+      "source_sha": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-ee02",
+      "id": "kb146-deep-119-ee02",
+      "review": "REVIEW_PENDING",
+      "source_sha": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s01",
+      "id": "kb147-deep-119-s01",
+      "review": "REVIEW_PENDING",
+      "source_sha": "30489f5df9400d10a107aa026a9a5eb807335197f6c9b032bc8e77bad7111684",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s02",
+      "id": "kb152-deep-119-s02",
+      "review": "REVIEW_PENDING",
+      "source_sha": "0c28fd120248fee273675889b62eba746555ea49bc591f5e7e0f5c04c3e88484",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s03",
+      "id": "kb147-deep-119-s03",
+      "review": "REVIEW_PENDING",
+      "source_sha": "0ce1d451c3f80615ffa07aa29a3bf781ee0ffb29160f87644c5c414708ef36d1",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s04",
+      "id": "kb151-deep-119-s04",
+      "review": "REVIEW_PENDING",
+      "source_sha": "1990124d0fb9081f94b3f90df71adb24c8bc680485691c58a8ccc862090d0112",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s06",
+      "id": "kb146-deep-119-s06",
+      "review": "REVIEW_PENDING",
+      "source_sha": "33d95bf2fac9a4c7e2922e727730746feab11873b476a6004dec1163a7cba6f5",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s09",
+      "id": "kb151-deep-119-s09",
+      "review": "REVIEW_PENDING",
+      "source_sha": "7a57dc095e46689e1aff6eeb2653cbb1d822eda35536c67ca833feeab326d5c9",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s12",
+      "id": "kb152-deep-119-s12",
+      "review": "REVIEW_PENDING",
+      "source_sha": "25963aa4de28dffaaefb9c816c9bd2163580d196191146c20d365fcd606684b1",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s13",
+      "id": "kb149-deep-119-s13",
+      "review": "REVIEW_PENDING",
+      "source_sha": "26bdc81c2d0b1c858906dbfa6c32031955b162eb6c0f6809afc4bc6ec31e1951",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s14",
+      "id": "kb149-deep-119-s14",
+      "review": "REVIEW_PENDING",
+      "source_sha": "5ccab2f8a2b612a9555aa283ef976220be2b3ed5a5e8f4572438edb236cc03b2",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-119-s16",
+      "id": "kb153-deep-119-s16",
+      "review": "REVIEW_PENDING",
+      "source_sha": "c9b8973fd5a0e97a1e4250f0f0e53608c4afec0e15cb26971090dc280e90ba22",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-a104",
+      "id": "kb144-deep-120-a104",
+      "review": "REVIEW_PENDING",
+      "source_sha": "d34b25cd424d26459408bbd7820198f031dd37380c7d761580c247c2475bfbf5",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-a106",
+      "id": "kb153-deep-120-a106",
+      "review": "REVIEW_PENDING",
+      "source_sha": "bf9b5ad11c6fcc3b4e25794a93de158e993f3e3b104082a17fa79ebcaa0cc542",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-a108",
+      "id": "kb143-deep-120-a108",
+      "review": "REVIEW_PENDING",
+      "source_sha": "ffe5b409aadf394caf6c0b7db228d766f1577e0e5670e7658617faf4eaffb212",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-b101",
+      "id": "kb146-deep-120-b101",
+      "review": "REVIEW_PENDING",
+      "source_sha": "5d3e97af0d1a2944bb65895b267cd390cad29065ae737b2fa791cec058534902",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c101",
+      "id": "kb144-deep-120-c101",
+      "review": "REVIEW_PENDING",
+      "source_sha": "a636fc3d162f5e98129e6b893b33c3b0c83087371d45cbb49a5a779100d2afc4",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c102",
+      "id": "kb151-deep-120-c102",
+      "review": "REVIEW_PENDING",
+      "source_sha": "acbe66064fb3bbf8f6ee9b771d66d5e37af3e2b0f3a4fb29fc691aadb212a0b1",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c103",
+      "id": "kb139-deep-120-c103",
+      "review": "REVIEW_PENDING",
+      "source_sha": "4cc4ddce4851f23c5d1de57b5a912abdbc5b0a8d33f5df41fb12f285c6863e8c",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c104",
+      "id": "kb153-deep-120-c104",
+      "review": "REVIEW_PENDING",
+      "source_sha": "05221c0af7ea1801671c8753cd0350c2c388a77f008871e691ce765b97abdb17",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c105",
+      "id": "kb139-deep-120-c105",
+      "review": "REVIEW_PENDING",
+      "source_sha": "639be43646e0be6aeded413fa83e1303c0e0a9d8a7c2b80be7d312ea9cbbfc54",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c107",
+      "id": "kb151-deep-120-c107",
+      "review": "REVIEW_PENDING",
+      "source_sha": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c108",
+      "id": "kb143-deep-120-c108",
+      "review": "REVIEW_PENDING",
+      "source_sha": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c111",
+      "id": "kb139-deep-120-c111",
+      "review": "REVIEW_PENDING",
+      "source_sha": "27503ff60c180670f3f14f24897095a431dd3323ea9c21d3259fad3ebd501829",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-c112",
+      "id": "kb149-deep-120-c112",
+      "review": "REVIEW_PENDING",
+      "source_sha": "2371729eedae4ab0cd3b6bbe79e3dcc7ce3015fdfc8cd5d350c3e241c197828d",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ec103",
+      "id": "kb146-deep-120-ec103",
+      "review": "REVIEW_PENDING",
+      "source_sha": "da0989ec9df6c9e4a7c0bfbd390da1a86154f0f30866fb4ac467eb68cfcbd419",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ec104",
+      "id": "kb144-deep-120-ec104",
+      "review": "REVIEW_PENDING",
+      "source_sha": "c45b8aeb6a717311f56729b9bccbcf7c372bf394b0f747379dbc5c0a1fce8a6f",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ec108",
+      "id": "kb153-deep-120-ec108",
+      "review": "REVIEW_PENDING",
+      "source_sha": "486937c48512c10959eb0ccebf99068273fa35c7b6e84e087eadc449f5849336",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed103",
+      "id": "kb146-deep-120-ed103",
+      "review": "REVIEW_PENDING",
+      "source_sha": "2153013a4fd73fe18aeeaea1184f7f944dae2d73bf477e73676ff67cd6b99979",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed104",
+      "id": "kb144-deep-120-ed104",
+      "review": "REVIEW_PENDING",
+      "source_sha": "8fcde65d075d5928107ec082eb38ef1e3f7a13fb37901608a0a9fc129b248641",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed105",
+      "id": "kb143-deep-120-ed105",
+      "review": "REVIEW_PENDING",
+      "source_sha": "998a6d01313d307c2a5a06b5b16717847dcf57cb19cfde3867d6c68ff5bce73c",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed106",
+      "id": "kb151-deep-120-ed106",
+      "review": "REVIEW_PENDING",
+      "source_sha": "bab1331dcacbd163a30ef8477a74734aac2ce27a15d6d80d253d3a9b4f216e48",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ed108",
+      "id": "kb153-deep-120-ed108",
+      "review": "REVIEW_PENDING",
+      "source_sha": "68b7f041747c4c459cfa510cffc54a352578be5ce5d4226d72cbd5f57ff6a181",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee102",
+      "id": "kb144-deep-120-ee102",
+      "review": "REVIEW_PENDING",
+      "source_sha": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee103",
+      "id": "kb149-deep-120-ee103",
+      "review": "REVIEW_PENDING",
+      "source_sha": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee104",
+      "id": "kb138-deep-120-ee104",
+      "review": "REVIEW_PENDING",
+      "source_sha": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee105",
+      "id": "kb151-deep-120-ee105",
+      "review": "REVIEW_PENDING",
+      "source_sha": "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee106",
+      "id": "kb138-deep-120-ee106",
+      "review": "REVIEW_PENDING",
+      "source_sha": "f7459c2367e3f5128b3d4cfc83a92277ddc73504920b1de446db2ccb2770e97c",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee107",
+      "id": "kb153-deep-120-ee107",
+      "review": "REVIEW_PENDING",
+      "source_sha": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-ee108",
+      "id": "kb152-deep-120-ee108",
+      "review": "REVIEW_PENDING",
+      "source_sha": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+      "track": "ELECTIVE_E"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s101",
+      "id": "kb144-deep-120-s101",
+      "review": "REVIEW_PENDING",
+      "source_sha": "216bea8f5d7341aa38e5ea06aeb71fa13ad5b36f022d4551b39b734f8ab2e3f9",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s107",
+      "id": "kb143-deep-120-s107",
+      "review": "REVIEW_PENDING",
+      "source_sha": "0ecbe750560f850e58214cdcaf6bbcb08b6e49ee6694cfa5a3fc1af95a00e9c9",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-120-s112",
+      "id": "kb146-deep-120-s112",
+      "review": "REVIEW_PENDING",
+      "source_sha": "d2552df0590736eaa6d7844eef9850d7c566fb5a56e14d5da75f9246f4640a67",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-b203",
+      "id": "kb138-deep-121-b203",
+      "review": "REVIEW_PENDING",
+      "source_sha": "8f848ba298d303b15597e491ffe642698505aebf33b6dba7384f8a795e1bc52b",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-b204",
+      "id": "kb144-deep-121-b204",
+      "review": "REVIEW_PENDING",
+      "source_sha": "5a49093380989b30ac03efe575e3446112aa4127a39decf6c7aa4cf9363f96ec",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-b205",
+      "id": "kb138-deep-121-b205",
+      "review": "REVIEW_PENDING",
+      "source_sha": "9debad935768d20cb0fbe2007ef029501db13ae6b7fc69fb593f7993c9c17c74",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-c201",
+      "id": "kb144-deep-121-c201",
+      "review": "REVIEW_PENDING",
+      "source_sha": "93e9e0dbbe63a2d8d571c32520e33e8cadd941605163fc512edb18a4aaa0721e",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-c203",
+      "id": "kb143-deep-121-c203",
+      "review": "REVIEW_PENDING",
+      "source_sha": "99412f64576d15a88fd53422b1ea5a41f848adede7e1b21e8a6cab44dfe8929c",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-c204",
+      "id": "kb149-deep-121-c204",
+      "review": "REVIEW_PENDING",
+      "source_sha": "aa6b349a9288b6ac13e616bf2fb7f02fca25109765e52eb7db49541be3145f8e",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-c205",
+      "id": "kb153-deep-121-c205",
+      "review": "REVIEW_PENDING",
+      "source_sha": "8f69593d2cd68e8aca4c99ddfb91b6a57f87c9c57bb7217478885ea0658cf939",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-ec202",
+      "id": "kb138-deep-121-ec202",
+      "review": "REVIEW_PENDING",
+      "source_sha": "8b8992d365f38187b8c216db1b82ce01f2b9c7d1059b263b6275c19131d9fc09",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-ec204",
+      "id": "kb138-deep-121-ec204",
+      "review": "REVIEW_PENDING",
+      "source_sha": "66a0df31cff454ef4b76d50a496a75dbd82e4cdbfb2429016aec9cc4047e1fa4",
+      "track": "ELECTIVE_C"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-ed201",
+      "id": "kb138-deep-121-ed201",
+      "review": "REVIEW_PENDING",
+      "source_sha": "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-ed202",
+      "id": "kb138-deep-121-ed202",
+      "review": "REVIEW_PENDING",
+      "source_sha": "3b3dfa10c8e4b4237a8c5bc9c49a4371ae15b578f36901a7679617ecaec09ea1",
+      "track": "ELECTIVE_D"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-s203",
+      "id": "kb139-deep-121-s203",
+      "review": "REVIEW_PENDING",
+      "source_sha": "7988c3896e061468a3e58ffff64709096694986bec46173d7fdeeda122940fee",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-s204",
+      "id": "kb144-deep-121-s204",
+      "review": "REVIEW_PENDING",
+      "source_sha": "08f933e51d1b199250c085eec1e933ad0fc27a9ed9ef7aba406cb1641132d5a0",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-121-s206",
+      "id": "kb139-deep-121-s206",
+      "review": "REVIEW_PENDING",
+      "source_sha": "5bcfab1e2f4d0aebd2056cbe733602f6959c1cf50cd204762f0fef4f361cb27c",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-122-a302",
+      "id": "kb139-deep-122-a302",
+      "review": "REVIEW_PENDING",
+      "source_sha": "2aeddb761ab7fce7910c27d3a7cdd0e4fcc9a15d99d705c94cbc5bdc7bfea7bf",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-122-s304",
+      "id": "kb153-deep-122-s304",
+      "review": "REVIEW_PENDING",
+      "source_sha": "18e0d556fa2f26a10e08b83c6403a2283357f3b346985c9492b401f870726bd6",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-122-s305",
+      "id": "kb143-deep-122-s305",
+      "review": "REVIEW_PENDING",
+      "source_sha": "dcd15d1f9997104deb213c104d4e5e5250ba71b41a8f77beb43b9aea6a3b460e",
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-123-a405",
+      "id": "kb139-deep-123-a405",
+      "review": "REVIEW_PENDING",
+      "source_sha": "20dc8656616a5c17c46aee396227b7b33dfac4937d811db279890acc6f7c5104",
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "hs-semantic-pilot-123-b402",
+      "id": "kb153-deep-123-b402",
+      "review": "REVIEW_PENDING",
+      "source_sha": "9790fcc84ca08f3dd59d63723f2ae26417a78f02daf04a543bdf1a039142175e",
+      "track": "ELECTIVE_B"
+    },
+    {
+      "candidate": "hs-semantic-pilot-123-c403",
+      "id": "kb153-deep-123-c403",
+      "review": "REVIEW_PENDING",
+      "source_sha": "6f6cb0afe080f7497a5bdebff2fb8444dd7285e88ec86c376335ade3abb8e937",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-123-c404",
+      "id": "kb143-deep-123-c404",
+      "review": "REVIEW_PENDING",
+      "source_sha": "65150f2ffa1696eb67ab2d6c75dea4d1cc073746a376e257646dfad4cff4bcf3",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-123-c405",
+      "id": "kb144-deep-123-c405",
+      "review": "REVIEW_PENDING",
+      "source_sha": "f33fb1f7fffce381d06531a2cc55dd338e147bd6ff554a6eeed24ce46c6463be",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-123-c408",
+      "id": "kb146-deep-123-c408",
+      "review": "REVIEW_PENDING",
+      "source_sha": "879aeab2311ef55f2462549bb1779578908408116c7a5fdf9e4c19815484fe3e",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-123-c410",
+      "id": "kb146-deep-123-c410",
+      "review": "REVIEW_PENDING",
+      "source_sha": "8789cb85a67bac523a77d0bf14c275b2bafcc34b3d9f5baf03b6ea52335ade12",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-124-c521",
+      "id": "kb143-deep-124-c521",
+      "review": "REVIEW_PENDING",
+      "source_sha": "02e9f7cff6de267cb57c0c1d0843c67bce1ed86babf63c47acb42376ded56967",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "hs-semantic-pilot-124-c524",
+      "id": "kb139-deep-124-c524",
+      "review": "REVIEW_PENDING",
+      "source_sha": "bbc5e0f2eee677cbf5c6759d2e7f7cb38b2bd6ac198fa4d1b77560df54a655f2",
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-a_continuity",
+      "id": "kb137-deep-a_continuity",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_function_limit",
+      "id": "kb137-deep-a_function_limit",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_integral_area",
+      "id": "kb134-deep-a_integral_area",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_limits_quotient",
+      "id": "kb135-deep-a_limits_quotient",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_mean_value",
+      "id": "kb133-deep-a_mean_value",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_monotone_convergence",
+      "id": "kb137-deep-a_monotone_convergence",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-a_sequence_limit",
+      "id": "kb134-deep-a_sequence_limit",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "ELECTIVE_A"
+    },
+    {
+      "candidate": "kb133-proposal-c_complement",
+      "id": "kb133-deep-c_complement",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_cosine_difference",
+      "id": "kb134-deep-c_cosine_difference",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_equivalence",
+      "id": "kb136-deep-c_equivalence",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_exponential_exp",
+      "id": "kb136-deep-c_exponential_exp",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_function_mapping",
+      "id": "kb136-deep-c_function_mapping",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_inequality_product",
+      "id": "kb134-deep-c_inequality_product",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_log_inverse",
+      "id": "kb134-deep-c_log_inverse",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_logarithm_law",
+      "id": "kb136-deep-c_logarithm_law",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_monotonicity",
+      "id": "kb136-deep-c_monotonicity",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_parity",
+      "id": "kb134-deep-c_parity",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_period",
+      "id": "kb135-deep-c_period",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_piecewise",
+      "id": "kb136-deep-c_piecewise",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_quadratic_roots",
+      "id": "kb133-deep-c_quadratic_roots",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_quadratic_sign",
+      "id": "kb135-deep-c_quadratic_sign",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_quantifier",
+      "id": "kb136-deep-c_quantifier",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_quantifier_negation",
+      "id": "kb133-deep-c_quantifier_negation",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_radian",
+      "id": "kb136-deep-c_radian",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_set_membership",
+      "id": "kb136-deep-c_set_membership",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_set_subset",
+      "id": "kb136-deep-c_set_subset",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_sufficiency",
+      "id": "kb136-deep-c_sufficiency",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_tangent_domain",
+      "id": "kb135-deep-c_tangent_domain",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_union_intersection",
+      "id": "kb135-deep-c_union_intersection",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-c_zero_theorem",
+      "id": "kb133-deep-c_zero_theorem",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_arith_progression",
+      "id": "kb135-deep-sc_arith_progression",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_derivative_def",
+      "id": "kb136-deep-sc_derivative_def",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_derivative_monotone",
+      "id": "kb134-deep-sc_derivative_monotone",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_derivative_rules",
+      "id": "kb137-deep-sc_derivative_rules",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_extreme_point",
+      "id": "kb135-deep-sc_extreme_point",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_geom_progression",
+      "id": "kb133-deep-sc_geom_progression",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_induction_optional",
+      "id": "kb137-deep-sc_induction_optional",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_sequence_model",
+      "id": "kb137-deep-sc_sequence_model",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_space_basis",
+      "id": "kb137-deep-sc_space_basis",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_space_distance",
+      "id": "kb134-deep-sc_space_distance",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    },
+    {
+      "candidate": "kb133-proposal-sc_space_projection",
+      "id": "kb135-deep-sc_space_projection",
+      "review": "REVIEW_PENDING",
+      "source_sha": null,
+      "track": "SELECTIVE_COMPULSORY"
+    }
+  ],
+  "schema": "kb153-seven-track-deep-editor-inventory/1",
+  "source_semantics_human_approved": false,
+  "student_authoritative": 0,
+  "student_hint_steps": 30,
+  "teacher_approved": 0,
+  "total_teacher_only_drafts": 135
+}
