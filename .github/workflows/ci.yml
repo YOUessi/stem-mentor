@@ -333,6 +333,16 @@ jobs:
       # Byte-level verification of archived real Mac test stdout and exits; no private PDF in CI.
       - run: python scripts/build_kb_batch148_execution_manifest.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch148_execution_archive.py
+      # Batch149 10 source-locked teacher-only manuscripts, 40 independent exact cases,
+      # D/E unnumbered SHA-only source review, 105 draft FTS and fail-closed public API.
+      - run: python scripts/build_kb_batch149_lessons.py --check
+      - run: python scripts/check_kb_batch149_math.py --check
+      - run: python scripts/build_kb_batch149_unnumbered_elective_queue.py --check
+      - run: python scripts/build_kb_batch149_crosswalk.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch149_depth_scope.py
+      # Offline SHA replay of Mac's actual log bytes and real exit codes, not private syllabus PDF.
+      - run: python scripts/build_kb_batch149_execution_manifest.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch149_execution_archive.py
       - run: python scripts/build_kb_batch146_execution_manifest.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch146_archived_evidence.py
       - run: python scripts/audit_kb_batch09_release.py --check

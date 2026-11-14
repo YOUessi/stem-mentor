@@ -1,0 +1,81 @@
+{
+  "authorized_device": "MACBOOK_AIR_ONLY",
+  "base_git_commit": "7372df46fee75c5be74f7009e3af17355c038874",
+  "browser_pytest_passed": 2,
+  "chrome_interaction_passed": 9,
+  "editorial_candidates_matched": 64,
+  "editorial_candidates_missing": 175,
+  "editorial_candidates_total": 239,
+  "final_focused_passed": 405,
+  "full_backend_python_passed": 66293,
+  "full_backend_python_skipped": 5,
+  "full_official_census_completed": false,
+  "general_formal_certifications": 0,
+  "hint_steps": 30,
+  "independent_exact_math_witnesses": 40,
+  "initial_focused_failed": 1,
+  "initial_focused_passed": 404,
+  "invalid_or_counterexample_witnesses": 20,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH149_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH149_BROWSER.log",
+      "sha256": "79f18e18735d79c6a5064c2624971a1d3b7c502a79d848d4a5d4d14c2381bb40"
+    },
+    "FOCUSED": {
+      "bytes": 1030,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH149_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH149_FOCUSED.log",
+      "sha256": "0af52b710e04244f8f761f0a678d94dbda01bcdab71ddb3882e59bffb63c07b1"
+    },
+    "FOCUSED_INITIAL_FAILURE": {
+      "bytes": 4338,
+      "exit": 1,
+      "exit_path": "docs/evaluation/logs/KB_BATCH149_FOCUSED_INITIAL_FAILURE.exit",
+      "exit_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "path": "docs/evaluation/logs/KB_BATCH149_FOCUSED_INITIAL_FAILURE.log",
+      "sha256": "69ceda8be0754fc1ed5b25a38912b723392b50a1c8e43b5bef13651f7f74e780"
+    },
+    "MAC_FULL": {
+      "bytes": 143155,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH149_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH149_MAC_FULL.log",
+      "sha256": "9d077be0fa6628e1724bf8b3059667002162c439f75916020f102c57cedcd2f1"
+    }
+  },
+  "near_far_transfer_tasks": 20,
+  "new_deep_teacher_drafts": 10,
+  "node_passed": 111,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "private_pdf_replayed_only_on_mac": true,
+  "private_pdf_unavailable_to_github_ci": true,
+  "run_date": "2026-11-14",
+  "schema": "kb149-real-mac-execution-evidence/1",
+  "source_de_nonempty_lines": 122,
+  "source_de_pending_crosspage_seams": 4,
+  "source_de_printed_pages": 5,
+  "source_git_commit": "e10d1227ac3d36b7b4b251fad287e48fe5a45be7",
+  "student_authoritative": 0,
+  "student_free_text_certifications": 0,
+  "teacher_approved": 0,
+  "teacher_examples": 20,
+  "total_pending_teacher_drafts": 105,
+  "unresolved_math_conflicts": 10,
+  "unverified_general_historical_proof_steps": 538,
+  "warning": "Finite witnesses, original source lines and historical editorial candidates are NOT complete official atom denominators."
+}

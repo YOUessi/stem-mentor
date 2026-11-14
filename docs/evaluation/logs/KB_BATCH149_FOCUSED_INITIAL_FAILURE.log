@@ -1,0 +1,47 @@
+F....................................................................... [ 17%]
+........................................................................ [ 35%]
+........................................................................ [ 53%]
+........................................................................ [ 71%]
+........................................................................ [ 88%]
+.............................................                            [100%]
+=================================== FAILURES ===================================
+_________ test_recomputed_ten_deep_originals_matches_release_artifacts _________
+
+rows = [{'applicability_and_hypotheses': '只有在样本空间选取恰当且所有基本结果真正等可能时，才可使用有利数除以总数；样本单位不统一（有序/无序混用）或带偏抽样均不符合条件。', 'course_track':...LECTIVE_A', 'elective_e_optional_example': False, 'far_transfer': '比较函数在无界区间上的极限与序列收敛，解释局部有界、最终有界、整体有界的区别。', ...}, ...]
+oracle = {'cases': [{'candidate_id': 'hs-semantic-pilot-119-c07', 'case_id': 'kb149-01-1', 'general_formal_proof_certified': Fa..., ...], 'general_formal_proofs_certified': 0, 'invalid_premise_rejections': 20, 'legal_or_boundary_witnesses': 20, ...}
+ledger = {'by_track': {'COMPULSORY': {'editorial_candidates': 75, 'evidence_grades': {'HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE....}, 'drafts_from_other_lineages': 41, 'editorial_source_candidate_total': 239, 'matched_editorial_candidates': 64, ...}
+k00 = {'all_seven_official_atom_denominators': {'COMPULSORY': None, 'ELECTIVE_A': None, 'ELECTIVE_B': None, 'ELECTIVE_C': No...f14fb715a8885ddbdd4c18db804c3229', ...}], 'crosspage_semantic_dedup_complete': False, 'human_approved_clauses': 0, ...}
+
+    def test_recomputed_ten_deep_originals_matches_release_artifacts(rows,oracle,ledger,k00):
+        assert rows==lessons.build() and lessons.validate(rows)
+        audit=lessons.audit(rows)
+        assert audit==json.loads(lessons.AUDIT.read_text(encoding="utf-8"))
+        assert audit["total_teacher_only_drafts"]==105
+        assert lessons.render(rows,audit)==lessons.REPORT.read_text(encoding="utf-8")
+        assert lessons.student_safe()==json.loads(lessons.SAFE.read_text(encoding="utf-8"))
+        assert oracle==independent.oracle()
+        assert ledger==crosswalk.build()
+>       assert crosswalk.validate(ledger) and crosswalk.render(ledger)==crosswalk.REPORT.read_text(encoding="utf-8")
+E       AssertionError: assert (True and '# KB149｜239条...批编写，再由教师核对。\n' == '# KB149｜239条...批编写，再由教师核对。\n'
+E        +  where True = <function validate at 0x105645c60>({'by_track': {'COMPULSORY': {'editorial_candidates': 75, 'evidence_grades': {'HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE....}, 'drafts_from_other_lineages': 41, 'editorial_source_candidate_total': 239, 'matched_editorial_candidates': 64, ...})
+E        +    where <function validate at 0x105645c60> = crosswalk.validate
+E         
+E         Skipping 202 identical leading characters in diff, use -v to show
+E         Skipping 148 identical trailing characters in diff, use -v to show
+E           KNOWN |
+E         - | SELECTIVE_COMPULSORY | 51 | 12 | 39 | 23 | UNKNOWN |
+E           | ELECTIVE_A | 30 | 7 | 23 | 14 | UNKNOWN |
+E           | ELECTIVE_B | 30 | 6 | 24 | 6 | UNKNOWN |...
+E         
+E         ...Full output truncated (6 lines hidden), use '-vv' to show)
+
+tests/test_kb_batch149_depth_scope.py:35: AssertionError
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch149_depth_scope.py::test_recomputed_ten_deep_originals_matches_release_artifacts
+1 failed, 404 passed, 1 warning in 8.44s

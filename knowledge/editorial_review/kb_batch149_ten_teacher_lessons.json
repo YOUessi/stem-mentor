@@ -1,0 +1,838 @@
+[
+  {
+    "applicability_and_hypotheses": "只有在样本空间选取恰当且所有基本结果真正等可能时，才可使用有利数除以总数；样本单位不统一（有序/无序混用）或带偏抽样均不符合条件。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "分析随机抽奖中不同奖项数量不相等时，为什么‘奖项种类数’不能直接作为等可能样本空间。",
+    "formal_definition_or_theorem": "若有限样本空间Ω={ω₁,…,ωₙ}中的每个基本事件发生概率均为1/n（n≥1），任意事件A⊆Ω满足P(A)=|A|/|Ω|；等可能是概率赋值的假设而非仅由有限性推出。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-119-c07",
+    "knowledge_type": "Method",
+    "near_transfer": "从掷一个公平骰转换为掷两个公平骰，比较基本结果的有序性与和的非等可能性。",
+    "nonexample_or_failure": "袋中一枚红球和一枚蓝球，但试验先有偏向地选颜色，红色概率3/4；虽仅两种结果，P(红)=3/4而非1/2。",
+    "notation_and_domain": "Ω为非空有限集合，P是其上的概率测度，基本结果彼此互斥且穷尽，并已由对称性或题设确定等可能；|A|表示A中基本结果数量。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-c06"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "明确试验基本结果并建立Ω，确认样本结果无遗漏、无重复且互斥；例如掷一枚均匀六面骰有六个结果。",
+        "step": 1
+      },
+      {
+        "justification": "根据题设或可论证的对称性检查所有P({ω})是否相等；由∑P({ω})=1推出每个为1/n。",
+        "step": 2
+      },
+      {
+        "justification": "用集合A表达目标事件，求出|A|后代入P(A)=|A|/n，并检查结果位于[0,1]。",
+        "step": 3
+      },
+      {
+        "justification": "对不等可能情形改写成逐项加权求和，不可凭样本个数直接作分母。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-c07",
+    "source_end_line": 8,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "e75b3e60684690add6f28a8e026dd4f081e8d6087101369747ce3ba489733547",
+      "4e525e14137c41702ca1aaf18a473c3c37da6317b46aa5a9a2eb45e662d35ca6",
+      "80b596130ff3bb09151242a4e03cda7a7b8370ee013920b4f19919ae19bb8811"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 31,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "c21d84ab4846bac30a27f88ba73e2ad3560cef2d3a931d926285b5e01151036c",
+    "source_start_line": 6,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先说清一个‘基本结果’究竟是什么，再判断是否有限且互斥穷尽。",
+      "想一想每个基本结果能否根据题设获得相同概率，不能则先停用古典公式。",
+      "用事件集合计数并检查所有概率相加是否为1，不要急于代入分数。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "1/2",
+        "question": "公平六面骰子掷一次，求出现偶数点的概率。",
+        "reasoned_solution": [
+          "以Ω={1,2,3,4,5,6}表示等可能基本结果。",
+          "偶数事件A={2,4,6}，有利基本结果恰有3个。",
+          "P(A)=3/6=1/2，并可由奇偶对称交叉核对。"
+        ]
+      },
+      {
+        "answer": "1/6",
+        "question": "两枚公平骰独立掷出，求点数和为7的概率。",
+        "reasoned_solution": [
+          "以36个有序点对(i,j)为Ω，说明独立公平令其等可能。",
+          "满足i+j=7的六个点对是(1,6)到(6,1)。",
+          "概率为6/36=1/6，不能以11种点数和为分母。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "古典概型：有限等可能基本事件与有利事件计数",
+    "typical_wrong_solution": "看见‘两个选项’便写概率为1/2，忽略两个结果是否具有同等机会；或把两枚骰子的和2至12误认为11种等可能值。",
+    "why_method_is_legal": "互斥穷尽使P(A)=∑_{ω∈A}P({ω})，每个基本结果概率1/n，故和等于|A|/n；若概率不等则应按实际权重求和。",
+    "why_wrong_and_repair": "先给出基本事件概率的证据：若掷两骰，选36个有序点对而非11个和；不等可能时直接求加权概率。"
+  },
+  {
+    "applicability_and_hypotheses": "分层划分须明确，所有成员只属于一层；比例分配得到的nₕ可能不是整数，不能将小数个样本用于实际抽取。推断时需核对各层入样概率nₕ/Nₕ。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "为校园分年级满意度调查设计分层方案，说明年级内方便抽样不能替代简单随机抽样。",
+    "formal_definition_or_theorem": "有限总体按互不相交且穷尽的H层划分，层h的总体数Nₕ，N=∑ₕNₕ；计划总样本n，理想比例分配nₕ=n·Nₕ/N。若nₕ须取整数，应作可复核的舍入并满足∑ₕnₕ=n。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-120-c112",
+    "knowledge_type": "Method",
+    "near_transfer": "三层总体人数40、35、25，抽20人时讨论目标分配以及整数舍入规则的影响。",
+    "nonexample_or_failure": "总体A层7人、B层3人，抽4人时比例目标2.8与1.2不能直接抽‘2.8个人’；若实际选A2、B2，纳入概率不等。",
+    "notation_and_domain": "Nₕ为正整数、n与N为整数且1≤n≤N；在每层中无放回简单随机抽取nₕ个单位，要求0≤nₕ≤Nₕ，不同层不重复。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-120-c111"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "列出互斥的各层Nₕ和总数N，并检查所有层相加没有遗漏或重复。",
+        "step": 1
+      },
+      {
+        "justification": "用nNₕ/N算目标分配，再在整数和容量约束下分配剩余名额，使总和严格等于n。",
+        "step": 2
+      },
+      {
+        "justification": "在每一层内实施简单随机无放回抽样，避免先按便利程度抽人再声称为随机。",
+        "step": 3
+      },
+      {
+        "justification": "计算实际层内纳入概率nₕ/Nₕ并判断是否需加权分析；抽样比例变化会影响估计。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-c112",
+    "source_end_line": 17,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "54fb7373c3366bfa66fc2cf00b8ff2616cb20f07f758a12813c1f91f3b865453",
+      "f594afdbe73860ee982b4328af49f6a762abaa5e21ed9e935a8afdde1a52cb51",
+      "1ed72ea44814a85d66e137610f5e32534dbc7c326b2a0d984b8e1351994340da",
+      "cd91385a630d614caa3f5533d88baadfaf8b89272229e25ce7dabd06c2d2be31"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 32,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "2371729eedae4ab0cd3b6bbe79e3dcc7ce3015fdfc8cd5d350c3e241c197828d",
+    "source_start_line": 14,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "写下每层人数、总体总人数以及期望样本数，核实‘分层’是否互斥穷尽。",
+      "尝试算每一层的目标名额，再问这些名额能否取整且总数保持不变。",
+      "检查两层或多层的实际纳入概率是否相等，按实际设计解释结果。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "甲12人，乙8人；均为1/5。",
+        "question": "甲层60人乙层40人，共抽取20人，如何比例分配并说明每人入样概率？",
+        "reasoned_solution": [
+          "总N=100，比例目标为20×60/100=12及20×40/100=8。",
+          "两层分配均为整数且总数12+8=20。",
+          "甲层概率12/60=1/5，乙层概率8/40=1/5。"
+        ]
+      },
+      {
+        "answer": "A3人，B2人，均为1/3。",
+        "question": "A层9人B层6人，无放回抽5人，比例分配及入样概率是多少？",
+        "reasoned_solution": [
+          "总N=15，样本n=5。",
+          "A分配5×9/15=3，B分配5×6/15=2。",
+          "各层分别做简单随机抽样，入样概率3/9=2/6=1/3。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "分层随机抽样：层内简单随机抽样与比例分配",
+    "typical_wrong_solution": "直接把层人数比例当作某个研究变量的取值概率；或者每层各抽同样人数，却把结果当作比例分层抽样。",
+    "why_method_is_legal": "若分配恰等比且每层简单随机抽样，则任意层h的成员入样概率nₕ/Nₕ=n/N；分配舍入后一般不再完全相同，可依实际纳入概率设计权重。",
+    "why_wrong_and_repair": "先确定分层规则与整数分配，记录舍入方案与实际纳入概率，然后再讨论比例估计及必要的抽样权重。"
+  },
+  {
+    "applicability_and_hypotheses": "先检查a≠0，若a=0须退化为线性或常数不等式；Δ为0时存在重根，符号不跨过重根改变；不能使用‘两个不同实根’的符号表处理重根。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "在实际抛体高度模型中解高度非负的时间区间，并排除负时间与模型失效域。",
+    "formal_definition_or_theorem": "设a≠0，q(x)=ax²+bx+c。令实根（如存在）为r₁≤r₂，则q(x)的符号由a及(x−r₁)(x−r₂)的符号决定。判别式Δ=b²−4ac决定实根数；Δ<0时q在ℝ上恒与a同号。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-121-c204",
+    "knowledge_type": "Method",
+    "near_transfer": "比较x²−4x+4>0与x²−4x+4≥0的解集差异。",
+    "nonexample_or_failure": "x²+1<0在实数域没有解；x²≤0仅x=0，而不是某个‘根之间’的非空开区间。",
+    "notation_and_domain": "实数域上的二次多项式；a,b,c∈ℝ、a≠0；严格不等式的零点不得包含，非严格不等式可在相应零点取等。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "将不等式整理为q(x)>0或q(x)≥0等标准型，检查二次项系数a是否非零。",
+        "step": 1
+      },
+      {
+        "justification": "计算Δ并区分无实根、重根和两实根；如有根，标在实数轴上。",
+        "step": 2
+      },
+      {
+        "justification": "利用系数a的正负及各因子号表确定每段符号，同时单独核对零点。",
+        "step": 3
+      },
+      {
+        "justification": "据不等号严格与否填写开闭端点；对退化情形另行解答而不是套二次公式。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-121-c204",
+    "source_end_line": 16,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "aa6b349a9288b6ac13e616bf2fb7f02fca25109765e52eb7db49541be3145f8e"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 17,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "aa6b349a9288b6ac13e616bf2fb7f02fca25109765e52eb7db49541be3145f8e",
+    "source_start_line": 16,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先把式子移项到同一边，并确认是否真正是二次式。",
+      "试算判别式，思考是否有两个不同实根以及开口方向。",
+      "用根外根内测试点检查符号，最后判断等号是否允许取端点。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "[2,3]",
+        "question": "求解不等式x²−5x+6≤0。",
+        "reasoned_solution": [
+          "因式分解为(x−2)(x−3)≤0，a=1>0。",
+          "两个根为2和3，异号区间是2至3之间。",
+          "非严格不等号可取到两端的零点，得[2,3]。"
+        ]
+      },
+      {
+        "answer": "无实数解",
+        "question": "求解不等式−x²+4x−4>0。",
+        "reasoned_solution": [
+          "配方得到−(x−2)²>0。",
+          "平方非负，负平方始终小于或等于0。",
+          "因此不存在使左式严格大于0的实数。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "一元二次不等式：因式符号表与端点取舍",
+    "typical_wrong_solution": "见到判别式为零还说函数在重根两侧变号，或解x²−1>0时错写−1<x<1。",
+    "why_method_is_legal": "当Δ≥0时按求根公式分解q=a(x−r₁)(x−r₂)，乘积在根外与根内号分别可检查；Δ<0时顶点极值q(−b/2a)=−Δ/(4a)与a同号。",
+    "why_wrong_and_repair": "先分Δ情形，再用测试点验证符号表，最后单独审查端点是否属于解集。"
+  },
+  {
+    "applicability_and_hypotheses": "P(B)=0时上述比值未定义；P(A),P(B)>0且互斥时，P(A∩B)=0而P(A)P(B)>0，故不独立。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "医学筛查中分别定义患病与检测阳性事件，讨论‘检测阳性条件下患病’与反向条件概率。",
+    "formal_definition_or_theorem": "事件B满足P(B)>0时，定义P(A|B)=P(A∩B)/P(B)。事件A、B独立当且仅当P(A∩B)=P(A)P(B)；互斥仅指A∩B=∅，通常不等于独立。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-119-s13",
+    "knowledge_type": "Concept",
+    "near_transfer": "在有偏硬币重复独立抛掷中验证A、B是否独立，不要默认每次正面概率是1/2。",
+    "nonexample_or_failure": "一次公平骰，A为偶数、B为奇数，A与B互斥但P(A)P(B)=1/4而P(A∩B)=0，故不独立；对空事件条件化的概率无定义。",
+    "notation_and_domain": "概率空间(Ω,F,P)中可测事件A、B；条件概率公式要求P(B)>0；独立性定义对所有概率值有效，不以条件概率公式为唯一表述。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-c06"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "确定A、B的事件集合和概率，先检查条件事件B是否具有正概率。",
+        "step": 1
+      },
+      {
+        "justification": "求交集A∩B并将其概率除以P(B)，得到合法的条件概率。",
+        "step": 2
+      },
+      {
+        "justification": "另算P(A)P(B)与P(A∩B)比较，只有相等才得独立结论。",
+        "step": 3
+      },
+      {
+        "justification": "若A、B互斥且各自正概率，则展示交集概率为零与乘积为正的冲突。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-s13",
+    "source_end_line": 16,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "82b224b7822e85161ac3d3c3479df1e069899990fa6370181fe34d011e3f7409",
+      "5d7b1d7bfaf6a094b0a40126aeb06ea594d49458b92113db7618746de9940441",
+      "9013d7b7657d0e3c75b04ffe8f84dac62a060127512de1c5374f1d57e65338c1",
+      "d3c0dde97725979c5956f9847baf77282f0e7a37aa7e3cb66dc4f70ca7a6b689",
+      "d62d0d98b00393e776ed4fe320a264ad3bb725e5dc508b37134356959590ec93"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 47,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "26bdc81c2d0b1c858906dbfa6c32031955b162eb6c0f6809afc4bc6ec31e1951",
+    "source_start_line": 12,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先明确事件B是哪一个，检查它是否有正概率。",
+      "画出A、B交集，先得到联合概率再讨论条件概率。",
+      "用乘积判据检验独立，不要从‘有无交集’直接跳结论。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "P(A|B)=2/3，二事件不独立。",
+        "question": "公平骰，A={2,4,6}，B={4,5,6}，求P(A|B)，并判断是否独立。",
+        "reasoned_solution": [
+          "A∩B={4,6}，故P(A∩B)=2/6。",
+          "P(B)=3/6，所以P(A|B)=(2/6)/(3/6)=2/3。",
+          "P(A)P(B)=(3/6)(3/6)=1/4，不等于1/3，故不独立。"
+        ]
+      },
+      {
+        "answer": "P(A∩B)=1/4，二事件独立。",
+        "question": "公平硬币掷两次，A为第一次正面，B为第二次正面，问P(A∩B)和独立性。",
+        "reasoned_solution": [
+          "样本空间HH、HT、TH、TT等可能。",
+          "A∩B只包含HH，联合概率为1/4。",
+          "P(A)=P(B)=1/2，乘积为1/4，因此独立。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "条件概率、独立与互斥：分母与事件交集",
+    "typical_wrong_solution": "把互斥与独立当成同义词；或直接写P(A|B)=P(A∩B)/P(A)，把条件事件分母颠倒。",
+    "why_method_is_legal": "按条件缩小到事件B，用联合概率除以B的概率归一化；独立性用乘积关系核验，不能只凭语言上‘互不影响’判断。",
+    "why_wrong_and_repair": "将条件事件B用括号标出，固定分母P(B)，另用概率乘积作为独立性判据。"
+  },
+  {
+    "applicability_and_hypotheses": "B₁,…,Bₖ必须互斥且穷尽，P(Bᵢ)>0才能写每层条件概率；求P(Bⱼ|A)时P(A)>0。不能仅列几个相互重叠人群就套求和公式。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "用来自两个生产线的混合产品推断缺陷来源，讨论分层并非互斥时该如何重建模型。",
+    "formal_definition_or_theorem": "若B₁,…,Bₖ为两两互斥且并为Ω的事件划分，则P(A)=∑ᵢP(A∩Bᵢ)。若每个P(Bᵢ)>0，可写P(A)=∑ᵢP(A|Bᵢ)P(Bᵢ)。当P(A)>0时，P(Bⱼ|A)=P(A|Bⱼ)P(Bⱼ)/∑ᵢP(A|Bᵢ)P(Bᵢ)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-119-s14",
+    "knowledge_type": "Theorem",
+    "near_transfer": "改变筛查患病率、灵敏度与假阳性率，观察后验如何变动并解释分母条件。",
+    "nonexample_or_failure": "如果B₁与B₂重叠，直接相加P(A∩B₁)+P(A∩B₂)会重复计算；若P(A)=0，贝叶斯比值出现0/0而无定义。",
+    "notation_and_domain": "有限事件划分；P是满足可加性的概率测度；贝叶斯后验要求被条件化的A具有严格正概率；零概率分层不允许直接定义条件概率。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-s13"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "先证各分层Bᵢ两两互斥且并为Ω，检查求条件概率的各层是否为正概率。",
+        "step": 1
+      },
+      {
+        "justification": "将事件A分解为互斥并A∩Bᵢ，利用有限可加性求P(A)=∑ᵢP(A∩Bᵢ)。",
+        "step": 2
+      },
+      {
+        "justification": "用P(A∩Bᵢ)=P(A|Bᵢ)P(Bᵢ)代换，构造归一化的总概率分母。",
+        "step": 3
+      },
+      {
+        "justification": "若P(A)>0，则将P(A∩Bⱼ)除以P(A)得到后验；分母为零不允许更新。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-s14",
+    "source_end_line": 19,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "d62d0d98b00393e776ed4fe320a264ad3bb725e5dc508b37134356959590ec93",
+      "da8c4a6f5d2a18c15f4d53aab2d4e0e58590e8979761a21a40e6e8d5bdaff2bd",
+      "9b6578ef7084371d85cdfdf1ff856f434a94a46653a94dc6782382f5fb88b604",
+      "0c50eeec977e206d9b1ece48948cd1954b93a1cba531e4f768113188c440b542"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 47,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "5ccab2f8a2b612a9555aa283ef976220be2b3ed5a5e8f4572438edb236cc03b2",
+    "source_start_line": 16,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "首先找一组互斥穷尽的原因分层，写下它们的先验比例。",
+      "逐层把先验与条件事件发生的似然相乘，再相加求总事件概率。",
+      "最后把目标分层的联合概率除以全体目标事件概率，核对分母是否为零。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "1/12≈8.33%",
+        "question": "某人群患病率1%，患者检测阳性率90%，非患者假阳性率10%，阳性后患病概率是多少？",
+        "reasoned_solution": [
+          "设B为患病，P(B)=1/100，P(+|B)=9/10；非患病概率99/100，P(+|¬B)=1/10。",
+          "全概率P(+)=9/1000+99/1000=108/1000。",
+          "贝叶斯P(B|+)=(9/1000)/(108/1000)=1/12。"
+        ]
+      },
+      {
+        "answer": "3/4",
+        "question": "两工厂A、B供货比例3/5、2/5，次品率分别1/10、1/20；抽到次品来自A的概率？",
+        "reasoned_solution": [
+          "先求A且次品联合概率(3/5)(1/10)=3/50。",
+          "B且次品联合概率(2/5)(1/20)=1/50，故次品总概率4/50。",
+          "后验概率=(3/50)/(4/50)=3/4，且分母非零。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "全概率公式与贝叶斯更新：划分、联合概率和零分母",
+    "typical_wrong_solution": "把先验P(B)直接视为后验P(B|A)，或漏乘似然P(A|B)，又或用P(B|A)代替P(A|B)。",
+    "why_method_is_legal": "A=⊔ᵢ(A∩Bᵢ)为互斥并，概率可加给出全概率；后验分子是联合概率，再按条件概率定义除以P(A)。",
+    "why_wrong_and_repair": "先列出先验×似然=联合概率，按所有互斥分层求归一化分母，再明确所求条件事件。"
+  },
+  {
+    "applicability_and_hypotheses": "必须是有限极限下的整体收敛；‘某一子列收敛’不能推出原数列有界，如a₂ₙ=0、a₂ₙ₋₁=n。",
+    "course_track": "ELECTIVE_A",
+    "elective_e_optional_example": false,
+    "far_transfer": "比较函数在无界区间上的极限与序列收敛，解释局部有界、最终有界、整体有界的区别。",
+    "formal_definition_or_theorem": "若实数数列(aₙ)_{n≥1}收敛于有限实数L，即对每个ε>0存在N使n≥N时|aₙ−L|<ε，则数列(aₙ)有界：存在M≥0使所有n≥1均满足|aₙ|≤M。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-119-a02",
+    "knowledge_type": "Theorem",
+    "near_transfer": "给定收敛于−3的数列，构造不依赖具体通项的有界性证明。",
+    "nonexample_or_failure": "反命题不成立：数列(-1)ⁿ始终有界于[-1,1]，却不收敛到单个实数；a₂ₙ=0、a₂ₙ₋₁=n有收敛子列却无界。",
+    "notation_and_domain": "实数序列以正整数为指标，收敛指在ℝ上的有限极限；不包含扩展实数意义下发散到+∞或−∞。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-a01"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "根据数列收敛定义选择ε=1，存在某个正整数N，使每个n≥N都有|aₙ−L|<1。",
+        "step": 1
+      },
+      {
+        "justification": "利用三角不等式|aₙ|≤|aₙ−L|+|L|<1+|L|，得到从第N项开始的统一上界。",
+        "step": 2
+      },
+      {
+        "justification": "前N−1个实数构成有限集合，其绝对值最大值M₀存在；N=1时前缀为空，约定M₀=0。",
+        "step": 3
+      },
+      {
+        "justification": "令M=max(M₀,1+|L|)，对所有n≥1均有|aₙ|≤M，因而数列有界。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-a02",
+    "source_end_line": 21,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 52,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "7d912c2bdce31ffeff80305360458d09bbe8ea5fbdc59605a3093dc9a34aadcd",
+    "source_start_line": 21,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先回忆ε–N收敛定义，它只保证从某项以后都靠近有限极限。",
+      "尝试取一个固定的ε，如ε=1，得到尾部的统一界。",
+      "前面剩下的是有限项，如何用一个最大值和尾部界合并成所有n都成立的M？"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "aₙ→0且可取M=1。",
+        "question": "证明aₙ=1/n收敛，给出可行的整体界M。",
+        "reasoned_solution": [
+          "对任意ε>0，取整数N>1/ε，n≥N时1/n<ε，故收敛于0。",
+          "每个正整数n≥1，均有0<1/n≤1。",
+          "因此M=1覆盖所有项；该上界与收敛证明相容但不互为充要。"
+        ]
+      },
+      {
+        "answer": "bₙ→2，且|bₙ|≤3。",
+        "question": "数列bₙ=2+(−1)ⁿ/n是否收敛且有界？",
+        "reasoned_solution": [
+          "由于|bₙ−2|=1/n→0，故bₙ→2。",
+          "由三角不等式|bₙ|≤2+1/n。",
+          "所有n≥1时|bₙ|≤3，因此可取M=3。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "收敛数列必有界：ε–N定义下的严格证明",
+    "typical_wrong_solution": "仅写‘极限是L所以所有项都接近L’，忽略极限定义只控制充分靠后的项，未覆盖前面有限项。",
+    "why_method_is_legal": "取ε=1得到充分靠后的尾部满足|aₙ|≤|L|+1；有限个前缀实数的绝对值有最大值，再取两者最大值即可覆盖整个数列。",
+    "why_wrong_and_repair": "显式把数列分为有限前缀与收敛尾部，分别取界再取最大值；不要把有界性当成收敛性的充分条件。"
+  },
+  {
+    "applicability_and_hypotheses": "根式√g(x,y)要求g≥0；自然对数ln h(x,y)要求h>0；分式除数k(x,y)要求k≠0；同一表达式须同时满足所有约束。",
+    "course_track": "ELECTIVE_B",
+    "elective_e_optional_example": false,
+    "far_transfer": "将二维运动轨迹的温度或高度模型叠加实地范围约束，说明自然定义域与模型适用域可能不同。",
+    "formal_definition_or_theorem": "二元实函数f:D⊆ℝ²→ℝ把每个允许的有序数对(x,y)∈D唯一对应到一个实数f(x,y)。由表达式给定的实函数自然定义域是使所有子表达式在实数范围内有意义的点集交集。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-119-b03",
+    "knowledge_type": "Concept",
+    "near_transfer": "分析h(x,y)=√(y−x²)/ln(y)的定义域，注意对数既要有意义又不能为0。",
+    "nonexample_or_failure": "f(x,y)=ln(x−y)在x=y处未定义，即便平方根等其他子表达式在该点合法；√(4−x²−y²)在圆盘边界是允许的。",
+    "notation_and_domain": "D是平面中可空或非空的子集；若题目要求实际建模，还需交上单位与物理允许范围，不能仅凭代数表达式决定业务域。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "逐层拆开式子中所有根号、对数、分母等可能限制实数可定义性的运算。",
+        "step": 1
+      },
+      {
+        "justification": "分别写出每一运算要求：根号内≥0，对数自变量>0，分母≠0，并注意严格与非严格边界。",
+        "step": 2
+      },
+      {
+        "justification": "将全部限制取交集，必要时用不等式表示几何区域；不能漏掉原题额外物理范围。",
+        "step": 3
+      },
+      {
+        "justification": "挑选区内一点和边界/区外一点直接代入检验，确认所写定义域与真实求值一致。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-b03",
+    "source_end_line": 13,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "fe2d5beaf1ea1e54234b587495d9e59d5fc878326e854b6c4cea70500ebefff0",
+      "53ee3c103614af4361663d2093b30d783a5b1eddac3a081ac1a932cac357e041",
+      "4e3ebfb6b1e7f429a678136a790b11efddb134dff72f9d84ba56f33eaa370254"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 59,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "1cc930b55b90c9201dcda53f818184243b26f3cccac366cc69720793954a97e6",
+    "source_start_line": 11,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先逐个找出式子里会使实数运算失效的符号，而不是一次画出图。",
+      "把每种运算的基本定义域写成独立约束，再区分严格/非严格不等式。",
+      "把这些条件取交集，并在边界选几个测试点验证是否允许取等。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "{(x,y):x²+y²≤4}。",
+        "question": "求f(x,y)=√(4−x²−y²)的自然定义域。",
+        "reasoned_solution": [
+          "实平方根要求被开方数4−x²−y²≥0。",
+          "移项得x²+y²≤4，为以原点为中心半径2的闭圆盘。",
+          "边界如(2,0)使根号值为0仍合法，外点(3,0)不合法。"
+        ]
+      },
+      {
+        "answer": "{(x,y):x>y 且 x+y≠0}。",
+        "question": "求g(x,y)=ln(x−y)/(x+y)的自然定义域。",
+        "reasoned_solution": [
+          "对数参数x−y必须严格正，所以x>y。",
+          "分母x+y必须非零，排除直线x+y=0上的点。",
+          "定义域是上述两个条件的交集，如(2,1)合法、(1,1)与(1,−1)不合法。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二元函数定义域：平方根、对数与分母联合约束",
+    "typical_wrong_solution": "把ln(x−y)的条件错写成x−y≥0，或者把分母为零的点包含进定义域；两个约束误用‘或’连接。",
+    "why_method_is_legal": "函数表达式的每一步求值依赖相应实数运算有定义，因此联合表达式的合法输入就是每个构件合法域的交集，而不是并集。",
+    "why_wrong_and_repair": "按运算符逐条列出不等式和不等式集合，然后取交；对严格边界和等号端点逐个测试。"
+  },
+  {
+    "applicability_and_hypotheses": "否定必须正确处理量词（¬∀xP(x)等价于∃x¬P(x)）；推导出的矛盾须确实由当前假设和已知真前提推出，而非引用所求结论本身。",
+    "course_track": "ELECTIVE_C",
+    "elective_e_optional_example": false,
+    "far_transfer": "分析统计归纳中观察到多个正面样本，为何不能据此反证所有反例不存在。",
+    "formal_definition_or_theorem": "对命题P，在经典逻辑中若由¬P与已证事实和合法推理能导出矛盾⊥，可据双重否定消去规则断言P。对‘若A则B’的证明，通常假设A与¬B并导出矛盾。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-119-ec05",
+    "knowledge_type": "Method",
+    "near_transfer": "证明不存在既为偶数又为奇数的整数，比较直接定义法与反证法。",
+    "nonexample_or_failure": "欲证明所有实数x都有x²>0却忽略x=0反例；错误命题不可能被有效反证法证明，出现所谓矛盾往往来自非法推理。",
+    "notation_and_domain": "数学命题须明确论域、量词与已知条件；反证法采用经典逻辑且不允许把未经证实的命题作为已有事实。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-ec03"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "写清原命题的论域与量词，选择直接推理或将命题的正确否定作为临时假设。",
+        "step": 1
+      },
+      {
+        "justification": "只调用已知真前提和无损逻辑运算，不可偷偷引入待证结论本身。",
+        "step": 2
+      },
+      {
+        "justification": "从临时否定假设推到明确定义的矛盾，如整数同为奇偶或与已知不等式冲突。",
+        "step": 3
+      },
+      {
+        "justification": "指出矛盾成立所需条件，并解除临时假设得到原命题；如果仅得到不方便的结论则不算完成反证。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-ec05",
+    "source_end_line": 13,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "98e7b1b5c50a89b79870d855daffd66b0b5bbe766a44972b4e3c6bcdb8a77a4e",
+      "8396761ffb9a0886ce698f028c1f2fb5db8e09cd91100a8f10698bad8b8de27b",
+      "b23bd73c49289abc8a0196c1c1f8e539805e2542bda296e6a12802bcd6e7aeb7"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 65,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "2795b6d7e85c7472a3c5e50f7be967fad7d5b7bf94d20de701167f0f9a86ce15",
+    "source_start_line": 11,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先用一句完整的数学句子说明要证明什么，并标注其论域。",
+      "反证时写出原命题的准确否定，尤其注意‘所有’与‘存在’的转换。",
+      "追问所得是否为真正矛盾，矛盾所依赖的定理或定义是否事先有效。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "√2为无理数。",
+        "question": "使用反证法证明√2不是有理数。",
+        "reasoned_solution": [
+          "假设√2=p/q，其中p,q为互素整数且q≠0，则p²=2q²。",
+          "p²为偶数推出p偶，设p=2k，得q²=2k²，所以q也是偶数。",
+          "p、q同为偶数与互素矛盾，否定假设不成立，故√2无理。"
+        ]
+      },
+      {
+        "answer": "相邻两整数的乘积是偶数。",
+        "question": "直接证明任意整数n的n(n+1)都是偶数。",
+        "reasoned_solution": [
+          "任意整数n与n+1奇偶性必不同。",
+          "两数中至少有一个是偶数，即可表示为2k。",
+          "因此其乘积含因子2，为偶数；无需反证。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "直接证明与反证法：否定假设、矛盾来源及适用边界",
+    "typical_wrong_solution": "将‘并非所有整数都满足P’误否定为‘所有整数都不满足P’，或把‘存在’与‘任意’的否定方向搞反。",
+    "why_method_is_legal": "经典逻辑不允许P与¬P同时为真；若¬P导致矛盾，则¬P不能成立，利用排中律可得P。直接证明则由假设A经有效推理构造结论B。",
+    "why_wrong_and_repair": "先将目标用量词与逻辑符号规范表达，机械写出正确否定，再检查推导链每个环节的成立依据。"
+  },
+  {
+    "applicability_and_hypotheses": "对称是图形整体不变而不只是某两个点移动后重合；反射/中心对称/平移均保距离，但它们对方向或固定点的行为不同。",
+    "course_track": "ELECTIVE_D",
+    "elective_e_optional_example": false,
+    "far_transfer": "在音乐频谱或视觉图案里区分周期平移对称与单次镜像对称，说明误差容忍不等于严格数学对称。",
+    "formal_definition_or_theorem": "平面等距变换T满足任意点P,Q有|T(P)−T(Q)|=|P−Q|。关于x轴的反射S(x,y)=(x,−y)，关于原点的中心对称C(x,y)=(−x,−y)，向量v=(a,b)平移Tᵥ(x,y)=(x+a,y+b)。图形G关于某变换对称当且仅当变换后的点集仍为G。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-119-ed02",
+    "knowledge_type": "Concept",
+    "near_transfer": "分析抛物线y=x²的轴对称性及其是否关于原点中心对称。",
+    "nonexample_or_failure": "仅有两个端点关于x轴成镜像，不足以认定含曲线的整个图形关于x轴对称；非零平移不可能使有界的非空有限点集整体不变。",
+    "notation_and_domain": "标准欧氏平面ℝ²中的点、向量与图形点集；上述特定坐标公式依赖轴为x轴、中心为原点，其他轴心须做坐标转换。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "先明确变换中心、对称轴或平移向量，选择与之对应的坐标规则。",
+        "step": 1
+      },
+      {
+        "justification": "对任意两点P,Q计算变换后的差，核验反射、取负或共同平移保持距离平方。",
+        "step": 2
+      },
+      {
+        "justification": "若判断整个图形G是否对称，则需检查T(G)=G两向包含，而不只看局部顶点。",
+        "step": 3
+      },
+      {
+        "justification": "比较三个变换的固定点、方向和角度效果，不能把保持距离等同为同一种对称。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-ed02",
+    "source_end_line": 7,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "c5bcf68cf6d86a4c495ba5f2b555e6eef31b0264f3258ce41f9b06f2e25b9bb8",
+      "bfe613f07d15d267bb61f51211697cf11acbe1215e5ca1c08e7a8d5fa042bdfa",
+      "1d0c8e6e9c78c0a596372bb962221d7e13e36e725acd25e69b42f5c0ca54d77c",
+      "e7faf44a2b0364d7297d7b9c085d41822d34d471fe85666c5d4af6e339f40e42",
+      "dde613fef061383db70050f05025318d69dcf9d3274a542f55b98c8746e3a3f4",
+      "bfd9bc0c1556eb663be342173e2701dbff25af44c3fc1b07f0dfea0be7a995db"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 70,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "72bb616409f81438d558f0a86336f65cd03226f314946570df02cd37e94d9500",
+    "source_start_line": 2,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写出图形或点的坐标表达式，指定轴、中心、平移向量。",
+      "对任意点使用对应变换，判断它仍否满足原集合条件。",
+      "不要只验证几个顶点，注意证明整个集合在变换后保持不变。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "(2,3)、(−2,3)、(3,1)。",
+        "question": "点P=(2,−3)分别关于x轴、原点对称，以及按(1,4)平移后的坐标？",
+        "reasoned_solution": [
+          "关于x轴反射仅改y符号，得(2,3)。",
+          "关于原点对称同时改x、y符号，得(−2,3)。",
+          "按向量(1,4)平移，两坐标分别加得(3,1)。"
+        ]
+      },
+      {
+        "answer": "两者都对称。",
+        "question": "集合G={(x,y):x²+y²=1}关于原点对称吗？关于x轴对称吗？",
+        "reasoned_solution": [
+          "若x²+y²=1，则(−x)²+(−y)²=1，中心对称后仍属于G。",
+          "若x²+y²=1，则x²+(−y)²=1，x轴反射后仍属于G。",
+          "变换都是可逆的，反向包含亦成立，因此变换后点集等于原集合。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "平面轴对称、中心对称与平移：变换定义和不变量",
+    "typical_wrong_solution": "把中心对称等同为关于x轴反射，或者以‘看上去大致相同’代替集合不变的数学判定。",
+    "why_method_is_legal": "反射改变一个坐标的符号、中心对称改变两个坐标的符号、平移对两点加同一向量，三种情况下两点差的欧氏长度不变。",
+    "why_wrong_and_repair": "写出精确点变换公式，代入所有构成图形的点集或证明其结构保持；用一个反例点否定伪对称。"
+  },
+  {
+    "applicability_and_hypotheses": "P·Q/R²在[-1,1]中才可求实反余弦；要谈唯一最短大圆弧，必须排除对跖点以及相同点的退化。实际轨迹还受地形风向和限制区域约束。",
+    "course_track": "ELECTIVE_E",
+    "elective_e_optional_example": true,
+    "far_transfer": "地球表面长距离航线为何往往不是平面地图直线，及椭球近似、航区限制如何使球面模型失效。",
+    "formal_definition_or_theorem": "设半径R>0、球心在原点的球面上有P,Q且|P|=|Q|=R，中心夹角θ=arccos((P·Q)/R²)∈[0,π]。球面上P至Q的最短路径长度为Rθ；0<θ<π时最短小圆弧所在大圆唯一，θ=π时最短大圆弧不唯一。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb149-deep-120-ee103",
+    "knowledge_type": "Method",
+    "near_transfer": "计算单位球面P=(0,0,1)、Q=(0,1,0)的最短球面弧长，并比较弦长。",
+    "nonexample_or_failure": "P与Q为对跖点时，经过球心的任一包含这两点的平面都切出一条大圆，沿任意半圆长度πR；所谓‘唯一最短’不成立。",
+    "notation_and_domain": "理想欧氏三维球面模型S²_R，使用弧度制；点必须在同一球面上且R>0，公式不直接描述地球椭球体上的精密航线。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-120-ee101"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "确认球半径R>0、两个位置向量的模都等于R，以内积计算cosθ=(P·Q)/R²。",
+        "step": 1
+      },
+      {
+        "justification": "用θ=arccos(cosθ)选取[0,π]的较小中心夹角，并检查输入在实数范围内。",
+        "step": 2
+      },
+      {
+        "justification": "由弧度定义得到大圆小弧长s=Rθ；解释为什么取大圆而非任意小圆。",
+        "step": 3
+      },
+      {
+        "justification": "单独讨论P=Q时长度0及P=−Q时多条等长半圆路径，禁止宣称对跖点唯一最短路。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-ee103",
+    "source_end_line": 17,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+      "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 73,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+    "source_start_line": 16,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先检查两点是否在同一半径R>0的球面上，以及所求是否为沿球面的距离。",
+      "尝试由向量内积求夹角余弦，并将中心角限制为[0,π]。",
+      "弧长与弧度角如何联系？相同点和对跖点是否需要单独讨论？"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "π/2",
+        "question": "单位球面P=(1,0,0)、Q=(0,1,0)，求较短大圆弧长。",
+        "reasoned_solution": [
+          "P·Q=0且R=1，故cosθ=0。",
+          "取中心夹角θ=π/2弧度。",
+          "大圆弧长Rθ=π/2，三维弦长√2不同于球面弧长。"
+        ]
+      },
+      {
+        "answer": "长度2π，最短路径不唯一。",
+        "question": "半径2的球面两点P=(2,0,0)、Q=(−2,0,0)，最短长度与路径是否唯一？",
+        "reasoned_solution": [
+          "P·Q=−4且R²=4，所以θ=π。",
+          "较短大圆弧长s=Rθ=2π。",
+          "P、Q互为对跖点，任意通过它们的大圆半圆等长，因此最短路径不唯一。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "学校选修示例：球面大圆弧与最短路径的适用条件",
+    "typical_wrong_solution": "用三维弦长|P−Q|作为球面行走距离，或者把弧度角θ未经换算直接当作度数乘R。",
+    "why_method_is_legal": "中心角θ对应弧长s=Rθ；球面短程连接在理想球面上沿大圆，球面弧度角与长度的关系由圆弧定义给出。",
+    "why_wrong_and_repair": "先算中心角并明确弧度单位，然后计算Rθ；区分理想球面上的测地弧与实际交通轨迹。"
+  }
+]
