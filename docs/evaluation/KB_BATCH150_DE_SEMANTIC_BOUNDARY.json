@@ -1,0 +1,2282 @@
+{
+  "approved_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "complete_official_course_census": false,
+  "official_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "originals_rehashed_on_mac": false,
+  "proposals": [
+    {
+      "content_type": "Method",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-001",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "数据调查的结果报告",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P69-L001",
+        "STD2020-SOURCELINE-P69-L002",
+        "STD2020-SOURCELINE-P69-L003"
+      ],
+      "source_line_sha256": [
+        "13b3c2bed1080cb9123b2d3db98c7356932147264dd4f22dc4a404ca7413ec48",
+        "129b327a80c9d7413ccfd32e198e418c7b6bab0e53264e0ef3e6a15fbe990c10",
+        "6e1b31d1cd9b7ae449644c7d300ccfea0e995ba035325ffd0741906977e3a3e1"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "社会调查",
+      "source_track": "ELECTIVE_C",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-002",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "典型社会调查案例的意义",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P69-L004",
+        "STD2020-SOURCELINE-P69-L005"
+      ],
+      "source_line_sha256": [
+        "fa0331b51ef5d295218898870c7d7749096b4b154fade47c581f1bbb5977b362",
+        "4f43da1a4e497eaa9e0a9841ae751b4053860e026a728f56e54200dad36e278e"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "社会调查",
+      "source_track": "ELECTIVE_C",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-003",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "曲线与曲面所体现的形状特征",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P69-L017",
+        "STD2020-SOURCELINE-P69-L018",
+        "STD2020-SOURCELINE-P69-L019",
+        "STD2020-SOURCELINE-P69-L020",
+        "STD2020-SOURCELINE-P69-L021",
+        "STD2020-SOURCELINE-P69-L022",
+        "STD2020-SOURCELINE-P69-L023"
+      ],
+      "source_line_sha256": [
+        "5beb295613e760e527a301c40536081dd67c37d68bd863d8c3fa06530790850d",
+        "43bb0461250c7f27b3b4ff2cbc3264d08b1eab3c881c52b786cde2ff721d6b22",
+        "b9bc1895f33cca536bbfac31b006f4326ccbd04af213f8c545ead252406f616f",
+        "2d669b3680b19fb35f46cc53636d0032a986627c3ecb14bc974c59e15cdbe607",
+        "75020f9da390e2c2b511c6d04d304acb85949bf6abf5dfe3aee1d36512faaa87",
+        "a05cee994ab269dd58498cad919d25b83d8c9515f6a5b8c91b26c36b606ab1cf",
+        "ba80dc18a307d5339686d2a51a407eb1916e90d8b99c409a282851146f0ffb75"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "美与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Concept",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-004",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "反射、旋转和位移的对称结构",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P70-L002",
+        "STD2020-SOURCELINE-P70-L003",
+        "STD2020-SOURCELINE-P70-L004",
+        "STD2020-SOURCELINE-P70-L005",
+        "STD2020-SOURCELINE-P70-L006",
+        "STD2020-SOURCELINE-P70-L007"
+      ],
+      "source_line_sha256": [
+        "c5bcf68cf6d86a4c495ba5f2b555e6eef31b0264f3258ce41f9b06f2e25b9bb8",
+        "bfe613f07d15d267bb61f51211697cf11acbe1215e5ca1c08e7a8d5fa042bdfa",
+        "1d0c8e6e9c78c0a596372bb962221d7e13e36e725acd25e69b42f5c0ca54d77c",
+        "e7faf44a2b0364d7297d7b9c085d41822d34d471fe85666c5d4af6e339f40e42",
+        "dde613fef061383db70050f05025318d69dcf9d3274a542f55b98c8746e3a3f4",
+        "bfd9bc0c1556eb663be342173e2701dbff25af44c3fc1b07f0dfea0be7a995db"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "美与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-005",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "自然及艺术中重复变化的周期性",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P70-L008",
+        "STD2020-SOURCELINE-P70-L009",
+        "STD2020-SOURCELINE-P70-L010",
+        "STD2020-SOURCELINE-P70-L011"
+      ],
+      "source_line_sha256": [
+        "0426e1fb8776d5de54174abe60e64cbfa59c39048b1c4d2ebd5a6d36a104c461",
+        "b01885253446cfc1dd915e1528e35256375fa717322de881fc1614e858b42ff4",
+        "64e9f2f3a152257932146b714f57462d8cc2aac244af239aa113e3776141c8f5",
+        "c54d536d91b347d1347fd78ec6c519f28cf6294b9f4a35f2c137ce28cf62ce56"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "美与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-006",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "黄金比例和递推数列的模型适用边界",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P70-L012",
+        "STD2020-SOURCELINE-P70-L013",
+        "STD2020-SOURCELINE-P70-L014",
+        "STD2020-SOURCELINE-P70-L015"
+      ],
+      "source_line_sha256": [
+        "edf16b6a501d49becce2ace0f578f0b329259f392aa244b673df716744da4e19",
+        "336029b0b4c6c12d1955d99a26de6498995d4f4d7ec0ce458bc2434e18364bc7",
+        "4f603fda68c259f1e2ce35e10e8bc204c7b400aa2087fbdf2c29bf3cb2960178",
+        "71235567dc2dd4207bb979bea32802bb93519d94a3ca5d1940c5c64029befe7d"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "美与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Concept",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-007",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "正弦波频率、振幅及叠加",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P70-L023",
+        "STD2020-SOURCELINE-P70-L024",
+        "STD2020-SOURCELINE-P70-L025"
+      ],
+      "source_line_sha256": [
+        "7b6ce0fe135bd561a2be633a49316ceba3cbe3386000aba6150f6b53e005833d",
+        "02b3e4c3f1ffadc6f31da97e7df635e569d45bd42e3927011de9661ef24c6683",
+        "7497379ec37cc2eccd33abcd987dda011b5bc0cedf78210a8abc31a191d73908"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "音乐与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-008",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "音律的频率比与等比数列",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P71-L001",
+        "STD2020-SOURCELINE-P71-L002",
+        "STD2020-SOURCELINE-P71-L003",
+        "STD2020-SOURCELINE-P71-L004"
+      ],
+      "source_line_sha256": [
+        "e162b51fe6a20fe2482e697c5aa2db13daf3422ca1727bd817a54c37b222650d",
+        "4f1cf47b9cfaced8b463217b02821357fd4c713073e9ca90fcd3d0a7a7fbc061",
+        "8acf6ca67e4f6cc23746699b19c43711de90d36da39665426123d13f2923868d",
+        "473c02f0e21433a82c70a8ddd998ed0d2bedbafebac09a2ba160889c638091f7"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "音乐与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Method",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-009",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "节拍分数、同步及最小公倍数",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P71-L005",
+        "STD2020-SOURCELINE-P71-L006",
+        "STD2020-SOURCELINE-P71-L007"
+      ],
+      "source_line_sha256": [
+        "94bd99d2181be3615bf455be3dd3475d4ab3ddd007bbab46f02bd460325fc088",
+        "916d48dcb250bab7b412bf0380046320c788b792320128fc1e05610ef5a55a89",
+        "731686b3c6cda8cb1e2490f8ffd393afc37ecaf25bcdd3e4a97e3072692e0c8f"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "音乐与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-010",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "乐器振动与共鸣的模型",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P71-L008",
+        "STD2020-SOURCELINE-P71-L009",
+        "STD2020-SOURCELINE-P71-L010"
+      ],
+      "source_line_sha256": [
+        "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f",
+        "5d00646cbd6b46173edcadc2e41576b2fabbd9b0e80e9461fe95878a33862d3a",
+        "71dc09d69b72cdfefb3fd761c3d009f2f57854b37ae47ea4327e898750cf1438"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "音乐与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-011",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "作品节奏、平移及组合变换",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P71-L011",
+        "STD2020-SOURCELINE-P71-L012",
+        "STD2020-SOURCELINE-P71-L013"
+      ],
+      "source_line_sha256": [
+        "acbfc74acbd5dbf118f4711c9d6cf172bc3d08a08a95e87ba3015e4e83e24e9f",
+        "cbba3978080038993e9a8bf40c3b0c2b0ecb4043d0e917ec9f6ff2bfe47dac4a",
+        "3e97536fb075a5e741bcd5c51957a64c5076cd15ed00f65a6ab42ef030cdbf65"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "音乐与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-012",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "平面绘画的透视与几何变换",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L002",
+        "STD2020-SOURCELINE-P72-L003",
+        "STD2020-SOURCELINE-P72-L004"
+      ],
+      "source_line_sha256": [
+        "74c6e842c898c388dbfc4fccd5ae9f09733e2aef9c4623a8813880b9dadb8b81",
+        "d557660a55730534f3aaadd28199be409802c7581dd5283ccee70447ad5396a9",
+        "416301e37172f71c3ce4dbcfd85074e9187f5581d81f43399e9add0c086bd5f5"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "美术与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-013",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "工艺、建筑和字体中的几何关系",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L005",
+        "STD2020-SOURCELINE-P72-L006",
+        "STD2020-SOURCELINE-P72-L007"
+      ],
+      "source_line_sha256": [
+        "b57588c605ca8bd5c6f889228f5643f11181d9f6e7ee5587164769a2274b3efb",
+        "b8185ee8c48207d91ca1421deb860f1940a379faac4c5e900e07d92d272ca42f",
+        "f2f6bfca317a1b005f40aeec9e0541f6a0ef5ceb0ad84808597b801565970c4f"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "美术与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-014",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "计算机绘图的数学与工具",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L008",
+        "STD2020-SOURCELINE-P72-L009",
+        "STD2020-SOURCELINE-P72-L010"
+      ],
+      "source_line_sha256": [
+        "3b3dfa10c8e4b4237a8c5bc9c49a4371ae15b578f36901a7679617ecaec09ea1",
+        "aa0ed30fb25b3bbd7359143c2720de8af6c2cdd0c87819b92ee02c1cb56c3ee8",
+        "11872cdcdf779a6840c7ea1558126185d8a54f8f4183d0cb065e6f72dc392a13"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "美术与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-015",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "艺术创作中的数学观念",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L011",
+        "STD2020-SOURCELINE-P72-L012"
+      ],
+      "source_line_sha256": [
+        "87e4191d759db70a8eabbe7879817d267e3b081d320bded040750738b8639437",
+        "57a33d468cfeea384e69f019bfa4aac334580c1e6d4480cd0eb10defa3e8af6c"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "美术与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Method",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-016",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "投掷跳跃中的向量分解与运动模型",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P72-L022",
+        "STD2020-SOURCELINE-P72-L023",
+        "STD2020-SOURCELINE-P72-L024",
+        "STD2020-SOURCELINE-P73-L001"
+      ],
+      "source_line_sha256": [
+        "758990630f0a0abbc6e0c98a8aa68bb08b76c757adf5e60afb68d0bd94662d86",
+        "48d1c5f4433ba0b77d08e3fde6b8c33619ca817d501db53bcbd34fc9f82dc2ce",
+        "72cd343b4f1b8412277f359777e80f0861ae2004d07ba7fde61138e632bc84de",
+        "2fb016cc8faf0e0b2240dbf502c65f95f14fb715a8885ddbdd4c18db804c3229"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "体育与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Method",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-017",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "运动指标数据的统计解释",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L002",
+        "STD2020-SOURCELINE-P73-L003",
+        "STD2020-SOURCELINE-P73-L004",
+        "STD2020-SOURCELINE-P73-L005"
+      ],
+      "source_line_sha256": [
+        "030f1797fef04f8a75719fdb142725f2ae9f83deb1dc141fed1702517196b238",
+        "3e4f23701ebd89e6d24d7c3052161107ae4b359f586c4c35cf7a47a10df88312",
+        "67761e4d7578254b0d532772ba03bea9f6891ba5d731f8d8be5d1cb5f4eb783a",
+        "f57fd3ca8f95bb5829d26f6749a49a7b3bba7e57b1be368087a9860d4d8cc63e"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "体育与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-018",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "赛事排程与图论、优化建模",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L006",
+        "STD2020-SOURCELINE-P73-L007",
+        "STD2020-SOURCELINE-P73-L008"
+      ],
+      "source_line_sha256": [
+        "cfb442a98f5f58caae2f7451188b1ffd1bbdf495d5363d2780f77d148d825590",
+        "2cf366807186e5757df7164f5e7e7413b8893b4a03af0ce0832c040c8723f91a",
+        "c3a572abd82c2064f514b314e3cbed27d5f584eb818d9222c3f280bbdc3987f1"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "体育与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-019",
+      "is_school_elective_example": false,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "运动设备和场馆的曲面几何",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L009",
+        "STD2020-SOURCELINE-P73-L010",
+        "STD2020-SOURCELINE-P73-L011",
+        "STD2020-SOURCELINE-P73-L012"
+      ],
+      "source_line_sha256": [
+        "c7d24be54aeb877d037b004a7ac13cde4f67c6c86cc939d5a0a5369275dab9d7",
+        "49426ba05c4c1012203015c1b36346b4a28acad6a607ff027c68e9aa2958c0e5",
+        "bc9fac44eab0ba593008f0ae1530e5c9258b3fa792b5f14d1a2cf4ecbd4612ab",
+        "43ea1698ff806ba0ee5b0913badf8090df7184e5333262f8c7ac35b0c6843e1f"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "体育与数学",
+      "source_track": "ELECTIVE_D",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-020",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "机器人坐标与运动几何",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "拓展视野",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-021",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "群作用与对称性入门",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "拓展视野",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-022",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "球面几何的角与距离",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "拓展视野",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-023",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "多面体拓扑不变量的直观",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "拓展视野",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-024",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "数列差分及离散变化",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "拓展视野",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-025",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "初等数论的整除与同余",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L016",
+        "STD2020-SOURCELINE-P73-L017"
+      ],
+      "source_line_sha256": [
+        "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+        "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "拓展视野",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-026",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "数量与决策的生活数学实例",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L018"
+      ],
+      "source_line_sha256": [
+        "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "日常生活",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-027",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "复利、预算及家庭财务模型",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L018"
+      ],
+      "source_line_sha256": [
+        "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "日常生活",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-028",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "地方建筑的几何数据研究",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L019",
+        "STD2020-SOURCELINE-P73-L020"
+      ],
+      "source_line_sha256": [
+        "ac9167496e0cf1fea46a477fd36a8793268f879a025af230a43a4271d4e29bc8",
+        "6a45896a3c53d4848c09b5b335e3987385d32b6329af65fb7405aa811ea431f6"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "地方特色",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-029",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "地区经济调查与统计分析",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L019",
+        "STD2020-SOURCELINE-P73-L020"
+      ],
+      "source_line_sha256": [
+        "ac9167496e0cf1fea46a477fd36a8793268f879a025af230a43a4271d4e29bc8",
+        "6a45896a3c53d4848c09b5b335e3987385d32b6329af65fb7405aa811ea431f6"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "地方特色",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-030",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "微积分基础的先修主题",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L021",
+        "STD2020-SOURCELINE-P73-L022"
+      ],
+      "source_line_sha256": [
+        "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+        "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "大学先修",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-031",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "线性代数和解析几何先修主题",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L021",
+        "STD2020-SOURCELINE-P73-L022"
+      ],
+      "source_line_sha256": [
+        "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+        "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "大学先修",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    },
+    {
+      "content_type": "Exploration",
+      "curriculum_scope_status": "EDITORIAL_PROPOSAL_NOT_APPROVED_ATOM",
+      "duplicate_with_other_proposals": "UNDETERMINED",
+      "id": "STD2020-EDITORIAL-PROP150-032",
+      "is_school_elective_example": true,
+      "lesson_complete": false,
+      "mathematical_conditions_review": "NOT_YET_CHECKED",
+      "official_knowledge_atom_id": null,
+      "original_paraphrase": "概率与数理统计先修主题",
+      "source_line_ids": [
+        "STD2020-SOURCELINE-P73-L021",
+        "STD2020-SOURCELINE-P73-L022"
+      ],
+      "source_line_sha256": [
+        "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+        "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+      ],
+      "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+      "source_topic": "大学先修",
+      "source_track": "ELECTIVE_E",
+      "student_authoritative": false,
+      "teacher_approved": false,
+      "teacher_review": "REVIEW_PENDING",
+      "theorem_proof_required": false
+    }
+  ],
+  "proposed_count": 32,
+  "schema": "kb150-licensed-source-line-semantic-proposals/1",
+  "source_boundary_evidence": [
+    {
+      "classification": "EDITORIAL_SOURCE_HEADING_SEEN",
+      "kind": "C_TO_D",
+      "line": 6,
+      "page": 69,
+      "source_id": "STD2020-SOURCELINE-P69-L006"
+    },
+    {
+      "classification": "EDITORIAL_SOURCE_HEADING_SEEN",
+      "kind": "D_TO_E",
+      "line": 13,
+      "page": 73,
+      "source_id": "STD2020-SOURCELINE-P73-L013"
+    },
+    {
+      "classification": "EDITORIAL_SOURCE_CONTINUATION_SEEN",
+      "from": "STD2020-SOURCELINE-P72-L024",
+      "kind": "D_CROSSPAGE_CONTINUATION",
+      "to": "STD2020-SOURCELINE-P73-L001"
+    }
+  ],
+  "source_line_counts": {
+    "ELECTIVE_C": 5,
+    "ELECTIVE_D": 100,
+    "ELECTIVE_E": 10,
+    "PARATEXT": 7
+  },
+  "source_line_partition": [
+    {
+      "classification": "ELECTIVE_C",
+      "line_id": "STD2020-SOURCELINE-P69-L001",
+      "officially_certified": false,
+      "original_line_sha256": "13b3c2bed1080cb9123b2d3db98c7356932147264dd4f22dc4a404ca7413ec48",
+      "original_text_committed": false,
+      "pdfkit_line": 1,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_C",
+      "line_id": "STD2020-SOURCELINE-P69-L002",
+      "officially_certified": false,
+      "original_line_sha256": "129b327a80c9d7413ccfd32e198e418c7b6bab0e53264e0ef3e6a15fbe990c10",
+      "original_text_committed": false,
+      "pdfkit_line": 2,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_C",
+      "line_id": "STD2020-SOURCELINE-P69-L003",
+      "officially_certified": false,
+      "original_line_sha256": "6e1b31d1cd9b7ae449644c7d300ccfea0e995ba035325ffd0741906977e3a3e1",
+      "original_text_committed": false,
+      "pdfkit_line": 3,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_C",
+      "line_id": "STD2020-SOURCELINE-P69-L004",
+      "officially_certified": false,
+      "original_line_sha256": "fa0331b51ef5d295218898870c7d7749096b4b154fade47c581f1bbb5977b362",
+      "original_text_committed": false,
+      "pdfkit_line": 4,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_C",
+      "line_id": "STD2020-SOURCELINE-P69-L005",
+      "officially_certified": false,
+      "original_line_sha256": "4f43da1a4e497eaa9e0a9841ae751b4053860e026a728f56e54200dad36e278e",
+      "original_text_committed": false,
+      "pdfkit_line": 5,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L006",
+      "officially_certified": false,
+      "original_line_sha256": "e0fc0f3a50263adeae540a50949704fd4ecd8a8c4de7e988c8f79fee32d156fd",
+      "original_text_committed": false,
+      "pdfkit_line": 6,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L007",
+      "officially_certified": false,
+      "original_line_sha256": "61bc62490ba8a18e6371ee5eb6525d1f6685ad5b1276d83533266af1b6f12179",
+      "original_text_committed": false,
+      "pdfkit_line": 7,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L008",
+      "officially_certified": false,
+      "original_line_sha256": "71b32b6d42f49691cc4eed71a735701e52e2813a8d2742a1dc5e977905d7ec5f",
+      "original_text_committed": false,
+      "pdfkit_line": 8,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L009",
+      "officially_certified": false,
+      "original_line_sha256": "85ed264584a443f1111b1548715878ea9129dfc334d64e4a51a02cfd3f0f8ba0",
+      "original_text_committed": false,
+      "pdfkit_line": 9,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L010",
+      "officially_certified": false,
+      "original_line_sha256": "cfb03e4a87b794376e40f7f1394f196483bec6c010bcc27c5366869d7e3ce0eb",
+      "original_text_committed": false,
+      "pdfkit_line": 10,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L011",
+      "officially_certified": false,
+      "original_line_sha256": "28c8c295261f55eb2970b6be1c2f74aed78fb92b9f9480fe564f2406c15aa41a",
+      "original_text_committed": false,
+      "pdfkit_line": 11,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L012",
+      "officially_certified": false,
+      "original_line_sha256": "fc80ef8423e0595f1d9c7ab30958dbea20229b7f8b89cd9545854c0395b3301c",
+      "original_text_committed": false,
+      "pdfkit_line": 12,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L013",
+      "officially_certified": false,
+      "original_line_sha256": "bf99cdb89905618536b713b6d9a49cd1970d245927767d6cd330d89ec74d7d60",
+      "original_text_committed": false,
+      "pdfkit_line": 13,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L014",
+      "officially_certified": false,
+      "original_line_sha256": "a368052bd6207ec380459b3c78d30cc43353048e3a54929a4ae27db492999929",
+      "original_text_committed": false,
+      "pdfkit_line": 14,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L015",
+      "officially_certified": false,
+      "original_line_sha256": "404b550c74d14b1b599733a335cfba73566e9756e7cb68d190c9ae5fd6a2634a",
+      "original_text_committed": false,
+      "pdfkit_line": 15,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L016",
+      "officially_certified": false,
+      "original_line_sha256": "fe659f820f8bed780fe1a83f9e4f9442260faca498757b63ed0d2e4f2c995f9d",
+      "original_text_committed": false,
+      "pdfkit_line": 16,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L017",
+      "officially_certified": false,
+      "original_line_sha256": "5beb295613e760e527a301c40536081dd67c37d68bd863d8c3fa06530790850d",
+      "original_text_committed": false,
+      "pdfkit_line": 17,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L018",
+      "officially_certified": false,
+      "original_line_sha256": "43bb0461250c7f27b3b4ff2cbc3264d08b1eab3c881c52b786cde2ff721d6b22",
+      "original_text_committed": false,
+      "pdfkit_line": 18,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L019",
+      "officially_certified": false,
+      "original_line_sha256": "b9bc1895f33cca536bbfac31b006f4326ccbd04af213f8c545ead252406f616f",
+      "original_text_committed": false,
+      "pdfkit_line": 19,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L020",
+      "officially_certified": false,
+      "original_line_sha256": "2d669b3680b19fb35f46cc53636d0032a986627c3ecb14bc974c59e15cdbe607",
+      "original_text_committed": false,
+      "pdfkit_line": 20,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L021",
+      "officially_certified": false,
+      "original_line_sha256": "75020f9da390e2c2b511c6d04d304acb85949bf6abf5dfe3aee1d36512faaa87",
+      "original_text_committed": false,
+      "pdfkit_line": 21,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L022",
+      "officially_certified": false,
+      "original_line_sha256": "a05cee994ab269dd58498cad919d25b83d8c9515f6a5b8c91b26c36b606ab1cf",
+      "original_text_committed": false,
+      "pdfkit_line": 22,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P69-L023",
+      "officially_certified": false,
+      "original_line_sha256": "ba80dc18a307d5339686d2a51a407eb1916e90d8b99c409a282851146f0ffb75",
+      "original_text_committed": false,
+      "pdfkit_line": 23,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "PARATEXT",
+      "line_id": "STD2020-SOURCELINE-P69-L024",
+      "officially_certified": false,
+      "original_line_sha256": "06ab15ace1b2fb159f9e7ed5e39054c797a3629a9972ccdefa1ddc1b2dfa8700",
+      "original_text_committed": false,
+      "pdfkit_line": 24,
+      "printed_page": 69,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "PARATEXT",
+      "line_id": "STD2020-SOURCELINE-P70-L001",
+      "officially_certified": false,
+      "original_line_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "original_text_committed": false,
+      "pdfkit_line": 1,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L002",
+      "officially_certified": false,
+      "original_line_sha256": "c5bcf68cf6d86a4c495ba5f2b555e6eef31b0264f3258ce41f9b06f2e25b9bb8",
+      "original_text_committed": false,
+      "pdfkit_line": 2,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L003",
+      "officially_certified": false,
+      "original_line_sha256": "bfe613f07d15d267bb61f51211697cf11acbe1215e5ca1c08e7a8d5fa042bdfa",
+      "original_text_committed": false,
+      "pdfkit_line": 3,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L004",
+      "officially_certified": false,
+      "original_line_sha256": "1d0c8e6e9c78c0a596372bb962221d7e13e36e725acd25e69b42f5c0ca54d77c",
+      "original_text_committed": false,
+      "pdfkit_line": 4,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L005",
+      "officially_certified": false,
+      "original_line_sha256": "e7faf44a2b0364d7297d7b9c085d41822d34d471fe85666c5d4af6e339f40e42",
+      "original_text_committed": false,
+      "pdfkit_line": 5,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L006",
+      "officially_certified": false,
+      "original_line_sha256": "dde613fef061383db70050f05025318d69dcf9d3274a542f55b98c8746e3a3f4",
+      "original_text_committed": false,
+      "pdfkit_line": 6,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L007",
+      "officially_certified": false,
+      "original_line_sha256": "bfd9bc0c1556eb663be342173e2701dbff25af44c3fc1b07f0dfea0be7a995db",
+      "original_text_committed": false,
+      "pdfkit_line": 7,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L008",
+      "officially_certified": false,
+      "original_line_sha256": "0426e1fb8776d5de54174abe60e64cbfa59c39048b1c4d2ebd5a6d36a104c461",
+      "original_text_committed": false,
+      "pdfkit_line": 8,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L009",
+      "officially_certified": false,
+      "original_line_sha256": "b01885253446cfc1dd915e1528e35256375fa717322de881fc1614e858b42ff4",
+      "original_text_committed": false,
+      "pdfkit_line": 9,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L010",
+      "officially_certified": false,
+      "original_line_sha256": "64e9f2f3a152257932146b714f57462d8cc2aac244af239aa113e3776141c8f5",
+      "original_text_committed": false,
+      "pdfkit_line": 10,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L011",
+      "officially_certified": false,
+      "original_line_sha256": "c54d536d91b347d1347fd78ec6c519f28cf6294b9f4a35f2c137ce28cf62ce56",
+      "original_text_committed": false,
+      "pdfkit_line": 11,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L012",
+      "officially_certified": false,
+      "original_line_sha256": "edf16b6a501d49becce2ace0f578f0b329259f392aa244b673df716744da4e19",
+      "original_text_committed": false,
+      "pdfkit_line": 12,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L013",
+      "officially_certified": false,
+      "original_line_sha256": "336029b0b4c6c12d1955d99a26de6498995d4f4d7ec0ce458bc2434e18364bc7",
+      "original_text_committed": false,
+      "pdfkit_line": 13,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L014",
+      "officially_certified": false,
+      "original_line_sha256": "4f603fda68c259f1e2ce35e10e8bc204c7b400aa2087fbdf2c29bf3cb2960178",
+      "original_text_committed": false,
+      "pdfkit_line": 14,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L015",
+      "officially_certified": false,
+      "original_line_sha256": "71235567dc2dd4207bb979bea32802bb93519d94a3ca5d1940c5c64029befe7d",
+      "original_text_committed": false,
+      "pdfkit_line": 15,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L016",
+      "officially_certified": false,
+      "original_line_sha256": "1be911c7ca282b9e6fd5a6f1fd1bea2f3093e428ad943f632abd07851ed373d0",
+      "original_text_committed": false,
+      "pdfkit_line": 16,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L017",
+      "officially_certified": false,
+      "original_line_sha256": "188e3b38c7da6920e39fbf30a059883f2b17eac14a562ecf09f5cf1e434cb56a",
+      "original_text_committed": false,
+      "pdfkit_line": 17,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L018",
+      "officially_certified": false,
+      "original_line_sha256": "14be97c6caaf1392b2fb5e119c432f3740d5022566b2fd1b22b15feaa3734336",
+      "original_text_committed": false,
+      "pdfkit_line": 18,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L019",
+      "officially_certified": false,
+      "original_line_sha256": "efc2ecc162b71b6896a95bca54d508ff068a7e1140e9c4d8a8c3ce28a2a5a674",
+      "original_text_committed": false,
+      "pdfkit_line": 19,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L020",
+      "officially_certified": false,
+      "original_line_sha256": "0a83955dc5fa12d3585efeac2a7839f6d9305597bf3be650977c6b0d61fe445d",
+      "original_text_committed": false,
+      "pdfkit_line": 20,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L021",
+      "officially_certified": false,
+      "original_line_sha256": "c2d7d0e0c4940c7e948127594fa469b149bbba665eb7cdf091eabf097193894a",
+      "original_text_committed": false,
+      "pdfkit_line": 21,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L022",
+      "officially_certified": false,
+      "original_line_sha256": "ce58cea46ef40e564a1aed4898a5e876bea52f0ced36426e2a0a2904c79dc2c8",
+      "original_text_committed": false,
+      "pdfkit_line": 22,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L023",
+      "officially_certified": false,
+      "original_line_sha256": "7b6ce0fe135bd561a2be633a49316ceba3cbe3386000aba6150f6b53e005833d",
+      "original_text_committed": false,
+      "pdfkit_line": 23,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L024",
+      "officially_certified": false,
+      "original_line_sha256": "02b3e4c3f1ffadc6f31da97e7df635e569d45bd42e3927011de9661ef24c6683",
+      "original_text_committed": false,
+      "pdfkit_line": 24,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P70-L025",
+      "officially_certified": false,
+      "original_line_sha256": "7497379ec37cc2eccd33abcd987dda011b5bc0cedf78210a8abc31a191d73908",
+      "original_text_committed": false,
+      "pdfkit_line": 25,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "PARATEXT",
+      "line_id": "STD2020-SOURCELINE-P70-L026",
+      "officially_certified": false,
+      "original_line_sha256": "312a765b8ab33afbab84d6dcc43eab4baa9e630d6ba46b2c6f79da9b15c54de5",
+      "original_text_committed": false,
+      "pdfkit_line": 26,
+      "printed_page": 70,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L001",
+      "officially_certified": false,
+      "original_line_sha256": "e162b51fe6a20fe2482e697c5aa2db13daf3422ca1727bd817a54c37b222650d",
+      "original_text_committed": false,
+      "pdfkit_line": 1,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L002",
+      "officially_certified": false,
+      "original_line_sha256": "4f1cf47b9cfaced8b463217b02821357fd4c713073e9ca90fcd3d0a7a7fbc061",
+      "original_text_committed": false,
+      "pdfkit_line": 2,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L003",
+      "officially_certified": false,
+      "original_line_sha256": "8acf6ca67e4f6cc23746699b19c43711de90d36da39665426123d13f2923868d",
+      "original_text_committed": false,
+      "pdfkit_line": 3,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L004",
+      "officially_certified": false,
+      "original_line_sha256": "473c02f0e21433a82c70a8ddd998ed0d2bedbafebac09a2ba160889c638091f7",
+      "original_text_committed": false,
+      "pdfkit_line": 4,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L005",
+      "officially_certified": false,
+      "original_line_sha256": "94bd99d2181be3615bf455be3dd3475d4ab3ddd007bbab46f02bd460325fc088",
+      "original_text_committed": false,
+      "pdfkit_line": 5,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L006",
+      "officially_certified": false,
+      "original_line_sha256": "916d48dcb250bab7b412bf0380046320c788b792320128fc1e05610ef5a55a89",
+      "original_text_committed": false,
+      "pdfkit_line": 6,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L007",
+      "officially_certified": false,
+      "original_line_sha256": "731686b3c6cda8cb1e2490f8ffd393afc37ecaf25bcdd3e4a97e3072692e0c8f",
+      "original_text_committed": false,
+      "pdfkit_line": 7,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L008",
+      "officially_certified": false,
+      "original_line_sha256": "6cf285d8c825a4624b33509c3bedc38ebe5da252e0580f19bbbf8807caba200f",
+      "original_text_committed": false,
+      "pdfkit_line": 8,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L009",
+      "officially_certified": false,
+      "original_line_sha256": "5d00646cbd6b46173edcadc2e41576b2fabbd9b0e80e9461fe95878a33862d3a",
+      "original_text_committed": false,
+      "pdfkit_line": 9,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L010",
+      "officially_certified": false,
+      "original_line_sha256": "71dc09d69b72cdfefb3fd761c3d009f2f57854b37ae47ea4327e898750cf1438",
+      "original_text_committed": false,
+      "pdfkit_line": 10,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L011",
+      "officially_certified": false,
+      "original_line_sha256": "acbfc74acbd5dbf118f4711c9d6cf172bc3d08a08a95e87ba3015e4e83e24e9f",
+      "original_text_committed": false,
+      "pdfkit_line": 11,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L012",
+      "officially_certified": false,
+      "original_line_sha256": "cbba3978080038993e9a8bf40c3b0c2b0ecb4043d0e917ec9f6ff2bfe47dac4a",
+      "original_text_committed": false,
+      "pdfkit_line": 12,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L013",
+      "officially_certified": false,
+      "original_line_sha256": "3e97536fb075a5e741bcd5c51957a64c5076cd15ed00f65a6ab42ef030cdbf65",
+      "original_text_committed": false,
+      "pdfkit_line": 13,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L014",
+      "officially_certified": false,
+      "original_line_sha256": "c3db186df722e6df915404d40625d98f8b8438d1678258e870f4af46d0cb59ea",
+      "original_text_committed": false,
+      "pdfkit_line": 14,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L015",
+      "officially_certified": false,
+      "original_line_sha256": "aac14fc8b7b071e4e9ea723965416dfd6d671c0a8c387db5b81bec6e73027883",
+      "original_text_committed": false,
+      "pdfkit_line": 15,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L016",
+      "officially_certified": false,
+      "original_line_sha256": "3c1e0c288d78c290d7177fcd11a96aab3d97d8d4ef14d908e492d4525a1acd96",
+      "original_text_committed": false,
+      "pdfkit_line": 16,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L017",
+      "officially_certified": false,
+      "original_line_sha256": "bb4298c5d0adddd4acf743b75c5c3d2eebe4c25a42d08b3d64fbc0697a841938",
+      "original_text_committed": false,
+      "pdfkit_line": 17,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L018",
+      "officially_certified": false,
+      "original_line_sha256": "b5cde44e8ba092b950b5d5bf4d28f62c6b7b8cc3c9476bf6235ef134b03db6b0",
+      "original_text_committed": false,
+      "pdfkit_line": 18,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L019",
+      "officially_certified": false,
+      "original_line_sha256": "2aa5243cd0491599a45b1fef099cf94f9cd899201784d1b3eb4291016f670d8d",
+      "original_text_committed": false,
+      "pdfkit_line": 19,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L020",
+      "officially_certified": false,
+      "original_line_sha256": "f949310b413c701f6a70f888ce5cf6ee57b3166bd2cae7b09ad53a8821eb9b57",
+      "original_text_committed": false,
+      "pdfkit_line": 20,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L021",
+      "officially_certified": false,
+      "original_line_sha256": "8ca00275ed3c3db132290e1a2ed1027dff936e1c843880a5ea16449943d975d2",
+      "original_text_committed": false,
+      "pdfkit_line": 21,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L022",
+      "officially_certified": false,
+      "original_line_sha256": "0c1011f4a8846a2d502200cca6dc9c4802af99a42889b0f468e424d22840d4ff",
+      "original_text_committed": false,
+      "pdfkit_line": 22,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P71-L023",
+      "officially_certified": false,
+      "original_line_sha256": "a074d41888b13894946745d0f9c57e979dc3adb799e3e61181af17b148f9ff74",
+      "original_text_committed": false,
+      "pdfkit_line": 23,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "PARATEXT",
+      "line_id": "STD2020-SOURCELINE-P71-L024",
+      "officially_certified": false,
+      "original_line_sha256": "ce5aa2c082c7ff1400d8939d4cdf8d39f664c637aeb1df7f23bfe3f37710b7c1",
+      "original_text_committed": false,
+      "pdfkit_line": 24,
+      "printed_page": 71,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "PARATEXT",
+      "line_id": "STD2020-SOURCELINE-P72-L001",
+      "officially_certified": false,
+      "original_line_sha256": "d903033dae1eb490fa12f5a703dd2da7f2a236f20ec2f4ca6e0ccb1664e9e732",
+      "original_text_committed": false,
+      "pdfkit_line": 1,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L002",
+      "officially_certified": false,
+      "original_line_sha256": "74c6e842c898c388dbfc4fccd5ae9f09733e2aef9c4623a8813880b9dadb8b81",
+      "original_text_committed": false,
+      "pdfkit_line": 2,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L003",
+      "officially_certified": false,
+      "original_line_sha256": "d557660a55730534f3aaadd28199be409802c7581dd5283ccee70447ad5396a9",
+      "original_text_committed": false,
+      "pdfkit_line": 3,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L004",
+      "officially_certified": false,
+      "original_line_sha256": "416301e37172f71c3ce4dbcfd85074e9187f5581d81f43399e9add0c086bd5f5",
+      "original_text_committed": false,
+      "pdfkit_line": 4,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L005",
+      "officially_certified": false,
+      "original_line_sha256": "b57588c605ca8bd5c6f889228f5643f11181d9f6e7ee5587164769a2274b3efb",
+      "original_text_committed": false,
+      "pdfkit_line": 5,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L006",
+      "officially_certified": false,
+      "original_line_sha256": "b8185ee8c48207d91ca1421deb860f1940a379faac4c5e900e07d92d272ca42f",
+      "original_text_committed": false,
+      "pdfkit_line": 6,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L007",
+      "officially_certified": false,
+      "original_line_sha256": "f2f6bfca317a1b005f40aeec9e0541f6a0ef5ceb0ad84808597b801565970c4f",
+      "original_text_committed": false,
+      "pdfkit_line": 7,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L008",
+      "officially_certified": false,
+      "original_line_sha256": "3b3dfa10c8e4b4237a8c5bc9c49a4371ae15b578f36901a7679617ecaec09ea1",
+      "original_text_committed": false,
+      "pdfkit_line": 8,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L009",
+      "officially_certified": false,
+      "original_line_sha256": "aa0ed30fb25b3bbd7359143c2720de8af6c2cdd0c87819b92ee02c1cb56c3ee8",
+      "original_text_committed": false,
+      "pdfkit_line": 9,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L010",
+      "officially_certified": false,
+      "original_line_sha256": "11872cdcdf779a6840c7ea1558126185d8a54f8f4183d0cb065e6f72dc392a13",
+      "original_text_committed": false,
+      "pdfkit_line": 10,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L011",
+      "officially_certified": false,
+      "original_line_sha256": "87e4191d759db70a8eabbe7879817d267e3b081d320bded040750738b8639437",
+      "original_text_committed": false,
+      "pdfkit_line": 11,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L012",
+      "officially_certified": false,
+      "original_line_sha256": "57a33d468cfeea384e69f019bfa4aac334580c1e6d4480cd0eb10defa3e8af6c",
+      "original_text_committed": false,
+      "pdfkit_line": 12,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L013",
+      "officially_certified": false,
+      "original_line_sha256": "7733136113a2812d54de1e1066fb94bf0a23865498cf4a041128c60d8c084745",
+      "original_text_committed": false,
+      "pdfkit_line": 13,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L014",
+      "officially_certified": false,
+      "original_line_sha256": "acc76eb1c3d7be52f401aecb88b2d63fd7f183f13f6cbd56acdbc3525533663d",
+      "original_text_committed": false,
+      "pdfkit_line": 14,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L015",
+      "officially_certified": false,
+      "original_line_sha256": "617066bd09508c3f4dc8d56bdaef9278b1d85f27e5060feb181b552f057ebc57",
+      "original_text_committed": false,
+      "pdfkit_line": 15,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L016",
+      "officially_certified": false,
+      "original_line_sha256": "1da9d62eb0f4f648d8b2cff0870534d332f5b8192773cf601e1df8ef909c0f96",
+      "original_text_committed": false,
+      "pdfkit_line": 16,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L017",
+      "officially_certified": false,
+      "original_line_sha256": "d26e8d31e133935c27cfa8e6fd1be06e8ac02c7f3f78ad96ec66c0ff9e2bdeee",
+      "original_text_committed": false,
+      "pdfkit_line": 17,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L018",
+      "officially_certified": false,
+      "original_line_sha256": "b63b06517497c371bedf2bc38fed487bcfaf0460f9e999821361beacd336f587",
+      "original_text_committed": false,
+      "pdfkit_line": 18,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L019",
+      "officially_certified": false,
+      "original_line_sha256": "733f5abd6e6e18540bb35f8e818394b5781ea6829de8ceecb887217bb989dbac",
+      "original_text_committed": false,
+      "pdfkit_line": 19,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L020",
+      "officially_certified": false,
+      "original_line_sha256": "a26f0984af1c5e833b9e6dbad2684b441edf123c9c392e4cd3cc0c3780320966",
+      "original_text_committed": false,
+      "pdfkit_line": 20,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L021",
+      "officially_certified": false,
+      "original_line_sha256": "bf92d8745f9af6a8cea80579c222166fa5715c778087b92d132507031f4d5b32",
+      "original_text_committed": false,
+      "pdfkit_line": 21,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L022",
+      "officially_certified": false,
+      "original_line_sha256": "758990630f0a0abbc6e0c98a8aa68bb08b76c757adf5e60afb68d0bd94662d86",
+      "original_text_committed": false,
+      "pdfkit_line": 22,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L023",
+      "officially_certified": false,
+      "original_line_sha256": "48d1c5f4433ba0b77d08e3fde6b8c33619ca817d501db53bcbd34fc9f82dc2ce",
+      "original_text_committed": false,
+      "pdfkit_line": 23,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P72-L024",
+      "officially_certified": false,
+      "original_line_sha256": "72cd343b4f1b8412277f359777e80f0861ae2004d07ba7fde61138e632bc84de",
+      "original_text_committed": false,
+      "pdfkit_line": 24,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "PARATEXT",
+      "line_id": "STD2020-SOURCELINE-P72-L025",
+      "officially_certified": false,
+      "original_line_sha256": "30f78b272bc3f3ea7e835deed25bca4e102f7a5117ff53d0a7e5fdc06e70e618",
+      "original_text_committed": false,
+      "pdfkit_line": 25,
+      "printed_page": 72,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L001",
+      "officially_certified": false,
+      "original_line_sha256": "2fb016cc8faf0e0b2240dbf502c65f95f14fb715a8885ddbdd4c18db804c3229",
+      "original_text_committed": false,
+      "pdfkit_line": 1,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L002",
+      "officially_certified": false,
+      "original_line_sha256": "030f1797fef04f8a75719fdb142725f2ae9f83deb1dc141fed1702517196b238",
+      "original_text_committed": false,
+      "pdfkit_line": 2,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L003",
+      "officially_certified": false,
+      "original_line_sha256": "3e4f23701ebd89e6d24d7c3052161107ae4b359f586c4c35cf7a47a10df88312",
+      "original_text_committed": false,
+      "pdfkit_line": 3,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L004",
+      "officially_certified": false,
+      "original_line_sha256": "67761e4d7578254b0d532772ba03bea9f6891ba5d731f8d8be5d1cb5f4eb783a",
+      "original_text_committed": false,
+      "pdfkit_line": 4,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L005",
+      "officially_certified": false,
+      "original_line_sha256": "f57fd3ca8f95bb5829d26f6749a49a7b3bba7e57b1be368087a9860d4d8cc63e",
+      "original_text_committed": false,
+      "pdfkit_line": 5,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L006",
+      "officially_certified": false,
+      "original_line_sha256": "cfb442a98f5f58caae2f7451188b1ffd1bbdf495d5363d2780f77d148d825590",
+      "original_text_committed": false,
+      "pdfkit_line": 6,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L007",
+      "officially_certified": false,
+      "original_line_sha256": "2cf366807186e5757df7164f5e7e7413b8893b4a03af0ce0832c040c8723f91a",
+      "original_text_committed": false,
+      "pdfkit_line": 7,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L008",
+      "officially_certified": false,
+      "original_line_sha256": "c3a572abd82c2064f514b314e3cbed27d5f584eb818d9222c3f280bbdc3987f1",
+      "original_text_committed": false,
+      "pdfkit_line": 8,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L009",
+      "officially_certified": false,
+      "original_line_sha256": "c7d24be54aeb877d037b004a7ac13cde4f67c6c86cc939d5a0a5369275dab9d7",
+      "original_text_committed": false,
+      "pdfkit_line": 9,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L010",
+      "officially_certified": false,
+      "original_line_sha256": "49426ba05c4c1012203015c1b36346b4a28acad6a607ff027c68e9aa2958c0e5",
+      "original_text_committed": false,
+      "pdfkit_line": 10,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L011",
+      "officially_certified": false,
+      "original_line_sha256": "bc9fac44eab0ba593008f0ae1530e5c9258b3fa792b5f14d1a2cf4ecbd4612ab",
+      "original_text_committed": false,
+      "pdfkit_line": 11,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_D",
+      "line_id": "STD2020-SOURCELINE-P73-L012",
+      "officially_certified": false,
+      "original_line_sha256": "43ea1698ff806ba0ee5b0913badf8090df7184e5333262f8c7ac35b0c6843e1f",
+      "original_text_committed": false,
+      "pdfkit_line": 12,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L013",
+      "officially_certified": false,
+      "original_line_sha256": "db7a7c79976a9f03a6d92d04f413da4556e74e50cb4f68f947f817f233a055da",
+      "original_text_committed": false,
+      "pdfkit_line": 13,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L014",
+      "officially_certified": false,
+      "original_line_sha256": "ffe80db0e7fd7f6a32036c4c94474a91835efc8a699f95fd841c71d42b49a655",
+      "original_text_committed": false,
+      "pdfkit_line": 14,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L015",
+      "officially_certified": false,
+      "original_line_sha256": "0a6ca83de26b1a7c6dbd8c3ccbdd9ff5712190bf6f3a79aeeb0d892433b82711",
+      "original_text_committed": false,
+      "pdfkit_line": 15,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L016",
+      "officially_certified": false,
+      "original_line_sha256": "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+      "original_text_committed": false,
+      "pdfkit_line": 16,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L017",
+      "officially_certified": false,
+      "original_line_sha256": "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e",
+      "original_text_committed": false,
+      "pdfkit_line": 17,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L018",
+      "officially_certified": false,
+      "original_line_sha256": "5c3fe8b56aa7e992b6e408ba2ef42fe7cd90763b036d916550b780f8553ece53",
+      "original_text_committed": false,
+      "pdfkit_line": 18,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L019",
+      "officially_certified": false,
+      "original_line_sha256": "ac9167496e0cf1fea46a477fd36a8793268f879a025af230a43a4271d4e29bc8",
+      "original_text_committed": false,
+      "pdfkit_line": 19,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L020",
+      "officially_certified": false,
+      "original_line_sha256": "6a45896a3c53d4848c09b5b335e3987385d32b6329af65fb7405aa811ea431f6",
+      "original_text_committed": false,
+      "pdfkit_line": 20,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L021",
+      "officially_certified": false,
+      "original_line_sha256": "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+      "original_text_committed": false,
+      "pdfkit_line": 21,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "ELECTIVE_E",
+      "line_id": "STD2020-SOURCELINE-P73-L022",
+      "officially_certified": false,
+      "original_line_sha256": "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1",
+      "original_text_committed": false,
+      "pdfkit_line": 22,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "classification": "PARATEXT",
+      "line_id": "STD2020-SOURCELINE-P73-L023",
+      "officially_certified": false,
+      "original_line_sha256": "6078932897802b262c685558599dcd10bf0735625abf2773962b5b7d60019f8c",
+      "original_text_committed": false,
+      "pdfkit_line": 23,
+      "printed_page": 73,
+      "source_classification": "EDITORIAL_BOUNDARY_PROPOSAL",
+      "teacher_review": "REVIEW_PENDING"
+    }
+  ],
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "valid_teacher_manuscripts_new": 0,
+  "warning": "32 candidate ideas are sourced paraphrases (including E school elective examples), NOT teacher-approved official atom denominators, NOT full manuscripts."
+}

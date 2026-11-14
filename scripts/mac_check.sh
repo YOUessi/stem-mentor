@@ -330,6 +330,10 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch148_source_m
 .venv/bin/python scripts/build_kb_batch149_unnumbered_elective_queue.py --check-mac
 .venv/bin/python scripts/build_kb_batch149_crosswalk.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch149_depth_scope.py
+# Batch150: Mac-only original 122-line PDFKit SHA replay and C/D/E source boundary
+# (official atom denominators remain unknown; provisional topics are NOT lessons).
+.venv/bin/python scripts/build_kb_batch150_de_boundary.py --check --mac-replay
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch150_de_boundary.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
