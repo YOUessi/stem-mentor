@@ -1,0 +1,91 @@
+{
+  "focused_python_passed": 125,
+  "general_proof_certified": false,
+  "log_records": 5,
+  "logs": [
+    {
+      "exit_bytes": "0\n",
+      "exit_path": "docs/evaluation/kb159_logs/FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "name": "FOCUSED",
+      "observed_markers": [
+        "125 passed"
+      ],
+      "stdout_bytes": 710,
+      "stdout_path": "docs/evaluation/kb159_logs/FOCUSED.stdout.log",
+      "stdout_sha256": "154a80b0fa238278e5c639c60c161d3c548573f6bbd4de6556735aa6ac6e4dbe"
+    },
+    {
+      "exit_bytes": "0\n",
+      "exit_path": "docs/evaluation/kb159_logs/PDFKIT.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "name": "PDFKIT",
+      "observed_markers": [
+        "PASS KB159 10 full compulsory function drafts"
+      ],
+      "stdout_bytes": 102,
+      "stdout_path": "docs/evaluation/kb159_logs/PDFKIT.stdout.log",
+      "stdout_sha256": "39914e72108755e52e61a26e23ed15f09c641e36c303a3c7aa6c8c245113dda6"
+    },
+    {
+      "exit_bytes": "0\n",
+      "exit_path": "docs/evaluation/kb159_logs/MATH.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "name": "MATH",
+      "observed_markers": [
+        "PASS KB159 20 independently calculated"
+      ],
+      "stdout_bytes": 87,
+      "stdout_path": "docs/evaluation/kb159_logs/MATH.stdout.log",
+      "stdout_sha256": "08386c4711abfdcecf8419426b9e277be1c955d8a1ed698c3f61d3fcffe11bb2"
+    },
+    {
+      "exit_bytes": "0\n",
+      "exit_path": "docs/evaluation/kb159_logs/BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "name": "BROWSER",
+      "observed_markers": [
+        "Chrome PASS",
+        "2 passed"
+      ],
+      "stdout_bytes": 2443,
+      "stdout_path": "docs/evaluation/kb159_logs/BROWSER.stdout.log",
+      "stdout_sha256": "1b78aa040d11c17dc065c789df27bd5aa0f50c33ecc4e9f3bd896352a72e6e20"
+    },
+    {
+      "exit_bytes": "0\n",
+      "exit_path": "docs/evaluation/kb159_logs/MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "name": "MAC_FULL",
+      "observed_markers": [
+        "125 passed",
+        "66418 passed, 5 skipped",
+        "# tests 111",
+        "# pass 111",
+        "# fail 0"
+      ],
+      "stdout_bytes": 157752,
+      "stdout_path": "docs/evaluation/kb159_logs/MAC_FULL.stdout.log",
+      "stdout_sha256": "f4199d3653a80f3a756ac94f25df142ab8bbb231ea71582c0c6c7899a49c0185"
+    }
+  ],
+  "mac_real_tests": true,
+  "negative_premise_exact_bounded": 20,
+  "node_full_passed": 111,
+  "official_atom_denominators_known": false,
+  "python_full_passed": 66418,
+  "python_full_skipped": 5,
+  "run_labels": [
+    "FOCUSED",
+    "PDFKIT",
+    "MATH",
+    "BROWSER",
+    "MAC_FULL"
+  ],
+  "schema": "kb159-authentic-mac-execution-manifest/1",
+  "source_commit": "fd10511c80d284a72be11fcc936a310704271603",
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "teacher_example_exact_bounded": 20,
+  "test_suites_overlap_not_additive": true
+}
