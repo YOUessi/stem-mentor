@@ -1,0 +1,421 @@
+{
+  "cases": [
+    {
+      "candidate_id": "hs-semantic-pilot-119-c07",
+      "case_id": "kb149-01-1",
+      "general_formal_proof_certified": false,
+      "label": "six-sided fair die: three even outcomes",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c07",
+      "case_id": "kb149-01-2",
+      "general_formal_proof_certified": false,
+      "label": "six ways to get total seven of thirty-six ordered pairs",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c07",
+      "case_id": "kb149-01-3",
+      "general_formal_proof_certified": false,
+      "label": "biased red/blue not equiprobable",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c07",
+      "case_id": "kb149-01-4",
+      "general_formal_proof_certified": false,
+      "label": "dice sum two is less likely than sum seven",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c112",
+      "case_id": "kb149-02-1",
+      "general_formal_proof_certified": false,
+      "label": "60/40 population split 12/8 sampled",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c112",
+      "case_id": "kb149-02-2",
+      "general_formal_proof_certified": false,
+      "label": "9/6 population split 3/2 sampled",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c112",
+      "case_id": "kb149-02-3",
+      "general_formal_proof_certified": false,
+      "label": "seven/three split four gives fractional allocation",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c112",
+      "case_id": "kb149-02-4",
+      "general_formal_proof_certified": false,
+      "label": "two/two rounding produces unequal inclusion probability",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c204",
+      "case_id": "kb149-03-1",
+      "general_formal_proof_certified": false,
+      "label": "factorable inequality roots",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c204",
+      "case_id": "kb149-03-2",
+      "general_formal_proof_certified": false,
+      "label": "negative perfect square never strictly positive",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c204",
+      "case_id": "kb149-03-3",
+      "general_formal_proof_certified": false,
+      "label": "negative discriminant must not create real root",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-121-c204",
+      "case_id": "kb149-03-4",
+      "general_formal_proof_certified": false,
+      "label": "strict root endpoint exclusion",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s13",
+      "case_id": "kb149-04-1",
+      "general_formal_proof_certified": false,
+      "label": "die event conditional 2/3",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s13",
+      "case_id": "kb149-04-2",
+      "general_formal_proof_certified": false,
+      "label": "two fair coin flips independent first and second head",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s13",
+      "case_id": "kb149-04-3",
+      "general_formal_proof_certified": false,
+      "label": "positive-probability mutual exclusion cannot imply independence",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s13",
+      "case_id": "kb149-04-4",
+      "general_formal_proof_certified": false,
+      "label": "conditional probability on zero probability impossible",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s14",
+      "case_id": "kb149-05-1",
+      "general_formal_proof_certified": false,
+      "label": "screening posterior is 1/12",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s14",
+      "case_id": "kb149-05-2",
+      "general_formal_proof_certified": false,
+      "label": "factory defect posterior is 3/4",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s14",
+      "case_id": "kb149-05-3",
+      "general_formal_proof_certified": false,
+      "label": "overlapping branches double-count sample",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s14",
+      "case_id": "kb149-05-4",
+      "general_formal_proof_certified": false,
+      "label": "zero-evidence denominator forbids posterior division",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a02",
+      "case_id": "kb149-06-1",
+      "general_formal_proof_certified": false,
+      "label": "reciprocals after N are below epsilon tenth",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a02",
+      "case_id": "kb149-06-2",
+      "general_formal_proof_certified": false,
+      "label": "alternating reciprocals bounded by one",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a02",
+      "case_id": "kb149-06-3",
+      "general_formal_proof_certified": false,
+      "label": "bounded alternating sequence does not converge",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a02",
+      "case_id": "kb149-06-4",
+      "general_formal_proof_certified": false,
+      "label": "a convergent even subsequence does not bound odd spikes",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b03",
+      "case_id": "kb149-07-1",
+      "general_formal_proof_certified": false,
+      "label": "closed disk boundary allowed for real square root",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b03",
+      "case_id": "kb149-07-2",
+      "general_formal_proof_certified": false,
+      "label": "log and denominator simultaneous validity",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b03",
+      "case_id": "kb149-07-3",
+      "general_formal_proof_certified": false,
+      "label": "logarithm zero argument forbidden",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b03",
+      "case_id": "kb149-07-4",
+      "general_formal_proof_certified": false,
+      "label": "nonzero logarithm input but zero denominator invalid",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec05",
+      "case_id": "kb149-08-1",
+      "general_formal_proof_certified": false,
+      "label": "consecutive integer product even",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec05",
+      "case_id": "kb149-08-2",
+      "general_formal_proof_certified": false,
+      "label": "square two parity descent finite arithmetic sanity",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec05",
+      "case_id": "kb149-08-3",
+      "general_formal_proof_certified": false,
+      "label": "universal real square positive false at zero",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec05",
+      "case_id": "kb149-08-4",
+      "general_formal_proof_certified": false,
+      "label": "negation of all positive squares has counterexample, not all nonpositive",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed02",
+      "case_id": "kb149-09-1",
+      "general_formal_proof_certified": false,
+      "label": "axis reflection length squared preserved",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed02",
+      "case_id": "kb149-09-2",
+      "general_formal_proof_certified": false,
+      "label": "central inversion length squared preserved",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed02",
+      "case_id": "kb149-09-3",
+      "general_formal_proof_certified": false,
+      "label": "axis reflection and central inversion unequal on generic point",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed02",
+      "case_id": "kb149-09-4",
+      "general_formal_proof_certified": false,
+      "label": "singleton finite set not invariant under nonzero translation",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee103",
+      "case_id": "kb149-10-1",
+      "general_formal_proof_certified": false,
+      "label": "unit sphere right-angle arc",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee103",
+      "case_id": "kb149-10-2",
+      "general_formal_proof_certified": false,
+      "label": "radius two antipodal shortest length",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee103",
+      "case_id": "kb149-10-3",
+      "general_formal_proof_certified": false,
+      "label": "Euclidean chord not equal sphere arc",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee103",
+      "case_id": "kb149-10-4",
+      "general_formal_proof_certified": false,
+      "label": "antipodal example has two distinct equal-length meridians",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    }
+  ],
+  "general_formal_proofs_certified": 0,
+  "invalid_premise_rejections": 20,
+  "legal_or_boundary_witnesses": 20,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "schema": "kb149-finite-independent-exact-oracles/1",
+  "student_free_text_steps_verified": 0,
+  "teacher_approved": 0,
+  "total_cases": 40,
+  "warning": "Finite exact examples are not formal universal proofs or teacher approval."
+}

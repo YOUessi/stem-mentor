@@ -322,6 +322,14 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch147_source_e
 .venv/bin/python scripts/build_kb_batch148_official_clause_gate.py --check
 .venv/bin/python scripts/review_kb_batch148_conflicts.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch148_source_math_gate.py
+# Batch149: 10 original source-hashed deep lessons and no teacher-approval spoofing;
+# 40 independent finite math guards, SHA-only D/E unnumbered candidate queue,
+# 64/239 editorial-linked pending drafts, and 105 local editor-only FTS entries.
+.venv/bin/python scripts/build_kb_batch149_lessons.py --check-mac
+.venv/bin/python scripts/check_kb_batch149_math.py --check
+.venv/bin/python scripts/build_kb_batch149_unnumbered_elective_queue.py --check-mac
+.venv/bin/python scripts/build_kb_batch149_crosswalk.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch149_depth_scope.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check

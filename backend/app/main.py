@@ -384,3 +384,10 @@ def kb148_curriculum_evidence_status():
     """Source-marker and unresolved-conflict counts; never unapproved teaching content."""
     from .kb_batch148_audit import public_status
     return public_status()
+
+
+@app.get("/api/knowledge/kb149-review-coverage")
+def kb149_review_coverage():
+    """Aggregate pending editorial content only; no teacher solutions or licensed source text."""
+    from .kb_batch149_index import public_coverage
+    return public_coverage()
