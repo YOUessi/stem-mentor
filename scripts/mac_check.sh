@@ -376,3 +376,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch151_depth_in
 .venv/bin/python scripts/build_kb_batch152_semantic_gate.py --check
 .venv/bin/python scripts/check_kb_batch152_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch152_integration.py
+
+# Batch153: Mac-source SHA rehash, ten source-locked original rigorous teacher-only
+# manuscripts, 40 independent finite SymPy witnesses and non-leaking editor FTS.
+.venv/bin/python scripts/author_kb_batch153_data.py --check
+.venv/bin/python scripts/build_kb_batch153_lessons.py --check-mac
+.venv/bin/python scripts/build_kb_batch153_crosswalk.py --check
+.venv/bin/python scripts/check_kb_batch153_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch153_integrity.py

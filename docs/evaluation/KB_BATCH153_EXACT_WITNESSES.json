@@ -1,0 +1,411 @@
+{
+  "free_student_steps_verified": 0,
+  "general_formal_proofs_certified": 0,
+  "legal_or_boundary": 20,
+  "n": 40,
+  "negative": 20,
+  "schema": "kb153-finite-math-witnesses/1",
+  "teacher_approved": 0,
+  "witnesses": [
+    {
+      "case": "projection to horizontal direction",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-c104",
+      "teacher_approved": false,
+      "witness_id": "kb153-01-1"
+    },
+    {
+      "case": "residual exactly perpendicular",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-c104",
+      "teacher_approved": false,
+      "witness_id": "kb153-01-2"
+    },
+    {
+      "case": "zero direction division rejected",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-c104",
+      "teacher_approved": false,
+      "witness_id": "kb153-01-3"
+    },
+    {
+      "case": "zero vector has zero dot despite no defined angle",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-c104",
+      "teacher_approved": false,
+      "witness_id": "kb153-01-4"
+    },
+    {
+      "case": "domain of square-root rational excludes pole",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-121-c205",
+      "teacher_approved": false,
+      "witness_id": "kb153-02-1"
+    },
+    {
+      "case": "valid boundary x=1 gives zero",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-121-c205",
+      "teacher_approved": false,
+      "witness_id": "kb153-02-2"
+    },
+    {
+      "case": "pole x=3 rejected",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-121-c205",
+      "teacher_approved": false,
+      "witness_id": "kb153-02-3"
+    },
+    {
+      "case": "y²=4 has two different outputs",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-121-c205",
+      "teacher_approved": false,
+      "witness_id": "kb153-02-4"
+    },
+    {
+      "case": "positive quadratic solution set",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-123-c403",
+      "teacher_approved": false,
+      "witness_id": "kb153-03-1"
+    },
+    {
+      "case": "negative repeated root nonpositive only at x2",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-123-c403",
+      "teacher_approved": false,
+      "witness_id": "kb153-03-2"
+    },
+    {
+      "case": "negative discriminant has no real roots",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-123-c403",
+      "teacher_approved": false,
+      "witness_id": "kb153-03-3"
+    },
+    {
+      "case": "quadratic coefficient 0 invalidates quadratic formula",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-123-c403",
+      "teacher_approved": false,
+      "witness_id": "kb153-03-4"
+    },
+    {
+      "case": "2x2 chi-square statistic equals 20/3",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-119-s16",
+      "teacher_approved": false,
+      "witness_id": "kb153-04-1"
+    },
+    {
+      "case": "sum of four Pearson terms equals compact formula",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-119-s16",
+      "teacher_approved": false,
+      "witness_id": "kb153-04-2"
+    },
+    {
+      "case": "zero column margin makes denominator zero",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-119-s16",
+      "teacher_approved": false,
+      "witness_id": "kb153-04-3"
+    },
+    {
+      "case": "near-zero expected cell prevents blanket asymptotic validity",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-119-s16",
+      "teacher_approved": false,
+      "witness_id": "kb153-04-4"
+    },
+    {
+      "case": "fair coin n3 k2 exactly 3/8",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-122-s304",
+      "teacher_approved": false,
+      "witness_id": "kb153-05-1"
+    },
+    {
+      "case": "binomial probabilities sum to one",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-122-s304",
+      "teacher_approved": false,
+      "witness_id": "kb153-05-2"
+    },
+    {
+      "case": "urn without replacement P(2 red) differs",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-122-s304",
+      "teacher_approved": false,
+      "witness_id": "kb153-05-3"
+    },
+    {
+      "case": "without replacement conditional changes",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-122-s304",
+      "teacher_approved": false,
+      "witness_id": "kb153-05-4"
+    },
+    {
+      "case": "Gaussian example solution x1 y2",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-a106",
+      "teacher_approved": false,
+      "witness_id": "kb153-06-1"
+    },
+    {
+      "case": "incompatible system detected by augmented rank",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-a106",
+      "teacher_approved": false,
+      "witness_id": "kb153-06-2"
+    },
+    {
+      "case": "zeroing a nonzero row loses original equation",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-a106",
+      "teacher_approved": false,
+      "witness_id": "kb153-06-3"
+    },
+    {
+      "case": "zero pivot invalid for division",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-a106",
+      "teacher_approved": false,
+      "witness_id": "kb153-06-4"
+    },
+    {
+      "case": "linear objective triangle maximum 4",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-123-b402",
+      "teacher_approved": false,
+      "witness_id": "kb153-07-1"
+    },
+    {
+      "case": "negative coefficient rectangle min -1",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-123-b402",
+      "teacher_approved": false,
+      "witness_id": "kb153-07-2"
+    },
+    {
+      "case": "unbounded positive orthant has arbitrarily large objective",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-123-b402",
+      "teacher_approved": false,
+      "witness_id": "kb153-07-3"
+    },
+    {
+      "case": "quadratic objective fails linearity on midpoint",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-123-b402",
+      "teacher_approved": false,
+      "witness_id": "kb153-07-4"
+    },
+    {
+      "case": "two-class cluster inclusion is half",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-ec108",
+      "teacher_approved": false,
+      "witness_id": "kb153-08-1"
+    },
+    {
+      "case": "four-population SRS sample size2 has six sets",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-ec108",
+      "teacher_approved": false,
+      "witness_id": "kb153-08-2"
+    },
+    {
+      "case": "two-class cluster design supports only two sets",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-ec108",
+      "teacher_approved": false,
+      "witness_id": "kb153-08-3"
+    },
+    {
+      "case": "four-school two-stage inclusion not SRS proof",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-ec108",
+      "teacher_approved": false,
+      "witness_id": "kb153-08-4"
+    },
+    {
+      "case": "4 team n-1 rounds, each team once per round",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-ed108",
+      "teacher_approved": false,
+      "witness_id": "kb153-09-1"
+    },
+    {
+      "case": "all six unique edges covered",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-ed108",
+      "teacher_approved": false,
+      "witness_id": "kb153-09-2"
+    },
+    {
+      "case": "AB and AC same round violate constraint",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-ed108",
+      "teacher_approved": false,
+      "witness_id": "kb153-09-3"
+    },
+    {
+      "case": "5 teams cannot play five matches in one round",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-ed108",
+      "teacher_approved": false,
+      "witness_id": "kb153-09-4"
+    },
+    {
+      "case": "punctured rational x to1 limit2",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-ee107",
+      "teacher_approved": false,
+      "witness_id": "kb153-10-1"
+    },
+    {
+      "case": "function g with value9 still has limiting value2",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "source_candidate_id": "hs-semantic-pilot-120-ee107",
+      "teacher_approved": false,
+      "witness_id": "kb153-10-2"
+    },
+    {
+      "case": "direct substitution at pole gives zero denominator",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-ee107",
+      "teacher_approved": false,
+      "witness_id": "kb153-10-3"
+    },
+    {
+      "case": "different point value prevents continuity",
+      "finite_exact_check": true,
+      "formal_general_proof_certified": false,
+      "free_student_step_verified": false,
+      "outcome": "INVALID_PRECONDITION_REJECTED",
+      "source_candidate_id": "hs-semantic-pilot-120-ee107",
+      "teacher_approved": false,
+      "witness_id": "kb153-10-4"
+    }
+  ]
+}

@@ -412,3 +412,10 @@ def kb152_review_coverage():
     """Public aggregates only; unapproved source and teacher solutions never exposed."""
     from .kb_batch152_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb153-review-coverage")
+def kb153_review_coverage():
+    """Aggregate-only review coverage: never teacher solutions or unapproved sources."""
+    from .kb_batch153_index import public_coverage
+    return public_coverage()
