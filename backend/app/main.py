@@ -377,3 +377,10 @@ def kb147_review_coverage():
     """Aggregate editor drafts only: no source content or teacher solutions."""
     from .kb_batch147_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb148-curriculum-evidence-status")
+def kb148_curriculum_evidence_status():
+    """Source-marker and unresolved-conflict counts; never unapproved teaching content."""
+    from .kb_batch148_audit import public_status
+    return public_status()

@@ -1,0 +1,407 @@
+{
+  "cases": [
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.function.composition-domain",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "f(t)=√t, g(x)=x−5：x=7时f(g(7))=√2为实数。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.function.composition-domain",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "x=5时复合函数取值0，定义域端点必须包含。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.function.composition-domain",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "x=4时g(4)=−1不属于f的非负实数定义域，复合函数在实数域无值。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.function.composition-domain",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "误将D_f∩D_g=[0,+∞)作为D_{f∘g}：x=1在交集中但f(g(1))不是实数。"
+    },
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.function.parity",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "f(x)=x²在对称实数域满足f(−x)=f(x)，偶性成立。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.function.parity",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "零函数定义于对称区间时同时满足f(−x)=f(x)与f(−x)=−f(x)。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.function.parity",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "仅将f(x)=x²限制到{1,2}，定义域对负号不封闭，不能宣布偶函数。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.function.parity",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "f(x)=x在实数域一般不满足f(−x)=f(x)，并非偶函数。"
+    },
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.function.piecewise",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "f(x)=x在x<0和x≥0分别给相同规则，左右极限均为0，连续。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.function.piecewise",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "在左支f(x)=0(x<0)时，左侧极限为0而且该局部支连续。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.function.piecewise",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "同一输入x=0若被两个分支分别指定0和1，则输出冲突，不能构成单值函数。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.function.piecewise",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "f(x)=0(x<0), 1(x≥0)：分段规则成立但0处左右极限不同，不能推出整体连续。"
+    },
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.function.zero-ivt",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "f(x)=x在[−1,1]连续且端点异号，存在零点0。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.function.zero-ivt",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "f(x)=x(x²−1)在[−2,2]有三个不同零点−1、0、1，存在性不意味着唯一性。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.function.zero-ivt",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "端点符号−1与1本身不保证跨区间的连续性；不能省略连续假设。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.function.zero-ivt",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "f(x)=x²−1在[−2,2]两端同为3>0，但内部有零点±1。"
+    },
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.geometry.point-line-distance",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "点(0,0)到直线3x+4y−5=0距离为|−5|/√25=1。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.geometry.point-line-distance",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "点(3,−1)满足3×3+4×(−1)−5=0，因此距离0。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.geometry.point-line-distance",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "A=B=0不是有效直线法向量，距离公式的分母为0，必须拒绝。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.geometry.point-line-distance",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "省略法向量归一化会把(0,0)到给定直线的距离错误算为5。"
+    },
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.probability.binomial-distribution",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "独立公平伯努利试验3次，P(X=1)=C(3,1)(1/2)^3=3/8。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.probability.binomial-distribution",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "p=0的边界模型中，3次成功数恒为0，所有k的概率和仍为1。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.probability.binomial-distribution",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "n=3而k=4不在成功次数支持集内，不能生造C(3,4)等于正常事件概率。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.probability.binomial-distribution",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "2张中有1张成功无放回取完，则成功数必为1；错误二项模型会给P(X=1)=1/2。"
+    },
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.probability.hypergeometric",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "N=5、K=2、不放回n=2时P(X=1)=C(2,1)C(3,1)/C(5,2)=3/5。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.probability.hypergeometric",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "同一合法超几何分布k=0,1,2的概率严格求和为1。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.probability.hypergeometric",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "n=2时k=3超过合法支持集，必须拒绝。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.probability.hypergeometric",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "相同总体若改成有放回独立抽样，则P(X=1)=2×(2/5)(3/5)=12/25，区别于3/5。"
+    },
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.statistics.correlation-regression",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "样本x=(0,1,2),y=(1,3,5)拟合带截距OLS，斜率2截距1。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.statistics.correlation-regression",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "样本x=(0,1,2),y=(5,5,5)自变量不常量，OLS斜率0合法；相关系数则未必有定义。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.statistics.correlation-regression",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "样本x=(1,1,1)方差为0，OLS斜率除以0，不能报告有限斜率。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.statistics.correlation-regression",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "对于前述斜率2样本，说斜率必为0明显不符合原始坐标，须从协方差求。"
+    },
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.triangle.area-sine",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "两边3、4夹角90°时，面积=3×4×sin90°/2=6。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.triangle.area-sine",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "两边3、4夹角30°时，面积=3×4×sin30°/2=3。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.triangle.area-sine",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "夹角0°使三点退化共线，不满足非退化三角形角域0<θ<π。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.triangle.area-sine",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "夹角30°的面积3不等于6，不能不看实际夹角就固定使用直角面积。"
+    },
+    {
+      "case_index": 0,
+      "case_kind": "VALID_EXACT_WITNESS",
+      "conflict_id": "math.hs.vector.linear-operations",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "同维二维向量(a,b)+(c,d)=(a+c,b+d)按分量相加。"
+    },
+    {
+      "case_index": 1,
+      "case_kind": "LEGAL_BOUNDARY_WITNESS",
+      "conflict_id": "math.hs.vector.linear-operations",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "二维向量线性运算的分配律2(v+w)=2v+2w在所有实坐标上恒成立。"
+    },
+    {
+      "case_index": 2,
+      "case_kind": "REJECT_INVALID_HYPOTHESIS",
+      "conflict_id": "math.hs.vector.linear-operations",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "二维和三维向量长度不匹配，原有逐分量加法尚未定义。"
+    },
+    {
+      "case_index": 3,
+      "case_kind": "REJECT_FALSE_UNIVERSAL_INFERENCE",
+      "conflict_id": "math.hs.vector.linear-operations",
+      "exact_finite_check_passed": true,
+      "interpretation": "finite controlled witness or rejected missing premise; not general formal certification",
+      "original_mathematical_witness": "(1,2)+(3,4)=(4,6)，并非(4,7)，不能仅凭类似数字认定向量结果。"
+    }
+  ],
+  "conflicts_total": 10,
+  "conflicts_with_finite_cases": 10,
+  "formal_general_proof_certificates": 0,
+  "independent_exact_cases": 40,
+  "math_conflicts_human_resolved": 0,
+  "review_state": "REVIEW_PENDING",
+  "schema": "kb148-ten-conflicts-forty-finite-exact-witnesses/1",
+  "source_identity": [
+    {
+      "active_sha256": "8f4ca2c9ffe46431847027164f7eca2ecb203272cb3057f2e6eaedb3e4c3ab26",
+      "candidate_sha256": "0a9eba9335bd48642d1bee6df94f9e391060c06d6d6492b61dbf9100b5a6e8f9",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.function.composition-domain"
+    },
+    {
+      "active_sha256": "557000e248fa20439817d7c1f36d08490dfc57156a96ae40a2971bcf659e8575",
+      "candidate_sha256": "dfbfc8ec6b1fb25484c4f6b5c49a56fd893a99559da77416a533d1f380b669c3",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.function.parity"
+    },
+    {
+      "active_sha256": "d2398e513adc2e80ef2de3fdf604960c48f90907d50e1cc44354008b1a5fe30c",
+      "candidate_sha256": "b7cd6eeb5feaeca859c90061d20359b23d3c76edf2b89ab1df599a1a2f1f1116",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.function.piecewise"
+    },
+    {
+      "active_sha256": "a711b76c4db2777645835732e23494aa378ed3a123ea1b8cc86d96dd7a3e247c",
+      "candidate_sha256": "5b2775f2eac0269a11e2bfe96e6b3e729d31978a2800d79f9299f473082e472e",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.function.zero-ivt"
+    },
+    {
+      "active_sha256": "dac0d1540d6b01096ffa722c34f4c548181d6f02d8de3d3c2117981beda5838e",
+      "candidate_sha256": "fe6966d4605d4097363eb1a7ad94d3c8a156d11177fecbaf4a1e411818be8b47",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.geometry.point-line-distance"
+    },
+    {
+      "active_sha256": "699a78f5f5518ded8f9277535f670acb28a4cfd15bbddc20930a0d014276e3ae",
+      "candidate_sha256": "2f19452fc3bfb0c0f595365e7c2b1580c9e7b0b242a6f07df9d866a5e494d0d0",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.probability.binomial-distribution"
+    },
+    {
+      "active_sha256": "8b241b93c47cef3f88d5e601c6e5481b1168c57cd5cebadb915f8f1d4b81a69a",
+      "candidate_sha256": "32e19775af8d600e9ed132c6154a1fbc871fd014fa229fbff8a3ab43415347f6",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.probability.hypergeometric"
+    },
+    {
+      "active_sha256": "9b1444a77b709f2e8fc4cb7cbe23cba08d1580ab920a31d3bb6d6b52d9e22e09",
+      "candidate_sha256": "acc74aacbf1fa0c20eff89a29f73bd94d745214cc614545b9c75df78e42ce1da",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.statistics.correlation-regression"
+    },
+    {
+      "active_sha256": "feca569a56b1d149b0e6bb391b9dfd6af6e6d96b32cb64bac55da5b2256fc360",
+      "candidate_sha256": "65f0f943e5c9568894a150f757a9065920564f6e019e60f84112394c77633007",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.triangle.area-sine"
+    },
+    {
+      "active_sha256": "ce4d8f75e4ccb20a695f299c041b2ec84157a885466fbc70b5dbe90e253923e6",
+      "candidate_sha256": "a8977ba555d84ed6fd84d7ce38b0e8834d8386b13cc42a93d17b940d4d397fc1",
+      "decision": "HOLD_BOTH_SOURCE_VERSIONS",
+      "evidence_status": "MATH_NOT_INDEPENDENTLY_ADJUDICATED",
+      "id": "math.hs.vector.linear-operations"
+    }
+  ],
+  "source_versions_merged": 0,
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "warning": "40 finite SymPy/exact witnesses do not resolve the ten source version conflicts or certify universal proofs"
+}

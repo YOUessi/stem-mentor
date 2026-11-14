@@ -317,6 +317,11 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch146_math_dep
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch147_math_depth.py
 .venv/bin/python scripts/audit_kb_batch147_source_edges.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch147_source_edges.py
+# Batch148: full numbered source-marker audit (no false official atom denominator)
+# and all ten unresolved mathematical conflict families with finite symbolic checks.
+.venv/bin/python scripts/build_kb_batch148_official_clause_gate.py --check
+.venv/bin/python scripts/review_kb_batch148_conflicts.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch148_source_math_gate.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check
