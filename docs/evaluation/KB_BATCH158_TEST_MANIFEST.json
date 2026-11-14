@@ -1,0 +1,83 @@
+{
+  "browser_chrome_checks": 9,
+  "browser_pytest_passed": 2,
+  "combined_regression_passed": 769,
+  "environment": "authorized MacBook Air",
+  "execution_date": "2026-11-14",
+  "focused_passed": 728,
+  "general_proofs_certified": 0,
+  "historical_editorial_candidates": 239,
+  "independent_finite_witnesses": 40,
+  "independent_teacher_examples_checked": 20,
+  "linked": 134,
+  "logged_runs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH158_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH158_BROWSER.log",
+      "sha256": "74fcb3c21615a0edd0d6ccf476d98420eeb8ae7dbb3d7dd6ea1427a194e5bfb8"
+    },
+    "COMBINED": {
+      "bytes": 1431,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH158_COMBINED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH158_COMBINED.log",
+      "sha256": "0e8a07d949a72c5d378ca5e67340c980f35c1f0a758469760908dd454c65d128"
+    },
+    "FOCUSED": {
+      "bytes": 1431,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH158_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH158_FOCUSED.log",
+      "sha256": "da7d761869d8005e45be27ffb96136924924be80ae1e6d3766fabd42ab7554f3"
+    },
+    "MAC_FULL": {
+      "bytes": 156690,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH158_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH158_MAC_FULL.log",
+      "sha256": "f5883d04e7d4eed5d8efa21aa3186f0e64bac973689c756a358237898e61f5fb"
+    },
+    "NODE": {
+      "bytes": 20924,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH158_NODE.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH158_NODE.log",
+      "sha256": "54019ded3ec356e7683e3e354bee82e7cf6575f00dcec0a75bb2e1f4b0f4a9d1"
+    }
+  },
+  "new_teacher_only_drafts": 10,
+  "node_failed": 0,
+  "node_passed": 111,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_pdf_text_committed": false,
+  "pending_drafts": 175,
+  "pending_source_relations": 89,
+  "python_backend_full_passed": 66293,
+  "python_backend_skipped": 5,
+  "rejected_invalid_premises": 20,
+  "remote_ci_final_result": "NOT_YET_VERIFIED",
+  "schema": "kb158-authentic-mac-execution-v1",
+  "source_commit": "cfa8c42bb16b01ff6f2893c5565fc313fbe9eabd",
+  "source_layout_markers_not_official_atoms": 315,
+  "source_pages": 61,
+  "student_authoritative": 0,
+  "student_free_text_steps_verified": 0,
+  "teacher_approved": 0,
+  "unlinked": 105,
+  "unnumbered_CDE_proposals": 32
+}

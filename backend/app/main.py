@@ -451,3 +451,9 @@ def kb157_review_coverage():
     """Only editor-proof aggregate provenance; no teacher full solution or draft text."""
     from .kb_batch157_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb158-review-coverage")
+def kb158_review_coverage():
+    from .kb_batch158_index import public_coverage
+    return public_coverage()
