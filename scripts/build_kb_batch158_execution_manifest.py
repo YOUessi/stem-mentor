@@ -11,7 +11,7 @@ import build_kb_batch158_page_triage as pages
 import check_kb_batch158_math as math
 import check_kb_batch158_teacher_examples as examples
 
-SOURCE_COMMIT="ad9bb26d499a9a801c2255edf3169d8fc923a27c"
+SOURCE_COMMIT="cfa8c42bb16b01ff6f2893c5565fc313fbe9eabd"
 KIND={"FOCUSED":"focused","NODE":"node","BROWSER":"browser","COMBINED":"combined","MAC_FULL":"mac_check"}
 DIR=ROOT/"docs/evaluation/logs"
 SCRATCH=ROOT/"docs/evaluation/kb158_logs"

@@ -1,6 +1,6 @@
 # KB158｜Mac真实执行与课程审查证据（2026-11-14）
 
-本批源代码Git commit：ad9bb26d499a9a801c2255edf3169d8fc923a27c；最终远端PR及SHA另于GitHub核验记录。
+本批源代码Git commit：cfa8c42bb16b01ff6f2893c5565fc313fbe9eabd；最终远端PR及SHA另于GitHub核验记录。
 在MacBook Air独立worktree中新增10份完整原创教师候审稿：必修有理指数幂、三角和差恒等式、均值/中位数/众数；选择性必修空间距离和Pearson相关；选修A极限ε–δ、B二维联合分布、C相关与因果、D几何对称、E大学先修概率案例。
 10份共20道教师例题、30级学生提示、20项近远迁移，全部REVIEW_PENDING/TEACHER_ONLY。
 K00对61页记录315个非原子排版来源标记、32个CDE未编号提案、89条边界关系，按页分流；七轨原子分母仍UNKNOWN，没有虚假课标完成率。
