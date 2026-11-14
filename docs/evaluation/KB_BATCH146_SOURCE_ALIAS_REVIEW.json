@@ -1,0 +1,427 @@
+{
+  "by_track": {
+    "COMPULSORY": {
+      "candidate_ids_in_shared_source_span": 2,
+      "historical_candidate_count": 75,
+      "missing_official_review": true,
+      "official_atom_denominator": null,
+      "provisional_evidence_grades": {
+        "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE": 3,
+        "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW": 8,
+        "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED": 64
+      },
+      "teacher_approved": 0
+    },
+    "ELECTIVE_A": {
+      "candidate_ids_in_shared_source_span": 0,
+      "historical_candidate_count": 30,
+      "missing_official_review": true,
+      "official_atom_denominator": null,
+      "provisional_evidence_grades": {
+        "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE": 30
+      },
+      "teacher_approved": 0
+    },
+    "ELECTIVE_B": {
+      "candidate_ids_in_shared_source_span": 0,
+      "historical_candidate_count": 30,
+      "missing_official_review": true,
+      "official_atom_denominator": null,
+      "provisional_evidence_grades": {
+        "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE": 30
+      },
+      "teacher_approved": 0
+    },
+    "ELECTIVE_C": {
+      "candidate_ids_in_shared_source_span": 4,
+      "historical_candidate_count": 24,
+      "missing_official_review": true,
+      "official_atom_denominator": null,
+      "provisional_evidence_grades": {
+        "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE": 22,
+        "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW": 2
+      },
+      "teacher_approved": 0
+    },
+    "ELECTIVE_D": {
+      "candidate_ids_in_shared_source_span": 5,
+      "historical_candidate_count": 17,
+      "missing_official_review": true,
+      "official_atom_denominator": null,
+      "provisional_evidence_grades": {
+        "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE": 17
+      },
+      "teacher_approved": 0
+    },
+    "ELECTIVE_E": {
+      "candidate_ids_in_shared_source_span": 8,
+      "historical_candidate_count": 12,
+      "missing_official_review": true,
+      "official_atom_denominator": null,
+      "provisional_evidence_grades": {
+        "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM": 12
+      },
+      "teacher_approved": 0
+    },
+    "SELECTIVE_COMPULSORY": {
+      "candidate_ids_in_shared_source_span": 0,
+      "historical_candidate_count": 51,
+      "missing_official_review": true,
+      "official_atom_denominator": null,
+      "provisional_evidence_grades": {
+        "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE": 7,
+        "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED": 44
+      },
+      "teacher_approved": 0
+    }
+  },
+  "candidate_count_in_shared_source_span_groups": 19,
+  "cross_page_shared_cue_group_count": 0,
+  "disclosure": "Source hashes are text evidence anchors, NOT nationally approved unique curriculum atoms",
+  "evidence_grade_counts": {
+    "HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE": 109,
+    "NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW": 10,
+    "NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED": 108,
+    "OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM": 12
+  },
+  "exact_span_review_groups": [
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-120-c107",
+        "hs-semantic-pilot-120-c108"
+      ],
+      "human_review_status": "REVIEW_PENDING",
+      "semantic_merge_decision": "UNDECIDED",
+      "source_page": 26,
+      "source_span_sha256": "d88f89989ab699f4eb26cb6aaa4a0328efb28884e3b02d85fe43bbf0b1895ecd",
+      "tracks": [
+        "COMPULSORY"
+      ],
+      "warning": "shared span can legitimately contain multiple objectives"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ec05",
+        "hs-semantic-pilot-120-ec102"
+      ],
+      "human_review_status": "REVIEW_PENDING",
+      "semantic_merge_decision": "UNDECIDED",
+      "source_page": 65,
+      "source_span_sha256": "2795b6d7e85c7472a3c5e50f7be967fad7d5b7bf94d20de701167f0f9a86ce15",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "warning": "shared span can legitimately contain multiple objectives"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ec04",
+        "hs-semantic-pilot-120-ec101"
+      ],
+      "human_review_status": "REVIEW_PENDING",
+      "semantic_merge_decision": "UNDECIDED",
+      "source_page": 65,
+      "source_span_sha256": "9329b673756794e4dbf188506cac3aadf7bdf9374f2eb950b67ff18279ce84bc",
+      "tracks": [
+        "ELECTIVE_C"
+      ],
+      "warning": "shared span can legitimately contain multiple objectives"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ed02",
+        "hs-semantic-pilot-120-ed101"
+      ],
+      "human_review_status": "REVIEW_PENDING",
+      "semantic_merge_decision": "UNDECIDED",
+      "source_page": 70,
+      "source_span_sha256": "72bb616409f81438d558f0a86336f65cd03226f314946570df02cd37e94d9500",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "warning": "shared span can legitimately contain multiple objectives"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ed03",
+        "hs-semantic-pilot-119-ed04",
+        "hs-semantic-pilot-120-ed102"
+      ],
+      "human_review_status": "REVIEW_PENDING",
+      "semantic_merge_decision": "UNDECIDED",
+      "source_page": 70,
+      "source_span_sha256": "bc7438f44a9bef9bd885ea47ba2b0c83f10178d5579c57ace329a7e78820d58d",
+      "tracks": [
+        "ELECTIVE_D"
+      ],
+      "warning": "shared span can legitimately contain multiple objectives"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ee01",
+        "hs-semantic-pilot-119-ee02",
+        "hs-semantic-pilot-120-ee102",
+        "hs-semantic-pilot-120-ee103",
+        "hs-semantic-pilot-120-ee104"
+      ],
+      "human_review_status": "REVIEW_PENDING",
+      "semantic_merge_decision": "UNDECIDED",
+      "source_page": 73,
+      "source_span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+      "tracks": [
+        "ELECTIVE_E"
+      ],
+      "warning": "shared span can legitimately contain multiple objectives"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ee04",
+        "hs-semantic-pilot-120-ee107",
+        "hs-semantic-pilot-120-ee108"
+      ],
+      "human_review_status": "REVIEW_PENDING",
+      "semantic_merge_decision": "UNDECIDED",
+      "source_page": 73,
+      "source_span_sha256": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+      "tracks": [
+        "ELECTIVE_E"
+      ],
+      "warning": "shared span can legitimately contain multiple objectives"
+    }
+  ],
+  "historical_editorial_candidate_count": 239,
+  "human_approved_semantic_merges": 0,
+  "linked_existing_draft_count": 44,
+  "missing_bounded_teacher_draft_count": 195,
+  "official_census_complete": false,
+  "official_seven_track_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "schema": "kb146-source-shared-span-human-adjudication/1",
+  "shared_cue_group_count": 17,
+  "shared_cue_review_groups": [
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-s07",
+        "hs-semantic-pilot-120-s103"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-09a2f1e0ee9e8431810b",
+      "printed_pages": [
+        39
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ec05",
+        "hs-semantic-pilot-120-ec102"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-165b49ab9f2b6da6cd5f",
+      "printed_pages": [
+        65
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-b03",
+        "hs-semantic-pilot-119-b04"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-28d839a131f442dcce42",
+      "printed_pages": [
+        59
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-120-c107",
+        "hs-semantic-pilot-120-c108"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-2eb73d08362febfeae68",
+      "printed_pages": [
+        26
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ed03",
+        "hs-semantic-pilot-119-ed04",
+        "hs-semantic-pilot-120-ed102"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-35df9a21920a2bc63743",
+      "printed_pages": [
+        70
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ec04",
+        "hs-semantic-pilot-120-ec101"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-40399cea0d2266d69052",
+      "printed_pages": [
+        65
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ee03",
+        "hs-semantic-pilot-120-ee105"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-48f2ad3bb448747778b6",
+      "printed_pages": [
+        73
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-120-c107",
+        "hs-semantic-pilot-120-c108"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-5108839858ee70ba07b9",
+      "printed_pages": [
+        26
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ee01",
+        "hs-semantic-pilot-119-ee02",
+        "hs-semantic-pilot-120-ee101",
+        "hs-semantic-pilot-120-ee102",
+        "hs-semantic-pilot-120-ee103",
+        "hs-semantic-pilot-120-ee104"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-5710b1b83211f1cb3296",
+      "printed_pages": [
+        73
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ee03",
+        "hs-semantic-pilot-120-ee106"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-650db2c864a56bf635f4",
+      "printed_pages": [
+        73
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-s08",
+        "hs-semantic-pilot-120-s104"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-6c8570056a6c13096ddc",
+      "printed_pages": [
+        39
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-s07",
+        "hs-semantic-pilot-120-s103"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-7ea1685b95291d3c0b43",
+      "printed_pages": [
+        39
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ee04",
+        "hs-semantic-pilot-120-ee107",
+        "hs-semantic-pilot-120-ee108"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-7fd3161194a8b2e4b32b",
+      "printed_pages": [
+        73
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-b03",
+        "hs-semantic-pilot-119-b04"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-922f5f085c4bfa785a5e",
+      "printed_pages": [
+        59
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-s07",
+        "hs-semantic-pilot-120-s103"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-b63b998f7b086de94b18",
+      "printed_pages": [
+        39
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-ed02",
+        "hs-semantic-pilot-120-ed101"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-db855917530c6226ece1",
+      "printed_pages": [
+        70
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    },
+    {
+      "candidate_ids": [
+        "hs-semantic-pilot-119-s13",
+        "hs-semantic-pilot-119-s14"
+      ],
+      "cross_page_evidence": false,
+      "marker_id": "syllabus-cue-eb94b966b6fe07fc61e9",
+      "printed_pages": [
+        47
+      ],
+      "semantic_merge_decision": "UNDECIDED"
+    }
+  ],
+  "shared_source_span_group_count": 7,
+  "source": "KB_BATCH125_PROVENANCE_GRADES.json",
+  "source_aliases_auto_merged": 0,
+  "source_cue_memberships_with_shared_marker": 40,
+  "source_sha256": "5bd550159495e672e8d3a7323309082cc3d0189009ba7c1b822576a64e224cc1",
+  "student_authoritative": 0,
+  "teacher_approved": 0
+}
