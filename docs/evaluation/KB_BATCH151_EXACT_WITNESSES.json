@@ -1,0 +1,411 @@
+{
+  "cases": [
+    {
+      "candidate_id": "hs-semantic-pilot-119-c08",
+      "case_id": "kb151-01-1",
+      "general_formal_proof_certified": false,
+      "label": "two distinguishable coins: at least one H",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c08",
+      "case_id": "kb151-01-2",
+      "general_formal_proof_certified": false,
+      "label": "fair die: primes 2 3 5",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c08",
+      "case_id": "kb151-01-3",
+      "general_formal_proof_certified": false,
+      "label": "three red and one blue are unequal outcomes",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c08",
+      "case_id": "kb151-01-4",
+      "general_formal_proof_certified": false,
+      "label": "unordered HT coalescence destroys equal weights",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c102",
+      "case_id": "kb151-02-1",
+      "general_formal_proof_certified": false,
+      "label": "nonzero base gives lambda 3",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c102",
+      "case_id": "kb151-02-2",
+      "general_formal_proof_certified": false,
+      "label": "zero first coordinate still valid",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c102",
+      "case_id": "kb151-02-3",
+      "general_formal_proof_certified": false,
+      "label": "zero reference vector cannot span nonzero v",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c102",
+      "case_id": "kb151-02-4",
+      "general_formal_proof_certified": false,
+      "label": "orthogonality is not parallel",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c107",
+      "case_id": "kb151-03-1",
+      "general_formal_proof_certified": false,
+      "label": "sides 3 4 angle 60 yield square 13",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c107",
+      "case_id": "kb151-03-2",
+      "general_formal_proof_certified": false,
+      "label": "5 6 7 gives cosine 1/5",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c107",
+      "case_id": "kb151-03-3",
+      "general_formal_proof_certified": false,
+      "label": "1 2 3 violates strict triangle inequality",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-c107",
+      "case_id": "kb151-03-4",
+      "general_formal_proof_certified": false,
+      "label": "zero adjacent side forbids inverse cosine quotient",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s04",
+      "case_id": "kb151-04-1",
+      "general_formal_proof_certified": false,
+      "label": "first 3 ratio negative two fifth term",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s04",
+      "case_id": "kb151-04-2",
+      "general_formal_proof_certified": false,
+      "label": "half ratio sixth term",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s04",
+      "case_id": "kb151-04-3",
+      "general_formal_proof_certified": false,
+      "label": "zero recurring term creates undefined ratio",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s04",
+      "case_id": "kb151-04-4",
+      "general_formal_proof_certified": false,
+      "label": "negative ratio does not imply positive terms",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s09",
+      "case_id": "kb151-05-1",
+      "general_formal_proof_certified": false,
+      "label": "x squared derivative nonnegative on 0 to 3",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s09",
+      "case_id": "kb151-05-2",
+      "general_formal_proof_certified": false,
+      "label": "minus cubic strict decrease at ordered probes",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s09",
+      "case_id": "kb151-05-3",
+      "general_formal_proof_certified": false,
+      "label": "strict increase of cubic has zero derivative at zero",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s09",
+      "case_id": "kb151-05-4",
+      "general_formal_proof_certified": false,
+      "label": "nonnegative derivative of constant does not imply strict",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a05",
+      "case_id": "kb151-06-1",
+      "general_formal_proof_certified": false,
+      "label": "polynomial endpoints opposite",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a05",
+      "case_id": "kb151-06-2",
+      "general_formal_proof_certified": false,
+      "label": "continuous same-sign endpoints can contain roots",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a05",
+      "case_id": "kb151-06-3",
+      "general_formal_proof_certified": false,
+      "label": "step function can jump over zero",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a05",
+      "case_id": "kb151-06-4",
+      "general_formal_proof_certified": false,
+      "label": "IVT not uniqueness: cubic has three distinct roots",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b04",
+      "case_id": "kb151-07-1",
+      "general_formal_proof_certified": false,
+      "label": "gradient at 2 1 from polynomial slices",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b04",
+      "case_id": "kb151-07-2",
+      "general_formal_proof_certified": false,
+      "label": "partial derivative x squared times y",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b04",
+      "case_id": "kb151-07-3",
+      "general_formal_proof_certified": false,
+      "label": "origin coordinate partials zero but diagonal limit half",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b04",
+      "case_id": "kb151-07-4",
+      "general_formal_proof_certified": false,
+      "label": "both partials known do not determine arbitrary directional path",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec02",
+      "case_id": "kb151-08-1",
+      "general_formal_proof_certified": false,
+      "label": "x 3 satisfies positive implication",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec02",
+      "case_id": "kb151-08-2",
+      "general_formal_proof_certified": false,
+      "label": "multiples four always even finite sanity",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec02",
+      "case_id": "kb151-08-3",
+      "general_formal_proof_certified": false,
+      "label": "converse x squared >4 fails for negative x",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec02",
+      "case_id": "kb151-08-4",
+      "general_formal_proof_certified": false,
+      "label": "even integer not always divisible by four",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed106",
+      "case_id": "kb151-09-1",
+      "general_formal_proof_certified": false,
+      "label": "lcm six eight twenty-four",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed106",
+      "case_id": "kb151-09-2",
+      "general_formal_proof_certified": false,
+      "label": "lcm four ten twenty",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed106",
+      "case_id": "kb151-09-3",
+      "general_formal_proof_certified": false,
+      "label": "gcd not lcm",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed106",
+      "case_id": "kb151-09-4",
+      "general_formal_proof_certified": false,
+      "label": "inconsistent offset congruences",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee105",
+      "case_id": "kb151-10-1",
+      "general_formal_proof_certified": false,
+      "label": "real rate ten vs five equals 1/21",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee105",
+      "case_id": "kb151-10-2",
+      "general_formal_proof_certified": false,
+      "label": "real rate three vs five equals minus 2/105",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee105",
+      "case_id": "kb151-10-3",
+      "general_formal_proof_certified": false,
+      "label": "nominal minus inflation is only approximation",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee105",
+      "case_id": "kb151-10-4",
+      "general_formal_proof_certified": false,
+      "label": "inflation price factor zero cannot divide",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    }
+  ],
+  "general_formal_proofs_certified": 0,
+  "invalid_premise_rejections": 20,
+  "legal_or_boundary_witnesses": 20,
+  "schema": "kb151-exact-finite-oracle/1",
+  "student_free_text_steps_verified": 0,
+  "teacher_approved": 0,
+  "total_cases": 40
+}

@@ -360,3 +360,10 @@ echo "Offline macOS simulation checks complete; no model API used."
 for module in apps/web/lab/foundations_math.js apps/web/lab/interval_math.js apps/web/lab/foundations2d.js apps/web/lab/numberline.js apps/web/lab/sequences_math.js apps/web/lab/sequence_policy.js apps/web/lab/sequences2d.js apps/web/lab/extrema_math.js apps/web/lab/extrema2d.js apps/web/lab/probability_math.js apps/web/lab/probability2d.js; do
   node --check "$module"
 done
+
+
+# Batch151: ten additional source-locked teacher-only lessons and exact finite mathematical guards.
+.venv/bin/python scripts/build_kb_batch151_lessons.py --check-mac
+.venv/bin/python scripts/build_kb_batch151_crosswalk.py --check
+.venv/bin/python scripts/check_kb_batch151_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch151_depth_integrity.py

@@ -1,0 +1,78 @@
+{
+  "authorized_device": "MACBOOK_AIR_ONLY",
+  "base_git_commit": "efd471a",
+  "browser_pytest_passed": 2,
+  "chrome_interaction_checks": 9,
+  "content_validation_passed": true,
+  "editorial_candidates_linked": 74,
+  "editorial_candidates_unlinked": 165,
+  "editorial_source_candidate_total": 239,
+  "finite_exact_math_cases": 40,
+  "focused_python_passed": 256,
+  "free_student_steps_certified": 0,
+  "full_python_passed": 66293,
+  "full_python_skipped": 5,
+  "general_formal_proofs_certified": 0,
+  "historical_math_conflicts_pending": 10,
+  "historical_unverified_proof_steps": 538,
+  "invalid_premise_or_boundary_cases": 20,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH151_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH151_BROWSER.log",
+      "sha256": "823ba4360ee418716e262d0810ea6bc456d5e27f146906545b23fa45665c4b7f"
+    },
+    "FOCUSED": {
+      "bytes": 870,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH151_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH151_FOCUSED.log",
+      "sha256": "9179ba358104ccf88aee76e07f6091daa2bdec0a5409974ccf91a4c51e91016f"
+    },
+    "MAC_FULL": {
+      "bytes": 144658,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH151_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH151_MAC_FULL.log",
+      "sha256": "a11276e178c7d8364cb82732b4690f7e414a6fcb67d02b52d5aae71b6f91ac37"
+    },
+    "NODE": {
+      "bytes": 20933,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH151_NODE.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH151_NODE.log",
+      "sha256": "a97988e33f8818c0d783607a53d5eeeb7e22cb7291d36a377759896790aef5d5"
+    }
+  },
+  "new_hint_steps": 30,
+  "new_near_far_tasks": 20,
+  "new_teacher_review_pending_lessons": 10,
+  "new_teacher_worked_examples": 20,
+  "node_passed": 111,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_census_certified": false,
+  "official_coverage_rate": null,
+  "privacy_guard_passed": true,
+  "run_date": "2026-11-14",
+  "schema": "kb151-mac-original-execution-evidence/1",
+  "source_git_commit": "7f5357d42836ae372faddd9f77fec628cb14be26",
+  "source_pdf_private_mac_replay": true,
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "total_pending_teacher_manuscripts": 115,
+  "warning": "239 editorial leads, 315 numbered source markers and 115 pending drafts are NOT official curriculum atom denominators; finite witnesses are NOT universal proofs."
+}

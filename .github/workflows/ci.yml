@@ -349,6 +349,15 @@ jobs:
       - run: python scripts/audit_kb_semantic_coverage.py --check
       # Batch150: C/D/E source-line ownership and semantic-proposal gate.
       # This offline replay verifies committed SHA locks only; Mac PDF text stays private.
+      # Batch151: 10 rigorous source-hashed teacher-only lessons, 40 exact finite math guards,
+      # and 115-draft local editor FTS. Student evidence must fail closed.
+      - run: python scripts/build_kb_batch151_lessons.py --check
+      - run: python scripts/build_kb_batch151_crosswalk.py --check
+      - run: python scripts/check_kb_batch151_math.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch151_depth_integrity.py
+      # Recheck archived Mac original stdout, exit bytes and SHA-256; no licensed PDF.
+      - run: python scripts/build_kb_batch151_execution_manifest.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch151_execution_archive.py
       - run: python scripts/build_kb_batch150_de_boundary.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch150_de_boundary.py
       # Archived actual Mac stdout, browser checks, and exit-code hashes. CI never reads the licensed PDF.

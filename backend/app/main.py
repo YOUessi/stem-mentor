@@ -398,3 +398,10 @@ def kb150_source_boundary_status():
     """Public course counts, not syllabus text, teaching claims, or teacher solutions."""
     from .kb_batch150_scope import public_status
     return public_status()
+
+
+@app.get("/api/knowledge/kb151-review-coverage")
+def kb151_review_coverage():
+    """Aggregate-only counts; no unapproved text, teacher solutions or student certificates."""
+    from .kb_batch151_index import public_coverage
+    return public_coverage()
