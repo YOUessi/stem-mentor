@@ -1,0 +1,823 @@
+[
+  {
+    "applicability_and_hypotheses": "等号判定要求a,b,c,d均为实数且使用同一固定虚数单位i；不能把i当作实数或把bi称作虚部。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "在二维平面上比较两个不同向量的长度和坐标，解释为什么对应复数模相同不代表复数相等。",
+    "formal_definition_or_theorem": "在复数域中z=a+bi，a,b∈ℝ，i²=−1。z=w=c+di当且仅当a=c且b=d；实部Re(z)=a，虚部Im(z)=b（为实数b而非bi）。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-119-c01",
+    "knowledge_type": "Concept",
+    "near_transfer": "证明a+bi=0等价于a=b=0，并解释0的虚部是哪个数。",
+    "nonexample_or_failure": "1+i与1−i模都为√2，却不相等；Im(3+4i)=4而不是4i。",
+    "notation_and_domain": "用有序实数对(a,b)表示复数，(a,b)与(c,d)的加法、乘法按复数规则定义；实数t嵌入为(t,0)。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "定义i²=−1并将每个复数写为唯一的a+bi形式，a、b是两个独立的实数坐标。",
+        "step": 1
+      },
+      {
+        "justification": "将z=a+bi映射为(a,b)，把w=c+di映射为(c,d)，使用有序对相等的定义。",
+        "step": 2
+      },
+      {
+        "justification": "必要性给a=c、b=d；充分性把相等的实部和虚部代回，得到两个表达式完全相同。",
+        "step": 3
+      },
+      {
+        "justification": "遇到复数模相同但方向不同，必须分别比较实部、虚部，不能以模相等代替复数相等。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-c01",
+    "source_end_line": 7,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "5cfcf84529d63f7c9d34d1435953a43dc9e4cf42d991b099f09f87c7fce6bb68",
+      "dccef597e8cbf8978982a6635cf7ce60555f1bbb2c921cb875334feb2ca3346b",
+      "68f8d0ad23e31eaaee0e5b654ea215b5013f24198049940278741eb10ab9d537",
+      "07a9e29711b1daddfe6a45fbe027487758a01329cb87b33595e58f1c09c5e459"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 27,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "e447b6fdfb0697bf99db3c87b6b80b29c98ec862d1ad246ba1d251541ab27e5a",
+    "source_start_line": 4,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确定题目中未知数是否都为实数。 请写出用于判断的条件或原因。",
+      "把复数逐项分解为实部与虚部两个实数。",
+      "写两个实数方程，不要对模长作无根据的等价替换。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "x=3，y=5。",
+        "question": "若(2x−1)+(y+2)i=5+7i，求实数x,y。",
+        "reasoned_solution": [
+          "实部相等给2x−1=5，解得x=3。",
+          "虚部相等给y+2=7，解得y=5。",
+          "回代为5+7i且两部分均相等。"
+        ]
+      },
+      {
+        "answer": "不相等；两者模都为5。",
+        "question": "判断3+4i与3−4i是否相等，模是否相等。",
+        "reasoned_solution": [
+          "实部均为3，但虚部分别为4与−4，因此不相等。",
+          "计算每个模的平方均为3²+4²=25。",
+          "说明模相等不推出复数本身相等。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "复数代数形式的相等与实虚部",
+    "typical_wrong_solution": "错法：看到2+3i与3+2i的系数相同就认为相等，或者把虚部记录为3i。",
+    "why_method_is_legal": "将a+bi识别为有序对(a,b)，于是相等的充要条件是两个坐标逐一相等，而非模或辐角相等。",
+    "why_wrong_and_repair": "分别列出(Re,Im)并按坐标顺序比较；绝对值是另一个实数函数，不是复数相等判据。"
+  },
+  {
+    "applicability_and_hypotheses": "起始端点必须异号且连续；每一步必须计算中点函数值，并保留连续且仍异号的子区间。若f(m)=0则停止。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "设计温度达到阈值的搜索实验，讨论传感器数值噪声如何破坏数学函数的连续性与严格符号假设。",
+    "formal_definition_or_theorem": "设f在[a,b]上连续且f(a)f(b)<0。令m=(a+b)/2；若f(m)=0即得零点；否则只保留端点函数值异号的半区间，迭代k次后区间长度为(b−a)/2^k且至少含一个零点。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-123-c410",
+    "knowledge_type": "Method",
+    "near_transfer": "对f(x)=x³−x−1在[1,2]上二分三次，保留每次异号区间。",
+    "nonexample_or_failure": "f(x)=1/x在[−1,1]端点异号却在0不连续，不能据此保证存在零点；f(x)=x²在[−1,1]端点同号却存在零点，异号只是充分条件。",
+    "notation_and_domain": "f:[a,b]→ℝ连续，a<b；k为非负整数；只保证至少有一根，不保证根唯一或函数单调。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-122-c311"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "检查连续性、端点a<b以及严格异号f(a)f(b)<0，才能启动区间不变式。",
+        "step": 1
+      },
+      {
+        "justification": "取m=(a+b)/2；若f(m)=0，则它已是精确根且无需继续二分。",
+        "step": 2
+      },
+      {
+        "justification": "若f(a)f(m)<0则保留[a,m]，否则保留[m,b]；用中点非零时符号必须在两侧之一变化保证保留合法。",
+        "step": 3
+      },
+      {
+        "justification": "用归纳法证明第k次区间仍异号且长度为(b−a)/2^k，终止阈值必须按区间长度选择。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-123-c410",
+    "source_end_line": 27,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "8789cb85a67bac523a77d0bf14c275b2bafcc34b3d9f5baf03b6ea52335ade12"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 22,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "8789cb85a67bac523a77d0bf14c275b2bafcc34b3d9f5baf03b6ea52335ade12",
+    "source_start_line": 27,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先判定能否使用介值定理而不是直接套算法。",
+      "算中点，再比较两侧端点的符号。 请写出用于判断的条件或原因。",
+      "以保留区间长度和连续性不变式说明近似值可靠到什么程度。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "[1.25,1.5]。",
+        "question": "用二分法从[1,2]对f(x)=x²−2执行两次，写末区间。",
+        "reasoned_solution": [
+          "端点值f(1)=−1、f(2)=2异号，m1=1.5且f(m1)=0.25。",
+          "保留[1,1.5]，中点m2=1.25且f(m2)=−0.4375。",
+          "保留[1.25,1.5]，长度由1缩至1/4。"
+        ]
+      },
+      {
+        "answer": "m=0，正好是精确零点，应立即结束。",
+        "question": "若初始区间[−1,1]，f(x)=x³，第一次中点是多少？",
+        "reasoned_solution": [
+          "函数连续且f(−1)=−1、f(1)=1。",
+          "中点m=(−1+1)/2=0。",
+          "f(0)=0，因此不必再选择左右子区间。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "二分法求零点与保留异号端点",
+    "typical_wrong_solution": "错法：对x²−2的初始区间[1,2]取m=1.5后错误地保留[1.5,2]。",
+    "why_method_is_legal": "介值定理保证任一保留的闭区间都有零点；中点二分使长度每轮严格减半。因此零点位置的区间误差上界可逐轮控制。",
+    "why_wrong_and_repair": "先算f(1)=−1、f(1.5)=0.25，异号子区间应是[1,1.5]；每轮保留严格异号条件而不是凭直觉选择。"
+  },
+  {
+    "applicability_and_hypotheses": "圆必须具有正半径；若角度给为度，须先按θ_rad=θ_deg·π/180转换。扇形所取圆弧和圆心角方向需对应。",
+    "course_track": "COMPULSORY",
+    "far_transfer": "说明用GPS轨迹长度估计圆心角时为什么只有轨迹确实接近圆弧才可使用s=rθ。",
+    "formal_definition_or_theorem": "半径r>0的圆上，圆心角θ的弧度数为有向弧长s与半径之比θ=s/r。对不计方向的弧长L=r|θ|；整圆对应2π弧度，而不是360弧度。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-123-c408",
+    "knowledge_type": "Concept",
+    "near_transfer": "在半径5厘米的圆上求−π/4弧度对应的有向弧和实际弧长。",
+    "nonexample_or_failure": "半径r=0时s/r无定义；若将90°直接写L=90r，则与真正的πr/2不一致。",
+    "notation_and_domain": "r、s、L使用同一长度单位；θ为无量纲的实数弧度数。公式L=r|θ|适用于圆弧而非任意曲线。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "固定r>0并说明有向圆弧对应的中心旋转角，定义弧度数为s/r。",
+        "step": 1
+      },
+      {
+        "justification": "因为同一角度的圆弧长度随半径同比例变化，s/r与圆的具体大小无关。",
+        "step": 2
+      },
+      {
+        "justification": "对逆时针正向和顺时针负向可取有向s；物理长度为非负的|s|=r|θ|。",
+        "step": 3
+      },
+      {
+        "justification": "若原题是角度制，先乘π/180再使用公式，避免把180直接当作弧度代入。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-123-c408",
+    "source_end_line": 18,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "879aeab2311ef55f2462549bb1779578908408116c7a5fdf9e4c19815484fe3e"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 21,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "879aeab2311ef55f2462549bb1779578908408116c7a5fdf9e4c19815484fe3e",
+    "source_start_line": 18,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先判断给定角度的单位是度还是弧度。 请写出用于判断的条件或原因。",
+      "检查半径正值与长度单位是否一致。 请写出用于判断的条件或原因。",
+      "弧长非负，若是有向负角记得用绝对值。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "4π厘米。",
+        "question": "半径6厘米、圆心角120°的短弧长度。",
+        "reasoned_solution": [
+          "将120°乘π/180得到2π/3弧度。",
+          "按L=r|θ|代入6·2π/3。",
+          "得到4π厘米且长度单位与半径一致。"
+        ]
+      },
+      {
+        "answer": "π/2弧度，即90°。",
+        "question": "半径3米时弧长为3π/2米，对应圆心角弧度数。",
+        "reasoned_solution": [
+          "弧长和半径单位均为米，可相除。",
+          "θ=L/r=(3π/2)/3=π/2。",
+          "把π/2乘180/π得到90°。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "弧度定义与圆弧长度的半径条件",
+    "typical_wrong_solution": "错法：半径4米、60°的圆弧写长度240米。",
+    "why_method_is_legal": "相似圆弧在同比例缩放下弧长与半径同倍变化，故比值s/r只由圆心角决定；乘回r就得到弧长。",
+    "why_wrong_and_repair": "60°先化π/3弧度，得到L=4π/3米；弧度是长度比值，不能混用度。"
+  },
+  {
+    "applicability_and_hypotheses": "起点要与主张的最小下标一致；递推步不能预设P(k+1)；从P(k)到P(k+1)必须给出合法推理。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "分析一个程序循环不变式证明：初值、保持、终止三环节与数学归纳法的结构联系。",
+    "formal_definition_or_theorem": "为证明对所有整数n≥n0命题P(n)成立，须证明P(n0)，并证明任意k≥n0若P(k)成立则P(k+1)成立。两项合并才能得到全称结论。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-119-s06",
+    "knowledge_type": "Method",
+    "near_transfer": "证明对n≥1有1+3+…+(2n−1)=n²，写出每一个归纳步骤。",
+    "nonexample_or_failure": "命题P(n):n<10对n=1成立，但不存在对所有k≥1的合法归纳递推，所以不能据一个起点推广。",
+    "notation_and_domain": "n0、k为整数，k≥n0；被证明对象是有明确论域和谓词的命题族P(n)。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-s01"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "明确被证明命题P(n)、起始整数n0及量词，避免只检查样例。",
+        "step": 1
+      },
+      {
+        "justification": "验证P(n0)为真，写出完整代入及等式或不等式依据。",
+        "step": 2
+      },
+      {
+        "justification": "假设固定任意k≥n0的P(k)成立，逐步推导P(k+1)，不能偷用待证结论。",
+        "step": 3
+      },
+      {
+        "justification": "根据归纳公理，把起点与对任意k的递推蕴含合并，得出对所有n≥n0成立。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-s06",
+    "source_end_line": 30,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "494353ca7aa0d120b04cb92cce393932ef8fa9d63e626bc1aa6559fbc0803608",
+      "bf61f6792cc0cfb6ba33e7f95a94d1453a0c262253cce2ccc0e67468840d8755",
+      "acb1c5f990dbb30d13d875135a1f05acdc91da5e7c1f388e71853e8907c39564"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 38,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "33d95bf2fac9a4c7e2922e727730746feab11873b476a6004dec1163a7cba6f5",
+    "source_start_line": 28,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "首先明确主张从哪个整数开始。 请写出用于判断的条件或原因。",
+      "归纳假设只可假定P(k)，不可假定待证P(k+1)。",
+      "写出新增一项后的代数转换，检查结果是否与P(k+1)完全一致。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "所有正整数n成立。",
+        "question": "用归纳法证明1+2+…+n=n(n+1)/2（n≥1）。",
+        "reasoned_solution": [
+          "n=1时左边1，右边1，起点成立。",
+          "假设n=k成立，下一项和为k(k+1)/2+(k+1)。",
+          "提取k+1得(k+1)(k+2)/2，完成归纳步。"
+        ]
+      },
+      {
+        "answer": "只能覆盖偶数下标，除非另证P(3)。",
+        "question": "为什么仅证明P(2)且P(k)⇒P(k+2)不能证明所有n≥2？",
+        "reasoned_solution": [
+          "从起点2沿两步后继只能达到2、4、6等。",
+          "归纳步没有连接到奇数下标。",
+          "若再证明P(3)，两个起点才能覆盖所有大于等于2的整数。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "数学归纳法：起点、归纳假设与递推步",
+    "typical_wrong_solution": "错法：验证1+2=3后直接宣称1+…+n=n(n+1)/2对所有n成立。",
+    "why_method_is_legal": "把整数序列按从n0开始的后继关系构造；先真起点，再反复应用有效的条件蕴含，所有之后的下标均可到达。",
+    "why_wrong_and_repair": "须以n=1检验真正命题1=1，再从假设Σ_{j=1}^k j=k(k+1)/2算到k+1；简单样例不能替代递推。"
+  },
+  {
+    "applicability_and_hypotheses": "只有排列确实区分顺序才乘k!。允许重复、对象不互异或额外座位禁配时不能直接套该简单公式。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "far_transfer": "设计一个小型抽奖的中奖号码规则，讨论号码顺序、重复及禁止相同号码怎样改变样本空间大小。",
+    "formal_definition_or_theorem": "从n个互异对象中不放回选取k个（0≤k≤n整数），有序排列数A(n,k)=n!/(n−k)!，无序组合数C(n,k)=n!/[k!(n−k)!]；且A(n,k)=k!C(n,k)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-120-s112",
+    "knowledge_type": "Method",
+    "near_transfer": "把从6人中选2人和安排两名不同职务分别写成组合数与排列数。",
+    "nonexample_or_failure": "从3人选2人组队只有3组而非6组；若密码允许重复，两位密码不是A(3,2)=6而是3²=9。",
+    "notation_and_domain": "n,k为非负整数，0≤k≤n；0!=1；对象互异、选取不重复且各选法按等可能计数的模型条件需单独检查。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "声明选择是否有序、是否放回、对象是否互异，确定需要排列还是组合。",
+        "step": 1
+      },
+      {
+        "justification": "对于有序且不放回，第一位置n种、第二位置n−1种，乘法原则给出A(n,k)。",
+        "step": 2
+      },
+      {
+        "justification": "每个无序k元素子集可排成k!种有序序列，且这些序列不重叠覆盖全部排列。",
+        "step": 3
+      },
+      {
+        "justification": "因此C(n,k)=A(n,k)/k!，对k=0结果为1，超过n的取法在本定义域外。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-s112",
+    "source_end_line": 26,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "13f1980b1d95828c7efb3c22d2933aaca980a820fc8ae0b94828fca9c3248e68",
+      "b660c29f7b288bae39c1b659c6ca451768f430b994b1908b297145d3c77246b8",
+      "56110f1ac554b56b7b03ed545dddde090c57f48772ec29a62c6dffe9e0e5cda2",
+      "df33268c9a91bf0498005f8b658acb3e33ba737f15c78d5a101a810133f8e617",
+      "d353ea3aa5d5ca189790ca1680813cd3146098a128f089ff8b966375bee2d8e0",
+      "4f991d05ae6558cec347f4b0f1a2bd0b71596d0514f0f20792fe1d2062e3a7d3"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 46,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "d2552df0590736eaa6d7844eef9850d7c566fb5a56e14d5da75f9246f4640a67",
+    "source_start_line": 21,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "判断交换两人后算不算另一种结果。 请写出用于判断的条件或原因。",
+      "检查对象互异、是否允许重复选择。 请写出用于判断的条件或原因。",
+      "有序先乘下降因子，无序再除以k!。 请写出用于判断的条件或原因。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "C(5,3)=10种。",
+        "question": "从5名不同学生中选3人委员会有几种？",
+        "reasoned_solution": [
+          "成员角色相同，组内次序不重要。",
+          "先求有序选择5·4·3=60。",
+          "每组对应3!=6个排列，故60/6=10。"
+        ]
+      },
+      {
+        "answer": "A(4,3)=24种。",
+        "question": "从4名选手中排冠军、亚军、季军有几种？",
+        "reasoned_solution": [
+          "三名次有不同角色，交换两人结果不同。",
+          "依次有4、3、2种选择。",
+          "相乘得24；无需除以3!。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "排列组合：有序选择与无序选择的区分",
+    "typical_wrong_solution": "错法：从5人中选3人作委员会，错按A(5,3)=60计数。",
+    "why_method_is_legal": "先逐位置乘n(n−1)…(n−k+1)；再观察每个k元素子集对应恰好k!个不同顺序，故无序计数要除去该重数。",
+    "why_wrong_and_repair": "委员会不区分内部顺序，应用C(5,3)=10；若指定主席、秘书、成员则可用有序计数。"
+  },
+  {
+    "applicability_and_hypotheses": "不能把内部可导替代闭区间连续；不能对有跳跃的不连续函数直接使用，也不能在a=b时计算平均变化率。",
+    "course_track": "ELECTIVE_A",
+    "far_transfer": "以实际路程与瞬时速度的例子解释该定理为何要求位置随时间连续且中间可导。",
+    "formal_definition_or_theorem": "若实函数f在闭区间[a,b]连续、在开区间(a,b)可导且a<b，则存在c∈(a,b)，使f'(c)=[f(b)−f(a)]/(b−a)。定理只保证至少一个c，不保证唯一。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-119-a06",
+    "knowledge_type": "Theorem",
+    "near_transfer": "对f(x)=ln x在[1,e]上求满足条件的c并验证其位置。",
+    "nonexample_or_failure": "对f(x)=1（x=0），f(x)=0（x∈(0,1]），在[0,1]端点不连续，尽管内部导数恒0，但割线斜率为−1，没有满足等式的c。",
+    "notation_and_domain": "a,b∈ℝ且a<b；f:[a,b]→ℝ；需分别审核端点的连续性与内部的可导性。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-a05"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "由f的连续性和可导性及割线的光滑性，构造g(x)=f(x)−l(x)满足罗尔定理的两个正则条件。",
+        "step": 1
+      },
+      {
+        "justification": "由割线在端点处与f相同，得g(a)=0和g(b)=0。",
+        "step": 2
+      },
+      {
+        "justification": "罗尔定理给出某个内点c使g'(c)=0，这是需要存在性而非点值计算的步骤。",
+        "step": 3
+      },
+      {
+        "justification": "计算g'(c)=f'(c)−(f(b)−f(a))/(b−a)=0，即得目标式；不推断c唯一。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-a06",
+    "source_end_line": 14,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "0aa0ec30252ecf43498ea5b0b4edbcac3d39bed7d73112cc6e0eec5265d8c96c",
+      "506444c9ebe7fa7c04990d0336bc9518f6677d80d8a30b2850c50ac7ff56cf83",
+      "0c472779d6112ff609286be5d3cb9681eebfe6a2eb533174dd33c1754af5bd85",
+      "650dd690d59378ece8afe344ee1075bef8f40f13e8ac99283436645944375854",
+      "8d7bc789975731b48d6c16f2ab548008bd6bac966ce96a3eb7eb447f6f7c86e3"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 53,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "91f14980ff51ebb0e62806cb98ecf806747b3fd7caa81418fa92941e938cd81e",
+    "source_start_line": 10,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先逐条核对连续性、可导性、非退化区间。",
+      "用端点函数值算割线斜率。 请写出用于判断的条件或原因。",
+      "令f'(c)等于割线斜率，再检查c是否真在开区间内。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "c=2。",
+        "question": "对f(x)=x²，区间[1,3]求满足中值定理的c。",
+        "reasoned_solution": [
+          "多项式在闭区间连续，开区间可导。",
+          "割线斜率(9−1)/(3−1)=4。",
+          "f'(c)=2c=4得c=2且属于(1,3)。"
+        ]
+      },
+      {
+        "answer": "c=π/2。",
+        "question": "对f(x)=sin x、[0,π]，给出一个中值点。",
+        "reasoned_solution": [
+          "正弦函数满足连续、可导条件。",
+          "两端函数值均为0，割线斜率为0。",
+          "f'(c)=cos c，取c=π/2可得零。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "拉格朗日中值定理与端点连续性",
+    "typical_wrong_solution": "错法：仅凭区间内f'存在便声称中值定理成立，忽略端点跳跃。",
+    "why_method_is_legal": "令线性割线l(x)=f(a)+(f(b)−f(a))(x−a)/(b−a)，对g=f−l应用罗尔定理：g(a)=g(b)=0，所以某c有g'(c)=0。",
+    "why_wrong_and_repair": "分别检查闭区间连续和开区间可导，再检查a<b，必要时给出跳跃反例拒用。"
+  },
+  {
+    "applicability_and_hypotheses": "密度必须非负且积分为1；不能由p(c)>1断言概率超过1，也不能把孤立点的密度值当作概率。",
+    "course_track": "ELECTIVE_B",
+    "far_transfer": "在随机测量误差的连续模型中解释为何仪器显示精确小数的概率与真实区间概率不同。",
+    "formal_definition_or_theorem": "非负可积函数p:ℝ→[0,∞)若满足∫_{−∞}^{∞}p(x)dx=1，可作为连续随机变量的概率密度；其区间概率P(a≤X≤b)=∫_a^b p(x)dx，单点概率P(X=c)=0。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-120-b101",
+    "knowledge_type": "Concept",
+    "near_transfer": "求p(x)=3x²（0≤x≤1）的P(1/2≤X≤1)，并写累积分布。",
+    "nonexample_or_failure": "p(x)=2（0≤x≤1/2，其余0）为合法密度，虽然2>1；p(x)=−1（0≤x≤1）不可能是概率密度。",
+    "notation_and_domain": "概率密度p(x)一般量纲是自变量单位的倒数，并非该点的概率；a≤b；在密度存在时积分规则成立。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "先检查密度在整个实轴非负，积分归一化，避免把任意曲线称为概率密度。",
+        "step": 1
+      },
+      {
+        "justification": "构造F(t)并使用区间积分，验证所有概率在0到1之间。",
+        "step": 2
+      },
+      {
+        "justification": "在连续密度模型下，对长度为零的区间积分为0，所以P(X=c)=0。",
+        "step": 3
+      },
+      {
+        "justification": "遇到p(c)>1时检查其支持区间宽度，密度高度不能代替区间面积。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-b101",
+    "source_end_line": 16,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "d6395ba6581a77fa6c9e6f38ce93165d6684f22c8f8f8ea36f3c82df012bb475",
+      "7b142ca4f4ae93c5631642bce1261dfb4cac2458de622a50e05af7ee04bb61a8",
+      "dce723af71a640529c9ddcccefd2cb790fa335d08c5d7c925d2cecb4d982fe05"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 61,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "5d3e97af0d1a2944bb65895b267cd390cad29065ae737b2fa791cec058534902",
+    "source_start_line": 14,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先区分密度函数的高度和区间面积。 请写出用于判断的条件或原因。",
+      "验证非负性、归一化，再算目标区间积分。",
+      "点事件对连续密度积分为零，不能直接用p(c)代替。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "1/2。",
+        "question": "若p(x)=2（0≤x≤1/2，其余为0），求P(0≤X≤1/4)。",
+        "reasoned_solution": [
+          "验证密度在支持集上非负，积分2·(1/2)=1。",
+          "积分0到1/4的面积为2·(1/4)。",
+          "结果为1/2，位于[0,1]内。"
+        ]
+      },
+      {
+        "answer": "c=1/2。",
+        "question": "若p(x)=cx（0≤x≤2，其余0），求c。",
+        "reasoned_solution": [
+          "概率密度须非负且积分为1。",
+          "积分∫_0² cx dx=2c。",
+          "由2c=1，得c=1/2。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "连续型随机变量的概率密度与区间概率",
+    "typical_wrong_solution": "错法：设X∼U(0,1/2)，因为p(1/4)=2，就写P(X=1/4)=2。",
+    "why_method_is_legal": "累积分布函数F(t)=∫_{−∞}^{t}p(x)dx，利用积分区间可加性得到P(a≤X≤b)=F(b)−F(a)；单点积分为零。",
+    "why_wrong_and_repair": "概率来自区间积分；对单点积分为0，不应把概率密度与概率混为一谈。"
+  },
+  {
+    "applicability_and_hypotheses": "不能把某条命题当前未证明就断言整个体系不完备，也不能将哥德尔定理无条件应用于任何初等公理系统。",
+    "course_track": "ELECTIVE_C",
+    "far_transfer": "讨论程序规范中的约束相容性与需求是否足以决定每种输入行为，解释为什么不是同一个指标。",
+    "formal_definition_or_theorem": "给定形式理论T及推导关系⊢，句法相容性表示不存在公式φ使T⊢φ且T⊢¬φ；相对于指定语句类L的完备性表示对每个φ∈L有T⊢φ或T⊢¬φ。这两个性质定义不同。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-120-ec103",
+    "knowledge_type": "Concept",
+    "near_transfer": "在只含p,q的命题语言下，比较T={p}对p、q的可判定性。",
+    "nonexample_or_failure": "在命题语言只含命题元p的经典演算中若无公理约束p，则既不能推出p也不能推出¬p，但这不等于可以推出矛盾。",
+    "notation_and_domain": "适用对象为已指定语言、逻辑系统、推导规则和待讨论语句类的形式理论；在经典逻辑下讨论。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-120-ec101"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "先声明公理集合T、语言和证明规则；未指定这些对象时相容和完备没有可判定的具体含义。",
+        "step": 1
+      },
+      {
+        "justification": "对相容性寻找是否能同时证明同一个φ和¬φ，若存在则该理论句法不相容。",
+        "step": 2
+      },
+      {
+        "justification": "对完备性逐一讨论每个指定语句φ是否能证明它或其否定，允许相容但未决定的语句存在。",
+        "step": 3
+      },
+      {
+        "justification": "指出相容性和完备性各自的量词不同；由有限证据一般不能推出无限语言全体语句的完备性。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-ec103",
+    "source_end_line": 17,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "1e5f07f7c61f5356ac2b8ee1985b4ee1278c4852c7da18d6ea6d5644c5667ba0",
+      "57ed7b94a7cc87cde526296be414171aae0fc7383d179ad06ecd96d4b8a8f4d2",
+      "9b42747859ffc3844e2252af03cf952ecbc5421134ff7a6188ce7e5fd4b2cbf3",
+      "82c61721ce4d672d0a37c716aa8303d50741b5cc4d8bd95288fdd8fd094aa332"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 65,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "da0989ec9df6c9e4a7c0bfbd390da1a86154f0f30866fb4ac467eb68cfcbd419",
+    "source_start_line": 14,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "给出正在讨论的具体语言和推导规则。 请写出用于判断的条件或原因。",
+      "相容性问有没有同时可证的互否命题。 请写出用于判断的条件或原因。",
+      "完备性问指定范围内每个命题是否都被决定。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "能证明p；不能据此认定矛盾。",
+        "question": "设经典命题逻辑T={p}，能否从T证明p？能否认为T含有矛盾？",
+        "reasoned_solution": [
+          "公理p可作为一个有效的证明起点。",
+          "要断言矛盾还需能推出¬p，单有p不足。",
+          "在赋值p为真时模型满足T，展示其不矛盾的一个语义见证。"
+        ]
+      },
+      {
+        "answer": "都不能；这不意味着该理论不相容。",
+        "question": "对空公理的命题理论T=∅，p与¬p是否都能作为无前提定理？",
+        "reasoned_solution": [
+          "任意赋值下p并非恒真，故不是经典命题逻辑定理。",
+          "任意赋值下¬p也并非恒真，故同样不是定理。",
+          "因此p在T下未决定；空理论仍有满足赋值。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "公理体系的相容性与完备性不可混同",
+    "typical_wrong_solution": "错法：某命题无法在给定理论下证明，所以这个公理系统一定矛盾。",
+    "why_method_is_legal": "相容性排除证明矛盾的一对公式；完备性要求所有指定范围内语句可决定。单独核查每条性质的量词及范围。",
+    "why_wrong_and_repair": "不可证与可证其否定都不是证明出矛盾；先分辨T⊬φ、T⊬¬φ、T⊢¬φ三种不同情况。"
+  },
+  {
+    "applicability_and_hypotheses": "黄金分割条件是精确代数比例；自然或艺术图形中出现近似比例不自动证明其设计遵循此定律。",
+    "course_track": "ELECTIVE_D",
+    "far_transfer": "摄影构图中的三分法与黄金比例并不完全相同，说明为何审美规则不能被误写为数学定理。",
+    "formal_definition_or_theorem": "把线段分成较长段a>0和较短段b>0，若(a+b)/a=a/b，则两比值等于φ=(1+√5)/2，满足φ²=φ+1；斐波那契相邻项比值可趋向φ，但任何有限近似不应写成恒等。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-120-ed103",
+    "knowledge_type": "Concept",
+    "near_transfer": "若整段长为10，按黄金比求长段和短段精确值，并验证两段之和。",
+    "nonexample_or_failure": "若a=b，则r=1不等于φ；F₃/F₂=2不是黄金分割的精确值；矩形比例约1.6也不能证明物体遵循黄金分割。",
+    "notation_and_domain": "线段长度a,b同单位且a>b>0；斐波那契F₁=F₂=1，F_{n+1}=F_n+F_{n−1}，分母须非零。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "设较长段a、较短段b均为正，先统一单位并严格写出比例条件。",
+        "step": 1
+      },
+      {
+        "justification": "令r=a/b>1，等式化为r²−r−1=0，使用求根公式。",
+        "step": 2
+      },
+      {
+        "justification": "两个代数根为(1±√5)/2，但只有正根与长度比值相容，得到黄金分割比。",
+        "step": 3
+      },
+      {
+        "justification": "计算F_n的相邻比值是对极限的近似证据，需区分有限样本比与极限命题。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-ed103",
+    "source_end_line": 15,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "edf16b6a501d49becce2ace0f578f0b329259f392aa244b673df716744da4e19",
+      "336029b0b4c6c12d1955d99a26de6498995d4f4d7ec0ce458bc2434e18364bc7",
+      "4f603fda68c259f1e2ce35e10e8bc204c7b400aa2087fbdf2c29bf3cb2960178",
+      "71235567dc2dd4207bb979bea32802bb93519d94a3ca5d1940c5c64029befe7d"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 70,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "2153013a4fd73fe18aeeaea1184f7f944dae2d73bf477e73676ff67cd6b99979",
+    "source_start_line": 12,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先判断所说的是精确比例、有限近似还是审美经验。",
+      "把长短段分别记为a,b，正确建立(a+b)/a=a/b。",
+      "方程求根时用正长度排除无关根。 请写出用于判断的条件或原因。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "(1+√5)/2。",
+        "question": "若a/b满足黄金分割条件，求a/b的精确值。",
+        "reasoned_solution": [
+          "令r=a/b，正长度要求r>1。",
+          "由(a+b)/a=r得1+1/r=r。",
+          "解r²−r−1=0并舍去负根。"
+        ]
+      },
+      {
+        "answer": "8/5=1.6，略小于φ≈1.618。",
+        "question": "F₅=5、F₆=8，求F₆/F₅并与φ比较。",
+        "reasoned_solution": [
+          "由斐波那契递推列出第5、6项。",
+          "相除得有理数8/5。",
+          "φ含无理数√5，所以两者不可能精确相等。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "黄金分割精确比值与斐波那契比值近似",
+    "typical_wrong_solution": "错法：将8/5≈1.6直接等同φ，并据此推断任何近似比例都具有数学必然美感。",
+    "why_method_is_legal": "令r=a/b>1，由(a+b)/a=a/b得1+1/r=r，故r²−r−1=0；舍去负根得φ。",
+    "why_wrong_and_repair": "标明近似号与测量不确定度，使用黄金分割精确式进行代数校验，不由主观审美倒推数学比例。"
+  },
+  {
+    "applicability_and_hypotheses": "模数必须是正整数；若模数不相同，不能未经变换直接加减同余式；不能任意消去同余式两侧公共因子。",
+    "course_track": "ELECTIVE_E",
+    "far_transfer": "讨论周期为7天的星期计算和整数同余对应关系，同时标记真实日历制度的额外条件。",
+    "formal_definition_or_theorem": "对整数a,b及正整数m，定义a≡b(mod m)当且仅当m整除a−b；等价于a和b除以m有相同的非负余数。相同模数下同余可按加法和乘法保持。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb146-deep-119-ee02",
+    "knowledge_type": "Concept",
+    "near_transfer": "求9^100(mod 8)的余数，并用简单同余替换解释。",
+    "nonexample_or_failure": "2·1≡2·4(mod 6)为真，但1≡4(mod 6)为假；说明乘以2后的同余不能直接约去2。",
+    "notation_and_domain": "a,b∈ℤ，m∈ℤ_{>0}；余数可选0,1,…,m−1；本单元属于学校选修示例而非必修课标原子。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "先固定模数m为正整数，定义a≡b是整除关系而非普通数值相等。",
+        "step": 1
+      },
+      {
+        "justification": "核对a−b是否存在整数k满足a−b=km，或计算标准余数。",
+        "step": 2
+      },
+      {
+        "justification": "利用差的倍数形式说明同模数加法与乘法运算仍保留同余。",
+        "step": 3
+      },
+      {
+        "justification": "对消去乘数的操作需要额外互素条件；反向推理不可把单向保持性当作任意等价。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-ee02",
+    "source_end_line": 17,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "cfb9893d35684d2a3288599794f84971cc688611222249b328de84144222f927",
+      "27d7d527743b3ce2aecac1a78425694a6aa83944354df8156061cce4dec99f1e"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 73,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "a79a98b383e495f957189f0ab1c9694c1339f6270071b721b76c901ab177661e",
+    "source_start_line": 16,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确认模数m为正整数。 请写出用于判断的条件或原因。",
+      "把同余改写成整除差值m|(a−b)。",
+      "约分前检查公共因子与模数是否互素。 请写出用于判断的条件或原因。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "同余，因为17−5=12可被6整除。",
+        "question": "判断17与5是否模6同余。",
+        "reasoned_solution": [
+          "计算差17−5=12。",
+          "验证12=2·6，存在整数倍数2。",
+          "依定义17≡5(mod 6)。"
+        ]
+      },
+      {
+        "answer": "x=1或4。",
+        "question": "求解2x≡2(mod 6)在0≤x<6的所有整数解。",
+        "reasoned_solution": [
+          "同余等价于6整除2(x−1)。",
+          "约成3整除x−1，而不是模6中直接消去2。",
+          "枚举0到5满足x≡1(mod3)的是1和4。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "选修示例：整数同余与模运算",
+    "typical_wrong_solution": "错法：从2x≡2(mod 6)直接除以2写x≡1(mod 6)，漏掉x≡4(mod 6)。",
+    "why_method_is_legal": "由a−b=km推得对任意整数c，(a+c)−(b+c)=km且ac−bc=ckm，均仍是m的倍数。",
+    "why_wrong_and_repair": "改写为6|2(x−1)，等价于3|(x−1)，所以x≡1(mod 3)；再列出模6的两种余类。"
+  }
+]

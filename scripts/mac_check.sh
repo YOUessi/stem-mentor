@@ -304,6 +304,12 @@ PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch143_eight_ma
 .venv/bin/python scripts/check_kb_batch144_math.py --check
 .venv/bin/python scripts/build_kb_batch144_crosswalk.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch144_seven_track.py
+# Batch146: ten original source-locked seven-track lessons; 40 exact bounded
+# tests and 85 draft safe editor index, 44/239 historical editorial matches.
+.venv/bin/python scripts/build_kb_batch146_lessons.py --check-mac
+.venv/bin/python scripts/check_kb_batch146_math.py --check
+.venv/bin/python scripts/build_kb_batch146_crosswalk.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch146_math_depth.py
 echo "[1/4] Backend regression tests"
 .venv/bin/python scripts/build_kb_batch129_scope_reviews.py --check
 .venv/bin/python scripts/build_kb_batch129_lessons.py --check

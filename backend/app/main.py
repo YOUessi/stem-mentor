@@ -364,3 +364,10 @@ def kb144_review_coverage():
     """Aggregate seven-track editor inventory only; no unpublished lessons or answers."""
     from .kb_batch144_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb146-review-coverage")
+def kb146_review_coverage():
+    """Aggregate preview inventory only. Never expose teacher-only evidence."""
+    from .kb_batch146_index import public_coverage
+    return public_coverage()

@@ -1,0 +1,421 @@
+{
+  "cases": [
+    {
+      "candidate_id": "hs-semantic-pilot-119-c01",
+      "case_id": "kb146-01-1",
+      "general_formal_proof_certified": false,
+      "label": "real+imag equality is coordinate-wise",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c01",
+      "case_id": "kb146-01-2",
+      "general_formal_proof_certified": false,
+      "label": "symbolic unknown complex equality",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c01",
+      "case_id": "kb146-01-3",
+      "general_formal_proof_certified": false,
+      "label": "reject identical coefficients in different positions",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c01",
+      "case_id": "kb146-01-4",
+      "general_formal_proof_certified": false,
+      "label": "equal modulus is insufficient for complex equality",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c410",
+      "case_id": "kb146-02-1",
+      "general_formal_proof_certified": false,
+      "label": "initial continuity-compatible sign bracket",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c410",
+      "case_id": "kb146-02-2",
+      "general_formal_proof_certified": false,
+      "label": "second preserved sign bracket and quarter width",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c410",
+      "case_id": "kb146-02-3",
+      "general_formal_proof_certified": false,
+      "label": "discontinuous reciprocal sign bracket does not imply root",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c410",
+      "case_id": "kb146-02-4",
+      "general_formal_proof_certified": false,
+      "label": "same sign endpoints can still enclose root",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c408",
+      "case_id": "kb146-03-1",
+      "general_formal_proof_certified": false,
+      "label": "120 degree circle of radius six length four pi",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c408",
+      "case_id": "kb146-03-2",
+      "general_formal_proof_certified": false,
+      "label": "radius three and length 3pi/2 gives pi/2 radians",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c408",
+      "case_id": "kb146-03-3",
+      "general_formal_proof_certified": false,
+      "label": "zero radius division prohibited",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-123-c408",
+      "case_id": "kb146-03-4",
+      "general_formal_proof_certified": false,
+      "label": "degree numerical value is not radian measure",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s06",
+      "case_id": "kb146-04-1",
+      "general_formal_proof_certified": false,
+      "label": "finite arithmetic sum equals closed form",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s06",
+      "case_id": "kb146-04-2",
+      "general_formal_proof_certified": false,
+      "label": "inductive successor algebra for any integer n",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s06",
+      "case_id": "kb146-04-3",
+      "general_formal_proof_certified": false,
+      "label": "wrong base for supposed sum identity rejected",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s06",
+      "case_id": "kb146-04-4",
+      "general_formal_proof_certified": false,
+      "label": "one start does not imply successor forever",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s112",
+      "case_id": "kb146-05-1",
+      "general_formal_proof_certified": false,
+      "label": "five choose three exactly ten",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s112",
+      "case_id": "kb146-05-2",
+      "general_formal_proof_certified": false,
+      "label": "five ordered picks three exactly sixty",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s112",
+      "case_id": "kb146-05-3",
+      "general_formal_proof_certified": false,
+      "label": "unordered committee must not use ordered count",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-s112",
+      "case_id": "kb146-05-4",
+      "general_formal_proof_certified": false,
+      "label": "selection with replacement differs from falling factorial",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a06",
+      "case_id": "kb146-06-1",
+      "general_formal_proof_certified": false,
+      "label": "quadratic chord slope matches derivative at c two",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a06",
+      "case_id": "kb146-06-2",
+      "general_formal_proof_certified": false,
+      "label": "sine chord slope zero at pi/2",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a06",
+      "case_id": "kb146-06-3",
+      "general_formal_proof_certified": false,
+      "label": "endpoint jump invalidates continuity assumption",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a06",
+      "case_id": "kb146-06-4",
+      "general_formal_proof_certified": false,
+      "label": "degenerate interval a=b forbidden",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b101",
+      "case_id": "kb146-07-1",
+      "general_formal_proof_certified": false,
+      "label": "uniform density two on half unit integrates one",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b101",
+      "case_id": "kb146-07-2",
+      "general_formal_proof_certified": false,
+      "label": "quarter interval has probability one half",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b101",
+      "case_id": "kb146-07-3",
+      "general_formal_proof_certified": false,
+      "label": "negative density rejected",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-b101",
+      "case_id": "kb146-07-4",
+      "general_formal_proof_certified": false,
+      "label": "density height two not point event probability",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec103",
+      "case_id": "kb146-08-1",
+      "general_formal_proof_certified": false,
+      "label": "noncontradictory theory p has satisfying valuation",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec103",
+      "case_id": "kb146-08-2",
+      "general_formal_proof_certified": false,
+      "label": "empty theory has p true and false models",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec103",
+      "case_id": "kb146-08-3",
+      "general_formal_proof_certified": false,
+      "label": "p and not p have no common classical model",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ec103",
+      "case_id": "kb146-08-4",
+      "general_formal_proof_certified": false,
+      "label": "unknown q in theory p not a contradiction",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed103",
+      "case_id": "kb146-09-1",
+      "general_formal_proof_certified": false,
+      "label": "golden ratio exact positive root",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed103",
+      "case_id": "kb146-09-2",
+      "general_formal_proof_certified": false,
+      "label": "Fibonacci 8/5 is a strict finite approximation",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed103",
+      "case_id": "kb146-09-3",
+      "general_formal_proof_certified": false,
+      "label": "ratio one is not golden ratio",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ed103",
+      "case_id": "kb146-09-4",
+      "general_formal_proof_certified": false,
+      "label": "finite rational cannot equal irrational golden ratio",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee02",
+      "case_id": "kb146-10-1",
+      "general_formal_proof_certified": false,
+      "label": "17 congruent five modulo six",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee02",
+      "case_id": "kb146-10-2",
+      "general_formal_proof_certified": false,
+      "label": "2x congruent two modulo six has two residues",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee02",
+      "case_id": "kb146-10-3",
+      "general_formal_proof_certified": false,
+      "label": "cancelling nonunit factor modulo six loses solutions",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee02",
+      "case_id": "kb146-10-4",
+      "general_formal_proof_certified": false,
+      "label": "modulus zero outside the allowed domain",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    }
+  ],
+  "general_formal_proof_certifications": 0,
+  "legal_or_boundary_witnesses": 20,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "rejected_invalid_premises": 20,
+  "schema": "kb146-independent-exact-finite-math/1",
+  "scope": "FINITE_EXACT_WITNESS_NOT_GENERAL_FORMAL_PROOF",
+  "student_free_text_verifications": 0,
+  "teacher_approvals": 0,
+  "total_cases": 40
+}
