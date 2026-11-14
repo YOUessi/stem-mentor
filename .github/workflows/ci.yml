@@ -363,6 +363,15 @@ jobs:
       # Archived actual Mac stdout, browser checks, and exit-code hashes. CI never reads the licensed PDF.
       - run: python scripts/build_kb_batch150_execution_manifest.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch150_execution_archive.py
+      # KB152: 10 original pending seven-track manuscripts, SHA-only licensed
+      # source locks, C/D/E proposal overlaps (NOT approved atoms), 40 exact
+      # bounded math witnesses and student-denial/editor-only FTS regression.
+      - run: python scripts/author_kb_batch152_data.py --check
+      - run: python scripts/build_kb_batch152_lessons.py --check
+      - run: python scripts/build_kb_batch152_crosswalk.py --check
+      - run: python scripts/build_kb_batch152_semantic_gate.py --check
+      - run: python scripts/check_kb_batch152_math.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch152_integration.py
       # Fail fast on syntax errors before the long Python/Node/browser suite.
       - run: bash -n scripts/mac_check.sh scripts/mac_browser_check.sh
       # Tests now import both 'app' (backend package root) and the versioned

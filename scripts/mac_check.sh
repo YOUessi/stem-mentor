@@ -367,3 +367,12 @@ done
 .venv/bin/python scripts/build_kb_batch151_crosswalk.py --check
 .venv/bin/python scripts/check_kb_batch151_math.py --check
 PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch151_depth_integrity.py
+
+# Batch152: ten Mac PDFKit source-hashed teacher-only lesson manuscripts, 40 exact
+# bounded math witnesses, C/D/E unapproved proposal overlap review, editor-only FTS.
+.venv/bin/python scripts/author_kb_batch152_data.py --check
+.venv/bin/python scripts/build_kb_batch152_lessons.py --check-mac
+.venv/bin/python scripts/build_kb_batch152_crosswalk.py --check
+.venv/bin/python scripts/build_kb_batch152_semantic_gate.py --check
+.venv/bin/python scripts/check_kb_batch152_math.py --check
+PYTHONPATH=backend .venv/bin/python -m pytest -q tests/test_kb_batch152_integration.py

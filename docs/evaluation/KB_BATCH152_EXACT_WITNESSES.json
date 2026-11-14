@@ -1,0 +1,411 @@
+{
+  "cases": [
+    {
+      "candidate_id": "hs-semantic-pilot-119-c04",
+      "case_id": "kb152-01-1",
+      "description": "whole A+t(B-A) has zero z",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c04",
+      "case_id": "kb152-01-2",
+      "description": "different points x+z=2",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c04",
+      "case_id": "kb152-01-3",
+      "description": "same point lies in z=0 while vertical line leaves plane",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c04",
+      "case_id": "kb152-01-4",
+      "description": "one common point is insufficient to include a line",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c05",
+      "case_id": "kb152-02-1",
+      "description": "orthogonal planes x=0 and y=0 rank2",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c05",
+      "case_id": "kb152-02-2",
+      "description": "x+y=1 and x-y=0 intersect x=y=1/2",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c05",
+      "case_id": "kb152-02-3",
+      "description": "parallel x=0 versus x=1 has no intersection",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c05",
+      "case_id": "kb152-02-4",
+      "description": "coincident x=0 and 2x=0 not a line",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c09",
+      "case_id": "kb152-03-1",
+      "description": "MAE of residual 1,-1,2 is 4/3",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c09",
+      "case_id": "kb152-03-2",
+      "description": "7.2 km/h equals 2 m/s",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c09",
+      "case_id": "kb152-03-3",
+      "description": "raw 7.2-2 mismatch is unit artifact",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c09",
+      "case_id": "kb152-03-4",
+      "description": "training fit at zero not sufficient for test x=1",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s02",
+      "case_id": "kb152-04-1",
+      "description": "first 5 diff-3 term6",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s02",
+      "case_id": "kb152-04-2",
+      "description": "2n+1 has constant difference 2",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s02",
+      "case_id": "kb152-04-3",
+      "description": "1 2 4 7 not arithmetic",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s02",
+      "case_id": "kb152-04-4",
+      "description": "wrong a1+n*d fails at n=1",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s12",
+      "case_id": "kb152-05-1",
+      "description": "P=(2,0,0) to x=0 has distance2",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s12",
+      "case_id": "kb152-05-2",
+      "description": "origin to 2x-y+2z-9 distance3",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s12",
+      "case_id": "kb152-05-3",
+      "description": "zero normal cannot define plane distance",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s12",
+      "case_id": "kb152-05-4",
+      "description": "signed expression negative without absolute",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a03",
+      "case_id": "kb152-06-1",
+      "description": "a(n)=1-1/n increasing finite checks with explicit limit",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a03",
+      "case_id": "kb152-06-2",
+      "description": "b(n)=2+1/n decreasing bounded below",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a03",
+      "case_id": "kb152-06-3",
+      "description": "monotone n unbounded by any proposed finite cap",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a03",
+      "case_id": "kb152-06-4",
+      "description": "bounded oscillation ±1 not Cauchy",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b02",
+      "case_id": "kb152-07-1",
+      "description": "x2 on [1,3] has bounds4<=8<=12",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b02",
+      "case_id": "kb152-07-2",
+      "description": "ln2 on [1,2] bounded 1/2..1",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b02",
+      "case_id": "kb152-07-3",
+      "description": "f(0)=0, f(x)=x+2 for x>0 breaks endpoint continuity",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b02",
+      "case_id": "kb152-07-4",
+      "description": "on [-1,1] derivative x2 is not >=0",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec03",
+      "case_id": "kb152-08-1",
+      "description": "P true gives conjunction false and disjunction true",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec03",
+      "case_id": "kb152-08-2",
+      "description": "P false gives conjunction false and disjunction true",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec03",
+      "case_id": "kb152-08-3",
+      "description": "open sentence x>0 depends on assigned x",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec03",
+      "case_id": "kb152-08-4",
+      "description": "conjunction P and not P cannot be true under fixed valuation",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed04",
+      "case_id": "kb152-09-1",
+      "description": "cos 2Hz at 8Hz sample n=0..3",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed04",
+      "case_id": "kb152-09-2",
+      "description": "cos 6Hz and 2Hz at 8Hz identical for 32 exact samples",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed04",
+      "case_id": "kb152-09-3",
+      "description": "continuous frequency 2 and 6 different periods",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed04",
+      "case_id": "kb152-09-4",
+      "description": "8Hz samples cannot uniquely distinguish 2 and 6Hz",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee108",
+      "case_id": "kb152-10-1",
+      "description": "HHTT empirical frequency half differs from p three-fourths",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee108",
+      "case_id": "kb152-10-2",
+      "description": "p quarter n16 iid variance 3/256",
+      "general_formal_proof_certified": false,
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee108",
+      "case_id": "kb152-10-3",
+      "description": "finite sample proportion not invariably p",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-120-ee108",
+      "case_id": "kb152-10-4",
+      "description": "perfect correlation breaks variance divide by n",
+      "general_formal_proof_certified": false,
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    }
+  ],
+  "general_formal_proofs_certified": 0,
+  "invalid_premise_rejections": 20,
+  "legal_or_boundary_witnesses": 20,
+  "schema": "kb152-independent-exact-finite-oracle/1",
+  "student_free_text_steps_verified": 0,
+  "teacher_approved": 0,
+  "total_cases": 40
+}
