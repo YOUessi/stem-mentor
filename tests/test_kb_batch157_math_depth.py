@@ -1,5 +1,5 @@
 """Batch157: source-bound, teacher-only depth, exact math, K00 and API negative regression."""
-import copy,json,sys
+import copy,json,sys,platform
 from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
@@ -33,8 +33,19 @@ def census():
     return result
 
 def test_source_locks_replayed_locally_for_all_ten(rows):
-    assert json.loads(lessons.LOCKS.read_text(encoding="utf-8"))==lessons.actual_mac_line_locks()
+    # Mac-only legal source lives in private PDFKit scratch, never in GitHub CI.
+    # On Linux, validate committed SHA-locked spans through the source builder.
+    locks=json.loads(lessons.LOCKS.read_text(encoding="utf-8"))
+    assert set(locks)==set(lessons.IDS)
     assert len({x["source_candidate_id"] for x in rows})==10
+    for row in rows:
+        lock=locks[row["source_candidate_id"]]
+        assert lock["span_sha256"]==row["source_span_sha256"]
+        assert lock["line_sha256"]==row["source_line_sha256"]
+        assert len(lock["line_sha256"])==lock["end_line"]-lock["start_line"]+1
+    if platform.system()=="Darwin":
+        # Require independent byte-level original PDFKit replay on authorized Mac.
+        assert locks==lessons.actual_mac_line_locks()
 
 @pytest.mark.parametrize("i",range(10))
 def test_draft_has_full_typed_evidence_and_no_forged_teacher_approval(i,rows):

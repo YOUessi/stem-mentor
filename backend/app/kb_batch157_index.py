@@ -9,6 +9,7 @@ from .kb_batch147_index import validate_query
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/"scripts"))
 import build_kb_batch157_lessons as new
+import build_kb_batch157_scope_ledger as source_review
 LocalEditorOnlyError=previous.LocalEditorOnlyError
 
 @lru_cache(maxsize=1)
@@ -67,8 +68,7 @@ def student_evidence_lookup(query,*,limit=8):
 
 def public_coverage():
     rows=load();audit=new.audit(new.build())
-    from scripts.build_kb_batch157_scope_ledger import build as scope_build
-    scope=scope_build()
+    scope=source_review.build()
     return dict(scope="165_EDITOR_ONLY_PENDING_DRAFTS_NOT_OFFICIAL_SYLLABUS",
        editorial_review_manuscripts=len(rows),
        by_track=audit["by_track"],historical_editorial_source_candidates=239,

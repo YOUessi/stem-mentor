@@ -1,0 +1,2261 @@
+PDFKIT_ALL_188_SHA_LOCKED provenance-only manifest; no source words or images exported
+[0/4] Batch24+25 source/P0/math/review guards
+PASS: Batch24 20 original teacher-only REVIEW_PENDING draft lessons
+PASS: 315 source markers, 132 editorial objectives, 23 D/E headings, 28 open gaps; official atomic denominator NULL; repeated text hash groups 22
+PASS: Batch24 20 lesson drafts, 19 unverified proof steps, 538 in all; official denominator NULL
+PASS: 178 engineering topics, 287 REVIEW_PENDING drafts; official knowledge denominator NULL; 0 engineering rows with no lesson
+PASS 61 K00 pages queued, 315 markers, 23 D/E headings; official atoms remain NULL
+PASS 127 P0 step hashes + 10 conflict bounded probes; no full proof or teacher approvals
+PASS 287 draft audit, 538 unverified steps, 0 approved
+PASS source 61 PDF pages / frozen 315 vs pypdf59 317 candidates; official atomic denominator NULL
+PASS 31 editor candidates, 102 unlinked without proposal; 0 teacher-approved
+PASS 35/127 P0 condition proposals; 17 exact-positive+17 negative guards; 0 formal proofs, 0 approvals
+PASS: 48 new P0 step condition profiles + 35 previous = 83/127, 44 remain, 20 exact and 20 negative fixtures, 0 proofs certified
+PASS: 127/127 historical P0 steps have editorial condition reviews (35+48+44), 20 exact valid and 20 illegal-condition fixtures; formally certified=0, teacher-approved=0
+PASS K00 page52 visually checked: rendered 5+3=8 markers, historical 6 omitted 2; 1/61 assistant-viewed, official atoms NULL
+PASS K00 87 original editor candidates on 12 pages; official denominators NULL
+PASS graph {'total_draft_lessons': 287, 'missing_authoritative_graph_edges': 133, 'preexisting_editorial_proposals': 31, 'new_editorial_proposals': 32, 'editorial_proposals_total': 63, 'still_no_editorial_candidate': 70, 'combined_candidate_graph_acyclic': True, 'teacher_approved_proposals': 0, 'authoritative_graph_modified': False, 'student_visible_proposals': 0, 'official_atomic_denominator': None}
+PASS K00 Batch32 130 new editorial candidates, 37 source pages inspected; official syllabus denominators NULL
+PASS K07 Batch32 6 legal exact cases, 6 invalid refusals, zero teacher/theorem certifications
+PASS Batch33 96 elective editorial goals; source pages 61/61 first-pass, official denominator remains null
+PASS Batch33 47 curated related-draft review pairs; 0 certified equivalences
+PASS Batch33 5 valid finite cases + 5 invalid-premise refusals, no general proof
+PASS Batch34 20 original REVIEW_PENDING manuscripts; 40 finite checks; 29 editorial gaps; APPROVED=0
+PASS Batch35 29 original teacher-only manuscripts, 58 finite arithmetic cases, 12 premise guards; approval 0
+PASS 47/47 distinct scoped legacy-link reviews; 0 syllabus equivalence certifications
+Batch37 all three generated artifacts reproduced; 8 teacher-only manuscripts, 16 examples
+Batch38 CHECK 20 teacher manuscripts 40 examples 7 remaining d28e04b16511017119c3560568d9d22f46af6f8eebc57185ee8bf7773f7e2be1
+Batch39 CHECK 7 manuscripts / 14 teacher examples / zero student releases
+Batch40: 12 clause-scope candidates; 9 original pages; {'CONTEXTUAL_APPLICATION': 1, 'DIRECT_SCOPE': 6, 'LOCAL_ELECTIVE_OPTION': 1, 'PARTIAL_DERIVATION': 1, 'TOPIC_ONLY_NOT_EXPLICIT': 3}; CHECK=True
+PASS {'draft_count': 20, 'by_track': {'COMPULSORY': 10, 'SELECTIVE_COMPULSORY': 10}, 'teacher_examples': 40, 'distinct_counterexamples': 20, 'hint_levels': 60, 'near_far_transfers': 40, 'official_atomic_denominator': None, 'teacher_approved': 0, 'student_published': 0}
+PASS {'project_candidates': 313, 'direct_review_drafts': 133, 'legacy_only': 12, 'missing_editorial_link': 168, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None}
+PASS 24 source rows {'KB31': 12, 'KB32': 12} bytes 33355
+PASS ({'project_candidate_lessons': 24, 'compulsory': 12, 'selective_compulsory': 12, 'teacher_only_examples': 48, 'nonexamples': 24, 'hints': 72, 'near_far': 48, 'bounded_exact_operators': 24, 'official_denominator': None, 'general_theorems_formally_certified': 0, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 157, 'legacy_only': 12, 'missing_editorial_link': 144, 'batch43_new': 24, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+PASS ({'project_candidate_lessons': 20, 'compulsory': 20, 'selective_compulsory': 0, 'teacher_only_examples': 40, 'nonexamples': 20, 'hints': 60, 'near_far': 40, 'exact_bounded_operators': 20, 'official_atom_denominator': None, 'formal_theorems_certified': 0, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 177, 'legacy_only': 12, 'missing_editorial_link': 124, 'batch44_new': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+SOURCE_REPRODUCIBLE 24 /Users/youtang/Documents/文件/stem-mentor-kb-batch157/knowledge/editorial_review/kb_batch45_core_depth.jsonl
+PASS ({'new_review_drafts': 24, 'compulsory': 24, 'selective_compulsory': 0, 'teacher_only_worked_examples': 48, 'nonexamples': 24, 'derivation_steps': 72, 'hints': 72, 'near_far_transfers': 48, 'bounded_finite_math_witnesses': 24, 'math_proofs_formally_certified': 0, 'official_atom_denominator': None, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 201, 'legacy_only': 12, 'missing_editorial_link': 100, 'batch45_new': 24, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH46 ({'new_review_drafts': 20, 'selective_compulsory': 20, 'teacher_only_examples': 40, 'concrete_counterexamples': 20, 'staged_derivation_steps': 60, 'graduated_hints': 60, 'near_far_transfers': 40, 'bounded_math_oracles': 20, 'approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 221, 'legacy_only': 12, 'missing_editorial_link': 80, 'batch46_new': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH47 20 CHECK
+BATCH47 ({'new_review_drafts': 20, 'compulsory': 20, 'teacher_only_examples': 40, 'concrete_counterexamples': 20, 'staged_derivation_steps': 60, 'graduated_hints': 60, 'near_far_transfers': 40, 'bounded_math_oracles': 20, 'approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 241, 'legacy_only': 12, 'missing_editorial_link': 60, 'batch47_new': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH48 CHECK 20
+BATCH48 ({'new_review_drafts': 20, 'selective_compulsory': 20, 'teacher_only_examples': 40, 'concrete_counterexamples': 20, 'staged_derivation_steps': 60, 'graduated_hints': 60, 'near_far_transfers': 40, 'bounded_math_oracles': 20, 'approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 261, 'legacy_only': 12, 'missing_editorial_link': 40, 'batch48_new': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH49 CHECK 20
+BATCH49 ({'new_review_drafts': 20, 'compulsory': 14, 'selective_compulsory': 6, 'teacher_examples': 40, 'explicit_counterexamples': 20, 'reasoning_stages': 60, 'graduated_hints': 60, 'near_far_transfers': 40, 'finite_math_oracles': 17, 'nonnumeric_source_methods': 3, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 281, 'legacy_only': 12, 'missing_editorial_link': 20, 'batch49_new': 20, 'compulsory_remaining': 0, 'selective_compulsory_remaining': 20, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+BATCH50 ({'new_drafts': 20, 'selective_compulsory': 20, 'examples': 40, 'counterexamples': 20, 'reasoning_stages': 60, 'graduated_hints': 60, 'transfers': 40, 'finite_exact_oracles': 17, 'research_method_drafts_without_numeric_proof': 3, 'teacher_approved': 0, 'student_published': 0}, {'project_candidates': 313, 'direct_review_drafts': 301, 'legacy_only': 12, 'missing_editorial_link': 0, 'batch50_new': 20, 'compulsory_remaining': 0, 'selective_compulsory_remaining': 0, 'teacher_approved': 0, 'student_published': 0, 'official_atom_denominator': None})
+K00 Batch51 source evidence: 61 pages; 317 marker occurrences; 23 D/E outlines; 15 blind-spot pages; 12 legacy blocks; official atom denominators: null
+Batch52 crosswalk 28 candidates; 9 with no same-page link; check=True
+Batch53: 35 candidate rows; 9 cross-page recovered; 29 links; 12 legacy pending; check=True
+Batch54 CHECK 12 independent REVIEW_PENDING drafts / 24 teacher examples / 61 source pages tracked / official atoms unresolved
+Batch55: 10 unresolved version conflicts, 20 finite probes, 538 uncertified proof steps
+Batch56 original PDFKit span review: 52 spans, 10 pages, 2 optional-not-exam, official denominators unverified; check= True
+Batch57 checked: 78 new source pointers on 12 pages; unreadable visual gaps=2; official denominators UNVERIFIED; check=True
+Batch58 K00: 28 independent requirements; 0 verified; 28 unmapped
+KB59: 108 nonunique pointers, 42 requirements, 14 pages; seven denominators null
+KB59: 14 teacher-only assessments; 42 competencies remain UNMAPPED, approved=0
+Batch60 source leads 106 partial pages 61 full review 0/61
+61-page anchor audit: 428 candidates; 56 unlinked, 7 official denominators null; check=True
+Batch62 triage {'COMPETENCY_BLOCK': 4, 'CONTENT_BLOCK': 5, 'DIRECT_OBJECTIVE': 4, 'PEDAGOGY_BLOCK': 5, 'SUBSECTION_SCOPE': 27, 'TOPIC_CONTAINER': 11} teacher approvals: 0
+Batch63: 45 attested source windows; 31 substantive scopes; 62 provisional atom hypotheses; 14 uncovered nonatom sections; teacher approvals=0
+Batch63 12 draft manuscripts, 24 worked examples, 36 reasoned steps; zero approvals
+OK: 14 teacher-only lessons; 28 original worked examples; 42 reasoned steps; 14 nonatom sections still UNMAPPED; 28 tentative links; zero approvals/published
+Batch65 OK: 17 new, 31/31 provisional scopes; 0 official atoms certified; 0 teacher approvals; 0 students published
+Batch66 check=True rubric=14 exact=14 cross-page-review=6 teacher_approved=0 official_denominator=null
+Batch67: cross-page 6 unnumbered 14 provisional 62 official denominators all unknown
+BATCH68 CHECK OK: 20 original, 40 examples, 60 steps, 20 exact finite cases, 20 local source anchors, 0 official approvals
+BATCH69 CHECK OK; 11 teacher drafts; 22 examples; 33 steps; 11 bounded checks; 62 provisional links; 0 approvals
+Batch70 10 packets, 40 draft mathematical steps; resolved 0
+Batch71:  7 teacher-only lessons, 14 examples, 7 exact cases; zero teacher approval
+MAC_SOURCE_PAGES_VERIFIED= 10 SOURCE_SPANS_VERIFIED=28
+KB72 PASS: 28 tentative source-evidence links, 14 teaching drafts; coverage verified=0
+61 pages, 428 anchors, segments 484 nonatom 28 risks 56
+Batch74 editorial triage 56/56; {'CROSS_PAGE_CONTINUATION': 13, 'CURRICULUM_OR_TRACK_OVERVIEW': 1, 'GRAPHIC_VISUAL_INSPECTED_PENDING_TEACHER': 1, 'MIXED_REQUIRES_SPLIT': 11, 'PAGE_FURNITURE': 12, 'PEDAGOGICAL_GUIDANCE': 6, 'SCHOOL_DEFINED_ELECTIVE': 1, 'SUBSTANTIVE_UNNUMBERED': 11}; source_check=True; official_denominator=unknown
+Batch74 4 geometry theorem review packets / 8 exact finite fixtures; official approvals=0
+Batch74 p35 original Mac rendered image checked
+Batch75 22 source segments 60 editorial proposals; none officially certified
+Batch75 lessons: 8 teacher drafts with exact bounded witnesses
+KB76 cross-track candidate boundary reviews 26 {'PARTIAL_TOPIC_OVERLAP': 5, 'RELATED_DISTINCT': 16, 'SAME_TOPIC_UNCERTIFIED': 5}
+KB76 independent original teacher drafts 8
+KB76 candidate completeness 15 /26 linked draft candidates, no official denominators
+Batch77 11 authored drafts; 26/26 local links; 11 bounded exact witnesses; official denominators unknown
+{"historical_proof_steps": 538, "source_counts": {"BATCH18": 451, "BATCH21": 23, "BATCH22": 23, "BATCH23": 22, "BATCH24": 19}, "claim_and_reason_sha_verified": 538, "p0_unverified_steps": 127, "new_teacher_review_cards": 16, "new_teacher_only_example_tasks": 32, "bounded_exact_positive_witnesses": 16, "bounded_invalid_assumptions_rejected": 16, "formally_certified_steps": 0, "whole_theorem_certifications": 0, "teacher_approvals": 0, "free_text_student_steps_verified": 0, "student_published": 0, "official_atomic_denominators": {"COMPULSORY": null, "SELECTIVE_COMPULSORY": null, "ELECTIVE_A": null, "ELECTIVE_B": null, "ELECTIVE_C": null, "ELECTIVE_D": null, "ELECTIVE_E": null}, "full_page_human_atomizations": 0, "historical_conflicts_unresolved": 10}
+{"COMPULSORY": {"anchored_line_partition_segments": 164, "unanchored_editorial_triage_segments": 22, "subspan_editorial_components": 17, "local_candidate_topics": 4}, "SELECTIVE_COMPULSORY": {"anchored_line_partition_segments": 113, "unanchored_editorial_triage_segments": 12, "subspan_editorial_components": 8, "local_candidate_topics": 2}, "ELECTIVE_A": {"anchored_line_partition_segments": 73, "unanchored_editorial_triage_segments": 4, "subspan_editorial_components": 10, "local_candidate_topics": 6}, "ELECTIVE_B": {"anchored_line_partition_segments": 77, "unanchored_editorial_triage_segments": 7, "subspan_editorial_components": 16, "local_candidate_topics": 11}, "ELECTIVE_C": {"anchored_line_partition_segments": 34, "unanchored_editorial_triage_segments": 5, "subspan_editorial_components": 6, "local_candidate_topics": 2}, "ELECTIVE_D": {"anchored_line_partition_segments": 21, "unanchored_editorial_triage_segments": 4, "subspan_editorial_components": 3, "local_candidate_topics": 1}, "ELECTIVE_E": {"anchored_line_partition_segments": 1, "unanchored_editorial_triage_segments": 1, "subspan_editorial_components": 0, "local_candidate_topics": 0}}
+{"historic_debt": 538, "new_cards": 12, "high_risk_cards_cumulative": 28, "certified_proofs": 0}
+B80 8 original teacher cards; 8 guarded finite positive and 8 invalid instances; 0 certified
+{"review_anchors": 428, "p0": 127, "p0_with_cards": 36, "p0_without": 91, "official_denominators": "UNKNOWN", "unresolved_conflicts": 10}
+Batch81 12 cards: 24 original solved examples, 36 review-only proof steps; 12 finite passes and 12 invalid rejections
+Batch81: 182 all-P0, 48 draft links, 134 unlinked; 428 source obligations; no official atom certification
+Batch81 semantic proposals: 42 of 428 source anchors; teacher review zero
+Batch82: 10 conflicts, 16 exact valid, 20 rejected, unresolved=10, check=True
+Batch83: 60 new / 102 cumulative / 428 source anchors; 5 exact finite distinctions; 0 official atoms or human teacher approvals
+Batch84: 67 new / 169 cumulative / 428 source anchors; 259 pending; official atom total unknown
+Batch84: 10 teacher-only transformations; exact finite counterexamples; 0 teacher approvals
+Batch85: +80 reviewed anchors, 249/428; 179 pending; official atoms unknown
+Batch85 P0: +12 linked historical cards; 60/182 P0 card-linked; 122 no card; 0 certified
+Batch86 source: +89, 338/428, 90 pending; official math atoms UNKNOWN
+Batch86 P0: 10 new drafts (6 new distinct steps + 4 supplemental); 64/182 distinct P0 links, 118 missing; 0 certified
+Batch87 source editorial 428/428; official seven-track denominator UNKNOWN; teachers=0.
+Batch87 teacher-only originals: 7 full modules x2 solved examples x4 reasoning steps; finite exact witnesses valid and invalid.
+Batch87 provisional curriculum census: 428 source anchors; 300 UNADJUDICATED topic labels; official math atoms UNKNOWN; approved=0
+Batch88: 36 editor-proposed relations; 70 subjects; 0 approved; official atom denominator UNKNOWN
+Batch89: 12 new uniquely linked P0 drafts; 76/182 historical P0 draft-covered; 300 provisional topics, 230 unpaired; 0 teacher-approved
+Batch90 source locked: 24 editorial pairs; 48 newly compared distinct candidates; 118/300 covered; 182 still unpaired; 0 approvals
+BATCH91 20 drafts 7 tracks check official_denominator=UNKNOWN
+BATCH92 24 pairs 48 new source topics 134 remaining official_curriculum_denominator=UNKNOWN
+Batch93 300 provisional, 24 individual editorial, 110 unevaluated; oracles 14
+BATCH94 14 deep drafts 96 remaining without individual audit CHECK
+BATCH95 16 original draft lessons 80 not individually audited CHECK
+BATCH96 12 original draft lessons 68 not individually audited CHECK
+BATCH96 candidate audit: 300 stages= {'FULL_DEEP_DRAFT_PENDING_TEACHER': 42, 'INDIVIDUAL_SCOPE_NOT_ATOMIZED': 24, 'NO_INDIVIDUAL_EDITORIAL': 68, 'PAIR_COMPARISON_NOT_ATOMIZED': 166} CHECK
+BATCH97 12 original draft lessons 56 not individually audited CHECK
+BATCH97 candidate audit: 300 stages= {'FULL_DEEP_DRAFT_PENDING_TEACHER': 54, 'INDIVIDUAL_SCOPE_NOT_ATOMIZED': 24, 'NO_INDIVIDUAL_EDITORIAL': 56, 'PAIR_COMPARISON_NOT_ATOMIZED': 166} CHECK
+BATCH98 12 original draft lessons 44 not individually audited CHECK
+BATCH98 source-scope 12 new; still unaudited 32 CHECK
+BATCH99 source-locked 32 scope interpretations, 0 remaining; check: True
+BATCH99 seven track 66 {'CROSS_TRACK_EDITORIAL_ONLY': 7, 'MATCH_EDITORIAL_ONLY': 49, 'TRACK_UNRESOLVED': 10} legacy_missed 3 check True
+Batch99 prerequisite audit 66 132 text notes; 0 typed edges; check True
+BATCH100: 20 full teacher drafts, 40 examples, 60 hints; 300 provisional stages; official denominator UNKNOWN; check True
+BATCH100 COVERAGE 20 new/86 cumulative; 172 unresolved prerequisite notes; teacher 0; check True
+BATCH101 REVIEW QUEUE pages=61 anchors=428 themes=134 prereqs=172 approved=0 check True
+BATCH101 20 mathematical editorial pairs, 20 bounded witnesses; 114 remain, approved=0; check True
+BATCH101 COVERAGE 166+20+114=300; unapproved prereq=172; teacher 0; check True
+BATCH102 exact comparisons 20 / provisional 206 of 300, 94 unpaired, teacher approvals 0, check=True
+BATCH103 CHECK PASS: 20 mathematical source pairs; 226/300 provisional; 74 pending; no approvals
+Batch104 12 new teacher-only draft lessons, 24 worked examples, 12 finite oracles, 5 curated candidate prereq links; --check True
+Batch104 source audit: 12 source spans / 76 PDFKit lines, check=True, local=True
+Batch105: 17 requirement candidates, 10 source partitions, 2 bridges, 17 witnesses; check=True
+Batch106: 25 requirement candidates, 14 source partitions, 2 bridges, 25 witnesses; check=True
+Batch106 6 new teacher-only draft lessons, 12 worked examples, 6 finite oracles, 1 curated candidate prereq links; --check True
+Batch107 source review 23 draft source candidates; 23 finite positives and 23 invalid generalizations; check True
+Batch108 scope: 20 editorial, 17 exact, 53 source lines; PASS
+Batch108 lessons: 10 full teacher drafts, 20 examples, 24 proof-step candidates; PASS
+Batch109 scope PASS: 20 candidate interpretations, 15 bounded exact instances, 54 source lines
+Batch109 lessons: 10 full teacher drafts, 20 examples, 12 proof-step candidates; PASS
+Batch110 scope PASS 20 14 {'COMPULSORY': 9, 'SELECTIVE_COMPULSORY': 0, 'ELECTIVE_A': 9, 'ELECTIVE_B': 2, 'ELECTIVE_C': 0, 'ELECTIVE_D': 0, 'ELECTIVE_E': 0}
+Batch110 lessons PASS 8 {'concept': 2, 'method': 3, 'theorem': 3} 12
+Batch110 coverage PASS: 7 denominators UNKNOWN, 8 lesson structures complete, 0 teacher approvals
+Batch111 PASS 68 20 17 8 draft lessons 12 unverified proof steps
+Batch112 PASS 59 20 18 8 draft lessons 12 unverified proof steps
+Batch113 PASS 55 22 20 9 new drafts 9 uncertified proof steps
+Batch114 OK: 21 source candidates, 8 lessons, 12 pending proof steps, 14/61 provisional page source audits; all 7 atom denominators UNKNOWN
+Batch115 OK: 4 source pages, 24 candidates, 8 original draft lessons, 9 uncertified steps; 18/61 source pages, official denominators UNKNOWN
+Batch116 source ledger: 61 fingerprints, 18 provisional structure pages, 43 pending, 7 track atom denominators UNKNOWN, teacher-approved 0
+Batch116 independent exact condition witnesses: 28 positive / 28 negative; universal proofs 0
+BATCH117 CHECK 43 source pages indexed (not human reviewed); 8 original drafts; 16 exact witnesses; official denominator UNKNOWN
+........................................................................ [ 35%]
+........................................................................ [ 71%]
+..........................................................               [100%]
+202 passed in 2.27s
+Batch117 whole-PDF navigation CHECK 188 pages, 6 editorial segments, 7 denominators UNKNOWN, 0 approvals
+...................................                                      [100%]
+35 passed in 1.14s
+Batch118 source marker ledger: 1684 source lines / 61 pages / 405 editorial cues; OFFICIAL denominators UNKNOWN
+Batch118 eight teacher-only probability drafts, 16 original examples, 16 finite exact checks; all PENDING, 0 approvals
+........................................................................ [ 12%]
+........................................................................ [ 25%]
+........................................................................ [ 38%]
+........................................................................ [ 50%]
+........................................................................ [ 63%]
+........................................................................ [ 76%]
+........................................................................ [ 89%]
+.............................................................            [100%]
+565 passed in 2.36s
+Batch119: 49 project-authored semantic proposals, 15 exact finite checks, all PENDING, official denominator UNKNOWN
+........................................................................ [ 75%]
+........................                                                 [100%]
+96 passed in 1.51s
+Batch119: 6 review-pending proof manuscripts, 17 finite exact verifications; zero teacher approval
+.................                                                        [100%]
+17 passed in 1.04s
+Batch120: 64 new, 113 cumulative editorial candidates, 144/405 layout cues linked; official seven-track denominator UNKNOWN; no teacher approval
+Batch120: 32 positive/negative exact witness pairs; zero general proofs
+........................................................................ [ 50%]
+......................................................................   [100%]
+142 passed in 2.97s
+Batch120 six teacher-only proof families, 12 exact worked-example checks, zero formal certification
+Batch121: 30 review proposals, 174/405 cues linked, 231 unresolved, official denominators UNKNOWN
+Batch121: 8 original deep teacher draft lessons, 16 exact examples, 8 boundary negative cases, 0 approved
+........................................................................ [ 14%]
+........................................................................ [ 28%]
+........................................................................ [ 43%]
+........................................................................ [ 57%]
+........................................................................ [ 72%]
+........................................................................ [ 86%]
+....................................................................     [100%]
+500 passed in 3.86s
+Batch122: 32 authored, 175 cumulative, 206/405 linked, 199 unlinked, official denominator UNKNOWN
+Batch122 depth: 8 original lessons, 16 exact examples, 8 invalid use, 8 other boundaries, 0 approved
+........................................................................ [ 14%]
+........................................................................ [ 28%]
+........................................................................ [ 42%]
+........................................................................ [ 57%]
+........................................................................ [ 71%]
+........................................................................ [ 85%]
+.......................................................................  [100%]
+503 passed in 16.74s
+Batch123: 32 authored, 207 cumulative, 238/405 linked, 167 unlinked, official denominator UNKNOWN
+Batch123 depth: 8 original lessons, 16 exact examples, 8 invalid use, 8 other boundaries, 0 approved
+Batch124 32 new 239 total 270 linked 135 unlinked; official atoms UNKNOWN
+Batch124 deep: 8 lessons; 16 exact examples, 8 invalid premise, 8 cross checks
+........................................................................ [ 14%]
+........................................................................ [ 28%]
+........................................................................ [ 42%]
+........................................................................ [ 57%]
+........................................................................ [ 71%]
+........................................................................ [ 85%]
+........................................................................ [ 99%]
+.                                                                        [100%]
+505 passed in 6.60s
+Batch125 evidence audit: 239 proposals; {'HEADING_OR_SUBTOPIC_ONLY_REQUIRES_CLAUSE': 109, 'NO_LAYOUT_MARKER_ALTERNATE_EVIDENCE_REVIEW': 10, 'NUMBERED_ANCHOR_PRESENT_NOT_CERTIFIED': 108, 'OPTIONAL_EXAMPLE_NOT_REQUIRED_ATOM': 12} residual {'NUMBERED_REQUIREMENT_CUE': 6, 'SUBTOPIC_CUE': 76, 'TOPIC_CUE': 53}
+Batch125: 10 unresolved conflicts, 20 finite independent checks; 538 unverified steps unchanged
+Batch125 six numbered requirement packets ready: 6 pending human review, zero certified
+........................................................................ [ 15%]
+........................................................................ [ 31%]
+........................................................................ [ 47%]
+........................................................................ [ 63%]
+........................................................................ [ 79%]
+........................................................................ [ 95%]
+...................                                                      [100%]
+451 passed in 5.57s
+........................................................................ [ 13%]
+........................................................................ [ 27%]
+........................................................................ [ 41%]
+........................................................................ [ 55%]
+........................................................................ [ 69%]
+........................................................................ [ 83%]
+........................................................................ [ 97%]
+............                                                             [100%]
+516 passed in 3.81s
+.................................                                        [100%]
+33 passed in 0.90s
+Batch107: ten teacher-only complete lessons, twenty checked worked examples, ten bounded oracles; --check True
+Batch126 26 source-locked editorial reviews; official atomic denominators UNKNOWN; approvals zero
+........................................................................ [ 80%]
+.................                                                        [100%]
+89 passed in 7.87s
+Batch127 28 source dossiers across 7 tracks; 48 cumulative context cases; 191 unreviewed
+Batch127 8 deep lessons; 16 exact examples + 8 negative + 8 cross checks
+........................................................................ [ 75%]
+........................                                                 [100%]
+96 passed in 9.88s
+Batch128: 28 source-locked cases, 56 provisional subtargets, 76/239 context-reviewed, 163 left; NO official atoms.
+Batch128 P0: 20 new source-linked guard cards, 40 finite exact cases; 56/127 P0 with review cards, 71 missing; ZERO formal proof certifications
+........................................................................ [ 55%]
+.........................................................                [100%]
+129 passed in 9.99s
+Batch130: 53 new Mac source contexts; 157/239 checked, 82 unreviewed; official 7-track denominator UNKNOWN
+Batch130: eight teacher manuscripts, sixteen independent exact worked examples, eight negative checks
+{
+  "batch": 130,
+  "complete_teacher_pending_manuscripts": 8,
+  "context_reviews": 53,
+  "cumulative_context_checked": 157,
+  "historical_editorial_candidates": 239,
+  "independent_exact_example_checks": 16,
+  "invalid_counterexample_checks": 8,
+  "official_atom_denominator": null,
+  "original_mac_pdf_rehashed_by_CI": false,
+  "student_authority_releases": 0,
+  "teacher_approvals": 0
+}
+........................................................................ [ 47%]
+........................................................................ [ 94%]
+.........                                                                [100%]
+153 passed in 2.19s
+MAC_B131_OK; PDF REHASHED; 200/239 reviewed; 39 pending
+OFFLINE_B131_OK; PDF NOT REHASHED; 200/239 reviewed
+B131 MATH 16 valid + 16 invalid EXACT; universal proofs=0
+........................................................................ [ 53%]
+..............................................................           [100%]
+134 passed in 23.10s
+PASS Mac original source rehashed 39
+PASS offline committed evidence only 39
+Batch132: 8 teacher draft manuscripts 16 exact examples 8 negative cases
+........................................................................ [ 51%]
+.....................................................................    [100%]
+141 passed in 46.20s
+MAC ORIGINAL SOURCE REPLAY PASS 41 unapproved proposals, 0 student-authoritative
+CI OFFLINE COMMITMENT GATE PASS 41 unapproved proposals, 0 student-authoritative
+PASS 6 deep teacher-only lessons, 12 teacher examples, 0 approval
+PASS exact 18 finite checks; general theorem approval=0
+........................................................................ [ 12%]
+........................................................................ [ 24%]
+........................................................................ [ 36%]
+........................................................................ [ 49%]
+........................................................................ [ 61%]
+........................................................................ [ 73%]
+........................................................................ [ 86%]
+........................................................................ [ 98%]
+........                                                                 [100%]
+584 passed in 3.64s
+PASS graph 41 nodes 32 edges 2 reuse groups; official denominators UNKNOWN
+PASS 8 teacher-only lessons 16 worked examples; approved 0
+PASS 16 positive + 8 negative exact finite SymPy witnesses; 0 general proofs
+........................................................................ [ 26%]
+........................................................................ [ 52%]
+........................................................................ [ 78%]
+...........................................................              [100%]
+275 passed in 3.49s
+PASS Batch135 eight original teacher-only mathematical manuscripts
+PASS Batch135 16 positive, 8 invalid-precondition exact cases, 4 symbolic subclaims; no general proof certified
+PASS 41 bounded candidates, 22 teacher drafts, 19 missing; official denominators UNKNOWN
+........................................................................ [ 30%]
+........................................................................ [ 60%]
+........................................................................ [ 90%]
+.......................                                                  [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+239 passed, 1 warning in 3.75s
+PASS: Batch136 12 original source-linked teacher-only lessons
+PASS: Batch136 24 exact worked instances and 12 invalid-precondition witnesses; general proof 0
+PASS 41 bounded candidates, 34 teacher drafts, 7 missing; official denominators UNKNOWN
+........................................................................ [ 27%]
+........................................................................ [ 55%]
+........................................................................ [ 83%]
+..........................................                               [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+258 passed, 1 warning in 3.60s
+PASS: seven original deep teacher-only manuscripts; all approvals and student releases zero
+PASS 21 independent exact finite cases; no general theorem certification
+PASS 41/41 bounded review drafts; official seven-track denominator UNKNOWN
+........................................................................ [ 38%]
+........................................................................ [ 76%]
+............................................                             [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+188 passed, 1 warning in 5.87s
+PASS Batch138 8 source-line-locked B/C/D/E drafts; 49 cumulative bounded drafts; official total UNKNOWN MAC
+PASS Batch138 32 independently evaluated exact finite cases; 8 rejected invalid conditions; zero general proof certificates
+........................................................................ [ 35%]
+........................................................................ [ 71%]
+.........................................................                [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+201 passed, 1 warning in 12.33s
+PASS Batch139 8 source-locked lessons / 57 bounded manuscripts; official course denominator UNKNOWN MAC
+PASS 32/32 independent exact witnesses (8 rejected invalid preconditions); zero general proof certifications
+........................................................................ [ 31%]
+........................................................................ [ 62%]
+........................................................................ [ 93%]
+..............                                                           [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+230 passed, 1 warning in 9.73s
+Batch140: 24 P0 source-locked review cards, 80/127 guarded; 47 unguarded; zero formal certification
+PASS Batch140 independent SymPy: 24 positive/boundary, 24 invalid-premise; zero general proofs
+........................................................................ [ 19%]
+........................................................................ [ 38%]
+........................................................................ [ 57%]
+........................................................................ [ 77%]
+........................................................................ [ 96%]
+.............                                                            [100%]
+373 passed in 4.54s
+PASS KB141: 47 existing editorial cases source-locked; P0 127/127 newer cards, 0 formal proofs
+PASS KB141 independent math: 12 positive + 12 negative finite cases, 0 universal proofs
+........................................................................ [  7%]
+........................................................................ [ 15%]
+........................................................................ [ 23%]
+........................................................................ [ 30%]
+........................................................................ [ 38%]
+........................................................................ [ 46%]
+........................................................................ [ 53%]
+........................................................................ [ 61%]
+........................................................................ [ 69%]
+........................................................................ [ 77%]
+........................................................................ [ 84%]
+........................................................................ [ 92%]
+......................................................................   [100%]
+934 passed in 28.68s
+PASS Batch142: 35 exact legal + 35 exact invalid-premise witnesses; no general certification
+PASS Batch142 seven-track scope accounting: 57 provisional drafts, UNKNOWN official denominators
+........................................................................ [ 36%]
+........................................................................ [ 73%]
+.....................................................                    [100%]
+197 passed in 15.44s
+PASS Batch143: 8 rigorous original lessons, 65 editor-only drafts, UNKNOWN official denominators
+PASS 32 exact finite cases (16 positive, 16 rejected invalid), 0 universal proof certifications
+PASS candidate-to-draft crosswalk: 239 editorial candidates; 65 teacher drafts; 7 official atom denominators UNKNOWN
+........................................................................ [ 14%]
+........................................................................ [ 28%]
+........................................................................ [ 42%]
+........................................................................ [ 56%]
+........................................................................ [ 70%]
+........................................................................ [ 85%]
+........................................................................ [ 99%]
+....                                                                     [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+508 passed, 1 warning in 8.06s
+PDF REHASHED original lines PASS (licensed Mac source not uploaded)
+PASS Batch144: 10 seven-track source-hashed teacher lessons, 75 REVIEW_PENDING, 0 APPROVED
+PASS Batch144 40/40 independent finite/exact math (20 valid, 20 invalid); certified proofs 0
+PASS Batch144 source crosswalk: 239 provisional; 34 matched; 205 still missing; official denominators UNKNOWN
+........................................................................ [ 31%]
+........................................................................ [ 63%]
+........................................................................ [ 95%]
+...........                                                              [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+227 passed, 1 warning in 7.16s
+PDF REHASHED original lines PASS (licensed Mac source not uploaded)
+PASS Batch146: 10 seven-track source-hashed teacher lessons, 85 REVIEW_PENDING, 0 APPROVED
+PASS Batch146 40 exact finite cases: 20 legal/20 rejected invalid; teacher approval 0
+PASS Batch146 source crosswalk: 239 provisional; 44 matched; 195 still missing; official denominators UNKNOWN
+........................................................................ [ 27%]
+........................................................................ [ 54%]
+........................................................................ [ 81%]
+..................................................                       [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+266 passed, 1 warning in 7.12s
+PDF REHASHED original lines PASS (licensed Mac source not uploaded)
+PASS Batch147: 10 seven-track source-hashed teacher lessons, 95 REVIEW_PENDING, 0 APPROVED
+PASS Batch147: 40 independent exact math witnesses; 20 positive, 20 precondition rejects; 0 teacher-approved
+PASS Batch147 source crosswalk: 239 provisional; 54 matched; 185 still missing; official denominators UNKNOWN
+........................................................................ [ 27%]
+........................................................................ [ 54%]
+........................................................................ [ 81%]
+..................................................                       [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+266 passed, 1 warning in 7.39s
+PASS Batch147 K00: 239 provisional leads; 54 draft-linked /185 unmatched; no official denominators; 89 source review edges
+.................                                                        [100%]
+17 passed in 4.28s
+PASS K00 Batch148: 315 numbered anchors/61 source pages; 41 proposals, 239 leads; seven official atom denominators UNKNOWN
+PASS K07 Batch148: 10 source conflicts, 40/40 finite exact math cases; all adjudications pending
+........................................................................ [  9%]
+........................................................................ [ 19%]
+........................................................................ [ 29%]
+........................................................................ [ 39%]
+........................................................................ [ 49%]
+........................................................................ [ 59%]
+........................................................................ [ 69%]
+........................................................................ [ 78%]
+........................................................................ [ 88%]
+........................................................................ [ 98%]
+..........                                                               [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+730 passed, 1 warning in 6.98s
+Mac PDFKit source rehash PASS; copyrighted standard text not exported
+PASS Batch149: 10 deep teacher manuscripts; 105 REVIEW_PENDING; 0 APPROVED
+PASS Batch149 40/40 exact limited witnesses: 20 legal/boundary + 20 invalid, 0 certification
+PASS Batch149 unnumbered D/E source-line SHA queue: 122 nonempty lines, 5 pages, 4 unadjudicated page seams, 0 official atoms
+PASS Batch149 source→draft crosswalk: 64 matched, 175 unmatched (editorial only), official unknown
+........................................................................ [ 17%]
+........................................................................ [ 35%]
+........................................................................ [ 53%]
+........................................................................ [ 71%]
+........................................................................ [ 88%]
+.............................................                            [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+405 passed, 1 warning in 7.26s
+KB150 C/D/E semantic boundary PASS: 5 C +100 D +10 E +7 furniture; 32 pending proposals; all official denominators UNKNOWN
+KB150 original Mac PDFKit SHA replay PASS: 122/122 licensed lines; 2 headings and 1 crosspage continuation
+....................................                                     [100%]
+36 passed in 2.07s
+[1/4] Backend regression tests
+Batch129: 28 new verified contexts, 104/239 reviewed; 135 remain; 7 official denominators UNKNOWN
+Batch129: nine seven-track teacher manuscripts, 18 verified examples + 9 negatives + 9 cross checks
+........................................................................ [ 65%]
+......................................                                   [100%]
+110 passed in 8.06s
+........................................................................ [  0%]
+........................................................................ [  0%]
+........................................................................ [  0%]
+........................................................................ [  0%]
+........................................................................ [  0%]
+........................................................................ [  0%]
+........................................................................ [  0%]
+........................................................................ [  0%]
+........................................................................ [  0%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 13%]
+........................................................................ [ 13%]
+........................................................................ [ 13%]
+........................................................................ [ 13%]
+........................................................................ [ 13%]
+........................................................................ [ 13%]
+........................................................................ [ 13%]
+........................................................................ [ 13%]
+........................................................................ [ 13%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 15%]
+........................................................................ [ 15%]
+........................................................................ [ 15%]
+........................................................................ [ 15%]
+........................................................................ [ 15%]
+........................................................................ [ 15%]
+........................................................................ [ 15%]
+........................................................................ [ 15%]
+........................................................................ [ 15%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 20%]
+........................................................................ [ 20%]
+........................................................................ [ 20%]
+........................................................................ [ 20%]
+........................................................................ [ 20%]
+........................................................................ [ 20%]
+........................................................................ [ 20%]
+........................................................................ [ 20%]
+........................................................................ [ 20%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 22%]
+........................................................................ [ 22%]
+........................................................................ [ 22%]
+........................................................................ [ 22%]
+........................................................................ [ 22%]
+........................................................................ [ 22%]
+........................................................................ [ 22%]
+........................................................................ [ 22%]
+........................................................................ [ 22%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 30%]
+........................................................................ [ 30%]
+........................................................................ [ 30%]
+........................................................................ [ 30%]
+........................................................................ [ 30%]
+........................................................................ [ 30%]
+........................................................................ [ 30%]
+........................................................................ [ 30%]
+........................................................................ [ 30%]
+........................................................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 32%]
+........................................................................ [ 32%]
+........................................................................ [ 32%]
+........................................................................ [ 32%]
+........................................................................ [ 32%]
+........................................................................ [ 32%]
+........................................................................ [ 32%]
+........................................................................ [ 32%]
+........................................................................ [ 32%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 33%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 35%]
+........................................................................ [ 35%]
+........................................................................ [ 35%]
+........................................................................ [ 35%]
+........................................................................ [ 35%]
+........................................................................ [ 35%]
+........................................................................ [ 35%]
+........................................................................ [ 35%]
+........................................................................ [ 35%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 40%]
+........................................................................ [ 40%]
+........................................................................ [ 40%]
+........................................................................ [ 40%]
+........................................................................ [ 40%]
+........................................................................ [ 40%]
+........................................................................ [ 40%]
+........................................................................ [ 40%]
+........................................................................ [ 40%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+.....................s..............s................................... [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+................................................................s....... [ 76%]
+........................................................................ [ 76%]
+..........................................s........s.................... [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 86%]
+........................................................................ [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 93%]
+........................................................................ [ 93%]
+........................................................................ [ 93%]
+........................................................................ [ 93%]
+........................................................................ [ 93%]
+........................................................................ [ 93%]
+........................................................................ [ 93%]
+........................................................................ [ 93%]
+........................................................................ [ 93%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 99%]
+........................................................................ [ 99%]
+........................................................................ [ 99%]
+........................................................................ [ 99%]
+........................................................................ [ 99%]
+........................................................................ [ 99%]
+........................................................................ [ 99%]
+........................................................................ [ 99%]
+........................................................................ [ 99%]
+..........................................................               [100%]
+=============================== warnings summary ===============================
+../../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+66293 passed, 5 skipped, 1 warning in 1095.15s (0:18:15)
+[2/4] Simulated tutor policy
+Synthetic decisions+retrieval: 33/33 pass; report: /Users/youtang/Documents/文件/stem-mentor-kb-batch157/evaluations/results/2026-10-15-policy-and-retrieval.json
+[3/4] Structured retrieval hard negatives
+Hard-negative retrieval: 40/40; top3=22/22; contract_valid=True
+[4/4] Frontend JavaScript syntax
+TAP version 13
+# Subtest: required pure mathematics module exists
+ok 1 - required pure mathematics module exists
+  ---
+  duration_ms: 9.21575
+  type: 'test'
+  ...
+# Subtest: vector addition subtraction scale dot and length
+ok 2 - vector addition subtraction scale dot and length
+  ---
+  duration_ms: 6.844834
+  type: 'test'
+  ...
+# Subtest: orthogonal projection uses signed dot product and orthogonal residual
+ok 3 - orthogonal projection uses signed dot product and orthogonal residual
+  ---
+  duration_ms: 0.43525
+  type: 'test'
+  ...
+# Subtest: zero vectors do not acquire a direction or invented projection
+ok 4 - zero vectors do not acquire a direction or invented projection
+  ---
+  duration_ms: 2.571334
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 0
+ok 5 - unit circle canonical angle 0
+  ---
+  duration_ms: 0.270208
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 90
+ok 6 - unit circle canonical angle 90
+  ---
+  duration_ms: 0.097542
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 180
+ok 7 - unit circle canonical angle 180
+  ---
+  duration_ms: 0.17525
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 270
+ok 8 - unit circle canonical angle 270
+  ---
+  duration_ms: 0.091875
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 360
+ok 9 - unit circle canonical angle 360
+  ---
+  duration_ms: 0.467125
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle -90
+ok 10 - unit circle canonical angle -90
+  ---
+  duration_ms: 3.152083
+  type: 'test'
+  ...
+# Subtest: unit circle canonical angle 450
+ok 11 - unit circle canonical angle 450
+  ---
+  duration_ms: 0.428
+  type: 'test'
+  ...
+# Subtest: unit-circle multiple turns negative degrees and quadrant invariant
+ok 12 - unit-circle multiple turns negative degrees and quadrant invariant
+  ---
+  duration_ms: 5.934333
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for quadratic
+ok 13 - secant limiting derivative for quadratic
+  ---
+  duration_ms: 0.575833
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for cubic
+ok 14 - secant limiting derivative for cubic
+  ---
+  duration_ms: 0.135875
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for log
+ok 15 - secant limiting derivative for log
+  ---
+  duration_ms: 0.123917
+  type: 'test'
+  ...
+# Subtest: secant limiting derivative for abs
+ok 16 - secant limiting derivative for abs
+  ---
+  duration_ms: 0.114042
+  type: 'test'
+  ...
+# Subtest: quadratic secant is 2x+h even for small increments
+ok 17 - quadratic secant is 2x+h even for small increments
+  ---
+  duration_ms: 0.184292
+  type: 'test'
+  ...
+# Subtest: h=0 means absent secant, not zero division or fake tangent
+ok 18 - h=0 means absent secant, not zero division or fake tangent
+  ---
+  duration_ms: 1.509333
+  type: 'test'
+  ...
+# Subtest: absolute-value corner has no derivative but one-sided secants differ
+ok 19 - absolute-value corner has no derivative but one-sided secants differ
+  ---
+  duration_ms: 0.371792
+  type: 'test'
+  ...
+# Subtest: log domain excludes invalid point and invalid second secant endpoint
+ok 20 - log domain excludes invalid point and invalid second secant endpoint
+  ---
+  duration_ms: 0.247458
+  type: 'test'
+  ...
+# Subtest: box horizontal plane gives actual four-vertex area
+ok 21 - box horizontal plane gives actual four-vertex area
+  ---
+  duration_ms: 3.138625
+  type: 'test'
+  ...
+# Subtest: central diagonal cube section is a regular hexagon, not a fixed rectangle
+ok 22 - central diagonal cube section is a regular hexagon, not a fixed rectangle
+  ---
+  duration_ms: 1.016584
+  type: 'test'
+  ...
+# Subtest: cube cut point edge face and empty are separate cases
+ok 23 - cube cut point edge face and empty are separate cases
+  ---
+  duration_ms: 2.9435
+  type: 'test'
+  ...
+# Subtest: plane scaling leaves intersection unchanged
+ok 24 - plane scaling leaves intersection unchanged
+  ---
+  duration_ms: 1.99625
+  type: 'test'
+  ...
+# Subtest: square pyramid section narrows toward apex
+ok 25 - square pyramid section narrows toward apex
+  ---
+  duration_ms: 0.576542
+  type: 'test'
+  ...
+# Subtest: sphere plane produces circle tangent point empty, and zero-normal invalid
+ok 26 - sphere plane produces circle tangent point empty, and zero-normal invalid
+  ---
+  duration_ms: 1.279417
+  type: 'test'
+  ...
+# Subtest: 240 deterministic cube sections stay coplanar inside bounds with finite area
+ok 27 - 240 deterministic cube sections stay coplanar inside bounds with finite area
+  ---
+  duration_ms: 36.748625
+  type: 'test'
+  ...
+# Subtest: cube triangular and pentagonal sections have independent analytic areas
+ok 28 - cube triangular and pentagonal sections have independent analytic areas
+  ---
+  duration_ms: 0.485667
+  type: 'test'
+  ...
+# Subtest: quadratic convex minimum interior but maximum is endpoint
+ok 29 - quadratic convex minimum interior but maximum is endpoint
+  ---
+  duration_ms: 7.729875
+  type: 'test'
+  ...
+# Subtest: concave quadratic can maximize at internal stationary
+ok 30 - concave quadratic can maximize at internal stationary
+  ---
+  duration_ms: 1.436208
+  type: 'test'
+  ...
+# Subtest: constant function extrema attained at all points in interval
+ok 31 - constant function extrema attained at all points in interval
+  ---
+  duration_ms: 0.417333
+  type: 'test'
+  ...
+# Subtest: linear function does not invent stationary points
+ok 32 - linear function does not invent stationary points
+  ---
+  duration_ms: 0.775084
+  type: 'test'
+  ...
+# Subtest: cubic stationary local extrema can lose to endpoint globally
+ok 33 - cubic stationary local extrema can lose to endpoint globally
+  ---
+  duration_ms: 0.837584
+  type: 'test'
+  ...
+# Subtest: absolute cusp is candidate but not differentiable
+ok 34 - absolute cusp is candidate but not differentiable
+  ---
+  duration_ms: 0.408083
+  type: 'test'
+  ...
+# Subtest: sine critical points include translated finite interval
+ok 35 - sine critical points include translated finite interval
+  ---
+  duration_ms: 1.708666
+  type: 'test'
+  ...
+# Subtest: sin with negative amplitude and frequency still finds correct extremum
+ok 36 - sin with negative amplitude and frequency still finds correct extremum
+  ---
+  duration_ms: 0.891458
+  type: 'test'
+  ...
+# Subtest: log defined only on whole positive closed interval
+ok 37 - log defined only on whole positive closed interval
+  ---
+  duration_ms: 3.85525
+  type: 'test'
+  ...
+# Subtest: inverted or zero-length intervals are invalid, never silently swapped
+ok 38 - inverted or zero-length intervals are invalid, never silently swapped
+  ---
+  duration_ms: 5.047834
+  type: 'test'
+  ...
+# Subtest: finite sampling never beats exact candidate extrema
+ok 39 - finite sampling never beats exact candidate extrema
+  ---
+  duration_ms: 12.399083
+  type: 'test'
+  ...
+# Subtest: never infer global extrema from stationary points alone
+ok 40 - never infer global extrema from stationary points alone
+  ---
+  duration_ms: 0.219125
+  type: 'test'
+  ...
+# Subtest: v0.10 complex and finite-set kernel exists
+ok 41 - v0.10 complex and finite-set kernel exists
+  ---
+  duration_ms: 5.139292
+  type: 'test'
+  ...
+# Subtest: complex point modulus conjugation and principal argument
+ok 42 - complex point modulus conjugation and principal argument
+  ---
+  duration_ms: 2.974
+  type: 'test'
+  ...
+# Subtest: complex arithmetic uses actual real and imaginary products
+ok 43 - complex arithmetic uses actual real and imaginary products
+  ---
+  duration_ms: 0.458291
+  type: 'test'
+  ...
+# Subtest: nonzero small divisor is not mistaken for zero and division is inverse
+ok 44 - nonzero small divisor is not mistaken for zero and division is inverse
+  ---
+  duration_ms: 4.276583
+  type: 'test'
+  ...
+# Subtest: complex rotation supports negative and multi-turn angles and collapse to zero
+ok 45 - complex rotation supports negative and multi-turn angles and collapse to zero
+  ---
+  duration_ms: 0.62025
+  type: 'test'
+  ...
+# Subtest: finite sets are unique subsets of explicit U and do not mutate inputs
+ok 46 - finite sets are unique subsets of explicit U and do not mutate inputs
+  ---
+  duration_ms: 6.147209
+  type: 'test'
+  ...
+# Subtest: set operations and relative complements respect the selected universe
+ok 47 - set operations and relative complements respect the selected universe
+  ---
+  duration_ms: 2.840041
+  type: 'test'
+  ...
+# Subtest: all 256 pairs of subsets satisfy De Morgan and membership predicates
+ok 48 - all 256 pairs of subsets satisfy De Morgan and membership predicates
+  ---
+  duration_ms: 61.455709
+  type: 'test'
+  ...
+# Subtest: v0.10 interval and inequality kernel exists
+ok 49 - v0.10 interval and inequality kernel exists
+  ---
+  duration_ms: 2.270708
+  type: 'test'
+  ...
+# Subtest: interval empty, singleton, reversed and infinite endpoints are distinct
+ok 50 - interval empty, singleton, reversed and infinite endpoints are distinct
+  ---
+  duration_ms: 2.964542
+  type: 'test'
+  ...
+# Subtest: normalization merges a touching boundary only if at least one includes it
+ok 51 - normalization merges a touching boundary only if at least one includes it
+  ---
+  duration_ms: 6.852041
+  type: 'test'
+  ...
+# Subtest: intersection accounts for open and closed coincident endpoints
+ok 52 - intersection accounts for open and closed coincident endpoints
+  ---
+  duration_ms: 0.862875
+  type: 'test'
+  ...
+# Subtest: complement relative to R preserves singleton holes and unbounded tails
+ok 53 - complement relative to R preserves singleton holes and unbounded tails
+  ---
+  duration_ms: 1.71675
+  type: 'test'
+  ...
+# Subtest: difference does not silently close subtracted endpoints
+ok 54 - difference does not silently close subtracted endpoints
+  ---
+  duration_ms: 1.086792
+  type: 'test'
+  ...
+# Subtest: membership and notation distinguish finite endpoints, R and empty
+ok 55 - membership and notation distinguish finite endpoints, R and empty
+  ---
+  duration_ms: 2.811042
+  type: 'test'
+  ...
+# Subtest: interval algebra obeys membership for deterministic combinations and probes
+ok 56 - interval algebra obeys membership for deterministic combinations and probes
+  ---
+  duration_ms: 91.979333
+  type: 'test'
+  ...
+# Subtest: linear negative coefficient reverses inequality and zero coefficient is constant
+ok 57 - linear negative coefficient reverses inequality and zero coefficient is constant
+  ---
+  duration_ms: 4.429125
+  type: 'test'
+  ...
+# Subtest: quadratic two roots respects all four comparison signs
+ok 58 - quadratic two roots respects all four comparison signs
+  ---
+  duration_ms: 5.230125
+  type: 'test'
+  ...
+# Subtest: quadratic repeated root, no root and linear degeneration never invent intervals
+ok 59 - quadratic repeated root, no root and linear degeneration never invent intervals
+  ---
+  duration_ms: 1.144125
+  type: 'test'
+  ...
+# Subtest: absolute inequality handles negative radius, zero radius, and outer rays
+ok 60 - absolute inequality handles negative radius, zero radius, and outer rays
+  ---
+  duration_ms: 1.72625
+  type: 'test'
+  ...
+# Subtest: 200 deterministic quadratic parameter sets agree with direct substitution away from roots
+ok 61 - 200 deterministic quadratic parameter sets agree with direct substitution away from roots
+  ---
+  duration_ms: 225.460417
+  type: 'test'
+  ...
+# Subtest: invalid relations and nonfinite coefficients are rejected
+ok 62 - invalid relations and nonfinite coefficients are rejected
+  ---
+  duration_ms: 0.35025
+  type: 'test'
+  ...
+# Subtest: decimal slider coefficients preserve a true repeated root instead of inventing no roots
+ok 63 - decimal slider coefficients preserve a true repeated root instead of inventing no roots
+  ---
+  duration_ms: 0.292208
+  type: 'test'
+  ...
+# Subtest: close nonzero decimal discriminants are not erased by an arbitrary epsilon
+ok 64 - close nonzero decimal discriminants are not erased by an arbitrary epsilon
+  ---
+  duration_ms: 0.116542
+  type: 'test'
+  ...
+# Subtest: new document starts with exactly one blank page and supports page separation
+ok 65 - new document starts with exactly one blank page and supports page separation
+  ---
+  duration_ms: 16.421584
+  type: 'test'
+  ...
+# Subtest: screen/world camera preserves point during anchored zoom
+ok 66 - screen/world camera preserves point during anchored zoom
+  ---
+  duration_ms: 3.910459
+  type: 'test'
+  ...
+# Subtest: pressure samples constrained and original pen coordinates preserved
+ok 67 - pressure samples constrained and original pen coordinates preserved
+  ---
+  duration_ms: 1.3015
+  type: 'test'
+  ...
+# Subtest: eraser removes intersected strokes but keeps other strokes
+ok 68 - eraser removes intersected strokes but keeps other strokes
+  ---
+  duration_ms: 2.410166
+  type: 'test'
+  ...
+# Subtest: lasso selects ink by geometry not by stroke number
+ok 69 - lasso selects ink by geometry not by stroke number
+  ---
+  duration_ms: 8.064666
+  type: 'test'
+  ...
+# Subtest: immutable undo/redo, redo discarded after new ink and no-op not committed
+ok 70 - immutable undo/redo, redo discarded after new ink and no-op not committed
+  ---
+  duration_ms: 0.406958
+  type: 'test'
+  ...
+# Subtest: validates schema and prevents cross-student/session document loading
+ok 71 - validates schema and prevents cross-student/session document loading
+  ---
+  duration_ms: 0.74425
+  type: 'test'
+  ...
+# Subtest: drawing is limited per session and cannot grow without bound
+ok 72 - drawing is limited per session and cannot grow without bound
+  ---
+  duration_ms: 0.853958
+  type: 'test'
+  ...
+# Subtest: combination and permutation obey cardinality and degenerate counts
+ok 73 - combination and permutation obey cardinality and degenerate counts
+  ---
+  duration_ms: 6.2065
+  type: 'test'
+  ...
+# Subtest: binomial n=0, p=0/1 and normalization
+ok 74 - binomial n=0, p=0/1 and normalization
+  ---
+  duration_ms: 5.968291
+  type: 'test'
+  ...
+# Subtest: binomial exact small mass and invalid probability
+ok 75 - binomial exact small mass and invalid probability
+  ---
+  duration_ms: 0.611625
+  type: 'test'
+  ...
+# Subtest: hypergeometric probability without replacement
+ok 76 - hypergeometric probability without replacement
+  ---
+  duration_ms: 0.819375
+  type: 'test'
+  ...
+# Subtest: hypergeometric rejects impossible population or sample
+ok 77 - hypergeometric rejects impossible population or sample
+  ---
+  duration_ms: 0.728
+  type: 'test'
+  ...
+# Subtest: probability tree leaves add to one and encode conditional branches
+ok 78 - probability tree leaves add to one and encode conditional branches
+  ---
+  duration_ms: 0.579167
+  type: 'test'
+  ...
+# Subtest: 2x2 joint probabilities and conditional-zero event
+ok 79 - 2x2 joint probabilities and conditional-zero event
+  ---
+  duration_ms: 0.925208
+  type: 'test'
+  ...
+# Subtest: normal pdf valid density not event probability
+ok 80 - normal pdf valid density not event probability
+  ---
+  duration_ms: 2.882958
+  type: 'test'
+  ...
+# Subtest: statistics mean, median and sample/population variance use proper denominators
+ok 81 - statistics mean, median and sample/population variance use proper denominators
+  ---
+  duration_ms: 3.588042
+  type: 'test'
+  ...
+# Subtest: stable mean/variance with large data offset
+ok 82 - stable mean/variance with large data offset
+  ---
+  duration_ms: 0.745125
+  type: 'test'
+  ...
+# Subtest: linear regression exact slope and singular cases
+ok 83 - linear regression exact slope and singular cases
+  ---
+  duration_ms: 0.569709
+  type: 'test'
+  ...
+# Subtest: seeded Bernoulli simulation deterministic and bounded frequency
+ok 84 - seeded Bernoulli simulation deterministic and bounded frequency
+  ---
+  duration_ms: 2.483625
+  type: 'test'
+  ...
+# Subtest: edge invalid sample and forbidden operations explicitly rejected
+ok 85 - edge invalid sample and forbidden operations explicitly rejected
+  ---
+  duration_ms: 0.284458
+  type: 'test'
+  ...
+# Subtest: running Bernoulli frequencies match the final simulation
+ok 86 - running Bernoulli frequencies match the final simulation
+  ---
+  duration_ms: 0.219958
+  type: 'test'
+  ...
+# Subtest: normal interval mass is approximate integration not density height
+ok 87 - normal interval mass is approximate integration not density height
+  ---
+  duration_ms: 4.258333
+  type: 'test'
+  ...
+# Subtest: sample statistics identifies tied modes and no repeated mode
+ok 88 - sample statistics identifies tied modes and no repeated mode
+  ---
+  duration_ms: 0.144375
+  type: 'test'
+  ...
+# Subtest: zero-probability conditioning events are undefined, not numeric branch probabilities
+ok 89 - zero-probability conditioning events are undefined, not numeric branch probabilities
+  ---
+  duration_ms: 0.181209
+  type: 'test'
+  ...
+# Subtest: binomial mass always normalizes on a seeded parameter grid
+ok 90 - binomial mass always normalizes on a seeded parameter grid
+  ---
+  duration_ms: 1.447417
+  type: 'test'
+  ...
+# Subtest: finite-population hypergeometric distributions normalize across valid supports
+ok 91 - finite-population hypergeometric distributions normalize across valid supports
+  ---
+  duration_ms: 3.037333
+  type: 'test'
+  ...
+# Subtest: normal probability tails integrate to about one and point intervals are zero
+ok 92 - normal probability tails integrate to about one and point intervals are zero
+  ---
+  duration_ms: 38.133375
+  type: 'test'
+  ...
+# Subtest: independent mode stays quiet without help request
+ok 93 - independent mode stays quiet without help request
+  ---
+  duration_ms: 4.63475
+  type: 'test'
+  ...
+# Subtest: logical analysis mode asks for structure instead of giving full method
+ok 94 - logical analysis mode asks for structure instead of giving full method
+  ---
+  duration_ms: 0.600792
+  type: 'test'
+  ...
+# Subtest: stuck guidance changes to goal-backward query
+ok 95 - stuck guidance changes to goal-backward query
+  ---
+  duration_ms: 2.422042
+  type: 'test'
+  ...
+# Subtest: repeated stuck request changes teaching strategy, no endless same question
+ok 96 - repeated stuck request changes teaching strategy, no endless same question
+  ---
+  duration_ms: 0.501292
+  type: 'test'
+  ...
+# Subtest: calculation stage checks known boundaries, not full solution
+ok 97 - calculation stage checks known boundaries, not full solution
+  ---
+  duration_ms: 0.461292
+  type: 'test'
+  ...
+# Subtest: reflection leads to independent near transfer check
+ok 98 - reflection leads to independent near transfer check
+  ---
+  duration_ms: 0.8665
+  type: 'test'
+  ...
+# Subtest: clamps hint levels and rejects invalid mode/stage safely
+ok 99 - clamps hint levels and rejects invalid mode/stage safely
+  ---
+  duration_ms: 0.576209
+  type: 'test'
+  ...
+# Subtest: arithmetic first term and n indexing
+ok 100 - arithmetic first term and n indexing
+  ---
+  duration_ms: 3.380291
+  type: 'test'
+  ...
+# Subtest: geometric q=1 exactly uses n*a1
+ok 101 - geometric q=1 exactly uses n*a1
+  ---
+  duration_ms: 0.260625
+  type: 'test'
+  ...
+# Subtest: geometric q=0 and q=-1
+ok 102 - geometric q=0 and q=-1
+  ---
+  duration_ms: 0.331875
+  type: 'test'
+  ...
+# Subtest: near-unity geometric uses stable finite recurrence (not 0/0 closed form)
+ok 103 - near-unity geometric uses stable finite recurrence (not 0/0 closed form)
+  ---
+  duration_ms: 0.20675
+  type: 'test'
+  ...
+# Subtest: negative ratio alternation and zero initial term
+ok 104 - negative ratio alternation and zero initial term
+  ---
+  duration_ms: 6.945625
+  type: 'test'
+  ...
+# Subtest: linear recurrence differs from arithmetic when r !=1
+ok 105 - linear recurrence differs from arithmetic when r !=1
+  ---
+  duration_ms: 0.520291
+  type: 'test'
+  ...
+# Subtest: two-term recurrence uses two initial conditions and correct partial sums
+ok 106 - two-term recurrence uses two initial conditions and correct partial sums
+  ---
+  duration_ms: 0.338167
+  type: 'test'
+  ...
+# Subtest: partial sums equal direct summation for 30 seeded samples
+ok 107 - partial sums equal direct summation for 30 seeded samples
+  ---
+  duration_ms: 0.487916
+  type: 'test'
+  ...
+# Subtest: comparison is finite, uses magnitude, and not an asymptotic proof
+ok 108 - comparison is finite, uses magnitude, and not an asymptotic proof
+  ---
+  duration_ms: 7.18825
+  type: 'test'
+  ...
+# Subtest: invalid n and nonfinite parameters rejected rather than NaN plotted
+ok 109 - invalid n and nonfinite parameters rejected rather than NaN plotted
+  ---
+  duration_ms: 8.973583
+  type: 'test'
+  ...
+# Subtest: numerical overflow is explicit without Infinity or fabricated zeros
+ok 110 - numerical overflow is explicit without Infinity or fabricated zeros
+  ---
+  duration_ms: 1.40875
+  type: 'test'
+  ...
+# Subtest: no inferred limit of infinite series from finite display
+ok 111 - no inferred limit of infinite series from finite display
+  ---
+  duration_ms: 4.28075
+  type: 'test'
+  ...
+1..111
+# tests 111
+# suites 0
+# pass 111
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 665.544833
+Offline macOS simulation checks complete; no model API used.
+Mac PDFKit source rehash PASS; copyrighted standard text not exported
+PASS Batch151: 10 deep teacher manuscripts; 115 REVIEW_PENDING; 0 APPROVED
+PASS Batch151 source→draft crosswalk: 74 matched, 165 unmatched (editorial only), official unknown
+PASS KB151 40/40 finite exact conditions; 20 forbidden cases; general proofs 0
+........................................................................ [ 28%]
+........................................................................ [ 56%]
+........................................................................ [ 84%]
+........................................                                 [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+256 passed, 1 warning in 6.90s
+KB152 verified original authoring 10 lessons
+Mac PDFKit source rehash PASS; copyrighted standard text not exported
+PASS Batch152: 10 deep teacher manuscripts; 125 REVIEW_PENDING; 0 APPROVED
+PASS Batch152 source→draft crosswalk: 84 matched, 155 unmatched (editorial only), official unknown
+PASS KB152 32 CDE proposals; source-overlap pairs 20 draft-overlaps 4 official denominators UNKNOWN
+PASS KB152 40/40 bounded exact conditions, 20 negative cases, 0 general formal proofs
+........................................................................ [ 23%]
+........................................................................ [ 47%]
+........................................................................ [ 71%]
+........................................................................ [ 95%]
+..............                                                           [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+302 passed, 1 warning in 8.83s
+KB153 original manuscripts 10
+Mac PDFKit source rehash PASS; copyrighted standard text not exported
+PASS Batch153: 10 deep teacher manuscripts; 135 REVIEW_PENDING; 0 APPROVED
+PASS Batch153 source→draft crosswalk: 94 matched, 145 unmatched (editorial only), official unknown
+PASS KB153 finite exact math witnesses: 40/40 (20 legal, 20 premise failures)
+........................................................................ [ 27%]
+........................................................................ [ 54%]
+........................................................................ [ 82%]
+..............................................                           [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+262 passed, 1 warning in 7.80s
+PASS KB154 source graph: 61 pages, 315 numbered markers, 122 CDE source lines, 32 unnumbered proposals, 53 risk pages; 145 pending, 104 linked/135 missing, official denominator UNKNOWN
+........................................................................ [ 12%]
+........................................................................ [ 25%]
+........................................................................ [ 38%]
+........................................................................ [ 51%]
+........................................................................ [ 64%]
+........................................................................ [ 77%]
+........................................................................ [ 90%]
+.......................................................                  [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+559 passed, 1 warning in 8.56s
+PASS KB154 ten original Chinese teacher-only authorship drafts
+Mac PDFKit source rehash PASS; copyrighted standard text not exported
+PASS Batch154: 10 deep teacher manuscripts; 145 REVIEW_PENDING; 0 APPROVED
+PASS Batch154 source→draft crosswalk: 104 matched, 135 unmatched (editorial only), official unknown
+PASS KB154 exact bounded math witnesses 40/40; 20 legal, 20 invalid premise; zero universal certificates
+........................................................................ [ 26%]
+........................................................................ [ 53%]
+........................................................................ [ 80%]
+.....................................................                    [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+269 passed, 1 warning in 9.47s
+PASS KB154 archived Mac four original log/exit SHA pairs; math/scope/teacher guards
+............................                                             [100%]
+28 passed in 6.55s
+KB155 PASS: 61 source pages / 315 numbered markers / 32 CDE proposals / 239 leads / 145 drafts; official denominators UNKNOWN
+KB155 exact finite: 30/30; general proof 0
+........................................................................ [  9%]
+........................................................................ [ 19%]
+........................................................................ [ 28%]
+........................................................................ [ 38%]
+........................................................................ [ 48%]
+........................................................................ [ 57%]
+........................................................................ [ 67%]
+........................................................................ [ 77%]
+........................................................................ [ 86%]
+........................................................................ [ 96%]
+..........................                                               [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+746 passed, 1 warning in 4.07s
+KB155: eight missing source-line locks reconciled; source semantics/teacher review pending.
+KB155: 145 editor-only manuscripts structurally readable; no theorem certification, teacher approval, or official completion.
+........................................................................ [ 41%]
+........................................................................ [ 83%]
+............................                                             [100%]
+172 passed in 5.84s
+PASS KB156 ten source-locked deep drafts; 155 pending; 315 layout markers not atoms
+PASS KB156 40/40 independent exact bounded witnesses; no general proof certified
+........................................................................ [ 26%]
+........................................................................ [ 52%]
+........................................................................ [ 79%]
+.........................................................                [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+273 passed, 1 warning in 7.62s
+PASS 10 independently authored, unpublished KB157 drafts
+PASS KB157 ten source-locked deep drafts; 165 pending; 315 layout markers not atoms
+PASS 40/40 independent bounded exact case checks; no general theorem certified
+PASS KB157 315 numbered obligations + 32 CDE; 165 teacher drafts; official denominators UNKNOWN
+........................................................................ [ 11%]
+........................................................................ [ 22%]
+........................................................................ [ 33%]
+........................................................................ [ 44%]
+........................................................................ [ 55%]
+........................................................................ [ 66%]
+........................................................................ [ 77%]
+........................................................................ [ 89%]
+.......................................................................  [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+647 passed, 1 warning in 9.90s
