@@ -1,0 +1,89 @@
+{
+  "backend_passed": 66293,
+  "backend_skipped": 5,
+  "browser_pytest_passed": 2,
+  "chrome_simulated_checks": 9,
+  "copyrighted_standard_text_committed": false,
+  "environment": "Authorized MacBook Air Python3.13 Node Chrome",
+  "execution_date": "2026-11-14",
+  "focused_initial_errors": 334,
+  "focused_initial_passed": 313,
+  "focused_passed": 647,
+  "free_student_steps_verified": 0,
+  "general_proofs_certified": 0,
+  "historical_editorial_candidates": 239,
+  "independent_finite_math_witnesses": 40,
+  "linked_editorial_leads": 124,
+  "new_complete_teacher_drafts": 10,
+  "node_passed": 111,
+  "numbered_layout_marker_obligations_not_atoms": 315,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "original_pdf_rehash": "AUTHORIZED_MAC_PDFKIT_PASS",
+  "pending_manuscripts": 165,
+  "rejected_invalid_premise_cases": 20,
+  "remote_CI_conclusion": "NOT_CONFIRMED_IN_MAC_RUN",
+  "runs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH157_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH157_BROWSER.log",
+      "sha256": "bdcf4d6af36a02c203eddf1762e4f80c530f08429459bd26d380622019e7dec0"
+    },
+    "FOCUSED": {
+      "bytes": 1271,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH157_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH157_FOCUSED.log",
+      "sha256": "b90ce864d2a484a1a5051a52873d23b7adc9c499d82d24094ebb1819153c578b"
+    },
+    "FOCUSED_INITIAL": {
+      "bytes": 364357,
+      "exit_code": 1,
+      "exit_path": "docs/evaluation/logs/KB_BATCH157_FOCUSED_INITIAL.exit",
+      "exit_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "log_path": "docs/evaluation/logs/KB_BATCH157_FOCUSED_INITIAL.log",
+      "sha256": "0cd3379a54796e84c8eb555c64a924e2982465eb3acaca4b5762d1a7715b3c86"
+    },
+    "MAC_FULL": {
+      "bytes": 154849,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH157_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH157_MAC_FULL.log",
+      "sha256": "2c341e8cabbeb037b93471028a9b49f2e52223564a6c57ecf6a7f04bf4d357c5"
+    },
+    "NODE": {
+      "bytes": 20914,
+      "exit_code": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH157_NODE.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "log_path": "docs/evaluation/logs/KB_BATCH157_NODE.log",
+      "sha256": "be3569d9ae59009808b7de7941993779b6fc8186b77240eeae0342313453828e"
+    }
+  },
+  "schema": "kb157-real-mac-byte-evidence-v1",
+  "source_commit": "ab3b93e4bd8ba91d7779715efb3927bc019dcdcb",
+  "source_only_github_ci_failure": {
+    "cause": "PRIVATE_MAC_PDFKIT_CACHE_UNAVAILABLE_ON_LINUX",
+    "failed": 1,
+    "fix": "MAC_REPLAYS_ORIGINAL_PDFKIT_LINUX_CHECKS_COMMITTED_HASHES",
+    "passed": 646,
+    "run_id": 43592314363,
+    "source_commit": "ab3b93e4bd8ba91d7779715efb3927bc019dcdcb"
+  },
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "unlinked_editorial_leads": 115,
+  "unnumbered_CDE_proposals_pending": 32
+}

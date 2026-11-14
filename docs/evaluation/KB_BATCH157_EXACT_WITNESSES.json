@@ -1,0 +1,371 @@
+{
+  "cases": [
+    {
+      "assertion_is_true": true,
+      "basis": "整数有理数范围内x²=4的两个根均应保留",
+      "case": "two-roots-in-Z",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c301"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "有限整数论域双方包含",
+      "case": "both-set-inclusions",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c301"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "漏掉负根不等价于描述式",
+      "case": "missing-negative-root",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c301"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "单元素零集合不等于空集",
+      "case": "zero-not-empty",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c301"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "每两天翻倍，四天是两期",
+      "case": "two-day-scale",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c309"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "三期指数衰减为10",
+      "case": "half-per-period",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c309"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "每两天翻倍不能误按每天",
+      "case": "wrong-daily-scale",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c309"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "实时间指数底数必须正",
+      "case": "negative-exponential-base-is-allowed",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c309"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "20次中4次的样本频率1/5",
+      "case": "dice-frequency",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c312"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "只用40份有效问卷作分母",
+      "case": "valid-questionnaire-denominator",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c312"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "n=0时0/0不得当频率",
+      "case": "zero-sample-denominator",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c312"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "经验频率不必等于理论概率",
+      "case": "observed-1-5-equals-1-6",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-c312"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "点(2,4)到焦点和准线的距离平方都等于16",
+      "case": "parabola-focal-distance",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s303"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "a=3 b=4则焦距c=5",
+      "case": "hyperbola-foci",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s303"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "p=0违反非退化条件",
+      "case": "parabola-degenerate-p",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s303"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "b=0不满足正半轴条件",
+      "case": "hyperbola-zero-axis",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s303"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "X~N(10,4)，标准差2而非方差4",
+      "case": "normal-mean-and-sd",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s306"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "恒定变量有零标准差",
+      "case": "constant-degenerate-variance",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s306"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "σ=0不允许标准化",
+      "case": "nonzero-variance-from-constant",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s306"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "把4直接当标准差不正确",
+      "case": "sd-mistaken-for-variance",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-122-s306"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "精确有理数比较9/4>2",
+      "case": "a2-greater-a1",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-a202"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "精确交叉相乘256>243",
+      "case": "a3-greater-a2",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-a202"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "任意给定有限项不等于极限e",
+      "case": "finite-a2-equals-e",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-a202"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "前三项增长不能证明第四项仍增长",
+      "case": "first-3-implies-all",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-a202"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "闭区间驻点及端点比较",
+      "case": "quadratic-minimum",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-b201"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "尖点和端点联合比较",
+      "case": "absolute-endpoint-maximum",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-b201"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "端点最大值可以有非零导数",
+      "case": "all-extrema-derivative-zero",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-b201"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "x³在0有驻点但不取局部极值",
+      "case": "x-cube-stationary-local-max",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-121-b201"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "有效全称规则与前提应用",
+      "case": "modus-ponens",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ec04"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "有限观察可被n=5证伪",
+      "case": "induction-counterexample-n5",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ec04"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "前三个样本通过并不保证所有n",
+      "case": "finite-cases-prove-all",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ec04"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "后件成立不保证前件",
+      "case": "reverse-implication",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ec04"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "三秒平移角度增加2π",
+      "case": "sine-period-3",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ed03"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "常数函数任意正数都是周期",
+      "case": "constant-period-any-positive",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ed03"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "非恒定二次函数没有正周期3",
+      "case": "quadratic-period-3",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ed03"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "任意周期还有更小正周期",
+      "case": "constant-smallest-positive-period",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ed03"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "两期各增长5%得1102.5",
+      "case": "two-period-compound",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ee03"
+    },
+    {
+      "assertion_is_true": true,
+      "basis": "r=0合法且余额不变",
+      "case": "zero-rate",
+      "expectation": "LEGAL_OR_BOUNDARY_TRUE",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ee03"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "额外存款不属于零现金流模型",
+      "case": "extra-deposit-no-cashflows",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ee03"
+    },
+    {
+      "assertion_is_true": false,
+      "basis": "年率10%不能不说明约定直接作为每月10%",
+      "case": "annual-rate-is-monthly-rate",
+      "expectation": "INVALID_PREMISE_OR_FALSE_GENERALIZATION_REJECTED",
+      "mathematical_scope": "BOUNDED_EXACT_WITNESS_NOT_GENERAL_PROOF",
+      "passed": true,
+      "source_candidate_id": "hs-semantic-pilot-119-ee03"
+    }
+  ],
+  "formal_general_proofs_certified": 0,
+  "invalid_premise_rejected": 20,
+  "legal_or_boundary_true": 20,
+  "schema": "kb157-independent-finite-witness/1",
+  "student_free_steps_verified": 0,
+  "teacher_approved": 0,
+  "verified_bounded_cases": 40
+}
