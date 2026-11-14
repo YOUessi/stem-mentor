@@ -1,0 +1,74 @@
+{
+  "base_git_commit": "92bcf91aa401bb4cf5f9722963319bce7874ac43",
+  "browser_pytest_passed": 2,
+  "chrome_interaction_passed": 9,
+  "device": "AUTHORIZED_YOUTANG_MACBOOK_AIR_ONLY",
+  "editorial_atom_proposals": 41,
+  "editorial_leads_missing_drafts": 185,
+  "editorial_leads_with_drafts": 54,
+  "focused_python_passed": 730,
+  "free_student_steps_certified": 0,
+  "full_backend_python_passed": 66293,
+  "full_backend_python_skipped": 5,
+  "general_proof_certificates": 0,
+  "github_can_replay_private_pdf": false,
+  "historical_editorial_leads": 239,
+  "historical_uncertified_general_proof_steps": 538,
+  "initial_failures_not_archived": [
+    "K00 counted-track dictionary comparison mismatched absent zero-track keys; corrected",
+    "K07 line distance test wrongly chose (3,4) on 3x+4y-5=0; corrected to (3,-1)",
+    "SymPy Piecewise directional limit did not follow branch as expected; used exact branch evaluation"
+  ],
+  "logs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH148_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH148_BROWSER.log",
+      "sha256": "85fd72f53834821bb490bc64b17448f5701a8dd817fdb4b8e45bce8291a172e1"
+    },
+    "FOCUSED": {
+      "bytes": 1430,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH148_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH148_FOCUSED.log",
+      "sha256": "1d65d2534f71cb85742506ccc11cb3fac92c512c309ac90e4a226da27cd08b04"
+    },
+    "MAC_FULL": {
+      "bytes": 141634,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH148_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH148_MAC_FULL.log",
+      "sha256": "e0c8a224d1dee7b84dffaa85724311b679fccc6aaa2ef642c8f1ab4671088750"
+    }
+  },
+  "math_finite_oracles_passed": 40,
+  "new_deep_manuscripts": 0,
+  "new_negative_or_invalid_math_cases": 20,
+  "node_passed": 111,
+  "numbered_source_markers": 315,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_atomic_census_complete": false,
+  "official_source_scan_pages": 61,
+  "original_pdfkit_replay_passed": true,
+  "private_pdf_stays_mac_only": true,
+  "run_date": "2026-11-14",
+  "schema": "kb148-real-authorized-mac-execution-v1",
+  "source_boundary_relation_records_pending": 89,
+  "source_git_commit": "d2a6cf7befcfeef87cff72782e16a867784430bc",
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "teacher_pending_manuscripts": 95,
+  "unresolved_version_conflicts": 10
+}

@@ -324,6 +324,15 @@ jobs:
       # GitHub only replays archived Mac evidence, never the private PDF source.
       - run: python scripts/build_kb_batch147_execution_manifest.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch147_archived_evidence.py
+      # Batch148 K00: audit all 315 numbered source markers without treating them as atoms.
+      # K07: 10 unresolved conflicts, 40 independent finite SymPy/exact witnesses.
+      # No licensed PDF text, unapproved math manuscripts, or student solutions are exported.
+      - run: python scripts/build_kb_batch148_official_clause_gate.py --check
+      - run: python scripts/review_kb_batch148_conflicts.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch148_source_math_gate.py
+      # Byte-level verification of archived real Mac test stdout and exits; no private PDF in CI.
+      - run: python scripts/build_kb_batch148_execution_manifest.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch148_execution_archive.py
       - run: python scripts/build_kb_batch146_execution_manifest.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch146_archived_evidence.py
       - run: python scripts/audit_kb_batch09_release.py --check
