@@ -405,3 +405,10 @@ def kb151_review_coverage():
     """Aggregate-only counts; no unapproved text, teacher solutions or student certificates."""
     from .kb_batch151_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb152-review-coverage")
+def kb152_review_coverage():
+    """Public aggregates only; unapproved source and teacher solutions never exposed."""
+    from .kb_batch152_index import public_coverage
+    return public_coverage()

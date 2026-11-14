@@ -1,0 +1,291 @@
+{
+  "auto_merged_atoms": 0,
+  "distinct_pair_count": 20,
+  "draft_to_proposal_source_overlaps": [
+    {
+      "auto_approved": false,
+      "draft_id": "kb152-deep-119-ed04",
+      "proposal_id": "STD2020-EDITORIAL-PROP150-005",
+      "same_official_requirement_confirmed": false,
+      "source_overlap_lines": 4,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "auto_approved": false,
+      "draft_id": "kb152-deep-120-ee108",
+      "proposal_id": "STD2020-EDITORIAL-PROP150-030",
+      "same_official_requirement_confirmed": false,
+      "source_overlap_lines": 2,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "auto_approved": false,
+      "draft_id": "kb152-deep-120-ee108",
+      "proposal_id": "STD2020-EDITORIAL-PROP150-031",
+      "same_official_requirement_confirmed": false,
+      "source_overlap_lines": 2,
+      "teacher_review": "REVIEW_PENDING"
+    },
+    {
+      "auto_approved": false,
+      "draft_id": "kb152-deep-120-ee108",
+      "proposal_id": "STD2020-EDITORIAL-PROP150-032",
+      "same_official_requirement_confirmed": false,
+      "source_overlap_lines": 2,
+      "teacher_review": "REVIEW_PENDING"
+    }
+  ],
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_census_complete": false,
+  "official_course_coverage_rate": null,
+  "original_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+  "pair_risk_counts": {
+    "EXACT_SAME_LINE_SET_REVIEW": 20
+  },
+  "proposal_counts_by_track": {
+    "COMPULSORY": 0,
+    "ELECTIVE_A": 0,
+    "ELECTIVE_B": 0,
+    "ELECTIVE_C": 2,
+    "ELECTIVE_D": 17,
+    "ELECTIVE_E": 13,
+    "SELECTIVE_COMPULSORY": 0
+  },
+  "provisional_semantic_proposals": 32,
+  "same_source_review_pairs": [
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-020",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-021",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-020",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-022",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-020",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-023",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-020",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-024",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-020",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-025",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-021",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-022",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-021",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-023",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-021",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-024",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-021",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-025",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-022",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-023",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-022",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-024",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-022",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-025",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-023",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-024",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-023",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-025",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-024",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-025",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-026",
+      "min_source_lines": 1,
+      "overlap_source_lines": 1,
+      "right": "STD2020-EDITORIAL-PROP150-027",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-028",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-029",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-030",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-031",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-030",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-032",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    },
+    {
+      "disposition": "HUMAN_REVIEW_REQUIRED_NOT_AUTO_MERGED",
+      "kind": "EXACT_SAME_LINE_SET_REVIEW",
+      "left": "STD2020-EDITORIAL-PROP150-031",
+      "min_source_lines": 2,
+      "overlap_source_lines": 2,
+      "right": "STD2020-EDITORIAL-PROP150-032",
+      "semantic_duplicate_confirmed": false,
+      "source_track": "ELECTIVE_E",
+      "teacher_adjudicated": false
+    }
+  ],
+  "schema": "kb152-cde-semantic-overlap-review/1",
+  "semantic_duplicates_teacher_confirmed": 0,
+  "source_line_partition_count": 122,
+  "student_authoritative": 0,
+  "teacher_approved": 0,
+  "warning": "Line overlap, proposal counts, and manuscripts cannot substitute for full seven-track official syllabus atom census."
+}

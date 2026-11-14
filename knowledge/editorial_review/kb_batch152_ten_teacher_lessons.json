@@ -1,0 +1,845 @@
+[
+  {
+    "applicability_and_hypotheses": "A与B不同且都在同一给定平面；直线由A、B唯一确定；平面法向量非零。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "在仿射几何中解释为什么平面上的有限个点及其仿射组合仍位于该平面，区别于凸组合。",
+    "formal_definition_or_theorem": "欧氏三维空间中，若直线l上两个不同点A、B均属于平面α，则l中的每一点都属于α，即l⊂α。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-119-c04",
+    "knowledge_type": "Theorem",
+    "near_transfer": "将平面改为2x−y+z=0，自选两个不同的平面内点并证明连线包含在平面内。",
+    "nonexample_or_failure": "若A=B=(0,0,0)均在平面z=0，穿过A且沿z轴的直线不包含于z=0；一个重合点无法唯一确定直线。",
+    "notation_and_domain": "三维欧氏仿射空间；A≠B；l={A+t(B−A):t∈R}；平面α={X:n·(X−P)=0}且n≠0。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-c03"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "首先检查A、B为不同点，以保证存在唯一的过两点直线，避免把一点误认为唯一确定直线。",
+        "step": 1
+      },
+      {
+        "justification": "设平面为n·(X−P)=0且n≠0，由A、B在平面上分别得到两个内积等式。",
+        "step": 2
+      },
+      {
+        "justification": "任取直线上X=A+t(B−A)，代入平面式，得到(1−t)n·(A−P)+t n·(B−P)=0。",
+        "step": 3
+      },
+      {
+        "justification": "因为t是任意实数，直线上全部点都满足平面方程，从而证明l包含于α。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-c04",
+    "source_end_line": 10,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "229c32c427711dc4cae2c5377475667a79b753c13bee85a2ebb154d82d9428a5",
+      "4256b0cbb44645ba3ea9bacb3fb768295206eec644612395d8c14c24180afc09"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 28,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "087c56a89669cd05f02621a768e416eff8ea582a3af52ea1c831d00209656693",
+    "source_start_line": 9,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先确认题中两个点是否真的是不同点，想一想“唯一确定直线”需要什么。",
+      "将过两点的直线写成一个带实数参数的表达式，再找出平面方程。",
+      "不要只代入端点，试着把任意参数代入平面方程来证全称命题。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "AB⊂{z=0}",
+        "question": "A=(0,0,0)、B=(1,2,0)，证明AB在z=0中。",
+        "reasoned_solution": [
+          "先检查A≠B，故能确定唯一直线。",
+          "两点的z坐标都是0，满足平面方程。",
+          "任意AB上点=(t,2t,0)，其z恒为0。"
+        ]
+      },
+      {
+        "answer": "整条直线在平面内",
+        "question": "A=(1,0,1)、B=(1,3,1)，判定AB是否在x+z=2中。",
+        "reasoned_solution": [
+          "A和B不同，直线参数化为(1,3t,1)。",
+          "两点代入x+z均得到2。",
+          "任取t其x+z=2，故包含关系成立。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "直线两点在平面内时整条直线的包含判定",
+    "typical_wrong_solution": "仅凭一条直线与平面有一个公共点就宣称整条直线在平面内。",
+    "why_method_is_legal": "平面的仿射封闭性：若n·(A−P)=n·(B−P)=0，线性组合给出n·(A+t(B−A)−P)=0。",
+    "why_wrong_and_repair": "必须找到该直线上的两个不同公共点，或者证明直线方向向量垂直于法向量且已知一个公共点。"
+  },
+  {
+    "applicability_and_hypotheses": "法向量非零且不平行；两平面在三维空间讨论；不能把平行无交或重合情形套入该命题。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "把两个线性约束的秩与解空间维数联系起来，并比较三平面交于点的情形。",
+    "formal_definition_or_theorem": "在三维欧氏空间中，两不同平面若有公共点且法向量不平行，则交集为一条直线；其方向向量可取两法向量的叉积。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-119-c05",
+    "knowledge_type": "Theorem",
+    "near_transfer": "求平面x+y+z=1与x−y=0的交线参数式，并核验方向向量。",
+    "nonexample_or_failure": "x=0与x=1是两个平行且不重合的平面，交集为空；x=0与2x=0完全重合，交集是整个平面。",
+    "notation_and_domain": "平面α:n1·X=d1、β:n2·X=d2，n1,n2均为非零三维实向量；n1×n2≠0。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-c03"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "由n1×n2≠0可知两法向量线性无关，因此两个平面约束行秩为2。",
+        "step": 1
+      },
+      {
+        "justification": "线性映射R³→R²由两行法向量构成且满秩，因此对任意右端(d1,d2)均有特解X0。",
+        "step": 2
+      },
+      {
+        "justification": "齐次空间{v:n1·v=n2·v=0}维数为1，方向v可取n1×n2≠0。",
+        "step": 3
+      },
+      {
+        "justification": "全体公共点恰为X0+t v，故交集是一条直线而不是一个孤立点。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-c05",
+    "source_end_line": 12,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "cbcf3d648f2e3019b77595258c6a7bb12ca7e670da0ea688bc39918277ed49be",
+      "42d5ccd81f50df383f216156636bfdaba233337bb65341012a4111888fccf3e9"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 28,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "d66fe38d5a996c42d82dc8ba9aadc61b33f017fa1158175a05b46a8200889e2d",
+    "source_start_line": 11,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "首先写出两个平面的法向量，比较它们是否有不同方向。",
+      "尝试联立两个方程，观察剩余自由变量有多少个。",
+      "对平行法向量另分“重合”和“平行不重合”，不能直接给出交线。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "z轴：(0,0,t)",
+        "question": "求平面x=0、y=0的公共交线。",
+        "reasoned_solution": [
+          "两个法向量(1,0,0)、(0,1,0)不平行。",
+          "联立x=0和y=0保留自由变量z。",
+          "交线可写(0,0,t)，t为任意实数。"
+        ]
+      },
+      {
+        "answer": "不存在公共点",
+        "question": "判断x+y=1与2x+2y=3是否存在公共交线。",
+        "reasoned_solution": [
+          "法向量(1,1,0)与(2,2,0)平行。",
+          "将第一个方程乘2得到2x+2y=2。",
+          "与第二个方程右端3矛盾，因此交集为空。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "两个不同且相交平面的公共点构成一条直线",
+    "typical_wrong_solution": "只要平面有两个不同名称就认为一定相交成直线，忽略两法向量平行。",
+    "why_method_is_legal": "联立两个独立的一次线性方程对三个未知坐标限制秩为2，所以解集是一维仿射子空间。",
+    "why_wrong_and_repair": "先将两个平面的法向量比较；若叉积为零，进一步用常数项辨别无解还是同一平面。"
+  },
+  {
+    "applicability_and_hypotheses": "目标变量、测量单位、数据采集条件与模型假设均显式指定；不能将训练集误差视作预测有效性的保证。",
+    "course_track": "COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "对于有限资源约束下的人口增长，讨论为什么短时间指数拟合不能支持长期预测并设计验证数据。",
+    "formal_definition_or_theorem": "数学模型M(θ)给出预测ŷ_i=f(x_i;θ)，残差e_i=y_i−ŷ_i；建模闭环需检验量纲、假设、残差结构及外推范围，发现系统性失配时返回模型假设而非宣布数学定理错误。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-119-c09",
+    "knowledge_type": "Method",
+    "near_transfer": "为直线匀速模型设计4个带测量误差的数据点，计算MAE并分析残差符号。",
+    "nonexample_or_failure": "以每小时千米作模型输出，却与每秒米的观测原值直接相减，残差没有合法量纲比较；训练集完全拟合也不能保证未来。",
+    "notation_and_domain": "观测(x_i,y_i)需有同量纲的y_i与预测ŷ_i；允许误差指标MAE=(Σ|e_i|)/n，n≥1；残差是观测差异而非真理证明。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [],
+    "reasoned_steps": [
+      {
+        "justification": "写清变量、单位与已忽略因素，形成可被事实证伪的函数预测而不是只有形式漂亮的表达式。",
+        "step": 1
+      },
+      {
+        "justification": "以独立观测和预测计算逐项残差，核验观测与预测在同一单位和时间尺度。",
+        "step": 2
+      },
+      {
+        "justification": "查看偏差是否随输入或时间呈系统规律，区分参数误差、结构失配与观测噪声。",
+        "step": 3
+      },
+      {
+        "justification": "调整假设或参数后以留出的样本再次检验，保留旧模型及失败证据，限制可用情景。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-c09",
+    "source_end_line": 13,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "8f9519a6a16c818786a77aca69291f1061b81c54fbdb0e727b87d2a6c22a7e01",
+      "7c9344bed5f9fdaf8e4a0270f9ff8b1ee2d737e1ebb6d5e9103b15061ac986b5",
+      "e13d807aae16ab090e22264c04dd027fdb808bccd61a4e4ba1a4ea9e772d76a6",
+      "85bf755574e8449347f2973bab9686d694d425183e6c67aa0fbb606a2ca49a49",
+      "b7e70c3a5b3a00f157779f33fae011387a6915132f396ba9f3ff4416bcbc6bb8"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 35,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "992897284b5c55cfe761dbb015ac2818c4a5dabab39d5626bed128f9e52e18a3",
+    "source_start_line": 9,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "第一步不要套公式，先把预测值和观测值的变量及量纲列成表。",
+      "试着把各样本残差保留正负号，再考虑用绝对误差衡量规模。",
+      "问一问这些数据是用来拟合的还是留作检验的，以及误差会不会随时间变化。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "MAE=4/3 km/h",
+        "question": "速度模型预测10、12、14 km/h，实际为11、11、16 km/h，求MAE。",
+        "reasoned_solution": [
+          "三个残差依次是1、−1、2 km/h。",
+          "取绝对值为1、1、2，合计4。",
+          "除以样本数3得到4/3 km/h。"
+        ]
+      },
+      {
+        "answer": "换算后差为0",
+        "question": "模型给出2 m/s，仪器记录7.2 km/h，是否存在2与7.2的误差？",
+        "reasoned_solution": [
+          "将仪器数据换成m/s：7.2/3.6=2。",
+          "预测和观测必须采用同一单位。",
+          "残差2−2=0，此样本不能作为模型失效证据。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "数学建模残差诊断与失败后重新建模的证据循环",
+    "typical_wrong_solution": "只比较拟合曲线与训练点“很接近”，就断定指数增长永远适用且预测不需要误差说明。",
+    "why_method_is_legal": "同单位量比较才有物理意义；通过误差和约束检验可证伪某个模型的具体预测，而不能由有限样本归纳普遍有效。",
+    "why_wrong_and_repair": "增加独立验证样本，写出残差与相对误差；对超出校准区间的情形标注“外推未验证”，检查资源约束。"
+  },
+  {
+    "applicability_and_hypotheses": "相邻项差对所有有效下标恒为同一个实数，不是只检查开头两项；有限样本无法唯一决定无限数列规则。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "将每月等额净增长的库存模型写成数列，讨论容量上限使固定公差模型失效的时刻。",
+    "formal_definition_or_theorem": "实数数列(a_n)_{n≥1}为等差数列，当且仅当存在常数d，使任意n≥1都有a_{n+1}−a_n=d；于是a_n=a_1+(n−1)d。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-119-s02",
+    "knowledge_type": "Concept",
+    "near_transfer": "判断a_n=n²−n是否等差，必须给出全称n的证明或反例。",
+    "nonexample_or_failure": "1、2、4、7的差依次为1、2、3，不能用首项1、公差1断言其是等差数列。",
+    "notation_and_domain": "下标n取正整数，首项a1与公差d取实数；n=0不自动属于定义域。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-s01"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "正式定义首先要求同一个d对全部n≥1成立，因此仅两项构不成充分验证。",
+        "step": 1
+      },
+      {
+        "justification": "对相邻项差写出前n−1个恒等式，再把等式两边分别求和。",
+        "step": 2
+      },
+      {
+        "justification": "左侧逐项抵消中间项，只留下a_n−a_1；右侧是(n−1)d。",
+        "step": 3
+      },
+      {
+        "justification": "整理得到通项；反过来由该通项相减也得固定差d，故条件充要。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-s02",
+    "source_end_line": 15,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "f01763452b9ea73671b9bfbe335a6bd5f104734baf01ba5420aa3fb9b81685f9",
+      "d9be1642f23a3edfb3df6bfcf5687d4b50671f1d2d54e6c762914e6208f29373"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 38,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "0c28fd120248fee273675889b62eba746555ea49bc591f5e7e0f5c04c3e88484",
+    "source_start_line": 14,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先写出数列的下标范围，辨认题目给出的是相邻差还是相邻比。",
+      "如果有通项，直接相减a_{n+1}−a_n，观察是否随n变化。",
+      "如果只有递推，试着写出从第一项到第n项的望远镜相加过程。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "a6=−10，差为−3",
+        "question": "数列首项5、公差−3，求第6项和第6项与第5项之差。",
+        "reasoned_solution": [
+          "依定义a_n=5+(n−1)(−3)。",
+          "代n=6得到5−15=−10。",
+          "a6−a5应等于固定公差−3。"
+        ]
+      },
+      {
+        "answer": "是，公差2",
+        "question": "检验a_n=2n+1(n≥1)是否等差。",
+        "reasoned_solution": [
+          "分别写a_{n+1}=2n+3与a_n=2n+1。",
+          "相减始终等于2，与n无关。",
+          "所以全部n≥1满足等差定义。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "等差数列公差恒定条件与显式通项公式",
+    "typical_wrong_solution": "把等差数列写成a_n=a_1+nd，或把a_n−a_{n−1}定义直接套在n=1造成a0无定义。",
+    "why_method_is_legal": "把递推等式a_{k+1}−a_k=d对k=1至n−1求和，左侧望远镜消去得a_n−a_1=(n−1)d。",
+    "why_wrong_and_repair": "以n=1代入通项应还原a1；递推使用n≥1的a_{n+1}−a_n，或在n≥2才用a_n−a_{n−1}。"
+  },
+  {
+    "applicability_and_hypotheses": "给定方程确实定义平面；坐标采用同一正交单位基；平方和严格为正。",
+    "course_track": "SELECTIVE_COMPULSORY",
+    "elective_e_optional_example": false,
+    "far_transfer": "用二维点到直线距离公式类比，解释为什么正交坐标的“法向分量”才给出最短距离。",
+    "formal_definition_or_theorem": "对平面α:Ax+By+Cz+D=0，(A,B,C)≠(0,0,0)，点P=(x0,y0,z0)到平面的欧氏距离为|Ax0+By0+Cz0+D|/√(A²+B²+C²)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-119-s12",
+    "knowledge_type": "Method",
+    "near_transfer": "求点(1,−1,2)到平面x+2y+2z+1=0的距离，写出非零法向量检查。",
+    "nonexample_or_failure": "0x+0y+0z+2=0是无解方程而非平面，分母为零；若错误省略绝对值，点在另一侧会得到负距离。",
+    "notation_and_domain": "三维欧氏正交坐标、统一长度单位；法向量n=(A,B,C)非零；分子绝对值不能省略。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-s11"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "先从平面法向量n=(A,B,C)检查||n||>0，排除常数方程与退化表达式。",
+        "step": 1
+      },
+      {
+        "justification": "取平面上任意Q，沿单位法向方向的有向位移为n·(P−Q)/||n||。",
+        "step": 2
+      },
+      {
+        "justification": "由于n·Q=−D，带符号距离等于(Ax0+By0+Cz0+D)/||n||。",
+        "step": 3
+      },
+      {
+        "justification": "距离按定义非负，取绝对值得公式，且正交投影提供最小长度。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-s12",
+    "source_end_line": 8,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "90799eac9f7abe6c712dc2e47834de6b202b9929498583491018109f239ad6cf",
+      "91003b0c1d245cbafac1c33a7aa7eec085cff5847d56d92cf39b9d3c2b73ce8e",
+      "6319d29d9440857fcb67d413f638e81c0ca4fbf03595e7c1f87346ec73f1cae3"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 43,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "25963aa4de28dffaaefb9c816c9bd2163580d196191146c20d365fcd606684b1",
+    "source_start_line": 6,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先识别平面方程中x、y、z前面的三个系数是什么。",
+      "把给定点坐标代入线性表达式，注意结果可能有负号。",
+      "用法向量的长度进行归一化，最后确认距离非负且单位为长度。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "距离为2个长度单位",
+        "question": "求点P=(2,0,0)到平面x=0的距离。",
+        "reasoned_solution": [
+          "法向量是(1,0,0)，范数为1。",
+          "分子为|1×2+0|=2。",
+          "归一化后距离为2/1=2个长度单位。"
+        ]
+      },
+      {
+        "answer": "距离为3个长度单位",
+        "question": "求原点到平面2x−y+2z−9=0的距离。",
+        "reasoned_solution": [
+          "法向量(2,−1,2)的范数为3。",
+          "原点代入表达式得到−9，取绝对值9。",
+          "用绝对值分子除以法向量范数，距离=9/3=3。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "点到平面的距离公式与非零法向量门槛",
+    "typical_wrong_solution": "把平面常数D当成法向量的一部分参与开方，或不检查A²+B²+C²是否为零。",
+    "why_method_is_legal": "P沿单位法向量n/||n||向平面的正交投影最短；位移法向标量由带符号平面表达式除以||n||给出。",
+    "why_wrong_and_repair": "法向量只有三个坐标系数；先检查非零，再确定分母√(A²+B²+C²)，最后对整个线性式取绝对值。"
+  },
+  {
+    "applicability_and_hypotheses": "所有n均满足a_{n+1}≥a_n且存在同一个有限上界；或所有n均满足反向单调及有限下界。",
+    "course_track": "ELECTIVE_A",
+    "elective_e_optional_example": false,
+    "far_transfer": "讨论有理数空间为什么不能不加“实数完备性”就照搬单调有界收敛论证。",
+    "formal_definition_or_theorem": "若实数数列(a_n)单调不减且有上界，则它收敛于L=sup{a_n:n≥1}；单调不增且有下界时同理收敛于下确界。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-119-a03",
+    "knowledge_type": "Theorem",
+    "near_transfer": "用上确界方法证明a_n=n/(n+1)收敛，不允许只看有限项数值趋势。",
+    "nonexample_or_failure": "a_n=n严格递增但没有有限上界，不能推出有限极限；a_n=(−1)^n虽有上下界却不单调，亦不收敛。",
+    "notation_and_domain": "实数完备性下的无穷数列，n∈正整数；上确界与下确界为实数；仅对有限项检查不构成全称前提。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-a01"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "由有上界和非空性，用实数完备性取得L=sup{a_n}∈R，且每项a_n≤L。",
+        "step": 1
+      },
+      {
+        "justification": "任给ε>0，L−ε不是上界，因此存在某个N满足a_N>L−ε。",
+        "step": 2
+      },
+      {
+        "justification": "对任意n≥N，单调性给出L−ε<a_N≤a_n≤L，于是|a_n−L|<ε。",
+        "step": 3
+      },
+      {
+        "justification": "这正是ε–N收敛定义；递减且下有界情况可把数列取负后应用前述结论。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-a03",
+    "source_end_line": 29,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "af525d3296ffcf9bc1ab1a0b25ea4b459fa0c7297847997ad101278915005468",
+      "cea8fac6950a06e4b046e036871249e0f9635e36a238d8d5ecdfac4d1f1f3705",
+      "7b6d6c6d0b4fe00bd7413f17f0633b7335f3ae8d3ef31a6cdb7a451af5b201ce",
+      "992511ac9c6282c5df0317532b481cb7d5cd25cfaa1fd50068f4366ed89500d9",
+      "e2b0059d19785f16f69e4707a5a7417661719ed110d12bd737c7f5c97c55a8b6",
+      "58110af8933d6ffe9f1609a07a5bed4240cc2b53881d88dd728ab17756023f93",
+      "bce3c4e77b6d6b49fda98073a8d9a8ae2a53c4dd61c7eb47484086cc7eda8733",
+      "9f7e5c84af4ba9e5de1f6d3b2416aa88da5b89f0ebe5dd696ea9e3bd1c6693e2"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 52,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "213a9a645ce73d6de941a3ffdb1fb4e5de36d2806885b35667c0f8241a4c931a",
+    "source_start_line": 22,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "首先判断单调方向以及有没有同一实数给所有项作界。",
+      "假设递增有上界，试着把所有项的最小上界记为L。",
+      "任取ε>0，上确界定义能否保证存在某一项超过L−ε，再用单调性控制尾项？"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "极限为1",
+        "question": "证明a_n=1−1/n(n≥1)收敛并求极限。",
+        "reasoned_solution": [
+          "计算a_{n+1}−a_n=1/[n(n+1)]>0。",
+          "每项a_n<1且a_n≥0，单调有上界。",
+          "由定理收敛；同时|a_n−1|=1/n→0，极限为1。"
+        ]
+      },
+      {
+        "answer": "单调下降，极限为2",
+        "question": "判断b_n=2+1/n(n≥1)是否收敛。",
+        "reasoned_solution": [
+          "差b_{n+1}−b_n=−1/[n(n+1)]<0。",
+          "所有项≥2，满足下有界。",
+          "|b_n−2|=1/n→0，极限为2。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "实数单调有界数列收敛定理及上确界证明",
+    "typical_wrong_solution": "把“单调”或“有界”任意单个性质当作实数收敛的充分条件。",
+    "why_method_is_legal": "实数的最小上界性质保证L存在；按上确界定义的任意ε邻近项及单调性推出尾项位于(L−ε,L]。",
+    "why_wrong_and_repair": "必须同时检查对全体n成立的单调关系以及相应方向的有限界，并说明实数完备性是证明依据。"
+  },
+  {
+    "applicability_and_hypotheses": "闭区间连续、开区间可导且全开区间满足已证实的导数界；区间长度b−a严格正。",
+    "course_track": "ELECTIVE_B",
+    "elective_e_optional_example": false,
+    "far_transfer": "针对带断点的实测成本函数，说明为何分段导数非负仍可能出现整体突变，如何修复连续性假设。",
+    "formal_definition_or_theorem": "若f在[a,b]连续且在(a,b)可导，a<b，并且m≤f′(x)≤M对一切x∈(a,b)成立，则m(b−a)≤f(b)−f(a)≤M(b−a)。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-119-b02",
+    "knowledge_type": "Theorem",
+    "near_transfer": "在[1,2]上证明x³的函数增量在3和12之间，并核验导数上下界。",
+    "nonexample_or_failure": "在[0,1]定义f(0)=0、f(x)=x+2(0<x≤1)，内部导数恒为1但不连续于0，增量f(1)−f(0)=3，不等于1。",
+    "notation_and_domain": "实闭区间[a,b]上函数及其内部导数；m、M为有限实数且m≤M；不能仅由少数采样点导数判断全区间。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-b01"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "先逐一验证f在闭区间连续、开区间可导，避免跳跃间断或端点不匹配。",
+        "step": 1
+      },
+      {
+        "justification": "应用中值定理获得c∈(a,b)满足f(b)−f(a)=f′(c)(b−a)。",
+        "step": 2
+      },
+      {
+        "justification": "由假设m≤f′(c)≤M，乘以正数b−a，不等号方向保持不变。",
+        "step": 3
+      },
+      {
+        "justification": "得到所需增量范围；注意不能由增量界反向断言每一点都有相同的导数界。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-b02",
+    "source_end_line": 30,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "18a6205b99a216d8849c7a6d06da4d5b21accf7bb742e2f593699e4a1b5364d7",
+      "7a4a43bee200d56edd5c15fc410b958d3c23c23ac7bce276ed330744b5f1bdda",
+      "35f019c4be47a0f2f8494de911c3c5c16c38adb4bc84254fbcc961926137c9b9"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 58,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "0c1ab4eecd21408397ffc0609e5242ebae9a7b860110002650cf7c8b462f1002",
+    "source_start_line": 28,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "写下闭区间连续、开区间可导这两条不同的前提。",
+      "若能使用中值定理，应得到一个什么形式的存在性等式？",
+      "找出该区间内导数的上下界，注意乘区间长度时的符号。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "4≤8≤12",
+        "question": "f(x)=x²在[1,3]，以导数界给出f(3)−f(1)范围。",
+        "reasoned_solution": [
+          "f在闭区间连续且内部可导。",
+          "f′(x)=2x，内部有2≤f′(x)≤6。",
+          "由定理4≤f(3)−f(1)=8≤12。"
+        ]
+      },
+      {
+        "answer": "1/2≤ln 2≤1",
+        "question": "f(x)=ln x在[1,2]，用导数界估计ln 2。",
+        "reasoned_solution": [
+          "区间[1,2]位于正数域，ln连续且可导。",
+          "f′(x)=1/x，对1<x<2有1/2≤f′(x)≤1。",
+          "乘区间长1得到1/2≤ln2−ln1=ln2≤1。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "利用拉格朗日中值定理给出函数增量上下界",
+    "typical_wrong_solution": "函数有导数公式就不检查闭区间连续，或者把中值定理的“某个c”误写为“对任意c”。",
+    "why_method_is_legal": "拉格朗日中值定理给出内部点c使增量商等于f′(c)，再用全区间导数上下界和正的区间长度乘法。",
+    "why_wrong_and_repair": "先验证两个不同范围的条件，再注意中值点是存在量词；不等式靠对所有内部点的导数界。"
+  },
+  {
+    "applicability_and_hypotheses": "讨论经典二值逻辑并保持命题语义一致；不能将“我们暂时不知道P”误作为第三个形式真值。",
+    "course_track": "ELECTIVE_C",
+    "elective_e_optional_example": false,
+    "far_transfer": "分析“课程还没收到成绩”为什么是知识状态的不确定，而不是反驳经典二值逻辑的第三种真值。",
+    "formal_definition_or_theorem": "在经典二值命题逻辑、固定解释及论域下，矛盾律断言¬(P∧¬P)永真，排中律断言P∨¬P永真；前者排除同真，后者排除同假。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-119-ec03",
+    "knowledge_type": "Concept",
+    "near_transfer": "对命题“5是质数”建立包含P、¬P、P∧¬P、P∨¬P的完整真值表。",
+    "nonexample_or_failure": "x>0（未指定x且未量化）是开放句，不可在同一推理中把x先取1后取−1再声称P与¬P同时成立。",
+    "notation_and_domain": "每个命题P在相同时间、含义、背景及论域下取且仅取真/假之一；含自由变量的开放句须先赋值或量化。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-ec01"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "固定命题P的解释和论域，把P分为真与假两种情况，而不是混用不同条件下的P。",
+        "step": 1
+      },
+      {
+        "justification": "若P真，¬P假，故P∧¬P假且P∨¬P真。",
+        "step": 2
+      },
+      {
+        "justification": "若P假，¬P真，故P∧¬P仍假且P∨¬P仍真。",
+        "step": 3
+      },
+      {
+        "justification": "两行均满足两条恒真式，不过两者分别关注不可能同真与不可能同假，逻辑含义不同。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-ec03",
+    "source_end_line": 5,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "f361a193c33045d1196eb7a20f29eae104cbc52ea57f0d23804eddfe3d83a868",
+      "176cc359e8ad94858e4a5db838183f86fcbf263fa1b7125a3b68f232d03a9634",
+      "20d3be71ffdc1fa950ddf9b0000ecc1e12f445cbe392c4af0b34e71c4e73e368",
+      "6e7798a7178d79262022551cf88b9f9d64f52a2885366c2a9333ee09dddbd63e"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 65,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "e7991d380d57f35644fba732460da4adcbd7e4f2a56ce6d6eaa9d2f3f65e1be0",
+    "source_start_line": 2,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先明确题目使用的是命题P，还是含未确定变量的开放句。",
+      "写出当P为真和当P为假时，¬P分别是什么。",
+      "分别计算合取与析取的真值，不要把两个符号混淆。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "两者均为真",
+        "question": "设P是命题“2为偶数”，计算¬(P∧¬P)与P∨¬P。",
+        "reasoned_solution": [
+          "P在整数论域中为真，¬P为假。",
+          "P∧¬P为假，再否定得到真。",
+          "P∨¬P包含真的P，因此为真。"
+        ]
+      },
+      {
+        "answer": "两者均成立",
+        "question": "设P为“3<2”，两条定律仍成立吗？",
+        "reasoned_solution": [
+          "命题P在固定整数解释下为假，而其否定¬P为真。",
+          "合取P∧¬P为假，否定为真。",
+          "析取P∨¬P因¬P为真而成立。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "经典命题逻辑中的矛盾律与排中律的不同断言",
+    "typical_wrong_solution": "将排中律说成“P和非P不能同时为真”，混同矛盾律；或者把不知道答案解释为“P与非P都假”。",
+    "why_method_is_legal": "对P的两种真值逐行使用否定、合取和析取的真值规则即可分别验证两个永真式。",
+    "why_wrong_and_repair": "写出两个逻辑式并明确是合取还是否定、是析取还是合取；先固定变量赋值再列真值表。"
+  },
+  {
+    "applicability_and_hypotheses": "采样时间间隔为1/f_s，连续与离散模型的域不得混用；没有带宽/抗混叠前提时不能从样本唯一复原原频率。",
+    "course_track": "ELECTIVE_D",
+    "elective_e_optional_example": false,
+    "far_transfer": "为可穿戴音频采集设计避免高频信号冒充低频的采样方案，说明所需带宽假设与滤波。",
+    "formal_definition_or_theorem": "连续周期信号x(t)有周期T>0当且仅当x(t+T)=x(t)对所有允许t成立。均匀采样x_n=x(n/f_s)只能约束整数n上的值；不同连续频率可以产生相同采样序列。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-119-ed04",
+    "knowledge_type": "Method",
+    "near_transfer": "给出10Hz采样的3Hz与7Hz余弦模型，验证前6个及一般n的样本相等。",
+    "nonexample_or_failure": "同为8Hz采样，cos(4πt)基本周期0.5秒，而cos(12πt)基本周期1/6秒，但它们全部整数采样值相同；据样本唯一断言2Hz是错误的。",
+    "notation_and_domain": "时间t单位秒、频率f与采样率f_s单位Hz；f_s>0；余弦模型cos(2πft)允许f≥0；离散n为整数。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-119-ed03"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "明确连续信号x(t)及其定义域，必须对全部实t检查周期恒等式。",
+        "step": 1
+      },
+      {
+        "justification": "将实际采样时刻t_n=n/f_s代入，得到离散序列x_n并区别样本下标n与秒数t。",
+        "step": 2
+      },
+      {
+        "justification": "例如f_s=8Hz时，f=2Hz和f=6Hz的余弦样本因相位相差πn的整数倍结构而完全相同。",
+        "step": 3
+      },
+      {
+        "justification": "因此样本看似重复不代表连续现象具有相同基本周期；需要带宽先验或更高采样率消除混叠。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-119-ed04",
+    "source_end_line": 11,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "0426e1fb8776d5de54174abe60e64cbfa59c39048b1c4d2ebd5a6d36a104c461",
+      "b01885253446cfc1dd915e1528e35256375fa717322de881fc1614e858b42ff4",
+      "64e9f2f3a152257932146b714f57462d8cc2aac244af239aa113e3776141c8f5",
+      "c54d536d91b347d1347fd78ec6c519f28cf6294b9f4a35f2c137ce28cf62ce56"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 70,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "bc7438f44a9bef9bd885ea47ba2b0c83f10178d5579c57ace329a7e78820d58d",
+    "source_start_line": 8,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先决定讨论的是连续时间t还是离散整数下标n，写清单位。",
+      "把采样时间n/f_s代入相位2πft，比较两种频率的相位差。",
+      "用余弦的2π周期性质证明整数采样相同，再检查连续基本周期是否相同。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "1、0、−1、0",
+        "question": "8Hz采样的2Hz余弦，写出前4个样本。",
+        "reasoned_solution": [
+          "代入t_n=n/8及f=2。",
+          "x_n=cos(πn/2)。",
+          "n=0,1,2,3依次为1,0,−1,0。"
+        ]
+      },
+      {
+        "answer": "对所有整数n完全相同",
+        "question": "同样采样率下6Hz余弦与2Hz余弦样本相同吗？",
+        "reasoned_solution": [
+          "6Hz得到cos(3πn/2)。",
+          "因3πn/2=2πn−πn/2。",
+          "余弦偶性和2π周期性给出cos(3πn/2)=cos(πn/2)。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "音乐连续信号周期与离散采样混叠的区分",
+    "typical_wrong_solution": "将离散序列重复四个采样点误写成连续原信号周期必定为0.5秒；忽略高频混叠。",
+    "why_method_is_legal": "若频率相差整数倍采样率，采样相位相差2π整数倍，余弦样本相同；实连续函数的最小正周期却可能不同。",
+    "why_wrong_and_repair": "把离散样本的周期计数与连续真实频率分开，并检查Nyquist带宽/采样率前提或设计加密采样验证。"
+  },
+  {
+    "applicability_and_hypotheses": "要区分单次随机变量分布、总体参数和观察到的样本频率；样本独立同分布时Var(p̂)=p(1−p)/n。",
+    "course_track": "ELECTIVE_E",
+    "elective_e_optional_example": true,
+    "far_transfer": "评审一个只有20份回答的问卷，讨论抽样框偏差如何使频率对目标总体的估计失效。",
+    "formal_definition_or_theorem": "当单次事件指示变量X∈{0,1}且P(X=1)=p时，X服从Bernoulli(p)，E[X]=p；对n次独立同分布样本X_i，样本频率p̂=(1/n)ΣX_i是随机统计量，通常不等于固定参数p。",
+    "formal_proof_certified": false,
+    "free_student_step_verified": false,
+    "id": "kb152-deep-120-ee108",
+    "knowledge_type": "Concept",
+    "near_transfer": "比较n=4与n=400的独立Bernoulli样本频率方差，解释样本量如何改变波动。",
+    "nonexample_or_failure": "已知总体p=3/4，四次样本为1、1、0、0时p̂=1/2，二者不同；单次频率也不能被当成总体概率定理。",
+    "notation_and_domain": "作为学校自主选择的E类大学概率统计先修示例，不认定为全国必修原子；p∈[0,1]、n为正整数；独立同分布仅用于方差公式。",
+    "official_atom_id": null,
+    "prerequisite_math_review": "REVIEW_PENDING",
+    "prerequisite_proposals": [
+      "hs-semantic-pilot-120-ee101"
+    ],
+    "reasoned_steps": [
+      {
+        "justification": "先固定Bernoulli总体模型的成功概率p，它是分布参数而非某一次实验的观测值。",
+        "step": 1
+      },
+      {
+        "justification": "n次试验后每个X_i取0或1，样本频率p̂是这些随机值的平均，因此仍随机。",
+        "step": 2
+      },
+      {
+        "justification": "若各X_i独立且同分布，则E[p̂]=p且Var(p̂)=p(1−p)/n，可描述统计量的波动。",
+        "step": 3
+      },
+      {
+        "justification": "观察到某个频率仅是样本结果，不能不经抽样与不确定性分析就宣布它等于真实p。",
+        "step": 4
+      }
+    ],
+    "source_candidate_id": "hs-semantic-pilot-120-ee108",
+    "source_end_line": 22,
+    "source_evidence_status": "PDFKIT_HASHED_NOT_HUMAN_SEMANTICALLY_APPROVED",
+    "source_line_sha256": [
+      "8493ab737cef8bf188a7fe1ca7d6dcfbf40a58dc16141ebd28ae6cd0b1cf1c3c",
+      "738f4cefb3bc54444fdf891e481d1a5fe43905512817d62354a090d5e0e476d1"
+    ],
+    "source_pdf_sha256": "cc4d3a20daa09f5185037e93fbacd58f7df1147392e3dae4bf261c3700ba4195",
+    "source_printed_page": 73,
+    "source_semantics_human_approved": false,
+    "source_span_sha256": "ee11f8c53e8c415fa929cc883ab40316bb46aa3907474d87edd79b02b68667a9",
+    "source_start_line": 21,
+    "standard_version": "2017-edition-2020-revision-editorial-pilot",
+    "student_authoritative": false,
+    "student_hint_ladder": [
+      "先圈出“总体参数”和“观察样本”两种不同信息，它们并不处于同一层。",
+      "如果题目给出n次0/1记录，尝试写出样本频率的平均式。",
+      "若涉及方差，只有先核查独立性才能把各项方差直接相加。"
+    ],
+    "teacher_examples": [
+      {
+        "answer": "p̂=1/2，和p=3/4不同",
+        "question": "总体成功概率3/4，独立抽样4次得到1,1,0,0，计算p̂并比较p。",
+        "reasoned_solution": [
+          "把四个0/1值相加得到2。",
+          "除以n=4得到样本频率1/2。",
+          "概率分布的p为3/4，观察频率不必相等。"
+        ]
+      },
+      {
+        "answer": "期望1/4，方差3/256",
+        "question": "独立伯努利样本n=16、p=1/4，求样本频率期望和方差。",
+        "reasoned_solution": [
+          "每个样本期望p，平均期望仍是p。",
+          "各样本方差p(1−p)=3/16。",
+          "平均值方差为(3/16)/16=3/256。"
+        ]
+      }
+    ],
+    "teacher_review_evidence": null,
+    "teacher_review_status": "REVIEW_PENDING",
+    "teacher_solution_visibility": "TEACHER_ONLY",
+    "title": "学校选修先修示例：总体伯努利分布与样本频率的层级",
+    "typical_wrong_solution": "把“样本四次成功两次”写成“事件的真实概率经证明等于1/2”，或者不核查相关性直接套独立方差。",
+    "why_method_is_legal": "期望线性性给出E[p̂]=p；独立样本方差可相加并除以n²，得到p(1−p)/n；有限样本不会消除随机误差。",
+    "why_wrong_and_repair": "明确模型参数是未知/已知、样本是何种抽取机制；采用置信区间或误差界讨论估计不确定性，禁止单次样本冒充定理。"
+  }
+]
