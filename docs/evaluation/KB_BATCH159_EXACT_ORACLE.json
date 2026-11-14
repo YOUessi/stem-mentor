@@ -1,0 +1,274 @@
+{
+  "all_bounded_cases_passed": true,
+  "general_proof_certified": false,
+  "invalid_premise_checks": 20,
+  "negative_cases": [
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c501",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "finite samples do not uniquely determine continuum"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c501",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "duplicate input with contradictory outputs invalid"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c502",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "base one not strictly monotone"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c502",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "negative base square root not real"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c503",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "log negative input real-domain violation"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c503",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "log product cannot split negative factors"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c504",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "base one inverse invalid"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c504",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "log zero undefined"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c505",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "tan pi half undefined"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c505",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "tan three pi halves undefined"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c506",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "zero amplitude no least positive period"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c506",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "zero angular frequency no least positive period"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c507",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "cos difference not coordinate subtraction"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c507",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "division by cosine invalid at poles"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c508",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "sine sum not sine of sum"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c508",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "missing two in sum-product"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c509",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "touching zero can lack sign change"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c509",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "original rational domain excludes one"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c510",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "minutes cannot be inserted as hours"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c510",
+      "status": "INVALID_PREMISE_REJECTED",
+      "witness": "seconds conversion crucial"
+    }
+  ],
+  "positive_cases": [
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c501",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "discrete function unique values"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c501",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "two tables cannot identify function"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c502",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "decreasing positive exponential"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c502",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "exponential inequality monotone root"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c503",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "real logarithm inverse base half"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c503",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "logarithm real input domain"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c504",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "logarithm of positive real power"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c504",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "exponential of logarithm"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c505",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "tangent excluded poles in main cycle"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c505",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "sine cosine periodic values"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c506",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "sine model period phase and midpoint"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c506",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "degenerate constant has no least period"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c507",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "cosine difference exact case"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c507",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "cosine difference zero cosine valid"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c508",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "sum to product exact case"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c508",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "sum to product opposing angles"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c509",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "double zero tangent at two"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c509",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "rational zero domain excludes removed point"
+    },
+    {
+      "index": 1,
+      "source_candidate_id": "hs-semantic-pilot-124-c510",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "distance in km with hour conversion"
+    },
+    {
+      "index": 2,
+      "source_candidate_id": "hs-semantic-pilot-124-c510",
+      "status": "BOUNDED_EXACT_PASS",
+      "teacher_solution_exposed": false,
+      "witness": "distance in m with minute conversion"
+    }
+  ],
+  "schema": "kb159-exact-finite-witnesses/1",
+  "student_authoritative": 0,
+  "student_free_text_verified": false,
+  "teacher_approved": 0,
+  "teacher_example_checks": 20
+}

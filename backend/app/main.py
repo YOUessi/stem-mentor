@@ -457,3 +457,10 @@ def kb157_review_coverage():
 def kb158_review_coverage():
     from .kb_batch158_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb159-review-coverage")
+def kb159_review_coverage():
+    """Only aggregate review metadata; no teacher draft or worked solution."""
+    from .kb_batch159_index import public_coverage
+    return public_coverage()
