@@ -391,3 +391,10 @@ def kb149_review_coverage():
     """Aggregate pending editorial content only; no teacher solutions or licensed source text."""
     from .kb_batch149_index import public_coverage
     return public_coverage()
+
+
+@app.get("/api/knowledge/kb150-source-boundary-status")
+def kb150_source_boundary_status():
+    """Public course counts, not syllabus text, teaching claims, or teacher solutions."""
+    from .kb_batch150_scope import public_status
+    return public_status()
