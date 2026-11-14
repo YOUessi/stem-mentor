@@ -1,0 +1,373 @@
+FFFFFF                                                                   [100%]
+=================================== FAILURES ===================================
+________________________ test_bounded_archive_identity _________________________
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_bounded_archive_identity0')
+
+    def test_bounded_archive_identity(cloned):
+>       d=manifest.build()
+          ^^^^^^^^^^^^^^^^
+
+tests/test_kb_batch147_archived_evidence.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/build_kb_batch147_execution_manifest.py:33: in build
+    logs=collect()
+         ^^^^^^^^^
+scripts/build_kb_batch147_execution_manifest.py:28: in collect
+    out[key]=dict(path=str(file.relative_to(ROOT)),exit_path=str(ex.relative_to(ROOT)),
+                           ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_bounded_archive_identity0/KB_BATCH147_FOCUSED.log')
+other = PosixPath('/Users/youtang/Documents/文件/stem-mentor-kb-batch147')
+walk_up = False, _deprecated = (), step = 0
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python 3.14")
+            warnings.warn(msg, DeprecationWarning, stacklevel=2)
+            other = self.with_segments(other, *_deprecated)
+        elif not isinstance(other, PurePath):
+            other = self.with_segments(other)
+        for step, path in enumerate(chain([other], other.parents)):
+            if path == self or path in self.parents:
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/tmp/pytest-of-youtang/pytest-115/test_bounded_archive_identity0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'
+
+../../../miniforge3/lib/python3.13/pathlib/_local.py:385: ValueError
+______________________ test_nonzero_mac_exit_fails_closed ______________________
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_nonzero_mac_exit_fails_cl0')
+
+    def test_nonzero_mac_exit_fails_closed(cloned):
+        (cloned/"KB_BATCH147_MAC_FULL.exit").write_text("1\n")
+        with pytest.raises(ValueError,match="MAC_FULL execution nonzero"):
+>           manifest.build()
+
+tests/test_kb_batch147_archived_evidence.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/build_kb_batch147_execution_manifest.py:33: in build
+    logs=collect()
+         ^^^^^^^^^
+scripts/build_kb_batch147_execution_manifest.py:28: in collect
+    out[key]=dict(path=str(file.relative_to(ROOT)),exit_path=str(ex.relative_to(ROOT)),
+                           ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_nonzero_mac_exit_fails_cl0/KB_BATCH147_FOCUSED.log')
+other = PosixPath('/Users/youtang/Documents/文件/stem-mentor-kb-batch147')
+walk_up = False, _deprecated = (), step = 0
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python 3.14")
+            warnings.warn(msg, DeprecationWarning, stacklevel=2)
+            other = self.with_segments(other, *_deprecated)
+        elif not isinstance(other, PurePath):
+            other = self.with_segments(other)
+        for step, path in enumerate(chain([other], other.parents)):
+            if path == self or path in self.parents:
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/tmp/pytest-of-youtang/pytest-115/test_nonzero_mac_exit_fails_cl0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'
+
+../../../miniforge3/lib/python3.13/pathlib/_local.py:385: ValueError
+
+During handling of the above exception, another exception occurred:
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_nonzero_mac_exit_fails_cl0')
+
+    def test_nonzero_mac_exit_fails_closed(cloned):
+        (cloned/"KB_BATCH147_MAC_FULL.exit").write_text("1\n")
+>       with pytest.raises(ValueError,match="MAC_FULL execution nonzero"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'MAC_FULL execution nonzero'
+E        Input: "'/private/tmp/pytest-of-youtang/pytest-115/test_nonzero_mac_exit_fails_cl0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'"
+
+tests/test_kb_batch147_archived_evidence.py:27: AssertionError
+____________________ test_missing_browser_log_fails_closed _____________________
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_missing_browser_log_fails0')
+
+    def test_missing_browser_log_fails_closed(cloned):
+        (cloned/"KB_BATCH147_BROWSER.log").unlink()
+        with pytest.raises(ValueError,match="BROWSER log or exit missing"):
+>           manifest.build()
+
+tests/test_kb_batch147_archived_evidence.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/build_kb_batch147_execution_manifest.py:33: in build
+    logs=collect()
+         ^^^^^^^^^
+scripts/build_kb_batch147_execution_manifest.py:28: in collect
+    out[key]=dict(path=str(file.relative_to(ROOT)),exit_path=str(ex.relative_to(ROOT)),
+                           ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_missing_browser_log_fails0/KB_BATCH147_FOCUSED.log')
+other = PosixPath('/Users/youtang/Documents/文件/stem-mentor-kb-batch147')
+walk_up = False, _deprecated = (), step = 0
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python 3.14")
+            warnings.warn(msg, DeprecationWarning, stacklevel=2)
+            other = self.with_segments(other, *_deprecated)
+        elif not isinstance(other, PurePath):
+            other = self.with_segments(other)
+        for step, path in enumerate(chain([other], other.parents)):
+            if path == self or path in self.parents:
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/tmp/pytest-of-youtang/pytest-115/test_missing_browser_log_fails0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'
+
+../../../miniforge3/lib/python3.13/pathlib/_local.py:385: ValueError
+
+During handling of the above exception, another exception occurred:
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_missing_browser_log_fails0')
+
+    def test_missing_browser_log_fails_closed(cloned):
+        (cloned/"KB_BATCH147_BROWSER.log").unlink()
+>       with pytest.raises(ValueError,match="BROWSER log or exit missing"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'BROWSER log or exit missing'
+E        Input: "'/private/tmp/pytest-of-youtang/pytest-115/test_missing_browser_log_fails0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'"
+
+tests/test_kb_batch147_archived_evidence.py:31: AssertionError
+_____________________ test_forged_focused_pass_count_fails _____________________
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_forged_focused_pass_count0')
+
+    def test_forged_focused_pass_count_fails(cloned):
+        p=cloned/"KB_BATCH147_FOCUSED.log"
+        t=p.read_text(); assert "283 passed" in t
+        p.write_text(t.replace("283 passed","999 passed"))
+        with pytest.raises(ValueError,match="283 combined focused passes"):
+>           manifest.build()
+
+tests/test_kb_batch147_archived_evidence.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/build_kb_batch147_execution_manifest.py:33: in build
+    logs=collect()
+         ^^^^^^^^^
+scripts/build_kb_batch147_execution_manifest.py:28: in collect
+    out[key]=dict(path=str(file.relative_to(ROOT)),exit_path=str(ex.relative_to(ROOT)),
+                           ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_forged_focused_pass_count0/KB_BATCH147_FOCUSED.log')
+other = PosixPath('/Users/youtang/Documents/文件/stem-mentor-kb-batch147')
+walk_up = False, _deprecated = (), step = 0
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python 3.14")
+            warnings.warn(msg, DeprecationWarning, stacklevel=2)
+            other = self.with_segments(other, *_deprecated)
+        elif not isinstance(other, PurePath):
+            other = self.with_segments(other)
+        for step, path in enumerate(chain([other], other.parents)):
+            if path == self or path in self.parents:
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/tmp/pytest-of-youtang/pytest-115/test_forged_focused_pass_count0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'
+
+../../../miniforge3/lib/python3.13/pathlib/_local.py:385: ValueError
+
+During handling of the above exception, another exception occurred:
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_forged_focused_pass_count0')
+
+    def test_forged_focused_pass_count_fails(cloned):
+        p=cloned/"KB_BATCH147_FOCUSED.log"
+        t=p.read_text(); assert "283 passed" in t
+        p.write_text(t.replace("283 passed","999 passed"))
+>       with pytest.raises(ValueError,match="283 combined focused passes"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: '283 combined focused passes'
+E        Input: "'/private/tmp/pytest-of-youtang/pytest-115/test_forged_focused_pass_count0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'"
+
+tests/test_kb_batch147_archived_evidence.py:37: AssertionError
+______________________ test_fake_pdf_rehash_marker_fails _______________________
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_fake_pdf_rehash_marker_fa0')
+
+    def test_fake_pdf_rehash_marker_fails(cloned):
+        p=cloned/"KB_BATCH147_MAC_FULL.log"
+        t=p.read_text(); assert "PDF REHASHED original lines PASS" in t
+        p.write_text(t.replace("PDF REHASHED original lines PASS","PDF REHASHED original lines UNKNOWN"))
+        with pytest.raises(ValueError,match="PDF REHASHED"):
+>           manifest.build()
+
+tests/test_kb_batch147_archived_evidence.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/build_kb_batch147_execution_manifest.py:33: in build
+    logs=collect()
+         ^^^^^^^^^
+scripts/build_kb_batch147_execution_manifest.py:28: in collect
+    out[key]=dict(path=str(file.relative_to(ROOT)),exit_path=str(ex.relative_to(ROOT)),
+                           ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_fake_pdf_rehash_marker_fa0/KB_BATCH147_FOCUSED.log')
+other = PosixPath('/Users/youtang/Documents/文件/stem-mentor-kb-batch147')
+walk_up = False, _deprecated = (), step = 0
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python 3.14")
+            warnings.warn(msg, DeprecationWarning, stacklevel=2)
+            other = self.with_segments(other, *_deprecated)
+        elif not isinstance(other, PurePath):
+            other = self.with_segments(other)
+        for step, path in enumerate(chain([other], other.parents)):
+            if path == self or path in self.parents:
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/tmp/pytest-of-youtang/pytest-115/test_fake_pdf_rehash_marker_fa0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'
+
+../../../miniforge3/lib/python3.13/pathlib/_local.py:385: ValueError
+
+During handling of the above exception, another exception occurred:
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_fake_pdf_rehash_marker_fa0')
+
+    def test_fake_pdf_rehash_marker_fails(cloned):
+        p=cloned/"KB_BATCH147_MAC_FULL.log"
+        t=p.read_text(); assert "PDF REHASHED original lines PASS" in t
+        p.write_text(t.replace("PDF REHASHED original lines PASS","PDF REHASHED original lines UNKNOWN"))
+>       with pytest.raises(ValueError,match="PDF REHASHED"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'PDF REHASHED'
+E        Input: "'/private/tmp/pytest-of-youtang/pytest-115/test_fake_pdf_rehash_marker_fa0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'"
+
+tests/test_kb_batch147_archived_evidence.py:43: AssertionError
+_______________________ test_false_browser_fixtures_fail _______________________
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_false_browser_fixtures_fa0')
+
+    def test_false_browser_fixtures_fail(cloned):
+        p=cloned/"KB_BATCH147_BROWSER.log"
+        t=p.read_text(); assert "GREEN v0.7 Chrome test: 9 passed" in t
+        p.write_text(t.replace("GREEN v0.7 Chrome test: 9 passed","GREEN v0.7 Chrome test: 0 passed"))
+        with pytest.raises(ValueError,match="nine Chrome interactive"):
+>           manifest.build()
+
+tests/test_kb_batch147_archived_evidence.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/build_kb_batch147_execution_manifest.py:33: in build
+    logs=collect()
+         ^^^^^^^^^
+scripts/build_kb_batch147_execution_manifest.py:28: in collect
+    out[key]=dict(path=str(file.relative_to(ROOT)),exit_path=str(ex.relative_to(ROOT)),
+                           ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_false_browser_fixtures_fa0/KB_BATCH147_FOCUSED.log')
+other = PosixPath('/Users/youtang/Documents/文件/stem-mentor-kb-batch147')
+walk_up = False, _deprecated = (), step = 0
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python 3.14")
+            warnings.warn(msg, DeprecationWarning, stacklevel=2)
+            other = self.with_segments(other, *_deprecated)
+        elif not isinstance(other, PurePath):
+            other = self.with_segments(other)
+        for step, path in enumerate(chain([other], other.parents)):
+            if path == self or path in self.parents:
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/tmp/pytest-of-youtang/pytest-115/test_false_browser_fixtures_fa0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'
+
+../../../miniforge3/lib/python3.13/pathlib/_local.py:385: ValueError
+
+During handling of the above exception, another exception occurred:
+
+cloned = PosixPath('/private/tmp/pytest-of-youtang/pytest-115/test_false_browser_fixtures_fa0')
+
+    def test_false_browser_fixtures_fail(cloned):
+        p=cloned/"KB_BATCH147_BROWSER.log"
+        t=p.read_text(); assert "GREEN v0.7 Chrome test: 9 passed" in t
+        p.write_text(t.replace("GREEN v0.7 Chrome test: 9 passed","GREEN v0.7 Chrome test: 0 passed"))
+>       with pytest.raises(ValueError,match="nine Chrome interactive"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: 'nine Chrome interactive'
+E        Input: "'/private/tmp/pytest-of-youtang/pytest-115/test_false_browser_fixtures_fa0/KB_BATCH147_FOCUSED.log' is not in the subpath of '/Users/youtang/Documents/文件/stem-mentor-kb-batch147'"
+
+tests/test_kb_batch147_archived_evidence.py:49: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_kb_batch147_archived_evidence.py::test_bounded_archive_identity
+FAILED tests/test_kb_batch147_archived_evidence.py::test_nonzero_mac_exit_fails_closed
+FAILED tests/test_kb_batch147_archived_evidence.py::test_missing_browser_log_fails_closed
+FAILED tests/test_kb_batch147_archived_evidence.py::test_forged_focused_pass_count_fails
+FAILED tests/test_kb_batch147_archived_evidence.py::test_fake_pdf_rehash_marker_fails
+FAILED tests/test_kb_batch147_archived_evidence.py::test_false_browser_fixtures_fail
+6 failed in 1.93s

@@ -1,0 +1,16 @@
+PDF REHASHED original lines PASS (licensed Mac source not uploaded)
+PASS Batch147: 10 seven-track source-hashed teacher lessons, 95 REVIEW_PENDING, 0 APPROVED
+PASS Batch147: 40 independent exact math witnesses; 20 positive, 20 precondition rejects; 0 teacher-approved
+PASS Batch147 source crosswalk: 239 provisional; 54 matched; 185 still missing; official denominators UNKNOWN
+PASS Batch147 K00: 239 provisional leads; 54 draft-linked /185 unmatched; no official denominators; 89 source review edges
+........................................................................ [ 25%]
+........................................................................ [ 50%]
+........................................................................ [ 76%]
+...................................................................      [100%]
+=============================== warnings summary ===============================
+../../../miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/youtang/miniforge3/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+283 passed, 1 warning in 9.15s

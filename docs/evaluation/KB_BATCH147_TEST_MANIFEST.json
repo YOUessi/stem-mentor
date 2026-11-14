@@ -1,0 +1,109 @@
+{
+  "archived_negative_tests": {
+    "ARCHIVE_NEGATIVE": {
+      "bytes": 98,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH147_ARCHIVE_NEGATIVE.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH147_ARCHIVE_NEGATIVE.log",
+      "sha256": "90babf3ab035b63651f6f642d26e6c3a37e6c323504366391afbc3a507818fc3"
+    },
+    "ARCHIVE_NEGATIVE_INITIAL_FAILURE": {
+      "bytes": 20542,
+      "exit": 1,
+      "exit_path": "docs/evaluation/logs/KB_BATCH147_ARCHIVE_NEGATIVE_INITIAL_FAILURE.exit",
+      "exit_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "path": "docs/evaluation/logs/KB_BATCH147_ARCHIVE_NEGATIVE_INITIAL_FAILURE.log",
+      "sha256": "18bc9069de0e97100ff7532646bb56d2a0e0cffff833e3566e29e5a9be0225bb"
+    }
+  },
+  "authoritative_student_publications": 0,
+  "backend_python_passed": 66293,
+  "backend_python_skipped": 5,
+  "base_git_commit": "fad0d2a4fb3e8349f7785fd96277fdea751a8604",
+  "browser_pytest_passed": 2,
+  "chrome_interaction_passed": 9,
+  "deep_teacher_review_drafts_added": 10,
+  "deep_teacher_review_drafts_total": 95,
+  "device": "AUTHORIZED_YOUTANG_MACBOOK_AIR_ONLY",
+  "focused_tests_passed": 283,
+  "free_student_solution_steps_certified": 0,
+  "general_formal_proof_certifications": 0,
+  "github_can_replay_private_pdf": false,
+  "historical_uncertified_steps": 538,
+  "independent_finite_math_checks_passed": 40,
+  "independent_k00_tests_passed": 17,
+  "initial_archive_failure_cause": "First archived-log mutation tests used temporary paths outside repository; the evidence collector called relative_to(ROOT). Fixed canonical report paths and reading from mocked LOG; rerun required",
+  "initial_archive_failure_log_archived": true,
+  "initial_archive_regression_failures": 6,
+  "initial_failure_cause": "First 266-case run called oracle(), while independent module exported exact(); reconciled the name and reran 266/266",
+  "initial_failure_log_archived": false,
+  "initial_incremental_failures": 1,
+  "invalid_hypotheses_rejected": 20,
+  "k00_source_boundary_distinct_pairs": 69,
+  "k00_source_boundary_pair_counts": {
+    "ADJACENT_PAGE_SEAM_CANDIDATES_REVIEW": 37,
+    "CROSS_PAGE_IDENTICAL_SPAN_DIGEST_REVIEW": 1,
+    "SAME_PAGE_IDENTICAL_SOURCE_SPAN_REVIEW": 20,
+    "SAME_PAGE_OVERLAPPING_SOURCE_LINES_REVIEW": 31
+  },
+  "k00_source_boundary_relation_records": 89,
+  "licensed_original_standard_pdf_remains_mac_only": true,
+  "linked_teacher_drafts": 54,
+  "logs": {
+    "BROWSER": {
+      "bytes": 2443,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH147_BROWSER.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH147_BROWSER.log",
+      "sha256": "fdee866ec684d54c1da686c0d6be3a86ced6a6be5a50477108a2baa0063fc477"
+    },
+    "FOCUSED": {
+      "bytes": 1371,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH147_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH147_FOCUSED.log",
+      "sha256": "9ab268cd98e6332e2eb92551e21716cef2a9e501a9db8e57c6b3912af5be1474"
+    },
+    "K00_FOCUSED": {
+      "bytes": 222,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH147_K00_FOCUSED.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH147_K00_FOCUSED.log",
+      "sha256": "27c0bdfebd9aed45a4a7eabfb53578bc1153ad032375aa5233cde0e09a73a6d5"
+    },
+    "MAC_FULL": {
+      "bytes": 140011,
+      "exit": 0,
+      "exit_path": "docs/evaluation/logs/KB_BATCH147_MAC_FULL.exit",
+      "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "path": "docs/evaluation/logs/KB_BATCH147_MAC_FULL.log",
+      "sha256": "b695dbef946e5e94796557a37553a81ee04f25c40ea3ea85c1cc067a94da685f"
+    }
+  },
+  "near_far_tasks_added": 20,
+  "node_tests_passed": 111,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "official_syllabus_census_completed": false,
+  "original_pdfkit_line_sha_replay_passed": true,
+  "run_date": "2026-11-14",
+  "schema": "kb147-real-mac-execution-evidence/1",
+  "source_git_commit": "35e825141ac5f0223d1f4a1b6cb0901089907248",
+  "source_historical_editorial_leads": 239,
+  "student_hint_steps_added": 30,
+  "teacher_approvals": 0,
+  "teacher_examples_added": 20,
+  "unlinked_historical_leads": 185,
+  "unresolved_historical_math_conflicts": 10
+}
