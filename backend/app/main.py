@@ -371,3 +371,9 @@ def kb146_review_coverage():
     """Aggregate preview inventory only. Never expose teacher-only evidence."""
     from .kb_batch146_index import public_coverage
     return public_coverage()
+
+@app.get("/api/knowledge/kb147-review-coverage")
+def kb147_review_coverage():
+    """Aggregate editor drafts only: no source content or teacher solutions."""
+    from .kb_batch147_index import public_coverage
+    return public_coverage()

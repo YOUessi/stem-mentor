@@ -314,6 +314,13 @@ jobs:
       - run: python scripts/audit_kb_batch146_source_aliases.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch146_source_aliases.py
       # Offline archive replay checks bytes/exit states, not the Mac-only PDF.
+      # Batch147 source-locks, original math cases and fail-closed student API
+      - run: python scripts/build_kb_batch147_lessons.py --check
+      - run: python scripts/check_kb_batch147_math.py --check
+      - run: python scripts/build_kb_batch147_crosswalk.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch147_math_depth.py
+      - run: python scripts/audit_kb_batch147_source_edges.py --check
+      - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch147_source_edges.py
       - run: python scripts/build_kb_batch146_execution_manifest.py --check
       - run: PYTHONPATH=backend python -m pytest -q tests/test_kb_batch146_archived_evidence.py
       - run: python scripts/audit_kb_batch09_release.py --check

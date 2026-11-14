@@ -1,0 +1,421 @@
+{
+  "cases": [
+    {
+      "candidate_id": "hs-semantic-pilot-119-c02",
+      "case_id": "kb147-01-1",
+      "general_formal_proof_certified": false,
+      "label": "complex sum",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c02",
+      "case_id": "kb147-01-2",
+      "general_formal_proof_certified": false,
+      "label": "conjugate division",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c02",
+      "case_id": "kb147-01-3",
+      "general_formal_proof_certified": false,
+      "label": "division by zero invalid",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c02",
+      "case_id": "kb147-01-4",
+      "general_formal_proof_certified": false,
+      "label": "component-wise division is false",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c03",
+      "case_id": "kb147-02-1",
+      "general_formal_proof_certified": false,
+      "label": "noncollinear normal is nonzero",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c03",
+      "case_id": "kb147-02-2",
+      "general_formal_proof_certified": false,
+      "label": "second plane equation verified",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c03",
+      "case_id": "kb147-02-3",
+      "general_formal_proof_certified": false,
+      "label": "collinear triples yield zero cross product",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c03",
+      "case_id": "kb147-02-4",
+      "general_formal_proof_certified": false,
+      "label": "same collinear triples lie on two distinct planes",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c06",
+      "case_id": "kb147-03-1",
+      "general_formal_proof_certified": false,
+      "label": "die intersection exactly two",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c06",
+      "case_id": "kb147-03-2",
+      "general_formal_proof_certified": false,
+      "label": "finite inclusion-exclusion exact count",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c06",
+      "case_id": "kb147-03-3",
+      "general_formal_proof_certified": false,
+      "label": "nonempty overlap disallows direct sum",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-c06",
+      "case_id": "kb147-03-4",
+      "general_formal_proof_certified": false,
+      "label": "biased fair-count assumption invalid",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s01",
+      "case_id": "kb147-04-1",
+      "general_formal_proof_certified": false,
+      "label": "first five reciprocal terms",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s01",
+      "case_id": "kb147-04-2",
+      "general_formal_proof_certified": false,
+      "label": "alternating sequence first three",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s01",
+      "case_id": "kb147-04-3",
+      "general_formal_proof_certified": false,
+      "label": "index zero not in declared positive domain",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s01",
+      "case_id": "kb147-04-4",
+      "general_formal_proof_certified": false,
+      "label": "reciprocal n-1 undefined at n=1",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s03",
+      "case_id": "kb147-05-1",
+      "general_formal_proof_certified": false,
+      "label": "symbolic arithmetic sum equivalence",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s03",
+      "case_id": "kb147-05-2",
+      "general_formal_proof_certified": false,
+      "label": "descending arithmetic four terms",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s03",
+      "case_id": "kb147-05-3",
+      "general_formal_proof_certified": false,
+      "label": "nonarithmetic terms reject endpoint average",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-s03",
+      "case_id": "kb147-05-4",
+      "general_formal_proof_certified": false,
+      "label": "last term n d is incorrect",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a01",
+      "case_id": "kb147-06-1",
+      "general_formal_proof_certified": false,
+      "label": "reciprocal epsilon 1/10 all next 100",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a01",
+      "case_id": "kb147-06-2",
+      "general_formal_proof_certified": false,
+      "label": "shifted reciprocal epsilon 1/20",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a01",
+      "case_id": "kb147-06-3",
+      "general_formal_proof_certified": false,
+      "label": "alternating cannot converge to one",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-a01",
+      "case_id": "kb147-06-4",
+      "general_formal_proof_certified": false,
+      "label": "one good index not eventual epsilon bound",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b01",
+      "case_id": "kb147-07-1",
+      "general_formal_proof_certified": false,
+      "label": "quadratic position derivatives at two",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b01",
+      "case_id": "kb147-07-2",
+      "general_formal_proof_certified": false,
+      "label": "cubic position derivatives at one",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b01",
+      "case_id": "kb147-07-3",
+      "general_formal_proof_certified": false,
+      "label": "abs value derivative at zero is not defined",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-b01",
+      "case_id": "kb147-07-4",
+      "general_formal_proof_certified": false,
+      "label": "zero position need not be zero velocity",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec01",
+      "case_id": "kb147-08-1",
+      "general_formal_proof_certified": false,
+      "label": "real square plus one strictly positive",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec01",
+      "case_id": "kb147-08-2",
+      "general_formal_proof_certified": false,
+      "label": "negation of all real squares positive has witness",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec01",
+      "case_id": "kb147-08-3",
+      "general_formal_proof_certified": false,
+      "label": "universal positive real square false at zero",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ec01",
+      "case_id": "kb147-08-4",
+      "general_formal_proof_certified": false,
+      "label": "variable predicate is not constant truth value",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed01",
+      "case_id": "kb147-09-1",
+      "general_formal_proof_certified": false,
+      "label": "rotation orthogonality",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed01",
+      "case_id": "kb147-09-2",
+      "general_formal_proof_certified": false,
+      "label": "rigid transform distance squared",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed01",
+      "case_id": "kb147-09-3",
+      "general_formal_proof_certified": false,
+      "label": "scale by two changes absolute distance",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ed01",
+      "case_id": "kb147-09-4",
+      "general_formal_proof_certified": false,
+      "label": "similar rectangles different lengths",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee01",
+      "case_id": "kb147-10-1",
+      "general_formal_proof_certified": false,
+      "label": "rotate then translate",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee01",
+      "case_id": "kb147-10-2",
+      "general_formal_proof_certified": false,
+      "label": "translate then rotate",
+      "outcome": "EXACT_FINITE_WITNESS",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee01",
+      "case_id": "kb147-10-3",
+      "general_formal_proof_certified": false,
+      "label": "composition order noncommutative",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    },
+    {
+      "candidate_id": "hs-semantic-pilot-119-ee01",
+      "case_id": "kb147-10-4",
+      "general_formal_proof_certified": false,
+      "label": "2D 2x2 rotation cannot multiply 3D point",
+      "outcome": "REJECT_INVALID_PRECONDITION",
+      "passed": true,
+      "student_free_step_verified": false,
+      "teacher_approved": false
+    }
+  ],
+  "general_formal_proof_certifications": 0,
+  "legal_or_boundary_witnesses": 20,
+  "official_atom_denominators": {
+    "COMPULSORY": null,
+    "ELECTIVE_A": null,
+    "ELECTIVE_B": null,
+    "ELECTIVE_C": null,
+    "ELECTIVE_D": null,
+    "ELECTIVE_E": null,
+    "SELECTIVE_COMPULSORY": null
+  },
+  "rejected_invalid_premises": 20,
+  "schema": "kb147-bounded-exact-finite-math/1",
+  "scope": "FINITE_EXACT_WITNESS_NOT_GENERAL_FORMAL_PROOF",
+  "student_free_text_verifications": 0,
+  "teacher_approvals": 0,
+  "total_cases": 40
+}
